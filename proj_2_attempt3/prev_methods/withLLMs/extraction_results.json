@@ -1,0 +1,1357 @@
+{
+  "papers_sampled": [
+    "1320",
+    "230",
+    "52",
+    "1529"
+  ],
+  "timings": {
+    "Claude Opus 4.6": {
+      "1320": 52.5,
+      "230": 16.3,
+      "52": 77.4,
+      "1529": 53.2
+    },
+    "GPT-5.2": {
+      "1320": null,
+      "230": null,
+      "52": null,
+      "1529": null
+    },
+    "Gemini 3 Pro": {
+      "1320": 60.0,
+      "230": 28.1,
+      "52": 66.1,
+      "1529": 66.1
+    },
+    "Kimi K2.5": {
+      "1320": null,
+      "230": null,
+      "52": null,
+      "1529": null
+    }
+  },
+  "results": {
+    "Claude Opus 4.6": {
+      "1320": {
+        "study_type": "disease_characterization",
+        "study_design": "Cross-sectional study examining associations between dietary factors, oral microbiota, and recurrent oral ulcer (ROU) in 579 community-based participants from the Central China Cohort",
+        "primary_disease": "Recurrent oral ulcer (ROU)",
+        "related_conditions": [
+          "hypertension",
+          "diabetes",
+          "cardiovascular disease",
+          "bleeding gums",
+          "dental caries",
+          "bad breath"
+        ],
+        "sample_size": "579 (337 with ROU, 242 without ROU)",
+        "statistical_methods": "Logistic regression, Wilcoxon rank sum test, Chi-squared test, PERMANOVA, MaAsLin (multivariate analysis by linear models), ANCOM-BC, mediation analysis, Benjamini-Hochberg FDR correction, PICRUSt2 functional prediction, centered log-ratio transformation, PCoA with Bray-Curtis and robust Aitchison distances",
+        "bacteria_relationships": [
+          {
+            "taxon_name": "Leptotrichia",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": "p-FDR < 0.20",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Figure 2C | Results section 3.3",
+            "confidence": "high",
+            "notes": "Positively associated with ROU. Belongs to phylum Fusobacteria. Previously found to be associated with active oral ulcers and isolated from blood cultures of patients with oral mucosa lesions."
+          },
+          {
+            "taxon_name": "Actinomyces",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": "p-FDR < 0.20",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Figure 2C | Results section 3.3",
+            "confidence": "high",
+            "notes": "Positively associated with ROU. Belongs to phylum Actinobacteria. Implicated in oral abscesses and correlated with gingivitis and periapical lesions."
+          },
+          {
+            "taxon_name": "Atopobium",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": "p-FDR < 0.20",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Figure 2C | Results section 3.3 | Section 3.5",
+            "confidence": "high",
+            "notes": "Positively associated with ROU. Belongs to phylum Actinobacteria. Also positively correlated with ROU and inversely correlated with hPDI. Included in composite bacterial score. May play role in caries production."
+          },
+          {
+            "taxon_name": "TM7x",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": "p-FDR < 0.20; p-mediation < 0.05",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Figure 2C | Figure 4A | Results sections 3.3, 3.4, 3.5",
+            "confidence": "high",
+            "notes": "Positively associated with ROU. Lower in highest hPDI tertile (p < 0.05). Identified as potential mediator between hPDI and ROU with mediation proportion of 10.77%. TM7 bacteria positively associated with inflammatory mucosal diseases and periodontal mucosal infections."
+          },
+          {
+            "taxon_name": "Corynebacterium",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": "p-FDR < 0.20",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Figure 2C | Discussion",
+            "confidence": "high",
+            "notes": "Positively associated with ROU. Previously associated with periodontal health."
+          },
+          {
+            "taxon_name": "Wolinella",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": "p-FDR < 0.20",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Figure 2C | Results sections 3.3, 3.4",
+            "confidence": "high",
+            "notes": "Inversely associated with ROU. Relative abundance significantly different between extreme tertiles of red meat intake (p < 0.05)."
+          },
+          {
+            "taxon_name": "Olsenella",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": "p-FDR < 0.20; p-mediation < 0.05",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Figure 2C | Figure 4C,D | Results sections 3.3, 3.4, 3.5",
+            "confidence": "high",
+            "notes": "Inversely associated with ROU. More abundant in participants with higher hPDI and less abundant with higher red meat intake. Identified as potential mediator between hPDI and ROU (mediation proportion 11.04%) and between red meat intake and ROU (mediation proportion ~14%). Included in composite bacterial score."
+          },
+          {
+            "taxon_name": "Abiotrophia",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": "p-FDR < 0.20",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Figure 2C | Results sections 3.3, 3.5",
+            "confidence": "high",
+            "notes": "Inversely associated with ROU. Included in composite bacterial score. Abiotrophia defectiva considered beneficial for periodontal health."
+          },
+          {
+            "taxon_name": "unclassified Muribaculaceae",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": "p-FDR < 0.20; p-mediation < 0.05",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Figure 4B | Results sections 3.3, 3.5",
+            "confidence": "high",
+            "notes": "Inversely associated with ROU. Identified as potential mediator between hPDI and ROU with mediation proportion of 17.23%. Included in composite bacterial score."
+          },
+          {
+            "taxon_name": "Streptobacillus",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": "p-FDR < 0.20",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section 3.4 | Figure 3B",
+            "confidence": "medium",
+            "notes": "Inversely associated with ROU (one of the 11 inversely associated genera). Relative abundance significantly different between extreme tertiles of red meat intake (p < 0.05). Listed as 'Streptobacillu' in text, likely Streptobacillus."
+          },
+          {
+            "taxon_name": "Rikenellaceae RC9 gut group",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": "p-FDR < 0.20",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section 3.4 | Figure 3C",
+            "confidence": "medium",
+            "notes": "Inversely associated with ROU (one of the 11 inversely associated genera). Relative abundance significantly different between extreme tertiles of egg intake (p < 0.05). Association with hPDI only significant among females."
+          },
+          {
+            "taxon_name": "Peptococcus",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": "p-FDR < 0.20",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Discussion",
+            "confidence": "medium",
+            "notes": "Inversely associated with ROU. Identified as a taxon correlated with periodontitis in previous studies. Mentioned in discussion as one of the genera inversely correlated with oral ulcers."
+          },
+          {
+            "taxon_name": "Bergeyella",
+            "taxonomic_level": "genus",
+            "direction": "unclear",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": "p-FDR < 0.20",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section 3.4 | Tables S11-S13",
+            "confidence": "low",
+            "notes": "One of the 16 ROU-associated genera. Direction not explicitly stated in available text. Link between Bergeyella and red meat was solely observed among males."
+          },
+          {
+            "taxon_name": "Fusobacteria",
+            "taxonomic_level": "phylum",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_reported"
+            },
+            "location_in_paper": "Results section 3.3",
+            "confidence": "medium",
+            "notes": "Mentioned as the phylum to which several positively ROU-associated genera (e.g., Leptotrichia) mainly belong. Not directly tested at phylum level."
+          },
+          {
+            "taxon_name": "Actinobacteria",
+            "taxonomic_level": "phylum",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_reported"
+            },
+            "location_in_paper": "Results section 3.3",
+            "confidence": "medium",
+            "notes": "Mentioned as the phylum to which several positively ROU-associated genera (e.g., Actinomyces, Atopobium) mainly belong. Not directly tested at phylum level."
+          },
+          {
+            "taxon_name": "Firmicutes",
+            "taxonomic_level": "phylum",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_reported"
+            },
+            "location_in_paper": "Discussion",
+            "confidence": "medium",
+            "notes": "Discussion states that several genera negatively correlated with ROU primarily belonged to the Firmicutes phylum, consistent with previous research. Not directly tested at phylum level."
+          },
+          {
+            "taxon_name": "Streptococcus salivarius",
+            "taxonomic_level": "species",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_reported"
+            },
+            "location_in_paper": "Introduction",
+            "confidence": "low",
+            "notes": "Cited from previous literature (reference [5]) as having decreased abundance in saliva microbiota of patients with ROU. Not measured in this study's results."
+          },
+          {
+            "taxon_name": "Capnocytophaga sputigena",
+            "taxonomic_level": "species",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_reported"
+            },
+            "location_in_paper": "Introduction",
+            "confidence": "low",
+            "notes": "Cited from previous literature (reference [5]) as having increased abundance in saliva microbiota of patients with ROU. Not measured in this study's results."
+          },
+          {
+            "taxon_name": "Abiotrophia defectiva",
+            "taxonomic_level": "species",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "not specified",
+              "control_group": "not specified",
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_reported"
+            },
+            "location_in_paper": "Discussion",
+            "confidence": "low",
+            "notes": "Mentioned in discussion as a beneficial bacterial species for periodontal health from previous literature. Species-level identification not confirmed in this study (genus Abiotrophia was identified)."
+          }
+        ],
+        "extraction_metadata": {
+          "total_bacteria_found": 19,
+          "completeness_assessment": "partial",
+          "potential_missing_data": "The paper states 16 genera were associated with ROU (p-FDR < 0.20), with 5 positively and 11 inversely associated. Only 5 positively associated genera are explicitly named (Leptotrichia, Actinomyces, Atopobium, TM7x, Corynebacterium). Of the 11 inversely associated genera, only approximately 7 are explicitly named (Wolinella, Olsenella, Abiotrophia, unclassified Muribaculaceae, Streptobacillus, Rikenellaceae RC9 gut group, Peptococcus). Bergeyella is mentioned but direction unclear. Approximately 3-4 genera from the 16 total are not explicitly named in the available text - they may be visible in Figure 2C heatmap which is not fully accessible.",
+          "contradictions_found": [],
+          "limitations": [
+            "Cross-sectional design precludes causal inference",
+            "16S rRNA gene sequencing lacks species-level resolution",
+            "FDR threshold of p < 0.20 is relatively liberal",
+            "Exact relative abundance values and effect sizes for individual genera not provided in text",
+            "Figure 2C heatmap contains full list of 16 genera but individual genus names not all extractable from text alone",
+            "Some genera mentioned only in supplementary tables (S7-S9) which are not fully available",
+            "Dietary data based on self-reported food frequency questionnaire with potential recall bias",
+            "Streptococcus salivarius and Capnocytophaga sputigena cited from prior literature, not from this study's results"
+          ]
+        }
+      },
+      "230": {
+        "study_type": "other",
+        "study_design": "Cross-sectional study characterizing aerosol particles and bioaerosol microbiota sources during dental procedures in an open-concept dental clinic. Bayesian source tracking (SourceTracker2) was used to estimate contribution of patient nasal and salivary fluids to operator bioaerosol exposure.",
+        "primary_disease": null,
+        "related_conditions": [
+          "COVID-19",
+          "SARS-CoV-2 transmission risk",
+          "cross-infection in dental settings"
+        ],
+        "sample_size": "184 samples from 51 dental procedures (51 personal samplers, 51 nasal swabs, 51 saliva samples, 11 preprocedural air samples, 20 corridor samplers)",
+        "statistical_methods": "Shapiro-Wilk normality test, Kruskal-Wallis nonparametric test, Pearson correlation, ANOSIM of Jaccard and Bray-Curtis indices, ANOVA with Tukey post-hoc HSD, Bayesian modeling (SourceTracker2), DADA2 for ASV bias correction, SILVA138 classifier for species assignment, LoopSeq full-length 16S rDNA sequencing",
+        "bacteria_relationships": [],
+        "extraction_metadata": {
+          "total_bacteria_found": 0,
+          "completeness_assessment": "complete",
+          "potential_missing_data": "The paper does not report specific bacterial taxa with directional changes (increased/decreased). It reports 545 phylotypes condensed from 3,902 ASVs, 219 of which were identifiable through the Human Oral Microbiome Database (HOMD), but no individual bacterial names or changes are listed. The study focused on source tracking (what percentage of bioaerosol comes from patient saliva, nasal fluids, ambient air, or unknown sources) rather than characterizing specific microbial taxa or disease-associated changes. Staphylococcus aureus is mentioned only in the context of a nasal swab validation method, not as a finding.",
+          "contradictions_found": [],
+          "limitations": [
+            "This is not a disease characterization or treatment study - it is an environmental/occupational exposure study of dental bioaerosols",
+            "No specific bacterial taxa are reported with directional changes (increased/decreased)",
+            "The study reports community-level differences (ANOSIM) between sample types but does not list individual taxa",
+            "Detailed taxonomic data may exist in supplemental materials not provided",
+            "13 of 64 personal samplers were excluded due to technical issues",
+            "All personal samplers from tooth preparation without rubber dam were excluded due to lab errors"
+          ]
+        }
+      },
+      "52": {
+        "error": "JSON parse failed",
+        "raw": "```json\n{\n  \"study_type\": \"disease_characterization\",\n  \"study_design\": \"Retrospective cross-sectional study comparing microbial profiles of SARS-CoV-2 positive (n=101) and negative (n=102) nasopharyngeal/oral swab samples using Lawrence Livermore Microbial Detection Array (LLMDA) and 16S rRNA sequencing\",\n  \"primary_disease\": \"COVID-19 (SARS-CoV-2 infection)\",\n  \"related_conditions\": [\"co-infections\", \"secondary infections\", \"respiratory infections\"],\n  \"sample_size\": \"203 (101 SARS-CoV-2 posit"
+      },
+      "1529": {
+        "study_type": "treatment_intervention",
+        "study_design": "Four-group mouse model: Control (Con), Rifaximin only (Rif), Influenza A virus infection only (Flu), and Rifaximin + Influenza A virus (Rif+Flu). BALB/c mice infected with H1N1 IAV with or without rifaximin supplementation (50 mg/kg). Fecal microbiota analyzed at day 4 post-infection via 16S rRNA V3-V4 sequencing and targeted metabolomics.",
+        "primary_disease": "Influenza A virus (H1N1) infection",
+        "related_conditions": [
+          "lung barrier injury",
+          "gut dysbiosis",
+          "intestinal barrier damage",
+          "gut-lung axis dysfunction"
+        ],
+        "sample_size": "48 BALB/c mice total, 12 per group; n=4 per group for 16S rRNA sequencing at day 4",
+        "statistical_methods": "One-way ANOVA using SPSS 25.0, Kolmogorov-Smirnov test for normality, LEfSe analysis for differential bacterial abundance, Wilcoxon test, PERMANOVA for beta-diversity, PICRUSt for functional prediction",
+        "bacteria_relationships": [
+          {
+            "taxon_name": "Firmicutes",
+            "taxonomic_level": "phylum",
+            "direction": "decreased",
+            "change_context": "treatment_effect",
+            "quantitative_data": {
+              "disease_group": "Con: 51.91%, Rif+Flu: 59.77%, Flu: 59.07%",
+              "control_group": "Rif: 38.92%",
+              "fold_change": null,
+              "p_value": "0.012-0.029",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section, Figure 3c",
+            "confidence": "high",
+            "notes": "Rif group had significantly lower Firmicutes compared to Con, Rif+Flu, and Flu groups. No significant difference between Con and Flu groups for this phylum."
+          },
+          {
+            "taxon_name": "Bacteroidetes",
+            "taxonomic_level": "phylum",
+            "direction": "increased",
+            "change_context": "treatment_effect",
+            "quantitative_data": {
+              "disease_group": "Con: 38.16%, Rif+Flu: 33.45%, Flu: 35.16%",
+              "control_group": "Rif: 53.66%",
+              "fold_change": null,
+              "p_value": "0.004-0.022",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section, Figure 3d",
+            "confidence": "high",
+            "notes": "Rif group had significantly higher Bacteroidetes compared to Con, Rif+Flu, and Flu groups."
+          },
+          {
+            "taxon_name": "Proteobacteria",
+            "taxonomic_level": "phylum",
+            "direction": "unchanged",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "Flu: 1.59%",
+              "control_group": "Con: 3.05%, Rif+Flu: 3.88%, Rif: 3.57%",
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_significant"
+            },
+            "location_in_paper": "Results section, Figure 3e",
+            "confidence": "high",
+            "notes": "No notable distinction observed among the four groups."
+          },
+          {
+            "taxon_name": "Patescibacteria",
+            "taxonomic_level": "phylum",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "Rif+Flu: 0.80%, Flu: 1.52%",
+              "control_group": "Con: 3.46%",
+              "fold_change": null,
+              "p_value": "0.003-0.014",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section, Figure 3f",
+            "confidence": "high",
+            "notes": "Patescibacteria was significantly lower in Rif+Flu and Flu groups compared to Con group."
+          },
+          {
+            "taxon_name": "Actinobacteria",
+            "taxonomic_level": "phylum",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "Rif+Flu group (lower)",
+              "control_group": "Con and Rif groups (higher)",
+              "fold_change": null,
+              "p_value": "0.001-0.002",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section, Figure 3g",
+            "confidence": "high",
+            "notes": "Actinobacteria was higher in Rif and Con groups compared to Rif+Flu group."
+          },
+          {
+            "taxon_name": "Epsilonbacteraeota",
+            "taxonomic_level": "phylum",
+            "direction": "unclear",
+            "change_context": "other",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_reported"
+            },
+            "location_in_paper": "Results section, Figure 3a-b",
+            "confidence": "low",
+            "notes": "Mentioned as making up a smaller percentage; no specific quantitative data or significance testing reported."
+          },
+          {
+            "taxon_name": "Cyanobacteria",
+            "taxonomic_level": "phylum",
+            "direction": "unclear",
+            "change_context": "other",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_reported"
+            },
+            "location_in_paper": "Results section, Figure 3a-b",
+            "confidence": "low",
+            "notes": "Mentioned as making up a smaller percentage; no specific quantitative data or significance testing reported."
+          },
+          {
+            "taxon_name": "Lactobacillus",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "Flu: 21.63%",
+              "control_group": "Con: 11.88%, Rif+Flu: 6.17%, Rif: 17.77%",
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_reported"
+            },
+            "location_in_paper": "Results section, Figure 4a-b",
+            "confidence": "medium",
+            "notes": "Dominant genus; Flu group had highest abundance. No specific statistical test reported for this comparison in the text."
+          },
+          {
+            "taxon_name": "Lachnospiraceae_NK4A136_group",
+            "taxonomic_level": "genus",
+            "direction": "unclear",
+            "change_context": "other",
+            "quantitative_data": {
+              "disease_group": "Flu: 6.79%",
+              "control_group": "Con: 9.86%, Rif+Flu: 14.81%, Rif: 1.80%",
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_reported"
+            },
+            "location_in_paper": "Results section, Figure 4a-b",
+            "confidence": "medium",
+            "notes": "Dominant genus listed; Rif+Flu had highest abundance, Rif had lowest. No specific statistical test reported."
+          },
+          {
+            "taxon_name": "Ruminococcaceae_UCG-013",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "Flu group (lower)",
+              "control_group": "Con group (higher)",
+              "fold_change": null,
+              "p_value": "0.02 (LEfSe); 0.03 (Wilcoxon)",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section, Figure 4c, Abstract",
+            "confidence": "high",
+            "notes": "LEfSe LDA score = 4.3. Described as a probiotic in the abstract. Significantly reduced in Flu group compared to Con group."
+          },
+          {
+            "taxon_name": "Lachnoclostridium",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "Flu group (lower)",
+              "control_group": "Con group (higher)",
+              "fold_change": null,
+              "p_value": "0.02 (LEfSe); 0.03 (Wilcoxon)",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section, Figure 4c, Abstract",
+            "confidence": "high",
+            "notes": "LEfSe LDA score = 3.59. Described as a probiotic in the abstract. Significantly reduced in Flu group compared to Con group."
+          },
+          {
+            "taxon_name": "Leucobacter",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "Flu group (lower)",
+              "control_group": "Con group (higher)",
+              "fold_change": null,
+              "p_value": "0.02 (LEfSe)",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section, Figure 4c",
+            "confidence": "high",
+            "notes": "LEfSe LDA score = 3.08. Significantly reduced in Flu group compared to Con group."
+          },
+          {
+            "taxon_name": "Candidatus_Saccharimonas",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "Flu group (lower)",
+              "control_group": "Con group (higher)",
+              "fold_change": null,
+              "p_value": "0.02 (LEfSe); 0.03 (Wilcoxon)",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section, Figure 4c",
+            "confidence": "high",
+            "notes": "LEfSe LDA score = 4.00. Significantly reduced in Flu group compared to Con group."
+          },
+          {
+            "taxon_name": "Caproiciproducens",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "Flu group (higher)",
+              "control_group": "Con group (lower)",
+              "fold_change": null,
+              "p_value": "0.02 (LEfSe)",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section, Figure 4c",
+            "confidence": "high",
+            "notes": "LEfSe LDA score = 3.12. Dominant in Flu group compared to Con group."
+          },
+          {
+            "taxon_name": "Mucispirillum",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "Flu group (higher)",
+              "control_group": "Con group (lower)",
+              "fold_change": null,
+              "p_value": "0.02 (LEfSe)",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section, Figure 4c",
+            "confidence": "high",
+            "notes": "LEfSe LDA score = 2.97. Dominant in Flu group compared to Con group."
+          },
+          {
+            "taxon_name": "Muribaculum",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "treatment_effect",
+            "quantitative_data": {
+              "disease_group": "Flu group (lower)",
+              "control_group": "Rif+Flu group (higher)",
+              "fold_change": null,
+              "p_value": "0.003",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section, Figure 4d, Abstract",
+            "confidence": "high",
+            "notes": "Increased in Rif+Flu group compared to Flu group. Associated with better response to immunotherapy and tryptophan metabolism per discussion."
+          },
+          {
+            "taxon_name": "Erysipelatoclostridium",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "treatment_effect",
+            "quantitative_data": {
+              "disease_group": "Flu group (lower)",
+              "control_group": "Rif+Flu group (higher)",
+              "fold_change": null,
+              "p_value": "0.003",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section, Figure 4d",
+            "confidence": "high",
+            "notes": "Increased in Rif+Flu group compared to Flu group."
+          },
+          {
+            "taxon_name": "Papillibacter",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "treatment_effect",
+            "quantitative_data": {
+              "disease_group": "Flu group (lower)",
+              "control_group": "Rif+Flu group (higher)",
+              "fold_change": null,
+              "p_value": "0.003",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results section, Figure 4d, Abstract",
+            "confidence": "high",
+            "notes": "Increased in Rif+Flu group compared to Flu group."
+          }
+        ],
+        "extraction_metadata": {
+          "total_bacteria_found": 19,
+          "completeness_assessment": "partial",
+          "potential_missing_data": "Figures 3a-b and 4a-b show top 10 phyla and genera respectively in heatmaps and bar charts, but only a subset are discussed with statistical significance in the text. Additional genera and phyla visible in figures may not be fully extracted. Supplementary figures S2c and S2d contain additional LEfSe results that are referenced but not fully detailed in the main text.",
+          "contradictions_found": [
+            "The abstract states rifaximin reversed the reduction of Lachnoclostridium and Ruminococcaceae_UCG-013, but the results section only shows these were decreased in Flu vs Con - the Rif+Flu group comparison for these specific genera is not explicitly reported with statistics in the results.",
+            "Discussion mentions Bacteroides reduction in small intestine from prior H5N1 study and Lactobacillus increase, which is consistent with their Flu group data but the context differs (H5N1 vs H1N1)."
+          ],
+          "limitations": [
+            "Small sample size for 16S sequencing (n=4 per group)",
+            "No multiple comparison correction explicitly mentioned beyond one-way ANOVA",
+            "Supplementary figures contain additional data not fully accessible from the text",
+            "Some quantitative values for genus-level comparisons are not provided as exact percentages for all groups",
+            "The paper does not clearly distinguish which genera changes in Rif+Flu vs Flu represent reversal of disease effect vs novel rifaximin effect"
+          ]
+        }
+      }
+    },
+    "GPT-5.2": {
+      "1320": {
+        "error": "[GPT-5.2] All 3 attempts failed. Last: Invalid header value b'Bearer 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\\n'"
+      },
+      "230": {
+        "error": "[GPT-5.2] All 3 attempts failed. Last: Invalid header value b'Bearer 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\\n'"
+      },
+      "52": {
+        "error": "[GPT-5.2] All 3 attempts failed. Last: Invalid header value b'Bearer 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\\n'"
+      },
+      "1529": {
+        "error": "[GPT-5.2] All 3 attempts failed. Last: Invalid header value b'Bearer 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\\n'"
+      }
+    },
+    "Gemini 3 Pro": {
+      "1320": {
+        "study_type": "observational",
+        "study_design": "Cross-sectional study of community-based participants comparing those with Recurrent Oral Ulcer (ROU) to those without, analyzing saliva microbiota and dietary factors.",
+        "primary_disease": "Recurrent Oral Ulcer (ROU)",
+        "related_conditions": [
+          "Oral health",
+          "Systemic infection"
+        ],
+        "sample_size": "579 (337 with ROU, 242 without)",
+        "statistical_methods": "Wilcoxon rank sum test, Chi-squared test, Logistic regression, MaAsLin (Multivariate Association with Linear Models), ANCOM-BC, Mediation analysis, Benjamini\u2013Hochberg FDR correction (p-FDR < 0.20).",
+        "bacteria_relationships": [
+          {
+            "taxon_name": "Observed ASVs",
+            "taxonomic_level": "species",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": "< 0.05",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Abstract, Results 3.3",
+            "confidence": "high",
+            "notes": "Alpha diversity metric (richness)"
+          },
+          {
+            "taxon_name": "Fusobacteria",
+            "taxonomic_level": "phylum",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results 3.3",
+            "confidence": "medium",
+            "notes": "Genera positively associated mainly belonged to this phylum"
+          },
+          {
+            "taxon_name": "Actinobacteria",
+            "taxonomic_level": "phylum",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results 3.3",
+            "confidence": "medium",
+            "notes": "Genera positively associated mainly belonged to this phylum"
+          },
+          {
+            "taxon_name": "Firmicutes",
+            "taxonomic_level": "phylum",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Discussion",
+            "confidence": "medium",
+            "notes": "Genera negatively correlated primarily belonged to this phylum"
+          },
+          {
+            "taxon_name": "Leptotrichia",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results 3.3, Discussion",
+            "confidence": "high",
+            "notes": "Positively associated with ROU"
+          },
+          {
+            "taxon_name": "Actinomyces",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results 3.3, Discussion",
+            "confidence": "high",
+            "notes": "Positively associated with ROU"
+          },
+          {
+            "taxon_name": "Atopobium",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results 3.3, Methods 2.5, Discussion",
+            "confidence": "high",
+            "notes": "Positively correlated with ROU"
+          },
+          {
+            "taxon_name": "TM7x",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Abstract, Results 3.3, Methods 2.5, Discussion",
+            "confidence": "high",
+            "notes": "Positively correlated with ROU; identified as mediator"
+          },
+          {
+            "taxon_name": "Corynebacterium",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Discussion",
+            "confidence": "medium",
+            "notes": "Listed in discussion as positively associated with ROU in this study"
+          },
+          {
+            "taxon_name": "Wolinella",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results 3.3",
+            "confidence": "high",
+            "notes": "Inversely associated with ROU"
+          },
+          {
+            "taxon_name": "Olsenella",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Abstract, Results 3.3, Methods 2.5",
+            "confidence": "high",
+            "notes": "Inversely associated with ROU; identified as mediator"
+          },
+          {
+            "taxon_name": "Abiotrophia",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results 3.3, Methods 2.5",
+            "confidence": "high",
+            "notes": "Inversely associated with ROU"
+          },
+          {
+            "taxon_name": "unclassified Muribaculaceae",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Abstract, Methods 2.5",
+            "confidence": "high",
+            "notes": "Inversely correlated with ROU; identified as mediator"
+          },
+          {
+            "taxon_name": "Peptococcus",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Discussion",
+            "confidence": "medium",
+            "notes": "Mentioned in discussion as one of the genera inversely correlated with oral ulcers in this study"
+          },
+          {
+            "taxon_name": "Streptobacillu",
+            "taxonomic_level": "genus",
+            "direction": "unclear",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results 3.4",
+            "confidence": "medium",
+            "notes": "Identified as an ROU-associated genus (one of the 16), but specific direction relative to ROU not explicitly stated in text (only its relationship to diet is detailed). Likely decreased based on grouping with Wolinella/Olsenella in diet analysis."
+          },
+          {
+            "taxon_name": "Rikenellaceae RC9 gut group",
+            "taxonomic_level": "genus",
+            "direction": "unclear",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results 3.4",
+            "confidence": "medium",
+            "notes": "Identified as an ROU-associated genus (one of the 16), but specific direction relative to ROU not explicitly stated in text."
+          },
+          {
+            "taxon_name": "Bergeyella",
+            "taxonomic_level": "genus",
+            "direction": "unclear",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results 3.4",
+            "confidence": "medium",
+            "notes": "Identified as an ROU-associated genus (one of the 16), but specific direction relative to ROU not explicitly stated in text."
+          }
+        ],
+        "extraction_metadata": {
+          "total_bacteria_found": 17,
+          "completeness_assessment": "partial",
+          "potential_missing_data": "Paper states 16 genera were associated with ROU. We extracted 13 specific genera (Leptotrichia, Actinomyces, Atopobium, TM7x, Corynebacterium, Wolinella, Olsenella, Abiotrophia, unclassified Muribaculaceae, Peptococcus, Streptobacillu, Rikenellaceae RC9 gut group, Bergeyella). 3 genera are missing from the text provided.",
+          "contradictions_found": [],
+          "limitations": [
+            "Some bacteria (Streptobacillu, Rikenellaceae RC9 gut group, Bergeyella) are identified as ROU-associated in the text, but their specific direction (increased/decreased) is not explicitly stated, only their relationship to diet.",
+            "Streptobacillu appears to be a typo for Streptobacillus."
+          ]
+        }
+      },
+      "230": {
+        "study_type": "observational",
+        "study_design": "Cross-sectional study characterizing particle size, concentration, and microbial source tracking (nasal vs. salivary) in dental aerosols during 7 different procedures in an open-concept clinic",
+        "primary_disease": null,
+        "related_conditions": [
+          "Occupational bioaerosol exposure",
+          "COVID-19"
+        ],
+        "sample_size": "184 samples (51 personal samplers, 51 nasal swabs, 51 saliva samples, 11 preprocedural air samples, 20 corridor samplers)",
+        "statistical_methods": "Shapiro\u2013Wilk normality test, Kruskal\u2013Wallis test, Pearson correlation, Bayesian modeling (SourceTracker2), ANOSIM (Jaccard and Bray\u2013Curtis indices), ANOVA with Tukey post-hoc HSD",
+        "bacteria_relationships": [],
+        "extraction_metadata": {
+          "total_bacteria_found": 0,
+          "completeness_assessment": "complete",
+          "potential_missing_data": "The paper analyzes the microbiome using 16S rDNA sequencing and mentions identifying 545 phylotypes and 219 identifiable through HOMD, but it does not list specific bacterial taxon names (genera or species) in the provided text. It focuses entirely on particle sizes and the percentage of reads attributed to specific sources (nasal vs. saliva vs. ambient).",
+          "contradictions_found": [],
+          "limitations": [
+            "No specific bacterial taxa were named in the Results or Discussion sections.",
+            "Staphylococcus aureus was mentioned in the Methods section only to validate the nasal swab sampling technique, not as a study result."
+          ]
+        }
+      },
+      "52": {
+        "error": "JSON parse failed",
+        "raw": "{\n  \"study_type\": \"disease_characterization\",\n  \"study_design\": \"Retrospective comparative study of residual nasopharyngeal and oral swab samples using microarray (LLMDA) and 16S rRNA sequencing\",\n  \"primary_disease\": \"COVID-19\",\n  \"related_conditions\": [\n    \"SARS-CoV-2 infection\",\n    \"Respiratory co-infections\"\n  ],\n  \"sample_size\": \"203\",\n  \"statistical_methods\": \"Prevalence significance testing using prop.test with Benjamini-Hochberg adjustment (LLMDA); Welch\u2019s two sample t-test for alpha d"
+      },
+      "1529": {
+        "study_type": "treatment_intervention",
+        "study_design": "Animal model (BALB/c mice) of Influenza A Virus (H1N1) infection with and without Rifaximin supplementation. Groups: Control (Con), Rifaximin+Flu (Rif+Flu), Rifaximin only (Rif), Flu only (Flu).",
+        "primary_disease": "Influenza A Virus (H1N1) infection",
+        "related_conditions": [
+          "Lung barrier injury",
+          "Gut dysbiosis",
+          "Intestinal barrier damage"
+        ],
+        "sample_size": "48 mice total (n=4 per group for 16S rRNA sequencing)",
+        "statistical_methods": "Kolmogorov\u2013Smirnov test for normality, one-way ANOVA for multiple groups, LEfSe analysis for biomarkers (LDA scores), Wilcoxon rank-sum test.",
+        "bacteria_relationships": [
+          {
+            "taxon_name": "Firmicutes",
+            "taxonomic_level": "phylum",
+            "direction": "unchanged",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "59.07%",
+              "control_group": "51.91%",
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_significant"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the phylum level",
+            "confidence": "medium",
+            "notes": "Text states Rif group was significantly lower, but does not note distinction between Flu and Con."
+          },
+          {
+            "taxon_name": "Bacteroidetes",
+            "taxonomic_level": "phylum",
+            "direction": "unchanged",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "35.16%",
+              "control_group": "38.16%",
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_significant"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the phylum level",
+            "confidence": "medium",
+            "notes": "Text states Rif group was significantly higher, but does not note distinction between Flu and Con."
+          },
+          {
+            "taxon_name": "Proteobacteria",
+            "taxonomic_level": "phylum",
+            "direction": "unchanged",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "1.59%",
+              "control_group": "3.05%",
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_significant"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the phylum level",
+            "confidence": "high",
+            "notes": "Text explicitly states 'no notable distinction observed among the four groups'."
+          },
+          {
+            "taxon_name": "Patescibacteria",
+            "taxonomic_level": "phylum",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "1.52%",
+              "control_group": "3.46%",
+              "fold_change": null,
+              "p_value": "0.003\u20130.014",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the phylum level",
+            "confidence": "high",
+            "notes": "Text states abundance was higher in Flu group compared to Con group. (Note: Percentages listed in text [Con 3.46%, Flu 1.52%] seem to contradict the text statement 'higher in... Flu group compared to the Con group'. Text statement of significance is prioritized over raw percentages which might be swapped in text description)."
+          },
+          {
+            "taxon_name": "Actinobacteria",
+            "taxonomic_level": "phylum",
+            "direction": "unchanged",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_reported"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the phylum level",
+            "confidence": "medium",
+            "notes": "Significant differences mentioned for Rif and Con vs Rif+Flu, but not explicitly for Flu vs Con."
+          },
+          {
+            "taxon_name": "Lactobacillus",
+            "taxonomic_level": "genus",
+            "direction": "unclear",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "21.63%",
+              "control_group": "11.88%",
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_reported"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the genus level",
+            "confidence": "low",
+            "notes": "Listed as dominant bacteria with percentages showing increase, but NOT listed in the LEfSe significant difference section. Discussion mentions previous studies found it increased."
+          },
+          {
+            "taxon_name": "Lachnospiraceae_NK4A136_group",
+            "taxonomic_level": "genus",
+            "direction": "unclear",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": "6.79%",
+              "control_group": "9.86%",
+              "fold_change": null,
+              "p_value": null,
+              "statistical_significance": "not_reported"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the genus level",
+            "confidence": "low",
+            "notes": "Listed as dominant bacteria with percentages, but not listed in the LEfSe significant difference section."
+          },
+          {
+            "taxon_name": "Caproiciproducens",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": "0.02",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the genus level",
+            "confidence": "high",
+            "notes": "LDA score = 3.12. Dominant in Flu group."
+          },
+          {
+            "taxon_name": "Mucispirillum",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": "0.02",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the genus level",
+            "confidence": "high",
+            "notes": "LDA score = 2.97. Dominant in Flu group."
+          },
+          {
+            "taxon_name": "Ruminococcaceae_UCG-013",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": "0.02",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the genus level",
+            "confidence": "high",
+            "notes": "LDA score = 4.3. Higher in Con group. Also mentioned in Abstract."
+          },
+          {
+            "taxon_name": "Lachnoclostridium",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": "0.02",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the genus level",
+            "confidence": "high",
+            "notes": "LDA score = 3.59. Higher in Con group. Also mentioned in Abstract."
+          },
+          {
+            "taxon_name": "Leucobacter",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": "0.02",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the genus level",
+            "confidence": "high",
+            "notes": "LDA score = 3.08. Higher in Con group."
+          },
+          {
+            "taxon_name": "Candidatus_Saccharimonas",
+            "taxonomic_level": "genus",
+            "direction": "decreased",
+            "change_context": "disease_vs_control",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": "0.02",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the genus level",
+            "confidence": "high",
+            "notes": "LDA score = 4.00. Higher in Con group."
+          },
+          {
+            "taxon_name": "Muribaculum",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "treatment_effect",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": "0.003",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the genus level",
+            "confidence": "high",
+            "notes": "Higher in Rif+Flu group compared to Flu group."
+          },
+          {
+            "taxon_name": "Erysipelatoclostridium",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "treatment_effect",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": "0.003",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the genus level",
+            "confidence": "high",
+            "notes": "Higher in Rif+Flu group compared to Flu group."
+          },
+          {
+            "taxon_name": "Papillibacter",
+            "taxonomic_level": "genus",
+            "direction": "increased",
+            "change_context": "treatment_effect",
+            "quantitative_data": {
+              "disease_group": null,
+              "control_group": null,
+              "fold_change": null,
+              "p_value": "0.003",
+              "statistical_significance": "significant"
+            },
+            "location_in_paper": "Results - Abundance and significant difference between four groups at the genus level",
+            "confidence": "high",
+            "notes": "Higher in Rif+Flu group compared to Flu group."
+          }
+        ],
+        "extraction_metadata": {
+          "total_bacteria_found": 16,
+          "completeness_assessment": "complete",
+          "potential_missing_data": "Epsilonbacteraeota and Cyanobacteria mentioned as present but no change data provided.",
+          "contradictions_found": [
+            "Text states Patescibacteria abundance was higher in Flu group compared to Con group, but the percentages listed (Con: 3.46%, Flu: 1.52%) suggest the opposite. The text claim of significance (p=0.003-0.014) was prioritized over the raw percentages which may be typos."
+          ],
+          "limitations": [
+            "Sample size for microbiome analysis was small (n=4)."
+          ]
+        }
+      }
+    },
+    "Kimi K2.5": {
+      "1320": {
+        "error": "[Kimi K2.5] All 3 attempts failed. Last: 429 Client Error: Too Many Requests for url: https://api.moonshot.ai/v1/chat/completions"
+      },
+      "230": {
+        "error": "[Kimi K2.5] All 3 attempts failed. Last: 429 Client Error: Too Many Requests for url: https://api.moonshot.ai/v1/chat/completions"
+      },
+      "52": {
+        "error": "[Kimi K2.5] All 3 attempts failed. Last: 429 Client Error: Too Many Requests for url: https://api.moonshot.ai/v1/chat/completions"
+      },
+      "1529": {
+        "error": "[Kimi K2.5] All 3 attempts failed. Last: 429 Client Error: Too Many Requests for url: https://api.moonshot.ai/v1/chat/completions"
+      }
+    }
+  }
+}

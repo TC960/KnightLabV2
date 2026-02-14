@@ -1,0 +1,8 @@
+2025-09-05 18:01:48,009 - INFO - Text cleaning session started: 20250905_180148
+2025-09-05 18:01:48,009 - INFO - Configuration: CleaningConfig(model_name='meta-llama/Meta-Llama-3-8B-Instruct', max_chunk_length=2048, batch_size=4, max_memory_gb=8.0, device='auto', quantization=True, quantization_type='4bit', temperature=0.1, max_new_tokens=1024, num_threads=2, checkpoint_interval=10)
+2025-09-05 18:01:48,009 - INFO - Loading Llama3 model: meta-llama/Meta-Llama-3-8B-Instruct
+2025-09-05 18:01:48,009 - INFO - Authenticating with HuggingFace using token from .env file
+2025-09-05 18:01:48,153 - INFO - Successfully authenticated with HuggingFace
+2025-09-05 18:01:48,154 - INFO - Using q4km (4-bit quantization with mixed precision)
+2025-09-05 18:01:48,350 - ERROR - Error loading model: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.

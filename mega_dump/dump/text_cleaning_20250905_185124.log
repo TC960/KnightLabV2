@@ -1,0 +1,535 @@
+2025-09-05 18:51:24,111 - INFO - Text cleaning session started: 20250905_185124
+2025-09-05 18:51:24,111 - INFO - Configuration: CleaningConfig(model_name='meta-llama/Meta-Llama-3-8B-Instruct', max_chunk_length=2048, batch_size=4, max_memory_gb=8.0, device='auto', quantization=True, quantization_type='4bit', temperature=0.1, max_new_tokens=1024, num_threads=2, checkpoint_interval=10)
+2025-09-05 18:51:24,111 - INFO - Loading cached model: meta-llama/Meta-Llama-3-8B-Instruct
+2025-09-05 18:51:24,111 - INFO - Using device: cpu
+2025-09-05 18:51:24,111 - INFO - Loading tokenizer from cache...
+2025-09-05 18:51:25,012 - INFO - Loading model from cache with 4-bit quantization...
+2025-09-05 18:51:25,161 - WARNING - Failed to load cached model: The installed version of bitsandbytes (<0.43.1) requires CUDA, but CUDA is not available. You may need to install PyTorch with CUDA support or upgrade bitsandbytes to >=0.43.1.
+2025-09-05 18:51:25,161 - INFO - Model will be set to None - using fallback text cleaning only
+2025-09-05 18:51:25,180 - INFO - Loading input file: proj_2/research_content_cleaned_20250824_222305.json
+2025-09-05 18:51:25,902 - INFO - Total articles to process: 2026
+2025-09-05 18:51:25,917 - INFO - Processing article 1 with 117 chunks
+2025-09-05 18:51:25,917 - INFO - No model available, using fallback cleaning for article 1
+2025-09-05 18:51:25,920 - INFO - Processing article 2 with 32 chunks
+2025-09-05 18:51:25,920 - INFO - No model available, using fallback cleaning for article 2
+2025-09-05 18:51:25,921 - INFO - Processing article 3 with 4 chunks
+2025-09-05 18:51:25,921 - INFO - No model available, using fallback cleaning for article 3
+2025-09-05 18:51:25,921 - INFO - Processing article 4 with 112 chunks
+2025-09-05 18:51:25,921 - INFO - No model available, using fallback cleaning for article 4
+2025-09-05 18:51:25,923 - INFO - Processing article 5 with 143 chunks
+2025-09-05 18:51:25,923 - INFO - No model available, using fallback cleaning for article 5
+2025-09-05 18:51:25,998 - INFO - Processing article 6 with 141 chunks
+2025-09-05 18:51:25,998 - INFO - No model available, using fallback cleaning for article 6
+2025-09-05 18:51:26,001 - INFO - Processing article 7 with 129 chunks
+2025-09-05 18:51:26,001 - INFO - No model available, using fallback cleaning for article 7
+2025-09-05 18:51:26,003 - INFO - Processing article 8 with 4 chunks
+2025-09-05 18:51:26,003 - INFO - No model available, using fallback cleaning for article 8
+2025-09-05 18:51:26,003 - INFO - Processing article 9 with 164 chunks
+2025-09-05 18:51:26,003 - INFO - No model available, using fallback cleaning for article 9
+2025-09-05 18:51:26,006 - INFO - Processing article 10 with 149 chunks
+2025-09-05 18:51:26,006 - INFO - No model available, using fallback cleaning for article 10
+2025-09-05 18:51:26,011 - INFO - Checkpoint saved: 10 articles processed
+2025-09-05 18:51:26,069 - INFO - Processing article 11 with 138 chunks
+2025-09-05 18:51:26,069 - INFO - No model available, using fallback cleaning for article 11
+2025-09-05 18:51:26,072 - INFO - Processing article 12 with 156 chunks
+2025-09-05 18:51:26,072 - INFO - No model available, using fallback cleaning for article 12
+2025-09-05 18:51:26,074 - INFO - Processing article 13 with 6 chunks
+2025-09-05 18:51:26,074 - INFO - No model available, using fallback cleaning for article 13
+2025-09-05 18:51:26,074 - INFO - Processing article 14 with 163 chunks
+2025-09-05 18:51:26,074 - INFO - No model available, using fallback cleaning for article 14
+2025-09-05 18:51:26,077 - INFO - Processing article 15 with 151 chunks
+2025-09-05 18:51:26,077 - INFO - No model available, using fallback cleaning for article 15
+2025-09-05 18:51:26,136 - INFO - Processing article 16 with 142 chunks
+2025-09-05 18:51:26,136 - INFO - No model available, using fallback cleaning for article 16
+2025-09-05 18:51:26,139 - INFO - Processing article 17 with 168 chunks
+2025-09-05 18:51:26,139 - INFO - No model available, using fallback cleaning for article 17
+2025-09-05 18:51:26,141 - INFO - Processing article 18 with 162 chunks
+2025-09-05 18:51:26,141 - INFO - No model available, using fallback cleaning for article 18
+2025-09-05 18:51:26,144 - INFO - Processing article 19 with 4 chunks
+2025-09-05 18:51:26,144 - INFO - No model available, using fallback cleaning for article 19
+2025-09-05 18:51:26,144 - INFO - Processing article 20 with 324 chunks
+2025-09-05 18:51:26,144 - INFO - No model available, using fallback cleaning for article 20
+2025-09-05 18:51:26,153 - INFO - Checkpoint saved: 20 articles processed
+2025-09-05 18:51:26,216 - INFO - Processing article 21 with 144 chunks
+2025-09-05 18:51:26,216 - INFO - No model available, using fallback cleaning for article 21
+2025-09-05 18:51:26,218 - INFO - Processing article 22 with 4 chunks
+2025-09-05 18:51:26,218 - INFO - No model available, using fallback cleaning for article 22
+2025-09-05 18:51:26,219 - INFO - Processing article 23 with 138 chunks
+2025-09-05 18:51:26,219 - INFO - No model available, using fallback cleaning for article 23
+2025-09-05 18:51:26,221 - INFO - Processing article 24 with 79 chunks
+2025-09-05 18:51:26,221 - INFO - No model available, using fallback cleaning for article 24
+2025-09-05 18:51:26,222 - INFO - Processing article 25 with 86 chunks
+2025-09-05 18:51:26,222 - INFO - No model available, using fallback cleaning for article 25
+2025-09-05 18:51:26,280 - INFO - Processing article 26 with 131 chunks
+2025-09-05 18:51:26,281 - INFO - No model available, using fallback cleaning for article 26
+2025-09-05 18:51:26,283 - INFO - Processing article 27 with 56 chunks
+2025-09-05 18:51:26,283 - INFO - No model available, using fallback cleaning for article 27
+2025-09-05 18:51:26,284 - INFO - Processing article 28 with 5 chunks
+2025-09-05 18:51:26,284 - INFO - No model available, using fallback cleaning for article 28
+2025-09-05 18:51:26,284 - INFO - Processing article 29 with 108 chunks
+2025-09-05 18:51:26,284 - INFO - No model available, using fallback cleaning for article 29
+2025-09-05 18:51:26,285 - INFO - Processing article 30 with 118 chunks
+2025-09-05 18:51:26,285 - INFO - No model available, using fallback cleaning for article 30
+2025-09-05 18:51:26,293 - INFO - Checkpoint saved: 30 articles processed
+2025-09-05 18:51:26,352 - INFO - Processing article 31 with 125 chunks
+2025-09-05 18:51:26,352 - INFO - No model available, using fallback cleaning for article 31
+2025-09-05 18:51:26,354 - INFO - Processing article 32 with 106 chunks
+2025-09-05 18:51:26,354 - INFO - No model available, using fallback cleaning for article 32
+2025-09-05 18:51:26,356 - INFO - Processing article 33 with 131 chunks
+2025-09-05 18:51:26,356 - INFO - No model available, using fallback cleaning for article 33
+2025-09-05 18:51:26,358 - INFO - Processing article 34 with 110 chunks
+2025-09-05 18:51:26,359 - INFO - No model available, using fallback cleaning for article 34
+2025-09-05 18:51:26,360 - INFO - Processing article 35 with 117 chunks
+2025-09-05 18:51:26,360 - INFO - No model available, using fallback cleaning for article 35
+2025-09-05 18:51:26,418 - INFO - Processing article 36 with 210 chunks
+2025-09-05 18:51:26,418 - INFO - No model available, using fallback cleaning for article 36
+2025-09-05 18:51:26,421 - INFO - Processing article 37 with 110 chunks
+2025-09-05 18:51:26,421 - INFO - No model available, using fallback cleaning for article 37
+2025-09-05 18:51:26,423 - INFO - Processing article 38 with 154 chunks
+2025-09-05 18:51:26,423 - INFO - No model available, using fallback cleaning for article 38
+2025-09-05 18:51:26,426 - INFO - Processing article 39 with 127 chunks
+2025-09-05 18:51:26,426 - INFO - No model available, using fallback cleaning for article 39
+2025-09-05 18:51:26,428 - INFO - Processing article 40 with 5 chunks
+2025-09-05 18:51:26,428 - INFO - No model available, using fallback cleaning for article 40
+2025-09-05 18:51:26,434 - INFO - Checkpoint saved: 40 articles processed
+2025-09-05 18:51:26,493 - INFO - Processing article 41 with 203 chunks
+2025-09-05 18:51:26,493 - INFO - No model available, using fallback cleaning for article 41
+2025-09-05 18:51:26,497 - INFO - Processing article 42 with 78 chunks
+2025-09-05 18:51:26,497 - INFO - No model available, using fallback cleaning for article 42
+2025-09-05 18:51:26,498 - INFO - Processing article 43 with 213 chunks
+2025-09-05 18:51:26,498 - INFO - No model available, using fallback cleaning for article 43
+2025-09-05 18:51:26,502 - INFO - Processing article 44 with 4 chunks
+2025-09-05 18:51:26,502 - INFO - No model available, using fallback cleaning for article 44
+2025-09-05 18:51:26,502 - INFO - Processing article 45 with 102 chunks
+2025-09-05 18:51:26,502 - INFO - No model available, using fallback cleaning for article 45
+2025-09-05 18:51:26,563 - INFO - Processing article 46 with 131 chunks
+2025-09-05 18:51:26,563 - INFO - No model available, using fallback cleaning for article 46
+2025-09-05 18:51:26,565 - INFO - Processing article 47 with 121 chunks
+2025-09-05 18:51:26,565 - INFO - No model available, using fallback cleaning for article 47
+2025-09-05 18:51:26,567 - INFO - Processing article 48 with 141 chunks
+2025-09-05 18:51:26,567 - INFO - No model available, using fallback cleaning for article 48
+2025-09-05 18:51:26,569 - INFO - Processing article 49 with 90 chunks
+2025-09-05 18:51:26,569 - INFO - No model available, using fallback cleaning for article 49
+2025-09-05 18:51:26,571 - INFO - Processing article 50 with 110 chunks
+2025-09-05 18:51:26,571 - INFO - No model available, using fallback cleaning for article 50
+2025-09-05 18:51:26,581 - INFO - Checkpoint saved: 50 articles processed
+2025-09-05 18:51:26,640 - INFO - Processing article 51 with 165 chunks
+2025-09-05 18:51:26,640 - INFO - No model available, using fallback cleaning for article 51
+2025-09-05 18:51:26,643 - INFO - Processing article 52 with 133 chunks
+2025-09-05 18:51:26,643 - INFO - No model available, using fallback cleaning for article 52
+2025-09-05 18:51:26,646 - INFO - Processing article 53 with 5 chunks
+2025-09-05 18:51:26,646 - INFO - No model available, using fallback cleaning for article 53
+2025-09-05 18:51:26,646 - INFO - Processing article 54 with 107 chunks
+2025-09-05 18:51:26,646 - INFO - No model available, using fallback cleaning for article 54
+2025-09-05 18:51:26,647 - INFO - Processing article 55 with 129 chunks
+2025-09-05 18:51:26,647 - INFO - No model available, using fallback cleaning for article 55
+2025-09-05 18:51:26,705 - INFO - Processing article 56 with 168 chunks
+2025-09-05 18:51:26,705 - INFO - No model available, using fallback cleaning for article 56
+2025-09-05 18:51:26,708 - INFO - Processing article 57 with 5 chunks
+2025-09-05 18:51:26,708 - INFO - No model available, using fallback cleaning for article 57
+2025-09-05 18:51:26,708 - INFO - Processing article 58 with 120 chunks
+2025-09-05 18:51:26,708 - INFO - No model available, using fallback cleaning for article 58
+2025-09-05 18:51:26,710 - INFO - Processing article 59 with 204 chunks
+2025-09-05 18:51:26,710 - INFO - No model available, using fallback cleaning for article 59
+2025-09-05 18:51:26,713 - INFO - Processing article 60 with 138 chunks
+2025-09-05 18:51:26,713 - INFO - No model available, using fallback cleaning for article 60
+2025-09-05 18:51:26,724 - INFO - Checkpoint saved: 60 articles processed
+2025-09-05 18:51:26,781 - INFO - Processing article 61 with 190 chunks
+2025-09-05 18:51:26,781 - INFO - No model available, using fallback cleaning for article 61
+2025-09-05 18:51:26,785 - INFO - Processing article 62 with 158 chunks
+2025-09-05 18:51:26,785 - INFO - No model available, using fallback cleaning for article 62
+2025-09-05 18:51:26,787 - INFO - Processing article 63 with 93 chunks
+2025-09-05 18:51:26,787 - INFO - No model available, using fallback cleaning for article 63
+2025-09-05 18:51:26,789 - INFO - Processing article 64 with 45 chunks
+2025-09-05 18:51:26,789 - INFO - No model available, using fallback cleaning for article 64
+2025-09-05 18:51:26,790 - INFO - Processing article 65 with 134 chunks
+2025-09-05 18:51:26,790 - INFO - No model available, using fallback cleaning for article 65
+2025-09-05 18:51:26,847 - INFO - Processing article 66 with 186 chunks
+2025-09-05 18:51:26,848 - INFO - No model available, using fallback cleaning for article 66
+2025-09-05 18:51:26,851 - INFO - Processing article 67 with 4 chunks
+2025-09-05 18:51:26,851 - INFO - No model available, using fallback cleaning for article 67
+2025-09-05 18:51:26,851 - INFO - Processing article 68 with 5 chunks
+2025-09-05 18:51:26,851 - INFO - No model available, using fallback cleaning for article 68
+2025-09-05 18:51:26,851 - INFO - Processing article 69 with 99 chunks
+2025-09-05 18:51:26,851 - INFO - No model available, using fallback cleaning for article 69
+2025-09-05 18:51:26,853 - INFO - Processing article 70 with 213 chunks
+2025-09-05 18:51:26,853 - INFO - No model available, using fallback cleaning for article 70
+2025-09-05 18:51:26,866 - INFO - Checkpoint saved: 70 articles processed
+2025-09-05 18:51:26,926 - INFO - Processing article 71 with 218 chunks
+2025-09-05 18:51:26,926 - INFO - No model available, using fallback cleaning for article 71
+2025-09-05 18:51:26,929 - INFO - Processing article 72 with 128 chunks
+2025-09-05 18:51:26,929 - INFO - No model available, using fallback cleaning for article 72
+2025-09-05 18:51:26,931 - INFO - Processing article 73 with 126 chunks
+2025-09-05 18:51:26,931 - INFO - No model available, using fallback cleaning for article 73
+2025-09-05 18:51:26,933 - INFO - Processing article 74 with 217 chunks
+2025-09-05 18:51:26,933 - INFO - No model available, using fallback cleaning for article 74
+2025-09-05 18:51:26,937 - INFO - Processing article 75 with 170 chunks
+2025-09-05 18:51:26,937 - INFO - No model available, using fallback cleaning for article 75
+2025-09-05 18:51:26,998 - INFO - Processing article 76 with 270 chunks
+2025-09-05 18:51:26,998 - INFO - No model available, using fallback cleaning for article 76
+2025-09-05 18:51:27,002 - INFO - Processing article 77 with 175 chunks
+2025-09-05 18:51:27,002 - INFO - No model available, using fallback cleaning for article 77
+2025-09-05 18:51:27,005 - INFO - Processing article 78 with 124 chunks
+2025-09-05 18:51:27,005 - INFO - No model available, using fallback cleaning for article 78
+2025-09-05 18:51:27,007 - INFO - Processing article 79 with 5 chunks
+2025-09-05 18:51:27,007 - INFO - No model available, using fallback cleaning for article 79
+2025-09-05 18:51:27,007 - INFO - Processing article 80 with 224 chunks
+2025-09-05 18:51:27,007 - INFO - No model available, using fallback cleaning for article 80
+2025-09-05 18:51:27,023 - INFO - Checkpoint saved: 80 articles processed
+2025-09-05 18:51:27,081 - INFO - Processing article 81 with 153 chunks
+2025-09-05 18:51:27,081 - INFO - No model available, using fallback cleaning for article 81
+2025-09-05 18:51:27,084 - INFO - Processing article 82 with 156 chunks
+2025-09-05 18:51:27,084 - INFO - No model available, using fallback cleaning for article 82
+2025-09-05 18:51:27,086 - INFO - Processing article 83 with 127 chunks
+2025-09-05 18:51:27,086 - INFO - No model available, using fallback cleaning for article 83
+2025-09-05 18:51:27,088 - INFO - Processing article 84 with 134 chunks
+2025-09-05 18:51:27,088 - INFO - No model available, using fallback cleaning for article 84
+2025-09-05 18:51:27,091 - INFO - Processing article 85 with 93 chunks
+2025-09-05 18:51:27,091 - INFO - No model available, using fallback cleaning for article 85
+2025-09-05 18:51:27,147 - INFO - Processing article 86 with 121 chunks
+2025-09-05 18:51:27,147 - INFO - No model available, using fallback cleaning for article 86
+2025-09-05 18:51:27,149 - INFO - Processing article 87 with 148 chunks
+2025-09-05 18:51:27,149 - INFO - No model available, using fallback cleaning for article 87
+2025-09-05 18:51:27,152 - INFO - Processing article 88 with 160 chunks
+2025-09-05 18:51:27,152 - INFO - No model available, using fallback cleaning for article 88
+2025-09-05 18:51:27,154 - INFO - Processing article 89 with 101 chunks
+2025-09-05 18:51:27,154 - INFO - No model available, using fallback cleaning for article 89
+2025-09-05 18:51:27,156 - INFO - Processing article 90 with 85 chunks
+2025-09-05 18:51:27,156 - INFO - No model available, using fallback cleaning for article 90
+2025-09-05 18:51:27,172 - INFO - Checkpoint saved: 90 articles processed
+2025-09-05 18:51:27,230 - INFO - Processing article 91 with 154 chunks
+2025-09-05 18:51:27,230 - INFO - No model available, using fallback cleaning for article 91
+2025-09-05 18:51:27,232 - INFO - Processing article 92 with 256 chunks
+2025-09-05 18:51:27,232 - INFO - No model available, using fallback cleaning for article 92
+2025-09-05 18:51:27,237 - INFO - Processing article 93 with 6 chunks
+2025-09-05 18:51:27,237 - INFO - No model available, using fallback cleaning for article 93
+2025-09-05 18:51:27,237 - INFO - Processing article 94 with 149 chunks
+2025-09-05 18:51:27,237 - INFO - No model available, using fallback cleaning for article 94
+2025-09-05 18:51:27,239 - INFO - Processing article 95 with 4 chunks
+2025-09-05 18:51:27,239 - INFO - No model available, using fallback cleaning for article 95
+2025-09-05 18:51:27,294 - INFO - Processing article 96 with 151 chunks
+2025-09-05 18:51:27,294 - INFO - No model available, using fallback cleaning for article 96
+2025-09-05 18:51:27,297 - INFO - Processing article 97 with 119 chunks
+2025-09-05 18:51:27,297 - INFO - No model available, using fallback cleaning for article 97
+2025-09-05 18:51:27,299 - INFO - Processing article 98 with 103 chunks
+2025-09-05 18:51:27,299 - INFO - No model available, using fallback cleaning for article 98
+2025-09-05 18:51:27,300 - INFO - Processing article 99 with 111 chunks
+2025-09-05 18:51:27,300 - INFO - No model available, using fallback cleaning for article 99
+2025-09-05 18:51:27,302 - INFO - Processing article 100 with 113 chunks
+2025-09-05 18:51:27,302 - INFO - No model available, using fallback cleaning for article 100
+2025-09-05 18:51:27,320 - INFO - Checkpoint saved: 100 articles processed
+2025-09-05 18:51:27,377 - INFO - Processing article 101 with 96 chunks
+2025-09-05 18:51:27,377 - INFO - No model available, using fallback cleaning for article 101
+2025-09-05 18:51:27,379 - INFO - Processing article 102 with 212 chunks
+2025-09-05 18:51:27,379 - INFO - No model available, using fallback cleaning for article 102
+2025-09-05 18:51:27,382 - INFO - Processing article 103 with 140 chunks
+2025-09-05 18:51:27,382 - INFO - No model available, using fallback cleaning for article 103
+2025-09-05 18:51:27,384 - INFO - Processing article 104 with 52 chunks
+2025-09-05 18:51:27,384 - INFO - No model available, using fallback cleaning for article 104
+2025-09-05 18:51:27,385 - INFO - Processing article 105 with 51 chunks
+2025-09-05 18:51:27,385 - INFO - No model available, using fallback cleaning for article 105
+2025-09-05 18:51:27,439 - INFO - Processing article 106 with 178 chunks
+2025-09-05 18:51:27,439 - INFO - No model available, using fallback cleaning for article 106
+2025-09-05 18:51:27,442 - INFO - Processing article 107 with 71 chunks
+2025-09-05 18:51:27,442 - INFO - No model available, using fallback cleaning for article 107
+2025-09-05 18:51:27,444 - INFO - Processing article 108 with 188 chunks
+2025-09-05 18:51:27,444 - INFO - No model available, using fallback cleaning for article 108
+2025-09-05 18:51:27,446 - INFO - Processing article 109 with 284 chunks
+2025-09-05 18:51:27,447 - INFO - No model available, using fallback cleaning for article 109
+2025-09-05 18:51:27,451 - INFO - Processing article 110 with 95 chunks
+2025-09-05 18:51:27,451 - INFO - No model available, using fallback cleaning for article 110
+2025-09-05 18:51:27,468 - INFO - Checkpoint saved: 110 articles processed
+2025-09-05 18:51:27,526 - INFO - Processing article 111 with 99 chunks
+2025-09-05 18:51:27,526 - INFO - No model available, using fallback cleaning for article 111
+2025-09-05 18:51:27,527 - INFO - Processing article 112 with 56 chunks
+2025-09-05 18:51:27,527 - INFO - No model available, using fallback cleaning for article 112
+2025-09-05 18:51:27,528 - INFO - Processing article 113 with 323 chunks
+2025-09-05 18:51:27,528 - INFO - No model available, using fallback cleaning for article 113
+2025-09-05 18:51:27,534 - INFO - Processing article 114 with 110 chunks
+2025-09-05 18:51:27,534 - INFO - No model available, using fallback cleaning for article 114
+2025-09-05 18:51:27,536 - INFO - Processing article 115 with 6 chunks
+2025-09-05 18:51:27,536 - INFO - No model available, using fallback cleaning for article 115
+2025-09-05 18:51:27,592 - INFO - Processing article 116 with 136 chunks
+2025-09-05 18:51:27,592 - INFO - No model available, using fallback cleaning for article 116
+2025-09-05 18:51:27,594 - INFO - Processing article 117 with 107 chunks
+2025-09-05 18:51:27,594 - INFO - No model available, using fallback cleaning for article 117
+2025-09-05 18:51:27,596 - INFO - Processing article 118 with 200 chunks
+2025-09-05 18:51:27,596 - INFO - No model available, using fallback cleaning for article 118
+2025-09-05 18:51:27,599 - INFO - Processing article 119 with 6 chunks
+2025-09-05 18:51:27,599 - INFO - No model available, using fallback cleaning for article 119
+2025-09-05 18:51:27,599 - INFO - Processing article 120 with 31 chunks
+2025-09-05 18:51:27,599 - INFO - No model available, using fallback cleaning for article 120
+2025-09-05 18:51:27,619 - INFO - Checkpoint saved: 120 articles processed
+2025-09-05 18:51:27,677 - INFO - Processing article 121 with 109 chunks
+2025-09-05 18:51:27,677 - INFO - No model available, using fallback cleaning for article 121
+2025-09-05 18:51:27,679 - INFO - Processing article 122 with 107 chunks
+2025-09-05 18:51:27,679 - INFO - No model available, using fallback cleaning for article 122
+2025-09-05 18:51:27,680 - INFO - Processing article 123 with 195 chunks
+2025-09-05 18:51:27,680 - INFO - No model available, using fallback cleaning for article 123
+2025-09-05 18:51:27,684 - INFO - Processing article 124 with 110 chunks
+2025-09-05 18:51:27,684 - INFO - No model available, using fallback cleaning for article 124
+2025-09-05 18:51:27,685 - INFO - Processing article 125 with 158 chunks
+2025-09-05 18:51:27,685 - INFO - No model available, using fallback cleaning for article 125
+2025-09-05 18:51:27,741 - INFO - Processing article 126 with 5 chunks
+2025-09-05 18:51:27,741 - INFO - No model available, using fallback cleaning for article 126
+2025-09-05 18:51:27,742 - INFO - Processing article 127 with 5 chunks
+2025-09-05 18:51:27,742 - INFO - No model available, using fallback cleaning for article 127
+2025-09-05 18:51:27,742 - INFO - Processing article 128 with 8 chunks
+2025-09-05 18:51:27,742 - INFO - No model available, using fallback cleaning for article 128
+2025-09-05 18:51:27,742 - INFO - Processing article 129 with 34 chunks
+2025-09-05 18:51:27,742 - INFO - No model available, using fallback cleaning for article 129
+2025-09-05 18:51:27,742 - INFO - Processing article 130 with 37 chunks
+2025-09-05 18:51:27,742 - INFO - No model available, using fallback cleaning for article 130
+2025-09-05 18:51:27,762 - INFO - Checkpoint saved: 130 articles processed
+2025-09-05 18:51:27,820 - INFO - Processing article 131 with 238 chunks
+2025-09-05 18:51:27,820 - INFO - No model available, using fallback cleaning for article 131
+2025-09-05 18:51:27,824 - INFO - Processing article 133 with 134 chunks
+2025-09-05 18:51:27,824 - INFO - No model available, using fallback cleaning for article 133
+2025-09-05 18:51:27,826 - INFO - Processing article 134 with 109 chunks
+2025-09-05 18:51:27,827 - INFO - No model available, using fallback cleaning for article 134
+2025-09-05 18:51:27,828 - INFO - Processing article 135 with 189 chunks
+2025-09-05 18:51:27,828 - INFO - No model available, using fallback cleaning for article 135
+2025-09-05 18:51:27,831 - INFO - Processing article 136 with 203 chunks
+2025-09-05 18:51:27,831 - INFO - No model available, using fallback cleaning for article 136
+2025-09-05 18:51:27,891 - INFO - Processing article 137 with 278 chunks
+2025-09-05 18:51:27,891 - INFO - No model available, using fallback cleaning for article 137
+2025-09-05 18:51:27,896 - INFO - Processing article 138 with 124 chunks
+2025-09-05 18:51:27,896 - INFO - No model available, using fallback cleaning for article 138
+2025-09-05 18:51:27,898 - INFO - Processing article 139 with 227 chunks
+2025-09-05 18:51:27,898 - INFO - No model available, using fallback cleaning for article 139
+2025-09-05 18:51:27,901 - INFO - Processing article 140 with 77 chunks
+2025-09-05 18:51:27,901 - INFO - No model available, using fallback cleaning for article 140
+2025-09-05 18:51:27,902 - INFO - Processing article 141 with 101 chunks
+2025-09-05 18:51:27,902 - INFO - No model available, using fallback cleaning for article 141
+2025-09-05 18:51:27,926 - INFO - Checkpoint saved: 140 articles processed
+2025-09-05 18:51:27,983 - INFO - Processing article 142 with 225 chunks
+2025-09-05 18:51:27,983 - INFO - No model available, using fallback cleaning for article 142
+2025-09-05 18:51:27,987 - INFO - Processing article 143 with 5 chunks
+2025-09-05 18:51:27,987 - INFO - No model available, using fallback cleaning for article 143
+2025-09-05 18:51:27,987 - INFO - Processing article 144 with 115 chunks
+2025-09-05 18:51:27,987 - INFO - No model available, using fallback cleaning for article 144
+2025-09-05 18:51:27,989 - INFO - Processing article 145 with 82 chunks
+2025-09-05 18:51:27,989 - INFO - No model available, using fallback cleaning for article 145
+2025-09-05 18:51:27,991 - INFO - Processing article 146 with 121 chunks
+2025-09-05 18:51:27,991 - INFO - No model available, using fallback cleaning for article 146
+2025-09-05 18:51:28,050 - INFO - Processing article 147 with 108 chunks
+2025-09-05 18:51:28,050 - INFO - No model available, using fallback cleaning for article 147
+2025-09-05 18:51:28,052 - INFO - Processing article 148 with 94 chunks
+2025-09-05 18:51:28,052 - INFO - No model available, using fallback cleaning for article 148
+2025-09-05 18:51:28,053 - INFO - Processing article 149 with 147 chunks
+2025-09-05 18:51:28,053 - INFO - No model available, using fallback cleaning for article 149
+2025-09-05 18:51:28,056 - INFO - Processing article 150 with 119 chunks
+2025-09-05 18:51:28,056 - INFO - No model available, using fallback cleaning for article 150
+2025-09-05 18:51:28,058 - INFO - Processing article 151 with 120 chunks
+2025-09-05 18:51:28,058 - INFO - No model available, using fallback cleaning for article 151
+2025-09-05 18:51:28,083 - INFO - Checkpoint saved: 150 articles processed
+2025-09-05 18:51:28,142 - INFO - Processing article 152 with 50 chunks
+2025-09-05 18:51:28,142 - INFO - No model available, using fallback cleaning for article 152
+2025-09-05 18:51:28,143 - INFO - Processing article 153 with 105 chunks
+2025-09-05 18:51:28,143 - INFO - No model available, using fallback cleaning for article 153
+2025-09-05 18:51:28,145 - INFO - Processing article 154 with 122 chunks
+2025-09-05 18:51:28,145 - INFO - No model available, using fallback cleaning for article 154
+2025-09-05 18:51:28,147 - INFO - Processing article 155 with 120 chunks
+2025-09-05 18:51:28,147 - INFO - No model available, using fallback cleaning for article 155
+2025-09-05 18:51:28,149 - INFO - Processing article 156 with 151 chunks
+2025-09-05 18:51:28,149 - INFO - No model available, using fallback cleaning for article 156
+2025-09-05 18:51:28,210 - INFO - Processing article 157 with 117 chunks
+2025-09-05 18:51:28,211 - INFO - No model available, using fallback cleaning for article 157
+2025-09-05 18:51:28,213 - INFO - Processing article 158 with 111 chunks
+2025-09-05 18:51:28,213 - INFO - No model available, using fallback cleaning for article 158
+2025-09-05 18:51:28,214 - INFO - Processing article 159 with 141 chunks
+2025-09-05 18:51:28,214 - INFO - No model available, using fallback cleaning for article 159
+2025-09-05 18:51:28,217 - INFO - Processing article 160 with 131 chunks
+2025-09-05 18:51:28,217 - INFO - No model available, using fallback cleaning for article 160
+2025-09-05 18:51:28,219 - INFO - Processing article 161 with 176 chunks
+2025-09-05 18:51:28,219 - INFO - No model available, using fallback cleaning for article 161
+2025-09-05 18:51:28,246 - INFO - Checkpoint saved: 160 articles processed
+2025-09-05 18:51:28,306 - INFO - Processing article 162 with 131 chunks
+2025-09-05 18:51:28,306 - INFO - No model available, using fallback cleaning for article 162
+2025-09-05 18:51:28,308 - INFO - Processing article 163 with 153 chunks
+2025-09-05 18:51:28,308 - INFO - No model available, using fallback cleaning for article 163
+2025-09-05 18:51:28,311 - INFO - Processing article 164 with 208 chunks
+2025-09-05 18:51:28,311 - INFO - No model available, using fallback cleaning for article 164
+2025-09-05 18:51:28,314 - INFO - Processing article 165 with 137 chunks
+2025-09-05 18:51:28,314 - INFO - No model available, using fallback cleaning for article 165
+2025-09-05 18:51:28,317 - INFO - Processing article 166 with 126 chunks
+2025-09-05 18:51:28,317 - INFO - No model available, using fallback cleaning for article 166
+2025-09-05 18:51:28,382 - INFO - Processing article 167 with 98 chunks
+2025-09-05 18:51:28,382 - INFO - No model available, using fallback cleaning for article 167
+2025-09-05 18:51:28,383 - INFO - Processing article 168 with 122 chunks
+2025-09-05 18:51:28,383 - INFO - No model available, using fallback cleaning for article 168
+2025-09-05 18:51:28,385 - INFO - Processing article 169 with 243 chunks
+2025-09-05 18:51:28,385 - INFO - No model available, using fallback cleaning for article 169
+2025-09-05 18:51:28,389 - INFO - Processing article 170 with 127 chunks
+2025-09-05 18:51:28,389 - INFO - No model available, using fallback cleaning for article 170
+2025-09-05 18:51:28,391 - INFO - Processing article 171 with 144 chunks
+2025-09-05 18:51:28,391 - INFO - No model available, using fallback cleaning for article 171
+2025-09-05 18:51:28,419 - INFO - Checkpoint saved: 170 articles processed
+2025-09-05 18:51:28,480 - INFO - Processing article 172 with 173 chunks
+2025-09-05 18:51:28,481 - INFO - No model available, using fallback cleaning for article 172
+2025-09-05 18:51:28,484 - INFO - Processing article 173 with 294 chunks
+2025-09-05 18:51:28,484 - INFO - No model available, using fallback cleaning for article 173
+2025-09-05 18:51:28,489 - INFO - Processing article 174 with 142 chunks
+2025-09-05 18:51:28,489 - INFO - No model available, using fallback cleaning for article 174
+2025-09-05 18:51:28,491 - INFO - Processing article 175 with 163 chunks
+2025-09-05 18:51:28,491 - INFO - No model available, using fallback cleaning for article 175
+2025-09-05 18:51:28,494 - INFO - Processing article 176 with 150 chunks
+2025-09-05 18:51:28,494 - INFO - No model available, using fallback cleaning for article 176
+2025-09-05 18:51:28,555 - INFO - Processing article 177 with 146 chunks
+2025-09-05 18:51:28,555 - INFO - No model available, using fallback cleaning for article 177
+2025-09-05 18:51:28,557 - INFO - Processing article 178 with 307 chunks
+2025-09-05 18:51:28,557 - INFO - No model available, using fallback cleaning for article 178
+2025-09-05 18:51:28,562 - INFO - Processing article 179 with 156 chunks
+2025-09-05 18:51:28,562 - INFO - No model available, using fallback cleaning for article 179
+2025-09-05 18:51:28,565 - INFO - Processing article 180 with 88 chunks
+2025-09-05 18:51:28,565 - INFO - No model available, using fallback cleaning for article 180
+2025-09-05 18:51:28,566 - INFO - Processing article 181 with 150 chunks
+2025-09-05 18:51:28,566 - INFO - No model available, using fallback cleaning for article 181
+2025-09-05 18:51:28,596 - INFO - Checkpoint saved: 180 articles processed
+2025-09-05 18:51:28,658 - INFO - Processing article 182 with 158 chunks
+2025-09-05 18:51:28,658 - INFO - No model available, using fallback cleaning for article 182
+2025-09-05 18:51:28,661 - INFO - Processing article 183 with 149 chunks
+2025-09-05 18:51:28,661 - INFO - No model available, using fallback cleaning for article 183
+2025-09-05 18:51:28,663 - INFO - Processing article 184 with 154 chunks
+2025-09-05 18:51:28,663 - INFO - No model available, using fallback cleaning for article 184
+2025-09-05 18:51:28,666 - INFO - Processing article 185 with 199 chunks
+2025-09-05 18:51:28,666 - INFO - No model available, using fallback cleaning for article 185
+2025-09-05 18:51:28,669 - INFO - Processing article 186 with 113 chunks
+2025-09-05 18:51:28,669 - INFO - No model available, using fallback cleaning for article 186
+2025-09-05 18:51:28,728 - INFO - Processing article 187 with 89 chunks
+2025-09-05 18:51:28,728 - INFO - No model available, using fallback cleaning for article 187
+2025-09-05 18:51:28,729 - INFO - Processing article 188 with 139 chunks
+2025-09-05 18:51:28,730 - INFO - No model available, using fallback cleaning for article 188
+2025-09-05 18:51:28,732 - INFO - Processing article 189 with 115 chunks
+2025-09-05 18:51:28,732 - INFO - No model available, using fallback cleaning for article 189
+2025-09-05 18:51:28,734 - INFO - Processing article 190 with 44 chunks
+2025-09-05 18:51:28,734 - INFO - No model available, using fallback cleaning for article 190
+2025-09-05 18:51:28,735 - INFO - Processing article 191 with 40 chunks
+2025-09-05 18:51:28,735 - INFO - No model available, using fallback cleaning for article 191
+2025-09-05 18:51:28,767 - INFO - Checkpoint saved: 190 articles processed
+2025-09-05 18:51:28,826 - INFO - Processing article 192 with 81 chunks
+2025-09-05 18:51:28,826 - INFO - No model available, using fallback cleaning for article 192
+2025-09-05 18:51:28,827 - INFO - Processing article 193 with 117 chunks
+2025-09-05 18:51:28,827 - INFO - No model available, using fallback cleaning for article 193
+2025-09-05 18:51:28,829 - INFO - Processing article 194 with 175 chunks
+2025-09-05 18:51:28,829 - INFO - No model available, using fallback cleaning for article 194
+2025-09-05 18:51:28,832 - INFO - Processing article 195 with 143 chunks
+2025-09-05 18:51:28,832 - INFO - No model available, using fallback cleaning for article 195
+2025-09-05 18:51:28,835 - INFO - Processing article 196 with 110 chunks
+2025-09-05 18:51:28,835 - INFO - No model available, using fallback cleaning for article 196
+2025-09-05 18:51:28,908 - INFO - Processing article 197 with 167 chunks
+2025-09-05 18:51:28,908 - INFO - No model available, using fallback cleaning for article 197
+2025-09-05 18:51:28,911 - INFO - Processing article 198 with 182 chunks
+2025-09-05 18:51:28,911 - INFO - No model available, using fallback cleaning for article 198
+2025-09-05 18:51:28,915 - INFO - Processing article 199 with 142 chunks
+2025-09-05 18:51:28,915 - INFO - No model available, using fallback cleaning for article 199
+2025-09-05 18:51:28,917 - INFO - Processing article 200 with 102 chunks
+2025-09-05 18:51:28,917 - INFO - No model available, using fallback cleaning for article 200
+2025-09-05 18:51:28,919 - INFO - Processing article 201 with 63 chunks
+2025-09-05 18:51:28,919 - INFO - No model available, using fallback cleaning for article 201
+2025-09-05 18:51:28,951 - INFO - Checkpoint saved: 200 articles processed
+2025-09-05 18:51:29,015 - INFO - Processing article 202 with 117 chunks
+2025-09-05 18:51:29,015 - INFO - No model available, using fallback cleaning for article 202
+2025-09-05 18:51:29,017 - INFO - Processing article 203 with 4 chunks
+2025-09-05 18:51:29,017 - INFO - No model available, using fallback cleaning for article 203
+2025-09-05 18:51:29,017 - INFO - Processing article 204 with 109 chunks
+2025-09-05 18:51:29,017 - INFO - No model available, using fallback cleaning for article 204
+2025-09-05 18:51:29,019 - INFO - Processing article 205 with 121 chunks
+2025-09-05 18:51:29,019 - INFO - No model available, using fallback cleaning for article 205
+2025-09-05 18:51:29,021 - INFO - Processing article 206 with 133 chunks
+2025-09-05 18:51:29,021 - INFO - No model available, using fallback cleaning for article 206
+2025-09-05 18:51:29,087 - INFO - Processing article 207 with 98 chunks
+2025-09-05 18:51:29,087 - INFO - No model available, using fallback cleaning for article 207
+2025-09-05 18:51:29,088 - INFO - Processing article 208 with 102 chunks
+2025-09-05 18:51:29,088 - INFO - No model available, using fallback cleaning for article 208
+2025-09-05 18:51:29,090 - INFO - Processing article 209 with 107 chunks
+2025-09-05 18:51:29,090 - INFO - No model available, using fallback cleaning for article 209
+2025-09-05 18:51:29,092 - INFO - Processing article 210 with 94 chunks
+2025-09-05 18:51:29,092 - INFO - No model available, using fallback cleaning for article 210
+2025-09-05 18:51:29,094 - INFO - Processing article 211 with 114 chunks
+2025-09-05 18:51:29,094 - INFO - No model available, using fallback cleaning for article 211
+2025-09-05 18:51:29,128 - INFO - Checkpoint saved: 210 articles processed
+2025-09-05 18:51:29,194 - INFO - Processing article 212 with 101 chunks
+2025-09-05 18:51:29,194 - INFO - No model available, using fallback cleaning for article 212
+2025-09-05 18:51:29,195 - INFO - Processing article 213 with 110 chunks
+2025-09-05 18:51:29,195 - INFO - No model available, using fallback cleaning for article 213
+2025-09-05 18:51:29,197 - INFO - Processing article 214 with 130 chunks
+2025-09-05 18:51:29,197 - INFO - No model available, using fallback cleaning for article 214
+2025-09-05 18:51:29,199 - INFO - Processing article 215 with 127 chunks
+2025-09-05 18:51:29,200 - INFO - No model available, using fallback cleaning for article 215
+2025-09-05 18:51:29,202 - INFO - Processing article 216 with 171 chunks
+2025-09-05 18:51:29,202 - INFO - No model available, using fallback cleaning for article 216
+2025-09-05 18:51:29,269 - INFO - Processing article 217 with 155 chunks
+2025-09-05 18:51:29,269 - INFO - No model available, using fallback cleaning for article 217
+2025-09-05 18:51:29,272 - INFO - Processing article 218 with 241 chunks
+2025-09-05 18:51:29,272 - INFO - No model available, using fallback cleaning for article 218
+2025-09-05 18:51:29,275 - INFO - Processing article 219 with 70 chunks
+2025-09-05 18:51:29,276 - INFO - No model available, using fallback cleaning for article 219
+2025-09-05 18:51:29,277 - INFO - Processing article 220 with 49 chunks
+2025-09-05 18:51:29,277 - INFO - No model available, using fallback cleaning for article 220
+2025-09-05 18:51:29,278 - INFO - Processing article 221 with 176 chunks
+2025-09-05 18:51:29,278 - INFO - No model available, using fallback cleaning for article 221
+2025-09-05 18:51:29,314 - INFO - Checkpoint saved: 220 articles processed
+2025-09-05 18:51:29,379 - INFO - Processing article 222 with 180 chunks
+2025-09-05 18:51:29,380 - INFO - No model available, using fallback cleaning for article 222
+2025-09-05 18:51:29,382 - INFO - Processing article 223 with 124 chunks
+2025-09-05 18:51:29,383 - INFO - No model available, using fallback cleaning for article 223
+2025-09-05 18:51:29,385 - INFO - Processing article 224 with 63 chunks
+2025-09-05 18:51:29,385 - INFO - No model available, using fallback cleaning for article 224
+2025-09-05 18:51:29,386 - INFO - Processing article 225 with 105 chunks
+2025-09-05 18:51:29,386 - INFO - No model available, using fallback cleaning for article 225
+2025-09-05 18:51:29,387 - INFO - Processing article 226 with 5 chunks
+2025-09-05 18:51:29,387 - INFO - No model available, using fallback cleaning for article 226
+2025-09-05 18:51:29,451 - INFO - Processing article 227 with 106 chunks
+2025-09-05 18:51:29,451 - INFO - No model available, using fallback cleaning for article 227
+2025-09-05 18:51:29,453 - INFO - Processing article 228 with 160 chunks
+2025-09-05 18:51:29,453 - INFO - No model available, using fallback cleaning for article 228
+2025-09-05 18:51:29,456 - INFO - Processing article 229 with 5 chunks
+2025-09-05 18:51:29,456 - INFO - No model available, using fallback cleaning for article 229
+2025-09-05 18:51:29,456 - INFO - Processing article 230 with 93 chunks
+2025-09-05 18:51:29,456 - INFO - No model available, using fallback cleaning for article 230
+2025-09-05 18:51:29,457 - INFO - Processing article 231 with 93 chunks
+2025-09-05 18:51:29,457 - INFO - No model available, using fallback cleaning for article 231
+2025-09-05 18:51:29,495 - INFO - Checkpoint saved: 230 articles processed
+2025-09-05 18:51:29,560 - INFO - Processing article 232 with 158 chunks
+2025-09-05 18:51:29,560 - INFO - No model available, using fallback cleaning for article 232
+2025-09-05 18:51:29,563 - INFO - Processing article 233 with 321 chunks
+2025-09-05 18:51:29,563 - INFO - No model available, using fallback cleaning for article 233
+2025-09-05 18:51:29,568 - INFO - Processing article 234 with 178 chunks
+2025-09-05 18:51:29,568 - INFO - No model available, using fallback cleaning for article 234
+2025-09-05 18:51:29,571 - INFO - Processing article 235 with 90 chunks
+2025-09-05 18:51:29,571 - INFO - No model available, using fallback cleaning for article 235
+2025-09-05 18:51:29,573 - INFO - Processing article 236 with 134 chunks
+2025-09-05 18:51:29,573 - INFO - No model available, using fallback cleaning for article 236
+2025-09-05 18:51:29,640 - INFO - Processing article 237 with 125 chunks
+2025-09-05 18:51:29,640 - INFO - No model available, using fallback cleaning for article 237
+2025-09-05 18:51:29,642 - INFO - Processing article 238 with 142 chunks
+2025-09-05 18:51:29,642 - INFO - No model available, using fallback cleaning for article 238
+2025-09-05 18:51:29,644 - INFO - Processing article 239 with 123 chunks
+2025-09-05 18:51:29,644 - INFO - No model available, using fallback cleaning for article 239
+2025-09-05 18:51:29,647 - INFO - Processing article 240 with 104 chunks
+2025-09-05 18:51:29,647 - INFO - No model available, using fallback cleaning for article 240
+2025-09-05 18:51:29,648 - INFO - Processing article 241 with 199 chunks
+2025-09-05 18:51:29,648 - INFO - No model available, using fallback cleaning for article 241
+2025-09-05 18:51:29,688 - INFO - Checkpoint saved: 240 articles processed
+2025-09-05 18:51:29,752 - INFO - Processing article 242 with 113 chunks
+2025-09-05 18:51:29,752 - INFO - No model available, using fallback cleaning for article 242
+2025-09-05 18:51:29,754 - INFO - Processing article 243 with 338 chunks
+2025-09-05 18:51:29,754 - INFO - No model available, using fallback cleaning for article 243
+2025-09-05 18:51:29,760 - INFO - Processing article 244 with 122 chunks
+2025-09-05 18:51:29,760 - INFO - No model available, using fallback cleaning for article 244
+2025-09-05 18:51:29,762 - INFO - Processing article 245 with 120 chunks
+2025-09-05 18:51:29,762 - INFO - No model available, using fallback cleaning for article 245
+2025-09-05 18:51:29,764 - INFO - Processing article 246 with 202 chunks
+2025-09-05 18:51:29,764 - INFO - No model available, using fallback cleaning for article 246
+2025-09-05 18:51:29,832 - INFO - Processing article 247 with 144 chunks
+2025-09-05 18:51:29,832 - INFO - No model available, using fallback cleaning for article 247
+2025-09-05 18:51:29,834 - INFO - Processing article 248 with 58 chunks
+2025-09-05 18:51:29,834 - INFO - No model available, using fallback cleaning for article 248
+2025-09-05 18:51:29,835 - INFO - Processing article 249 with 126 chunks
+2025-09-05 18:51:29,835 - INFO - No model available, using fallback cleaning for article 249
+2025-09-05 18:51:29,837 - INFO - Processing article 250 with 180 chunks
+2025-09-05 18:51:29,837 - INFO - No model available, using fallback cleaning for article 250
+2025-09-05 18:51:29,840 - INFO - Processing article 251 with 214 chunks
+2025-09-05 18:51:29,840 - INFO - No model available, using fallback cleaning for article 251
+2025-09-05 18:51:29,955 - INFO - Cleanup completed
