@@ -4,6 +4,9 @@ Multi-model microbiome-disease extraction pipeline via Lava Payments proxy.
 
 Dependencies:
     pip install requests python-dotenv
+
+
+ # TRIED TO DO FOR FREE WITH EXISTING CREDITS FOR    
 """
 
 import base64
