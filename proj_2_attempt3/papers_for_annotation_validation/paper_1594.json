@@ -1,0 +1,475 @@
+{
+  "paper_id": "1594",
+  "paper_title": "The altered sputum microbiome profile in patients with moderate and severe COPD exacerbations, compared to the healthy group in the Indian population",
+  "study_type": "observational_16S_rRNA",
+  "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+  "sample_sites": [
+    "respiratory"
+  ],
+  "relationships": [
+    {
+      "id": "1594_rel_001",
+      "taxon_name": "Firmicutes",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Moderate COPD 46.3% vs healthy 31.9%; paper states 'significantly higher proportion of Firmicutes...were present in moderate COPD'. No explicit p-value reported for phylum-level comparison, but directionality is stated as significant.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "A significantly higher proportion of Firmicutes and Actinobacteria were present in respiratory samples from patients with moderate COPD and Proteobacteria was comparatively increased in severe COPD, whereas in healthy individuals, Bacteroidetes and Fusobacteria were present in a higher abundance compared to both COPD groups."
+      }
+    },
+    {
+      "id": "1594_rel_002",
+      "taxon_name": "Actinobacteria",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Moderate COPD 14.0% vs healthy 5.9%; stated as 'significantly higher' in moderate COPD. No explicit phylum-level p-value, but paper uses 'significantly higher' language.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "A significantly higher proportion of Firmicutes and Actinobacteria were present in respiratory samples from patients with moderate COPD"
+      }
+    },
+    {
+      "id": "1594_rel_003",
+      "taxon_name": "Proteobacteria",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [
+          "no_explicit_pvalue_for_phylum"
+        ],
+        "review_notes": "Severe COPD 17.4% vs healthy 16.1%; paper says 'comparatively increased in severe COPD' \u2014 weaker language than 'significantly higher'. No explicit p-value. Medium confidence.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Proteobacteria numbers were comparatively increased in severe COPD"
+      }
+    },
+    {
+      "id": "1594_rel_004",
+      "taxon_name": "Bacteroidetes",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [
+          "no_explicit_pvalue_for_phylum"
+        ],
+        "review_notes": "Healthy 28.7% vs moderate COPD 20.0% and severe COPD 26.8%. Paper states Bacteroidetes were 'more abundant in comparison to both the COPD groups' in healthy. No phylum-level p-value reported. Direction is clearly stated.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "in healthy individuals, Bacteroidetes and Fusobacteria were present in a higher abundance compared to both COPD groups"
+      }
+    },
+    {
+      "id": "1594_rel_005",
+      "taxon_name": "Fusobacteria",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [
+          "no_explicit_pvalue_for_phylum"
+        ],
+        "review_notes": "Healthy 13% vs moderate COPD 5.3% and severe COPD 9.5%. Paper states Fusobacteria phylum higher in healthy vs both COPD groups. No phylum-level p-value. Note: separate entry from Fusobacterium genus (rel_011).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "in healthy individuals, Bacteroidetes and Fusobacteria were present in a higher abundance compared to both COPD groups"
+      }
+    },
+    {
+      "id": "1594_rel_006",
+      "taxon_name": "Streptococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": "<0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Moderate COPD 28.2%, severe COPD 20.2% vs healthy 13.0%. Paper explicitly states p<0.05 for Streptococcus abundance increase. Also a LEfSe marker in moderate COPD (LDA>2). Streptococcus is a valid well-known bacterial genus.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "An increasing abundance of Streptococcus (p<0.05), and Rothia was observed in moderate COPD samples"
+      }
+    },
+    {
+      "id": "1594_rel_007",
+      "taxon_name": "Rothia",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Moderate COPD 11.4% vs healthy (not in top 5). LEfSe marker in moderate COPD (LDA>2). Paper states abundance increase in moderate COPD alongside Streptococcus. Valid genus in Actinobacteria. No explicit p-value for Rothia alone.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "An increasing abundance of Streptococcus (p<0.05), and Rothia was observed in moderate COPD samples"
+      }
+    },
+    {
+      "id": "1594_rel_008",
+      "taxon_name": "Prevotella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Healthy 16.5% vs moderate COPD 8.3% and severe COPD 11.7%. Paper states 'Prevotella was significantly higher in healthy controls' and LEfSe shows Prevotella dominant in healthy. Valid well-known genus. No explicit p-value for Prevotella specifically, but directional statement is clear.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Streptococcus was the predominant genus among the COPD sputum samples, whereas Prevotella was significantly higher in healthy controls."
+      }
+    },
+    {
+      "id": "1594_rel_009",
+      "taxon_name": "Pseudomonas",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "LEfSe marker in severe COPD (LDA>2). Paper states Pseudomonas 'relatively higher in severe COPD'. Valid well-known respiratory pathogen genus.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Morexalla and Pseudomonas were relatively higher in severe COPD"
+      }
+    },
+    {
+      "id": "1594_rel_010",
+      "taxon_name": "Leptotrichia",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "LEfSe marker in severe COPD (LDA>2). Severe COPD 5.9% vs not in healthy top 5. Paper states 'genera Pseudomonas and Leptotrichia were higher' in severe COPD. Valid genus in Fusobacteriia.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the severe COPD, genera Pseudomonas and Leptotrichia were higher"
+      }
+    },
+    {
+      "id": "1594_rel_011",
+      "taxon_name": "Fusobacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "LEfSe marker dominant in healthy (LDA>2). Healthy 6.6% vs not in COPD top 5. Paper states 'Fusobacterium...were dominant in the healthy group' in LEfSe analysis. Distinct from Fusobacteria phylum entry (rel_005).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Fusobacterium, Bacteroidales, Peptostreptococcus, Prevotella, Porphyromonas, Alloprevotella, etc. were dominant in healthy individuals."
+      }
+    },
+    {
+      "id": "1594_rel_012",
+      "taxon_name": "Moraxella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "taxon_name_corrected"
+        ],
+        "criticism_flags": [
+          "spelling_error_in_source"
+        ],
+        "review_notes": "Spelled 'Morexalla' in source paper (twice: in results text and abstract). Corrected to 'Moraxella' \u2014 a well-established respiratory genus. Paper references Wang et al. and Ramsheh et al. for Moraxella in COPD exacerbations, confirming this is the intended taxon. Stated 'relatively higher in severe COPD'. Not in the 20 genera abundance table but mentioned in LEfSe discussion.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Morexalla and Pseudomonas were relatively higher in severe COPD"
+      }
+    },
+    {
+      "id": "1594_rel_013",
+      "taxon_name": "Gemella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "LEfSe marker in moderate COPD (LDA>2). Moderate COPD 6.2% in top 5 genera. Valid genus in Firmicutes. Direction stated by LEfSe membership in moderate COPD group.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "In moderate COPD, six marker genera (LDA>2) Streptococcus, Rothia, Gemella, Carnobacteriaceae, Capnocytophaga, and Weissella were identified"
+      }
+    },
+    {
+      "id": "1594_rel_014",
+      "taxon_name": "Carnobacteriaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [
+          "family_level_not_genus"
+        ],
+        "review_notes": "LEfSe marker in moderate COPD (LDA>2). Taxonomic level is family (Carnobacteriaceae), not genus. Valid family in Firmicutes. Direction implied by LEfSe membership. No abundance percentage provided.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "In moderate COPD, six marker genera (LDA>2) Streptococcus, Rothia, Gemella, Carnobacteriaceae, Capnocytophaga, and Weissella were identified"
+      }
+    },
+    {
+      "id": "1594_rel_015",
+      "taxon_name": "Capnocytophaga",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "LEfSe marker in moderate COPD (LDA>2). Valid genus in Bacteroidetes. No abundance percentage reported. Direction stated by LEfSe group membership.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "In moderate COPD, six marker genera (LDA>2) Streptococcus, Rothia, Gemella, Carnobacteriaceae, Capnocytophaga, and Weissella were identified"
+      }
+    },
+    {
+      "id": "1594_rel_016",
+      "taxon_name": "Weissella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "LEfSe marker in moderate COPD (LDA>2). Valid genus in Firmicutes/Leuconostocaceae. No abundance percentage provided. Direction stated by LEfSe group membership.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "In moderate COPD, six marker genera (LDA>2) Streptococcus, Rothia, Gemella, Carnobacteriaceae, Capnocytophaga, and Weissella were identified"
+      }
+    },
+    {
+      "id": "1594_rel_017",
+      "taxon_name": "Peptostreptococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "LEfSe analysis identifies Peptostreptococcus as dominant in healthy individuals (Figure 2C). Direction: decreased in COPD relative to healthy. Valid genus in Firmicutes. No explicit percentage reported.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Fusobacterium, Bacteroidales, Peptostreptococcus, Prevotella, Porphyromonas, Alloprevotella, etc. were dominant in healthy individuals."
+      }
+    },
+    {
+      "id": "1594_rel_018",
+      "taxon_name": "Porphyromonas",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "conflicting_evidence"
+        ],
+        "criticism_flags": [
+          "contradictory_data_in_paper"
+        ],
+        "review_notes": "LEfSe analysis lists Porphyromonas as dominant in healthy (Figure 2C). However, Porphyromonas appears in top 5 genera of both moderate COPD (7.9%) and severe COPD (10.1%), making the 'decreased in COPD' claim from LEfSe harder to interpret. Conflicting signals within the same paper. Keeping with low confidence and flagged.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Fusobacterium, Bacteroidales, Peptostreptococcus, Prevotella, Porphyromonas, Alloprevotella, etc. were dominant in healthy individuals."
+      }
+    },
+    {
+      "id": "1594_rel_019",
+      "taxon_name": "Alloprevotella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "chronic obstructive pulmonary disease (COPD)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "LEfSe marker listed as dominant in healthy individuals (Figure 2C). Valid genus in Bacteroidetes, closely related to Prevotella. No abundance percentage provided. Direction is implied by healthy-group LEfSe membership. Low confidence because it is listed as part of an 'etc.' group with no individual statistical support.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Fusobacterium, Bacteroidales, Peptostreptococcus, Prevotella, Porphyromonas, Alloprevotella, etc. were dominant in healthy individuals."
+      }
+    }
+  ],
+  "extraction_stats": {
+    "layer1_raw_count": {
+      "combined": 19
+    },
+    "layer1_union_count": 19,
+    "layer2_corrections": 1,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 19
+  },
+  "paper_text": "The altered sputum microbiome profile in patients with moderate and severe COPD exacerbations, compared to the healthy group in the Indian population\n\nAbstract\n\nBackground: Microbial culture-independent sequencing techniques have advanced our understanding of host-microbiome interactions in health and disease. The purpose of this study was to explore the dysbiosis of airway microbiota in patients with moderate or severe chronic obstructive pulmonary disease (COPD) and compare them with healthy controls\nMethods: The COPD patients were investigated for disease severity based on airflow limitations and divided into moderate (50%\u2264FEV1<80% predicted) and severe groups (FEV1<50% predicted). Spontaneous sputum samples were collected and, the V3-V4 regions of the 16S rRNA coding gene were sequenced to examine the microbiome profile of COPD and healthy participants. Results: A total of 45 sputum samples were collected from 17 severe COPD, 12 moderate COPD cases, and 16 healthy volunteers\nThe bacterial alpha diversity (Shannon and Simpson\u2019s index) significantly decreased in the moderate and severe COPD groups, compared to healthy samples. A significantly higher proportion of Firmicutes and Actinobacteria were present in moderate COPD, and Proteobacteria numbers were comparatively increased in severe COPD. In healthy samples, Bacteroidetes and Fusobacteria were more abundant in comparison to both the COPD groups\nAmong the most commonly detected 20 bacterial genera,\nStreptococcus was predominant among the COPD sputum samples, whereas\nPrevotella was the top genus in healthy controls. Linear discriminant analysis (LDA>2) revealed that marker genera like\nStreptococcus and\nRothia were abundant in moderate COPD. For severe COPD, the genera\nPseudomonasand\nLeptotrichia were most prevalent, whereas\nFusobacterium and\nPrevotella were dominant in the healthy group\nConclusions: Our findings suggest a significant dysbiosis of the respiratory microbiome in COPD patients. The decreased microbial diversity may influence the host immune response and provide microbiological biomarkers for the diagnosis and monitoring of COPD. Keywords: Microbiome, chronic obstructive pulmonary disease, respiratory pathology, 16S rRNA gene sequencing, microbial populations F1000Res. 2023 Oct 27;12:528. Originally published 2023 May 22. [Version 4]\n132220. 4\n\nOther versions\n\nPMC10624950. 1; 2023 May 22\nPMC10624950. 2; 2023 Aug 1\nPMC10624950. 3; 2023 Oct 6\n2; 2023 Aug 1\nPMC10624950. 3; 2023 Oct 6\nConclusions: Our findings suggest a significant dysbiosis of the respiratory microbiome in COPD patients. The decreased microbial diversity may influence the host immune response and provide microbiological biomarkers for the diagnosis and monitoring of COPD\nKeywords: Microbiome, chronic obstructive pulmonary disease, respiratory pathology, 16S rRNA gene sequencing, microbial populationsIntroduction\nChronic obstructive pulmonary disease (COPD) is a heterogenous lung pathology, manifesting with persistent and progressive respiratory symptoms, airway obstruction, and inflammation due to structural abnormalities\n1\nCOPD is one of the leading causes of mortality and morbidity globally and its burden is predicted to rise further in the upcoming years due to constant exposure to air pollution, respiratory pathogens, and the growing elderly population. 1\n\n\u2013\n\n3\nCOPD is a treatable but incurable disease, and often switches between a stable to an exacerbated state disease\n4\nThe frequent exacerbation and worsening of respiratory symptoms affect the individual quality of life with a significant socioeconomic burden and impose a huge healthcare management cost. 5\n\n,\n\n6\nThe progression of COPD often leads to chronic inflammation and major destruction of the lung and airway, which disrupts pulmonary microbiome homeostasis. Commensal microbes play a crucial role in innate immune regulation, protecting against invading pathogens and maintaining epithelial integrity\nThe recent advancement of culture-independent next-generation sequencing techniques have uncovered the diverse microbial communities colonizing the respiratory mucosa and recognized their roles in health and disease. 7\n\n\u2013\n\n9\n\nIn the past, several studies have evaluated lung microbiome composition and its association with COPD manifestations. The changes in bacterial diversity and several significant taxa have been identified in COPD patients, which play a role in disease progression\nA high heterogeneity has been observed among these studies, potentially attributed to the underlying health conditions of selected populations and geographical variations. However, the changes in the sputum microbial profile in the Indian population with COPD are not well understood. This study aimed to evaluate the changes in lung microbiome diversity of patients with moderate or severe COPD and compare them with the microbiomes of healthy controls\nStudy design and population\nTo conduct this prospective observational study, sputum samples were collected from eligible COPD participants, who presented to our hospital and were diagnosed with COPD in accordance with the 2019 Global Initiative for Chronic Obstructive Lung Disease (GOLD) guideline. 10\nTheir lung functions were measured using spirometry. The enrolled cases were regrouped into moderate COPD (50%\u2264FEV1<80% predicted) and severe COPD (FEV1<50% predicted)\nThe exclusion criteria for COPD participants were: (a) age \u226440 years, (b) patients diagnosed with other respiratory diseases or immunosuppression, and (c) history of antibiotic usage within four weeks prior to sample collection. Healthy controls include individuals \u226540 years of age and those not having any apparent illness. There was no gender-based exclusions or restrictions for recruiting participants. Demographic and clinical information was obtained for the enrolled participants\nThis study was approved by the Kasturba Medical College and Kasturba Hospital Institutional Ethics Committee (IEC: 479/2019) and the participants were enrolled after providing written informed consent. Sample collection, DNA isolation, and 16S rDNA sequencing\nThe participants were instructed to cough up sputum into a sterile container and samples were transported on ice to the laboratory\nAll sputum samples were evaluated with routine conventional culturing and an aliquot of it was stored at \u221280\u00b0C for the DNA extraction. The sputum samples were homogenized using an equal volume of 0. 2% dithiothreitol (DTT) (Sigma Aldrich, USA), and lysozyme-based Qiagen DNA Mini kit (Qiagen, USA) was used to extract the genomic DNA according to the manufacturer\u2019s protocol. The Qubit 2\n0 fluorometer (Thermo Fisher Scientific, USA) was used to measure the purity and concentration of the extracted DNA. The purified DNA was further processed for the 16S rRNA V3-V4 regions targeted amplification to uncover the bacterial community in sputum samples. Based on the Illumina protocol,\n\n11\nPCR amplification of V3-V4 hypervariable regions (~456 bp) were performed using the primer pair 341F/785R. Sequencing adapters and dual index barcodes were added with a limited cycle of PCR\nAfter the quality assessment, multiplex amplified libraries were pooled equally and paired-end reads (2X300 bp) were generated using the MiSeq instrument (Illumina, San Diego, CA, United States). Bioinformatics analysis\nThe sequenced raw data were processed using the standard Mothur v1. 46. 1 pipeline. 12\nA quality check of the reads was carried out and the low-quality reads and chimeras were removed. Contigs were created from the paired-end reads\nThe Shannon, Simpson, and Chao1 matrices were used to measure bacterial Alpha-diversity and an ANOVA test was done to estimate significant differences. Beta diversity was performed using the Principal Coordinate Analysis (PCoA) method along with the Bray-Curtis index as distance measure and permutational multivariate analysis of variance (PERMANOVA) for the significant measure\nThe genus biomarkers (discriminative genera among the groups) were identified using linear discriminant analysis effect size (LEfSe) and a cut-off linear discriminant analysis (LDA) score >2. 0. Results\nFeatures of the study participants\nSputum samples from COPD cases (12 moderate COPD and 17 severe COPD) and 16 healthy volunteers were included in the study\nThe participants\u2019 clinical and demographic features like gender, age, BMI, pulmonary function tests (FEV1% predicted, FEV1 and FEV1/FVC values), mMRC dyspnoea score, and whether they were current smokers are summarized in\nTable 1. At the time of sampling, all COPD patients were in an exacerbated state of the disease and no significant growth of respiratory pathogens was detected in the sputum cultures. Table 1. Clinical and demographic features of the study population\nFeatures\nModerate COPD (n=12)\nSevere COPD (n=17)\nHealthy (n=16)\n\nAge, years (mean\u2009\u00b1\u2009SD)\n66\u2009\u00b1\u20095. 8\n64\u2009\u00b1\u20095. 8\n58\u2009\u00b1\u20095. 3\n\nGender\n\nMale (%)\n12 (100)\n16 (94. 1)\n10 (62. 5)\n\nFemale (%)\n-\n1 (5. 9)\n6 (37. 5)\n\nBMI (kg/m\n2) (mean\u2009\u00b1\u2009SD)\n25. 4\u2009\u00b1\u20095. 6\n23. 2\u2009\u00b1\u20095. 7\n24. 2\u2009\u00b1\u20094. 4\n\nCurrent Smoker (%)\n4 (30. 8)\n2 (11. 8)\n3 (18. 7)\n\nPost-bronchodilator FEV1, % predicted (mean\u2009\u00b1\u2009SD)\n75. 1\u2009\u00b1\u200916. 5\n30. 8\u2009\u00b1\u20098. 6\nNA\n\nPost-bronchodilator FEV1, L (mean\u2009\u00b1\u2009SD)\n2. 4\u2009\u00b1\u20090. 5\n1. 8\u2009\u00b1\u20090\n8\nNA\n\nPost-bronchodilator FEV1/FVC ratio, % (mean\u2009\u00b1\u2009SD)\n64. 7\u2009\u00b1\u20095. 6\n61\u2009\u00b1\u20097. 4\nNA\n\nmMRC Dyspnoea scale (IQR)\n2(2)\n3 (3)\nNA\n\nOpen in a new tabBacterial diversity in sputum samples\nA total of 91,863 OTUs were recovered at a 97% sequence identity with 32,665 OTUs in the patients with moderate COPD, 40,842 OTUs in severe COPD, and 30,980 OTUs in the healthy group\nA significantly lower bacterial alpha diversity (Simpson\u2019s and Shannon's index) was observed in moderate COPD and severe COPD samples compared to the healthy group (p<0. 05, ANOVA test). The Chao1 index measured the species richness within groups and exhibited no differences (p>0. 05) (\nFigure 1A). The Beta diversity represented by PCoA showed a significant difference in bacterial community clustering among the groups (p<0. 01, PERMANOVA test) (\nFigure 1B). Figure 1\nBacterial diversity in sputum samples of moderate COPD, severe COPD, and healthy groups. Open in a new tab\n(A) The measures of alpha diversity indices showed a significant difference (*p < 0. 05 and **p < 0. 01, ANOVA test). (B) Principal coordinate analysis (PCoA) revealed a distinct bacterial community clustering among the groups (P< 0. 01, PERMANOVA). (C) Venn diagram of the core microbiota in tested samples\nAs the Venn diagram of the core sputum microbiota (\nFigure 1C) illustrates, out of the total 91863 OTUs 35. 6%, 27. 2%, and 26. 3% OTUs were unique to severe COPD, moderate COPD, and healthy groups respectively. While 2,649 (2. 9%) OTUs were shared by all three groups and 5,831 (6. 3%) OTUs were shared between moderate and severe COPD groups, 4,447 (4. 8%) OTUs were common for moderate COPD and healthy, and, 4,995 (5. 4%) OTUs were common for severe COPD and healthy groups\nThe taxonomic profiling of sputum microbiota among groups\nThe most prevalent microbial phyla in the sputum samples of moderate COPD, severe COPD, and healthy were Firmicutes (46. 3%, 35. 6%, and 31. 9%) followed by Bacteroidetes (20. 0%, 26. 8%, and 28. 7%) Proteobacteria (12. 9%, 17. 4%, and 16. 1%), Actinobacteria (14. 0%, 8. 5%, and 5. 9%), and Fusobacteria (5. 3%, 9. 5%, and 13%) (\nFigure 2A)\nA significantly higher proportion of Firmicutes and Actinobacteria were present in respiratory samples from patients with moderate COPD and Proteobacteria was comparatively increased in severe COPD, whereas in healthy individuals, Bacteroidetes and Fusobacteria were present in a higher abundance compared to both COPD groups. Figure 2. The taxonomic profiling of sputum microbiota among moderate COPD, severe COPD, and healthy groups\nOpen in a new tab\n(A) Relative abundance at the Phyla level, (B) Relative abundance at the genus level, and (C) LEfSe analysis represent the discriminative genera among the groups (LDA>2). In the cohort of patients with moderate COPD, the top five most commonly detected genera were\nStreptococcus (28. 2%),\nRothia (11. 4%),\nPrevotella (8. 3%),\nPorphyromonas (7. 9%), and\nGemella (6. 2%). The dominant genera in severe COPD were\nStreptococcus (20. 2%),\nPrevotella (11. 7%),\nPorphyromonas (10\n1%),\nLeptotrichia (5. 9%), and\nRothia (5. 3%). In healthy individuals,\nPrevotella (16. 5%) was the most prevalent genus, followed by\nStreptococcus (13. 0%),\nNeisseria (7. 1%),\nFusobacteria (6. 6%), and\nVelionella (6. 2%). An increasing abundance of\nStreptococcus (p<0. 05), and\nRothia was observed in moderate COPD samples, whereas\nMorexalla and\nPseudomonas were relatively higher in severe COPD\nGenera like\nPrevotella, and\nFusobacteria were abundantly present in healthy individuals in comparison to moderate COPD. Figure 2B demonstrates the top bacterial genera present in the sputum of patients with moderate or severe COPD, and healthy groups. The LEfSe analysis was performed to detect the discriminative genera among the groups (\nFigure 2C). In moderate COPD, six marker genera (LDA>2)\nStreptococcus, Rothia, Gemella, Carnobacteriaceae, Capnocytophaga, and\nWeissella were identified\nFor the severe COPD, genera\nPseudomonas and\nLeptotrichia were higher, whereas\nFusobacterium, Bacteroidales, Peptostreptococcus, Prevotella, Porphyromonas, Alloprevotella, etc. were dominant in healthy individuals. Discussion\nThe severity of COPD is often influenced by environmental exposures, host genetic makeup, and airway host-microbiome interactions\nThis study demonstrated the microbial alpha diversity of moderate and severe COPD groups decreased significantly in comparison to the healthy control group. Our findings added important evidence to the understanding of the microbial population dynamics in COPD. Su et al. also reported a decreased bacterial diversity in the acute exacerbations of COPD compared to healthy controls, which was consistent with our findings. 14\nRamsheh et al\nalso found a higher Alpha diversity in healthy individuals than in COPD bronchial brush samples. 15\nThe consistent results of these studies indicate the altered microbial diversity in COPD patients compared to healthy and its potential role as a disease marker. According to our findings, the alpha diversity of moderate COPD declined compared to the severe COPD group. However, Yang et al. and Li et al\ndid not observe any significant difference in microbial diversity between mild COPD and severe COPD groups, whereas Garcia-Nu\u00f1ez et al. reported a decreased alpha diversity in advanced COPD compared to moderate-to-severe disease. 16\n\n\u2013\n\n18\nThis inconsistency among studies could be due to distinct sampling methods, COPD states and exacerbations, and different geographic regions\nIn this study, the most dominant phylum was Firmicutes, predominantly present in all the groups, in concordance with previous reports. 15\n\n,\n\n16\n\n,\n\n19\n\n,\n\n20\nIn healthy controls, we observed a higher proportion of Bacteroidetes and Fusobacteria, likewise reported by Ramsheh et al. 15\nProteobacteria was present in relatively higher proportions in patients with severe COPD, which is consistent with previous studies examining bronchoalveolar lavage (BAL)\n\n21\nand sputum\n\n18\n\n,\n\n22\nsamples\nAccording to Wang et al., the increased abundance of Proteobacteria might trigger the pro-inflammatory mediators of the host, which leads to dysbiosis of lung microbiomes. 22\n\nStreptococcus was the predominant genus among the COPD sputum samples, whereas\nPrevotella was significantly higher in healthy controls. A multi-centric study reported that\nPrevotella promotes normal lung function and the severity of COPD increases with its decreasing abundance\n15\nA lung co-infection mouse model study conducted by Horn KJ\net al. suggested that an increased abundance of airway\nPrevotella can accelerate the innate immune response and rapid pathogen clearance from the lung. 23\nIn the moderate COPD group, we noted a higher abundance of\nStreptococcus and\nRothia, which was similar to previously published studies of COPD samples. 14\n\n,\n\n16\n\n\u2013\n\n18\n\n,\n\n22\n\n,\n\n24\nLi W\net al\nalso observed a higher abundance of\nRothia in the mild COPD group compared with the severe group,\n\n17\nwhich was negatively correlated with pro-inflammatory markers, which might reduce the disease severity and exacerbation frequency in COPD. 25\nAnother genus,\nMorexalla, which was abundant in severe COPD samples, was likewise reported by Wang et al. 26\nand Ramsheh et al. 15\nAccording to Wang et al\n, the relative abundance of\nMoraxella increased during COPD exacerbations and was also linked to the host interferon signaling pathway. 26\nRamsheh et al. revealed that an increased abundance of\nMoraxella was associated with the expression of the IL-17 and TNF inflammatory pathways, which elicit the severity of COPD\n15\nThese studies indicate that patients might suffer an altered lung microbial diversity during COPD disease severity, which means microbiota is a potential marker to predict the prognosis in COPD cases and may change the disease management. There are a few limitations of our study. First, the population size of this study was small and the samples were collected from a single center. Second, the virome and mycobiome diversity of sputum were not evaluated\nFuture multi-centre studies in larger diverse populations are required to conclude the stability and alteration of microbiota in health and disease. Conclusions\nOur findings suggested a significant loss of the sputum microbiome diversity in patients with COPD. This decrease is more pronounced in patients with severe disease. The dysbiosis of lung microbiota may cause an alteration of the mucosal immune system and further facilitate inflammation in the lung\n15\n\n[DOI] [PMC free article] [PubMed] []\n\n3. Mathers CD, Loncar D:\nProjections of Global Mortality and Burden of Disease from 2002 to 2030. PLoS Med. 2006;3(11):e442. 10. 1371/journal. pmed. 0030442\n\n[DOI] [PMC free article] [PubMed] []\n\n4. Safiri S, Carson-Chahhoud K, Noori M, et al.:\nBurden of chronic obstructive pulmonary disease and its attributable risk factors in 204 countries and territories, 1990-2019: results from the Global Burden of Disease Study 2019. BMJ\n2022;378:e069679. 10. 1136/bmj-2021-069679\n\n[DOI] [PMC free article] [PubMed] []\n\n5. Iheanacho I, Zhang S, King D, et al.:\nEconomic Burden of Chronic Obstructive Pulmonary Disease (COPD): A Systematic Literature Review. Int. J. Chron. Obstruct. Pulmon. Dis. 2020;15:439\u2013460. 10. 2147/COPD. S234942\n\n[DOI] [PMC free article] [PubMed] []\n\n6. Guti\u00e9rrez Villegas C, Paz-Zulueta M, Herrero-Montes M, et al\n:\nCost analysis of chronic obstructive pulmonary disease (COPD): a systematic review. Heal. Econ. Rev. 2021;11(1):31. 10. 1186/s13561-021-00329-9\n\n[DOI] [PMC free article] [PubMed] []\n\n7. Wang L, Hao K, Yang T, et al.:\nRole of the Lung Microbiome in the Pathogenesis of Chronic Obstructive Pulmonary Disease. Chin. Med. J. (Engl). 2017;130(17):2107\u20132111. 10. 4103/0366-6999. 211452\n\n[DOI] [PMC free article] [PubMed] []\n\n8. Li Z, Li Y, Sun Q, et al\n:\nTargeting the Pulmonary Microbiota to Fight against Respiratory Diseases. Cells. 2022;11(5):916. 10. 3390/cells11050916\n\n[DOI] [PMC free article] [PubMed] []\n\n9. Natalini JG, Singh S, Segal LN:\nThe dynamic lung microbiome in health and disease. Nat. Rev. Microbiol. 2022;21:222\u2013235. 10. 1038/s41579-022-00821-x\n\n[DOI] [PMC free article] [PubMed] []\n\n10\nGlobal Initiative for Chronic Obstructive Lung Disease:\nGlobal Strategy for the Diagnosis, Management, and Prevention of Chronic Obstructive Pulmonary Disease. 2019. Reference Source\n\n11. Illumina:\n16S metagenomic sequencing library preparation protocol: preparing 16S ribosomal RNA gene amplicons for the Illumina MiSeq system. Part no. 15044223 Rev B. Illumina, San Diego, CA. 2013. Reference Source\n\n12. Schloss PD, Westcott SL, Ryabin T, et al\n:\nIntroducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl. Environ. Microbiol. 2009;75(23):7537\u20137541. 10. 1128/AEM. 01541-09\n\n[DOI] [PMC free article] [PubMed] []\n\n13. Quast C, Pruesse E, Yilmaz P, et al.:\nThe SILVA ribosomal RNA gene database project: improved data processing and web-based tools. Nucleic Acids Res. 2013;41(Database issue):D590\u2013D596. 10\n1093/nar/gks1219\n\n[DOI] [PMC free article] [PubMed] []\n\n14. Su L, Qiao Y, Luo J, et al.:\nCharacteristics of the sputum microbiome in COPD exacerbations and correlations between clinical indices. J. Transl. Med. 2022;20(1):76. 10. 1186/s12967-022-03278-x\n\n[DOI] [PMC free article] [PubMed] []\n\n15. Ramsheh MY, Haldar K, Esteve-Codina A, et al\n:\nLung microbiome composition and bronchial epithelial gene expression in patients with COPD versus healthy individuals: a bacterial 16S rRNA gene sequencing and host transcriptomic analysis. Lancet Microbe. 2021;2(7):e300\u2013e310. 10. 1016/S2666-5247(21)00035-5\n[DOI] [PubMed] []\n\n16. Yang CY, Li SW, Chin CY, et al.:\nAssociation of exacerbation phenotype with the sputum microbiome in chronic obstructive pulmonary disease patients during the clinically stable state. J. Transl. Med\n2021;19(1):121. 10. 1186/s12967-021-02788-4\n\n[DOI] [PMC free article] [PubMed] []\n\n17. Li W, Wang B, Tan M, et al.:\nAnalysis of sputum microbial metagenome in COPD based on exacerbation frequency and lung function: a case control study. Respir. Res. 2022;23(1):321. 10. 1186/s12931-022-02246-9\n\n[DOI] [PMC free article] [PubMed] []\n\n18. Garcia-Nu\u00f1ez M, Millares L, Pomares X, et al\n:\nSeverity-related changes of bronchial microbiome in chronic obstructive pulmonary disease. J. Clin. Microbiol. 2014;52(12):4217\u20134223. 10. 1128/JCM. 01967-14\n\n[DOI] [PMC free article] [PubMed] []\n\n19. Mayhew D, Devos N, Lambert C, et al.:\nLongitudinal profiling of the lung microbiome in the AERIS study demonstrates repeatability of bacterial and eosinophilic COPD exacerbations. Thorax. 2018;73(5):422\u2013430. 10\n1136/thoraxjnl-2018-211859\n\n[DOI] [PMC free article] [PubMed] []\n\n20. Sze MA, Dimitriu PA, Hayashi S, et al.:\nThe lung tissue microbiome in chronic obstructive pulmonary disease. Am. J. Respir. Crit. Care Med. 2012;185(10):1073\u20131080. 10. 1164/rccm. 201111-2075OC\n\n[DOI] [PMC free article] [PubMed] []\n\n21. Erb-Downward JR, Thompson DL, Han MK, et al.:\nAnalysis of the lung microbiome in the \u201chealthy\u201d smoker and in COPD. PLoS One. 2011;6(2):e16384. 10. 1371/journal\npone. 0016384\n\n[DOI] [PMC free article] [PubMed] []\n\n22. Wang Z, Bafadhel M, Haldar K, et al.:\nLung microbiome dynamics in COPD exacerbations. Eur. Respir. J. 2016;47(4):1082\u20131092. 10. 1183/13993003. 01406-2015\n[DOI] [PubMed] []\n\n23. Horn KJ, Schopper MA, Drigot ZG, et al.:\nAirway Prevotella promote TLR2-dependent neutrophil activation and rapid clearance of Streptococcus pneumoniae from the lung. Nat. Commun. 2022;13(1):3321. 10\n1038/s41467-022-31074-0\n\n[DOI] [PMC free article] [PubMed] []\n\n24. Pragman AA, Lyu T, Baller JA, et al.:\nThe lung tissue microbiota of mild and moderate chronic obstructive pulmonary disease. Microbiome. 2018;6(1):7. 10. 1186/s40168-017-0381-4\n\n[DOI] [PMC free article] [PubMed] []\n\n25. Sagar S, Morgan ME, Chen S, et al\n:\nBifidobacterium breve and Lactobacillus rhamnosus treatment is as effective as budesonide at reducing inflammation in a murine model for chronic asthma. Respir. Res. 2014;15(1):46. 10. 1186/1465-9921-15-46\n\n[DOI] [PMC free article] [PubMed] []\n\n26. Wang Z, Maschera B, Lea S, et al.:\nAirway host-microbiome interactions in chronic obstructive pulmonary disease. Respir. Res. 2019;20(1):113. 10. 1186/s12931-019-1085-z\n\n[DOI] [PMC free article] [PubMed] []\n\n27\nDruti H, Kiran C, Fayaz SM:\nSequenced Data COPD and healthy. [Data set]. Zenodo. 2023. 10. 5281/zenodo. 7697770\n[DOI]\nF1000Res. 2023 Nov 3. 158079\nIs the work clearly and accurately presented and does it cite the current literature. Partly\nIf applicable, is the statistical analysis and its interpretation appropriate. Partly\nAre all the source data underlying the results available to ensure full reproducibility. Yes\nIs the study design appropriate and is the work technically sound. Partly\nAre the conclusions drawn adequately supported by the results. Yes\nAre sufficient details of methods and analysis provided to allow replication by others\nYes\nReviewer Expertise:\nRespiratory diseases / COPD / Lung Cancer / Respiratory microbiome\nI confirm that I have read this submission and believe that I have an appropriate level of expertise to confirm that it is of an acceptable scientific standard. F1000Res. 2023 Oct 24. 157003\nThe have specified that the samples of COPD patients had been obtained at admission for an exacerbation before the use of any antibiotic. Then, it is clear that they are assessing exacerbation samples, that were compared among them according with the severity pattern, and compared also with samples from healthy subjects. This is important because the title suggests that the authors are studying samples from COPD in stable situation\nI think that it would be necessary to specify in the title that the authors are focusing on COPD patients in exacerbation, not in stability, to avoid misunderstandings. Is the work clearly and accurately presented and does it cite the current literature. Partly\nIf applicable, is the statistical analysis and its interpretation appropriate. Partly\nAre all the source data underlying the results available to ensure full reproducibility\nYes\nIs the study design appropriate and is the work technically sound. Partly\nAre the conclusions drawn adequately supported by the results. Yes\nAre sufficient details of methods and analysis provided to allow replication by others\nYes\nReviewer Expertise:\nRespiratory diseases / COPD / Lung Cancer / Respiratory microbiome\nI confirm that I have read this submission and believe that I have an appropriate level of expertise to state that I do not consider it to be of an acceptable scientific standard, for reasons outlined above. F1000Res. 2023 Sep 1. 153873\n- (Introduction) The sentence \"\nAlthough a high heterogeneity has been observed among the studies, potentially attributed to the\u00a0underlying health conditions in different populations and the dynamics of microbial ecology in the COPD Indian\u00a0population, it remains poorly understood\" is misspelled, and needs to be corrected. 2\n- (Results) The sentence \"\nAt the time of sampling, all COPD patients were in an exacerbated state of the disease and no\u00a0significant growth of respiratory pathogens was detected in the sputum cultures\" specifies that the patients are exacerbated, but the study is restricted to patients that have not used antibiotics recently, suggesting that all them must be stable. This is a main point, because the paper is presented as a stability study\nHowever, is part of the patients were exacerbated the results would be more difficult to be interpreted. This point needs to be clearly specified, and the upper sentence corrected, if misspelled. Is the work clearly and accurately presented and does it cite the current literature. Partly\nIf applicable, is the statistical analysis and its interpretation appropriate. Partly\nAre all the source data underlying the results available to ensure full reproducibility\nYes\nReviewer Expertise:\nRespiratory diseases / COPD / Lung Cancer / Respiratory microbiome\nI confirm that I have read this submission and believe that I have an appropriate level of expertise to state that I do not consider it to be of an acceptable scientific standard, for reasons outlined above. F1000Res. 2023 Jul 28. 145128\nThe manuscript explores loss of microbial diversity in the sputum samples of patients with moderate and severe COPD, and compares the results with a healthy control group. The healthy control group included some smokers and the study population was dominated by males. The methodology was well described and both the methods and analysis were appropriate for work in the lung microbiome\nThe quality of the sputum samples voluntary produced were not discussed and a degree of oropharyngeal contamination is likely. Findings are consistent with previously published work and highlight once again signals of dysbiosis in the lung microbiome of patients with COPD. Had the sample size allowed, a comparison between current and previous smokers may have provided additional insights\nThe limitations of the study were acknowledged - both the small sample size and the fact that the virome (which is becoming increasingly important in COPD) was not evaluated. Although the findings of the study were not completely novel, the differences by disease severity was interesting and the study does add to a growing body of literature that enhances the understanding of the lung microbiome in respiratory disease. The methodology was sound and the discussion well written\nIs the work clearly and accurately presented and does it cite the current literature. Yes\nIf applicable, is the statistical analysis and its interpretation appropriate. Yes\nAre all the source data underlying the results available to ensure full reproducibility. Yes\nIs the study design appropriate and is the work technically sound. Yes\nAre the conclusions drawn adequately supported by the results. No\nAre sufficient details of methods and analysis provided to allow replication by others\nYes\nReviewer Expertise:\nInfectious diseases, Critical care, lung microbime, Tuberculosis\nI confirm that I have read this submission and believe that I have an appropriate level of expertise to confirm that it is of an acceptable scientific standard. F1000Res. 2023 Jul 20. 145128\nThe authors described the respiratory microbiome in healthy subjects and COPD patients with different levels of severity, confirming with their study the characteristics of the COPD microbiome previously reported in other communities. The main value of the paper, accordingly, is the analysis of a community living in a specific geographic area, not previously focused. There are some concerns that need to be raised, however, as followed\nThe title state that the study focus on the lung microbiome dynamics. However, considering that the studied sample is the sputum, it can only be representative of the bronchial microbiome, not the lung. Furthermore, because there has been a single sampling in the studied population, the study cannot be considered \"dynamic\". In the description of the features of the study participants, it is said that they are exacerbated\nI think that this is a typewriting mistake, because all the text suggests that the participants are stable (they have not used antibiotics the previous months). In the table, moderate COPD patients have an average FEV1/FVC of 90. If that is the case, most of them do not suffer from COPD, and probably have only chronic bronchitis. This is a main point that needs to be clarified\nThe comparisons would have been much more clear if all COPD patients are compared with healthy subjects, and later, excluding healthy subjects, severe and moderate COPD patients were compared. Is the work clearly and accurately presented and does it cite the current literature. Partly\nIf applicable, is the statistical analysis and its interpretation appropriate. Partly\nAre all the source data underlying the results available to ensure full reproducibility\nYes\nReviewer Expertise:\nRespiratory diseases / COPD / Lung Cancer / Respiratory microbiome\nI confirm that I have read this submission and believe that I have an appropriate level of expertise to state that I do not consider it to be of an acceptable scientific standard, for reasons outlined above. F1000Res. 2023 Jul 26\nHowever, considering that the studied sample is the sputum, it can only be representative of the bronchial microbiome, not the lung. Furthermore, because there has been a single sampling in the studied population, the study cannot be considered \"dynamic\". Response:\u00a0Thank you for your valuable suggestions\nIn this study, we characterized sputum, an easily obtainable non-invasive sampling method that represents a mix of upper and lower respiratory tracts, used for routine diagnosis of lower-respiratory tract infection. The term dynamics have been used here to refer to the changes in microbiome composition among the groups\n\nQuery 2. In the description of the features of the study participants, it is said that they are exacerbated\nI think that this is a typewriting mistake, because all the text suggests that the participants are stable (they have not used antibiotics the previous months). Response: The enrolled participants were the known cases of COPD, admitted to our hospital for the management of the latest exacerbation state, and a sample was collected before administrating antibiotics. So the patients have not used antibiotics in the previous months\nAlso, one of our exclusion criteria is antibiotic usage within four weeks prior to sample collection since antibiotics can alter the microbiome compositions. Query 3. In the table, moderate COPD patients have an average FEV1/FVC of 90. If that is the case, most of them do not suffer from COPD, and probably have only chronic bronchitis. This is a main point that needs to be clarified. Response: Thank you, Sir, for mentioning this point. This was a typewriting error, which we didn\u2019t notice earlier\nWe rechecked our data and there was an error in that particular row of that table. It should be the moderate COPD average FEV1/FVC was 64. 7 \u00b1 5. 6 and Severe COPD 61 \u00b1 7. 4\n\nQuery 4. The comparisons would have been much more clear if all COPD patients are compared with healthy subjects, and later, excluding healthy subjects, severe and moderate COPD patients were compared. Response: We compared the sputum microbiome in healthy, severe, and moderate COPD patients as per the objective\nThe purpose of this study was to explore the dysbiosis of airway microbiota in patients with moderate or severe chronic obstructive pulmonary disease (COPD) and compare them with healthy controls. Methods: The COPD patients were investigated for disease severity based on airflow limitations and divided into moderate (50%\u2264FEV1<80% predicted) and severe groups (FEV1<50% predicted)\nSpontaneous sputum samples were collected and, the V3-V4 regions of the 16S rRNA coding gene were sequenced to examine the microbiome profile of COPD and healthy participants. Results: A total of 45 sputum samples were collected from 17 severe COPD, 12 moderate COPD cases, and 16 healthy volunteers. The bacterial alpha diversity (Shannon and Simpson\u2019s index) significantly decreased in the moderate and severe COPD groups, compared to healthy samples\nA significantly higher proportion of Firmicutes and Actinobacteria were present in moderate COPD, and Proteobacteria numbers were comparatively increased in severe COPD. In healthy samples, Bacteroidetes and Fusobacteria were more abundant in comparison to both the COPD groups. Among the most commonly detected 20 bacterial genera,\nStreptococcus was predominant among the COPD sputum samples, whereas\nPrevotella was the top genus in healthy controls\nLinear discriminant analysis (LDA>2) revealed that marker genera like\nStreptococcus and\nRothia were abundant in moderate COPD. For severe COPD, the genera\nPseudomonasand\nLeptotrichia were most prevalent, whereas\nFusobacterium and\nPrevotella were dominant in the healthy group. Conclusions: Our findings suggest a significant dysbiosis of the respiratory microbiome in COPD patients\nThe decreased microbial diversity may influence the host immune response and provide microbiological biomarkers for the diagnosis and monitoring of COPD\nDruti H, Kiran C, Fayaz SM:\nSequenced Data COPD and healthy. [Data set]. Zenodo. 2023. 10. 5281/zenodo. 7697770\n[DOI] Version Changes\nRevised. Amendments from Version 3\nWe added\u00a0exacerbations in the title as per the reviewer's suggestion"
+}

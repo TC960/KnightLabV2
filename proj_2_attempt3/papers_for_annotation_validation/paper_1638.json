@@ -1,0 +1,470 @@
+{
+  "paper_id": "1638",
+  "paper_title": "Fecal microbiota transplant overcomes resistance to anti-PD-1 therapy in melanoma patients",
+  "study_type": "clinical_trial",
+  "primary_disease": "melanoma",
+  "sample_sites": [
+    "fecal",
+    "gut"
+  ],
+  "relationships": [
+    {
+      "id": "1638_rel_001",
+      "taxon_name": "Lachnospiraceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "melanoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated as one of the most significantly enriched taxa in Rs post-FMT. Also referenced in introduction as associated with favorable anti-PD-1 response.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Most of the significantly enriched taxa in Rs belonged to the phyla Firmicutes (Lachnospiraceae and Ruminococcaceae families) and Actinobacteria (Bifidobacteriaceae and Coriobacteriaceae families), whereas most of the bacteria decreased in Rs belonged to phylum Bacteroidetes"
+      }
+    },
+    {
+      "id": "1638_rel_002",
+      "taxon_name": "Ruminococcaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "melanoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated as one of the most significantly enriched taxa in Rs post-FMT. Also referenced in introduction as associated with favorable anti-PD-1 response.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Most of the significantly enriched taxa in Rs belonged to the phyla Firmicutes (Lachnospiraceae and Ruminococcaceae families) and Actinobacteria (Bifidobacteriaceae and Coriobacteriaceae families), whereas most of the bacteria decreased in Rs belonged to phylum Bacteroidetes"
+      }
+    },
+    {
+      "id": "1638_rel_003",
+      "taxon_name": "Ruminococcaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "melanoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "dual_direction_same_taxon"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Ruminococcaceae loss after antibiotic treatment in one patient (PT-18-0018) correlated with clinical progression, representing a distinct treatment_effect context (antibiotic-induced depletion vs FMT-induced enrichment). Separate entry justified by distinct context.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "After antibiotics, metagenomic data revealed pronounced changes in microbial community composition (loss of Faecalibacterium prausnitzii, Alistipes spp., and Ruminococcaceae spp.), which correlated with clinical progression."
+      }
+    },
+    {
+      "id": "1638_rel_004",
+      "taxon_name": "Bifidobacteriaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "melanoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated as one of the most significantly enriched taxa in Rs post-FMT. Also referenced in introduction as associated with favorable anti-PD-1 response.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Most of the significantly enriched taxa in Rs belonged to the phyla Firmicutes (Lachnospiraceae and Ruminococcaceae families) and Actinobacteria (Bifidobacteriaceae and Coriobacteriaceae families), whereas most of the bacteria decreased in Rs belonged to phylum Bacteroidetes"
+      }
+    },
+    {
+      "id": "1638_rel_005",
+      "taxon_name": "Coriobacteriaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "melanoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated as one of the most significantly enriched taxa in Rs post-FMT. Also referenced in introduction as associated with favorable anti-PD-1 response.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Most of the significantly enriched taxa in Rs belonged to the phyla Firmicutes (Lachnospiraceae and Ruminococcaceae families) and Actinobacteria (Bifidobacteriaceae and Coriobacteriaceae families), whereas most of the bacteria decreased in Rs belonged to phylum Bacteroidetes"
+      }
+    },
+    {
+      "id": "1638_rel_006",
+      "taxon_name": "Bifidobacterium longum",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "melanoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly named as one of several bacterial species associated with clinical response that have been previously reported, and confirmed as enriched in Rs in this paper's meta-analysis.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Several bacterial species associated with clinical response have been previously reported (Bifidobacterium longum, Colinsella aerofaciens, and F. prausnitzii)"
+      }
+    },
+    {
+      "id": "1638_rel_007",
+      "taxon_name": "Colinsella aerofaciens",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "melanoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "possible_typo_taxon_name"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Paper text reads 'Colinsella aerofaciens'; correct NCBI taxonomy is 'Collinsella aerofaciens' (two l's). Name preserved verbatim from paper per schema rules. Confirmed as enriched in Rs via the paper's meta-analysis.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Several bacterial species associated with clinical response have been previously reported (Bifidobacterium longum, Colinsella aerofaciens, and F. prausnitzii)"
+      }
+    },
+    {
+      "id": "1638_rel_008",
+      "taxon_name": "Faecalibacterium prausnitzii",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "melanoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Named as associated with clinical response in Rs. Also confirmed in transkingdom network analysis as negatively correlated with IL-8 and enriched in Rs after treatment. Consistent evidence across multiple paper sections.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Several bacterial species associated with clinical response have been previously reported (Bifidobacterium longum, Colinsella aerofaciens, and F. prausnitzii)... negatively correlated with organisms enriched in Rs after treatment (e.g., Ruminococcus flavefaciens and F. prausnitzii)"
+      }
+    },
+    {
+      "id": "1638_rel_009",
+      "taxon_name": "Faecalibacterium prausnitzii",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "melanoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "dual_direction_same_taxon"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Distinct context: loss of F. prausnitzii after antibiotic use in one patient (PT-18-0018) correlated with clinical progression. This is antibiotic-induced depletion, not FMT response. Separate entry justified.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "After antibiotics, metagenomic data revealed pronounced changes in microbial community composition (loss of Faecalibacterium prausnitzii, Alistipes spp., and Ruminococcaceae spp.), which correlated with clinical progression."
+      }
+    },
+    {
+      "id": "1638_rel_010",
+      "taxon_name": "Alistipes",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "melanoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Loss of Alistipes spp. after antibiotic use in one patient correlated with clinical progression. Mentioned twice in paper (lines 220-221 and 222). Antibiotic-induced depletion context.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "After antibiotics, metagenomic data revealed pronounced changes in microbial community composition (loss of Faecalibacterium prausnitzii, Alistipes spp., and Ruminococcaceae spp.), which correlated with clinical progression. A second transplant from the same donor was performed nearly 1 year after initial FMT and resulted in rapid gut colonization associated with ongoing SD"
+      }
+    },
+    {
+      "id": "1638_rel_011",
+      "taxon_name": "Ruminococcus flavefaciens",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "melanoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Identified in transkingdom network analysis as negatively correlated with IL-8/CXCL8 and enriched in Rs after treatment. Directional inference supported by network analysis context, not a direct differential abundance test reported with statistics.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "CXCL8 (IL-8), IL-10, and CCL3 (MIP-1\u03b1) were positively correlated with organisms enriched in NRs before treatment (Bacteroides uniformis, Bacteroides nordii, Phascolarctobacterium faecium, etc.) and negatively correlated with organisms enriched in Rs after treatment (e.g., Ruminococcus flavefaciens and F. prausnitzii)"
+      }
+    },
+    {
+      "id": "1638_rel_012",
+      "taxon_name": "Akkermansia muciniphila",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "melanoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "cited_from_prior_work"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Referenced in the context of prior work (ref 10, Gopalakrishnan 2018): 'previously shown to increase responses to anti-PD-1'. The paper's transkingdom network confirmed negative correlation with CXCL8. Low confidence because the directional claim is primarily attributed to prior literature, not this paper's primary data.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "gut bacterial commensals that were previously shown to increase (F. prausnitzii and Akkermansia muciniphila) and decrease (Bacteroides genus) responses to anti\u2013PD-1 (10) were negatively and positively correlated with CXCL8 (IL-8), respectively"
+      }
+    },
+    {
+      "id": "1638_rel_013",
+      "taxon_name": "Bacteroides uniformis",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "melanoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly named as enriched in NRs before treatment in the transkingdom network analysis. 'Increased in NRs' is equivalent to being associated with non-response. Direction reflects abundance in NRs (non-responders) relative to Rs.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "CXCL8 (IL-8), IL-10, and CCL3 (MIP-1\u03b1) were positively correlated with organisms enriched in NRs before treatment (Bacteroides uniformis, Bacteroides nordii, Phascolarctobacterium faecium, etc.) and negatively correlated with organisms enriched in Rs after treatment"
+      }
+    },
+    {
+      "id": "1638_rel_014",
+      "taxon_name": "Bacteroides nordii",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "melanoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly named as enriched in NRs before treatment in the transkingdom network analysis. Direction reflects higher abundance in NRs vs Rs.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "CXCL8 (IL-8), IL-10, and CCL3 (MIP-1\u03b1) were positively correlated with organisms enriched in NRs before treatment (Bacteroides uniformis, Bacteroides nordii, Phascolarctobacterium faecium, etc.) and negatively correlated with organisms enriched in Rs after treatment"
+      }
+    },
+    {
+      "id": "1638_rel_015",
+      "taxon_name": "Phascolarctobacterium faecium",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "melanoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly named as enriched in NRs before treatment in the transkingdom network analysis. Direction reflects higher abundance in NRs vs Rs.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "CXCL8 (IL-8), IL-10, and CCL3 (MIP-1\u03b1) were positively correlated with organisms enriched in NRs before treatment (Bacteroides uniformis, Bacteroides nordii, Phascolarctobacterium faecium, etc.) and negatively correlated with organisms enriched in Rs after treatment"
+      }
+    },
+    {
+      "id": "1638_rel_016",
+      "taxon_name": "Bacteroides",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "melanoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "cited_from_prior_work"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Referenced in context of prior work (ref 10) as previously shown to decrease responses to anti-PD-1. The paper's transkingdom network confirmed positive correlation with CXCL8. Low confidence because the directional claim is primarily attributed to prior literature. Kept as low confidence per pipeline rules.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "gut bacterial commensals that were previously shown to increase (F. prausnitzii and Akkermansia muciniphila) and decrease (Bacteroides genus) responses to anti\u2013PD-1 (10) were negatively and positively correlated with CXCL8 (IL-8), respectively"
+      }
+    },
+    {
+      "id": "1638_rel_017",
+      "taxon_name": "Firmicutes",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "melanoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Phylum-level statement directly stated in paper: most significantly enriched taxa in Rs belonged to phylum Firmicutes. Extracted per schema rule to capture phylum-level data separately from family/species-level entries.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Most of the significantly enriched taxa in Rs belonged to the phyla Firmicutes (Lachnospiraceae and Ruminococcaceae families) and Actinobacteria (Bifidobacteriaceae and Coriobacteriaceae families), whereas most of the bacteria decreased in Rs belonged to phylum Bacteroidetes"
+      }
+    },
+    {
+      "id": "1638_rel_018",
+      "taxon_name": "Actinobacteria",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "melanoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Phylum-level statement directly stated in paper: most significantly enriched taxa in Rs belonged to phylum Actinobacteria. Extracted per schema rule.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Most of the significantly enriched taxa in Rs belonged to the phyla Firmicutes (Lachnospiraceae and Ruminococcaceae families) and Actinobacteria (Bifidobacteriaceae and Coriobacteriaceae families), whereas most of the bacteria decreased in Rs belonged to phylum Bacteroidetes"
+      }
+    },
+    {
+      "id": "1638_rel_019",
+      "taxon_name": "Bacteroidetes",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "melanoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Phylum-level statement directly stated in paper: most bacteria decreased in Rs belonged to phylum Bacteroidetes. Extracted per schema rule.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Most of the significantly enriched taxa in Rs belonged to the phyla Firmicutes (Lachnospiraceae and Ruminococcaceae families) and Actinobacteria (Bifidobacteriaceae and Coriobacteriaceae families), whereas most of the bacteria decreased in Rs belonged to phylum Bacteroidetes"
+      }
+    }
+  ],
+  "extraction_stats": {
+    "layer1_raw_count": {
+      "combined": 19
+    },
+    "layer1_union_count": 19,
+    "layer2_corrections": 2,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 19
+  },
+  "paper_text": "Fecal microbiota transplant overcomes resistance to anti\u2013PD-1 therapy in melanoma patients\n\nAbstract\nAnti\u2013programmed cell death protein 1 (PD-1) therapy provides long-term clinical benefits to patients with advanced melanoma. The composition of the gut microbiota correlates with anti\u2013PD-1 efficacy in preclinical models and cancer patients\nTo investigate whether resistance to anti\u2013PD-1 can be overcome by changing the gut microbiota, this clinical trial evaluated the safety and efficacy of responder-derived fecal microbiota transplantation (FMT) together with anti\u2013PD-1 in patients with PD-1\u2013refractory melanoma. This combination was well tolerated, provided clinical benefit in 6 of 15 patients, and induced rapid and durable microbiota perturbation\nResponders exhibited increased abundance of taxa that were previously shown to be associated with response to anti\u2013PD-1, increased CD8+ T cell activation, and decreased frequency of interleukin-8\u2013expressing myeloid cells. Responders had distinct proteomic and metabolomic signatures, and transkingdom network analyses confirmed that the gut microbiome regulated these changes\nCollectively, our findings show that FMT and anti\u2013PD-1 changed the gut microbiome and reprogrammed the tumor microenvironment to overcome resistance to anti\u2013PD-1 in a subset of PD-1 advanced melanoma. Science. Author manuscript; available in PMC: 2022 Feb 5. Published in final edited form as: Science. 2021 Feb 5;371(6529):595\u2013602.\nabf3363\n\nFecal microbiota transplant overcomes resistance to anti\u2013PD-1 therapy in melanoma patients\nDiwakar Davar\nDiwakar Davar\n\n1Department of Medicine and UPMC Hillman Cancer Center, University of Pittsburgh, Pittsburgh, PA 15213, USA. Diwakar Davar\n\n1,*, Amiran K Dzutsev\nAmiran K Dzutsev\n\n2Laboratory of Integrative Cancer Immunology, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA\nAmiran K Dzutsev\n\n2,*, John A McCulloch\nJohn A McCulloch\n\n2Laboratory of Integrative Cancer Immunology, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA. John A McCulloch\n\n2, Richard R Rodrigues\nRichard R Rodrigues\n\n2Laboratory of Integrative Cancer Immunology, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA\n3Genetics and Microbiome Core, Basic Science Program, Frederick National Laboratory for Cancer Research, Frederick, MD 21702, USA. Richard R Rodrigues\n\n2,3, Joe-Marc Chauvin\nJoe-Marc Chauvin\n\n1Department of Medicine and UPMC Hillman Cancer Center, University of Pittsburgh, Pittsburgh, PA 15213, USA. Joe-Marc Chauvin\n\n1, Robert M Morrison\nRobert M Morrison\n\n1Department of Medicine and UPMC Hillman Cancer Center, University of Pittsburgh, Pittsburgh, PA 15213, USA\nRobert M Morrison\n\n1, Richelle N Deblasio\nRichelle N Deblasio\n\n1Department of Medicine and UPMC Hillman Cancer Center, University of Pittsburgh, Pittsburgh, PA 15213, USA. Richelle N Deblasio\n\n1, Carmine Menna\nCarmine Menna\n\n1Department of Medicine and UPMC Hillman Cancer Center, University of Pittsburgh, Pittsburgh, PA 15213, USA\nCarmine Menna\n\n1, Quanquan Ding\nQuanquan Ding\n\n1Department of Medicine and UPMC Hillman Cancer Center, University of Pittsburgh, Pittsburgh, PA 15213, USA. Quanquan Ding\n\n1, Ornella Pagliano\nOrnella Pagliano\n\n1Department of Medicine and UPMC Hillman Cancer Center, University of Pittsburgh, Pittsburgh, PA 15213, USA\nOrnella Pagliano\n\n1, Bochra Zidi\nBochra Zidi\n\n1Department of Medicine and UPMC Hillman Cancer Center, University of Pittsburgh, Pittsburgh, PA 15213, USA. Bochra Zidi\n\n1, Shuowen Zhang\nShuowen Zhang\n\n1Department of Medicine and UPMC Hillman Cancer Center, University of Pittsburgh, Pittsburgh, PA 15213, USA\nShuowen Zhang\n\n1,\u2020, Jonathan H Badger\nJonathan H Badger\n\n2Laboratory of Integrative Cancer Immunology, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA. Jonathan H Badger\n\n2, Marie Vetizou\nMarie Vetizou\n\n2Laboratory of Integrative Cancer Immunology, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA\nMarie Vetizou\n\n2, Alicia M Cole\nAlicia M Cole\n\n2Laboratory of Integrative Cancer Immunology, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA. Alicia M Cole\n\n2, Miriam R Fernandes\nMiriam R Fernandes\n\n2Laboratory of Integrative Cancer Immunology, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA\nMiriam R Fernandes\n\n2, Stephanie Prescott\nStephanie Prescott\n\n2Laboratory of Integrative Cancer Immunology, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA. Stephanie Prescott\n\n2, Raquel G F Costa\nRaquel G F Costa\n\n2Laboratory of Integrative Cancer Immunology, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA\nRaquel G F Costa\n\n2, Ascharya K Balaji\nAscharya K Balaji\n\n2Laboratory of Integrative Cancer Immunology, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA. Ascharya K Balaji\n\n2, Andrey Morgun\nAndrey Morgun\n\n4College of Pharmacy, Oregon State University, Corvallis, OR 97331, USA\nAndrey Morgun\n\n4, Ivan Vujkovic-Cvijin\nIvan Vujkovic-Cvijin\n\n5Laboratory of Immune System Biology, National Institute of Allergy and Infectious Diseases (NIAID), National Institutes of Health, Bethesda, MD 20892, USA. Ivan Vujkovic-Cvijin\n\n5, Hong Wang\nHong Wang\n\n6Biostatistics Facility, UPMC Hillman Cancer Center, University of Pittsburgh, Pittsburgh, PA 15213, USA\nHong Wang\n\n6, Amir A Borhani\nAmir A Borhani\n\n7Division of Abdominal Imaging, Department of Radiology, University of Pittsburgh, Pittsburgh, PA 15213, USA. Amir A Borhani\n\n7, Marc B Schwartz\nMarc B Schwartz\n\n8Division of Gastroenterology, Hepatology and Nutrition, University of Pittsburgh, Pittsburgh, PA 15213, USA\nMarc B Schwartz\n\n8, Howard M Dubner\nHoward M Dubner\n\n8Division of Gastroenterology, Hepatology and Nutrition, University of Pittsburgh, Pittsburgh, PA 15213, USA. Howard M Dubner\n\n8, Scarlett J Ernst\nScarlett J Ernst\n\n1Department of Medicine and UPMC Hillman Cancer Center, University of Pittsburgh, Pittsburgh, PA 15213, USA\nYana G Najjar\n\n1, Yasmine Belkaid\nYasmine Belkaid\n\n5Laboratory of Immune System Biology, National Institute of Allergy and Infectious Diseases (NIAID), National Institutes of Health, Bethesda, MD 20892, USA. Yasmine Belkaid\n\n5, John M Kirkwood\nJohn M Kirkwood\n\n1Department of Medicine and UPMC Hillman Cancer Center, University of Pittsburgh, Pittsburgh, PA 15213, USA\nJohn M Kirkwood\n\n1, Giorgio Trinchieri\nGiorgio Trinchieri\n\n2Laboratory of Integrative Cancer Immunology, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA. Giorgio Trinchieri\n\n2,\u2021,\u00a7, Hassane M Zarour\nHassane M Zarour\n\n1Department of Medicine and UPMC Hillman Cancer Center, University of Pittsburgh, Pittsburgh, PA 15213, USA. 9Department of Immunology, University of Pittsburgh, Pittsburgh, PA 15213, USA\n4College of Pharmacy, Oregon State University, Corvallis, OR 97331, USA. 5Laboratory of Immune System Biology, National Institute of Allergy and Infectious Diseases (NIAID), National Institutes of Health, Bethesda, MD 20892, USA. 6Biostatistics Facility, UPMC Hillman Cancer Center, University of Pittsburgh, Pittsburgh, PA 15213, USA. 7Division of Abdominal Imaging, Department of Radiology, University of Pittsburgh, Pittsburgh, PA 15213, USA\n8Division of Gastroenterology, Hepatology and Nutrition, University of Pittsburgh, Pittsburgh, PA 15213, USA. 9Department of Immunology, University of Pittsburgh, Pittsburgh, PA 15213, USA. *These authors contributed equally to this work. \u2021These authors contributed equally to this work. \u2020Present address: School of Medicine, Tsinghua University, No. 1 Tsinghua Yuan, Haidian District, Beijing 100084, China. \u00a7Corresponding author. zarourhm@upmc. edu (H. M. Z. ); trinchig@mail. nih. gov (G. T\nAssembly and interpretation of data: D. D., A. K. D., J. A. M., R. R. R., J. C., R. M. M., A. M., H. W., Y. B., G. T., and H. M. Z. Manuscript writing: D. D., A. K. D., J. A. M., R. R. R., J. C., R. M. M., G. T., and H. M. Z. Final approval of manuscript: All authors. Accountable for all aspects of the work: D. D., A. K. D., G. T., and H. M. Z\nCollectively, our findings show that FMT and anti\u2013PD-1 changed the gut microbiome and reprogrammed the tumor microenvironment to overcome resistance to anti\u2013PD-1 in a subset of PD-1 advanced melanoma. Immune checkpoint blockade with monoclonal antibodies (mAbs) targeting programmed cell death protein 1 (PD-1) provides long-term clinical benefits to nearly 40% of patients with advanced melanoma (1\u20135)\nIn addition to tumor-intrinsic mechanisms supporting resistance to anti\u2013PD-1 mAbs (anti\u2013PD-1), the gut microbiome is a major tumor-extrinsic regulator of responses to anti\u2013PD-1 (6\u20139). In mice, composition of the gut microbiome modulates therapeutic activity of anti\u2013PD-1 and anti\u2013programmed death-ligand 1 (PD-L1), and administration of certain gut commensals or fecal microbiota transplantation (FMT) promotes anti\u2013PD-1 efficacy in melanoma-bearing mice (10\u201312)\nAlthough multiple studies have reported that a favorable gut microbiome is associated with response to anti\u2013PD-1 in cancer patients, its precise composition is not yet fully understood (10\u201312). Specifically in melanoma, key bacterial species belonging to various phyla, including Actinobacteria (Bifidobacteriaceae spp. and Coriobacteriaceae spp. ) and Firmicutes (Ruminococcaceae spp. and Lachnospiraceae spp\n), are associated with favorable response to mAbs targeting PD-1 in cancer patients, although limited concordance among the identified species has been reported in different studies (10\u201314). Whether microbiome-based therapy can overcome resistance to anti\u2013PD-1 in patients with advanced melanoma has not been evaluated\nTo address this question, we designed a single-arm clinical trial to evaluate the safety and efficacy of FMT obtained from individual long-term responder (R) melanoma patients together with anti\u2013PD-1 in PD-1\u2013refractory metastatic melanoma patients (NCT03341143; fig. S1)\nA subset of PD-1\u2013refractory melanoma patients respond to fecal microbiota transplant and anti\u2013PD-1 therapy\nSixteen melanoma patients were enrolled between June 2018 and January 2020 (table S1), and the results presented here reflect a data cutoff of 1 September 2020\nAll melanoma patients were primary refractory to anti\u2013PD-1 therapy, defined as patients who had no prior response to anti\u2013PD-1 alone or in combination with anticytotoxic T lymphocyte\u2013associated protein 4 or investigational agents (table S1) and had confirmed primary progressive disease (PD), as assessed by an independent radiologist using response evaluation criteria in solid tumors (RECIST v1. 1) (15, 16)\nAmong PD-1\u2013refractory patients included in the trial, only one had a best response of short-term stable disease (SD) before radiographically confirmed PD. All enrolled patients and candidate donors underwent serial stool sampling and extensive infectious studies to eliminate the possibility of transmitting infectious agents (fig. S2)\nSeven donors, including four with complete response (CR) and three with partial response (PR), with median progression-free survival (PFS) of 56 months (range: 45 to 70 months) were used to treat 16 patients (table S2). Blood and stool specimens were obtained serially and screened for 32 viral, bacterial, fungal, and protozoan agents before FMT (fig. S2). A single donor\u2013derived FMT was administered along with pembrolizumab (fig\nS1), followed by additional pembrolizumab therapy every 3 weeks until disease progression or intolerable toxicity. Radiographic assessments were conducted every 12 weeks (four cycles), and response was classified by using RECIST v1. 1. Of the 16 patients enrolled, 15 received FMT and pembrolizumab and had at least one restaging computed tomography (CT) scan and thus were deemed evaluable for response\nOne patient who had a rapid clinical decline after FMT that was deemed secondary to rapid disease progression was evaluable for safety but not response. Objective responses (ORs) were noted in 3 (PT-18\u20130032, CR; PT-18\u20130007 and PT-19\u20130024, PR) out of 15 patients [OR rate (ORR): 20%], whereas 3 (PT-18\u20130018, PT-19\u20130002, and PT-19\u20130010) out of 15 patients (20%) had durable SD lasting >12 months (Fig. 1, A and B). Representative radiographic examples from all three R patients with ORR are provided (Fig\n1C and figs. S3 and S4). Median PFS and overall survival (OS) in all patients were 3. 0 and 7. 0 months, respectively, at a median follow-up of 7 months. In six patients with disease control (i. e., OR and SD), median PFS and OS were 14. 0 and 14. 0 months, respectively (Fig. 1B). Among these patients, one patient (PT-18\u20130007) exhibited ongoing PR after >2 years and is currently on surveillance, whereas four patients (PT-18\u20130018, PT-19\u20130002, PT-19\u20130010, and PT-19\u20130024) remain on treatment\nOne patient (PT-18\u20130032) with radiographic CR underwent an elective surgical procedure for spinal stenosis but suffered a spinal infarct unrelated to therapy and subsequently passed away. Our study shows that FMT together with anti\u2013PD-1 overcame resistance to anti\u2013PD-1 in a subset of PD-1\u2013refractory melanoma patients\nAlthough these preliminary findings warrant further evaluation in a larger randomized clinical trial, the observed ORR was superior to ORRs reported in melanoma patients primary refractory to anti\u2013PD-1 therapy treated beyond progression (17). Treatment-related adverse events (AEs) were minimal (table S3). Although all patients experienced at least one AE, these were mostly low grade (grade 1, 72. 9%; grade 2, 20. 0%). Endocrinologic AEs, mostly hypothyroidism, occurred in 17\n6% of patients and were easily managed with hormone replacement. Grade 3 AEs occurred in three patients: two instances of fatigue, in which underlying endocrinological issues were excluded and resolved, and one case of peripheral motor neuropathy (PT-19\u20130024) that required hospitalization, intravenous immunoglobulin, and corticosteroids and resolved with no further sequelae upon reinstitution of pembrolizumab. Fig. 1\nRadiographic responses from a phase 2 study of anti\u2013PD-1 responder\u2013derived FMT and pembrolizumab in PD-1\u2013refractory melanoma. Open in a new tab\nMelanoma patients who had primary refractory disease to anti\u2013PD-1 therapy received FMT derived from individual melanoma patients with durable OR to anti\u2013PD-1 therapy. FMT was administered colonoscopically on day 0 along with pembrolizumab (200 mg). Pembrolizumab was repeated every 3 weeks\nRestaging scans were performed at weeks 9 to 12 and repeated every 9 to 12 weeks while in the study. Patients remained in the study until intolerable toxicity, RECIST v1. 1\u2013confirmed disease progression, or completion of 35 cycles of pembrolizumab. (A and B) Treatment exposure and response duration by RECIST v1. 1 (investigator assessed; n = 15). (A) FMT donor and best response to prior line(s) of anti\u2013PD-(L)1 therapy singly or in combination are shown for each FMT-recipient patient\nThe length of each bar corresponds to the duration of time that patients received treatment (in weeks). Response status is color coded (R, blue; NR, red). Response symbols represent status at first restaging scan (9 to 12 weeks) and at most recent review. Patients with ongoing response in the study are depicted with horizontal arrows. (B) Radiographic change of tumor burden from baseline (investigator assessed per RECIST v1. 1; n = 15)\nOne patient (PT-18\u20130018) had initial disease stability with subsequent progression after antibiotic therapy and was offered a retransplant with the same donor, with subsequent disease stabilization. (C) Representative CT scans from one responding patient. CT scans from patient PT-19\u20130024 at four separate time points depict initial tumor growth after FMT followed by eventual PR. L, left; LN, lymph node\nFecal microbiota transplant induces persistent perturbation of recipients\u2019 gut microbiome\nTo evaluate the effects of FMT on gut microbiota composition in recipients and the relationship with clinical response, defined as OR or SD >12 months after FMT and anti\u2013PD-1 on the basis of RECIST 1. 1 criteria, we performed shotgun metagenomic sequencing of 223 fecal samples obtained from recipients (n = 15) and donors (n = 7)\nFor each recipient, we sequenced one pre-FMT sample (obtained 7 to 21 days before FMT) and all available post-FMT samples (obtained weekly for 12 weeks and then every 3 weeks for as long as the patient remained on trial) (Fig. 2A). For each corresponding FMT, we sequenced the distinctive donor-specific \u201cFMT infusate\u201d obtained from specific FMT donors (table S2 and fig. S5A)\nUniform manifold approximation and projection (UMAP) analyses depicted distinct gut microbiota composition in recipients (Fig. 2A) and donors (fig. S5A). No significant difference in response after FMT was observed in patients that received infusates from donors that had either a CR or PR to anti\u2013PD-1 (fig. S5B). The microbiota in CR donors exhibited higher alpha diversity than in PR donors, but no significant differences were observed between donors and recipients before FMT (fig. S5C)\nIn recipients, gut microbiota composition changed after a single FMT in Rs and nonresponders (NRs) (Fig. 2A), an alteration that persisted unless a significant perturbation occurred (e. g., antibiotic use in PT-18\u20130032 before day 22 and PT-18\u20130018 before day 84). Of note, all separately collected infusates produced from individual donors were highly similar to each other (fig. S5, A and D)\nTo evaluate intrapatient variability in both donors and recipients, we computed sample variance across all time points and all taxa in all available samples from recipients and donors (only those with at least three samples) (Fig. 2B). Variance was significantly greater in all recipients after FMT compared with that in donors (Fig. 2B), although Rs had a trend toward greater variance compared with NRs (fig. S6)\nWe quantified differences and rate of change in microbiome communities in recipients using multidimensional Euclidean distance. Specifically, the speed of traversion, as inferred from the Euclidean distance traversed per day, trended higher in Rs than NRs (Fig. 2C). Although this parameter did not reach statistical significance (likely because of the limited sample size), the Euclidean distance still notably separated patients who achieved disease control from those who did not. Fig. 2\nMicrobiome analyses before and after FMT in melanoma patients. Open in a new tab\n(A) Dimensionality reduction using t-distributed UMAP (t-UMAP) plot of microbial taxa abundances by last known taxon of FMT recipients at different time points. Each color corresponds to a different FMT-treated patient. Pre-FMT stool samples are depicted as squares and post-FMT stool samples as triangles\nEllipses encapsulate each recipient\u2019s pre- and post-FMT samples, and the size of the ellipse spans two standard deviations from the centroid. Rs and NRs are distinguished by solid and dashed lines, respectively. PT-19\u20130026 (PD) is not depicted because the patient had a single post-FMT sample. (B) Intrapatient variance of stool samples from donors and recipients after standardization and dimensionality reduction\nDonors (n = 3) and recipients (n = 15) who contributed at least three fecal samples are depicted. Data were standardized, PCA was performed, PC loading was computed, and variances of patients for every PC loading were calculated as the squared standard deviation divided by the mean and were multiplied by the PC variance contribution\nResultant values were added together to produce a combined variance number, which was compared between donors (n = 3) and recipients (n = 15) by using the nonparametric t test. AU, arbitrary units. (C) Rate of taxonomic change of stool samples sequentially obtained from treated patients\nThe rate of taxonomic change for each sample sequentially obtained from each patient was calculated by using speed of traversion (Euclidean distances traversed per day), which was calculated by dividing total Euclidean distance traveled by days. Euclidean distance was calculated by using log-transformed normalized taxonomic data from shotgun sequencing between Rs (n = 6) and NRs (n = 9) by using the nonparametric t test\n(D) Plot of Euclidean distance over time from patients\u2019 gut microbiota to corresponding FMT donor\u2019s microbiota. To assess the efficiency of FMT engraftment, Euclidean fitted curves were generated by using points on the graph in both NRs (red, above) and Rs (blue, below). A positive percentage of each curve indicates similarity to the corresponding donor, whereas a negative percentage indicates changes in the recipient microbiota even further from the donor microbiota\nGraphs were normalized by truncating at 60 days in both Rs and NRs. The chi-square test was calculated by using an even distribution as null hypothesis. (E) Recipient IgG response against donor microbiota induced by FMT. Donor fecal bacteria were incubated with recipient sera at 1:200 dilutions, washed and stained with phycoerythrin-labeled antihuman IgG, and fixed and analyzed on a flow cytometer\nChange in IgG positivity of donor fecal bacteria for each FMT recipient was calculated in relation to the first FMT recipient serum sample available compared with the subsequent two time points up to 50 days later. Percent IgG-positive donor fecal bacteria was assessed, and area under the curve (AUC) for percent IgG-positive donor bacteria was calculated, adjusting all recipient time points relative to the baseline time point set to zero\nDifference in reactivity between sera from Rs and NRs was evaluated by Student\u2019s t test. (F) Cladogram visualization of phylogenetic distribution of differentially abundant taxa before and after FMT in responding patients. Fisher\u2019s method for meta-analyses was used to validate statistical significance and calculate effect size of the differential abundances of taxa in Rs (fig. S10)\nDifferentially abundant taxa are color coded on the basis of relative abundance in post-compared with pretransplant samples (green, higher; yellow, unchanged; red, lower). The most significantly associated taxa are highlighted at the family level\nTo investigate the degree of donor microbial implantation and its relationship to response in patients over time, we evaluated the acquired similarity of the recipient microbiota to the donor microbiota by measuring the Euclidian distance between donor microbial composition and every available time point of the corresponding recipients, starting from the pretreatment sample (Fig. 2D)\nWe observed that the gut microbiota composition shifted significantly toward donor microbiota in Rs but not in NRs (Fig. 2D and fig. S7, left). FMT implantation was clearly heterogeneous in the NR group (n = 9), in which about half of the recipients had samples that were similar and the other half had samples that were dissimilar to corresponding donors (Fig. 2D, top). By contrast, the gut microbiota in Rs (n = 6) uniformly shifted toward donor samples (Fig. 2D, bottom)\nWe also evaluated the humoral immune response to donor bacteria using recipient serum and donor feces and observed that FMT administration induced donor bacteria\u2013specific immunoglobulin G (IgG) to a greater extent in Rs compared with NRs (Fig. 2E and fig. S8), suggesting that successful implantation and mucosal trans-location of the transplanted bacteria, known to induce an IgG response against commensal bacteria, may preferentially occur in Rs (18)\nThe use of systemic antibiotics was prohibited on study; however, PT-18\u20130018 developed a soft-tissue infection that required antibiotics (fig. S9). During this period, pembrolizumab was withheld, although stool samples and imaging were obtained at protocol-specified intervals. Initial microbiome after FMT shifted toward the donor\u2019s microbiome with SD\nAfter antibiotics, metagenomic data revealed pronounced changes in microbial community composition (loss of Faecalibacterium prausnitzii, Alistipes spp., and Ruminococcaceae spp. ), which correlated with clinical progression. A second transplant from the same donor was performed nearly 1 year after initial FMT and resulted in rapid gut colonization associated with ongoing SD (fig. S9)\nOverall, although successful colonization after FMT did not always resensitize PD-1\u2013refractory melanoma patients to anti\u2013PD-1, clinical response was associated with FMT implantation and donor microbiota\u2013specific IgG response. Furthermore, the changes of microbiome composition after FMT were rapidly disturbed by use of antibiotics, which depleted beneficial taxa (i. e., F. prausnitzii, Alistipes spp., and Ruminococcaceae spp\n), in accordance with previously reported deleterious effects of antibiotic use with regards to anti\u2013PD-1 in cancer patients (12, 19). To analyze the bacterial species most commonly associated with clinical benefit to FMT, we first performed statistical analyses between pre- and post-FMT samples in Rs, followed by a meta-analysis using Fisher\u2019s method to identify common features among all samples (Fig. 2G and fig. S10)\nSeveral bacterial species associated with clinical response have been previously reported (Bifidobacterium longum, Colinsella aerofaciens, and F. prausnitzii) (10, 11). Most of the significantly enriched taxa in Rs belonged to the phyla Firmicutes (Lachnospiraceae and Ruminococcaceae families) and Actinobacteria (Bifidobacteriaceae and Coriobacteriaceae families), whereas most of the bacteria decreased in Rs belonged to phylum Bacteroidetes\nFecal microbiota transplant and anti\u2013PD-1 modulate immune responses peripherally and intratumorally\nTo evaluate the immunological effects of FMT and anti\u2013PD-1 in treated patients, we performed multiparameter flow cytometry and single-cell RNA sequencing (scRNA-seq) analysis from peripheral blood mononuclear cells (PBMCs) and tumor samples, respectively, collected before and after treatment\nUnsupervised single-cell analysis on spectral flow cytometry of PBMCs was performed at three consecutive time points before and after treatment (Fig. 3, A and B, and fig. S11, A and B) (20, 21). Compared with NRs, Rs displayed higher percentages of CD56+CD8+ T cells after treatment (day 42), which represent a subset of activated CD8+ T cells with higher cytolytic functions (Fig. 3B) (22\u201324)\nCD8+CD56+ T cells expressed high levels of TIGIT, CD57, 2B4, OX40, ICOS, 4\u20131BB, CD16, NKp46, NKp30, granzyme B, perforin, and CD103 compared with total CD8+ T cells (fig. S11C). These findings are in line with previous reports in cancer patients responding to immunotherapy, including radioimmunotherapy (25) or PD-1 blockade (26). In Rs, CD8+ T cells up-regulated TIGIT (day 21) as well as T-bet and LAG-3 (day 42) and down-regulated CD27 (day 21) compared with NRs at these time points (Fig. 3C)\nRs exhibited lower percentages of na\u00efve CD8+ T cells (day 21) and higher percentages of terminally differentiated effector memory CCR7\u2212CD45RA+ (TEMRA) cells (day 42) compared with NRs (Fig. 3D). These observations suggest that circulating CD8+ T cells are more activated and differentiated in Rs, as previously shown in cancer patients who respond to PD-1 blockade (27, 28)\nMucosal-associated invariant T (MAIT) cells, which respond to bacterial antigens and inflammatory cytokines, expressed more granzyme B (day 42) and less CD27 (day 42) in Rs compared with NRs, suggesting a more differentiated phenotype (Fig. 3E). We observed no significant differences in the frequencies of circulating myeloid cell subsets before and after treatment (fig. S11, D and E)\nOur data show that FMT together with anti\u2013PD-1 expanded activated CD56+CD8+ T cells and increased activation of CD8+ T and MAIT cells in PBMCs of Rs. Fig. 3. Single-cell analyses of circulating and tumor-infiltrating immune cells. Open in a new tab\n(A) Unsupervised multiparameter flow cytometry analysis of circulating immune cells\nUMAP visualization of 100,000 live single cells from Rs and NRs at three time points\u2014pretreatment (D0), day 21 (D21), and D42\u2014from 30-parameter flow panel analysis (n = 14) after merging clusters on the basis of expression of CD3, CD4, CD8, CD19, CD14, CD56, T\u03b3\u03b41, and T\u03b3\u03b42. Myeloid cells were identified as lineage-negative cell clusters on the basis of presence or absence of CD14+ cells. (B) Frequency of CD56+CD8+ clustered T cells in PBMCs of patients\nWhisker boxes show frequencies of CD56+CD8+ clustered T cells in PBMCs between Rs and NRs at D0, D21, and D42. We observed a significant increase of CD56+CD8+ T cells in Rs at D42 using the unpaired t test. *p < 0. 05. (C and D) Phenotypic analysis of circulating CD8+ T cells\nWhisker boxes show markers that are significantly differentially expressed (normalized mean fluorescence intensity) in CD8+ T cells (C) and CCR7+CD45RA+-na\u00efve, TEMRA, CCR7+CD45RA\u2212 effector memory (EM), and CCR7\u2212CD45RA\u2212 central memory (CM) cells (D) between Rs (n = 5 to 6) and NRs (n = 5 to 7) at the three time points. Analysis was performed on live single CD3+ and TCRgd\u2212 T cells\nIn Rs, we observed up-regulation of TIGIT, Lag-3, and T-bet after treatment and down-regulation of CD27 in CD8+ T cells using the unpaired t test. *p < 0. 05. (E) Phenotypic analysis of circulating MAIT cells. Whisker boxes comparing MAIT cells between Rs (n = 5 to 6) and NRs (n = 5 to 7) at the three time points. Analysis was performed on live single CD3+ and TCRgd\u2212 T cells. In Rs, MAIT cells up-regulated granzyme B expression and down-regulated CD27 after treatment using the unpaired t test\n*p < 0. 05. (F) scRNA-seq analysis of tumor-infiltrating immune cells. UMAP projection of 64,000 CD45+ cells that were clustered and manually identified on the basis of their expression profile. NK, natural killer; pDC, plasmacytoid dendritic cell; T FH, T follicular helper; T FOS, T cells expressing FOS; Tregs, T regulatory cells. (G) Whisker boxes showing the abundance of myeloid cells and CD4+ Tregs in CD45+ tumor-infiltrating cells\nWe observed decreased abundance of myeloid cells and CD4+ Tregs in Rs compared with NRs using the unpaired t test. *p < 0. 05. (H) Cell-associated expression of two markers (CXCL8 and SPP1) in UMAP projection. These markers are predominantly expressed in suppressive myeloid cells. (I) Volcano plots showing the differences in phenotype of CD8+ T cells and myeloid cells between Rs and NRs after FMT\nRs show a CD8+ T phenotype with increased activation markers (GZMK, class II HLA genes, CD74), whereas NRs show a myeloid phenotype with an increased suppressive signature (CXCL8 and SPP1) at day 56 after treatment. Adjusted p values were obtained by Wilcoxon rank sum test. CD45+ cells were sorted from single-cell suspension obtained from tumor biopsies used for scRNA-seq analysis (10X Genomics Chromium)\nIn total, 64,340 cells from 17 tumor samples were collected before (four Rs and five NRs) and after treatment (two Rs and six NRs). After normalization and batch-effect removal (29), cells were clustered into 26 groups. Each cluster was manually labeled by gene expression profile (table S4) to identify 10 distinct cell types (Fig. 3F). We observed a high frequency of myeloid cells (p = 0. 026) and CD4+ regulatory T cells (P = 0\n02) among CD45+ cells in NRs compared with Rs after treatment, whereas the other clusters did not exhibit significant changes (Fig. 3G and fig. S12). Myeloid cells expressed high levels of CXCL8 [interleukin-8 (IL-8)] and SPP1 (osteopontin), which increased after FMT in NRs compared with Rs, suggesting a myeloid gene signature previously associated with tumor progression (Fig. 3, H and I) (30, 31)\nCD8+ T cells up-regulated human leucocyte antigen (HLA) class II genes CD74 and GZMK in Rs compared with NRs after treatment, supporting increased T cell activation at tumor sites (Fig. 3I, left). Together, our findings demonstrate that FMT and anti\u2013PD-1 counteract myeloid-induced immunosuppression to augment CD8+ T cell activation in the tumor microenvironment of Rs\nInsufficient tumor tissue was available to evaluate the role of tumor mutation burden, PD-L1 expression, and interferon-\u03b3 (IFN-\u03b3) gene expression signature in predicting clinical outcome\nFecal microbiota transplant alters serum metabolome and cytokines in responders\nTo assess the impact of FMT on systemic parameters of the host and its relationship with response to therapy, we performed multi-omics analysis of serum samples, including analyses of serum cytokines and chemokines, as well as serum metabolomics and lipidomics analyses\nAlthough Rs and NRs exhibited similar composition of serum cytokines and chemokines, Luminex multiparameter proteomics profiling showed a prominent shift in levels of circulating cytokines and chemokines in Rs, whereas NRs had little or no change [Fig. 4A, principal components analysis (PCA)]\nMultiple circulating cytokines and chemokines decreased after FMT in Rs, including CCL2 (MCP1), CXCL8 (IL-8), and IL-18 that have been associated with negative outcomes to anti\u2013PD-1 (32, 33), and IL-12p70 and IFN-\u03b3 (Fig. 4A, heatmap). These latter two cytokines are usually associated with antitumor effector T cell responses\nHowever, chronic activation of the IL-12\u2013IFN-\u03b3 axis, as may occur in refractory patients treated with anti\u2013PD-1, could induce a multigenic resistance program in tumor cells and could disrupt T cell response, differentiation, and exhaustion through production of nitric oxide and down-regulation of TCF1 (34\u201336)\nThe cytokines and chemokines that were most prominently up-regulated are associated with follicular helper T and B cell signatures found in tertiary lymphoid structures, such as IL-21 and CXCL13 (BCP1). We also observed up-regulation of type II cytokines such as IL-5, IL-13, and IL-10; the tumor necrosis factor (TNF) family of cytokines such as TNF and TRAIL; and cytokines promoting monocyte cell migration (CX3CL1) and dendritic cell expansion (FLT3L)\nAltogether, our findings show that Rs down-regulated multiple circulating cytokines and chemokines associated with resistance to anti\u2013PD-1 while up-regulating circulating biomarkers that are associated with favorable clinical outcome. In particular, Rs exhibited decreased circulating IL-8 and decreased frequencies of IL-8\u2013producing myeloid cells in tumors\nIL-8 is an immunosuppressive cytokine secreted by intratumoral and circulating myeloid cells, levels of which correlate adverse prognosis to anti\u2013PD-1 in multiple cancers, including melanoma (30, 37). Fig. 4. Serum proteomics, metabolomics, and lipidomics signatures before and after FMT. Open in a new tab\n(A) PCA and heatmap of serum cytokines of Rs and NRs before and after FMT\nData show that Rs after treatment (orange) separate from Rs before treatment (green), along with NRs before (red) and after (blue) treatment, as assessed by two-way analysis of variance (ANOVA; *p < 0. 05). (B) PCA and heatmap of serum metabolites of Rs and NRs before and after FMT. Data show that Rs after treatment (orange) separate from Rs before treatment (green), along with NRs before (red) and after treatment (blue), as assessed by using two-way ANOVA (q < 0. 05)\n(C) PCA and heatmap of serum lipidomics of Rs and NRs before and after FMT. Serum lipidomic analyses show that Rs after treatment (orange) distinctly clustered separately from Rs before treatment (green), along with NRs before (red) and after (blue) treatment, as assessed by using two-way ANOVA (q < 0. 05). (D) Transkingdom network analysis of multi-omic data\nData for microbial (octagons), metabolites (squares), cytokines (triangles), and multiparameter flow cytometry (hearts) were analyzed to identify highly differentially abundant elements between Rs and NRs to FMT and pembrolizumab. To identify nodes (i. e\n, any of these four types of elements) and their groups with potential contribution to a regulatory activity, a \u201ctranskingdom\u201d network integrating -omics data was constructed by using their correlations within the different groups (Rs or NRs, before or after FMT and pembrolizumab). Network interrogation revealed that \u201cmicrobiome\u201d and \u201cmetabolite\u201d as well as \u201cmicrobiome\u201d and \u201ccytokine\u201d subnetworks were the most interconnected\nWe identified a dense subnetwork (module) containing the highest number of nodes from different -omics data (nodes highlighted in yellow, positively correlated edges in red, and negatively correlated edges in blue). (E) Subnetwork identified in (D). Network analyses established that CXCL8 (IL-8), IL-10, and CCL3 (MIP-1\u03b1) were positively correlated with organisms enriched in NRs before treatment (Bacteroides uniformis, Bacteroides nordii, Phascolarctobacterium faecium, etc\n) and negatively correlated with organisms enriched in Rs after treatment (e. g., Ruminococcus flavefaciens and F. prausnitzii). FMT and anti\u2013PD-1 resulted in significant changes in the serum metabolomic profile of both Rs and NRs (Fig. 4B and fig. S13), although the most pronounced metabolomic shifts occurred in Rs (Fig. 4B, PCA plot). The most significant and pronounced changes after FMT affected metabolites that are usually associated with gut microbiota (38)\nSerum bile acids were increased after FMT with more efficient transformation of primary to secondary bile acids in Rs versus NRs (fig. S14). In addition, the levels of bacterial catabolism products of aromatic compounds through benzoate degradation were higher in Rs than in NRs\nSome of these compounds, including hippurate, p-cresol sulfate, and hydrocinnamate, have been described as biomarkers of microbiome diversity and correlated with the presence of taxa associated with response to anti\u2013PD-1 (figs. S13 and S14) (39). Whereas pre-FMT samples from Rs and NRs had very similar lipidomic profiles, significant changes were observed in post-FMT samples from Rs but not NRs (Fig. 4C and fig\nS15), including higher levels of triacylglycerols and lower levels of monoacylglycerols and diacylglycerols, possibly reflecting microbiome-controlled differences in lipid absorption (40)\nThe gut microbiome regulates the biological signatures observed in responders\nTo identify causal relationships between host and microbes independent of a particular group or patient, we created a statistical model of robust interactions between the different players\u2014\u201dtranskingdom network\u201d analyses\u2014using different types of -omics data (41, 42)\nThe transkingdom network consisted of 371 nodes and 819 edges, in which nodes represented individual elements of -omics datasets (metagenomic, metabolomic, lipidomic, flow cytometric, and proteomic) and edges represented positive and negative correlations between those elements (Fig. 4D). Most of the interomic edges belonged to the microbial metagenome dataset, which had a large number of positive (red) and negative (blue) network connections with the metabolomic and proteomic datasets\nMicrobial nodes were more densely connected to other -omics datasets than any other node, suggesting their central role in governing interomic changes after FMT and anti\u2013PD-1. Some nodes in the transkingdom network analysis were highly interconnected, forming subnetworks. These subnetworks were identified by using the MCODE plugin of Cytoscape (43), and one subnetwork connected all four -omics datasets (Fig. 4E)\nIn particular, we observed that gut bacterial commensals that were previously shown to increase (F. prausnitzii and Akkermansia muciniphila) and decrease (Bacteroides genus) responses to anti\u2013PD-1 (10) were negatively and positively correlated with CXCL8 (IL-8), respectively\nConclusion\nOur findings show that a single FMT administered colonoscopically together with PD-1 blockade successfully colonized the gut of Rs and reprogrammed the tumor microenvironment to overcome primary resistance to anti\u2013PD-1 in a subset of patients with advanced melanoma\nFMT shifted microbiome composition toward taxa favoring anti\u2013PD-1 efficacy to induce clinical responses to anti\u2013PD-1 in PD-1\u2013refractory melanoma patients, who had an immunological ability to respond to the treatment but exhibited an unfavorable microbiota composition\nConversely, PD-1\u2013refractory patients may not respond to FMT for various reasons, including (i) an inability to respond to the tumor regardless of microbiota composition because of the patient\u2019s immunodeficient status or lack of tumor immunogenicity, (ii) an absence of taxa needed for anti\u2013PD-1 therapy effectiveness in the FMT, or (iii) failure of the FMT to successfully implant into the recipient and induce perturbations of host microbiota favoring anti\u2013PD-1\nOur findings warrant further investigation in larger clinical trials to better identify microbial, circulating, and intratumoral biomarkers to select patients most likely to benefit from microbiome-based therapy of melanoma. We expect that such studies will lead to the identification of a bacterial consortium capable of converting a subset of melanoma patients primary refractory to anti\u2013PD-1 therapy into R patients\nis supported by the National Cancer Institute (NCI) of the National Institutes of Health (NIH) (award numbers R01 CA228181 and R01 CA222203) and the James W. and Frances G. McGlothlin Chair in Melanoma Immunotherapy Research. Work of the UPMC Hillman Cancer Center Microbiome Shared Facility and Cytometry Facility is supported by the NIH NCI Comprehensive Cancer Center Support CORE grant (P30 CA047904)\nreports the following disclosures: Merck, Bristol-Myers Squibb, Checkmate Pharmaceuticals, CellSight Technologies, MedPacto, and GlaxoSmithKline (research support); Array Biopharma, Checkmate Pharmaceuticals, Incyte, Immunocore, and Merck; Shionogi (consulting); and Vedanta Biosciences (scientific advisory board). Y. G. N. reports the following disclosures: Merck, Pfizer, and Bristol-Myers Squibb (research support). J. M. K\nreports the following disclosures: Amgen, Bristol-Myers Squibb, Castle Biosciences, Checkmate Pharmaceuticals, Immunocore LLC, Iovance, and Novartis (research support) and Amgen, Bristol-Myers Squibb, Checkmate Pharmaceuticals, and Novartis (consulting). H. M. Z. reports the following disclosures: Bristol-Myers Squibb, Checkmate Pharmaceuticals, and GlaxoSmithKline (research support) and Bristol-Myers Squibb, Checkmate Pharmaceuticals, GlaxoSmithKline, and Vedanta (consulting)\nS1 to S15\nTables S1 to S4\nReferences (44\u201351)\nMDAR Reproducibility Checklist\n\nREFERENCES AND NOTES\n\n1. Larkin J\net al., JAMA Oncol. 1, 433\u2013440 (2015). [DOI] [PubMed] []\n\n2. Ribas A\net al., JAMA\n315, 1600\u20131609 (2016). [DOI] [PubMed] []\n\n3. Robert C\net al., N. Engl. J. Med\n372, 320\u2013330 (2015). [DOI] [PubMed] []\n\n4. Robert C\net al., Lancet Oncol. 20, 1239\u20131251 (2019). [DOI] [PubMed] []\n\n5. Robert C\net al., N. Engl. J\nMed\n372, 2521\u20132532 (2015). [DOI] [PubMed] []\n\n6. Dzutsev A, Goldszmid RS, Viaud S, Zitvogel L, Trinchieri G, Eur. J. Immunol\n45, 17\u201331 (2015). [DOI] [PubMed] []\n\n7. Finlay BB\net al., Nat. Rev. Immunol\n20, 522\u2013528 (2020). [DOI] [PubMed] []\n\n8. Goldszmid RS\net al., Cancer Immunol. Res\n3, 103\u2013109 (2015). [DOI] [PMC free article] [PubMed] []\n\n9. Zarour HM, Clin. Cancer Res\n22, 1856\u20131864 (2016)\n[DOI] [PMC free article] [PubMed] []\n\n10. Gopalakrishnan V\net al., Science\n359, 97\u2013103 (2018). [DOI] [PMC free article] [PubMed] []\n\n11. Matson V\net al., Science\n359, 104\u2013108 (2018). [DOI] [PMC free article] [PubMed] []\n\n12. Routy B\net al., Science\n359, 91\u201397 (2018). [DOI] [PubMed] []\n\n13. Frankel AE\net al., Neoplasia\n19, 848\u2013855 (2017). [DOI] [PMC free article] [PubMed] []\n\n14. Peters BA\net al., Genome Med. 11, 61 (2019)\n[DOI] [PMC free article] [PubMed] []\n\n15. Eisenhauer EA\net al., Eur. J. Cancer\n45, 228\u2013247 (2009). [DOI] [PubMed] []\n\n16. Kluger HM\net al., J. Immunother. Cancer\n8, e000398 (2020). 32238470 []\n\n17. Ribas A, Kirkwood JM, Flaherty KT, Lancet Oncol. 19, e219 (2018). [DOI] [PubMed] []\n\n18. Zeng MY\net al., Immunity\n44, 647\u2013658 (2016). [DOI] [PMC free article] [PubMed] []\n\n19. Pinato DJ\net al., JAMA Oncol. 5, 1774\u20131778 (2019)\n[DOI] [PMC free article] [PubMed] []\n\n20. Krieg C\net al., Nat. Med\n24, 144\u2013153 (2018). [DOI] [PubMed] []\n\n21. Nowicka M\net al., F1000Res. 6, 748 (2017). [DOI] [PMC free article] [PubMed] []\n\n22. Pittet MJ, Speiser DE, Valmori D, Cerottini JC, Romero P, J. Immunol\n164, 1148\u20131152 (2000). [DOI] [PubMed] []\n\n23. Ohkawa T\net al., Immunology\n103, 281\u2013290 (2001). [DOI] [PMC free article] [PubMed] []\n\n24. Guia S\net al\n, Blood\n111, 5008\u20135016 (2008). [DOI] [PubMed] []\n\n25. Hasumi K, Aoki Y, Wantanabe R, Mann DL, OncoImmunology\n2, e26381 (2013). [DOI] [PMC free article] [PubMed] []\n\n26. Ribas A\net al., Cancer Immunol. Res\n4, 194\u2013203 (2016). [DOI] [PMC free article] [PubMed] []\n\n27. Kamphorst AO\net al., Proc. Natl. Acad. Sci. U. S. A\n114, 4993\u20134998 (2017). [DOI] [PMC free article] [PubMed] []\n\n28. Kunert A\net al., J. Immunother. Cancer\n7, 149 (2019)\n[DOI] [PMC free article] [PubMed] []\n\n29. Stuart T\net al., Cell\n177, 1888\u20131902. e21 (2019). [DOI] [PMC free article] [PubMed] []\n\n30. Schalper KA\net al., Nat. Med\n26, 688\u2013692 (2020). [DOI] [PMC free article] [PubMed] []\n\n31. Alshetaiwi H\net al., Sci. Immunol\n5, eaay6017 (2020). [DOI] [PMC free article] [PubMed] []\n\n32. Gok Yavuz B\net al., Sci. Rep\n9, 3172 (2019). [DOI] [PMC free article] [PubMed] []\n\n33. Terme M\net al\n, Cancer Res. 71, 5393\u20135399 (2011). [DOI] [PubMed] []\n\n34. Benci JL\net al., Cell\n167, 1540\u20131554. e12 (2016). [DOI] [PMC free article] [PubMed] []\n\n35. Danilo M, Chennupati V, Silva JG, Siegert S, Held W, Cell Rep. 22, 2107\u20132117 (2018). [DOI] [PubMed] []\n\n36. Koblish HK, Hunter CA, Wysocka M, Trinchieri G, Lee WM, J. Exp. Med\n188, 1603\u20131610 (1998). [DOI] [PMC free article] [PubMed] []\n\n37. Sanmamed MF\net al., Ann. Oncol\n28, 1988\u20131995 (2017)\n[DOI] [PMC free article] [PubMed] []\n\n38. Vernocchi P, Del Chierico F, Putignani L, Front. Microbiol\n7, 1144 (2016). [DOI] [PMC free article] [PubMed] []\n\n39. Pallister T\net al., Sci. Rep\n7, 13670 (2017). [DOI] [PMC free article] [PubMed] []\n\n40. Martinez-Guryn K\net al., Cell Host Microbe\n23, 458\u2013469. e5 (2018). [DOI] [PMC free article] [PubMed] []\n\n41. Rodrigues RR, Shulzhenko N, Morgun A, Methods Mol. Biol\n1849, 227\u2013242 (2018)\npdf (6. 5MB, pdf) Abstract\nAnti\u2013programmed cell death protein 1 (PD-1) therapy provides long-term clinical benefits to patients with advanced melanoma. The composition of the gut microbiota correlates with anti\u2013PD-1 efficacy in preclinical models and cancer patients\nCollectively, our findings show that FMT and anti\u2013PD-1 changed the gut microbiome and reprogrammed the tumor microenvironment to overcome resistance to anti\u2013PD-1 in a subset of PD-1 advanced melanoma. A subset of PD-1\u2013refractory melanoma patients respond to fecal microbiota transplant and anti\u2013PD-1 therapy\nSixteen melanoma patients were enrolled between June 2018 and January 2020 (table S1), and the results presented here reflect a data cutoff of 1 September 2020"
+}

@@ -1,0 +1,342 @@
+Dynamic alterations in the lung microbiota in a rat model of lipopolysaccharide-induced acute lung injury
+
+The lung microbiota have been found to be substantially altered in numerous pulmonary disorders, and crosstalk between the host pathophysiology and lung microbiota plays critical roles in the regulation of disease states. The aim of this study was to investigate dynamic changes in the lung microbiota during different stages of acute lung injury and acute respiratory distress syndrome (ALI/ARDS)
+Rats receiving an intraperitoneal administration of lipopolysaccharide (LPS) were sacrificed at 12 and 48 h after injection, and the hematological parameters, serum cytokine levels, and histological characteristics of the lung tissue and lung microbiota were assessed
+After LPS injection, along with fluctuations of systemic cytokine levels and the onset and regression of pulmonary edema, the diversity, components, and functionalities of the pulmonary microbiota underwent significant dynamic changes. The volatility of the α-diversity indices narrowed after LPS injection, and the indices significantly decreased 48 h later
+The abundance of 18 genera and functionality of adenosine triphosphate–binding cassette (ABC) transporters, pentose phosphate, and bacterial chemotaxis pathways were found to significantly differ between specified time points. Several significant correlations between the components and functionalities of the lung microbiota and indicative symptoms of ALI/ARDS were also observed
+Brevibacterium was correlated with cytokines tumor necrosis factor (TNF)-α, interleukin (IL)-10, and IL-6 and with hematological percentage of neutrophils (NEU%); Wnt, Notch, and chronic myeloid leukemia signaling pathways were correlated with IL-1β; mitogen-activated protein kinase (MAPK) signaling pathway–yeast was correlated with IL-10; and the pathways of ascorbate and aldarate metabolism and basal transcription factors were correlated with platelet-related indicators
+The correlations between the lung microbiota and indicative symptoms of ALI/ARDS identified in this study support further investigation into the underlying mechanism of host–microbiota interactions during lung injury and repair. AbstractThe lung microbiota have been found to be substantially altered in numerous pulmonary disorders, and crosstalk between the host pathophysiology and lung microbiota plays critical roles in the regulation of disease states
+The aim of this study was to investigate dynamic changes in the lung microbiota during different stages of acute lung injury and acute respiratory distress syndrome (ALI/ARDS). Rats receiving an intraperitoneal administration of lipopolysaccharide (LPS) were sacrificed at 12 and 48 h after injection, and the hematological parameters, serum cytokine levels, and histological characteristics of the lung tissue and lung microbiota were assessed
+The correlations between the lung microbiota and indicative symptoms of ALI/ARDS identified in this study support further investigation into the underlying mechanism of host–microbiota interactions during lung injury and repair
+Similar content being viewed by others
+
+Impact of time intervals on drug efficacy and phenotypic outcomes in acute respiratory distress syndrome in mice
+
+
+Article
+Open access
+05 September 2024
+
+Locally organised and activated Fth1hi neutrophils aggravate inflammation of acute lung injury in an IL-10-dependent manner
+
+
+Article
+Open access
+13 December 2022
+
+Rat microbial biogeography and age-dependent lactic acid bacteria in healthy lungs
+
+
+Article
+Open access
+31 January 2024
+
+IntroductionIn recent years, with the widespread application of culture-independent, second-generation sequencing methods in microbiota research, the role of the microbiota in various human habitats in maintaining normal homeostasis and regulating disease states has attracted increasing attention1
+The lungs, previously considered sterile, have been shown to have a diverse and dynamic bacterial community2. Although a relative paucity of data on the physiological implications of the respiratory microbiome exists in comparison to research involving the gut microbiome, the lung microbiota have been found to be substantially altered in the context of numerous respiratory disorders3
+Studies have reported that the lung microbiota are strongly correlated with alterations of both systemic and alveolar immunity4,5
+On one hand, the host inflammatory response can significantly change the lung microbial community by altering the lung microenvironment, which is conducive to the proliferation of certain microbial species5; on the other hand, such changes can result in greater susceptibility to several lung diseases, such as infections by various pathogens, lung injury, and asthma5,6,7
+Growing evidence for the correlation between variations in the lung microbiota and the physiological severity of pulmonary disease and response to therapy8,9,10 indicates that the lung microbiome contains unexplored therapeutic targets for the prevention and treatment of lung disease
+Application of lipopolysaccharide (LPS) can stably trigger a systemic immune response in experimental animals and cause lung histological changes, such as severe epithelial and endothelial damage, inflammatory cell infiltration into the lung, and accumulation of protein-rich edema fluid in alveolar spaces11,12,13
+Therefore, LPS-induced acute lung injury and acute respiratory distress syndrome (ALI/ARDS) has become one of the most widely used in vivo models for studying the molecular mechanisms of inflammation-associated lung injury and researching pharmacological treatments thereof. However, the dynamic impact of the changes of inflammatory cells and immune factors on the pulmonary microbiota during the occurrence and development of LPS-induced ALI/ARDS is still lacking
+In this study, we present for the first time the dynamic effects of single-dose intraperitoneal (i. p. ) administration of LPS on the lung microbiota. Herein, we also analyzed the association between the lung microbiota and other quantitative ALI/ARDS symptom indicators, including blood cell count and serum cytokine levels. ResultsHistopathological characteristics and W/D ratioThe H&E-stained sections of lung tissue of the Control group had normal architecture with no signs of inflammation
+However, tissue from the LPS12 group showed interalveolar septum thickening, irregular distribution of air spaces, pulmonary interstitial edema, and inflammatory cell infiltration with a predominance of polymorphonuclear cells
+In the LPS48 group, although the alveolar architecture and histological changes were slightly relieved, the lung tissue still showed perivascular and peribronchial inflammatory infiltration with inflammation in the alveolar septa, and we also observed patchy intra-alveolar and interstitial hemorrhage (Fig. 1). Figure 1Representative H&E-stained lung sections showing morphological changes in lung tissue. The Control group presented normal architecture with no damage to the lung tissue
+In the LPS12 group, the tissue showed interalveolar septum thickening, irregular distribution of air spaces, pulmonary interstitial edema, and inflammatory cell infiltration. In the LPS48 group, the tissue still showed perivascular and peribronchial inflammatory infiltration, but the alveolar architecture and histological changes were slightly relieved. Full size imageWe estimated the volume of lung water in each group by the wet/dry (W/D) ratio
+Compared with the Control group, the W/D ratio increased significantly in the LPS12 group, suggesting the occurrence of pulmonary edema. The ratio was reduced significantly in the LPS48 group as compared with the LPS12 group, but it was still significantly higher than that of the Control group (Fig. 2a). Figure 2Changes in the wet/dry (W/D) ratio and quantified histological characteristics at indicated time points after LPS injection
+(a) The W/D ratio was measured to estimate the level of pulmonary edema. (b) The proportion of the area of the tissue (red signal) representing the ratio of infiltration to air space was calculated for each screened image in order to quantify the level of interalveolar septum thickening. (c) The number of alveoli per field was calculated based on the recognition of the area of white signal in each screened image
+(d) The sum of the alveolar circumferences was calculated based on the inner space peripheral length of each empty alveolus recognized by ImagePro Plus software version 5. 0. Full size imageQuantification of histological changes revealed similar results. The proportion of the tissue area (red signal) of the LPS12 group was significantly higher than that of the Control group and was decreased significantly in the LPS48 group (Fig. 2b). In addition, the alveolar count (Fig
+2c) and circumferential measurement (Fig. 2d) showed that as compared with the Control group, the number of alveoli used for effective gas exchange and the area of gas exchange were significantly reduced after LPS injection. Furthermore, as time progressed, the LPS48 group showed signs that these symptom indicators were relieved, compared with the LPS12 group. Routine blood examination and serum cytokine measurementAltogether, we captured 24 hematological parameters in this study
+Of these, six were found to have significantly changed after LPS challenge. As shown in Fig. 3, the percentage of neutrophils (NEU%) significantly increased 12 h after LPS injection and returned to a level close to that of the Control group 48 h after LPS injection. Although lymphocyte percentage (LYM%) showed the opposite trend, it was significantly decreased at the 12-h time point, and it returned to normal at the 48-h time point
+Mean platelet volume (MPV) and platelet–large-cell ratio (PLCR) gradually increased, while platelet count (PLT) and platelet packed volume (PCT) significantly decreased, as time progressed after LPS injection. Figure 3Changes in the routine blood examination parameters and serum cytokine values at indicated time points after LPS injection
+Of the 24 hematological parameters examined, six—(a) percentage of neutrophils (NEU%), (b) lymphocyte percentage (LYM%), (c) mean platelet volume (MPV), (d) platelet/large-cell ratio (PLCR), (e) platelet count (PLT), and (f) platelet packed volume (PCT)—were significantly changed after LPS challenge. Serum levels of four cytokines—(g) IL-1β, (h) IL-6, (i) IL-10, and (j) TNF-α—were likewise found to have significantly changed
+The 24 hematological parameters were white blood cell count, LYM%, percentage of monocytes, NEU%, percentage of eosinophils, percentage of basophils, absolute lymphocyte value, absolute value of monocytes, absolute value of neutrophils, absolute eosinophils, basophil absolute value, red blood cell (RBC) count, hemoglobin (HB), hematocrit, mean RBC volume, average RBC HB content, mean RBC HB concentration, RBC distribution width coefficient of variation (CV), RBC distribution width SD, PLT, platelet distribution width, MPV, PCT, and PLCR
+Full size imageWe also analyzed levels of interleukin (IL)-1β, IL-6, IL-10, and tumor necrosis factor (TNF)-α in serum samples. The levels of all four cytokines increased at 12 h after LPS injection and were normalized at 48 h (Fig. 3g–j). Overall assessment of lung microbiotaWe ultimately generated a total of 24,317 zero-radius operational taxonomic units (ZOTUs) from 864,727 high-quality reads
+A total of 23,459 ZOTUs were successfully annotated by the Ribosomal Database Project (RDP) classifier, comprising 35 phyla, 79 classes, 137 orders, 270 families, and 582 genera (Fig. 4a,b). Figure 4Overall assessment of the microbiota in lung tissue. Bar plots of the lung microbiota components in each sample in each of the three groups. Annotated at (a) phylum level; (b) genus level
+In our comparison of α-diversity values of the lung microbial communities among the three groups, the (c) PD whole tree, (d) Chao1, and (e) Shannon α-diversity indices of all narrowed after LPS injection and decreased significantly in the LPS48 group. (f) Two-dimensional PCoA plots showing differences in the lung microbiota of rats from the three groups based on the Bray–Curtis distance metric. P = 0. 002 and r2 = 0. 1263 in the Adonis test; P = 0. 002 and adjusted r2 = 0. 1258 in db-RDA
+Full size imageComparison of lung microbiota diversityWe compared the three α-diversity indices of PD whole tree, Chao1, and Shannon between the groups. After LPS injection, the variation ranges of all three indices narrowed (Fig. 4c–e). A non-parametric test of differences between groups found that these indices did not significantly differ between the Control and LPS12 groups; however, the LPS48 group showed different degrees of decline in all three indices as compared with the other two groups
+In the LPS48 group, the PD whole tree index was significantly lower than in the Control group, the Chao1 index was significantly lower than in both the Control and LPS12 groups, and the Shannon index was significantly lower than in the LPS12 group. We created a Bray–Curtis distance metric from the subsampled ZOTU table to explore structural differences in bacterial communities among the three groups. Principal coordinate analysis (PCoA) showed partial separation of microbiota communities by group
+Adonis tests and distance-based redundancy analysis (db-RDA) both confirmed a significant association between the different treatment groups and bacterial-community structures (Fig. 4f). Comparison of lung microbiota componentsComparison of the Control and LPS12 groups by linear discriminant effect size (LEfSe) showed the presence of 11 taxa (including 7 genera) with significant differences (Fig. 5a)
+At the genus level, Brevibacterium, Motilimonas, Enterococcus, Faecalibacterium, and Ligilactobacillus were significantly increased in the LPS12 group versus the Control group, whereas Lactiplantibacillus and Paracoccus were significantly decreased. Figure 5Linear discriminant effect size (LEfSe) analyses comparing differentially abundant taxa and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways between different groups. (a–c) Differences in the lung microbiota taxa between different groups
+The phylogenic relationships between taxa with differences are shown in the cladogram. (d–f) Differences in the KEGG pathways predicted from the lung microbiota components between the different model groups. Full size imageIn our comparison of the LPS12 and LPS48 groups, the abundances of a total of 12 taxa (related to 5 genera) were found to be significantly changed (Fig. 5b)
+At the genus level, Pseudarthrobacter was significantly increased in the LPS48 group as compared with the LPS12 group, whereas Olsenella, Escherichia Shigella, Acinetobacter, and Phascolarctobacterium were significantly decreased. Finally, in our comparison of the Control and LPS48 groups, the abundances of a total of 28 taxa (including 8 genera) were found to be significantly changed (Fig. 5c)
+At the genus level, Lactobacillus was significantly increased in the LPS48 group as compared with the Control group, whereas Paramuribaculum, Escherichia Shigella, Enterobacter, Gp2, Brachybacterium, Lachnospira, and Olsenella were significantly decreased. Comparison of lung microbiota functionalitiesWe predicted a total of 6616 Kyoto Encyclopedia of Genes and Genomes (KEGG) orthologs (KOs) and 284 pathways from the datasets
+LEfSe analysis in our comparison of between-group functionalities showed that the adenosine triphosphate–binding cassette (ABC) transporters pathway (ko02010) had significantly lower inferred abundances in the LPS12 group than in the Control group (Fig. 5d), the pentose phosphate pathway (ko00030) had significantly lower inferred abundances in the LPS48 group than in the Control group (Fig
+5e), and the bacterial chemotaxis pathway (ko02030) had significantly higher inferred abundances in the LPS48 group than in the LPS12 group (Fig. 5f). Analysis of correlation between lung microbiota and ALI/ARDS symptom indicatorsTo further assess potential correlations between LPS-induced ALI/ARDS symptoms and certain lung microbiota components or functionalities, we conducted Spearman’s correlation tests on genus-level and KEGG pathway relative abundance data using the psych package in R
+The genus Brevibacterium and six functionality pathways were found to have significantly strong correlations (P < 0. 05; correlation coefficient > 0. 7 or < − 0. 7) with LPS-induced ALI/ARDS symptoms (Fig. 6a). Brevibacterium was positively correlated with serum TNF-α, IL-10, and IL-6 levels and with hematological NEU%
+In terms of microbiota functionalities, three signaling pathways—Wnt (ko04310), Notch (ko04330), and chronic myeloid leukemia (ko05220)—had negative correlations with IL-1β levels, while the mitogen-activated protein kinase (MAPK) signaling pathway–yeast (ko04011) was negatively correlated with IL-10 levels. Ascorbate and aldarate metabolism (ko00053) was positively correlated with PCT and negatively correlated with PLT
+Finally, basal transcription factors (ko03022) were negatively correlated with PLT and PCT and positively correlated with PLCR and MPV (Fig. 6b). Figure 6Correlations between host and microbiota parameters. (a) Host–microbiota interaction network. Network shows correlations between genus-level components and functionality pathways in lung microbiota and LPS-induced host ALI/ARDS symptoms from all samples. Lines between nodes represent correlations
+Lines were drawn only for statistically significant correlations with absolute values of correlation coefficient > 0. 70; unconnected nodes were omitted. (b) Spearman’s pairwise correlation. Blue = positive correlation; red = negative correlation. NEU% percentage of neutrophils, MPV mean platelet volume, PLCR platelet/large-cell ratio, PLT platelet count, PCT platelet packed volume
+Full size imageDiscussionAcute lung injury (ALI) is a common pulmonary response to a broad range of injuries or inflammation in the lungs or at other sites in the body. It is characterized by damage to the alveolar endothelial and epithelial barriers, recruitment of inflammatory cells, and onset of pulmonary edema14. ALI often leads to acute respiratory distress syndrome (ARDS), for which few effective therapeutic approaches exist to date15
+Therefore, studies aimed at better understanding the pathogenic processes that develop in the injured lung are essential and might lead to the development of new methods to prevent and treat this disease
+The results of this study demonstrated that at different time points after LPS injection, along with fluctuations in systemic cytokine levels and the onset and regression of pulmonary edema, the diversity, components, and functionalities of the pulmonary microbiota in our rat model underwent significant dynamic changes. We also observed that several components and functionalities of these microbiota correlated with symptoms indicative of LPS-induced ALI
+Bacteria suspended in or attached to particles in the air are considered to be the main source of the lung microbiota. After the bacteria disperse into the lung, the microbiota is delicately balanced by bacterial reproduction rates and bacterial immigration and elimination16. Under normal circumstances, the rate of bacterial reproduction is low, while those of immigration and elimination are high17
+We can therefore infer that under healthy conditions, the lung microbiota are highly diverse and affected by the surrounding environment. Indeed, this speculation is supported by a study by Dickson et al. on the lung microbiota of healthy mice, which demonstrated that this bacterial community is highly variable depending on cage, transportation, and supplier of mice and can better reflect the natural immune status of the host lung18
+In lung disease, the balance of immigration and elimination is disturbed, resulting in bacteria that display competitive advantages to predominate, and thus, a decrease in diversity19,20. In the present study, we observed that after LPS injection, the variation ranges of all three α-diversity indices were narrowed. These indices had all decreased significantly 48 h after LPS injection
+These results, which were in line with those of the above-mentioned studies noting disturbance of the immigration/elimination balance and theorizing on the decrease in diversity, demonstrated the dynamic characteristics of changes to the microbiota diversity during systemic inflammation
+In the early stage of inflammation (12 h after LPS injection), with the appearance of severe lung injury and edema, the host environment undergoes significant changes, such as increased levels of cytokine21 and endogenous antigenic peptides22. The influence of host factors on the lung microbiota was strengthened, overwhelming the influence of external environmental factors; this was reflected by the narrowing of the microbiota diversity index ranges within groups
+In the later stage of inflammation (48 h after LPS injection), after the lung microenvironment had changed and competitive bacteria became dominant, α-diversity significantly decreased. This decrease in lung bacterial diversity in the late stage of acute inflammation has been reported in other studies. For example, Poroyko et al. reported that the lung microbiota diversity was significantly reduced in a mouse model 72 h after LPS-induced ALI
+They also demonstrated that the change in the lung microbiota could increase susceptibility to lung injury in model mice5. The association between lung microbiota diversity and lung diseases has also been reported in studies of other lung diseases, such as pneumonia, chronic obstructive pulmonary disease, cystic fibrosis (CF), and idiopathic pulmonary fibrosis, indicating that the diversity of the lung microbiota might play a critical role in bacteria–host interactions in the lung6,23,24,25,26
+However, until now, the compositional and functional basis of the lung microbiota diversity change remained to be clarified. In our comparisons of lung microbiota components and functionalities between different groups, we found that the component abundance varied drastically between groups, while changes in the functional abundance were relatively mild
+A total of 51 taxa were found in our pairwise comparisons of species abundances in the three groups, but only three differential pathways were found in functionality abundance. The very high richness and diversity of the lung microbiota could be the cause of this phenomenon. A study analyzing the microbiota in different bodily sites of mice found a total of 226 genera in the lungs, but only 24 in the gut microbiota27
+Similarly, using a more stringent method of selecting representative sequences (aligning reads to OTUs at a 100% rather than a 97% identity threshold) in the present study, we found 582 genera in the lungs as compared with only 38 genera in the rat gut microbiota in our previous study28. These findings all indicated that the lung microbiota contains many more species than other bodily habitats
+In contrast to its components, the functionalities of the lung microbiota seem to be less variable and more stable. A total of 284 KEGG pathways were enriched from the lung microbiota in the present study—a number comparable to the 258 KEGG pathways enriched from the gut microbiota data in another study29. In our functionality comparison between the Control and LPS12 groups, we found the ABC transporter pathway in lung bacteria to be significantly decreased in the LPS12 group
+The ABC transporters are a family of transmembrane proteins that can transport a wide variety of substrates across biological membranes30. The ABC transporter protein is reported to be involved in the process of bacterial-iron acquisition and plays an important role in bacterial-iron competition31. Under physiological conditions, iron metabolism is tightly regulated to prevent iron toxicity
+During infection, the host’s iron-scavenging activity level increases, and the response to inflammatory mediators leads to an increase in hepcidin, which can lead to hypoferremia32. Bacteria, like other cells, require iron for many basic cellular functions and metabolic pathways33, and therefore iron acquisition is essential for bacterial colonization in the competitive environment of the inflamed lungs
+Studies have reported that in CF, lung bacteria adapt to and deploy specific systems based on the availability of iron, bioavailability of iron pools, stage of infection, and presence of competing bacteria31. Therefore, the change in the abundance of the ABC transporter pathway 12 h after LPS injection might reflect the adaptation of the lung bacteria to inflammatory conditions
+In our comparison of the LPS12 and LPS48 groups, we found that the bacterial-chemotaxis pathway in lung bacteria was significantly increased. This pathway is reportedly correlated with bacterial colonization on epithelial surfaces34. Tamar et al. showed that an acquired mutation in bacterial chemotaxis can change the inherent swimming behavior of bacteria that could barely reach the epithelial surface beyond the hydrogel mucosal layer, leading to a key enhancement in surface colonization35
+Upregulation of the bacterial-chemotaxis function of the lung microbiota after 48 h of LPS infection might therefore have resulted from bacteria adapting to changes in an environment of edema. Furthermore, in our comparison of the Control and LPS48 groups, we found the pentose phosphate pathway of the lung microbiota to be significantly decreased. The products of this pathway are known to be nicotinamide adenine dinucleotide phosphate (NADPH) and pentose phosphate
+NADPH can provide hydrogen donors that are involved in a variety of metabolic reactions, preventing oxidation of various proteins and enzymes36,37, while pentose phosphate is necessary for nucleic acid biosynthesis. Studies have shown that nucleosides can increase the flux of the pentose phosphate pathway, thereby improving the effectiveness of DNA damage repair and improving cell survival38
+Based on this evidence, we presumed that the reduction of the pentose phosphate pathway might reflect microbiota with lower antioxidant capacities and less efficient DNA damage repair ability after lung injury. In this study, we also explored the correlation between physiological indicators that changed significantly during the development of ALI, as well as lung microbiota components and functionalities. We obtained a number of indicative results
+In terms of microbiota composition, the abundance of the genus Brevibacterium was found to have a strong positive correlation with parameters, such as TNF, IL-6, IL-10, and NEU%. This genus is composed of organisms commonly found in the CF lung microbiome, as demonstrated in another study39. Brevibacterium has also been reported to be a causative agent of allergic alveolitis40
+Our results were consistent with the above findings, suggesting that Brevibacterium might play a role in the progression of inflammation in the lungs
+In terms of lung microbiota functionality, the abundances of four signaling pathways—Wnt (ko04310), Notch (ko04330), chronic myeloid leukemia (ko05220), and MAPK–yeast (ko04011)—were found to have strong negative correlations with serum IL-1β and IL-10 levels, indicating that these pathways might play roles in the interaction between the lung microbiota and host immunity and should be addressed in more detail in follow-up studies
+Finally, the abundances of the ascorbate and aldarate metabolism (ko00053) and basal-transcription factor (ko03022) pathways of the lung microbiota were found to be strongly correlated with four platelet-related physiological indicators: PLT, PCT, PLCR, and MPV
+Current studies have found that platelets are important effectors of experimental ALI and clinical ARDS, playing diverse and complex roles in vascular-barrier integrity, organ repair, inflammation, activities across the immune continuum, and antimicrobial host defense41. The capacity of platelets to mediate protection or injury depending on conditions and context still needs further study42
+The strong correlation we found between the two above-mentioned bacterial-function pathways and platelet-related indicators can provide clues for further elucidating the complex role of platelets in the occurrence and development of ALI. In conclusion, this study will serve to provide greater insight into the dynamic changes in the diversity, components, and functionalities of the lung microbiota at different time points of lung injury
+The representative differential components and functionalities of the lung microbiota at the time points we identified in this study will promote further understanding of the interaction between the host and the airway microbiota during lung injury and repair. Further exploration of the influence of the lung microbiota on host immunity and physiology might allow for better targeted approaches for the prevention and management of ALI and ARDS
+MethodsAnimals and ethics statementEighteen male, 8-week-old, specific-pathogen-free (SPF) Sprague-Dawley rats weighing 200 ± 20 g were obtained from SPF Biotechnology Co., Ltd. (Beijing, China). Rats were housed in standard polypropylene shoebox cages (42 × 20. 5 × 20 cm) on hardwood chip bedding in a designated room on alternate 12-h light/dark cycles at 24–26 °C and 50% humidity. They were allowed free access to water and fed a standard diet
+All animal experiments were performed in accordance with Animal Research: Reporting of In Vivo Experiments (ARRIVE) guidelines. The study protocol was approved by the Ethics Committee of Minzu University of China (Beijing, China; No. ECMUC2020007AO). All experiments were performed in a Good Laboratory Practice (GLP)-accredited laboratory. Study designRats were randomly divided into three groups: Control (Control), LPS12, and LPS48
+They were allowed to acclimatize to laboratory conditions for 7 days after arrival in the lab. The LPS12 and LPS48 groups received i. p. injections of LPS (Escherichia coli 055: 10 mg/kg body weight; Sigma-Aldrich, St. Louis, MO, USA), while the Control group received i. p. injections of a 0. 9% NaCl solution. Rats in the LPS12 group were anesthetized 12 h after injection, and the Control and LPS48 groups were anesthetized with isoflurane 48 h after injection
+Rats were sacrificed by exsanguination after blood was collected from the posterior vena cava. An aliquot of the whole blood from each mouse was centrifuged at 3000 rpm for 10 min, and the serum samples were stored at − 80 °C. The middle lobe of the right lung was dissected using sterile scissors and forceps immediately after opening the chest, and the lobes were placed in 5-ml sterile tubes containing 4 M guanidine thiocyanate solution as a preservative
+The tubes were then stored at − 80 °C pending characterization of the lung microbiota. The upper lobe of the right lung was dissected, fixed in 10% formaldehyde solution, and subjected to histopathological examination. Finally, the left lung was dissected for lung W/D weight ratio calculation. Lung W/D weight ratioLung W/D weight ratio was measured to quantify pulmonary edema levels. The wet weight of the left lung was recorded immediately after dissection
+The lung was then placed in an incubator at 80 °C for 48 h, and then the dry weight was recorded. Whole blood and serum analysesA fully automatic blood cell analyzer (Sysmex, Tokyo, Japan) was used to detect hemoglobin (HB), red blood cells (RBCs), white blood cells (WBCs), platelets (PLTs), and other routine indicators. A total of 24 routine indicators were assessed
+Serum inflammatory cytokines, including interleukin-1β (IL-1β), IL-6, IL-10, and TNF-α, were quantified using enzyme-linked immunosorbent assay (ELISA) kits (Shanghai Enzyme-linked Biotechnology Co., Ltd., Shanghai, China). Histopathological examinationHistological tissues were fixed in formalin for 12 h, cut into 5-μm thick sections, and stained with hematoxylin and eosin (H&E). The reagent used for histopathological examination was d from Wuhan Servicebio Technology Co., Ltd
+, Wuhan, China. The slides were de-identified and then observed by a pathologist. An investigator blinded to group settings screened and analyzed 12–17 adjacent fields (× 100 objective magnification) covering the entire slide of each sample using ImagePro Plus software version 5. 0 (Media Cybernetics, Silver Spring, MD, USA)
+The number of alveoli, sum of alveolar circumferences, and percentage of tissue area (red signal) per field were quantified for all screened images and further adjusted by the ratio of lung tissue area in each image. The tissue (red signal) and alveolar (white signal) areas were each set as hue (0–255) and saturation (0–255), and the intensities of the red and white signal areas were set at 165–255 and 0–164, respectively (Supplemental Fig. 1)
+Microbiota sequencingTotal bacterial deoxyribonucleic acid (DNA) was extracted using a Power Soil DNA Isolation Kit (MO BIO Laboratories, Inc., Carlsbad, CA, USA)
+After quality and quantity checks of the DNA sample at the ratios of 260/280 nm and 260/230 nm, the V3–V4 hypervariable region of the bacterial 16S ribosomal ribonucleic acid (rRNA) gene was amplified using the common primers 338F (5′-ACTCCTACGGGAGGCAGCAG-3′) and 806R (5′-GGACTACHVGGGTWTCTAAT-3′) combined with adapter and barcode sequences. Second-generation sequencing of purified, pooled polymerase chain reaction (PCR) sample products was performed on a HiSeq 2500 platform (Illumina, Inc
+, San Diego, CA, USA; 2 × 250 paired ends) at Biomarker Technologies Corporation (Beijing, China). Bioinformatic analysesRaw sequence reads were processed using the UNOISE pipeline of the Usearch v11. 0. 667linux32 program (www. drive5. com/usearch/). High-quality sequences were classified into zero-radius operational taxonomic units (ZOTUs). The Ribosomal Database Project (RDP) classifier was then used to annotate taxonomic information of each ZOTU sequences with an 80% confidence threshold
+The KEGG-based orthologs and pathways functional profiles of the microbial communities were further predicted using the “Tax4Fun” R package43. Statistical analysesThe R software (version 3. 52; R Foundation for Statistical Computing, Vienna, Austria) was used to perform all statistical analyses. A Shapiro–Wilk test was used to test for a normal distribution, and an analysis of variance (ANOVA) or Kruskal–Wallis test was used to evaluate differences in measured variables among the groups
+Spearman’s ρ correlation analysis was performed on the associations between the different variables. Finally, LEfSe analysis (threshold of ± 2) was conducted to explore significant differences among the treatment groups using the relative abundance data of taxa and KEGG-based orthologs and pathways. P-values less than 0. 05 were considered statistically significant
+1146/annurev-physiol-021115-105238 (2016). Article 
+CAS 
+PubMed 
+
+Willis, K. A., Stewart, J. D. & Ambalavanan, N. Recent advances in understanding the ecology of the lung microbiota and deciphering the gut–lung axis. 319, L710–L716. https://doi. org/10. 1152/ajplung. 00360. 2020 (2020). Dumas, A., Bernard, L., Poquet, Y., Lugo-Villarino, G. & Neyrolles, O
+The role of the lung microbiota and the gut–lung axis in respiratory infectious diseases. Cell. Microbiol. 20, e12966. https://doi. org/10. 1111/cmi. 12966 (2018). Article 
+CAS 
+PubMed 
+
+Lynch, S. V. The lung microbiome and airway disease. Ann. Am. Thorac. Soc. 13(Suppl 2), S462–S465. https://doi. org/10. 1513/AnnalsATS. 201605-356AW (2016)
+Article 
+MathSciNet 
+PubMed Central 
+PubMed 
+
+Poroyko, V. et al. Alterations of lung microbiota in a mouse model of LPS-induced lung injury. 309, L76–83. https://doi. org/10. 1152/ajplung. 00061. 2014 (2015). Wu, B. G. & Segal, L. N. The lung microbiome and its role in pneumonia. Clin. Chest Med. 39, 677–689. https://doi. org/10. 1016/j. ccm. 2018. 07. 003 (2018)
+Article 
+PubMed Central 
+PubMed 
+
+Remot, A. et al. Bacteria isolated from lung modulate asthma susceptibility in mice. ISME J. 11, 1061–1074. https://doi. org/10. 1038/ismej. 2016. 181 (2017). Article 
+CAS 
+PubMed Central 
+PubMed 
+
+Molyneaux, P. L. et al. The role of bacteria in the pathogenesis and progression of idiopathic pulmonary fibrosis. Am. J. Respir. Crit
+Care Med. 190, 906–913. https://doi. org/10. 1164/rccm. 201403-0541OC (2014). Article 
+CAS 
+PubMed Central 
+PubMed 
+
+Huang, Y. J. et al. Airway microbiota and bronchial hyperresponsiveness in patients with suboptimally controlled asthma. J. Allergy Clin. Immunol. 127(372–381), e371-373. https://doi. org/10. 1016/j. jaci. 2010. 10. 048 (2011). Article 
+
+Goleva, E. et al
+The effects of airway microbiome on corticosteroid responsiveness in asthma. Am. J. Respir. Crit. Care Med. 188, 1193–1201. https://doi. org/10. 1164/rccm. 201304-0775OC (2013). Article 
+CAS 
+PubMed Central 
+PubMed 
+
+Chen, H., Bai, C. & Wang, X. The value of the lipopolysaccharide-induced acute lung injury model in respiratory medicine. Expert Rev. Respir. Med. 4, 773–783. https://doi. org/10. 1586/ers. 10. 71 (2010)
+Article 
+CAS 
+PubMed 
+
+Kolomaznik, M., Nova, Z. & Calkovska, A. Pulmonary surfactant and bacterial lipopolysaccharide: The interaction and its functional consequences. Physiol. Res. 66, S147–S157. https://doi. org/10. 33549/physiolres. 933672 (2017). Article 
+CAS 
+PubMed 
+
+Nova, Z., Skovierova, H. & Calkovska, A
+Alveolar-capillary membrane-related pulmonary cells as a target in endotoxin-induced acute lung injury. Int. J. Mol. Sci. https://doi. org/10. 3390/ijms20040831 (2019). Article 
+PubMed Central 
+PubMed 
+
+Reiss, L. K., Uhlig, U. & Uhlig, S. Models and mechanisms of acute lung injury caused by direct insults. Eur. J. Cell Biol. 91, 590–601. https://doi. org/10. 1016/j. ejcb. 2011. 11. 004 (2012)
+Article 
+CAS 
+PubMed 
+
+Baron, R. M. & Levy, B. D. Recent advances in understanding and treating ARDS. F1000Res https://doi. org/10. 12688/f1000research. 7646. 1 (2016). Article 
+PubMed Central 
+PubMed 
+
+Mathieu, E. et al. Paradigms of lung microbiota functions in health and disease, particularly, in asthma. Front. Physiol. 9, 1168. https://doi. org/10. 3389/fphys. 2018
+01168 (2018). Article 
+PubMed Central 
+PubMed 
+
+Wolff, N. S., Jacobs, M. C., Wiersinga, W. J. & Hugenholtz, F. Pulmonary and intestinal microbiota dynamics during Gram-negative pneumonia-derived sepsis. Intensive Care Med. Exp. 9, 35. https://doi. org/10. 1186/s40635-021-00398-4 (2021). Article 
+PubMed Central 
+PubMed 
+
+Dickson, R. P. et al
+The lung microbiota of healthy mice are highly variable, cluster by environment, and reflect variation in baseline lung innate immunity. Am. J. Respir. Crit. Care Med. 198, 497–508. https://doi. org/10. 1164/rccm. 201711-2180OC (2018). Article 
+CAS 
+PubMed Central 
+PubMed 
+
+Dickson, R. P. & Huffnagle, G. B. The lung microbiome: New principles for respiratory bacteriology in health and disease. PLoS Path. 11, e1004923. https://doi
+org/10. 1371/journal. ppat. 1004923 (2015). Article 
+CAS 
+
+Venkataraman, A. et al. Application of a neutral community model to assess structuring of the human lung microbiome. 6. https://doi. org/10. 1128/mBio. 02284-14 (2015). Huang, Z. W. et al. Angiopoietin-1 modified human umbilical cord mesenchymal stem cell therapy for endotoxin-induced acute lung injury in rats. Yonsei Med. J. 58, 206–216. https://doi. org/10. 3349/ymj. 2017. 58. 1
+206 (2017). Article 
+CAS 
+PubMed 
+
+Nova, Z., Skovierova, H., Strnadel, J., Halasova, E. & Calkovska, A. Short-term versus long-term culture of A549 cells for evaluating the effects of lipopolysaccharide on oxidative stress, surfactant proteins and cathelicidin LL-37. Int. J. Mol. Sci. https://doi. org/10. 3390/ijms21031148 (2020)
+Article 
+PubMed Central 
+PubMed 
+
+Yadava, K. et al. Microbiota promotes chronic pulmonary inflammation by enhancing IL-17A and autoantibodies. Am. J. Respir. Crit. Care Med. 193, 975–987. https://doi. org/10. 1164/rccm. 201504-0779OC (2016). Article 
+CAS 
+PubMed 
+
+Cox, M. J. et al. Airway microbiota and pathogen abundance in age-stratified cystic fibrosis patients
+PLoS ONE 5, e11044. https://doi. org/10. 1371/journal. pone. 0011044 (2010). Article 
+CAS 
+PubMed Central 
+ADS 
+PubMed 
+
+Teo, S. M. et al. The infant nasopharyngeal microbiome impacts severity of lower respiratory infection and risk of asthma development. Cell Host Microbe 17, 704–715. https://doi. org/10. 1016/j. chom. 2015. 03. 008 (2015)
+Article 
+CAS 
+PubMed Central 
+PubMed 
+
+Takahashi, Y. et al. Impaired diversity of the lung microbiome predicts progression of idiopathic pulmonary fibrosis. Respir. Res. 19, 34. https://doi. org/10. 1186/s12931-018-0736-9 (2018). Article 
+CAS 
+PubMed Central 
+PubMed 
+
+Barfod, K. K. et al
+The murine lung microbiome in relation to the intestinal and vaginal bacterial communities. BMC Microbiol. 13, 303. https://doi. org/10. 1186/1471-2180-13-303 (2013). Article 
+CAS 
+PubMed Central 
+PubMed 
+
+Enqi, W., Jingzhu, S., Lingpeng, P. & Yaqin, L. Comparison of the gut microbiota disturbance in rat models of irritable bowel syndrome induced by maternal separation and multiple early-life adversity. Front. Cell Infect
+Microbiol. 10, 581974. https://doi. org/10. 3389/fcimb. 2020. 581974 (2020). Article 
+PubMed 
+
+Lingpeng, P., Jingzhu, S., Wei, L., Enqi, W. & Yaqin, L. Effect of water extracts from Cynanchum thesioides (Freyn) K. Schum. on visceral hypersensitivity and gut microbiota profile in maternally separated rats. J. Ethnopharmacol. 264, 113352. https://doi. org/10. 1016/j. jep. 2020. 113352 (2021)
+Article 
+CAS 
+PubMed 
+
+van der Deen, M. et al. ATP-binding cassette (ABC) transporters in normal and pathological lung. Respir. Res. 6, 59. https://doi. org/10. 1186/1465-9921-6-59 (2005). Article 
+CAS 
+PubMed Central 
+PubMed 
+
+Tyrrell, J. & Callaghan, M. Iron acquisition in the cystic fibrosis lung and potential for novel therapeutic strategies
+Microbiology (Reading) 162, 191–205. https://doi. org/10. 1099/mic. 0. 000220 (2016). Article 
+CAS 
+
+Parrow, N. L., Fleming, R. E. & Minnick, M. F. Sequestration and scavenging of iron in infection. Infect. Immun. 81, 3503–3514. https://doi. org/10. 1128/IAI. 00602-13 (2013). Article 
+CAS 
+PubMed Central 
+PubMed 
+
+Ganz, T. & Nemeth, E
+Iron homeostasis in host defence and inflammation. 15, 500–510. https://doi. org/10. 1038/nri3863 (2015). Bacci, G. et al. A different microbiome gene repertoire in the airways of cystic fibrosis patients with severe lung disease. Int. J. Mol. Sci. https://doi. org/10. 3390/ijms18081654 (2017). Article 
+PubMed Central 
+PubMed 
+
+Tamar, E., Koler, M. & Vaknin, A
+The role of motility and chemotaxis in the bacterial colonization of protected surfaces. Sci. Rep. 6, 19616. https://doi. org/10. 1038/srep19616 (2016). Article 
+CAS 
+PubMed Central 
+ADS 
+PubMed 
+
+Ronchi, J. A., Francisco, A., Passos, L. A., Figueira, T. R. & Castilho, R. F
+The contribution of nicotinamide nucleotide transhydrogenase to peroxide detoxification is dependent on the respiratory state and counterbalanced by other sources of NADPH in liver mitochondria. J. Biol. Chem. 291, 20173–20187. https://doi. org/10. 1074/jbc. M116. 730473 (2016). Article 
+CAS 
+PubMed Central 
+PubMed 
+
+Garai-Ibabe, G., Saa, L. & Pavlov, V
+Enzymatic product-mediated stabilization of CdS quantum dots produced in situ: Application for detection of reduced glutathione, NADPH, and glutathione reductase activity. Anal. Chem. 85, 5542–5546. https://doi. org/10. 1021/ac4007705 (2013). Article 
+CAS 
+PubMed 
+
+Franklin, D. A. et al. p53 coordinates DNA repair with nucleotide synthesis by suppressing PFKFB3 expression and promoting the pentose phosphate pathway. Sci. Rep. 6, 38067
+https://doi. org/10. 1038/srep38067 (2016). Article 
+CAS 
+PubMed Central 
+ADS 
+PubMed 
+
+Heirali, A. et al. Assessment of the microbial constituents of the home environment of individuals with cystic fibrosis (CF) and their association with lower airways infections. PLoS ONE 11, e0148534. https://doi. org/10. 1371/journal. pone. 0148534 (2016)
+Article 
+CAS 
+PubMed Central 
+PubMed 
+
+Milanowski, J., Dutkiewicz, J., Potoczna, H., Kuś L. & Urbanowicz, B. Allergic alveolitis among agricultural workers in eastern Poland: A study of twenty cases. Ann. Agric. Environ. Med. AAEM 5(1), 31–43 (1998). CAS 
+PubMed 
+
+Middleton, E. A., Weyrich, A. S. & Zimmerman, G. A
+Platelets in pulmonary immune responses and inflammatory lung diseases. Physiol. Rev. 96, 1211–1259. https://doi. org/10. 1152/physrev. 00038. 2015 (2016). Article 
+CAS 
+PubMed Central 
+PubMed 
+
+Middleton, E. A., Rondina, M. T., Schwertz, H. & Zimmerman, G. A. Amicus or adversary revisited: platelets in acute lung injury and acute respiratory distress syndrome. Am. J. Respir. Cell Mol. Biol. 59, 18–35. https://doi. org/10
+1165/rcmb. 2017-0420TR (2018). Article 
+CAS 
+PubMed Central 
+PubMed 
+
+Wixon, J. & Kell, D. The Kyoto encyclopedia of genes and genomes–KEGG. Yeast 17, 48–55. https://doi. org/10. 1002/(SICI)1097-0061(200004)17:1%3c48::AID-YEA2%3e3. 0. CO;2-H (2000). Article 
+CAS 
+PubMed 
+
+AcknowledgementsWe thank LetPub (www. letpub
+com) for its linguistic assistance during the preparation of this manuscript. FundingThe study was funded by the Key Research and Development Program of Ningxia (2020BEG03066) and the Ningxia Medical University School-level Project (XE202011). The funding bodies had no role in the design of the study, collection, analysis or interpretation of data or in writing the manuscript
+Author informationAuthors and AffiliationsDepartment of Respiratory and Critical Care Medicine, General Hospital of Ningxia Medical University, No. 804 Shenglijie, Xingqing District, Yinchuan, 750004, ChinaZhigang Tian, Gang Ma, Shenzhen Jiang, Yuanyuan Liu, Jia Hou & Xiwei ZhengKey Laboratory of Ethnomedicine (Minzu University of China), Ministry of Education, Minzu University of China, No
+27 Zhongguancun South Avenue, Beijing, 100081, ChinaEnqi Wu, Sihan Hou, Yaqin Ling & Lingpeng PeiBiotherapy Center, The Seventh Medical Center of PLA General Hospital, Beijing, ChinaJia YouAuthorsZhigang TianView author publicationsSearch author on:PubMed Enqi WuView author publicationsSearch author on:PubMed Jia YouView author publicationsSearch author on:PubMed Gang MaView author publicationsSearch author on:PubMed Shenzhen JiangView author publicationsSearch author on:PubMed Yuanyuan LiuView author publicationsSearch author on:PubMed Jia HouView author publicationsSearch author on:PubMed Sihan HouView author publicationsSearch author on:PubMed Yaqin LingView author publicationsSearch author on:PubMed Lingpeng PeiView author publicationsSearch author on:PubMed Xiwei ZhengView author publicationsSearch author on:PubMed ContributionsJ
+Copy to clipboard
+Provided by the Springer Nature SharedIt content-sharing initiative
+
+
+This article is Intact lung tissue and bronchoalveolar lavage fluid are both suitable for the evaluation of murine lung microbiome in acute lung injury
+
+
+Lijun ZhengChengjun LiuZhen Zou
+
+Microbiome (2024)
+
+Cigarette smoke-induced dysbiosis: comparative analysis of lung and intestinal microbiomes in COPD mice and patients
+
+
+Vincent LaimanHsiao-Chi ChuangJer-Hwa Chang
+
+Respiratory Research (2024)
+
+Effectiveness of remote ischaemic conditioning is not affected by hyper-inflammation in a rat model of stroke
+
+
+Jana KončekováKlaudia KotorováPetra Bonová
+
+Scientific Reports (2024)
+
+Lung microbiome: new insights into the pathogenesis of respiratory diseases
+
+
+Ruomeng LiJing LiXikun Zhou
+
+Signal Transduction and Targeted Therapy (2024)

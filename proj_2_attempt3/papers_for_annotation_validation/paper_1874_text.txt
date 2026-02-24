@@ -1,0 +1,504 @@
+Characteristics of tongue coating microbiota in diabetic and non-diabetic kidney patients receiving hemodialysis
+
+Abstract
+Background
+Tongue-coating microbiota, especially known as the tongue microbiome, holds significant value as both a prospective clinical diagnostic biomarker and therapeutic target, which plays a crucial role in the oral microecological health. However, there is limited understanding of the composition and function of tongue coating microbiota in chronic kidney disease patients undergoing hemodialysis
+Methods
+Thirty-one non-diabetic hemodialysis patients (nonDM_HD), 29 diabetic hemodialysis patients (DM_HD) and 33 healthy controls (HC) were enrolled. Swabs from tongue coating were collected. The 16S rDNA (V3-V4 region) was sequenced to scrutinize the tongue-coating bacterial microbiome difference. Results
+Both nonDM_HD and DM_HD showed distinct bacterial communities of oral microbiota compared to HC
+The abundance of Streptococcus, Lactobacillus, Ruminococcaceae G1, Ligilactobacillus and Abiotrophia showed a significant increase (p < 0. 05) in DM_HD and nonDM_HD compared to HC, while Haemophilus, Lachnoanaerobaculum, Peptostreptococcaceae G1, Peptostreptococcus showed a significant decrease (p < 0. 05) respectively. Veillonella, Lactobacillus, Limosilactobacillus etc. may serve as potential biomarkers for DM_HD
+While Streptococcus, Ruminococcaceae G1, Actinobacillus, Abiotrophia can be considered alternative biomarkers for nonDM_HD. Moreover, the enriched Haemophilus, Actinomyces, Lachnoanaerobaculum were prominent features of the tongue coating microbiota in HC, which could be used as the potential therapeutic targets of chronic kidney disease. Network analysis revealed a less complex interaction relationship among the tongue coating bacterial microbiota of nonDM_HD and DM_HD
+Furthermore, correlations were identified between the microbiome composition and clinical parameters of the individuals. Conclusion
+In conclusion, deciphering the tongue coating microbiota of kidney patients undergoing hemodialysis will helpful in assessing the role of oral microbiota in pathobiology and development of kidney disease, which is expected to become a potential biomarkers and adjuvant therapeutic target
+With persistently deteriorating pathogenic conditions, chronic kidney disease can progress to end-stage kidney disease (ESKD). Hemodialysis, a common renal replacement therapy, can improve the health of patients with ESKD and promote their long-term survival [2]. Additionally, there is a close relationship between diabetes and chronic kidney disease, with nearly 40% of diabetes patients developing diabetic kidney disease [3]
+The significance of the gut microbiome in human diseases has been extensively documented [4, 5], highlighting its substantial influence on health. The relationship between the gut microbiome and chronic kidney disease has been thoroughly examined [6, 7]. Oral health is closely related to the human health, the study of oral-gut axis has more and more favored by researchers in recent years [8–10], as saliva containing the oral microbiome is constantly swallowed and released into the digestive tract
+Many studies have suggested that the oral microbiome also affects the host’s health [11–14]. The occurrence of some diseases will lead to changes in oral microbiota, and conversely, the imbalance of oral microbiota will also aggravate or affect the occurrence and development of some diseases, such as cardiovascular disease, cancer and gastrointestinal disorders [15–19]. Oral microbiota will be a potential target for the control of oral-gut dysbiosis and other chronic systemic inflammation [20]
+Furthermore, several previous studies have discussed the association between the oral microbiome and patients with chronic kidney disease [1, 21–23]. Duan et al. discovered changes in the salivary microbiome, related to oral health state, in patients with end-stage renal disease [21]. Additionally, periodontal pathogens are more prevalent in patients undergoing hemodialysis [21]. Guo et al
+found that patients with chronic kidney disease had increased oral microbial diversity, and certain genera showed changes in abundance [22]. Recently, Xiang et al. have provided evidence supporting the association between salivary microbiota and renal transplant recipients. Their study revealed that specific species of salivary microbiota could potentially serve as biomarkers for postoperative recovery [24]. The potential impact of the salivary microbiome on diabetes has been discussed [25, 26]
+For example, Liu et al. investigated the influence of diabetes on the salivary microbiome in chronic kidney disease and reported a distinct bacterial community in the saliva of patients compared to the control group. However, no differences were found between chronic kidney disease patients with and without diabetes [1]. Tongue coating microbiota plays a significant role in the composition of oral microbiota, closely associated with saliva microbiota [27, 28]
+Extensive discussions have been conducted on the impact of the oral microbiome on human health and disease, attracting considerable attention [29]. Some research has unveiled the association of oral microbiome with various diseases, such as colorectal cancer [30], gastritis [31], gastric cancer [28], halitosis [32], pancreatic cancer [27], oral squamous cell carcinoma(OSCC) [33–35], and osteoradionecrosis [36]
+These findings indicated that the tongue coating microbiome could serve as a promising non-invasive biomarker for diagnosing certain diseases. However, there have been limited studies investigating the relationship between the tongue coating microbiome and chronic kidney disease in patients with diabetes. Thus, the present study aims to investigate the difference in tongue coating microbiome among DM_HD, nonDM_HD and HC
+The findings enhance our understanding of how diabetes and kidney disease affect the oral microbiome of hemodialysis patients, and shed light on the potential interaction between variations in tongue coating microbiome and healthy individuals. Materials and methods
+Ethics and study subjects
+The Ethics Committee of the First Affiliated Hospital of Zhejiang Chinese Medical University granted approval for this study (Approval Number 2022-KLS-228–01)
+Prior to their participation, all participants provided written informed consent, and the study was carried out in compliance with the ethical standards of the Declaration of Helsinki. The subjects in this study were patients who visited the First Affiliated Hospital of Zhejiang Chinese medical university for hemodialysis. According to the KDIGO criteria, individuals with a glomerular filtration rate (eGFR) < 15 ml/(min·1
+73m^2), and the time of receiving hemodialysis is more than 3 months were considered inclusion CKD patients. Then following ADA standards, CKD patients with random blood glucose levels ≥ 11. 1mmol/L or HbA1 ≥ 6. 5% were categorized into the diabetic hemodialysis patients (DM_HD) group, while those with lower levels were classified into the non-diabetic hemodialysis patients (non DM_HD) group
+In addition, the other inclusion criteria for the case were shown as follows: diabetic or non-diabetic patients with hemodialysis, no less than 20 teeth, including at least one molar and one premolar in each quadrant of the dentition, no removable partial denture, no extensive pathological changes in the oral mucosa, no history of antibiotics use for more than 3 months prior to sampling, no history of smoking, no respiratory, hepatic, renal or gastrointestinal disorders, no severe mental illness
+The inclusion criteria for healthy control (HC) group were as follows: annual physical examination with no abnormalities delected, an estimated glomerular filtration rate (eGFR) greater than 90 ml/ (min·1
+73m^2), normal urine routine and renal imaging examination, no chronic diseases history damaging kidney (diabetes, hyperuricemia, and rheumatic immune diseases), no history of kidney transplantation, no active inflammation, no use of antibiotics or immunosuppressants within the previous three months, and no obvious pathogens infection
+All included individuals from the healthy population had healthy oral cavities, which characterized by clean teeth, absence of dental caries, no pain, normal gum color, and no signs of bleeding. In order to explore the impact of diabetes on the tongue coating microbiome among patients undergoing hemodialysis, we have categorized the participants into three distinct groups: DM_HD, nonDM_HD, and HC
+Sample collection and DNA isolation
+After oral cavity examination, participants rinsed their mouths with pure water and breathed for 30 s with their mouths closed, a collection of tongue coating samples was then performed with a sterile swab (MS-OF3602, PS bar + flocking head, Zhejiang Cixi Huabao Medical Supplies Co., LTD, China) according to a previous report [37]. A total of 29 DM_HD, 31 nonDM_HD and 33 HC samples were collected
+The sample was collected in sterile plastic tubes and stored at −80℃ for further analysis. Professional training of sampling for dentists was performed to ensure internal consistency. 16S rDNA amplification and sequencing
+Total DNA was extracted from tongue coating samples using the E. Z. N. A. ®Stool DNA Kit (D4015, Omega, Inc., USA) according to the manufacturer’s instructions
+The reagent which was designed to uncover DNA from trace amounts of the sample has been shown to be effective for the preparation of DNA of most bacteria. Nuclear-free water was used for blank. The total DNA was eluted in 50 μL of Elution buffer and stored at −80 °C until measurement in the PCR by LC-Bio Technology Co., Ltd, Hang Zhou, Zhejiang Province, China. The V3-V4 regions of the bacterial 16S rDNA gene were PCR amplified using barcoded 341F and 805R [38]
+PCR amplification was performed in a total volume of 25 μL reaction mixture containing 25 ng template DNA, 12. 5 μL PCR Premix, 2. 5 μL each primer, and PCR-grade water to adjust the volume. The PCR conditions to amplify the prokaryotic 16S fragments consisted of an initial denaturation at 98°C for 30 s; 32cycles of denaturation at 98 °C for 10 s, annealing at 54 oC for 30 s, and extension at 72 °C for 45 s; and then final extension at 72 °C for 10 min
+The PCR products were confirmed with 2% agarose gel electrophoresis. Throughout the DNA extraction process, ultrapure water, instead of a sample solution, was used to exclude the possibility of false-positive PCR results as a negative control. The PCR products were purified by AMPure XT beads (Beckman Coulter Genomics, Danvers, MA, USA) and quantified by Qubit (Invitrogen, USA)
+The amplicon pools were prepared for sequencing and the size and quantity of the amplicon library were assessed on Agilent 2100 Bioanalyzer (Agilent, USA) and with the Library Quantification Kit for Illumina (Kapa Biosciences, Woburn, MA, USA), respectively. The libraries were sequenced on NovaSeq PE250 platform. Bioinformatics and statistical analysis
+The samples were sequenced on an Illumina NovaSeq platform according to the manufacturer’s recommendations, provided by LC-Bio
+Paired-end reads were assigned to samples based on their unique barcode and truncated by cutting off the barcode and primer sequence. Paired-end reads were merged using FLASH [39]. Quality filtering on the raw reads was performed under specific filtering conditions to obtain the high-quality clean tags according to the fqtrim (v0. 94). Chimeric sequences were filtered using Vsearch software (v2. 3. 4) [40]. After dereplication using DADA2, we obtained the feature table and feature sequence
+Alpha diversity and beta diversity were calculated by normalizing to the same sequences randomly. Then according to HOME classifier, feature abundance was normalized using the relative abundance of each sample. chao1, pielou_e, Shannon and phylogenetic diversity index were used to evaluate the richness, evenness, and diversity of the tongue coating microbiome in the groups, and all these indexes were calculated with QIIME2
+Principal-coordinate analysis (PCoA) was performed based on the bray_curtis_distance using vegan and ade4 package of R. The dissimilarity between groups was evaluated using the analysis of similarities (ANOSIM) based on bray_curtis_distance using vegan package of R. Blast was used for sequence alignment, and the feature sequences were annotated with the HOME database for each representative sequence [41]
+The one-against-all (less strict) LDA effect size (LEfSe) was calculated and plotted using OmicStudio tools. In addition, a receiver operating characteristic (ROC) curve used to illustrate the diagnostic ability of bacterial genus was performed using the OmicStudio tools at https://www. omicstudio. cn/tool/58. A bacterial interaction network (using Sparcc) was performed using the OmicStudio tools with a Sparcc correlation coefficient (|correlation r)|> 0. 1, and p < 0
+05), and the network map was made using Gephi 0. 10. Prediction of the Microbial functional was undertaken using the PICRUSt2 by searching data on the 16S rDNA gene sequencing in the Kyoto Encyclopedia of Genes and Genomes (KEGG) database (www. genome. jp/). Advanced cor link of clinical indicators and microbiome was performed using the OmicStudio tools at https://www. omicstudio. cn/tool. Other diagrams were implemented using the R package (v3. 5. 2)
+Wilcoxon Rank-Sum Test was used for a nonparametric comparison between the two groups (p < 0. 05). T test was used for parametric comparison between the two groups (p < 0. 05). Kruskal–Wallis. Test was used for multiple group comparisons (p < 0. 05). Results
+Characteristics of patients and tongue coating microbiome sequencing
+We recruited 93 participants, consisting of 68 men and 25 women, with ages ranging from 31 to 79 years. The mean age of participants in the DM_HD group (n = 29) was 60
+00 ± 10. 27 years, in the nonDM_HD group (n = 31) was 57. 06 ± 13. 32 years, and in the HC group (n = 33) was 53. 91 ± 9. 22 years. When comparing DM_HD and nonDM_HD, we observed higher concentrations of serum creatinine, serum sodium, serum calcium, and hemoglobin in the nonDM_HD group, while the DM_HD group showed a higher concentration of blood glucose and eGFR, more related physiological indexes of the participants were shown in Table 1
+Here, we analyzed a total of 93 samples, resulting in a raw tag count of 7,810,358, with an average of approximately 83,989 tags per sample. After rarefaction, we obtained 6,801,497 valid tags, with an average of 73,105 valid tags per sample and an average valid rate of 87. 06%, more sequencing information were presented in Supplementary Table 1. Table 1
+Clinical characteristics of the enrolled patients and health adults participants
+
+Parameters
+
+HC(n=33)
+
+nonDM_HD(n=31)
+
+DM_HD(n=29)
+
+P value
+
+nonDM_HD vs. DM_HD
+
+Parathormone(pg/ml)
+34. 14±13. 99
+22. 01±15. 97
+21. 04±15. 21
+0. 9065
+
+KT/V
+NA
+1. 40±0. 29
+1. 21±0. 52
+0. 4466
+
+Serum creatinine (umol/L）
+
+83. 91±21. 09
+966. 32±324. 62
+837. 97±273. 54
+*
+
+Serum urea (mmol/L)
+5. 12±1. 13
+22. 09±6. 09
+18. 83±6. 24
+0. 0751
+
+Blood glucose (mmol/L）
+
+7. 34±1. 45
+6. 54±1. 55
+13. 95±6
+57
+****
+
+Uric acid(umol/L）
+
+231. 91±113. 26
+422. 87±100. 01
+408. 72±79. 35
+0. 5691
+
+eGFR (ml/(min·1. 73m^2 ) )
+102. 33±7. 94
+4. 69±2. 14
+5. 74±2. 56
+*
+
+Potassium(mmol/L)
+NA
+4. 65±0. 65
+4. 73±0. 56
+0. 7052
+
+Sodium(mmol/L)
+NA
+139. 07±1. 99
+136. 86±3. 73
+**
+
+Chlorine(mmol/L)
+NA
+102. 88±7. 78
+100. 57±6. 12
+0. 1782
+
+Calcium(mmol/L)
+NA
+2. 23±0. 18
+2. 11±0. 20
+**
+
+Inorganic phosphorus(mmol/L)
+NA
+1. 78±0. 50
+1. 63±0. 48
+0. 2399
+
+Total cholesterol(mmol/L)
+NA
+3. 48±0. 88
+3. 42±0. 70
+0
+8654
+
+Total protein (g/L)
+NA
+66. 80±5. 91
+64. 74±5. 45
+0. 1292
+
+Albumin(g/L)
+NA
+38. 35±4. 16
+37. 21±4. 47
+0. 1931
+
+White blood cell(10^9/L)
+NA
+5. 43±-1. 51
+6. 14±1. 57
+0. 0593
+
+Hemoglobin (g/L)
+NA
+112. 81±14. 36
+105. 21±11. 61
+*
+
+Platelet(10^9/L)
+NA
+159. 61±48. 77
+184. 52±51. 28
+0. 0692
+
+C-reactive protein(mg/L)
+NA
+6. 15±11. 99
+10. 76±25. 66
+0. 3589
+
+Age(yr)
+53. 91±9. 22
+57. 06±13. 32
+60. 00±10. 27
+0. 3994
+
+Duration(yr)
+NA
+6. 47±6. 04
+3. 66±2. 63
+*
+
+Men n(%)
+18(54. 54%)
+25(80. 65%)
+25(86
+20%)
+
+Women n(%)
+15(45. 45%)
+6(19. 35%)
+4(13. 80%)
+
+Open in a new tab
+
+Data are presented as n (percentage) or mean±standard deviation (SD). P value was calculated by GraphPad (version 8. 02). eGFR, estimated glomerular filtration rate; KT/V, estimated the effectiveness of dialysis treatment; (K clearance of urea during dialysis, T time length of dialysis, V volume of distribution of urea)
+* p<0. 05
+** p<0. 01
+**** p<0
+0001
+After normalizing and rarifying the sequences, we obtained 12,619, 12,948, and 12,320 ASVs in the DM_HD, nonDM_HD, and HC groups, respectively. The DM_HD and HC shared 1,910 ASVs, nonDM_HD and HC shared 1,813 ASVs, and DM_HD shared 2,112 ASVs with nonDM_HD individually. Additionally, 1,494 ASVs were shared by all three groups (Supplementary Fig. 1). We observed similarities and differences in the composition of the tongue coating microbiota among the three groups
+The Good’s coverage index in each sample had a value of 100% measured at the ASV level (Supplementary Fig. 2A). The rarefaction curves demonstrated that the microbial richness of the oral samples approached saturation at the utilized sequencing depth (Supplementary Fig. 2B), which was deemed adequate for identifying the majority of bacterial community members within each microbiota. Alpha and beta diversity analysis of the tongue coating microbiome
+According to the chao_1 index (Fig
+1A), there was no significant difference in richness among the groups. The pielou_e index (Fig. 1B) also showed no significant difference in evenness. Similarly, the Shannon index (Fig. 1C) showed that there was no significant difference in diversity between groups. However, there was a significant difference in the phylogenetic diversity index between nonDM_HD and HC (p < 0. 05) (Fig. 1D)
+The rank_abundance curve proved that no significant difference in evenness and diversity was observed (Supplementary Fig. 2C). In addition, the principal coordinate analysis (PCoA) and Anosim analysis (Fig. 1E) were performed to further compare the microbial community composition
+Although no significant separation in PCoA diagram was observed among groups, the anosim analysis revealed a significant difference, which indicated that nonDM_HD and DM_HD both displayed significantly different bacterial communities compared to HC, but no differences were observed between nonDM_HD and DM_HD. Fig. 1. Open in a new tab
+Alpha and Beta diversity analysis among the three categories
+Chaol (A), pielou_e (B), shannon (C) and phylogenetic diversity (D) index showed the richness, evenness, and diversity among the DM_HD, nonDM_HD and HC, respectively. E Principal coordinates analysis (PCoA) and anosim analysis revealed the differences in the tongue coating bacterial microbiome among the three groups
+Red represented the DM_HD, blue indicated the nonDM_HD group, and green denoted the HC groupThe Bacterial community composition of the tongue coating microbiome
+Taxonomic assignment resulted in the identification of 14 phyla, 211 genera and 633 species. The core microbiome consisted of five phyla: Bacillota, Pseudomonadota, Bacteroidetes, Actinobacteria, and Fusobacteria. The most abundant bacterial phyla in DM_HD, nonDM_HD and HC were Bacillota (44. 60% in DM_HD, 44. 64% in nonDM_HD, 36
+26% in HC), Pseudomonadota (21. 34% in DM_HD, 24. 23% in nonDM_HD, 28. 97% in HC) and Bacteroidetes (12. 64% in DM_HD, 12. 40% in nonDM_HD, 14. 53% in HC), and so on (Supplementary Fig. 3A; Supplementary Table 2). The dominant genera were shared by DM_HD, nonDM_HD, and HC, the most prevalent genera were Streptococcus (mean = 20. 99%), Neisseria (mean = 13. 49%), Veillonella (mean = 8. 80%), Prevotella (mean = 7. 72%), Haemophilus (mean = 5. 31%), Fusobacterium (mean = 3
+74%), Leptotrichia (mean = 3. 69%), Schaalia (mean = 3. 33%), Rothia (mean = 3. 14%), Granulicatella (mean = 2. 60%), and Alloprevotella (mean = 1. 94%) (Fig. 2A; Supplementary Table 3). To investigate the taxonomic disparities among the three categories, a cluster analysis was conducted using the top 30 most abundant genera. The heat map clearly illustrated significant variations in the composition of the microbial community across the three categories. (Fig. 2B; Supplementary Fig. 3B)
+Additionally, the heat map revealed a higher similarity in the microbiome community between nonDM_HD and DM_HD, compared to HC, at the phylum and genus levels, which is consistent with the results obtained from the PCoA analysis to some extent. Fig. 2. Open in a new tab
+Composition of bacterial community in tongue coating across the groups DM_HD, nonDM_HD and HC. A The composition of genera among three groups
+The stacked plot demonstrated the top 30 most abundant bacterial genera distribution in the groups of DM_HD, nonDM_HD and HC. B The heatmap indicated the differential abundance at genus level. Taxonomic association in Class and Phylum level was presented on the left of heatmap. C The Sankey plot depicted the relationship between the dominant phylum and genusThe relationship between dominant phyla and genera among three groups is depicted in Fig. 2C
+Fundamentally, Schaalia and Rothia composed the Actinobacteriota, Prevotella composed the Bacteroidota, and Streptococcus and Veillonella and Granulicatella constituted the phylum Bacillota. Additionally, the predominant components of the phylum Fusobacteriota were the genera Fusobacterium and Leptotrichia, and that of Pseudomonadota were Neisseria and Haemophilus
+Alterations of tongue coating microbiome among three categories
+Multi-group comparison showed that the relative abundance of Firmicutes, Chloroflexi, and Synergistetes changed significantly(p < 0. 05) in nonDM_HD, DM_HD, and HC. Compared with the HC group, the relative abundance of all three phyla increased significantly(p < 0. 05) in nonDM_HD, and the relative abundance of Firmicutes increased significantly (p < 0
+05) in DM_HD, while no difference was observed between nonDM_HD and DM_HD, more comparisons between phyla were shown in Supplementary Table 4. The abundance of Streptococcus, Lactobacillus, Ruminococcaceae G1, Ligilactobacillus and Abiotrophia showed a significant increase (p < 0. 05) in DM_HD and nonDM_HD compared with HC, while Haemophilus, Lachnoanaerobaculum, Peptostreptococ- caceae G1, Peptostreptococcus showed a significant decrease (p < 0. 05)
+Above, no significant differences were observed between DM_HD and nonDM_HD. What’s more, Actinomyces showed a significant decrease in nonDM_HD compared with other groups (p < 0. 05), Genella showed a significant decrease in DM_HD compared with other groups, and Veillonella showed a significant increase in DM_HD compared with HC(Fig. 3A, Supplementary Fig. 3C, Supplementary Table 5 and 6). Fig. 3. Open in a new tab
+Bacterial taxon comparisons among the three categories
+A Bacterial relative abundance comparisons of differentially abundant genera including Streptococcus, Veillonella, Haemophilus, Genella, Lachnoanaerobaculum, and Actinomyces among DM_HD, nonDM_HD and HC. P-value was calculated using Wilcoxon rank-sum test *(p< 0. 05) ** (p< 0. 01) *** (p< 0. 001) and **** (p< 0. 0001). B Linear Discriminant Analysis Efect Size (LEfSe) cladogram of taxonomic biomarkers identified in the tongue coating bacterial microbiome of participants
+C LEfSe histogram of genera biomarkers identified in the tongue-coating bacterial microbiome of participants in genus and specie level. The threshold for the logarithmic discriminant analysis (LDA) score was 3Differential species analyses among categories
+LEfSe analysis was used to identify discriminant taxon in the tongue coating microbiota of DM_HD, nonDM_HD and HC. This allowed for a detailed evaluation of the bacterial composition differences in the tongue coating
+We conducted a less-strict LEfSe analysis to find potential biomarkers between groups, in genus and species level. Four genera including Veillonella, Lactobacillus, Limosilactobacillus and Ligilactobacillus were differentially abundant in DM_HD tongue coating. And three genera enriched in nonDM_HD, including Streptococcus, Ruminococcaceae G1 and Abiotrophia
+Six genera including Haemophilus, Actinomyces, Lachnoanaerobaculum, Gemella, Peptostreptococcaceae G1,and Peptostreptococcus were differentially abundant in tongue coating microbiota of HC. In addition, we also found a variety of microorganisms with different abundances at the species level
+Among them, Veillonella dispar and Streptococcus vestibularis in DM_HD, Neisseria mucosa and Streptococcus sanguinis in nonDM_HD, Neisseria subflava and Haemophilus parainfluenzae in HC exhibit higher LDA scores (Fig. 3B and C). The results were further supported by performing ROC curve analysis (Supplementary Fig. 4)
+Network analysis of tongue coating microbiome among three categories
+The interaction network analysis was performed on the relative abundance of the top 100 genera within each group, which aimed to identify key genera and unveil the relationships within the microbiome community (Fig. 4 A-C). We found 40 nodes and 93 edges in DM_HD, 41 nodes and 95edges in nonDM_HD, and 43 nodes and 139 edges in HC
+No significant difference in edges correlation model among three groups, and positive edges are slightly more than negative edges in each group (Fig. 4 D). Compared to the HC, the edges, average triangles, and average degree, graph density were presented considerably lower in DM_HD and nonDM_HD, which indicated that a more complex and stable network in HC
+Whilst, the average clustering coefficient and average weighted degree were presented higher in HC, which probably means that the nodes in HC played a more important role in constructing the network. The average degree of nonDM_HD was the lowest, and that of HC was the highest; the average betweenness centrality of HC was the lowest, and that of DM_HD was the highest (Fig. 4 E)
+Meanwhile, we preliminarily identified some genera that play a key role in each group of network connections based on degree. In DM_HD group, Haemophilus, Limosilactobacillus, Veillonella, Neisseria, and Fusobacterium had the most complex interactions. In nonDM_HD group, Fusobacterium, Prevotella and Alloprevotella, Streptococcus, Porphyromonas played an important role in the complexity of community
+While Fusobacterium, Leptotrichia, Ralstonia, Neisseria, and Veillonella greatly contributed to the interaction complexity in HC group. More network topological attributes details were presented in Supplementary Table 7. Fig. 4. Open in a new tab
+Interaction network of dominant members of the microbiota at the genus level (top 100) in DM_HD (A), nonDM_HD (B) and HC (C). D The stack plot of proportion of positive and negative edges, and proportion of phyla in networks
+E The box plot of node degree and betweenness centrality. The different colors of nodes indicate the corresponding taxonomic assignments at the phylum level. The edge colors represent positive (red) and negative (blue) correlations. The thicker line indicates the stronger correlation. The only significant sparce correlation are shown (r > 0. 1; P < 0
+05)Alterations of functional pathway of tongue coating microbiome among three categories
+In order to determine the functional difference in the microbial composition between nonDM_HD and DM_HD, compared to HC, we used PCIRUSt2 to predict the function of the microbial community based on 16s rDNA sequencing data
+In the KEGG function prediction at level 3, compared with HC, DM_HD exhibited elevated levels of cysteine and methionine metabolism, glycolysis/gluconeogenesis, pentose phosphate pathway, and photosynthesis and showed decreased levels of energy metabolism, membrane and intracellular structural molecules, as well as chaperones and folding catalysts
+And nonDM_HD displayed higher levels of phosphotransferase system, amino acid and fatty acid synthesis, and lower levels of oxidative phosphorylation, membrane and intracellular structural molecules, and methane metabolism. Further details were shown in Fig. 5. Fig. 5. Open in a new tab
+Prediction of altered KEGG pathways using PICRUSt2 analysis in level 3. Bar plots on the left side display the mean proportion of each KEGG pathway
+Dot plots on the right show the differences in mean proportions between the two indicated groups. P-value was calculated using t test
+The prediction of altered KEGG pathways in level 3 of DM_HD and HC (A), and nonDM_HD and HC (B)Correlation between tongue coating microbiome and clinical indicators
+Based on Mantel test, we analyzed the correlation between tongue coating differential genera and species determined by LEfSe analysis and clinical indicators of DM_HD and nonDM_HD, including Serum creatinine, Serum urea, Uric Acid, eGFR, Albumin, White blood cell and Hemoglobin
+At the genus level, in DM_HD, Albumin is positively correlated with Ligilactobacillus, White blood cell is positively correlated with Actinomyces, and Hemoglobin is positively correlated with Actinomyces and Abiotrophia; in nonDM_HD, Serum creatinine and Uric Acid are positively correlated with Veillonella, White blood cell is positively correlated with Gemella and Abiotrophia, and Hemoglobin is positively correlated with Ligilactobacillus and Veillonella (Fig. 6)
+The correlation between species and clinical indicators was shown in Supplementary Table 8. Fig. 6. Open in a new tab
+Heatmap showing the correlation based on Mantel test between differential genera (A) and species (B) clinical indicators of DM_HD (on the left) and nonDM_H(on the right)
+Correlation plots of relative abundance of differential genera and species determined by LEfSe analysis and the clinical indicators (Serum creatinine, Serum urea, Uric Acid, eGFR, Albumin, White blood cell and Hemoglobin). The heatmap of microbiome was constructed based on spearman correlation coefficientDiscussion
+With the deepening of the association study between the human microbiome and diseases, the researchers are paying more attention on role of oral microbiome in human health gradually
+There is growing evidences suggesting that the oral microbiome can serve as a potential clinical diagnostic marker and therapeutic target for evaluating oral and systemic diseases [20, 29, 42]. Several studies have elaborated on the relationship between oral microbiome dysbiosis and various ailments, such as type 2 diabetes and inflammatory bowel diseases [11, 33, 34, 43, 44]
+Furthermore, considering the association between oral microbiota and gut microbiota, the positive modulation of oral microbiota could represent a new possible adjuvant therapy in the clinical management of kidney disease [42]. Therefore, it may be worthwhile to further explore targeted therapies for regulating oral microbiota and gut microbiota dysbiosis in order to alleviate oral and gut diseases, so as potential to assist the clinical management of chronic kidney disease
+In this study, we investigated the characteristics of the tongue coating microbiome in hemodialysis patients, both with diabetes and without diabetes. We analyzed 93 tongue coating samples and found no significant differences in the richness, evenness, and diversity (except for phylogenetic diversity) of the microbiome between three groups, which differs somewhat from previous studies. Both Guo et al. and Duan et al. reported higher diversity in patients’ oral microbiomes, with Duan et al
+also finding a decrease in abundance, but Liu et al. did not observe any changes [1, 21, 22]. Therefore, no consistent conclusion could be drawn regarding the alteration in richness and diversity. Both nonDM_HD and DM_HD patients demonstrated a disparate bacterial community and bacterial diversity compared to those in health control group, which is similar to previous studies [1, 21, 22]
+However, we did not observe any differences in the bacterial community between DM_HD and nonDM_HD, which is also consistent with former research [1]. Regarding bacterial taxa, several discrepancies and similarities, including proportion and variation tendency, were found in our results compared to other studies on chronic kidney disease (CKD) patients. We found that the relative abundance of Bacillota ranked first among all groups, which was the same as the study by Liu et al. and Duan et al
+, but it ranked third in the study by Guo et al. [1, 21, 22]. The abundance of Bacillota was significantly increased in CKD patients, which was also found in our results [22]. Furthermore, the Streptococcus, Neisseria and Prevotella were dominant in our research, which coincides with other studies [1, 21, 22]. Some research found the abundance of Prevotella significantly decreased in oral microbiota of CKD [1, 21, 22], but we did not observe it
+Actinomyces and Haemophilus decreased significantly in nonDM_HD, which is consistent with the results of Liu et al. and Guo et al. respectively [1, 22]. In summary, the primary causes for the observed discrepancies are that the subjects of this study were chronic kidney disease (CKD) patients undergoing hemodialysis, and moreover, the samples of tongue coating might exhibit minor variations compared to saliva samples
+Obviously, our results indicated Streptococcus accounts for a significant proportion of the relative abundance and increased tremendously in nonDM_HD and DM_HD, which is similar to some previous research [1, 22]. Streptococcus has been proven to be associated with various ailments. Casarin et al. observed a high abundance of Streptococcus in the oral cavity of type 2 diabetic patients [45]. Hu et al
+determined that the abundance of Streptococcus in saliva decreased in chronic kidney disease patients, and they also noticed negative correlation between eGFR and Streptococcus, suggesting a negative impact on kidney function [46]. Several studies have explored the correlation between Streptococcus and cancer. For example, Streptococcus anginosus may serve as a noninvasive biomarker for oropharyngeal cancer [13], while S. mitis increased in with OSCC [47]. Besides, Goel et al
+found a higher abundance of S. salivarius in the saliva of patients with Orofacial Granulomatosis (OFG) or Crohn’s Disease (CD) [46]. Other researchers have also discussed the probiotic functions of S. salivarius, showing its strong inhibition against S. pyogenes, a principal pathogen in the human oral cavity [48]. These means several Streptococcus species that may hold promise as potencial biomarkers in both DM_HD and nonDM_HD
+It seems that a deeper identification and analysis the relationship of some Streptococcus taxa and related diseases are highly required, due to the diverse functions of Streptococcus in oral and systemic diseases. In addition, Lactobacillus and Ligilactobacillus were both enriched in DM_HD and nonDM_HD. At the same time, Lactobacillus, Ligilactobacillus, and Limosilactobacillus are all considered biomarkers of DM_HD
+Lactobacillus reuteri (Limolactobacillus reuteri) is widely recognized for its probiotic benefits and its ability to improve human health [49]. Due to the antimicrobial activity, Lactobacillus reuteri can inhibit the colonization of pathogens, and reduce the production of pro-inflammatory cytokines, and simultaneously promote the development and function of regulatory T cells. Therefore, inflammatory diseases can be alleviated by increase the colonization of Lactobacillus reuteri [50]
+Limosilactobacillus reuteri has also been proven to improve the oral cavity`s health [51]. In some research on kidney disease, Tsai et al. found that Lactobacillus rhamnosus GKLC1 could be used as an agent to ameliorate the development of chronic kidney disease in the mice by reducing inflammation, inhibiting apoptosis, and ameliorating fibrosis [52]. Ahmad Gholami et al
+discovered that Limosilactobacillus fermentum and its supernatant postbiotic could provide protection against oxidative stress in mice with chronic kidney disease [53]. In addition, a study found that the levels of Ligilactobacillus increased in CKD rats after dietary treatment [54]. Meanwhile, there are several studies indicating that Lactobacillus spp
+which is involved in the process of immunomodulation, are drastically reduced in diabetic kidney disease [55]; while the level of Lactobacillus is reduced in type 1 diabetic mellitus [56, 57]. In summary, these results suggests the above three genera have the potential to serve as targets for improving the diagnosis, intervention, and treatment of diabetes and kidney disease. According to the LEfSe analysis. Haemophilus and Actinomyces were more abundant in HC than two patient groups
+However, Haemophilus, as a potential pathogen, which has been associated with various severe diseases [58–60]. Actinomyces is closely related to infection [61], extraradicular lesions [62], endocarditis [63], pyogenic liver abscess [64, 65] and so on. Whether these genera abundance interventions contribute to the treatment of CKD deserves more further studies
+By comparing the prediction function of the tongue coating microbiome, we found DM_HD groups presented significantly lower levels of cellular processes and signaling, biosynthesis of other secondary metabolites, metabolism of terpenoids and polyketides and a higher level of excretory system, which was quite different from other research [1, 21]. Furthermore, some studies found a significant difference in the abundance of metabolism pathway, whereas our results only limitedly reflect this point
+In that manner, detailed metabolome analysis is required to assess associations between the oral microbiome and its metabolism. By employed microbial correlation network analysis, we found the reduced complexity of the tongue coating microbiota in nonDM_HD and DM_HD, which has rarely been reported before. A decreasing number of nodes and edges, lower average clustering coefficients, graph density and an exceptionally low number of total triangles were observed
+These results suggest that the physiological alterations experienced by patients receiving hemodialysis disrupt the natural balance of oral microbiota and the interaction patterns within the community. This disruption may lead to the considerable proliferation of certain pathogens and probiotics, leading to less complex and stable network
+Furthermore, in oral microbiota of patients, pathogenic microorganisms are likely to have correlations with each other and promote some oral diseases, while probiotics may exert an antipathogenic role in maintaining a healthy and stable oral microenvironment. Our findings were consistent with some earlier researches demonstrating that the complexity and modification in correlation pattern likely signified the microbiota dysbiosis and possible disease emergence [66–68]
+Furthermore, we analyze the correlations between the oral microbiome and clinical indicators in DM_HD and nonDM_HD. Actinomyces and Abiotrophia are common pathogenic bacteria, showing a positive correlation with white blood cells, suggesting a potential risk of microbiota dysbiosis [59, 69]. The estimated glomerular filtration rate (eGFR) is a crucial marker for assessing kidney function
+Our study revealed that Capnocytophaga granulosa, Capnocytophaga sp HMT 332, Leptotrichia buccalis, Leptotrichia sp HMT 463, and Prevotella nanceiensis are positively correlated with eGFR in patients, suggesting these taxa have potential roles in improving kidney disease and the possibility of being used as therapeutic targets or indicators. While the current study provides valuable insights, it does have some limitations
+Firstly, since kidney disease is more prevalent among older individuals and our participants were primarily local residents, this study is limited in terms of both sample size and geographical diversity. Secondly, due to constraints in the study design and implementation, we were unable to obtain comprehensive clinical and microbiome data from CKD patients prior to hemodialysis. This limitation prevents us from fully understanding the impact of hemodialysis on the tongue coating microbiome
+Conclusions
+In conclusion, the tongue coating microbiota of hemodialysis patients, both with and without diabetes, exhibits distinct characteristics compare to health control, and there are also differences between these two CKD patients. The enriched Lactobacillus, Limosilactobacillus, Ligilactobacillus, Streptococcus sp. EO2001-01 and Lactobacillus sp. L-YJ may serve as potential biomarkers for DM_HD
+Additionally, Streptococcus, Actinobacillus, Abiotrophia, Streptococcus mitis and uncultured Abiotrophia sp. could be considered as alternative biomarkers for nonDM_HD. Furthermore, the enriched Haemophilus, Actinomyces, Eubacterium nodatum and Peptostreptococcus were prominent features of the tongue coating microbiota in HC, which can be used as the potential target of oral microecological intervention in patients with CKD
+(A) ROC curve of biomarkers in genus level, the threshold value was 0. 8. (B) ROC curve of biomarkers in species level, the threshold value was 0. 7. Acknowledgements
+Thanks to Dr. Chen Hongbo of First Affiliated Hospital of Zhejiang Chinese Medical University, and Dr. Ding Peihui of Stomatological Hospital of Zhejiang Province, for their assistance in the writing and revision of the manuscript
+Abbreviations
+
+HC
+Health control nonDM_HD
+Non-diabetic hemodialysis patients
+DM_HD
+Diabetic hemodialysis patients
+CKD
+Chronic kidney disease
+ESKD
+End-stage kidney disease
+OSCC
+Oral squamous cell carcinoma
+PCR
+Polymerase chain reaction
+PCoA
+Principal-coordinate analysis
+Anosim
+Analysis of similarities
+LDA
+Linear discriminant analysis
+LEfSe
+LDA effect size
+ROC
+Receiver operating characteristic
+KEGG
+Kyoto Encyclopedia of Genes and Genomes
+ASV
+Amplicon Sequence Variant
+OFG
+Orofacial Granulomatosis
+CD
+Crohn’s Disease
+Authors’ contributions
+
+All authors contributed to the study conception and design
+Conceived and designed the experiments: HH and HmC. Performed experiments: QL and SyC. Analyzed the data: QL, SyC, LlJ, RL, HkH, YcZ and HmC. Contributed reagents/materials/analysis tools: QL, SyC, YzL, YwJ, YqW, and HmC. Compiled the manuscript: QL, SyC, HH and HmC. Edited the manuscript: QL, SyC, HploE, HH and HmC. All the authors approved the final version of the manuscript
+Footnotes
+
+Publisher’s Note
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations. Qiang Luo and Siyuan Chu contributed equally to this work. Contributor Information
+Hao Huang, Email: dr. huangh@163. com. Haimin Chen, Email: chenhm@zstu. edu. cn. References
+
+1. Liu F, Sheng J, Hu L, Zhang B, Guo W, Wang Y, Gu Y, Jiang P, Lin H, Lydia B, et al
+Salivary microbiome in chronic kidney disease: what is its connection to diabetes, hypertension, and immunity. J Transl Med. 2022;20(1):387. [DOI] [PMC free article] [PubMed] []
+
+2. Himmelfarb J, Ikizler TA. Hemodialysis. N Engl J Med. 2010;363(19):1833–45. [DOI] [PubMed] []
+
+3. Hartstra AV, Bouter KE, Backhed F, Nieuwdorp M. Insights into the role of the microbiome in obesity and type 2 diabetes. Diabetes Care. 2015;38(1):159–65. [DOI] [PubMed] []
+
+4
+de Vos WM, Tilg H, Van Hul M, Cani PD. Gut microbiome and health: mechanistic insights. Gut. 2022;71(5):1020–32. [DOI] [PMC free article] [PubMed] []
+
+5. Fan Y, Pedersen O. Gut microbiota in human metabolic health and disease. Nat Rev Microbiol. 2021;19(1):55–71. [DOI] [PubMed] []
+
+6. De Angelis M, Francavilla R, Piccolo M, De Giacomo A, Gobbetti M. Autism spectrum disorders and intestinal microbiota. Gut Microbes. 2015;6(3):207–13
+[DOI] [PMC free article] [PubMed] []
+
+7. Simoes-Silva L, Araujo R, Pestana M, Soares-Silva I, Sampaio-Maia B. The microbiome in chronic kidney disease patients undergoing hemodialysis and peritoneal dialysis. Pharmacol Res. 2018;130:143–51. [DOI] [PubMed] []
+
+8. Park SY, Hwang BO, Lim M, Ok SH, Lee SK, Chun KS, Park KK, Hu Y, Chung WY, Song NY. Oral-Gut Microbiome Axis in Gastrointestinal Disease and Cancer. Cancers (Basel). 2021;13(9):2124
+[DOI] [PMC free article] [PubMed] []
+
+9. Botelho J, Mascarenhas P, Viana J, Proenca L, Orlandi M, Leira Y, Chambrone L, Mendes JJ, Machado V. An umbrella review of the evidence linking oral health and systemic noncommunicable diseases. Nat Commun. 2022;13(1):7614. [DOI] [PMC free article] [PubMed] []
+
+10. Zhao N, Zhang Q, Guo Y, Cui S, Tian Y, Zhang Y, Zhou Y, Wang X. Oral microbiome contributes to the failure of orthodontic temporary anchorage devices (TADs)
+BMC Oral Health. 2023;23(1):22. [DOI] [PMC free article] [PubMed] []
+
+11. Belstrom D. The salivary microbiota in health and disease. J Oral Microbiol. 2020;12(1):1723975. [DOI] [PMC free article] [PubMed] []
+
+12. Zorba M, Melidou A, Patsatsi A, Poulopoulos A, Gioula G, Kolokotronis A, Minti F. The role of oral microbiome in pemphigus vulgaris. Arch Microbiol. 2021;203(5):2237–47. [DOI] [PubMed] []
+
+13
+Panda M, Rai AK, Rahman T, Das A, Das R, Sarma A, Kataki AC, Chattopadhyay I. Alterations of salivary microbial community associated with oropharyngeal and hypopharyngeal squamous cell carcinoma patients. Arch Microbiol. 2020;202(4):785–805. [DOI] [PubMed] []
+
+14. Abdelbary MMH, Kuppe C, Michael SS, Kruger T, Floege J, Conrads G. Impact of sucroferric oxyhydroxide on the oral and intestinal microbiome in hemodialysis patients. Sci Rep. 2022;12(1):9614
+[DOI] [PMC free article] [PubMed] []
+
+15. Al-Qadami G, Van Sebille Y, Bowen J, Wardill H. Oral-Gut Microbiome Axis in the Pathogenesis of Cancer Treatment-Induced Oral Mucositis. Front Oral Health. 2022;3: 881949. [DOI] [PMC free article] [PubMed] []
+
+16. Tonelli A, Lumngwena EN, Ntusi NAB. The oral microbiome in the pathophysiology of cardiovascular disease. Nat Rev Cardiol. 2023;20(6):386–403. [DOI] [PubMed] []
+
+17
+Abdelbary MMH, Hatting M, Bott A, Dahlhausen A, Keller D, Trautwein C, Conrads G. The oral-gut axis: Salivary and fecal microbiome dysbiosis in patients with inflammatory bowel disease. Front Cell Infect Microbiol. 2022;12:1010853. [DOI] [PMC free article] [PubMed] []
+
+18. Lam GA, Albarrak H, McColl CJ, Pizarro A, Sanaka H, Gomez-Nguyen A, Cominelli F. Paes Batista da Silva A: The Oral-Gut Axis: Periodontal Diseases and Gastrointestinal Disorders. Inflamm Bowel Dis
+2023;29(7):1153–64. [DOI] [PMC free article] [PubMed] []
+
+19. Chen BY, Lin WZ, Li YL, Bi C, Du LJ, Liu Y, Zhou LJ, Liu T, Xu S, Shi CJ, et al. Roles of oral microbiota and oral-gut microbial transmission in hypertension. J Adv Res. 2023;43:147–61. [DOI] [PMC free article] [PubMed] []
+
+20. Pacheco-Yanes J, Reynolds E, Li J, Marino E. Microbiome-targeted interventions for the control of oral-gut dysbiosis and chronic systemic inflammation. Trends Mol Med
+2023;29(11):912–25. [DOI] [PubMed] []
+
+21. Duan X, Chen X, Gupta M, Seriwatanachai D, Xue H, Xiong Q, Xu T, Li D, Mo A, Tang X, et al. Salivary microbiome in patients undergoing hemodialysis and its associations with the duration of the dialysis. BMC Nephrol. 2020;21(1):414. [DOI] [PMC free article] [PubMed] []
+
+22. Guo S, Wu G, Liu W, Fan Y, Song W, Wu J, Gao D, Gu X, Jing S, Shen Q, et al
+Characteristics of human oral microbiome and its non-invasive diagnostic value in chronic kidney disease. Biosci Rep. 2022;42(5):BSR20210694. [DOI] [PMC free article] [PubMed] []
+
+23. Gan Y, Ruan D, Zeng Q, Zhu Y, Hu Y, Wu R, Lin X, Wu J, Meng X, Luo J, et al. Difference in oral microbiota composition between patients with stage 5 chronic kidney disease on hemodialysis and healthy controls. Am J Transl Res. 2023;15(5):3342–54. [PMC free article] [PubMed] []
+
+24
+Xiang XY, Peng B, Liu K, Wang TY, Ding P, Li H, Zhu Y, Ming YZ. Association between salivary microbiota and renal function in renal transplant patients during the perioperative period. Front Microbiol. 2023;14:1122101. [DOI] [PMC free article] [PubMed] []
+
+25. Matsha TE, Prince Y, Davids S, Chikte U, Erasmus RT, Kengne AP, Davison GM. Oral Microbiome Signatures in Diabetes Mellitus and Periodontal Disease. J Dent Res. 2020;99(6):658–65. [DOI] [PubMed] []
+
+26
+Chen B, Wang Z, Wang J, Su X, Yang J, Zhang Q, Zhang L. The oral microbiome profile and biomarker in Chinese type 2 diabetes mellitus patients. Endocrine. 2020;68(3):564–72. [DOI] [PubMed] []
+
+27. Lu H, Ren Z, Li A, Li J, Xu S, Zhang H, Jiang J, Yang J, Luo Q, Zhou K, et al. Tongue coating microbiome data distinguish patients with pancreatic head cancer from healthy controls. J Oral Microbiol. 2019;11(1):1563409. [DOI] [PMC free article] [PubMed] []
+
+28
+Xu S, Xiang C, Wu J, Teng Y, Wu Z, Wang R, Lu B, Zhan Z, Wu H, Zhang J. Tongue Coating Bacteria as a Potential Stable Biomarker for Gastric Cancer Independent of Lifestyle. Dig Dis Sci. 2021;66(9):2964–80. [DOI] [PubMed] []
+
+29. Li Z, Fu R, Huang X, Wen X, Zhang L. A decade of progress: bibliometric analysis of trends and hotspots in oral microbiome research (2013–2022). Front Cell Infect Microbiol. 2023;13:1195127. [DOI] [PMC free article] [PubMed] []
+
+30
+Han S, Chen Y, Hu J, Ji Z. Tongue images and tongue coating microbiome in patients with colorectal cancer. Microb Pathog. 2014;77:1–6. [DOI] [PubMed] []
+
+31. Cui J, Cui H, Yang M, Du S, Li J, Li Y, Liu L, Zhang X, Li S. Tongue coating microbiome as a potential biomarker for gastritis including precancerous cascade. Protein Cell. 2019;10(7):496–509. [DOI] [PMC free article] [PubMed] []
+
+32. Seerangaiyan K, van Winkelhoff AJ, Harmsen HJM, Rossen JWA, Winkel EG
+The tongue microbiome in healthy subjects and patients with intra-oral halitosis. J Breath Res. 2017;11(3): 036010. [DOI] [PubMed] []
+
+33. Li Z, Fu R, Wen X, Wang Q, Huang X, Zhang L. The significant clinical correlation of the intratumor oral microbiome in oral squamous cell carcinoma based on tissue-derived sequencing. Front Physiol. 2022;13:1089539. [DOI] [PMC free article] [PubMed] []
+
+34. Liu Y, Li Z, Qi Y, Wen X, Zhang L
+Metagenomic Analysis Reveals a Changing Microbiome Associated With the Depth of Invasion of Oral Squamous Cell Carcinoma. Front Microbiol. 2022;13: 795777. [DOI] [PMC free article] [PubMed] []
+
+35. Li Z, Liu Y, Zhang L. Role of the microbiome in oral cancer occurrence, progression and therapy. Microb Pathog. 2022;169: 105638. [DOI] [PubMed] []
+
+36. Li Z, Fu R, Huang X, Wen X, Zhang L
+Oral microbiota may affect osteoradionecrosis following radiotherapy for head and neck cancer. J Transl Med. 2023;21(1):391. [DOI] [PMC free article] [PubMed] []
+
+37. Iwauchi M, Horigome A, Ishikawa K, Mikuni A, Nakano M, Xiao JZ, Odamaki T, Hironaka S. Relationship between oral and gut microbiota in elderly people. Immun Inflamm Dis. 2019;7(3):229–36. [DOI] [PMC free article] [PubMed] []
+
+38
+Logue JB, Stedmon CA, Kellerman AM, Nielsen NJ, Andersson AF, Laudon H, Lindstrom ES, Kritzberg ES. Experimental insights into the importance of aquatic bacterial community composition to the degradation of dissolved organic matter. ISME J. 2016;10(3):533–45. [DOI] [PMC free article] [PubMed] []
+
+39. Reyon D, Tsai SQ, Khayter C, Foden JA, Sander JD, Joung JK. FLASH assembly of TALENs for high-throughput genome editing. Nat Biotechnol. 2012;30(5):460–5
+[DOI] [PMC free article] [PubMed] []
+
+40. Caporaso JG, Kuczynski J, Stombaugh J, Bittinger K, Bushman FD, Costello EK, Fierer N, Pena AG, Goodrich JK, Gordon JI, et al. QIIME allows analysis of high-throughput community sequencing data. Nat Methods. 2010;7(5):335–6. [DOI] [PMC free article] [PubMed] []
+
+41. Dewhirst FE, Chen T, Izard J, Paster BJ, Tanner AC, Yu WH, Lakshmanan A, Wade WG. The human oral microbiome. J Bacteriol. 2010;192(19):5002–17
+[DOI] [PMC free article] [PubMed] []
+
+42. Basilicata M, Pieri M, Marrone G, Nicolai E, Di Lauro M, Paolino V, Tomassetti F, Vivarini I, Bollero P, Bernardini S, et al. Saliva as Biomarker for Oral and Chronic Degenerative Non-Communicable Diseases. Metabolites. 2023;13(8):889. [DOI] [PMC free article] [PubMed] []
+
+43. Balto H, Al-Hadlaq S, Alhadlaq A, El-Ansary A
+Gum-gut axis: The potential role of salivary biomarkers in the diagnosis and monitoring progress of inflammatory bowel diseases. Saudi Dent J. 2023;35(1):24–30. [DOI] [PMC free article] [PubMed] []
+
+44. Long J, Cai Q, Steinwandel M, Hargreaves MK, Bordenstein SR, Blot WJ, Zheng W, Shu XO. Association of oral microbiome with type 2 diabetes risk. J Periodontal Res. 2017;52(3):636–43. [DOI] [PMC free article] [PubMed] []
+
+45
+Casarin RC, Barbagallo A, Meulman T, Santos VR, Sallum EA, Nociti FH, Duarte PM, Casati MZ, Goncalves RB. Subgingival biodiversity in subjects with uncontrolled type-2 diabetes and chronic periodontitis. J Periodontal Res. 2013;48(1):30–6. [DOI] [PubMed] []
+
+46. Hu J, Iragavarapu S, Nadkarni GN, Huang R, Erazo M, Bao X, Verghese D, Coca S, Ahmed MK, Peter I. Location-Specific Oral Microbiome Possesses Features Associated With CKD. Kidney Int Rep. 2018;3(1):193–204
+[DOI] [PMC free article] [PubMed] []
+
+47. Mager D, Haffajee A, Devlin P, Norris C, Posner M, Goodson J. The salivary microbiota as a diagnostic indicator of oral cancer: a descriptive, non-randomized study of cancer-free and oral squamous cell carcinoma subjects. J Transl Med. 2005;3(1):1–8. [DOI] [PMC free article] [PubMed] []
+
+48. Wescombe PA, Hale JD, Heng NC, Tagg JR. Developing oral probiotics from Streptococcus salivarius. Future Microbiol. 2012;7(12):1355–71
+[DOI] [PubMed] []
+
+49. Saviano A, Brigida M, Migneco A, Gunawardena G, Zanza C, Candelli M, Franceschi F, Ojetti V. Lactobacillus Reuteri DSM 17938 (Limosilactobacillus reuteri) in Diarrhea and Constipation: Two Sides of the Same Coin. Medicina (Kaunas). 2021;57(7):643. [DOI] [PMC free article] [PubMed] []
+
+50. Mu Q, Tavella VJ, Luo XM. Role of Lactobacillus reuteri in Human Health and Diseases. Front Microbiol. 2018;9:757
+[DOI] [PMC free article] [PubMed] []
+
+51. Van Holm W, Verspecht T, Carvalho R, Bernaerts K, Boon N, Zayed N, Teughels W. Glycerol strengthens probiotic effect of Limosilactobacillus reuteri in oral biofilms: A synergistic synbiotic approach. Mol Oral Microbiol. 2022;37(6):266–75. [DOI] [PubMed] []
+
+52. Tsai YS, Chen YP, Lin SW, Chen YL, Chen CC, Huang GJ
+Lactobacillus rhamnosus GKLC1 ameliorates cisplatin-induced chronic nephrotoxicity by inhibiting cell inflammation and apoptosis. Biomed Pharmacother. 2022;147: 112701. [DOI] [PubMed] []
+
+53. Gholami A, Montazeri-Najafabady N, Ashoori Y, Kazemi K, Heidari R, Omidifar N, Karimzadeh I, Ommati MM, Abootalebi SN, Golkar N. The ameliorating effect of limosilactobacillus fermentum and its supernatant postbiotic on cisplatin-induced chronic kidney disease in an animal model
+BMC Complement Med Ther. 2023;23(1):243. [DOI] [PMC free article] [PubMed] []
+
+54. Tain YL, Chang CI, Hou CY, Chang-Chien GP, Lin S, Hsu CN. Dietary Resveratrol Butyrate Monoester Supplement Improves Hypertension and Kidney Dysfunction in a Young Rat Chronic Kidney Disease Model. Nutrients. 2023;15(3):635. [DOI] [PMC free article] [PubMed] []
+
+55. He X, Sun J, Liu C, Yu X, Li H, Zhang W, Li Y, Geng Y, Wang Z
+Compositional Alterations of Gut Microbiota in Patients with Diabetic Kidney Disease and Type 2 Diabetes Mellitus. Diabetes Metab Syndr Obes. 2022;15:755–65. [DOI] [PMC free article] [PubMed] []
+
+56. Murri M, Leiva I, Gomez-Zumaquero JM, Tinahones FJ, Cardona F, Soriguer F, Queipo-Ortuno MI. Gut microbiota in children with type 1 diabetes differs from that in healthy children: a case-control study. BMC Med. 2013;11:46. [DOI] [PMC free article] [PubMed] []
+
+57
+Soyucen E, Gulcan A, Aktuglu-Zeybek AC, Onal H, Kiykim E, Aydin A. Differences in the gut microbiota of healthy children and those with type 1 diabetes. Pediatr Int. 2014;56(3):336–43. [DOI] [PubMed] []
+
+58. Richardson H, Dicker AJ, Barclay H, Chalmers JD. The microbiome in bronchiectasis. Eur Respir Rev. 2019;28(153): 190048. [DOI] [PMC free article] [PubMed] []
+
+59. Pierard D, De Waele B, Covens L, Van Zeebroeck A, Rosseel P, Lauwers S
+Haemophilus parainfluenzae biliary tract infections. J Clin Microbiol. 1996;34(7):1866–7. [DOI] [PMC free article] [PubMed] []
+
+60. Hallstrom T, Riesbeck K. Haemophilus influenzae and the complement system. Trends Microbiol. 2010;18(6):258–65. [DOI] [PubMed] []
+
+61. Kononen E, Wade WG. Actinomyces and related organisms in human infections. Clin Microbiol Rev. 2015;28(2):419–42. [DOI] [PMC free article] [PubMed] []
+
+62
+Dioguardi M, Crincoli V, Laino L, Alovisi M, Sovereto D, Lo Muzio L, Troiano G. Prevalence of Bacteria of Genus Actinomyces in Persistent Extraradicular Lesions-Systematic Review. J Clin Med. 2020;9(2):457. [DOI] [PMC free article] [PubMed] []
+
+63. Reddy I, Ferguson DA Jr, Sarubbi FA. Endocarditis due to Actinomyces pyogenes. Clin Infect Dis. 1997;25(6):1476–7. [DOI] [PubMed] []
+
+64. Miyamoto MI, Fang FC
+Pyogenic liver abscess involving Actinomyces: case report and review. Clin Infect Dis. 1993;16(2):303–9. [DOI] [PubMed] []
+
+65. Garcia-Corbeira P, Esteban-Moreno J. Liver abscess due to Actinomyces meyeri. Clin Infect Dis. 1994;18(3):491–2. [DOI] [PubMed] []
+
+66. Nie J, Zhang Q, Zheng H, Xu LX, Wang XY, Chen F. Pyrosequencing of the subgingival microbiome in peri-implantitis after non-surgical mechanical debridement therapy. J Periodontal Res. 2020;55(2):238–46
+[DOI] [PubMed] []
+
+67. Coker OO, Dai Z, Nie Y, Zhao G, Cao L, Nakatsu G, Wu WK, Wong SH, Chen Z, Sung JJY, et al. Mucosal microbiome dysbiosis in gastric carcinogenesis. Gut. 2018;67(6):1024–32. [DOI] [PMC free article] [PubMed] []
+
+68. Wang Z, Bafadhel M, Haldar K, Spivak A, Mayhew D, Miller BE, Tal-Singer R, Johnston SL, Ramsheh MY, Barer MR, et al. Lung microbiome dynamics in COPD exacerbations. Eur Respir J. 2016;47(4):1082–92. [DOI] [PubMed] []
+
+69
+Articles from BMC Oral Health are provided here courtesy of BMC Abstract
+Background
+Tongue-coating microbiota, especially known as the tongue microbiome, holds significant value as both a prospective clinical diagnostic biomarker and therapeutic target, which plays a crucial role in the oral microecological health. However, there is limited understanding of the composition and function of tongue coating microbiota in chronic kidney disease patients undergoing hemodialysis

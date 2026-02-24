@@ -1,0 +1,25 @@
+{
+    "paper_1": {
+      "title": "...",
+      "relationships": [
+        {
+          "taxon_name": "Fusobacterium nucleatum",
+          "domain": "bacteria",
+          "taxonomic_level": "species",
+          "primary_disease": "oral squamous cell carcinoma",
+          "direction": "increased",
+          "change_context": "disease_vs_control",
+          "sample_site": "oral",
+          "p_value": "<0.05",
+          "confidence": "high",
+          "notes": "Abstract explicitly states significant enrichment"
+        }
+      ],
+      "annotation_metadata": {
+        "annotator": "your_name",
+        "date": "2026-02-14",
+        "time_spent_minutes": 15,
+        "paper_length_chars": 450000
+      }
+    }
+  }

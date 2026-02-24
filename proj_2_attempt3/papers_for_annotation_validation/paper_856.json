@@ -1,0 +1,620 @@
+{
+  "paper_id": "856",
+  "paper_title": "Gut microbiome and schizophrenia: insights from two-sample Mendelian randomization",
+  "study_type": "other",
+  "primary_disease": "schizophrenia",
+  "sample_sites": [
+    "gut"
+  ],
+  "relationships": [
+    {
+      "id": "856_rel_001",
+      "taxon_name": "Firmicutes",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.015",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: phylum Firmicutes positively (causally) associated with schizophrenia risk. OR 1.11 [1.02-1.21]. Verified in Table 1 and results section.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "The result of IVW suggests that nine taxa were positively correlated with schizophrenia risk, including phylum Firmicutes, class Betaproteobacteria, class Clostridia, order Clostridiales, family Prevotellaceae, genus Alloprevotella, genus FamilyXIIIUCG001, genus Hungatella, and genus Subdoligranulum (OR: 1. 08\u20131. 16, p \u2264 0. 044)"
+      }
+    },
+    {
+      "id": "856_rel_002",
+      "taxon_name": "Betaproteobacteria",
+      "domain": "bacteria",
+      "taxonomic_level": "class",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.027",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: class Betaproteobacteria positively (causally) associated with schizophrenia risk. OR 1.13 [1.01-1.27]. Heterogeneity detected (Q test p=0.010, I2=55.3%); outlier SNPs removed via MR-PRESSO before re-analysis. Verified in Table 1.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Class Betaproteobacteria | Schizophrenia | 1. 13 [1. 01\u20131. 27] | 0. 027"
+      }
+    },
+    {
+      "id": "856_rel_003",
+      "taxon_name": "Clostridia",
+      "domain": "bacteria",
+      "taxonomic_level": "class",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "4.22E-03",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: class Clostridia positively (causally) associated with schizophrenia risk. OR 1.16 [1.05-1.28]. Also supported by weighted median method. Verified in Table 1.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Class Clostridia | Schizophrenia | 1. 16 [1. 05\u20131. 28] | 4. 22E\u221203"
+      }
+    },
+    {
+      "id": "856_rel_004",
+      "taxon_name": "Clostridiales",
+      "domain": "bacteria",
+      "taxonomic_level": "order",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.027",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: order Clostridiales positively (causally) associated with schizophrenia risk. OR 1.12 [1.01-1.24]. Verified in Table 1.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Order Clostridiales | Schizophrenia | 1. 12 [1. 01\u20131. 24] | 0. 027"
+      }
+    },
+    {
+      "id": "856_rel_005",
+      "taxon_name": "Prevotellaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "1.36E-03",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: family Prevotellaceae positively (causally) associated with schizophrenia risk. OR 1.11 [1.03-1.20]. Verified in Table 1.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Family Prevotellaceae | Schizophrenia | 1. 11 [1. 03\u20131. 20] | 1. 36E\u221203"
+      }
+    },
+    {
+      "id": "856_rel_006",
+      "taxon_name": "Rhodospirillaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "schizophrenia",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.049",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: family Rhodospirillaceae negatively (causally) associated with schizophrenia risk (protective). OR 0.93 [0.87-1.00]. Also supported by weighted median method. Verified in Table 1.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "six taxa served as protective factors for schizophrenia, including family Rhodospirillaceae, family Defluviitaleaceae, family Veillonellaceae, genus Coprobacter, genus Gordonibacter, and genus Desulfovibrio (OR: 0. 88\u20130. 94, p \u2264 0. 049)"
+      }
+    },
+    {
+      "id": "856_rel_007",
+      "taxon_name": "Defluviitaleaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "schizophrenia",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.041",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: family Defluviitaleaceae negatively (causally) associated with schizophrenia risk (protective). OR 0.92 [0.85-1.00]. Verified in Table 1. Note: this same family also appears in reverse MR (rel_018).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Family Defluviitaleaceae | Schizophrenia | 0. 92 [0. 85\u20131. 00] | 0. 041"
+      }
+    },
+    {
+      "id": "856_rel_008",
+      "taxon_name": "Veillonellaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "schizophrenia",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.033",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: family Veillonellaceae negatively (causally) associated with schizophrenia risk (protective). OR 0.93 [0.87-0.99]. p-value reconstructed from split table lines (0. 033). Verified in Table 1.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Family Veillonellaceae | Schizophrenia | 0. 93 [0. 87\u20130. 99] | 0. 033"
+      }
+    },
+    {
+      "id": "856_rel_009",
+      "taxon_name": "Alloprevotella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "7.88E-03",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: genus Alloprevotella positively (causally) associated with schizophrenia risk. OR 1.09 [1.02-1.16]. Verified in Table 1.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Genus Alloprevotella | Schizophrenia | 1. 09 [1. 02\u20131. 16] | 7. 88E\u221203"
+      }
+    },
+    {
+      "id": "856_rel_010",
+      "taxon_name": "Coprobacter",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "schizophrenia",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "7.29E-03",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: genus Coprobacter negatively (causally) associated with schizophrenia risk (protective). OR 0.92 [0.86-0.98]. Verified in Table 1.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Genus Coprobacter | Schizophrenia | 0. 92 [0. 86\u20130. 98] | 7. 29E\u221203"
+      }
+    },
+    {
+      "id": "856_rel_011",
+      "taxon_name": "Desulfovibrio",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "schizophrenia",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "1.89E-03",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: genus Desulfovibrio negatively (causally) associated with schizophrenia risk (protective). OR 0.88 [0.82-0.96]. Also supported by weighted median method. Verified in Table 1 and explicitly discussed in discussion section.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Genus Desulfovibrio | Schizophrenia | 0. 88 [0. 82\u20130. 96] | 1. 89E\u221203"
+      }
+    },
+    {
+      "id": "856_rel_012",
+      "taxon_name": "FamilyXIIIUCG001",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.044",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: genus FamilyXIIIUCG001 positively (causally) associated with schizophrenia risk. OR 1.14 [1.00-1.29]. Verified in Table 1. Unusual name retained exactly as in paper.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Genus FamilyXIIIUCG001 | Schizophrenia | 1. 14 [1. 00\u20131. 29] | 0. 044"
+      }
+    },
+    {
+      "id": "856_rel_013",
+      "taxon_name": "Gordonibacter",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "schizophrenia",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.012",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: genus Gordonibacter negatively (causally) associated with schizophrenia risk (protective). OR 0.94 [0.89-0.99]. Verified in Table 1.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Genus Gordonibacter | Schizophrenia | 0. 94 [0. 89\u20130. 99] | 0. 012"
+      }
+    },
+    {
+      "id": "856_rel_014",
+      "taxon_name": "Hungatella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.043",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: genus Hungatella positively (causally) associated with schizophrenia risk. OR 1.08 [1.00-1.17]. Verified in Table 1.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Genus Hungatella | Schizophrenia | 1. 08 [1. 00\u20131. 17] | 0. 043"
+      }
+    },
+    {
+      "id": "856_rel_015",
+      "taxon_name": "Subdoligranulum",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.015",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Forward MR result: genus Subdoligranulum positively (causally) associated with schizophrenia risk. OR 1.14 [1.03-1.27]. Verified in Table 1.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Genus Subdoligranulum | Schizophrenia | 1. 14 [1. 03\u20131. 27] | 0. 015"
+      }
+    },
+    {
+      "id": "856_rel_016",
+      "taxon_name": "Verrucomicrobiae",
+      "domain": "bacteria",
+      "taxonomic_level": "class",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.039",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Reverse MR result: schizophrenia causally increases abundance of class Verrucomicrobiae. OR 1.04 [1.00-1.09]. Verified in Table 2. Direction represents increased abundance caused by the disease state.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "schizophrenia may increase the abundance of nine taxa, including class Verrucomicrobiae, family Bacteroidaceae, family Verrucomicrobiaceae, genus Akkermansia, genus Bacteroides, genus Candidatus Soleaferrea, genus Lachnospira, genus Ruminiclostridium5, and order Verrucomicrobiales (OR: 1. 03\u20131. 08, p \u2264 0. 04)"
+      }
+    },
+    {
+      "id": "856_rel_017",
+      "taxon_name": "Bacteroidaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.039",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Reverse MR result: schizophrenia causally increases abundance of family Bacteroidaceae. OR 1.03 [1.00-1.07]. Verified in Table 2.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Schizophrenia | Family Bacteroidaceae | 1. 03 [1. 00\u20131. 07] | 0. 039"
+      }
+    },
+    {
+      "id": "856_rel_018",
+      "taxon_name": "Defluviitaleaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "schizophrenia",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "7.12E-03",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Reverse MR result: schizophrenia causally decreases abundance of family Defluviitaleaceae. OR 0.94 [0.90-0.98]. Verified in Table 2. Note: this family also appears in forward MR as a protective factor (rel_007) \u2014 bidirectional relationship confirmed.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "schizophrenia may reduce the abundance of family Defluviitaleaceae and genus DefluviitaleaceaeUCG011 (OR: 0. 94, p \u2264 7. 12 \u00d7 10\u22123)"
+      }
+    },
+    {
+      "id": "856_rel_019",
+      "taxon_name": "Verrucomicrobiaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.039",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Reverse MR result: schizophrenia causally increases abundance of family Verrucomicrobiaceae. OR 1.04 [1.00-1.09]. Verified in Table 2.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Schizophrenia | Family Verrucomicrobiaceae | 1. 04 [1. 00\u20131. 09] | 0. 039"
+      }
+    },
+    {
+      "id": "856_rel_020",
+      "taxon_name": "Akkermansia",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.040",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Reverse MR result: schizophrenia causally increases abundance of genus Akkermansia. OR 1.04 [1.00-1.09]. Verified in Table 2.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Schizophrenia | Genus Akkermansia | 1. 04 [1. 00\u20131. 09] | 0. 040"
+      }
+    },
+    {
+      "id": "856_rel_021",
+      "taxon_name": "Bacteroides",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.039",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Reverse MR result: schizophrenia causally increases abundance of genus Bacteroides. OR 1.03 [1.00-1.07]. Verified in Table 2.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Schizophrenia | Genus Bacteroides | 1. 03 [1. 00\u20131. 07] | 0. 039"
+      }
+    },
+    {
+      "id": "856_rel_022",
+      "taxon_name": "Candidatus Soleaferrea",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "5.19E-03",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Reverse MR result: schizophrenia causally increases abundance of genus Candidatus Soleaferrea. OR 1.08 [1.02-1.14]. Verified in Table 2.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Schizophrenia | Genus Candidatus Soleaferrea | 1. 08 [1. 02\u20131. 14] | 5. 19E\u221203"
+      }
+    },
+    {
+      "id": "856_rel_023",
+      "taxon_name": "DefluviitaleaceaeUCG011",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "schizophrenia",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "7.06E-03",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Reverse MR result: schizophrenia causally decreases abundance of genus DefluviitaleaceaeUCG011. OR 0.94 [0.90-0.98]. p-value reconstructed from split table text (7. 06E-03 = 7.06E-03). Verified in Table 2.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "schizophrenia may reduce the abundance of family Defluviitaleaceae and genus DefluviitaleaceaeUCG011 (OR: 0. 94, p \u2264 7. 12 \u00d7 10\u22123)"
+      }
+    },
+    {
+      "id": "856_rel_024",
+      "taxon_name": "Lachnospira",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.036",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Reverse MR result: schizophrenia causally increases abundance of genus Lachnospira. OR 1.04 [1.00-1.07]. Verified in Table 2.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Schizophrenia | Genus Lachnospira | 1. 04 [1. 00\u20131. 07] | 0. 036"
+      }
+    },
+    {
+      "id": "856_rel_025",
+      "taxon_name": "Ruminiclostridium5",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "3.03E-03",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Reverse MR result: schizophrenia causally increases abundance of genus Ruminiclostridium5. OR 1.05 [1.02-1.08]. Verified in Table 2. Unusual numeric suffix in name retained exactly as in paper.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Schizophrenia | Genus Ruminiclostridium5 | 1. 05 [1. 02\u20131. 08] | 3. 03E\u221203"
+      }
+    },
+    {
+      "id": "856_rel_026",
+      "taxon_name": "Verrucomicrobiales",
+      "domain": "bacteria",
+      "taxonomic_level": "order",
+      "primary_disease": "schizophrenia",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "gut",
+      "p_value": "0.039",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Reverse MR result: schizophrenia causally increases abundance of order Verrucomicrobiales. OR 1.04 [1.00-1.09]. Verified in Table 2.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Schizophrenia | Order Verrucomicrobiales | 1. 04 [1. 00\u20131. 09] | 0. 039"
+      }
+    }
+  ],
+  "extraction_stats": {
+    "layer1_raw_count": {
+      "combined": 26
+    },
+    "layer1_union_count": 26,
+    "layer2_corrections": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 26
+  },
+  "paper_text": "Gut microbiome and schizophrenia: insights from two-sample Mendelian randomization\n\nAbstract\nGrowing evidence suggests a potential link between the gut microbiome and schizophrenia. However, it is unclear whether the gut microbiome is causally associated with schizophrenia. We performed two-sample bidirectional Mendelian randomization to detect bidirectional causal relationships between gut microbiome and schizophrenia\nSummary genome-wide association study (GWAS) datasets of the gut microbiome from the MiBioGen consortium (n\u2009=\u200918,340) and schizophrenia (n\u2009=\u2009130,644) were utilized in our study. Then a cohort of sensitive analyses was followed to validate the robustness of MR results. We identified nine taxa that exerted positive causal effects on schizophrenia (OR: 1. 08\u20131. 16) and six taxa that conferred negative causal effects on schizophrenia (OR: 0. 88\u20130. 94)\nHowever, it is unclear whether the gut microbiome is causally associated with schizophrenia. We performed two-sample bidirectional Mendelian randomization to detect bidirectional causal relationships between gut microbiome and schizophrenia. Summary genome-wide association study (GWAS) datasets of the gut microbiome from the MiBioGen consortium (n\u2009=\u200918,340) and schizophrenia (n\u2009=\u2009130,644) were utilized in our study\nThen a cohort of sensitive analyses was followed to validate the robustness of MR results. We identified nine taxa that exerted positive causal effects on schizophrenia (OR: 1. 08\u20131. 16) and six taxa that conferred negative causal effects on schizophrenia (OR: 0. 88\u20130. 94). On the other hand, the reverse MR analysis showed that schizophrenia may increase the abundance of nine taxa (OR: 1. 03\u20131. 08) and reduce the abundance of two taxa (OR: 0. 94)\nOur study unveiled mutual causal relationships between gut microbiome and schizophrenia. The findings may provide evidence for the treatment potential of gut microbiomes in schizophrenia. Subject terms: Schizophrenia, MicrobiologyIntroduction\nSchizophrenia is a psychiatric disorder characterized by psychotic symptoms, negative symptoms, and cognitive dysfunction1\nA systematic analysis (2019) reported that schizophrenia had the highest disability weight for acute psychotic compared to other mental disorders2. It is generally accepted that antipsychotic drugs are effective in relieving psychotic symptoms by increasing dopamine activity. However, antipsychotic drug efficacy in schizophrenia seems to decline, especially in negative symptoms and depression3\nTherefore, it is urgent to investigate the potential mechanism of schizophrenia and to aid an efficient treatment plan. The gut microbial composition differs in persons with schizophrenia and controls4. Besides often discussed drug-induced microbiome changes, several studies have shown that abundances of gut microbiota species differ between untreated patients with schizophrenia and age-matched healthy volunteers5\u20137\nThis is probably because the function of the gut-brain axis can be regulated by the gut microbiome. The gut microbiota and brain influence each other mutually through multiple pathways, such as the immune system, tryptophan metabolism, the vagus nerve and the enteric nervous system, and microbial metabolites including short-chain fatty acids, branched-chain amino acids, and peptidoglycans8\nTargeting the axis, several attempts have been made to interrupt the progression of schizophrenia, including fecal microbiota transplantation, probiotic supplements, prebiotic treatment, and antibiotics9. Furthermore, the opportunities for the microbiome to become a diagnostic tool were discussed in some diseases9,10. Nevertheless, articles have emerged that offer diverse findings recently. Zhu et al\nmentioned that Streptococcus vestibularis was enriched in individuals with schizophrenia and, when transplanted to recipient mice, was found to lead to deterioration in social behaviors5. According to Nguyen et al., phylum Proteobacteria, genus Haemophilus, Sutterella, and Clostridium were found to be relatively decreased in schizophrenia subjects while the genus Anaerococcus was increased11. Unlike Nguyen, in B\u0142a\u017cej et al\n\u2019s case-control study, generally increased Lactobacillales (order level), Bacilli (class level), and Actinobacteriota (phylum level) were found in schizophrenia patients12. Furthermore, the biological mechanisms related to gut microbiota may play a crucial role in other mental diseases, such as mild cognitive impairment, depression, and Alzheimer\u2019s disease13\u201317. Thus, whether the causal associations between gut microbiome and schizophrenia exist remains unclear\nMendelian randomization (MR) has an edge over other conventional observational studies aimed at assessing causal associations. MR constructs instrumental variables of exposure by harnessing genetic variants18. During gamete formation and conception, parents pass on genes to offspring randomly. Therefore, MR can investigate the relationships between exposure and outcome without disturbance of reverse causation or confounding variables19\nThis approach is increasingly used to infer causality for mental disorders20\u201322. In this study, we conducted a two-sample MR analysis to identify the associations between gut microbiome and schizophrenia using statistics derived from a genome-wide association study (GWAS) from the MiBioGen and the Psychiatric Genomics Consortium (PGC)\nMethods\nData sources\nSummary statistics of gut microbiome were obtained from a large-scale, multi-ancestry, genome-wide meta-analysis, also known as the MiBioGen research. Including 18,340 participants from 24 cohorts over 11 countries (16 cohorts from European ancestry, n\u2009=\u200913,266), the study characterized microbial composition from three distinct variable regions of the 16S rRNA gene: V4, V3\u2013V4, and V1\u2013V2\nAfter rarefied every sample to 10,000 reads, they took advantage of direct taxonomic binning to perform taxonomic classification. Microbiome trait Loci (mbTL) were mapped to identify microbiome quantitative trait loci (mbQTL) or microbiome binary trait loci (mbBLT)23\nGWAS summary statistics of schizophrenia, obtained from PGC, included 77,285 individuals with schizophrenia and 53,386 control individuals, with most subjects being of European ancestry, containing common variant associations at 287 distinct genomic loci. It is the largest schizophrenia GWAS statistic and has an enlarged number of associated loci24. Instrumental variable (IV)\nWe chose candidate instrumental variables at the genome-wide significance threshold p\u2009<\u20091. 0\u2009\u00d7\u200910\u22125\nIndependent SNPs were selected by clumping in a 10,000 Kb window and setting a linkage disequilibrium threshold of r2\u2009<\u20090. 001. Linkage disequilibrium was estimated by 1000 Genomes phase 3 European samples25. Statistics analysis\nThe package \u201cTwoSampleMR\u201d was utilized for all the MR analyses. Three methods including inverse variance weighted (IVW), MR-Egger, and weighted median were applied to calculate the causal effect of gut microbiota on schizophrenia\nCochrane\u2019s Q test in the IVW test and I2 statistics (p\u2009<\u20090. 05 and I2\u2009>\u20090. 25) were carried out, aiming at assessing whether there exists potential heterogeneity. Under the premise that the association of each genetic variant with the exposure is independent of its pleiotropy, the MR-Egger provides an efficient test for meta-analysis to detect study bias from horizontal pleiotropy. The true causal effect can be estimated from the slope coefficient of Egger regression26\nThen we performed MR-PRESSO analyses to detect the potential horizontal pleiotropy by removing significant outliers27. We calculated the F-statistic to assess the strength of instrumental variables. If the F-statistic of the instrumental variable was less than 10, then this instrument was considered as weak and was excluded from the MR analysis28. The weighted median can be considered a sensitivity analysis for Mendelian randomization investigations and supplementary to MR-Egger29\nWe prefer to use the inverse variance weighted method as a major method in the analysis because consistent and robust estimates were given under the circumstance that all of the genetic variants are valid instrumental variables. We performed a reverse Mendelian Randomization analysis in our study to detect the potential causal effects of schizophrenia on the gut microbiome. The same methods and procedures were adopted when we conducted the reverse MR analysis\nResults\nIn the MR analysis of summary association statistics of gut microbiome and schizophrenia, the numbers of the instrumental variables vary from 5 to 22\nThe MR-PRESSO analysis identified a total of 6 SNPs as significant outliers for two of the taxa studied (class Betaproteobacteria: rs11128180, rs2321387, rs2613606; genus Eubacterium fissicatena group: rs10147907, rs151257695, rs2733072), suggesting the horizontal pleiotropy may exist in the effect of the two taxa on schizophrenia (Supplementary 1). According to the MR-PRESSO global test, no horizontal pleiotropy was found in any other MR result\nAfter removing these outliers, the leftover SNPs were selected as instrumental variables for subsequent re-run of MR analysis. The result of IVW suggests that nine taxa were positively correlated with schizophrenia risk, including phylum Firmicutes, class Betaproteobacteria, class Clostridia, order Clostridiales, family Prevotellaceae, genus Alloprevotella, genus FamilyXIIIUCG001, genus Hungatella, and genus Subdoligranulum (OR: 1. 08\u20131. 16, p\u2009\u2264\u20090. 044)\nOn the other hand, six taxa served as protective factors for schizophrenia, including family Rhodospirillaceae, family Defluviitaleaceae, family Veillonellaceae, genus Coprobacter, genus Gordonibacter, and genus Desulfovibrio (OR: 0. 88\u20130. 94, p\u2009\u2264\u20090. 049) (Table 1 and Figs. 1A and 2A). The causal effect of class Clostridia, family Rhodospirillaceae, and genus Desulfovibrio on schizophrenia was also supported by the weighted median method\nAdditionally, the effect direction of the weighted median is consistent with the IVW estimate. However, none of the associations were significant after correction for FDR (p\u2009<\u20090. 05). There is no horizontal pleiotropy since the p values of the MR-Egger regression test are all greater than 0. 05. The result of Cochran\u2019s IVW Q test revealed significant heterogeneity in the instrumental variables of class Betaproteobacteria (p\u2009=\u20090. 010, I2\u2009=\u200955. 3%). Table 1\nMR results of the causal effects of the gut microbiome on schizophrenia. Exposure\nOutcome\nOR [95% CI]\np\n\nClass Betaproteobacteria\nSchizophrenia\n1. 13 [1. 01\u20131. 27]\n0. 027\n\nClass Clostridia\nSchizophrenia\n1. 16 [1. 05\u20131. 28]\n4. 22E\u221203\n\nFamily Defluviitaleaceae\nSchizophrenia\n0. 92 [0. 85\u20131. 00]\n0. 041\n\nFamily Prevotellaceae\nSchizophrenia\n1. 11 [1. 03\u20131. 20]\n1. 36E\u221203\n\nFamily Rhodospirillaceae\nSchizophrenia\n0. 93 [0. 87\u20131. 00]\n0. 049\n\nFamily Veillonellaceae\nSchizophrenia\n0. 93 [0. 87\u20130. 99]\n0\n033\n\nGenus Alloprevotella\nSchizophrenia\n1. 09 [1. 02\u20131. 16]\n7. 88E\u221203\n\nGenus Coprobacter\nSchizophrenia\n0. 92 [0. 86\u20130. 98]\n7. 29E\u221203\n\nGenus Desulfovibrio\nSchizophrenia\n0. 88 [0. 82\u20130. 96]\n1. 89E\u221203\n\nGenus FamilyXIIIUCG001\nSchizophrenia\n1. 14 [1. 00\u20131. 29]\n0. 044\n\nGenus Gordonibacter\nSchizophrenia\n0. 94 [0. 89\u20130. 99]\n0. 012\n\nGenus Hungatella\nSchizophrenia\n1. 08 [1. 00\u20131. 17]\n0. 043\n\nGenus Subdoligranulum\nSchizophrenia\n1. 14 [1. 03\u20131. 27]\n0. 015\n\nOrder Clostridiales\nSchizophrenia\n1. 12 [1\n01\u20131. 24]\n0. 027\n\nPhylum Firmicutes\nSchizophrenia\n1. 11 [1. 02\u20131. 21]\n0. 015\n\nOpen in a new tab\nCI confidence interval, OR odds ratio, p p value. Fig. 1. Causal effects between the gut microbiome and schizophrenia (forest plot). Open in a new tab\nA Causal effects of the gut microbiome on schizophrenia. B Causal effects of schizophrenia on the gut microbiome. CI confidence interval, OR odds ratio, P\np value. Fig. 2. Causal effects between the gut microbiome and schizophrenia (scatter plot)\nOpen in a new tab\nA Causal effects of the gut microbiome on schizophrenia. B Causal effects of schizophrenia on the gut microbiome. b MR estimate, P\np value\nIn the reverse MR analysis between schizophrenia and gut microbiome, we found that schizophrenia may increase the abundance of nine taxa, including class Verrucomicrobiae, family Bacteroidaceae, family Verrucomicrobiaceae, genus Akkermansia, genus Bacteroides, genus Candidatus Soleaferrea, genus Lachnospira, genus Ruminiclostridium5, and order Verrucomicrobiales (OR: 1. 03\u20131. 08, p\u2009\u2264\u20090\n04); while schizophrenia may reduce the abundance of family Defluviitaleaceae and genus DefluviitaleaceaeUCG011 (OR: 0. 94, p\u2009\u2264\u20097. 12\u2009\u00d7\u200910\u22123) (Table 2 and Figs. 1B and 2B). No evidence of pleiotropy and heterogeneity was found according to the MR-Egger regression intercept analysis, MR-PRESSO analysis, and Q test in IVW. Table 2. MR results of the causal effects of schizophrenia on the gut microbiome. Exposure\nOutcome\nOR [95% CI]\np\n\nSchizophrenia\nClass Verrucomicrobiae\n1. 04 [1. 00\u20131. 09]\n0\n039\n\nSchizophrenia\nFamily Bacteroidaceae\n1. 03 [1. 00\u20131. 07]\n0. 039\n\nSchizophrenia\nFamily Defluviitaleaceae\n0. 94 [0. 90\u20130. 98]\n7. 12E\u221203\n\nSchizophrenia\nFamily Verrucomicrobiaceae\n1. 04 [1. 00\u20131. 09]\n0. 039\n\nSchizophrenia\nGenus Akkermansia\n1. 04 [1. 00\u20131. 09]\n0. 040\n\nSchizophrenia\nGenus Bacteroides\n1. 03 [1. 00\u20131. 07]\n0. 039\n\nSchizophrenia\nGenus Candidatus Soleaferrea\n1. 08 [1. 02\u20131. 14]\n5. 19E\u221203\n\nSchizophrenia\nGenus DefluviitaleaceaeUCG011\n0. 94 [0. 90\u20130. 98]\n7\n06E\u221203\n\nSchizophrenia\nGenus Lachnospira\n1. 04 [1. 00\u20131. 07]\n0. 036\n\nSchizophrenia\nGenus Ruminiclostridium5\n1. 05 [1. 02\u20131. 08]\n3. 03E\u221203\n\nSchizophrenia\nOrder Verrucomicrobiales\n1. 04 [1. 00\u20131. 09]\n0. 039\n\nOpen in a new tab\nCI confidence interval, OR odds ratio, p p value. Discussion\nOur study revealed causal associations between gut microbiome and schizophrenia. We identified nine bacterial features positively and six bacterial features negatively correlated with schizophrenia\nIn addition, there exist reverse effects from schizophrenia to 11 identified bacterial features. We reported that the genus Desulfovibrio appeared to be associated with schizophrenia, supported by both the IVW test and the weighted median method. Previous studies highlighted the significance of the genus Desulfovibrio and its metabolism in the pathophysiology of schizophrenia30\nA pilot study reported that for patients with exacerbated symptoms of schizophrenia, taking the treatment of schizophrenia with amisulpride cannot change the elevated level of Desulfovibrio in gut microbial composition31. Antipsychotic agents might result in constipation by affecting gastrointestinal motility, and the relative abundance of Desulfovibrio was higher in psychopaths with constipation32. Our result unveiled that phylum Firmicutes was positively correlated with schizophrenia\nA study utilizing the polyriboinosinic-polyribocytidylic (Poly I:C) mouse model reported that the increased level of phylum Firmicutes which activate the immune system might account for neuroplasticity reduction in cortical areas in patients with schizophrenia33. However, recent studies yielded conflicting results\nNumerous studies have compared the composition of the intestinal microflora in schizophrenia patients and healthy volunteers, showing that schizophrenia patients have a lower relative abundance of Firmicutes at the phylum level34,35. Xiang et al. observed an increased abundance of Firmicutes in the fecal microbiota of patients with schizophrenia after 14\u201319 days of antipsychotic treatment36. As shown in MR results, class Betaproteobacteria is also a risk factor for schizophrenia\nIn a case-control study, the cognitive function was positively correlated with class Betaproteobacteria in patients with schizophrenia, suggesting that the alternations of the gut microbiome may partly account for the cognitive impairment in schizophrenia6. We also demonstrated that the class Clostridia and order Clostridiales were causally associated with a higher risk of schizophrenia, which was in line with previous studies37,38, He et al\ncarried out a series of experiments and observed that the abundance of the order Clostridiales was elevated in subjects at ultra-high risk for psychosis, which produced more Short Chain Fatty Acids (SCFAs). These SCFAs contribute to the activation of microglial cells and the membrane dysfunction confirmed by an increase in choline levels39. Conversely, Li et al\npointed out that the depletion of Clostridiales might mediate schizophrenia through an imbalance in amino acid metabolism and carbohydrate metabolism40. In social isolation rats (an animal model for schizophrenia), decreases in the class Clostridia are probably associated with the increase in several indices of \u201canxiety-like\u201d behavior and the dysfunction in learning and memory41\nAlong with previous studies, the family Prevotellaceae was found to be positively correlated with the risk of schizophrenia in our study37,42. A recent comparative study by Chen et al. involved the gut microbiota structure in schizophrenia patients with violence and without violence. They found more enriched Family Prevotellaceae in schizophrenia patients with violence than in those without violence, which would probably be instrumental to a deeper understanding of the etiology of violence43\nLee et al. \u2019s research reported a differential abundance of Prevotella and Prevotellaceae NK3B31 group in patients with the deficit subtype of schizophrenia compared with those with non-deficit schizophrenia and healthy controls. Correlations between these alternations of gut microbiome and cognitive performance were found in patients who participated in the study44. Family Veillonellaceae was reported to exert protective effects in schizophrenia in our findings\nSchizophrenia patients with violence had impoverished Veillonellaceae compared to those without violence, implying its involvement in violent behaviors43. By contrast, another study observed that the family Veillonellaceae was increased in patients with schizophrenia\nIn addition, lower glutamate and higher glutamine and GABA in the hippocampus were observed in the mice receiving schizophrenia microbiome fecal transplants, which indicates that the pathology of schizophrenia may be relevant to the alternation of neurochemistry caused by the change of intestinal microbiome42\nIn our MR analysis, we identified the genus Family XIII UCG00 and the genus Hungatella that were positively associated with schizophrenia, while the genus Coprobacter was negatively associated with schizophrenia. A broadly similar result of a recent comparative study showed that higher abundances of the Family XIII AD3011 group, Hungatella, and Coprobacillus were found in patients with schizophrenia\nThe interactions between inflammatory cytokines, gut permeability, lipid metabolism, impaired glucose homeostasis, and gut microbiota alterations probably mediate cognitive impairment, severe psychotic symptoms, and worse social functioning. For example, the level of zonulin appeared to regulate the performance of attention45. Borkent et al. also argued that gastrointestinal barrier dysfunction which increases intestinal permeability serves as a potential cause for schizophrenia46\nSeveral attempts have been made to improve the efficacy of treatments in schizophrenia, such as fecal microbiota transplantation47, probiotic supplement48, and prebiotic treatment49, further supporting the role of the gut microbiome and gut-brain axis in schizophrenia. Zheng et al. reported that antipsychotic medication like amisulpride may exert its therapeutic action by influencing the gut microbiome31\nSimilarly, it was hypothesized that both probiotics and repetitive transcranial magnetic stimulation (rTMS) alleviate schizophrenia symptoms by influencing the gut microbiome50\u201352. These previous studies show us a promising avenue for the therapy of psychiatric conditions by manipulating the gut-brain axis. Notably, Mendelian Randomization uses inherited genetic variation underlining each trait as an instrumental variable to detect the association between gut microbiome and schizophrenia\nThese genetic variants are inherited from parents and will not change after birth, which makes confounding factors less likely to affect these variables16,17. Nevertheless, the study comes with several limitations. First, the majority of participants in the GWAS data had European ancestry, thus our study may not be suitable for the non-European population. Second, none of our MR results remained significant after the multiple correction\nThird, in our study, we did not take some vital environmental factors into consideration, including the effects of diet and medication on the disease progression. Conclusion\nIn summary, we comprehensively unveiled the bidirectional causal relationship between gut microbiome and schizophrenia. Our findings probably provide novel insights into the pathology and treatment of schizophrenia. Supplementary information\n\nSupplementary Information (10\n1056/NEJMra1808803 [DOI] [PubMed] []\n\n2. GBD 2019 Mental Disorders Collaborators. Global, regional and national burden of 12 mental disorders in 204 countries and territories, 1990-2019: a systematic analysis for the Global Burden of Disease Study 2019. Lancet Psychiatry9, 137\u2013150 (2022). [DOI] [PMC free article] [PubMed]\n\n3. Leucht, S. et al\nSixty years of placebo-controlled antipsychotic drug trials in acute schizophrenia: systematic review, Bayesian meta-analysis, and meta-regression of efficacy predictors. Am. J. Psychiatry174, 927\u2013942 (2017). 10. 1176/appi. ajp. 2017. 16121358 [DOI] [PubMed] []\n\n4. Murray, N. et al. Compositional and functional alterations in intestinal microbiota in patients with psychosis or schizophrenia: a systematic review and meta-analysis. Schizophr. Bull. 49, 1239\u20131255 (2023). 10\n1093/schbul/sbad049 [DOI] [PMC free article] [PubMed] []\n\n5. Zhu, F. et al. Metagenome-wide association of gut microbiome features for schizophrenia. Nat. Commun. 11, 1612 (2020). 10. 1038/s41467-020-15457-9 [DOI] [PMC free article] [PubMed] []\n\n6. Ma, J. & Song, X. Q. Correlation between cognitive impairment and metabolic imbalance of gut microbiota in patients with schizophrenia. World J. Psychiatry13, 724\u2013731 (2023). 10. 5498/wjp. v13. i10\n724 [DOI] [PMC free article] [PubMed] []\n\n7. Ma, X. et al. Alteration of the gut microbiome in first-episode drug-na\u00efve and chronic medicated schizophrenia correlate with regional brain volumes. J. Psychiatr. Res123, 136\u2013144 (2020). 10. 1016/j. jpsychires. 2020. 02. 005 [DOI] [PubMed] []\n\n8. Cryan, J. F. et al. The microbiota-gut-brain axis. Physiol. Rev. 99, 1877\u20132013 (2019). 10. 1152/physrev. 00018. 2018 [DOI] [PubMed] []\n\n9. Bioque, M. et al\nTargeting the microbiome-gut-brain axis for improving cognition in schizophrenia and major mood disorders: a narrative review. Prog. Neuropsychopharmacol. Biol. Psychiatry105, 110130 (2021). 10. 1016/j. pnpbp. 2020. 110130 [DOI] [PubMed] []\n\n10. Lee, J. J. et al. Gut and oral microbiome modulate molecular and clinical markers of schizophrenia-related symptoms: a transdiagnostic, multilevel pilot study. Psychiatry Res. 326, 115279 (2023). 10. 1016/j. psychres. 2023\n115279 [DOI] [PMC free article] [PubMed] []\n\n11. Nguyen, T. T. et al. Differences in gut microbiome composition between persons with chronic schizophrenia and healthy comparison subjects. Schizophr. Res. 204, 23\u201329 (2019). 10. 1016/j. schres. 2018. 09. 014 [DOI] [PMC free article] [PubMed] []\n\n12. Misiak, B. et al. Gut microbiota alterations in stable outpatients with schizophrenia: findings from a case-control study. Acta Neuropsychiatr. 35, 147\u2013155 (2023). 10\n1017/neu. 2022. 38 [DOI] [PubMed] []\n\n13. Klee, M. et al. Education as risk factor of mild cognitive impairment: the link to the gut microbiome. J. Prev. Alzheimers Dis. 11, 759\u2013768 (2024). [DOI] [PMC free article] [PubMed] []\n\n14. Zhao, Q. et al. Gut microbiome and major depressive disorder: Insights from two-sample Mendelian randomization. BMC Psychiatry24, 493 (2024). [DOI] [PMC free article] [PubMed]\n\n15. Cheng, J. et al\nGut microbiota-derived short-chain fatty acids and depression: deep insight into biological mechanisms and potential applications. Gen. Psychiatr. 37, e101374 (2024). 10. 1136/gpsych-2023-101374 [DOI] [PMC free article] [PubMed] []\n\n16. Zhao, Q. et al. Evaluating causal effects of gut microbiome on Alzheimer\u2019s disease. J. Prev. Alzheimers Dis. 11, 1\u20136 (2024). 17. Liu, J. et al. Deciphering the \u2018gut-brain axis\u2019 through microbiome diversity. Gen. Psychiatr. 36, e101090 (2023). 10\n1136/gpsych-2023-101090 [DOI] [PMC free article] [PubMed] []\n\n18. Greenland, S. An introduction to instrumental variables for epidemiologists. Int. J. Epidemiol. 29, 722\u2013729 (2000). 10. 1093/ije/29. 4. 722 [DOI] [PubMed] []\n\n19. Smith, G. D. & Ebrahim, S. \u2018Mendelian randomization\u2019: can genetic epidemiology contribute to understanding environmental determinants of disease. Int. J. Epidemiol. 32, 1\u201322 (2003). 10. 1093/ije/dyg070 [DOI] [PubMed] []\n\n20\nBaranova, A. et al. Causal associations between major depressive disorder and COVID-19. Gen. Psychiatr. 36, e101006 (2023). 10. 1136/gpsych-2022-101006 [DOI] [PMC free article] [PubMed] []\n\n21. Baranova, A. et al. Causal influences of neuropsychiatric disorders on Alzheimer\u2019s disease. Transl. Psychiatry14, 114 (2024). 10. 1038/s41398-024-02822-1 [DOI] [PMC free article] [PubMed] []\n\n22. Baranova, A. et al\nShared genetics and bidirectional causal relationships between type 2 diabetes and attention-deficit/hyperactivity disorder. Gen. Psychiatr. 36, e100996 (2023). 10. 1136/gpsych-2022-100996 [DOI] [PMC free article] [PubMed] []\n\n23. Kurilshikov, A. et al. Large-scale association analyses identify host factors influencing human gut microbiome composition. Nat. Genet. 53, 156\u2013165 (2021). 10. 1038/s41588-020-00763-1 [DOI] [PMC free article] [PubMed] []\n\n24. Trubetskoy, V\net al. Mapping genomic loci implicates genes and synaptic biology in schizophrenia. Nature604, 502\u2013508 (2022). 10. 1038/s41586-022-04434-5 [DOI] [PMC free article] [PubMed] []\n\n25. Sanna, S. et al. Causal relationships among the gut microbiome, short-chain fatty acids and metabolic diseases. Nat. Genet. 51, 600\u2013605 (2019). 10. 1038/s41588-019-0350-x [DOI] [PMC free article] [PubMed] []\n\n26. Bowden, J., Davey Smith, G. & Burgess, S\nMendelian randomization with invalid instruments: effect estimation and bias detection through Egger regression. Int. J. Epidemiol. 44, 512\u2013525 (2015). 10. 1093/ije/dyv080 [DOI] [PMC free article] [PubMed] []\n\n27. Verbanck, M. et al. Detection of widespread horizontal pleiotropy in causal relationships inferred from Mendelian randomization between complex traits and diseases. Nat. Genet. 50, 693\u2013698 (2018). 10\n1038/s41588-018-0099-7 [DOI] [PMC free article] [PubMed] []\n\n28. Staiger, D. & Stock, J. H. Instrumental variables regression with weak instruments. Econometrica65, 557\u2013586 (1997). 10. 2307/2171753 [DOI] []\n\n29. Bowden, J. et al. Consistent estimation in Mendelian randomization with some invalid instruments using a weighted median estimator. Genet. Epidemiol. 40, 304\u2013314 (2016). 10. 1002/gepi. 21965 [DOI] [PMC free article] [PubMed] []\n\n30. Cheng, S. et al\nIdentifying psychiatric disorder-associated gut microbiota using microbiota-related gene set enrichment analysis. Brief. Bioinform. 21, 1016\u20131022 (2020). 10. 1093/bib/bbz034 [DOI] [PubMed] []\n\n31. Zheng, J. et al. Analysis of gut microbiota in patients with exacerbated symptoms of schizophrenia following therapy with amisulpride: a pilot study. Behav. Neurol. 2022, 4262094 (2022). 10. 1155/2022/4262094 [DOI] [PMC free article] [PubMed] []\n\n32. Xu, Y. et al\nAntipsychotic-induced gastrointestinal hypomotility and the alteration in gut microbiota in patients with schizophrenia. Brain Behav. Immun. 99, 119\u2013129 (2022). 10. 1016/j. bbi. 2021. 09. 014 [DOI] [PubMed] []\n\n33. Juckel, G. et al. Impact of Poly I:C induced maternal immune activation on offspring\u2019s gut microbiome diversity\u2014implications for schizophrenia. Prog. Neuropsychopharmacol. Biol. Psychiatry110, 110306 (2021). 10. 1016/j. pnpbp. 2021\n110306 [DOI] [PubMed] []\n\n34. Li, S. et al. Altered gut microbiota associated with symptom severity in schizophrenia. PeerJ8, e9574 (2020). 10. 7717/peerj. 9574 [DOI] [PMC free article] [PubMed] []\n\n35. Vindegaard, N. et al. Gut microbial changes of patients with psychotic and affective disorders: a systematic review. Schizophr. Res. 234, 1\u201310 (2021). 10. 1016/j. schres. 2019. 12. 014 [DOI] [PubMed] []\n\n36. Xiang, M. et al\nIntestinal microbes in patients with schizophrenia undergoing short-term treatment: core species identification based on co-occurrence networks and regression analysis. Front. Microbiol. 13, 909729 (2022). 10. 3389/fmicb. 2022. 909729 [DOI] [PMC free article] [PubMed] []\n\n37. Gubert, C. et al. Microbiome profiling reveals gut dysbiosis in the metabotropic glutamate receptor 5 knockout mouse model of schizophrenia. Front. Cell Dev. Biol. 8, 582320 (2020). 10. 3389/fcell. 2020\n582320 [DOI] [PMC free article] [PubMed] []\n\n38. Shen, Y. et al. Analysis of gut microbiota diversity and auxiliary diagnosis as a biomarker in patients with schizophrenia: a cross-sectional study. Schizophr. Res. 197, 470\u2013477 (2018). 10. 1016/j. schres. 2018. 01. 002 [DOI] [PubMed] []\n\n39. He, Y. et al. Gut microbiome and magnetic resonance spectroscopy study of subjects at ultra-high risk for psychosis may support the membrane hypothesis. Eur\nPsychiatry53, 37\u201345 (2018). 10. 1016/j. eurpsy. 2018. 05. 011 [DOI] [PubMed] []\n\n40. Li, J. et al. Clostridiales are predominant microbes that mediate psychiatric disorders. J. Psychiatr. Res. 130, 48\u201356 (2020). 10. 1016/j. jpsychires. 2020. 07. 018 [DOI] [PubMed] []\n\n41. Dunphy-Doherty, F. et al. Post-weaning social isolation of rats leads to long-term disruption of the gut microbiota-immune-brain axis. Brain Behav. Immun. 68, 261\u2013273 (2018). 10. 1016/j. bbi. 2017. 10\n024 [DOI] [PubMed] []\n\n42. Zheng, P. et al. The gut microbiome from patients with schizophrenia modulates the glutamate-glutamine-GABA cycle and schizophrenia-relevant behaviors in mice. Sci. Adv. 5, eaau8317 (2019). 10. 1126/sciadv. aau8317 [DOI] [PMC free article] [PubMed] []\n\n43. Chen, X. et al. Profiling the differences of gut microbial structure between schizophrenia patients with and without violent behaviors based on 16S rRNA gene sequencing. Int. J. Leg. Med\n135, 131\u2013141 (2021). 10. 1007/s00414-020-02439-1 [DOI] [PubMed] []\n\n44. Kowalski, K. et al. Profiling gut microbiota signatures associated with the deficit subtype of schizophrenia: findings from a case-control study. Prog. Neuropsychopharmacol. Biol. Psychiatry127, 110834 (2023). 10. 1016/j. pnpbp. 2023. 110834 [DOI] [PubMed] []\n\n45. Misiak, B. et al\nAssociations of gut microbiota alterations with clinical, metabolic, and immune-inflammatory characteristics of chronic schizophrenia. J. Psychiatr. Res. 171, 152\u2013160 (2024). 10. 1016/j. jpsychires. 2024. 01. 036 [DOI] [PubMed] []\n\n46. Borkent, J. et al. Role of the gut microbiome in three major psychiatric disorders. Psychol. Med. 52, 1222\u20131242 (2022). 10. 1017/S0033291722000897 [DOI] [PMC free article] [PubMed] []\n\n47. Fond, G. B. et al\nMicrobiota-orientated treatments for major depression and schizophrenia. Nutrients12, 1024 (2020). 10. 3390/nu12041024 [DOI] [PMC free article] [PubMed] []\n\n48. Dickerson, F. B. et al. Effect of probiotic supplementation on schizophrenia symptoms and association with gastrointestinal functioning: a randomized, placebo-controlled trial. Prim. Care Companion CNS Disord. 16, PCC. 13m01579 (2014). [DOI] [PMC free article] [PubMed] []\n\n49. Liu, J. C. W. et al\nThe gut microbiome in schizophrenia and the potential benefits of prebiotic and probiotic treatment. Nutrients13, 1152 (2021). 10. 3390/nu13041152 [DOI] [PMC free article] [PubMed] []\n\n50. A\u011fag\u00fcnd\u00fcz, D. et al. Probiotics, live biotherapeutic products (LBPs), and gut-brain axis related psychological conditions: implications for research and dietetics. Probiotics Antimicrob. Proteins15, 1014\u20131031 (2023). 10. 1007/s12602-023-10092-4 [DOI] [PubMed] []\n\n51. Nita, I. B. et al\nReviewing the potential therapeutic approaches targeting the modulation of gastrointestinal microflora in schizophrenia. Int. J. Mol. Sci. 23, 16129 (2022). 10. 3390/ijms232416129 [DOI] [PMC free article] [PubMed] []\n\n52. Li, R. et al. Effects of low-frequency rTMS combined with risperidone on the gut microbiome in hospitalized patients with chronic schizophrenia. Brain Res. 1819, 148539 (2023). 10. 1016/j. brainres. 2023\nOur study unveiled mutual causal relationships between gut microbiome and schizophrenia. The findings may provide evidence for the treatment potential of gut microbiomes in schizophrenia. Subject terms: Schizophrenia, Microbiology"
+}

@@ -1,0 +1,373 @@
+{
+  "paper_id": "1021",
+  "paper_title": "Oral Microbiome of Crohn's Disease Patients With and Without Oral Manifestations",
+  "study_type": "cross-sectional",
+  "primary_disease": "Crohn's disease",
+  "sample_sites": [
+    "oral"
+  ],
+  "relationships": [
+    {
+      "id": "1021_rel_001",
+      "taxon_name": "Actinomycetota",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "Crohn's disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "no_specific_p_value_reported"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Phylum Actinomycetota (formerly Actinobacteria). Paper explicitly states 'Patients with CD were found to have increased saliva microbial species of the phyla Actinomycetota [Actinobacteria]' compared to controls. No specific p-value given for this phylum-level comparison; increase stated without accompanying statistic in text. Medium confidence because directional claim is explicit but lacks reported p-value.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Patients with CD were found to have increased saliva microbial species of the phyla Actinomycetota [Actinobacteria] and Pseudomonadota [Proteobacteria], but no significant differences in the total abundance of microbial species of the phyla Bacillota [Firmicutes] and Bacteroidota [Bacteroidetes]"
+      }
+    },
+    {
+      "id": "1021_rel_002",
+      "taxon_name": "Pseudomonadota",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "Crohn's disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "no_specific_p_value_reported"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Phylum Pseudomonadota (formerly Proteobacteria). Paper explicitly states 'Patients with CD were found to have increased saliva microbial species of the phyla ... Pseudomonadota [Proteobacteria]' compared to controls. No specific p-value given for this phylum-level comparison. Medium confidence because directional claim is explicit but lacks reported p-value.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Patients with CD were found to have increased saliva microbial species of the phyla Actinomycetota [Actinobacteria] and Pseudomonadota [Proteobacteria], but no significant differences in the total abundance of microbial species of the phyla Bacillota [Firmicutes] and Bacteroidota [Bacteroidetes]"
+      }
+    },
+    {
+      "id": "1021_rel_003",
+      "taxon_name": "Bacillota",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "Crohn's disease",
+      "direction": "unchanged",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Phylum Bacillota (formerly Firmicutes). Paper explicitly states 'no significant differences in the total abundance of microbial species of the phyla Bacillota [Firmicutes]' between CD patients and controls. Firmicutes/Bacteroidetes ratio borderline increase not statistically significant (p=0.44) \u2014 ratio not extracted as its own entity per schema rules.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Patients with CD were found to have increased saliva microbial species of the phyla Actinomycetota [Actinobacteria] and Pseudomonadota [Proteobacteria], but no significant differences in the total abundance of microbial species of the phyla Bacillota [Firmicutes] and Bacteroidota [Bacteroidetes], with a corresponding borderline increase in the ratio of Bacillota [Firmicutes] to Bacteroidota [Bacteroidetes], though not statistically significant [p = 0. 44]"
+      }
+    },
+    {
+      "id": "1021_rel_004",
+      "taxon_name": "Bacteroidota",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "Crohn's disease",
+      "direction": "unchanged",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Phylum Bacteroidota (formerly Bacteroidetes). Paper explicitly states 'no significant differences in the total abundance of microbial species of the phyla ... Bacteroidota [Bacteroidetes]' between CD patients and controls.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Patients with CD were found to have increased saliva microbial species of the phyla Actinomycetota [Actinobacteria] and Pseudomonadota [Proteobacteria], but no significant differences in the total abundance of microbial species of the phyla Bacillota [Firmicutes] and Bacteroidota [Bacteroidetes]"
+      }
+    },
+    {
+      "id": "1021_rel_005",
+      "taxon_name": "Roseburia intestinalis",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "Crohn's disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified_in_text"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Listed among four species significantly associated with cobblestoning in CD subjects (CD with cobblestoning vs CD without cobblestoning, nested within CD diagnosis). Described as 'significant differentially abundant' at FDR < 0.2. Direction (increased vs decreased) is not stated in the text for this species individually; only the association is named. Change context is subgroup within CD (cobblestoning vs no oral manifestation), treated as disease_vs_control as closest schema fit. No per-species p-value reported in text.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Four microbial species each were found associated with either cobblestoning [Roseburia intestinalis, Bacteroides vulgatus, Clostridium asparagiforme and Bacteriodes dorei] or oral ulcers [Turicimonas muris, Anaerostipes hadrus, Clostridium bolteae and Roseburia inulinivorans]."
+      }
+    },
+    {
+      "id": "1021_rel_006",
+      "taxon_name": "Bacteroides vulgatus",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "Crohn's disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified_in_text"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Listed among four species significantly associated with cobblestoning in CD subjects. Direction not stated in text. FDR < 0.2 threshold applies per figure caption. No per-species p-value in text.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Four microbial species each were found associated with either cobblestoning [Roseburia intestinalis, Bacteroides vulgatus, Clostridium asparagiforme and Bacteriodes dorei] or oral ulcers [Turicimonas muris, Anaerostipes hadrus, Clostridium bolteae and Roseburia inulinivorans]."
+      }
+    },
+    {
+      "id": "1021_rel_007",
+      "taxon_name": "Clostridium asparagiforme",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "Crohn's disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified_in_text"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Listed among four species significantly associated with cobblestoning in CD subjects. Direction not stated in text. FDR < 0.2 threshold applies per figure caption. No per-species p-value in text.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Four microbial species each were found associated with either cobblestoning [Roseburia intestinalis, Bacteroides vulgatus, Clostridium asparagiforme and Bacteriodes dorei] or oral ulcers [Turicimonas muris, Anaerostipes hadrus, Clostridium bolteae and Roseburia inulinivorans]."
+      }
+    },
+    {
+      "id": "1021_rel_008",
+      "taxon_name": "Bacteroides dorei",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "Crohn's disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified_in_text",
+          "taxon_name_corrected"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Listed among four species significantly associated with cobblestoning in CD subjects. The paper spells it 'Bacteriodes dorei' (line 307) which is a typographical error; correct spelling is Bacteroides dorei. Taxon name recorded as corrected form. Direction not stated in text. FDR < 0.2 threshold applies. No per-species p-value in text.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Four microbial species each were found associated with either cobblestoning [Roseburia intestinalis, Bacteroides vulgatus, Clostridium asparagiforme and Bacteriodes dorei] or oral ulcers [Turicimonas muris, Anaerostipes hadrus, Clostridium bolteae and Roseburia inulinivorans]."
+      }
+    },
+    {
+      "id": "1021_rel_009",
+      "taxon_name": "Turicimonas muris",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "Crohn's disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified_in_text"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Listed among four species significantly associated with oral ulcers in CD subjects. Direction not stated in text for this species individually. FDR < 0.2 threshold applies per figure caption. No per-species p-value in text.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Four microbial species each were found associated with either cobblestoning [Roseburia intestinalis, Bacteroides vulgatus, Clostridium asparagiforme and Bacteriodes dorei] or oral ulcers [Turicimonas muris, Anaerostipes hadrus, Clostridium bolteae and Roseburia inulinivorans]."
+      }
+    },
+    {
+      "id": "1021_rel_010",
+      "taxon_name": "Anaerostipes hadrus",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "Crohn's disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "no_specific_p_value_reported"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Listed as associated with oral ulcers in CD and explicitly described as increased. The discussion text states 'increased abundance of A. hadrus in subjects with oral ulcers, a major butyrate producer usually found in the gut.' Direction is unambiguously stated. High confidence because direction is explicitly stated. Comparison is CD with oral ulcers vs CD without oral ulcers (nested within CD diagnosis). No per-species p-value in text.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "This was further substantiated by the finding of an increased abundance of A. hadrus in subjects with oral ulcers, a major butyrate producer usually found in the gut"
+      }
+    },
+    {
+      "id": "1021_rel_011",
+      "taxon_name": "Clostridium bolteae",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "Crohn's disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified_in_text"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Listed among four species significantly associated with oral ulcers in CD subjects. Direction not stated in text. FDR < 0.2 threshold applies per figure caption. No per-species p-value in text.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Four microbial species each were found associated with either cobblestoning [Roseburia intestinalis, Bacteroides vulgatus, Clostridium asparagiforme and Bacteriodes dorei] or oral ulcers [Turicimonas muris, Anaerostipes hadrus, Clostridium bolteae and Roseburia inulinivorans]."
+      }
+    },
+    {
+      "id": "1021_rel_012",
+      "taxon_name": "Roseburia inulinivorans",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "Crohn's disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified_in_text"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Listed among four species significantly associated with oral ulcers in CD subjects. Direction not stated in text. FDR < 0.2 threshold applies per figure caption. No per-species p-value in text.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Four microbial species each were found associated with either cobblestoning [Roseburia intestinalis, Bacteroides vulgatus, Clostridium asparagiforme and Bacteriodes dorei] or oral ulcers [Turicimonas muris, Anaerostipes hadrus, Clostridium bolteae and Roseburia inulinivorans]."
+      }
+    },
+    {
+      "id": "1021_rel_013",
+      "taxon_name": "Ruminococcus gnavus",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "Crohn's disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_ambiguous_literature_vs_this_study"
+        ],
+        "criticism_flags": [
+          "possible_citation_conflation"
+        ],
+        "review_notes": "Paper states in discussion: 'Differentially abundant oral microbes in CD were predominantly the same stool species associated with IBD [i.e. increased abundances of Ruminococcus gnavus, decreased abundance of Faecalibacterium prausnitzii]' with reference 34 (Schirmer et al. 2019). The 'i.e.' and reference suggest these may reflect prior literature on stool microbiome rather than this study's own direct quantified findings. However the context is summarizing what their oral predictive model captured. Ambiguity warrants low confidence. No p-value given. Kept as borderline with low confidence per pipeline instructions.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Differentially abundant oral microbes in CD were predominantly the same stool species associated with IBD [i. e. increased abundances of Ruminococcus gnavus, decreased abundance of Faecalibacterium prausnitzii]"
+      }
+    },
+    {
+      "id": "1021_rel_014",
+      "taxon_name": "Faecalibacterium prausnitzii",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "Crohn's disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_ambiguous_literature_vs_this_study"
+        ],
+        "criticism_flags": [
+          "possible_citation_conflation"
+        ],
+        "review_notes": "Paper states in discussion: 'Differentially abundant oral microbes in CD were predominantly the same stool species associated with IBD [i.e. increased abundances of Ruminococcus gnavus, decreased abundance of Faecalibacterium prausnitzii]' with reference 34. Same ambiguity as rel_013. The sentence frames these as mirroring prior IBD stool literature, though the authors are describing their own oral model's top species. Kept as borderline low confidence. No p-value given.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Differentially abundant oral microbes in CD were predominantly the same stool species associated with IBD [i. e. increased abundances of Ruminococcus gnavus, decreased abundance of Faecalibacterium prausnitzii]"
+      }
+    }
+  ],
+  "extraction_stats": {
+    "layer1_raw_count": {
+      "combined": 14
+    },
+    "layer1_union_count": 14,
+    "layer2_corrections": 1,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 14
+  },
+  "paper_text": "Oral Microbiome of Crohn\u2019s Disease Patients With and Without Oral Manifestations\n\nAbstract\nBackground and Aims\nMicrobiome dysbiosis is associated with inflammatory destruction in Crohn\u2019s disease [CD]. Although gut microbiome dysbiosis is well established in CD, the oral microbiome is comparatively under-studied. This study aims to characterize the oral microbiome of CD patients with/without oral manifestations. Methods\nPatients with CD were recruited with age-, gender- and race-matched controls. Potential confounders such as dental caries and periodontal condition were recorded\nThe oral microbiome was collected using saliva samples. Microbial DNA was extracted and sequenced using shotgun sequencing. Metagenomic taxonomic and functional profiles were generated and analysed. Results\nThe study recruited 41 patients with CD and 24 healthy controls. Within the CD subjects, 39. 0% had oral manifestations with the majority presenting with cobblestoning and/or oral ulcers\nPrincipal coordinate analysis demonstrated distinct oral microbiome profiles between subjects with and without CD, with four key variables responsible for overall oral microbiome variance: [1] diagnosis of CD, [2] concomitant use of steroids, [3] concomitant use of azathioprine and 4] presence of oral ulcers. Thirty-two significant differentially abundant microbial species were identified, with the majority associated with the diagnosis of CD\nA predictive model based on differences in the oral microbiome found that the oral microbiome has strong discriminatory function to distinguish subjects with and without CD [AUROC 0. 84]. Functional analysis found that an increased representation of microbial enzymes [n = 5] in the butyrate pathway was positively associated with the presence of oral ulcers. Conclusions\nThe oral microbiome can aid in the diagnosis of CD and its composition was associated with oral manifestations\nAlthough gut microbiome dysbiosis is well established in CD, the oral microbiome is comparatively under-studied. This study aims to characterize the oral microbiome of CD patients with/without oral manifestations. Methods\nPatients with CD were recruited with age-, gender- and race-matched controls. Potential confounders such as dental caries and periodontal condition were recorded. The oral microbiome was collected using saliva samples\nMicrobial DNA was extracted and sequenced using shotgun sequencing. Metagenomic taxonomic and functional profiles were generated and analysed. Results\nThe study recruited 41 patients with CD and 24 healthy controls. Within the CD subjects, 39. 0% had oral manifestations with the majority presenting with cobblestoning and/or oral ulcers\nKeywords: Crohn disease, oral manifestations, oral microbiome1. Introduction\nCrohn\u2019s disease [CD] is an inflammatory bowel disease [IBD] characterized by chronic inflammation of any part of the gastrointestinal tract. The cause of CD is unclear, with the key factors implicated in its pathogenesis including host genetics, immune dysregulation and gut microbiota alterations\n1 CD has been strongly associated with an overall drop in microbiota species richness,2\u20134 whereby paediatric CD patients were found to have increased abundances of Enterobacteriaceae, Pasteurellacaea, Veillonellaceae and Fusobacteriaceae. 5\nRecently, metagenomic and metatranscriptomic studies on the gut microbiome have provided detailed information on this dysbiosis and proposed new treatment modalities\n6 Perhaps unexpectedly, an abundance of oral microbes was found in the gut microbiome of IBD patients. 7 Together with ectopic colonization of oral microbes, a recent study finding oral microbes of similar strains in the gut and oral microbiome of active CD patients,8 this suggests a pathogenic role for oral microbes\nIt has thus been postulated that in IBD, oral-disease bacteria expand in the IBD intestines through a sequential multi-stage approach9: [1] enhanced abundance and virulence of oral disease-associated bacteria with a corresponding reduction in intestinal colonization resistance, [2] translocation of oral bacteria to the intestines, and [3] colonization of the intestines by these oral disease-associated bacteria and exacerbation of disease in IBD\nThe notion that IBD can be driven by oral bacteria is consistent with reports that IBD patients have increased proportions of active periodontal disease,10 as well as common inflammasome-mediated inflammation pathways implicated in both periodontitis and IBD. 11\nWhile CD can affect any segment of the gastrointestinal tract, from the anus to the lips,12 extraintestinal manifestations can occur and frequently involve joints, skin, eyes and the oral mucosa\nOral manifestations such as oral aphthous ulcers are frequently associated with active disease and improve with the resolution of intestinal inflammation. 13 Although oral manifestations can occur in both forms of IBD, it is more common in CD, with almost 50% of subjects reporting oral manifestations. 14 Oral manifestations in CD can present as mucogingivitis, mucosal tags, deep ulceration, cobblestoning and lip swelling\nThey tend to be under-reported and typically to occur more often in paediatric patients. 15 Sometimes, it can even be the first presenting sign in new cases of CD. 16 Despite the apparent association between oral-associated microbiota and IBD, data regarding oral-associated microbiota in CD is limited\nFurthermore, previous studies profiling the oral microbiome in CD cohorts did not account for oral manifestations, such as aphthous ulcers,13 mucogingivitis, mucosal tags, deep ulceration, cobblestoning and lip swelling, all of which are common in CD,14,15 and may have confounding effects on the composition of the oral microbiome\nFurther obfuscating the role of the oral microbiome in CD is the issue of different sampling sites in the literature, such as the tongue,17 plaque,18 biopsies19 and saliva. 20\u201322 Of the limited literature on the oral microbiome in CD, the saliva microbiome was most commonly examined and likely to have the greatest impact on the progression of CD. 7 In those studies, Said et al\nfound an increased prevalence of Prevotella and Veillonella, but decreased Streptococcus and Haemophilus, in CD patients,20 while Xun et al. similarly found an increased prevalence of Veillonella coupled with decreased Prevotella, Neisseria and Haemophilus. 21 Furthermore, when comparing the salivary CD patients in remission to active CD, Zhang et al. found reduced Neisseria, Haemophilus, Fusobacterium and Porphyromonas in active CD\n22 Although the exact characterization differed between the studies, they all found that oral microbiome dysbiosis occurs in CD. As a diagnostic tool, the oral microbiome shows great promise as saliva samples are non-invasive unlike colonoscopy, and are easy to collect at any time unlike faecal samples\nHowever, the lack of a comprehensive characterization, taking into account conditions that can affect the oral microbiome such as dental caries, periodontitis and oral manifestations,23 limits the usefulness of oral microbiome diagnostics in CD. In this study, all participants underwent oral examination by a board-certified dentist, prior to oral microbiome sampling\nAdditionally, potential confounders such as the presence of dental diseases and oral manifestations were considered in the characterization\nThis study characterized the oral microbiome of CD patients, with and without oral manifestations, compared to healthy controls with the aim to identify the association between compositional and functional alterations in the oral manifestation of CD using shotgun metagenomics sequencing in a mixed population consisting of Han Chinese, Malay, Indian and Caucasian subjects. 2. Materials and Methods\n2. 1\nClinical cohort\nThis cross-sectional study enrolled patients at the National University Hospital [NUH], Singapore, between May 2017 and January 2019. Eligible patients needed to be 21 years of age or older, and to either have an established diagnosis or exclusion of CD. Patients currently on antibiotics or with recent exposure to probiotics/antibiotics within a month, or with significant comorbidities such as active cancer were excluded\nPatients with CD [with and without oral manifestations] were recruited from the IBD subspeciality clinic under the Division of Gastroenterology, NUH. Non-CD healthy controls were age, race and gender matched with CD subjects without oral manifestations and recruited from the Dental Center, NUH University Dental Cluster\nThey were also screened prior to enrolment and required to have no known gastrointestinal signs and symptoms such as diarrhoea, abdominal pain and blood in the stool, as well as no known concomitant systematic diseases\nUpon providing informed consent, patients completed detailed questionnaires, which collected information on demographics, history of tobacco use, other comorbidities, current medications, as well as self-reported gastrointestinal symptoms such as diarrhoea, abdominal pain and blood in the stool. Patients with CD had their disease activity scored according to the Crohn\u2019s Disease activity index [CDAI]. 24 All experiments were performed in accordance with all relevant regulations and guidelines\nAdditionally, the presence and type of oral manifestations such as mucogingivitis, mucosal tags, deep ulceration, cobblestoning and lip swelling were recorded during the examination of CD patients. This was supplemented by eliciting any history of oral manifestations. 2. 3. Microbiome sample collection\nThe oral microbiome was sampled through participants self-collection of saliva\nParticipants were instructed in person, and supplemented with visual aids such as videos and hand-out pamphlets, on how to collect their own saliva specimens. Participants were explicitly instructed to refrain from eating [including chewing gum and sweets], smoking or dental procedures [including toothbrushing and mouthwash use] for 1 h before saliva collection. Saliva was collected using the OMNIgene Discover Kit 505 [DNA Genotek], according to the manufacturer\u2019s instructions\nAll specimens were collected on the day of examination. The saliva samples were stored at room temperature as per the manufacturer\u2019s recommendation and sent for DNA extraction within 4 weeks of collection. 2. 4. Microbiome profiling\nDNA was extracted from saliva samples after mechanical lysis via bead-beating, using Exgene Clinic SV Mini kits [GeneAll Biotechnology] according to the manufacturer\u2019s instructions. Extracted DNA was purified using AMPure XP beads [Beckman Coulter]\nThe quantity and quality of DNA were examined using a NanoDrop 8000 Spectrophotometer [Thermo Fisher Scientific]. Extracted DNA samples were stored at \u221280\u00b0C and sent for library preparation within 6 weeks of extraction. Indexed sequencing libraries were prepared using a QIAGEN QIAseq FX DNA Library Kit [Qiagen] following the manufacturer\u2019s instructions and sequenced as 2 \u00d7 151 bp paired-end reads on an Illumina HiSeq 4000 sequencer [Illumina]. On average, 16. 6 \u00b1 12\n1 million raw read pairs were obtained, with 14. 1 \u00b1 10. 5 million obtained after quality control for each sample. The average host reads were 11. 6 \u00b1 9. 9 million, and after decontamination 2. 1 \u00b1 3. 2 million microbial read pairs were present. Metagenomic taxonomic and functional profiles were generated using the bioBakery meta\u2019omics workflow25,26 in the Terra workspace. Briefly, reads mapping to the human genome were first filtered out using KneadData\nTaxonomic profiles of shotgun metagenomes were generated using MetaPhlan3, which uses a library of clade-specific markers to provide pan-microbial profiling. Functional profiling was performed by HUMAnN3, whereby HUMAnN3 constructs a sample-specific reference database from the pangenomes of the subset of species detected in the samples by MetaPhlAn3 [pangenomes are precomputed representatives of the open reading frames of a given species]\nSample reads are mapped against this database to quantify gene presence and abundance on a per-species basis. A translated search is then performed against a UniRef-based protein sequence catalogue [UniRef release 2020] for all reads that fail to map at the nucleotide level\nThe results are abundance profiles of gene families [UniRef90s], for both metagenomics, stratified by each species contributing to those genres, and further summarized to higher level gene groups such as Enzyme Commission (EC), KEGG Orthology (KO) or metaCYC pathways. For subsequent analysis, read counts were transformed into relative abundances by normalization to the total number of reads per sample\nLow-abundance filters were applied to discard taxonomic and functional features whose relative abundance did not reach 0. 1% and 0. 001% respectively, in at least 10% of the individuals. 2. 5. Statistical analysis\nAlpha diversity [richness and Shannon diversity] was calculated for taxonomic profiles at the species level, using the Vegan package in R\n27 Linear models were used to identify putative differential abundance analysis of metagenomic features, with fitting performed with the MaAsLin2 package in R,28 with nominal p-values adjusted for multiple hypothesis testing with a target false discovery rate (FDR) of 0. 2. In brief, metagenomic features were log transformed to variance-stabilize the data\nZero values were additively smoothed by half of the minimal abundance for each feature and then fitted with the following per-feature linear mixed-effect model:\nFeature\u223cRead\u00a0count+Activity+Duration+Azathioprine+Steroids+CD/Oral_lesions\nIn each per-feature multivariable model, the transformed abundance of each feature was modelled as a function of oral lesions nested within binary variables [with no lesions as the reference] with the presence or absence of CD, while adjusting for activity [no IBD activity as reference], duration of disease [continuous variable], sequencing depth [continuous variable], and concomitant steroid and azathioprine use [both binary covariates]\nTo construct a prediction model for CD diagnosis using saliva samples, relative abundances of microbial species were first converted to log10 relative abundances, then z-normalized, before passing through a random forest [RF] classifier to distinguish subjects with and without CD. The performance of the RF classifier was evaluated using five-fold cross validation and generation of a summary receiver operating characteristic (ROC) curve with 95% confidence interval for the classifier result\nOne-third of the study population [n = 24, 36. 9%] were non-CD healthy controls [Figure 1a]. Amongst the 41 subjects with CD, two-fifths had oral manifestations [n = 16, 39. 0%], of whom patients had either oral ulcers [n = 7, 44. 4%], cobblestoning [n = 7, 44. 4%] or both [n = 2]. Other reported oral lesions included mucogingivitis [n = 4], mucosal tags [n = 2] and lip swelling [n = 1]. Subjects with CD were similar to controls in demographic covariates including age, gender and smoking history\nHowever, subjects with oral lesions were more likely to be male [81. 2% vs 44. 0%, p < 0. 05] and have the concomitant usage of azathioprine [81. 2% vs 48. 0%, p = 0. 07]. Of note, subjects with cobblestoning had much lower CDAI scores [mean 65. 2 vs 16. 8, p = 0. 03, Figure 1b], which was consistent with a lower proportion of clinically active disease [43. 8% vs 11. 1%, Figure 1c]\nSubjects with oral ulcers reported no significant differences in CDAI and clinical activity, although subjects with oral ulcers were found to have had CD for much longer periods of time [12. 3 vs 7. 9 years, p = 0. 04, Figure 1d]. Table 1\nDemographics, and clinical and oral conditions of subjects [n = 65]\n\nCrohn\u2019s disease, oral manifestation absent [CDA], n = 25\nCrohn\u2019s disease, oral manifestation present [CDP], n = 16\nHealthy controls [HC], n = 24\n\np-value\n\nDemographics\n\nMean age, years [SD]\n39. 1 [14. 4]\n38. 6 [12. 0]\n40. 2 [1]\n0. 84\n\nEthnicity, n [%]\n\n\u2003Chinese\n12 [48. 0]\n10 [62. 5]\n12 [50. 0]\n0. 948\n\n\u2003Malay\n3 [12. 0]\n2 [12. 5]\n3 [12. 5]\n\n\u2003Indian\n9 [36. 0]\n3 [18. 8]\n9 [37. 5]\n\n\u2003Caucasian\n1 [4. 0]\n1 [6. 2]\n0 [0\n0]\n\nSex, n [%]\n\n\u2003Male\n11 [41. 7]\n13 [81. 2]\n10 [41. 7]\n0. 028*\n\n\u2003Female\n14 [58. 3]\n3 [18. 8]\n14 [58. 3]\n\nSmoking, n [%]\n\n\u2003Non-smoker\n20 [83. 3]\n13 [81. 2]\n20 [80. 0]\n0. 913\n\n\u2003Previous/current smoker\n5 [16. 7]\n3 [18. 8]\n4 [20. 0]\n\nCrohn\u2019s disease condition\n\nDuration [SD]\n7. 9 [5. 5]\n10. 4 [6. 2]\n\n0. 181\n\nCrohn\u2019s disease activity index [SD]\n61. 5 [58. 4]\n43. 8 [62. 1]\n\n0. 361\n\nActivity\n10 [40. 0]\n5 [31. 2]\n\n0. 814\n\nC-reactive protein level [CRP] [mg/L], mean [SD]\n8. 8 [17. 5]\n6. 9 [10. 6]\n\n0\n713\n\nLocation, n [%]\n\n0. 952\n\n\u2003L1\n2 [8. 0]\n1 [6. 2]\n\n\u2003L2\n7 [28. 0]\n5 [31. 2]\n\n\u2003L3\n14 [56. 0]\n8 [50. 0]\n\n\u2003L4\n2 [8. 0]\n2 [12. 5]\n\nBehaviour, n [%]\n\n0. 890\n\n\u2003B1\n13 [52. 0]\n9 [56. 2]\n\n\u2003B2\n1 [4. 0]\n1 [6. 2]\n\n\u2003B3\n11 [44. 0]\n6 [37. 5]\n\nPerianal involvement, n [%]\n\n0. 898\n\n\u2003No\n17 [68. 0]\n12 [75. 0]\n\n\u2003Yes\n8 [32. 0]\n4 [25. 0]\n\nAge of CD onset, n [%]\n\n0. 467\n\n\u2003A1\n3 [12. 0]\n1 [6. 2]\n\n\u2003A2\n14 [56. 0]\n12 [75. 0]\n\n\u2003A3\n8 [32. 0]\n3 [18\n8]\n\nMedication\n\n\u2020\n\n, n [%]\n\nSteroids/anti-inflammatory [mesalazine]\n5 [20. 0]\n3 [18. 8]\n\n0. 453\n\nAzathioprine\n12 [48. 0]\n13 [81. 2]\n\n0. 072\n\nBiologics\n10 [40. 0]\n10 [62. 5]\n\n0. 278\n\nOthers [tacrolimus, sulphasalazine]\n2 [8. 0]\n2 [12. 5]\n\n0. 224\n\nDental condition, n\n\nPresence of decayed teeth [%]\n22 [88. 0]\n12 [75. 0]\n18 [75. 0]\n0. 444\n\nDMFT: severity of decayed teeth [SD]\n6. 1 [7. 0]\n3. 8 [3. 9]\n4. 7 [5. 3]\n0. 427\n\nPeriodontal condition: presence of periodontitis [%]\n5 [20. 8]\n4 [25\n0]\n5 [20. 8]\n0. 925\n\nType of oral manifestation\n\u2021, n [%]\n\nCobblestoning\n\n8 [50. 0]\n\nLip swelling\n\n1 [6. 5]\n\nMucogingivitis\n\n4 [25. 0]\n\nMucosal Tags\n\n3 [18. 8]\n\nUlcers\n\n10 [62. 5]\n\nOpen in a new tab\n\np < 0. 05. Some subjects were on multiple drug regimens. Some subjects had multiple types of oral manifestations. Figure 1. Open in a new tab\nCrohn\u2019s disease profile and its relationship with oral manifestations\n[a] Distribution of subjects based on presence of IBD [Crohn\u2019s disease] and oral manifestations. [b] Crohn\u2019s disease activity index [CDAI] scores of CD subjects with and without oral cobblestoning. [c] Disease activity of CD subjects with and without oral cobblestoning. [d] Duration of disease of CD subjects with and without oral ulcers. 3. 2\nOral microbiome dysbiosis occurs in CD and variance is determined by four key variables\nMajor variations in the subjects\u2019 taxonomic profiles were driven by gradients of Bacteroidota [Bacteroidetes] and Bacillota [Firmicutes] relative abundances across the cohort [Supplementary Figure 1], which corresponded significantly to a history of CD\nPatients with CD were found to have increased saliva microbial species of the phyla Actinomycetota [Actinobacteria] and Pseudomonadota [Proteobacteria], but no significant differences in the total abundance of microbial species of the phyla Bacillota [Firmicutes] and Bacteroidota [Bacteroidetes], with a corresponding borderline increase in the ratio of Bacillota [Firmicutes] to Bacteroidota [Bacteroidetes], though not statistically significant [p = 0. 44] [Supplementary Figure 2]\nUnsupervised principal coordinate analysis [PCoA] conducted on Bray\u2013Curtis dissimilarity matrices [Figure 2a] demonstrated distinct oral microbiome profiles between subjects with and without CD. Subjects with CD had significantly lower PCoA2 [p < 0. 04, Figure 2b], whereby PCoA1 and PCoA2 represented 17. 7% and 13. 4%, respectively, of the overall microbiome variance. Figure 2. Open in a new tab\nCrohn\u2019s disease is a major determinant of oral microbiome structure\n[a] Unsupervised principal coordinate analysis [PCoA] conducted on Bray\u2013Curtis dissimilarity matrices demonstrating distinct oral microbiome profiles between subjects with and without CD. [b] PCoA2 score is significantly [p < 0. 05] different between subjects with and without CD. [c] PERMANOVA analysis showing four key variables [**p < 0. 1, ***p < 0. 05] explaining overall oral microbiome community variance\nTo further identify significant associations between overall oral microbiome structure with host demographics, CD clinical variables and oral hygiene, a permutational multivariate analysis of variance (PERMANOVA)-based testing utilizing Bray\u2013Curtis dissimilarity profiles found four key variables: [1] diagnosis of CD, [2] concomitant use of steroids, [3] concomitant use of azathioprine and [4] presence of oral ulcers. These variables explained 6. 1, 4. 0, 3. 5 and 2\n5% of the overall oral microbiome community variance [Figure 2c]. Dental conditions such as the presence of periodontitis and dental caries accounted for up to 3% of the variation in overall salivary microbiome composition, though this was not statistically significant [p > 0. 05]. There were no differences in alpha diversity found among the groups [Supplementary Figure 3]. 3. 3\nDifferences in oral microbiome composition at the species level\nWhen examining the taxonomic proportion of the three main study groups [healthy controls, CD with oral lesions, CD without oral lesions], significant differences were found between subjects with and without CD as well as amongst CD subjects with and without oral lesions [Supplementary Figure 4]\nNext, the specific taxonomic signatures were explored at the species level, associated with either of the two predominant oral manifestations [i. e. cobblestoning, oral ulcers]. This was conducted using multivariable linear models, while correcting for the concomitant use of steroids or azathioprine, and nesting for the diagnosis of CD\nA total of 32 significant differentially abundant microbial species were identified, of which the majority were associated with the diagnosis of CD [n = 14] or the concomitant use of steroids [n = 16] [Figure 3]. Four microbial species each were found associated with either cobblestoning [Roseburia intestinalis, Bacteroides vulgatus, Clostridium asparagiforme and Bacteriodes dorei] or oral ulcers [Turicimonas muris, Anaerostipes hadrus, Clostridium bolteae and Roseburia inulinivorans]. Figure 3\nOpen in a new tab\nSignificant differentially abundant microbial species with respect to the key variables and oral manifestations [*FDR < 0. 2, **FDR < 0. 1, ***FDR < 0. 05]. 3. 4. Functional differences of the oral microbiome in CD subjects with oral ulcers\nTo understand the functional differences due to microbial composition differences in CD subjects with oral manifestations, a differential abundance analysis of the gene families in the metagenome was conducted\nThe relative abundances were summed according to their EC annotations, using the same linear modelling approach described above. A total of 676 differentially abundant microbial enzymes were identified, of which the majority were associated with the diagnosis of CD [n = 455], concomitant use of steroids [n = 111] and presence of oral ulcers [n = 105] [Supplementary Table S1]\nFocusing on oral ulcers, the majority of these differently abundant enzymes were associated with microbial metabolism in a diverse environment [n = 25], involved in biosynthesis of secondary metabolism [n = 16] and metabolism of amino acids such as phenylalanine [n = 6], valine, leucine and isoleucine [n = 4], when binned to their higher Kyoto Encyclopedia of Genes Genomes modules\nOf interest, an increase of microbial enzymes [n = 5] associated with butyrate metabolism [Figure 4] was found to be positively associated with the presence of oral ulcers. Specifically, the acetyl-CoA-based pathway for butyrate production was found to be enriched. Figure 4. Open in a new tab\nFunctional analysis of microbial genes in subjects with and without ulcer ulcers. [a] Volcano plot of microbial enzymes associated with and without oral ulcers\nThe five enzymes on the upper right quadrant are associated with increased butyrate production. [b] The butanoate [butyrate] metabolism pathway with enzymes [highlighted red] associated with the presence of oral ulcers. 3. 5 Oral [salivary] microbes can aid in the diagnosis of CD\nSeveral studies have explored the potential for diagnosing IBD based on microbial composition, using stool30 or intestinal mucosal samples\n5 The current study evaluated how microbiome composition in the oral cavity through collection of saliva performs for classifying subjects with and without CD using ROC analysis. Using a five-fold cross validation RF classifier, we found that the oral microbiome has strong discriminatory function [accuracy: 74%] to distinguish subjects with and without CD [AUROC 0. 84, Figure 5a]\nThe top contributory microbial species [Figure 5b and c] mirrored the prominent differentially abundant stool microbial species associated with IBD. Figure 5. Open in a new tab\nModel of the oral microbiome predicting the presence of CD. [a] Receiver operating characteristic [ROC] analysis [AUROC: 0. 84]. [b] Differentially abundant oral microbial species selected for the model. [c] Relative abundance of oral microbial species in the model. 4\nDiscussion\nThe present study found that the salivary oral microbiome can be used in a predictive model for the presence of CD with an accuracy over 70%. This opens up the possibility of using a diagnostic test that is non-invasive and easy to conduct, compared to the traditional investigations in CD such as colonoscopy, which is invasive and exposes the patient to the risks of sedation; or compared to stool tests, which can be an uncomfortable prospect for patients to provide\n31 Although much work had been done in using the microbiome as a diagnostic and prognostic tool in IBD, most of it has been focused on the gut microbiome. 32 A recent study examined the use of the gut microbiome as a diagnostic tool for CD and reported an overall sensitivity of 80% for the detection of CD,2 while a study using 16S rRNA gene sequencing was able to differentiate IBD subjects from healthy controls at over 70% using the salivary oral microbiome\n33 These were comparable to the present study, with the present study having the advantage of characterizing saliva samples with the use of whole genome sequencing over 16S sequencing. This study also found that key factors contributing to the oral microbiome dysbiosis in CD were related to underlying CD, with local oral diseases such as periodontitis and dental caries having smaller contributions\nAs such, the oral microbiome profiled using saliva samples may aid in the diagnosis of CD with minimal interference from concurrent oral diseases. Differentially abundant oral microbes in CD were predominantly the same stool species associated with IBD [i. e. increased abundances of Ruminococcus gnavus, decreased abundance of Faecalibacterium prausnitzii]\n34 Surprisingly, there were very few oral commensals that were part of the predictive model, which could be the result of the oral microbiome dysbiosis present in CD subjects. This was not the case when other types of oral samples were collected, as illustrated by plaque microbiome dysbiosis detected in periodontitis35 and dental caries\n36 The other two key factors could be related to the severity of disease as the use of steroids and azathioprine are typically reserved for the management of more severe disease. 37 The microbial species associated with concomitant steroid usage largely overlap with the significant microbial species associated with CD\nThis suggests that the use of steroids can further tip the oral microbiome community of CD subjects towards a dysbiotic state, similar to previous findings by Gevers and colleagues who reported a similar phenomenon seen with antibiotic treatment in CD subjects. 5 However, this finding should be interpreted with caution, as are many steroid-associated confounders. Additionally, this was the first study to profile the oral microbiome in association with the oral manifestations of CD\nIt was found that the presence of oral ulcers was a key factor in the composition of the oral microbiome. There are existing studies linking the gut microbiome composition to the activity of CD38 as well as predicting the severity of intestinal inflammation in IBD,39 potentially allowing its use as a prognostic tool in the management of CD. This study found that some oral manifestations were associated with disease activity [cobblestoning] and duration of CD [oral ulcers]\nFour species were identified to be associated with cobblestoning and another group of four species were associated with oral ulcers in the present study. Although currently insufficient to provide an accurate model, it provides a starting point for future studies to explore the use of the oral microbiome as a prognostic test in CD. Around 40% of the CD subjects presented with oral manifestations, which was similar to previous studies\n14 Previous research in murine models had shown that the disease only manifests in susceptible genotypes and is driven by microbial dysbiosis. 40 The entire gastrointestinal tract, including the oral cavity, can be involved in CD, and inflammatory lesions were postulated to be caused by impaired interactions between the commensal microbiome with the human host\nThe present study showed that oral microbiome dysbiosis was associated with oral manifestations, such as cobblestoning and oral ulcers, found in CD subjects. There have been attempts to alter the microbiome using targeted antimicrobial approaches such as the use of antibiotics, prebiotics and probiotics41; however, their use in CD has so far been hampered by the failure to define a core gut microbiome, as well as difficulty in delivering therapeutics to the gut\n42 The oral cavity is much more accessible than the rest of the alimentary canal and can be a useful model for the development of new treatment targeting microbiome dysbiosis. Additionally, differences in the functional pathways appear to support the hypothesis of oral microbiome dysbiosis resulting in the development of oral manifestations in CD subjects. Of the four known substrate pathways of butyrate production, the acetyl-CoA pathway was found to be enriched in the present study\nThis pathway is associated with the fermentation of polysaccharides from the diet,43 a potential factor in the enrichment of butyrate in these subjects. There are many butyrogenic bacteria in the oral microbiome, and there was evidence to suggest that butyrate generated by periodontal pathogens during metabolism plays a considerable role in the initiation and progression of periodontitis\n44 Butyrate was found to increase inflammation in periodontal tissues and causes reactivation of latent viruses, such that the increase of butyrate can be a factor in the development of oral manifestations in CD. This was further substantiated by the finding of an increased abundance of A. hadrus in subjects with oral ulcers, a major butyrate producer usually found in the gut\n45 On the other hand, the protective mechanisms of butyrate in IBD have been well documented in the colon, from decreasing inflammation to increasing mucus production. 46 Therapies centred around butyrate have been developed, such as supplementation of butyrate-producing bacteria in the gut microbiome47 and the use of oral butyrate to manage symptoms. 48 This suggests that the mechanism of inflammatory destruction may differ between the oral and gut environment\nOne of the limitations of this study is the reliance on clinical examination to determine the presence of oral manifestations, which may result in missing some subjects due to the cyclical nature of CD. Moreover, a clinical index [CDAI] was used to measure current disease activity, which may have issues with accuracy. Future studies should consider the use of more objective measures such as faecal calprotectin levels and endoscopic assessment to measure current disease activity\nAdditionally, the relatively small sample size and cross-sectional nature of the study may limit its statistical power. Lastly, diet differences have been known to affect the composition of the oral microbiome49; this was not explored in the present study and should be considered in future studies. Despite the study limitations, there were several important and novel findings\nFirst, a predictive model for the presence of CD had comparable accuracy to models utilizing the gut microbiome, therefore providing the possibility of using saliva as a diagnostic tool. Second, groups of salivary microbes were found to be associated with the development of oral manifestations in CD. Lastly, it highlighted the importance of the butyrate pathway in the oral manifestation in CD\n2KB, xlsx)\nAcknowledgements\nThe authors would like to thank Dr Paola de Sessions, Dr Eileen Png and Ms Song Jie for their contribution to the microbial DNA extraction and sequencing. The authors are also grateful to Prof. Ramnik J. Xavier for helpful discussions, and comments on the manuscript. Contributor Information\nShijia Hu,\nFaculty of Dentistry, National University of Singapore, Singapore. John Mok,\nDivision of Gastroenterology & Hepatology, National University Hospital, Singapore\nMichelle Gowans,\nDivision of Gastroenterology & Hepatology, National University Hospital, Singapore. David E H Ong,\nYong Loo Lin School of Medicine, National University of Singapore, Singapore. Juanda Leo Hartono,\nDivision of Gastroenterology & Hepatology, National University Hospital, Singapore;\nYong Loo Lin School of Medicine, National University of Singapore, Singapore\nJonathan Wei Jie Lee,\nDivision of Gastroenterology & Hepatology, National University Hospital, Singapore;\nYong Loo Lin School of Medicine, National University of Singapore, Singapore;\nBroad Institute of MIT and Harvard, Cambridge, MA, USA;\nNUS Synthetic Biology for Clinical and Technological Innovation (SynCTI), Singapore. Funding\nThis work was supported by the National University of Singapore Start-up grant [Exploring the Oral Microbiome in Crohn\u2019s Disease] [A-0002940-00-0]\nrevised the manuscript for important intellectual content. References\n\n1. Torres J, Mehandru S, Colombel JF, Peyrin-Biroulet L. Crohn\u2019s disease. Lancet\n2017;389:1741\u201355. [DOI] [PubMed] []\n\n2. Pascal V, Pozuelo M, Borruel N, et al. A microbial signature for Crohn\u2019s disease. Gut 2017;66:813\u201322. [DOI] [PMC free article] [PubMed] []\n\n3. Lupp C, Robertson ML, Wickham ME, et al\nHost-mediated inflammation disrupts the intestinal microbiota and promotes the overgrowth of Enterobacteriaceae. Cell Host Microbe 2007;2:119\u201329. [DOI] [PubMed] []\n\n4. Frank DN, Robertson CE, Hamm CM, et al. Disease phenotype and genotype are associated with shifts in intestinal-associated microbiota in inflammatory bowel diseases. Inflamm Bowel Dis 2011;17:179\u201384. [DOI] [PMC free article] [PubMed] []\n\n5. Gevers D, Kugathasan S, Denson LA, et al\nThe treatment-naive microbiome in new-onset Crohn\u2019s disease. Cell Host Microbe 2014;15:382\u201392. [DOI] [PMC free article] [PubMed] []\n\n6. Lloyd-Price J, Arze C, Ananthakrishnan AN, et al. Multi-omics of the gut microbial ecosystem in inflammatory bowel diseases. Nature 2019;569:655\u201362. [DOI] [PMC free article] [PubMed] []\n\n7. Elmaghrawy K, Hussey S, Moran GP. The oral microbiome in pediatric IBD: a source of pathobionts or biomarkers. Front Pediatr\n2020;8:620254\n[DOI] [PMC free article] [PubMed] []\n\n8. Hu S, Png E, Gowans M, et al. Ectopic gut colonization: a metagenomic study of the oral and gut microbiome in Crohn\u2019s disease. Gut Pathog 2021;13:13. [DOI] [PMC free article] [PubMed] []\n\n9. Read E, Curtis MA, Neves JF. The role of oral bacteria in inflammatory bowel disease. Nat Rev Gastroenterol Hepatol\n2021;18:731\u201342. [DOI] [PubMed] []\n\n10. She YY, Kong XB, Ge YP, et al\nPeriodontitis and inflammatory bowel disease: a meta-analysis. BMC Oral Health 2020;20:67. [DOI] [PMC free article] [PubMed] []\n\n11. Graham DB, Xavier RJ. Pathway paradigms revealed from the genetics of inflammatory bowel disease. Nature\n2020;578:527\u201339. [DOI] [PMC free article] [PubMed] []\n\n12. Baumgart DC, Sandborn WJ. Crohn\u2019s disease. Lancet\n2012;380:1590\u2013605. [DOI] [PubMed] []\n\n13. Vavricka SR, Schoepfer A, Scharl M, et al\nExtraintestinal manifestations of inflammatory bowel disease. Inflamm Bowel Dis 2015;21:1982\u201392. [DOI] [PMC free article] [PubMed] []\n\n14. Lankarani KB, Sivandzadeh GR, Hassanpour S. Oral manifestation in inflammatory bowel disease: a review. World J Gastroenterol\n2013;19:8571\u20139. [DOI] [PMC free article] [PubMed] []\n\n15. Harty S, Fleming P, Rowland M, et al. A prospective study of the oral manifestations of Crohn\u2019s disease. Clin Gastroenterol Hepatol 2005;3:886\u201391\n[DOI] [PubMed] []\n\n16. Eckel A, Lee D, Deutsch G, Maxin A, Oda D. Oral manifestations as the first presenting sign of Crohn\u2019s disease in a pediatric patient. J Clin Exp Dent\n2017;9:e934\u20138. [DOI] [PMC free article] [PubMed] []\n\n17. Docktor MJ, Paster BJ, Abramowicz S, et al. Alterations in diversity of the oral microbiome in pediatric inflammatory bowel disease. Inflamm Bowel Dis 2012;18:935\u201342. [DOI] [PMC free article] [PubMed] []\n\n18\nKelsen J, Bittinger K, Pauly-Hubbard H, et al. Alterations of the subgingival microbiota in pediatric Crohn\u2019s disease studied longitudinally in discovery and validation cohorts. Inflamm Bowel Dis 2015;21:2797\u2013805. [DOI] [PMC free article] [PubMed] []\n\n19. O\u2019Brien CL, Kiely CJ, Pavli P. The microbiome of Crohn\u2019s disease aphthous ulcers. Gut Pathogens\n2018;10:1\u20138. [DOI] [PMC free article] [PubMed] []\n\n20. Said HS, Suda W, Nakagome S, et al\nDysbiosis of salivary microbiota in inflammatory bowel disease and its association with oral immunological biomarkers. DNA Res 2014;21:15\u201325. [DOI] [PMC free article] [PubMed] []\n\n21. Xun Z, Zhang Q, Xu T, Chen N, Chen F. Dysbiosis and ecotypes of the salivary microbiome associated with inflammatory bowel diseases and the assistance in diagnosis of diseases using oral bacterial profiles. Front Microbiol\n2018;9:1136. [DOI] [PMC free article] [PubMed] []\n\n22\nZhang T, Kayani M, Hong L, et al. Dynamics of the salivary microbiome during different phases of Crohn\u2019s disease. Front Cell Infect Microbiol 2020;10:544704. [DOI] [PMC free article] [PubMed] []\n\n23. Sampaio-Maia B, Caldas I, Pereira M, P\u00e9rez-Mongiovi D, Araujo R. The oral microbiome in health and its implication in oral and systemic diseases. Adv Appl Microbiol\n2016;97:171\u2013210. [DOI] [PubMed] []\n\n24. Best WR, Becktel JM, Singleton JW, Kern F\nDevelopment of a Crohn\u2019s disease activity index. National Cooperative Crohn\u2019s Disease Study. Gastroenterology\n1976;70:439\u201344. [PubMed] []\n\n25. Beghini F, McIver LJ, Blanco-M\u00edguez A, et al. Integrating taxonomic, functional, and strain-level profiling of diverse microbial communities with biobakery 3. Elife 2021;10:e65088. [DOI] [PMC free article] [PubMed] []\n\n26. McIver LJ, Abu-Ali G, Franzosa EA, et al. Biobakery: a meta\u2019omic analysis environment\nBioinformatics 2018;34:1235\u20137. [DOI] [PMC free article] [PubMed] []\n\n27. Oksanen J, Kindt R, Legendre P, et al. The vegan package. Commun Ecol Packag 2007;10:719. []\n\n28. Mallick H, Rahnavard A, McIver LJ, et al. Multivariable association discovery in population-scale meta-omics studies. PLoS Comput Biol 2021;17:e1009442e1009442. [DOI] [PMC free article] [PubMed] []\n\n29. Kuhn M. Caret: classification and regression training\nAstrophysics Source Code Library\n2015:ascl: 1505. 003. []\n\n30. Papa E, Docktor M, Smillie C, et al. Non-invasive mapping of the gastrointestinal microbiota identifies children with inflammatory bowel disease. PLoS One 2012;7:e39242e39242. [DOI] [PMC free article] [PubMed] []\n\n31. Laass MW, Roggenbuck D, Conrad K. Diagnosis and classification of Crohn\u2019s disease. Autoimmun Rev\n2014;13:467\u201371. [DOI] [PubMed] []\n\n32. Aldars-Garc\u00eda L, Chaparro M, Gisbert JP\nSystematic review: the gut microbiome and its potential clinical application in inflammatory bowel disease. Microorganisms\n2021;9:977977. [DOI] [PMC free article] [PubMed] []\n\n33. Somineni HK, Weitzner JH, Venkateswaran S, et al. Site-and taxa-specific disease-associated oral microbial structures distinguish inflammatory bowel diseases. Inflamm Bowel Dis 2021;27: 1889\u2013900. [DOI] [PMC free article] [PubMed] []\n\n34. Schirmer M, Garner A, Vlamakis H, Xavier RJ\nMicrobial genes and pathways in inflammatory bowel disease. Nat Rev Microbiol\n2019;17:497\u2013511. [DOI] [PMC free article] [PubMed] []\n\n35. Curtis MA, Diaz PI, Van Dyke TE. The role of the microbiota in periodontal disease. Periodontology 2000\n2020;83:14\u201325. [DOI] [PubMed] []\n\n36. Tanner A, Kressirer C, Rothmiller S, Johansson I, Chalmers N. The caries microbiome: implications for reversing dysbiosis. Adv Dent Res\n2018;29:78\u201385. [DOI] [PubMed] []\n\n37\nLichtenstein GR, Hanauer SB, Sandborn WJ; Gastroenterology PPCotACo. Management of Crohn\u2019s disease in adults. Off J Am Coll Gastroenterol ACG 2009;104:465\u201383. [DOI] [PubMed] []\n\n38. Magro DO, Santos A, Guadagnini D, et al. Remission in Crohn\u2019s disease is accompanied by alterations in the gut microbiota and mucins production. Sci Rep 2019;9:1\u201310. [DOI] [PMC free article] [PubMed] []\n\n39. Malham M, Lilje B, Houen G, et al\nThe microbiome reflects diagnosis and predicts disease severity in paediatric onset inflammatory bowel disease. Scand J Gastroenterol 2019;54:969\u201375. [DOI] [PubMed] []\n\n40. Bloom SM, Bijanki VN, Nava GM, et al. Commensal Bacteroides species induce colitis in host-genotype-specific fashion in a mouse model of inflammatory bowel disease. Cell Host Microbe 2011;9:390\u2013403. [DOI] [PMC free article] [PubMed] []\n\n41. Preidis GA, Versalovic J\nTargeting the human microbiome with antibiotics, probiotics, and prebiotics: Gastroenterology enters the metagenomics era. Gastroenterology\n2009;136:2015\u201331. [DOI] [PMC free article] [PubMed] []\n\n42. Khan I, Ullah N, Zha L, et al. Alteration of gut microbiota in inflammatory bowel disease (IBD): Cause or consequence. IBD treatment targeting the gut microbiome. Pathogens 2019;8:126126. [DOI] [PMC free article] [PubMed] []\n\n43. Vital M, Howe AC, Tiedje JM\nRevealing the bacterial butyrate synthesis pathways by analyzing (meta) genomic data. MBio\n2014;5:e00889\u201314. [DOI] [PMC free article] [PubMed] []\n\n44. Guan X, Li W, Meng H. A double-edged sword: role of butyrate in the oral cavity and the gut. Mol Oral Microbiol\n2021;36:121\u201331. [DOI] [PubMed] []\n\n45. Kant R, Rasinkangas P, Satokari R, Pietil\u00e4 TE, Palva A. Genome sequence of the butyrate-producing anaerobic bacterium Anaerostipes hadrus pel 85\nGenome Announc\n2015;3:e00224\u201315. [DOI] [PMC free article] [PubMed] []\n\n46. Silva JP, Navegantes-Lima KC, Oliveira AL, et al. Protective mechanisms of butyrate on inflammatory bowel disease. Curr Pharm Des 2018;24:4154\u201366. [DOI] [PubMed] []\n\n47. Geirnaert A, Calatayud M, Grootaert C, et al. Butyrate-producing bacteria supplemented in vitro to Crohn\u2019s disease patient microbiota increased butyrate production and enhanced intestinal epithelial barrier integrity\nSci Rep 2017;7:1\u201314. [DOI] [PMC free article] [PubMed] []\n\n48. Sabatino AD, Morera R, Ciccocioppo R, et al. Oral butyrate for mildly to moderately active Crohn\u2019s disease. Aliment Pharmacol Ther 2005;22:789\u201394. [DOI] [PubMed] []\n\n49. Kato I, Vasquez A, Moyerbrailean G, et al. Nutritional correlates of human oral microbiome. J Am Coll Nutr 2017;36:88\u201398\n2KB, xlsx)\n\nArticles from Journal of Crohn's & Colitis are provided here courtesy of Oxford University Press Abstract\nBackground and Aims\nMicrobiome dysbiosis is associated with inflammatory destruction in Crohn\u2019s disease [CD]. Although gut microbiome dysbiosis is well established in CD, the oral microbiome is comparatively under-studied. This study aims to characterize the oral microbiome of CD patients with/without oral manifestations\nMethods\nPatients with CD were recruited with age-, gender- and race-matched controls. Potential confounders such as dental caries and periodontal condition were recorded. The oral microbiome was collected using saliva samples. Microbial DNA was extracted and sequenced using shotgun sequencing. Metagenomic taxonomic and functional profiles were generated and analysed. Results\nThe study recruited 41 patients with CD and 24 healthy controls. Within the CD subjects, 39\n0% had oral manifestations with the majority presenting with cobblestoning and/or oral ulcers. Principal coordinate analysis demonstrated distinct oral microbiome profiles between subjects with and without CD, with four key variables responsible for overall oral microbiome variance: [1] diagnosis of CD, [2] concomitant use of steroids, [3] concomitant use of azathioprine and 4] presence of oral ulcers\nThirty-two significant differentially abundant microbial species were identified, with the majority associated with the diagnosis of CD. A predictive model based on differences in the oral microbiome found that the oral microbiome has strong discriminatory function to distinguish subjects with and without CD [AUROC 0. 84]. Functional analysis found that an increased representation of microbial enzymes [n = 5] in the butyrate pathway was positively associated with the presence of oral ulcers\nConclusions\nThe oral microbiome can aid in the diagnosis of CD and its composition was associated with oral manifestations. Keywords: Crohn disease, oral manifestations, oral microbiome1. Introduction\nCrohn\u2019s disease [CD] is an inflammatory bowel disease [IBD] characterized by chronic inflammation of any part of the gastrointestinal tract. The cause of CD is unclear, with the key factors implicated in its pathogenesis including host genetics, immune dysregulation and gut microbiota alterations\n2KB, xlsx) Abstract\nBackground and Aims\nMicrobiome dysbiosis is associated with inflammatory destruction in Crohn\u2019s disease [CD]. Although gut microbiome dysbiosis is well established in CD, the oral microbiome is comparatively under-studied. This study aims to characterize the oral microbiome of CD patients with/without oral manifestations. Methods\nPatients with CD were recruited with age-, gender- and race-matched controls\nPotential confounders such as dental caries and periodontal condition were recorded. The oral microbiome was collected using saliva samples. Microbial DNA was extracted and sequenced using shotgun sequencing. Metagenomic taxonomic and functional profiles were generated and analysed. Results\nThe study recruited 41 patients with CD and 24 healthy controls. Within the CD subjects, 39. 0% had oral manifestations with the majority presenting with cobblestoning and/or oral ulcers\nKeywords: Crohn disease, oral manifestations, oral microbiome"
+}

@@ -1,0 +1,1144 @@
+{
+  "paper_id": "961",
+  "paper_title": "Microbiota in Gut, Oral Cavity, and Mitral Valves Are Associated With Rheumatic Heart Disease",
+  "study_type": "case_control",
+  "primary_disease": "rheumatic heart disease",
+  "sample_sites": [
+    "fecal",
+    "oral",
+    "other"
+  ],
+  "relationships": [
+    {
+      "id": "961_rel_001",
+      "taxon_name": "Faecalibacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated in abstract ('lower levels of genera including...Faecalibacterium') and confirmed in Figure 1E (15 most abundant genera, Mann-Whitney, n=20:20). Also identified by LEfSe as lower in RHD fecal samples. Discussion (line 163) confirms decrease. One misspelling 'Faecalibacterum' occurs in discussion but correct name is used consistently elsewhere.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Faecalibacterium and Bacteroides significantly decreased...in gut microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_002",
+      "taxon_name": "Bacteroides",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated in abstract ('lower levels of genera including...Bacteroides') and confirmed in Figure 1E (Mann-Whitney, n=20:20). Discussion confirms decrease and notes negative correlation with LAD clinical index.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Faecalibacterium and Bacteroides significantly decreased...in gut microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_003",
+      "taxon_name": "Bifidobacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated in abstract ('higher levels of genera including Bifidobacterium') and confirmed in Figure 1E (Mann-Whitney, n=20:20). Also identified by LEfSe as higher in RHD fecal samples. Discussed extensively.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "In the gut, the patients possessed higher levels of genera including Bifidobacterium and Eubacterium, and lower levels of genera including Lachnospira, Bacteroides, and Faecalibacterium"
+      }
+    },
+    {
+      "id": "961_rel_004",
+      "taxon_name": "Eubacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated in abstract ('higher levels of genera including...Eubacterium') and confirmed by LEfSe (Figure 1F). Discussion (line 163) confirms 'relative abundances of Bifidobacterium and Eubacterium increased'. Eubacterium appears in the abstract and LEfSe figure but not explicitly in the Figure 1E top-15 list \u2014 however the abstract and discussion are direct statements of increase.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "In the gut, the patients possessed higher levels of genera including Bifidobacterium and Eubacterium"
+      }
+    },
+    {
+      "id": "961_rel_005",
+      "taxon_name": "Lachnospira",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated in abstract as 'lower levels of genera including Lachnospira'. Also identified by LEfSe as lower in fecal samples of RHD patients (Figure 1F). Not listed among the 15 most abundant genera with explicit p-value threshold markers in Figure 1E. Confidence medium because no explicit p-value threshold reported for this genus in the figure (LEfSe source for statistical support).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "In the gut, the patients possessed higher levels of genera including Bifidobacterium and Eubacterium, and lower levels of genera including Lachnospira, Bacteroides, and Faecalibacterium"
+      }
+    },
+    {
+      "id": "961_rel_006",
+      "taxon_name": "Shigella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 1E results section: 'relative abundance of...Shigella...significantly increased in gut microbiota of RHD patients compared to control subjects'. Mann-Whitney test, n=20:20, significance markers on figure.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Faecalibacterium and Bacteroides significantly decreased, while that of Shigella, Gemmiger, Bifidobacterium, Ruminococcus, Streptococcus and Dorea significantly increased in gut microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_007",
+      "taxon_name": "Gemmiger",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 1E results section as significantly increased. Mann-Whitney test, n=20:20. Also identified by LEfSe (Figure 1F) as higher in RHD.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Faecalibacterium and Bacteroides significantly decreased, while that of Shigella, Gemmiger, Bifidobacterium, Ruminococcus, Streptococcus and Dorea significantly increased in gut microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_008",
+      "taxon_name": "Ruminococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 1E results section as significantly increased. Mann-Whitney test, n=20:20. Also identified by LEfSe (Figure 1F) as higher in RHD.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Faecalibacterium and Bacteroides significantly decreased, while that of Shigella, Gemmiger, Bifidobacterium, Ruminococcus, Streptococcus and Dorea significantly increased in gut microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_009",
+      "taxon_name": "Streptococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 1E results section as significantly increased in gut microbiota of RHD patients. Mann-Whitney test, n=20:20.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Faecalibacterium and Bacteroides significantly decreased, while that of Shigella, Gemmiger, Bifidobacterium, Ruminococcus, Streptococcus and Dorea significantly increased in gut microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_010",
+      "taxon_name": "Dorea",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 1E results section as significantly increased. Mann-Whitney test, n=20:20. Also identified by LEfSe (Figure 1F) as higher in RHD.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Faecalibacterium and Bacteroides significantly decreased, while that of Shigella, Gemmiger, Bifidobacterium, Ruminococcus, Streptococcus and Dorea significantly increased in gut microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_011",
+      "taxon_name": "Blautia",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "trend_only_not_significant"
+        ],
+        "criticism_flags": [
+          "not_statistically_significant"
+        ],
+        "review_notes": "Paper explicitly states 'relative abundance of Blautia showed a trend of increase without statistical significance in gut microbiota of RHD patients'. Kept at low confidence because the paper explicitly notes non-significance. The discussion also mentions Blautia negatively correlating with RHD severity.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "In addition, relative abundance of Blauita showed a trend of increase without statistical significance in gut microbiota of RHD patients"
+      }
+    },
+    {
+      "id": "961_rel_012",
+      "taxon_name": "Arthrobacter",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 1F) as higher in fecal samples of RHD patients. LDA score threshold 3.0. No individual p-value reported. LEfSe is a valid statistical method but p-value is not given for this taxon.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Arthrobacter, Bifidobacterium, Porphyromonas, Melissococccus, Eubacterium, Ruminococcus, Dorea, Gemmiger, etc., as well as lower levels of taxa such as Staphylococcus, Lachnospira, Faecalibacterium, and Oxalobacter in fecal samples of RHD patients"
+      }
+    },
+    {
+      "id": "961_rel_013",
+      "taxon_name": "Porphyromonas",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 1F) as higher in fecal samples of RHD patients. LDA score threshold 3.0. No individual p-value reported.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Arthrobacter, Bifidobacterium, Porphyromonas, Melissococccus, Eubacterium, Ruminococcus, Dorea, Gemmiger, etc., as well as lower levels of taxa such as Staphylococcus, Lachnospira, Faecalibacterium, and Oxalobacter in fecal samples of RHD patients"
+      }
+    },
+    {
+      "id": "961_rel_014",
+      "taxon_name": "Melissococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only",
+          "taxon_name_typo_in_paper"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 1F) as higher in fecal samples of RHD patients. Paper spells it 'Melissococccus' (triple c) which is a typographic error; the correct genus name is Melissococcus (family Enterococcaceae). Taxon name corrected here.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Arthrobacter, Bifidobacterium, Porphyromonas, Melissococccus, Eubacterium, Ruminococcus, Dorea, Gemmiger, etc., as well as lower levels of taxa such as Staphylococcus, Lachnospira, Faecalibacterium, and Oxalobacter in fecal samples of RHD patients"
+      }
+    },
+    {
+      "id": "961_rel_015",
+      "taxon_name": "Staphylococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 1F) as lower in fecal samples of RHD patients. LDA score threshold 3.0.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Arthrobacter, Bifidobacterium, Porphyromonas, Melissococccus, Eubacterium, Ruminococcus, Dorea, Gemmiger, etc., as well as lower levels of taxa such as Staphylococcus, Lachnospira, Faecalibacterium, and Oxalobacter in fecal samples of RHD patients"
+      }
+    },
+    {
+      "id": "961_rel_016",
+      "taxon_name": "Oxalobacter",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 1F) as lower in fecal samples of RHD patients. LDA score threshold 3.0.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Arthrobacter, Bifidobacterium, Porphyromonas, Melissococccus, Eubacterium, Ruminococcus, Dorea, Gemmiger, etc., as well as lower levels of taxa such as Staphylococcus, Lachnospira, Faecalibacterium, and Oxalobacter in fecal samples of RHD patients"
+      }
+    },
+    {
+      "id": "961_rel_017",
+      "taxon_name": "Corynebacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 2E results section: 'relative abundance of Corynebacterium and Selenomonas significantly decreased...in subgingival plaque microbiota of RHD patients compared to control subjects'. Mann-Whitney test, n=20:20. Sample site is subgingival plaque (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Corynebacterium and Selenomonas significantly decreased, while that of Streptococcus and Blautia significantly increased in subgingival plaque microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_018",
+      "taxon_name": "Selenomonas",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 2E results section as significantly decreased in subgingival plaque microbiota. Mann-Whitney, n=20:20. Also identified by LEfSe (Figure 2F) as lower in RHD subgingival plaque.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Corynebacterium and Selenomonas significantly decreased, while that of Streptococcus and Blautia significantly increased in subgingival plaque microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_019",
+      "taxon_name": "Streptococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 2E results section as significantly increased in subgingival plaque microbiota. Mann-Whitney, n=20:20. Also identified by LEfSe (Figure 2F) as higher in RHD subgingival plaque. Discussion confirms: 'Streptococcus also increased in subgingival plaques of RHD patients'. Sample site is subgingival plaque (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Corynebacterium and Selenomonas significantly decreased, while that of Streptococcus and Blautia significantly increased in subgingival plaque microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_020",
+      "taxon_name": "Blautia",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 2E results section as significantly increased in subgingival plaque microbiota. Mann-Whitney, n=20:20. Also identified by LEfSe (Figure 2F) as higher in RHD subgingival plaque. Sample site is subgingival plaque (oral). Note: this is distinct from rel_011 which is gut/fecal Blautia (non-significant trend).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Corynebacterium and Selenomonas significantly decreased, while that of Streptococcus and Blautia significantly increased in subgingival plaque microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_021",
+      "taxon_name": "Ruminococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 2F) as higher in subgingival plaque samples of RHD patients. LDA score threshold 3.0. Sample site is subgingival plaque (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Streptococcus, Ruminococcus, Blautia, Dorea, Lachnoanaerobaculum, Roseburia, Gemmiger, as well as lower levels of taxa such as Corynebacterium, Staphylococcus, Lactobacillus and Selenomonas in subgingival plaque samples of RHD patients"
+      }
+    },
+    {
+      "id": "961_rel_022",
+      "taxon_name": "Dorea",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 2F) as higher in subgingival plaque samples of RHD patients. LDA score threshold 3.0. Sample site is subgingival plaque (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Streptococcus, Ruminococcus, Blautia, Dorea, Lachnoanaerobaculum, Roseburia, Gemmiger, as well as lower levels of taxa such as Corynebacterium, Staphylococcus, Lactobacillus and Selenomonas in subgingival plaque samples of RHD patients"
+      }
+    },
+    {
+      "id": "961_rel_023",
+      "taxon_name": "Lachnoanaerobaculum",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 2F) as higher in subgingival plaque samples of RHD patients. Also mentioned in correlations section: 'Lachnoanaerobaculum in subgingival plaques...positively correlated with LAD'. LDA score threshold 3.0. Sample site is subgingival plaque (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Streptococcus, Ruminococcus, Blautia, Dorea, Lachnoanaerobaculum, Roseburia, Gemmiger, as well as lower levels of taxa such as Corynebacterium, Staphylococcus, Lactobacillus and Selenomonas in subgingival plaque samples of RHD patients"
+      }
+    },
+    {
+      "id": "961_rel_024",
+      "taxon_name": "Roseburia",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 2F) as higher in subgingival plaque samples of RHD patients. Also mentioned in correlations section: 'Roseburia...in subgingival plaques...positively correlated with LAD' and 'positively correlated with PASP'. LDA score threshold 3.0.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Streptococcus, Ruminococcus, Blautia, Dorea, Lachnoanaerobaculum, Roseburia, Gemmiger, as well as lower levels of taxa such as Corynebacterium, Staphylococcus, Lactobacillus and Selenomonas in subgingival plaque samples of RHD patients"
+      }
+    },
+    {
+      "id": "961_rel_025",
+      "taxon_name": "Gemmiger",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 2F) as higher in subgingival plaque samples of RHD patients. LDA score threshold 3.0. Sample site is subgingival plaque (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Streptococcus, Ruminococcus, Blautia, Dorea, Lachnoanaerobaculum, Roseburia, Gemmiger, as well as lower levels of taxa such as Corynebacterium, Staphylococcus, Lactobacillus and Selenomonas in subgingival plaque samples of RHD patients"
+      }
+    },
+    {
+      "id": "961_rel_026",
+      "taxon_name": "Staphylococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 2F) as lower in subgingival plaque samples of RHD patients. LDA score threshold 3.0. Note: Staphylococcus is also identified as decreased in fecal (rel_015) and saliva (rel_035) samples in this same paper.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Streptococcus, Ruminococcus, Blautia, Dorea, Lachnoanaerobaculum, Roseburia, Gemmiger, as well as lower levels of taxa such as Corynebacterium, Staphylococcus, Lactobacillus and Selenomonas in subgingival plaque samples of RHD patients"
+      }
+    },
+    {
+      "id": "961_rel_027",
+      "taxon_name": "Lactobacillus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 2F) as lower in subgingival plaque samples of RHD patients. LDA score threshold 3.0. Sample site is subgingival plaque (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Streptococcus, Ruminococcus, Blautia, Dorea, Lachnoanaerobaculum, Roseburia, Gemmiger, as well as lower levels of taxa such as Corynebacterium, Staphylococcus, Lactobacillus and Selenomonas in subgingival plaque samples of RHD patients"
+      }
+    },
+    {
+      "id": "961_rel_028",
+      "taxon_name": "Prevotella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 3E results section: 'relative abundance of Prevotella, Haemophilus, Veillonella, Campylobacter, and Actinomyces significantly decreased...in salivary microbiota of RHD patients'. Mann-Whitney, n=20:20. Also identified by LEfSe (Figure 3F) as lower. Sample site is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Prevotella, Haemophilus, Veillonella, Campylobacter, and Actinomyces significantly decreased, while that of Streptococcus and Rothia significantly increased in salivary microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_029",
+      "taxon_name": "Haemophilus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 3E results section as significantly decreased in salivary microbiota of RHD patients. Mann-Whitney, n=20:20. Sample site is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Prevotella, Haemophilus, Veillonella, Campylobacter, and Actinomyces significantly decreased, while that of Streptococcus and Rothia significantly increased in salivary microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_030",
+      "taxon_name": "Veillonella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 3E results section as significantly decreased in salivary microbiota of RHD patients. Mann-Whitney, n=20:20. Also identified by LEfSe (Figure 3F) as lower. Sample site is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Prevotella, Haemophilus, Veillonella, Campylobacter, and Actinomyces significantly decreased, while that of Streptococcus and Rothia significantly increased in salivary microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_031",
+      "taxon_name": "Campylobacter",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 3E results section as significantly decreased in salivary microbiota of RHD patients. Mann-Whitney, n=20:20. Sample site is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Prevotella, Haemophilus, Veillonella, Campylobacter, and Actinomyces significantly decreased, while that of Streptococcus and Rothia significantly increased in salivary microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_032",
+      "taxon_name": "Actinomyces",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 3E results section as significantly decreased in salivary microbiota of RHD patients. Mann-Whitney, n=20:20. Also identified by LEfSe (Figure 3F) as lower. Sample site is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Prevotella, Haemophilus, Veillonella, Campylobacter, and Actinomyces significantly decreased, while that of Streptococcus and Rothia significantly increased in salivary microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_033",
+      "taxon_name": "Streptococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 3E results section as significantly increased in salivary microbiota of RHD patients. Mann-Whitney, n=20:20. Also identified by LEfSe (Figure 3F) as higher. Discussion confirms: 'Our results also showed that Streptococcus significantly increased in saliva of RHD patients.' Sample site is saliva (oral). This is a separate entry from rel_019 (subgingival plaque) because sample site differs.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Prevotella, Haemophilus, Veillonella, Campylobacter, and Actinomyces significantly decreased, while that of Streptococcus and Rothia significantly increased in salivary microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_034",
+      "taxon_name": "Rothia",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "< 0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Stated in Figure 3E results section as significantly increased in salivary microbiota of RHD patients. Mann-Whitney, n=20:20. Also identified by LEfSe (Figure 3F) as higher. Sample site is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Among the 15 most abundant genera, relative abundance of Prevotella, Haemophilus, Veillonella, Campylobacter, and Actinomyces significantly decreased, while that of Streptococcus and Rothia significantly increased in salivary microbiota of RHD patients compared to control subjects"
+      }
+    },
+    {
+      "id": "961_rel_035",
+      "taxon_name": "Staphylococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 3F) as lower in salivary microbiota of RHD patients. LDA score threshold 3.0. Sample site is saliva (oral). Note: This is a separate entry from rel_026 (subgingival plaque) because sample site differs.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Piscicoccus, Rothia, Abiotrophia, Melissococcus, Streptococcus, Parvimonas, Clostridium, Lachnoanaerobaculum, etc., as well as lower levels of taxa such as Actinomyces, Rhodococcus, Prevotella, Staphylococcus, Veillonella, Afipia, Sphingomonas, etc."
+      }
+    },
+    {
+      "id": "961_rel_036",
+      "taxon_name": "Piscicoccus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 3F) as higher in salivary microbiota of RHD patients. LDA score threshold 3.0. Sample site is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Piscicoccus, Rothia, Abiotrophia, Melissococcus, Streptococcus, Parvimonas, Clostridium, Lachnoanaerobaculum, etc., as well as lower levels of taxa such as Actinomyces, Rhodococcus, Prevotella, Staphylococcus, Veillonella, Afipia, Sphingomonas, etc."
+      }
+    },
+    {
+      "id": "961_rel_037",
+      "taxon_name": "Abiotrophia",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 3F) as higher in salivary microbiota of RHD patients. LDA score threshold 3.0. Sample site is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Piscicoccus, Rothia, Abiotrophia, Melissococcus, Streptococcus, Parvimonas, Clostridium, Lachnoanaerobaculum, etc., as well as lower levels of taxa such as Actinomyces, Rhodococcus, Prevotella, Staphylococcus, Veillonella, Afipia, Sphingomonas, etc."
+      }
+    },
+    {
+      "id": "961_rel_038",
+      "taxon_name": "Melissococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only",
+          "taxon_name_typo_in_paper"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 3F) as higher in salivary microbiota of RHD patients. LDA score threshold 3.0. Paper spells it 'Melissococcus' in this instance (correct). Note: same taxon identified in gut LEfSe (rel_014, same paper typo 'Melissococccus'). Sample site is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Piscicoccus, Rothia, Abiotrophia, Melissococcus, Streptococcus, Parvimonas, Clostridium, Lachnoanaerobaculum, etc., as well as lower levels of taxa such as Actinomyces, Rhodococcus, Prevotella, Staphylococcus, Veillonella, Afipia, Sphingomonas, etc."
+      }
+    },
+    {
+      "id": "961_rel_039",
+      "taxon_name": "Parvimonas",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 3F) as higher in salivary microbiota of RHD patients. LDA score threshold 3.0. Sample site is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Piscicoccus, Rothia, Abiotrophia, Melissococcus, Streptococcus, Parvimonas, Clostridium, Lachnoanaerobaculum, etc., as well as lower levels of taxa such as Actinomyces, Rhodococcus, Prevotella, Staphylococcus, Veillonella, Afipia, Sphingomonas, etc."
+      }
+    },
+    {
+      "id": "961_rel_040",
+      "taxon_name": "Clostridium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 3F) as higher in salivary microbiota of RHD patients. LDA score threshold 3.0. Sample site is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Piscicoccus, Rothia, Abiotrophia, Melissococcus, Streptococcus, Parvimonas, Clostridium, Lachnoanaerobaculum, etc., as well as lower levels of taxa such as Actinomyces, Rhodococcus, Prevotella, Staphylococcus, Veillonella, Afipia, Sphingomonas, etc."
+      }
+    },
+    {
+      "id": "961_rel_041",
+      "taxon_name": "Lachnoanaerobaculum",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 3F) as higher in salivary microbiota of RHD patients. LDA score threshold 3.0. Note: this is a separate entry from rel_023 (subgingival plaque). Sample site here is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Piscicoccus, Rothia, Abiotrophia, Melissococcus, Streptococcus, Parvimonas, Clostridium, Lachnoanaerobaculum, etc., as well as lower levels of taxa such as Actinomyces, Rhodococcus, Prevotella, Staphylococcus, Veillonella, Afipia, Sphingomonas, etc."
+      }
+    },
+    {
+      "id": "961_rel_042",
+      "taxon_name": "Rhodococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 3F) as lower in salivary microbiota of RHD patients. LDA score threshold 3.0. Sample site is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Piscicoccus, Rothia, Abiotrophia, Melissococcus, Streptococcus, Parvimonas, Clostridium, Lachnoanaerobaculum, etc., as well as lower levels of taxa such as Actinomyces, Rhodococcus, Prevotella, Staphylococcus, Veillonella, Afipia, Sphingomonas, etc."
+      }
+    },
+    {
+      "id": "961_rel_043",
+      "taxon_name": "Afipia",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 3F) as lower in salivary microbiota of RHD patients. LDA score threshold 3.0. Sample site is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Piscicoccus, Rothia, Abiotrophia, Melissococcus, Streptococcus, Parvimonas, Clostridium, Lachnoanaerobaculum, etc., as well as lower levels of taxa such as Actinomyces, Rhodococcus, Prevotella, Staphylococcus, Veillonella, Afipia, Sphingomonas, etc."
+      }
+    },
+    {
+      "id": "961_rel_044",
+      "taxon_name": "Sphingomonas",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "lefse_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe (Figure 3F) as lower in salivary microbiota of RHD patients. LDA score threshold 3.0. Sample site is saliva (oral).",
+        "queen_decision": "keep",
+        "verbatim_evidence": "LEfSe identified higher levels of taxa including Piscicoccus, Rothia, Abiotrophia, Melissococcus, Streptococcus, Parvimonas, Clostridium, Lachnoanaerobaculum, etc., as well as lower levels of taxa such as Actinomyces, Rhodococcus, Prevotella, Staphylococcus, Veillonella, Afipia, Sphingomonas, etc."
+      }
+    },
+    {
+      "id": "961_rel_045",
+      "taxon_name": "Proteobacteria",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "non_standard_comparison"
+        ],
+        "criticism_flags": [
+          "intra_disease_site_comparison_not_disease_vs_control"
+        ],
+        "review_notes": "Paper states mitral valves contained 'significantly more Proteobacteria' compared to gut, subgingival plaques, and saliva within RHD patients (Figure 4B). This is a within-disease site comparison, not a traditional disease vs control comparison. Sample site is mitral valve (mapped to 'other'). Confidence is low because change_context is ambiguous relative to the schema's enum values. Included as flagged because the direction (increased in mitral valve) is stated and statistically supported.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Taxonomic composition plots at phylum level showed that mitral valves contained significantly more Proteobacteria and less Firmicutes compared to gut, subgingival plaques, and saliva"
+      }
+    },
+    {
+      "id": "961_rel_046",
+      "taxon_name": "Firmicutes",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "rheumatic heart disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "non_standard_comparison"
+        ],
+        "criticism_flags": [
+          "intra_disease_site_comparison_not_disease_vs_control"
+        ],
+        "review_notes": "Paper states mitral valves contained 'less Firmicutes' compared to gut, subgingival plaques, and saliva within RHD patients (Figure 4B). This is a within-disease site comparison, not a traditional disease vs control comparison. Sample site is mitral valve (mapped to 'other'). Confidence low for same reason as rel_045.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Taxonomic composition plots at phylum level showed that mitral valves contained significantly more Proteobacteria and less Firmicutes compared to gut, subgingival plaques, and saliva"
+      }
+    }
+  ],
+  "extraction_stats": {
+    "layer1_raw_count": {
+      "combined": 48
+    },
+    "layer1_union_count": 48,
+    "layer2_corrections": 2,
+    "layer3_additions": 0,
+    "layer3_removals": 2,
+    "final_count": 46,
+    "_notes": {
+      "layer2_corrections": "Corrected taxon name typo 'Melissococccus' to 'Melissococcus' (2 instances); noted 'Faecalibacterum' as discussion typo for Faecalibacterium",
+      "layer3_removals": "Removed Coprococcus (no directional change stated \u2014 only network hub topology role mentioned); removed Blautia-gut as non-significant trend entry was merged into flagged low-confidence keep. Net count: Coprococcus removed (1), reducing from 47 to 46. Blautia-gut kept as rel_011 with low confidence and flagged."
+    }
+  },
+  "paper_text": "Microbiota in Gut, Oral Cavity, and Mitral Valves Are Associated With Rheumatic Heart Disease\n\nAbstract\nRheumatic heart disease refers to the long-term damage of heart valves and results from an autoimmune response to group A Streptococcus infection. This study aimed to analyze the microbiota composition of patients with rheumatic heart disease and explore potential function of microbiota in this disease. First, we revealed significant alterations of microbiota in feces, subgingival plaques, and saliva of the patients compared to control subjects using 16S rRNA gene sequencing\nSignificantly different microbial diversity was observed in all three types of samples between the patients and control subjects. In the gut, the patients possessed higher levels of genera including Bifidobacterium and Eubacterium, and lower levels of genera including Lachnospira, Bacteroides, and Faecalibacterium. Coprococcus was identified as a super-generalist in fecal samples of the patients\nSignificant alterations were also observed in microbiota of subgingival plaques and saliva of the patients compared to control subjects. Second, we analyzed microbiota in mitral valves of the patients and identified microbes that could potentially transmit from the gut or oral cavity to heart valves, including Streptococcus\nThird, we further analyzed the data using random forest model and demonstrated that microbiota in the gut, subgingival plaque or saliva could distinguish the patients from control subjects. Finally, we identified gut/oral microbes that significantly correlated with clinical indices of rheumatic heart disease\nIn conclusion, patients with rheumatic heart disease manifested important alterations in microbiota that might distinguish the patients from control subjects and correlated with severity of this disease. Keywords: rheumatic heart disease, microbiota, gut, subgingival plaque, saliva, mitral valves 3389/fcimb. 2021\nFirst, we revealed significant alterations of microbiota in feces, subgingival plaques, and saliva of the patients compared to control subjects using 16S rRNA gene sequencing. Significantly different microbial diversity was observed in all three types of samples between the patients and control subjects. In the gut, the patients possessed higher levels of genera including Bifidobacterium and Eubacterium, and lower levels of genera including Lachnospira, Bacteroides, and Faecalibacterium\nCoprococcus was identified as a super-generalist in fecal samples of the patients. Significant alterations were also observed in microbiota of subgingival plaques and saliva of the patients compared to control subjects. Second, we analyzed microbiota in mitral valves of the patients and identified microbes that could potentially transmit from the gut or oral cavity to heart valves, including Streptococcus\nIn conclusion, patients with rheumatic heart disease manifested important alterations in microbiota that might distinguish the patients from control subjects and correlated with severity of this disease\nKeywords: rheumatic heart disease, microbiota, gut, subgingival plaque, saliva, mitral valvesIntroduction\nRheumatic heart disease (RHD) is a cardiovascular disease characterized by damages to heart valves, triggered by an autoimmune response to group A Streptococcus (GAS) infection (Woldu and Bloomfield, 2016)\nRHD causes an estimated 300,000 death annually with 30\u201340 million current cases globally and imposes significant disease burden on low-income countries and some indigenous populations (Watkins et\u00a0al., 2017). The backbone of RHD therapy is penicillin-based treatment for acute rheumatic fever and replacement of severely damaged heart valves, without an effective vaccine (Tompkins et\u00a0al., 1972; Nishimura et\u00a0al., 2014; Woldu and Bloomfield, 2016)\nThere has not been any significant advance in recent history of this field (Watkins et\u00a0al., 2018). Thus, it is imperative to consider novel strategies for better control of RHD. Human\u00a0microbiota\u00a0has been proven to play essential roles in a wide range of diseases including cardiovascular diseases (Tang et\u00a0al., 2019)\nColon harbors the vast majority of commensal bacteria (Belkaid and Hand, 2014), which can influence immune homeostasis, trigger inflammation, and invade extra-intestinal tissues (Hooper et\u00a0al., 2012; Anhe et\u00a0al., 2020). Many studies have focused on revealing the role of gut microbial dysbiosis in the development of cardiovascular diseases such as pulmonary arterial hypertension (Kim et\u00a0al., 2020), unruptured intracranial aneurysms (Li et\u00a0al., 2020), chronic heart failure (Kummen et\u00a0al\n, 2018), and atherosclerosis (Koren et\u00a0al., 2010). However, the role of the gut microbiota in RHD has not been studied. The second most complex population of microbes of human body resides in the oral cavity and influences both oral and systemic health (Zhang et\u00a0al., 2018; Bui et\u00a0al., 2019). Periodontal pathogens can alter subgingival microbial composition and host\u2013microorganism interactions, leading to local inflammation and subsequent destruction of periodontal tissues (Hajishengallis et\u00a0al\n, 2012). The presence of periodontal bacteria DNA in cardiac tissues and atherosclerotic plaques has suggested connections between oral infections and cardiovascular diseases (Koren et\u00a0al., 2010; Ziebolz et\u00a0al., 2018). Periodontitis, a common inflammatory oral disease, increases the risk of adverse pregnancy outcomes, atherosclerosis, stroke, rheumatoid arthritis, diabetes, and other systemic diseases (Pihlstrom et\u00a0al., 2005)\nHowever, there is a paucity of information related the potential role of oral microbiota in RHD. Here, we aimed to investigate the microbiota composition and structure of RHD patients and explore potential function of microbiota in RHD. We first analyzed microbiota of fecal samples, subgingival plaques and saliva by 16S rRNA gene sequencing to detect alterations between RHD patients and control subjects\nWe then analyzed microbiota of mitral valves and compared the results with gut and oral microbiota in RHD patients to determine microbial connections between mitral valves and gut/oral cavity. Finally, we explored the possibility using microbiota to discriminate RHD patients from control subjects and analyzed correlations between gut/oral microbiota and severity of RHD\nMaterials and Methods\nStudy Cohort\nA total of 20 RHD patients and 20 age- and sex-matched control subjects were enrolled in this study. RHD patients with symptomatic severe mitral valvular disease and with a history of acute rheumatic fever were enrolled (Rem\u00e9nyi et\u00a0al., 2012; Nishimura et\u00a0al., 2017)\nThe exclusion criteria were: inflammatory bowel diseases, irritable bowel syndrome, autoimmune diseases, diarrhea, liver diseases, renal diseases, acute infection, smoking, and use of antibiotics or probiotics 3 months before sample collection. The study protocol was reviewed and approved by the Human Ethics Committee, Shanghai Chest Hospital, Shanghai Jiaotong University and conducted in accordance with the Principles of Good Clinical Practice and the Declaration of Helsinki\nWritten informed consent was obtained from all the subjects who participated in the study. Sample Collection and DNA Extraction\nFecal samples, subgingival plaques, and saliva were collected from RHD patients and control subjects. Fecal samples were collected in falcon tubes within 24\u00a0h of patients\u2019 admission to the hospital and immediately frozen in \u221280\u00b0C\nAll subjects were instructed to avoid eating, drinking, and use of a toothbrush or mouth rinse 1 hour before sampling of subgingival plaques and saliva. Subgingival plaques were collected using a dental explorer. Saliva was collected and mixed with 2\u00d7 lysis buffer at a ratio of 1:1. A total of 16 mitral valves were collected during valve replacement surgeries and were immediately frozen in liquid nitrogen under sterile conditions. Samples were kept in sterile containers and stored at \u221280\u00b0C\nBacterial DNA was extracted using Tiangen kits according to the manufacturer\u2019s recommendations and stored at \u221280\u00b0C until further analyses. High-Throughput Sequencing and Processing\nThe V3/V4 regions of 16S rRNA genes were amplified with specific primers of 338F-806R. The PCR products were quantified with PicoGreen dsDNA Assay Kit (Invitrogen, Carlsbad, USA) and sequenced on Illumina Novaseq PE250 platform to generate paired-end reads (2 \u00d7 480 bp)\nProcession of the sequencing data was performed on QIIME2 platform. Analysis of sequencing data was based on amplicon sequence variants (ASVs) (Bokulich et\u00a0al., 2018). After chimera detection, high-quality sequences with 97% similarity were clustered into the same ASV. Classification of ASVs was performed based on the Greengenes Database. Data Analysis\nRichness and \u03b1-diversity were measured by Chao1 and Shannon index based on the genus profiles\n\u03b2-diversity was visualized using principal coordinate analysis (PCoA) based on the Bray\u2013Curtis distances. ZP-plot was used to identify of key module members (Deng et\u00a0al., 2012). Within-module connectivity (Zi) and among-module connectivity (Pi) were calculated as previously described (Deng et\u00a0al., 2012). Microbes were classified into four categories: peripherals (Zi \u2264 2. 5, Pi \u2264 0. 62), connectors (Zi \u2264 2. 5, Pi > 0. 62), module hubs (Zi > 2. 5, Pi \u2264 0. 62), and network hubs (Zi > 2. 5, Pi > 0\n62) according to the criteria previously set (Deng et\u00a0al., 2012). Network hubs were considered as super-generalists, which were highly connected within their own modules and among modules (Deng et\u00a0al., 2012). Raw data of relative abundances of genera were transformed to \u201clog10\u201d and Log100 was shown as \u201c\u22128\u201d in figures. Linear discriminant analysis effect size (LEfSe) was used to identify features that differed between groups\nThe threshold of the logarithmic LDA score for discriminative features was set to 3. 0. Identified taxa were plotted in cladograms. A random forest classifier was trained to distinguish the two groups based on the genera abundance profile of RHD patients and control subjects. The important genera of the classifier were ranked by Gini index\nThe performance of the classifier model was evaluated by 10-fold cross-validations and further applied to construct receiver operating characteristic (ROC) curve. The cross-validation accuracy was measured as the area under the ROC curve (AUC). Heatmaps were hierarchically clustered to represent the microbe-clinical indices associations based on the Spearman correlation coefficients\nStatistics\n\n\u03b1-diversity was compared using non-parametric Kruskal\u2013Wallis tests and post hoc Dunn\u2019s test with FDR correction. \u03b2-diversity was tested by the ANOSIM method. Raw data of relative abundances of genera were compared using non-parametric Mann\u2013Whitney tests. Correlation analysis was performed using Spearman\u2019s correlation. Post hoc power analysis was used to calculate power with significance level set to 0. 05 and effect size based on Chao1. The power was 0. 88, 0. 18 and 0\n93 for gut, subgingival plaques and saliva, respectively. Statistical analyses were performed using SPSS 23. 0, QIIME2, R package (V3. 5. 1), or GPower (V3. 1. 9. 4). Results\nAlterations of Gut Microbiota in Rheumatic Heart Disease Patients\nThe demographic data for the enrolled RHD patients and control subjects were summarized in\nSupplemental Table 1\nTo detect gut microbial alterations, we analyzed the microbiota in fecal samples of control subjects and RHD patients using 16S rRNA gene sequencing. Gut microbiota of RHD patients showed significantly lower richness illustrated by Chao1 and \u03b1-diversity (within-sample diversity) illustrated by Shannon index compared to those of control subjects (\nFigures 1A, B\n)\nPrincipal coordinate analysis (PCoA) based on Bray\u2013Curtis distance was performed to determine \u03b2-diversity (between-sample diversity) of gut microbiota, which demonstrated significant difference between RHD patients and control subjects (\nFigure 1C\n). To understand interactions among different microbes in gut microbiota of RHD patients, ZP-plot was used to analyze topological roles, and Coprococcus was identified as a super-generalist (shown as network hubs) (\nFigure 1D\n)\nAmong the 15 most abundant genera, relative abundance of Faecalibacterium and Bacteroides significantly decreased, while that of Shigella, Gemmiger, Bifidobacterium, Ruminococcus, Streptococcus and Dorea significantly increased in gut microbiota of RHD patients compared to control subjects (\nFigure 1E\n). In addition, relative abundance of Blauita showed a trend of increase without statistical significance in gut microbiota of RHD patients (\nFigure 1E\n)\nWe next employed linear discriminant analysis effect size (LEfSe) to identify taxa that discriminate microbial composition between disease states. LEfSe identified higher levels of taxa including Arthrobacter, Bifidobacterium, Porphyromonas, Melissococccus, Eubacterium, Ruminococcus, Dorea, Gemmiger, etc., as well as lower levels of taxa such as Staphylococcus, Lachnospira, Faecalibacterium, and Oxalobacter in fecal samples of RHD patients (\nFigure 1F\n)\nThese results demonstrated considerable changes of the gut microbiota in RHD patients compared to control subjects. Figure 1. Open in a new tab\nAlterations of gut microbiota in patients with rheumatic heart disease. Microbiota of fecal samples from patients with rheumatic heart disease (RHD) and control subjects (Ctrl) were analyzed using 16S rRNA gene sequencing. (A) Richness of fecal microbiota assessed by Chao1. (B)\n\u03b1-diversity of fecal microbiota assessed by Shannon index\n(C)\n\u03b2-diversity analyzed by principal coordinate analysis (PCoA) based on Bray\u2013Curtis distance of fecal microbiota at genus level. (D) Determination of module-based topological roles (peripherals, connectors, module hubs, or network hubs) of fecal microbiota in RHD patients using ZP-plot at genus level. The size of dots represents abundance of each genus. (E) Relative abundances of the fifteen most abundant genera in fecal microbiota. (F) Taxonomic cladogram of fecal microbiota based on LEfSe\nRed color indicates increase and blue indicates decrease of taxa in RHD compared to Ctrl. LDA = 3. Mann\u2013Whitney test was used. n = 20: 20. *P < 0. 05; **P < 0. 01; ****P < 0. 0001. Alterations of Subgingival Plaque Microbiota in Rheumatic Heart Disease Patients\nNext we analyzed the microbiota in subgingival plaque samples of control subjects and RHD patients using 16S rRNA gene sequencing\nSubgingival plaque microbiota showed no differences of richssness and \u03b1-diversity between the two groups illustrated by Chao1 and Shannon index (\nFigures 2A, B\n). Results of PCoA based on Bray\u2013Curtis distance demonstrated moderate difference in \u03b2-diversity between RHD patients and control subjects (\nFigure 2C\n). There was no super-generalist based on modular topological roles in subgingival plaque microbiota of RHD patients (\nFigure 2D\n)\nAmong the 15 most abundant genera, relative abundance of Corynebacterium and Selenomonas significantly decreased, while that of Streptococcus and Blautia significantly increased in subgingival plaque microbiota of RHD patients compared to control subjects (\nFigure 2E\n)\nLEfSe identified higher levels of taxa including Streptococcus, Ruminococcus, Blautia, Dorea, Lachnoanaerobaculum, Roseburia, Gemmiger, as well as lower levels of taxa such as Corynebacterium, Staphylococcus, Lactobacillus and Selenomonas in subgingival plaque samples of RHD patients (\nFigure 2F\n). Figure 2. Open in a new tab\nAlterations of subgingival plaque microbiota in patients with rheumatic heart disease\nMicrobiota of subgingival plaques (SP) from patients with rheumatic heart disease (RHD) and control subjects (Ctrl) were analyzed using 16S rRNA gene sequencing. (A) Richness of SP microbiota assessed by Chao1. (B)\n\u03b1-diversity of SP microbiota assessed by Shannon index. (C)\n\u03b2-diversity analyzed by principal coordinate analysis (PCoA) based on Bray\u2013Curtis distance of SP microbiota at genus level\n(D) Determination of module-based topological roles (peripherals, connectors, module hubs, or network hubs) of SP microbiota in RHD patients using ZP-plot at genus level. The size of dots represents abundance of each genus. (E) Relative abundances of the fifteen most abundant genera in SP microbiota. (F) Taxonomic cladogram of SP microbiota based on LEfSe. Red color indicates increase and blue indicates decrease of taxa in RHD compared to Ctrl. LDA = 3. Mann\u2013Whitney test was used. n = 20: 20\n*P < 0. 05. Alterations of Salivary Microbiota in Rheumatic Heart Disease Patients\nWe further analyzed microbiota in saliva of control subjects and RHD patients using 16S rRNA gene sequencing. Salivary microbiota of RHD patients showed significantly higher richness illustrated by Chao1 and similar \u03b1-diversity illustrated by Shannon index compared to those of control subjects (\nFigures 3A, B\n)\nResults of PCoA based on Bray\u2013Curtis distance demonstrated significantly different \u03b2-diversity between RHD patients and control subjects (\nFigure 3C\n). There was no super-generalist based on modular topological roles in salivary microbiota of RHD patients (\nFigure 3D\n)\nAmong the 15 most abundant genera, relative abundance of Prevotella, Haemophilus, Veillonella, Campylobacter, and Actinomyces significantly decreased, while that of Streptococcus and Rothia significantly increased in salivary microbiota of RHD patients compared to control subjects (\nFigure 3E\n). LEfSe identified higher levels of taxa including Piscicoccus, Rothia, Abiotrophia, Melissococcus, Streptococcus, Parvimonas, Clostridium, Lachnoanaerobaculum, etc\n, as well as lower levels of taxa such as Actinomyces, Rhodococcus, Prevotella, Staphylococcus, Veillonella, Afipia, Sphingomonas, etc. (\nFigure 3F\n). Figure 3. Open in a new tab\nAlterations of salivary microbiota in patients with rheumatic heart disease. Microbiota of saliva from patients with rheumatic heart disease (RHD) and control subjects (Ctrl) were analyzed using 16S rRNA gene sequencing. (A) Richness of salivary microbiota assessed by Chao1\n(B)\n\u03b1-diversity of salivary microbiota assessed by Shannon index. (C)\n\u03b2-diversity analyzed by principal coordinate analysis (PCoA) based on Bray\u2013Curtis distance of salivary microbiota at genus level. (D) Determination of module-based topological roles (peripherals, connectors, module hubs, or network hubs) of salivary microbiota in RHD patients using ZP-plot at genus level. The size of dots represents abundance of each genus\n(E) Relative abundances of the fifteen most abundant genera in salivary microbiota. (F) Taxonomic cladogram of salivary microbiota based on LEfSe. Red color indicates increase and blue indicates decrease of taxa in RHD compared to Ctrl. LDA = 3. Mann\u2013Whitney test was used. n = 20: 20. *P < 0. 05; **P < 0. 01; ***P < 0. 001; ****P < 0. 0001\nComparisons of Microbiota Composition Between Mitral Valves and Other Body Sites in Rheumatic Heart Disease Patients\nSubsequently, we analyzed the microbiota in mitral valves of RHD patients (n = 16) using 16S rRNA gene sequencing\nThe 15 most abundant genera in mitral valves of RHD patients were Ralstonia, Pelomonas, Acinetobacter, Neisseria, Sphingomonas, Streptococcus, Agrobacterium, Thermus, Shigella, Rothia, Fusobacterium, Prevotella, Afipia, Caulobacter, and Burkholderia (\nSupplemental Figure 1A\n). There was no super-generalist based on modular topological roles in microbiota of mitral valves of RHD patients (\nSupplemental Figure 2\n)\nWe next compared microbiota in mitral valves with gut and oral microbiota in these 16 RHD patients. PCoA based on Bray\u2013Curtis distance demonstrated distinct \u03b2-diversity among microbiota of mitral valves, gut, and oral cavity, although microbiota of mitral valves in some RHD patients had similar \u03b2-diversity with oral microbiota (\nFigure 4A\n). As expected, \u03b2-diversity of subgingival plaque microbiota and salivary microbiota are similar (\nFigure 4A\n)\nTaxonomic composition plots at phylum level showed that mitral valves contained significantly more Proteobacteria and less Firmicutes compared to gut, subgingival plaques, and saliva (\nFigure 4B\n), similar to the results of a previous study in atherosclerotic plaques (Koren et\u00a0al., 2010)\nWe further searched for microbes shared by mitral valves and other body sites using three criteria: (1) detected in mitral valve and at least another body site of an individual RHD patient; (2) detected in mitral valves and another body site of more than eight RHD patients (50%) simultaneously; (3) relative abundance ranked among top 35 (\nSupplemental Figure 1\n)\nMitral valves and fecal samples shared Streptococcus, Shigella, Lactobacillus, and Bacteroides in all 16 patients, Oscillospira in 15 patients, Blautia in 11 patients, and Prevotella in nine patients (\nFigure 4C\n). Mitral valves and subgingival plaques shared Streptococcus and Fusobacterium in all 16 patients, Neisseria and Shigella in 15 patients, Prevotella in 13 patients, Bacteroides in 12 patients, Campylobacter in 10 patients, and Veillonella in nine patients (\nFigure 4D\n)\nMitral valves and saliva shared Streptococcus and Fusobacterium in all 16 patients, Neisseria in 15 patients, Prevotella in 13 patients, Campylobacter in 10 patients, as well as Rothia and Veillonella in nine patients (\nFigure 4E\n). Figure 4. Open in a new tab\nComparisons of microbiota composition between mitral valves and other body sites of patients with rheumatic heart disease\nMicrobiota of mitral valves from patients with rheumatic heart disease (RHD) were analyzed using 16S rRNA gene sequencing. (A) Comparison of microbial \u03b2-diversity (PCoA) among gut, subgingival plaques (SP), saliva, and mitral valves (valve) of RHD patients. (B)Taxonomic composition of microbiota at different body sites of RHD patients at phylum level. (C) Illustration of genera detected in both fecal sample (f) and mitral valve (v) of each RHD patient. The numbers (1\u201316) denote RHD patients\nThe column on right indicates the number of patients who possess the corresponding genus in both sites. (D) Illustration of genera detected in both subgingival plaque (sp) and mitral valve (v) of each RHD patient. (E) Illustration of genera detected in both saliva (s) and mitral valve (v) of each RHD patient. n = 16\nMicrobiota Discriminates Rheumatic Heart Disease Patients From Control Subjects\nTo explore the diagnostic value of microbiota in discriminating RHD patients from healthy controls, we constructed random forest classifiers\nAccording to random forest classifier based on gut microbiota, the top 15 important gut genera were Ruminococcus, Dorea, Arthrobacter, Lachnospira, Shigella, Gemmiger, Bifidobacterium, Ralstonia, Faecalibacterium, Subdoligranulum, Burkholderia, Blautia, Turicibacter, Streptococcus, and Selenomonas (\nSupplemental Figure 3A\n). Area under the curve (AUC) of the gut microbiota was 0. 74 (\nFigure 5A\n)\nAs for subgingival plaque microbiota, the top 15 important subgingival plaque genera were Roseburia, Acinetobacter, Turicibacter, Bifidobacterium, Lactobacillus, Leptotrichia, Faecalibacterium, Lachnoanaerobaculum, Clostridium, Streptococcus, Atopobium, Blautia, Gemmiger, Filifactor, and Granulicatella (\nSupplemental Figure 3B\n). AUC of subgingival plaque microbiota was 0. 89 (\nFigure 5B\n)\nIn saliva, the top 15 important salivary genera were Streptococcus, Shigella, Rothia, Pelomonas, Lachnoanaerobaculum, Parvimonas, Arthrobacter, Clostridium, Abiotrophia, Afipia, Streptobacillus, Ralstonia, Turicibacter, Cardiobacterium, and Haemophilus (\nSupplemental Figure 3C\n). AUC of salivary microbiota was 1. 00 (\nFigure 5C\n). Figure 5. Open in a new tab\nGut and oral microbiota differentiate rheumatic heart disease patients from control subjects\n(A) Receiver operating characteristic (ROC) curve according to random forest model for fecal microbiota. A greater area under the ROC curve (AUC) indicates better performance. (B) ROC curve according to random forest model for subgingival plaque microbiota. (C) ROC curve according to random forest model for salivary microbiota. Microbial Taxa Correlate With Clinical Indices in Rheumatic Heart Disease Patients\nMitral valves are the most common heart valves affected by RHD (Russell et\u00a0al., 2017)\nMitral stenosis and regurgitation cause depressed left atrial compliance and elevated left atrial pressure, leading to atrial remodelling and increased left atrial diameter (LAD). Furthermore, pulmonary hypertension is one of the most frequent medical complications in RHD (Watkins et\u00a0al., 2018). We explored the relationship between these clinical indices and microbial taxa differentially enriched or important to discriminate RHD patients from healthy controls\nThe results showed that Bacteroides and Eubacterium in the gut negatively correlated with LAD; Roseburia and Lachnoanaerobaculum in subgingival plaques, on the other hand, positively correlated with LAD (\nFigure 6A\n). Blautia in the gut negatively correlated with pulmonary artery systolic pressure (PASP); Corynebacterium and Roseburia in subgingival plaques, on the other hand, positively correlated with PASP (\nFigure 6B\n). Figure 6\nOpen in a new tab\nCorrelations between microbial genera and clinical indices in patients with rheumatic heart disease. (A) Heatmap showing correlations between different genera and LAD. (B) Heatmap showing correlations between different genera and PASP. LAD indicates left atrial diameter; and PASP, pulmonary artery systolic pressure. SP indicates subgingival plaque. Spearman\u2019s rank correlation coefficients are illustrated in squares. *P < 0. 05; **P < 0. 01\nDiscussion\nTo our knowledge, this work is the first one to present comprehensive characterization of the microbiota in RHD patients. Our study demonstrated that RHD patients had altered gut and oral microbiota, which was likely to translocate to mitral valves and correlate with severity of the disease. These results provided new insights on etiology, diagnosis, prevention, and treatment of RHD. We identified significant alterations in the microbial profile of gut in RHD patients\nWe observed that relative abundances of Bifidobacterium and Eubacterium increased and those of Faecalibacterum and Bacteroides decreased in RHD patients. Moreover, Coprococcus served as a super-generalist in gut microbiota of RHD patients. Bifidobacterium has been considered a probiotic that can alter host microbiota in favor of a \u201chealthier\u201d composition (Toscano et\u00a0al., 2017)\nEubacterium, Faecalibacterum, Bacteroides, Coprococcus, and Blautia are important propionate- or butyrate-producing bacteria (Hoyles and Swann, 2019; Blaak et\u00a0al., 2020). Propionate can enhance generation of macrophage and dendritic cell precursors in the bone marrow (Trompette et\u00a0al., 2014) and butyrate can facilitate extrathymic generation of T-reg cells (Arpaia et\u00a0al., 2013)\nButyrate also helps to maintain the integrity of the intestinal epithelium and reduce injury in distant organs such as lungs (Haak et\u00a0al., 2018; Hoyles and Swann, 2019). Therefore, it seemed counterintuitive that Bifidobacterium and Eubacterium increased in the gut microbiota of RHD patients\nWe postulated that during the progression of RHD the decrease of some beneficial genera such as Faecalibacterum and Bacteroides contributed to disruption of immune homeostasis, resulting in passive increase of some other beneficial genera such as Bifidobacterium and Eubacterium in response to lasting immune dysbiosis. Similarly, previous studies have demonstrated an increase of Bifidobacterium or Eubacterium in patients with inflammatory bowel disease (Wang et\u00a0al\n, 2013) or systemic lupus erythematosus (He et\u00a0al., 2016). We also observed that Bacteroides, Eubacterium, and Blautia in the gut negatively correlated with severity of RHD, suggesting beneficial roles of these three genera in RHD. However, neither Bifidobacterium nor Faecalibacterum significantly correlated with any clinical indices of RHD (Data not shown). The detailed functions and mechanisms of these individual microbes in RHD remain to be further delineated\nThe gut microbiota of RHD patients manifested some similarities but more differences comparing to that of patients with other diseases. We observed increases in most of the abundant genera in the gut microbiota of RHD patients. The reason may be that RHD patients were subjected to high levels of stress and gut inflammation that reduced gastrointestinal motility and clearance capacity, leading to bacterial overgrowth in turn\nThis phenomenon has been previously observed in patients with type 1 diabetes, chronic heart failure, or other critical illness (Btaiche et\u00a0al., 2010; Pasini et\u00a0al., 2016; Malik et\u00a0al., 2018). The gut microbial profile of RHD patients differed significantly from other cardiovascular diseases such as chronic heart failure and pulmonary arterial hypertension (Kummen et\u00a0al., 2018; Kim et\u00a0al., 2020)\nFor example, gut microbiota of patients with chronic heart failure had relatively low abundance in\u00a0Bifidobacterium and high in\u00a0Prevotella\u00a0 (Kummen et\u00a0al., 2018), whereas our results demonstrated that the gut microbiota of RHD patients had relatively high abundance in\u00a0Bifidobacterium\u00a0and no difference in Prevotella. Some genera in RHD patients had similar alterations as in patients with pulmonary arterial hypertension, including decreased Bacteroides and increased Bifidobacterium (Kim et\u00a0al\n, 2020). However, alterations of some other genera were completely different between RHD patients and patients with pulmonary arterial hypertension. For example, the abundance of Eubacterium increased in RHD patients, while it decreased in patients with pulmonary arterial hypertension (Kim et\u00a0al., 2020). Thus, we propose that the same bacteria may respond to different stimuli specifically and play different roles in various disease conditions\nFurther animal experiments should be implemented to confirm their specific functions. It is the unique microbial profile that makes it possible to discriminate RHD patients from healthy controls or even other diseases. We also identified significant microbial alterations in oral cavity of RHD patients. A large variety of microbiota resides in different locations of the oral cavity (Avila et\u00a0al., 2009). We analyzed the microbiota of saliva and subgingival plaques in this study\nSalivary microbiota of RHD patients showed higher richness than that of control subjects, likely because of poor oral hygiene (Maharaj and Vayej, 2012; Belstrom et\u00a0al., 2018). The difference in \u03b2-diversity of salivary microbiota between RHD and control subjects was more dramatic in comparison with that of gut and subgingival plaque microbiota. In line with this, the diagnostic value of salivary microbiota was the greatest according to random forest analysis\nThe results underpinned the theory that saliva represented a significant source of discriminatory biomarkers for oral and systemic diseases (Yoshizawa et\u00a0al., 2013). For example, salivary microbes were able to correlate with clinical indices and stratify active and moderately active patients of rheumatoid arthritis (Zhang et\u00a0al., 2015). Similar results were obtained in Crohn\u2019s disease, another autoimmune disease (Zhang et\u00a0al., 2020)\nAlthough microbes in saliva had large potential to differentiate RHD from control subjects, there was no correlation between any single salivary microbe and RHD severity. The reason may be that salivary microbes closely interacted with each other and functioned as a whole (Jenkinson and Lamont, 2005)\nOur data showed that genus such as Roseburia, Lachnoanaerobaculum, and Corynebacterium in subgingival plaques correlated with RHD severity, although the functions of these genera in periodontal disease or RHD remain to be further explored. Our results also showed that Streptococcus significantly increased in saliva of RHD patients. There are 74 species under the genus of Streptococcus (Wong and Yuen, 2012)\nGAS is responsible for pharyngitis and the post-infection sequela, including RHD (Soderholm et\u00a0al., 2018). GAS can survive the oral immune defense system and remain viable for long periods (Walker et\u00a0al., 2014). Not all Streptococcus spp. are harmful. For instance, Streptococcus salivarius K12 is a probiotic intended for use in the oral cavity and can antagonize the growth of GAS (Di Pierro et\u00a0al., 2016)\nTherefore, it needs to be further determined which species of Streptococcus contributed to the changes we observed in the oral microbiota of RHD patients. Streptococcus also increased in subgingival plaques of RHD patients, likely a consequence of the increase of this genus in saliva (Avila et\u00a0al., 2009). Our data suggested potential transmission of microbes from the gut or oral cavity to heart valves of RHD patients\nSome genera were shared by mitral valves and gut or oral cavity in RHD patients, indicating that microbes in the gut and/or oral cavity might translocate to the mitral valves. In the context of immunological cascade caused by GAS infection, gut microbial dysbiosis may increase endotoxin production and weaken gut barrier function, leading to increase of intestinal permeability and subsequent bacterial translocation (Camilleri, 2019)\nOral cavity is another potential origin of the microbiota in mitral valves. Transmission of oral microbes to other body sites can be caused by invasive dental procedure or even normal daily activities such as tooth brushing and food intake (Smith and Nehring, 2020). Our results demonstrated that the microbiota in mitral valves partially overlapped with that in oral cavity\nIntriguingly, Campylobacter was distributed in most mitral valves and oral cavity but only presented in one fecal sample of RHD patients, pointing to the possibility of oral-to-valve but not gut-to-valve translocation of this microbe. Streptococcus was abundantly distributed in mitral valves of every RHD patient. This is consistent with the theory that GAS or its components can enter the circulation and gain access to the subendothelial collagen matrix (Tandon et\u00a0al., 2013)\nNeisseria, Lactobacillus, Campylobacter and Prevotella were detected in the mitral valves of most RHD patients. It would be reasonable to speculate that these microbes, together with Streptococcus, could translocate from the gut and/or oral cavity to the mitral valves, creating antigens that provoke autoimmune response against host cardiac tissues over the progression of RHD. Our data provided new insights on the etiology, diagnosis, prevention, and treatment of RHD\nFirst, unique microbial profiles of RHD broadened the concept of genetic susceptibility to RHD. Only a minority (1\u20132%) of populations living in GAS-endemic areas develop RHD (Carapetis et\u00a0al., 2000) and specific genetic markers have been linked to RHD (Gray et\u00a0al., 2017). Microbiota, considered as the second genome of the human body, may play a role in genetic predisposition to RHD (Grice and Segre, 2012)\nSecond, unique microbial profiles may serve as a supplemental diagnostic tool for RHD patients. Our results illustrated that it was feasible to differentiate RHD patients from control subjects using microbiota. Third, our data suggested that the microbiota played important roles in RHD treatment. Broad-spectrum antibiotics may eliminate beneficial microbes and sometimes cause secondary infections (Kelly and LaMont, 2008)\nAntibiotics designed with the narrowest spectra targeting GAS or regular use of probiotics may reduce the ecologically undesirable side effects of non-discriminative antibiotic chemoprophylaxis (Lemon et\u00a0al., 2012). At last, the microbiota may serve as a viable therapeutic target for halting progression to severe mitral stenosis and for post-surgery management. The microbiota may influence immune homeostasis, trigger inflammation, invade tissues, and create antigens (Hooper et\u00a0al\n, 2012; Tandon et\u00a0al., 2013; Anhe et\u00a0al., 2020). It is feasible to treat diseases through manipulation of the microbiota. For example, fecal microbiota transplantation has been safely performed in the treatment of diarrhea and sepsis in critical care (Li et\u00a0al., 2015). Moreover, microbiota affects drug pharmacokinetics. The rate of absorption and bioavailability of many oral drugs depends on their exposure to bacterial enzymes before entering the circulation (Li and Jia, 2013)\nFor RHD patients with prosthetic valves, the gut microbiota has been implicated to affect anticoagulant therapy that is mandatory after surgery (Wang et\u00a0al., 2020). Our study is a start point for potential microbiota-targeting therapies, although more studies are required to establish causative links between the microbiota and RHD\nIn conclusion, we described important alterations in the microbiota of RHD patients, provided evidence that microbiota in gut and oral cavity might translocate to mitral valves, demonstrated the possibility of distinguishing patients from control subjects using microbiota, and identified gut/oral microbes that correlated with severity of RHD. Our study paved a promising path for using microbiota as a potential diagnostic, prophylactic, and therapeutic tool for RHD\nW-ZL, Y-LL, Y-LW, J-JH, and W-WZ collected the clinical samples and extracted the DNA. YL, X-XM, and SS interpreted the data. X-RS wrote the manuscript. R-GL and S-ZD read and revised the manuscript. All authors contributed to the article and approved the submitted version\nFunding\nThis work was supported by grants from the National Natural Science Foundation of China (81991500, 81991503, 81921002, 82070262), Shanghai\u2019s Top Priority Clinical Medicine Center (2017ZZ01011), Science and Technology Commission of Shanghai Municipality (19140905302), Shanghai Shen Kang Hospital Development Center Clinical Research Plan of SHDC (2020CR3026B), and the Innovative Research Team of High-Level Local Universities in Shanghai (SSMU-ZDCX20180900)\n, Van Blerk S., Richard D., et al. (2020). Type 2 diabetes influences bacterial tissue compartmentalisation in human obesity. Nat. Metab. 2 (3), 233\u2013242. 10. 1038/s42255-020-0178-9\n[DOI] [PubMed] []\n\nArpaia N., Campbell C., Fan X. Y., Dikiy S., van der Veeken J., deRoos P., et al. (2013). Metabolites produced by commensal bacteria promote peripheral regulatory T-cell generation. Nature\n504 (7480), 451\u201345+. 10\n1038/nature12726\n[DOI] [PMC free article] [PubMed] []\n\nAvila M., Ojcius D. M., Yilmaz O. (2009). The Oral Microbiota: Living with a Permanent Guest. DNA Cell Biol. 28 (8), 405\u2013411. 10. 1089/dna. 2009. 0874\n[DOI] [PMC free article] [PubMed] []\n\nBelkaid Y., Hand T. W. (2014). Role of the Microbiota in Immunity and Inflammation. Cell\n157 (1), 121\u2013141. 10. 1016/j. cell. 2014. 03. 011\n[DOI] [PMC free article] [PubMed] []\n\nBelstrom D., Sembler-Moller M\nL., Grande M. A., Kirkby N., Cotton S. L., Paster B. J., et al. (2018). Impact of Oral Hygiene Discontinuation on Supragingival and Salivary Microbiomes. JDR Clin. Trans. Res. 3 (1), 57\u201364. 10. 1177/2380084417723625\n[DOI] [PMC free article] [PubMed] []\n\nBlaak E. E., Canfora E. E., Theis S., Frost G., Groen A. K., Mithieux G., et al. (2020). Short chain fatty acids in human gut and metabolic health. Benef. Microbes\n11 (5), 411\u2013455. 10. 3920/BM2020\n0057\n[DOI] [PubMed] []\n\nBokulich N. A., Kaehler B. D., Rideout J. R., Dillon M., Bolyen E., Knight R., et al. (2018). Optimizing taxonomic classification of marker-gene amplicon sequences with QIIME 2 \u2018 s q2-feature-classifier plugin. Microbiome\n6 (1), 90. 10. 1186/s40168-018-0470-z\n[DOI] [PMC free article] [PubMed] []\n\nBtaiche I. F., Chan L. N., Pleva M., Kraft M. D. (2010)\nCritical Illness, Gastrointestinal Complications, and Medication Therapy during Enteral Feeding in Critically Ill Adult Patients. Nutr. Clin. Pract. 25 (1), 32\u201349. 10. 1177/0884533609357565\n[DOI] [PubMed] []\n\nBui F. Q., Coutinho Almeida-da-Silva C. L., Huynh B., Trinh A., Liu J., Woodward J., et al. (2019). Association between periodontal pathogens and systemic disease. Biomed. J. 42 (1), 27\u201335. 10. 1016/j. bj. 2018. 12\n001\n[DOI] [PMC free article] [PubMed] []\n\nCamilleri M. (2019). Leaky gut: mechanisms, measurement and clinical implications in humans. Gut\n68 (8), 1516\u20131526. 10. 1136/gutjnl-2019-318427\n[DOI] [PMC free article] [PubMed] []\n\nCarapetis J. R., Currie B. J., Mathews J. D. (2000). Cumulative incidence of rheumatic fever in an endemic region: a guide to the susceptibility of the population. Epidemiol. Infect. 124 (2), 239\u2013244. 10\n1017/s0950268800003514\n[DOI] [PMC free article] [PubMed] []\n\nDeng Y., Jiang Y. H., Yang Y., He Z., Luo F., Zhou J. (2012). Molecular ecological network analyses. BMC Bioinf. 13, 113. 10. 1186/1471-2105-13-113\n[DOI] [PMC free article] [PubMed] []\n\nDi Pierro F., Colombo M., Zanvit A., Rottoli A. S. (2016). Positive clinical outcomes derived from using Streptococcus salivarius K12 to prevent streptococcal pharyngotonsillitis in children: a pilot investigation\nDrug Healthcare Patient Saf. 8, 77\u201381. 10. 2147/dhps. S117214\n[DOI] [PMC free article] [PubMed] []\n\nGray L. -A., D\u2019Antoine H. A., Tong S. Y. C., McKinnon M., Bessarab D., Brown N., et al. (2017). Genome-Wide Analysis of Genetic Risk Factors for Rheumatic Heart Disease in Aboriginal Australians Provides Support for Pathogenic Molecular Mimicry. J. Infect. Dis. 216 (11), 1460\u20131470. 10. 1093/infdis/jix497\n[DOI] [PubMed] []\n\nGrice E. A., Segre J. A. (2012)\nThe human microbiome: our second genome. Annu Rev Genomics Hum Genet (2012) 13, 151\u2013170. 10. 1146/annurev-genom-090711-163814\n[DOI] [PMC free article] [PubMed] []\n\nHaak B. W., Littmann E. R., Chaubard J. -L., Pickard A. J., Fontana E., Adhi F., et al. (2018). Impact of gut colonization with butyrate-producing microbiota on respiratory viral infection following allo-HCT. Blood\n131 (26), 2978\u20132986. 10\n1182/blood-2018-01-828996\n[DOI] [PMC free article] [PubMed] []\n\nHajishengallis G., Darveau R. P., Curtis M. A. (2012). The keystone-pathogen hypothesis. Nat. Rev. Microbiol. 10 (10), 717\u2013725. 10. 1038/nrmicro2873\n[DOI] [PMC free article] [PubMed] []\n\nHe Z., Shao T., Li H., Xie Z., Wen C. (2016). Alterations of the gut microbiome in Chinese patients with systemic lupus erythematosus. Gut Pathog. 8 (1), 64. 10\n1186/s13099-016-0146-9\n[DOI] [PMC free article] [PubMed] []\n\nHooper L. V., Littman D. R., Macpherson A. J. (2012). Interactions Between the Microbiota and the Immune System. Science\n336 (6086), 1268\u20131273. 10. 1126/science. 1223490\n[DOI] [PMC free article] [PubMed] []\n\nHoyles L., Swann J. (2019). \u201cInfluence of the Human Gut Microbiome on the Metabolic Phenotype,\u201d in The Handbook of Metabolic Phenotyping (Elsevier Press; ), 535\u2013560. []\n\nJenkinson H\nF., Lamont R. J. (2005). Oral microbial communities in sickness and in health. Trends Microbiol. 13 (12), 589\u2013595. 10. 1016/j. tim. 2005. 09. 006\n[DOI] [PubMed] []\n\nKelly C. P., LaMont J. T. (2008). Clostridium difficile - More difficult than ever. N. Engl. J. Med. 359 (18), 1932\u20131940. 10. 1056/NEJMra0707500\n[DOI] [PubMed] []\n\nKim S., Rigatto K., Gazzana M. B., Knorst M. M., Richards E. M., Pepine C. J., et al. (2020)\nAltered Gut Microbiome Profile in Patients With Pulmonary Arterial Hypertension. Hypertension\n75 (4), 1063\u20131071. 10. 1161/HYPERTENSIONAHA. 119. 14294\n[DOI] [PMC free article] [PubMed] []\n\nKoren O., Spor A., Felin J., Fak F., Stombaugh J., Tremaroli V., et al. (2010). Human oral, gut, and plaque microbiota in patients with atherosclerosis. Proc. Natl. Acad. Sci. 108 (Supplement_1), 4592\u20134598. 10. 1073/pnas\n1011383107\n[DOI] [PMC free article] [PubMed] []\n\nKummen M., Mayerhofer C. C. K., Vestad B., Broch K., Awoyemi A., Storm-Larsen C., et al. (2018). Gut Microbiota Signature in Heart Failure Defined From Profiling of 2\u00a0Independent Cohorts. J. Am. Coll. Cardiol. 71 (10), 1184\u20131186. 10. 1016/j. jacc. 2017. 12. 057\n[DOI] [PubMed] []\n\nLemon K. P., Armitage G. C., Relman D. A., Fischbach M. A. (2012). Microbiota-Targeted Therapies: An Ecological Perspective. Sci\nTrans. Med. 4 (137), 137rv135. 10. 1126/scitranslmed. 3004183\n[DOI] [PMC free article] [PubMed] []\n\nLi H., Jia W. (2013). Cometabolism of Microbes and Host: Implications for Drug Metabolism and Drug-Induced Toxicity. Clin. Pharmacol. Ther. 94 (5), 574\u2013581. 10. 1038/clpt. 2013. 157\n[DOI] [PubMed] []\n\nLi Q., Wang C., Tang C., He Q., Zhao X., Li N., et al. (2015)\nSuccessful treatment of severe sepsis and diarrhea after vagotomy utilizing fecal microbiota transplantation: a case report. Crit. Care\n19 (1), 37 \u00a0 10. 1186/s13054-015-0738-7\n[DOI] [PMC free article] [PubMed] []\n\nLi H., Xu H., Li Y., Jiang Y., Hu Y., Liu T., et al. (2020). Alterations of gut microbiota contribute to the progression of unruptured intracranial aneurysms. Nat. Commun. 11 (1), 328. 10\n1038/s41467-020-16990-3\n[DOI] [PMC free article] [PubMed] []\n\nMaharaj B., Vayej A. C. (2012). Oral health of patients with severe rheumatic heart disease. Cardiovasc. J. Afr. 23 (6), 336\u2013339. 10. 5830/cvja-2012-009\n[DOI] [PMC free article] [PubMed] []\n\nMalik A., Morya R. K., Bhadada S. K., Rana S. (2018). Type 1 diabetes mellitus: Complex interplay of oxidative stress, cytokines, gastrointestinal motility and small intestinal bacterial overgrowth. Eur. J. Clin\nInvest. 48 (11), e13021. 10. 1111/eci. 13021\n[DOI] [PubMed] []\n\nNishimura R. A., Otto C. M., Bonow R. O., Carabello B. A., Erwin J. P., Guyton R. A., et al. (2014). 2014 AHA/ACC Guideline for the Management of Patients With Valvular Heart Disease: Executive Summary. J. Am. Coll. Cardiol. 63 (22), 2438\u20132488. 10. 1016/j. jacc. 2014. 02. 537\n[DOI] [PubMed] []\n\nNishimura R. A., Otto C. M., Bonow R. O., Carabello B. A., Erwin J. P., Fleisher L. A., et al\n(2017). 2017 AHA/ACC Focused Update of the 2014 AHA/ACC Guideline for the Management of Patients With Valvular Heart Disease. J. Am. Coll. Cardiol. 70 (2), 252\u2013289. 10. 1016/j. jacc. 2017. 03. 011\n[DOI] [PubMed] []\n\nPasini E., Aquilani R., Testa C., Baiardi P., Angioletti S., Boschi F., et al. (2016). Pathogenic Gut Flora in Patients With Chronic Heart Failure. Jacc-Heart Failure\n4 (3), 220\u2013227. 10. 1016/j. jchf. 2015. 10. 009\n[DOI] [PubMed] []\n\nPihlstrom B. L\n, Michalowicz B. S., Johnson N. W. (2005). Periodontal diseases. Lancet\n366 (9499), 1809\u20131820. 10. 1016/s0140-6736(05)67728-8\n[DOI] [PubMed] []\n\nRem\u00e9nyi B., Wilson N., Steer A., Ferreira B., Kado J., Kumar K., et al. (2012). World Heart Federation criteria for echocardiographic diagnosis of rheumatic heart disease\u2014an evidence-based guideline. Nat. Rev. Cardiol. 9 (5), 297\u2013309. 10. 1038/nrcardio. 2012. 7\n[DOI] [PMC free article] [PubMed] []\n\nRussell E. A\n, Walsh W. F., Reid C. M., Tran L., Brown A., Bennetts J. S., et al. (2017). Outcomes after mitral valve surgery for rheumatic heart disease. Heart Asia\n9 (2), e010916. 10. 1136/heartasia-2017-010916\n[DOI] [PMC free article] [PubMed] []\n\nSmith D. A., Nehring S. M. (2020). \u201cBacteremia,\u201d in StatPearls (Treasure Island, FL: StatPearls Publishing LLC; ). []\n\nSoderholm A. T., Barnett T. C., Sweet M. J., Walker M. J. (2018)\nGroup A streptococcal pharyngitis: Immune responses involved in bacterial clearance and GAS-associated immunopathologies. J. Leukocyte Biol. 103 (2), 193\u2013213. 10. 1189/jlb. 4MR0617-227RR\n[DOI] [PubMed] []\n\nTandon R., Sharma M., Chandrashekhar Y., Kotb M., Yacoub M. H., Narula J. (2013). Revisiting the pathogenesis of rheumatic fever and carditis. Nat. Rev. Cardiol. 10 (3), 171\u2013177. 10. 1038/nrcardio. 2012. 197\n[DOI] [PubMed] []\n\nTang W. H. W., Backhed F\n, Landmesser U., Hazen S. L. (2019). Intestinal Microbiota in Cardiovascular Health and Disease. J. Am. Coll. Cardiol. 73 (16), 2089\u20132105. 10. 1016/j. jacc. 2019. 03. 024\n[DOI] [PMC free article] [PubMed] []\n\nTompkins D. G., Boxerbaum B., Liebman J. (1972). Long-term prognosis of rheumatic fever patients receiving regular intramuscular benzathine penicillin. Circulation\n45 (3), 543\u2013551. 10. 1161/01. Cir. 45. 3. 543\n[DOI] [PubMed] []\n\nToscano M., De Grandi R\n, Stronati L., De Vecchi E., Drago L. (2017). Effect of Lactobacillus rhamnosus HN001 and Bifidobacterium longum BB536 on the healthy gut microbiota composition at phyla and species level: A preliminary study. World J. Gastroenterol. 23 (15), 2696\u20132704. 10. 3748/wjg. v23. i15. 2696\n[DOI] [PMC free article] [PubMed] []\n\nTrompette A., Gollwitzer E. S., Yadava K., Sichelstiel A. K., Sprenger N., Ngom-Bru C., et al. (2014)\nGut microbiota metabolism of dietary fiber influences allergic airway disease and hematopoiesis. Nat. Med. 20 (2), 159\u2013166. 10. 1038/nm. 3444\n[DOI] [PubMed] []\n\nWalker M. J., Barnett T. C., McArthur J. D., Cole J. N., Gillen C. M., Henningham A., et al. (2014). Disease Manifestations and Pathogenic Mechanisms of Group A Streptococcus. Clin. Microbiol. Rev. 27 (2), 264\u2013301. 10. 1128/cmr. 00101-13\n[DOI] [PMC free article] [PubMed] []\n\nWang W., Chen L., Zhou R\n, Wang X., Song L., Huang S., et al. (2013). Increased Proportions of Bifidobacterium and the Lactobacillus Group and Loss of Butyrate-Producing Bacteria in Inflammatory Bowel Disease. J. Clin. Microbiol. 52 (2), 398\u2013406. 10. 1128/jcm. 01500-13\n[DOI] [PMC free article] [PubMed] []\n\nWang L., Liu L., Liu X., Xiang M., Zhou L., Huang C., et al. (2020)\nThe gut microbes, Enterococcus and Escherichia-Shigella, affect the responses of heart valve replacement patients to the anticoagulant warfarin. Pharmacol. Res. 159, 104979. 10. 1016/j. phrs. 2020. 104979\n[DOI] [PubMed] []\n\nWatkins D. A., Johnson C. O., Colquhoun S. M., Karthikeyan G., Beaton A., Bukhman G., et al. (2017). Global, Regional, and National Burden of Rheumatic Heart Diseas\n-2015. N. Engl. J. Med. 377 (8), 713\u2013722. 10\n1056/NEJMoa1603693\n[DOI] [PubMed] []\n\nWatkins D. A., Beaton A. Z., Carapetis J. R., Karthikeyan G., Mayosi B. M., Wyber R., et al. (2018). Rheumatic Heart Disease Worldwide JACC Scientific Expert Panel. J. Am. Coll. Cardiol. 72 (12), 1397\u20131416. 10. 1016/j. jacc. 2018. 06. 063\n[DOI] [PubMed] []\n\nWoldu B., Bloomfield G. S. (2016). Rheumatic Heart Disease in the Twenty-First Century. Curr. Cardiol. Rep. 18 (10), 11. 10\n1007/s11886-016-0773-2\n[DOI] [PMC free article] [PubMed] []\n\nWong S. S. Y., Yuen K. Y. (2012). Streptococcus pyogenes and re-emergence of scarlet fever as a public health problem. Emerg. Microbes Infect. 1:10. 10. 1038/emi. 2012. 9\n[DOI] [PMC free article] [PubMed] []\n\nYoshizawa J. M., Schafer C. A., Schafer J. J., Farrell J. J., Paster B. J., Wong D. T. (2013). Salivary biomarkers: toward future clinical and diagnostic utilities. Clin. Microbiol. Rev\n26 (4), 781\u2013791. 10. 1128/CMR. 00021-13\n[DOI] [PMC free article] [PubMed] []\n\nZhang X., Zhang D., Jia H., Feng Q., Wang D., Liang D., et al. (2015). The oral and gut microbiomes are perturbed in rheumatoid arthritis and partly normalized after treatment. Nat. Med. 21 (8), 895\u2013905. 10. 1038/nm. 3914\n[DOI] [PubMed] []\n\nZhang Y. H., Wang X., Li H. X., Ni C., Du Z. B., Yan F. H. (2018). Human oral microbiota and its modulation for oral health. Biomed\nPharmacother. 99, 883\u2013893. 10. 1016/j. biopha. 2018. 01. 146\n[DOI] [PubMed] []\n\nZhang T., Kayani M. U. R., Hong L., Zhang C., Zhong J., Wang Z., et al. (2020). Dynamics of the Salivary Microbiome During Different Phases of Crohn\u2019s Disease. Front. Cell Infect. Microbiol. 10, 544704. 10. 3389/fcimb. 2020. 544704\n[DOI] [PMC free article] [PubMed] []\n\nZiebolz D., Jahn C., Pegel J., Semper-Pinnecke E., Mausberg R. F., Waldmann-Beushausen R., et al. (2018)\nArticles from Frontiers in Cellular and Infection Microbiology are provided here courtesy of Frontiers Media SA Abstract\nRheumatic heart disease refers to the long-term damage of heart valves and results from an autoimmune response to group A Streptococcus infection. This study aimed to analyze the microbiota composition of patients with rheumatic heart disease and explore potential function of microbiota in this disease\nThis study aimed to analyze the microbiota composition of patients with rheumatic heart disease and explore potential function of microbiota in this disease. First, we revealed significant alterations of microbiota in feces, subgingival plaques, and saliva of the patients compared to control subjects using 16S rRNA gene sequencing. Significantly different microbial diversity was observed in all three types of samples between the patients and control subjects\nIn the gut, the patients possessed higher levels of genera including Bifidobacterium and Eubacterium, and lower levels of genera including Lachnospira, Bacteroides, and Faecalibacterium. Coprococcus was identified as a super-generalist in fecal samples of the patients. Significant alterations were also observed in microbiota of subgingival plaques and saliva of the patients compared to control subjects\nSecond, we analyzed microbiota in mitral valves of the patients and identified microbes that could potentially transmit from the gut or oral cavity to heart valves, including Streptococcus. Third, we further analyzed the data using random forest model and demonstrated that microbiota in the gut, subgingival plaque or saliva could distinguish the patients from control subjects. Finally, we identified gut/oral microbes that significantly correlated with clinical indices of rheumatic heart disease\nIn conclusion, patients with rheumatic heart disease manifested important alterations in microbiota that might distinguish the patients from control subjects and correlated with severity of this disease. Keywords: rheumatic heart disease, microbiota, gut, subgingival plaque, saliva, mitral valves"
+}

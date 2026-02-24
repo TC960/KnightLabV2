@@ -1,0 +1,952 @@
+{
+  "paper_id": "166",
+  "paper_title": "Salivary microbiome profiles of oral cancer patients analyzed before and after treatment",
+  "study_type": "treatment_intervention",
+  "primary_disease": "oral squamous cell carcinoma",
+  "sample_sites": [
+    "oral"
+  ],
+  "relationships": [
+    {
+      "id": "166_rel_001",
+      "taxon_name": "Streptococcus anginosus",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "0.003",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Individually significant by Global Test (p=0.003) and also identified by LEfSe in both biased and unbiased datasets. Mentioned in abstract and confirmed in discussion. Strong evidence.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "The three distinguishing zOTUs that were significant on their own were OSCC-related zOTU211 Streptococcus anginosus (p = 0.003)"
+      }
+    },
+    {
+      "id": "166_rel_002",
+      "taxon_name": "Abiotrophia defectiva",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Identified by LEfSe in both biased and unbiased datasets as more abundant in OSCC. No individual species-level p-value given for disease_vs_control context; FDR-corrected significance applies in the treatment comparison. Abstract confirms higher relative abundance at baseline.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At baseline, the OSCC patients showed a higher relative abundance of zOTUs classified as Streptococcus anginosus, Abiotrophia defectiva, and Fusobacterium nucleatum."
+      }
+    },
+    {
+      "id": "166_rel_003",
+      "taxon_name": "Fusobacterium nucleatum",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Confirmed in abstract and results. Species listed among most abundant genera in OSCC-related Global Test groups (Fusobacterium genus). Also identified as a baseline-associated zOTU in the pre/post treatment LEfSe (zOTU47 Fusobacterium nucleatum vincentii). No individual p-value for disease_vs_control context specifically for this species.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At baseline, the OSCC patients showed a higher relative abundance of zOTUs classified as Streptococcus anginosus, Abiotrophia defectiva, and Fusobacterium nucleatum."
+      }
+    },
+    {
+      "id": "166_rel_004",
+      "taxon_name": "Streptococcus dentisani/infantis/mitis/oralis/oral_taxon_058/oral_taxon_061/oral_taxon_064/oral_taxon_070/oral_taxon_423/oral_taxon_431/tigurinus",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "0.030",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "complex_taxon_name"
+        ],
+        "criticism_flags": [],
+        "review_notes": "zOTU1 with complex taxonomy. Individually significant by Global Test (p=0.030) and identified by LEfSe in both biased and unbiased datasets as more abundant in OSCC. Taxonomy is as given in the paper.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "zOTU1 Streptococcus dentisani/infantis/mitis/oralis/oral_taxon_058/oral_taxon_061/oral_taxon_064/oral_taxon_070/oral_taxon_423 /oral_taxon_431/tigurinus (p = 0. 030)"
+      }
+    },
+    {
+      "id": "166_rel_005",
+      "taxon_name": "Catonella morbi",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "0.007",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "zOTU239 Catonella morbi/oral_taxon_164 individually significant by Global Test (p=0.007), OSCC-associated. Paper also lists oral_taxon_164 as part of the assignment; using the named species.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "zOTU239 Catonella morbi/oral_taxon_164 (p = 0. 007)"
+      }
+    },
+    {
+      "id": "166_rel_006",
+      "taxon_name": "Veillonella atypica/dispar",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "complex_taxon_name"
+        ],
+        "criticism_flags": [],
+        "review_notes": "zOTU3 Veillonella atypica/dispar identified by LEfSe as significantly more abundant in the healthy control group in both biased and unbiased datasets. Direction is decreased in OSCC relative to controls. No individual p-value reported.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "The significant zOTUs more abundant in the control group included zOTU3 Veillonella atypica/dispar, zOTU4 Streptococcus australis/parasanguinis_I/parasanguinis_II/oral_taxon_057/oral_taxon_066, and zOTU30 Actinomyces oral_taxon_172."
+      }
+    },
+    {
+      "id": "166_rel_007",
+      "taxon_name": "Streptococcus australis/parasanguinis_I/parasanguinis_II/oral_taxon_057/oral_taxon_066",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "complex_taxon_name"
+        ],
+        "criticism_flags": [],
+        "review_notes": "zOTU4 identified by LEfSe as significantly more abundant in the healthy control group in both biased and unbiased datasets. Direction is decreased in OSCC. No individual p-value reported.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "The significant zOTUs more abundant in the control group included zOTU3 Veillonella atypica/dispar, zOTU4 Streptococcus australis/parasanguinis_I/parasanguinis_II/oral_taxon_057/oral_taxon_066, and zOTU30 Actinomyces oral_taxon_172."
+      }
+    },
+    {
+      "id": "166_rel_008",
+      "taxon_name": "Actinomyces oral_taxon_172",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "zOTU30 identified by LEfSe as significantly more abundant in the healthy control group in both biased and unbiased datasets. Direction is decreased in OSCC. No individual p-value reported.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "The significant zOTUs more abundant in the control group included zOTU3 Veillonella atypica/dispar, zOTU4 Streptococcus australis/parasanguinis_I/parasanguinis_II/oral_taxon_057/oral_taxon_066, and zOTU30 Actinomyces oral_taxon_172."
+      }
+    },
+    {
+      "id": "166_rel_009",
+      "taxon_name": "Streptococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Named as most abundant genus within OSCC-related Global Test groups. Multiple OSCC-associated groups with p-values ranging from 0.012 to 0.047 are described. Genus-level entry extracted per schema rule for organisms reported at multiple levels.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "The most abundant genera within the OSCC-related groups of zOTUs were Streptococcus, Fusobacterium, Capnocytophaga, and Lactobacillus"
+      }
+    },
+    {
+      "id": "166_rel_010",
+      "taxon_name": "Fusobacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Named as most abundant genus within OSCC-related Global Test groups. Genus-level entry complementing species-level entry for Fusobacterium nucleatum.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "The most abundant genera within the OSCC-related groups of zOTUs were Streptococcus, Fusobacterium, Capnocytophaga, and Lactobacillus"
+      }
+    },
+    {
+      "id": "166_rel_011",
+      "taxon_name": "Capnocytophaga",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Named as most abundant genus within OSCC-related Global Test groups. Also supported by Capnocytophaga leadbetterii being baseline-associated in the pre/post treatment LEfSe analysis.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "The most abundant genera within the OSCC-related groups of zOTUs were Streptococcus, Fusobacterium, Capnocytophaga, and Lactobacillus"
+      }
+    },
+    {
+      "id": "166_rel_012",
+      "taxon_name": "Lactobacillus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "<0.001",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "smoking_subgroup"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Named as most abundant genus within OSCC-related Global Test groups. When the smoking-stratified Global Test was run, five groups associated with OSCC smoker with all p<0.001. Lactobacillus was the most significant genus among smoker OSCC patients. The increase is most pronounced in smoker OSCC subgroup.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "The most common genera among smoker OSCC patients were genus Lactobacillus and genus Treponema"
+      }
+    },
+    {
+      "id": "166_rel_013",
+      "taxon_name": "Prevotella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Named as one of the most abundant genera within the control-related Global Test groups, implying decreased abundance in OSCC. Supported by discussion mention of Prevotella histicola as health-associated.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "the most abundant genera within the control-related groups were Prevotella, Actinomyces, and Megasphaera"
+      }
+    },
+    {
+      "id": "166_rel_014",
+      "taxon_name": "Actinomyces",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Named as one of the most abundant genera within control-related Global Test groups, implying decreased abundance in OSCC. Also zOTU30 Actinomyces oral_taxon_172 identified by LEfSe as more abundant in controls.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "the most abundant genera within the control-related groups were Prevotella, Actinomyces, and Megasphaera"
+      }
+    },
+    {
+      "id": "166_rel_015",
+      "taxon_name": "Megasphaera",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Named as one of the most abundant genera within control-related Global Test groups, implying decreased abundance in OSCC.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "the most abundant genera within the control-related groups were Prevotella, Actinomyces, and Megasphaera"
+      }
+    },
+    {
+      "id": "166_rel_016",
+      "taxon_name": "Treponema",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "<0.001",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "smoking_subgroup"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Most significant genus among smoker OSCC patients in the smoking-stratified Global Test (all p<0.001 for OSCC smoker groups). Effect is specific to the smoker OSCC subgroup, not the overall OSCC vs control comparison. Direction flagged as medium confidence because it is a subgroup finding.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "The most common genera among smoker OSCC patients were genus Lactobacillus and genus Treponema"
+      }
+    },
+    {
+      "id": "166_rel_017",
+      "taxon_name": "Campylobacter rectus/showae",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "<0.001",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "smoker_controls_only",
+          "complex_taxon_name"
+        ],
+        "criticism_flags": [],
+        "review_notes": "zOTU131 identified as the only significant zOTU among smoker controls (p<0.001) in the smoking-stratified Global Test. Direction is decreased in OSCC relative to controls (control-associated). Subgroup finding.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "the only significant zOTU among smoker controls was zOTU 131 Campylobacter rectus/showae"
+      }
+    },
+    {
+      "id": "166_rel_018",
+      "taxon_name": "Actinomyces odontolyticus",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "zOTU15 Actinomyces odontolyticus/oral_taxon_180 identified by LEfSe as significantly associated with OSCC baseline samples (pre-treatment), meaning it decreased after treatment. FDR-corrected significant. No individual p-value reported for this taxon.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the baseline samples, these were zOTU15 Actinomyces odontolyticus/oral_taxon_180, zOTU21 Streptococcus sanguinis, zOTU26 Veillonella rogosae, zOTU47 Fusobacterium nucleatum vincentii, zOTU48 Capnocytophaga leadbetterii, zOTU56 Abiotrophia defectiva, zOTU72 Lautropia mirabilis, zOTU76 Solobacterium moorei, zOTU88 Porphyromonas endodontalis/oral_taxon_285, zOTU102 Mogibacterium diversum/neglectum/pumilum/vescum, zOTU146 Leptotrichia buccalis, and zOTU633 Streptococcus sp."
+      }
+    },
+    {
+      "id": "166_rel_019",
+      "taxon_name": "Streptococcus sanguinis",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "zOTU21 identified by LEfSe as significantly associated with OSCC baseline samples (pre-treatment), meaning decreased after treatment. FDR-corrected significant.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the baseline samples, these were zOTU15 Actinomyces odontolyticus/oral_taxon_180, zOTU21 Streptococcus sanguinis, zOTU26 Veillonella rogosae, zOTU47 Fusobacterium nucleatum vincentii, zOTU48 Capnocytophaga leadbetterii, zOTU56 Abiotrophia defectiva, zOTU72 Lautropia mirabilis, zOTU76 Solobacterium moorei, zOTU88 Porphyromonas endodontalis/oral_taxon_285, zOTU102 Mogibacterium diversum/neglectum/pumilum/vescum, zOTU146 Leptotrichia buccalis, and zOTU633 Streptococcus sp."
+      }
+    },
+    {
+      "id": "166_rel_020",
+      "taxon_name": "Veillonella rogosae",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "zOTU26 identified by LEfSe as significantly associated with OSCC baseline samples (pre-treatment), meaning decreased after treatment. FDR-corrected significant.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the baseline samples, these were zOTU15 Actinomyces odontolyticus/oral_taxon_180, zOTU21 Streptococcus sanguinis, zOTU26 Veillonella rogosae, zOTU47 Fusobacterium nucleatum vincentii, zOTU48 Capnocytophaga leadbetterii, zOTU56 Abiotrophia defectiva, zOTU72 Lautropia mirabilis, zOTU76 Solobacterium moorei, zOTU88 Porphyromonas endodontalis/oral_taxon_285, zOTU102 Mogibacterium diversum/neglectum/pumilum/vescum, zOTU146 Leptotrichia buccalis, and zOTU633 Streptococcus sp."
+      }
+    },
+    {
+      "id": "166_rel_021",
+      "taxon_name": "Fusobacterium nucleatum vincentii",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "zOTU47 identified by LEfSe as significantly associated with OSCC baseline samples (pre-treatment), meaning decreased after treatment. FDR-corrected significant. This is the subspecies vincentii of F. nucleatum, distinct from the species-level entry for the disease_vs_control comparison.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the baseline samples, these were zOTU15 Actinomyces odontolyticus/oral_taxon_180, zOTU21 Streptococcus sanguinis, zOTU26 Veillonella rogosae, zOTU47 Fusobacterium nucleatum vincentii, zOTU48 Capnocytophaga leadbetterii, zOTU56 Abiotrophia defectiva, zOTU72 Lautropia mirabilis, zOTU76 Solobacterium moorei, zOTU88 Porphyromonas endodontalis/oral_taxon_285, zOTU102 Mogibacterium diversum/neglectum/pumilum/vescum, zOTU146 Leptotrichia buccalis, and zOTU633 Streptococcus sp."
+      }
+    },
+    {
+      "id": "166_rel_022",
+      "taxon_name": "Capnocytophaga leadbetterii",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "zOTU48 identified by LEfSe as significantly associated with OSCC baseline samples (pre-treatment), meaning decreased after treatment. FDR-corrected significant. Also mentioned in discussion as linking to OSCC at baseline.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the baseline samples, these were zOTU15 Actinomyces odontolyticus/oral_taxon_180, zOTU21 Streptococcus sanguinis, zOTU26 Veillonella rogosae, zOTU47 Fusobacterium nucleatum vincentii, zOTU48 Capnocytophaga leadbetterii, zOTU56 Abiotrophia defectiva, zOTU72 Lautropia mirabilis, zOTU76 Solobacterium moorei, zOTU88 Porphyromonas endodontalis/oral_taxon_285, zOTU102 Mogibacterium diversum/neglectum/pumilum/vescum, zOTU146 Leptotrichia buccalis, and zOTU633 Streptococcus sp."
+      }
+    },
+    {
+      "id": "166_rel_023",
+      "taxon_name": "Abiotrophia defectiva",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "zOTU56 identified by LEfSe as significantly associated with OSCC baseline samples (pre-treatment), meaning decreased after treatment. FDR-corrected significant. This is a second entry for Abiotrophia defectiva representing the treatment_effect context.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the baseline samples, these were zOTU15 Actinomyces odontolyticus/oral_taxon_180, zOTU21 Streptococcus sanguinis, zOTU26 Veillonella rogosae, zOTU47 Fusobacterium nucleatum vincentii, zOTU48 Capnocytophaga leadbetterii, zOTU56 Abiotrophia defectiva, zOTU72 Lautropia mirabilis, zOTU76 Solobacterium moorei, zOTU88 Porphyromonas endodontalis/oral_taxon_285, zOTU102 Mogibacterium diversum/neglectum/pumilum/vescum, zOTU146 Leptotrichia buccalis, and zOTU633 Streptococcus sp."
+      }
+    },
+    {
+      "id": "166_rel_024",
+      "taxon_name": "Lautropia mirabilis",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "zOTU72 identified by LEfSe as significantly associated with OSCC baseline samples (pre-treatment), meaning decreased after treatment. FDR-corrected significant.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the baseline samples, these were zOTU15 Actinomyces odontolyticus/oral_taxon_180, zOTU21 Streptococcus sanguinis, zOTU26 Veillonella rogosae, zOTU47 Fusobacterium nucleatum vincentii, zOTU48 Capnocytophaga leadbetterii, zOTU56 Abiotrophia defectiva, zOTU72 Lautropia mirabilis, zOTU76 Solobacterium moorei, zOTU88 Porphyromonas endodontalis/oral_taxon_285, zOTU102 Mogibacterium diversum/neglectum/pumilum/vescum, zOTU146 Leptotrichia buccalis, and zOTU633 Streptococcus sp."
+      }
+    },
+    {
+      "id": "166_rel_025",
+      "taxon_name": "Solobacterium moorei",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "zOTU76 identified by LEfSe as significantly associated with OSCC baseline samples (pre-treatment), meaning decreased after treatment. FDR-corrected significant.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the baseline samples, these were zOTU15 Actinomyces odontolyticus/oral_taxon_180, zOTU21 Streptococcus sanguinis, zOTU26 Veillonella rogosae, zOTU47 Fusobacterium nucleatum vincentii, zOTU48 Capnocytophaga leadbetterii, zOTU56 Abiotrophia defectiva, zOTU72 Lautropia mirabilis, zOTU76 Solobacterium moorei, zOTU88 Porphyromonas endodontalis/oral_taxon_285, zOTU102 Mogibacterium diversum/neglectum/pumilum/vescum, zOTU146 Leptotrichia buccalis, and zOTU633 Streptococcus sp."
+      }
+    },
+    {
+      "id": "166_rel_026",
+      "taxon_name": "Porphyromonas endodontalis",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "zOTU88 Porphyromonas endodontalis/oral_taxon_285 identified by LEfSe as significantly associated with OSCC baseline samples (pre-treatment), meaning decreased after treatment. FDR-corrected significant.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the baseline samples, these were zOTU15 Actinomyces odontolyticus/oral_taxon_180, zOTU21 Streptococcus sanguinis, zOTU26 Veillonella rogosae, zOTU47 Fusobacterium nucleatum vincentii, zOTU48 Capnocytophaga leadbetterii, zOTU56 Abiotrophia defectiva, zOTU72 Lautropia mirabilis, zOTU76 Solobacterium moorei, zOTU88 Porphyromonas endodontalis/oral_taxon_285, zOTU102 Mogibacterium diversum/neglectum/pumilum/vescum, zOTU146 Leptotrichia buccalis, and zOTU633 Streptococcus sp."
+      }
+    },
+    {
+      "id": "166_rel_027",
+      "taxon_name": "Mogibacterium diversum/neglectum/pumilum/vescum",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "complex_taxon_name"
+        ],
+        "criticism_flags": [],
+        "review_notes": "zOTU102 identified by LEfSe as significantly associated with OSCC baseline samples (pre-treatment), meaning decreased after treatment. FDR-corrected significant.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the baseline samples, these were zOTU15 Actinomyces odontolyticus/oral_taxon_180, zOTU21 Streptococcus sanguinis, zOTU26 Veillonella rogosae, zOTU47 Fusobacterium nucleatum vincentii, zOTU48 Capnocytophaga leadbetterii, zOTU56 Abiotrophia defectiva, zOTU72 Lautropia mirabilis, zOTU76 Solobacterium moorei, zOTU88 Porphyromonas endodontalis/oral_taxon_285, zOTU102 Mogibacterium diversum/neglectum/pumilum/vescum, zOTU146 Leptotrichia buccalis, and zOTU633 Streptococcus sp."
+      }
+    },
+    {
+      "id": "166_rel_028",
+      "taxon_name": "Leptotrichia buccalis",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "zOTU146 identified by LEfSe as significantly associated with OSCC baseline samples (pre-treatment), meaning decreased after treatment. FDR-corrected significant.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the baseline samples, these were zOTU15 Actinomyces odontolyticus/oral_taxon_180, zOTU21 Streptococcus sanguinis, zOTU26 Veillonella rogosae, zOTU47 Fusobacterium nucleatum vincentii, zOTU48 Capnocytophaga leadbetterii, zOTU56 Abiotrophia defectiva, zOTU72 Lautropia mirabilis, zOTU76 Solobacterium moorei, zOTU88 Porphyromonas endodontalis/oral_taxon_285, zOTU102 Mogibacterium diversum/neglectum/pumilum/vescum, zOTU146 Leptotrichia buccalis, and zOTU633 Streptococcus sp."
+      }
+    },
+    {
+      "id": "166_rel_029",
+      "taxon_name": "Streptococcus sp.",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "zOTU633 Streptococcus sp. identified by LEfSe as significantly associated with OSCC baseline samples (pre-treatment), meaning decreased after treatment. FDR-corrected significant. Listed as unresolved species-level Streptococcus.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the baseline samples, these were zOTU15 Actinomyces odontolyticus/oral_taxon_180, zOTU21 Streptococcus sanguinis, zOTU26 Veillonella rogosae, zOTU47 Fusobacterium nucleatum vincentii, zOTU48 Capnocytophaga leadbetterii, zOTU56 Abiotrophia defectiva, zOTU72 Lautropia mirabilis, zOTU76 Solobacterium moorei, zOTU88 Porphyromonas endodontalis/oral_taxon_285, zOTU102 Mogibacterium diversum/neglectum/pumilum/vescum, zOTU146 Leptotrichia buccalis, and zOTU633 Streptococcus sp."
+      }
+    },
+    {
+      "id": "166_rel_030",
+      "taxon_name": "Lactobacillus casei/paracasei/rhamnosus",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "complex_taxon_name"
+        ],
+        "criticism_flags": [],
+        "review_notes": "zOTU115 identified by LEfSe as significantly associated with OSCC follow-up samples (post-treatment), meaning increased after treatment. FDR-corrected significant.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the follow-up samples, the significantly associated zOTUs were zOTU115 Lactobacillus casei/paracasei/rhamnosus and zOTU163 Actinomyces gerencseriae."
+      }
+    },
+    {
+      "id": "166_rel_031",
+      "taxon_name": "Actinomyces gerencseriae",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "zOTU163 identified by LEfSe as significantly associated with OSCC follow-up samples (post-treatment), meaning increased after treatment. FDR-corrected significant.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "For the follow-up samples, the significantly associated zOTUs were zOTU115 Lactobacillus casei/paracasei/rhamnosus and zOTU163 Actinomyces gerencseriae."
+      }
+    },
+    {
+      "id": "166_rel_032",
+      "taxon_name": "Porphyromonas gingivalis",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "unchanged",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "null_result"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Explicitly reported as NOT a discriminating factor between OSCC patients and healthy controls or the post-treatment samples in this study. Null result reported in discussion with contrast to previous studies.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Porphyromonas gingivalis, however, was not a discriminating factor between OSCC patients and healthy controls or the post-treatment samples in our data."
+      }
+    },
+    {
+      "id": "166_rel_033",
+      "taxon_name": "Prevotella histicola",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "discussion_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Mentioned in discussion as health-associated bacteria found in higher abundance in healthy controls. No direct statistical test reported for this species individually in this study. Low confidence.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "the microbial profiles of healthy controls had a higher abundance of bacteria previously associated with health, such as Prevotella histicola, H. parainfluenzae, and F. periodonticum"
+      }
+    },
+    {
+      "id": "166_rel_034",
+      "taxon_name": "Haemophilus parainfluenzae",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "discussion_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Abbreviated as H. parainfluenzae in the paper text. Mentioned in discussion as health-associated bacteria found in higher abundance in healthy controls. No direct statistical test reported for this species individually.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "the microbial profiles of healthy controls had a higher abundance of bacteria previously associated with health, such as Prevotella histicola, H. parainfluenzae, and F. periodonticum"
+      }
+    },
+    {
+      "id": "166_rel_035",
+      "taxon_name": "Fusobacterium periodonticum",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "discussion_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Abbreviated as F. periodonticum in the paper text. Mentioned in discussion as health-associated bacteria found in higher abundance in healthy controls. No direct statistical test reported for this species individually.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "the microbial profiles of healthy controls had a higher abundance of bacteria previously associated with health, such as Prevotella histicola, H. parainfluenzae, and F. periodonticum"
+      }
+    },
+    {
+      "id": "166_rel_036",
+      "taxon_name": "Lactobacillus gasseri",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "<0.001",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "smoking_subgroup"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Mentioned in discussion as a species associated with smoker OSCC patients (caries-related). The smoker OSCC groups had p<0.001 in the Global Test. Species specifically named in discussion. Medium confidence because it is derived from a subgroup analysis and discussed in the Discussion section.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "the species related to smoker OSCC patients included several caries-related species such as Lactobacillus gasseri and Lactobacillus fermentum as well as Treponema species T. socranskii and T. maltophilum"
+      }
+    },
+    {
+      "id": "166_rel_037",
+      "taxon_name": "Lactobacillus fermentum",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "<0.001",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "smoking_subgroup"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Mentioned in discussion as a species associated with smoker OSCC patients (caries-related). The smoker OSCC groups had p<0.001 in the Global Test. Medium confidence because it is a subgroup analysis result.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "the species related to smoker OSCC patients included several caries-related species such as Lactobacillus gasseri and Lactobacillus fermentum as well as Treponema species T. socranskii and T. maltophilum"
+      }
+    },
+    {
+      "id": "166_rel_038",
+      "taxon_name": "Treponema socranskii",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "<0.001",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "smoking_subgroup"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Mentioned in discussion as a species associated with smoker OSCC patients. The smoker OSCC groups had p<0.001 in the Global Test. Medium confidence because it is a subgroup analysis result.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "the species related to smoker OSCC patients included several caries-related species such as Lactobacillus gasseri and Lactobacillus fermentum as well as Treponema species T. socranskii and T. maltophilum"
+      }
+    },
+    {
+      "id": "166_rel_039",
+      "taxon_name": "Treponema maltophilum",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "<0.001",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "smoking_subgroup"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Mentioned in discussion as a species associated with smoker OSCC patients. The smoker OSCC groups had p<0.001 in the Global Test. Medium confidence because it is a subgroup analysis result.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "the species related to smoker OSCC patients included several caries-related species such as Lactobacillus gasseri and Lactobacillus fermentum as well as Treponema species T. socranskii and T. maltophilum"
+      }
+    }
+  ],
+  "extraction_stats": {
+    "layer1_raw_count": {
+      "combined": 39
+    },
+    "layer1_union_count": 39,
+    "layer2_corrections": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 3,
+    "final_count": 39
+  },
+  "paper_text": "Salivary microbiome profiles of oral cancer patients analyzed before and after treatment\n\nAbstract\nBackground\nTreating oral squamous cell carcinoma (OSCC) introduces new ecological environments in the oral cavity. This is expected to cause changes in the oral microbiome. The purpose of this study was to gain new information on the salivary microbiome of OSCC patients in order to improve the aftercare of OSCC patients\nThe aims of this study were to investigate possible changes in the salivary microbiome profiles\u00a0of OSCC patients before and after cancer treatment and to compare these changes with the profiles of healthy controls. Patients and methods\nParaffin-stimulated whole saliva samples were collected, and the salivary flow rate was measured from 99 OSCC patients prior to surgical resection of the tumor and other adjuvant therapy\nAfter treatment, 28 OSCC patients were re-examined with a mean follow-up time of 48\u00a0months. In addition, 101 healthy controls were examined and sampled. After DNA extraction and purification, the V4 hypervariable region of the 16S rRNA gene was amplified and sequenced using Illumina MiSeq. The merged read pairs were denoised using UNOISE3, mapped to zero-radius operational taxonomic units (zOTUs), and the representative zOTU sequences were assigned a taxonomy using HOMD\nDescriptive statistics were used to study the differences in the microbial profiles of OSCC patients before and after treatment and in comparison to healthy controls. Results\nAt baseline, the OSCC patients showed a higher relative abundance of zOTUs classified as Streptococcus anginosus, Abiotrophia defectiva, and Fusobacterium nucleatum. The microbial profiles differed significantly between OSCC patients and healthy controls (F\u2009=\u20095. 9, p\u2009<\u20090. 001)\nAlpha diversity of the salivary microbiome of OSCC patients was decreased at the follow-up, and the microbial profiles differed significantly from the pre-treatment (p\u2009<\u20090. 001) and from that of healthy controls (p\u2009<\u20090. 001). Conclusions\nOSCC patients\u2019 salivary microbiome profile had a higher abundance of potentially pathogenic bacteria compared to healthy controls\nTreatment of the OSCC caused a significant decrease in alpha diversity and increase in variability of the salivary microbiome, which was still evident after several years of follow-up. OSCC patients may benefit from preventive measures, such as the use of pre- or probiotics, salivary substitutes, or dietary counseling. Your browser is not supporting the HTML5 <video> element. You may download that video as a file and play it with a player of you choice. Download video stream\nBox 63, 00014 Helsinki, Finland\nAnna I M\u00e4kinen\n\n1,\u2709, Vincent Y Pappalardo\nVincent Y Pappalardo\n\n2Department of Preventive Dentistry, Academic Centre for Dentistry Amsterdam (ACTA), Vrije Universiteit Amsterdam and University of Amsterdam, Amsterdam, the Netherlands\nVincent Y Pappalardo\n\n2, Mark J Buijs\nMark J Buijs\n\n2Department of Preventive Dentistry, Academic Centre for Dentistry Amsterdam (ACTA), Vrije Universiteit Amsterdam and University of Amsterdam, Amsterdam, the Netherlands\nMark J Buijs\n\n2, Bernd W Brandt\nBernd W Brandt\n\n2Department of Preventive Dentistry, Academic Centre for Dentistry Amsterdam (ACTA), Vrije Universiteit Amsterdam and University of Amsterdam, Amsterdam, the Netherlands\nBernd W Brandt\n\n2, Antti A M\u00e4kitie\nAntti A M\u00e4kitie\n\n3Department of Otorhinolaryngology - Head and Neck Surgery, University of Helsinki and Helsinki University Hospital, Helsinki, Finland\n\n4Research Program in Systems Oncology, Faculty of Medicine, University of Helsinki, Helsinki, Finland\n\n5Division of Ear, Nose and Throat Diseases, Department of Clinical Sciences, Intervention and Technology, Karolinska Institutet and Karolinska University Hospital, Stockholm, Sweden\nAntti A M\u00e4kitie\n\n3,4,5, Jukka H Meurman\nJukka H Meurman\n\n1Department of Oral and Maxillofacial Diseases, University of Helsinki and Helsinki University Hospital, P\nBox 63, 00014 Helsinki, Finland\n\n2Department of Preventive Dentistry, Academic Centre for Dentistry Amsterdam (ACTA), Vrije Universiteit Amsterdam and University of Amsterdam, Amsterdam, the Netherlands\n\n3Department of Otorhinolaryngology - Head and Neck Surgery, University of Helsinki and Helsinki University Hospital, Helsinki, Finland\n\n4Research Program in Systems Oncology, Faculty of Medicine, University of Helsinki, Helsinki, Finland\n\n5Division of Ear, Nose and Throat Diseases, Department of Clinical Sciences, Intervention and Technology, Karolinska Institutet and Karolinska University Hospital, Stockholm, Sweden\n\n\u2709Corresponding author\nThe purpose of this study was to gain new information on the salivary microbiome of OSCC patients in order to improve the aftercare of OSCC patients. The aims of this study were to investigate possible changes in the salivary microbiome profiles\u00a0of OSCC patients before and after cancer treatment and to compare these changes with the profiles of healthy controls\nPatients and methods\nParaffin-stimulated whole saliva samples were collected, and the salivary flow rate was measured from 99 OSCC patients prior to surgical resection of the tumor and other adjuvant therapy. After treatment, 28 OSCC patients were re-examined with a mean follow-up time of 48\u00a0months. In addition, 101 healthy controls were examined and sampled. After DNA extraction and purification, the V4 hypervariable region of the 16S rRNA gene was amplified and sequenced using Illumina MiSeq\nThe merged read pairs were denoised using UNOISE3, mapped to zero-radius operational taxonomic units (zOTUs), and the representative zOTU sequences were assigned a taxonomy using HOMD. Descriptive statistics were used to study the differences in the microbial profiles of OSCC patients before and after treatment and in comparison to healthy controls\nResults\nAt baseline, the OSCC patients showed a higher relative abundance of zOTUs classified as Streptococcus anginosus, Abiotrophia defectiva, and Fusobacterium nucleatum. The microbial profiles differed significantly between OSCC patients and healthy controls (F\u2009=\u20095. 9, p\u2009<\u20090. 001). Alpha diversity of the salivary microbiome of OSCC patients was decreased at the follow-up, and the microbial profiles differed significantly from the pre-treatment (p\u2009<\u20090\n001) and from that of healthy controls (p\u2009<\u20090. 001). Conclusions\nOSCC patients\u2019 salivary microbiome profile had a higher abundance of potentially pathogenic bacteria compared to healthy controls. Treatment of the OSCC caused a significant decrease in alpha diversity and increase in variability of the salivary microbiome, which was still evident after several years of follow-up\nKeywords: Oral cancer, Cancer treatment, Oral microbiomeIntroduction\nIn 2020, there were an estimated 377,700 new cases of lip and oral cavity cancers worldwide with over 177,700 new deaths, making it the 16th most common cancer in the world [1, 2]. The suboptimal results regarding both survival and treatment-related side effects warrant further research. Management of oral squamous cell carcinoma (OSCC) is based on surgical resection of the tumor with or without adjuvant treatment, i. e\n, radiotherapy or chemoradiotherapy [3]. The surgical approach often includes reconstruction of the oncological defect [4]. These treatment approaches frequently lead to functional deficits in chewing or speaking, as well as dry mouth (xerostomia). Lymph nodes at risk for metastases are treated either with neck dissection or by radiotherapy [5], which may both affect the salivary glands and further decrease salivary flow\nThese changes lead to a new ecological environment in the oral cavity, which is expected to also cause changes in the oral microbiome. Associations between microbial dysbiosis and different gastrointestinal cancers have been previously studied [6\u20138]. The role of microbial dysbiosis in OSCC specifically is also increasingly recognized [9, 10]. Bacteria such as Capnocytophaga gingivalis, Prevotella melaninogenica, and Streptococcus mitis have been suggested as possible biomarkers for OSCC [11]\nFurthermore, several studies have suggested that Porphyromonas gingivalis and Fusobacterium nucleatum might be promoters of tumorigenesis in OSCC [12\u201315]. Against this background, the aims of our present study were (1) to compare the salivary microbial profiles of OSCC patients with those of healthy controls and (2) to study the possible changes in the salivary microbial profiles from before cancer treatment to the post-treatment phase\nWe hypothesized that the salivary microbial profiles of the patients differ from those of the controls. Further, we anticipated that cancer treatment affects the microbiome causing the microbial profiles to differ between the pre-treatment and post-treatment samples. Patients and methods\nThis study is part of a larger project on oral cancer that examines 100 oral squamous cell cancer patients at the beginning of their treatment path and 44 patients at follow-up [16]\nAdditionally, 103 age- and sex-matched controls were studied. Cancer patients\nOne hundred patients diagnosed with OSCC and referred for protocol cancer surgery to the Department of Oral and Maxillofacial Diseases, Helsinki University Hospital, Helsinki, Finland, between the years 2011 and 2014, were enrolled in the study and asked to give a saliva sample prior to their cancer surgery. Inclusion criteria were oral cavity cancer of squamous cell origin with planned surgical removal of the tumor\nExclusion criteria were cancer of the lip, tonsils, larynx, and/or pharynx; tumor of origin other than squamous cells; and the patient\u2019s inability to give informed consent. After a follow-up time of at least 19\u00a0months, 44 of the patients continued their participation by providing another, post-treatment sample\nSixty-six patients were lost at follow-up due to patient-related factors such as death, unwillingness to continue in the study, or moving outside of the Helsinki University Hospital district area. The medical and dental status of the patients was recorded per routine protocol both at the pre-treatment and post-treatment examinations. Hospital records including basic patient characteristics as well as tumor- and treatment-related data were available for the analyses\nControls\nOne hundred and three age- and sex-matched controls were recruited from the Helsinki University Hospital Department of Otorhinolaryngology\u2014Head and Neck Surgery and the Helsinki Day Activities Centre for the Elderly. The inclusion criteria were age between 35 and 100\u00a0years with no previously treated or currently diagnosed cancer of the head and neck area\nData on basic characteristics were recorded using a structured questionnaire including smoking and alcohol use habits, general health status, and denture wearing\nSample collection and Candida counts\nParaffin-wax-stimulated whole saliva samples were collected from all participants in a forward-leaning sitting position with a 30-s pre-stimulation by the paraffin-wax chewing followed by 5\u00a0min continued stimulation and collection by spitting into a sterile Nunc\u2122 conical test tube (Thermo Scientific\u2122, Thermo Fisher Scientific Inc., Waltham, MA USA). Stimulated salivary flow rate (SFR) was recorded as ml/min, and hyposalivation was determined as SFR below 0\n5\u00a0ml/min [17]. All samples were stored on ice immediately after collection and delivered to the Department of Oral and Maxillofacial Diseases laboratory at the University of Helsinki, Helsinki, Finland, for cultivation and identification of Candida as described in our previous study [16]. Candidiasis was determined as having a salivary Candida concentration of over 400 colony-forming units (CFU) per ml [18]\nUp to 2\u00a0ml of the remaining samples were stored at\u2009\u2212\u200980\u00a0\u00b0C before delivery in dry ice for microbiome analysis at the Academic Centre for Dentistry Amsterdam (ACTA), Amsterdam, the Netherlands. In total, 236 samples had enough saliva volume left for microbiome studies. Of these, 99 were pre-treatment patient samples, 34 were post-treatment patient samples, and 103 originated from the control subjects. Sample processing\nDNA isolation\nDNA isolation was done in batches of 84 samples\nTo control for potential contaminations, isolation blanks (for kit chemicals) were added to each batch. The saliva samples were thawed and vortexed extensively, and 200\u00a0\u03bcl was transferred to an assigned well in a 1. 1-ml deep-well plate containing 250-\u03bcl 0. 1-mm Zirconia beads (BioSpec Products, Inc. Bartlesville, OK, USA), 200\u00a0\u03bcl of phenol (Rotiphenol, Carl Roth GmbH & Co. KG, Germany), and 100\u00a0\u03bcl of lysis buffer (MagMini DNA isolation kit, LGC Genomics Ltd., Hoddesdon, UK)\nAfter sealing, the deep-well plate was placed in a Mini-BeadBeater-96 (BioSpec Products, Bartlesville, OK, USA) and subjected to four times 2\u00a0min bead beating at 2100 oscillations/min. DNA extraction and purification were done using the MagMini DNA Isolation Kit (LGC Genomics Ltd., Hoddlestone, UK). For measuring the bacterial DNA yield, DNA was subjected to qPCR with universal primers specific to the bacterial 16S rRNA gene [19, 20]\nFor fungal yield, primers and probe specific to the fungal 28S rRNA gene were used [21]. PCR amplification and sequencing\nThe V4 hypervariable region of the 16S rRNA gene in each sample was amplified using 1\u00a0ng DNA with 1\u00a0\u03bcM of each barcoded forward and reverse primer and performing 30 amplification cycles [22]. As PCR controls, negative PCRs (PCR mix with DNA-free water) were included\nAfter quantification of the DNA concentration of PCR products, samples, isolation controls, and negative PCRs were mixed into an equimolar pool and loaded on an agarose gel. The band containing the amplicon was cut out and cleaned with GE Illustra\u2122 GFX PCR DNA and Gel Band purification kit (Sigma Aldrich, St Louis, USA)\nPaired-end sequencing was conducted on the MiSeq platform (Illumina, San Diego, CA, USA) using a MiSeq Reagent kit V3 and 2\u2009\u00d7\u2009251 nt at the Core Facility Genomics, Amsterdam UMC (Amsterdam, the Netherlands). The flow cell was loaded with 10\u00a0pmol DNA containing 30% PhiX. Sequence data were processed as described in Kahharova et al. [23]\nBriefly, paired-end reads were merged, quality-filtered, and denoised using UNOISE3 [24, 25], after which the sequences were mapped to zero-radius operational taxonomic units (zOTUs). The representative (most abundant) sequence of each zOTU was assigned taxonomy according to HOMD (v. 14. 51) [26]. The zOTU table was subsampled at 7900 reads/sample, causing the loss of 3 follow-up samples and 2 control samples that did not reach this threshold\nAdditionally, 3 patients were found to have recurrent cancer at follow-up and were excluded from the analyses; thus, 99 pre-treatment samples, 28 follow-up samples, and 101 control samples were available for statistical analyses. Statistical analyses\nPAST software version 4\n03 [27] was used to calculate the alpha diversity of the samples using untransformed data (see Additional file 1) while the principal component analysis (PCA) and permutational analysis of variance (PERMANOVA, 9999 permutations, Bray\u2013Curtis similarity) tests of the cross-sectional data, i. e., the OSCC patients versus the healthy controls, were calculated using log2-transformed data. On the longitudinal data, i. e\n, the OSCC patients before and after cancer treatment, a PERMANOVA with restricted permutations on the individual patient and Bray\u2013Curtis distance were calculated using adonis2 (vegan v. 2. 5\u20136 [28]; R v. 3. 6. 3 [29]; R Core Team 2020)\nFor the basic data of both cross-sectional and longitudinal studies, the continuous variables age, SFR, Shannon diversity index, salivary Candida concentration (log10[CFU/ml]), and fungal and bacterial loads (ng/\u03bcl, 28S, and 16S qPCR, respectively) were tested for normality and differences in means or distribution (independent samples t test and independent samples Mann\u2013Whitney U for cross-sectional data, related-samples t test or paired-samples Wilcoxon signed-rank test for longitudinal data) using IBM SPSS Statistics v\n27. For categorical variables sex, smoking, alcohol use, and edentulism, a chi-square test was performed also using SPSS. A PERMANOVA was used to test differences in the microbial profiles of the patients versus the healthy controls as well as comparing the effects of SFR (normal vs hyposalivation), smoking, alcohol use, and edentulism on the microbial profiles of each group separately\nZOTUs whose abundance differed significantly between the groups were evaluated by linear discrimination analysis (LDA) of effect size (LEfSe) [30], and the results were additionally tested for significance with the Mann\u2013Whitney U test (cross-sectional data) and Exact sign test (longitudinal data) using SPSS. Benjamini\u2013Hochberg false discovery rate (FDR) correction of p values for the significant zOTUs was done for longitudinal data using R and the FDR was set to 0. 05\nDifferences in the microbiomes of OSCC patients at baseline and the healthy controls were also analyzed using the Global Test function in R (gt function, globaltest package, v. 5. 44. 0, [31], see Additional file 1). First, the zOTU data was filtered to include zOTUs present in at least 25% of samples and normalized using the trimmed mean of M value (TMM, edgeR package, v. 3. 32. 1 [32])\nThe relationships between cancer status and the covariates sex, age, edentate status (yes/no), smoking (yes/no), alcohol use (yes/no), SFR, Candida concentration (log10[CFU/ml]), and bacterial load (16S rRNA gene qPCR, ng/\u03bcl) were tested with chi-square test and the covariate \u201csmoking\u201d was removed from correction as it was a confounding factor to the point of canceling the effect of cancer\nAdditionally, cases with values \u201cunknown\u201d or \u201ccasual\u201d (where applicable) for smoking, alcohol use, and dentition were removed from further analyses. After using the glmFit function (edgeR package, v. 3. 32\n1 [33]) to evaluate the impact of the covariates sex, age, alcohol use, SFR, dentition status, Candida concentration, and bacterial load on the microbiome, the Global Test was performed using hyperbolic arcsin (asinh [34]) transformed residuals to assess the relationship between the microbiome and cancer status. Results\nThe basic characteristics of the study population are given in Table 1\nThe groups were biased with regard to smoking, as the cancer group had more smokers than the control group (chi-square, p\u2009<\u20090. 001). In the microbiome analyses, the subsampled dataset included 857 zOTUs representing 11 phyla and 137 genera or higher taxa. Table 1. Basic characteristics of OSCC patients at baseline and healthy controls\n\nOSCC, N\u2009=\u200999\nControl, N\u2009=\u2009101\nDifference between groups\n\nSexa, male (%)\n54 (54%)\n46 (46%)\nNS\n\nMean age, years (SD)\n68. 0 (10. 3)\n66. 4 (14\n3)\nNS\n\nSmokers (%)\n43 (43%)\n8 (7. 9%)\n\np\u2009=\u20091. 6E-08\n\nAlcohol-users (%)\n62 (62%)\n59 (59%)\nNS\n\nEdentate (%)\n12 (12%)\n5 (5. 0%)\nNS\n\nMean SFR ml/min (SD)\n1. 3 (0. 9)\n1. 4 (0. 8)\n\np\u2009=\u20090. 036\n\n\u2003Dry mouth, SFR\u2009<\u20090. 5\u00a0ml/min (%)\n21 (21%)\n14 (14%)\nNS\n\nMean concentration of bacteria, 16S qPCR, ng/\u03bcl (SD)\n3. 5 (3. 3)\n3. 0 (2. 3)\nNS\n\nCandidiasisb (%)\n42 (42%)\n40 (40%)\nNS\n\n\u2003Mean Candida concentration, log10 (CFU/ml) (SD)\n2. 3 (1. 2)\n2. 2 (1. 2)\nNS\n\n\u2003Mean concentration of fungi, 28S qPCR, ng/\u03bcl (SD)\n0\n007 (0. 02)\n0. 003 (0. 005)\nNS\n\nTumor classc\n\n\u2003T1 (%)\n46 (46%)\n\n\u2003T2\u2013T4 (%)\n53 (53%)\n\nStagec\n\n\u2003Stages I\u2013II (%)\n57 (57%)\n\n\u2003Stages III\u2013IV (%)\n42 (42%)\n\nTreatment\n\n\u2003Radiotherapy-treated (%)\n44 (44%)\n\n\u2003Chemotherapy-treated (%)\n5 (5\n1%)\n\nOpen in a new tab\n\nSFR salivary flow rate, SD standard deviation, NS non-significant aBinary categorization determined using social security number bCandida growth\u2009\u2265\u2009400 colony-forming units (CFU) per milliliter of the saliva cAccording to the 7th edition of the American Joint Committee on Cancer Staging Manual\nComparison of patients and controls\nThe subsampled dataset comprised samples from 99 pre-treatment OSCC patients and 101 controls\nFigure\u00a01 shows comparisons between the OSCC and control samples. First, all patient\u2019s and control\u2019s zOTU results were studied and compared to each other with no corrections for covariates (\u201cbiased\u201d data). The microbial profiles of the two groups differed from each other statistically significantly (PERMANOVA, F\u2009=\u20095. 9, p\u2009<\u20090. 001), but no significant difference was found in the Shannon diversity index (independent samples t test). Fig. 1\nOpen in a new tab\nComparison of OSCC patients and healthy controls. A Principal component analysis of all OSCC patients versus healthy controls, p\u2009=\u20090. 0001, F\u2009=\u20095. 9\u2014PERMANOVA. B Shannon Diversity Index of the OSCC samples versus healthy controls, p\u2009=\u2009non-significant, independent samples t test. C Shannon Diversity Index in OSCC patients versus healthy controls by alcohol consumption, independent samples t test\nD Shannon Diversity Index of OSCC patients versus healthy controls by salivary flow rate (SFR): low\u2014<\u20090. 5\u00a0ml/min, normal\u2014\u2265\u20090. 5\u00a0ml/min, independent samples t testAn alcohol-drinking habit had a significant effect on the Shannon diversity index in the control group (independent samples t test p\u2009=\u20090. 037), but not in the OSCC group. Drinkers had a higher bacterial diversity of saliva\nThe effect of hyposalivation on Shannon diversity was nearly significant for the OSCC group (independent samples t test p\u2009=\u20090. 055), while the difference was not significant in the controls. OSCC patients with hyposalivation showed lower diversity. Secondly, we picked nonsmoking, nondrinking dentate subjects from the original dataset to form a subset called the \u201cunbiased data\u201d\nThis subset consisted of 24 pre-treatment OSCC patients and 34 healthy controls who reported to not smoke tobacco or drink alcohol and who had at least one remaining tooth in their mouth. The microbial profiles of the two groups again differed statistically significantly (PERMANOVA, F\u2009=\u20092. 4, p\u2009<\u20090. 001), whereas there was no difference in the Shannon diversity index. LEfSe-analysis was done for both the \u201cbiased\u201d and the \u201cunbiased\u201d data (Fig. 2)\nIn both datasets, significantly discriminatory zOTUs that were more abundant in the group OSCC included zOTU1 Streptococcus dentisani/infantis/mitis/oralis/oral_taxon_058/oral_taxon_061/oral_taxon_064/oral_taxon_070/oral_taxon_423 /oral_taxon_431/tigurinus, zOTU43 Streptococcus anginosus, and zOTU56 Abiotrophia defectiva\nThe significant zOTUs more abundant in the control group included zOTU3 Veillonella atypica/dispar, zOTU4 Streptococcus australis/parasanguinis_I/parasanguinis_II/oral_taxon_057/oral_taxon_066, and zOTU30 Actinomyces oral_taxon_172. Fig. 2. Open in a new tab\nDiscriminatory zOTUs between OSCC patients and healthy controls on biased A and unbiased B data. *zOTU1 Streptococcusdentisani/infantis/mitis/oralis/sp. oral taxon 058/sp. oral taxon 061/sp. oral taxon 064/sp. oral taxon 070/sp\noral taxon 423/sp. oral taxon 431/tigurinus (assigned taxonomy shortened in the figure). \u00a4zOTU4 Streptococcusaustralis/parasanguinis I/parasanguinis II/sp. oral taxon 057/sp. oral taxon 066 (assigned taxonomy shortened in the figure)In addition, the groups of zOTUs associated with either OSCC or the controls were disclosed by the Global Test (see Additional file 2)\nThe Global Test produced 16 statistically significant groups of zOTUs\u2014of which three consisted of a single zOTU\u2014that were significantly distinguishing the patients from the controls (Additional file 3, sheet 1). Nine of the 13 groups of zOTUs were associated with OSCC (p\u2009=\u20090. 012, p\u2009=\u20090. 017, p\u2009=\u20090. 025, p\u2009=\u20090. 026, p\u2009=\u20090. 047, p\u2009=\u20090. 029, p\u2009=\u20090. 033, p\u2009=\u20090. 039, and p\u2009=\u20090. 039) while three groups were associated with the controls (p\u2009=\u20090. 025, p\u2009=\u20090. 026, and p\u2009=\u20090. 041)\nOne group of zOTUs did not definitively associate with either the OSCC or the controls (p\u2009=\u20090. 043). The most abundant genera within the OSCC-related groups of zOTUs were Streptococcus, Fusobacterium, Capnocytophaga, and Lactobacillus, and the most abundant genera within the control-related groups were Prevotella, Actinomyces, and Megasphaera. The three distinguishing zOTUs that were significant on their own were OSCC-related zOTU211 Streptococcus anginosus (p\u2009=\u20090\n003), zOTU239 Catonella morbi/oral_taxon_164 (p\u2009=\u20090. 007), and zOTU1 Streptococcus dentisani/infantis/mitis/oralis/oral_taxon_058/oral_taxon_061/oral_taxon_064/oral_taxon_070/oral_taxon_423 /oral_taxon_431/tigurinus (p\u2009=\u20090. 030)\nTo address the effect of smoking on the salivary microbiome, the OSCC and control groups were further divided according to the smoking status (Yes/No) and Global Test was used to disclose the groups of zOTUs associated with smoking and nonsmoking OSCC patients as well as smoking and nonsmoking controls. This time, the Global Test produced 19 significant groups of zOTUs that distinguished these four groups from one another (Additional file 3, sheet 2)\nFive of these were associated with the group OSCC smoker (all with p\u2009<\u20090. 001) and four with OSCC nonsmoker (all with p\u2009<\u20090. 001). Additionally, five zOTUs associated significantly with nonsmoker controls (all with p\u2009<\u20090. 001) and only one group, consisting of a single zOTU, associated with smoker controls (p\u2009<\u20090. 001). There were also four groups of zOTUs that were identified as significant but not associating to any of the specific groups\nThe most common genera among smoker OSCC patients were genus Lactobacillus and genus Treponema, whereas the only significant zOTU among smoker controls was zOTU 131 Campylobacter rectus/showae. Comparison of samples before and after cancer treatment\nSamples from 28 OSCC patients were available after the cancer treatment at a mean follow-up period of 47. 8\u00a0months (SD 12. 1, min 35, max 78, Table 2)\nThese 28 patients did not differ significantly at baseline from the other OSCC patients, except for having a higher prevalence of T1-tumors (Pearson chi-square, p\u2009=\u20090. 035). At the follow-up, the SFR was significantly lower and the concentration of Candida in the saliva was higher than at baseline (paired samples t test p\u2009<\u20090. 001 and related samples Wilcoxon signed-rank test p\u2009=\u20090. 028, respectively). Table 2\nBasic characteristics of 28 OSCC patients analyzed before and after treatment\n\nBaseline\nFollow-up\nDifference between timepoints\n\nSexa, male (%)\n15 (54%)\n\nMean age, years (SD)\n65. 7 (10. 3)\n69. 8 (10. 3)\n\nSmokers (%)\n11 (39%)\n\nAlcohol users (%)\n20 (71%)\n\nEdentate (%)\n1 (4%)\n4 (14%)\nNS\n\nMean SFR, ml/min (SD)\n1. 1 (0. 6)\n0. 8 (0. 6)\n\np\u2009=\u20090. 0008\n\n\u2003Dry mouth, SFR\u2009<\u20090. 5\u00a0ml/min (%)\n4 (14%)\n10 (36%)\nNS\n\nMean concertation of bacterial DNA, 16S qPCR, ng/\u03bcl (SD)\n2. 7 (2. 3)\n2. 3 (2\n7)\nNS\n\nCandidiasisb (%)\n11 (39%)\n19 (68%)\n\np\u2009=\u20090. 03\n\n\u2003Mean Candida concentration, log10[CFU/ml] (SD)\n2. 3 (1. 3)\n2. 9 (1. 3)\nNS\n\n\u2003Mean concentration of yeasts, 28S qPCR, ng/\u03bcl (SD)\n0. 0049 (0. 008)\n0. 0093 (0\n02)\nNS\n\nTumor class c\n\n\u2003T1 (%)\n19 (68%)\n\n\u2003T2\u2013T4 (%)\n9 (32%)\n\nStagec\n\n\u2003I\u2013II (%)\n18 (64%)\n\n\u2003III\u2013IV (%)\n10 (36%)\n\nTreatment\n\n\u2003Excision with direct wound closure (%)\n5 (28%)\n\n\u2003Reconstructive surgery (%)\n11 (39%)\n\n\u2003Reconstructive surgery\u2009+\u2009radiation therapy (%)\n11 (39%)\n\n\u2003Reconstructive surgery\u2009+\u2009chemoradiation therapy (%)\n1 (4%)\n\nOpen in a new tab\n\nSFR salivary flow rate, SD standard deviation, NS non-significant aBinary categorization determined using social security number bCandida growth\u2009\u2265\u2009400 colony-forming units (CFU) per milliliter of the saliva cAccording to the 7th edition of the American Joint Committee on Cancer Staging Manual\nThe microbial profiles changed significantly from baseline to follow-up (restricted PERMANOVA, F\u2009=\u20092\n3, p\u2009<\u20090. 001, Fig. 3A), with the samples being less similar in composition (Bray\u2013Curtis distance, Mann\u2013Whitney U test, p\u2009<\u20090. 001, Fig. 3B), and having lower alpha diversity (paired samples t test, p\u2009=\u20090. 008, Fig. 3C) at the follow-up compared to the baseline. The microbial profiles of the OSCC patients at the follow-up were significantly different from those of the healthy controls (PERMANOVA, F\u2009=\u20096. 43, p\u2009<\u20090\n001), and the alpha diversity was significantly lower (Shannon diversity index, independent samples t test p\u2009=\u20090. 003). The microbial profiles of the follow-up samples were significantly affected by hyposalivation (PERMANOVA, F\u2009=\u20091. 711, p\u2009=\u20090. 009), by having candidiasis (PERMANOVA, F\u2009=\u20091. 983, p\u2009=\u20090. 024), by having had loco-regionally advanced cancer (stage III or IV, PERMANOVA, F\u2009=\u20091. 813, p\u2009=\u20090. 036), and by having received adjuvant radiotherapy (PERMANOVA, F\u2009=\u20091. 772, p\u2009=\u20090. 041). Fig. 3\nOpen in a new tab\nComparison of the salivary microbiome from 28 OSCC patients before and after treatment. A Principal component analysis, p\u2009<\u20090. 001, F\u2009=\u20092. 3\u2014restricted PERMANOVA. B Bray\u2013Curtis distance, p\u2009<\u20090. 001\u2014Mann\u2013Whitney test. C Shannon diversity index, p\u2009=\u20090. 008\u2014paired samples t testLEfSe-analysis identified 28 significantly discriminant zOTUs out of which 14 remained significant after FDR correction (Fig. 4)\nFor the baseline samples, these were zOTU15 Actinomyces odontolyticus/oral_taxon_180, zOTU21 Streptococcus sanguinis, zOTU26 Veillonella rogosae, zOTU47 Fusobacterium nucleatum vincentii, zOTU48 Capnocytophaga leadbetterii, zOTU56 Abiotrophia defectiva, zOTU72 Lautropia mirabilis, zOTU76 Solobacterium moorei, zOTU88 Porphyromonas endodontalis/oral_taxon_285, zOTU102 Mogibacterium diversum/neglectum/pumilum/vescum, zOTU146 Leptotrichia buccalis, and zOTU633 Streptococcus sp\nFor the follow-up samples, the significantly associated zOTUs were zOTU115 Lactobacillus casei/paracasei/rhamnosus and zOTU163 Actinomyces gerencseriae. Fig. 4. Open in a new tab\nDiscriminatory zOTUs between baseline and post-therapy samples in 28 OSCC patients (output of LEfSe analysis). *zOTU1 Streptococcus\u00a0dentisani/infantis/mitis/oralis/sp. oral taxon 058/sp. oral taxon 061/sp. oral taxon 064/sp. oral taxon 070/sp. oral taxon 423/sp\noral taxon 431/tigurinus (assigned taxonomy shortened in the figure)Discussion\nThe aim of this study was to investigate whether the salivary microbiome of OSCC patients is different from that of healthy individuals and how the microbiota changes from the pre-treatment to the post-treatment stage. We studied paraffin-wax-stimulated whole saliva samples of 99 OSCC patients prior to treatment and 28 post-treatment samples. These were compared with the results from 101 healthy controls\nBased on these results, having OSCC seemed to have an effect on the salivary microbial profiles and the difference was evident even after removing the cofactors smoking, drinking, and being edentate. Cancer did not, however, have a significant effect on the microbial alpha diversity of the saliva samples. The microbial profiles of the OSCC patients at baseline showed a higher relative abundance of bacteria previously linked to systemic infections, such as S. anginosus, A. defectiva, and F\nnucleatum, whereas the microbial profiles of healthy controls had a higher abundance of bacteria previously associated with health, such as Prevotella histicola, H. parainfluenzae, and F. periodonticum [35\u201340]. Streptococcus anginosus, specifically, was shown to be significantly higher in abundance in the OSCC patients compared to the healthy controls by both LEfSe-analysis and the Global Test. In previous studies, S\nanginosus has been reported to have caused bacteremia and related purulent infection foci in various organ systems [35]. Additionally, A. defectiva, which differentiated the OSCC patients at baseline from both their post-treatment samples and those of the healthy controls, has previously been linked to infective endocarditis and endophthalmitis [41, 42]. Species such as F. nucleatum and C\nleadbetteri, which associate with the OSCC patients at baseline in our study, have also previously been linked to OSCC [13, 43]. Porphyromonas gingivalis, however, was not a discriminating factor between OSCC patients and healthy controls or the post-treatment samples in our data. This result was in contrast to earlier studies where a strong association was found between P. gingivalis and OSCC [12\u201315]\nWhen the effect of smoking on the microbiome was tested using the Global Test, the most significant genera among smoker OSCC patients were genus Lactobacillus and genus Treponema. Specifically, the species related to smoker OSCC patients included several caries-related species such as Lactobacillus gasseri and Lactobacillus fermentum as well as Treponema species T. socranskii and T. maltophilum, which have been associated with severe periodontitis and periapical lesions [44\u201346]\nThis supports the link that has previously been shown between smoking, poor oral health, and OSCC [47]. After a relatively long follow-up time, the microbial profiles of the patients in the present series showed decreased similarity to each other and lower diversity within samples than at baseline. Furthermore, the microbial profiles were significantly different in the post-treatment samples when compared with those of the controls\nThe Shannon diversity index at the follow-up was significantly lower than that of the control samples. These results imply that the administered therapies indeed affect the salivary microbiome in the long term. This change may be unfavorable as the post-follow-up profile tended to lean towards an increase in aciduric taxa and a decrease in diversity, both of which have previously been linked to poor oral health [48, 49]\nEleven patients received adjuvant radiotherapy and one patient was treated with adjuvant chemoradiation therapy. At follow-up, there was a slight though significant difference in the microbial profiles between patients who had received radiotherapy and those who had not. Such difference was also evident when the follow-up samples were tested for the effect of having candidiasis, having hyposalivation and having had high stage cancer\nSince patients with higher stage cancer tend to be treated with adjuvant (chemo)radiotherapy, which in turn is linked to both the development of hyposalivation and candidiasis, the difference found caused by the radiotherapy may actually be the result of one of the other factors found here to have a significant effect. In this study, the number of samples was too low to draw meaningful conclusions from this set of patients regarding the effect of radiotherapy\nIn previous studies, however, the effect of radiotherapy in head-and-neck cancer to the oral microbiome has been found to be profound and the increase in cariogenic taxa has been evident [50\u201352]. The postoperative oral health problems are among the principal complaints of OSCC patients [53]. Thus, the strive to establish a balanced oral microbiome post-OSCC-treatment should be seen as equally important as the efforts to re-establish function and appearance\nAs the microbial profiles of OSCC were significantly different from healthy controls both preoperatively and at follow-up, the oral health professionals should be encouraged to be more vocal about the need for balancing and stabilizing the oral microbiome. It should be noted, however, that the measures with which the positive modification of oral microbiome is done remain elusive and warrant for further research [54]. Finally, the weaknesses and strengths of the present study need to be discussed\nThe main weakness was the lack of full oral examination records, which, if completed with data on chewing capacity, saliva pH values and analysis on diet, would have been valuable for further conclusions. Especially the lack of full periodontal records from all participants causes a probable confounding factor that we could not correct for, as possible periodontal diseases are expected to affect the microbial profiles [55]\nWe were also unable to assess the effects of different treatment strategies on the results because of the small number of post-treatment follow-up samples. Furthermore, we were unable to match the controls by smoking, drinking, and edentulism. However, the percentages regarding smokers match the population statistics of the healthy population of Helsinki and Uusimaa district in Finland (8. 1% of the population aged 65 and over in Helsinki and Uusimaa district in Finland, 2014 [56])\nThe strength of this study is the homogeneity of the study group concerning age and Caucasian ethnicity in the Finnish population. The baseline study group of OSCC patients was also relatively large, which allowed us to study the microbial profiles both by excluding smokers, drinkers, and edentate subjects to form the unbiased group and by correcting for covariates with the Global Test\nThis made the statistical analyses more reliable, even though smoking could not be corrected for in the Global Test due to it leading to the loss of the effect of cancer in the analysis. A further strength was the relatively long follow-up time, which allowed us to investigate the long-term effects of OSCC therapy on the salivary microbiome\nIn the future, we suggest additional studies involving the chemical composition of the saliva and its changes throughout the treatment of OSCC in order to account for any effects these changes may have on the salivary microbiome. Conclusions\nOur study hypothesis was confirmed by showing that the microbial profiles in saliva indeed were different when comparing OSCC patients to healthy controls\nSimilarly, as we had expected, the post-treatment profiles differed significantly from those of the pre-treatment samples. The ecologically disadvantageous changes, seen as the increase in aciduric taxa and decrease of alpha diversity, as well as the higher relative abundance of potentially pathogenic taxa in the OSCC patients at baseline, are findings of clinical importance\nBased on these results, we suggest that OSCC patients may benefit from preventive measures, such as recommendation of the use of pre- or probiotics, salivary substitutes, or dietary counseling. Furthermore, we recommend that the OSCC patients should have a longstanding relationship with the oral health professionals that extend beyond the 5-year follow-up with the surgical team in order to aid in the prevention of oral diseases after cancer treatment\nAll these could be expected to stabilize the oral microbiome, but intervention studies are needed for further conclusion in this area. Supplementary Information\n\n40168_2023_1613_MOESM1_ESM. docx (142KB, docx) Additional file 1. Alpha Diversity Indices -\u00a0Detailed description and discussion of the alpha-diversity indices of the cross-sectional data examined during this study. 40168_2023_1613_MOESM2_ESM. docx (933. 8KB, docx) Additional file 2\nGlobal Test Method -\u00a0Detailed description of the statistical edgeR, residuals and the Global Test. 40168_2023_1613_MOESM3_ESM. xlsx (28. 3KB, xlsx) Additional file 3. Global Test Results (Excel spreadsheet,. xlsx) \u2013 Resulting groups of zOTUs from the Global Test. Acknowledgements\nNot applicable. Authors\u2019 contributions\nStudy concepts and design were constructed by JHM, EZ and AAM. Samples and subjects related data acquisition was done by AIM and MJB did the qPCR and next-generation sequencing work\nFunding\nOpen Access funding provided by University of Helsinki. This work was supported by research grants from the Helsinki University Hospital [Y1014SL006], the Finnish Dental Society Apollonia, the Finnish Medical Society, the Finnish Society of Sciences and Letters, and the King Gustav V and Queen Victoria\u2019s Freemason\u2019s Foundation\nThe funding sources had no involvement in the study design; the collection, analysis, or interpretation of the data; or in the preparation or submission of this article. Availability of data and materials\nThe datasets generated and/or analyzed during the current study are available in the NBCI BioProject repository, PRJNA997108 [https://www. ncbi. nlm. nih. gov/bioproject/997108]\nEstimated number of deaths in 2020, World, both sexes, all ages 2020. https://gco. iarc. fr/today/online-analysis-table. (Accessed 2 Jan 2023). 3. Almangush A, Makitie AA, Triantafyllou A, de Bree R, Strojan P, Rinaldo A, et al. Staging and grading of oral squamous cell carcinoma: an update. Oral Oncol 2020;107:104799. 10. 1016/j. oraloncology. 2020. 104799. [DOI] [PubMed]\n\n4. Shah JP, Gil Z. Current concepts in management of oral cancer\u2013surgery. Oral Oncol. 2009;45:394\u2013401.\noraloncology. 2008. 05. 017. [DOI] [PMC free article] [PubMed] []\n\n5. Vassiliou L V, Acero J, Gulati A, Holzle F, Hutchison IL, Prabhu S, et al. Management of the clinically N(0) neck in early-stage oral squamous cell carcinoma (OSCC). An EACMFS position paper. J Craniomaxillofac Surg 2020;48:711\u20138. 10. 1016/j. jcms. 2020. 06. 004. [DOI] [PubMed]\n\n6. Yachida S, Mizutani S, Shiroma H, Shiba S, Nakajima T, Sakamoto T, et al\nMetagenomic and metabolomic analyses reveal distinct stage-specific phenotypes of the gut microbiota in colorectal cancer. Nat Med. 2019;25:968\u2013976. [DOI] [PubMed] []\n\n7. Bultman SJ. Emerging roles of the microbiome in cancer. Carcinogenesis. 2014;35:249\u2013255. [DOI] [PMC free article] [PubMed] []\n\n8. Khan AA, Shrivastava A, Khurshid M\nNormal to cancer microbiome transformation and its implication in cancer diagnosis. Biochim Biophys Acta. 2012;1826:331\u2013337. bbcan. 2012. 05. 005. [DOI] [PubMed] []\n\n9. Gholizadeh P, Eslami H, Yousefi M, Asgharzadeh M, Aghazadeh M, Kafil HS. Role of oral microbiome on oral cancers, a review. Biomed Pharmacother. 2016;84:552\u2013558. biopha. 2016. 09. 082. [DOI] [PubMed] []\n\n10. Ganly I, Yang L, Giese RA, Hao Y, Nossa CW, Morris LGT, et al\nPeriodontal pathogens are a risk factor of oral cavity squamous cell carcinoma, independent of tobacco and alcohol and human papillomavirus. Int J Cancer. 2019;145:775\u2013784. 32152. [DOI] [PMC free article] [PubMed] []\n\n11. Mager DL, Haffajee AD, Devlin PM, Norris CM, Posner MR, Goodson JM. The salivary microbiota as a diagnostic indicator of oral cancer: a descriptive, non-randomized study of cancer-free and oral squamous cell carcinoma subjects. J Transl Med\n2005;3:27. [DOI] [PMC free article] [PubMed] []\n\n12. Wen L, Mu W, Lu H, Wang X, Fang J, Jia Y, et al. Porphyromonas gingivalis promotes oral squamous cell carcinoma progression in an immune microenvironment. J Dent Res. 2020;99:666\u2013675. [DOI] [PubMed] []\n\n13. Irfan M, Delgado RZR, Frias-Lopez J. The oral microbiome and cancer. Front Immunol 2020;11:591088. 10. 3389/fimmu. 2020. 591088\n[DOI] [PMC free article] [PubMed]\n\n14. Olsen I, Yilmaz O. Possible role of Porphyromonas gingivalis in orodigestive cancers. J Oral Microbiol. 2019;11:1563410. 2018. 1563410. [DOI] [PMC free article] [PubMed] []\n\n15. Binder Gallimidi A, Fischman S, Revach B, Bulvik R, Maliutina A, Rubinstein AM, et al. Periodontal pathogens Porphyromonas gingivalis and Fusobacterium nucleatum promote tumor progression in an oral-specific chemical carcinogenesis model\nOncotarget 2015;6:22613\u201323. 10. 18632/oncotarget. 4209. [DOI] [PMC free article] [PubMed]\n\n16. M\u00e4kinen A, Nawaz A, M\u00e4kitie A, Meurman JH. Role of non-Albicans Candida and Candida Albicans in oral squamous cell cancer patients. J Oral Maxillofac Surg. 2018;76:2564\u20132571. joms. 2018. 06. 012. [DOI] [PubMed] []\n\n17. Sreebny LM. Saliva in health and disease: an appraisal and update. Int Dent J. 2000;50:140\u2013161. 1875-595X. 2000. TB00554. X\n[DOI] [PubMed] []\n\n18. Epstein JB, Pearsall NN, Truelove EL. Quantitative relationships between Candida albicans in saliva and the clinical status of human subjects. J Clin Microbiol. 1980;12:475\u2013476. 12. 3. 475-476. 1980. [DOI] [PMC free article] [PubMed] []\n\n19. Ciric L, Pratten J, Wilson M, Spratt D. Development of a novel multi-triplex qPCR method for the assessment of bacterial community structure in oral populations. Env Microbiol Rep\n2010;2:770\u2013774. 1758-2229. 2010. 00183. x. [DOI] [PubMed] []\n\n20. Nadkarni MA, Martin FE, Jacques NA, Hunter N. Determination of bacterial load by real-time PCR using a broad-range (universal) probe and primers set. Microbiol. 2002;148:257\u2013266. [DOI] [PubMed] []\n\n21. Vollmer T, Stormer M, Kleesiek K, Dreier J\nEvaluation of novel broad-range real-time PCR assay for rapid detection of human pathogenic fungi in various clinical specimens. J Clin Microbiol. 2008;46:1919\u20131926. 02178-07. [DOI] [PMC free article] [PubMed] []\n\n22. Kozich JJ, Westcott SL, Baxter NT, Highlander SK, Schloss PD. Development of a dual-index sequencing strategy and curation pipeline for analyzing amplicon sequence data on the MiSeq Illumina sequencing platform. Appl Env Microbiol. 2013;79:5112\u20135120\n01043-13. [DOI] [PMC free article] [PubMed] []\n\n23. Kahharova D, Brandt BW, Buijs MJ, Peters M, Jackson R, Eckert G, et al. Maturation of the oral microbiome in caries-free toddlers: a longitudinal study. J Dent Res. 2020;99:159\u2013167. [DOI] [PMC free article] [PubMed] []\n\n24. Edgar RC. Search and clustering orders of magnitude faster than BLAST. Bioinformatics. 2010;26:2460\u20132461.\n[DOI] [PubMed] []\n\n25. Edgar RC. UNOISE2: improved error-correction for Illumina 16S and ITS amplicon sequencing 2016. 10. 1101/081257. 26. Chen T, Yu WH, Izard J, Baranova O V, Lakshmanan A, Dewhirst FE. The Human Oral Microbiome Database: a web accessible resource for investigating oral microbe taxonomic and genomic information. Database (Oxford) 2010;2010. 10. 1093/DATABASE/BAQ013. [DOI] [PMC free article] [PubMed]\n\n27. Hammer \u00d8, Harper DA, Ryan PD\nPAST: Paleontological statistics software package for education and data analysis. Palaeontol Electron. 2001;4(1). http://palaeo-electronica. org/2001_1/past/issue1_01. htm. 28. Oksanen J, Simpson GL, Blanchet FG, Kindt R, Legendre P, Minchin PR, et al. vegan: Community Ecology Package 2022. https://CRAN. R-project. org/package=vegan. 29. R Core Team. R: a language and environment for statistical computing. 2020. https://www. r-project. org/. 30\nSegata N, Izard J, Waldron L, Gevers D, Miropolsky L, Garrett WS, et al. Metagenomic biomarker discovery and explanation. Genome Biol. 2011;12:R60. [DOI] [PMC free article] [PubMed] []\n\n31. Goeman JJ, van de Geer SA, de Kort F, van Houwelingen HC. A global test for groups of genes: testing association with a clinical outcome. Bioinformatics. 2004;20:93\u201399. [DOI] [PubMed] []\n\n32. Robinson MD, Oshlack A\nA scaling normalization method for differential expression analysis of {RNA}-seq data. Genome Biol. 2010;11:R25. [DOI] [PMC free article] [PubMed] []\n\n33. Robinson MD, McCarthy DJ, Smyth GK. edgeR}: a {Bioconductor package for differential expression analysis of digital gene expression data. Bioinformatics. 2010;26:139\u2013140. [DOI] [PMC free article] [PubMed] []\n\n34\nHuber W, von Heydebreck A, S\u00fcltmann H, Poustka A, Vingron M. Variance stabilization applied to microarray data calibration and to the quantification of differential expression. Bioinformatics. 2002;18:S96\u2013S104. suppl_1. S96. [DOI] [PubMed] []\n\n35. Pilarczyk-Zurek M, Sitkiewicz I, Koziel J. The clinical view on Streptococcus anginosus group \u2013 opportunistic pathogens coming out of hiding. Front Microbiol. 2022;13:2533. 2022\n956677/BIBTEX. [DOI] [PMC free article] [PubMed] []\n\n36. Senn L, Entenza JM, Greub G, Jaton K, Wenger A, Bille J, et al. Bloodstream and endovascular infections due to Abiotrophia defectiva and Granulicatella species. BMC Infect Dis 2006;6. 10. 1186/1471-2334-6-9. [DOI] [PMC free article] [PubMed]\n\n37. Thurnheer T, Karygianni L, Flury M, Belibasakis GN\nFusobacterium species and subspecies differentially affect the composition and architecture of supra- and subgingival biofilms models. Front Microbiol. 2019;10:1716. 2019. 01716. [DOI] [PMC free article] [PubMed] []\n\n38. Shahi SK, Freedman SN, Murra AC, Zarei K, Sompallae R, Gibson-Corley KN, et al. Prevotella histicola, a human gut commensal, is as potent as COPAXONE\u00ae in an animal model of multiple sclerosis. Front Immunol 2019;10. 10. 3389/FIMMU. 2019. 00462\n[DOI] [PMC free article] [PubMed]\n\n39. Ribeiro AA, Azcarate-Peril MA, Cadenas MB, Butz N, Paster BJ, Chen T, et al. The oral bacterial microbiome of occlusal surfaces in children and its association with diet and caries. PLoS One 2017;12. 10. 1371/JOURNAL. PONE. 0180621. [DOI] [PMC free article] [PubMed]\n\n40. Baraniya D, Jain V, Lucarelli R, Tam V, Vanderveer L, Puri S, et al. Screening of health-associated oral bacteria for anticancer properties in vitro\nFront Cell Infect Microbiol 2020;10:575656. 10. 3389/fcimb. 2020. 575656. [DOI] [PMC free article] [PubMed]\n\n41. Pinkney JA, Nagassar RP, Roye-Green KJ, Ferguson T. Abiotrophia defectiva endocarditis. BMJ Case Rep 2014;2014. 10. 1136/BCR-2014-207361. [DOI] [PMC free article] [PubMed]\n\n42. Lee MHH, Lawlor M, Lee AJ. Abiotrophia defectiva bleb-associated endophthalmitis confirmed with 16s ribosomal RNA sequencing. J Glaucoma. 2015;24:87\u201388. 0B013E3182953AD9\n[DOI] [PubMed] []\n\n43. Zhang L, Liu Y, Zheng HJ, Zhang CP. The oral microbiota may have influence on oral cancer. 3389/fcimb. 2019. 00476. [DOI] [PMC free article] [PubMed] []\n\n44. Caufield PW, Sch\u00f6n CN, Saraithong P, Li Y, Argim\u00f3n S. Oral Lactobacilli and dental caries: a model for niche adaptation in humans. J Dent Res. 2015;94:110S\u2013118S. 1177_0022034515576052-FIG2\nJPEG. [DOI] [PMC free article] [PubMed] []\n\n45. Takeuchi Y, Umeda M, Sakamoto M, Benno Y, Huang Y, Ishikawa I. Treponema socranskii, Treponema denticola, and Porphyromonas gingivalis are associated with severity of periodontal tissue destruction. J Periodontol. 2001;72:1354\u20131363. 2001. 72. 10. 1354. [DOI] [PubMed] []\n\n46. N\u00f3brega LM, Delboni MG, Martinho FC, Zaia AA, Ferraz CC, Gomez BP. Treponema diversity in root canals with endodontic failure\n[DOI] [PubMed] []\n\n49. Zhang Y, Wang X, Li H, Ni C, Du Z, Yan F. Human oral microbiota and its modulation for oral health. Biomed Pharmacother. 2018;99:883\u2013893. biopha. 2018. 01. 146. [DOI] [PubMed] []\n\n50. Sami A, Elimairi I, Stanton C, Paul Ross R, Anthony Ryan C. Molecular sciences the role of the microbiome in oral squamous cell carcinoma with insight into the microbiome-treatment axis. Int J Mol Sci 2020;21. 10. 3390/ijms21218061\n[DOI] [PMC free article] [PubMed]\n\n51. Almst\u00e5hl A, Wikstr\u00f6m M, Fagerberg-Mohlin B. Microflora in oral ecosystems in subjects with radiation-induced hyposalivation. Oral Dis. 2008;14:541\u2013549. 1601-0825. 2007. 01416. X. [DOI] [PubMed] []\n\n52. Hu Y jian, Shao Z yang, Wang Q, Jiang Y tao, Ma R, Tang Z sheng, et al. Exploring the dynamic core microbiome of plaque microbiota during head-and-neck radiotherapy using pyrosequencing. PLoS One 2013;8. 10. 1371/JOURNAL. PONE\n0056343. [DOI] [PMC free article] [PubMed]\n\n53. Rogers SN, Lowe D. Health-related quality of life after oral cancer treatment: 10-year outcomes. Oral Surg Oral Med Oral Pathol Oral Radiol. 2020;130:144\u2013149. OOOO. 2020. 02. 018. [DOI] [PubMed] []\n\n54. Cornejo Ulloa P, van der Veen MH, Krom BP. Review: modulation of the oral microbiome by the host to promote ecological balance. Odontology. 2019;107:437\u2013448.\n[DOI] [PMC free article] [PubMed] []\n\n55. Plachokova AS, Andreu-S\u00e1nchez S, Noz MP, Fu J, Riksen NP. Oral microbiome in relation to periodontitis severity and systemic inflammation. Int J Mol Sci. 2021;22:5876. [DOI] [PMC free article] [PubMed] []\n\n56. Institute for Health and Wellfare. Sotkanet. fi Statistics and Indicator Bank n. d. https://sotkanet. fi/sotkanet/en/. (Accessed 4 Jan 2023)\nArticles from Microbiome are provided here courtesy of BMC Abstract\nBackground\nTreating oral squamous cell carcinoma (OSCC) introduces new ecological environments in the oral cavity. This is expected to cause changes in the oral microbiome. The purpose of this study was to gain new information on the salivary microbiome of OSCC patients in order to improve the aftercare of OSCC patients\nThe suboptimal results regarding both survival and treatment-related side effects warrant further research. Management of oral squamous cell carcinoma (OSCC) is based on surgical resection of the tumor with or without adjuvant treatment, i. e., radiotherapy or chemoradiotherapy [3]. The surgical approach often includes reconstruction of the oncological defect [4]. These treatment approaches frequently lead to functional deficits in chewing or speaking, as well as dry mouth (xerostomia)\nLymph nodes at risk for metastases are treated either with neck dissection or by radiotherapy [5], which may both affect the salivary glands and further decrease salivary flow. These changes lead to a new ecological environment in the oral cavity, which is expected to also cause changes in the oral microbiome. Associations between microbial dysbiosis and different gastrointestinal cancers have been previously studied [6\u20138]\nThe role of microbial dysbiosis in OSCC specifically is also increasingly recognized [9, 10]. Bacteria such as Capnocytophaga gingivalis, Prevotella melaninogenica, and Streptococcus mitis have been suggested as possible biomarkers for OSCC [11]. Furthermore, several studies have suggested that Porphyromonas gingivalis and Fusobacterium nucleatum might be promoters of tumorigenesis in OSCC [12\u201315]\nAgainst this background, the aims of our present study were (1) to compare the salivary microbial profiles of OSCC patients with those of healthy controls and (2) to study the possible changes in the salivary microbial profiles from before cancer treatment to the post-treatment phase. We hypothesized that the salivary microbial profiles of the patients differ from those of the controls\nFurther, we anticipated that cancer treatment affects the microbiome causing the microbial profiles to differ between the pre-treatment and post-treatment samples. Patients and methods\nThis study is part of a larger project on oral cancer that examines 100 oral squamous cell cancer patients at the beginning of their treatment path and 44 patients at follow-up [16]. Additionally, 103 age- and sex-matched controls were studied\nCancer patients\nOne hundred patients diagnosed with OSCC and referred for protocol cancer surgery to the Department of Oral and Maxillofacial Diseases, Helsinki University Hospital, Helsinki, Finland, between the years 2011 and 2014, were enrolled in the study and asked to give a saliva sample prior to their cancer surgery. Inclusion criteria were oral cavity cancer of squamous cell origin with planned surgical removal of the tumor"
+}

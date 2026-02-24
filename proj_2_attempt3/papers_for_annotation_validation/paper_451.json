@@ -1,0 +1,375 @@
+{
+  "paper_id": "451",
+  "paper_title": "Characterization of the upper and lower respiratory tract microbiota in Piedmontese calves",
+  "study_type": "disease_characterization",
+  "primary_disease": "bovine respiratory disease (BRD)",
+  "sample_sites": [
+    "nasal",
+    "respiratory"
+  ],
+  "relationships": [
+    {
+      "id": "451_rel_001",
+      "taxon_name": "Mycoplasma",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "bovine respiratory disease (BRD)",
+      "direction": "unchanged",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Mycoplasma was the most abundant genus in both NS and TTA samples across all animals. The paper explicitly states no significant difference in microbial composition by clinical signs (BRD vs healthy) for either NS or TTA samples (P > 0.05). Mycoplasma was found abundantly in both healthy and BRD-affected calves.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "no correlation was found between the presence or absence of clinical signs and microbial composition of the NS and the TTA samples (Adonis on Bray-Curtis dissimilarity, weighted UniFrac, or unweighted UniFrac distance; P > 0. 05, power > 90%)"
+      }
+    },
+    {
+      "id": "451_rel_002",
+      "taxon_name": "Mycoplasma",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "bovine respiratory disease (BRD)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "no_statistical_test_for_this_specific_relationship"
+        ],
+        "criticism_flags": [
+          "direction_from_discussion_not_primary_result"
+        ],
+        "review_notes": "The paper discusses that Mycoplasma was previously identified with high abundance in the upper respiratory airways of both healthy and BRD-affected calves, citing prior literature. This is a discussion point about prior literature, not a primary finding of this study. Removed in favor of rel_001 which captures the actual finding (unchanged).",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "This genus was previously identified with high abundance in the upper respiratory airways of both healthy and BRD-affected calves"
+      }
+    },
+    {
+      "id": "451_rel_003",
+      "taxon_name": "Pasteurella multocida",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "bovine respiratory disease (BRD)",
+      "direction": "unchanged",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Pasteurella multocida was the most abundant species in the TTA samples (7.3% of total OTUs). The paper explicitly found no significant difference in lower respiratory tract microbiota between healthy and BRD-affected calves. The discussion explicitly addresses P. multocida as potentially part of the normal lower respiratory tract flora.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "The absence of a significant difference in lower microbiota composition between healthy and BRD-affected calves suggests that P. multocida could be part of the microbial flora of the lower respiratory tract of healthy animals"
+      }
+    },
+    {
+      "id": "451_rel_004",
+      "taxon_name": "Mannheimia haemolytica",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "bovine respiratory disease (BRD)",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "mentioned_as_known_pathogen_not_primary_finding"
+        ],
+        "criticism_flags": [
+          "no_directional_data_in_this_paper"
+        ],
+        "review_notes": "Mannheimia haemolytica is mentioned as one of the main BRD pathogens identified by culture-based methods in the literature context, not as a primary finding of this study. The genus Mannheimia was found at 1.6% in TTA and 1.2% overall, but no statistical comparison between BRD and healthy animals was reported for this taxon specifically.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "The bacterial pathogens most often identified by culture-based methods in the course of BRD are Mannheimia haemolytica, Pasteurella multocida, Histophilus somni, and Mycoplasma bovis"
+      }
+    },
+    {
+      "id": "451_rel_005",
+      "taxon_name": "Mycoplasma bovis",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "bovine respiratory disease (BRD)",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "species_level_not_resolved_in_sequencing"
+        ],
+        "criticism_flags": [
+          "mentioned_in_background_context_not_primary_result"
+        ],
+        "review_notes": "M. bovis is explicitly mentioned as a recognized major etiologic agent in BRD and otitis media. However, the 16S sequencing in this study could not resolve Mycoplasma to species level, so M. bovis was not specifically identified as present or changed in this study's primary data.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Although M. bovis is recognized as a major etiologic agent in BRD and otitis media, less is known about other Mycoplasma spp., e. g., M. dispar and M. bovirhinis, which have been detected less frequently in the bovine respiratory tract"
+      }
+    },
+    {
+      "id": "451_rel_006",
+      "taxon_name": "Moraxella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "bovine respiratory disease (BRD)",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "nasal",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "no_significant_difference_found_in_this_study"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Moraxella was the second most abundant genus in the NS samples (16.6%). The paper notes that Lima et al. found a correlation between Moraxella and BRD development in a prior study, but this study found no significant difference by clinical signs. The paper presents Moraxella's role in BRD as controversial.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Lima et al. [31] also found a correlation between the presence of Moraxella and the development of BRD"
+      }
+    },
+    {
+      "id": "451_rel_007",
+      "taxon_name": "Fusobacteria",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "bovine respiratory disease (BRD)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_is_NS_vs_TTA_not_disease_vs_control"
+        ],
+        "criticism_flags": [
+          "change_context_ambiguous"
+        ],
+        "review_notes": "Fusobacteria was found to be characteristically more abundant in the lower respiratory tract (TTA: 4.2%) compared to the upper respiratory tract (NS: not dominant), and was described as 'characteristic of this ecosystem.' This is a sample site comparison, not a BRD vs healthy comparison. There was no significant difference between BRD and healthy animals for this phylum. Flagged because the direction here refers to TTA vs NS abundance, not disease vs control.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Fusobacteria seemed to be characteristic of this ecosystem. Identification of this phylum in the bovine upper respiratory tract has rarely been reported and each time with low abundance"
+      }
+    },
+    {
+      "id": "451_rel_008",
+      "taxon_name": "Tenericutes",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "bovine respiratory disease (BRD)",
+      "direction": "unchanged",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Tenericutes was the most abundant phylum overall (61.8%), dominant in both NS and TTA samples from both healthy and BRD-affected calves. No significant difference was found between BRD and healthy animals. P > 0.05 for all beta diversity comparisons by clinical signs.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "no correlation was found between the presence or absence of clinical signs and microbial composition of the NS and the TTA samples (Adonis on Bray-Curtis dissimilarity, weighted UniFrac, or unweighted UniFrac distance; P > 0. 05, power > 90%)"
+      }
+    },
+    {
+      "id": "451_rel_009",
+      "taxon_name": "Proteobacteria",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "bovine respiratory disease (BRD)",
+      "direction": "unchanged",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Proteobacteria was the second most abundant phylum overall (19%). No significant difference was found between BRD and healthy animals. P > 0.05 for all beta diversity comparisons by clinical signs.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "no correlation was found between the presence or absence of clinical signs and microbial composition of the NS and the TTA samples (Adonis on Bray-Curtis dissimilarity, weighted UniFrac, or unweighted UniFrac distance; P > 0. 05, power > 90%)"
+      }
+    },
+    {
+      "id": "451_rel_010",
+      "taxon_name": "Corynebacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "bovine respiratory disease (BRD)",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "nasal",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "no_statistical_comparison_for_this_taxon"
+        ],
+        "criticism_flags": [
+          "direction_discussed_in_children_context_not_calves"
+        ],
+        "review_notes": "Corynebacterium was identified in all NS samples. The paper notes it was previously found with relatively high abundance in the bovine upper respiratory tract, and that in children it has been correlated with reduced risk of otitis media and respiratory disease. No direct statistical comparison for BRD vs healthy was reported for this genus in the present study.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Corynebacterium was identified in all NS samples, and previous studies have reported its relatively high abundance in the bovine upper respiratory tract [25, 26, 31]. In children, it has been correlated with a reduced risk of developing otitis media and respiratory disease"
+      }
+    },
+    {
+      "id": "451_rel_011",
+      "taxon_name": "Histophilus somni",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "bovine respiratory disease (BRD)",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "mentioned_as_known_pathogen_not_primary_finding"
+        ],
+        "criticism_flags": [
+          "background_mention_only"
+        ],
+        "review_notes": "Histophilus somni is mentioned in the background as one of the classical BRD pathogens identified by culture-based methods. It is not specifically reported as present or absent in this study's sequencing results (the species could not be resolved from genus-level data).",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "The bacterial pathogens most often identified by culture-based methods in the course of BRD are Mannheimia haemolytica, Pasteurella multocida, Histophilus somni, and Mycoplasma bovis"
+      }
+    },
+    {
+      "id": "451_rel_012",
+      "taxon_name": "Moraxella bovis",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "infectious bovine keratoconjunctivitis",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "mentioned_as_known_pathogen_not_primary_finding"
+        ],
+        "criticism_flags": [
+          "different_disease_from_main_study"
+        ],
+        "review_notes": "Moraxella bovis is mentioned as the etiological agent of infectious bovine keratoconjunctivitis (IBK), a disease different from BRD. This is a contextual mention only, not a finding of the present study. Kept because the paper explicitly names this organism-disease relationship.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "In cattle, Moraxella bovis is the etiological agent of infectious bovine keratoconjunctivitis (IBK), and Moraxella genus has rarely been isolated in the course of BRD"
+      }
+    },
+    {
+      "id": "451_rel_013",
+      "taxon_name": "Mannheimia",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "bovine respiratory disease (BRD)",
+      "direction": "unchanged",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Mannheimia was identified in TTA samples at 1.6% abundance. Given the overall finding of no significant difference between BRD and healthy animals, and it being a known BRD pathogen present in both groups, direction is marked unchanged. No direct per-taxon statistical test reported for Mannheimia vs clinical status.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "A few other genera with an abundance > 1% were also found in... the TTA samples [Mannheimia 1. 6% (0. 7% \u00b1 0. 6%), Bacteroides 1. 5% (1. 8% \u00b1 1. 8%), Ureaplasma 1. 3% (1. 2% \u00b1 0. 6%)]"
+      }
+    },
+    {
+      "id": "451_rel_014",
+      "taxon_name": "Ureaplasma",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "bovine respiratory disease (BRD)",
+      "direction": "unchanged",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Ureaplasma was identified in TTA samples at 1.3% abundance. Given the overall finding of no significant difference between BRD and healthy animals, direction is marked unchanged. No per-taxon statistical comparison by clinical status reported.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "A few other genera with an abundance > 1% were also found in... the TTA samples [Mannheimia 1. 6% (0. 7% \u00b1 0. 6%), Bacteroides 1. 5% (1. 8% \u00b1 1. 8%), Ureaplasma 1. 3% (1. 2% \u00b1 0. 6%)]"
+      }
+    }
+  ],
+  "extraction_stats": {
+    "layer1_raw_count": {
+      "combined": 16
+    },
+    "layer1_union_count": 16,
+    "layer2_corrections": 2,
+    "layer3_additions": 0,
+    "layer3_removals": 2,
+    "final_count": 14
+  },
+  "paper_text": "Characterization of the upper and lower respiratory tract microbiota in Piedmontese calves\n\nAbstract\nBackground\nThe microbiota of the bovine upper respiratory tract has been recently characterized, but no data for the lower respiratory tract are available. A major health problem in bovine medicine is infectious bronchopneumonia, the most common respiratory syndrome affecting cattle. With this study, we used 16S rRNA gene sequencing to characterize and compare the microbial community composition of the upper and lower respiratory tracts in calves\nResults\nThe microbiota of the upper (nasal swab [NS]) and the lower (trans-tracheal aspiration [TTA]) respiratory tracts of 19 post-weaned Piedmontese calves with (8/19) and without (11/19) clinical signs of respiratory disease, coming from six different farms, was characterized by 16S rRNA gene metabarcoding. A total of 29 phyla (29 in NS, 21 in TTA) and 305 genera (289 in NS, 182 in TTA) were identified. Mycoplasma (60. 8%) was the most abundant genus identified in both the NS (27\n3%) and TTA (76. 7%) samples, followed by Moraxella (16. 6%) in the NS and Pasteurella (7. 3%) in the TTA samples. Pasteurella multocida (7. 3% of total operational taxonomic units [OTUs]) was the most abundant species in the TTA and Psychrobacter sanguinis (1. 1% of total OTUs) in the NS samples. Statistically significant differences between the NS and the TTA samples were found for both alpha (Shannon index, observed species, Chao1 index, and Simpson index; P\u2009=\u20090. 001) and beta (Adonis; P\u2009=\u20090\n001) diversity. Comparison of the NS and TTA samples by farm origin and clinical signs revealed no statistical difference (P\u2009>\u20090. 05), except for farm origin for the NS samples when compared by the unweighted UniFrac metric (P\u2009=\u20090. 05). Conclusions\nUsing 16S rRNA gene sequencing, we characterized the microbiota of the upper and lower respiratory tracts of calves, both healthy individuals and those with clinical signs of respiratory disease\nA major health problem in bovine medicine is infectious bronchopneumonia, the most common respiratory syndrome affecting cattle. With this study, we used 16S rRNA gene sequencing to characterize and compare the microbial community composition of the upper and lower respiratory tracts in calves\nDNA metabarcoding allows the generation of multiple reads of the hypervariable regions of the 16S rRNA gene in a single run, thus yielding a wealth of phylogenetic information in a single experiment [1]. The 16S rRNA gene metabarcoding approach applied to lower respiratory tract samples from humans led to the discovery that the lung is not sterile even in healthy conditions [2]\nThe finding of lung microbiota in a healthy subject was initially explained as a temporal contamination from the upper respiratory tract either during sampling or by microaspiration [3]. However, recent studies have shown that the microbiota of the lung could be considered an ecosystem and that its composition depends on the immigration, elimination, and reproduction rates of the microbial communities present there [4\u20136]\nThough the components of this ecosystem derive from the upper respiratory tract, they could be able to proliferate in the lungs and form a self-sustaining lung microbiota [4\u20136]. DNA metabarcoding analysis of pathological respiratory samples led to the hypothesis that alteration of the lung microbiota could assume a key role in the pathogenesis of human lung diseases, including bacterial pneumonia [6, 7]\nStudy of the bovine respiratory tract holds huge importance because one of the main health issues in the cattle industry is infectious bronchopneumonia, defined as bovine respiratory disease (BRD) [8, 9]. In Europe, BRD is associated with high morbidity and mortality, which leads to a widespread use of antimicrobials and, therefore, increases the alarm about antibiotic resistance [10\u201319]\nBRD is a multifactorial disease resulting from interactions between management, physiologic, and environmental factors and etiological agents [20, 21]. The bacterial pathogens most often identified by culture-based methods in the course of BRD are Mannheimia haemolytica, Pasteurella multocida, Histophilus somni, and Mycoplasma bovis [22]\nConsidered ubiquitous inhabitants of the bovine upper respiratory tract, these bacterial species can proliferate in the lungs when inhaled during stressful events or viral infections [22]. However, they have also been isolated from the lower respiratory tract of calves not presenting clinical signs, raising questions about their role in the development of BRD [23, 24]. A better understanding of the etiology of BRD is critical to improve animal health\nIn cattle, 16S rRNA gene metabarcoding to characterize the microbiota of the upper respiratory tract has been applied on nasal swab samples from dairy and beef calves [25\u201331]. Timsit et al. [26] and Holman et al. [28], for example, reported that the upper respiratory tract microbiota of beef cattle is not stable in the first 40\u00a0days on feedlot, possibly explaining their higher susceptibility for developing BRD in this period. Moreover, Lima et al\n[31] found that the upper respiratory tract microbiota of dairy calves significantly differed depending on the animal\u2019s clinical respiratory status. The application of this new technique to respiratory tract samples has attracted increasing interest; however, to our knowledge, data about the bovine lower respiratory tract microbiota are still lacking\nThe goal of this study was to characterize the microbiota of the upper and lower respiratory tracts by applying 16S rRNA gene metabarcoding on nasal swab (NS) and trans-tracheal aspiration (TTA) samples from post-weaned Piedmontese calves with and without clinical signs of BRD. Methods\nSample population and sample collection\nThe study was performed in Piedmont, northwest Italy. The six farms included in the study were located in the provinces of Torino (TO), Cuneo (CN), and Vercelli (VC)\nThe median distance as the crow flies between the farms was 50\u00a0km (min-max, 11\u201397\u00a0km) (map given in Additional\u00a0file\u00a01). The six farms were located in a restricted area with similar geographical and climatic characteristics. The farms were all cow-calf operations with the same animal management\nBriefly, the calves were held with the mother until the end of the weaning period (5\u00a0months), then moved to multiple straw-bedded boxes (5\u201310 animals) with free access to water and feed (roughage and concentrate). The animals included were post-weaned Piedmontese calves receiving veterinary care by the Veterinary Teaching Hospital of the University of Turin. Medical history and physical examination data were collected via a standardized collection form for each calf\nA complete physical examination was performed for all animals focusing on typical clinical signs of BRD: cough, nasal discharge, and abnormal sounds at thoracic auscultation (wheezes, crackles) (Master Classic II\u2122, 3M Littmann\u00ae stethoscope, 3M, St. Paul, MN, USA). Calves that had been treated in the week prior to examination or presented clinical signs suggestive of diseases different from BRD were excluded from the study\nNasal swab (NS) samples were collected using sterile swabs (17\u00a0cm, DrySwab, Copan S. p. A, Italy) from both nostrils of each calf after cleaning the nostrils with 90% ethyl alcohol. Trans-tracheal aspiration (TTA) was performed as previously described [23]. Briefly, the animals were mildly sedated with intravenous injection of 0\n05\u00a0mg/kg Xylasine (Rompun\u00ae, Bayer Healthcare, Germany), and an area of 3\u2009\u00d7\u20093\u00a0cm about 7\u201310\u00a0cm caudal to the larynx was shaved and surgically prepared with 90% ethyl alcohol and iodophors. The area was desensitized with 4% procaine hydrochloride (Aticain\u00ae, A. T. I., Italy), and a longitudinal 1-cm incision was then placed in the midline directly above the trachea. A 12-G needle was used to perforate the trachea between two cartilage rings\nA male dog urinary catheter (2\u00a0mm\u2009\u00d7\u200950\u00a0cm; Buster, sterile dog catheter, Kruuse, Germany) was introduced into the needle and pushed down into the airway for about 45\u00a0cm. Finally, a volume of 50\u00a0ml sterile 0. 9% saline solution was injected through the catheter and immediately aspirated. To prevent sample contamination, a new sterile kit and a new pair of sterile gloves were used for each calf. All samples were stored at \u2212\u200980\u00a0\u00b0C until analysis\nDNA extraction and library preparation\nDNA extraction\nDNA was isolated using DNAzol\u00ae reagent (Invitrogen, Carlsbad, CA, USA) according to the manufacturer\u2019s instructions. Briefly, the NS were dipped in 500\u00a0\u03bcl of DNAzol\u00ae reagent immediately after collection, while the TTA fluids were pelleted and added with 1\u00a0ml of DNAzol\u00ae reagent, after thawing at 4\u00a0\u00b0C. The samples were then repeatedly homogenized and incubated at 4\u00a0\u00b0C for 18\u00a0h\nAfter DNA precipitation by means of ethanol, the pellets were rinsed twice. Finally, DNA was eluted in 30\u00a0\u03bcl of RNase and DNase free water. The DNA concentration of each sample was determined using a Qubit fluorimeter (Qubit\u00ae, Invitrogen) and normalized to 5\u00a0ng/\u03bcl. Samples with a lower DNA concentration were not processed further\nLibrary preparation\nThe normalized DNA was processed according to the 16S Metagenomic Sequencing Library Preparation protocol as recommended by Illumina (Illumina, San Diego, CA, USA). Briefly, 12\n5\u00a0ng of genomic DNA underwent an initial PCR step with the 16S amplicon PCR forward and reverse primers targeting the V3 and V4 regions of the 16S rRNA gene [32], followed by PCR cleanup with Agencourt Ampure XP (Beckman Coulter, Brea, CA, USA) magnetic beads, and index PCR for a second cleanup with magnetic beads\nNormalization was based on the average size of the library as assessed with an Agilent High Sensitivity DNA Kit on a 2100 Bioanalyzer (Agilent Technologies, Santa Clara, CA, USA) and quantification with a NEBNext\u00ae Library Quant Kit for Illumina\u00ae (New England Biolabs, Ipswich, MA, USA) normalization. The normalized libraries were eventually pooled and loaded for sequencing on an Illumina MiSeq platform with paired-end 2\u2009\u00d7\u2009300\u00a0bp protocol using a MiSeq\u00ae Reagent Kit ver. 3 (600\u00a0cycles) (Illumina)\nNeither blank controls nor mock communities were included in the present study; however, in order to limit the influence of contamination by extraction and amplification on the analysis, all samples were processed using the same DNA extraction reagents, and the amplifications were conducted with the same reagent lots. Bioinformatic and statistical analysis\nReads were processed for quality filtering (using Q30 as threshold), adapter and primer removal BBDuk2 ver. 36\n14; mate pairing was performed with BBMerge ver. 9. 00 (https://sourceforge. net/projects/bbmap/). The fasta files were then processed using a Quantitative Insights Into Microbial Ecology (QIIME) 1. 9. 1 pipeline [33]. In detail, paired reads were merged in a single fasta file with multiple_split_libraries_fastq. py script, which provides further quality filtering. Operational taxonomic unit (OTU) picking was performed with the pick_open_reference_otus\npy using the UCLUST method and with 97% identity to the Greengenes (version gg_13_8) reference database, followed by de novo clustering [34]. Representative sequences were checked for de novo chimera detection using ChimeraSlayer integrated in QIIME, and the chimeras were then filtered out from the OTU table [35]. The alpha and beta diversities were computed with the core_diversity_analyses. py script, rarefying the samples at 2500 reads\nSamples with less than 2500 reads were excluded from the statistical analysis because these were not representative. Phyla, genera, and species abundance was reported as overall relative abundance, average relative abundance, and standard error of the mean (SEM). Statistical support to the alpha diversity comparison between groups was assessed by nonparametric test with Monte Carlo permutations implemented in the compare_alpha_diversity\npy script, while for the variance within and between groups, QIIME wrapper compare_categories. py was applied with permutational multivariate analysis of variance (PERMANOVA, Adonis method from R package Vegan implemented in QIIME). Statistically significant differences in OTU frequencies based on non-normalized raw counts between the NS and TTA samples from clinically healthy animals and those presenting at least one clinical sign suggestive of BRD were assessed using the differential_abundance\npy script that implements the R package DESeq2 [36], and P values were adjusted (Padj) for multiple-testing with the false discovery rate (FDR) procedure of Benjamini and Hochberg [37]. OTUs were considered differentially abundant if at Padj \u2264\u20090. 05 and if the estimated fold change was >\u20091. 5 or <\u20091/1. 5\nIn order to evaluate the type I and type II errors and strengthen the results, we performed a power analysis on the data grouped by sample type, and by sample type and clinical signs according to the method presented by La Rosa and colleagues, implemented in the R package HMP, using the MC. Xmcupo. statistics function and 1000 Monte Carlo experiments [38]\nResults\nStudy population\nThe number of calves selected from each farm ranged from 1 to 7, for a total of 22 calves (17 males and 5 females), aged from 5 to 14\u00a0months. Thirteen out of 22 animals (59%) were clinically healthy, and the remaining nine showed at least one clinical sign attributable to BRD (Table\u00a01). Nasal swab samples were collected from 17 out of 22 animals, and TTA samples were collected from all animals\nDNA was successfully extracted at a concentration above 5\u00a0ng/\u03bcl from 32 samples (13 NS and 19 TTA fluid samples). In one of the nine animals presenting clinical signs, the DNA concentration was below 5\u00a0ng/\u03bcl in both the NS and TTA samples; this animal was excluded from the study. At least one sample (NS or TTA) from 21 out of 22 calves was available for analysis. Further details regarding the study population are reported in Table 1. Table 1\nData about calves (origin, signalment, history, clinical examination) and number of reads of each sample\n\nID\nFarm\nAge (months)\nSex\nWeight (kg)\nPrevious episodes of BRD\nSpontaneous cough\nNasal discharge\nAbnormal lung sounds\nRead number NS sample\nRead number TTA sample\n\n1a\n\nTO1\n14\nM\n400\n3\u00a0months before sampling\nRepeated\nCloudy and bilateral\nWheezes and crackles on the left side of the thorax\nNP\n53,494\n\n2b\n\nCN1\n6\nM\n180\nNo\nAbsent\nAbsent\nAbsent\nNP\n7902\n\n3a\n\nCN1\n6\nM\n180\n1\u00a0month before sampling\nOccasional\nAbsent\nWheezes and crackles on both sides of the thorax\nNP\n47,115\n\n4b\n\nCN1\n6\nM\n180\nNo\nAbsent\nAbsent\nAbsent\nNP\n18,855\n\n5b\n\nCN1\n6\nM\n180\nNo\nAbsent\nAbsent\nAbsent\nNP\n81,564\n\n6a\n\nCN2\n6\nM\n180\nNo\nAbsent\nCloudy and unilateral\nAbsent\n36,160\n129,750\n\n7b\n\nCN2\n6\nM\n180\nNo\nAbsent\nAbsent\nAbsent\n28,543\n118,454\n\n8b\n\nCN2\n6\nM\n180\nNo\nAbsent\nAbsent\nAbsent\n31,232\n61,778\n\n9a\n\nCN2\n6\nM\n180\nNo\nAbsent\nCloudy and bilateral\nWheezes and crackles on both sides of the thorax\nDNA\u2009<\u20095\u00a0ng/\u03bcl\nDNA\u2009<\u20095\u00a0ng/\u03bcl\n\n10a\n\nVC1\n5\nF\n150\nNo\nRepeated\nAbsent\nWheezes and crackles on both sides of the thorax\n40,694\n142,459\n\n11a\n\nVC1\n5\nF\n150\n2\u00a0months before sampling\nAbsent\nAbsent\nWheezes and crackles on both sides of the thorax\n12,952\nDNA\u2009<\u20095\u00a0ng/\u03bcl\n\n12b\n\nVC1\n5\nF\n150\nNo\nAbsent\nAbsent\nAbsent\n5988\nDNA\u2009<\u20095\u00a0ng/\u03bcl\n\n13a\n\nVC1\n5\nM\n150\nNo\nAbsent\nAbsent\nWheezes and crackles on both sides of the thorax\n24,070\n26,910\n\n14b\n\nTO2\n6\nM\n200\nNo\nAbsent\nAbsent\nAbsent\nDNA\u2009<\u20095\u00a0ng/\u03bcl\n68,954\n\n15b\n\nTO2\n6\nF\n200\nNo\nAbsent\nAbsent\nAbsent\n20,464\n40,790\n\n16a\n\nTO2\n6\nF\n200\nNo\nAbsent\nAbsent\nWheezes and crackles on the right side of the thorax\n167,198\n107,679\n\n17a\n\nTO2\n6\nF\n200\nNo\nAbsent\nCloudy and bilateral\nAbsent\nDNA\u2009<\u20095\u00a0ng/\u03bcl\n143,886\n\n18b\n\nTO2\n6\nM\n200\nNo\nAbsent\nAbsent\nAbsent\n3932\n55,630\n\n19b\n\nTO2\n6\nM\n200\nNo\nAbsent\nAbsent\nAbsent\nDNA\u2009<\u20095\u00a0ng/\u03bcl\n1,825c\n\n20b\n\nTO2\n6\nM\n200\nNo\nAbsent\nAbsent\nAbsent\n154,004\n4585\n\n21b\n\nTO3\n5\nM\n170\nNo\nAbsent\nAbsent\nAbsent\n1,536c\n\n6833\n\n22b\n\nTO3\n5\nM\n170\nNo\nAbsent\nAbsent\nAbsent\n159c\n\n189c\n\nOpen in a new tab\n\nID = animal\u2019s identification number\nFarm origin = farms are indicated with the provincial code (TO Torino, CN Cuneo, VC Vercelli) and progressively numerated. Sex: M = male, F = female. Read number = number of reads for each sample. TTA = trans-tracheal aspiration sample. NS = nasal swab sample. NP = not performed\nDNA\u2009<\u20095\u00a0ng/\u03bc\u2009=\u2009samples with DNA concentration lower than 5\u00a0ng/\u03bcl and not sequenced\n\naCalves with clinical signs of BRD\n\nbHealthy calves\n\ncSamples with less than 2500 reads excluded from the final analysis\nGenetic analysis\nAfter primer and quality trimming and pair merging, the total read count was 3,482,819, with an average read length of 407\u2009\u00b1\u200980\u00a0bp. After application of the multiple_split_libraries_fastq\npy script to merge all the sequences in a single file, with further quality checks, the read number was 2,813,497. The total reads classified in the OTU table was 1,645,584, divided in 526,932 from the NS samples (median 24,072, min-max 159\u2013167,198) and 1,118,652 from the TTA fluid samples (median 53,494, min-max 189\u2013143,886). The number of assigned reads was below 2500 in 4 (2 NS and 2 TTA) out of 32 samples, and they were excluded from the analysis\nTherefore, the final analysis was performed on 28 samples (11 NS and 17 TTA) from 19 calves (8 with clinical signs, 11 clinically healthy). Of these 28 samples, 18 (64. 3%) were matched samples from the same animal (9 NS and 9 TTA) (Table\u00a01). Finally, the reads obtained from these 28 samples were classified in 4368 OTUs (median 226. 5, min-max 44\u20132502). The median (min-max) of the OTUs was 957 (495\u20132502) in the NS samples and 139 (44\u2013719) in the TTA samples\nA total of 810 unique sequences were classified as chimeric sequences and therefore removed from the OTU table before analysis. Phylum composition\nOverall, 29 phyla were identified. The microbial community of the samples was structured as follows: Tenericutes (61. 8%, 59%\u2009\u00b1\u20095. 6%), Proteobacteria (19%, 15. 6%\u2009\u00b1\u20093. 2%), Firmicutes (6. 5%, 8. 1%\u2009\u00b1\u20092. 2%), Bacteroidetes (5. 6%, 7. 2%\u2009\u00b1\u20091. 8%), Actinobacteria (3. 8%, 7. 1%\u2009\u00b1\u20092%), Fusobacteria (2. 8%, 1. 6%\u2009\u00b1\u20091. 1%), others (0. 3%, 0. 4%\u2009\u00b1\u20090\n1%), and unassigned (0. 2%, 1. 1%\u2009\u00b1\u20090. 9%). Of the 29 phyla identified in the NS samples, the most abundant were Proteobacteria (36. 1%, 21. 9%\u2009\u00b1\u20095. 3%), Tenericutes (27. 7%, 35. 4%\u2009\u00b1\u20096. 9%), Firmicutes (18. 4%, 19. 3%\u2009\u00b1\u20093. 3%), Bacteroidetes (10. 1%, 10. 8%\u2009\u00b1\u20092. 5%), and Actinobacteria (6. 3%, 8. 9%\u2009\u00b1\u20091. 6%). Only 21 out of 29 phyla were identified in the TTA fluid samples, and the most abundant were Tenericutes (77. 9%, 74. 3%\u2009\u00b1\u20095. 6%), Proteobacteria (11. 0%, 11. 4%\u2009\u00b1\u20093. 7%), Fusobacteria (4\n2%, 2. 5%\u2009\u00b1\u20091. 7%), Bacteroidetes (3. 5%, 4. 8%\u2009\u00b1\u20092. 4%), and Actinobacteria (2. 6%, 5. 9%\u2009\u00b1\u20093. 2%). Figure\u00a01 presents the phylum abundance and composition in the upper and lower respiratory tracts. Fig. 1. Open in a new tab\nAverage relative abundance of phyla in the nasal swab (NS) and trans-tracheal aspiration (TTA) samples. Only phyla with a relative abundance higher than 1% in at least one sample type were represented\nBlue columns represent NS (n\u2009=\u200911) samples, while red columns represent TTA (n\u2009=\u200917). The bars represent the standard error of the meanGenera and species composition\nA total of 305 genera were identified: 289 in the NS samples and 182 in the TTA samples. Overall, the most abundant genera were Mycoplasma (60. 7%, 58. 1%\u2009\u00b1\u20098. 9%), Moraxella (5. 5%, 2. 6%\u2009\u00b1\u20093%), and Pasteurella (5. 2%, 4. 9%\u2009\u00b1\u20093. 7%). Four other genera with a relative abundance higher than 1% were identified: Sphingomonas (1. 2%, 1\n1%\u2009\u00b1\u20090. 6%), Mannheimia (1. 2%, 0. 9%\u2009\u00b1\u20090. 9%), Aggregatibacter (1. 2%, 0. 5%\u2009\u00b1\u20090. 6%), and Bacteroides (1. 1%, 1. 2%\u2009\u00b1\u20091. 7%). Mycoplasma was the most abundant genus in both the NS and the TTA fluid samples, with a relative abundance of 27. 2% (35. 1%\u2009\u00b1\u20096. 9%) and 76. 5% (72. 9%\u2009\u00b1\u20095. 5%), respectively, followed by Moraxella (16. 6%, 5. 9%\u2009\u00b1\u20094. 8%) in the NS samples and by Pasteurella (7. 3%, 7. 6%\u2009\u00b1\u20093. 7%) in the TTA samples\nA few other genera with an abundance >\u20091% were also found in the NS samples [Aggregatibacter 3. 6% (1. 2%\u2009\u00b1\u20091%), Sphingomonas 3. 4% (2. 5%\u2009\u00b1\u20090. 8%), Corynebacterium 1. 3% (1. 6%\u2009\u00b1\u20090. 2%), Psychrobacter 1. 2% (1. 6%\u2009\u00b1\u20090. 6%), Coprococcus 1% (1%\u2009\u00b1\u20090. 2%)] and the TTA samples [Mannheimia 1. 6% (0. 7%\u2009\u00b1\u20090. 6%), Bacteroides 1. 5% (1. 8%\u2009\u00b1\u20091. 8%), Ureaplasma 1. 3% (1. 2%\u2009\u00b1\u20090. 6%)] (Fig. 2). Fig. 2\nOpen in a new tab\nAverage relative abundance of genera in the nasal swab (NS) and trans-tracheal aspiration (TTA) samples. Only bacterial genera with a relative abundance higher than 1% in at least one sample type were represented. Blue columns represent NS (n\u2009=\u200911) samples, while red columns represent TTA (n\u2009=\u200917). The bars represent the standard error of the meanBesides Mycoplasma, present in all samples, Delftia, Sphingomonas, and Agrobacterium composed the core biota of 90% of the samples\nTwelve OTUs were present in all NS samples, including seven orders (Aeromonadales, Actinomycetales, Clostridiales, Flavobacteriales, Mycoplasmatales, Saprospirales, and Sphingomonadales) and four genera (Succinivibrio, Mycoplasma, Sphingomonas, and Corynebacterium). Overall, 123 out of 305 genera were found only in the NS samples and 16 genera only in the TTA samples (Additional\u00a0file\u00a02: Table S1). Considering only the OTUs assigned at the species level, Pasteurella multocida (7\n3% of total OTUs, 7. 6%\u2009\u00b1\u20093. 7%) was the most abundant in the TTA fluid samples and Psychrobacter sanguinis (1. 1% of total OTUs, 1. 5%\u2009\u00b1\u20090. 6%) in the NS samples. The complete list of all species identified, when possible, is reported in Additional\u00a0file\u00a02: Table S2. Comparison of bacterial composition between TTA fluid and NS samples\nAlpha diversity values are reported in Table\u00a02. Good\u2019s coverage estimate with a rarefaction at 2500 was 91. 6%\u2009\u00b1\u20092. 9% for the NS and 99%\u2009\u00b1\u20090\n9% for the TTA fluid samples. The alpha diversity indices and rarefaction curves of each sample are reported in Additional\u00a0file\u00a03. Table 2. Alpha diversity indexes calculated for the nasal swab (NS) and trans-tracheal aspiration (TTA) samples\n\nTTA\nNS\n\nP value\n\nChao1 index\n95. 62\u2009\u00b1\u200978. 48\n720. 74\u2009\u00b1\u2009225. 22\n0. 001\n\nObserved species\n40. 57\u2009\u00b1\u200935. 21\n395. 30\u2009\u00b1\u2009152. 62\n0. 001\n\nShannon index\n1. 46\u2009\u00b1\u20090. 83\n5. 14\u2009\u00b1\u20091. 74\n0. 001\n\nSimpson index\n0. 45\u2009\u00b1\u20090. 24\n0. 82\u2009\u00b1\u20090. 13\n0\n001\n\nOpen in a new tab\nChao1 index, observed species, Shannon\u2019s diversity index, and Simpson index values are reported as mean\u2009\u00b1\u2009standard errorThere was a statistically significant difference in Shannon\u2019s diversity index between the TTA fluids and the NS samples, considering the confidence interval. The microbial composition of the upper and lower respiratory tracts was compared by Bray-Curtis dissimilarity, weighted UniFrac, and unweighted UniFrac phylogenetic distances\nThe difference between the two bacterial communities was statistically significant as assessed by Adonis (P\u2009=\u20090. 001), based on the three different distance matrices. Principal coordinates analysis (PCoA) plots of the methods are shown in Fig. 3. The type I error with a significance at 0. 05 was <\u20090. 001, as was the type II error, providing a power >\u200990%. Fig. 3. Open in a new tab\nPrincipal coordinates analysis (PCoA) 3D images\nPCoA was performed using Bray-Curtis dissimilarity (a), unweighted UniFrac (b), and weighted UniFrac (c) distance matrices. Each sample is represented by a point with nasal swabs (NS\u2009=\u200911) in blue and trans-tracheal aspiration (TTA\u2009=\u200917) in red\nThe clustering observed between the NS and TTA samples indicates differences in the microbial compositions of these sampling sitesThere were 741 OTUs with a statistically significant difference in abundance (as assessed by DESeq2 analysis) (details given in Additional\u00a0file\u00a04), with 19 more abundant in the TTA microbiota and 722 in the NS one\nCorrelation of microbiota composition of NS and TTA fluid samples in relation to clinical status and farm of origin\nComparison of the microbiota composition of the TTA samples by farm of origin showed no statistically significant difference for this factor (Adonis on either Bray-Curtis dissimilarity, weighted UniFrac, or unweighted UniFrac distance; P\u2009>\u20090. 05). It was not possible to estimate the type I and II errors because one group had size\u2009=\u20091\nSimilarly, no statistical difference in the microbiota composition of the NS samples was found when two statistical methods (Adonis on Bray-Curtis dissimilarity and weighted UniFrac distances; P\u2009>\u20090. 05) were applied, except when compared based on unweighted UniFrac distance (P\u2009=\u20090. 05). The type I error with a significance at 0. 05 was <\u20090. 001, as well as the type II error, providing a power >\u200990%\nFinally, no correlation was found between the presence or absence of clinical signs and microbial composition of the NS and the TTA samples (Adonis on Bray-Curtis dissimilarity, weighted UniFrac, or unweighted UniFrac distance; P\u2009>\u20090. 05, power >\u200990%). Discussion\nTo the best of our knowledge, this is the first study using the 16S rRNA gene metabarcoding approach to characterize and compare the microbiota of the upper and lower respiratory tracts in calves with and without clinical signs of BRD\nRecent studies have demonstrated the presence of several bacterial communities in the bovine nasopharynx, documenting that potential pathogenic bacteria are common inhabitants of the upper respiratory tract in cattle [25\u201331]\nOur results are in agreement with the literature as regards the high number of phyla identified and the fact that five phyla seem to be dominant in the bovine upper respiratory tract microbiota: Proteobacteria, Tenericutes, Firmicutes, Actinobacteria, and Bacteroidetes [25, 26, 28\u201331]. Moreover, we found that the microbiota of the upper respiratory tract differs depending on the animals\u2019 farm of origin\nHowever, the number of calves was not equally distributed among the farms, and this difference was statistically significant based only on the unweighted UniFrac distance, which accounts for the presence/absence of observed OTUs. While it is difficult to draw general conclusions from the present data and further studies are needed to confirm this difference, it is reasonable to assume that environmental factors can influence, at least partially, nasal microbiota composition\nIn fact, a variation in microbiota composition of the upper respiratory tract of calves when they are moved in a new environment has already been documented [26, 28]. Nevertheless, several factors have been observed to influence the development and composition of nasopharyngeal microbiota in humans (e. g., mode of birth delivery or breastfeeding) and possibly predispose to the development of respiratory disease [39, 40]\nMoreover, differences in microbiota composition in relation to geographical provenience have also been found in humans [41]. A limitation to our study may be the absence of a blank control and a mock community, to calculate the PCR error rate and to evaluate the possible presence of contaminants in the process of DNA treatment. At the time of this study, the inclusion of sequencing controls was not a widespread practice and was not a part of similar studies [25, 26, 28]\nForty-five out of the 305 genera identified were possible contaminants, according to Salter et al. [42], but their relative abundance was low (Additional\u00a0file\u00a02: Table S1). Four of these genera were found with a relative abundance higher than 1% only in the NS samples: Sphingomonas, Delftia, Psychrobacter, and Corynebacterium. The relative abundance of contaminant genera was 0. 6% in the TTA and 11. 35% in the NS samples. As suggested by Salter et al\n[42], since contaminant issues are more relevant in low biomass samples, it could be hypothesized that the bacterial load in the NS samples was lower, which would be odd, given that the upper airways are probably far more exposed to a higher environmental bacterial load [43]\nA more probable explanation is that these genera were more abundant in the NS samples because of environmental contamination of the upper respiratory tract, rather than contamination occurring during the samples\u2019 analysis due to low biomass. Overall, the most abundant genus identified was Mycoplasma, which was abundantly found in all NS and TTA samples. This genus was previously identified with high abundance in the upper respiratory airways of both healthy and BRD-affected calves [26, 31]\nMycoplasma is spread worldwide, and it has frequently been isolated also with the use of bacterial culture and PCR detection from lower respiratory tract samples from calves, regardless of their clinical status [23, 24]. Unfortunately, in this study, the lack of information about Mycoplasma species present in the TTA samples precludes formulating a hypothesis about their pathogenetic role. Although M\nbovis is recognized as a major etiologic agent in BRD and otitis media, less is known about other Mycoplasma spp., e. g., M. dispar and M. bovirhinis, which have been detected less frequently in the bovine respiratory tract [23, 24, 44\u201347]. It has been suggested that the lack of isolation of these two species could be correlated with an inhibitory effect of other mycoplasmas [24, 48]\nFurthermore, discriminatory analyses within this genus could provide clues to determining the relationship between these species and their role in BRD. Our observation of Moraxella, the second most abundant genus identified in the NS samples, is shared by Timsit et al. [26] and Lima et al. [31]. Lima et al. [31] also found a correlation between the presence of Moraxella and the development of BRD\nIn cattle, Moraxella bovis is the etiological agent of infectious bovine keratoconjunctivitis (IBK), and Moraxella genus has rarely been isolated in the course of BRD [49, 50]. In children, the role of this genus in the development of respiratory disease is controversial and is probably correlated with the species identified\nIn fact, it has been associated not only with the development of asthma and respiratory disease but also with a more stable microbiota, which is linked to a lower risk of developing respiratory disease [51\u201353]. Corynebacterium was identified in all NS samples, and previous studies have reported its relatively high abundance in the bovine upper respiratory tract [25, 26, 31]. In children, it has been correlated with a reduced risk of developing otitis media and respiratory disease [39, 54]\nFour of the five most abundant phyla identified in the lower respiratory tract were the same as those found in the upper respiratory tract (Proteobacteria, Tenericutes, Actinobacteria, and Bacteroidetes), albeit with different abundance, though Fusobacteria seemed to be characteristic of this ecosystem. Identification of this phylum in the bovine upper respiratory tract has rarely been reported and each time with low abundance [25, 30, 31]\nIn other species, such as the dog and humans, Fusobacteria is one of the most abundant phyla found in the oral cavity but it is less abundant in the nasopharynx [43, 55, 56]. Furthermore, in the human lung, the abundance of Fusobacteria varies in relation to its presence in the oral cavity, leading to the hypothesis that the oral microbial community could be a bacterial source for lung microbiota composition [56\u201360]\nThe second most abundant genus identified in the TTA samples, and the main component of the phylum Proteobacteria, was Pasteurella. It was comprised mostly of P. multocida, and it was also identified with a lower abundance in the NS samples. In contrast, Pasteurellaceae were more abundant in oral than in lung and nasal samples from dog, and a higher abundance of Pasteurellales were found in the throat of sheep [43, 61]. P\nmultocida is considered a commensal of the upper respiratory airways, but its identification in samples from the lower respiratory tract has usually been correlated with BRD [22, 24]. Nevertheless, Angen et al. [23] isolated P. multocida from TTA samples obtained from clinically healthy animals. The absence of a significant difference in lower microbiota composition between healthy and BRD-affected calves suggests that P\nmultocida could be part of the microbial flora of the lower respiratory tract of healthy animals. Our results showed significant differences in alpha diversity and beta diversity between the upper and the lower respiratory tract microbiota: the number of species composing the lower respiratory tract microbiota was lower, and these species differed by abundance and type from the upper respiratory tract microbiota. The same outcomes were obtained from studies in humans and dogs [3, 5, 60, 62]\nIn humans, the lung microbiota was found to differ significantly from the oral and the nasal microbiota [5, 62]. In healthy individuals, the lung microbiota partly overlaps with the oral microbiota [5, 62], which is the main source of the composition of the lung microbiota owing to the constant flow of saliva from the mouth, while much less liquid flows from the nose [60]\nIn upper respiratory tract disease, there is an increased liquid flow from the nose, with a higher potential to affect the lung microbiota as a consequence [60]. Analysis of respiratory tract samples obtained from the dog led to the hypothesis for a self-sustaining lung microbiota also in this species, which proved to be much more homogeneous than the composition of the oral or nasal microbiota [43]\nIn the present study, the trans-tracheal approach was used for the collection of samples from the lower respiratory tract in order to minimize the contamination from the upper respiratory ways. Moreover, this method has been recommended as optimal for evaluation of the microbiological status of the lower respiratory tract of calves [23]\nThe finding of 16 genera identified only in the lower respiratory tract, albeit few and with low abundance, suggests that the lung could be colonized by characteristic bacterial species also in cattle. Unfortunately, because of the paucity of information about the oral cavity microbiota of cattle, no conclusions can be drawn. Comparison by farm of origin showed a statistical difference in microbiota composition only for the NS samples\nThis suggests that the lower respiratory tract microbiota may be more homogeneous and resilient than the upper respiratory tract, in agreement with the results found in the dog [43]. Moreover, these findings strengthen the hypothesis for a self-sustaining lower respiratory tract microbiota also in cattle\nThe absence of significant differences in the bacterial species recovered from the NS and TTA samples from the healthy and the BRD-affected calves contrasts with previous results obtained in humans and cattle [7, 31]. Since BRD is a syndrome and not a single disease with a linear etiology, it may manifest clinically and microbiologically in several different forms [20]\nVarious other factors could have influenced our results and precluded differentiation between the microbiota of a diseased lung and that of a healthy one. Nevertheless, the primary aim of the present study was to characterize the microbiota of the respiratory airways of calves examined and sampled in field conditions. Conclusions\nOur findings demonstrate the presence of bacterial communities in the lower respiratory tract in both healthy calves and those presenting clinical signs of BRD\nThe results obtained from the NS samples suggest that environmental factors (farm, management) may influence the microbial composition of the bovine upper respiratory tract. The finding of bacterial communities in the lower respiratory tract, which differed from the ones found in the upper respiratory tract, suggests the presence of a self-sustaining microbiota at this level. Further studies including characterization of the oral cavity microbiota are needed to confirm this hypothesis\nAdditional files\n\nAdditional file 1: (158. 9KB, pdf) Geographical distribution of the farms. Maps were adapted from Google Maps. (PDF 158\u00a0kb)\n\nAdditional file 2: Table S1. (44. 3KB, docx) Relative abundance of genera identified in the nasal swab (NS) and the trans-tracheal aspiration (TTA) samples. Genera identified only in the NS (n\u2009=\u200911) or in the TTA (n\u2009=\u200917) samples are shown in bold or underlined, respectively. Table S2\n1MB, xls) A table reporting the differential abundances of operational taxonomic units (OTUs) found in the nasal swabs (NS\u2009=\u200911) and in the trans-tracheal aspiration (TTA\u2009=\u200917) samples obtained by the DESeq2 analysis\nAs reported in the DESeq2 support information, the \u201cbase mean\u201d column reports the mean of normalized counts for all samples, while the \u201clog2FoldChange\u201d column reports the log fold change calculated for the TTA as compared to the NS samples, with the relative standard error in the adjacent column \u201clfcSE\u201d (that is log2 fold change standard error). For statistical significance, P values are reported without (P value) and with adjustment (Padj) for multiple testing with the false discovery rate (FDR)\n(XLS 1114\u00a0kb)\nAcknowledgements\nThe authors would like to thank the veterinary practitioners: Dr. Simona Ala, Dr. Simone Cabra, and Dr. Mauro Casalone for their cooperation and their willingness in referring the cases included in this study. Moreover, an acknowledgment goes also to the veterinary students that assisted the samples collection: Maurizio Beltramo, Giovanni Gallina, and Andrea Viglietti. Funding\nNot applicable\nAvailability of data and materials\nThe datasets generated and analyzed during the current study are available in the NCBI BioProject database with the BioProject ID PRJNA383722 [https://www. ncbi. nlm. nih. gov/bioproject/383722]\nAbbreviations\n\nBRD\nBovine respiratory disease\nDNA\nDeoxyribonucleic acid\nNGS\nNext-generation sequencing\nNS\nNasal swabs\nOTU\nOperational taxonomic unit\nPCoA\nPrincipal coordinates analysis\nPERMANOVA\nPermutational multivariate analysis of variance\nQIIME\nQuantitative Insights Into Microbial Ecology\nTTA\nTrans-tracheal aspiration\nAuthors\u2019 contributions\nThe project was conceived by CB. The following authors contributed to the study design and literature search: CB, IN, FC, SP, EG, ADA, and PG\nThe physical examination and samples\u2019 collection was performed by CB and IN, with the help of IB. DNA extraction was performed by EG and IN. Library preparation, sequencing, and bioinformatic analysis were conducted by FC, with the help of IN. All authors contributed to the manuscript preparation and approved the final manuscript\n1365-294X. 2012. 05470. x. [DOI] [PubMed] []\n\n2. Segal LN, Rom WN, Weiden MD. Lung microbiome for clinicians: new discoveries about bugs in healthy and diseased lungs. Ann Am Thorac Soc. 2014;11:108\u2013116. 201310-339FR. [DOI] [PMC free article] [PubMed] []\n\n3. Charlson ES, Bittinger K, Haas AR, Fitzgerald AS, Frank I, Yadav A, et al. Topographical continuity of bacterial populations in the healthy human respiratory tract\nAm J Respir Crit Care Med. 2011;184:957\u2013963. 201104-0655OC. [DOI] [PMC free article] [PubMed] []\n\n4. Dickson RP, Erb-Downward JR, Huffnagle GB. Towards an ecology of the lung: new conceptual models of pulmonary microbiology and pneumonia pathogenesis. Lancet Respir. Med. 2014;2:238\u2013246. [DOI] [PMC free article] [PubMed] []\n\n5. Morris A, Beck JM, Schloss PD, Campbell TB, Crothers K, Curtis JL, et al\nComparison of the respiratory microbiome in healthy nonsmokers and smokers. Am J Respir Crit Care Med. 2013;187:1067\u20131075. 201210-1913OC. [DOI] [PMC free article] [PubMed] []\n\n6. Dickson RP, Martinez FJ, Huffnagle GB. The role of the microbiome in exacerbations of chronic lung diseases. Lancet. 2014;384:691\u2013702. [DOI] [PMC free article] [PubMed] []\n\n7. Huffnagle GB, Dickson RP\nThe bacterial microbiota in inflammatory lung diseases. Clin Immunol. 2015;159:177\u2013182. clim. 2015. 05. 022. [DOI] [PMC free article] [PubMed] []\n\n8. Edwards TA. Control methods for bovine respiratory disease for feedlot cattle. Vet Clin North Am - Food Anim Pract. 2010;26:273\u2013284. cvfa. 2010. 03. 005. [DOI] [PubMed] []\n\n9. Woolums AR. Lower respiratory tract disease. In: BP S, editor. Large Anim. Intern. Med. Fifth edition. St\nLouis (MO): Mosby Elsevier; 2015. p. 583\u2013617. 10. Pardon B, De Bleecker K, Hostens M, Callens J, Dewulf J, Deprez P. Longitudinal study on morbidity and mortality in white veal calves in Belgium. BMC Vet Res. 2012;8:26. [DOI] [PMC free article] [PubMed] []\n\n11. Brscic M, Leruste H, Heutinck LFM, Bokkers EAM, Wolthuis-Fillerup M, Stockhofe N, et al. Prevalence of respiratory disorders in veal calves and potential risk factors. J Dairy Sci\n2012;95:2753\u20132764. 2011-4699. [DOI] [PubMed] []\n\n12. Gay E, Barnouin J. A nation-wide epidemiological study of acute bovine respiratory disease in France. Prev. Vet. Med. 2009;89:265\u2013271. prevetmed. 2009. 02. 013. [DOI] [PMC free article] [PubMed] []\n\n13. Assi\u00e9 S, Seegers H, Makoschey B, D\u00e9sir\u00e9-Bousqui\u00e9 L, Bareille N\nExposure to pathogens and incidence of respiratory disease in young bulls on their arrival at fattening operations in France. Vet. Rec. 2009;165:195\u2013199. 165. 7. 195. [DOI] [PubMed] []\n\n14. Stilwell G, Matos M, Carolino N, Lima MS. Effect of a quadrivalent vaccine against respiratory virus on the incidence of respiratory disease in weaned beef calves. Prev. Vet. Med. 2008; [DOI] [PMC free article] [PubMed]\n\n15. Svensson C, Hultgren J, Oltenacu PA\nMorbidity in 3\u20137-month-old dairy calves in south-western Sweden, and risk factors for diarrhoea and respiratory disease. Prev Vet Med. 2006;74:162\u2013179. prevetmed. 2005. 11. 008. [DOI] [PubMed] []\n\n16. Svensson C, Linder A, Olsson S-O. Mortality in Swedish dairy calves and replacement heifers. J Dairy Sci. 2006;89:4769\u20134777. S0022-0302(06)72526-7. [DOI] [PubMed] []\n\n17. Nickell JS, White BJ\nMetaphylactic antimicrobial therapy for bovine respiratory disease in stocker and feedlot cattle. Vet. Clin. North Am. - Food Anim. Pract. 2010;26:285\u2013301. cvfa. 2010. 04. 006. [DOI] [PubMed] []\n\n18. Portis E, Lindeman C, Johansen L, Stoltman G. A ten-year (2000-2009) study of antimicrobial susceptibility of bacteria that cause bovine respiratory disease complex\u2014Mannheimia haemolytica, Pasteurella multocida, and Histophilus somni\u2014in the United States and Canada\nJ Vet Diagnostic Investig. 2012;24:932\u2013944. [DOI] [PubMed] []\n\n19. Marshall BM, Levy SB. Food animals and antimicrobials: impacts on human health. Clin Microbiol Rev. 2011;24:718\u2013733. 00002-11. [DOI] [PMC free article] [PubMed] []\n\n20. Panciera RJ, Confer AW. Pathogenesis and pathology of bovine pneumonia. Vet. Clin. North Am. - Food Anim. Pract. 2010;26:191\u2013214. cvfa. 2010. 04. 001\n[DOI] [PMC free article] [PubMed] []\n\n21. Taylor JD, Fulton RW, Lehenbauer TW, Step DL, Confer AW. The epidemiology of bovine respiratory disease: what is the evidence for predisposing factors. Can Vet J. 2010;51:1095\u20131102. [PMC free article] [PubMed] []\n\n22. Griffin D. Bovine pasteurellosis and other bacterial infections of the respiratory tract. Vet. Clin. North Am. - Food Anim. Pract 2010;26:57\u201371. [DOI] [PubMed]\n\n23\nAngen \u00d8, Thomsen J, Larsen LE, Larsen J, Kokotovic B, Heegaard PMH, et al. Respiratory disease in calves: microbiological investigations on trans-tracheally aspirated bronchoalveolar fluid and acute phase protein response. Vet Microbiol. 2009;137:165\u2013171. vetmic. 2008. 12. 024. [DOI] [PMC free article] [PubMed] []\n\n24. Allen JW, Viel L, Bateman KG, Rosendal S, Shewen PE, Physick-Sheard P\nThe microbial flora of the respiratory tract in feedlot calves: associations between nasopharyngeal and bronchoalveolar lavage cultures. Can J Vet Res. 1991;55:341\u2013346. [PMC free article] [PubMed] []\n\n25. Holman DB, Timsit E, Alexander TW, Checkley SL, Campbell JR, Chirino-Trejo M, et al. The nasopharyngeal microbiota of feedlot cattle. Sci Rep. 2015;5:15557. [DOI] [PMC free article] [PubMed] []\n\n26\nTimsit E, Workentine M, Schryvers AB, Holman DB, van der Meer F, Alexander TW. Evolution of the nasopharyngeal microbiota of beef cattle from weaning to 40 days after arrival at a feedlot. Vet Microbiol. 2016;187:75\u201381. vetmic. 2016. 03. 020. [DOI] [PubMed] []\n\n27. Holman DB, McAllister TA, Topp E, Wright A-DG, Alexander TW. The nasopharyngeal microbiota of feedlot cattle that develop bovine respiratory disease. Vet Microbiol. 2015;180:90\u201395. vetmic\n2015. 07. 031. [DOI] [PubMed] []\n\n28. DB Holman, E Timsit, S Amat, D. Wade Abbott, AG. Buret and TW. Alexander. The nasopharyngeal microbiota of beef cattle before and after transport to a feedlot. BMC Microbiol 2017;17:1\u201312. [DOI] [PMC free article] [PubMed]\n\n29. Timsit E, Workentine M, Crepieux T, Miller C, Regev-Shoshani G, Schaefer A, et al\nEffects of nasal instillation of a nitric oxide-releasing solution or parenteral administration of tilmicosin on the nasopharyngeal microbiota of beef feedlot cattle at high-risk of developing respiratory tract disease. Res Vet Sci. 2017;115:117\u2013124. rvsc. 2017. 02. 001. [DOI] [PubMed] []\n\n30. Gaeta NC, Lima SF, Teixeira AG, Ganda EK, Oikonomou G, Gregory L, et al\nDeciphering upper respiratory tract microbiota complexity in healthy calves and calves that develop respiratory disease using shotgun metagenomics. J Dairy Sci. 2017:1\u201314. [DOI] [PubMed]\n\n31. Lima SF, Teixeira AGV, Higgins CH, Lima FS, Bicalho RC. The upper respiratory tract microbiome and its potential role in bovine respiratory disease and otitis media. Sci Rep. 2016;6:29050. [DOI] [PMC free article] [PubMed] []\n\n32\n1038/nmeth. f. 303. [DOI] [PMC free article] [PubMed] []\n\n34. Edgar RC. Search and clustering orders of magnitude faster than BLAST. Bioinformatics. 2010;26:2460\u20132461. [DOI] [PubMed] []\n\n35. Haas BJ, Gevers D, Earl AM, Feldgarden M, Ward DV, Giannoukos G, et al. Chimeric 16S rRNA sequence formation and detection in Sanger and 454-pyrosequenced PCR amplicons. Genome Res. 2011;21:494\u2013504. 112730. 110\n[DOI] [PMC free article] [PubMed] []\n\n36. Love MI, Huber W, Anders S. Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biol. 2014;15:8. [DOI] [PMC free article] [PubMed] []\n\n37. Benjamini Y, Hochberg Y. Controlling the false discovery rate: a practical and powerful approach to multiple testing. J R Stat Soc B. 1995;57:289\u2013300. []\n\n38\nLa Rosa PS, Brooks JP, Deych E, Boone EL, Edwards DJ, Wang Q, et al. Hypothesis testing and power calculations for taxonomic-based human microbiome data. White EP, editor. PLoS One 2012;7:e52078. [DOI] [PMC free article] [PubMed]\n\n39. Bosch AATM, Levin E, van Houten MA, Hasrat R, Kalkman G, Biesbroek G, et al. Development of upper respiratory tract microbiota in infancy is affected by mode of delivery. EBioMedicine. 2016;9:336\u2013345. ebiom. 2016. 05. 031\n[DOI] [PMC free article] [PubMed] []\n\n40. Biesbroek G, Bosch AATM, Wang X, Keijser BJF, Veenhoven RH, Sanders EA, et al. The impact of breastfeeding on nasopharyngeal microbial communities in infants. Am J Respir Crit Care Med. 2014;190:298\u2013308. 201407-1240OC. [DOI] [PubMed] []\n\n41. Stressmann FA, Rogers GB, Klem ER, Lilley AK, Donaldson SH, Daniels TW, et al\nAnalysis of the bacterial communities present in lungs of patients with cystic fibrosis from American and British centers. J Clin Microbiol. 2011;49:281\u2013291. 01650-10. [DOI] [PMC free article] [PubMed] []\n\n42. Salter SJ, Cox MJ, Turek EM, Calus ST, Cookson WO, Moffatt MF, et al. Reagent and laboratory contamination can critically impact sequence-based microbiome analyses. BMC Microbiol. 2014;12:87.\n[DOI] [PMC free article] [PubMed] []\n\n43. Ericsson AC, Personett AR, Grobman ME, Rindt H, Reinero CR, Turnbaugh P, et al. Composition and predicted metabolic capacity of upper and lower airway microbiota of healthy dogs in relation to the fecal microbiota. PLoS One. 2016;11:e0154646. pone. 0154646. [DOI] [PMC free article] [PubMed] []\n\n44. Nikunen S, H\u00e4rtel H, Orro T, Neuvonen E, Tanskanen R, Kivel\u00e4 SL, et al\nAssociation of bovine respiratory disease with clinical status and acute phase proteins in calves. Comp Immunol Microbiol Infect Dis. 2007;30:143\u2013151. cimid. 2006. 11. 004. [DOI] [PMC free article] [PubMed] []\n\n45. Thomas A, Ball H, Dizier I, Trolin A, Bell C, Mainil J, et al. Isolation of mycoplasma species from the lower respiratory tract of healthy cattle and cattle with respiratory disease in Belgium. Vet. Rec. 2002;151:472\u2013476. 151. 16. 472\n[DOI] [PubMed] []\n\n46. Ayling RD, Bashiruddin SE, Nicholas RAJ. Mycoplasma species and related organisms isolated from ruminants in Britain between 1990 and 2000. Vet Rec. 2004;155:413\u2013416. 155. 14. 413. [DOI] [PubMed] []\n\n47. Bertone I, Bellino C, Alborali GL, Cagnasso A, Cagnotti G, Dappiano E, et al. Clinical-pathological findings of otitis media and media-interna in calves and (clinical) evaluation of a standardized therapeutic protocol\nBMC Vet Res BioMed Central. 2015;11:297. [DOI] [PMC free article] [PubMed] []\n\n48. Allen JW, Viel L, Bateman KG, Rosendal S. Changes in the bacterial flora of the upper and lower respiratory tracts and bronchoalveolar lavage differential cell counts in feedlot calves treated for respiratory diseases. Can J Vet Res. 1992;56:177\u2013183. [PMC free article] [PubMed] []\n\n49. Angelos JA. Infectious bovine keratoconjunctivitis. In: Smith B, editor\nLarge animal internal medicine. 5. St. Louis: Mosby Elsevier; 2015. pp. 1171\u20131174. []\n\n50. Catry B, Boyen F, Baele M, Dewulf J, de Kruif A, Vaneechoutte M, et al. Recovery of Moraxella ovis from the bovine respiratory tract and differentiation of Moraxella species by tDNA-intergenic spacer PCR. Vet Microbiol. 2007;120:375\u20130. [DOI] [PubMed]\n\n51. Sakwinska O, Bastic Schmid V, Berger B, Bruttin A, Keitel K, Lepage M, et al\nNasopharyngeal microbiota in healthy children and pneumonia patients. J Clin Microbiol. 2014;52:1590\u20131594. 03280-13. [DOI] [PMC free article] [PubMed] []\n\n52. Depner M, Ege MJ, Cox MJ, Dwyer S, Walker AW, Birzele LT, et al. Bacterial microbiota of the upper respiratory tract and childhood asthma. J Allergy Clin Immunol. 2016;139:826\u201334. [DOI] [PubMed]\n\n53. Biesbroek G, Tsivtsivadze E, Sanders EAM, Montijn R, Veenhoven RH, Keijser BJF, et al\nEarly respiratory microbiota composition determines bacterial succession patterns and respiratory health in children. Am J Respir Crit Care Med. 2014;190:1283\u20131292. 201407-1240OC. [DOI] [PubMed] []\n\n54. Laufer AS, Metlay JP, Gent JF, Fennie KP, Kong Y, Pettigrew MM. Microbial communities of the upper respiratory tract and otitis media in children. MBio. 2011;2:e00245\u2013e00210. 00245-10. [DOI] [PMC free article] [PubMed] []\n\n55\n1098/rstb. 2014. 0294. [DOI] [PMC free article] [PubMed] []\n\n57. Erb-Downward JR, Thompson DL, Han MK, Freeman CM, McCloskey L, Schmidt LA, et al. Analysis of the lung microbiome in the \u201chealthy\u201d smoker and in COPD. PLoS One. 2011;6:e16384. pone. 0016384. [DOI] [PMC free article] [PubMed] []\n\n58. Einarsson GG, Comer DM, McIlreavey L, Parkhill J, Ennis M, Tunney MM, et al\nCommunity dynamics and the lower airway microbiota in stable chronic obstructive pulmonary disease, smokers and healthy non-smokers. Thorax. 2016;71:795\u2013803. [DOI] [PubMed] []\n\n59. Lee SH, Sung JY, Yong D, Chun J, Kim SY, Song JH, et al. Characterization of microbiome in bronchoalveolar lavage fluid of patients with lung cancer comparing with benign mass like lesions. Lung Cancer. 2016;102:89\u201395. lungcan. 2016. 10. 016\n[DOI] [PubMed] []\n\n60. Bassis CM, Erb-Downward JR, Dickson RP, Freeman CM, Schmidt TM, Young VB, et al. Analysis of the upper respiratory tract microbiotas as the source of the lung and gastric microbiotas in healthy individuals. MBio. 2015;6:e00037\u2013e00015. 00037-15. [DOI] [PMC free article] [PubMed] []\n\n61. Glendinning L, Wright S, Pollock J, Tennant P, Collie D, McLachlan G. Variability of the sheep lung microbiota. Schloss PD, editor\nAppl Environ Microbiol. 2016;82:3225\u201338. [DOI] [PMC free article] [PubMed]\n\n62. Marsh RL, Kaestli M, Chang AB, Binks MJ, Pope CE, Hoffman LR, et al. The microbiota in bronchoalveolar lavage from young children with chronic lung disease includes taxa present in both the oropharynx and nasopharynx. Microbiome. 2016;4:37."
+}

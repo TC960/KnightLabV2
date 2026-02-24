@@ -1,0 +1,1027 @@
+{
+  "paper_id": "1117",
+  "paper_title": "The closed eye harbours a unique microbiome in dry eye disease",
+  "study_type": "randomized_clinical_trial_microbiome_secondary_analysis",
+  "primary_disease": "dry eye disease",
+  "sample_sites": [
+    "other"
+  ],
+  "relationships": [
+    {
+      "id": "1117_rel_001",
+      "taxon_name": "Pseudomonas",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "< 2e-22",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_resolved_from_discussion"
+        ],
+        "criticism_flags": [
+          "lda_result_in_line_113_suggests_enriched_in_dry_eye_but_authors_explicitly_clarify_in_discussion_that_normalized_analysis_confirms_reduction"
+        ],
+        "review_notes": "FDR-adjusted P < 2e-22 from two-way ANOVA and P < 3.1e-20 from mixed-effects regression. Discussion (line 138) explicitly resolves direction: 'normalization confirmed the reduction in Pseudomonas spp.' meaning decreased in dry eye vs control. The LDA listing Pseudomonas as a dry eye discriminator (line 113) likely reflects the unnormalized analysis the authors caution against.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "A more rigorous normalization performed on our dataset confirmed the reduction in Pseudomonas spp. but not in Staphylococcus spp."
+      }
+    },
+    {
+      "id": "1117_rel_002",
+      "taxon_name": "Methylobacteriaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "dry eye disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "< 2e-22",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Listed as one of the most significant differences by two-way ANOVA (FDR P < 2e-22) and mixed-effects regression (FDR P < 3.1e-20). Also confirmed at baseline (FDR P < 1.1e-11) and at one month (FDR P < 7.0e-18). LDA identifies Methylobacteriaceae as one of 5 genera that reliably identified individuals with dry eye, confirming increased direction. Family-level taxon from Alphaproteobacteria.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "univariate analysis of the relative abundance of bacterial genera showed individuals with dry eye disease have differences in the relative abundance of 113 genera, with the most significant differences in OPB56, Methylobacteriaceae, Bacteroidetes, Pseudomonas, and Meiothermus (all with FDR-adjusted P < 2 \u00d7 10\u221222)"
+      }
+    },
+    {
+      "id": "1117_rel_003",
+      "taxon_name": "Meiothermus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "< 2e-22",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Listed as one of the most significant differences by two-way ANOVA (FDR P < 2e-22) and mixed-effects regression (FDR P < 3.1e-20). However the paper does not explicitly state whether Meiothermus is increased or decreased in dry eye. Strong statistical association but direction requires supplemental data. Meiothermus is a thermophilic genus in Deinococcus-Thermus phylum; direction marked unclear.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "univariate analysis of the relative abundance of bacterial genera showed individuals with dry eye disease have differences in the relative abundance of 113 genera, with the most significant differences in OPB56, Methylobacteriaceae, Bacteroidetes, Pseudomonas, and Meiothermus (all with FDR-adjusted P < 2 \u00d7 10\u221222)"
+      }
+    },
+    {
+      "id": "1117_rel_004",
+      "taxon_name": "OPB56",
+      "domain": "bacteria",
+      "taxonomic_level": "order",
+      "primary_disease": "dry eye disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "< 2e-22",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "greengenes_environmental_label_not_formal_taxonomy"
+        ],
+        "criticism_flags": [],
+        "review_notes": "OPB56 is a Greengenes database order label, not formal ICZN taxonomy. Listed as most significant by two-way ANOVA (FDR P < 2e-22) and mixed-effects regression (FDR P < 3.1e-20). Direction determined from discriminant analysis: 'abundances of orders OPB56 and Rhizobiales are important to discriminate the normal eye' - meaning enriched in normal, i.e. decreased in dry eye. Consistent across baseline and longitudinal analyses.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Discriminant analysis of principal components at the order level revealed the abundances of orders OPB56 and Rhizobiales are important to discriminate the normal eye while the orders Halanaerobiales, Erysipelotrichales and Anaeroplasmatales are important to discriminate dry eye"
+      }
+    },
+    {
+      "id": "1117_rel_005",
+      "taxon_name": "Verrucomicrobia",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "4.6e-11",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Phylum-level analysis at baseline: 'Verrucomicrobia (FDR P = 4.6 \u00d7 10\u221211) and Proteobacteria (FDR P = 6.0 \u00d7 10\u221210) showed the most significant differences.' Firmicutes and Bacteroidetes remained unchanged at phylum level at baseline. Direction (increased or decreased) in dry eye not specified in the text; supplemental data would be required.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the phylum level, Firmicutes and Bacteroidetes remained unchanged, while Verrucomicrobia (FDR P = 4.6 \u00d7 10\u221211) and Proteobacteria (FDR P = 6.0 \u00d7 10\u221210) showed the most significant differences."
+      }
+    },
+    {
+      "id": "1117_rel_006",
+      "taxon_name": "Proteobacteria",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "6.0e-10",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Phylum-level analysis at baseline shows significant difference (FDR P = 6.0e-10). Direction not explicitly stated in text. Given Pseudomonas (a Proteobacterium) is decreased in dry eye, but Methylobacteriaceae (also Proteobacteria, Alphaproteobacteria) is increased, the net phylum-level direction is ambiguous and properly marked unclear.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the phylum level, Firmicutes and Bacteroidetes remained unchanged, while Verrucomicrobia (FDR P = 4.6 \u00d7 10\u221211) and Proteobacteria (FDR P = 6.0 \u00d7 10\u221210) showed the most significant differences."
+      }
+    },
+    {
+      "id": "1117_rel_007",
+      "taxon_name": "Firmicutes",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "dry eye disease",
+      "direction": "unchanged",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated as unchanged at phylum level at baseline: 'Firmicutes and Bacteroidetes remained unchanged'. No p-value given for the null result.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the phylum level, Firmicutes and Bacteroidetes remained unchanged, while Verrucomicrobia (FDR P = 4.6 \u00d7 10\u221211) and Proteobacteria (FDR P = 6.0 \u00d7 10\u221210) showed the most significant differences."
+      }
+    },
+    {
+      "id": "1117_rel_008",
+      "taxon_name": "Bacteroidetes",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "dry eye disease",
+      "direction": "unchanged",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "note_bacteroidetes_decreased_at_month1_per_discriminant_analysis"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated as unchanged at phylum level at baseline. Note: at the one-month timepoint discriminant analysis identifies 'OPB58 and Bacteroidetes as important discriminators of the normal eye', suggesting Bacteroidetes may decrease in dry eye over time. The baseline unchanged result is the primary finding; the month-1 discriminant result is annotated separately.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the phylum level, Firmicutes and Bacteroidetes remained unchanged, while Verrucomicrobia (FDR P = 4.6 \u00d7 10\u221211) and Proteobacteria (FDR P = 6.0 \u00d7 10\u221210) showed the most significant differences."
+      }
+    },
+    {
+      "id": "1117_rel_009",
+      "taxon_name": "Bradyrhizobium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "< 1.1e-11",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Listed among the five most differently abundant genera at baseline (FDR P < 1.1e-11) by negative binomial regression. Also detected at the one-month timepoint (FDR P < 7.0e-18). Direction not explicitly stated; no LDA classification available for this genus to infer direction.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Univariate analysis using negative binomial regression identified Methylobacteriaceae, Pseudomonas, Bradyrhizobium and Allobaculum as the five most differently abundant genera (all with FDR-adjusted P < 1.1 \u00d7 10\u221211, Supplemental Fig. S5a and Supplemental Table 4)."
+      }
+    },
+    {
+      "id": "1117_rel_010",
+      "taxon_name": "Allobaculum",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "< 1.1e-11",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Listed among the five most differently abundant genera at baseline (FDR P < 1.1e-11) by negative binomial regression. Direction not explicitly stated in text. Allobaculum is a Firmicutes genus.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Univariate analysis using negative binomial regression identified Methylobacteriaceae, Pseudomonas, Bradyrhizobium and Allobaculum as the five most differently abundant genera (all with FDR-adjusted P < 1.1 \u00d7 10\u221211, Supplemental Fig. S5a and Supplemental Table 4)."
+      }
+    },
+    {
+      "id": "1117_rel_011",
+      "taxon_name": "Halanaerobiales",
+      "domain": "bacteria",
+      "taxonomic_level": "order",
+      "primary_disease": "dry eye disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "no_explicit_p_value_for_this_taxon_specifically"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Discriminant analysis of principal components at baseline identifies Halanaerobiales as important to discriminate dry eye (i.e., enriched in dry eye vs normal). No specific p-value reported for this taxon individually. Confidence medium because direction is inferred from discriminant importance rather than direct statistical test with reported p-value.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Discriminant analysis of principal components at the order level revealed the abundances of orders OPB56 and Rhizobiales are important to discriminate the normal eye while the orders Halanaerobiales, Erysipelotrichales and Anaeroplasmatales are important to discriminate dry eye"
+      }
+    },
+    {
+      "id": "1117_rel_012",
+      "taxon_name": "Erysipelotrichales",
+      "domain": "bacteria",
+      "taxonomic_level": "order",
+      "primary_disease": "dry eye disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "no_explicit_p_value_for_this_taxon_specifically"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Discriminant analysis at baseline identifies Erysipelotrichales as important to discriminate dry eye (enriched in dry eye). No specific p-value reported for this taxon individually. Confidence medium.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Discriminant analysis of principal components at the order level revealed the abundances of orders OPB56 and Rhizobiales are important to discriminate the normal eye while the orders Halanaerobiales, Erysipelotrichales and Anaeroplasmatales are important to discriminate dry eye"
+      }
+    },
+    {
+      "id": "1117_rel_013",
+      "taxon_name": "Anaeroplasmatales",
+      "domain": "bacteria",
+      "taxonomic_level": "order",
+      "primary_disease": "dry eye disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "no_explicit_p_value_for_this_taxon_specifically"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Discriminant analysis at baseline identifies Anaeroplasmatales as important to discriminate dry eye (enriched in dry eye). No specific p-value reported for this taxon. Also appears in month-1 discriminant analysis as dry eye discriminator, confirming consistent enrichment. Confidence medium.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Discriminant analysis of principal components at the order level revealed the abundances of orders OPB56 and Rhizobiales are important to discriminate the normal eye while the orders Halanaerobiales, Erysipelotrichales and Anaeroplasmatales are important to discriminate dry eye"
+      }
+    },
+    {
+      "id": "1117_rel_014",
+      "taxon_name": "Rhizobiales",
+      "domain": "bacteria",
+      "taxonomic_level": "order",
+      "primary_disease": "dry eye disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "no_explicit_p_value_for_this_taxon_specifically"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Discriminant analysis at baseline identifies Rhizobiales as important to discriminate the normal eye (enriched in normal = decreased in dry eye). No specific p-value reported for this taxon.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Discriminant analysis of principal components at the order level revealed the abundances of orders OPB56 and Rhizobiales are important to discriminate the normal eye while the orders Halanaerobiales, Erysipelotrichales and Anaeroplasmatales are important to discriminate dry eye"
+      }
+    },
+    {
+      "id": "1117_rel_015",
+      "taxon_name": "Helicobacter",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "no_explicit_p_value_for_this_taxon_specifically"
+        ],
+        "criticism_flags": [],
+        "review_notes": "LDA of effect size (LEfSe) identifies Helicobacter as one of 5 genera that reliably identified individuals with dry eye (increased in dry eye). No specific p-value given for this taxon in the text; confidence medium.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "We identified 5 genera that reliably identified individuals with dry eye (Pseudomonas, Methylobacteriaceae, Helicobacter, Acetobacter and Stenotrophomonas) with 3 genera that reliably identified normal patients (Leuconostocaceae, Streptococcus and Calothrix)"
+      }
+    },
+    {
+      "id": "1117_rel_016",
+      "taxon_name": "Acetobacter",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "no_explicit_p_value_for_this_taxon_specifically"
+        ],
+        "criticism_flags": [],
+        "review_notes": "LDA identifies Acetobacter as one of 5 genera reliably identifying dry eye individuals. Also appears in random forest variable importance analysis (Importance > 20) at both baseline and one-month timepoints. Direction confirmed as increased in dry eye from LDA.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "We identified 5 genera that reliably identified individuals with dry eye (Pseudomonas, Methylobacteriaceae, Helicobacter, Acetobacter and Stenotrophomonas) with 3 genera that reliably identified normal patients (Leuconostocaceae, Streptococcus and Calothrix)"
+      }
+    },
+    {
+      "id": "1117_rel_017",
+      "taxon_name": "Stenotrophomonas",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "no_explicit_p_value_for_this_taxon_specifically"
+        ],
+        "criticism_flags": [],
+        "review_notes": "LDA identifies Stenotrophomonas as one of 5 genera reliably identifying dry eye individuals (increased in dry eye). No specific p-value given. Confidence medium.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "We identified 5 genera that reliably identified individuals with dry eye (Pseudomonas, Methylobacteriaceae, Helicobacter, Acetobacter and Stenotrophomonas) with 3 genera that reliably identified normal patients (Leuconostocaceae, Streptococcus and Calothrix)"
+      }
+    },
+    {
+      "id": "1117_rel_018",
+      "taxon_name": "Leuconostocaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "dry eye disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "no_explicit_p_value_for_this_taxon_specifically"
+        ],
+        "criticism_flags": [],
+        "review_notes": "LDA identifies Leuconostocaceae as one of 3 genera reliably identifying normal patients (decreased in dry eye). No specific p-value given. Confidence medium.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "We identified 5 genera that reliably identified individuals with dry eye (Pseudomonas, Methylobacteriaceae, Helicobacter, Acetobacter and Stenotrophomonas) with 3 genera that reliably identified normal patients (Leuconostocaceae, Streptococcus and Calothrix)"
+      }
+    },
+    {
+      "id": "1117_rel_019",
+      "taxon_name": "Streptococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "< 0.01",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "LDA identifies Streptococcus as one of 3 genera reliably identifying normal patients (decreased in dry eye). Additionally, univariate ANOVA detects significant differences in Streptococcus abundance after daily wash (P < 0.01, line 102). Random forest variable importance also flags Streptococcus. Confidence high due to convergent evidence. P-value from ANOVA post-wash analysis is < 0.01.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Univariate analysis detected the most significant differences in the abundance of MLE112, Lactobacillaceae, Streptococcus, Sphingobium, Caldicoprobacter and Anaerococcus (ANOVA, P < 0.01, Fig. 3c)"
+      }
+    },
+    {
+      "id": "1117_rel_020",
+      "taxon_name": "Calothrix",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "cyanobacterium_excluded_from_analysis_per_methods"
+        ],
+        "criticism_flags": [
+          "paper_explicitly_excludes_cyanobacteria_from_analysis_yet_lists_calothrix_as_lda_discriminant_which_is_contradictory"
+        ],
+        "review_notes": "LDA identifies Calothrix as one of 3 genera reliably identifying normal patients (decreased in dry eye). However, Calothrix is a cyanobacterium, and the methods section explicitly states: 'After excluding any reads aligned to chloroplasts or cyanobacteria'. This is an internal contradiction in the paper. It is possible the LDA was run before cyanobacteria exclusion or Calothrix was misclassified. Confidence low due to this contradiction.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "We identified 5 genera that reliably identified individuals with dry eye (Pseudomonas, Methylobacteriaceae, Helicobacter, Acetobacter and Stenotrophomonas) with 3 genera that reliably identified normal patients (Leuconostocaceae, Streptococcus and Calothrix)"
+      }
+    },
+    {
+      "id": "1117_rel_021",
+      "taxon_name": "Methylobacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Random forest variable importance analysis identifies Methylobacterium (genus level) as particularly useful for identifying dry eye samples (Importance > 20) at both baseline and one-month timepoints. Distinct from Methylobacteriaceae (family-level, rel_002). Direction inferred as increased from context of identifying dry eye samples and family-level result. Confidence medium as no direct p-value for this genus specifically.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "variable importance analysis identified the prevalence of the genera Methylobacterium, Megasphaera, Parabacteroides, S247, Bifidobacterium, Streptococcus, Desulfovibrio, Acetobacter, Dialister and Bacillus as particularly useful to identify samples from individuals with dry eye (Importance > 20)"
+      }
+    },
+    {
+      "id": "1117_rel_022",
+      "taxon_name": "Megasphaera",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated_for_rf_features"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Random forest variable importance identifies Megasphaera as useful for dry eye sample identification (Importance > 20). Direction not specified - random forest importance only indicates utility for classification, not direction of change. Confidence low due to lack of directional information.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "variable importance analysis identified the prevalence of the genera Methylobacterium, Megasphaera, Parabacteroides, S247, Bifidobacterium, Streptococcus, Desulfovibrio, Acetobacter, Dialister and Bacillus as particularly useful to identify samples from individuals with dry eye (Importance > 20)"
+      }
+    },
+    {
+      "id": "1117_rel_023",
+      "taxon_name": "Parabacteroides",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated_for_rf_features"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Random forest variable importance identifies Parabacteroides as useful for dry eye sample identification (Importance > 20). Direction not specified.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "variable importance analysis identified the prevalence of the genera Methylobacterium, Megasphaera, Parabacteroides, S247, Bifidobacterium, Streptococcus, Desulfovibrio, Acetobacter, Dialister and Bacillus as particularly useful to identify samples from individuals with dry eye (Importance > 20)"
+      }
+    },
+    {
+      "id": "1117_rel_024",
+      "taxon_name": "Bifidobacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated_for_rf_features"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Random forest variable importance identifies Bifidobacterium as useful for dry eye sample identification (Importance > 20). Direction not specified.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "variable importance analysis identified the prevalence of the genera Methylobacterium, Megasphaera, Parabacteroides, S247, Bifidobacterium, Streptococcus, Desulfovibrio, Acetobacter, Dialister and Bacillus as particularly useful to identify samples from individuals with dry eye (Importance > 20)"
+      }
+    },
+    {
+      "id": "1117_rel_025",
+      "taxon_name": "Desulfovibrio",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated_for_rf_features"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Random forest variable importance identifies Desulfovibrio as useful for dry eye sample identification (Importance > 20) at both baseline and one-month timepoints. Direction not specified in the text.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "variable importance analysis identified the prevalence of the genera Methylobacterium, Megasphaera, Parabacteroides, S247, Bifidobacterium, Streptococcus, Desulfovibrio, Acetobacter, Dialister and Bacillus as particularly useful to identify samples from individuals with dry eye (Importance > 20)"
+      }
+    },
+    {
+      "id": "1117_rel_026",
+      "taxon_name": "Dialister",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated_for_rf_features"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Random forest variable importance identifies Dialister as useful for dry eye sample identification (Importance > 20). Direction not specified.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "variable importance analysis identified the prevalence of the genera Methylobacterium, Megasphaera, Parabacteroides, S247, Bifidobacterium, Streptococcus, Desulfovibrio, Acetobacter, Dialister and Bacillus as particularly useful to identify samples from individuals with dry eye (Importance > 20)"
+      }
+    },
+    {
+      "id": "1117_rel_027",
+      "taxon_name": "Bacillus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated_for_rf_features"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Random forest variable importance identifies Bacillus as useful for dry eye sample identification (Importance > 20). Direction not specified.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "variable importance analysis identified the prevalence of the genera Methylobacterium, Megasphaera, Parabacteroides, S247, Bifidobacterium, Streptococcus, Desulfovibrio, Acetobacter, Dialister and Bacillus as particularly useful to identify samples from individuals with dry eye (Importance > 20)"
+      }
+    },
+    {
+      "id": "1117_rel_028",
+      "taxon_name": "Lactobacillaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "< 0.01",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Detected by univariate ANOVA (P < 0.01) in comparison of dry eye vs normal after daily eye wash. Direction not explicitly stated but statistically significant difference present. Confidence medium.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Univariate analysis detected the most significant differences in the abundance of MLE112, Lactobacillaceae, Streptococcus, Sphingobium, Caldicoprobacter and Anaerococcus (ANOVA, P < 0.01, Fig. 3c)"
+      }
+    },
+    {
+      "id": "1117_rel_029",
+      "taxon_name": "Sphingobium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "< 0.01",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Detected by univariate ANOVA (P < 0.01) in comparison of dry eye vs normal after daily eye wash. Direction not explicitly stated.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Univariate analysis detected the most significant differences in the abundance of MLE112, Lactobacillaceae, Streptococcus, Sphingobium, Caldicoprobacter and Anaerococcus (ANOVA, P < 0.01, Fig. 3c)"
+      }
+    },
+    {
+      "id": "1117_rel_030",
+      "taxon_name": "Caldicoprobacter",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "< 0.01",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated",
+          "thermophilic_genus_unusual_in_ocular_context"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Detected by univariate ANOVA (P < 0.01) in comparison of dry eye vs normal. Direction not explicitly stated. Caldicoprobacter is a thermophilic anaerobe (Firmicutes), somewhat unusual in an ocular context; however paper does not flag this as suspicious and it is in a 16S rRNA metabarcoding study so low-abundance detections are expected.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Univariate analysis detected the most significant differences in the abundance of MLE112, Lactobacillaceae, Streptococcus, Sphingobium, Caldicoprobacter and Anaerococcus (ANOVA, P < 0.01, Fig. 3c)"
+      }
+    },
+    {
+      "id": "1117_rel_031",
+      "taxon_name": "Anaerococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "< 0.01",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Detected by univariate ANOVA (P < 0.01) in comparison of dry eye vs normal. Direction not explicitly stated.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Univariate analysis detected the most significant differences in the abundance of MLE112, Lactobacillaceae, Streptococcus, Sphingobium, Caldicoprobacter and Anaerococcus (ANOVA, P < 0.01, Fig. 3c)"
+      }
+    },
+    {
+      "id": "1117_rel_032",
+      "taxon_name": "Azospirillum",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "< 7.0e-18",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Listed among the five genera with greatest differences at the one-month timepoint by negative binomial regression (FDR P < 7.0e-18). Direction not explicitly stated in text.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "negative binomial regression noted the greatest differences in the abundance of the genera Methylobacteriaceae, Pseudomonas, Azospirillum, Bradyrhizobium and Coriobacteriaceae (all with FDR-adjusted P < 7.0 \u00d7 10\u221218)"
+      }
+    },
+    {
+      "id": "1117_rel_033",
+      "taxon_name": "Coriobacteriaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "dry eye disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": "< 7.0e-18",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_explicitly_stated"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Listed among the five genera with greatest differences at the one-month timepoint by negative binomial regression (FDR P < 7.0e-18). Direction not explicitly stated. Family-level taxon in Actinobacteria.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "negative binomial regression noted the greatest differences in the abundance of the genera Methylobacteriaceae, Pseudomonas, Azospirillum, Bradyrhizobium and Coriobacteriaceae (all with FDR-adjusted P < 7.0 \u00d7 10\u221218)"
+      }
+    },
+    {
+      "id": "1117_rel_034",
+      "taxon_name": "Staphylococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "dry eye disease",
+      "direction": "unchanged",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated as not significantly changed after normalization: 'A more rigorous normalization performed on our dataset confirmed the reduction in Pseudomonas spp. but not in Staphylococcus spp.' The unnormalized data suggested substitution of Staphylococcus for Pseudomonas but the authors clarify this was an artifact of non-normalization.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "A more rigorous normalization performed on our dataset confirmed the reduction in Pseudomonas spp. but not in Staphylococcus spp."
+      }
+    },
+    {
+      "id": "1117_rel_035",
+      "taxon_name": "OPB58",
+      "domain": "bacteria",
+      "taxonomic_level": "order",
+      "primary_disease": "dry eye disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "greengenes_environmental_label_not_formal_taxonomy",
+          "one_month_timepoint_only"
+        ],
+        "criticism_flags": [],
+        "review_notes": "At the one-month timepoint, discriminant analysis identifies OPB58 as important discriminator of the normal eye (enriched in normal = decreased in dry eye). OPB58 is a Greengenes database environmental label (related to but distinct from OPB56). Confidence medium.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "discriminant analysis of principal components at the order level identified OPB58 and Bacteroidetes as important discriminators of the normal eye. In individuals with dry eye, additional orders enabled further discrimination, with Flavobacteriales, Alteromonadales and Actinomycetes, Anaeroplasmatales and Desulfuromonadales functioning as the primary discriminators"
+      }
+    },
+    {
+      "id": "1117_rel_036",
+      "taxon_name": "Bacteroidetes",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "dry eye disease",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "one_month_timepoint_only",
+          "contradicts_baseline_unchanged_result"
+        ],
+        "criticism_flags": [],
+        "review_notes": "At one-month timepoint, discriminant analysis identifies Bacteroidetes as discriminator of normal eye (enriched in normal = decreased in dry eye). This is separate from rel_008 which documents Bacteroidetes as unchanged at baseline phylum level. The apparent contradiction may reflect temporal dynamics: unchanged at baseline but diverging by month 1. Confidence low due to contradiction with baseline result; direction inferred from discriminant importance, no direct p-value.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "discriminant analysis of principal components at the order level identified OPB58 and Bacteroidetes as important discriminators of the normal eye. In individuals with dry eye, additional orders enabled further discrimination, with Flavobacteriales, Alteromonadales and Actinomycetes, Anaeroplasmatales and Desulfuromonadales functioning as the primary discriminators"
+      }
+    },
+    {
+      "id": "1117_rel_037",
+      "taxon_name": "Flavobacteriales",
+      "domain": "bacteria",
+      "taxonomic_level": "order",
+      "primary_disease": "dry eye disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "one_month_timepoint_only",
+          "no_explicit_p_value_for_this_taxon_specifically"
+        ],
+        "criticism_flags": [],
+        "review_notes": "One-month timepoint discriminant analysis identifies Flavobacteriales as primary discriminator of dry eye (increased in dry eye). Direction inferred from context. No specific p-value reported for this taxon.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "discriminant analysis of principal components at the order level identified OPB58 and Bacteroidetes as important discriminators of the normal eye. In individuals with dry eye, additional orders enabled further discrimination, with Flavobacteriales, Alteromonadales and Actinomycetes, Anaeroplasmatales and Desulfuromonadales functioning as the primary discriminators"
+      }
+    },
+    {
+      "id": "1117_rel_038",
+      "taxon_name": "Alteromonadales",
+      "domain": "bacteria",
+      "taxonomic_level": "order",
+      "primary_disease": "dry eye disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "one_month_timepoint_only",
+          "no_explicit_p_value_for_this_taxon_specifically"
+        ],
+        "criticism_flags": [],
+        "review_notes": "One-month timepoint discriminant analysis identifies Alteromonadales as primary discriminator of dry eye (increased in dry eye). Direction inferred from context. No specific p-value.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "discriminant analysis of principal components at the order level identified OPB58 and Bacteroidetes as important discriminators of the normal eye. In individuals with dry eye, additional orders enabled further discrimination, with Flavobacteriales, Alteromonadales and Actinomycetes, Anaeroplasmatales and Desulfuromonadales functioning as the primary discriminators"
+      }
+    },
+    {
+      "id": "1117_rel_039",
+      "taxon_name": "Actinomycetes",
+      "domain": "bacteria",
+      "taxonomic_level": "class",
+      "primary_disease": "dry eye disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "one_month_timepoint_only",
+          "ambiguous_taxonomic_level_paper_lists_as_order_but_actinomycetes_is_formally_a_class"
+        ],
+        "criticism_flags": [],
+        "review_notes": "One-month timepoint discriminant analysis lists 'Actinomycetes' as dry eye discriminator. In formal taxonomy, Actinomycetes is a class, but Greengenes and some analysis tools use it as an order-level label. Paper uses it alongside other orders. Annotated as class with low confidence due to taxonomic ambiguity. Direction: increased in dry eye.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "discriminant analysis of principal components at the order level identified OPB58 and Bacteroidetes as important discriminators of the normal eye. In individuals with dry eye, additional orders enabled further discrimination, with Flavobacteriales, Alteromonadales and Actinomycetes, Anaeroplasmatales and Desulfuromonadales functioning as the primary discriminators"
+      }
+    },
+    {
+      "id": "1117_rel_040",
+      "taxon_name": "Desulfuromonadales",
+      "domain": "bacteria",
+      "taxonomic_level": "order",
+      "primary_disease": "dry eye disease",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "other",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "one_month_timepoint_only",
+          "no_explicit_p_value_for_this_taxon_specifically"
+        ],
+        "criticism_flags": [],
+        "review_notes": "One-month timepoint discriminant analysis identifies Desulfuromonadales as primary discriminator of dry eye (increased in dry eye). Direction inferred from context. No specific p-value.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "discriminant analysis of principal components at the order level identified OPB58 and Bacteroidetes as important discriminators of the normal eye. In individuals with dry eye, additional orders enabled further discrimination, with Flavobacteriales, Alteromonadales and Actinomycetes, Anaeroplasmatales and Desulfuromonadales functioning as the primary discriminators"
+      }
+    }
+  ],
+  "extraction_stats": {
+    "layer1_raw_count": {
+      "combined": 42
+    },
+    "layer1_union_count": 42,
+    "layer2_corrections": 3,
+    "layer3_additions": 0,
+    "layer3_removals": 2,
+    "final_count": 40,
+    "_notes": {
+      "layer2_corrections": "Pseudomonas direction resolved from unclear to decreased based on explicit discussion statement; Staphylococcus direction resolved to unchanged; Calothrix flagged as contradicting methods exclusion of cyanobacteria",
+      "layer3_removals": "S247 removed (not a valid scientific taxon name, only a Greengenes OTU label); MLE112 removed (environmental sequence label with no taxon identity, insufficient for annotation)"
+    }
+  },
+  "paper_text": "The closed eye harbours a unique microbiome in dry eye disease\n\nAbstract\nDry eye affects millions of individuals. In experimental models, dry eye disease is associated with T helper cell 17-mediated inflammation of the ocular surface that may cause persistent damage to the corneal epithelium. However, the initiating and perpetuating factors associated with chronic inflammation of the ocular surface remain unclear. The ocular microbiota alters ocular surface inflammation and may influence dry eye disease development and progression\nHere, we collected serial samples of tears on awakening from sleep, closed eye tears, during a randomized clinical trial of a non-pharmaceutical dry eye therapy and used 16S rRNA metabarcoding to characterize the microbiome. We show the closed dry eye microbiome is distinct from the healthy closed eye microbiome, and that the microbiome remains distinct despite daily saline eye wash upon awakening\nThe ocular microbiota alters ocular surface inflammation and may influence dry eye disease development and progression. Here, we collected serial samples of tears on awakening from sleep, closed eye tears, during a randomized clinical trial of a non-pharmaceutical dry eye therapy and used 16S rRNA metabarcoding to characterize the microbiome\nWe show the closed dry eye microbiome is distinct from the healthy closed eye microbiome, and that the microbiome remains distinct despite daily saline eye wash upon awakening. The ocular microbiome was described only recently, and this report implicates a distinct microbiome in ocular disease development. Our findings suggest an interplay between microbial commensals and inflammation on the ocular surface\nThis information may inform future studies of the pathophysiological mechanisms of dry eye disease. Subject terms: Microbial ecology, Eye diseasesIntroduction\nDry eye disease is a common condition that affects millions of individuals worldwide1,2. Ocular surface inflammation has recently been recognized as a hallmark of dry eye disease3,4\nT helper type 17 (Th17) cells on the inflamed ocular surface mediate the long-term progression of dry eye disease in experimental models3 but this same pathophysiology has yet to be demonstrated in humans. In chronic dry eye, persistent inflammation may eventually produce lasting corneal epithelial damage4. However, the factors that incite and perpetuate inflammation in dry eye disease remain unknown5\nMicrobial commensal organisms can alter Th17 populations in the host organism, both in homeostasis and when perturbed6,7. In contrast to previous belief, the human eye hosts a resident microbiome8\u201311. Culture and molecular-based swabs of the ocular surface have revealed an intrinsic microbiome distinct from the surrounding skin, but information about the tear microbiome is scarce12. In particular, information about the tear content on awakening from sleep, termed closed-eye tears, is unknown\nInterestingly, the ocular microbiome impacts ocular surface inflammation13. Together, these findings suggest the ocular microbiome may cause or perpetuate the development of chronic dry eye. Here, we collected longitudinal samples of the bilateral closed eye tear microbiome from a randomized clinical trial for the treatment of dry eye disease with daily sterile saline eyewash upon awakening. We aimed to identify a distinct closed eye microbiome in dry eye disease\nWe hypothesized that the chronic dry eye microbiome, if present, would be distinct from the normal closed eye microbiome. Results\nCohort\nBased on the power and pairwise sample-size estimator for permutational multivariate analysis of variance (PERMANOVA) application Micropower14, a low abundance 16S rRNA dataset similar to previous ocular microbiome studies12 would require a minimal sample size of 30 to generate a discriminatory power of 0. 8 with a significance level of 0. 05\nTherefore, we aimed for at least 35 subjects per study arm. Table 1 shows the demographics and clinical characteristics of the enrolled participants. Based on a post-enrolment exam and two clinical surveys, after informed consent, participants were classified as dry eye or controls (Supplemental S1). The resulting 36 control and 36 dry eye subjects were then stratified by clinical severity of eye disease (Fig. 1 and Supplemental Table 1)\nThe study arms were randomized to daily saline eye wash upon awakening or non-intervention. A baseline closed eye tear sample was collected at randomization and the final sample after one month, yielding 144 samples. We did not observe significant differences between the stratifications normal versus mild and moderate versus severe with respect to microbial ecology (Fig\n2), however clear separation was present between the mild and moderate samples, indicating this more granular stratification introduced a false dichotomy in the data. Therefore, we combined subjects stratified as none or mild into one cohort, now termed normal, and we combined subjects stratified as moderate or severe into another cohort, now termed dry eye (Fig. 3). We used this simplified stratification system for all subsequent analyses (Methods). Table 1\nParticipant demographics and clinical characteristics. Normal eye\nDry eye\n\nP value\n\nSubjects, n\n36\n36\n\nSex\n\n1. 00\n\nFemale, n (%)\n23 (64)\n23 (64)\n\nMale, n (%)\n13 (36)\n13 (36)\n\nAge, y\u2009\u00b1\u2009SD\n33\u2009\u00b1\u200911\n52\u2009\u00b1\u200919\n\u2009<\u20090. 0001\n\nDEQ Score\n1. 2\u2009\u00b1\u20091. 3\n12\u2009\u00b1\u20093. 3\n\u2009<\u20090. 0001\n\nPhenol Red Thread Wetting length, mm\u2009\u00b1\u2009SD\n22\u2009\u00b1\u20095. 3\n19\u2009\u00b1\u20098. 6\n0. 08\n\nNIKBUT, s\u2009\u00b1\u2009SD\n15\u2009\u00b1\u20095. 2\n10. 7\u2009\u00b1\u20095. 2\n0. 0007\n\nCorneal Staining\n0. 47\u2009\u00b1\u20090. 8\n3. 6\u2009\u00b1\u20093\n\u2009<\u20090. 0001\n\nInflammaDry Positive, n (%)\n13 (36)\n20 (55)\n0\n10\n\nRandomization\n\nControl, n (%)\n16 (44)\n20 (56)\n\nTreatment, n (%)\n20 (56)\n16 (44)\n\nOpen in a new tab\n*SD\u2009=\u2009standard deviation. Figure 1. Open in a new tab\nSubjects were allocated, stratified and randomized to treatment or control. Schematic of collection of closed eye tears in sterile saline, followed by 16S rRNA metabarcoding of the bacterial microbiome. Diagram of subject allocation and randomization. Figure generated with BioRender. Figure 2\nOpen in a new tab\nPatients with dry eye disease have a different closed eye microbiome. (a) Individuals with dry eye disease have different alpha diversity of the closed eye microbiome as quantified by the richness (ANOVA, f\u2009=\u20094. 8, P\u2009=\u20097. 5\u2009\u00d7\u200910\u22125), evenness (ANOVA, f\u2009=\u200913, P\u2009=\u20092. 1\u2009\u00d7\u200910\u221212) and Shannon diversity (ANOVA, f\u2009=\u200912, P\u2009=\u20095. 9\u2009\u00d7\u200910\u221212) indices\n(b) The beta diversity of the closed eye microbiome in individuals with dry eye disease is distinct by principal coordinate analysis (PCoA) of Bray\u2013Curtis dissimilarity (R2\u2009=\u20090. 21 P\u2009=\u20090. 00033), redundancy analysis (RDA, variance\u2009=\u200995. 25, f\u2009=\u20093. 71, P\u2009=\u20090. 001) and canonical correspondence analysis (CCA, chi2\u2009=\u20090. 16 f\u2009=\u20093. 64 P\u2009=\u20090. 001). (c) Relative abundance of bacterial orders. Log2(CSS), log2 transformation of cumulative-sum scaling. Two-way ANOVA, *P\u2009=\u20090. 01, **P\u2009=\u20090. 001, ***P\u2009=\u20090. 0001\n(d) Spearman network analysis at the operational taxonomic unit level. Positive correlations with a P value <\u20090. 05 are shown as an edge with the relative size determined by the importance of the taxa to the network. Figure 3. Open in a new tab\nDaily eye rinse does not alter the closed eye microbiome. (a) Despite daily eye washes, the alpha diversity of the closed eye microbiome remains similar to baseline in individuals with and without dry eye disease as quantified by the richness (ANOVA, f\u2009=\u20099\n2, P\u2009=\u20097. 5\u2009\u00d7\u200910\u22125), evenness (ANOVA, f\u2009=\u200928, P\u2009=\u20092. 8\u2009\u00d7\u200910\u221214) and Shannon diversity indices (ANOVA, f\u2009=\u200928, P\u2009=\u20096. 1\u2009\u00d7\u200910\u221214). (b) The beta diversity of the closed eye microbiome remains distinct in individuals with and without dry eye disease by principal coordinate analysis (PCoA) of Bray\u2013Curtis dissimilarity (PERMANOVA, R2\u2009=\u20090. 15 P\u2009=\u20090. 00033), redundancy analysis (RDA, variance\u2009=\u200964. 75, f\u2009=\u20095. 73, P\u2009=\u20090. 001) and canonical correspondence analysis (CCA, chi2\u2009=\u20090. 11 f\u2009=\u20095. 62 P\u2009=\u20090. 001)\n(c) Relative abundance of bacterial genera. Log2(CSS), log2 transformation of cumulative-sum scaling. Two-way ANOVA, * P\u2009=\u20090. 01, ** P\u2009=\u20090. 001, *** P\u2009=\u20090. 0001. (d) Core microbiome analysis showing differences in microbial colonization at the genus level. (e) Spearman network analysis at the operational taxonomic unit level. Positive correlations with a P value <\u20090. 05 are shown as an edge with the relative size determined by the importance of the taxa to the network\nSequencing data\nTo investigate the bacterial microbiome of the closed dry eye, we used metabarcoding of the 16S rRNA gene. Sequence reads were generated using the Illumina MiSeq system (57,022\u2009\u00b1\u200947,011 counts/sample, Methods). We assigned taxonomy using the Greengenes database15, producing 1,593 data points/sample\nAfter excluding any reads aligned to chloroplasts or cyanobacteria, we examined the bacterial community composition using the remaining 1,195 data points/sample that were collectively assigned to 185 genera16. All tear samples had the standard >\u20091,000 aligned reads/sample, so we retained all samples for further analysis. We used a log2-transformation of cumulative sum scaling17 (log2 CSS) to normalize our dataset, consistently producing 8,700\u201310,000 reads per sample (Supplemental Fig. S2)\nThe closed eye microbiome is distinct in dry eye disease\nIn the taxonomic analysis of the closed eye microbiome, the microbiomes of individuals with chronic dry eye disease and those without form distinct communities. Dry eye microbial communities are more diverse as quantified by richness (ANOVA, f\u2009=\u20094. 8, P\u2009=\u20097. 5\u2009\u00d7\u200910\u22125), evenness (ANOVA, f\u2009=\u200913, P\u2009=\u20092. 1\u2009\u00d7\u200910\u221212) and Shannon diversity (ANOVA, f\u2009=\u200912, P\u2009=\u20095. 9\u2009\u00d7\u200910\u221212, Fig. 2a)\nAs demonstrated by principal coordinate analysis (PCoA) of Bray\u2013Curtis dissimilarity, these communities form unique clusters as quantified by PERMANOVA (R2\u2009=\u20090. 21, P\u2009=\u20090. 00033, Fig. 2b). Similarly, multivariate redundancy analysis (RDA, variance\u2009=\u200995. 25, f\u2009=\u20093. 71, P\u2009=\u20090. 001) and canonical correspondence analysis (CCA, chi2\u2009=\u20090. 16 f\u2009=\u20093. 64, P\u2009=\u20090. 001) showed these communities are distinct, and this factor accounts for the majority of variance in the data\nAs quantified by two-way ANOVA adjusted for false discovery rate (FDR), univariate analysis of the relative abundance of bacterial genera showed individuals with dry eye disease have differences in the relative abundance of 113 genera, with the most significant differences in OPB56, Methylobacteriaceae, Bacteroidetes, Pseudomonas, and Meiothermus (all with FDR-adjusted P\u2009<\u20092\u2009\u00d7\u200910\u221222, Supplemental Table 2)\nSimilarly, mixed effects regression detected the most significant differences in the abundance of OPB56, Bacteroidetes, Pseudomonas, Meiothermus, and Methylobacteriaceae (all with FDR-adjusted P\u2009<\u20093. 1\u2009\u00d7\u200910\u221220, Supplemental Table 3) among 49 genera with significant differences in relative abundance. Figure\u00a02c shows relative abundance at the order level. To further investigate the importance of particular bacterial operational taxonomic units (OTUs), we used Spearman network analysis (Fig. 2d)\nThe closed dry eye microbiome remains distinct despite daily eye wash\nDaily eye wash on awakening with sterile saline is a proposed therapy for dry eye disease18. We tested if the microbial community composition could be normalized by the prescription of daily saline eye wash. However, the microbial communities of dry (Supplemental Fig. S3) and normal eyes (Supplemental Fig. S4) were relatively unaffected by daily eye wash\nThe diversity of subjects with dry eye remained higher than that of normal individuals (richness, t-test, P\u2009=\u20097. 5\u2009\u00d7\u200910\u22125, evenness, t-test, P\u2009=\u20092. 8\u2009\u00d7\u200910\u221214 and Shannon diversity, t-test, P\u2009=\u20096. 1\u2009\u00d7\u200910\u221214, Fig. 3a). Multivariate analysis of these communities also remained distinct (PCoA, PERMANOVA, R2\u2009=\u20090. 15, P\u2009=\u20090. 00033, RDA, variance\u2009=\u200964. 75, f\u2009=\u20095. 73, P\u2009=\u20090. 001 and CCA, chi2\u2009=\u20090. 11, f\u2009=\u20095. 62, P\u2009=\u20090. 001, Fig. 3b)\nUnivariate analysis detected the most significant differences in the abundance of MLE112, Lactobacillaceae, Streptococcus, Sphingobium, Caldicoprobacter and Anaerococcus (ANOVA, P\u2009<\u20090. 01, Fig. 3c). Core microbiome analysis highlighted key differences in the distribution of unique genera, and network analysis demonstrated the importance of key taxa (Fig. 3d,e)\nThe closed eye microbiome in dry eye disease is distinct at baseline\nTo gain further insight into the microbial community composition of the dry eye, we narrowed our focus to examine the closed eye microbial composition at the time of randomization. As indicated by our more general analysis, both diversity (richness, t-test, P\u2009=\u20090. 016, evenness, t-test, P\u2009=\u20095. 8\u2009\u00d7\u200910\u22126 and Shannon diversity, t-test, P\u2009=\u20098. 1\u2009\u00d7\u200910\u22128, Fig\n4a) and multivariate clustering of these communities are distinct at baseline (PCoA, PERMANOVA, R2\u2009=\u20091. 34 P\u2009=\u20090. 00033, RDA, variance\u2009=\u200953. 95, f\u2009=\u20097. 12, P\u2009=\u20090. 001 and CCA, chi2\u2009=\u20090. 09, f\u2009=\u20097. 12, P\u2009=\u20090. 001, Fig. 4b). ANOVA identified differential abundant genera (Fig. 4c). Univariate analysis using negative binomial regression identified Methylobacteriaceae, Pseudomonas, Bradyrhizobium and Allobaculum as the five most differently abundant genera (all with FDR-adjusted P\u2009<\u20091\n1\u2009\u00d7\u200910\u221211, Supplemental Fig. S5a and Supplemental Table 4). At the phylum level, Firmicutes and Bacteroidetes remained unchanged, while Verrucomicrobia (FDR P\u2009=\u20094. 6\u2009\u00d7\u200910\u221211) and Proteobacteria (FDR P\u2009=\u20096. 0\u2009\u00d7\u200910\u221210) showed the most significant differences. Core microbiome analysis identified 45 genera unique to dry eye with only 14 genera unique to the normal eye (Fig. 4d)\nDiscriminant analysis of principal components at the order level revealed the abundances of orders OPB56 and Rhizobiales are important to discriminate the normal eye while the orders Halanaerobiales, Erysipelotrichales and Anaeroplasmatales are important to discriminate dry eye (Fig. 4e). Network analysis provided further evidence of these distinct communities (Fig. 4f). Figure 4. Open in a new tab\nThe closed eye microbiome in dry eye disease is distinct at baseline\n(a) The alpha diversity of the tear microbiome remains distinct as quantified by the richness (t-test, f\u2009=\u20096. 1, P\u2009=\u20090. 016), evenness (t-test, f\u2009=\u200924, P\u2009=\u20095. 8\u2009\u00d7\u200910\u22126) and Shannon diversity (t-test, f\u2009=\u200923, P\u2009=\u20098. 1\u2009\u00d7\u200910\u22128) indices. (b) The beta diversity of the tear microbiome remains distinct as quantified by principal coordinate analysis (PCoA) of Bray\u2013Curtis dissimilarity (PERMANOVA, R2\u2009=\u20091. 34 P\u2009=\u20090. 00033), redundancy analysis (RDA, variance\u2009=\u200953. 95, f\u2009=\u20097. 12, P\u2009=\u20090\n001) and canonical correspondence analysis (CCA, chi2\u2009=\u20090. 09, f\u2009=\u20097. 12, P\u2009=\u20090. 001). (c) Relative abundance of bacterial orders. Log2(CSS), log2 transformation of cumulative-sum scaling. Two-way ANOVA (***displaying only, P\u2009<\u20090. 001). (d) Core microbiome analysis showing differences in microbial colonization at the genus level. (e) Discriminant analysis of principal components at the order level. (f) Spearman network analysis at the operational taxonomic unit level\nPositive correlations with a P value\u2009<\u20090. 05 are shown as an edge with the relative size determined by the importance of the taxa to the network. Machine learning accurately classifies dry eye samples at baseline\nTo more precisely identify unique features with the potential to function as biomarkers for patients with dry eye, we used linear discriminant analysis of effect size\nWe identified 5 genera that reliably identified individuals with dry eye (Pseudomonas, Methylobacteriaceae, Helicobacter, Acetobacter and Stenotrophomonas) with 3 genera that reliably identified normal patients (Leuconostocaceae, Streptococcus and Calothrix, Supplemental Fig. S5b). To further support the uniqueness of microbial communities in dry eye, we built a support vector machine using leave-one-out cross-validation that could identify samples with 94% accuracy\nSimilarly, when we developed a random forest classifier, variable importance analysis identified the prevalence of the genera Methylobacterium, Megasphaera, Parabacteroides, S247, Bifidobacterium, Streptococcus, Desulfovibrio, Acetobacter, Dialister and Bacillus as particularly useful to identify samples from individuals with dry eye (Importance\u2009>\u200920, Supplemental Fig. S5c)\nThe closed eye microbiome in dry eye disease diverges after one month\nWe examined the stability of the dry eye microbiome by focusing on samples collected one month later in the same individuals. The dry eye microbiome remained distinct from the normal microbiome and remained consistent with the community composition noted at baseline (Supplemental Figs. S2, S3). Only slight divergence was noted over the course of a month (Fig. 5)\nThe diversity of dry eye remained higher than that of the normal eye (richness, t-test, P\u2009=\u20095. 2\u2009\u00d7\u200910\u22125, evenness, t-test, P\u2009=\u20091. 9\u2009\u00d7\u200910\u221211 and Shannon diversity, t-test, P\u2009=\u20098. 6\u2009\u00d7\u200910\u221211, Fig. 5a). The distinct clustering of these communities on multivariate analysis also persisted (PCoA of Bray\u2013Curtis dissimilarity, PERMANOVA, R2\u2009=\u20091. 52, P\u2009=\u20090. 00033, RDA, variance\u2009=\u200966. 53, f\u2009=\u20098. 52, P\u2009=\u20090. 001 and CCA, chi2\u2009=\u20090. 10, f\u2009=\u20098. 14, P\u2009=\u20090. 001, Fig. 5b)\nANOVA identified differentially abundant genera (Fig. 5c). Similarly, negative binomial regression noted the greatest differences in the abundance of the genera Methylobacteriaceae, Pseudomonas, Azospirillum, Bradyrhizobium and Coriobacteriaceae (all with FDR-adjusted P\u2009<\u20097. 0\u2009\u00d7\u200910\u221218, Supplemental Fig. S6a, Supplemental Table 4). However, core microbiome analysis detected 76 unique genera in dry eye, 69 shared genera and 24 genera unique to the normal eye (Fig. 5d)\nSimilar to baseline, discriminant analysis of principal components at the order level identified OPB58 and Bacteroidetes as important discriminators of the normal eye. In individuals with dry eye, additional orders enabled further discrimination, with Flavobacteriales, Alteromonadales and Actinomycetes, Anaeroplasmatales and Desulfuromonadales functioning as the primary discriminators instead of Halanaeobiales and Erysipelotrichales (Fig. 5d). Figure 5\nOpen in a new tab\nThe final closed eye microbiome in dry eye disease remains distinct. (a) The alpha diversity of the closed eye microbiome remains distinct after four weeks as quantified by the richness (t-test, f\u2009=\u200919, P\u2009=\u20095. 2\u2009\u00d7\u200910\u22125), evenness (t-test, f\u2009=\u200965, P\u2009=\u20091. 9\u2009\u00d7\u200910\u221211) and Shannon diversity (t-test f\u2009=\u200960, P\u2009=\u20098. 6\u2009\u00d7\u200910\u221211) indices\n(b) The beta diversity of the closed eye microbiome remains distinct after four weeks as quantified by principal coordinate analysis (PCoA) of Bray\u2013Curtis dissimilarity (PERMANOVA, R2\u2009=\u20091. 52 P\u2009=\u20090. 00033), redundancy analysis (RDA, variance\u2009=\u200966. 53, f\u2009=\u20098. 52, P\u2009=\u20090. 001) and canonical correspondence analysis (CCA, chi2\u2009=\u20090. 10, f\u2009=\u20098. 14, P\u2009=\u20090. 001). (c) Relative abundance of bacterial orders. Log2(CSS), log2 transformation of cumulative-sum scaling. Two-way ANOVA, * P\u2009=\u20090. 05, ** P\u2009=\u20090\n01, *** P\u2009=\u20090. 001. (d) Core microbiome analysis showing differences in microbial colonization at the order level. (e) Discriminant analysis of principal components at the order level. (f) Spearman network analysis at the operational taxonomic unit level. Positive correlations with a P value <\u20090. 05 are shown as an edge with the relative size determined by the importance of the taxa to the network\nMachine learning more accurately identifies dry eye after a month\nWe used linear discriminant analysis of effect size to identify bacterial genera with the potential function as biomarkers and noted 10 genera unique to individuals with dry eye and 9 unique to individuals with a normal eye, supporting the limited divergence of these communities (Supplemental Fig. S6b). We also developed a support vector machine with leave-one-out cross-validation that identified dry eye samples with 97% accuracy\nVariable importance analysis of a random forest classifier noted the prevalence of Methylobacterium, Megasphaera, Parabacteroides, S247, Bifidobacterium, Streptococcus, Desulfovibrio and Acetobacter as important identifiers (Importance\u2009>\u200920, Supplemental Fig. S6c)\nThe closed eye microbiome at baseline is unaltered by the cellular concentration of the tear fraction\nTo ensure our microbial ecological analysis was unaltered by the cellular content of the tear fraction, we compared the microbial composition of each cellular fraction collected at baseline. Three samples were excluded from this analysis due to incomplete data (n\u2009=\u2009141). Community composition was similar between both high and low cellular fractions (Fig. 6). Figure 6\nOpen in a new tab\nThe closed eye microbiome is unaltered by the cellular fraction at baseline. (a) The alpha diversity is similar as quantified by the richness (t-test, f\u2009=\u20091. 3, P\u2009=\u20090. 26), evenness (t-test, f\u2009=\u20091. 8, P\u2009=\u20090. 19) or Shannon diversity (t-test, f\u2009=\u20091. 9, P\u2009=\u20090. 17) indices. (b) The beta diversity of the closed eye microbiome is unaltered by the cellular fraction as quantified by principal coordinate analysis (PCoA) of Bray\u2013Curtis dissimilarity (PERMANOVA, R2\u2009=\u20090. 00894 P\u2009=\u20090\n124), redundancy analysis (RDA, variance\u2009=\u20094. 82, f\u2009=\u20091. 29, P\u2009=\u20090. 152) and non-metric multidimensional scaling (NMDS, stress\u2009=\u20090. 228). (c) Relative abundance of bacterial genera. Log2(CSS), log2-transformation of cumulative-sum scaling. Two-way ANOVA, *P\u2009=\u20090. 05, **P\u2009=\u20090. 01, ***P\u2009=\u20090. 001. (d) Discriminant analysis of principal components. (e) Spearman network analysis at the operational taxonomic unit level. Positive correlations with a P value <\u20090\n05 are shown as an edge with the relative size determined by the importance of the taxa to the network. Discussion\nDirect crosstalk between resident microbes and host immune cells at the mucosal surface is a critical determinant of inflammatory diseases19. Furthermore, Th17 and T regulatory (Treg) cells are implicated in the development of chronic dry eye disease3 and particularly attuned to the ecology of the resident microbiota6\nTherefore, the ocular surface microbiome may contribute to the pathogenesis of dry eye disease13. Understanding how the ocular microbiome influences ocular surface disease will be important for therapeutic development. In this report, we present initial evidence of a distinct closed eye microbiome in dry eye. In this study, human subjects collected samples of sterile saline rinse applied to the ocular surface upon awakening in the morning\nUsing saline eye wash to collect microbiome samples is novel and less invasive than swabs of the ocular surface that has previously been used for the collection of tear leukocytes18,20. In a series of pooled samples from both eyes, the closed eye tear microbiome in individuals with dry eye disease was distinct from that in healthy controls\nCompared to swabs, where the fibre content and limited sample area artificially reduce the number of detectable microbes21, saline wash may allow for a less biased sampling of the entire ocular surface, especially when pooled from both eyes. Furthermore, a general weakness of previous ocular microbiome studies is focusing on shifts in percent relative abundance to identify differences in bacterial taxa\nA strength of our analysis is the rigorous log2 normalization of the cumulative sum scaling transformation performed prior to analysis. With this normalization, our data more accurately reflect true shifts in relative abundance17. Using untransformed data, the most significant difference in our dataset was a nearly complete substitution of Staphylococcus spp. for Pseudomonas spp. in patients with dry eye\nDoan and colleagues reported a similar shift in the unnormalized relative abundance of Staphylococcus spp. and Pseudomonas22. A more rigorous normalization performed on our dataset confirmed the reduction in Pseudomonas spp. but not in Staphylococcus spp. In addition, 48 other genera may warrant further investigation. Previous research has focused on the open eye microbiome12, while we focused on the closed eye microbiome\nEvery night during sleep, inflammatory species move into the closed eye tear film23,24, perhaps in response to entrapped microbiota12,25. If microbial abundance increases in this situation, differences in bacterial community composition could become more pronounced in the closed eye microbiome than in the open eye. This difference could lead to the closed eye producing more reliable markers of disease states for diagnostic development\nAlternatively, this difference could help determine whether anti-inflammatory mechanisms in the closed eye are sufficient to maintain a healthy ocular microbiome. Graham and colleagues explored the microbiome of dry eye using culture and broad 16S rRNA-based PCR23\nDue to considerable differences in next generation sequencing and bioinformatics techniques in the last decade as well as our different sampling methods, directly comparing our 16S rRNA-based characterizations of the ocular microbiome is difficult. Nevertheless, our analysis does support their findings of increased bacterial diversity in patients with dry eye disease23\nAlthough we identified a broader number of genera than was feasible when Graham and colleagues23 performed their analysis, we confirmed their identification of several genera in dry eye, including Streptococcus, Staphylococcus, Corynebacterium and Propionibacterium. They nevertheless detected more colony forming units in patients with dry eye than in controls using culture-based techniques\nThese techniques are biased in low biomass samples because of the limited growth of some species in culture12. Coagulase negative Staphylococcus spp. were the most commonly identified taxa via culture, and their PCR-based analysis showed the microbiome remained stable over three months. Another culture-based pilot study identified similar increased abundances of Staphylococcus aureus, coagulase negative Staphylococcus, Corynebacterium and Propionibacterium in chronic dry eye24\nWe also provided in-depth analysis of population dynamics and demonstrated possible divergence of microbial diversity and community structure of normal and dry eyes over time. Increased bacterial diversity is considered favourable, as more diverse communities are often more resistant to perturbation25. However, mounting evidence suggests the ocular microbiome deviates from this trend, likely due to lysozyme and antimicrobial compounds in tears26\nIn dry eye disease, our results suggest increased microbial diversity is a hallmark of disease. Consistent with the behaviour of the ocular microbiome in other pathological conditions12, this finding may represent breakdown of the microbe-oriented homeostatic mechanisms of the host. This finding may also suggest increased diversity results from the incorporation of pathobionts into this community\nAlternatively, the altered ecology may result from changes within the ocular surface of the dry eye that support establishment of a wider diversity of microbes in this environment. These additional species may not be harmful but instead highlight the dynamic biome within the human eye. The evidence may also suggest the immune system of the closed eye cannot regulate the ocular surface microbiome during sleep\nIn the closed eye, preliminary evidence suggests higher numbers of neutrophils with an enhanced degranulation response in dry eye disease18,20, indicating a dysregulated immune response. This dysregulation may permit increased microbial diversity. The reverse could also be true: enhanced microbial diversity may induce a greater inflammatory response. This dataset consistently demonstrates the microbial communities in dry eye disease are distinct and remain distinct even with daily saline eye wash\nWe asked subjects in the treatment arm to self-administer saline eye wash immediately upon awakening. We hypothesized this time may represent the point of maximum difference since microbes likely accumulate on the ocular surface overnight. However, we did not observe reduced bacterial diversity with saline eyewash, with dry eye communities becoming more similar to control eye communities with treatment\nInstead, the communities slightly diverged: the microbial communities in dry eye remained different from those in healthy eyes. Thus, the mechanisms of microbial accumulation on the ocular surface may be more complex than moisture content or tear clearance. Intrinsic immune or mechanical alterations in dry eye disease may foster differences in commensal abundance, potentially explaining how altered bacterial communities on the ocular surface contribute to dry eye disease\nOur study has a few potential limitations. Our assessment of the microbiome of the ocular surface is based upon 97% homologous OTU clustering using Illumina MiSeq for the bacterial 16S rRNA gene and as such as some intrinsic limitations. The first, is that based on this technology, only relative abundance of the specific OTUs can be determined\nIn future studies it may be informative to utilize shotgun metagenomic sequencing or spike-in methods with standardized microbial communities to have a better understanding of absolute microbial abundance. In addition, patients with dry eye were older than their disease-free counter parts. This may warrant further exploration in future studies. Future studies may more accurately localize the innate microbes of the eye by examining ocular swabs and the tear microbiome\nSerial sampling throughout a day may demonstrate diurnal variation in these bacterial communities. However, aside from certain antibacterial medications20, most human microbiome studies are observational by necessity. Gnotobiotic animals are often useful in unravelling causality in host-microbe interactions and could be the next step27,28, especially to explore interactions between the ocular microbiome and host Th17 and Treg cells in dry eye disease\nBuilding on these experiments may include identifying changes in microbial metabolites or exploring how the gut microbial communities influence ocular development and disease. Finally, aside from one study that examined the virome29\u201331, most studies of the ocular microbiome have focused exclusively on bacteria. The fungal microbiome of the normal eye was described only recently22 and may warrant further investigation in dry eye disease\nAs performed recently for the gut32 and lung33, modelling the initial succession of multi-kingdom microbial communities in newborns may identify ecological factors in the ocular microbiome. The ocular microbiome potentially hosts a distinct core microbiome that may be perturbed in eye disease34. Our study provides novel insight into the closed eye microbiome in dry eye disease. Th17 cells are sensitive to changes in the microbiome6,7 in experimental dry eye disease3\nTherefore, increased microbial abundance in dry eye may promote the development of dry eye disease by altering T cell subpopulations on the ocular surface. More research is needed to reveal whether an altered microbiome drives the development of dry eye disease. Methods\nParticipants\nThis study was performed in accordance to the Declaration of Helsinki under the supervision of the Institutional Review Board of the University of Alabama at Birmingham (UAB), Birmingham, AL, USA\nWe performed a secondary analysis of the closed eye microbiome from a prospective, randomized controlled trial of the efficacy of daily eye wash to ameliorate inflammation in individuals with dry eye disease (ClinicalTrials. gov NCT03332342). Informed consent was obtained from all participants prior to enrolment. Participants were selected based on the results of an optometric exam and two clinical surveys, the Dry Eye Questionnaire 5 (DEQ5)35 and the Ocular Surface Disease Index (OSDI)36\nExclusion criteria included pregnancy, contact lens use within the past three months, glaucoma treatment, current tobacco use, systemic dry-eye-associated inflammatory disease, the use of any form of anti-inflammatory therapy for dry eye treatment in the last three months, other antimicrobial or anti-inflammatory medications in the last month (Supplemental Fig. S1). Subjects were asked to refrain from any artificial tear use for the duration of the study\nStratification into normal and dry eye was driven primarily by symptoms, as measured by the DEQ5 score, with further stratification among both groups determined by phenol red thread wetting length37, non-invasive ketatograph tear break-up time (NIKBUT) and the InflammaDry test (Quidel; San Diego, CA, USA. Supplemental Table 1)\nDry eye subjects needed to have a DEQ5 score of greater than or equal to 6, and present with a positive dry eye result with the phenol red thread (<\u200910\u00a0mm), NIKBUT (<\u200910\u00a0s), or inflammadry (positive). Dry eye subjects also had to endorse the sensation of dry eye or have a previous diagnosis of dry eye disease. Equal-weight randomization to either daily preservative-free sterile saline eye wash or control was performed using REDCap (Research Electronic Data Capture; Nashville, TN, USA)38\nEyewash treatment\nSubjects were trained on the first visit to perform a daily eye wash. Briefly, as described previously18,39,40, subjects were provided one 50\u00a0mL sterile centrifuge tube, and two 10\u00a0mL sterile polypropylene syringes (BD Biosciences; San Jose, CA, USA) with 5\u00a0mL of sterile saline per syringe. Immediately after awakening, subjects were instructed to wash their eyes by dispensing the saline gently across the ocular surface, with the runoff collected in a sterile Eppendorf tube\nRunoff from both eyes was collected to produce a pooled sample of both eyes collected into the same tube. Subjects in the treatment group completed daily therapy for approximately 28\u00a0days. Sample collection\nWe utilized the power and pairwise sample-size estimator for PERMANOVA application Micropower14, as implemented at https://fedematt. shinyapps. io/shinyMB/, to estimate the minimum number of samples to produce a power of 0. 8 to detect a difference with a significance level of 0\n05 via PERMANOVA. We processed the collected eyewash samples immediately after they were dropped off by study subjects. Pooled tear collections were centrifuged at 270\u00d7g, and the supernatant was aliquoted into 1. 5\u00a0mL microcentrifuge tubes and stored at \u2212\u200980\u00a0\u00b0C. If more than one million cells were recovered in the pooled tear collection, supernatant aliquots were spiked with cells from the precipitate to increase the potential yield of microbiome analysis by normalizing the cellular fraction\nIllumina MiSeq metabarcoding\nIn the Microbiome Core at UAB, microbial genomic DNA was isolated and PCR was used with unique bar-coded primers to amplify the V4 region of the 16S rRNA gene to create a 16S amplicon library of the samples. The PCR products were sequenced using the NextGen Illumina MiSeq System (Illumina Inc.; San Diego, CA, USA). The sequence data covered the 16S rRNA V4 region with a PCR product length of ~\u2009255 bases and 250 base paired-end reads\nThe raw dataset is available at the NCBI Sequence Read Archive: https://www. ncbi. nlm. nih. gov/bioproject/597168. Bioinformatics\nSequences were grouped into OTUs using QIIME v1. 941. We assigned taxonomy using the Ribosomal Database Project classifier (threshold 0. 8) against the Greengenes database14,15. We then imported these processed sequence reads into Calypso v8. 8442for further processing and data analysis\nAfter excluding any OTUs assigned to chloroplasts or cyanobacteria, we a priori determined to exclude any samples with <\u20091,000 reads/sample from downstream analysis. We then utilized cumulative sum scaling17to normalize the relative abundance and performed a log2-transformation of the resulting data, centring the taxonomic counts to 0 and scaling to a range of \u2212\u20092 to 2 with a variance of 1. For alpha diversity analysis, samples were rarefied to a depth of 7,804 reads/sample\nAlpha diversity was then quantified using the richness, evenness and Shannon diversity indices43, testing for significant differences with ANOVA adjusted for FDR. For beta diversity, we visualized the data using PCoA, RDA, CCA or NMDS44. We used PERMANOVA to determine significant differences in beta diversity45. Relative abundance was quantified using ANOVA adjusted by FDR for multiple groups or negative binomial regression (DESeq2 function) for binary comparisons\nFor Spearman network analysis, we displayed positive correlations with an FDR-adjusted P\u2009<\u20090. 05 as an edge. Relative size of the point represents the importance of the taxa to the resulting network. In addition, we used core microbiome analysis (of the 300 most abundant taxa), linear discriminant analysis of effect size, and discriminant analysis of principal components to select significant features\nFor analyses with two groups, we developed machine learning classifiers using support vector machine and random forest algorithms. Supplementary information\n\nSupplementary information (2. 1MB, pdf)\nAcknowledgements\nThe authors thank the Microbiome Resource at UAB for the performance of Illumina MiSeq\nThe following are acknowledged for their support of the Microbiome Resource: UAB School of Medicine, Comprehensive Cancer Center (P30AR050948), Center for AIDS Research (5P30AI027767), Center for Clinical Translational Science (UL1TR000165) and the Heflin Center. We also thank the Children\u2019s Foundation Research Institute at Le Bonheur Children\u2019s Hospital for providing scientific editing. This study was supported by the AHA 17SDG32720009 (CVL), NIH K08HL141652 (CVL) and NIH R01HL102371 (AG)\nPrevalence of diagnosed dry eye disease in the United States among adults aged 18 years and older. Am. J. Ophthalmol. 2017;182:90\u201398. ajo. 2017. 06. 033. [DOI] [PubMed] []\n\n2. Stapleton F, et al. TFOS DEWS II epidemiology report. Ocular Surf. 2017;15:334\u2013365. jtos. 2017. 05. 003. [DOI] [PubMed] []\n\n3. Chen Y, Chauhan SK, Lee HS, Saban DR, Dana R. Chronic dry eye disease is principally mediated by effector memory Th17 cells\nMucosal Immunol. 2014;7:38\u201345. 2013. 20. [DOI] [PMC free article] [PubMed] []\n\n4. Heidari M, Noorizadeh F, Wu K, Inomata T, Mashaghi A. Dry eye disease: emerging approaches to disease analysis and therapy. J. Clin. Med. 2019;8:1439. [DOI] [PMC free article] [PubMed] []\n\n5. Gayton JL. Etiology, prevalence, and treatment of dry eye disease. Clin. Ophthalmol. 2009;3:405\u2013412. s5555\n[DOI] [PMC free article] [PubMed] []\n\n6. Cheng H, Guan X, Chen D, Ma W. The Th17/Treg cell balance: a gut microbiota-modulated story. Microorganisms. 2019;7:583. [DOI] [PMC free article] [PubMed] []\n\n7. Lee YK, Menezes JS, Umesaki Y, Mazmanian SK. Proinflammatory T-cell responses to gut microbiota promote experimental autoimmune encephalomyelitis. Proc. Natl. Acad. Sci. USA. 2011;108(Suppl 1):4615\u20134622. 1000082107\n[DOI] [PMC free article] [PubMed] []\n\n8. Willcox MDP. Characterization of the normal microbiota of the ocular surface. Exp. Eye Res. 2013;117:99\u2013105. exer. 2013. 06. 003. [DOI] [PubMed] []\n\n9. Ozkan J, et al. Temporal stability and composition of the ocular surface microbiome. Sci. Rep. 2017;7:9880\u20139911. [DOI] [PMC free article] [PubMed] []\n\n10. de Paiva CS, et al\nAltered mucosal microbiome diversity and disease severity in sj\u00f6gren syndrome. Sci. Rep. 2016;6:23561\u201323611. [DOI] [PMC free article] [PubMed] []\n\n11. Cavuoto KM, Banerjee S, Galor A. Relationship between the microbiome and ocular health. Ocular Surf. 2019;17:384\u2013392. jtos. 2019. 05. 006. [DOI] [PubMed] []\n\n12. Baim AD, Movahedan A, Farooq AV, Skondra D. The microbiome and ophthalmic disease. Exp. Biol. Med\n(Maywood) 2019;244:419\u2013429. [DOI] [PMC free article] [PubMed] []\n\n13. Ueta M. Innate immunity of the ocular surface and ocular surface inflammatory disorders. Cornea. 2008;27(Suppl 1):S31\u201340. 0b013e31817f2a7f. [DOI] [PubMed] []\n\n14. Kelly BJ, et al. Power and sample-size estimation for microbiome studies using pairwise distances and PERMANOVA. Bioinformatics. 2015;31:2461\u20132468.\n[DOI] [PMC free article] [PubMed] []\n\n15. DeSantis TZ, et al. Greengenes, a chimera-checked 16S rRNA gene database and workbench compatible with ARB. Appl. Environ. Microbiol. 2006;72:5069\u20135072. 03006-05. [DOI] [PMC free article] [PubMed] []\n\n16. Glassman SI, Martiny JBH. Broadscale ecological patterns are robust to use of exact sequence variants versus operational taxonomic units. mSphere. 2018;3:5409. 00148-18\n[DOI] [PMC free article] [PubMed] []\n\n17. Paulson JN, Stine OC, Bravo HC, Pop M. Robust methods for differential abundance analysis in marker gene surveys. Nat. Methods. 2013;10:1200\u20131202. 2658. [DOI] [PMC free article] [PubMed] []\n\n18. Postnikoff CK, Huisingh C, McGwin G, Nichols KK. Leukocyte distribution in the open eye tears of normal and dry eye subjects. Curr. Eye Res. 2018;43:1253\u20131259. 2018. 1500611\n[DOI] [PMC free article] [PubMed] []\n\n19. Ahern PP, Maloy KJ. Understanding immune-microbiota interactions in the intestine. Immunology. 2019;22:283. 13150. [DOI] [PMC free article] [PubMed] []\n\n20. Postnikoff CK, Nichols KK. Neutrophil and T-cell homeostasis in the closed eye. Invest. Ophthalmol. Vis. Sci. 2017;58:6212\u20136220. 17-22449. [DOI] [PMC free article] [PubMed] []\n\n21. Shin H, et al\nChanges in the eye microbiota associated with contact lens wearing. mBio. 2016;7:e00198. 00198-16. [DOI] [PMC free article] [PubMed] []\n\n22. Doan T, et al. Paucibacterial microbiome and resident DNA virome of the healthy conjunctiva. Invest. Ophthalmol. Vis. Sci. 2016;57:5116\u20135126. 16-19803. [DOI] [PMC free article] [PubMed] []\n\n23. Graham JE, et al\nOcular pathogen or commensal: a PCR-based study of surface bacterial flora in normal and dry eyes. Invest. Ophthalmol. Vis. Sci. 2007;48:5616\u20135623. 07-0588. [DOI] [PubMed] []\n\n24. Albietz JM, Lenton LM. Effect of antibacterial honey on the ocular flora in tear deficiency and meibomian gland disease. Cornea. 2006;25:1012\u20131019. ico. 0000225716. 85382. 7b. [DOI] [PubMed] []\n\n25\nCostello EK, Stagaman K, Dethlefsen L, Bohannan BJM, Relman DA. The application of ecological theory toward an understanding of the human microbiome. Science. 2012;336:1255\u20131262. 1224203. [DOI] [PMC free article] [PubMed] []\n\n26. McDermott AM. Antimicrobial compounds in tears. Exp. Eye Res. 2013;117:53\u201361. exer. 2013. 07. 014. [DOI] [PMC free article] [PubMed] []\n\n27. Yin VT, et al\nAntibiotic resistance of ocular surface flora with repeated use of a topical antibiotic after intravitreal injection. JAMA Ophthalmol. 2013;131:456\u2013461. 2013. 2379. [DOI] [PubMed] []\n\n28. Iovieno A, et al. Preliminary evidence of the efficacy of probiotic eye-drop treatment in patients with vernal keratoconjunctivitis. Graefes Arch. Clin. Exp. Ophthalmol. 2008;246:435\u2013441. [DOI] [PubMed] []\n\n29\nRound JL, Palm NW. Causal effects of the microbiota on immune-mediated diseases. Sci Immunol. 2018;3:eaao1603. aao1603. [DOI] [PubMed] []\n\n30. Willis KA, et al. Perinatal maternal antibiotic exposure augments lung injury in offspring in experimental bronchopulmonary dysplasia. Am. J. Physiol. Lung Cell. Mol. Physiol. 2019;3:21. 00561. 2018. [DOI] [PMC free article] [PubMed] []\n\n31. Dolma K, et al\nEffects of hyperoxia on alveolar and pulmonary vascular development in germ free mice. Am. J. Physiol. Lung Cell. and Mol. Physiol. 2019;295:L86. 00316. 2019. [DOI] [PMC free article] [PubMed] []\n\n32. Wang Y, Chen H, Xia T, Huang Y. Characterization of fungal microbiota on normal ocular surface of humans. Clin. Microbiol. Infect. 2019 cmi. 2019. 05. 011. [DOI] [PubMed] []\n\n33. Willis KA, et al\nFungi form interkingdom microbial communities in the primordial human gut that develop with gestational age. FASEB J. 2019;33:12825\u201312837. 201901436RR. [DOI] [PMC free article] [PubMed] []\n\n34. Lal, C. V. et al. The airway microbiome at birth. nature. com [DOI] [PMC free article] [PubMed]\n\n35. Chalmers RL, Begley CG, Caffery B\nValidation of the 5-Item Dry Eye Questionnaire (DEQ-5): discrimination across self-assessed severity and aqueous tear deficient dry eye diagnoses. Contact Lens Anterior Eye. 2010;33:55\u201360. clae. 2009. 12. 010. [DOI] [PubMed] []\n\n36. Schiffman RM, Christianson MD, Jacobsen G, Hirsch JD, Reis BL. Reliability and validity of the ocular surface disease index. Arch. Ophthalmol. 2000;118:615\u2013621. 118. 5. 615. [DOI] [PubMed] []\n\n37\nMiller WL, et al. A comparison of tear volume (by tear meniscus height and phenol red thread test) and tear fluid osmolality measures in non-lens wearers and in contact lens wearers. Eye Contact Lens. 2004;30:132\u2013137. icl. 0000138714. 96401. 2b. [DOI] [PubMed] []\n\n38. Harris PA, et al. The REDCap consortium: building an international community of software platform partners. J. Biomed. Inform. 2019;95:103208. jbi. 2019. 103208\n[DOI] [PMC free article] [PubMed] []\n\n39. Postnikoff, C. K., ophthalmology, K. N. I. 2017. Neutrophil and T-cell homeostasis in the closed eye. iovs. arvojournals. org [DOI] [PMC free article] [PubMed]\n\n40. Gorbet M, Postnikoff C, Williams S. The noninflammatory phenotype of neutrophils from the closed-eye environment: a flow cytometry analysis of receptor expression. Invest. Ophthalmol. Vis. Sci. 2015;56:4582\u20134591. 14-15750. [DOI] [PubMed] []\n\n41\nCaporaso JG, et al. QIIME allows analysis of high-throughput community sequencing data. Nat. Methods. 2010;7:335\u2013336. f. 303. [DOI] [PMC free article] [PubMed] []\n\n42. Zakrzewski M, et al. Calypso: a user-friendly web-server for mining and visualizing microbiome-environment interactions. Bioinformatics. 2017;33:782\u2013783. [DOI] [PMC free article] [PubMed] []\n\n43. Reese AT, Dunn RR\nDrivers of microbiome biodiversity: a review of general rules, feces, and ignorance. mBio. 2018;9:734. 01294-18. [DOI] [PMC free article] [PubMed] []\n\n44. Paliy O, Shankar V. Application of multivariate statistical techniques in microbial ecology. Mol. Ecol. 2016;25:1032\u20131057. 13536. [DOI] [PMC free article] [PubMed] []\n\n45. Anderson, M. J. Permutational Multivariate Analysis of Variance (PERMANOVA)\nIn experimental models, dry eye disease is associated with T helper cell 17-mediated inflammation of the ocular surface that may cause persistent damage to the corneal epithelium. However, the initiating and perpetuating factors associated with chronic inflammation of the ocular surface remain unclear. The ocular microbiota alters ocular surface inflammation and may influence dry eye disease development and progression\nThe ocular microbiome was described only recently, and this report implicates a distinct microbiome in ocular disease development. Our findings suggest an interplay between microbial commensals and inflammation on the ocular surface. This information may inform future studies of the pathophysiological mechanisms of dry eye disease. Subject terms: Microbial ecology, Eye diseasesIntroduction\nDry eye disease is a common condition that affects millions of individuals worldwide1,2\nOcular surface inflammation has recently been recognized as a hallmark of dry eye disease3,4. T helper type 17 (Th17) cells on the inflamed ocular surface mediate the long-term progression of dry eye disease in experimental models3 but this same pathophysiology has yet to be demonstrated in humans. In chronic dry eye, persistent inflammation may eventually produce lasting corneal epithelial damage4. However, the factors that incite and perpetuate inflammation in dry eye disease remain unknown5\nHowever, the initiating and perpetuating factors associated with chronic inflammation of the ocular surface remain unclear. The ocular microbiota alters ocular surface inflammation and may influence dry eye disease development and progression. Here, we collected serial samples of tears on awakening from sleep, closed eye tears, during a randomized clinical trial of a non-pharmaceutical dry eye therapy and used 16S rRNA metabarcoding to characterize the microbiome\nThis information may inform future studies of the pathophysiological mechanisms of dry eye disease. Subject terms: Microbial ecology, Eye diseases"
+}

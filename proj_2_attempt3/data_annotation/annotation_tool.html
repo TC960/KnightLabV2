@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microbiome Annotation Tool</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg-deep: #1a1d23;
+  --bg-panel: #22252c;
+  --bg-card: #2a2e36;
+  --bg-input: #1e2128;
+  --bg-hover: #31363f;
+  --border: #3a3f4a;
+  --border-focus: #6b9f78;
+  --text-primary: #e0ddd5;
+  --text-secondary: #9a978f;
+  --text-muted: #6b6860;
+  --accent-green: #6b9f78;
+  --accent-green-dim: #4a7a56;
+  --accent-blue: #6889b3;
+  --accent-amber: #c4a35a;
+  --accent-red: #b35a5a;
+  --accent-red-hover: #c96a6a;
+  --taxon-highlight: rgba(104, 137, 179, 0.18);
+  --taxon-border: rgba(104, 137, 179, 0.4);
+  --paper-bg: #1e2128;
+  --scrollbar-track: #1a1d23;
+  --scrollbar-thumb: #3a3f4a;
+  --font-mono: 'IBM Plex Mono', 'SF Mono', 'Fira Code', monospace;
+  --font-serif: 'Source Serif 4', 'Georgia', serif;
+  --radius: 4px;
+  --radius-lg: 6px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-lg: 0 4px 20px rgba(0,0,0,0.4);
+  --transition: 150ms ease;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #4a4f5a; }
+
+/* Layout */
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  min-height: 0;
+}
+
+/* Top Bar */
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--border);
+  min-height: 48px;
+  z-index: 10;
+}
+
+.topbar-brand {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-green);
+  white-space: nowrap;
+  padding-right: 12px;
+  border-right: 1px solid var(--border);
+}
+
+.topbar-brand span {
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+.paper-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.paper-id-badge {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--accent-amber);
+  background: rgba(196, 163, 90, 0.1);
+  border: 1px solid rgba(196, 163, 90, 0.25);
+  padding: 2px 8px;
+  border-radius: var(--radius);
+  white-space: nowrap;
+  display: none;
+}
+
+.paper-id-badge.visible { display: inline-block; }
+
+.paper-title-display {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.topbar-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.timer {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  min-width: 48px;
+  text-align: right;
+}
+
+/* Buttons */
+.btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn:hover { background: var(--bg-hover); border-color: #4a4f5a; }
+.btn:active { transform: scale(0.97); }
+
+.btn-primary {
+  background: var(--accent-green-dim);
+  border-color: var(--accent-green);
+  color: #e8f0ea;
+}
+.btn-primary:hover { background: var(--accent-green); }
+
+.btn-danger {
+  border-color: var(--accent-red);
+  color: var(--accent-red);
+}
+.btn-danger:hover { background: rgba(179, 90, 90, 0.15); }
+
+.btn-sm {
+  font-size: 10px;
+  padding: 3px 8px;
+}
+
+.btn-icon {
+  padding: 5px 8px;
+  font-size: 13px;
+  line-height: 1;
+}
+
+/* Main Panels */
+.main-panels {
+  display: grid;
+  grid-template-columns: 1fr 340px 1fr;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+  border-right: 1px solid var(--border);
+}
+.panel:last-child { border-right: none; }
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  min-height: 36px;
+}
+
+.panel-title {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.panel-badge {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--accent-green);
+  background: rgba(107, 159, 120, 0.12);
+  padding: 1px 7px;
+  border-radius: 10px;
+}
+
+.panel-body {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+/* Left Panel — Paper Text */
+.paper-text-container {
+  padding: 20px 22px;
+  background: var(--paper-bg);
+}
+
+.paper-text-content {
+  font-family: var(--font-serif);
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.paper-text-content .taxon-hl {
+  background: var(--taxon-highlight);
+  border-bottom: 1.5px solid var(--taxon-border);
+  padding: 0 1px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.paper-text-content .taxon-hl:hover {
+  background: rgba(104, 137, 179, 0.32);
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-muted);
+  font-size: 12px;
+  gap: 12px;
+  padding: 40px;
+  text-align: center;
+}
+
+.empty-state-icon {
+  font-size: 32px;
+  opacity: 0.4;
+}
+
+/* Middle Panel — Form */
+.form-container {
+  padding: 12px 14px 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  width: 100%;
+  padding: 7px 10px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  transition: border-color var(--transition);
+  outline: none;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--border-focus);
+}
+select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236b6860'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 24px;
+}
+textarea {
+  resize: vertical;
+  min-height: 50px;
+}
+
+.form-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 14px 0;
+}
+
+.form-section-label {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.form-actions .btn {
+  flex: 1;
+}
+
+.confidence-info {
+  position: relative;
+}
+
+.confidence-tooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 10px 12px;
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  z-index: 100;
+  box-shadow: var(--shadow-lg);
+}
+.confidence-info:hover .confidence-tooltip,
+.confidence-info:focus-within .confidence-tooltip {
+  display: block;
+}
+.confidence-tooltip strong {
+  color: var(--text-primary);
+}
+
+/* Right Panel — Relationship Cards */
+.relationships-list {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rel-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 10px 12px;
+  transition: all var(--transition);
+  cursor: default;
+  position: relative;
+}
+.rel-card:hover {
+  border-color: #4a4f5a;
+  background: var(--bg-hover);
+}
+
+.rel-card-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.rel-taxon {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--accent-blue);
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-style: italic;
+}
+
+.rel-direction {
+  font-size: 16px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.rel-direction.up { color: var(--accent-red); }
+.rel-direction.down { color: var(--accent-green); }
+.rel-direction.flat { color: var(--text-muted); }
+.rel-direction.unclear { color: var(--accent-amber); }
+
+.rel-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.rel-tag {
+  font-size: 9.5px;
+  font-weight: 500;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: var(--text-secondary);
+}
+.rel-tag.confidence-high { border-color: rgba(107,159,120,0.4); color: var(--accent-green); }
+.rel-tag.confidence-medium { border-color: rgba(196,163,90,0.4); color: var(--accent-amber); }
+.rel-tag.confidence-low { border-color: rgba(179,90,90,0.4); color: var(--accent-red); }
+
+.rel-card-pvalue {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.rel-card-actions {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 4px;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+.rel-card:hover .rel-card-actions { opacity: 1; }
+
+.rel-card-notes {
+  font-size: 10.5px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 4px;
+  line-height: 1.4;
+  border-top: 1px dashed var(--border);
+  padding-top: 4px;
+}
+
+/* Editing state */
+.rel-card.editing {
+  border-color: var(--accent-amber);
+  box-shadow: 0 0 0 1px rgba(196, 163, 90, 0.2);
+}
+
+/* Bottom Bar */
+.bottombar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: end;
+  padding: 10px 16px;
+  background: var(--bg-panel);
+  border-top: 1px solid var(--border);
+  min-height: 50px;
+}
+
+.bottom-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bottom-notes textarea {
+  min-height: 36px;
+  max-height: 80px;
+  font-size: 11px;
+}
+
+.completeness-section {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.completeness-field {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.completeness-field input {
+  width: 80px;
+  text-align: center;
+}
+
+.completeness-field .auto-val {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-green);
+  text-align: center;
+  padding: 7px 10px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  min-width: 80px;
+}
+
+.completeness-field input[type="text"].gap-input {
+  width: 200px;
+  text-align: left;
+}
+
+/* File input hidden */
+#fileInput { display: none; }
+
+/* Toast notification */
+.toast {
+  position: fixed;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--bg-card);
+  border: 1px solid var(--accent-green);
+  color: var(--accent-green);
+  font-size: 11px;
+  padding: 6px 16px;
+  border-radius: var(--radius);
+  opacity: 0;
+  transition: all 300ms ease;
+  z-index: 1000;
+  pointer-events: none;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Annotator modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-overlay.show { display: flex; }
+
+.modal {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  width: 340px;
+  box-shadow: var(--shadow-lg);
+}
+
+.modal h3 {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+.modal p {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.modal input {
+  margin-bottom: 12px;
+}
+
+/* Search highlight */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 14px 8px;
+  display: none;
+}
+.search-bar.visible { display: flex; }
+.search-bar input {
+  flex: 1;
+  font-size: 11px;
+  padding: 5px 8px;
+}
+.search-bar .search-count {
+  font-size: 10px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1200px) {
+  .main-panels {
+    grid-template-columns: 1fr 300px 1fr;
+  }
+}
+
+/* Keyboard shortcut hints */
+.shortcut-hint {
+  font-size: 9px;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 0 4px;
+  border-radius: 2px;
+  margin-left: 4px;
+  font-weight: 400;
+}
+
+/* Study type / pipeline notes display */
+.paper-meta-bar {
+  padding: 8px 14px;
+  background: rgba(107,159,120,0.06);
+  border-bottom: 1px solid var(--border);
+  display: none;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+.paper-meta-bar.visible { display: flex; }
+.paper-meta-tag {
+  padding: 2px 8px;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: var(--text-secondary);
+}
+
+/* Source section indicator in card */
+.rel-source-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.rel-source-dot.results { background: var(--accent-green); }
+.rel-source-dot.discussion { background: var(--accent-amber); }
+.rel-source-dot.abstract { background: var(--accent-blue); }
+
+/* Bionic Reading */
+.bionic-toggle {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1px;
+  margin-right: 4px;
+}
+.bionic-toggle button {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 500;
+  padding: 2px 7px;
+  border: none;
+  border-radius: 2px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.bionic-toggle button:hover { color: var(--text-secondary); }
+.bionic-toggle button.active {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+/* Bold mode */
+.bionic-bold .paper-text-content span.bionic {
+  font-weight: 700;
+}
+
+/* Red mode */
+.bionic-red .paper-text-content span.bionic {
+  color: #e07a5f;
+}
+</style>
+</head>
+<body>
+
+<div class="app">
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="topbar-brand">MICROBIOME <span>ANNOTATOR</span></div>
+    <div class="paper-info">
+      <div class="paper-id-badge" id="paperIdBadge"></div>
+      <div class="paper-title-display" id="paperTitleDisplay">No paper loaded</div>
+    </div>
+    <div class="topbar-actions">
+      <div class="timer" id="timer">0:00</div>
+      <input type="file" id="fileInput" accept=".json">
+      <button class="btn" onclick="document.getElementById('fileInput').click()">Load JSON</button>
+      <button class="btn btn-primary" id="downloadBtn" onclick="downloadAnnotations()" disabled>Export</button>
+    </div>
+  </div>
+
+  <!-- Main 3-Panel Layout -->
+  <div class="main-panels">
+    <!-- Left: Paper Text -->
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title">Paper Text</span>
+        <div style="display:flex;align-items:center;gap:6px">
+          <div class="bionic-toggle" id="bionicToggle">
+            <button onclick="setBionic('off')" class="active" data-mode="off">OFF</button>
+            <button onclick="setBionic('bold')" data-mode="bold"><b>B</b>ionic</button>
+            <button onclick="setBionic('red')" data-mode="red" style="color:var(--accent-red)">Red</button>
+          </div>
+          <button class="btn btn-sm btn-icon" id="searchToggle" title="Search (Ctrl+F)">⌕</button>
+        </div>
+      </div>
+      <div class="paper-meta-bar" id="paperMetaBar"></div>
+      <div class="search-bar" id="searchBar">
+        <input type="text" id="searchInput" placeholder="Search in text…">
+        <span class="search-count" id="searchCount"></span>
+      </div>
+      <div class="panel-body" id="paperPanel">
+        <div class="empty-state" id="paperEmpty">
+          <div class="empty-state-icon">📄</div>
+          <div>Load a paper JSON to begin annotation</div>
+          <div style="font-size:10px;color:var(--text-muted)">Supports paper_text, chunks, or text fields</div>
+        </div>
+        <div class="paper-text-container" id="paperTextContainer" style="display:none">
+          <div class="paper-text-content" id="paperTextContent"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle: Annotation Form -->
+    <div class="panel" style="background:var(--bg-panel)">
+      <div class="panel-header">
+        <span class="panel-title">Annotation Form</span>
+        <span class="shortcut-hint">Alt+A to add</span>
+      </div>
+      <div class="panel-body">
+        <div class="form-container">
+          <div class="form-section-label">Microbe</div>
+
+          <div class="form-group">
+            <label class="form-label">Taxon Name</label>
+            <input type="text" id="f_taxon_name" placeholder="e.g. Fusobacterium nucleatum">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Domain</label>
+              <select id="f_domain">
+                <option value="">—</option>
+                <option value="bacteria">bacteria</option>
+                <option value="archaea">archaea</option>
+                <option value="fungi">fungi</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Taxonomic Level</label>
+              <select id="f_taxonomic_level">
+                <option value="">—</option>
+                <option value="phylum">phylum</option>
+                <option value="class">class</option>
+                <option value="order">order</option>
+                <option value="family">family</option>
+                <option value="genus">genus</option>
+                <option value="species">species</option>
+              </select>
+            </div>
+          </div>
+
+          <hr class="form-divider">
+          <div class="form-section-label">Association</div>
+
+          <div class="form-group">
+            <label class="form-label">Primary Disease</label>
+            <input type="text" id="f_primary_disease" placeholder="e.g. Crohn's disease">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Direction</label>
+              <select id="f_direction">
+                <option value="">—</option>
+                <option value="increased">↑ increased</option>
+                <option value="decreased">↓ decreased</option>
+                <option value="unchanged">→ unchanged</option>
+                <option value="unclear">? unclear</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Change Context</label>
+              <select id="f_change_context">
+                <option value="">—</option>
+                <option value="disease_vs_control">disease vs control</option>
+                <option value="treatment_effect">treatment effect</option>
+                <option value="subgroup_comparison">subgroup comparison</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Sample Site</label>
+              <select id="f_sample_site">
+                <option value="">—</option>
+                <option value="gut">gut</option>
+                <option value="oral">oral</option>
+                <option value="nasal">nasal</option>
+                <option value="skin">skin</option>
+                <option value="vaginal">vaginal</option>
+                <option value="lung">lung</option>
+                <option value="fecal">fecal</option>
+                <option value="respiratory">respiratory</option>
+                <option value="other">other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Source Section</label>
+              <select id="f_source_section">
+                <option value="">—</option>
+                <option value="results">results</option>
+                <option value="discussion">discussion</option>
+                <option value="abstract">abstract</option>
+              </select>
+            </div>
+          </div>
+
+          <hr class="form-divider">
+          <div class="form-section-label">Evidence</div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">P-value</label>
+              <input type="text" id="f_p_value" placeholder="e.g. 0.003 or <0.05">
+            </div>
+            <div class="form-group confidence-info">
+              <label class="form-label">Confidence ⓘ</label>
+              <select id="f_confidence">
+                <option value="">—</option>
+                <option value="high">high</option>
+                <option value="medium">medium</option>
+                <option value="low">low</option>
+              </select>
+              <div class="confidence-tooltip">
+                <strong>high</strong> — Per-relationship p-value or FDR explicitly reported<br><br>
+                <strong>medium</strong> — Direction stated but no per-relationship p-value, or species listed as significant with global FDR threshold<br><br>
+                <strong>low</strong> — Discussion only, inferred from context, or blends own findings with literature
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Notes</label>
+            <textarea id="f_notes" rows="2" placeholder="Optional annotation notes…"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn" id="cancelEditBtn" style="display:none" onclick="cancelEdit()">Cancel</button>
+            <button class="btn btn-primary" id="addRelBtn" onclick="addOrUpdateRelationship()">Add Relationship</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Relationships List -->
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title">Relationships</span>
+        <span class="panel-badge" id="relCount">0</span>
+      </div>
+      <div class="panel-body" id="relPanel">
+        <div class="empty-state" id="relEmpty">
+          <div class="empty-state-icon">∅</div>
+          <div>No relationships yet</div>
+        </div>
+        <div class="relationships-list" id="relList"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="bottombar">
+    <div class="bottom-notes">
+      <label class="form-label">Paper-level Notes</label>
+      <textarea id="paperNotes" placeholder="General notes about this paper…" rows="1"></textarea>
+    </div>
+    <div class="completeness-section">
+      <div class="completeness-field">
+        <label class="form-label">Reported</label>
+        <input type="number" id="totalReported" min="0" placeholder="—">
+      </div>
+      <div class="completeness-field">
+        <label class="form-label">Extracted</label>
+        <div class="auto-val" id="totalExtracted">0</div>
+      </div>
+      <div class="completeness-field">
+        <label class="form-label">Gap Reason</label>
+        <input type="text" id="gapReason" class="gap-input" placeholder="e.g. 18 species in Figure 3 only">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- Annotator Modal -->
+<div class="modal-overlay" id="annotatorModal">
+  <div class="modal">
+    <h3>Welcome</h3>
+    <p>Enter your name to tag annotations. This is saved locally.</p>
+    <input type="text" id="annotatorInput" placeholder="Your name…">
+    <button class="btn btn-primary" style="width:100%" onclick="saveAnnotator()">Continue</button>
+  </div>
+</div>
+
+<script>
+// ─── State ─────────────────────────────────────────────────────
+let state = {
+  paperId: null,
+  paperTitle: null,
+  paperText: null,
+  paperMeta: {},
+  relationships: [],
+  paperNotes: '',
+  totalReported: null,
+  gapReason: '',
+  annotator: localStorage.getItem('annotator') || null,
+  loadTime: null,
+  editingIndex: null
+};
+
+let bionicMode = 'off'; // 'off' | 'bold' | 'red'
+
+const STICKY_FIELDS = ['f_primary_disease', 'f_sample_site', 'f_change_context'];
+const STORAGE_KEY = 'microbiome_annotator_state';
+
+// ─── Init ──────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  if (!state.annotator) {
+    document.getElementById('annotatorModal').classList.add('show');
+  }
+  restoreState();
+  startTimer();
+  setupFileInput();
+  setupSearch();
+  setupKeyboardShortcuts();
+});
+
+function saveAnnotator() {
+  const name = document.getElementById('annotatorInput').value.trim();
+  if (!name) return;
+  state.annotator = name;
+  localStorage.setItem('annotator', name);
+  document.getElementById('annotatorModal').classList.remove('show');
+}
+
+// ─── File Loading ──────────────────────────────────────────────
+function setupFileInput() {
+  document.getElementById('fileInput').addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const data = JSON.parse(ev.target.result);
+        loadPaper(data);
+      } catch (err) {
+        showToast('Invalid JSON file');
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = '';
+  });
+}
+
+function loadPaper(data) {
+  // Extract paper ID
+  state.paperId = data.paper_id || data.id || 'unknown';
+
+  // Extract title
+  state.paperTitle = data.paper_title || data.title || data.name || 'Untitled';
+
+  // Extract text
+  if (data.paper_text) {
+    state.paperText = data.paper_text;
+  } else if (data.text) {
+    state.paperText = data.text;
+  } else if (data.chunks && Array.isArray(data.chunks)) {
+    state.paperText = data.chunks.join('\n\n');
+  } else {
+    state.paperText = '(No text found in this JSON)';
+  }
+
+  // Extract meta
+  state.paperMeta = {};
+  if (data.study_type) state.paperMeta.study_type = data.study_type;
+  if (data.primary_disease) state.paperMeta.primary_disease = data.primary_disease;
+  if (data.sample_sites) state.paperMeta.sample_sites = data.sample_sites.join(', ');
+
+  // Load existing relationships
+  state.relationships = [];
+  if (data.relationships && Array.isArray(data.relationships)) {
+    state.relationships = data.relationships.map(r => ({
+      taxon_name: r.taxon_name || '',
+      domain: r.domain || '',
+      taxonomic_level: r.taxonomic_level || '',
+      primary_disease: r.primary_disease || data.primary_disease || '',
+      direction: r.direction || '',
+      change_context: r.change_context || '',
+      sample_site: r.sample_site || '',
+      source_section: r.source_section || '',
+      p_value: r.p_value || '',
+      confidence: r.confidence || '',
+      notes: r.notes || (r._annotation_metadata ? r._annotation_metadata.review_notes || '' : '')
+    }));
+  }
+
+  // Pre-fill sticky fields from paper meta
+  if (data.primary_disease && data.primary_disease !== 'none' && !data.primary_disease.startsWith('none')) {
+    document.getElementById('f_primary_disease').value = data.primary_disease;
+  }
+  if (data.sample_sites && data.sample_sites.length > 0) {
+    const site = data.sample_sites[0];
+    const sel = document.getElementById('f_sample_site');
+    if ([...sel.options].some(o => o.value === site)) {
+      sel.value = site;
+    }
+  }
+
+  // Extraction stats
+  if (data.extraction_stats) {
+    const fc = data.extraction_stats.final_count;
+    if (fc != null) document.getElementById('totalReported').value = fc;
+  }
+
+  state.loadTime = Date.now();
+  state.editingIndex = null;
+  state.paperNotes = '';
+
+  renderPaper();
+  renderRelationships();
+  updateUI();
+  saveState();
+  showToast(`Loaded paper ${state.paperId} — ${state.relationships.length} existing relationships`);
+}
+
+// ─── Rendering ─────────────────────────────────────────────────
+function renderPaper() {
+  const empty = document.getElementById('paperEmpty');
+  const container = document.getElementById('paperTextContainer');
+  const content = document.getElementById('paperTextContent');
+
+  if (!state.paperText) {
+    empty.style.display = 'flex';
+    container.style.display = 'none';
+    return;
+  }
+
+  empty.style.display = 'none';
+  container.style.display = 'block';
+  content.innerHTML = applyBionic(highlightTaxa(escapeHtml(state.paperText)));
+
+  // Meta bar
+  const metaBar = document.getElementById('paperMetaBar');
+  if (Object.keys(state.paperMeta).length > 0) {
+    metaBar.innerHTML = Object.entries(state.paperMeta)
+      .map(([k, v]) => `<span class="paper-meta-tag"><strong>${k.replace(/_/g,' ')}:</strong> ${escapeHtml(String(v))}</span>`)
+      .join('');
+    metaBar.classList.add('visible');
+  } else {
+    metaBar.classList.remove('visible');
+  }
+
+  // Taxon click → fill form
+  content.querySelectorAll('.taxon-hl').forEach(el => {
+    el.addEventListener('click', () => {
+      document.getElementById('f_taxon_name').value = el.textContent;
+      document.getElementById('f_taxon_name').focus();
+    });
+  });
+}
+
+function highlightTaxa(text) {
+  // Match common microbial taxon patterns
+  const taxonPattern = /\b([A-Z][a-z]+(?:aceae|ales|ota|ella|ium|us|coccus|bacillus|bacter|monas|plasma|clostridium|vibrio|phage|myces|nella|spora|toga))\b/g;
+  // Also match binomials: Capitalized + lowercase (potential genus species)
+  const binomialPattern = /\b([A-Z][a-z]{2,})(\s+)([a-z]{3,}(?:is|um|ae|ii|ans|ens|osa|ica|alis|oides|cola|phila))\b/g;
+  // Also match explicit phylum/class names common in microbiome
+  const knownTaxa = /\b(Proteobacteria|Firmicutes|Bacteroidetes|Actinobacteria|Tenericutes|Fusobacteria|Cyanobacteria|Verrucomicrobia|Spirochaetes|Deinococcus|Chloroflexi|Planctomycetes|Acidobacteria|Synergistetes|Euryarchaeota|Crenarchaeota|Thaumarchaeota|Ascomycota|Basidiomycota|Candidatus)\b/g;
+
+  // First pass: known phyla
+  text = text.replace(knownTaxa, '<span class="taxon-hl">$1</span>');
+  // Second pass: binomials (avoid double-wrapping)
+  text = text.replace(binomialPattern, (match, g, sp, s) => {
+    if (match.includes('taxon-hl')) return match;
+    return `<span class="taxon-hl">${g}${sp}${s}</span>`;
+  });
+  // Third pass: single taxon words
+  text = text.replace(taxonPattern, (match) => {
+    if (match.includes('taxon-hl')) return match;
+    return `<span class="taxon-hl">${match}</span>`;
+  });
+
+  return text;
+}
+
+function applyBionic(html) {
+  if (bionicMode === 'off') return html;
+  // Split HTML into tags and text nodes — tags stay untouched
+  const parts = html.split(/(<[^>]*>)/);
+  return parts.map(part => {
+    // HTML tags pass through unchanged
+    if (part.startsWith('<')) return part;
+    // Process text node: split on whitespace, bionic each word
+    return part.split(/(\s+)/).map(w => {
+      if (/^\s*$/.test(w) || w.length <= 1) return w;
+      const boldLen = Math.max(1, Math.ceil(w.length * 0.4));
+      return `<span class="bionic">${w.slice(0, boldLen)}</span>${w.slice(boldLen)}`;
+    }).join('');
+  }).join('');
+}
+
+function setBionic(mode) {
+  bionicMode = mode;
+  const container = document.getElementById('paperTextContainer');
+
+  // Update toggle buttons
+  document.querySelectorAll('#bionicToggle button').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.mode === mode);
+  });
+
+  // Update container class for CSS styling
+  container.classList.remove('bionic-bold', 'bionic-red');
+  if (mode === 'bold') container.classList.add('bionic-bold');
+  if (mode === 'red') container.classList.add('bionic-red');
+
+  // Re-render text
+  if (state.paperText) {
+    const content = document.getElementById('paperTextContent');
+    content.innerHTML = applyBionic(highlightTaxa(escapeHtml(state.paperText)));
+    attachTaxonClicks();
+  }
+}
+
+function renderRelationships() {
+  const list = document.getElementById('relList');
+  const empty = document.getElementById('relEmpty');
+
+  if (state.relationships.length === 0) {
+    empty.style.display = 'flex';
+    list.innerHTML = '';
+    updateRelCount();
+    return;
+  }
+
+  empty.style.display = 'none';
+  list.innerHTML = state.relationships.map((r, i) => {
+    const dirSymbol = { increased: '↑', decreased: '↓', unchanged: '→', unclear: '?' }[r.direction] || '·';
+    const dirClass = { increased: 'up', decreased: 'down', unchanged: 'flat', unclear: 'unclear' }[r.direction] || 'flat';
+    const confClass = r.confidence ? `confidence-${r.confidence}` : '';
+    const srcClass = r.source_section || '';
+    const isEditing = state.editingIndex === i;
+
+    return `
+      <div class="rel-card${isEditing ? ' editing' : ''}" data-index="${i}">
+        <div class="rel-card-actions">
+          <button class="btn btn-sm btn-icon" onclick="editRelationship(${i})" title="Edit">✎</button>
+          <button class="btn btn-sm btn-icon btn-danger" onclick="deleteRelationship(${i})" title="Delete">✕</button>
+        </div>
+        <div class="rel-card-top">
+          <span class="rel-direction ${dirClass}">${dirSymbol}</span>
+          <span class="rel-taxon">${escapeHtml(r.taxon_name)}</span>
+        </div>
+        <div class="rel-card-meta">
+          ${r.taxonomic_level ? `<span class="rel-tag">${r.taxonomic_level}</span>` : ''}
+          ${r.confidence ? `<span class="rel-tag ${confClass}">${r.confidence}</span>` : ''}
+          ${r.sample_site ? `<span class="rel-tag">${r.sample_site}</span>` : ''}
+          ${r.source_section ? `<span class="rel-tag">${r.source_section}<span class="rel-source-dot ${srcClass}" style="display:inline-block;margin-left:4px;vertical-align:middle"></span></span>` : ''}
+          ${r.p_value ? `<span class="rel-tag">p=${escapeHtml(String(r.p_value))}</span>` : ''}
+        </div>
+        ${r.primary_disease ? `<div class="rel-card-pvalue">${escapeHtml(r.primary_disease)}</div>` : ''}
+        ${r.notes ? `<div class="rel-card-notes">${escapeHtml(r.notes)}</div>` : ''}
+      </div>
+    `;
+  }).join('');
+
+  updateRelCount();
+}
+
+function updateRelCount() {
+  document.getElementById('relCount').textContent = state.relationships.length;
+  document.getElementById('totalExtracted').textContent = state.relationships.length;
+}
+
+function updateUI() {
+  const badge = document.getElementById('paperIdBadge');
+  const title = document.getElementById('paperTitleDisplay');
+  const dl = document.getElementById('downloadBtn');
+
+  if (state.paperId) {
+    badge.textContent = `#${state.paperId}`;
+    badge.classList.add('visible');
+    title.textContent = state.paperTitle;
+    dl.disabled = false;
+  } else {
+    badge.classList.remove('visible');
+    title.textContent = 'No paper loaded';
+    dl.disabled = true;
+  }
+}
+
+// ─── Form ──────────────────────────────────────────────────────
+function getFormData() {
+  return {
+    taxon_name: document.getElementById('f_taxon_name').value.trim(),
+    domain: document.getElementById('f_domain').value,
+    taxonomic_level: document.getElementById('f_taxonomic_level').value,
+    primary_disease: document.getElementById('f_primary_disease').value.trim(),
+    direction: document.getElementById('f_direction').value,
+    change_context: document.getElementById('f_change_context').value,
+    sample_site: document.getElementById('f_sample_site').value,
+    source_section: document.getElementById('f_source_section').value,
+    p_value: document.getElementById('f_p_value').value.trim() || null,
+    confidence: document.getElementById('f_confidence').value,
+    notes: document.getElementById('f_notes').value.trim()
+  };
+}
+
+function setFormData(r) {
+  document.getElementById('f_taxon_name').value = r.taxon_name || '';
+  document.getElementById('f_domain').value = r.domain || '';
+  document.getElementById('f_taxonomic_level').value = r.taxonomic_level || '';
+  document.getElementById('f_primary_disease').value = r.primary_disease || '';
+  document.getElementById('f_direction').value = r.direction || '';
+  document.getElementById('f_change_context').value = r.change_context || '';
+  document.getElementById('f_sample_site').value = r.sample_site || '';
+  document.getElementById('f_source_section').value = r.source_section || '';
+  document.getElementById('f_p_value').value = r.p_value || '';
+  document.getElementById('f_confidence').value = r.confidence || '';
+  document.getElementById('f_notes').value = r.notes || '';
+}
+
+function clearForm(keepSticky = true) {
+  const sticky = {};
+  if (keepSticky) {
+    STICKY_FIELDS.forEach(id => { sticky[id] = document.getElementById(id).value; });
+  }
+
+  document.querySelectorAll('.form-container input[type="text"], .form-container textarea').forEach(el => el.value = '');
+  document.querySelectorAll('.form-container select').forEach(el => el.value = '');
+
+  if (keepSticky) {
+    STICKY_FIELDS.forEach(id => { document.getElementById(id).value = sticky[id]; });
+  }
+}
+
+function addOrUpdateRelationship() {
+  const data = getFormData();
+  if (!data.taxon_name) {
+    showToast('Taxon name is required');
+    document.getElementById('f_taxon_name').focus();
+    return;
+  }
+
+  if (state.editingIndex !== null) {
+    state.relationships[state.editingIndex] = data;
+    state.editingIndex = null;
+    document.getElementById('addRelBtn').textContent = 'Add Relationship';
+    document.getElementById('cancelEditBtn').style.display = 'none';
+    showToast('Relationship updated');
+  } else {
+    state.relationships.push(data);
+    showToast('Relationship added');
+  }
+
+  clearForm(true);
+  renderRelationships();
+  saveState();
+  document.getElementById('f_taxon_name').focus();
+
+  // Scroll to bottom of relationships list
+  const panel = document.getElementById('relPanel');
+  panel.scrollTop = panel.scrollHeight;
+}
+
+function editRelationship(index) {
+  state.editingIndex = index;
+  setFormData(state.relationships[index]);
+  document.getElementById('addRelBtn').textContent = 'Update Relationship';
+  document.getElementById('cancelEditBtn').style.display = '';
+  renderRelationships();
+  document.getElementById('f_taxon_name').focus();
+}
+
+function cancelEdit() {
+  state.editingIndex = null;
+  clearForm(true);
+  document.getElementById('addRelBtn').textContent = 'Add Relationship';
+  document.getElementById('cancelEditBtn').style.display = 'none';
+  renderRelationships();
+}
+
+function deleteRelationship(index) {
+  const name = state.relationships[index].taxon_name;
+  state.relationships.splice(index, 1);
+  if (state.editingIndex === index) {
+    cancelEdit();
+  } else if (state.editingIndex !== null && state.editingIndex > index) {
+    state.editingIndex--;
+  }
+  renderRelationships();
+  saveState();
+  showToast(`Removed ${name}`);
+}
+
+// ─── Export ────────────────────────────────────────────────────
+function downloadAnnotations() {
+  if (!state.paperId) return;
+
+  const totalReported = parseInt(document.getElementById('totalReported').value) || null;
+  const gapReason = document.getElementById('gapReason').value.trim();
+  const paperNotes = document.getElementById('paperNotes').value.trim();
+
+  const elapsed = state.loadTime ? Math.round((Date.now() - state.loadTime) / 60000) : null;
+
+  const output = {
+    paper_id: state.paperId,
+    paper_title: state.paperTitle,
+    annotator: state.annotator,
+    date: new Date().toISOString().split('T')[0],
+    time_spent_minutes: elapsed,
+    relationships: state.relationships.map(r => ({
+      taxon_name: r.taxon_name,
+      domain: r.domain,
+      taxonomic_level: r.taxonomic_level,
+      primary_disease: r.primary_disease,
+      direction: r.direction,
+      change_context: r.change_context,
+      sample_site: r.sample_site,
+      source_section: r.source_section,
+      p_value: r.p_value,
+      confidence: r.confidence,
+      notes: r.notes
+    })),
+    extraction_completeness: {
+      status: (totalReported && state.relationships.length < totalReported) ? 'partial' : 'complete',
+      total_reported: totalReported,
+      total_extracted: state.relationships.length,
+      gap_reason: gapReason
+    },
+    paper_notes: paperNotes
+  };
+
+  const blob = new Blob([JSON.stringify(output, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `paper_${state.paperId}_annotated.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('Annotations exported');
+}
+
+// ─── Timer ─────────────────────────────────────────────────────
+function startTimer() {
+  setInterval(() => {
+    if (!state.loadTime) return;
+    const s = Math.floor((Date.now() - state.loadTime) / 1000);
+    const m = Math.floor(s / 60);
+    const sec = s % 60;
+    document.getElementById('timer').textContent = `${m}:${String(sec).padStart(2, '0')}`;
+  }, 1000);
+}
+
+// ─── Search ────────────────────────────────────────────────────
+function setupSearch() {
+  const toggle = document.getElementById('searchToggle');
+  const bar = document.getElementById('searchBar');
+  const input = document.getElementById('searchInput');
+
+  toggle.addEventListener('click', () => {
+    bar.classList.toggle('visible');
+    if (bar.classList.contains('visible')) {
+      input.focus();
+    }
+  });
+
+  input.addEventListener('input', () => {
+    const query = input.value.trim();
+    const content = document.getElementById('paperTextContent');
+    if (!query || !state.paperText) {
+      content.innerHTML = highlightTaxa(escapeHtml(state.paperText || ''));
+      document.getElementById('searchCount').textContent = '';
+      // Re-attach taxon click handlers
+      attachTaxonClicks();
+      return;
+    }
+
+    let html = escapeHtml(state.paperText);
+    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(${escaped})`, 'gi');
+    let count = 0;
+    html = html.replace(regex, (m) => { count++; return `<mark style="background:#c4a35a44;color:var(--text-primary);border-radius:2px;padding:0 1px">${m}</mark>`; });
+    // Then apply taxon highlighting on non-mark sections
+    content.innerHTML = html;
+    document.getElementById('searchCount').textContent = `${count} match${count !== 1 ? 'es' : ''}`;
+  });
+}
+
+function attachTaxonClicks() {
+  document.querySelectorAll('#paperTextContent .taxon-hl').forEach(el => {
+    el.addEventListener('click', () => {
+      document.getElementById('f_taxon_name').value = el.textContent;
+      document.getElementById('f_taxon_name').focus();
+    });
+  });
+}
+
+// ─── Keyboard Shortcuts ────────────────────────────────────────
+function setupKeyboardShortcuts() {
+  document.addEventListener('keydown', (e) => {
+    // Alt+A: Add relationship
+    if (e.altKey && e.key === 'a') {
+      e.preventDefault();
+      addOrUpdateRelationship();
+    }
+    // Escape: Cancel edit
+    if (e.key === 'Escape' && state.editingIndex !== null) {
+      cancelEdit();
+    }
+    // Ctrl+F in paper panel
+    if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+      const bar = document.getElementById('searchBar');
+      if (!bar.classList.contains('visible')) {
+        e.preventDefault();
+        bar.classList.add('visible');
+        document.getElementById('searchInput').focus();
+      }
+    }
+  });
+}
+
+// ─── LocalStorage ──────────────────────────────────────────────
+function saveState() {
+  const toSave = {
+    paperId: state.paperId,
+    paperTitle: state.paperTitle,
+    paperText: state.paperText,
+    paperMeta: state.paperMeta,
+    relationships: state.relationships,
+    loadTime: state.loadTime,
+    paperNotes: document.getElementById('paperNotes').value,
+    totalReported: document.getElementById('totalReported').value,
+    gapReason: document.getElementById('gapReason').value
+  };
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(toSave));
+  } catch (e) {
+    // localStorage full or unavailable
+  }
+}
+
+function restoreState() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    if (!saved || !saved.paperId) return;
+
+    state.paperId = saved.paperId;
+    state.paperTitle = saved.paperTitle;
+    state.paperText = saved.paperText;
+    state.paperMeta = saved.paperMeta || {};
+    state.relationships = saved.relationships || [];
+    state.loadTime = saved.loadTime;
+
+    document.getElementById('paperNotes').value = saved.paperNotes || '';
+    document.getElementById('totalReported').value = saved.totalReported || '';
+    document.getElementById('gapReason').value = saved.gapReason || '';
+
+    renderPaper();
+    renderRelationships();
+    updateUI();
+  } catch (e) {
+    // Corrupted state
+  }
+}
+
+// Auto-save on changes
+document.getElementById('paperNotes').addEventListener('input', saveState);
+document.getElementById('totalReported').addEventListener('input', saveState);
+document.getElementById('gapReason').addEventListener('input', saveState);
+
+// ─── Utilities ─────────────────────────────────────────────────
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+function showToast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(el._t);
+  el._t = setTimeout(() => el.classList.remove('show'), 2000);
+}
+</script>
+</body>
+</html>

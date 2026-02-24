@@ -1,0 +1,439 @@
+{
+  "paper_id": "756",
+  "paper_title": "The Effects of Electronic Cigarettes on Oral Microbiome and Metabolome in 3D Tissue-Engineered Models",
+  "study_type": "treatment_intervention",
+  "primary_disease": "oral dysbiosis",
+  "sample_sites": [
+    "oral"
+  ],
+  "relationships": [
+    {
+      "id": "756_rel_001",
+      "taxon_name": "Clostridium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "oral dysbiosis",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated as abundant in flavoured EC with nicotine group in the discussion. Also mentioned in the results section as showing differences at genus level (as Clostridium_XlVa). Taxon name verified in paper.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Affected taxa that was abundant in the flavoured EC with nicotine group included anaerobic Clostridium, Prevotella, Veillonellaceae, and Bacteroides."
+      }
+    },
+    {
+      "id": "756_rel_002",
+      "taxon_name": "Prevotella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "oral dysbiosis",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated as abundant in EC+nicotine group in discussion, and also confirmed as 'significantly impacted in flavoured EC users, irrespective of nicotine presence' in results. Direction confirmed as increased from discussion context.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Affected taxa that was abundant in the flavoured EC with nicotine group included anaerobic Clostridium, Prevotella, Veillonellaceae, and Bacteroides."
+      }
+    },
+    {
+      "id": "756_rel_003",
+      "taxon_name": "Bacteroides",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "oral dysbiosis",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated as abundant in flavoured EC with nicotine group in discussion. Taxon name verified in paper.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Affected taxa that was abundant in the flavoured EC with nicotine group included anaerobic Clostridium, Prevotella, Veillonellaceae, and Bacteroides."
+      }
+    },
+    {
+      "id": "756_rel_004",
+      "taxon_name": "Veillonellaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "oral dysbiosis",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly stated as abundant in flavoured EC with nicotine group in discussion. Also listed in results section as affected at family level. Taxon name verified in paper.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "Affected taxa that was abundant in the flavoured EC with nicotine group included anaerobic Clostridium, Prevotella, Veillonellaceae, and Bacteroides."
+      }
+    },
+    {
+      "id": "756_rel_005",
+      "taxon_name": "Proteobacteria",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "oral dysbiosis",
+      "direction": "unclear",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Paper states Proteobacteria 'exhibited alterations' at phylum level between groups with p<0.05, but does not explicitly state whether it increased or decreased. Direction marked unclear to avoid hallucination.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "at the phylum level, Proteobacteria and Firmicutes exhibited alterations"
+      }
+    },
+    {
+      "id": "756_rel_006",
+      "taxon_name": "Firmicutes",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "oral dysbiosis",
+      "direction": "unclear",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Paper states Firmicutes 'exhibited alterations' and was 'significantly impacted in flavoured EC users, irrespective of nicotine presence' but does not explicitly state increase or decrease. Direction marked unclear.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "taxa such as Firmicutes at the phylum level, Bacilli and Bacteroidia at the class level, Prevotellaceae and Enterobacteriaceae at the family level, and Prevotella at the genus level, were significantly impacted in flavoured EC users, irrespective of nicotine presence."
+      }
+    },
+    {
+      "id": "756_rel_007",
+      "taxon_name": "Actinobacteria",
+      "domain": "bacteria",
+      "taxonomic_level": "class",
+      "primary_disease": "oral dysbiosis",
+      "direction": "unclear",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Paper states Actinobacteria class 'were affected' with notable variations (p<0.05) but does not explicitly state whether increased or decreased. Direction marked unclear.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "at the class level, Actinobacteria, Bacilli, Bacteroidia, and Clostridia were affected"
+      }
+    },
+    {
+      "id": "756_rel_008",
+      "taxon_name": "Bacilli",
+      "domain": "bacteria",
+      "taxonomic_level": "class",
+      "primary_disease": "oral dysbiosis",
+      "direction": "unclear",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Paper states Bacilli class was 'significantly impacted in flavoured EC users, irrespective of nicotine presence' but does not specify increase or decrease. Direction marked unclear.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "taxa such as Firmicutes at the phylum level, Bacilli and Bacteroidia at the class level, Prevotellaceae and Enterobacteriaceae at the family level, and Prevotella at the genus level, were significantly impacted in flavoured EC users, irrespective of nicotine presence."
+      }
+    },
+    {
+      "id": "756_rel_009",
+      "taxon_name": "Bacteroidia",
+      "domain": "bacteria",
+      "taxonomic_level": "class",
+      "primary_disease": "oral dysbiosis",
+      "direction": "unclear",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Paper states Bacteroidia class was 'significantly impacted in flavoured EC users, irrespective of nicotine presence' but does not specify direction. Direction marked unclear.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "taxa such as Firmicutes at the phylum level, Bacilli and Bacteroidia at the class level, Prevotellaceae and Enterobacteriaceae at the family level, and Prevotella at the genus level, were significantly impacted in flavoured EC users, irrespective of nicotine presence."
+      }
+    },
+    {
+      "id": "756_rel_010",
+      "taxon_name": "Clostridia",
+      "domain": "bacteria",
+      "taxonomic_level": "class",
+      "primary_disease": "oral dysbiosis",
+      "direction": "unclear",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Paper states Clostridia class 'were affected' with p<0.05 but does not explicitly state increase or decrease. Direction marked unclear. Note: Clostridium at genus level is separately recorded as increased.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "at the class level, Actinobacteria, Bacilli, Bacteroidia, and Clostridia were affected"
+      }
+    },
+    {
+      "id": "756_rel_011",
+      "taxon_name": "Prevotellaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "oral dysbiosis",
+      "direction": "unclear",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Paper states Prevotellaceae was 'significantly impacted in flavoured EC users, irrespective of nicotine presence' but does not specify increase or decrease. Direction marked unclear. Note: Prevotella at genus level is separately recorded as increased.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "taxa such as Firmicutes at the phylum level, Bacilli and Bacteroidia at the class level, Prevotellaceae and Enterobacteriaceae at the family level, and Prevotella at the genus level, were significantly impacted in flavoured EC users, irrespective of nicotine presence."
+      }
+    },
+    {
+      "id": "756_rel_012",
+      "taxon_name": "Enterobacteriaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "oral dysbiosis",
+      "direction": "unclear",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Paper states Enterobacteriaceae was 'significantly impacted in flavoured EC users, irrespective of nicotine presence' but does not specify direction. Direction marked unclear.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "taxa such as Firmicutes at the phylum level, Bacilli and Bacteroidia at the class level, Prevotellaceae and Enterobacteriaceae at the family level, and Prevotella at the genus level, were significantly impacted in flavoured EC users, irrespective of nicotine presence."
+      }
+    },
+    {
+      "id": "756_rel_013",
+      "taxon_name": "Bifidobacteriaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "oral dysbiosis",
+      "direction": "unclear",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Paper lists Bifidobacteriaceae as affected at family level with p<0.05 but does not specify direction. Not included in the 'significantly impacted irrespective of nicotine' list, so effect may be nicotine-specific. Direction marked unclear.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "At the family level, Prevotellaceae, Enterobacteriaceae, Bifidobacteriaceae, Ruminococcaceae, Veillonellaceae, and Lachnospiraceae, while at genus level Prevotella, Bacteroides, Bifidobacterium, and Clostridium_XlVa showed differences"
+      }
+    },
+    {
+      "id": "756_rel_014",
+      "taxon_name": "Ruminococcaceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "oral dysbiosis",
+      "direction": "unclear",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Paper lists Ruminococcaceae as affected at family level with p<0.05 but does not specify direction. Not in 'significantly impacted irrespective of nicotine' list. Direction marked unclear.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "At the family level, Prevotellaceae, Enterobacteriaceae, Bifidobacteriaceae, Ruminococcaceae, Veillonellaceae, and Lachnospiraceae, while at genus level Prevotella, Bacteroides, Bifidobacterium, and Clostridium_XlVa showed differences"
+      }
+    },
+    {
+      "id": "756_rel_015",
+      "taxon_name": "Lachnospiraceae",
+      "domain": "bacteria",
+      "taxonomic_level": "family",
+      "primary_disease": "oral dysbiosis",
+      "direction": "unclear",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Paper lists Lachnospiraceae as affected at family level with p<0.05 but does not specify direction. Not in 'significantly impacted irrespective of nicotine' list. Direction marked unclear.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "At the family level, Prevotellaceae, Enterobacteriaceae, Bifidobacteriaceae, Ruminococcaceae, Veillonellaceae, and Lachnospiraceae, while at genus level Prevotella, Bacteroides, Bifidobacterium, and Clostridium_XlVa showed differences"
+      }
+    },
+    {
+      "id": "756_rel_016",
+      "taxon_name": "Bifidobacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "oral dysbiosis",
+      "direction": "unclear",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_not_specified"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Paper lists Bifidobacterium as showing differences at genus level with p<0.05 but does not specify direction. Direction marked unclear.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "at genus level Prevotella, Bacteroides, Bifidobacterium, and Clostridium_XlVa showed differences"
+      }
+    },
+    {
+      "id": "756_rel_017",
+      "taxon_name": "Clostridium_XlVa",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "oral dysbiosis",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [
+          "direction_inferred_from_genus_context"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Paper lists Clostridium_XlVa as showing differences at genus level. The discussion explicitly states Clostridium (the broader genus) was abundant in the EC+nicotine group. Clostridium_XlVa is a Clostridium subgroup, so direction inferred as increased. Medium confidence because direction is not stated explicitly for the XlVa clade itself.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "at genus level Prevotella, Bacteroides, Bifidobacterium, and Clostridium_XlVa showed differences"
+      }
+    }
+  ],
+  "extraction_stats": {
+    "layer1_raw_count": {
+      "combined": 17
+    },
+    "layer1_union_count": 17,
+    "layer2_corrections": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 17
+  },
+  "paper_text": "The Effects of Electronic Cigarettes on Oral Microbiome and Metabolome in 3D Tissue-Engineered Models\n\nAbstract\nBackground and aim\nRecent studies have shown that electronic cigarettes (ECs) use disrupts the oral microbiome composition and diversity, impairing the metabolic pathways of the mucosal cells. However, to date, no reports have evaluated the role of EC exposure in the context of oral metabolome\nHence, the aim of this study was to investigate the role of EC aerosol exposure in the dysregulation of the oral microbiome and metabolome profile using in vitro 3D organotypic models of human oral mucosa. Methods\n3D tissue-engineered human oral mucosa models were generated and infected with oral microbes obtained from saliva of a healthy donor\nThe epithelial surface of the oral mucosal models was exposed directly to the EC aerosol (flavoured; with and without nicotine) as it came out of a simulated activated device that mimicked the clinical situation. A comprehensive assessment of oral microbiome community composition by bacterial 16S rRNA gene sequencing was performed. A gas chromatography-based mass spectrometry analysis was also conducted to identify the effect of vaping on the oral metabolome profile\nResults\nA higher alpha diversity in flavoured EC with nicotine groups was observed compared to controls, with notable differences in bacterial taxa abundance. Metabolomics analysis further demonstrated distinct clustering of control, EC with flavoured nicotine, and flavoured EC groups, confirming 13 metabolites that were statistically higher in levels in flavoured EC with nicotine group, indicating the adverse effects of nicotine on the oral mucosa model\nDepartment of Biotechnology, Birla Institute of Technology and Science Pilani\u2014Dubai Campus, Academic City, Dubai, United Arab Emirates; and Department of Restorative Dentistry, Hamdan Bin Mohammed College of Dental Medicine (HBMCDM), Mohammed Bin Rashid University of Medicine and Health Sciences (MBRU), Dubai Health, Dubai, United Arab Emirates, and Department of Restorative Dentistry, School of Clinical Dentistry, University of Sheffield, Sheffield, UK. mainak@dubai. bits-pilani. ac. inKeyvan\nHowever, to date, no reports have evaluated the role of EC exposure in the context of oral metabolome. Hence, the aim of this study was to investigate the role of EC aerosol exposure in the dysregulation of the oral microbiome and metabolome profile using in vitro 3D organotypic models of human oral mucosa. Methods\n3D tissue-engineered human oral mucosa models were generated and infected with oral microbes obtained from saliva of a healthy donor\nAltered metabolites were mainly enriched in pathways associated with oral cancer progression. Conclusion\nThis study underscores the significant impact of EC use on oral health, highlighting alterations in the oral microbiome, bacterial composition, and metabolite profiles via a clinically relevant in vitro 3D organotypic model of human oral mucosa\nKey words: Electronic cigarette, microbiome, metabolome profile, tissue engineering, oral mucosaIntroduction\nSmoking is one of the major preventable causes of cancer. 1,2 However, awareness against the ill effects of smoking has increased due to extensive research in the field. This has led to the exploration of healthier alternatives to conventional smoking as well as better smoking cessation tools\nElectronic cigarettes (ECs), or vaping as the practice is called, have received tremendous attention as a safer substitute. 3,4 The underlying assumption is that cigarette smoke has around 80 known carcinogens and ECs, deliver nicotine in a smokeless manner, thus making the latter a safer choice. 5, 6, 7 Citing these reasons, ECs have been widely used and extensively promoted as a safer smoking cessation tool as well as a safer alternative to traditional smoking\n8, 9, 10\nIn the last decade, the popularity of flavoured ECs has increased rapidly among users, particularly among the younger generation. 11, 12, 13, 14 In 2022, 14% of high school students and 3% of middle school students were reported to use ECs. Among these EC users, 85% used flavoured ECs and most of these ECs contained nicotine. 11,15 Given that ECs have been around for about 15 years now,14 their long-term side effects are yet to be fully understood\nThis incomplete understanding makes this surge in EC usage, especially among the younger generation, a particular concern. It is to be noted that these flavouring agents have been deemed safe only for ingestion, and the toxic effects of inhalation of these chemicals need further investigation. 14,16\nIn addition to this, it is insufficiently appreciated that heating of EC liquid leads to thermal decomposition of many of its constituents resulting in release of several toxicants\n17, 18, 19 The efficacy of ECs as a smoking cessation tool has also come into question. Studies have found that users, in fact, become addicted to ECs and start using them either alone or in addition to conventional smoking in the long term,20, 21, 22 hence achieving a systematic nicotine concentration that is similar to traditional cigarettes. 23 While knowledge about ECs\u2019 adverse effects is still limited, recent evidence suggests that ECs can lead to a wide range of biological ill-effects\nIn vitro and in vivo studies have shown that EC usage causes inflammation,7 delayed immune response,5 oxidative stress24 cell senescence25 and DNA damage,26 hence leading to various diseased states including cancer. Oral cavity is especially significant in the context of smoking as it harbours a complex population of microbes either permanent or those destined to be housed in the respiratory or gastrointestinal tracts. Smoking is widely known to result in alterations in a healthy oral microbiome\n27 Studies show that EC usage not only results in an increased susceptibility to bacterial and viral infections but also a reduced clearance of these pathogens from the body. 5,7,28,29 It has also been found to be responsible for oral microbiome dysbiosis through the promotion of an anaerobic oral environment. 30\nConcurrently, the integrity of cellular metabolism is essential for maintaining cellular homeostasis and mitigation of toxic insults\n31,32 However, how EC exposure associated oral microbiome dysbiosis results in the dysregulation of the oral metabolome remains under-appreciated and under-studied. There is a lack of comprehensive studies characterising the biological effects of EC aerosol exposure in oral microbiome dysregulation\nTo increase our understanding of the role vaping plays in oral microbiome-mediated dysregulation of oral metabolome, we performed a comprehensive assessment of oral microbiome community composition by bacterial 16S rRNA gene sequencing. A gas chromatography-based mass spectrometry analysis was also conducted to identify the effect of vaping on the oral metabolome profile\nTo the best of our knowledge, this is the first study to investigate the effect of EC aerosol (flavoured; with and without nicotine) on the health of oral mucosa at the metabolic level using in vitro 3D organotypic models of human oral mucosa while the link with oral microbiome provides an added advantage\nMaterials and methods\nCell culture\nHuman buccal squamous cell carcinoma cell line (TR146) d from Sigma-Aldrich (catalogue number 10032305-1VL) was cultured in 1:1 mixture of Dulbecco's Modified Eagle's Medium and Ham's F-12 Nutrient Mixture (DMEM:F12) (Sigma-Aldrich)\nNormal human oral fibroblasts were harvested from healthy patients undergoing oral surgery with their written informed consent under appropriate ethical approval from the Mohammed Bin Rashid University Institutional Review Board (IRB). Oral fibroblasts were cultured as previously described by Moharamzadeh et al. 33 Briefly, the biopsy tissue was minced finely using a scalpel in a petri dish. The tissue was then incubated overnight with 0\n05% (w/v) collagenase type I (Sigma-Aldrich, catalogue number c3867-1vl) dissolved in DMEM:F12 medium at 37 \u00b0C. To prepare the tissue for cell culture, it was carefully disaggregated by pipetting the media up and down several times. The tissue was centrifuged at 1500 rpm for 4 minutes to collect the cell pellet. A mixture of DMEM and F12 medium was used to culture the cells subsequently\nTR146 and human gingival fibroblasts were cultured and expanded into monolayers to generate a sufficient number of cells for creating 3D tissue-engineered oral mucosal models. Generation of 3D oral mucosa models\nThe 3D oral mucosa models (OMMs) were generated as described previously by Dongari-Bagtzoglou and Kashleva34 with some modifications as mentioned below. Briefly, oral fibroblasts were trypsinised, centrifuged, and resuspended in DMEM:F12 medium to get 1 million cells per model\nEach model was composed of 1 mL collagen gel populated with 1 million fibroblast cells, followed by the addition of 2 million TR146 cells. Constitution of 1 model is as follows: 10 \u00d7 DMEM\u2014110 \u03bcL; 10 \u00d7 Reconstitution buffer\u2014110 \u03bcL; FBS\u2014150 \u03bcL; L-Glutamine (100 mM)\u201410 \u03bcL; Collagen (5 mg/mL)\u2014720 \u03bcL; NaOH to set pH 7; Oral fibroblast cells\u20141 million. (10 \u00d7 Reconstitution buffer: Hydroxyethyl piperazinyl ethane sulfonic acid (HEPES)\u201420 mM, sodium bicarbonate\u20142. 2 g, water\u2014100 mL, NaOH\u20140. 062 N)\nAll the reagents were kept on ice, and the plasticware like falcons and pipette tips were prechilled at \u221220 \u00b0C before use. The reagents were thoroughly mixed with gentle pipetting to avoid generation of air bubbles. The gels containing fibroblasts were loaded into 6 well tissue culture inserts (EMD Millipore, catalogue number PIHA03050, Sigma Aldrich) and allowed to solidify for 2 hours in a 37 \u00b0C, 5% CO2 incubator\nFollowing solidification step, the gels were completely submerged in DMEM:F12 medium and incubated for 24 hours. Then 2 million TR146 cells were seeded on gels containing fibroblasts. The models were kept in culture for up to 5 days. Infection of OMMs\nThe OMMs were infected with the oral microbes or microorganisms (MO) from the saliva of a healthy, nonsmoking human using a modification of a previous protocol,35 generating an oral mucosa model containing microorganisms (OMM MO)\nSaliva was used to inoculate an overnight culture in LB broth at 37 \u00b0C. This culture was then used to start a secondary culture of actively dividing bacteria to infect OMMs. The suspension culture was centrifuged at 500 g at room temperature for 10 minutes. The supernatant was discarded, and pellet was washed three times with phosphate buffer saline (PBS). A Neubauer chamber was used to assess the number of microbes. The final inoculum was adjusted to a density of 107 cells/mL in PBS\nFor inoculation, 100 \u00b5L of this suspension was added to the OMMs. 100 \u00b5L of PBS alone was added to the uninoculated controls. The models were then incubated for 2 hours in a 37 \u00b0C, 5% CO2 incubator, which was followed by an exposure to falvored (Flv) ECs aerosol, with and without Nicotine (Nic), as described below in the coming section. The models were then further incubated for 24 hours at 37 \u00b0C, 5% CO2, after which they were again exposed to EC and incubated for a final 24 hours\nInfected models that were not exposed to ECs aerosol are reffered as OMM MO NE. EC-Exposure protocol\nVoopoo Drag S EC device (manufactured in China by Voopoo) was used to generate the EC aerosol. This device is rechargeable, with a replaceable heating coil and a refillable tank for e-liquid with 4. 5 mL capacity. Mint flavour e-liquid with 25 mg/mL nicotine (SaltNic Labs) and mint flavour e-liquid with 0 mg nicotine (BE LOYAL, VALUED, KIND, BLVK; USA) were used in this study\nFor control, the models were exposed to ambient air. The epithelial surface of the OMMs in the test groups was exposed directly to the EC aerosol as it came out of a simulated activated peristaltic pump device (Huiyu-pump; YZ15-13A). All exposure experiments were conducted under a sterile condition in a laminar flow hood equipped with a high-efficiency particulate air (HEPA) filter. EC puffs were given for 20 minutes with continuous puffs of 4-second duration with 30-second intervals\nThe pump was operated at a flow rate of 380 mL/min, which was sufficient to activate the EC and deliver aerosols through the tube into the exposure chamber. Metagenomics\nBacteria were pelleted from the culture medium of control and EC exposed OMMs at the end of the 48-hour incubation period\nAfter DNA extraction, the V3-V4 hypervariable region of the 16S rRNA gene was PCR amplified using NEB Phusion High-Fidelity PCR Master Mix (New England Biolabs) with 16S Amplicon PCR Forward Primer = 5\u02b9 ACTCCTACGGGAGGCAGCAG; 16S Amplicon PCR Reverse Primer = 5\u02b9 GGACTACHVGGGTWTCTAAT using the following cycling parameters: 98 \u00b0C for 3 minutes, followed by 30 cycles of 98 \u00b0C for 45 seconds, 55 \u00b0C for 45 seconds, 72 \u00b0C for 30 seconds, and a final elongation step of 72 \u00b0C for 7 minutes\nAn Ampure XP bead (Beckman-Coulter) cleanup step was then utilised to remove the nonspecific products, which were visualised on an Agilent 2100 Bioanalyzer instrument (Agilent Technologies) and quantified via the real-time quantitative PCR (qPCR; EvaGreenTM). Samples were pooled into equal molar proportions and sequenced on the DNBSeq G400 platform of MGI (Microorganism Sequencing Product Portfolio)\nNegative extraction controls (sterile PBS) were included to ensure that no exogenous DNA contamination occurred during sample processing. Bioinformatics analysis workflow\nRaw data was filtered to obtain the high-quality clean data, after which clean reads that can overlap with each other were merged into tags and further clustered into operational taxonomic unit (OTU). Taxonomic classifications were assigned to OTU representative sequence using the Ribosomal Database Project database\nAnalysis like alpha diversity, beta diversity, differential species analysis, network, and model prediction was carried out based on OTU profile table and taxonomic annotation results. Data filtering\nRaw data was filtered to generate high-quality clean reads according to a previously published protocol. 1 Briefly as follows:\n\n1. Reads whose average Phred quality values were lower than 20 over a 25 bp sliding window were truncated\nReads whose lengths were 75% of their original lengths after truncation were removed. 2. Reads with low complexity or ambiguous base (N base) and those that were contaminated by adapter sequences and ambiguous base (N base) were removed. Tags connection\nIn case of paired-end reads overlap with each other, a consensus sequence was generated by FLASH (Fast Length Adjustment of Short reads, v1. 2. 11). Details are as follows:\n\n1. Minimum overlapping length: 15 bp. 2\nMismatching ratio of overlapped region: \u2264 0. 1. OTU clustering\nTags were clustered to OTU with USEARCH (v7. 0. 1090), as follows:\n\n1. Tags were clustered into OTU with a 97% threshold by UPARSE. 2. Chimeras were filtered by UCHIME (v4. 2. 40). For 16S rDNA and ITS sequences, chimeras in OTU were screened and filtered by mapping to gold database (v20110519) and UNITE (v20140703), respectively, whereas de novo chimera screening was carried out for 18S rDNA sequences. 3\nAll tags are mapped to OTU representative sequences using USEARCH GLOBAL to calculate OTU abundance table. Metabolite extraction and derivatisation for secretome analysis\nQuality control (QC) was created by pooling equal volume (150 \u00b5L) of conditioned media from all samples. Prior to metabolite extraction, 100 \u00b5L of QC was spiked with 0. 5 \u00b5L of internal standard ribitol (1 mg/mL). Four volumes of methanol (400 \u00b5L) were added to the spiked sample to extract the metabolites\nThe mix was vortexed and incubated on ice for 2 hours. After centrifugation at 10,000 g for 10 minutes the supernatant was dried in a SpeedVac. To the dried sample, 25 \u00b5L of methoxyamine hydrochloride in dry pyridine (20 mg/mL) was added. The sample was vortexed and incubated at room temperature (RT) overnight. Silylation was performed by adding 25 \u00b5L of N,O-Bis(trimethylsilyl)trifluoroacetamide (BSTFA) in 1% Trimethylchlorosilane and vortexed for 2 minutes, followed by incubation at RT for 1 hour\nThe derivatised sample was finally centrifuged at 10,000 g for 10 minutes and the supernatant was transferred to a glass vial insert (200 \u00b5L) in a GC vial (2 mL capacity) for gas chromatography\u2013mass spectrometry (GC-MS) analysis. Similarly, various secretome QC sample sizes (10, 50 \u00b5L) were processed for further analysis along with a standard amount of ribitol (0. 5 \u00b5g)\nGC-MS analysis\nGC-MS analysis was performed using a GC2030 gas chromatography coupled to a QP2020 NX quadrupole mass spectrometry (Shimadzu). First, GC-MS run protocol was optimised with the QC sample. The derivatised metabolites (1 \u00b5L) were injected into a Rxi-5Sil MS column (5% diphenyl, 95% dimethylpolysiloxane; 30 m \u00d7 0. 25 mm \u00d7 0. 25 \u03bcm; Restek) in a split mode (1:5). Flow rate of the helium carrier gas was set as 1 mL/min and injection port temperature fixed at 70 \u00b0C\nBoth the ion source and interface temperatures were set at 300 \u00b0C. Ions in the quadruple were scanned with an event time of 0. 3 seconds between the 50 and 700 m/z range. A solvent delay of 5 minutes was used. The following 3 different GC methods were used to obtain the optimised separation method of the metabolites: GC1: 70 \u00b0C for 2 minutes, ramp of 10 \u00b0C/min to 200 \u00b0C, hold for 4 minutes, ramp of 15 \u00b0C/min to 280 \u00b0C, hold for 4 minutes (run time 28\n33 minutes); GC2: 70 \u00b0C for 2 minutes, ramp of 4 \u00b0C/min to 200 \u00b0C, hold for 4 minutes, ramp of 15 \u00b0C/min to 280 \u00b0C, hold for 4 minutes (run time 47. 83 minutes); GC3: 70 \u00b0C for 2 minutes, ramp of 10 \u00b0C/min to 130 \u00b0C, hold for 1 minute, ramp of 4 \u00b0C/min to 180 \u00b0C, hold for 2 minutes, ramp of 2 \u00b0C/min to 200 \u00b0C, hold for 1 minute, ramp of 15 \u00b0C/min to 300 \u00b0C, hold for 2 minutes (run time 43. 17 minutes)\nAmong the different GC-MS methods, the GC3 method was used for sample volume optimisation (10, 50, and 100 \u00b5L) for the extraction of metabolites. Subsequently, 10 \u00b5L of sample was used for metabolite extraction, and GC3 method was used for metabolite separation for the remaining test samples. All test samples were randomised using an online tool (www. randomizer. org) and were run in GC-MS with one QC after every 4 samples\nData preprocessing\nFirstly, the raw data obtained by GC\u2013MS-QP2020 was integrated by GCMS solution 4. 52 software (Shimadzu). The integration conditions were set as follows: the initial peak number was kept at 5, and the slope and variable parameter time were set to 100/min and 1000/min, respectively. Next, the data obtained was registered to the NIST 11 Standard Mass Spectrometry Database (NIST) for the identification of metabolites from selected variables\nEnrichment analysis\nTo gain insight into the metabolomic mechanisms, pathway and metabolite set enrichment analysis (MESA) were implemented using MetaboAnalyst-6. 0, an online metabolomics data analysis software. 36 Over-representation analysis (ORA) was performed using the hypergeometric test to evaluate whether a metabolite set is represented more than expected by chance within the given compound list. The concentrations of statistically significant metabolites that have p <\n05 are considered for quantitative pathway enrichment analysis. Multivariate and univariate statistical analysis\nThe normalised data was scaled to mean-centred and divided by the standard deviation of each variable followed by multivariate analysis (MVA) using MetaboAnalyst 5. 0\n36,37 First principal component analysis (PCA) was performed with all oral mucosa model (infected and non-infected) and exposed and non-exposed to ECs aerosol groups: OMM, OMM MO non exposed (NE), OMM MO Flv (Microorgranisms exposed to Flavored E-cigarette), OMM MO N+Flv (Nicotine+ Flavor), and QC to ascertain the inherent clustering pattern and outliers\nSubsequently, the QC samples were removed, and partial least square discriminant analysis (PLS-DA) was performed with the remaining groups for supervised classification. To assess overfitting of the model, R2 (goodness of fit) and Q2 (goodness of prediction) values were determined using the leave-one-out cross-validation (LOOCV) method. To further assess the reliability of the model, permutation test statistics was used with 100 permutation numbers\nUnivariate analysis was performed between the OMM MO NE, OMM MO Flv, and OMM MO N+Flv groups using one-way ANOVA and post-hoc Tukey's test with GraphPad Prism (8. 0. 2, GraphPad Software). All data points were plotted as mean \u00b1 standard error of the mean. Results\nSequencing output\nThe oral microbiome was analysed in control, flavoured EC and flavoured EC with nicotine-exposed groups in triplicates. After DNA extraction, all samples gave a 260/280 reading between 1. 8 and 2. 1\nAfter 16S rRNA amplification and sequencing a total of 6,17,997 sequences were read, of which 6,14,112 sequences were retained after quality filtering and chimera removal. All samples were sequenced at a sequencing depth of >60,000 reads with an average number of sequences 68666 per sample and a standard deviation of 304\nAlpha and beta diversity among EC-exposed and control groups\nAlpha diversity was accessed using several matrices like observed OTUs, Chao index, ACE index, Shannon index, and Simpson index. Significantly higher diversity was found between control and flavoured EC with nicotine groups for observed OTUs, Chao, ACE, and Shannon indices (one-way ANOVA test, p <. 05) (Figure 1)\nOTU Venn map (Figure 2A) and Core-Pan OTU plots (Figure 2B) were generated to access the common and unique OTUs between the 3 groups. Next, the beta diversity was examined using Bray Curtis Dissimilarity (Figure 2C) and weighted UniFrac (Figure 2D) indices. Both estimate the differences between communities with an abundance of information. A clear and significant clustering was observed for the 3 groups by both PCA (Figure 2E) and partial least square discriminant analysis (Figure 2F). Fig. 1\nOpen in a new tab\nA representation of alpha diversity upon electronic cigarette (EC) exposure. Alpha diversity is represented by (A) observed OTUs, (B) Chao index, (C) ACE index, (D) Shannon index, (E) Simpson index bar plots from control, EC-flavour and EC-flavour+ nicotine-exposed oral mucosa models groups. Alpha diversity indices are on the Y-axis and EC exposure status is represented on the X-axis. Significant difference (p <. 05) determined by a one-way ANOVA with Tukey post-hoc test. Fig. 2\nOpen in a new tab\nUnique microbial species are present in OMMs exposed to electronic cigarettes (ECs) with flavour and nicotine. A, Operational taxonomic unit Venn map. B, Core-pan operational taxonomic unit plot depicting the number of common and unique species between control EC-flavour and EC-flavour+ nicotine groups\nC, Principal component analysis (PCA) and partial least square discriminant analysis for the control EC-flavour and EC-flavour+ nicotine groups beta diversity of EC users and NSNV controls. Bar plots depicting beta-diversity based on (E) Bray Curtis and (F) weighted UniFrac indices. Significant difference (p <. 05) determined by a one-way ANOVA with Tukey post-hoc test\nDysregulation of oral bacterial taxonomic composition in EC and control groups\nWe next investigated the changes in the abundance of dominant bacterial taxa (taxa present at \u22650. 5%) between the 3 groups (Figure 3). The dysregulation of oral bacterial taxonomic composition in EC users compared to control groups revealed significant differences in the abundance of dominant bacterial taxa. The study identified notable variations (p <\n05) between the control group and flavoured EC with nicotine groups across various taxonomic levels. Specifically, at the phylum level, Proteobacteria and Firmicutes exhibited alterations, while at the class level, Actinobacteria, Bacilli, Bacteroidia, and Clostridia were affected\nAt the family level, Prevotellaceae, Enterobacteriaceae, Bifidobacteriaceae, Ruminococcaceae, Veillonellaceae, and Lachnospiraceae, while at genus level Prevotella, Bacteroides, Bifidobacterium, and Clostridium_XlVa showed differences\nNotably, taxa such as Firmicutes at the phylum level, Bacilli and Bacteroidia at the class level, Prevotellaceae and Enterobacteriaceae at the family level, and Prevotella at the genus level, were significantly impacted in flavoured EC users, irrespective of nicotine presence. Fig. 3. Open in a new tab\nBacterial abundance upon electronic cigarette (EC) exposure\nDifferentially abundant bacterial taxa in the salivary microbiota in control and OMMs exposed to EC-flavour or EC-flavour+ nicotine, based on 16S rRNA sequencing. Data are represented as mean \u00b1SD. (*p <. 05, **p <. 01, ***p <. 001). Significant difference (p <. 05) determined by a one-way ANOVA with Tukey post-hoc test. Differential secretion of metabolites by cells when treated with ECs\nTo obtain the metabolites in the secretome, first, the GC-MS protocol was optimised\nGC1 run was first used to determine the broader metabolite coverage. Several metabolites did not show optimal separation due to a steep ramp between 70 and 200 \u00b0C. Therefore, the ramps were modified accordingly in GC2 and GC3. It was observed that GC3 showed the optimal separation of metabolites with greater coverage (Figure 4). Also, among the three sample volumes used for metabolite extraction, 10 \u00b5L showed no peak saturation with maximum coverage of metabolites when separated using GC3 protocol\nSubsequently, the 100 \u00b5L of test sample was used for metabolite extraction, and GC3 protocol was used for metabolomics analysis. Our optimised protocol was able to identify 93 metabolites covering amino acids, organic acids, monosaccharides and their derivatives, disaccharides, and other molecular classes (Supplementary Table S1). Upon data preprocessing and MVA, PCA results show clear clustering of the OMM, OMM MO NE, OMM MO Flv, and OMM MO N+Flv groups (Figure 5)\nInterestingly, all the QC secretomes were grouped together at the intersection of PC1 and PC2 indicating that the QC is qualitatively and quantitatively representative. The entire collection of samples included in the study and all the GC-MS experimental runs in between the QCs were stable and did not lead to any significant inherent instrumental variations\nIn addition, as expected, metabolites secreted by the OMM model formed a distinct cluster from all the 3 OMM MO groups indicating a characteristic secretome of the OMM model in the presence of oral microbes. This distinction was further evident in PLS-DA analysis. Our results not only show clear clustering of the OMM group, but an improved separation was also observed among the OMM MO groups exposed with or without EC (Figure 4)\nThis indicated a significant metabolite imbalance in the secretome due to EC exposure. Since PLS-DA is prone to overfitting, the model was validated with cross-validation techniques. R2 and Q2 values of 0. 97 and 0. 63, respectively, confirm the validity and predictive ability of the supervised model. Further, a p value <. 01 obtained from the 100 permutations indicated that our model is better than the permutated models (Figure 5)\nAll these results indicated that the PLS-DA can predict the dysregulated secretome of the OMM upon EC exposure. In addition, we used univariate statistics to identify the dysregulated metabolites. Our one-way ANOVA results indicated that 16 metabolites were differentially altered between the control (OMM MO NE) and EC exposure (OMM MO Flv and OMM MO Flv+Nic (Micro-orgranisms exposed to Flavored E-cigarette containing Nicotine)) groups (Figure 6)\nAs expected, one of these metabolites included nicotine, which was found to be abundant in the nicotine exposure group. Among the other 15 metabolites, 13 showed statistically higher levels in the OMM MO Flv+Nic compared to both OMM MO NE and OMM MO Flv groups indicating the adverse effects of nicotine on the OMM. In contrast, 2 metabolites, including arabinose and threonic acid, showed lower levels in the OMM MO Flv+Nic\nInterestingly, other than these 2 metabolites, no other molecule showed significant alterations upon Flv exposure alone as compared to the control. The current study conducted a comprehensive assessment of the oral microbiome community composition using bacterial 16S rRNA gene sequencing. Additionally, gas chromatography-based mass spectrometry was employed to analyse the effect of EC aerosol exposure on the oral metabolome profile utilising 3D OMM\nThis pioneering research delved into the impact of vaping on oral metabolites, marking a novel exploration in this field. Fig. 4. Open in a new tab\nTotal ion chromatogram of derivatised metabolites. Metabolites (A) separated using gas chromatography (GC) 1, GC2, and GC3 run protocols (B) extracted from three different sample volumes of the secretome and separated using GC3 protocol. Fig. 5\nOpen in a new tab\nPrincipal component analysis (PCA) and partial least square discriminant analysis (PLS-DA) plots of assessed models. Multivariate analysis showing (A) PCA and (B) PLS-DA scores plots. C, Permutation test statistics of the PLS-DA model. Fig. 6. Open in a new tab\nDysregulated metabolites upon electronic cigarette exposure. A, Significantly dysregulated metabolites with p <. 05 are represented in red circles\nB, Bar plot (green: oral mucosa model [OMM] MO; blue: OMM MO Flv; red: OMM MO Flv+Nic) of the significantly dysregulated metabolites. Univariate statistical analysis using one-way ANOVA with post-hoc Tukey's analysis. Plots are represented as mean \u00b1SEM. **p \u2264. 01. ***p \u2264. 001\nTo gain insight into the metabolic mechanisms by which the differentially altered metabolites are involved, data extracted from the MetaboAnalyst indicated that these metabolites had a major impact in different pathways (Figure 7) when comparing the nonexposed infected oral mucosa model or control (OMM MO NE) and the EC exposed (OMM MO Flv and OMM MO Flv+Nic) groups\nThe identified metabolites were mainly associated with the top or highly identified pathways associated with glucose and energy metabolisms. These include methionine metabolism, homocysteine degradation, serine metabolism, and phenylalanine and tyrosine (Figure 7). Fig. 7. Open in a new tab\nGenerated metabolomic set enrichment analysis plot\nMetabolomic Set Enrichment Analysis (MSEA) showing the most significantly altered functional metabolic pathways in the infected oral mucosa model that was exposed to flavored ECs containing nicotine (OMM MO Flv+Nic (Micro-orgranisms exposed to Flavored E-cigarette containing Nicotine)) group. The graph was obtained using the online tool MSEA by plotting on the y-axis the\u2014log of p values from pathway enrichment analysis\nDiscussion\nThe impact of EC use on the oral microbiome has been a subject of growing interest and concern. Several recent studies have highlighted the association of ECs to various oral symptoms and pathologies, including dental and periodontal damage,38, 39, 40 that are linked to increased inflammatory processes,41,42 that potentially leads to a condition known as oral dysbiosis\n41,43 In this study, clinically relevant, 3D tissue-engineered human OMMs were generated and infected with oral microbes obtained from saliva of a healthy donor. The epithelial surface of the oral mucosal models was exposed directly to the EC aerosol (flavoured; with and without nicotine) using a simulated activated device\nThe findings of this study highlight the alterations in the oral microbiome, particularly anaerobic taxons like Clostridium, Prevotella, Veillonellaceae, and Bacteroides upon EC exposure, potentially leading to metabolic imbalances. A comprehensive assessment of oral microbiome community composition by 16S rRNA gene sequencing was performed\nThe study specifically examined alpha diversity, and the results indicated significantly higher diversity between the control and flavoured EC with nicotine groups, which is consistent with other clinical-based studies that employed 16S rRNA gene sequencing to investigate the difference in bacterial abundance and diversity between EC users and nonusers. The results of these studies demonstrated significantly higher alpha diversity in the saliva of EC users as compared to non-EC users\n42,44,45 On the other hand, the same studies have shown a higher beta diversity in buccal samples of EC users as compared to controls. 42,44 The observed bioactivity among EC users in saliva was attributed to saliva heterogenicity. 46 Interestingly, it was suggested that both E-cig and conventional smokers share similar microbiome characteristics,44 emphasising the potential risks of EC use\nAccording to the human oral microbiome database, there are around 700 species of bacteria residing in the oral cavity, together with viruses and fungi. 47 While inter-individual differences are present, it is widely acknowledged that the overall oral microbiome is stable in the absence of any internal and external stresses that disrupt homeostasis\n48 The oral microbiome of a healthy individual typically consists of Actinomyces, Capnocytophaga (gram-negative bacteria), Eikenella (genus: Neisseria and Kingella), Eubacteria (gram-positive bacteria), Fusobacterium, Haemophilus, Lactobacterium (Lactobacillus), Leptotrichia, Neisseria, Porphyromonas, Prevotella, Propionibacterium, Peptostreptococcus, Streptococcus, Staphylococcus, Veillonella, and Treponema bacterial species\n49 Our data reveals significant changes in the abundance of dominant bacterial taxa on EC exposure among the three studied groups. Affected taxa that was abundant in the flavoured EC with nicotine group included anaerobic Clostridium, Prevotella, Veillonellaceae, and Bacteroides. Similar dysregulation in the levels of several of these bacterial taxons on EC usage has been reported elsewhere\nFor example, Prevotella, Veillonella,42,43\nBacteroidia, Bacilli, and Proteobacteria44 have been described to be significantly dysregulated in saliva of EC users as compared to control human subjects. EC usage has been reported to promote an anaerobic oral environment. 50 We believe that this EC-induced anaerobic oral environment favours the growth of anaerobic bacterial taxons thus resulting in oral microbiome dysbiosis\nOf note, it has been shown that these identified taxons are mainly correlated with chronic lung diseases such as pneumonia, chronic obstructive pulmonary disease, and asthma, including lung cancer. 51 In addition, some species, such as the Prevotella, are known to belong to microbial communities of the respiratory and gastrointestinal tracts, hence having access to airways and gastrointestinal tract via saliva swallowing\nAlthough they may serve as commensals at these extra-oral sites, they may also potentially act as harmful agents to mucosal surfaces, leading to gastrointestinal and respiratory health and disease. 52 Such an alteration in microbial diversity and shifts in the bacterial composition by increasing pathogenic bacteria and decreasing healthy commensal bacteria may impact what is known as oral microbiome dysbiosis\nOral microbiome dysbiosis has been reported in various oral diseases like periodontitis, oral lichen planus, and Fanconi anaemia patients. 53 A study by Park et al. has demonstrated the significant increase in the effects of EC smoking mediators on gingival inflammation; these include Actinomyces, Rothia, Neisseria, and Enterococcus, leading to microbiome dysbiosis\n50 In addition, a dysbiosis oral microbiome has also been shown to be a risk factor for various systemic diseases like diabetes,54 cardiovascular diseases,55 and cancer. 56 Dysbiosis in the oral microbiome, resulting from imbalances in microbial populations, can contribute to various oral health problems such as dental caries, periodontal diseases, and halitosis\n45,47,57,58 Taken together, these findings align with previous studies that have highlighted the impact of EC use on the oral microbiome, emphasising the importance of understanding how ECs influence oral bacterial composition and potentially impact oral health. This, in turn, has been linked to an elevated risk of declining periodontal, dental, and gingival health, along with alterations in the oral microbiome. Case reports have detailed significant dental harm caused by EC explosions\n59, 60, 61 The constituents present in EC vapor are recognised for their cytotoxic, genotoxic, and carcinogenic characteristics. 62, 63, 64\nTo gain an insight into the oral microbiome-associated metabolic changes due to EC exposure, mass spectrometry and metabolite enrichment analysis were employed\nData analysis revealed a total of 96 metabolites, 16 of which were differentially altered between the control group and those exposed to EC, with a notable increase in nicotine levels in the exposed group. The metabolomics analysis showed distinct clustering of the OMM and OMM groups exposed to ECs, indicating a notable metabolite imbalance due to EC exposure. The PLS-DA analysis confirmed this imbalance, with R2 and Q2 values of 0. 97 and 0\n63, respectively, validating the model's predictive ability. Additionally, arabinose and threonic acid were among the metabolites with lower levels in the EC exposure group, while exposure to flavourings alone did not lead to significant alterations compared to the control group. To have a better understanding of the metabolic mechanisms by which the identified metabolites are involved, data extracted from MetaboAnalyst 5. 0 indicated that these metabolites had a major impact in different pathways\nThe top or highly identified pathways were mainly associated with glucose and energy metabolisms. These include methionine metabolism, homocysteine degradation, serine metabolism, and phenylalanine and tyrosine, in addition to other enriched pathways such as ketone body metabolism, glucose-alanine cycle, and Warburg effect. Interestingly, these top enriched pathways have been identified as tumour biomarkers or pathways associated with cancer progression via DNA methylation\n65,66 Particularly, methionine metabolism is a gateway to oral cancer. It is documented that elevated levels of methionine by cancerous cells are referred to as the Hoffman effect. The Hoffman effect, together with the Warburg effect, contribute to the continuous growth and proliferation of cancer cells. 65 Similarly, the phenylalanine and tyrosine pathways are the main energy sources of rapidly growing cancerous cells due to their metabolic regulation of glucose and fats in the body\n67,68 Of note, the homocysteine pathway is an intermediate crosslinking with the methionine pathway. This indicates the contribution of this pathway in driving oral health to a cancerous state. Various reports have highlighted homocysteine as a tumour marker in various cancers,69,70 and recently in lung and oral squamous cell carcinomas\n69,71\nThese findings demonstrate the significant impact of EC exposure on the secretome of the OMM, contributing to our understanding of the effects of EC exposure on disrupting oral health, as previous reports have also linked the disrupted metabolism to the dysregulation of other essential cellular pathways such as fatty acids biosynthesis as well as glutathione, pyruvate, nicotinate and nicotinamide, and amino acid metabolism\n72 Overall these findings highlight the potential metabolic imbalances that occur as a result of EC exposure and support previous research on the harmful effects of EC exposure on the oral microbiome and metabolite profile. 73\nThis study serves as a proof of principle evidence of the adverse effects of EC aerosol on oral microbial and metabolic profile. However, there are a few limitations\nIt remains unclear whether the dysregulation of the oral metabolome subsequently alters the oral microbiome or if the reverse is true. Furthermore, the specific molecular signalling pathways affected by EC usage, which contribute to changes in microbial and metabolomic profiles, require further elucidation. Conclusions\nThe microbiome has increasingly been linked to cancer\nThe current study underscores the significant impact of EC use on oral health, highlighting alterations in the oral microbiome, bacterial composition, and metabolite profiles. Given the importance of oral microbiome in driving cancer progression, the findings of this study emphasise the need for further investigations into the metabolic imbalances induced by EC exposure and their implications for oral health and risk to other diseases\nD, and NJ. Writing\u2014original draft preparation, M. M. and DAM. Writing\u2014review and editing, M. M., D. A. M., N. J., M. D, K. M., A. H. K., and M. A. Supervision, K. M. and M. D. All authors read and approved the final manuscript\n2009;9(9):655\u2013664. [DOI] [PubMed] []\n\n3. Wen Y. Research on the factors influencing new tobacco consumption behavior. https://ink. library. smu. edu. sg/etd_coll/471\n\n4. Aaron DG. Tobacco reborn: the rise of e-cigarettes and regulatory approaches. Lewis & Clark L Rev. 2021;25:827. []\n\n5. C\u00e1tala-Valent\u00edn AR, Almeda J, Bernard JN, et al. E-cigarette aerosols promote oral S. aureus colonization by delaying an immune response and bacterial clearing\nCells. 2022;11(5):773. [DOI] [PMC free article] [PubMed] []\n\n6. Li Y, Hecht SS. Carcinogenic components of tobacco and tobacco smoke: a 2022 update. Food Chem Toxicol. 2022;165:113179. fct. 2022. 113179. [DOI] [PMC free article] [PubMed] []\n\n7. Tommasi S, Pabustan N, Li M, Chen Y, Siegmund KD, Besaratinia A. A novel role for vaping in mitochondrial gene dysregulation and inflammation fundamental to disease development\nSci Rep. 2021;11:22773. [DOI] [PMC free article] [PubMed] []\n\n8. Hwang JH, Park S. Association between peer cigarette smoking and electronic cigarette smoking among adolescent nonsmokers: a national representative survey. PLoS One. 2016;10 pone. 0162557. [DOI] [PMC free article] [PubMed] []\n\n9. King B, Ndoen E, Borland R\nSmokers\u2019 risk perceptions and misperceptions of cigarettes, e-cigarettes and nicotine replacement therapies. Drug Alcohol Rev. 2018;37(6):810\u2013817. 12829. [DOI] [PMC free article] [PubMed] []\n\n10. Hartmann-Boyce J, Begh R, Aveyard P. Electronic cigarettes for smoking cessation. BMJ. 2018;360 j5543. [DOI] [PubMed] []\n\n11. Cullen KA, Gentzke AS, Apelberg BJ, Jamal A\nNotes from the field: use of electronic cigarettes and any tobacco product among middle and high school students\u2014United States, 2011-2018. Morb Mortal Wkly Rep. 2018;67(45):1276\u20131277. mm6745a5. [DOI] [PMC free article] [PubMed] []\n\n12. Patel D, Davis KC, Cox S, et al. Reasons for current e-cigarette use among US adults. Prev Med. 2016;93:14\u201320. ypmed. 2016. 09. 011. [DOI] [PMC free article] [PubMed] []\n\n13\nDu P, Bascom R, Fan T, et al. Changes in flavor preference in a cohort of long-term electronic cigarette users. Ann Am Thorac Soc. 2020;17(5):573\u2013581. 201906-472OC. [DOI] [PMC free article] [PubMed] []\n\n14. Barrington-Trimis JL, Urman R, Leventhal AM, et al. E-cigarettes, cigarettes, and the prevalence of adolescent tobacco use. Pediatrics. 2016;138(2) 2015-3983. [DOI] [PMC free article] [PubMed] []\n\n15\nWilliams M, Luo W, McWhirter K, Ikegbu O, Talbot P. Chemical elements, flavor chemicals, and nicotine in unused and used electronic cigarettes aged 5-10 years and effects of pH. Int J Environ Res Public Health. 2022;19(24):16931. [DOI] [PMC free article] [PubMed] []\n\n16. Eaton DL, Alberg AJ, Goniewicz MA, et al. Medicine and Engineering. 2018. Committee on the review of the health effects of electronic nicotine delivery systems\nPublic health consequences of e-cigarettes. Consensus study report for the US Food and Drug Administration. Washington (DC): US National Academies of Science. []\n\n17. Ganapathy V, Manyanga J, Brame L, et al. Electronic cigarette aerosols suppress cellular antioxidant defenses and induce significant oxidative DNA damage. PLoS One. 2017;12(5) pone. 0177780. [DOI] [PMC free article] [PubMed] []\n\n18. Sleiman M, Logue JM, Montesinos VN, et al\nEmissions from electronic cigarettes: key parameters affecting the release of harmful chemicals. Environ Sci Tech. 2016;50(17):9644\u20139651. est. 6b01741. [DOI] [PubMed] []\n\n19. Korzun T, Lazurko M, Munhenzva I, et al. E-cigarette airflow rate modulates toxicant profiles and can lead to concerning levels of solvent consumption. ACS Omega. 2018;3(1):30\u201336. 7b01521. [DOI] [PMC free article] [PubMed] []\n\n20. Grana RA\nA longitudinal analysis of e-cigarette use and smoking cessation. JAMA Intern Med. 2014 May;174(5):812\u2013813. 2014. 187. [DOI] [PMC free article] [PubMed] []\n\n21. Etter J-F, Eissenberg T. Dependence levels in users of electronic cigarettes, nicotine gums and tobacco cigarettes. Drug Alcohol Depend. 2015;147:68\u201375. drugalcdep. 2014. 12. 007. [DOI] [PMC free article] [PubMed] []\n\n22. li-Lun C\nFDA summary of adverse events on electronic cigarettes. Nicotine Tob Res. 2013;15(2):615\u2013616. [DOI] [PubMed] []\n\n23. Schroeder MJ, Hoffman AC. Electronic cigarettes and nicotine clinical pharmacology. Tob Control. 2014;23(Suppl 2):ii30\u2013iii5. [DOI] [PMC free article] [PubMed] []\n\n24. Ganapathy V, Manyanga J, Brame L, McGuire D\nElectronic cigarette aerosols suppress cellular antioxidant defenses and induce significant oxidative DNA damage. PLoS One. 2017;12(5) pone. 0177780. [DOI] [PMC free article] [PubMed] []\n\n25. Sundar IK, Javed F, Romanos GE, Rahman I. E-cigarettes and flavorings induce inflammatory and pro-senescence responses in oral epithelial cells and periodontal fibroblasts. Oncotarget. 2016;7(47):77196. 12857\n[DOI] [PMC free article] [PubMed] []\n\n26. Hamad SH, Brinkman MC, Tsai Y-H, Mellouk N. Pilot study to detect genes involved in DNA damage and cancer in humans: potential biomarkers of exposure to e-cigarette aerosols. Genes. 2021;12(3):448. [DOI] [PMC free article] [PubMed] []\n\n27. Lalindri N, Senaratne M. Effect of different forms of tobacco on the oral microbiome in healthy adults: a systematic review. Front Oral Health. 2024;5:1310334\n2024. 1310334. [DOI] [PMC free article] [PubMed] []\n\n28. Lerner CA, Yao IKSH. Vapors produced by electronic cigarettes and e-juices with flavorings induce toxicity, oxidative stress, and inflammatory response in lung epithelial cells and in mouse lung. PLoS One. 2015;10 pone. 0116732. [DOI] [PMC free article] [PubMed] []\n\n29. Marques P. An updated overview of e\u2011cigarette impact on human health. Respir Res. 2021;22(1):151\n1016/j. lfs. 2016. 02. 002. [DOI] [PubMed] []\n\n32. Mizisin AP, Weerasuriya A. Homeostatic regulation of the endoneurial microenvironment during development, aging and in response to trauma, disease and toxic insult. Acta Neuropathol. 2011;121:291\u2013312. [DOI] [PMC free article] [PubMed] []\n\n33. Moharamzadeh K, Colley H, Murdoch C, et al. Tissue-engineered oral mucosa. J Dent Res. 2011;91(7):642\u2013650.\n[DOI] [PubMed] []\n\n34. Dongari-Bagtzoglou A, Kashleva H. Development of a highly reproducible three-dimensional organotypic model of the oral mucosa. Nat Protoc. 2006;1(4):2012\u20132018. 2006. 323. [DOI] [PMC free article] [PubMed] []\n\n35. Schaller M, Zakikhany K, Naglik JR, Weindl G, Hube B. Models of oral and vaginal candidiasis based on in vitro reconstituted human epithelia. Nat Protoc. 2006;1(6):2767\u20132773. 2006. 474\n[DOI] [PMC free article] [PubMed] []\n\n36. Xia J, Wishart DS. MSEA: a web-based tool to identify biologically meaningful patterns in quantitative metabolomic data. Nucleic Acids Res. 2010;38(suppl_2):W71\u2013WW7. [DOI] [PMC free article] [PubMed] []\n\n37. Pang Z, Zhou G, Ewald J, et al. Using MetaboAnalyst 5. 0 for LC\u2013HRMS spectra processing, multi-omics integration and covariate adjustment of global metabolomics data. Nat Protoc\n1186/s12903-024-05018-7. [DOI] [PMC free article] [PubMed] []\n\n40. Thiem DG, Donkiewicz P, Rejaey R, et al. The impact of electronic and conventional cigarettes on periodontal health\u2014a systematic review and meta-analysis. Clin Oral Investig. 2023;27(9):4911\u20134928. [DOI] [PMC free article] [PubMed] []\n\n41. Kleinstein S, Nelson K, Freire M. Inflammatory networks linking oral microbiome with systemic health and disease. J Dent Res\n1038/s41598-024-60730-2. [DOI] [PMC free article] [PubMed] []\n\n46. Rodr\u00edguez-Rabassa M, L\u00f3pez P, Rodr\u00edguez-Santiago RE. Cigarette smoking modulation of saliva microbial composition and cytokine levels. Int J Environ Res Public Health. 2018;15(11):2479. [DOI] [PMC free article] [PubMed] []\n\n47. Li Xinyi, Liu Yanmei. The oral microbiota: community composition, influencing factors, pathogenesis, and interventions. Front Microbiol\n2022;13:895537. 2022. 895537. [DOI] [PMC free article] [PubMed] []\n\n48. Sharma N, Bhatia S. Oral microbiome and health. AIMS Microbiol. 2018;4(1):42\u201366. 2018. 1. 42. [DOI] [PMC free article] [PubMed] []\n\n49. Chattopadhyay I. Role of oral microbiome signatures in diagnosis and prognosis of oral cancer. Technol Cancer Res Treat. 2019;18:1\u20139. [DOI] [PMC free article] [PubMed] []\n\n50\nPark B, Koh H, Patatanian M, et al. The mediating roles of the oral microbiome in saliva and subgingival sites between e-cigarette smoking and gingival inflammation. BMC Microbiol. 2023;23(1):35. [DOI] [PMC free article] [PubMed] []\n\n51. Pathak JL, Yan Y, Zhang Q, Wang L, Ge L. The role of oral microbiome in respiratory health and diseases. Respir Med. 2021;185 rmed. 2021. 106475. [DOI] [PubMed] []\n\n52\nK\u00f6n\u00f6nen E, Gursoy UK. Oral Prevotella species and their connection to events of clinical relevance in gastrointestinal and respiratory tracts. Front Microbiol. 2022;12 2021. 798763. [DOI] [PMC free article] [PubMed] []\n\n53. Herreros-Pomares A, Herv\u00e1s D. On the oral microbiome of oral potentially malignant and malignant disorders: dysbiosis, loss of diversity, and pathogens enrichment. Int J Mol Sci. 2023;24(4):3466.\n[DOI] [PMC free article] [PubMed] []\n\n54. Long J, Cai Qiuyin, Steinwandel M. Association of oral microbiome with type 2 diabetes risk. J Periodontal Res. 2017;3(52):636\u2013643. 12432. [DOI] [PMC free article] [PubMed] []\n\n55. Ettinger G, MacDonald K. The influence of the human microbiome and probiotics on cardiovascular health. Gut Microbes. 2014;5(6):719\u2013728. 2014. 983775. [DOI] [PMC free article] [PubMed] []\n\n56\nGalv\u00e3o-Moreira LV. Corrigendum to \u2018oral microbiome, periodontitis and risk of head and neck cancer. Oral Oncol. 2016;53:17\u201319. oraloncology. 2015. 11. 013. [DOI] [PubMed] []\n\n57. Pushalkar S, Paul B, Li Q, Yang J, Vasconcelos R, Makwana S. Electronic cigarette aerosol modulates the oral microbiome and increases risk of infection. iScience. 2020:23. isci. 2020. 100884. [DOI] [PMC free article] [PubMed] []\n\n58. Yang I, Rodriguez J\nThe oral microbiome of electronic cigarette users: a cross-sectional exploration. Oral Dis. 2022;29(4) 14186. [DOI] [PMC free article] [PubMed] []\n\n59. Harrison R, Hicklin D., Jr Electronic cigarette explosions involving the oral cavity. J Am Dent Assoc. 2016;147(11):891\u2013896. adaj. 2016. 03. 018. [DOI] [PubMed] []\n\n60. La Valle A, O'Connor R, Brooks A, Freij R. Maxillofacial injury related to an exploding e-cigarette. BMJ Case Rep\n2021;14(1) [DOI] [PMC free article] [PubMed] []\n\n61. Andrikopoulos GI, Farsalinos K, Poulas K. Electronic nicotine delivery systems (ENDS) and their relevance in oral health. Toxics. 2019;7(4):61. [DOI] [PMC free article] [PubMed] []\n\n62. Al-Saleh I, Elkhatib R, Al-Rajoudi T, et al. Cytotoxic and genotoxic effects of e-liquids and their potential associations with nicotine, menthol and phthalate esters\nChemosphere. 2020;249 chemosphere. 2020. 126153. [DOI] [PubMed] []\n\n63. Eaton DL, Kwan LY, Stratton K National Academies of Sciences, Engineering, and Medicine; Health and Medicine Division; Board on Population Health and Public Health Practice; Committee on the Review of the Health Effects of Electronic Nicotine Delivery Systems; Eaton DL, Kwan LY, Stratton K, editors. Washington (DC): National Academies Press (US); 2018. 64. Barhdadi S, Mertens B, Bossuyt MV, et al\nIdentification of flavouring substances of genotoxic concern present in e-cigarette refills. Food Chem Toxicol. 2021;147 fct. 2020. 111864. [DOI] [PubMed] []\n\n65. Zade PR, Chaudhary MS, Hande AH, Gawande MN, Sharma PN, Thakare ED. Methionine metabolism\u2014a gateway to oral cancer epigenetics. J Datta Meghe Inst Med Sci Univ. 2023;18(4):848\u2013850. []\n\n66. Yang R, Huang H, Han C, Cui S, Zhou Y, Zhou Y\nSerine metabolism controls dental pulp stem cell aging by regulating the DNA methylation of p16. J Dent Res. 2021;100(1):90\u201397. [DOI] [PubMed] []\n\n67. Kashyap B, Kullaa A. Salivary metabolites produced by oral microbes in oral diseases and oral squamous cell carcinoma: a review. Metabolites. 2024;14(5):277. [DOI] [PMC free article] [PubMed] []\n\n68. Cao J, Balluff B, Arts M, et al\nMass spectrometry imaging of L-[ring-13 C 6]-labeled phenylalanine and tyrosine kinetics in non-small cell lung carcinoma. Cancer Metab. 2021;9:1\u20138. [DOI] [PMC free article] [PubMed] []\n\n69. Palaskar S, Joshi K, Mukkanwar R, Pawar R, Kulkarni G, Pawar S. Utility of serum homocysteine in oral squamous cell carcinoma patients as a potential biomarker. J Oral Maxillofac Pathol. 2022;26(3):335\u2013339. jomfp_268_22\n[DOI] [PMC free article] [PubMed] []\n\n70. Hasan T, Arora R, Bansal AK, Bhattacharya R, Sharma GS, Singh LR. Disturbed homocysteine metabolism is associated with cancer. Exp Mol Med. 2019;51(2):1\u201313. [DOI] [PMC free article] [PubMed] []\n\n71. Wu Y-H, Lin P-Y, Yang J-H, Jin Y-T, Wu Y-C\nHigher serum homocysteine level and frequency of hyperhomocysteinemia in carcinoembryonic antigen-positive or squamous cell carcinoma-antigen-positive oral leukoplakia patients. J Formos Med Assoc. 2021;120(12):2128\u20132135. jfma. 2021. 05. 031. [DOI] [PubMed] []\n\n72. Assiri MA, Jumayi SRA, Alsuhaymi S, Emwas A-H. Electronic cigarette vapor disrupts key metabolic pathways in human lung epithelial cells. Saudi Pharm J. 2024;32(1):101897. jsps. 2023\ndocx (571KB, docx)\n\nArticles from International Dental Journal are provided here courtesy of Elsevier Abstract\nBackground and aim\nRecent studies have shown that electronic cigarettes (ECs) use disrupts the oral microbiome composition and diversity, impairing the metabolic pathways of the mucosal cells. However, to date, no reports have evaluated the role of EC exposure in the context of oral metabolome\ndocx (571KB, docx) Abstract\nBackground and aim\nRecent studies have shown that electronic cigarettes (ECs) use disrupts the oral microbiome composition and diversity, impairing the metabolic pathways of the mucosal cells. However, to date, no reports have evaluated the role of EC exposure in the context of oral metabolome\nAltered metabolites were mainly enriched in pathways associated with oral cancer progression. Conclusion\nThis study underscores the significant impact of EC use on oral health, highlighting alterations in the oral microbiome, bacterial composition, and metabolite profiles via a clinically relevant in vitro 3D organotypic model of human oral mucosa. Key words: Electronic cigarette, microbiome, metabolome profile, tissue engineering, oral mucosa"
+}

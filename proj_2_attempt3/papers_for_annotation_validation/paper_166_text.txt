@@ -1,0 +1,481 @@
+Salivary microbiome profiles of oral cancer patients analyzed before and after treatment
+
+Abstract
+Background
+Treating oral squamous cell carcinoma (OSCC) introduces new ecological environments in the oral cavity. This is expected to cause changes in the oral microbiome. The purpose of this study was to gain new information on the salivary microbiome of OSCC patients in order to improve the aftercare of OSCC patients
+The aims of this study were to investigate possible changes in the salivary microbiome profiles of OSCC patients before and after cancer treatment and to compare these changes with the profiles of healthy controls. Patients and methods
+Paraffin-stimulated whole saliva samples were collected, and the salivary flow rate was measured from 99 OSCC patients prior to surgical resection of the tumor and other adjuvant therapy
+After treatment, 28 OSCC patients were re-examined with a mean follow-up time of 48 months. In addition, 101 healthy controls were examined and sampled. After DNA extraction and purification, the V4 hypervariable region of the 16S rRNA gene was amplified and sequenced using Illumina MiSeq. The merged read pairs were denoised using UNOISE3, mapped to zero-radius operational taxonomic units (zOTUs), and the representative zOTU sequences were assigned a taxonomy using HOMD
+Descriptive statistics were used to study the differences in the microbial profiles of OSCC patients before and after treatment and in comparison to healthy controls. Results
+At baseline, the OSCC patients showed a higher relative abundance of zOTUs classified as Streptococcus anginosus, Abiotrophia defectiva, and Fusobacterium nucleatum. The microbial profiles differed significantly between OSCC patients and healthy controls (F = 5. 9, p < 0. 001)
+Alpha diversity of the salivary microbiome of OSCC patients was decreased at the follow-up, and the microbial profiles differed significantly from the pre-treatment (p < 0. 001) and from that of healthy controls (p < 0. 001). Conclusions
+OSCC patients’ salivary microbiome profile had a higher abundance of potentially pathogenic bacteria compared to healthy controls
+Treatment of the OSCC caused a significant decrease in alpha diversity and increase in variability of the salivary microbiome, which was still evident after several years of follow-up. OSCC patients may benefit from preventive measures, such as the use of pre- or probiotics, salivary substitutes, or dietary counseling. Your browser is not supporting the HTML5 <video> element. You may download that video as a file and play it with a player of you choice. Download video stream
+Box 63, 00014 Helsinki, Finland
+Anna I Mäkinen
+
+1,✉, Vincent Y Pappalardo
+Vincent Y Pappalardo
+
+2Department of Preventive Dentistry, Academic Centre for Dentistry Amsterdam (ACTA), Vrije Universiteit Amsterdam and University of Amsterdam, Amsterdam, the Netherlands
+Vincent Y Pappalardo
+
+2, Mark J Buijs
+Mark J Buijs
+
+2Department of Preventive Dentistry, Academic Centre for Dentistry Amsterdam (ACTA), Vrije Universiteit Amsterdam and University of Amsterdam, Amsterdam, the Netherlands
+Mark J Buijs
+
+2, Bernd W Brandt
+Bernd W Brandt
+
+2Department of Preventive Dentistry, Academic Centre for Dentistry Amsterdam (ACTA), Vrije Universiteit Amsterdam and University of Amsterdam, Amsterdam, the Netherlands
+Bernd W Brandt
+
+2, Antti A Mäkitie
+Antti A Mäkitie
+
+3Department of Otorhinolaryngology - Head and Neck Surgery, University of Helsinki and Helsinki University Hospital, Helsinki, Finland
+
+4Research Program in Systems Oncology, Faculty of Medicine, University of Helsinki, Helsinki, Finland
+
+5Division of Ear, Nose and Throat Diseases, Department of Clinical Sciences, Intervention and Technology, Karolinska Institutet and Karolinska University Hospital, Stockholm, Sweden
+Antti A Mäkitie
+
+3,4,5, Jukka H Meurman
+Jukka H Meurman
+
+1Department of Oral and Maxillofacial Diseases, University of Helsinki and Helsinki University Hospital, P
+Box 63, 00014 Helsinki, Finland
+
+2Department of Preventive Dentistry, Academic Centre for Dentistry Amsterdam (ACTA), Vrije Universiteit Amsterdam and University of Amsterdam, Amsterdam, the Netherlands
+
+3Department of Otorhinolaryngology - Head and Neck Surgery, University of Helsinki and Helsinki University Hospital, Helsinki, Finland
+
+4Research Program in Systems Oncology, Faculty of Medicine, University of Helsinki, Helsinki, Finland
+
+5Division of Ear, Nose and Throat Diseases, Department of Clinical Sciences, Intervention and Technology, Karolinska Institutet and Karolinska University Hospital, Stockholm, Sweden
+
+✉Corresponding author
+The purpose of this study was to gain new information on the salivary microbiome of OSCC patients in order to improve the aftercare of OSCC patients. The aims of this study were to investigate possible changes in the salivary microbiome profiles of OSCC patients before and after cancer treatment and to compare these changes with the profiles of healthy controls
+Patients and methods
+Paraffin-stimulated whole saliva samples were collected, and the salivary flow rate was measured from 99 OSCC patients prior to surgical resection of the tumor and other adjuvant therapy. After treatment, 28 OSCC patients were re-examined with a mean follow-up time of 48 months. In addition, 101 healthy controls were examined and sampled. After DNA extraction and purification, the V4 hypervariable region of the 16S rRNA gene was amplified and sequenced using Illumina MiSeq
+The merged read pairs were denoised using UNOISE3, mapped to zero-radius operational taxonomic units (zOTUs), and the representative zOTU sequences were assigned a taxonomy using HOMD. Descriptive statistics were used to study the differences in the microbial profiles of OSCC patients before and after treatment and in comparison to healthy controls
+Results
+At baseline, the OSCC patients showed a higher relative abundance of zOTUs classified as Streptococcus anginosus, Abiotrophia defectiva, and Fusobacterium nucleatum. The microbial profiles differed significantly between OSCC patients and healthy controls (F = 5. 9, p < 0. 001). Alpha diversity of the salivary microbiome of OSCC patients was decreased at the follow-up, and the microbial profiles differed significantly from the pre-treatment (p < 0
+001) and from that of healthy controls (p < 0. 001). Conclusions
+OSCC patients’ salivary microbiome profile had a higher abundance of potentially pathogenic bacteria compared to healthy controls. Treatment of the OSCC caused a significant decrease in alpha diversity and increase in variability of the salivary microbiome, which was still evident after several years of follow-up
+Keywords: Oral cancer, Cancer treatment, Oral microbiomeIntroduction
+In 2020, there were an estimated 377,700 new cases of lip and oral cavity cancers worldwide with over 177,700 new deaths, making it the 16th most common cancer in the world [1, 2]. The suboptimal results regarding both survival and treatment-related side effects warrant further research. Management of oral squamous cell carcinoma (OSCC) is based on surgical resection of the tumor with or without adjuvant treatment, i. e
+, radiotherapy or chemoradiotherapy [3]. The surgical approach often includes reconstruction of the oncological defect [4]. These treatment approaches frequently lead to functional deficits in chewing or speaking, as well as dry mouth (xerostomia). Lymph nodes at risk for metastases are treated either with neck dissection or by radiotherapy [5], which may both affect the salivary glands and further decrease salivary flow
+These changes lead to a new ecological environment in the oral cavity, which is expected to also cause changes in the oral microbiome. Associations between microbial dysbiosis and different gastrointestinal cancers have been previously studied [6–8]. The role of microbial dysbiosis in OSCC specifically is also increasingly recognized [9, 10]. Bacteria such as Capnocytophaga gingivalis, Prevotella melaninogenica, and Streptococcus mitis have been suggested as possible biomarkers for OSCC [11]
+Furthermore, several studies have suggested that Porphyromonas gingivalis and Fusobacterium nucleatum might be promoters of tumorigenesis in OSCC [12–15]. Against this background, the aims of our present study were (1) to compare the salivary microbial profiles of OSCC patients with those of healthy controls and (2) to study the possible changes in the salivary microbial profiles from before cancer treatment to the post-treatment phase
+We hypothesized that the salivary microbial profiles of the patients differ from those of the controls. Further, we anticipated that cancer treatment affects the microbiome causing the microbial profiles to differ between the pre-treatment and post-treatment samples. Patients and methods
+This study is part of a larger project on oral cancer that examines 100 oral squamous cell cancer patients at the beginning of their treatment path and 44 patients at follow-up [16]
+Additionally, 103 age- and sex-matched controls were studied. Cancer patients
+One hundred patients diagnosed with OSCC and referred for protocol cancer surgery to the Department of Oral and Maxillofacial Diseases, Helsinki University Hospital, Helsinki, Finland, between the years 2011 and 2014, were enrolled in the study and asked to give a saliva sample prior to their cancer surgery. Inclusion criteria were oral cavity cancer of squamous cell origin with planned surgical removal of the tumor
+Exclusion criteria were cancer of the lip, tonsils, larynx, and/or pharynx; tumor of origin other than squamous cells; and the patient’s inability to give informed consent. After a follow-up time of at least 19 months, 44 of the patients continued their participation by providing another, post-treatment sample
+Sixty-six patients were lost at follow-up due to patient-related factors such as death, unwillingness to continue in the study, or moving outside of the Helsinki University Hospital district area. The medical and dental status of the patients was recorded per routine protocol both at the pre-treatment and post-treatment examinations. Hospital records including basic patient characteristics as well as tumor- and treatment-related data were available for the analyses
+Controls
+One hundred and three age- and sex-matched controls were recruited from the Helsinki University Hospital Department of Otorhinolaryngology—Head and Neck Surgery and the Helsinki Day Activities Centre for the Elderly. The inclusion criteria were age between 35 and 100 years with no previously treated or currently diagnosed cancer of the head and neck area
+Data on basic characteristics were recorded using a structured questionnaire including smoking and alcohol use habits, general health status, and denture wearing
+Sample collection and Candida counts
+Paraffin-wax-stimulated whole saliva samples were collected from all participants in a forward-leaning sitting position with a 30-s pre-stimulation by the paraffin-wax chewing followed by 5 min continued stimulation and collection by spitting into a sterile Nunc™ conical test tube (Thermo Scientific™, Thermo Fisher Scientific Inc., Waltham, MA USA). Stimulated salivary flow rate (SFR) was recorded as ml/min, and hyposalivation was determined as SFR below 0
+5 ml/min [17]. All samples were stored on ice immediately after collection and delivered to the Department of Oral and Maxillofacial Diseases laboratory at the University of Helsinki, Helsinki, Finland, for cultivation and identification of Candida as described in our previous study [16]. Candidiasis was determined as having a salivary Candida concentration of over 400 colony-forming units (CFU) per ml [18]
+Up to 2 ml of the remaining samples were stored at − 80 °C before delivery in dry ice for microbiome analysis at the Academic Centre for Dentistry Amsterdam (ACTA), Amsterdam, the Netherlands. In total, 236 samples had enough saliva volume left for microbiome studies. Of these, 99 were pre-treatment patient samples, 34 were post-treatment patient samples, and 103 originated from the control subjects. Sample processing
+DNA isolation
+DNA isolation was done in batches of 84 samples
+To control for potential contaminations, isolation blanks (for kit chemicals) were added to each batch. The saliva samples were thawed and vortexed extensively, and 200 μl was transferred to an assigned well in a 1. 1-ml deep-well plate containing 250-μl 0. 1-mm Zirconia beads (BioSpec Products, Inc. Bartlesville, OK, USA), 200 μl of phenol (Rotiphenol, Carl Roth GmbH & Co. KG, Germany), and 100 μl of lysis buffer (MagMini DNA isolation kit, LGC Genomics Ltd., Hoddesdon, UK)
+After sealing, the deep-well plate was placed in a Mini-BeadBeater-96 (BioSpec Products, Bartlesville, OK, USA) and subjected to four times 2 min bead beating at 2100 oscillations/min. DNA extraction and purification were done using the MagMini DNA Isolation Kit (LGC Genomics Ltd., Hoddlestone, UK). For measuring the bacterial DNA yield, DNA was subjected to qPCR with universal primers specific to the bacterial 16S rRNA gene [19, 20]
+For fungal yield, primers and probe specific to the fungal 28S rRNA gene were used [21]. PCR amplification and sequencing
+The V4 hypervariable region of the 16S rRNA gene in each sample was amplified using 1 ng DNA with 1 μM of each barcoded forward and reverse primer and performing 30 amplification cycles [22]. As PCR controls, negative PCRs (PCR mix with DNA-free water) were included
+After quantification of the DNA concentration of PCR products, samples, isolation controls, and negative PCRs were mixed into an equimolar pool and loaded on an agarose gel. The band containing the amplicon was cut out and cleaned with GE Illustra™ GFX PCR DNA and Gel Band purification kit (Sigma Aldrich, St Louis, USA)
+Paired-end sequencing was conducted on the MiSeq platform (Illumina, San Diego, CA, USA) using a MiSeq Reagent kit V3 and 2 × 251 nt at the Core Facility Genomics, Amsterdam UMC (Amsterdam, the Netherlands). The flow cell was loaded with 10 pmol DNA containing 30% PhiX. Sequence data were processed as described in Kahharova et al. [23]
+Briefly, paired-end reads were merged, quality-filtered, and denoised using UNOISE3 [24, 25], after which the sequences were mapped to zero-radius operational taxonomic units (zOTUs). The representative (most abundant) sequence of each zOTU was assigned taxonomy according to HOMD (v. 14. 51) [26]. The zOTU table was subsampled at 7900 reads/sample, causing the loss of 3 follow-up samples and 2 control samples that did not reach this threshold
+Additionally, 3 patients were found to have recurrent cancer at follow-up and were excluded from the analyses; thus, 99 pre-treatment samples, 28 follow-up samples, and 101 control samples were available for statistical analyses. Statistical analyses
+PAST software version 4
+03 [27] was used to calculate the alpha diversity of the samples using untransformed data (see Additional file 1) while the principal component analysis (PCA) and permutational analysis of variance (PERMANOVA, 9999 permutations, Bray–Curtis similarity) tests of the cross-sectional data, i. e., the OSCC patients versus the healthy controls, were calculated using log2-transformed data. On the longitudinal data, i. e
+, the OSCC patients before and after cancer treatment, a PERMANOVA with restricted permutations on the individual patient and Bray–Curtis distance were calculated using adonis2 (vegan v. 2. 5–6 [28]; R v. 3. 6. 3 [29]; R Core Team 2020)
+For the basic data of both cross-sectional and longitudinal studies, the continuous variables age, SFR, Shannon diversity index, salivary Candida concentration (log10[CFU/ml]), and fungal and bacterial loads (ng/μl, 28S, and 16S qPCR, respectively) were tested for normality and differences in means or distribution (independent samples t test and independent samples Mann–Whitney U for cross-sectional data, related-samples t test or paired-samples Wilcoxon signed-rank test for longitudinal data) using IBM SPSS Statistics v
+27. For categorical variables sex, smoking, alcohol use, and edentulism, a chi-square test was performed also using SPSS. A PERMANOVA was used to test differences in the microbial profiles of the patients versus the healthy controls as well as comparing the effects of SFR (normal vs hyposalivation), smoking, alcohol use, and edentulism on the microbial profiles of each group separately
+ZOTUs whose abundance differed significantly between the groups were evaluated by linear discrimination analysis (LDA) of effect size (LEfSe) [30], and the results were additionally tested for significance with the Mann–Whitney U test (cross-sectional data) and Exact sign test (longitudinal data) using SPSS. Benjamini–Hochberg false discovery rate (FDR) correction of p values for the significant zOTUs was done for longitudinal data using R and the FDR was set to 0. 05
+Differences in the microbiomes of OSCC patients at baseline and the healthy controls were also analyzed using the Global Test function in R (gt function, globaltest package, v. 5. 44. 0, [31], see Additional file 1). First, the zOTU data was filtered to include zOTUs present in at least 25% of samples and normalized using the trimmed mean of M value (TMM, edgeR package, v. 3. 32. 1 [32])
+The relationships between cancer status and the covariates sex, age, edentate status (yes/no), smoking (yes/no), alcohol use (yes/no), SFR, Candida concentration (log10[CFU/ml]), and bacterial load (16S rRNA gene qPCR, ng/μl) were tested with chi-square test and the covariate “smoking” was removed from correction as it was a confounding factor to the point of canceling the effect of cancer
+Additionally, cases with values “unknown” or “casual” (where applicable) for smoking, alcohol use, and dentition were removed from further analyses. After using the glmFit function (edgeR package, v. 3. 32
+1 [33]) to evaluate the impact of the covariates sex, age, alcohol use, SFR, dentition status, Candida concentration, and bacterial load on the microbiome, the Global Test was performed using hyperbolic arcsin (asinh [34]) transformed residuals to assess the relationship between the microbiome and cancer status. Results
+The basic characteristics of the study population are given in Table 1
+The groups were biased with regard to smoking, as the cancer group had more smokers than the control group (chi-square, p < 0. 001). In the microbiome analyses, the subsampled dataset included 857 zOTUs representing 11 phyla and 137 genera or higher taxa. Table 1. Basic characteristics of OSCC patients at baseline and healthy controls
+
+OSCC, N = 99
+Control, N = 101
+Difference between groups
+
+Sexa, male (%)
+54 (54%)
+46 (46%)
+NS
+
+Mean age, years (SD)
+68. 0 (10. 3)
+66. 4 (14
+3)
+NS
+
+Smokers (%)
+43 (43%)
+8 (7. 9%)
+
+p = 1. 6E-08
+
+Alcohol-users (%)
+62 (62%)
+59 (59%)
+NS
+
+Edentate (%)
+12 (12%)
+5 (5. 0%)
+NS
+
+Mean SFR ml/min (SD)
+1. 3 (0. 9)
+1. 4 (0. 8)
+
+p = 0. 036
+
+ Dry mouth, SFR < 0. 5 ml/min (%)
+21 (21%)
+14 (14%)
+NS
+
+Mean concentration of bacteria, 16S qPCR, ng/μl (SD)
+3. 5 (3. 3)
+3. 0 (2. 3)
+NS
+
+Candidiasisb (%)
+42 (42%)
+40 (40%)
+NS
+
+ Mean Candida concentration, log10 (CFU/ml) (SD)
+2. 3 (1. 2)
+2. 2 (1. 2)
+NS
+
+ Mean concentration of fungi, 28S qPCR, ng/μl (SD)
+0
+007 (0. 02)
+0. 003 (0. 005)
+NS
+
+Tumor classc
+
+ T1 (%)
+46 (46%)
+
+ T2–T4 (%)
+53 (53%)
+
+Stagec
+
+ Stages I–II (%)
+57 (57%)
+
+ Stages III–IV (%)
+42 (42%)
+
+Treatment
+
+ Radiotherapy-treated (%)
+44 (44%)
+
+ Chemotherapy-treated (%)
+5 (5
+1%)
+
+Open in a new tab
+
+SFR salivary flow rate, SD standard deviation, NS non-significant aBinary categorization determined using social security number bCandida growth ≥ 400 colony-forming units (CFU) per milliliter of the saliva cAccording to the 7th edition of the American Joint Committee on Cancer Staging Manual
+Comparison of patients and controls
+The subsampled dataset comprised samples from 99 pre-treatment OSCC patients and 101 controls
+Figure 1 shows comparisons between the OSCC and control samples. First, all patient’s and control’s zOTU results were studied and compared to each other with no corrections for covariates (“biased” data). The microbial profiles of the two groups differed from each other statistically significantly (PERMANOVA, F = 5. 9, p < 0. 001), but no significant difference was found in the Shannon diversity index (independent samples t test). Fig. 1
+Open in a new tab
+Comparison of OSCC patients and healthy controls. A Principal component analysis of all OSCC patients versus healthy controls, p = 0. 0001, F = 5. 9—PERMANOVA. B Shannon Diversity Index of the OSCC samples versus healthy controls, p = non-significant, independent samples t test. C Shannon Diversity Index in OSCC patients versus healthy controls by alcohol consumption, independent samples t test
+D Shannon Diversity Index of OSCC patients versus healthy controls by salivary flow rate (SFR): low—< 0. 5 ml/min, normal—≥ 0. 5 ml/min, independent samples t testAn alcohol-drinking habit had a significant effect on the Shannon diversity index in the control group (independent samples t test p = 0. 037), but not in the OSCC group. Drinkers had a higher bacterial diversity of saliva
+The effect of hyposalivation on Shannon diversity was nearly significant for the OSCC group (independent samples t test p = 0. 055), while the difference was not significant in the controls. OSCC patients with hyposalivation showed lower diversity. Secondly, we picked nonsmoking, nondrinking dentate subjects from the original dataset to form a subset called the “unbiased data”
+This subset consisted of 24 pre-treatment OSCC patients and 34 healthy controls who reported to not smoke tobacco or drink alcohol and who had at least one remaining tooth in their mouth. The microbial profiles of the two groups again differed statistically significantly (PERMANOVA, F = 2. 4, p < 0. 001), whereas there was no difference in the Shannon diversity index. LEfSe-analysis was done for both the “biased” and the “unbiased” data (Fig. 2)
+In both datasets, significantly discriminatory zOTUs that were more abundant in the group OSCC included zOTU1 Streptococcus dentisani/infantis/mitis/oralis/oral_taxon_058/oral_taxon_061/oral_taxon_064/oral_taxon_070/oral_taxon_423 /oral_taxon_431/tigurinus, zOTU43 Streptococcus anginosus, and zOTU56 Abiotrophia defectiva
+The significant zOTUs more abundant in the control group included zOTU3 Veillonella atypica/dispar, zOTU4 Streptococcus australis/parasanguinis_I/parasanguinis_II/oral_taxon_057/oral_taxon_066, and zOTU30 Actinomyces oral_taxon_172. Fig. 2. Open in a new tab
+Discriminatory zOTUs between OSCC patients and healthy controls on biased A and unbiased B data. *zOTU1 Streptococcusdentisani/infantis/mitis/oralis/sp. oral taxon 058/sp. oral taxon 061/sp. oral taxon 064/sp. oral taxon 070/sp
+oral taxon 423/sp. oral taxon 431/tigurinus (assigned taxonomy shortened in the figure). ¤zOTU4 Streptococcusaustralis/parasanguinis I/parasanguinis II/sp. oral taxon 057/sp. oral taxon 066 (assigned taxonomy shortened in the figure)In addition, the groups of zOTUs associated with either OSCC or the controls were disclosed by the Global Test (see Additional file 2)
+The Global Test produced 16 statistically significant groups of zOTUs—of which three consisted of a single zOTU—that were significantly distinguishing the patients from the controls (Additional file 3, sheet 1). Nine of the 13 groups of zOTUs were associated with OSCC (p = 0. 012, p = 0. 017, p = 0. 025, p = 0. 026, p = 0. 047, p = 0. 029, p = 0. 033, p = 0. 039, and p = 0. 039) while three groups were associated with the controls (p = 0. 025, p = 0. 026, and p = 0. 041)
+One group of zOTUs did not definitively associate with either the OSCC or the controls (p = 0. 043). The most abundant genera within the OSCC-related groups of zOTUs were Streptococcus, Fusobacterium, Capnocytophaga, and Lactobacillus, and the most abundant genera within the control-related groups were Prevotella, Actinomyces, and Megasphaera. The three distinguishing zOTUs that were significant on their own were OSCC-related zOTU211 Streptococcus anginosus (p = 0
+003), zOTU239 Catonella morbi/oral_taxon_164 (p = 0. 007), and zOTU1 Streptococcus dentisani/infantis/mitis/oralis/oral_taxon_058/oral_taxon_061/oral_taxon_064/oral_taxon_070/oral_taxon_423 /oral_taxon_431/tigurinus (p = 0. 030)
+To address the effect of smoking on the salivary microbiome, the OSCC and control groups were further divided according to the smoking status (Yes/No) and Global Test was used to disclose the groups of zOTUs associated with smoking and nonsmoking OSCC patients as well as smoking and nonsmoking controls. This time, the Global Test produced 19 significant groups of zOTUs that distinguished these four groups from one another (Additional file 3, sheet 2)
+Five of these were associated with the group OSCC smoker (all with p < 0. 001) and four with OSCC nonsmoker (all with p < 0. 001). Additionally, five zOTUs associated significantly with nonsmoker controls (all with p < 0. 001) and only one group, consisting of a single zOTU, associated with smoker controls (p < 0. 001). There were also four groups of zOTUs that were identified as significant but not associating to any of the specific groups
+The most common genera among smoker OSCC patients were genus Lactobacillus and genus Treponema, whereas the only significant zOTU among smoker controls was zOTU 131 Campylobacter rectus/showae. Comparison of samples before and after cancer treatment
+Samples from 28 OSCC patients were available after the cancer treatment at a mean follow-up period of 47. 8 months (SD 12. 1, min 35, max 78, Table 2)
+These 28 patients did not differ significantly at baseline from the other OSCC patients, except for having a higher prevalence of T1-tumors (Pearson chi-square, p = 0. 035). At the follow-up, the SFR was significantly lower and the concentration of Candida in the saliva was higher than at baseline (paired samples t test p < 0. 001 and related samples Wilcoxon signed-rank test p = 0. 028, respectively). Table 2
+Basic characteristics of 28 OSCC patients analyzed before and after treatment
+
+Baseline
+Follow-up
+Difference between timepoints
+
+Sexa, male (%)
+15 (54%)
+
+Mean age, years (SD)
+65. 7 (10. 3)
+69. 8 (10. 3)
+
+Smokers (%)
+11 (39%)
+
+Alcohol users (%)
+20 (71%)
+
+Edentate (%)
+1 (4%)
+4 (14%)
+NS
+
+Mean SFR, ml/min (SD)
+1. 1 (0. 6)
+0. 8 (0. 6)
+
+p = 0. 0008
+
+ Dry mouth, SFR < 0. 5 ml/min (%)
+4 (14%)
+10 (36%)
+NS
+
+Mean concertation of bacterial DNA, 16S qPCR, ng/μl (SD)
+2. 7 (2. 3)
+2. 3 (2
+7)
+NS
+
+Candidiasisb (%)
+11 (39%)
+19 (68%)
+
+p = 0. 03
+
+ Mean Candida concentration, log10[CFU/ml] (SD)
+2. 3 (1. 3)
+2. 9 (1. 3)
+NS
+
+ Mean concentration of yeasts, 28S qPCR, ng/μl (SD)
+0. 0049 (0. 008)
+0. 0093 (0
+02)
+NS
+
+Tumor class c
+
+ T1 (%)
+19 (68%)
+
+ T2–T4 (%)
+9 (32%)
+
+Stagec
+
+ I–II (%)
+18 (64%)
+
+ III–IV (%)
+10 (36%)
+
+Treatment
+
+ Excision with direct wound closure (%)
+5 (28%)
+
+ Reconstructive surgery (%)
+11 (39%)
+
+ Reconstructive surgery + radiation therapy (%)
+11 (39%)
+
+ Reconstructive surgery + chemoradiation therapy (%)
+1 (4%)
+
+Open in a new tab
+
+SFR salivary flow rate, SD standard deviation, NS non-significant aBinary categorization determined using social security number bCandida growth ≥ 400 colony-forming units (CFU) per milliliter of the saliva cAccording to the 7th edition of the American Joint Committee on Cancer Staging Manual
+The microbial profiles changed significantly from baseline to follow-up (restricted PERMANOVA, F = 2
+3, p < 0. 001, Fig. 3A), with the samples being less similar in composition (Bray–Curtis distance, Mann–Whitney U test, p < 0. 001, Fig. 3B), and having lower alpha diversity (paired samples t test, p = 0. 008, Fig. 3C) at the follow-up compared to the baseline. The microbial profiles of the OSCC patients at the follow-up were significantly different from those of the healthy controls (PERMANOVA, F = 6. 43, p < 0
+001), and the alpha diversity was significantly lower (Shannon diversity index, independent samples t test p = 0. 003). The microbial profiles of the follow-up samples were significantly affected by hyposalivation (PERMANOVA, F = 1. 711, p = 0. 009), by having candidiasis (PERMANOVA, F = 1. 983, p = 0. 024), by having had loco-regionally advanced cancer (stage III or IV, PERMANOVA, F = 1. 813, p = 0. 036), and by having received adjuvant radiotherapy (PERMANOVA, F = 1. 772, p = 0. 041). Fig. 3
+Open in a new tab
+Comparison of the salivary microbiome from 28 OSCC patients before and after treatment. A Principal component analysis, p < 0. 001, F = 2. 3—restricted PERMANOVA. B Bray–Curtis distance, p < 0. 001—Mann–Whitney test. C Shannon diversity index, p = 0. 008—paired samples t testLEfSe-analysis identified 28 significantly discriminant zOTUs out of which 14 remained significant after FDR correction (Fig. 4)
+For the baseline samples, these were zOTU15 Actinomyces odontolyticus/oral_taxon_180, zOTU21 Streptococcus sanguinis, zOTU26 Veillonella rogosae, zOTU47 Fusobacterium nucleatum vincentii, zOTU48 Capnocytophaga leadbetterii, zOTU56 Abiotrophia defectiva, zOTU72 Lautropia mirabilis, zOTU76 Solobacterium moorei, zOTU88 Porphyromonas endodontalis/oral_taxon_285, zOTU102 Mogibacterium diversum/neglectum/pumilum/vescum, zOTU146 Leptotrichia buccalis, and zOTU633 Streptococcus sp
+For the follow-up samples, the significantly associated zOTUs were zOTU115 Lactobacillus casei/paracasei/rhamnosus and zOTU163 Actinomyces gerencseriae. Fig. 4. Open in a new tab
+Discriminatory zOTUs between baseline and post-therapy samples in 28 OSCC patients (output of LEfSe analysis). *zOTU1 Streptococcus dentisani/infantis/mitis/oralis/sp. oral taxon 058/sp. oral taxon 061/sp. oral taxon 064/sp. oral taxon 070/sp. oral taxon 423/sp
+oral taxon 431/tigurinus (assigned taxonomy shortened in the figure)Discussion
+The aim of this study was to investigate whether the salivary microbiome of OSCC patients is different from that of healthy individuals and how the microbiota changes from the pre-treatment to the post-treatment stage. We studied paraffin-wax-stimulated whole saliva samples of 99 OSCC patients prior to treatment and 28 post-treatment samples. These were compared with the results from 101 healthy controls
+Based on these results, having OSCC seemed to have an effect on the salivary microbial profiles and the difference was evident even after removing the cofactors smoking, drinking, and being edentate. Cancer did not, however, have a significant effect on the microbial alpha diversity of the saliva samples. The microbial profiles of the OSCC patients at baseline showed a higher relative abundance of bacteria previously linked to systemic infections, such as S. anginosus, A. defectiva, and F
+nucleatum, whereas the microbial profiles of healthy controls had a higher abundance of bacteria previously associated with health, such as Prevotella histicola, H. parainfluenzae, and F. periodonticum [35–40]. Streptococcus anginosus, specifically, was shown to be significantly higher in abundance in the OSCC patients compared to the healthy controls by both LEfSe-analysis and the Global Test. In previous studies, S
+anginosus has been reported to have caused bacteremia and related purulent infection foci in various organ systems [35]. Additionally, A. defectiva, which differentiated the OSCC patients at baseline from both their post-treatment samples and those of the healthy controls, has previously been linked to infective endocarditis and endophthalmitis [41, 42]. Species such as F. nucleatum and C
+leadbetteri, which associate with the OSCC patients at baseline in our study, have also previously been linked to OSCC [13, 43]. Porphyromonas gingivalis, however, was not a discriminating factor between OSCC patients and healthy controls or the post-treatment samples in our data. This result was in contrast to earlier studies where a strong association was found between P. gingivalis and OSCC [12–15]
+When the effect of smoking on the microbiome was tested using the Global Test, the most significant genera among smoker OSCC patients were genus Lactobacillus and genus Treponema. Specifically, the species related to smoker OSCC patients included several caries-related species such as Lactobacillus gasseri and Lactobacillus fermentum as well as Treponema species T. socranskii and T. maltophilum, which have been associated with severe periodontitis and periapical lesions [44–46]
+This supports the link that has previously been shown between smoking, poor oral health, and OSCC [47]. After a relatively long follow-up time, the microbial profiles of the patients in the present series showed decreased similarity to each other and lower diversity within samples than at baseline. Furthermore, the microbial profiles were significantly different in the post-treatment samples when compared with those of the controls
+The Shannon diversity index at the follow-up was significantly lower than that of the control samples. These results imply that the administered therapies indeed affect the salivary microbiome in the long term. This change may be unfavorable as the post-follow-up profile tended to lean towards an increase in aciduric taxa and a decrease in diversity, both of which have previously been linked to poor oral health [48, 49]
+Eleven patients received adjuvant radiotherapy and one patient was treated with adjuvant chemoradiation therapy. At follow-up, there was a slight though significant difference in the microbial profiles between patients who had received radiotherapy and those who had not. Such difference was also evident when the follow-up samples were tested for the effect of having candidiasis, having hyposalivation and having had high stage cancer
+Since patients with higher stage cancer tend to be treated with adjuvant (chemo)radiotherapy, which in turn is linked to both the development of hyposalivation and candidiasis, the difference found caused by the radiotherapy may actually be the result of one of the other factors found here to have a significant effect. In this study, the number of samples was too low to draw meaningful conclusions from this set of patients regarding the effect of radiotherapy
+In previous studies, however, the effect of radiotherapy in head-and-neck cancer to the oral microbiome has been found to be profound and the increase in cariogenic taxa has been evident [50–52]. The postoperative oral health problems are among the principal complaints of OSCC patients [53]. Thus, the strive to establish a balanced oral microbiome post-OSCC-treatment should be seen as equally important as the efforts to re-establish function and appearance
+As the microbial profiles of OSCC were significantly different from healthy controls both preoperatively and at follow-up, the oral health professionals should be encouraged to be more vocal about the need for balancing and stabilizing the oral microbiome. It should be noted, however, that the measures with which the positive modification of oral microbiome is done remain elusive and warrant for further research [54]. Finally, the weaknesses and strengths of the present study need to be discussed
+The main weakness was the lack of full oral examination records, which, if completed with data on chewing capacity, saliva pH values and analysis on diet, would have been valuable for further conclusions. Especially the lack of full periodontal records from all participants causes a probable confounding factor that we could not correct for, as possible periodontal diseases are expected to affect the microbial profiles [55]
+We were also unable to assess the effects of different treatment strategies on the results because of the small number of post-treatment follow-up samples. Furthermore, we were unable to match the controls by smoking, drinking, and edentulism. However, the percentages regarding smokers match the population statistics of the healthy population of Helsinki and Uusimaa district in Finland (8. 1% of the population aged 65 and over in Helsinki and Uusimaa district in Finland, 2014 [56])
+The strength of this study is the homogeneity of the study group concerning age and Caucasian ethnicity in the Finnish population. The baseline study group of OSCC patients was also relatively large, which allowed us to study the microbial profiles both by excluding smokers, drinkers, and edentate subjects to form the unbiased group and by correcting for covariates with the Global Test
+This made the statistical analyses more reliable, even though smoking could not be corrected for in the Global Test due to it leading to the loss of the effect of cancer in the analysis. A further strength was the relatively long follow-up time, which allowed us to investigate the long-term effects of OSCC therapy on the salivary microbiome
+In the future, we suggest additional studies involving the chemical composition of the saliva and its changes throughout the treatment of OSCC in order to account for any effects these changes may have on the salivary microbiome. Conclusions
+Our study hypothesis was confirmed by showing that the microbial profiles in saliva indeed were different when comparing OSCC patients to healthy controls
+Similarly, as we had expected, the post-treatment profiles differed significantly from those of the pre-treatment samples. The ecologically disadvantageous changes, seen as the increase in aciduric taxa and decrease of alpha diversity, as well as the higher relative abundance of potentially pathogenic taxa in the OSCC patients at baseline, are findings of clinical importance
+Based on these results, we suggest that OSCC patients may benefit from preventive measures, such as recommendation of the use of pre- or probiotics, salivary substitutes, or dietary counseling. Furthermore, we recommend that the OSCC patients should have a longstanding relationship with the oral health professionals that extend beyond the 5-year follow-up with the surgical team in order to aid in the prevention of oral diseases after cancer treatment
+All these could be expected to stabilize the oral microbiome, but intervention studies are needed for further conclusion in this area. Supplementary Information
+
+40168_2023_1613_MOESM1_ESM. docx (142KB, docx) Additional file 1. Alpha Diversity Indices - Detailed description and discussion of the alpha-diversity indices of the cross-sectional data examined during this study. 40168_2023_1613_MOESM2_ESM. docx (933. 8KB, docx) Additional file 2
+Global Test Method - Detailed description of the statistical edgeR, residuals and the Global Test. 40168_2023_1613_MOESM3_ESM. xlsx (28. 3KB, xlsx) Additional file 3. Global Test Results (Excel spreadsheet,. xlsx) – Resulting groups of zOTUs from the Global Test. Acknowledgements
+Not applicable. Authors’ contributions
+Study concepts and design were constructed by JHM, EZ and AAM. Samples and subjects related data acquisition was done by AIM and MJB did the qPCR and next-generation sequencing work
+Funding
+Open Access funding provided by University of Helsinki. This work was supported by research grants from the Helsinki University Hospital [Y1014SL006], the Finnish Dental Society Apollonia, the Finnish Medical Society, the Finnish Society of Sciences and Letters, and the King Gustav V and Queen Victoria’s Freemason’s Foundation
+The funding sources had no involvement in the study design; the collection, analysis, or interpretation of the data; or in the preparation or submission of this article. Availability of data and materials
+The datasets generated and/or analyzed during the current study are available in the NBCI BioProject repository, PRJNA997108 [https://www. ncbi. nlm. nih. gov/bioproject/997108]
+Estimated number of deaths in 2020, World, both sexes, all ages 2020. https://gco. iarc. fr/today/online-analysis-table. (Accessed 2 Jan 2023). 3. Almangush A, Makitie AA, Triantafyllou A, de Bree R, Strojan P, Rinaldo A, et al. Staging and grading of oral squamous cell carcinoma: an update. Oral Oncol 2020;107:104799. 10. 1016/j. oraloncology. 2020. 104799. [DOI] [PubMed]
+
+4. Shah JP, Gil Z. Current concepts in management of oral cancer–surgery. Oral Oncol. 2009;45:394–401.
+oraloncology. 2008. 05. 017. [DOI] [PMC free article] [PubMed] []
+
+5. Vassiliou L V, Acero J, Gulati A, Holzle F, Hutchison IL, Prabhu S, et al. Management of the clinically N(0) neck in early-stage oral squamous cell carcinoma (OSCC). An EACMFS position paper. J Craniomaxillofac Surg 2020;48:711–8. 10. 1016/j. jcms. 2020. 06. 004. [DOI] [PubMed]
+
+6. Yachida S, Mizutani S, Shiroma H, Shiba S, Nakajima T, Sakamoto T, et al
+Metagenomic and metabolomic analyses reveal distinct stage-specific phenotypes of the gut microbiota in colorectal cancer. Nat Med. 2019;25:968–976. [DOI] [PubMed] []
+
+7. Bultman SJ. Emerging roles of the microbiome in cancer. Carcinogenesis. 2014;35:249–255. [DOI] [PMC free article] [PubMed] []
+
+8. Khan AA, Shrivastava A, Khurshid M
+Normal to cancer microbiome transformation and its implication in cancer diagnosis. Biochim Biophys Acta. 2012;1826:331–337. bbcan. 2012. 05. 005. [DOI] [PubMed] []
+
+9. Gholizadeh P, Eslami H, Yousefi M, Asgharzadeh M, Aghazadeh M, Kafil HS. Role of oral microbiome on oral cancers, a review. Biomed Pharmacother. 2016;84:552–558. biopha. 2016. 09. 082. [DOI] [PubMed] []
+
+10. Ganly I, Yang L, Giese RA, Hao Y, Nossa CW, Morris LGT, et al
+Periodontal pathogens are a risk factor of oral cavity squamous cell carcinoma, independent of tobacco and alcohol and human papillomavirus. Int J Cancer. 2019;145:775–784. 32152. [DOI] [PMC free article] [PubMed] []
+
+11. Mager DL, Haffajee AD, Devlin PM, Norris CM, Posner MR, Goodson JM. The salivary microbiota as a diagnostic indicator of oral cancer: a descriptive, non-randomized study of cancer-free and oral squamous cell carcinoma subjects. J Transl Med
+2005;3:27. [DOI] [PMC free article] [PubMed] []
+
+12. Wen L, Mu W, Lu H, Wang X, Fang J, Jia Y, et al. Porphyromonas gingivalis promotes oral squamous cell carcinoma progression in an immune microenvironment. J Dent Res. 2020;99:666–675. [DOI] [PubMed] []
+
+13. Irfan M, Delgado RZR, Frias-Lopez J. The oral microbiome and cancer. Front Immunol 2020;11:591088. 10. 3389/fimmu. 2020. 591088
+[DOI] [PMC free article] [PubMed]
+
+14. Olsen I, Yilmaz O. Possible role of Porphyromonas gingivalis in orodigestive cancers. J Oral Microbiol. 2019;11:1563410. 2018. 1563410. [DOI] [PMC free article] [PubMed] []
+
+15. Binder Gallimidi A, Fischman S, Revach B, Bulvik R, Maliutina A, Rubinstein AM, et al. Periodontal pathogens Porphyromonas gingivalis and Fusobacterium nucleatum promote tumor progression in an oral-specific chemical carcinogenesis model
+Oncotarget 2015;6:22613–23. 10. 18632/oncotarget. 4209. [DOI] [PMC free article] [PubMed]
+
+16. Mäkinen A, Nawaz A, Mäkitie A, Meurman JH. Role of non-Albicans Candida and Candida Albicans in oral squamous cell cancer patients. J Oral Maxillofac Surg. 2018;76:2564–2571. joms. 2018. 06. 012. [DOI] [PubMed] []
+
+17. Sreebny LM. Saliva in health and disease: an appraisal and update. Int Dent J. 2000;50:140–161. 1875-595X. 2000. TB00554. X
+[DOI] [PubMed] []
+
+18. Epstein JB, Pearsall NN, Truelove EL. Quantitative relationships between Candida albicans in saliva and the clinical status of human subjects. J Clin Microbiol. 1980;12:475–476. 12. 3. 475-476. 1980. [DOI] [PMC free article] [PubMed] []
+
+19. Ciric L, Pratten J, Wilson M, Spratt D. Development of a novel multi-triplex qPCR method for the assessment of bacterial community structure in oral populations. Env Microbiol Rep
+2010;2:770–774. 1758-2229. 2010. 00183. x. [DOI] [PubMed] []
+
+20. Nadkarni MA, Martin FE, Jacques NA, Hunter N. Determination of bacterial load by real-time PCR using a broad-range (universal) probe and primers set. Microbiol. 2002;148:257–266. [DOI] [PubMed] []
+
+21. Vollmer T, Stormer M, Kleesiek K, Dreier J
+Evaluation of novel broad-range real-time PCR assay for rapid detection of human pathogenic fungi in various clinical specimens. J Clin Microbiol. 2008;46:1919–1926. 02178-07. [DOI] [PMC free article] [PubMed] []
+
+22. Kozich JJ, Westcott SL, Baxter NT, Highlander SK, Schloss PD. Development of a dual-index sequencing strategy and curation pipeline for analyzing amplicon sequence data on the MiSeq Illumina sequencing platform. Appl Env Microbiol. 2013;79:5112–5120
+01043-13. [DOI] [PMC free article] [PubMed] []
+
+23. Kahharova D, Brandt BW, Buijs MJ, Peters M, Jackson R, Eckert G, et al. Maturation of the oral microbiome in caries-free toddlers: a longitudinal study. J Dent Res. 2020;99:159–167. [DOI] [PMC free article] [PubMed] []
+
+24. Edgar RC. Search and clustering orders of magnitude faster than BLAST. Bioinformatics. 2010;26:2460–2461.
+[DOI] [PubMed] []
+
+25. Edgar RC. UNOISE2: improved error-correction for Illumina 16S and ITS amplicon sequencing 2016. 10. 1101/081257. 26. Chen T, Yu WH, Izard J, Baranova O V, Lakshmanan A, Dewhirst FE. The Human Oral Microbiome Database: a web accessible resource for investigating oral microbe taxonomic and genomic information. Database (Oxford) 2010;2010. 10. 1093/DATABASE/BAQ013. [DOI] [PMC free article] [PubMed]
+
+27. Hammer Ø, Harper DA, Ryan PD
+PAST: Paleontological statistics software package for education and data analysis. Palaeontol Electron. 2001;4(1). http://palaeo-electronica. org/2001_1/past/issue1_01. htm. 28. Oksanen J, Simpson GL, Blanchet FG, Kindt R, Legendre P, Minchin PR, et al. vegan: Community Ecology Package 2022. https://CRAN. R-project. org/package=vegan. 29. R Core Team. R: a language and environment for statistical computing. 2020. https://www. r-project. org/. 30
+Segata N, Izard J, Waldron L, Gevers D, Miropolsky L, Garrett WS, et al. Metagenomic biomarker discovery and explanation. Genome Biol. 2011;12:R60. [DOI] [PMC free article] [PubMed] []
+
+31. Goeman JJ, van de Geer SA, de Kort F, van Houwelingen HC. A global test for groups of genes: testing association with a clinical outcome. Bioinformatics. 2004;20:93–99. [DOI] [PubMed] []
+
+32. Robinson MD, Oshlack A
+A scaling normalization method for differential expression analysis of {RNA}-seq data. Genome Biol. 2010;11:R25. [DOI] [PMC free article] [PubMed] []
+
+33. Robinson MD, McCarthy DJ, Smyth GK. edgeR}: a {Bioconductor package for differential expression analysis of digital gene expression data. Bioinformatics. 2010;26:139–140. [DOI] [PMC free article] [PubMed] []
+
+34
+Huber W, von Heydebreck A, Sültmann H, Poustka A, Vingron M. Variance stabilization applied to microarray data calibration and to the quantification of differential expression. Bioinformatics. 2002;18:S96–S104. suppl_1. S96. [DOI] [PubMed] []
+
+35. Pilarczyk-Zurek M, Sitkiewicz I, Koziel J. The clinical view on Streptococcus anginosus group – opportunistic pathogens coming out of hiding. Front Microbiol. 2022;13:2533. 2022
+956677/BIBTEX. [DOI] [PMC free article] [PubMed] []
+
+36. Senn L, Entenza JM, Greub G, Jaton K, Wenger A, Bille J, et al. Bloodstream and endovascular infections due to Abiotrophia defectiva and Granulicatella species. BMC Infect Dis 2006;6. 10. 1186/1471-2334-6-9. [DOI] [PMC free article] [PubMed]
+
+37. Thurnheer T, Karygianni L, Flury M, Belibasakis GN
+Fusobacterium species and subspecies differentially affect the composition and architecture of supra- and subgingival biofilms models. Front Microbiol. 2019;10:1716. 2019. 01716. [DOI] [PMC free article] [PubMed] []
+
+38. Shahi SK, Freedman SN, Murra AC, Zarei K, Sompallae R, Gibson-Corley KN, et al. Prevotella histicola, a human gut commensal, is as potent as COPAXONE® in an animal model of multiple sclerosis. Front Immunol 2019;10. 10. 3389/FIMMU. 2019. 00462
+[DOI] [PMC free article] [PubMed]
+
+39. Ribeiro AA, Azcarate-Peril MA, Cadenas MB, Butz N, Paster BJ, Chen T, et al. The oral bacterial microbiome of occlusal surfaces in children and its association with diet and caries. PLoS One 2017;12. 10. 1371/JOURNAL. PONE. 0180621. [DOI] [PMC free article] [PubMed]
+
+40. Baraniya D, Jain V, Lucarelli R, Tam V, Vanderveer L, Puri S, et al. Screening of health-associated oral bacteria for anticancer properties in vitro
+Front Cell Infect Microbiol 2020;10:575656. 10. 3389/fcimb. 2020. 575656. [DOI] [PMC free article] [PubMed]
+
+41. Pinkney JA, Nagassar RP, Roye-Green KJ, Ferguson T. Abiotrophia defectiva endocarditis. BMJ Case Rep 2014;2014. 10. 1136/BCR-2014-207361. [DOI] [PMC free article] [PubMed]
+
+42. Lee MHH, Lawlor M, Lee AJ. Abiotrophia defectiva bleb-associated endophthalmitis confirmed with 16s ribosomal RNA sequencing. J Glaucoma. 2015;24:87–88. 0B013E3182953AD9
+[DOI] [PubMed] []
+
+43. Zhang L, Liu Y, Zheng HJ, Zhang CP. The oral microbiota may have influence on oral cancer. 3389/fcimb. 2019. 00476. [DOI] [PMC free article] [PubMed] []
+
+44. Caufield PW, Schön CN, Saraithong P, Li Y, Argimón S. Oral Lactobacilli and dental caries: a model for niche adaptation in humans. J Dent Res. 2015;94:110S–118S. 1177_0022034515576052-FIG2
+JPEG. [DOI] [PMC free article] [PubMed] []
+
+45. Takeuchi Y, Umeda M, Sakamoto M, Benno Y, Huang Y, Ishikawa I. Treponema socranskii, Treponema denticola, and Porphyromonas gingivalis are associated with severity of periodontal tissue destruction. J Periodontol. 2001;72:1354–1363. 2001. 72. 10. 1354. [DOI] [PubMed] []
+
+46. Nóbrega LM, Delboni MG, Martinho FC, Zaia AA, Ferraz CC, Gomez BP. Treponema diversity in root canals with endodontic failure
+[DOI] [PubMed] []
+
+49. Zhang Y, Wang X, Li H, Ni C, Du Z, Yan F. Human oral microbiota and its modulation for oral health. Biomed Pharmacother. 2018;99:883–893. biopha. 2018. 01. 146. [DOI] [PubMed] []
+
+50. Sami A, Elimairi I, Stanton C, Paul Ross R, Anthony Ryan C. Molecular sciences the role of the microbiome in oral squamous cell carcinoma with insight into the microbiome-treatment axis. Int J Mol Sci 2020;21. 10. 3390/ijms21218061
+[DOI] [PMC free article] [PubMed]
+
+51. Almståhl A, Wikström M, Fagerberg-Mohlin B. Microflora in oral ecosystems in subjects with radiation-induced hyposalivation. Oral Dis. 2008;14:541–549. 1601-0825. 2007. 01416. X. [DOI] [PubMed] []
+
+52. Hu Y jian, Shao Z yang, Wang Q, Jiang Y tao, Ma R, Tang Z sheng, et al. Exploring the dynamic core microbiome of plaque microbiota during head-and-neck radiotherapy using pyrosequencing. PLoS One 2013;8. 10. 1371/JOURNAL. PONE
+0056343. [DOI] [PMC free article] [PubMed]
+
+53. Rogers SN, Lowe D. Health-related quality of life after oral cancer treatment: 10-year outcomes. Oral Surg Oral Med Oral Pathol Oral Radiol. 2020;130:144–149. OOOO. 2020. 02. 018. [DOI] [PubMed] []
+
+54. Cornejo Ulloa P, van der Veen MH, Krom BP. Review: modulation of the oral microbiome by the host to promote ecological balance. Odontology. 2019;107:437–448.
+[DOI] [PMC free article] [PubMed] []
+
+55. Plachokova AS, Andreu-Sánchez S, Noz MP, Fu J, Riksen NP. Oral microbiome in relation to periodontitis severity and systemic inflammation. Int J Mol Sci. 2021;22:5876. [DOI] [PMC free article] [PubMed] []
+
+56. Institute for Health and Wellfare. Sotkanet. fi Statistics and Indicator Bank n. d. https://sotkanet. fi/sotkanet/en/. (Accessed 4 Jan 2023)
+Articles from Microbiome are provided here courtesy of BMC Abstract
+Background
+Treating oral squamous cell carcinoma (OSCC) introduces new ecological environments in the oral cavity. This is expected to cause changes in the oral microbiome. The purpose of this study was to gain new information on the salivary microbiome of OSCC patients in order to improve the aftercare of OSCC patients
+The suboptimal results regarding both survival and treatment-related side effects warrant further research. Management of oral squamous cell carcinoma (OSCC) is based on surgical resection of the tumor with or without adjuvant treatment, i. e., radiotherapy or chemoradiotherapy [3]. The surgical approach often includes reconstruction of the oncological defect [4]. These treatment approaches frequently lead to functional deficits in chewing or speaking, as well as dry mouth (xerostomia)
+Lymph nodes at risk for metastases are treated either with neck dissection or by radiotherapy [5], which may both affect the salivary glands and further decrease salivary flow. These changes lead to a new ecological environment in the oral cavity, which is expected to also cause changes in the oral microbiome. Associations between microbial dysbiosis and different gastrointestinal cancers have been previously studied [6–8]
+The role of microbial dysbiosis in OSCC specifically is also increasingly recognized [9, 10]. Bacteria such as Capnocytophaga gingivalis, Prevotella melaninogenica, and Streptococcus mitis have been suggested as possible biomarkers for OSCC [11]. Furthermore, several studies have suggested that Porphyromonas gingivalis and Fusobacterium nucleatum might be promoters of tumorigenesis in OSCC [12–15]
+Against this background, the aims of our present study were (1) to compare the salivary microbial profiles of OSCC patients with those of healthy controls and (2) to study the possible changes in the salivary microbial profiles from before cancer treatment to the post-treatment phase. We hypothesized that the salivary microbial profiles of the patients differ from those of the controls
+Further, we anticipated that cancer treatment affects the microbiome causing the microbial profiles to differ between the pre-treatment and post-treatment samples. Patients and methods
+This study is part of a larger project on oral cancer that examines 100 oral squamous cell cancer patients at the beginning of their treatment path and 44 patients at follow-up [16]. Additionally, 103 age- and sex-matched controls were studied
+Cancer patients
+One hundred patients diagnosed with OSCC and referred for protocol cancer surgery to the Department of Oral and Maxillofacial Diseases, Helsinki University Hospital, Helsinki, Finland, between the years 2011 and 2014, were enrolled in the study and asked to give a saliva sample prior to their cancer surgery. Inclusion criteria were oral cavity cancer of squamous cell origin with planned surgical removal of the tumor

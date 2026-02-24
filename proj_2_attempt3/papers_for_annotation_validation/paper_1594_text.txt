@@ -1,0 +1,472 @@
+The altered sputum microbiome profile in patients with moderate and severe COPD exacerbations, compared to the healthy group in the Indian population
+
+Abstract
+
+Background: Microbial culture-independent sequencing techniques have advanced our understanding of host-microbiome interactions in health and disease. The purpose of this study was to explore the dysbiosis of airway microbiota in patients with moderate or severe chronic obstructive pulmonary disease (COPD) and compare them with healthy controls
+Methods: The COPD patients were investigated for disease severity based on airflow limitations and divided into moderate (50%≤FEV1<80% predicted) and severe groups (FEV1<50% predicted). Spontaneous sputum samples were collected and, the V3-V4 regions of the 16S rRNA coding gene were sequenced to examine the microbiome profile of COPD and healthy participants. Results: A total of 45 sputum samples were collected from 17 severe COPD, 12 moderate COPD cases, and 16 healthy volunteers
+The bacterial alpha diversity (Shannon and Simpson’s index) significantly decreased in the moderate and severe COPD groups, compared to healthy samples. A significantly higher proportion of Firmicutes and Actinobacteria were present in moderate COPD, and Proteobacteria numbers were comparatively increased in severe COPD. In healthy samples, Bacteroidetes and Fusobacteria were more abundant in comparison to both the COPD groups
+Among the most commonly detected 20 bacterial genera,
+Streptococcus was predominant among the COPD sputum samples, whereas
+Prevotella was the top genus in healthy controls. Linear discriminant analysis (LDA>2) revealed that marker genera like
+Streptococcus and
+Rothia were abundant in moderate COPD. For severe COPD, the genera
+Pseudomonasand
+Leptotrichia were most prevalent, whereas
+Fusobacterium and
+Prevotella were dominant in the healthy group
+Conclusions: Our findings suggest a significant dysbiosis of the respiratory microbiome in COPD patients. The decreased microbial diversity may influence the host immune response and provide microbiological biomarkers for the diagnosis and monitoring of COPD. Keywords: Microbiome, chronic obstructive pulmonary disease, respiratory pathology, 16S rRNA gene sequencing, microbial populations F1000Res. 2023 Oct 27;12:528. Originally published 2023 May 22. [Version 4]
+132220. 4
+
+Other versions
+
+PMC10624950. 1; 2023 May 22
+PMC10624950. 2; 2023 Aug 1
+PMC10624950. 3; 2023 Oct 6
+2; 2023 Aug 1
+PMC10624950. 3; 2023 Oct 6
+Conclusions: Our findings suggest a significant dysbiosis of the respiratory microbiome in COPD patients. The decreased microbial diversity may influence the host immune response and provide microbiological biomarkers for the diagnosis and monitoring of COPD
+Keywords: Microbiome, chronic obstructive pulmonary disease, respiratory pathology, 16S rRNA gene sequencing, microbial populationsIntroduction
+Chronic obstructive pulmonary disease (COPD) is a heterogenous lung pathology, manifesting with persistent and progressive respiratory symptoms, airway obstruction, and inflammation due to structural abnormalities
+1
+COPD is one of the leading causes of mortality and morbidity globally and its burden is predicted to rise further in the upcoming years due to constant exposure to air pollution, respiratory pathogens, and the growing elderly population. 1
+
+–
+
+3
+COPD is a treatable but incurable disease, and often switches between a stable to an exacerbated state disease
+4
+The frequent exacerbation and worsening of respiratory symptoms affect the individual quality of life with a significant socioeconomic burden and impose a huge healthcare management cost. 5
+
+,
+
+6
+The progression of COPD often leads to chronic inflammation and major destruction of the lung and airway, which disrupts pulmonary microbiome homeostasis. Commensal microbes play a crucial role in innate immune regulation, protecting against invading pathogens and maintaining epithelial integrity
+The recent advancement of culture-independent next-generation sequencing techniques have uncovered the diverse microbial communities colonizing the respiratory mucosa and recognized their roles in health and disease. 7
+
+–
+
+9
+
+In the past, several studies have evaluated lung microbiome composition and its association with COPD manifestations. The changes in bacterial diversity and several significant taxa have been identified in COPD patients, which play a role in disease progression
+A high heterogeneity has been observed among these studies, potentially attributed to the underlying health conditions of selected populations and geographical variations. However, the changes in the sputum microbial profile in the Indian population with COPD are not well understood. This study aimed to evaluate the changes in lung microbiome diversity of patients with moderate or severe COPD and compare them with the microbiomes of healthy controls
+Study design and population
+To conduct this prospective observational study, sputum samples were collected from eligible COPD participants, who presented to our hospital and were diagnosed with COPD in accordance with the 2019 Global Initiative for Chronic Obstructive Lung Disease (GOLD) guideline. 10
+Their lung functions were measured using spirometry. The enrolled cases were regrouped into moderate COPD (50%≤FEV1<80% predicted) and severe COPD (FEV1<50% predicted)
+The exclusion criteria for COPD participants were: (a) age ≤40 years, (b) patients diagnosed with other respiratory diseases or immunosuppression, and (c) history of antibiotic usage within four weeks prior to sample collection. Healthy controls include individuals ≥40 years of age and those not having any apparent illness. There was no gender-based exclusions or restrictions for recruiting participants. Demographic and clinical information was obtained for the enrolled participants
+This study was approved by the Kasturba Medical College and Kasturba Hospital Institutional Ethics Committee (IEC: 479/2019) and the participants were enrolled after providing written informed consent. Sample collection, DNA isolation, and 16S rDNA sequencing
+The participants were instructed to cough up sputum into a sterile container and samples were transported on ice to the laboratory
+All sputum samples were evaluated with routine conventional culturing and an aliquot of it was stored at −80°C for the DNA extraction. The sputum samples were homogenized using an equal volume of 0. 2% dithiothreitol (DTT) (Sigma Aldrich, USA), and lysozyme-based Qiagen DNA Mini kit (Qiagen, USA) was used to extract the genomic DNA according to the manufacturer’s protocol. The Qubit 2
+0 fluorometer (Thermo Fisher Scientific, USA) was used to measure the purity and concentration of the extracted DNA. The purified DNA was further processed for the 16S rRNA V3-V4 regions targeted amplification to uncover the bacterial community in sputum samples. Based on the Illumina protocol,
+
+11
+PCR amplification of V3-V4 hypervariable regions (~456 bp) were performed using the primer pair 341F/785R. Sequencing adapters and dual index barcodes were added with a limited cycle of PCR
+After the quality assessment, multiplex amplified libraries were pooled equally and paired-end reads (2X300 bp) were generated using the MiSeq instrument (Illumina, San Diego, CA, United States). Bioinformatics analysis
+The sequenced raw data were processed using the standard Mothur v1. 46. 1 pipeline. 12
+A quality check of the reads was carried out and the low-quality reads and chimeras were removed. Contigs were created from the paired-end reads
+The Shannon, Simpson, and Chao1 matrices were used to measure bacterial Alpha-diversity and an ANOVA test was done to estimate significant differences. Beta diversity was performed using the Principal Coordinate Analysis (PCoA) method along with the Bray-Curtis index as distance measure and permutational multivariate analysis of variance (PERMANOVA) for the significant measure
+The genus biomarkers (discriminative genera among the groups) were identified using linear discriminant analysis effect size (LEfSe) and a cut-off linear discriminant analysis (LDA) score >2. 0. Results
+Features of the study participants
+Sputum samples from COPD cases (12 moderate COPD and 17 severe COPD) and 16 healthy volunteers were included in the study
+The participants’ clinical and demographic features like gender, age, BMI, pulmonary function tests (FEV1% predicted, FEV1 and FEV1/FVC values), mMRC dyspnoea score, and whether they were current smokers are summarized in
+Table 1. At the time of sampling, all COPD patients were in an exacerbated state of the disease and no significant growth of respiratory pathogens was detected in the sputum cultures. Table 1. Clinical and demographic features of the study population
+Features
+Moderate COPD (n=12)
+Severe COPD (n=17)
+Healthy (n=16)
+
+Age, years (mean ± SD)
+66 ± 5. 8
+64 ± 5. 8
+58 ± 5. 3
+
+Gender
+
+Male (%)
+12 (100)
+16 (94. 1)
+10 (62. 5)
+
+Female (%)
+-
+1 (5. 9)
+6 (37. 5)
+
+BMI (kg/m
+2) (mean ± SD)
+25. 4 ± 5. 6
+23. 2 ± 5. 7
+24. 2 ± 4. 4
+
+Current Smoker (%)
+4 (30. 8)
+2 (11. 8)
+3 (18. 7)
+
+Post-bronchodilator FEV1, % predicted (mean ± SD)
+75. 1 ± 16. 5
+30. 8 ± 8. 6
+NA
+
+Post-bronchodilator FEV1, L (mean ± SD)
+2. 4 ± 0. 5
+1. 8 ± 0
+8
+NA
+
+Post-bronchodilator FEV1/FVC ratio, % (mean ± SD)
+64. 7 ± 5. 6
+61 ± 7. 4
+NA
+
+mMRC Dyspnoea scale (IQR)
+2(2)
+3 (3)
+NA
+
+Open in a new tabBacterial diversity in sputum samples
+A total of 91,863 OTUs were recovered at a 97% sequence identity with 32,665 OTUs in the patients with moderate COPD, 40,842 OTUs in severe COPD, and 30,980 OTUs in the healthy group
+A significantly lower bacterial alpha diversity (Simpson’s and Shannon's index) was observed in moderate COPD and severe COPD samples compared to the healthy group (p<0. 05, ANOVA test). The Chao1 index measured the species richness within groups and exhibited no differences (p>0. 05) (
+Figure 1A). The Beta diversity represented by PCoA showed a significant difference in bacterial community clustering among the groups (p<0. 01, PERMANOVA test) (
+Figure 1B). Figure 1
+Bacterial diversity in sputum samples of moderate COPD, severe COPD, and healthy groups. Open in a new tab
+(A) The measures of alpha diversity indices showed a significant difference (*p < 0. 05 and **p < 0. 01, ANOVA test). (B) Principal coordinate analysis (PCoA) revealed a distinct bacterial community clustering among the groups (P< 0. 01, PERMANOVA). (C) Venn diagram of the core microbiota in tested samples
+As the Venn diagram of the core sputum microbiota (
+Figure 1C) illustrates, out of the total 91863 OTUs 35. 6%, 27. 2%, and 26. 3% OTUs were unique to severe COPD, moderate COPD, and healthy groups respectively. While 2,649 (2. 9%) OTUs were shared by all three groups and 5,831 (6. 3%) OTUs were shared between moderate and severe COPD groups, 4,447 (4. 8%) OTUs were common for moderate COPD and healthy, and, 4,995 (5. 4%) OTUs were common for severe COPD and healthy groups
+The taxonomic profiling of sputum microbiota among groups
+The most prevalent microbial phyla in the sputum samples of moderate COPD, severe COPD, and healthy were Firmicutes (46. 3%, 35. 6%, and 31. 9%) followed by Bacteroidetes (20. 0%, 26. 8%, and 28. 7%) Proteobacteria (12. 9%, 17. 4%, and 16. 1%), Actinobacteria (14. 0%, 8. 5%, and 5. 9%), and Fusobacteria (5. 3%, 9. 5%, and 13%) (
+Figure 2A)
+A significantly higher proportion of Firmicutes and Actinobacteria were present in respiratory samples from patients with moderate COPD and Proteobacteria was comparatively increased in severe COPD, whereas in healthy individuals, Bacteroidetes and Fusobacteria were present in a higher abundance compared to both COPD groups. Figure 2. The taxonomic profiling of sputum microbiota among moderate COPD, severe COPD, and healthy groups
+Open in a new tab
+(A) Relative abundance at the Phyla level, (B) Relative abundance at the genus level, and (C) LEfSe analysis represent the discriminative genera among the groups (LDA>2). In the cohort of patients with moderate COPD, the top five most commonly detected genera were
+Streptococcus (28. 2%),
+Rothia (11. 4%),
+Prevotella (8. 3%),
+Porphyromonas (7. 9%), and
+Gemella (6. 2%). The dominant genera in severe COPD were
+Streptococcus (20. 2%),
+Prevotella (11. 7%),
+Porphyromonas (10
+1%),
+Leptotrichia (5. 9%), and
+Rothia (5. 3%). In healthy individuals,
+Prevotella (16. 5%) was the most prevalent genus, followed by
+Streptococcus (13. 0%),
+Neisseria (7. 1%),
+Fusobacteria (6. 6%), and
+Velionella (6. 2%). An increasing abundance of
+Streptococcus (p<0. 05), and
+Rothia was observed in moderate COPD samples, whereas
+Morexalla and
+Pseudomonas were relatively higher in severe COPD
+Genera like
+Prevotella, and
+Fusobacteria were abundantly present in healthy individuals in comparison to moderate COPD. Figure 2B demonstrates the top bacterial genera present in the sputum of patients with moderate or severe COPD, and healthy groups. The LEfSe analysis was performed to detect the discriminative genera among the groups (
+Figure 2C). In moderate COPD, six marker genera (LDA>2)
+Streptococcus, Rothia, Gemella, Carnobacteriaceae, Capnocytophaga, and
+Weissella were identified
+For the severe COPD, genera
+Pseudomonas and
+Leptotrichia were higher, whereas
+Fusobacterium, Bacteroidales, Peptostreptococcus, Prevotella, Porphyromonas, Alloprevotella, etc. were dominant in healthy individuals. Discussion
+The severity of COPD is often influenced by environmental exposures, host genetic makeup, and airway host-microbiome interactions
+This study demonstrated the microbial alpha diversity of moderate and severe COPD groups decreased significantly in comparison to the healthy control group. Our findings added important evidence to the understanding of the microbial population dynamics in COPD. Su et al. also reported a decreased bacterial diversity in the acute exacerbations of COPD compared to healthy controls, which was consistent with our findings. 14
+Ramsheh et al
+also found a higher Alpha diversity in healthy individuals than in COPD bronchial brush samples. 15
+The consistent results of these studies indicate the altered microbial diversity in COPD patients compared to healthy and its potential role as a disease marker. According to our findings, the alpha diversity of moderate COPD declined compared to the severe COPD group. However, Yang et al. and Li et al
+did not observe any significant difference in microbial diversity between mild COPD and severe COPD groups, whereas Garcia-Nuñez et al. reported a decreased alpha diversity in advanced COPD compared to moderate-to-severe disease. 16
+
+–
+
+18
+This inconsistency among studies could be due to distinct sampling methods, COPD states and exacerbations, and different geographic regions
+In this study, the most dominant phylum was Firmicutes, predominantly present in all the groups, in concordance with previous reports. 15
+
+,
+
+16
+
+,
+
+19
+
+,
+
+20
+In healthy controls, we observed a higher proportion of Bacteroidetes and Fusobacteria, likewise reported by Ramsheh et al. 15
+Proteobacteria was present in relatively higher proportions in patients with severe COPD, which is consistent with previous studies examining bronchoalveolar lavage (BAL)
+
+21
+and sputum
+
+18
+
+,
+
+22
+samples
+According to Wang et al., the increased abundance of Proteobacteria might trigger the pro-inflammatory mediators of the host, which leads to dysbiosis of lung microbiomes. 22
+
+Streptococcus was the predominant genus among the COPD sputum samples, whereas
+Prevotella was significantly higher in healthy controls. A multi-centric study reported that
+Prevotella promotes normal lung function and the severity of COPD increases with its decreasing abundance
+15
+A lung co-infection mouse model study conducted by Horn KJ
+et al. suggested that an increased abundance of airway
+Prevotella can accelerate the innate immune response and rapid pathogen clearance from the lung. 23
+In the moderate COPD group, we noted a higher abundance of
+Streptococcus and
+Rothia, which was similar to previously published studies of COPD samples. 14
+
+,
+
+16
+
+–
+
+18
+
+,
+
+22
+
+,
+
+24
+Li W
+et al
+also observed a higher abundance of
+Rothia in the mild COPD group compared with the severe group,
+
+17
+which was negatively correlated with pro-inflammatory markers, which might reduce the disease severity and exacerbation frequency in COPD. 25
+Another genus,
+Morexalla, which was abundant in severe COPD samples, was likewise reported by Wang et al. 26
+and Ramsheh et al. 15
+According to Wang et al
+, the relative abundance of
+Moraxella increased during COPD exacerbations and was also linked to the host interferon signaling pathway. 26
+Ramsheh et al. revealed that an increased abundance of
+Moraxella was associated with the expression of the IL-17 and TNF inflammatory pathways, which elicit the severity of COPD
+15
+These studies indicate that patients might suffer an altered lung microbial diversity during COPD disease severity, which means microbiota is a potential marker to predict the prognosis in COPD cases and may change the disease management. There are a few limitations of our study. First, the population size of this study was small and the samples were collected from a single center. Second, the virome and mycobiome diversity of sputum were not evaluated
+Future multi-centre studies in larger diverse populations are required to conclude the stability and alteration of microbiota in health and disease. Conclusions
+Our findings suggested a significant loss of the sputum microbiome diversity in patients with COPD. This decrease is more pronounced in patients with severe disease. The dysbiosis of lung microbiota may cause an alteration of the mucosal immune system and further facilitate inflammation in the lung
+15
+
+[DOI] [PMC free article] [PubMed] []
+
+3. Mathers CD, Loncar D:
+Projections of Global Mortality and Burden of Disease from 2002 to 2030. PLoS Med. 2006;3(11):e442. 10. 1371/journal. pmed. 0030442
+
+[DOI] [PMC free article] [PubMed] []
+
+4. Safiri S, Carson-Chahhoud K, Noori M, et al.:
+Burden of chronic obstructive pulmonary disease and its attributable risk factors in 204 countries and territories, 1990-2019: results from the Global Burden of Disease Study 2019. BMJ
+2022;378:e069679. 10. 1136/bmj-2021-069679
+
+[DOI] [PMC free article] [PubMed] []
+
+5. Iheanacho I, Zhang S, King D, et al.:
+Economic Burden of Chronic Obstructive Pulmonary Disease (COPD): A Systematic Literature Review. Int. J. Chron. Obstruct. Pulmon. Dis. 2020;15:439–460. 10. 2147/COPD. S234942
+
+[DOI] [PMC free article] [PubMed] []
+
+6. Gutiérrez Villegas C, Paz-Zulueta M, Herrero-Montes M, et al
+:
+Cost analysis of chronic obstructive pulmonary disease (COPD): a systematic review. Heal. Econ. Rev. 2021;11(1):31. 10. 1186/s13561-021-00329-9
+
+[DOI] [PMC free article] [PubMed] []
+
+7. Wang L, Hao K, Yang T, et al.:
+Role of the Lung Microbiome in the Pathogenesis of Chronic Obstructive Pulmonary Disease. Chin. Med. J. (Engl). 2017;130(17):2107–2111. 10. 4103/0366-6999. 211452
+
+[DOI] [PMC free article] [PubMed] []
+
+8. Li Z, Li Y, Sun Q, et al
+:
+Targeting the Pulmonary Microbiota to Fight against Respiratory Diseases. Cells. 2022;11(5):916. 10. 3390/cells11050916
+
+[DOI] [PMC free article] [PubMed] []
+
+9. Natalini JG, Singh S, Segal LN:
+The dynamic lung microbiome in health and disease. Nat. Rev. Microbiol. 2022;21:222–235. 10. 1038/s41579-022-00821-x
+
+[DOI] [PMC free article] [PubMed] []
+
+10
+Global Initiative for Chronic Obstructive Lung Disease:
+Global Strategy for the Diagnosis, Management, and Prevention of Chronic Obstructive Pulmonary Disease. 2019. Reference Source
+
+11. Illumina:
+16S metagenomic sequencing library preparation protocol: preparing 16S ribosomal RNA gene amplicons for the Illumina MiSeq system. Part no. 15044223 Rev B. Illumina, San Diego, CA. 2013. Reference Source
+
+12. Schloss PD, Westcott SL, Ryabin T, et al
+:
+Introducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl. Environ. Microbiol. 2009;75(23):7537–7541. 10. 1128/AEM. 01541-09
+
+[DOI] [PMC free article] [PubMed] []
+
+13. Quast C, Pruesse E, Yilmaz P, et al.:
+The SILVA ribosomal RNA gene database project: improved data processing and web-based tools. Nucleic Acids Res. 2013;41(Database issue):D590–D596. 10
+1093/nar/gks1219
+
+[DOI] [PMC free article] [PubMed] []
+
+14. Su L, Qiao Y, Luo J, et al.:
+Characteristics of the sputum microbiome in COPD exacerbations and correlations between clinical indices. J. Transl. Med. 2022;20(1):76. 10. 1186/s12967-022-03278-x
+
+[DOI] [PMC free article] [PubMed] []
+
+15. Ramsheh MY, Haldar K, Esteve-Codina A, et al
+:
+Lung microbiome composition and bronchial epithelial gene expression in patients with COPD versus healthy individuals: a bacterial 16S rRNA gene sequencing and host transcriptomic analysis. Lancet Microbe. 2021;2(7):e300–e310. 10. 1016/S2666-5247(21)00035-5
+[DOI] [PubMed] []
+
+16. Yang CY, Li SW, Chin CY, et al.:
+Association of exacerbation phenotype with the sputum microbiome in chronic obstructive pulmonary disease patients during the clinically stable state. J. Transl. Med
+2021;19(1):121. 10. 1186/s12967-021-02788-4
+
+[DOI] [PMC free article] [PubMed] []
+
+17. Li W, Wang B, Tan M, et al.:
+Analysis of sputum microbial metagenome in COPD based on exacerbation frequency and lung function: a case control study. Respir. Res. 2022;23(1):321. 10. 1186/s12931-022-02246-9
+
+[DOI] [PMC free article] [PubMed] []
+
+18. Garcia-Nuñez M, Millares L, Pomares X, et al
+:
+Severity-related changes of bronchial microbiome in chronic obstructive pulmonary disease. J. Clin. Microbiol. 2014;52(12):4217–4223. 10. 1128/JCM. 01967-14
+
+[DOI] [PMC free article] [PubMed] []
+
+19. Mayhew D, Devos N, Lambert C, et al.:
+Longitudinal profiling of the lung microbiome in the AERIS study demonstrates repeatability of bacterial and eosinophilic COPD exacerbations. Thorax. 2018;73(5):422–430. 10
+1136/thoraxjnl-2018-211859
+
+[DOI] [PMC free article] [PubMed] []
+
+20. Sze MA, Dimitriu PA, Hayashi S, et al.:
+The lung tissue microbiome in chronic obstructive pulmonary disease. Am. J. Respir. Crit. Care Med. 2012;185(10):1073–1080. 10. 1164/rccm. 201111-2075OC
+
+[DOI] [PMC free article] [PubMed] []
+
+21. Erb-Downward JR, Thompson DL, Han MK, et al.:
+Analysis of the lung microbiome in the “healthy” smoker and in COPD. PLoS One. 2011;6(2):e16384. 10. 1371/journal
+pone. 0016384
+
+[DOI] [PMC free article] [PubMed] []
+
+22. Wang Z, Bafadhel M, Haldar K, et al.:
+Lung microbiome dynamics in COPD exacerbations. Eur. Respir. J. 2016;47(4):1082–1092. 10. 1183/13993003. 01406-2015
+[DOI] [PubMed] []
+
+23. Horn KJ, Schopper MA, Drigot ZG, et al.:
+Airway Prevotella promote TLR2-dependent neutrophil activation and rapid clearance of Streptococcus pneumoniae from the lung. Nat. Commun. 2022;13(1):3321. 10
+1038/s41467-022-31074-0
+
+[DOI] [PMC free article] [PubMed] []
+
+24. Pragman AA, Lyu T, Baller JA, et al.:
+The lung tissue microbiota of mild and moderate chronic obstructive pulmonary disease. Microbiome. 2018;6(1):7. 10. 1186/s40168-017-0381-4
+
+[DOI] [PMC free article] [PubMed] []
+
+25. Sagar S, Morgan ME, Chen S, et al
+:
+Bifidobacterium breve and Lactobacillus rhamnosus treatment is as effective as budesonide at reducing inflammation in a murine model for chronic asthma. Respir. Res. 2014;15(1):46. 10. 1186/1465-9921-15-46
+
+[DOI] [PMC free article] [PubMed] []
+
+26. Wang Z, Maschera B, Lea S, et al.:
+Airway host-microbiome interactions in chronic obstructive pulmonary disease. Respir. Res. 2019;20(1):113. 10. 1186/s12931-019-1085-z
+
+[DOI] [PMC free article] [PubMed] []
+
+27
+Druti H, Kiran C, Fayaz SM:
+Sequenced Data COPD and healthy. [Data set]. Zenodo. 2023. 10. 5281/zenodo. 7697770
+[DOI]
+F1000Res. 2023 Nov 3. 158079
+Is the work clearly and accurately presented and does it cite the current literature. Partly
+If applicable, is the statistical analysis and its interpretation appropriate. Partly
+Are all the source data underlying the results available to ensure full reproducibility. Yes
+Is the study design appropriate and is the work technically sound. Partly
+Are the conclusions drawn adequately supported by the results. Yes
+Are sufficient details of methods and analysis provided to allow replication by others
+Yes
+Reviewer Expertise:
+Respiratory diseases / COPD / Lung Cancer / Respiratory microbiome
+I confirm that I have read this submission and believe that I have an appropriate level of expertise to confirm that it is of an acceptable scientific standard. F1000Res. 2023 Oct 24. 157003
+The have specified that the samples of COPD patients had been obtained at admission for an exacerbation before the use of any antibiotic. Then, it is clear that they are assessing exacerbation samples, that were compared among them according with the severity pattern, and compared also with samples from healthy subjects. This is important because the title suggests that the authors are studying samples from COPD in stable situation
+I think that it would be necessary to specify in the title that the authors are focusing on COPD patients in exacerbation, not in stability, to avoid misunderstandings. Is the work clearly and accurately presented and does it cite the current literature. Partly
+If applicable, is the statistical analysis and its interpretation appropriate. Partly
+Are all the source data underlying the results available to ensure full reproducibility
+Yes
+Is the study design appropriate and is the work technically sound. Partly
+Are the conclusions drawn adequately supported by the results. Yes
+Are sufficient details of methods and analysis provided to allow replication by others
+Yes
+Reviewer Expertise:
+Respiratory diseases / COPD / Lung Cancer / Respiratory microbiome
+I confirm that I have read this submission and believe that I have an appropriate level of expertise to state that I do not consider it to be of an acceptable scientific standard, for reasons outlined above. F1000Res. 2023 Sep 1. 153873
+- (Introduction) The sentence "
+Although a high heterogeneity has been observed among the studies, potentially attributed to the underlying health conditions in different populations and the dynamics of microbial ecology in the COPD Indian population, it remains poorly understood" is misspelled, and needs to be corrected. 2
+- (Results) The sentence "
+At the time of sampling, all COPD patients were in an exacerbated state of the disease and no significant growth of respiratory pathogens was detected in the sputum cultures" specifies that the patients are exacerbated, but the study is restricted to patients that have not used antibiotics recently, suggesting that all them must be stable. This is a main point, because the paper is presented as a stability study
+However, is part of the patients were exacerbated the results would be more difficult to be interpreted. This point needs to be clearly specified, and the upper sentence corrected, if misspelled. Is the work clearly and accurately presented and does it cite the current literature. Partly
+If applicable, is the statistical analysis and its interpretation appropriate. Partly
+Are all the source data underlying the results available to ensure full reproducibility
+Yes
+Reviewer Expertise:
+Respiratory diseases / COPD / Lung Cancer / Respiratory microbiome
+I confirm that I have read this submission and believe that I have an appropriate level of expertise to state that I do not consider it to be of an acceptable scientific standard, for reasons outlined above. F1000Res. 2023 Jul 28. 145128
+The manuscript explores loss of microbial diversity in the sputum samples of patients with moderate and severe COPD, and compares the results with a healthy control group. The healthy control group included some smokers and the study population was dominated by males. The methodology was well described and both the methods and analysis were appropriate for work in the lung microbiome
+The quality of the sputum samples voluntary produced were not discussed and a degree of oropharyngeal contamination is likely. Findings are consistent with previously published work and highlight once again signals of dysbiosis in the lung microbiome of patients with COPD. Had the sample size allowed, a comparison between current and previous smokers may have provided additional insights
+The limitations of the study were acknowledged - both the small sample size and the fact that the virome (which is becoming increasingly important in COPD) was not evaluated. Although the findings of the study were not completely novel, the differences by disease severity was interesting and the study does add to a growing body of literature that enhances the understanding of the lung microbiome in respiratory disease. The methodology was sound and the discussion well written
+Is the work clearly and accurately presented and does it cite the current literature. Yes
+If applicable, is the statistical analysis and its interpretation appropriate. Yes
+Are all the source data underlying the results available to ensure full reproducibility. Yes
+Is the study design appropriate and is the work technically sound. Yes
+Are the conclusions drawn adequately supported by the results. No
+Are sufficient details of methods and analysis provided to allow replication by others
+Yes
+Reviewer Expertise:
+Infectious diseases, Critical care, lung microbime, Tuberculosis
+I confirm that I have read this submission and believe that I have an appropriate level of expertise to confirm that it is of an acceptable scientific standard. F1000Res. 2023 Jul 20. 145128
+The authors described the respiratory microbiome in healthy subjects and COPD patients with different levels of severity, confirming with their study the characteristics of the COPD microbiome previously reported in other communities. The main value of the paper, accordingly, is the analysis of a community living in a specific geographic area, not previously focused. There are some concerns that need to be raised, however, as followed
+The title state that the study focus on the lung microbiome dynamics. However, considering that the studied sample is the sputum, it can only be representative of the bronchial microbiome, not the lung. Furthermore, because there has been a single sampling in the studied population, the study cannot be considered "dynamic". In the description of the features of the study participants, it is said that they are exacerbated
+I think that this is a typewriting mistake, because all the text suggests that the participants are stable (they have not used antibiotics the previous months). In the table, moderate COPD patients have an average FEV1/FVC of 90. If that is the case, most of them do not suffer from COPD, and probably have only chronic bronchitis. This is a main point that needs to be clarified
+The comparisons would have been much more clear if all COPD patients are compared with healthy subjects, and later, excluding healthy subjects, severe and moderate COPD patients were compared. Is the work clearly and accurately presented and does it cite the current literature. Partly
+If applicable, is the statistical analysis and its interpretation appropriate. Partly
+Are all the source data underlying the results available to ensure full reproducibility
+Yes
+Reviewer Expertise:
+Respiratory diseases / COPD / Lung Cancer / Respiratory microbiome
+I confirm that I have read this submission and believe that I have an appropriate level of expertise to state that I do not consider it to be of an acceptable scientific standard, for reasons outlined above. F1000Res. 2023 Jul 26
+However, considering that the studied sample is the sputum, it can only be representative of the bronchial microbiome, not the lung. Furthermore, because there has been a single sampling in the studied population, the study cannot be considered "dynamic". Response: Thank you for your valuable suggestions
+In this study, we characterized sputum, an easily obtainable non-invasive sampling method that represents a mix of upper and lower respiratory tracts, used for routine diagnosis of lower-respiratory tract infection. The term dynamics have been used here to refer to the changes in microbiome composition among the groups
+
+Query 2. In the description of the features of the study participants, it is said that they are exacerbated
+I think that this is a typewriting mistake, because all the text suggests that the participants are stable (they have not used antibiotics the previous months). Response: The enrolled participants were the known cases of COPD, admitted to our hospital for the management of the latest exacerbation state, and a sample was collected before administrating antibiotics. So the patients have not used antibiotics in the previous months
+Also, one of our exclusion criteria is antibiotic usage within four weeks prior to sample collection since antibiotics can alter the microbiome compositions. Query 3. In the table, moderate COPD patients have an average FEV1/FVC of 90. If that is the case, most of them do not suffer from COPD, and probably have only chronic bronchitis. This is a main point that needs to be clarified. Response: Thank you, Sir, for mentioning this point. This was a typewriting error, which we didn’t notice earlier
+We rechecked our data and there was an error in that particular row of that table. It should be the moderate COPD average FEV1/FVC was 64. 7 ± 5. 6 and Severe COPD 61 ± 7. 4
+
+Query 4. The comparisons would have been much more clear if all COPD patients are compared with healthy subjects, and later, excluding healthy subjects, severe and moderate COPD patients were compared. Response: We compared the sputum microbiome in healthy, severe, and moderate COPD patients as per the objective
+The purpose of this study was to explore the dysbiosis of airway microbiota in patients with moderate or severe chronic obstructive pulmonary disease (COPD) and compare them with healthy controls. Methods: The COPD patients were investigated for disease severity based on airflow limitations and divided into moderate (50%≤FEV1<80% predicted) and severe groups (FEV1<50% predicted)
+Spontaneous sputum samples were collected and, the V3-V4 regions of the 16S rRNA coding gene were sequenced to examine the microbiome profile of COPD and healthy participants. Results: A total of 45 sputum samples were collected from 17 severe COPD, 12 moderate COPD cases, and 16 healthy volunteers. The bacterial alpha diversity (Shannon and Simpson’s index) significantly decreased in the moderate and severe COPD groups, compared to healthy samples
+A significantly higher proportion of Firmicutes and Actinobacteria were present in moderate COPD, and Proteobacteria numbers were comparatively increased in severe COPD. In healthy samples, Bacteroidetes and Fusobacteria were more abundant in comparison to both the COPD groups. Among the most commonly detected 20 bacterial genera,
+Streptococcus was predominant among the COPD sputum samples, whereas
+Prevotella was the top genus in healthy controls
+Linear discriminant analysis (LDA>2) revealed that marker genera like
+Streptococcus and
+Rothia were abundant in moderate COPD. For severe COPD, the genera
+Pseudomonasand
+Leptotrichia were most prevalent, whereas
+Fusobacterium and
+Prevotella were dominant in the healthy group. Conclusions: Our findings suggest a significant dysbiosis of the respiratory microbiome in COPD patients
+The decreased microbial diversity may influence the host immune response and provide microbiological biomarkers for the diagnosis and monitoring of COPD
+Druti H, Kiran C, Fayaz SM:
+Sequenced Data COPD and healthy. [Data set]. Zenodo. 2023. 10. 5281/zenodo. 7697770
+[DOI] Version Changes
+Revised. Amendments from Version 3
+We added exacerbations in the title as per the reviewer's suggestion
