@@ -1,25 +1,34 @@
 {
-    "paper_1": {
-      "title": "...",
-      "relationships": [
-        {
-          "taxon_name": "Fusobacterium nucleatum",
-          "domain": "bacteria",
-          "taxonomic_level": "species",
-          "primary_disease": "oral squamous cell carcinoma",
-          "direction": "increased",
-          "change_context": "disease_vs_control",
-          "sample_site": "oral",
-          "p_value": "<0.05",
-          "confidence": "high",
-          "notes": "Abstract explicitly states significant enrichment"
-        }
-      ],
-      "annotation_metadata": {
-        "annotator": "your_name",
-        "date": "2026-02-14",
-        "time_spent_minutes": 15,
-        "paper_length_chars": 450000
+  "paper_id": "1",
+  "paper_title": "...",
+  "study_type": "case_control",
+  "primary_disease": "oral squamous cell carcinoma",
+  "sample_sites": [
+    "oral"
+  ],
+  "relationships": [
+    {
+      "id": "1_rel_001",
+      "taxon_name": "Fusobacterium nucleatum",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "oral squamous cell carcinoma",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "oral",
+      "p_value": "<0.05",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "combined"
+        ],
+        "agreement_level": "verified",
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Abstract explicitly states significant enrichment",
+        "queen_decision": "keep",
+        "verbatim_evidence": "..."
       }
     }
-  }
+  ]
+}
