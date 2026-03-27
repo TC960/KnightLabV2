@@ -1,0 +1,18 @@
+{
+  "paper_id": "988",
+  "paper_title": "The Role of Gut Microbiota in Fetal Methylmercury Exposure: Insights from a Pilot Study",
+  "qualified": false,
+  "skip_reason": "No disease group vs. healthy control comparison. This is an observational cohort study of 17 pregnant women examining correlations between gut microbiota and mercury biomarker concentrations (stool MeHg, stool IHg, hair THg, cord blood MeHg). Participants are stratified by high vs. low mercury levels within the same cohort, not compared against a healthy control group. No diagnosed disease condition is the primary focus; methylmercury exposure is an environmental exposure variable, not a disease.",
+  "study_type": "observational",
+  "primary_disease": "methylmercury exposure (prenatal)",
+  "sample_sites": ["fecal"],
+  "relationships": [],
+  "extraction_stats": {
+    "layer1_union_count": 0,
+    "layer2_corrections": 0,
+    "sufficiency_fails": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "paper_id": "193",
+  "paper_title": "Characterization of the nasal and oral microbiota of detection dogs",
+  "qualified": false,
+  "skip_reason": "No disease vs. healthy control comparison. This is a normative characterization study of healthy detection dogs. All subjects are healthy dogs; groups differ only by detection job category (SP-E, P-NDD, VWD-E), geographic location, and sampling time point. There is no disease cohort.",
+  "study_type": "observational",
+  "primary_disease": null,
+  "sample_sites": ["nasal", "oral"],
+  "relationships": [],
+  "extraction_stats": {
+    "layer1_union_count": 0,
+    "layer2_corrections": 0,
+    "sufficiency_fails": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 0
+  }
+}

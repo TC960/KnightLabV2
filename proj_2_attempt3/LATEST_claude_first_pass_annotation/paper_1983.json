@@ -1,0 +1,18 @@
+{
+  "paper_id": "1983",
+  "paper_title": "Brief antibiotic use drives human gut bacteria towards low-cost resistance",
+  "qualified": false,
+  "skip_reason": "This paper studies ciprofloxacin-driven evolution of antimicrobial resistance in gut commensals of 60 healthy human participants. There is no disease group compared against a healthy control. The study is a treatment intervention (antibiotic exposure) that tracks within-microbiome genetic changes — specifically selective sweeps and gyrA mutations in commensal bacteria — not a disease-vs-control microbiome composition study. The qualification gate requires comparison of a disease group vs. healthy control, which is absent here.",
+  "study_type": "treatment_intervention",
+  "primary_disease": null,
+  "sample_sites": ["fecal"],
+  "relationships": [],
+  "extraction_stats": {
+    "layer1_union_count": 0,
+    "layer2_corrections": 0,
+    "sufficiency_fails": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 0
+  }
+}

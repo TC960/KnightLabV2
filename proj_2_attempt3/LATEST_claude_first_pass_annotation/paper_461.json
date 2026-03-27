@@ -1,0 +1,18 @@
+{
+  "paper_id": "461",
+  "paper_title": "Impact of Fecal Microbiota Transplantation on Gut Bacterial Bile Acid Metabolism in Humans",
+  "qualified": false,
+  "skip_reason": "This paper is a treatment intervention study (FMT vs. placebo) in obese but metabolically healthy patients. There is no disease group compared against a healthy control. All participants are obese and metabolically normal at baseline (no T2DM, no metabolic syndrome, no NAFLD); the study design compares FMT-treated vs. placebo-treated arms, not a disease cohort vs. healthy control cohort. The qualification gate requires a disease group vs. healthy control comparison, which this study does not have.",
+  "study_type": "treatment_intervention",
+  "primary_disease": "obesity",
+  "sample_sites": ["fecal"],
+  "relationships": [],
+  "extraction_stats": {
+    "layer1_union_count": 0,
+    "layer2_corrections": 0,
+    "sufficiency_fails": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "paper_id": "756",
+  "paper_title": "The Effects of Electronic Cigarettes on Oral Microbiome and Metabolome in 3D Tissue-Engineered Models",
+  "qualified": false,
+  "skip_reason": "This is an in vitro treatment intervention study using 3D tissue-engineered oral mucosa models (OMMs) infected with oral microbes from a healthy donor and then exposed to electronic cigarette (EC) aerosol (flavoured with and without nicotine). The study does not compare a disease patient group against a healthy control group. Instead, it compares EC-exposed laboratory models to unexposed laboratory controls. There is no clinical disease cohort present in this study.",
+  "study_type": "treatment_intervention",
+  "primary_disease": null,
+  "sample_sites": ["oral"],
+  "relationships": [],
+  "extraction_stats": {
+    "layer1_union_count": 0,
+    "layer2_corrections": 0,
+    "sufficiency_fails": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 0
+  }
+}

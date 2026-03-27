@@ -1,0 +1,180 @@
+{
+  "paper_id": "141",
+  "paper_title": "Reproducibility of Colorectal Cancer-Associated Gut Bacteria in Metagenomics: Whole-Genome Shotgun Sequencing of Fecal Samples from a Washington DC Case-Control Study",
+  "qualified": true,
+  "skip_reason": null,
+  "study_type": "disease_characterization",
+  "primary_disease": "colorectal cancer",
+  "sample_sites": ["fecal"],
+  "relationships": [
+    {
+      "id": "141_rel_001",
+      "taxon_name": "Fusobacteria",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "colorectal cancer",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "0.003",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B", "1C"],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "",
+        "queen_decision": "keep",
+        "verbatim_evidence": "NOTE: Full verbatim quote not captured in pipeline summary — see paper text for exact quote. Phylum Fusobacteria significantly increased in CRC cases vs. matched controls (p=0.003).",
+        "direction_reasoning": "Fusobacteria phylum significantly enriched in CRC cases vs. healthy controls with p=0.003."
+      }
+    },
+    {
+      "id": "141_rel_002",
+      "taxon_name": "Fusobacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "colorectal cancer",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "0.006",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B", "1C"],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "",
+        "queen_decision": "keep",
+        "verbatim_evidence": "NOTE: Full verbatim quote not captured in pipeline summary — see paper text for exact quote. Genus Fusobacterium significantly increased in CRC cases (p=0.006).",
+        "direction_reasoning": "Fusobacterium genus significantly enriched in CRC cases vs. healthy controls with p=0.006."
+      }
+    },
+    {
+      "id": "141_rel_003",
+      "taxon_name": "Porphyromonas",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "colorectal cancer",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "0.032",
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B", "1C"],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "",
+        "queen_decision": "keep",
+        "verbatim_evidence": "NOTE: Full verbatim quote not captured in pipeline summary — see paper text for exact quote. Porphyromonas significantly increased in CRC cases (p=0.032).",
+        "direction_reasoning": "Porphyromonas genus significantly enriched in CRC cases vs. healthy controls with p=0.032."
+      }
+    },
+    {
+      "id": "141_rel_004",
+      "taxon_name": "Atopobium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "colorectal cancer",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "0.328",
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B"],
+        "agreement_level": "majority",
+        "sufficiency_fail": false,
+        "validation_flags": ["p=0.328 not significant; retained per recall bias"],
+        "criticism_flags": [],
+        "review_notes": "Non-significant result (p=0.328). Direction unclear. Retained per recall bias for human review.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "NOTE: Full verbatim quote not captured in pipeline summary — see paper text for exact quote.",
+        "direction_reasoning": "Non-significant result (p=0.328); direction cannot be confidently assigned."
+      }
+    },
+    {
+      "id": "141_rel_005",
+      "taxon_name": "Clostridia",
+      "domain": "bacteria",
+      "taxonomic_level": "class",
+      "primary_disease": "colorectal cancer",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "0.092",
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B"],
+        "agreement_level": "majority",
+        "sufficiency_fail": false,
+        "validation_flags": ["p=0.092 marginal; not significant at conventional threshold"],
+        "criticism_flags": [],
+        "review_notes": "Marginal result (p=0.092); decreased direction reported but borderline. Retained at low confidence.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "NOTE: Full verbatim quote not captured in pipeline summary — see paper text for exact quote.",
+        "direction_reasoning": "Clostridia class decreased in CRC cases vs. controls; marginal p=0.092."
+      }
+    },
+    {
+      "id": "141_rel_006",
+      "taxon_name": "Coprococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "colorectal cancer",
+      "direction": "unchanged",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": "0.977",
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B"],
+        "agreement_level": "majority",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Explicitly non-significant (p=0.977); direction unchanged.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "NOTE: Full verbatim quote not captured in pipeline summary — see paper text for exact quote.",
+        "direction_reasoning": "Coprococcus shows no difference between CRC and controls (p=0.977); direction unchanged."
+      }
+    },
+    {
+      "id": "141_rel_007",
+      "taxon_name": "Bacteroidia",
+      "domain": "bacteria",
+      "taxonomic_level": "class",
+      "primary_disease": "colorectal cancer",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "fecal",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1C"],
+        "agreement_level": "single_extractor",
+        "sufficiency_fail": false,
+        "validation_flags": ["No p-value reported for this class-level finding"],
+        "criticism_flags": [],
+        "review_notes": "Single extractor; no p-value. Direction unclear. Retained per recall bias.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "NOTE: Full verbatim quote not captured in pipeline summary — see paper text for exact quote.",
+        "direction_reasoning": "Bacteroidia class mentioned without directional statistics; direction unclear."
+      }
+    }
+  ],
+  "extraction_stats": {
+    "layer1_union_count": 7,
+    "layer2_corrections": 0,
+    "sufficiency_fails": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 7
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "paper_id": "134",
+  "paper_title": "Shotgun metagenomics reveals the gut microbial diversity and functions in Vespa mandarinia (Hymenoptera: Vespidae) at multiple life stages",
+  "qualified": false,
+  "skip_reason": "Paper studies gut microbiota of an insect species (Vespa mandarinia) across developmental life stages (larva, nymph, adult). There is no human or animal disease group and no healthy control comparison. The study characterizes microbial community changes during insect metamorphosis, not disease-associated dysbiosis.",
+  "study_type": "other",
+  "primary_disease": null,
+  "sample_sites": [],
+  "relationships": [],
+  "extraction_stats": {
+    "layer1_union_count": 0,
+    "layer2_corrections": 0,
+    "sufficiency_fails": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 0
+  }
+}

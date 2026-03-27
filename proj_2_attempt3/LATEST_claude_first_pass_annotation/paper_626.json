@@ -1,0 +1,157 @@
+{
+  "paper_id": "626",
+  "paper_title": "Whole genome sequencing revealed microbiome in lung adenocarcinomas presented as ground-glass nodules",
+  "qualified": true,
+  "skip_reason": null,
+  "study_type": "disease_characterization",
+  "primary_disease": "lung adenocarcinoma (ground-glass nodule)",
+  "sample_sites": ["lung"],
+  "relationships": [
+    {
+      "id": "626_rel_001",
+      "taxon_name": "Firmicutes",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "lung adenocarcinoma",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B", "1C"],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": true,
+        "validation_flags": ["No individual abundance comparison between tumor and normal tissue reported at phylum level"],
+        "criticism_flags": ["3B: paper characterizes 'core microbiota' present in 100% of all 15 samples including normal controls — not a directional disease finding"],
+        "review_notes": "Paper defines core microbiota as taxa present in all 15 samples (both GGN tumor and adjacent normal). Community-level Jaccard distance difference (P=0.047) is the only disease-relevant finding; per-taxon directional comparisons are not provided. Direction unclear. Sufficiency_fail=true.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "NOTE: Full verbatim quote not captured in pipeline summary — see paper text. Firmicutes identified as part of core microbiota present in all GGN and normal tissue samples.",
+        "direction_reasoning": "Firmicutes is core microbiota present in all samples; no directional abundance difference between tumor and adjacent normal tissue was reported."
+      }
+    },
+    {
+      "id": "626_rel_002",
+      "taxon_name": "Actinobacteria",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "lung adenocarcinoma",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B", "1C"],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": true,
+        "validation_flags": ["Core microbiota finding — present in all samples including normal controls"],
+        "criticism_flags": ["3B: no directional disease comparison; core microbiota characterization only"],
+        "review_notes": "Actinobacteria is part of core microbiota present in all 15 samples. No disease-directional comparison. Sufficiency_fail=true.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "NOTE: Full verbatim quote not captured in pipeline summary — see paper text.",
+        "direction_reasoning": "Actinobacteria is core microbiota; no directional comparison between GGN tumor and normal tissue."
+      }
+    },
+    {
+      "id": "626_rel_003",
+      "taxon_name": "Mycobacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "lung adenocarcinoma",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B", "1C"],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": true,
+        "validation_flags": ["Core microbiota finding — no directional comparison between GGN and normal tissue"],
+        "criticism_flags": [],
+        "review_notes": "Mycobacterium is core microbiota. No directional disease comparison. Sufficiency_fail=true.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "NOTE: Full verbatim quote not captured in pipeline summary — see paper text.",
+        "direction_reasoning": "Mycobacterium is core microbiota present in all samples; no directional comparison reported."
+      }
+    },
+    {
+      "id": "626_rel_004",
+      "taxon_name": "Corynebacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "lung adenocarcinoma",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B", "1C"],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": true,
+        "validation_flags": ["Core microbiota finding — no directional comparison"],
+        "criticism_flags": [],
+        "review_notes": "Corynebacterium is core microbiota. No directional disease comparison. Sufficiency_fail=true.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "NOTE: Full verbatim quote not captured in pipeline summary — see paper text.",
+        "direction_reasoning": "Corynebacterium is core microbiota present in all samples; no directional comparison reported."
+      }
+    },
+    {
+      "id": "626_rel_005",
+      "taxon_name": "Negativicoccus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "lung adenocarcinoma",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B", "1C"],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": true,
+        "validation_flags": ["Core microbiota finding — no directional comparison"],
+        "criticism_flags": [],
+        "review_notes": "Negativicoccus is core microbiota. No directional disease comparison. Sufficiency_fail=true.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "NOTE: Full verbatim quote not captured in pipeline summary — see paper text.",
+        "direction_reasoning": "Negativicoccus is core microbiota present in all samples; no directional comparison reported."
+      }
+    },
+    {
+      "id": "626_rel_006",
+      "taxon_name": "Streptococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "lung adenocarcinoma",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B"],
+        "agreement_level": "majority",
+        "sufficiency_fail": true,
+        "validation_flags": ["Decreased direction derived from comparison with external COPD literature, not within-study tumor vs. normal comparison"],
+        "criticism_flags": ["3B: directional claim sourced from referenced COPD literature, not this paper's own comparison — wrong_association risk"],
+        "review_notes": "Streptococcus decreased direction comes from comparison to external COPD findings, not this paper's own GGN vs. normal tissue comparison. Flagged as external_reference. Sufficiency_fail=true.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "NOTE: Full verbatim quote not captured in pipeline summary — see paper text. Streptococcus comparison referenced against COPD literature.",
+        "direction_reasoning": "Streptococcus reported as decreased relative to external COPD literature comparisons; not a direct within-study GGN vs. normal comparison."
+      }
+    }
+  ],
+  "extraction_stats": {
+    "layer1_union_count": 6,
+    "layer2_corrections": 0,
+    "sufficiency_fails": 6,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 6
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "paper_id": "1100",
+  "paper_title": "Lung function and microbiota diversity in cystic fibrosis",
+  "qualified": false,
+  "skip_reason": "No healthy control group. Study compares CF patients stratified by lung disease severity (severe <40% FEV1, moderate 40-69% FEV1, mild/normal >=70% FEV1). All 299 subjects have cystic fibrosis; there is no disease-vs-healthy-control comparison. Qualification gate requires a disease group compared against healthy controls.",
+  "study_type": "disease_characterization",
+  "primary_disease": "cystic fibrosis",
+  "sample_sites": ["lung"],
+  "relationships": [],
+  "extraction_stats": {
+    "layer1_union_count": 0,
+    "layer2_corrections": 0,
+    "sufficiency_fails": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 0
+  }
+}

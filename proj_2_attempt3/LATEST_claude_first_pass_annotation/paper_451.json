@@ -1,0 +1,203 @@
+{
+  "paper_id": "451",
+  "paper_title": "Characterization of the upper and lower respiratory tract microbiota in Piedmontese calves",
+  "qualified": true,
+  "skip_reason": null,
+  "study_type": "disease_characterization",
+  "primary_disease": "bovine respiratory disease",
+  "sample_sites": ["nasal", "respiratory"],
+  "relationships": [
+    {
+      "id": "451_rel_001",
+      "taxon_name": "Mycoplasma",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "bovine respiratory disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": ">0.05",
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B", "1C"],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": true,
+        "validation_flags": ["No statistically significant difference between BRD-affected and healthy calves (P > 0.05)", "Abundance data reported for combined cohort, not disease-stratified"],
+        "criticism_flags": ["3B: direction cannot be assigned as increased or decreased — paper explicitly reports no significant difference between disease and healthy groups"],
+        "review_notes": "Mycoplasma is the most abundant genus in both NS and TTA samples and is present in both healthy and BRD-affected calves with no statistically significant difference. Direction set to unclear. Sufficiency_fail=true.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Finally, no correlation was found between the presence or absence of clinical signs and microbial composition of the NS and the TTA samples (Adonis on Bray-Curtis dissimilarity, weighted UniFrac, or unweighted UniFrac distance; P > 0. 05, power > 90%). Mycoplasma is spread worldwide, and it has frequently been isolated also with the use of bacterial culture and PCR detection from lower respiratory tract samples from calves, regardless of their clinical status.",
+        "direction_reasoning": "No statistically significant difference in Mycoplasma abundance between BRD-affected and healthy calves was found; described as present regardless of clinical status."
+      }
+    },
+    {
+      "id": "451_rel_002",
+      "taxon_name": "Pasteurella multocida",
+      "domain": "bacteria",
+      "taxonomic_level": "species",
+      "primary_disease": "bovine respiratory disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": ">0.05",
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B", "1C"],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": true,
+        "validation_flags": ["No statistically significant difference between BRD-affected and healthy calves", "Paper explicitly notes P. multocida found in healthy animals' lower respiratory tract"],
+        "criticism_flags": ["3B: paper states no significant difference; wrong_direction if coded as increased", "3C: Discussion suggests P. multocida may be a commensal of healthy lower respiratory tract"],
+        "review_notes": "Most abundant species in TTA samples overall; paper found no significant disease vs. healthy difference and concludes it may be a commensal. Direction unclear. Sufficiency_fail=true.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "P. multocida is considered a commensal of the upper respiratory airways, but its identification in samples from the lower respiratory tract has usually been correlated with BRD. Nevertheless, Angen et al. isolated P. multocida from TTA samples obtained from clinically healthy animals. The absence of a significant difference in lower microbiota composition between healthy and BRD-affected calves suggests that P. multocida could be part of the microbial flora of the lower respiratory tract of healthy animals.",
+        "direction_reasoning": "Paper finds no significant disease vs. healthy difference and concludes P. multocida may be a commensal of healthy lower respiratory tract."
+      }
+    },
+    {
+      "id": "451_rel_003",
+      "taxon_name": "Pasteurella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "bovine respiratory disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": ">0.05",
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1B", "1C"],
+        "agreement_level": "majority",
+        "sufficiency_fail": true,
+        "validation_flags": ["Near-duplicate of 451_rel_002; both retained per recall bias", "No significant difference between BRD-affected and healthy calves"],
+        "criticism_flags": ["2C: near-duplicate of 451_rel_002"],
+        "review_notes": "Genus-level entry retained separately from species entry per recall bias. Sufficiency_fail=true.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "The second most abundant genus identified in the TTA samples, and the main component of the phylum Proteobacteria, was Pasteurella. It was comprised mostly of P. multocida, and it was also identified with a lower abundance in the NS samples. The absence of a significant difference in lower microbiota composition between healthy and BRD-affected calves suggests that P. multocida could be part of the microbial flora of the lower respiratory tract of healthy animals.",
+        "direction_reasoning": "Pasteurella is the second most abundant genus in TTA but no significant disease vs. healthy difference found; direction unclear."
+      }
+    },
+    {
+      "id": "451_rel_004",
+      "taxon_name": "Moraxella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "bovine respiratory disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "nasal",
+      "p_value": ">0.05",
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B", "1C"],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": true,
+        "validation_flags": ["No significant difference between BRD-affected and healthy calves for NS samples", "BRD correlation noted from referenced Lima et al. study, not this paper's finding"],
+        "criticism_flags": ["3B: BRD correlation from referenced study, not this paper's own statistical result"],
+        "review_notes": "Second most abundant genus in NS samples. Referenced literature links it to BRD but this paper found no significant difference. Direction unclear. Sufficiency_fail=true.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Our observation of Moraxella, the second most abundant genus identified in the NS samples, is shared by Timsit et al. and Lima et al. Lima et al. also found a correlation between the presence of Moraxella and the development of BRD.",
+        "direction_reasoning": "Moraxella is abundant in NS samples and linked to BRD in referenced literature, but this paper found no significant disease vs. healthy difference, so direction is unclear."
+      }
+    },
+    {
+      "id": "451_rel_005",
+      "taxon_name": "Mannheimia",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "bovine respiratory disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": ">0.05",
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1B", "1C"],
+        "agreement_level": "majority",
+        "sufficiency_fail": true,
+        "validation_flags": ["Mannheimia haemolytica cited as BRD pathogen in background; no disease-stratified comparison", "No significant difference between BRD-affected and healthy calves"],
+        "criticism_flags": ["3B: Mannheimia haemolytica specifically mentioned in introduction/background as known BRD pathogen from prior literature, not this paper's disease comparison results"],
+        "review_notes": "Mannheimia genus (1.6% in TTA) identified in results; known BRD pathogen genus. No disease-directional finding reported. Retained per recall bias. Sufficiency_fail=true.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "A few other genera with an abundance > 1% were also found in the TTA samples [Mannheimia 1. 6% (0. 7% ± 0. 6%), Bacteroides 1. 5% (1. 8% ± 1. 8%), Ureaplasma 1. 3% (1. 2% ± 0. 6%)]. The bacterial pathogens most often identified by culture-based methods in the course of BRD are Mannheimia haemolytica, Pasteurella multocida, Histophilus somni, and Mycoplasma bovis.",
+        "direction_reasoning": "Mannheimia is identified as a known BRD pathogen genus but this paper found no significant difference between BRD-affected and healthy calves; direction unclear."
+      }
+    },
+    {
+      "id": "451_rel_006",
+      "taxon_name": "Fusobacteria",
+      "domain": "bacteria",
+      "taxonomic_level": "phylum",
+      "primary_disease": "bovine respiratory disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": ">0.05",
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1A", "1B"],
+        "agreement_level": "majority",
+        "sufficiency_fail": true,
+        "validation_flags": ["Fusobacteria finding is a site comparison (TTA > NS), not a disease comparison", "No disease vs. healthy control directional claim made for Fusobacteria"],
+        "criticism_flags": ["3B: site comparison finding coded as disease_vs_control — wrong_association risk", "2C: change_context potentially incorrect — primarily a site comparison finding"],
+        "review_notes": "Fusobacteria is characteristic of lower respiratory tract vs. upper; linked to lung disease in human literature. No significant disease vs. healthy difference found in this paper. Retained per recall bias with heavy flags. Sufficiency_fail=true.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Four of the five most abundant phyla identified in the lower respiratory tract were the same as those found in the upper respiratory tract (Proteobacteria, Tenericutes, Actinobacteria, and Bacteroidetes), albeit with different abundance, though Fusobacteria seemed to be characteristic of this ecosystem.",
+        "direction_reasoning": "Fusobacteria is described as characteristic of the lower respiratory tract ecosystem; paper found no significant disease vs. healthy difference, so direction is unclear."
+      }
+    },
+    {
+      "id": "451_rel_007",
+      "taxon_name": "Corynebacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "bovine respiratory disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "nasal",
+      "p_value": ">0.05",
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1B", "1C"],
+        "agreement_level": "majority",
+        "sufficiency_fail": true,
+        "validation_flags": ["No disease vs. healthy significant difference found", "Protective association from human children literature — not this paper's finding"],
+        "criticism_flags": ["3B: protective association from children literature; wrong_association if coded directionally for bovine BRD"],
+        "review_notes": "Corynebacterium found in all NS samples; referenced human literature suggests protective role. No disease-directional finding in this paper. Retained per recall bias. Sufficiency_fail=true.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "Corynebacterium was identified in all NS samples, and previous studies have reported its relatively high abundance in the bovine upper respiratory tract. In children, it has been correlated with a reduced risk of developing otitis media and respiratory disease.",
+        "direction_reasoning": "Corynebacterium present in all NS samples; referenced literature suggests protective role in children, but no significant disease-directional difference found in this paper, so direction is unclear."
+      }
+    },
+    {
+      "id": "451_rel_008",
+      "taxon_name": "Ureaplasma",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "bovine respiratory disease",
+      "direction": "unclear",
+      "change_context": "disease_vs_control",
+      "sample_site": "respiratory",
+      "p_value": ">0.05",
+      "confidence": "low",
+      "_annotation_metadata": {
+        "source_agents": ["1B"],
+        "agreement_level": "single_extractor",
+        "sufficiency_fail": true,
+        "validation_flags": ["Ureaplasma mentioned only as genus found in TTA samples with >1% abundance, not in disease comparison context", "No disease vs. healthy significant difference found"],
+        "criticism_flags": ["3B: no disease-directional claim made for Ureaplasma in paper"],
+        "review_notes": "Ureaplasma (1.3% in TTA) is a Tenericutes member found in lower respiratory tract samples. No disease vs. healthy comparison reported. Retained per recall bias at low confidence. Sufficiency_fail=true.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "A few other genera with an abundance > 1% were also found in the TTA samples [Mannheimia 1. 6% (0. 7% ± 0. 6%), Bacteroides 1. 5% (1. 8% ± 1. 8%), Ureaplasma 1. 3% (1. 2% ± 0. 6%)].",
+        "direction_reasoning": "Ureaplasma found in TTA samples at modest abundance; related to Mycoplasma genus relevant to BRD, but no disease vs. healthy directional finding reported, so direction is unclear."
+      }
+    }
+  ],
+  "extraction_stats": {
+    "layer1_union_count": 8,
+    "layer2_corrections": 2,
+    "sufficiency_fails": 8,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 8
+  }
+}

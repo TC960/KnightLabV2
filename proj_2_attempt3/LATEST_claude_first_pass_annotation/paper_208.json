@@ -1,0 +1,18 @@
+{
+  "paper_id": "208",
+  "paper_title": "Determination of nasal and oropharyngeal microbiomes in a multicenter population-based study – findings from Pretest 1 of the German National Cohort",
+  "qualified": false,
+  "skip_reason": "This is a population-based feasibility study examining swab collection methods (nasal and oropharyngeal) and microbial community characterization in 524 general population participants. It does not compare a disease group against a healthy control group. The study compares swab types and self- vs. staff-collection methods, not disease vs. control populations.",
+  "study_type": "other",
+  "primary_disease": null,
+  "sample_sites": [],
+  "relationships": [],
+  "extraction_stats": {
+    "layer1_union_count": 0,
+    "layer2_corrections": 0,
+    "sufficiency_fails": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "paper_id": "1595",
+  "paper_title": "Variations of the lung microbiome and immune response in mechanically ventilated surgical patients",
+  "qualified": false,
+  "skip_reason": "No healthy control group. All three study groups (culture-positive, culture-negative, respiratory tract flora) are mechanically ventilated surgical ICU patients. The culture-negative group is classified clinically as SIRS (not healthy controls) and received BAL due to clinical suspicion of infection. The paper compares clinical subgroups of sick patients, not a disease group against a healthy control.",
+  "study_type": "observational",
+  "primary_disease": "ventilator-associated pneumonia / pulmonary infection in mechanically ventilated surgical ICU patients",
+  "sample_sites": ["lung", "respiratory"],
+  "relationships": [],
+  "extraction_stats": {
+    "layer1_union_count": 0,
+    "layer2_corrections": 0,
+    "sufficiency_fails": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 0
+  }
+}

@@ -1,0 +1,576 @@
+{
+  "paper_id": "435",
+  "paper_title": "Dynamic alterations in the lung microbiota in a rat model of lipopolysaccharide-induced acute lung injury",
+  "qualified": true,
+  "skip_reason": null,
+  "study_type": "disease_characterization",
+  "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+  "sample_sites": [
+    "lung"
+  ],
+  "relationships": [
+    {
+      "id": "435_rel_001",
+      "taxon_name": "Brevibacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Brevibacterium significantly increased in LPS12 (early ALI) vs Control. Additionally found to have strong positive correlation with inflammatory markers TNF-alpha, IL-6, IL-10, and NEU%. Confirmed by LEfSe analysis.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Brevibacterium, Motilimonas, Enterococcus, Faecalibacterium, and Ligilactobacillus were significantly increased in the LPS12 group versus the Control group, whereas Lactiplantibacillus and Paracoccus were significantly decreased.",
+        "direction_reasoning": "The quote explicitly states Brevibacterium was significantly increased in the LPS12 group versus the Control group, confirming increased direction in early ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_002",
+      "taxon_name": "Motilimonas",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Motilimonas significantly increased in LPS12 vs Control by LEfSe analysis.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Brevibacterium, Motilimonas, Enterococcus, Faecalibacterium, and Ligilactobacillus were significantly increased in the LPS12 group versus the Control group, whereas Lactiplantibacillus and Paracoccus were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Motilimonas among genera significantly increased in the LPS12 group versus the Control group, confirming increased direction in early ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_003",
+      "taxon_name": "Enterococcus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Enterococcus significantly increased in LPS12 vs Control by LEfSe analysis.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Brevibacterium, Motilimonas, Enterococcus, Faecalibacterium, and Ligilactobacillus were significantly increased in the LPS12 group versus the Control group, whereas Lactiplantibacillus and Paracoccus were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Enterococcus among genera significantly increased in the LPS12 group versus the Control group, confirming increased direction in early ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_004",
+      "taxon_name": "Faecalibacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Faecalibacterium significantly increased in LPS12 vs Control by LEfSe analysis. Note: Faecalibacterium is best known as a gut commensal but was detected in the lung microbiota dataset here.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Brevibacterium, Motilimonas, Enterococcus, Faecalibacterium, and Ligilactobacillus were significantly increased in the LPS12 group versus the Control group, whereas Lactiplantibacillus and Paracoccus were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Faecalibacterium among genera significantly increased in the LPS12 group versus the Control group, confirming increased direction in early ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_005",
+      "taxon_name": "Ligilactobacillus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Ligilactobacillus significantly increased in LPS12 vs Control by LEfSe analysis.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Brevibacterium, Motilimonas, Enterococcus, Faecalibacterium, and Ligilactobacillus were significantly increased in the LPS12 group versus the Control group, whereas Lactiplantibacillus and Paracoccus were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Ligilactobacillus among genera significantly increased in the LPS12 group versus the Control group, confirming increased direction in early ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_006",
+      "taxon_name": "Lactiplantibacillus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Lactiplantibacillus significantly decreased in LPS12 vs Control by LEfSe analysis.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Brevibacterium, Motilimonas, Enterococcus, Faecalibacterium, and Ligilactobacillus were significantly increased in the LPS12 group versus the Control group, whereas Lactiplantibacillus and Paracoccus were significantly decreased.",
+        "direction_reasoning": "The quote explicitly states Lactiplantibacillus was significantly decreased (after whereas) in the LPS12 group versus the Control group, confirming decreased direction in early ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_007",
+      "taxon_name": "Paracoccus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Paracoccus significantly decreased in LPS12 vs Control by LEfSe analysis.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Brevibacterium, Motilimonas, Enterococcus, Faecalibacterium, and Ligilactobacillus were significantly increased in the LPS12 group versus the Control group, whereas Lactiplantibacillus and Paracoccus were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Paracoccus as significantly decreased in the LPS12 group versus the Control group, confirming decreased direction in early ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_008",
+      "taxon_name": "Lactobacillus",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "increased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Lactobacillus significantly increased in LPS48 vs Control by LEfSe analysis. This is the late-stage ALI (48h) vs healthy comparison.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Lactobacillus was significantly increased in the LPS48 group as compared with the Control group, whereas Paramuribaculum, Escherichia Shigella, Enterobacter, Gp2, Brachybacterium, Lachnospira, and Olsenella were significantly decreased.",
+        "direction_reasoning": "The quote explicitly states Lactobacillus was significantly increased in the LPS48 group as compared with the Control group, confirming increased direction in late ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_009",
+      "taxon_name": "Paramuribaculum",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Paramuribaculum significantly decreased in LPS48 vs Control by LEfSe analysis. Late-stage (48h) ALI vs healthy comparison.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Lactobacillus was significantly increased in the LPS48 group as compared with the Control group, whereas Paramuribaculum, Escherichia Shigella, Enterobacter, Gp2, Brachybacterium, Lachnospira, and Olsenella were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Paramuribaculum as significantly decreased in the LPS48 group vs Control group, confirming decreased direction in late ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_010",
+      "taxon_name": "Escherichia-Shigella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [
+          "taxon_name_note: combined LEfSe genus label representing merged Escherichia and Shigella classification as annotated by RDP classifier"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Escherichia-Shigella significantly decreased in LPS48 vs Control. Also decreased in LPS48 vs LPS12 (rel_018). Consistent direction in both comparisons.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Lactobacillus was significantly increased in the LPS48 group as compared with the Control group, whereas Paramuribaculum, Escherichia Shigella, Enterobacter, Gp2, Brachybacterium, Lachnospira, and Olsenella were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Escherichia Shigella as significantly decreased in the LPS48 group vs Control group, confirming decreased direction in late ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_011",
+      "taxon_name": "Enterobacter",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Enterobacter significantly decreased in LPS48 vs Control by LEfSe analysis.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Lactobacillus was significantly increased in the LPS48 group as compared with the Control group, whereas Paramuribaculum, Escherichia Shigella, Enterobacter, Gp2, Brachybacterium, Lachnospira, and Olsenella were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Enterobacter as significantly decreased in the LPS48 group vs Control group, confirming decreased direction in late ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_012",
+      "taxon_name": "Gp2",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [
+          "taxon_name_note: Gp2 is an informal cyanobacterial genus-level designation used in RDP classification, annotated as-is from the paper"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Gp2 significantly decreased in LPS48 vs Control by LEfSe analysis.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Lactobacillus was significantly increased in the LPS48 group as compared with the Control group, whereas Paramuribaculum, Escherichia Shigella, Enterobacter, Gp2, Brachybacterium, Lachnospira, and Olsenella were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Gp2 as significantly decreased in the LPS48 group vs Control group, confirming decreased direction in late ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_013",
+      "taxon_name": "Brachybacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Brachybacterium significantly decreased in LPS48 vs Control by LEfSe analysis.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Lactobacillus was significantly increased in the LPS48 group as compared with the Control group, whereas Paramuribaculum, Escherichia Shigella, Enterobacter, Gp2, Brachybacterium, Lachnospira, and Olsenella were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Brachybacterium as significantly decreased in the LPS48 group vs Control group, confirming decreased direction in late ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_014",
+      "taxon_name": "Lachnospira",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Lachnospira significantly decreased in LPS48 vs Control by LEfSe analysis.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Lactobacillus was significantly increased in the LPS48 group as compared with the Control group, whereas Paramuribaculum, Escherichia Shigella, Enterobacter, Gp2, Brachybacterium, Lachnospira, and Olsenella were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Lachnospira as significantly decreased in the LPS48 group vs Control group, confirming decreased direction in late ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_015",
+      "taxon_name": "Olsenella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "decreased",
+      "change_context": "disease_vs_control",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "high",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [],
+        "criticism_flags": [],
+        "review_notes": "Olsenella significantly decreased in LPS48 vs Control by LEfSe analysis. Also decreased in LPS48 vs LPS12 comparison (rel_017). Consistent direction.",
+        "queen_decision": "keep",
+        "verbatim_evidence": "At the genus level, Lactobacillus was significantly increased in the LPS48 group as compared with the Control group, whereas Paramuribaculum, Escherichia Shigella, Enterobacter, Gp2, Brachybacterium, Lachnospira, and Olsenella were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Olsenella as significantly decreased in the LPS48 group vs Control group, confirming decreased direction in late ALI vs healthy control."
+      }
+    },
+    {
+      "id": "435_rel_016",
+      "taxon_name": "Pseudarthrobacter",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "increased",
+      "change_context": "treatment_effect",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [
+          "change_context_note: comparison is between two disease time-points LPS48 vs LPS12, not disease vs healthy control; classified as treatment_effect per schema convention"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Pseudarthrobacter significantly increased in LPS48 vs LPS12 (late vs early ALI). Comparison is between two diseased states. Confidence medium because this is not a disease-vs-healthy comparison.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "At the genus level, Pseudarthrobacter was significantly increased in the LPS48 group as compared with the LPS12 group, whereas Olsenella, Escherichia Shigella, Acinetobacter, and Phascolarctobacterium were significantly decreased.",
+        "direction_reasoning": "The quote explicitly states Pseudarthrobacter was significantly increased in the LPS48 group as compared with the LPS12 group, confirming increased direction from early to late ALI stage."
+      }
+    },
+    {
+      "id": "435_rel_017",
+      "taxon_name": "Olsenella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [
+          "change_context_note: comparison is between two disease time-points LPS48 vs LPS12"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Olsenella decreased in LPS48 vs LPS12. Also decreased in LPS48 vs Control (rel_015). Consistent direction. This entry captures the time-point progression comparison.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "At the genus level, Pseudarthrobacter was significantly increased in the LPS48 group as compared with the LPS12 group, whereas Olsenella, Escherichia Shigella, Acinetobacter, and Phascolarctobacterium were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Olsenella as significantly decreased after whereas in the LPS48 vs LPS12 comparison, confirming decreased direction from early to late ALI stage."
+      }
+    },
+    {
+      "id": "435_rel_018",
+      "taxon_name": "Escherichia-Shigella",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [
+          "change_context_note: comparison is between two disease time-points LPS48 vs LPS12",
+          "taxon_name_note: combined LEfSe genus label"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Escherichia-Shigella decreased in LPS48 vs LPS12. Also decreased in LPS48 vs Control (rel_010). Consistent direction across both comparisons.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "At the genus level, Pseudarthrobacter was significantly increased in the LPS48 group as compared with the LPS12 group, whereas Olsenella, Escherichia Shigella, Acinetobacter, and Phascolarctobacterium were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Escherichia Shigella as significantly decreased in the LPS48 vs LPS12 comparison, confirming decreased direction from early to late ALI stage."
+      }
+    },
+    {
+      "id": "435_rel_019",
+      "taxon_name": "Acinetobacter",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [
+          "change_context_note: comparison is between two disease time-points LPS48 vs LPS12"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Acinetobacter significantly decreased in LPS48 vs LPS12 by LEfSe analysis.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "At the genus level, Pseudarthrobacter was significantly increased in the LPS48 group as compared with the LPS12 group, whereas Olsenella, Escherichia Shigella, Acinetobacter, and Phascolarctobacterium were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Acinetobacter as significantly decreased in the LPS48 vs LPS12 comparison, confirming decreased direction from early to late ALI stage."
+      }
+    },
+    {
+      "id": "435_rel_020",
+      "taxon_name": "Phascolarctobacterium",
+      "domain": "bacteria",
+      "taxonomic_level": "genus",
+      "primary_disease": "acute lung injury / acute respiratory distress syndrome (ALI/ARDS)",
+      "direction": "decreased",
+      "change_context": "treatment_effect",
+      "sample_site": "lung",
+      "p_value": null,
+      "confidence": "medium",
+      "_annotation_metadata": {
+        "source_agents": [
+          "1A",
+          "1B",
+          "1C"
+        ],
+        "agreement_level": "unanimous",
+        "sufficiency_fail": false,
+        "validation_flags": [
+          "change_context_note: comparison is between two disease time-points LPS48 vs LPS12"
+        ],
+        "criticism_flags": [],
+        "review_notes": "Phascolarctobacterium significantly decreased in LPS48 vs LPS12 by LEfSe analysis.",
+        "queen_decision": "keep_flagged",
+        "verbatim_evidence": "At the genus level, Pseudarthrobacter was significantly increased in the LPS48 group as compared with the LPS12 group, whereas Olsenella, Escherichia Shigella, Acinetobacter, and Phascolarctobacterium were significantly decreased.",
+        "direction_reasoning": "The quote explicitly lists Phascolarctobacterium as significantly decreased in the LPS48 vs LPS12 comparison, confirming decreased direction from early to late ALI stage."
+      }
+    }
+  ],
+  "extraction_stats": {
+    "layer1_union_count": 20,
+    "layer2_corrections": 2,
+    "sufficiency_fails": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 20
+  }
+}

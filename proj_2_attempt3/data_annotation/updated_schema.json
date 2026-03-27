@@ -1,0 +1,44 @@
+{
+    "paper_id": "", 
+    "paper_title": "",
+    "qualified": true,
+    "skip_reason": null,
+    "study_type": "disease_characterization | treatment_intervention | observational | other",
+    "primary_disease": "",
+    "sample_sites": [],
+  
+    "relationships": [
+      {
+        "id": "paper_id_rel_001",
+        "taxon_name": "",
+        "domain": "bacteria | archaea | fungi",
+        "taxonomic_level": "phylum | class | order | family | genus | species",
+        "primary_disease": "",
+        "direction": "increased | decreased | unchanged | unclear",
+        "change_context": "disease_vs_control | treatment_effect",
+        "sample_site": "",
+        "p_value": null,
+        "confidence": "high | medium | low",
+        "_annotation_metadata": {
+          "source_agents": ["1A", "1B"],
+          "agreement_level": "unanimous | majority | single_extractor | late_discovery",
+          "sufficiency_fail": false,
+          "validation_flags": [],
+          "criticism_flags": [],
+          "review_notes": "",
+          "queen_decision": "keep | keep_flagged | removed",
+          "verbatim_evidence": "",
+          "direction_reasoning": ""
+        }
+      }
+    ],
+  
+    "extraction_stats": {
+      "layer1_union_count": 0,
+      "layer2_corrections": 0,
+      "sufficiency_fails": 0,
+      "layer3_additions": 0,
+      "layer3_removals": 0,
+      "final_count": 0
+    }
+  }

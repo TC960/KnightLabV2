@@ -1,0 +1,18 @@
+{
+  "paper_id": "206",
+  "paper_title": "Gut-associated microbes are present and active in the pig nasal cavity",
+  "qualified": false,
+  "skip_reason": "No disease group vs. healthy control comparison. The study exclusively samples 24 healthy piglets from three farms without respiratory disease outbreaks and examines the prevalence, source, and activity of gut-microbiota associated taxa (Bacteroidales and Clostridiales) in the nasal cavity compared to rectal samples. No diseased cohort is present; this is a descriptive characterization study of healthy animal microbiota.",
+  "study_type": "observational",
+  "primary_disease": null,
+  "sample_sites": ["nasal", "fecal"],
+  "relationships": [],
+  "extraction_stats": {
+    "layer1_union_count": 0,
+    "layer2_corrections": 0,
+    "sufficiency_fails": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 0
+  }
+}

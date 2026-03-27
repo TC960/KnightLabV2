@@ -1,0 +1,18 @@
+{
+  "paper_id": "1220",
+  "paper_title": "Comparative analysis of the bronchoalveolar microbiome in Portuguese patients with different chronic lung disorders",
+  "qualified": false,
+  "skip_reason": "No healthy control group. The paper explicitly states 'No healthy controls were collected due to bronchoscopy invasiveness and risk of complications.' All comparisons are between disease groups only: lung cancer (LC) vs. non-LC patients (a heterogeneous group with various respiratory conditions, not healthy controls), and LC* vs. COPD vs. ILD (all chronic lung disease groups). The qualification criterion requires at least one disease group compared against a healthy control, which is absent here.",
+  "study_type": "disease_characterization",
+  "primary_disease": "chronic lung disorders (lung cancer, COPD, interstitial lung disease)",
+  "sample_sites": ["lung"],
+  "relationships": [],
+  "extraction_stats": {
+    "layer1_union_count": 0,
+    "layer2_corrections": 0,
+    "sufficiency_fails": 0,
+    "layer3_additions": 0,
+    "layer3_removals": 0,
+    "final_count": 0
+  }
+}
