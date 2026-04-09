@@ -6,3 +6,5 @@ phase_1_data_reports/
 proj_2_attempt3/.env.env
 *.env
 proj_2_attempt3/MERGED_PAPERS.json
+
+proj_2_attempt3/dsmlp_model_prompting/benchmark_results
