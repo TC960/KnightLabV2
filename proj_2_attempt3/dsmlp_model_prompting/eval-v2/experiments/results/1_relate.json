@@ -1,0 +1,91 @@
+[
+  {
+    "idx": 0,
+    "pred_enriched": [
+      "Phyllobacterium",
+      "Lactobacillus salivarius",
+      "Coriobacteriia",
+      "Erysipelotrichia",
+      "Gemmatimonadetes",
+      "Verrucomicrobiae",
+      "Synergistia",
+      "Cloacibacillus",
+      "Synergistetes",
+      "Bacteroidetes"
+    ],
+    "pred_depleted": [
+      "Rhodospirillales",
+      "Bacteroides",
+      "Bifidobacterium",
+      "Monoglobus",
+      "Bifidobacterium breve",
+      "Actinobacteria"
+    ]
+  },
+  {
+    "idx": 1,
+    "pred_enriched": [
+      "Gordonibacter",
+      "Ruminiclostridium",
+      "Enorma",
+      "Lawsonella",
+      "Frisingicoccus"
+    ],
+    "pred_depleted": [
+      "Catabacter",
+      "Howardella",
+      "Marine_Methylotrophic_Group",
+      "Lachnospiraceae_AC2044_group"
+    ]
+  },
+  {
+    "idx": 4,
+    "pred_enriched": [
+      "Proteobacteria",
+      "Actinobacteriota",
+      "Actinobacteria",
+      "Alphaproteobacteria",
+      "Gammaproteobacteria",
+      "Enterobacteriales",
+      "Bifidobacteriales",
+      "Faecalibacterium",
+      "Escherichia-Shigella",
+      "Subdoligranulum",
+      "Enterobacteriaceae-unclassified",
+      "Halomonas",
+      "Bifidobacterium"
+    ],
+    "pred_depleted": [
+      "Bacteroidia",
+      "Negativicutes",
+      "Bacilli",
+      "Coriobacteriia",
+      "Lachnospirales",
+      "Bacteroidales",
+      "Bacteroides",
+      "Megamonas",
+      "Prevotella",
+      "Lachnospiraceae-unclassified",
+      "Blautia",
+      "Lachnospira",
+      "Collinsella",
+      "Parabacteroides"
+    ]
+  },
+  {
+    "idx": 10,
+    "pred_enriched": [
+      "Clostridium cluster IV",
+      "Akkermansia",
+      "Bifidobacterium"
+    ],
+    "pred_depleted": [
+      "Firmicutes"
+    ]
+  },
+  {
+    "idx": 11,
+    "pred_enriched": [],
+    "pred_depleted": []
+  }
+]

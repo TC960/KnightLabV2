@@ -1,0 +1,20 @@
+[14:41:01] MODEL=qwen2.5-32b-instruct  repo=bartowski/Qwen2.5-32B-Instruct-GGUF  file=Qwen2.5-32B-Instruct-Q4_K_M.gguf
+[14:41:01] GPU before load: 0 MiB, 1 %
+[14:41:36] model loaded in 34.0s | n_ctx=24576 | GPU after load: 27129 MiB, 3 %
+[14:41:36] model metadata name=Qwen2.5 32B Instruct arch=qwen2
+[14:42:10]   [0] grounded 5 taxa (15.5s) | relate 220 cand->10 kept (19.4s) | GPU 28083 MiB, 47 %
+[14:42:36]   [1] grounded 10 taxa (12.4s) | relate 107 cand->10 kept (13.1s) | GPU 28083 MiB, 43 %
+[14:43:22]   [2] grounded 3 taxa (21.2s) | relate 153 cand->7 kept (24.3s) | GPU 28245 MiB, 59 %
+[14:43:48]   [3] grounded 1 taxa (12.5s) | relate 109 cand->1 kept (13.9s) | GPU 28245 MiB, 23 %
+[14:44:32]   [4] grounded 12 taxa (23.2s) | relate 126 cand->9 kept (21.1s) | GPU 28245 MiB, 23 %
+[14:45:02]   [5] grounded 5 taxa (15.4s) | relate 118 cand->4 kept (14.3s) | GPU 28245 MiB, 22 %
+[14:45:35]   [6] grounded 18 taxa (18.8s) | relate 82 cand->10 kept (14.5s) | GPU 28245 MiB, 31 %
+[14:46:35]   [7] grounded 19 taxa (29.0s) | relate 81 cand->24 kept (30.1s) | GPU 28245 MiB, 48 %
+[14:47:00]   [8] grounded 10 taxa (12.8s) | relate 125 cand->6 kept (12.2s) | GPU 28245 MiB, 51 %
+[14:47:48]   [9] grounded 3 taxa (23.1s) | relate 133 cand->5 kept (25.2s) | GPU 28325 MiB, 49 %
+[14:48:09]   [10] grounded 5 taxa (10.2s) | relate 98 cand->5 kept (10.8s) | GPU 28325 MiB, 44 %
+[14:48:51]   [11] grounded 10 taxa (21.4s) | relate 130 cand->3 kept (20.7s) | GPU 28325 MiB, 24 %
+[14:49:53]   [12] grounded 4 taxa (28.2s) | relate 163 cand->9 kept (33.8s) | GPU 28405 MiB, 32 %
+[14:50:26]   [13] grounded 8 taxa (17.1s) | relate 124 cand->8 kept (16.1s) | GPU 28405 MiB, 45 %
+[14:50:45]   [14] grounded 4 taxa (8.9s) | relate 77 cand->4 kept (9.4s) | GPU 28405 MiB, 46 %
+[14:50:45] DONE qwen2.5-32b-instruct: wrote cache/grounded__qwen2.5-32b-instruct.json + cache/relate__qwen2.5-32b-instruct.json

@@ -1,0 +1,22 @@
+[14:31:35] MODEL=qwythos-9b  repo=empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF  file=Qwythos-9B-Claude-Mythos-5-1M-Q8_0.gguf
+[14:31:35] GPU before load: 0 MiB, 2 %
+[14:31:50] model loaded in 14.7s | n_ctx=24576 | GPU after load: 10189 MiB, 0 %
+[14:31:50] model metadata name=Qwythos 9B Claude Mythos 5 1M arch=qwen35
+[14:33:07]   [0] grounded 39 taxa (23.4s) | relate 220 cand->99 kept (53.6s) | GPU 10757 MiB, 17 %
+[14:33:22]   [1] grounded 10 taxa (7.5s) | relate 107 cand->10 kept (7.7s) | GPU 10757 MiB, 17 %
+[14:33:38]   [2] grounded 7 taxa (7.6s) | relate 153 cand->7 kept (8.0s) | GPU 10821 MiB, 18 %
+[14:34:03]   [3] grounded 1 taxa (5.2s) | relate 109 cand->14 kept (20.3s) | GPU 10821 MiB, 11 %
+[14:34:54]   [4] grounded 22 taxa (23.9s) | relate 126 cand->25 kept (26.5s) | GPU 10821 MiB, 7 %
+[14:35:15]   [5] grounded 5 taxa (11.5s) | relate 118 cand->5 kept (9.9s) | GPU 10821 MiB, 14 %
+[14:35:46]   [6] grounded 19 taxa (12.5s) | relate 82 cand->30 kept (18.3s) | GPU 10821 MiB, 17 %
+[14:36:28]   [7] grounded 31 taxa (22.8s) | relate 81 cand->26 kept (18.9s) | GPU 10821 MiB, 14 %
+[14:37:53]   [8] grounded ERROR JSONDecodeError: Unterminated string starting at: line 169 column 5 (char 3616)
+[14:38:25]   [8] grounded 0 taxa (85.2s) | relate 125 cand->60 kept (32.3s) | GPU 10821 MiB, 14 %
+[14:38:59]   [9] grounded 11 taxa (11.5s) | relate 133 cand->13 kept (22.4s) | GPU 10853 MiB, 7 %
+[14:39:18]   [10] grounded 5 taxa (9.2s) | relate 98 cand->5 kept (9.0s) | GPU 10853 MiB, 7 %
+[14:39:54]   [11] grounded 11 taxa (19.6s) | relate 130 cand->9 kept (16.3s) | GPU 10853 MiB, 7 %
+[14:40:35]   [12] relate ERROR JSONDecodeError: Expecting value: line 38 column 21 (char 906)
+[14:40:35]   [12] grounded 7 taxa (13.9s) | relate 163 cand->0 kept (27.7s) | GPU 10885 MiB, 15 %
+[14:40:50]   [13] grounded 8 taxa (7.2s) | relate 124 cand->8 kept (7.3s) | GPU 10885 MiB, 14 %
+[14:41:01]   [14] grounded 4 taxa (4.4s) | relate 77 cand->8 kept (6.5s) | GPU 10885 MiB, 16 %
+[14:41:01] DONE qwythos-9b: wrote cache/grounded__qwythos-9b.json + cache/relate__qwythos-9b.json

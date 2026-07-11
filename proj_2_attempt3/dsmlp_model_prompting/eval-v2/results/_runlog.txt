@@ -1,0 +1,226 @@
+=== run_all started Thu Jul  9 16:05:24 PDT 2026 ===
+
+>>> qwen2.5-32b-instruct
+=== qwen2.5-32b-instruct | bartowski/Qwen2.5-32B-Instruct-GGUF / Qwen2.5-32B-Instruct-Q4_K_M.gguf ===
+15 papers | prompt=samgated-v1 | dataset=testv2
+model loaded
+
+[1/15] Inflammatory Manifestations Associated With Gut Dysbiosis in Alzheim...
+    enr=['Phyllobacterium', 'Cloacibacillus', 'Christensenellaceae']
+    dep=['Bifidobacterium', 'Bifidobacterium_breve']  (16.5s)
+[2/15] The Alterations of Gut Microbiome and Lipid Metabolism in Patients w...
+    enr=['Gordonibacter', 'Ruminiclostridium', 'Enorma', 'Lawsonella', 'Frisingicoccus', 'Anaerofilum']
+    dep=['Catabacter', 'Howardella', 'Marine_Methylotrophic_Group_3', 'Lachnospiraceae_AC2044_group']  (13.1s)
+[3/15] Fecal microbiome alterations in treatment-naive de novo Parkinson's ...
+    enr=['Akkermansia muciniphila']
+    dep=['Lachnospiraceae', 'Roseburia']  (20.8s)
+[4/15] Gut microbiota and intestinal barrier function in subjects with cogn...
+    enr=[]
+    dep=['Dorea']  (12.9s)
+[5/15] Gut Microbiome Distinguishes Patients With Epilepsy From Healthy Ind...
+    enr=['Faecalibacterium', 'Escherichia-Shigella', 'Subdoligranulum', 'Enterobacteriaceae-unclassified', 'Halomonas', 'Bifidobacterium']
+    dep=['Bacteroides', 'Megamonas', 'Prevotella', 'Lachnospiraceae-unclassified', 'Blautia', 'Lachnospira']  (18.2s)
+[6/15] Gut Microbiota and Fecal Metabolites Associated With Neurocognitive ...
+    enr=['Klebsiella']
+    dep=['Faecalibacterium', 'Coprococcus_2', 'Ruminococcaceae_NK4A214_group']  (12.9s)
+[7/15] Altered gut microbiota in individuals with episodic and chronic migr...
+    enr=['Tissierellia', 'Tissierellales', 'Peptoniphilaceae', 'Roseburia', 'Eubacterium_g4', 'Agathobacter', 'PAC000195_g', 'Catenibacterium']
+    dep=['Bacilli', 'Selenomonadales', 'Lactobacillales', 'Selenomonadaceae', 'Prevotellaceae', 'Prevotella', 'Holdemanella', 'Olsenella', 'Adlercreutzia', 'Coprococcus']  (17.8s)
+[8/15] Alzheimer's Disease Microbiome Is Associated with Dysregulation of t...
+    enr=['Bacteroides', 'Alistipes', 'Odoribacter', 'Barnesiella', 'Klebsiella pneumoniae', 'Bacteroides fragilis', 'Eggerthella lenta', 'Bacteroides dorei', 'Desulfovibrio fairfieldensis']
+    dep=['Lachnoclostridium', 'Eubacterium', 'Roseburia', 'Collinsella', 'Butyrivibrio hungatei', 'Butyrivibrio proteoclasticus', 'Eubacterium eligens', 'Eubacterium hallii', 'Eubacterium rectale', 'Clostridium sp. SY8519', 'Roseburia hominis', 'Faecalibacterium prausnitzii', 'Adlercreutzia equolifaciens']  (27.8s)
+[9/15] Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stro...
+    enr=['Bacteroides', 'Lachnospiraceae', 'Bilophila', 'Pseudomonas', 'Sphingomonadaceae', 'Akkermansia']
+    dep=[]  (11.9s)
+[10/15] Gut microbiome dysbiosis across early Parkinson's disease, REM sleep...
+    enr=['Collinsella', 'Desulfovibrio', 'Oscillospiraceae_UCG-005', 'Akkermansia']
+    dep=['Butyricicoccus', 'Faecalibacterium', '[Eubacterium]_ventriosum_group', 'Lachnospira', 'Roseburia', 'Lachnospiraceae_ND3007_group', 'Lachnospira']  (27.7s)
+[11/15] Gut microbiota in Parkinson's disease patients: hospital-based study...
+    enr=['Clostridium cluster IV', 'Akkermansia', 'Bifidobacterium', 'lactic acid bacteria']
+    dep=['Firmicutes']  (11.2s)
+[12/15] Association between cognitive functioning and microbiota-gut-brain a...
+    enr=['Bifidobacterium', 'Dialister', 'Clostridia_UCG-014']
+    dep=['Acetonema', 'Moryella', 'Blautia', 'Lachnospiraceae_ND3007_group', 'Ruminococcus_gnavus_group', 'Oscillobacter']  (27.1s)
+[13/15] Immunotherapy-mediated modulation of the gut microbiota in multiple ...
+    enr=['Firmicutes', 'Lachnospiraceae', 'Ruminococcaceae', 'Blautia', 'Anaerostipes']
+    dep=['Bacteroidetes', 'Proteobacteria', 'Prevotella', 'Bacteroidales']  (32.9s)
+[14/15] Dysbiosis characteristics of gut microbiota in cerebral infarction p...
+    enr=['Lactobacillus', 'Lactococcus']
+    dep=['Faecalibacterium', 'Subdoligranulum', 'Eubacterium_rectal_group', 'Roseburia', 'Lachnoclostridium', 'Butyricicoccus']  (19.9s)
+[15/15] Evaluation of the Microbial Diversity in Amyotrophic Lateral Scleros...
+    enr=['Dorea']
+    dep=['Oscillibacter', 'Anaerostipes', 'Lachnospiraceae']  (12.6s)
+
+============================================================
+qwen2.5-32b-instruct: P=0.551 R=0.579 F1=0.565  (TP=70 FP=57 FN=51, 18.9s/paper)
+cleaned cache: /tmp/hf/hub/models--bartowski--Qwen2.5-32B-Instruct-GGUF
+
+>>> qwopus3.5-27b-v3
+=== qwopus3.5-27b-v3 | Jackrong/Qwopus3.5-27B-v3-GGUF / Qwopus3.5-27B-v3-Q4_K_M.gguf ===
+15 papers | prompt=samgated-v1 | dataset=testv2
+model loaded
+
+[1/15] Inflammatory Manifestations Associated With Gut Dysbiosis in Alzheim...
+    enr=['Phyllobacterium', 'Synergistetes', 'Christensenellaceae', 'Tyzzerella', 'Turicibacter', 'Parabacteroides distasonis', 'Bacteroides eggerthii', 'Lactobacillus salivarius', 'Cloacibacillus', 'Erysipelotrichia', 'Gemmatimonadetes', 'Verrucomicrobiae', 'Coriobacteriia', 'Bacteroidia', 'Alphaproteobacteria', 'Clostridia']
+    dep=['Bifidobacterium', 'Bifidobacterium breve', 'Bacteroides', 'Monoglobus', 'Rhodospirillales', 'Actinobacteria']  (45.7s)
+[2/15] The Alterations of Gut Microbiome and Lipid Metabolism in Patients w...
+    enr=['Ruminiclostridium', 'Gordonibacter', 'Enorma', 'Lawsonella', 'Frisingicoccus', 'Anaerofilum']
+    dep=['Catabacter', 'Howardella', 'Marine_Methylotrophic_Group_3', 'Lachnospiraceae_AC2044_group']  (21.7s)
+[3/15] Fecal microbiome alterations in treatment-naive de novo Parkinson's ...
+    enr=['Akkermansia muciniphila', 'Rikenellaceae', 'Eggerthellaceae', 'Christensenellaceae']
+    dep=['Lachnospiraceae', 'Roseburia', 'Butyricoccus', 'Butyricoccaceae', 'Veillonellaceae', 'Colidextribacter', 'Acholeplasmataceae', 'Clostridia UCG-014']  (21.3s)
+[4/15] Gut microbiota and intestinal barrier function in subjects with cogn...
+    enr=[]
+    dep=['Dorea']  (9.9s)
+[5/15] Gut Microbiome Distinguishes Patients With Epilepsy From Healthy Ind...
+    enr=['Proteobacteria', 'Actinobacteriota', 'Faecalibacterium', 'Escherichia-Shigella', 'Subdoligranulum', 'Enterobacteriaceae-unclassified', 'Halomonas', 'Bifidobacterium']
+    dep=['Bacteroidota', 'Bacteroides', 'Megamonas', 'Prevotella', 'Lachnospiraceae-unclassified', 'Blautia', 'Lachnospira', 'Parabacteroides', 'Collinsella']  (19.9s)
+[6/15] Gut Microbiota and Fecal Metabolites Associated With Neurocognitive ...
+    enr=['Klebsiella', 'Spirochaetes', 'Epsilonbacteraeota']
+    dep=['Faecalibacterium', 'Coprococcus_2', 'Ruminococcus_1', 'Ruminococcaceae_NK4A214_group']  (13.8s)
+[7/15] Altered gut microbiota in individuals with episodic and chronic migr...
+    enr=['Tissierellales', 'Tissierellia', 'Peptoniphilaceae', 'Eubacteriaceae', 'Olsenella', 'Roseburia', 'Eubacterium_g4', 'Agathobacter', 'PAC000195_g', 'Catenibacterium']
+    dep=[]  (15.2s)
+[8/15] Alzheimer's Disease Microbiome Is Associated with Dysregulation of t...
+    enr=['Bacteroides', 'Alistipes', 'Odoribacter', 'Barnesiella', 'Odoribacter splanchnicus', 'Bacteroides vulgatus', 'Klebsiella pneumoniae', 'Bacteroides fragilis', 'Eggerthella lenta', 'Bacteroides dorei', 'Desulfovibrio']
+    dep=['Lachnoclostridium', 'Butyrivibrio', 'Eubacterium', 'Clostridium', 'Roseburia', 'Faecalibacterium', 'Adlercreutzia equolifaciens']  (24.3s)
+[9/15] Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stro...
+    enr=['Actinobacteria', 'Bacteroidaceae', 'Bifidobacteriaceae', 'Coriobacteriaceae', 'Weeksellaceae', 'Bacillaceae', 'Paenibacillaceae', 'Brucellaceae', 'Xanthomonadaceae', 'Bacteroides', 'Bifidobacterium', 'Bilophila', 'Lachnospiraceae', 'Pseudomonas', 'Sphingomonadaceae', 'Akkermansia', 'Verrucomicrobia', 'Synergistetes', 'Proteobacteria', 'Enterobacteriaceae', 'Enterococcaceae', 'Lactobacillaceae', 'Verrucomicrobiaceae', 'Methanobacteriaceae', 'Pseudomonadaceae', 'Enterococcus', 'Veillonella', 'Lactobacillus', 'Cyanobacteria', 'Fusobacteria', 'Veillonellaceae', 'Erysipelotrichaceae', 'Phascolarctobacterium', 'Megasphaera', 'Acidaminococcus', 'Lachnospira', 'Parabacteroides']
+    dep=['Firmicutes', 'Lachnospiraceae', 'Ruminococcaceae', 'Prevotellaceae', 'Lachnospiraceae', 'Bacteroides', 'Ruminococcaceae', 'Prevotella', 'Blautia', 'Ruminococcus', 'Ruminococcaceae']  (37.8s)
+[10/15] Gut microbiome dysbiosis across early Parkinson's disease, REM sleep...
+    enr=['Collinsella', 'Desulfovibrio', 'Akkermansia', 'Oscillospiraceae_UCG-005']
+    dep=['Butyricicoccus', 'Faecalibacterium', 'Roseburia', 'Lachnospiraceae_ND3007_group', 'Lachnospira', '[Eubacterium]_ventriosum_group', 'Oscillospiraceae_UCG-002']  (23.1s)
+[11/15] Gut microbiota in Parkinson's disease patients: hospital-based study...
+    enr=['Clostridium cluster IV', 'Akkermansia', 'Bifidobacterium', 'lactic acid bacteria']
+    dep=['Firmicutes']  (10.7s)
+[12/15] Association between cognitive functioning and microbiota-gut-brain a...
+    enr=['Dialister', 'Clostridia_UCG-014', 'Bifidobacterium']
+    dep=['Acetonema', 'Moryella', 'Blautia']  (16.0s)
+[13/15] Immunotherapy-mediated modulation of the gut microbiota in multiple ...
+    enr=[]
+    dep=[]  (17.3s)
+[14/15] Dysbiosis characteristics of gut microbiota in cerebral infarction p...
+    enr=['Proteobacteria', 'Actinobacteria', 'Lactobacillus', 'Lactococcus', 'Escherichia', 'Shigella', 'Streptococcus', 'Collinsella', 'Dorea']
+    dep=['Firmicutes', 'Bacteroidetes', 'Faecalibacterium', 'Subdoligranulum', 'Eubacterium rectal group', 'Roseburia', 'Lachnoclostridium', 'Butyricicoccus']  (34.8s)
+[15/15] Evaluation of the Microbial Diversity in Amyotrophic Lateral Scleros...
+    enr=['Bacteroidetes', 'Bacteroidia', 'Bacteroidales', 'Dorea']
+    dep=['Firmicutes', 'Clostridia', 'Clostridiales', 'Lachnospiraceae', 'Family XIII', 'Oscillibacter', 'Anaerostipes', 'Lachnospiraceae']  (26.2s)
+
+============================================================
+qwopus3.5-27b-v3: P=0.526 R=0.824 F1=0.642  (TP=103 FP=93 FN=22, 22.5s/paper)
+cleaned cache: /tmp/hf/hub/models--Jackrong--Qwopus3.5-27B-v3-GGUF
+
+>>> qwen3.6-35b-a3b
+=== qwen3.6-35b-a3b | unsloth/Qwen3.6-35B-A3B-GGUF / Qwen3.6-35B-A3B-UD-Q4_K_M.gguf ===
+15 papers | prompt=samgated-v1 | dataset=testv2
+model loaded
+
+[1/15] Inflammatory Manifestations Associated With Gut Dysbiosis in Alzheim...
+    enr=['Phyllobacterium', 'Lactobacillus salivarius', 'Cloacibacillus', 'Christensenellaceae', 'Tyzzerella', 'Turicibacter', 'Parabacteroides distasonis', 'Bacteroides eggerthii']
+    dep=['Bifidobacterium', 'Bifidobacterium breve', 'Bacteroides', 'Monoglobus']  (19.7s)
+[2/15] The Alterations of Gut Microbiome and Lipid Metabolism in Patients w...
+    enr=['Ruminiclostridium', 'Gordonibacter', 'Enorma', 'Lawsonella', 'Frisingicoccus', 'Anaerofilum']
+    dep=['Catabacter', 'Howardella', 'Marine_Methylotrophic_Group_3', 'Lachnospiraceae_AC2044_group']  (18.8s)
+[3/15] Fecal microbiome alterations in treatment-naive de novo Parkinson's ...
+    enr=['Akkermansia muciniphila', 'Christensenellaceae', 'Eggerthellaceae', 'Rikenellaceae']
+    dep=['Lachnospiraceae', 'Roseburia', 'Butyricoccus', 'Butyricoccaceae', 'Veillonellaceae', 'Colidextribacter', 'Acholeplasmataceae', 'Clostridia UCG-014']  (21.0s)
+[4/15] Gut microbiota and intestinal barrier function in subjects with cogn...
+    enr=['Catenibacterium', 'Family XIII AD3011 group', 'Vagococcus']
+    dep=['Dorea']  (12.3s)
+[5/15] Gut Microbiome Distinguishes Patients With Epilepsy From Healthy Ind...
+    enr=['Proteobacteria', 'Actinobacteriota', 'Faecalibacterium', 'Escherichia-Shigella', 'Subdoligranulum', 'Enterobacteriaceae-unclassified', 'Gammaproteobacteria', 'Alphaproteobacteria', 'Actinobacteria', 'Enterobacteriales', 'Bifidobacteriales', 'c-Actinobacteria', 'c-Gammaproteobacteria', 'o-Bifidobacteriales', 'o-Clostridia-unclassified', 'f-Bifidobacteriaceae', 'Escherichia-Shigella', 'Enterobacteriaceae-unclassified', 'Halomonas', 'Bifidobacterium']
+    dep=['Bacteroidota', 'Bacteroides', 'Megamonas', 'Prevotella', 'Lachnospiraceae-unclassified', 'Blautia', 'Bacteroidia', 'Negativicutes', 'Coriobacteriia', 'Lachnospirales', 'Bacteroidales', 'c-Coriobacteriia', 'o-Bacteroidales', 'f-Rikenellaceae', 'Lachnospiraceae-unclassified', 'Bacteroides', 'Blautia', 'Lachnospira']  (20.6s)
+[6/15] Gut Microbiota and Fecal Metabolites Associated With Neurocognitive ...
+    enr=['Klebsiella', 'Spirochaetes', 'Epsilonbacteraeota', 'Treponema_2', 'Pseudomonas', 'Thermopolyspora']
+    dep=['Faecalibacterium', 'Coprococcus_2', 'Ruminococcus_1', 'Ruminococcaceae_NK4A214_group']  (8.6s)
+[7/15] Altered gut microbiota in individuals with episodic and chronic migr...
+    enr=['Tissierellia', 'Tissierellales', 'Peptoniphilaceae', 'Eubacteriaceae', 'Olsenella', 'PAC001212_g', 'Roseburia', 'Eubacterium_g4', 'Agathobacter', 'PAC000195_g', 'Catenibacterium', 'Prevotella', 'Holdemanella', 'Adlercreutzia', 'Coprococcus']
+    dep=['Catenibacterium', 'Bacilli', 'Selenomonadales', 'Lactobacillales', 'Selenomonadaceae', 'Prevotellaceae']  (12.9s)
+[8/15] Alzheimer's Disease Microbiome Is Associated with Dysregulation of t...
+    enr=['Bacteroides spp.', 'Alistipes spp.', 'Odoribacter spp.', 'Barnesiella spp.', 'Odoribacter splanchnicus', 'Bacteroides vulgatus', 'Klebsiella pneumoniae', 'Bacteroides fragilis', 'Eggerthella lenta', 'Desulfovibrio fairfieldensis', 'Bacteroides dorei']
+    dep=['Lachnoclostridium spp.', 'Eubacterium spp.', 'Roseburia spp.', 'Collinsella spp.', 'Butyrivibrio hungatei', 'Butyrivibrio proteoclasticus', 'Eubacterium eligens', 'Eubacterium hallii', 'Eubacterium rectale', 'Clostridium sp. strain SY8519', 'Roseburia hominis', 'Faecalibacterium prausnitzii', 'Adlercreutzia equolifaciens', 'Blautia hansenii', 'Ruminococcus bicirculans']  (19.7s)
+[9/15] Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stro...
+    enr=['Bacteroidaceae', 'Bifidobacteriaceae', 'Coriobacteriaceae', 'Veillonellaceae', 'Enterobacteriaceae', 'Enterococcaceae', 'Lactobacillaceae', 'Verrucomicrobiaceae', 'Weeksellaceae', 'Bacillaceae', 'Paenibaciiaceae', 'Brucellaceae', 'Xanthomnadaceae', 'Methanobacteriaceae', 'Sphingomonadaceae', 'Pseudomonadaceae', 'Lachnospiraceae', 'Bacteroides', 'Enterobacteriaceae', 'Phascolarctobacterium', 'Megasphaera', 'Acidaminococcus', 'Lachnospira', 'Parabacteroides', 'Ruminococcaceae', 'Bifidobacterium', 'Blautia', 'Coriobacteriaceae', 'Prevotella', 'Enterobacteriaceae', 'Enterococcus', 'Veillonella', 'Akkermansia', 'Lactobacillus', 'Lachnospiraceae', 'Bilophila', 'Pseudomonas', 'Sphingomonadaceae', 'Akkermansia']
+    dep=['Firmicutes', 'Lachnospiraceae', 'Ruminococcaceae', 'Prevotellaceae', 'Lactobacillaceae', 'Lachnospiraceae', 'Bacteroides', 'Ruminococcaceae', 'Prevotella', 'Blautia', 'Enterobacteriaceae', 'Bifidobacterium', 'Ruminococcus', 'Ruminococcaceae', 'Bifidobacteriaceae', 'Coriobacteriaceae']  (33.7s)
+[10/15] Gut microbiome dysbiosis across early Parkinson's disease, REM sleep...
+    enr=['Collinsella', 'Desulfovibrio', 'Akkermansia', 'Oscillospiraceae_UCG-005']
+    dep=['Butyricicoccus', 'Faecalibacterium', 'Roseburia', 'Lachnospiraceae_ND3007_group', 'Lachnospira', '[Eubacterium]_ventriosum_group', '[Eubacterium]_ventriosum_group']  (12.6s)
+[11/15] Gut microbiota in Parkinson's disease patients: hospital-based study...
+    enr=['Clostridium cluster IV', 'Akkermansia', 'Bifidobacterium', 'lactic acid bacteria']
+    dep=['Firmicutes']  (5.4s)
+[12/15] Association between cognitive functioning and microbiota-gut-brain a...
+    enr=['Dialister', 'Clostridia_UCG-014', 'Bifidobacterium', 'Collinsella']
+    dep=['Acetonema', 'Moryella', 'Blautia', 'Lachnospiraceae_ND3007_group', '[Ruminococcus]_gnavus_group', 'Oscillobacter']  (11.2s)
+[13/15] Immunotherapy-mediated modulation of the gut microbiota in multiple ...
+    enr=['Proteobacteria', 'Flavonifractor', 'Acidaminococcaceae', 'Bacteroidetes', 'Eggerthella', 'Lachnoclostridium']
+    dep=['Firmicutes', 'Ruminococcaceae', 'Butyricicoccus', 'Massiliprevotella massiliensis', 'Megamonas', 'Holdemanella']  (12.9s)
+[14/15] Dysbiosis characteristics of gut microbiota in cerebral infarction p...
+    enr=['Proteobacteria', 'Actinobacteria', 'Escherichia and Shigella', 'Streptococcus', 'Lactobacillus', 'Lactococcus']
+    dep=['Firmicutes', 'Bacteroidetes', 'Faecalibacterium', 'Subdoligranulum', 'Eubacterium rectal group', 'Roseburia', 'Lachnoclostridium', 'Butyricicoccus', 'Collinsella', 'Dorea']  (12.0s)
+[15/15] Evaluation of the Microbial Diversity in Amyotrophic Lateral Scleros...
+    enr=['Dorea', 'Bacteroidetes', 'Bacteroidia', 'Bacteroidales']
+    dep=['Firmicutes', 'Clostridia', 'Clostridiales', 'Lachnospiraceae', 'Family XIII', 'Oscillibacter', 'Anaerostipes']  (8.3s)
+
+============================================================
+qwen3.6-35b-a3b: P=0.415 R=0.784 F1=0.543  (TP=105 FP=148 FN=29, 15.3s/paper)
+cleaned cache: /tmp/hf/hub/models--unsloth--Qwen3.6-35B-A3B-GGUF
+
+>>> qwythos-9b
+=== qwythos-9b | empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF / Qwythos-9B-Claude-Mythos-5-1M-Q8_0.gguf ===
+15 papers | prompt=samgated-v1 | dataset=testv2
+model loaded
+
+[1/15] Inflammatory Manifestations Associated With Gut Dysbiosis in Alzheim...
+    enr=['Butyricicoccus', 'Ligilactobacillus', 'Clostridium_sensu_stricto_1', 'Turicibacter', 'Enterococcus', 'MND1', 'Dongia', 'RB41', 'Skermanella', 'Bryobacter', 'Rhodococcus', 'Devosia', 'Phyllobacterium', 'Lactobacillus salivarius', 'Coriobacteriia', 'Erysipelotrichia', 'Gemmatimonadetes', 'Verrucomicrobiae', 'Synergistia', 'Cloacibacillus', 'Clostridia', 'Bacteroidales', 'Erysipelotrichaceae', 'Olsenella genomosp', 'Gemmatimonadaceae', 'Christensenellaceae R-7', 'Cloacibacillus porcorum', 'Prevotella', 'Faecalibacterium', 'Oscillospiraceae', 'Actinobacteria', 'Acidomicrobiia']
+    dep=['Eubacterium hallii', 'Collinsella', 'Catenibacterium', 'Vicinamibacteraceae', 'Rhodospirillales', 'Bacteroides', 'Bifidobacterium', 'Monoglobus', 'Bacilli', 'Bacteroidetes']  (39.1s)
+[2/15] The Alterations of Gut Microbiome and Lipid Metabolism in Patients w...
+    enr=['Ruminiclostridium', 'Gordonibacter', 'Enorma', 'Lawsonella', 'Frisingicoccus', 'Anaerofilum']
+    dep=['Catabacter', 'Howardella', 'Marine_Methylotrophic_Group_3', 'Lachnospiraceae_AC2044_group']  (8.1s)
+[3/15] Fecal microbiome alterations in treatment-naive de novo Parkinson's ...
+    enr=['Akkermansia muciniphila']
+    dep=['Roseburia', 'Lachnospiraceae', 'Butyricoccus', 'Butyricoccaceae', 'Veillonellaceae', 'Colidextribacter', 'Clostridia UCG-014']  (9.2s)
+[4/15] Gut microbiota and intestinal barrier function in subjects with cogn...
+    enr=['Catenibacterium', 'Family XIII AD3011 group', 'Vagococcus']
+    dep=['Dorea']  (5.9s)
+[5/15] Gut Microbiome Distinguishes Patients With Epilepsy From Healthy Ind...
+    enr=['Proteobacteria', 'Actinobacteriota', 'Faecalibacterium', 'Escherichia-Shigella', 'Subdoligranulum', 'Enterobacteriaceae-unclassified', 'Halomonas', 'Bifidobacterium']
+    dep=['Bacteroidota', 'Bacteroides', 'Megamonas', 'Prevotella', 'Lachnospiraceae-unclassified', 'Blautia', 'Parabacteroides', 'Collinsella', 'Lachnospira']  (11.9s)
+[6/15] Gut Microbiota and Fecal Metabolites Associated With Neurocognitive ...
+    enr=['Klebsiella', 'Spirochaetes', 'Epsilonbacteraeota']
+    dep=['Faecalibacterium', 'Coprococcus_2', 'Ruminococcus_1', 'Ruminococcaceae_NK4A214_group']  (8.0s)
+[7/15] Altered gut microbiota in individuals with episodic and chronic migr...
+    enr=['Tissierellales', 'Tissierellia', 'Peptoniphilaceae', 'Eubacteriaceae', 'Roseburia', 'Eubacterium_g4', 'Agathobacter', 'PAC000195_g', 'Catenibacterium']
+    dep=['Bacilli', 'Selenomonadales', 'Lactobacillales', 'Selenomonadaceae', 'Prevotellaceae', 'Prevotella', 'Holdemanella', 'Olsenella', 'Adlercreutzia', 'Coprococcus']  (12.4s)
+[8/15] Alzheimer's Disease Microbiome Is Associated with Dysregulation of t...
+    enr=['Bacteroides spp.', 'Alistipes spp.', 'Odoribacter spp.', 'Barnesiella spp.', 'Odoribacter splanchnicus', 'Bacteroides vulgatus', 'Klebsiella pneumoniae', 'Bacteroides fragilis', 'Eggerthella lenta', 'Bacteroides dorei', 'Desulfovibrio fairfieldensis']
+    dep=['Lachnoclostridium spp.', 'Eubacterium spp.', 'Roseburia spp.', 'Collinsella spp.', 'Butyrivibrio hungatei', 'Butyrivibrio proteoclasticus', 'Eubacterium eligens', 'Eubacterium hallii', 'Eubacterium rectale', 'Clostridium sp. strain SY8519', 'Roseburia hominis', 'Faecalibacterium prausnitzii', 'Blautia hansenii', 'Ruminococcus bicirculans', 'Akkermansia muciniphila', 'Bifidobacterium bifidum', 'Adlercreutzia equolifaciens']  (22.7s)
+[9/15] Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stro...
+    enr=['Bacteroidaceae', 'Erysipelotrichaceae', 'Weeksellaceae', 'Bacillaceae', 'Paenibacillaceae', 'Brucellaceae', 'Xanthomonadaceae', 'Bifidobacterium', 'Bacteroides', 'Lactobacillus', 'Pseudomonas', 'Sphingomonadaceae', 'Akkermansia', 'Veillonellaceae', 'Enterobacteriaceae', 'Enterococcus', 'Bilophila', 'Fusobacteria', 'Cyanobacteria', 'Actinobacteria', 'Verrucomicrobia', 'Synergistetes', 'Proteobacteria', 'Megasphaera', 'Acidaminococcus', 'Lachnospira', 'Parabacteroides', 'Phascolarctobacterium', 'Blautia', 'Prevotella', 'Ruminococcaceae', 'Ruminococcus', 'Lachnospiraceae', 'Coriobacteriaceae', 'Bacteroides']
+    dep=['Firmicutes', 'Lachnospiraceae', 'Ruminococcaceae', 'Bifidobacteriaceae', 'Coriobacteriaceae', 'Lactobacillaceae', 'Verrucomicrobiaceae', 'Prevotellaceae', 'Lachnospiraceae', 'Bacteroides', 'Ruminococcaceae', 'Prevotella', 'Blautia', 'Enterobacteriaceae', 'Bifidobacterium', 'Ruminococcus', 'Lachnospiraceae', 'Coriobacteriaceae', 'Bacteroides']  (31.7s)
+[10/15] Gut microbiome dysbiosis across early Parkinson's disease, REM sleep...
+    enr=['Collinsella', 'Desulfovibrio', 'Oscillospiraceae_UCG-005', 'Akkermansia', 'UBA1819']
+    dep=['Butyricicoccus', 'Faecalibacterium', 'Lachnospira', '[Eubacterium]_ventriosum_group', 'Lachnospiraceae_ND3007_group', 'Lachnospiraceae']  (12.5s)
+[11/15] Gut microbiota in Parkinson's disease patients: hospital-based study...
+    enr=['Clostridium cluster IV', 'Akkermansia', 'Bifidobacterium', 'lactic acid bacteria']
+    dep=['Firmicutes']  (6.1s)
+[12/15] Association between cognitive functioning and microbiota-gut-brain a...
+    enr=['Dialister', 'Clostridia_UCG-014']
+    dep=['Moryella', 'Blautia']  (6.6s)
+[13/15] Immunotherapy-mediated modulation of the gut microbiota in multiple ...
+    error: JSONDecodeError: Unterminated string starting at: line 92 column 5 (char 2384)
+    enr=[]
+    dep=[]  (85.9s)
+[14/15] Dysbiosis characteristics of gut microbiota in cerebral infarction p...
+    enr=['Proteobacteria', 'Actinobacteria', 'Escherichia', 'Shigella', 'Streptococcus', 'Collinsella', 'Dorea', 'Lactobacillus', 'Lactococcus']
+    dep=['Firmicutes', 'Bacteroidetes', 'Faecalibacterium', 'Subdoligranulum', 'Eubacterium rectal group', 'Roseburia', 'Lachnoclostridium', 'Butyricicoccus']  (25.9s)
+[15/15] Evaluation of the Microbial Diversity in Amyotrophic Lateral Scleros...
+    enr=['Dorea']
+    dep=['Oscillibacter', 'Anaerostipes', 'Lachnospiraceae']  (9.0s)
+
+============================================================
+qwythos-9b: P=0.443 R=0.810 F1=0.573  (TP=102 FP=128 FN=24, 19.7s/paper)
+cleaned cache: /tmp/hf/hub/models--empero-ai--Qwythos-9B-Claude-Mythos-5-1M-GGUF
+
+>>> qwopus3.6-35b-a3b-mtp
+=== qwopus3.6-35b-a3b-mtp | Jackrong/Qwopus3.6-35B-A3B-v1-MTP-GGUF / Qwopus3.6-35B-A3B-v1-MTP-Q4_K_M.gguf ===
+15 papers | prompt=samgated-v1 | dataset=testv2

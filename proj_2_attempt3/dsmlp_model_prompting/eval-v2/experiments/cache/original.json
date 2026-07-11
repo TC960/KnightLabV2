@@ -1,0 +1,89 @@
+{
+  "0": {
+    "taxa_enriched": [
+      "Phyllobacterium",
+      "Bacteroidia",
+      "Lactobacillus salivarius",
+      "Coriobacteriia",
+      "Erysipelotrichia",
+      "Gemmatimonadetes",
+      "Verrucomicrobiae",
+      "Synergistia",
+      "Cloacibacillus",
+      "Clostridia"
+    ],
+    "taxa_depleted": [
+      "Rhodospirillales",
+      "Bacteroides",
+      "Bifidobacterium",
+      "Monoglobus",
+      "Bifidobacterium breve"
+    ]
+  },
+  "1": {
+    "taxa_enriched": [
+      "Ruminiclostridium",
+      "Gordonibacter",
+      "Enorma",
+      "Lawsonella",
+      "Frisingicoccus",
+      "Anaerofilum"
+    ],
+    "taxa_depleted": [
+      "Catabacter",
+      "Howardella",
+      "Marine_Methylotrophic_Group_3",
+      "Lachnospiraceae_AC2044_group"
+    ]
+  },
+  "4": {
+    "taxa_enriched": [
+      "Proteobacteria",
+      "Actinobacteriota",
+      "Gammaproteobacteria",
+      "Alphaproteobacteria",
+      "Actinobacteria",
+      "Enterobacteriales",
+      "Bifidobacteriales",
+      "Clostridia-unclassified",
+      "Bifidobacteriaceae",
+      "Faecalibacterium",
+      "Escherichia-Shigella",
+      "Subdoligranulum",
+      "Enterobacteriaceae-unclassified",
+      "Halomonas",
+      "Bifidobacterium"
+    ],
+    "taxa_depleted": [
+      "Bacteroidota",
+      "Bacteroidia",
+      "Negativicutes",
+      "Bacilli",
+      "Coriobacteriia",
+      "Lachnospirales",
+      "Bacteroidales",
+      "Rikenellaceae",
+      "Bacteroides",
+      "Megamonas",
+      "Prevotella",
+      "Lachnospiraceae-unclassified",
+      "Blautia",
+      "Lachnospira"
+    ]
+  },
+  "10": {
+    "taxa_enriched": [
+      "Clostridium cluster IV",
+      "Akkermansia",
+      "Bifidobacterium",
+      "lactic acid bacteria"
+    ],
+    "taxa_depleted": [
+      "Firmicutes"
+    ]
+  },
+  "11": {
+    "taxa_enriched": [],
+    "taxa_depleted": []
+  }
+}

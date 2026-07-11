@@ -1,0 +1,10 @@
+method,gold,n,precision,recall,f1,TP,FP,FN,note
+0_original,fable,5,1.0,0.766,0.868,59,0,18,single-shot samgated-v1
+1_relate,fable,5,1.0,0.691,0.818,56,0,25,retrieve 681 cand -> rerank kept 56
+2_grounded,fable,5,1.0,0.962,0.981,76,0,3,grounding-verified (dropped 0 ungrounded)
+3_normalize,fable,5,1.0,0.753,0.859,58,0,19,59 raw -> 58 canonical nodes (collapsed 1)
+4_judge_metric,orig,5,0.898,0.815,0.855,53,6,12,metric vs original gold
+4_judge_adjusted,orig,5,1.0,0.831,0.908,59,0,12,LLM-judge recovered 6 FPs
+0_original,orig,5,0.898,0.815,0.855,53,6,12,single-shot samgated-v1
+1_relate,orig,5,0.911,0.785,0.843,51,5,14,retrieve 681 cand -> rerank kept 56
+2_grounded,orig,5,0.75,0.838,0.792,57,19,11,grounding-verified (dropped 0 ungrounded)

@@ -1,0 +1,6 @@
+model_key,repo,quant,prompt,dataset,n,TP,FP,FN,precision,recall,f1,avg_sec,load_ok,notes
+qwen2.5-32b-instruct,bartowski/Qwen2.5-32B-Instruct-GGUF,q4km,samgated-v1,testv2,15,70,57,51,0.5512,0.5785,0.5645,18.9,True,
+qwopus3.5-27b-v3,Jackrong/Qwopus3.5-27B-v3-GGUF,q4km,samgated-v1,testv2,15,103,93,22,0.5255,0.824,0.6417,22.5,True,
+qwen3.6-35b-a3b,unsloth/Qwen3.6-35B-A3B-GGUF,q4km,samgated-v1,testv2,15,105,148,29,0.415,0.7836,0.5426,15.3,True,
+qwythos-9b,empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF,q8,samgated-v1,testv2,15,102,128,24,0.4435,0.8095,0.573,19.7,True,
+qwopus3.6-35b-a3b-mtp,Jackrong/Qwopus3.6-35B-A3B-v1-MTP-GGUF,q4km,samgated-v1,testv2,15,107,165,25,0.3934,0.8106,0.5297,18.5,True,

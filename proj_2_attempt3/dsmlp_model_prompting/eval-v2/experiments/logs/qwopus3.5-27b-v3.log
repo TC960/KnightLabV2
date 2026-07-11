@@ -1,0 +1,20 @@
+[14:19:30] MODEL=qwopus3.5-27b-v3  repo=Jackrong/Qwopus3.5-27B-v3-GGUF  file=Qwopus3.5-27B-v3-Q4_K_M.gguf
+[14:19:30] GPU before load: 0 MiB, 0 %
+[14:19:37] model loaded in 6.0s | n_ctx=24576 | GPU after load: 18499 MiB, 0 %
+[14:19:37] model metadata name=6ebcfe1e24771daec7f2d43e020633e6cad985b4 arch=qwen35
+[14:21:06]   [0] grounded 45 taxa (52.4s) | relate 220 cand->42 kept (36.4s) | GPU 19197 MiB, 36 %
+[14:21:32]   [1] grounded 10 taxa (12.9s) | relate 107 cand->10 kept (13.1s) | GPU 19197 MiB, 35 %
+[14:22:05]   [2] grounded 0 taxa (12.2s) | relate 153 cand->12 kept (21.3s) | GPU 19295 MiB, 36 %
+[14:22:29]   [3] grounded 4 taxa (11.5s) | relate 109 cand->4 kept (12.0s) | GPU 19295 MiB, 35 %
+[14:23:28]   [4] grounded 36 taxa (32.6s) | relate 126 cand->27 kept (26.9s) | GPU 19295 MiB, 27 %
+[14:24:10]   [5] grounded 7 taxa (16.4s) | relate 118 cand->10 kept (25.1s) | GPU 19295 MiB, 21 %
+[14:25:25]   [6] grounded 26 taxa (39.5s) | relate 82 cand->30 kept (35.1s) | GPU 19295 MiB, 24 %
+[14:26:25]   [7] grounded 23 taxa (29.6s) | relate 81 cand->25 kept (30.9s) | GPU 19295 MiB, 36 %
+[14:27:39]   [8] grounded 69 taxa (50.9s) | relate 125 cand->24 kept (23.4s) | GPU 19295 MiB, 35 %
+[14:28:30]   [9] grounded 13 taxa (24.9s) | relate 133 cand->12 kept (25.2s) | GPU 19343 MiB, 36 %
+[14:28:54]   [10] grounded 5 taxa (10.2s) | relate 98 cand->5 kept (13.9s) | GPU 19343 MiB, 22 %
+[14:29:45]   [11] grounded 10 taxa (27.5s) | relate 130 cand->10 kept (23.9s) | GPU 19343 MiB, 18 %
+[14:30:38]   [12] grounded 0 taxa (15.5s) | relate 163 cand->28 kept (36.9s) | GPU 19391 MiB, 39 %
+[14:31:15]   [13] grounded 17 taxa (18.0s) | relate 124 cand->16 kept (18.9s) | GPU 19391 MiB, 40 %
+[14:31:34]   [14] grounded 4 taxa (8.7s) | relate 77 cand->11 kept (11.0s) | GPU 19391 MiB, 34 %
+[14:31:34] DONE qwopus3.5-27b-v3: wrote cache/grounded__qwopus3.5-27b-v3.json + cache/relate__qwopus3.5-27b-v3.json

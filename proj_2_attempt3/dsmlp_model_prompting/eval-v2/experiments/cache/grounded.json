@@ -1,0 +1,106 @@
+{
+  "0": {
+    "taxa_enriched": [
+      "Phyllobacterium",
+      "Bacteroidia",
+      "Lactobacillus salivarius",
+      "Coriobacteriia",
+      "Erysipelotrichia",
+      "Gemmatimonadetes",
+      "Verrucomicrobiae",
+      "Cloacibacillus",
+      "Clostridia",
+      "Butyricicoccus",
+      "Ligilactobacillus",
+      "Clostridium_sensu_stricto_1",
+      "Turicibacter",
+      "Enterococcus",
+      "MND1",
+      "Dongia",
+      "RB41",
+      "Skermanella",
+      "Bryobacter",
+      "Rhodococcus",
+      "Devosia"
+    ],
+    "taxa_depleted": [
+      "Rhodospirillales",
+      "Bacteroides",
+      "Bifidobacterium",
+      "Monoglobus",
+      "Bifidobacterium breve",
+      "Eubacterium hallii",
+      "Collinsella",
+      "Catenibacterium",
+      "Vicinamibacteraceae"
+    ]
+  },
+  "1": {
+    "taxa_enriched": [
+      "Ruminiclostridium",
+      "Gordonibacter",
+      "Enorma",
+      "Lawsonella",
+      "Frisingicoccus",
+      "Anaerofilum"
+    ],
+    "taxa_depleted": [
+      "Catabacter",
+      "Howardella",
+      "Marine_Methylotrophic_Group_3",
+      "Lachnospiraceae_AC2044_group"
+    ]
+  },
+  "4": {
+    "taxa_enriched": [
+      "Proteobacteria",
+      "Actinobacteriota",
+      "Faecalibacterium",
+      "Escherichia-Shigella",
+      "Subdoligranulum",
+      "Enterobacteriaceae-unclassified",
+      "Halomonas",
+      "Bifidobacterium",
+      "Gammaproteobacteria",
+      "Alphaproteobacteria",
+      "Actinobacteria",
+      "Enterobacteriales",
+      "Bifidobacteriales",
+      "Clostridia-unclassified",
+      "Bifidobacteriaceae"
+    ],
+    "taxa_depleted": [
+      "Bacteroidota",
+      "Bacteroides",
+      "Megamonas",
+      "Prevotella",
+      "Lachnospiraceae-unclassified",
+      "Blautia",
+      "Parabacteroides",
+      "Collinsella",
+      "Lachnospira",
+      "Bacteroidia",
+      "Negativicutes",
+      "Bacilli",
+      "Coriobacteriia",
+      "Lachnospirales",
+      "Bacteroidales",
+      "Rikenellaceae"
+    ]
+  },
+  "10": {
+    "taxa_enriched": [
+      "Clostridium cluster IV",
+      "Akkermansia",
+      "Bifidobacterium",
+      "lactic acid bacteria"
+    ],
+    "taxa_depleted": [
+      "Firmicutes"
+    ]
+  },
+  "11": {
+    "taxa_enriched": [],
+    "taxa_depleted": []
+  }
+}

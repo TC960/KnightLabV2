@@ -1,0 +1,111 @@
+[
+  {
+    "idx": 0,
+    "pred_enriched": [
+      "Phyllobacterium",
+      "Bacteroidia",
+      "Lactobacillus salivarius",
+      "Coriobacteriia",
+      "Erysipelotrichia",
+      "Gemmatimonadetes",
+      "Verrucomicrobiae",
+      "Cloacibacillus",
+      "Clostridia",
+      "Butyricicoccus",
+      "Ligilactobacillus",
+      "Clostridium_sensu_stricto_1",
+      "Turicibacter",
+      "Enterococcus",
+      "MND1",
+      "Dongia",
+      "RB41",
+      "Skermanella",
+      "Bryobacter",
+      "Rhodococcus",
+      "Devosia"
+    ],
+    "pred_depleted": [
+      "Rhodospirillales",
+      "Bacteroides",
+      "Bifidobacterium",
+      "Monoglobus",
+      "Bifidobacterium breve",
+      "Eubacterium hallii",
+      "Collinsella",
+      "Catenibacterium",
+      "Vicinamibacteraceae"
+    ]
+  },
+  {
+    "idx": 1,
+    "pred_enriched": [
+      "Ruminiclostridium",
+      "Gordonibacter",
+      "Enorma",
+      "Lawsonella",
+      "Frisingicoccus",
+      "Anaerofilum"
+    ],
+    "pred_depleted": [
+      "Catabacter",
+      "Howardella",
+      "Marine_Methylotrophic_Group_3",
+      "Lachnospiraceae_AC2044_group"
+    ]
+  },
+  {
+    "idx": 4,
+    "pred_enriched": [
+      "Proteobacteria",
+      "Actinobacteriota",
+      "Faecalibacterium",
+      "Escherichia-Shigella",
+      "Subdoligranulum",
+      "Enterobacteriaceae-unclassified",
+      "Halomonas",
+      "Bifidobacterium",
+      "Gammaproteobacteria",
+      "Alphaproteobacteria",
+      "Actinobacteria",
+      "Enterobacteriales",
+      "Bifidobacteriales",
+      "Clostridia-unclassified",
+      "Bifidobacteriaceae"
+    ],
+    "pred_depleted": [
+      "Bacteroidota",
+      "Bacteroides",
+      "Megamonas",
+      "Prevotella",
+      "Lachnospiraceae-unclassified",
+      "Blautia",
+      "Parabacteroides",
+      "Collinsella",
+      "Lachnospira",
+      "Bacteroidia",
+      "Negativicutes",
+      "Bacilli",
+      "Coriobacteriia",
+      "Lachnospirales",
+      "Bacteroidales",
+      "Rikenellaceae"
+    ]
+  },
+  {
+    "idx": 10,
+    "pred_enriched": [
+      "Clostridium cluster IV",
+      "Akkermansia",
+      "Bifidobacterium",
+      "lactic acid bacteria"
+    ],
+    "pred_depleted": [
+      "Firmicutes"
+    ]
+  },
+  {
+    "idx": 11,
+    "pred_enriched": [],
+    "pred_depleted": []
+  }
+]
