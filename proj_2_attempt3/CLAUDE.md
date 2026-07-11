@@ -115,9 +115,14 @@ extraction** (free/local, best local quality, ~20–22s/paper → ~35 min per 10
 - **Grounded** (verbatim-sentence-per-taxon) helped only the under-extractor (Qwen). **Normalize** = 0 F1
   change (it's a KG node-dedup tool, not a scoring lever). **No method beat plain single-shot** on the
   local models — **the benchmark's completeness is the ceiling, not the prompt.**
-- **LLM-judge is a DATA LEAK as prototyped** (recovered "FPs" using the Fable gold as oracle → needs a
-  gold, which won't exist at 30k-paper scale). Real version = **gold-free per-claim verification**
-  ("does the paper support this claim? y/n → drop the no's"). Not yet built.
+- **LLM-judge — first prototype was a DATA LEAK** (recovered "FPs" using the Fable gold as oracle).
+  Rebuilt the **real gold-free version** (`run_judge_experiments.py`: each model verifies its own
+  extractions vs the paper, y/n, drop the no's; batch 1 vs 3 claims/call). **RESULT: not worth it**
+  (`experiments/JUDGE_RESULTS.md`): it's a precision↔recall trade, net F1 barely moves (Qwopus +.02,
+  Qwythos −.06 — a weak model self-judges badly and rejects real findings; "a model is only as good a
+  judge as it's an extractor"). batch-3 ≈ batch-1 quality but ~2.6× faster (use batch-3 if ever). Even
+  batch-3 ≈ 42s/paper ON TOP of ~22s extraction → busts the 30-40s/paper budget for ~zero F1 gain.
+  **Decision: drop the standalone judge; fold significance-verification into the extraction prompt.**
 
 **Next:** adjudicate Fable's ~70 extra taxa vs Sam's gates (settle incomplete-vs-correct); then start KG
 edges with Qwopus over the corpus + gold-free verification pass. Validate vs Peryton/Disbiome.

@@ -1,0 +1,216 @@
+{
+  "0": {
+    "taxa_enriched": [
+      "Butyricicoccus",
+      "Ligilactobacillus",
+      "Clostridium_sensu_stricto_1",
+      "Turicibacter",
+      "Enterococcus",
+      "MND1",
+      "Dongia",
+      "RB41",
+      "Skermanella",
+      "Bryobacter",
+      "Rhodococcus",
+      "Devosia",
+      "Phyllobacterium",
+      "Lactobacillus salivarius",
+      "Coriobacteriia",
+      "Erysipelotrichia",
+      "Gemmatimonadetes",
+      "Verrucomicrobiae",
+      "Synergistia",
+      "Cloacibacillus",
+      "Clostridia",
+      "Bacteroidales",
+      "Erysipelotrichaceae",
+      "Olsenella genomosp"
+    ],
+    "taxa_depleted": []
+  },
+  "1": {
+    "taxa_enriched": [
+      "Ruminiclostridium",
+      "Gordonibacter",
+      "Enorma",
+      "Lawsonella",
+      "Frisingicoccus",
+      "Anaerofilum"
+    ],
+    "taxa_depleted": []
+  },
+  "2": {
+    "taxa_enriched": [],
+    "taxa_depleted": []
+  },
+  "3": {
+    "taxa_enriched": [
+      "Catenibacterium",
+      "Family XIII AD3011 group",
+      "Vagococcus"
+    ],
+    "taxa_depleted": [
+      "Dorea"
+    ]
+  },
+  "4": {
+    "taxa_enriched": [
+      "Proteobacteria",
+      "Actinobacteriota",
+      "Escherichia-Shigella",
+      "Subdoligranulum",
+      "Enterobacteriaceae-unclassified",
+      "Halomonas",
+      "Bifidobacterium"
+    ],
+    "taxa_depleted": []
+  },
+  "5": {
+    "taxa_enriched": [
+      "Klebsiella",
+      "Spirochaetes",
+      "Epsilonbacteraeota"
+    ],
+    "taxa_depleted": [
+      "Faecalibacterium",
+      "Coprococcus_2",
+      "Ruminococcus_1"
+    ]
+  },
+  "6": {
+    "taxa_enriched": [
+      "Tissierellales",
+      "Tissierellia",
+      "Peptoniphilaceae",
+      "Eubacteriaceae",
+      "Roseburia",
+      "Eubacterium_g4",
+      "Agathobacter",
+      "PAC000195_g",
+      "Catenibacterium"
+    ],
+    "taxa_depleted": []
+  },
+  "7": {
+    "taxa_enriched": [
+      "Bacteroides spp",
+      "Alistipes spp",
+      "Odoribacter spp",
+      "Barnesiella spp",
+      "Odoribacter splanchnicus",
+      "Bacteroides vulgatus",
+      "Klebsiella pneumoniae",
+      "Bacteroides fragilis",
+      "Eggerthella lenta",
+      "Bacteroides dorei",
+      "Desulfovibrio fairfieldensis"
+    ],
+    "taxa_depleted": [
+      "Eubacterium spp",
+      "Roseburia spp",
+      "Collinsella spp",
+      "Butyrivibrio hungatei",
+      "Butyrivibrio proteoclasticus",
+      "Eubacterium eligens",
+      "Eubacterium hallii",
+      "Eubacterium rectale",
+      "Clostridium sp. strain SY8519",
+      "Roseburia hominis",
+      "Faecalibacterium prausnitzii",
+      "Blautia hansenii",
+      "Adlercreutzia equolifaciens"
+    ]
+  },
+  "8": {
+    "taxa_enriched": [
+      "Bacteroidaceae",
+      "Erysipelotrichaceae",
+      "Weeksellaceae",
+      "Bacillaceae",
+      "Paenibacillaceae",
+      "Brucellaceae",
+      "Xanthomonadaceae",
+      "Bifidobacterium",
+      "Bacteroides",
+      "Bilophila",
+      "Fusobacteria",
+      "Actinobacteria",
+      "Verrucomicrobia",
+      "Coriobacteriaceae",
+      "Bacteroides"
+    ],
+    "taxa_depleted": [
+      "Lachnospiraceae",
+      "Coriobacteriaceae",
+      "Bacteroides"
+    ]
+  },
+  "9": {
+    "taxa_enriched": [
+      "Collinsella",
+      "Desulfovibrio",
+      "Oscillospiraceae_UCG-005",
+      "Akkermansia",
+      "UBA1819"
+    ],
+    "taxa_depleted": [
+      "Faecalibacterium",
+      "Lachnospira",
+      "[Eubacterium]_ventriosum_group",
+      "Lachnospiraceae_ND3007_group",
+      "Lachnospiraceae"
+    ]
+  },
+  "10": {
+    "taxa_enriched": [
+      "Clostridium cluster IV",
+      "Akkermansia",
+      "Bifidobacterium",
+      "lactic acid bacteria"
+    ],
+    "taxa_depleted": []
+  },
+  "11": {
+    "taxa_enriched": [
+      "Dialister",
+      "Clostridia_UCG-014"
+    ],
+    "taxa_depleted": []
+  },
+  "12": {
+    "taxa_enriched": [],
+    "taxa_depleted": []
+  },
+  "13": {
+    "taxa_enriched": [
+      "Proteobacteria",
+      "Actinobacteria",
+      "Escherichia",
+      "Shigella",
+      "Streptococcus",
+      "Collinsella",
+      "Lactobacillus",
+      "Lactococcus"
+    ],
+    "taxa_depleted": [
+      "Firmicutes",
+      "Bacteroidetes",
+      "Faecalibacterium",
+      "Subdoligranulum",
+      "Eubacterium rectal group",
+      "Roseburia",
+      "Lachnoclostridium",
+      "Butyricicoccus"
+    ]
+  },
+  "14": {
+    "taxa_enriched": [
+      "Dorea"
+    ],
+    "taxa_depleted": [
+      "Oscillibacter",
+      "Anaerostipes",
+      "Lachnospiraceae"
+    ]
+  }
+}

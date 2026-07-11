@@ -1,0 +1,164 @@
+[
+  {
+    "model": "qwopus3.5-27b-v3",
+    "variant": "original",
+    "gold": "orig",
+    "P": "0.668",
+    "R": "0.856",
+    "F1": "0.751",
+    "judge_time": "-"
+  },
+  {
+    "model": "qwopus3.5-27b-v3",
+    "variant": "original",
+    "gold": "fable",
+    "P": "0.806",
+    "R": "0.806",
+    "F1": "0.806",
+    "judge_time": ""
+  },
+  {
+    "model": "qwopus3.5-27b-v3",
+    "variant": "judge_b1",
+    "gold": "orig",
+    "P": "0.709",
+    "R": "0.847",
+    "F1": "0.772",
+    "judge_time": "1643s (109.5s/pp, 196calls)"
+  },
+  {
+    "model": "qwopus3.5-27b-v3",
+    "variant": "judge_b1",
+    "gold": "fable",
+    "P": "0.832",
+    "R": "0.784",
+    "F1": "0.808",
+    "judge_time": ""
+  },
+  {
+    "model": "qwopus3.5-27b-v3",
+    "variant": "judge_b3",
+    "gold": "orig",
+    "P": "0.697",
+    "R": "0.838",
+    "F1": "0.761",
+    "judge_time": "628s (41.8s/pp, 70calls)"
+  },
+  {
+    "model": "qwopus3.5-27b-v3",
+    "variant": "judge_b3",
+    "gold": "fable",
+    "P": "0.837",
+    "R": "0.784",
+    "F1": "0.810",
+    "judge_time": ""
+  },
+  {
+    "model": "qwythos-9b",
+    "variant": "original",
+    "gold": "orig",
+    "P": "0.548",
+    "R": "0.846",
+    "F1": "0.665",
+    "judge_time": "-"
+  },
+  {
+    "model": "qwythos-9b",
+    "variant": "original",
+    "gold": "fable",
+    "P": "0.687",
+    "R": "0.806",
+    "F1": "0.742",
+    "judge_time": ""
+  },
+  {
+    "model": "qwythos-9b",
+    "variant": "judge_b1",
+    "gold": "orig",
+    "P": "0.602",
+    "R": "0.602",
+    "F1": "0.602",
+    "judge_time": "621s (41.4s/pp, 230calls)"
+  },
+  {
+    "model": "qwythos-9b",
+    "variant": "judge_b1",
+    "gold": "fable",
+    "P": "0.727",
+    "R": "0.520",
+    "F1": "0.606",
+    "judge_time": ""
+  },
+  {
+    "model": "qwythos-9b",
+    "variant": "judge_b3",
+    "gold": "orig",
+    "P": "0.612",
+    "R": "0.636",
+    "F1": "0.624",
+    "judge_time": "251s (16.7s/pp, 83calls)"
+  },
+  {
+    "model": "qwythos-9b",
+    "variant": "judge_b3",
+    "gold": "fable",
+    "P": "0.716",
+    "R": "0.536",
+    "F1": "0.613",
+    "judge_time": ""
+  },
+  {
+    "model": "qwen2.5-32b-instruct",
+    "variant": "original",
+    "gold": "orig",
+    "P": "0.598",
+    "R": "0.613",
+    "F1": "0.606",
+    "judge_time": "-"
+  },
+  {
+    "model": "qwen2.5-32b-instruct",
+    "variant": "original",
+    "gold": "fable",
+    "P": "0.598",
+    "R": "0.432",
+    "F1": "0.502",
+    "judge_time": ""
+  },
+  {
+    "model": "qwen2.5-32b-instruct",
+    "variant": "judge_b1",
+    "gold": "orig",
+    "P": "0.768",
+    "R": "0.521",
+    "F1": "0.621",
+    "judge_time": "1735s (115.7s/pp, 127calls)"
+  },
+  {
+    "model": "qwen2.5-32b-instruct",
+    "variant": "judge_b1",
+    "gold": "fable",
+    "P": "0.707",
+    "R": "0.337",
+    "F1": "0.457",
+    "judge_time": ""
+  },
+  {
+    "model": "qwen2.5-32b-instruct",
+    "variant": "judge_b3",
+    "gold": "orig",
+    "P": "0.661",
+    "R": "0.585",
+    "F1": "0.621",
+    "judge_time": "640s (42.7s/pp, 47calls)"
+  },
+  {
+    "model": "qwen2.5-32b-instruct",
+    "variant": "judge_b3",
+    "gold": "fable",
+    "P": "0.633",
+    "R": "0.397",
+    "F1": "0.488",
+    "judge_time": ""
+  }
+]
