@@ -39,20 +39,23 @@ touched, and no human-entered code is ever overwritten — verified 0 changed).
 
 | | before | after |
 |---|---|---|
-| rows with a data accession code | 4,405 | **5,092 (+687)** |
+| rows with a data accession code | 4,405 | **5,117 (+712)** |
 
-The 4,141 previously-blank target rows now break down as:
+Every code-less row with a DOI — whether it started blank or was already marked `N/A` — is triaged
+the same way (the old blank-vs-N/A split was an artifact of which pipeline touched the sheet first):
 
 | status | rows | meaning |
 |---|---|---|
-| **coded** | **687** | 649 from PMC/EPMC + NCBI full text, 38 from OA copies outside PMC |
-| `OA_AVAILABLE` | 1,796 | free full text exists outside PMC — **click-through URL is in the row**; no accession was in it |
-| `PAYWALLED` | 1,390 | full text at publisher, retrievable with library access |
-| `HUMAN_CAN_GET` | 114 | restricted PMC copy exists; human-retrievable |
-| residual floor | 154 | genuinely nothing to fetch (no DOI / no record) |
+| **coded** | **712** | 655 from PMC/EPMC + NCBI full text, 57 from OA copies outside PMC |
+| `OA_AVAILABLE` | 3,118 | free full text exists outside PMC — **click-through URL is in the row** |
+| `PAYWALLED` | 2,319 | full text at publisher, retrievable with library access |
+| `HUMAN_CAN_GET` | 436 | restricted PMC copy exists; human-retrievable |
+| definitive floor | 1,764 | we/the old pipeline read it: "available on request", "no data", or read-and-none |
+| residual | 338 | no DOI / no record / nothing to act on |
 
-The old "3,378 dead rows" is now a **triaged curator worklist**: 3,300 of them are retrievable,
-most with a URL a curator can click straight through. Only 154 are true dead ends.
+So the no-code pile is now a **triaged curator worklist**, not a flat "dead" column: most rows are
+retrievable, thousands with a URL a curator can click straight through, and the "don't bother" rows
+(on request / no data / already-read-none) are kept as such rather than mislabeled as retrievable.
 
 ## What changed vs the old Apps Script version
 

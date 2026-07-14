@@ -14,14 +14,23 @@ UA = {"User-Agent": config.USER_AGENT}
 PMC_HOST = re.compile(r"(ncbi\.nlm\.nih\.gov/pmc|europepmc\.org|/PMC\d)", re.I)
 
 
+def _fillable(acc):
+    """A cell holds no real, human-entered code — safe to fill/re-triage."""
+    v = (acc or "").strip().upper()
+    return v in ("", "N/A", "NA", "ACCESSION_NOT_FOUND")
+
+
 def floor_rows():
     ext = {json.loads(l)["row_index"]: json.loads(l) for l in open(os.path.join(config.HERE, "extracted.jsonl"))}
     recs = {json.loads(l)["row_index"]: json.loads(l) for l in open(config.RECORDS_PATH)}
     out = []
     for i, e in ext.items():
-        # TARGET rows only (the 3,378 true-floor job), not answered rows we happened to score N/A
-        if recs[i].get("target") and e["accession_col"] == "N/A" \
-                and e["flag"] != "HUMAN_CAN_GET" and recs[i].get("doi"):
+        # EVERY code-less row with a DOI, regardless of blank-target vs prod-N/A. The old
+        # target-only boundary was an artifact of which pipeline filled the sheet first; two rows
+        # in the same state should get the same triage. Guard on acc_existing so we never touch a
+        # row that already holds a real code (never-overwrite).
+        if e["accession_col"] == "N/A" and e["flag"] != "HUMAN_CAN_GET" \
+                and recs[i].get("doi") and _fillable(recs[i].get("acc_existing")):
             out.append((i, recs[i]["doi"]))
     return out
 
