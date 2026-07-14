@@ -1,0 +1,12 @@
+# fetch artifacts — regenerable, large, not source
+cache/
+oa_cache/
+records.jsonl
+extracted.jsonl
+ncbi.jsonl
+fetch.log
+__pycache__/
+unpaywall.jsonl
+
+# logs
+*.log
