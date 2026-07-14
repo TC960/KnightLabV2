@@ -2,22 +2,35 @@
 
 ## The finding that reframes the project
 
-**Full-text availability is not the bottleneck. Accession presence is.**
+**When we can read a paper in full, a slight majority already contain an accession. The papers that
+stay unanswered are the ones where reading doesn't help — and increasingly that's because they never
+deposited data, not because we can't reach them.**
 
-We can now reach the full text for the large majority of the papers we previously wrote off as
-"no full text." Of the ~3,300 unanswered rows with a DOI, **~55% have a free open-access copy
-sitting outside PMC** (publisher gold/hybrid, institutional repositories, bioRxiv), and nearly all
-of the remainder are paywalled papers a human with library access opens in seconds. Almost none are
-"the paper doesn't exist / has no full text anywhere."
+Two measurements together:
 
-**And yet — when we fetched those complete papers and parsed them, only ~4% contained an accession
-code.** Even with the entire paper in hand, most of these studies simply don't report a repository
-accession: the data is in-article, "available on request," or not shared at all.
+1. **Availability is largely solvable.** Of the ~3,300 unanswered rows with a DOI, **~55% have a
+   free open-access copy outside PMC** (publisher gold/hybrid, institutional repositories, bioRxiv),
+   and nearly all the rest are paywalled papers a human with library access opens in seconds. Almost
+   none are "the paper doesn't exist / has no full text anywhere."
 
-So the ceiling on this task is not our pipeline's reach — it's a property of the literature. A large
-share of microbiome papers, especially in clinical/subscription journals, do not deposit sequence
-data under a citable accession. That's a result about data-sharing practice in the field, and it's
-the kind of thing that belongs in a discussion section, not just a spreadsheet cell.
+2. **But reaching the full text doesn't rescue the residual.** Across every channel, **55.5% of the
+   papers we fully parsed contain an accession** — yet that rate collapses as we move down the
+   channels toward the harder, still-unanswered papers:
+
+   | channel (population it handles) | parsed full texts | contain an accession |
+   |---|---|---|
+   | EPMC (all PMC papers) | 7,781 | **58.7%** |
+   | NCBI fallback (papers EPMC lacks) | 647 | 34.3% |
+   | Unpaywall, first read (OA fallback for the floor) | 264 | **14.0%** |
+
+The gradient 59% → 34% → 14% is not the open-access copies being worse (a repository PDF is the same
+text as the publisher's) — it's **selection**. By the time a paper reaches the OA fallback it's one
+no easier channel could answer, and those are disproportionately clinical/subscription studies that
+never deposited sequence data under a citable accession (data in-article, "on request," or not
+shared). So the ceiling on the remaining rows is two compounding things: some have no open copy to
+machine-read (a curation task — open the paywalled ones), and the ones we *can* read mostly just
+don't contain an accession (a fact about data-sharing practice in the field). The second is the
+discussion-section point.
 
 ## What the pipeline delivered
 
