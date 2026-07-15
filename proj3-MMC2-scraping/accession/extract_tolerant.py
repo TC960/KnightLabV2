@@ -58,4 +58,13 @@ def extract_tolerant(text):
                 continue                                   # production already keeps it -> not our case
             if _DEPOSIT.search(text[max(0, at - 120): at + L + 120]):
                 out[code] = {"code": code, "repo": repo, "prov": "unclear (lookalike-fix)"}
+    # 4) SRA submission IDs (SUB\d{6,}) — a deposit signal the base dictionary never had
+    #    (surfaced by the subagent reject-audit). Require deposit language nearby.
+    for m in re.finditer(r"\bSUB\d{6,}\b", text):
+        code = m.group(0).upper()
+        if code in out:
+            continue
+        at, L = m.start(), len(m.group(0))
+        if _DEPOSIT.search(text[max(0, at - 120): at + L + 80]):
+            out[code] = {"code": code, "repo": "SRA-submission", "prov": "own (SUB submission id)"}
     return list(out.values())

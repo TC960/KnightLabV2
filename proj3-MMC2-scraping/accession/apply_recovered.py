@@ -62,6 +62,14 @@ def gather():
         for r in json.load(open(pl)):
             add(r["row_index"], [c["code"] for c in r["codes"]], "lookalike-collision fix")
 
+    # SRA submission IDs (SUB...) — a miss class found by the subagent reject-audit
+    sp = os.path.join(config.HERE, "sub_recovered.jsonl")
+    if os.path.exists(sp):
+        for line in open(sp):
+            if line.strip():
+                r = json.loads(line)
+                add(r["row_index"], [c["code"] for c in r["codes"]], "SRA submission ID (curator: map SUB->accession)")
+
     # headful real-Chrome (CDP) browser recovery + tolerant re-audit — all browser_re* shard files
     import glob
     for fp in glob.glob(os.path.join(config.HERE, "browser_*.jsonl")):
