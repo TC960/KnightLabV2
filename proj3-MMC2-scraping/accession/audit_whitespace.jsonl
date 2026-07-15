@@ -1,0 +1,425 @@
+[
+ {
+  "row_index": 10876,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1038/ctg.2015.20",
+  "pmcid": "PMC4816248",
+  "codes": [
+   {
+    "code": "DRA002611",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "quences analyzed in the present study were deposited in the DDBJ/GenBank/EMBL database with accession numbers DRA 002611, 002617, and 002618. Statistical analysis All statistical analyses were conducted with th"
+   }
+  ]
+ },
+ {
+  "row_index": 11503,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.3389/fonc.2025.1616928",
+  "pmcid": "PMC12497615",
+  "codes": [
+   {
+    "code": "PRJNA1328350",
+    "repo": "BioProject",
+    "context": "ata presented in the study are deposited in the NCBI Sequence Read Archive (SRA) repository, accession number PRJNA 1328350. Ethics statement The studies involving humans were approved by Hospital of Stomatology, "
+   }
+  ]
+ },
+ {
+  "row_index": 12458,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1186/s40168-017-0295-1",
+  "pmcid": "PMC5508794",
+  "codes": [
+   {
+    "code": "ERS4516545",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "ryota linages were removed from the analysis. Raw sequences were deposited in MG-RAST under the accession numbers 4516545.3-4516585.3. UPLC-MS metabolomic profiling Metabolomic profiling was performed as previou"
+   }
+  ]
+ },
+ {
+  "row_index": 12610,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1186/gb-2012-13-9-r79",
+  "pmcid": "PMC3506950",
+  "codes": [
+   {
+    "code": "ERS82111",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "ion numbers and availability Sequences generated in this study are publicly available (NCBI BioProject ID numbers 82111 and 175224). Abbreviations CD: Crohn's disease; GG: GreenGenes; GI: gastrointestinal; IBD"
+   }
+  ]
+ },
+ {
+  "row_index": 12824,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1186/s40168-017-0314-2",
+  "pmcid": "PMC5557527",
+  "codes": [
+   {
+    "code": "PRJNA381557",
+    "repo": "BioProject",
+    "context": "g depths of these 2 samples were 2148 and 423, respectively. These data are publicly available (BioProject ID PRJNA 381557). Publicly available dataset Additionally, a publicly available dataset of human fecal mi"
+   }
+  ]
+ },
+ {
+  "row_index": 200,
+  "flag": "ON_REQUEST",
+  "doi": "10.1155/2022/5121496",
+  "pmcid": "PMC9519354",
+  "codes": [
+   {
+    "code": "PRJNA795467",
+    "repo": "BioProject",
+    "context": "hese data can be found here: https://submit.ncbi.nlm.nih.gov/subs/sra/SUB10907576/overview , BioProject ID is PRJNA 795467. Other datasets used and analyzed during the current study are available from the corresp"
+   }
+  ]
+ },
+ {
+  "row_index": 372,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1080/19490976.2022.2070392",
+  "pmcid": "PMC9116421",
+  "codes": [
+   {
+    "code": "PRJNA762543",
+    "repo": "BioProject",
+    "context": "f data and material The raw metagenomic sequences are deposited at NCBI\u2019s BioProject database under accession PRJNA 762543. Disclosure statement No potential conflict of interest was reported by the author(s). Su"
+   }
+  ]
+ },
+ {
+  "row_index": 703,
+  "flag": "ON_REQUEST",
+  "doi": "10.3390/nu13082660",
+  "pmcid": "PMC8398773",
+  "codes": [
+   {
+    "code": "PRJNA678145",
+    "repo": "BioProject",
+    "context": "posited in the Short Read Archive of the National Center for Biotechnology Information under accession number PRJNA 678145. 2.6. Safety Assessment To evaluate the safety of probiotic administration, we monitored "
+   }
+  ]
+ },
+ {
+  "row_index": 736,
+  "flag": "ON_REQUEST",
+  "doi": "10.7189/jogh.11.04047",
+  "pmcid": "PMC8325932",
+  "codes": [
+   {
+    "code": "PRJNA559803",
+    "repo": "BioProject",
+    "context": "y IRB protocol #34646). Data sharing: 16S rRNA gene amplicon sequencing data are available at SRA (Bioproject PRJNA 559803, SUB6166881 and SUB6110437). A detailed description of the data analysis, along with all "
+   }
+  ]
+ },
+ {
+  "row_index": 765,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1038/s41598-021-92870-0",
+  "pmcid": "PMC8253849",
+  "codes": [
+   {
+    "code": "PRJDB10871",
+    "repo": "BioProject",
+    "context": "ougy_plots.py command. Sequence data were deposited in DDBJ under accession numbers DRA 011218 and BioProject PRJDB 10871. \u03b1-Diversity analysis The \u03b1-diversity of gut microbiota composition was calculated using "
+   },
+   {
+    "code": "DRA011218",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "e QIIME summarize_taxa_througy_plots.py command. Sequence data were deposited in DDBJ under accession numbers DRA 011218 and BioProject PRJDB 10871. \u03b1-Diversity analysis The \u03b1-diversity of gut microbiota compos"
+   }
+  ]
+ },
+ {
+  "row_index": 774,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1038/s41598-021-92007-3",
+  "pmcid": "PMC8219743",
+  "codes": [
+   {
+    "code": "SRR12072450",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "vailability The raw reads were deposited in the NCBI Sequence Read Archive (SRA) database (Accession Numbers: SRR 12072450\u201312072561). Competing interests The authors declare no competing interests. Footnotes Publ"
+   }
+  ]
+ },
+ {
+  "row_index": 821,
+  "flag": "ON_REQUEST",
+  "doi": "10.1038/s41598-021-89963-1",
+  "pmcid": "PMC8134445",
+  "codes": [
+   {
+    "code": "DRA011436",
+    "repo": "SRA/ENA/DDBJ",
+    "context": " wrote the manuscript. T.Y. and K.H. revised the manuscript. Data availability Datasets from DDBJ (accession# DRA 011436) are publicly available. The datasets generated during and/or analyzed during the current"
+   }
+  ]
+ },
+ {
+  "row_index": 859,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.3390/nu13041272",
+  "pmcid": "PMC8069973",
+  "codes": [
+   {
+    "code": "PRJNA687346",
+    "repo": "BioProject",
+    "context": "ty Statement Sequence data are available in the NCBI Nucleotide Archive under SRA: SRP 299187 and BioProject: PRJNA 687346. Conflicts of Interest The authors declare no conflict of interest. References 1. Locanto"
+   },
+   {
+    "code": "SRP299187",
+    "repo": "SRA/ENA/DDBJ",
+    "context": " the study. Data Availability Statement Sequence data are available in the NCBI Nucleotide Archive under SRA: SRP 299187 and BioProject: PRJNA 687346. Conflicts of Interest The authors declare no conflict of in"
+   }
+  ]
+ },
+ {
+  "row_index": 882,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1371/journal.pone.0249688",
+  "pmcid": "PMC8031401",
+  "codes": [
+   {
+    "code": "SRA13280559",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "es pmc-license-ref CC BY Data Availability The sequencing data underlying this study are available from NCBI (SRA 13280559-13280578). Data Availability The sequencing data underlying this study are available from"
+   }
+  ]
+ },
+ {
+  "row_index": 1605,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1038/s41598-019-40182-9",
+  "pmcid": "PMC6411954",
+  "codes": [
+   {
+    "code": "DRA007110",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "\u2013V4 sequences analyzed in this study were deposited in the DDBJ/GenBank/EMBL database under accession numbers DRA 007110. The \u03b1-diversity of microbial communities in each sample were evaluated using the Shannon"
+   }
+  ]
+ },
+ {
+  "row_index": 1839,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1038/emi.2017.101",
+  "pmcid": "PMC5750457",
+  "codes": [
+   {
+    "code": "PRJEB20509",
+    "repo": "BioProject",
+    "context": "ous study. 12 The raw reads were deposited into the European Nucleotide Archive database (study accession no. PRJEB 20509). Sequence assembly and analysis Sequence assembly and analysis was carried out as descri"
+   }
+  ]
+ },
+ {
+  "row_index": 1924,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1371/journal.pone.0180991",
+  "pmcid": "PMC5507302",
+  "codes": [
+   {
+    "code": "ERS4721803",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "AST as \u201cSingle Batch Fermentation System Simulating Human Colonic Microbiota_Taurine\u201d under the accession numbers 4721803.3\u20134721826.3. Real-time PCR We performed real-time PCR to quantify total bacterial growth "
+   }
+  ]
+ },
+ {
+  "row_index": 2006,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1186/s40168-016-0216-8",
+  "pmcid": "PMC5200962",
+  "codes": [
+   {
+    "code": "ERS4516545",
+    "repo": "SRA/ENA/DDBJ",
+    "context": " In total, 44,515,418 reads were obtained and raw sequences were deposited in MG-RAST under the accession numbers 4516545.3-4516585.3. UPLC-MS metabolomic profiling Metabolomic profiling was performed as previou"
+   }
+  ]
+ },
+ {
+  "row_index": 2078,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1038/srep26985",
+  "pmcid": "PMC4887896",
+  "codes": [
+   {
+    "code": "ERS4603845",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "inset_ 9_032012 resulting in 2,228,291 reads. All sequences were deposited in MG-RAST under the accession numbers 4603845.3 - 4603893.3. Statistical analysis NGS profiles were analysed by multivariate partial le"
+   }
+  ]
+ },
+ {
+  "row_index": 2113,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1038/ismej.2015.151",
+  "pmcid": "PMC4817673",
+  "codes": [
+   {
+    "code": "ERS4571868",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "l. , 2014 ). Sequence data have been deposited in MG-RAST ( http://metagenomics.anl.gov ) under accession numbers 4571868.3\u20134571924.3 and project number 10023. Bioinformatics analysis Paired end reads were quali"
+   }
+  ]
+ },
+ {
+  "row_index": 2273,
+  "flag": "NO_ACCESSION",
+  "doi": "10.1128/mBio.01133-14",
+  "pmcid": "PMC4030452",
+  "codes": [
+   {
+    "code": "ERS4547358",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "//metagenomics.anl.gov/ ) under the project Phage Biofilm Study or under consecutive individual accession numbers 4547358.3 to 4547405.3 for the viromes and 4547630.3 to 4547677.3 for the 16S rRNAs. SUPPLEMENTAL"
+   }
+  ]
+ },
+ {
+  "row_index": 2274,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1371/journal.pone.0097214",
+  "pmcid": "PMC4022512",
+  "codes": [
+   {
+    "code": "ERS2419687",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "ences are available online at the NIH Sequence Read Archive ( http://www.ncbi.nlm.nih.gov/sra , accession numbers 2419687\u20132419764). Microbe-Specific PCR Select BAL specimens were analyzed via PCR using microbe-s"
+   }
+  ]
+ },
+ {
+  "row_index": 2292,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1371/journal.pone.0089417",
+  "pmcid": "PMC3938479",
+  "codes": [
+   {
+    "code": "ERS4546490",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "a quality check. Sequences have been deposited in MG-RAST ( http://metagenomics.anl.gov ) under accession numbers 4546490.3 to 4546560.3. Random subsampling produced 96,387 sequences (1,083 reads for each sample"
+   }
+  ]
+ },
+ {
+  "row_index": 2400,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1186/gb-2012-13-9-r79",
+  "pmcid": "PMC3506950",
+  "codes": [
+   {
+    "code": "ERS82111",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "ion numbers and availability Sequences generated in this study are publicly available (NCBI BioProject ID numbers 82111 and 175224). Abbreviations CD: Crohn's disease; GG: GreenGenes; GI: gastrointestinal; IBD"
+   }
+  ]
+ },
+ {
+  "row_index": 2457,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1038/srep00170",
+  "pmcid": "PMC3240969",
+  "codes": [
+   {
+    "code": "ERS4471952",
+    "repo": "SRA/ENA/DDBJ",
+    "context": "3 sequences were used in downstream analysis. All sequences were deposited in MG-RAST under the accession numbers 4471952.3\u20134471998.3. Sequences were then clustered at a variety of percent identities using the C"
+   }
+  ]
+ },
+ {
+  "row_index": 3010,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1038/s41598-025-88610-3",
+  "pmcid": "PMC11828920",
+  "codes": [
+   {
+    "code": "PRJNA928388",
+    "repo": "BioProject",
+    "context": "loaded to the Sequence Read Archive (SRA) database, resulting in the acquisition of the SRA accession numbers PRJNA 928388 and PRJNA 926960. Processing of sequencing data Based on the specified criteria, raw fast"
+   },
+   {
+    "code": "PRJNA926960",
+    "repo": "BioProject",
+    "context": "uence Read Archive (SRA) database, resulting in the acquisition of the SRA accession numbers PRJNA 928388 and PRJNA 926960. Processing of sequencing data Based on the specified criteria, raw fastq files underwent"
+   }
+  ]
+ },
+ {
+  "row_index": 3202,
+  "flag": "ON_REQUEST",
+  "doi": "10.1038/s41380-024-02551-3",
+  "pmcid": "PMC11449789",
+  "codes": [
+   {
+    "code": "PRJNA953406",
+    "repo": "BioProject",
+    "context": " to submit the manuscript for publication. Data availability 16 S amplicon data has been archived in NCBI SRA PRJNA 953406. Clinical data and processing scripts are available from the corresponding authors on rea"
+   }
+  ]
+ },
+ {
+  "row_index": 3313,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1371/journal.pone.0306582",
+  "pmcid": "PMC11221673",
+  "codes": [
+   {
+    "code": "PRJNA1077638",
+    "repo": "BioProject",
+    "context": "ting information files. All raw sequences were deposited in NCBI Sequence Read Archive under accession number PRJNA 1077638 for metagenomics sequencing and PRJNA 1077648 for 16S rRNA gene sequencing. Data Availabi"
+   },
+   {
+    "code": "PRJNA1077648",
+    "repo": "BioProject",
+    "context": " deposited in NCBI Sequence Read Archive under accession number PRJNA 1077638 for metagenomics sequencing and PRJNA 1077648 for 16S rRNA gene sequencing. Data Availability All relevant data are within the manuscri"
+   }
+  ]
+ },
+ {
+  "row_index": 3433,
+  "flag": "NO_ACCESSION",
+  "doi": "10.3390/nu16060786",
+  "pmcid": "PMC10975138",
+  "codes": [
+   {
+    "code": "PRJNA922681",
+    "repo": "BioProject",
+    "context": "ent Sequencing data have been deposited in NCBI\u2019s Sequence Read Archive (SRA) database under accession number PRJNA 922681. Conflicts of Interest The authors declare no conflicts of interest. References 1. Zimmer"
+   }
+  ]
+ },
+ {
+  "row_index": 3618,
+  "flag": "ON_REQUEST",
+  "doi": "10.1111/iwj.14267",
+  "pmcid": "PMC10588311",
+  "codes": [
+   {
+    "code": "PRJNA764460",
+    "repo": "BioProject",
+    "context": "iversity Librarians. DATA AVAILABILITY STATEMENT Data is available upon request from the authors NCBI SRA no. PRJNA 764460. REFERENCES 1 Hinojosa CA , Boyer\u2010Duck E , Anaya\u2010Ayala JE , et al. Impact of the bacterio"
+   }
+  ]
+ },
+ {
+  "row_index": 3622,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.1007/s00284-023-03480-0",
+  "pmcid": "PMC10575810",
+  "codes": [
+   {
+    "code": "PRJNA761547",
+    "repo": "BioProject",
+    "context": "a Availability The data are available in National Center for Biotechnology Information (NCBI) under accession PRJNA 761547. Code Availability Not applicable. Declarations Conflict of interest The authors declare "
+   }
+  ]
+ }
+]

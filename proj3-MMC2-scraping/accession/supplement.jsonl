@@ -1,0 +1,1490 @@
+[
+ {
+  "row_index": 14,
+  "pmc": "PMC9987476",
+  "doi": "10.3233/JAD-220011",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 39,
+  "pmc": "PMC9925402",
+  "doi": "10.1016/j.numecd.2022.11.017",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 47,
+  "pmc": "PMC9909298",
+  "doi": "10.3724/abbs.2021010",
+  "status": "ok",
+  "files": [
+   "227TableS2.docx",
+   "abbs-2021-227-6.gif",
+   "abbs-2021-227-6.jpg",
+   "abbs-2021-227-5.gif",
+   "abbs-2021-227-5.jpg",
+   "abbs-2021-227-4.jpg",
+   "227TableS3.docx",
+   "abbs-2021-227-4.gif",
+   "abbs-2021-227-1.jpg",
+   "abbs-2021-227-2.jpg",
+   "abbs-2021-227-3.gif",
+   "abbs-2021-227-2.gif",
+   "227TableS1.docx",
+   "abbs-2021-227-3.jpg",
+   "abbs-2021-227-1.gif"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 78,
+  "pmc": "PMC9813806",
+  "doi": "10.1158/1055-9965.EPI-22-0308",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 80,
+  "pmc": "PMC9812902",
+  "doi": "10.1158/1078-0432.CCR-22-1254",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 106,
+  "pmc": "PMC9746351",
+  "doi": "10.1111/apt.17236",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 111,
+  "pmc": "PMC9742192",
+  "doi": "10.1097/QAD.0000000000003400",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 134,
+  "pmc": "PMC9673179",
+  "doi": "10.1097/QAD.0000000000003363",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 146,
+  "pmc": "PMC9641193",
+  "doi": "10.1111/ijpo.12921",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 175,
+  "pmc": "PMC9588659",
+  "doi": "10.1016/j.clnu.2022.08.031",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 177,
+  "pmc": "PMC9582043",
+  "doi": "10.1038/s41390-022-02051-6",
+  "status": "err:HTTPError",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 215,
+  "pmc": "PMC9489674",
+  "doi": "10.1097/MPG.0000000000003570",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 222,
+  "pmc": "PMC9463407",
+  "doi": "10.1080/08880018.2022.2049937",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 231,
+  "pmc": "PMC9437120",
+  "doi": "10.1097/PSY.0000000000001103",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 259,
+  "pmc": "PMC9359927",
+  "doi": "10.1016/j.jaci.2022.02.005",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 324,
+  "pmc": "PMC9230048",
+  "doi": "10.1111/all.14877",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 332,
+  "pmc": "PMC9203870",
+  "doi": "10.1097/PCC.0000000000002929",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 344,
+  "pmc": "PMC9169991",
+  "doi": "10.1002/hep.31421",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 349,
+  "pmc": "PMC9157377",
+  "doi": "10.1016/j.mimet.2021.106213",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 351,
+  "pmc": "PMC9153322",
+  "doi": "10.1158/1541-7786.MCR-19-0451",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 367,
+  "pmc": "PMC9124239",
+  "doi": "10.1016/j.jcf.2021.11.003",
+  "status": "err:HTTPError",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 395,
+  "pmc": "PMC9057387",
+  "doi": "10.1016/j.soard.2020.06.032",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 406,
+  "pmc": "PMC9036861",
+  "doi": "10.1016/j.jaci.2021.08.022",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 467,
+  "pmc": "PMC8893141",
+  "doi": "10.1002/ejhf.2215",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 518,
+  "pmc": "PMC8795472",
+  "doi": "10.1002/art.41955",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 522,
+  "pmc": "PMC8781727",
+  "doi": "10.1007/s13365-020-00933-1",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 531,
+  "pmc": "PMC8761497",
+  "doi": "10.1111/apt.15675",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 537,
+  "pmc": "PMC8752492",
+  "doi": "10.1016/j.jchromb.2021.123027",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 613,
+  "pmc": "PMC8603342",
+  "doi": "10.1007/s11695-021-05805-z",
+  "status": "ok",
+  "files": [
+   "11695_2021_5805_Fig4_HTML.gif",
+   "11695_2021_5805_MOESM1_ESM.pdf",
+   "11695_2021_5805_Figa_HTML.jpg",
+   "11695_2021_5805_Fig2_HTML.jpg",
+   "11695_2021_5805_Fig4_HTML.jpg",
+   "11695_2021_5805_Figa_HTML.gif",
+   "11695_2021_5805_Fig1_HTML.jpg",
+   "11695_2021_5805_Fig3_HTML.jpg",
+   "11695_2021_5805_Fig1_HTML.gif",
+   "11695_2021_5805_Fig2_HTML.gif",
+   "11695_2021_5805_Fig3_HTML.gif"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 635,
+  "pmc": "PMC8556222",
+  "doi": "10.1016/j.jtct.2021.07.009",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 636,
+  "pmc": "PMC8553812",
+  "doi": "10.1136/gutjnl-2020-322473",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 640,
+  "pmc": "PMC8541916",
+  "doi": "10.1007/s10552-021-01490-6",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 641,
+  "pmc": "PMC8541908",
+  "doi": "10.1007/s00109-021-02118-7",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 647,
+  "pmc": "PMC8516158",
+  "doi": "10.1007/s00268-021-06062-y",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 655,
+  "pmc": "PMC8486893",
+  "doi": "10.1016/j.cgh.2021.03.045",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 678,
+  "pmc": "PMC8444996",
+  "doi": "10.1111/dom.14145",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 722,
+  "pmc": "PMC8355025",
+  "doi": "10.1016/j.jaci.2021.03.028",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 733,
+  "pmc": "PMC8328038",
+  "doi": "10.3920/BM2020.0098",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 744,
+  "pmc": "PMC8302972",
+  "doi": "10.1007/s11684-021-0856-3",
+  "status": "ok",
+  "files": [
+   "11684_2021_856_MOESM1_ESM.pdf"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 755,
+  "pmc": "PMC8282757",
+  "doi": "10.1016/j.jad.2021.05.107",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 756,
+  "pmc": "PMC8273076",
+  "doi": "10.1016/j.jaci.2021.01.031",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 779,
+  "pmc": "PMC8211907",
+  "doi": "10.1111/1471-0528.16633",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 790,
+  "pmc": "PMC8191575",
+  "doi": "10.1002/cncr.33161",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 797,
+  "pmc": "PMC8169604",
+  "doi": "10.1007/s10461-020-03130-7",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 828,
+  "pmc": "PMC8120597",
+  "doi": "10.1016/j.cgh.2020.11.006",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 838,
+  "pmc": "PMC8110603",
+  "doi": "10.1007/s00192-020-04580-2",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 849,
+  "pmc": "PMC8085911",
+  "doi": "10.1016/j.niox.2020.12.001",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 851,
+  "pmc": "PMC8085102",
+  "doi": "10.1007/s00394-021-02571-7",
+  "status": "ok",
+  "files": [
+   "394_2021_2571_Fig6_HTML.jpg",
+   "394_2021_2571_Fig5_HTML.gif",
+   "394_2021_2571_Fig2_HTML.jpg",
+   "394_2021_2571_Fig5_HTML.jpg",
+   "394_2021_2571_Fig1_HTML.gif",
+   "394_2021_2571_Article_Equa.gif",
+   "394_2021_2571_Fig4_HTML.jpg",
+   "394_2021_2571_MOESM1_ESM.docx",
+   "394_2021_2571_Fig6_HTML.gif",
+   "394_2021_2571_Fig3_HTML.jpg",
+   "394_2021_2571_Fig3_HTML.gif",
+   "394_2021_2571_Fig2_HTML.gif",
+   "394_2021_2571_Article_IEq1.gif",
+   "394_2021_2571_Fig4_HTML.gif",
+   "394_2021_2571_Fig1_HTML.jpg"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 860,
+  "pmc": "PMC8068580",
+  "doi": "10.1097/GME.0000000000001730",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 864,
+  "pmc": "PMC8062047",
+  "doi": "10.1007/s40257-019-00471-5",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 876,
+  "pmc": "PMC8043253",
+  "doi": "10.1016/j.anai.2020.09.007",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 899,
+  "pmc": "PMC7987909",
+  "doi": "10.1007/s10620-020-06612-9",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 911,
+  "pmc": "PMC7948843",
+  "doi": "10.1093/ajcn/nqaa340",
+  "status": "ok",
+  "files": [
+   "nqaa340fig1.gif",
+   "nqaa340_supplemental_file.docx",
+   "nqaa340fig2.jpg",
+   "nqaa340fig2.gif",
+   "nqaa340fig1.jpg"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 917,
+  "pmc": "PMC7932475",
+  "doi": "10.1016/j.ijrobp.2019.12.040",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 918,
+  "pmc": "PMC7927749",
+  "doi": "10.1002/oby.23081",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 920,
+  "pmc": "PMC7923600",
+  "doi": "10.1111/ijpo.12642",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 958,
+  "pmc": "PMC7849973",
+  "doi": "10.1093/jn/nxaa285",
+  "status": "ok",
+  "files": [
+   "nxaa285fig1.jpg",
+   "nxaa285fig1.gif",
+   "nxaa285_supplemental_file.pdf"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 985,
+  "pmc": "PMC7775619",
+  "doi": "10.1002/aur.1972",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1001,
+  "pmc": "PMC7752764",
+  "doi": "10.1002/hep.31178",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1003,
+  "pmc": "PMC7749850",
+  "doi": "10.1016/j.jhep.2020.06.046",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1009,
+  "pmc": "PMC7737161",
+  "doi": "10.1093/ibd/izaa107",
+  "status": "ok",
+  "files": [
+   "izaa107_suppl_supplementary_tables.docx",
+   "izaa107_suppl_supplementary_figures.docx",
+   "izaa107_fig3.gif",
+   "izaa107_fig3.jpg",
+   "izaa107_fig2.jpg",
+   "izaa107_fig5.gif",
+   "izaa107_fig2.gif",
+   "izaa107_fig4.jpg",
+   "izaa107_fig6.gif",
+   "izaa107_fig6.jpg",
+   "izaa107_fig1.jpg",
+   "izaa107_fig4.gif",
+   "izaa107_fig5.jpg",
+   "izaa107_fig1.gif"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 1023,
+  "pmc": "PMC7701956",
+  "doi": "10.1080/08880018.2020.1759740",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1043,
+  "pmc": "PMC7676854",
+  "doi": "10.1126/scitranslmed.aav2685",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1051,
+  "pmc": "PMC7669629",
+  "doi": "10.1016/j.nutres.2020.09.004",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1082,
+  "pmc": "PMC7593804",
+  "doi": "10.1002/ppul.24766",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1097,
+  "pmc": "PMC7554089",
+  "doi": "10.1017/S0007114520001853",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1134,
+  "pmc": "PMC7524010",
+  "doi": "10.1007/s12603-020-1344-1",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1138,
+  "pmc": "PMC7511440",
+  "doi": "10.1016/j.cgh.2020.03.044",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1149,
+  "pmc": "PMC7483956",
+  "doi": "10.1016/j.soard.2020.04.006",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1168,
+  "pmc": "PMC7423693",
+  "doi": "10.1016/j.healun.2020.02.004",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1178,
+  "pmc": "PMC7384301",
+  "doi": "10.1136/annrheumdis-2019-216471",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1179,
+  "pmc": "PMC7382976",
+  "doi": "10.1016/j.currproblcancer.2020.100551",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1181,
+  "pmc": "PMC7371239",
+  "doi": "10.1097/QAD.0000000000002557",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1207,
+  "pmc": "PMC7301750",
+  "doi": "10.1016/j.jneuroim.2020.577237",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1214,
+  "pmc": "PMC7285383",
+  "doi": "10.1002/cncr.32403",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1228,
+  "pmc": "PMC7244073",
+  "doi": "10.18632/aging.103168",
+  "status": "ok",
+  "files": [
+   "aging-12-103168-s003..pdf",
+   "aging-12-103168-s002..pdf",
+   "aging-12-103168-g001.gif",
+   "aging-12-103168-g004.jpg",
+   "aging-12-103168-g002.jpg",
+   "aging-12-103168-g005.gif",
+   "aging-12-103168-g004.gif",
+   "aging-12-103168-g003.jpg",
+   "aging-12-103168-g002.gif",
+   "aging-12-103168-g001.jpg",
+   "aging-12-103168-g005.jpg",
+   "aging-12-103168-s001..xlsx",
+   "aging-12-103168-g003.gif"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 1276,
+  "pmc": "PMC7113119",
+  "doi": "10.1002/art.41169",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1287,
+  "pmc": "PMC7067661",
+  "doi": "10.1161/HYPERTENSIONAHA.119.14294",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1340,
+  "pmc": "PMC6956257",
+  "doi": "10.1016/j.psyneuen.2019.104469",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1370,
+  "pmc": "PMC6901102",
+  "doi": "10.1097/QAI.0000000000002229",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1405,
+  "pmc": "PMC6851467",
+  "doi": "10.1038/s41390-019-0498-1",
+  "status": "err:HTTPError",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1406,
+  "pmc": "PMC6851413",
+  "doi": "10.1002/ppul.24504",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1407,
+  "pmc": "PMC6849507",
+  "doi": "10.1016/j.neuroimage.2019.06.023",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1444,
+  "pmc": "PMC6756995",
+  "doi": "10.1053/j.gastro.2019.06.028",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1445,
+  "pmc": "PMC6754819",
+  "doi": "10.1016/j.cgh.2019.03.028",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1519,
+  "pmc": "PMC6594895",
+  "doi": "10.1038/s41390-019-0391-y",
+  "status": "err:HTTPError",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1523,
+  "pmc": "PMC6588465",
+  "doi": "10.1002/dev.21837",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1540,
+  "pmc": "PMC6554043",
+  "doi": "10.1002/ijc.32152",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1541,
+  "pmc": "PMC6548637",
+  "doi": "10.1016/j.annepidem.2019.03.005",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1546,
+  "pmc": "PMC6542268",
+  "doi": "10.1002/ppul.23953",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1559,
+  "pmc": "PMC6501846",
+  "doi": "10.1016/S0140-6736(18)32592-3",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1588,
+  "pmc": "PMC6430704",
+  "doi": "10.1002/ijc.31941",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1611,
+  "pmc": "PMC6387862",
+  "doi": "10.1097/MCG.0000000000001107",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1622,
+  "pmc": "PMC6366941",
+  "doi": "10.3920/BM2017.0059",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1689,
+  "pmc": "PMC6185796",
+  "doi": "10.1038/pr.2018.32",
+  "status": "err:HTTPError",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1725,
+  "pmc": "PMC6089374",
+  "doi": "10.1097/PSY.0000000000000493",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1765,
+  "pmc": "PMC5989928",
+  "doi": "10.1016/j.jaci.2018.01.032",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1781,
+  "pmc": "PMC5921051",
+  "doi": "10.1111/all.13232",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1820,
+  "pmc": "PMC5810433",
+  "doi": "10.1089/omi.2016.0167",
+  "status": "ok",
+  "files": [
+   "Supp_Table2.docx",
+   "Supp_Table1.docx",
+   "fig-4.gif",
+   "fig-3.gif",
+   "fig-1.jpg",
+   "fig-1.gif",
+   "fig-4.jpg",
+   "fig-3.jpg",
+   "fig-2.gif",
+   "fig-2.jpg"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 1826,
+  "pmc": "PMC5794661",
+  "doi": "10.1002/nau.23360",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1834,
+  "pmc": "PMC5763914",
+  "doi": "10.1097/PSY.0000000000000512",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1846,
+  "pmc": "PMC5726431",
+  "doi": "10.1158/0008-5472.CAN-17-1296",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1850,
+  "pmc": "PMC5724753",
+  "doi": "10.3920/BM2017.0020",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1855,
+  "pmc": "PMC5709151",
+  "doi": "10.1007/s10552-017-0933-8",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1900,
+  "pmc": "PMC5561666",
+  "doi": "10.1002/art.39572",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1914,
+  "pmc": "PMC5524612",
+  "doi": "10.1097/MPG.0000000000001522",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1979,
+  "pmc": "PMC5303123",
+  "doi": "10.1016/j.jaci.2016.08.045",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1986,
+  "pmc": "PMC5274578",
+  "doi": "10.1016/j.jpeds.2016.10.053",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1994,
+  "pmc": "PMC5235958",
+  "doi": "10.1097/MPA.0000000000000726",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 1998,
+  "pmc": "PMC5215726",
+  "doi": "10.1038/jp.2016.161",
+  "status": "err:HTTPError",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2000,
+  "pmc": "PMC5214573",
+  "doi": "10.1111/apt.13616",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2040,
+  "pmc": "PMC5012905",
+  "doi": "10.1111/apt.13750",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2052,
+  "pmc": "PMC4975423",
+  "doi": "10.3109/14767058.2015.1124081",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2092,
+  "pmc": "PMC4860110",
+  "doi": "10.1016/j.jaci.2015.10.017",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2098,
+  "pmc": "PMC4847528",
+  "doi": "10.1017/S2040174415001361",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2110,
+  "pmc": "PMC4821594",
+  "doi": "10.1158/1055-9965.EPI-15-0951",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2116,
+  "pmc": "PMC4806409",
+  "doi": "10.1016/j.jns.2016.02.042",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2137,
+  "pmc": "PMC4688197",
+  "doi": "10.1007/s00248-015-0663-y",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2146,
+  "pmc": "PMC4628778",
+  "doi": "10.1002/alr.21467",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2201,
+  "pmc": "PMC4441539",
+  "doi": "10.1097/MPG.0000000000000752",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2227,
+  "pmc": "PMC4302256",
+  "doi": "10.2337/dc14-0850",
+  "status": "ok",
+  "files": [
+   "supp_38_2_329__index.html",
+   "dc140850f1.jpg",
+   "supp_dc14-0850v140850_DC140850SupplementaryData.pdf",
+   "dc140850f1.gif"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 2232,
+  "pmc": "PMC4280348",
+  "doi": "10.1002/art.38892",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2243,
+  "pmc": "PMC4217127",
+  "doi": "10.1002/em.21878",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2263,
+  "pmc": "PMC4113339",
+  "doi": "10.1002/art.38631",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2277,
+  "pmc": "PMC4007209",
+  "doi": "10.1002/alr.21195",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2282,
+  "pmc": "PMC3975596",
+  "doi": "10.1111/j.1365-2982.2012.01891.x",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2357,
+  "pmc": "PMC3674183",
+  "doi": "10.1016/j.jpeds.2013.01.024",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2437,
+  "pmc": "PMC3303602",
+  "doi": "10.1126/science.1198719",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2743,
+  "pmc": "PMC12316437",
+  "doi": "10.1007/s11695-024-07420-0",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2755,
+  "pmc": "PMC12303748",
+  "doi": "10.1161/STROKEAHA.124.050548",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2763,
+  "pmc": "PMC12290843",
+  "doi": "10.1177/19345798251353777",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2832,
+  "pmc": "PMC12165301",
+  "doi": "10.1080/1059924X.2024.2416425",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2906,
+  "pmc": "PMC12038523",
+  "doi": "10.3748/wjg.v31.i16.105985",
+  "status": "ok",
+  "files": [
+   "105985-g002.jpg",
+   "105985-g001.jpg",
+   "105985-g004.gif",
+   "105985-g002.gif",
+   "105985-g005.gif",
+   "105985-g003.jpg",
+   "105985-g006.jpg",
+   "105985-g001.gif",
+   "105985-g004.jpg",
+   "105985-g007.jpg",
+   "105985-g006.gif",
+   "105985-g003.gif",
+   "105985-g007.gif",
+   "105985-g005.jpg"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 2919,
+  "pmc": "PMC12012164",
+  "doi": "10.1038/s41390-024-03669-4",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2932,
+  "pmc": "PMC11984501",
+  "doi": "10.1007/s00464-022-09387-4",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2936,
+  "pmc": "PMC11979954",
+  "doi": "10.1016/j.cgh.2024.06.022",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2938,
+  "pmc": "PMC11977789",
+  "doi": "10.1002/oby.24205",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2941,
+  "pmc": "PMC11972882",
+  "doi": "10.1016/j.jaci.2025.01.006",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2962,
+  "pmc": "PMC11934967",
+  "doi": "10.1016/j.jad.2025.01.089",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 2985,
+  "pmc": "PMC11892914",
+  "doi": "10.18632/aging.206200",
+  "status": "ok",
+  "files": [
+   "aging-17-206200-g005.jpg",
+   "aging-17-206200-g001.jpg",
+   "aging-17-206200-g003.jpg",
+   "aging-17-206200-g005.gif",
+   "aging-17-206200-s001.pdf",
+   "aging-17-206200-g001.gif",
+   "aging-17-206200-g002.jpg",
+   "aging-17-206200-g003.gif",
+   "aging-17-206200-g004.jpg",
+   "aging-17-206200-g004.gif",
+   "aging-17-206200-g002.gif"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 3057,
+  "pmc": "PMC11731310",
+  "doi": "10.1016/j.scitotenv.2024.176519",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3108,
+  "pmc": "PMC11633861",
+  "doi": "10.1159/000540271",
+  "status": "ok",
+  "files": [
+   "cmr-2024-0031-0006-540271_F01.gif",
+   "cmr-2024-0031-0006-540271_F03.jpg",
+   "cmr-2024-0031-0006-540271_F01.jpg",
+   "cmr-2024-0031-0006-540271_F02.gif",
+   "cmr-2024-0031-0006-540271_F02.jpg",
+   "cmr-2024-0031-0006-540271_F03.gif"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 3153,
+  "pmc": "PMC11549940",
+  "doi": "10.1038/s41380-020-0652-5",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3187,
+  "pmc": "PMC11480998",
+  "doi": "10.1016/j.jcf.2023.11.002",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3258,
+  "pmc": "PMC11316258",
+  "doi": "10.1016/j.envres.2022.114125",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3362,
+  "pmc": "PMC11131958",
+  "doi": "10.1136/ard-2022-223389",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3385,
+  "pmc": "PMC11071153",
+  "doi": "10.1016/j.cell.2024.03.014",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3454,
+  "pmc": "PMC10922064",
+  "doi": "10.1016/j.jpurol.2023.09.015",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3455,
+  "pmc": "PMC10921998",
+  "doi": "10.1016/j.dld.2023.10.011",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3482,
+  "pmc": "PMC10872415",
+  "doi": "10.1016/j.jtct.2023.11.006",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3496,
+  "pmc": "PMC10841550",
+  "doi": "10.1097/GME.0000000000002287",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3580,
+  "pmc": "PMC10674038",
+  "doi": "10.1097/HEP.0000000000000474",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3606,
+  "pmc": "PMC10619554",
+  "doi": "10.4014/jmb.2305.05009",
+  "status": "ok",
+  "files": [
+   "jmb-33-10-1376-f4.jpg",
+   "jmb-33-10-1376-f3.jpg",
+   "jmb-33-10-1376-f4.gif",
+   "jmb-33-10-1376-supple.pdf",
+   "jmb-33-10-1376-f3.gif",
+   "jmb-33-10-1376-f1.gif",
+   "jmb-33-10-1376-f2.jpg",
+   "jmb-33-10-1376-f1.jpg",
+   "jmb-33-10-1376-f2.gif"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 3612,
+  "pmc": "PMC10614279",
+  "doi": "10.1159/000528282",
+  "status": "ok",
+  "files": [
+   "dig-2023-0104-0005-528282_F05.jpg",
+   "dig-2023-0104-0005-528282_F02.gif",
+   "dig-2023-0104-0005-528282_F04.jpg",
+   "dig-2023-0104-0005-528282_F02.jpg",
+   "dig-2023-0104-0005-528282_F03.gif",
+   "dig-2023-0104-0005-528282_F04.gif",
+   "dig-2023-0104-0005-528282_F06.gif",
+   "dig-2023-0104-0005-528282_F01.gif",
+   "dig-2023-0104-0005-528282_F07.jpg",
+   "dig-2023-0104-0005-528282_F01.jpg",
+   "dig-2023-0104-0005-528282_F07.gif",
+   "dig-2023-0104-0005-528282_F06.jpg",
+   "dig-2023-0104-0005-528282_F03.jpg",
+   "dig-2023-0104-0005-528282_F05.gif"
+  ],
+  "codes": []
+ },
+ {
+  "row_index": 3637,
+  "pmc": "PMC10534226",
+  "doi": "10.1111/all.15644",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3638,
+  "pmc": "PMC10528779",
+  "doi": "10.1097/SLA.0000000000006015",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3639,
+  "pmc": "PMC10524539",
+  "doi": "10.1097/QAD.0000000000003599",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3676,
+  "pmc": "PMC10440828",
+  "doi": "10.1016/j.jcf.2022.05.011",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3714,
+  "pmc": "PMC10330617",
+  "doi": "10.1016/j.oraloncology.2023.106401",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3749,
+  "pmc": "PMC10213157",
+  "doi": "10.1002/ohn.211",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 3829,
+  "pmc": "PMC10035785",
+  "doi": "10.1111/1750-3841.15586",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 7513,
+  "pmc": "PMC6857811",
+  "doi": "10.4049/jimmunol.1900046",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 7537,
+  "pmc": "PMC5953830",
+  "doi": "10.1016/j.bbi.2018.03.025",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 7597,
+  "pmc": "PMC13094823",
+  "doi": "10.1002/cph4.70058",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 7964,
+  "pmc": "PMC13188066",
+  "doi": "10.1038/s41564-025-02157-7",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ },
+ {
+  "row_index": 12009,
+  "pmc": "PMC8678328",
+  "doi": "10.1053/j.gastro.2021.09.061",
+  "status": "no-oa",
+  "files": [],
+  "codes": []
+ }
+]

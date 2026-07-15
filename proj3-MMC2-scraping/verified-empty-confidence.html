@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidence in "verified-empty"</title>
+<style>
+  :root{
+    --bg:#0f1216; --panel:#171b21; --line:#262c34; --ink:#e6e9ee; --dim:#8b94a2;
+    --ok:#3ecf8e; --warn:#e2b33c; --accent:#5aa9ff; --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    padding:38px 44px;max-width:1080px;margin:0 auto}
+  h1{font-size:26px;margin:0 0 4px;letter-spacing:-.3px}
+  .sub{color:var(--dim);font-size:14px;margin-bottom:22px}
+  .sub b{color:var(--ink)}
+  .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 26px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .stat .n{font:600 24px/1 var(--mono);color:var(--accent)}
+  .stat .l{color:var(--dim);font-size:12px;margin-top:6px;text-transform:uppercase;letter-spacing:.4px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:14px}
+  .card h2{font-size:15px;margin:0 0 10px;display:flex;align-items:center;gap:9px}
+  .tick{color:var(--ok);font-weight:700}
+  .card p{margin:6px 0;color:var(--ink)}
+  .card .muted{color:var(--dim);font-size:13px}
+  code,.k{font-family:var(--mono);font-size:13px;background:#0c0f13;border:1px solid var(--line);
+    border-radius:5px;padding:1px 6px;color:#cdd6e2}
+  .row{display:flex;gap:24px;flex-wrap:wrap}
+  .row>div{flex:1;min-width:240px}
+  .foot{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+  .honest{border-left:3px solid var(--warn)}
+  .excl{border-left:3px solid var(--dim)}
+  .big{font:600 15px/1 var(--mono)}
+  .g{color:var(--ok)} .w{color:var(--warn)} .d{color:var(--dim)}
+  hr{border:0;border-top:1px solid var(--line);margin:16px 0}
+  .tag{font:600 11px/1 var(--mono);color:var(--dim);border:1px solid var(--line);border-radius:20px;padding:4px 9px}
+</style>
+</head>
+<body>
+
+  <h1>How confident are we the <span class="g">3,236 "verified-empty"</span> papers really have no accession?</h1>
+  <div class="sub">Not on faith. Every one clears <b>three deterministic gates</b> + a measured detection floor.
+    &nbsp;·&nbsp; <span class="d">corpus 13,092 · coded 5,531 · verified-empty 3,236 · needs-review 4,325</span></div>
+
+  <div class="strip">
+    <div class="stat"><div class="n">3,236</div><div class="l">verified-empty rows</div></div>
+    <div class="stat"><div class="n">52,550</div><div class="l">median chars read (median)</div></div>
+    <div class="stat"><div class="n">0.43%</div><div class="l">measured miss rate</div></div>
+    <div class="stat"><div class="n">0</div><div class="l">abstract-only in set</div></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="tick">✓ 1</span> It is the FULL paper, not an abstract or landing page</h2>
+    <p>A row only qualifies if the text we read is <b>≥ 40,000 characters</b> — the length of a real paper body.</p>
+    <p class="muted">Measured across the 3,236: <span class="k">min 40,018</span> &nbsp; <span class="k">median 52,550</span> &nbsp; <span class="k">mean 56,070</span> &nbsp; <span class="k">max 210,205</span> chars.
+      An abstract is <b>~1,000–3,000</b> chars — it is structurally impossible for one to enter this set.</p>
+    <p class="muted">Rows where the link resolved to an abstract, paywall stub, or a short/partial read were <b>excluded</b> → sent to <code>needs-review</code>, never counted as empty.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="tick">✓ 2</span> Read through a real full-text channel — we followed the redirect to the actual paper</h2>
+    <div class="row">
+      <div>
+        <p class="big g">2,753</p>
+        <p class="muted">Europe PMC / NCBI <b>full-text XML</b> — the article <code>&lt;body&gt;</code>, not the abstract field. Publisher-restricted "front-matter only" responses are detected and excluded (→ <code>HUMAN_CAN_GET</code>).</p>
+      </div>
+      <div>
+        <p class="big g">483</p>
+        <p class="muted">Loaded in <b>real Google Chrome</b> (CDP), which follows the DOI → publisher HTML redirect to the <b>full rendered article</b>, then re-read the ≥40k body. Cloudflare-blocked / thin loads were not counted.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="tick">✓ 3</span> Scanned for EVERY accession type — then swept twice more for the ways a regex fails</h2>
+    <p class="muted">Primary pass — <b>20 repository patterns</b>:
+      <code>BioProject</code> <code>BioSample</code> <code>SRA/ENA/DDBJ</code> <code>GEO</code> <code>dbGaP</code>
+      <code>EGA</code> <code>PRIDE</code> <code>MetaboLights</code> <code>GSA</code> <code>GSA-Human</code>
+      <code>CNGB</code> <code>NODE</code> <code>MG-RAST</code> <code>ArrayExpress</code> <code>BioStudies</code>
+      <code>figshare</code> <code>Zenodo</code> <code>Dryad</code> …</p>
+    <hr>
+    <div class="row">
+      <div><p><b>Independent sweep #1 — whitespace-split</b></p>
+        <p class="muted">Catches codes a plain regex can't see, e.g. <code>PRJNA&nbsp;795467</code> split by a PDF line-break. Requires deposit language nearby.</p></div>
+      <div><p><b>Independent sweep #2 — lookalike-collision</b></p>
+        <p class="muted">Recovers a real code the filter wrongly dropped for sitting near a word like <code>catalog</code> / <code>primer</code> (e.g. an EGA id beside "Polygenic Score Catalog").</p></div>
+    </div>
+    <p class="muted">Every hit these two sweeps surfaced was hand-checked; the real ones were merged as codes. The 483 browser-read rows were scanned by the <b>tolerant extractor</b> that bakes both sweeps in — so they cannot repeat those misses.</p>
+  </div>
+
+  <div class="foot">
+    <div class="card honest">
+      <h2 style="margin-bottom:6px"><span class="w">± the honest limit</span></h2>
+      <p class="muted">This is a <b>measured floor, not a proof</b>. Audit of 1,853 rows: the loose detector raised 127 candidates — 110 were provable non-codes (the journal "Cancers" fused to a page number, grant/ethics numbers), <b>8 were genuine misses</b>, all fixed. <b>8 / 1,853 = 0.43%</b> → <b class="g">~99.6%</b> clean. A residual ~0.4% (order ~10–15 codes corpus-wide) could hide in unusual phrasing only a human read would catch.</p>
+    </div>
+    <div class="card excl">
+      <h2 style="margin-bottom:6px"><span class="d">what is NOT claimed empty</span></h2>
+      <p class="muted">The <b>4,325 needs-review</b> rows are deliberately <b>not</b> in this set: paywalled (no free copy), restricted-PMC, or a read that came back thin. They carry <code>certainty=needs-review</code> so they can be filtered into a worklist — the pile you'll scan next.</p>
+    </div>
+  </div>
+
+  <div class="sub" style="margin-top:16px">Column <code>certainty</code> in <code>articles.out.csv</code>: <span class="g">coded</span> · <span class="g">verified-empty</span> · <span class="d">needs-review</span>.</div>
+
+</body>
+</html>

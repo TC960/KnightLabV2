@@ -1,0 +1,103 @@
+[
+ {
+  "row_index": 11553,
+  "flag": "OA_AVAILABLE",
+  "doi": "10.3390/ijms21176044",
+  "codes": [
+   {
+    "code": "PRJEB38527",
+    "repo": "BioProject",
+    "context": "he Institute of Biotechnology, University of Helsinki using the manufacturer\u00b4s protocols. Data published in ENA ref. no PRJEB38527. 4.4. qRT-PCR of Mucosal Gene Expression Reverse transcription reactions were done by Hig"
+   }
+  ]
+ },
+ {
+  "row_index": 1713,
+  "flag": "CLEAN",
+  "doi": "10.1186/s12967-018-1619-z",
+  "codes": [
+   {
+    "code": "GSE106289",
+    "repo": "GEO",
+    "context": "y reported [ 9 ]. Adipose tissue transcriptomic data is deposited in the Gene Expression Omnibus under accession number GSE106289 . Fecal microbiota, fecal bile acid and correlation analysis data is available upon reque"
+   }
+  ]
+ },
+ {
+  "row_index": 2538,
+  "flag": "CLEAN",
+  "doi": "10.3390/ijms262311290",
+  "codes": [
+   {
+    "code": "GSE303995",
+    "repo": "GEO",
+    "context": "t The data presented in this study are deposited in the NCBI Gene Expression Omnibus (GEO) repository, accession number GSE303995 . Conflicts of Interest The authors declare no conflicts of interest. References 1. Bray "
+   }
+  ]
+ },
+ {
+  "row_index": 3125,
+  "flag": "CLEAN",
+  "doi": "10.3390/nu16223971",
+  "codes": [
+   {
+    "code": "GSE261732",
+    "repo": "GEO",
+    "context": "t The data presented in this study are deposited in the NCBI Gene Expression Omnibus (GEO) repository, accession number GSE261732 . The clinical trial was registered at clinicaltrials.gov; identifier: NCT06391411 . Conf"
+   }
+  ]
+ },
+ {
+  "row_index": 3414,
+  "flag": "CLEAN",
+  "doi": "10.1007/s00408-024-00681-7",
+  "codes": [
+   {
+    "code": "GSE240646",
+    "repo": "GEO",
+    "context": "y The data presented in this study are deposited in the NCBI Gene Expression Omnibus (GEO) repository, accession number GSE240646 . Declarations Competing Interests The authors declare no conflict of interest. Ethics Ap"
+   }
+  ]
+ },
+ {
+  "row_index": 4108,
+  "flag": "CLEAN",
+  "doi": "10.1080/19490976.2023.2298246",
+  "codes": [
+   {
+    "code": "PRJEB56302",
+    "repo": "BioProject",
+    "context": " FASTQ files in the European Nucleotide Archive (ENA) of the European Bioinformatics Institute under the accession code PRJEB56302. Metataxonomic raw sequencing data related to PROBE-IBS/1 20 are under accession code PRJ"
+   },
+   {
+    "code": "PRJEB18753",
+    "repo": "BioProject",
+    "context": "der the accession code PRJEB56302. Metataxonomic raw sequencing data related to PROBE-IBS/1 20 are under accession code PRJEB18753. Processed data are included in the article or uploaded as supplementary materials. All t"
+   }
+  ]
+ },
+ {
+  "row_index": 6727,
+  "flag": "CLEAN",
+  "doi": "10.1038/s41467-024-48739-7",
+  "codes": [
+   {
+    "code": "PRJNA861716",
+    "repo": "BioProject",
+    "context": "reads generated in this study have been deposited in the Sequence Read Archive (SRA) of the NCBI under accession number PRJNA861716 . NCBI RefSeq genomes used in this study can be downloaded from https://ftp.ncbi.nlm.nih."
+   }
+  ]
+ },
+ {
+  "row_index": 7564,
+  "flag": "ON_REQUEST",
+  "doi": "10.1038/s43587-024-00590-7",
+  "codes": [
+   {
+    "code": "EGAD00001007035",
+    "repo": "EGA",
+    "context": ".findata.fi/en/ ) for use of the EHR data. Metagenomic data are available through the European Genome\u2013Phenome Archive ( EGAD00001007035 ). PRSs are available through the Polygenic Score Catalog ( https://www.pgscatalog.org )."
+   }
+  ]
+ }
+]
