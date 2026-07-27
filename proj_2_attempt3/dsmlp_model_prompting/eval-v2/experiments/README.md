@@ -1,12 +1,12 @@
 # Extraction-method experiments
 
 Five run files, each building on the original extraction, scored with the taxonomy-aware metric
-(`../taxonomy_match.py`). Pilot = 5 papers (idx 0,1,4,10,11), LLM stages generated with Fable and
+(`../taxonomy_match.py`). Pilot = 5 papers (idx 0,1,4,10,11), LLM stages generated with Opus 4.8 and
 cached in `cache/`. The scripts are backend-agnostic — swap `cache/*.json` for a GGUF/Qwopus batch
 on DSMLP to run the same suite on the production model.
 
 ```
-bash run_all.sh                 # runs 0→4 sequentially, vs the Fable benchmark (EXP_GOLD=fable)
+bash run_all.sh                 # runs 0→4 sequentially, vs the Opus 4.8 benchmark (EXP_GOLD=opus)
 EXP_GOLD=orig python run_1_relate.py   # score any run vs the original (incomplete) gold instead
 ```
 
@@ -20,8 +20,8 @@ EXP_GOLD=orig python run_1_relate.py   # score any run vs the original (incomple
 
 ## Pilot results (5 papers)
 
-**vs the Fable (thorough) benchmark — recall differentiator** (precision is ~1.0 here because these are
-Fable extractions vs Fable's own gold; only recall separates them):
+**vs the Opus 4.8 (thorough) benchmark — recall differentiator** (precision is ~1.0 here because these are
+Opus 4.8 extractions vs Opus 4.8's own gold; only recall separates them):
 
 | method | P | R | F1 |
 |---|---|---|---|
@@ -55,5 +55,5 @@ metric "false positives" as real findings (precision 0.90 → 1.00).
 - **LLM-judge** recovered every incomplete-gold false positive — worth adopting as a scoring aid when
   the benchmark is known to be incomplete.
 
-Caveat: 5-paper pilot, Fable backend (so precision-vs-Fable is circular). The real test is this suite
+Caveat: 5-paper pilot, Opus 4.8 backend (so precision-vs-Opus 4.8 is circular). The real test is this suite
 on **Qwopus over the full 15+**, where there's precision headroom — that's the next run.

@@ -10,11 +10,11 @@ if not tools_available():
     setup()
 
 TS = json.load(open(os.path.join(EVAL, "..", "..", "EmilySong_GoldStandardPaper", "test_set_v2.json")))
-FG = json.load(open(os.path.join(EVAL, "results", "fable_gold_15.json")))
+FG = json.load(open(os.path.join(EVAL, "results", "opus_gold_15.json")))
 N = len(TS)
 def parse(v): return common.parse_taxa(v)
 ORIG = {i: (parse(TS[i].get("taxa_enriched")), parse(TS[i].get("taxa_depleted"))) for i in range(N)}
-FABLE = {i: (parse(FG[i]["taxa_enriched"]), parse(FG[i]["taxa_depleted"])) for i in range(N)}
+OPUS = {i: (parse(FG[i]["taxa_enriched"]), parse(FG[i]["taxa_depleted"])) for i in range(N)}
 RESF = {"qwopus3.5-27b-v3": "qwopus3.5-27b-v3__q4km__samgated-v1__testv2.json",
         "qwythos-9b": "qwythos-9b__q8__samgated-v1__testv2.json",
         "qwen2.5-32b-instruct": "qwen2.5-32b-instruct__q4km__samgated-v1__testv2.json"}
@@ -41,7 +41,7 @@ def warm(all_preds):
     for pr in all_preds:
         if not pr: continue
         for e, d in pr.values(): names += [x.lower() for x in e + d]
-    for g in (ORIG, FABLE):
+    for g in (ORIG, OPUS):
         for e, d in g.values(): names += e + d
     _R.warm(names)
 
@@ -72,7 +72,7 @@ for m in models:
         batch = 1 if var == "judge_b1" else (3 if var == "judge_b3" else None)
         t = judge_time(m, batch) if batch else None
         tstr = f"{t[1]}s ({t[2]}s/pp, {t[0]}calls)" if t else ("-" if var == "original" else "?")
-        for gname, gold in (("orig", ORIG), ("fable", FABLE)):
+        for gname, gold in (("orig", ORIG), ("opus", OPUS)):
             p, r, f = score(pred, gold)
             rows.append([m, var, gname, f"{p:.3f}", f"{r:.3f}", f"{f:.3f}", tstr if gname == "orig" else ""])
 w = [max(len(str(row[i])) for row in rows) for i in range(len(hdr))]

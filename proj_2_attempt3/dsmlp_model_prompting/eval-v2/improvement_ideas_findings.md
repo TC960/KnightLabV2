@@ -15,7 +15,7 @@ scoped against the literature and, where cheap, actually tested on our data. Ver
   behaviour. If the tools aren't installed it prints a warning and falls back to char automatically —
   never hard-fails. One-time setup: `python taxonomy_match.py --setup` (downloads taxonkit + gnparser
   + NCBI taxdump into `/tmp`; re-run after a pod reset).
-- Validated: reproduces the Qwopus3.5 = ~0.81 result on the Fable benchmark.
+- Validated: reproduces the Qwopus3.5 = ~0.81 result on the Opus 4.8 benchmark.
 
 ---
 
@@ -62,7 +62,7 @@ genuinely ambiguous names, and make it preserve the verbatim string (avoid hallu
 **Proposed concrete pipeline to test** (on Qwopus, at scale): **(a)** candidate taxa + the exact
 supporting sentence (grounding, à la LangExtract) → **(b)** per-candidate: significance check +
 direction (↑/↓) + confirm it's a disease-vs-HC contrast, **with a reject option**. Expect this to lift
-precision on the weaker local models (Fable is already near-ceiling, so the win shows up on Qwopus).
+precision on the weaker local models (Opus 4.8 is already near-ceiling, so the win shows up on Qwopus).
 
 ## Idea 3 — "check how others have done adjacent work"
 

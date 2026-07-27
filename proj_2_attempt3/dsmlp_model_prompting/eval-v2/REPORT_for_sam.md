@@ -3,7 +3,7 @@
 **TL;DR.** We stress-tested our LLM extractors and the gold standard together. The low F1 scores we'd been seeing were **mostly the benchmark, not the models**. Scored fairly, a free local model (Qwopus) reaches **~0.84 F1**. We're going with **Qwopus** for scale-up. Two decisions below need your call.
 
 ## What we did
-Used a frontier model (Claude / "Fable 5") two ways: (1) as an extractor, and (2) to build a **thorough re-annotation** of the 15-paper test set ("Fable Benchmark") to compare against our original hand-annotated one. Then re-scored every model.
+Used a frontier model (Claude / "Opus 4.8") two ways: (1) as an extractor, and (2) to build a **thorough re-annotation** of the 15-paper test set ("Opus 4.8 Benchmark") to compare against our original hand-annotated one. Then re-scored every model.
 
 ## What we found — the F1 was being held down by the *evaluation*, not the models
 Qwopus3.5 (our best local model), same outputs throughout:
@@ -11,7 +11,7 @@ Qwopus3.5 (our best local model), same outputs throughout:
 | Scored against | F1 |
 |---|---|
 | Original benchmark | 0.64 |
-| Fable benchmark (more complete) | 0.77 |
+| Opus 4.8 benchmark (more complete) | 0.77 |
 | + taxonomy-aware matching | 0.82 |
 | + excluding 2 out-of-scope papers | **0.84** |
 
@@ -29,4 +29,4 @@ A useful sanity check that this isn't just the model flattering itself: the one 
 ## Next
 Move from evaluating extractors to **building the first knowledge-graph edges** — run Qwopus over the full corpus, normalize taxa to NCBI, emit microbe →↑/↓→ disease edges, and validate against curated DBs (Peryton, Disbiome, which cover our neurodegenerative disease mix).
 
-*(Interactive write-up with the 15 papers annotated inline — green = original benchmark, yellow = the additions Fable found — available on request.)*
+*(Interactive write-up with the 15 papers annotated inline — green = original benchmark, yellow = the additions Opus 4.8 found — available on request.)*

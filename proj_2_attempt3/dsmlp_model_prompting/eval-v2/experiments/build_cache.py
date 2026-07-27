@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Persist the Fable-generated LLM stage outputs (pilot) into cache/ for the run scripts.
+"""Persist the Opus 4.8-generated LLM stage outputs (pilot) into cache/ for the run scripts.
 RELATE tokens inherited noise from the regex retrieval (multi-word candidates); we split on
 ' and '/'&' and strip trailing non-taxon words — the kind of cleanup a real pipeline includes."""
 import json, os, re
@@ -54,7 +54,7 @@ grounded = {
 json.dump({str(k): {"taxa_enriched": v["e"], "taxa_depleted": v["d"]}
            for k, v in grounded.items()}, open(os.path.join(C, "grounded.json"), "w"), indent=2)
 
-# ---------- ORIGINAL (single-shot samgated) — reuse the earlier Fable extraction ----------
+# ---------- ORIGINAL (single-shot samgated) — reuse the earlier Opus 4.8 extraction ----------
 orig_full = {
  0:  {"e":["Phyllobacterium","Bacteroidia","Lactobacillus salivarius","Coriobacteriia","Erysipelotrichia","Gemmatimonadetes","Verrucomicrobiae","Synergistia","Cloacibacillus","Clostridia"],
       "d":["Rhodospirillales","Bacteroides","Bifidobacterium","Monoglobus","Bifidobacterium breve"]},

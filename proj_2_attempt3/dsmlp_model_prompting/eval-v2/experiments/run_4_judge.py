@@ -2,7 +2,7 @@
 """Idea-3 / LLM-judge evaluation. Score the ORIGINAL extraction against the ORIGINAL (incomplete)
 gold with the metric, then let a judge adjudicate each 'false positive': is it actually a real
 significant finding? FPs the judge confirms are recovered as TP (they were penalised only because
-the gold was incomplete). Here the judge oracle = the Fable thorough benchmark (an LLM adjudication
+the gold was incomplete). Here the judge oracle = the Opus 4.8 thorough benchmark (an LLM adjudication
 already produced); in production this is a per-FP LLM-judge call over the paper text.
 Reports metric-F1 vs judge-adjusted-F1 against the ORIGINAL gold."""
 import common, csv, os
@@ -14,7 +14,7 @@ if c:
     R = TaxResolver()
     names = []
     for p in papers.values():
-        for col in ("orig_enriched", "orig_depleted", "fable_enriched", "fable_depleted"):
+        for col in ("orig_enriched", "orig_depleted", "opus_enriched", "opus_depleted"):
             names += common.parse_taxa(p[col])
     for v in c.values():
         names += [x.lower() for x in v["taxa_enriched"] + v["taxa_depleted"]]
@@ -34,13 +34,13 @@ if c:
     recovered = 0
     for k, v in c.items():
         p = papers[int(k)]
-        for pk, ok, fk in (("taxa_enriched", "orig_enriched", "fable_enriched"),
-                           ("taxa_depleted", "orig_depleted", "fable_depleted")):
+        for pk, ok, fk in (("taxa_enriched", "orig_enriched", "opus_enriched"),
+                           ("taxa_depleted", "orig_depleted", "opus_depleted")):
             pred = [x.lower() for x in v[pk]]
             og = common.parse_taxa(p[ok]); fg = common.parse_taxa(p[fk])
             tp, fp, fn = match_taxa_lca(pred, og, R)
             mTP += tp; mFP += fp; mFN += fn
-            # judge each metric-FP against the oracle (Fable benchmark)
+            # judge each metric-FP against the oracle (Opus 4.8 benchmark)
             fps = unmatched_preds(pred, og)
             conf = 0
             for t in fps:

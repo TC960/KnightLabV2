@@ -97,13 +97,13 @@ rank variants), else falls back to char-ngram cosine ≥0.5. `--metric char` rev
 any pod reset — `/tmp` is ephemeral**). Taxonomy scoring lifted Qwopus3.5 from **.642 → .751** vs the same
 original gold (fairer metric, not a better model).
 
-**Two benchmarks.** `results/leaderboard.csv` = original human gold. `results/fable_gold_15.json` = a
-**thorough Fable-5 (Claude) re-annotation** ("Fable Benchmark"). Scores diverge because the two disagree
-on ~70 taxa — **UNRESOLVED whether the human gold is incomplete or Fable over-extracts** (SMA paper: Fable
+**Two benchmarks.** `results/leaderboard.csv` = original human gold. `results/opus_gold_15.json` = a
+**thorough Opus 4.8 (Claude) re-annotation** ("Opus 4.8 Benchmark"). Scores diverge because the two disagree
+on ~70 taxa — **UNRESOLVED whether the human gold is incomplete or Opus 4.8 over-extracts** (SMA paper: Opus 4.8
 was wrong; elsewhere its extras sit near significance cues). Needs human adjudication vs Sam's gates.
 
 **Leaderboard (taxonomy metric).** vs original gold: Qwopus3.5 **.751**, Qwythos-9B .665, Qwen2.5-32B .606.
-vs Fable gold: Qwopus3.5 **.806** (best local). Fable-5 tops both but is the reference/oracle, not a
+vs Opus 4.8 gold: Qwopus3.5 **.806** (best local). Opus 4.8 tops both but is the reference/oracle, not a
 contestant (scoring it on its own gold is circular). **Decision: Qwopus3.5 is the model for corpus-scale
 extraction** (free/local, best local quality, ~20–22s/paper → ~35 min per 100 papers, within budget).
 
@@ -115,7 +115,7 @@ extraction** (free/local, best local quality, ~20–22s/paper → ~35 min per 10
 - **Grounded** (verbatim-sentence-per-taxon) helped only the under-extractor (Qwen). **Normalize** = 0 F1
   change (it's a KG node-dedup tool, not a scoring lever). **No method beat plain single-shot** on the
   local models — **the benchmark's completeness is the ceiling, not the prompt.**
-- **LLM-judge — first prototype was a DATA LEAK** (recovered "FPs" using the Fable gold as oracle).
+- **LLM-judge — first prototype was a DATA LEAK** (recovered "FPs" using the Opus 4.8 gold as oracle).
   Rebuilt the **real gold-free version** (`run_judge_experiments.py`: each model verifies its own
   extractions vs the paper, y/n, drop the no's; batch 1 vs 3 claims/call). **RESULT: not worth it**
   (`experiments/JUDGE_RESULTS.md`): it's a precision↔recall trade, net F1 barely moves (Qwopus +.02,
@@ -124,7 +124,7 @@ extraction** (free/local, best local quality, ~20–22s/paper → ~35 min per 10
   batch-3 ≈ 42s/paper ON TOP of ~22s extraction → busts the 30-40s/paper budget for ~zero F1 gain.
   **Decision: drop the standalone judge; fold significance-verification into the extraction prompt.**
 
-**Next:** adjudicate Fable's ~70 extra taxa vs Sam's gates (settle incomplete-vs-correct); then start KG
+**Next:** adjudicate Opus 4.8's ~70 extra taxa vs Sam's gates (settle incomplete-vs-correct); then start KG
 edges with Qwopus over the corpus + gold-free verification pass. Validate vs Peryton/Disbiome.
 
 ## Legacy reference — `archive/` (don't build on these)

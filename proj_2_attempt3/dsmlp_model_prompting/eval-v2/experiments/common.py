@@ -5,7 +5,7 @@ Each run_*.py produces results/<method>.json (per-paper predictions) and appends
 results/experiments_leaderboard.csv, scored with the taxonomy-aware metric (taxonomy_match).
 
 LLM backend: scripts read model outputs from cache/<method>.json (generated once, e.g. via
-Fable subagents for the pilot, or by a GGUF batch on DSMLP). Deterministic stages (retrieval,
+Opus 4.8 subagents for the pilot, or by a GGUF batch on DSMLP). Deterministic stages (retrieval,
 grounding checks, normalization, scoring) run in pure Python here.
 """
 import json, os, re, sys, csv
@@ -17,8 +17,8 @@ CACHE = os.path.join(HERE, "cache")
 RESULTS = os.path.join(HERE, "results")
 LEDGER = os.path.join(RESULTS, "experiments_leaderboard.csv")
 
-# reference gold to score against: "fable" (the thorough benchmark) or "orig"
-GOLD = os.environ.get("EXP_GOLD", "fable")
+# reference gold to score against: "opus" (the thorough benchmark) or "orig"
+GOLD = os.environ.get("EXP_GOLD", "opus")
 
 
 def load_papers():
@@ -40,7 +40,7 @@ def parse_taxa(val):
 def gold_for(paper):
     if GOLD == "orig":
         return parse_taxa(paper["orig_enriched"]), parse_taxa(paper["orig_depleted"])
-    return parse_taxa(paper["fable_enriched"]), parse_taxa(paper["fable_depleted"])
+    return parse_taxa(paper["opus_enriched"]), parse_taxa(paper["opus_depleted"])
 
 
 _resolver = None
@@ -93,7 +93,7 @@ def read_cache(method):
     path = os.path.join(CACHE, f"{method}.json")
     if not os.path.exists(path):
         print(f"!! missing cache/{method}.json — generate LLM outputs first "
-              f"(Fable subagents for pilot, or GGUF batch on DSMLP). Skipping.")
+              f"(Opus 4.8 subagents for pilot, or GGUF batch on DSMLP). Skipping.")
         return None
     return json.load(open(path))
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Sequential experiment suite. Each run_*.py reads its LLM stage from cache/ (pilot: Fable-
+# Sequential experiment suite. Each run_*.py reads its LLM stage from cache/ (pilot: Opus 4.8-
 # generated; production: swap in a GGUF/Qwopus batch), scores with the taxonomy-aware metric,
 # and appends to results/experiments_leaderboard.csv.
 set -e

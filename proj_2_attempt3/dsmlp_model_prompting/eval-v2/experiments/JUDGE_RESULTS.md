@@ -11,11 +11,11 @@ used → scalable in principle. Ran two batch sizes (1 claim/call vs 3 claims/ca
 | model | original | judge-b1 | judge-b3 |
 |---|---|---|---|
 | Qwopus3.5 (vs orig) | .751 | **.772** | .761 |
-| Qwopus3.5 (vs Fable) | .806 | .808 | .810 |
+| Qwopus3.5 (vs Opus 4.8) | .806 | .808 | .810 |
 | Qwythos-9B (vs orig) | .665 | .602 | .624 |
-| Qwythos-9B (vs Fable) | .742 | .606 | .613 |
+| Qwythos-9B (vs Opus 4.8) | .742 | .606 | .613 |
 | Qwen2.5-32B (vs orig) | .606 | .621 | .621 |
-| Qwen2.5-32B (vs Fable) | .502 | .457 | .488 |
+| Qwen2.5-32B (vs Opus 4.8) | .502 | .457 | .488 |
 
 ## Timing — batch-1 vs batch-3 (15 papers)
 

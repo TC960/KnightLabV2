@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Score the full model x method matrix and print P/R/F1 vs both golds.
 Methods: original (samgated single-shot), relate, grounded, normalize, judge.
-Models:  the 3 GGUF models (qwopus3.5, qwythos-9b, qwen2.5) + fable (reference, ignore).
+Models:  the 3 GGUF models (qwopus3.5, qwythos-9b, qwen2.5) + opus (reference, ignore).
 Reads GGUF outputs from cache/{relate,grounded}__<model>.json and originals from ../results/."""
 import json, os, re, sys, glob
 HERE = os.path.dirname(os.path.abspath(__file__)); EVAL = os.path.dirname(HERE)
@@ -10,13 +10,13 @@ import common
 from taxonomy_match import TaxResolver, match_taxa_lca
 
 TS = json.load(open(os.path.join(EVAL, "..", "..", "EmilySong_GoldStandardPaper", "test_set_v2.json")))
-FG = json.load(open(os.path.join(EVAL, "results", "fable_gold_15.json")))
+FG = json.load(open(os.path.join(EVAL, "results", "opus_gold_15.json")))
 N = len(TS)
 def parse(v): return common.parse_taxa(v)
 
 # gold per idx
 ORIG = {i: (parse(TS[i].get("taxa_enriched")), parse(TS[i].get("taxa_depleted"))) for i in range(N)}
-FABLE = {i: (parse(FG[i]["taxa_enriched"]), parse(FG[i]["taxa_depleted"])) for i in range(N)}
+OPUS = {i: (parse(FG[i]["taxa_enriched"]), parse(FG[i]["taxa_depleted"])) for i in range(N)}
 TEXT = {i: re.sub(r"\s+", " ", TS[i]["text"]).lower() for i in range(N)}
 
 MODEL_FILES = {
@@ -24,12 +24,12 @@ MODEL_FILES = {
     "qwythos-9b": "qwythos-9b__q8__samgated-v1__testv2.json",
     "qwen2.5-32b-instruct": "qwen2.5-32b-instruct__q4km__samgated-v1__testv2.json",
 }
-FABLE_PRED = None  # loaded lazily if present
+OPUS_PRED = None  # loaded lazily if present
 
 
 def original_pred(model):
-    if model == "fable":
-        # earlier Fable single-shot (all 15), if cached in scratch; else skip
+    if model == "opus":
+        # earlier Opus 4.8 single-shot (all 15), if cached in scratch; else skip
         return None
     f = os.path.join(EVAL, "results", MODEL_FILES[model])
     if not os.path.exists(f): return None
@@ -65,7 +65,7 @@ def resolver(all_pred):
     for pred in all_pred:
         if not pred: continue
         for e, d in pred.values(): names += [x.lower() for x in e + d]
-    for g in (ORIG, FABLE):
+    for g in (ORIG, OPUS):
         for e, d in g.values(): names += e + d
     _R.warm(names); return _R
 
@@ -99,12 +99,12 @@ def normalize_pred(pred):
 
 
 def judge_pred(pred):
-    """recover metric-FPs (vs orig gold) that the oracle (fable gold) confirms real -> counts as TP."""
+    """recover metric-FPs (vs orig gold) that the oracle (opus gold) confirms real -> counts as TP."""
     TP = FP = FN = 0; rec = 0
     for i in range(N):
         e, d = pred[i] if pred and i in pred else ([], [])
-        for pp, og, fg in (([x.lower() for x in e], ORIG[i][0], FABLE[i][0]),
-                           ([x.lower() for x in d], ORIG[i][1], FABLE[i][1])):
+        for pp, og, fg in (([x.lower() for x in e], ORIG[i][0], OPUS[i][0]),
+                           ([x.lower() for x in d], ORIG[i][1], OPUS[i][1])):
             tp, fp, fn = match_taxa_lca(pp, og, _R); TP += tp; FN += fn
             for t in pp:
                 if match_taxa_lca([t], og, _R)[1]:   # metric-FP vs orig
@@ -131,7 +131,7 @@ def main():
         for method in ["original", "relate", "grounded", "normalize", "judge"]:
             if method == "normalize":
                 p = normalize_pred(orig) if orig else None
-                for gname, gold in (("orig", ORIG), ("fable", FABLE)):
+                for gname, gold in (("orig", ORIG), ("opus", OPUS)):
                     if p is None: continue
                     P, R, F, TP, FP, FN = score(p, gold)
                     rows.append((m, method, gname, P, R, F, TP, FP, FN, ""))
@@ -142,7 +142,7 @@ def main():
                 rows.append((m, method, "orig*", P, R, F, TP, FP, FN, f"recovered {rec}"))
                 continue
             p = preds[(m, method)]
-            for gname, gold in (("orig", ORIG), ("fable", FABLE)):
+            for gname, gold in (("orig", ORIG), ("opus", OPUS)):
                 if p is None:
                     rows.append((m, method, gname, "-", "-", "-", "-", "-", "-", "MISSING")); continue
                 P, R, F, TP, FP, FN = score(p, gold)

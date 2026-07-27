@@ -11,7 +11,7 @@
   {
     "model": "qwopus3.5-27b-v3",
     "variant": "original",
-    "gold": "fable",
+    "gold": "opus",
     "P": "0.806",
     "R": "0.806",
     "F1": "0.806",
@@ -29,7 +29,7 @@
   {
     "model": "qwopus3.5-27b-v3",
     "variant": "judge_b1",
-    "gold": "fable",
+    "gold": "opus",
     "P": "0.832",
     "R": "0.784",
     "F1": "0.808",
@@ -47,7 +47,7 @@
   {
     "model": "qwopus3.5-27b-v3",
     "variant": "judge_b3",
-    "gold": "fable",
+    "gold": "opus",
     "P": "0.837",
     "R": "0.784",
     "F1": "0.810",
@@ -65,7 +65,7 @@
   {
     "model": "qwythos-9b",
     "variant": "original",
-    "gold": "fable",
+    "gold": "opus",
     "P": "0.687",
     "R": "0.806",
     "F1": "0.742",
@@ -83,7 +83,7 @@
   {
     "model": "qwythos-9b",
     "variant": "judge_b1",
-    "gold": "fable",
+    "gold": "opus",
     "P": "0.727",
     "R": "0.520",
     "F1": "0.606",
@@ -101,7 +101,7 @@
   {
     "model": "qwythos-9b",
     "variant": "judge_b3",
-    "gold": "fable",
+    "gold": "opus",
     "P": "0.716",
     "R": "0.536",
     "F1": "0.613",
@@ -119,7 +119,7 @@
   {
     "model": "qwen2.5-32b-instruct",
     "variant": "original",
-    "gold": "fable",
+    "gold": "opus",
     "P": "0.598",
     "R": "0.432",
     "F1": "0.502",
@@ -137,7 +137,7 @@
   {
     "model": "qwen2.5-32b-instruct",
     "variant": "judge_b1",
-    "gold": "fable",
+    "gold": "opus",
     "P": "0.707",
     "R": "0.337",
     "F1": "0.457",
@@ -155,7 +155,7 @@
   {
     "model": "qwen2.5-32b-instruct",
     "variant": "judge_b3",
-    "gold": "fable",
+    "gold": "opus",
     "P": "0.633",
     "R": "0.397",
     "F1": "0.488",
