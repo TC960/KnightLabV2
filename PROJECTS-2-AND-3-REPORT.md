@@ -99,9 +99,9 @@ For months the local models looked mediocre. The best of them scored ~0.64 F1 an
 prompt engineering moved it. The obvious read was "open-weight models can't do this." That read was
 wrong, and proving it wrong is the most useful thing this project produced.
 
-The test: take a frontier model and use it not as a competitor but as an **annotator**, re-reading
-all 15 test papers thoroughly to produce a second, independent benchmark. Then re-score every model
-against both. If our models were simply bad, their scores wouldn't move much. They moved a lot —
+The test: take a frontier model — **Opus 4.8**, in `results/opus_gold_15.json` — and use it not as a
+competitor but as an **annotator**, re-reading all 15 test papers thoroughly to produce a second,
+independent benchmark. Then re-score every model against both. If our models were simply bad, their scores wouldn't move much. They moved a lot —
 because the original benchmark listed 119 taxa, and a thorough pass found roughly **70 more that are
 genuinely stated in the papers**. Correct extractions were being counted as false positives.
 
