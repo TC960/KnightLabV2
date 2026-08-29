@@ -1,13 +1,18 @@
 # Papers Without an Accession Code — Analysis & Confidence Report
 
-*Generated 2026-07-14. Corpus: 13,092 microbiome papers. Deliverable: `articles.out.csv`.*
+*Corpus: 13,092 microbiome papers. Deliverable: `articles.out.csv`. Counts recomputed from the
+delivered CSV; supersedes the 2026-07-14 snapshot, which predated the browser-recovery pass and the
+`SUB` format fix.*
+
+> The narrative version of this analysis, with the audit methodology written out, is Part II of
+> `../PROJECTS-2-AND-3-REPORT.md`. Both are generated from the same CSV and agree.
 
 ## 1. Headline
 
 | | rows | share |
 |---|---:|---:|
-| **Coded** — an accession is in the cell | **5,185** | 39.6% |
-| **No code** | **7,907** | 60.4% |
+| **Coded** — an accession is in the cell | **5,581** | 42.6% |
+| **No code** | **7,511** | 57.4% |
 | **Total** | **13,092** | |
 
 Every no-code row is classified by *why* it has no code and, deterministically, *whether we are
@@ -24,9 +29,9 @@ The **`certainty`** column (col I) holds one of three values:
 
 | `certainty` | rows | rule |
 |---|---:|---|
-| `coded` | 5,185 | an accession is present |
-| `verified-empty` | 2,834 | we read a **≥40k-char full paper**; no accession. Deterministic. |
-| `needs-review` | 5,073 | **flagged for human review** — full text was paywalled, restricted, blocked, or too short (<40k) to trust |
+| `coded` | 5,581 | an accession is present |
+| `verified-empty` | 3,434 | we read a **≥40k-char full paper**; no accession. Deterministic. |
+| `needs-review` | 4,077 | **flagged for human review** — full text was paywalled, restricted, blocked, or too short (<40k) to trust |
 
 Why 40k: real microbiome papers run 30k–80k characters of body text. A "read" that returned less
 than that is a landing page, cookie wall, abstract, or a silently-blocked fetch — not a paper.
@@ -38,17 +43,17 @@ class of error by construction.
 
 | flag | rows | verified-empty (≥40k) | needs-review | why no code / how determined |
 |---|---:|---:|---:|---|
-| **OA_AVAILABLE** | 3,062 | 1,355 | 1,707 | free copy exists outside PMC; 1,355 read a full paper → none; 1,707 not read to ≥40k. URL is in the row. |
+| **OA_AVAILABLE** | 2,678 | 1,902 | 776 | free copy exists outside PMC; 1,902 read a full paper → none; 776 not read to ≥40k. URL is in the row. |
 | **PAYWALLED** | 2,319 | 41 | 2,278 | full text only at publisher; almost none machine-read. Library access needed. |
-| **ON_REQUEST** | 998 | 824 | 174 | authors say "available on request"; 824 read in full confirm no deposited accession, 174 read too shallow to trust. |
-| **NO_ACCESSION** | 817 | 450 | 367 | read the paper, none found; 450 on a full ≥40k text, 367 on shorter/abstract text → re-read. |
+| **ON_REQUEST** | 991 | 844 | 147 | authors say "available on request"; 844 read in full confirm no deposited accession, 147 read too shallow to trust. |
+| **NO_ACCESSION** | 813 | 482 | 331 | read the paper, none found; 482 on a full ≥40k text, 331 on shorter/abstract text → re-read. |
 | **HUMAN_CAN_GET** | 434 | 0 | 434 | restricted PMC copy, machine-inaccessible; never read the body. |
-| **SUPPLEMENT** | 189 | 141 | 48 | paper says "data in supplement"; main text read (none), supplement fetch tried → 0 codes in the 15 openable supplements. |
+| **SUPPLEMENT** | 188 | 140 | 48 | paper says "data in supplement"; main text read (none), supplement fetch tried → 0 codes in the 15 openable supplements. |
 | **NO_IDENTIFIER** | 36 | 0 | 36 | no DOI/PMID/PMC to act on. |
-| **NO_DATA** | 28 | 23 | 5 | paper states no new data generated. |
+| **NO_DATA** | 28 | 25 | 3 | paper states no new data generated. |
 | **NO_FULLTEXT** | 24 | 0 | 24 | publisher restricts full text everywhere; metadata only. |
 
-Totals: verified-empty **2,834**, needs-review **5,073**, sum **7,907** no-code rows.
+Totals: verified-empty **3,434**, needs-review **4,077**, sum **7,511** no-code rows.
 
 ## 4. How we analyzed each paper (channels)
 
@@ -80,24 +85,39 @@ only ~8 were genuine misses (~0.4%), all from a space splitting the accession (`
 an over-greedy lookalike filter. **All fixed and merged** (see §6). So `verified-empty` is an
 audited floor, not an assumption.
 
-## 6. Corrections applied this session
+A second audit went after the blind spot the first one structurally could not see: a looser copy of
+our own regex shares our own assumptions. **Six independent reviewers read 24 randomly sampled
+`verified-empty` papers in full** and tried to disprove the label. **23 of 24 confirmed empty.** The
+single miss was an SRA *submission* ID of the form `SUB######` — a format class the dictionary had
+never contained. A corpus sweep for that pattern found 34 rows, **29 of them wrongly marked
+verified-empty**. That is the audit that justifies the rest: 96% confirmation is a real measurement,
+and the 4% failure was a whole missing format, not a tuning error.
 
-- **68 recovered codes merged** (coded 5,117 → **5,185**): 27 from 403 repository copies, 31 from
-  the whitespace-split fix, 2 from restricted-PMC Unpaywall, 8 from the headful browser run.
+## 6. Corrections applied
+
+Coded count over the recovery rounds: **5,117 → 5,547 → 5,581**.
+
+- **+430** (5,117 → 5,547) from repository fallback on 403-blocked publishers, the whitespace-split
+  and lookalike audit fixes, restricted-PMC Unpaywall copies, and a real-Chrome (CDP) parallel
+  browser run over bot-walled publishers.
+- **+34** (5,547 → 5,581) from the `SUB\d{6,}` submission-ID class the reviewer audit exposed;
+  29 of those rows had been wrongly labelled `verified-empty` and were corrected.
 - **10 were damaging false negatives** — rows previously ON_REQUEST / NO_ACCESSION that actually
   had public data. 8 confirmed; **3 tagged `[review]`** (rows 12106, 12252, 9601): repository DOIs
   (Zenodo/figshare) scraped from a landing page, not stated in the paper body — verify by hand.
+- **66 provenance corrections** and **9 dbGaP version collapses** from the offline chronology pass.
+- Invariant held throughout: **a human-entered code is never overwritten** — verified 0 changed.
 
-## 7. What is flagged `needs-review` (5,073)
+## 7. What is flagged `needs-review` (4,077)
 
 Every no-code row we are NOT entitled to call empty:
 
 - **2,278** PAYWALLED — need library access
-- **1,707** OA_AVAILABLE — free URL in the row, not yet read to ≥40k
+- **776** OA_AVAILABLE — free URL in the row, not yet read to ≥40k
 - **434** HUMAN_CAN_GET — restricted PMC copy
-- **367** NO_ACCESSION read too shallow (<40k / abstract) — re-read in full
-- **174** ON_REQUEST read too shallow
-- **48** SUPPLEMENT, **36** NO_IDENTIFIER, **24** NO_FULLTEXT, **5** NO_DATA
+- **331** NO_ACCESSION read too shallow (<40k / abstract) — re-read in full
+- **147** ON_REQUEST read too shallow
+- **48** SUPPLEMENT, **36** NO_IDENTIFIER, **24** NO_FULLTEXT, **3** NO_DATA
 
 None of these is "confirmed no accession." They carry `certainty = needs-review` so they can be
 filtered out and worked by a human.

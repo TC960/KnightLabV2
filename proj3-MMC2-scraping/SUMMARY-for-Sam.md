@@ -1,5 +1,9 @@
 # Accession extraction — summary
 
+*Counts below are recomputed from the delivered `articles.out.csv` and reflect the final state,
+including the browser-recovery pass and the `SUB` format fix. The full write-up, with the audit
+methodology, is Part II of `../PROJECTS-2-AND-3-REPORT.md`.*
+
 ## The finding that reframes the project
 
 **When we can read a paper in full, a slight majority already contain an accession. The papers that
@@ -39,19 +43,25 @@ touched, and no human-entered code is ever overwritten — verified 0 changed).
 
 | | before | after |
 |---|---|---|
-| rows with a data accession code | 4,405 | **5,117 (+712)** |
+| rows with a data accession code | 4,405 | **5,581 (+1,176)** |
 
 Every code-less row with a DOI — whether it started blank or was already marked `N/A` — is triaged
-the same way (the old blank-vs-N/A split was an artifact of which pipeline touched the sheet first):
+the same way (the old blank-vs-N/A split was an artifact of which pipeline touched the sheet first).
+The 7,511 remaining code-less rows:
 
 | status | rows | meaning |
 |---|---|---|
-| **coded** | **712** | 655 from PMC/EPMC + NCBI full text, 57 from OA copies outside PMC |
-| `OA_AVAILABLE` | 3,118 | free full text exists outside PMC — **click-through URL is in the row** |
+| `OA_AVAILABLE` | 2,678 | free full text exists outside PMC — **click-through URL is in the row** |
 | `PAYWALLED` | 2,319 | full text at publisher, retrievable with library access |
-| `HUMAN_CAN_GET` | 436 | restricted PMC copy exists; human-retrievable |
-| definitive floor | 1,764 | we/the old pipeline read it: "available on request", "no data", or read-and-none |
-| residual | 338 | no DOI / no record / nothing to act on |
+| definitive floor | 1,832 | we read it: "available on request", "no data generated", or read-and-none |
+| `HUMAN_CAN_GET` | 434 | restricted PMC copy exists; human-retrievable |
+| `SUPPLEMENT` | 188 | paper says data is in the supplement; supplements fetched, nothing found |
+| residual | 60 | no identifier at all, or publisher restricts full text everywhere |
+
+A separate `certainty` column says, per row, whether we are *entitled* to call it empty: **3,434
+`verified-empty`** (a ≥40k-character full text read end-to-end with no accession) versus **4,077
+`needs-review`** (paywalled, restricted, blocked, or read too shallow to trust). The second number
+is the honest one — it is not a claim that those papers have no data.
 
 So the no-code pile is now a **triaged curator worklist**, not a flat "dead" column: most rows are
 retrievable, thousands with a URL a curator can click straight through, and the "don't bother" rows
@@ -62,7 +72,9 @@ retrievable, thousands with a URL a curator can click straight through, and the 
 - **Runtime:** ~5 hours across multiple days → **~1 hour once**, then seconds to re-run extraction
   after any rule change (fetch and extract are separated; every response is cached to disk).
 - **New recovery channels the old version never used:** NCBI full-text fallback for papers EPMC
-  lacks (closed 55 of 108 known gaps), and Unpaywall for open-access copies outside PMC.
+  lacks (closed 55 of 108 known gaps), Unpaywall for open-access copies outside PMC, green/repository
+  copies for 403-blocked publishers, and a real-Chrome (CDP) run over the bot-walled ones that
+  headless fetching cannot clear.
 - **Correctness fixes to known biases:** 66 provenance corrections (an accession can only be
   *deposited* by the earliest paper that cites it — later papers are reusing; concentrated in
   EGA/dbGaP exactly as expected) and 9 dbGaP version-collapses. All auditable.
@@ -82,6 +94,7 @@ Each was tested against real papers, not assumed:
 
 - The pmid-only bucket (56% of the target rows) is closed-access with no PMC full text; even when
   opened via other channels it rarely contains an accession. This is the bulk of the residual.
-- The 1,796 `OA_AVAILABLE` and 1,390 `PAYWALLED` rows are where remaining accessions live, but they
-  require a human (library access + judgement reading a data-availability statement). That's a
-  curation task, not an extraction one.
+- The remaining accessions live in the `needs-review` pile — chiefly the **2,278 PAYWALLED** and
+  **776 OA_AVAILABLE** rows we could not read to ≥40k characters. Those require a human (library
+  access + judgement reading a data-availability statement). That's a curation task, not an
+  extraction one.
