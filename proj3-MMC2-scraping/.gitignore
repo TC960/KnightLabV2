@@ -1,0 +1,6 @@
+
+# session junk — do not commit
+.DS_Store
+accession/browser_profile/
+articles.out.csv.bak-*
+*.bak-*

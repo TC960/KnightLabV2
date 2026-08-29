@@ -1,0 +1,1814 @@
+[
+ {
+  "row_index": 9997,
+  "flag": "ON_REQUEST",
+  "source": "ncbi_fulltext",
+  "doi": "10.1007/s10620-024-08836-5",
+  "pmcid": "PMC12830068",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS14040909",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "munity and Inflammation during Infection . Cancers (Basel) , 2022 . 14 ( 4 ). 10.3390/cancers14040909 PMC8870346 35205657 28. Bertiaux-Vanda\u00eble N , , The expression and the cellula"
+   }
+  ]
+ },
+ {
+  "row_index": 10885,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1016/j.jacig.2025.100578",
+  "pmcid": "PMC12826983",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13133316",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "he need of a multidisciplinary approach Cancers (Basel) 13 2021 3316 34282774 10.3390/cancers13133316 PMC8269078 4 Gulen T. Ljung C. Nilsson G. Akin C. Risk factor analysis of anap"
+   }
+  ]
+ },
+ {
+  "row_index": 10888,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.3390/jcm14228032",
+  "pmcid": "PMC12653591",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS16010104",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "Initial Stages of Intestinal Mucosa Damage: A Pilot Study Cancers 2023 16 104 10.3390/cancers16010104 38201530 PMC10778549 30. Huang Y. Wang Z. Ma H. Ji S. Chen Z. Cui Z. Chen J. T"
+   }
+  ]
+ },
+ {
+  "row_index": 11125,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.2147/JAA.S320088",
+  "pmcid": "PMC8367087",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS81970017",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "ment This study was funded by the National Natural Science Foundation of China (grant numbers 81970017 and 81973984). Abbreviations ICS, inhaled corticosteroid; IL, interleukin; DN"
+   }
+  ]
+ },
+ {
+  "row_index": 11171,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.4251/wjgo.v17.i10.111509",
+  "pmcid": "PMC12531764",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS14184407",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "k in Stage III Colorectal Cancer Patients. Cancers (Basel) 2022;14:4407. doi: 10.3390/cancers14184407. 8. Kov\u00e1cs T, Mik\u00f3 E, Ujlaki G, S\u00e1ri Z, Bai P. The Microbiome as a Component o"
+   }
+  ]
+ },
+ {
+  "row_index": 11345,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.2174/0118715303363951241209060903",
+  "pmcid": "PMC12709530",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13092124",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "in gastrointestinal disease and cancer. Cancers (Basel) 2021;13(9):2124. doi: 10.3390/cancers13092124. 32. Imai J., Ichikawa H., Kitamoto S., Golob J.L., Kaneko M., Nagata J., Taka"
+   }
+  ]
+ },
+ {
+  "row_index": 11363,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1093/ofid/ofae707",
+  "pmcid": "PMC11811901",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS14081932",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "cell transplantation recipients . Cancers (Basel) 2022 ; 14 : 1932 . 35454840 10.3390/cancers14081932 PMC9026899 23 Muratore E , Baccelli F , Leardini D , Campoli C , Belotti T , V"
+   }
+  ]
+ },
+ {
+  "row_index": 11365,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.7150/jca.46621",
+  "pmcid": "PMC8040891",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS11010119",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": " Resistance in Ovarian Cancer: Role of DNA Repair Cancers (Basel) 2019 11 119 10.3390/cancers11010119 PMC6357127 30669514 37 Norouzi-Barough L Sarookhani MR Sharifi M Molecular mec"
+   }
+  ]
+ },
+ {
+  "row_index": 11375,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3390/jcm11185479",
+  "pmcid": "PMC9506258",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS11010038",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "icrobiota and Cancer: From Pathogenesis to Therapy. Cancers. 2019;11:38. doi: 10.3390/cancers11010038. 22. Jin Y., Dong H., Xia L., Yang Y., Zhu Y., Shen Y., Zheng H., Yao C., Wang"
+   }
+  ]
+ },
+ {
+  "row_index": 11403,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.2147/IJWH.S494268",
+  "pmcid": "PMC11687098",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS15245734",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": ": a multicenter retrospective study . Cancers . 2023 ; 15 ( 24 ): 5734 . doi: 10.3390/cancers15245734 38136280 PMC10741503 5. Gu Y , Cheng H , Cang W , Chen L , Yang J , Xiang Y . "
+   }
+  ]
+ },
+ {
+  "row_index": 11427,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.2147/JHC.S538192",
+  "pmcid": "PMC12599210",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS11010024",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "flammation-driven liver and colorectal cancers. Cancers . 2018;11(1):24. doi: 10.3390/cancers11010024 8. Luo Y, Lin H. Inflammation initiates a vicious cycle between obesity and no"
+   }
+  ]
+ },
+ {
+  "row_index": 11445,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.34133/research.0529",
+  "pmcid": "PMC11562848",
+  "n_hits": 2,
+  "hits": [
+   {
+    "code": "ERS14225577",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "mmunotherapy in cancer patients . Cancers . 2022 ; 14 ( 22 ): 5577 . 36428677 10.3390/cancers14225577 PMC9688200 44. Gopalakrishnan V , Spencer CN , Nezi L , Reuben A , Andrews MC "
+   },
+   {
+    "code": "ERS14215369",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "ific gut microbiome composition . Cancers . 2022 ; 14 ( 21 ): 5369 . 36358789 10.3390/cancers14215369 PMC9653730 46. Uribe-Herranz M , Rafail S , Beghi S , Gil-de-Gomez L , Vergina"
+   }
+  ]
+ },
+ {
+  "row_index": 11495,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.7150/jca.50318",
+  "pmcid": "PMC7646174",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12020372",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "riched in the Tumor Microenvironment of Colorectal Cancer Cancers 2020 12 372 10.3390/cancers12020372 PMC7072156 32041122 19 Doucas H Garcea G Neal CP Manson MM Berry DP Changes in"
+   }
+  ]
+ },
+ {
+  "row_index": 11496,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.3390/jpm15040144",
+  "pmcid": "PMC12028825",
+  "n_hits": 2,
+  "hits": [
+   {
+    "code": "ERS13184687",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "gration of Liquid Biopsy and Metagenome Analysis. Cancers. 2021;13:4687. doi: 10.3390/cancers13184687. 13. Amin M.B., Greene F.L., Edge S.B., Compton C.C., Gershenwald J.E., Brookl"
+   },
+   {
+    "code": "ERS16203547",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "ms and Clinical Applications\u2014A Literature Review. Cancers. 2024;16:3547. doi: 10.3390/cancers16203547. 30. Olteanu G., Ciuc\u0103-Pan\u0103 M.A., Busnatu \u0218.S., Lupuliasa D., Neac\u0219u S.M., Mit"
+   }
+  ]
+ },
+ {
+  "row_index": 11689,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.2147/JIR.S552936",
+  "pmcid": "PMC12539417",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12041058",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": " blood of colorectal cancer patients . Cancers . 2020 ; 12 ( 4 ): 1058 . doi: 10.3390/cancers12041058 32344707 PMC7226464 53. Zhang X , Chen S , Zhang M , et al. Effects of ferment"
+   }
+  ]
+ },
+ {
+  "row_index": 11884,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.2147/JIR.S559136",
+  "pmcid": "PMC12713679",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12092619",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "in a korean population: a case-control study. Cancers . 2020;12(9):2619. doi: 10.3390/cancers12092619 22. Yang C, Mai J, Cao X, Burberry A, Cominelli F. ggpicrust2: an R package fo"
+   }
+  ]
+ },
+ {
+  "row_index": 11956,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.2147/CEG.S504459",
+  "pmcid": "PMC12148070",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS2014011",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "PR, SV and SHH were funded by South-Eastern Norway Regional Health Authority (project numbers 2014011, 2018001 and 2020066). pmc-status-qastatus 0 pmc-status-live yes pmc-status-em"
+   }
+  ]
+ },
+ {
+  "row_index": 12016,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1136/jitc-2023-008686",
+  "pmcid": "PMC11163665",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12051326",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "tal, oral, and pancreatic carcinogenesis . Cancers (Basel) 2020 ; 12 : 1326 . 10.3390/cancers12051326 32455985 PMC7281455 34 Lopez-Siles M , Duncan SH , Garcia-Gil LJ , et al . Fae"
+   }
+  ]
+ },
+ {
+  "row_index": 12111,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3389/fgene.2021.706907",
+  "pmcid": "PMC8452859",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13040649",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "rkel Cell Carcinoma Cell Lines Is Comparable to Tumor Tissue. Cancers 13:649. 10.3390/cancers13040649 Larsson J. (2020). eulerr: area-proportional Euler and Venn Diagrams With Elli"
+   }
+  ]
+ },
+ {
+  "row_index": 12136,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1002/advs.202512599",
+  "pmcid": "PMC12752652",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS15092518",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "achenberg , R. Klapdor , M. Morgan , A. Schambach , Cancers 2023 , 15 , 263 . 10.3390/cancers15092518 PMC10177622 37173984 16 L. Tang , Nat. Methods 2021 , 18 , 592 . 34099936 10.1"
+   }
+  ]
+ },
+ {
+  "row_index": 12176,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3389/fmicb.2021.767931",
+  "pmcid": "PMC8634716",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12051093",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "sma co-infection is associated with cervical cancer risk. Cancers 12 : 1093 . 10.3390/cancers12051093 32353967 PMC7281224 Kostic A. D. Chun E. Robertson L. Glickman J. N. Gallini C"
+   }
+  ]
+ },
+ {
+  "row_index": 12207,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3389/fmicb.2021.767931",
+  "pmcid": "PMC8634716",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12051093",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "sma co-infection is associated with cervical cancer risk. Cancers 12 : 1093 . 10.3390/cancers12051093 32353967 PMC7281224 Kostic A. D. Chun E. Robertson L. Glickman J. N. Gallini C"
+   }
+  ]
+ },
+ {
+  "row_index": 12298,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1038/s41392-022-01304-4",
+  "pmcid": "PMC9842669",
+  "n_hits": 5,
+  "hits": [
+   {
+    "code": "ERS12082331",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "nic behavior of pancreatic carcinoma cells. Cancers (Basel) 12 , 2331 (2020). 10.3390/cancers12082331 PMC7465784 32824786 67. Khan G Hashim MJ Global burden of deaths from Epstein-"
+   },
+   {
+    "code": "ERS12092524",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": " outcome and immune processes in prostate cancer Cancers (Basel) 2020 12 2524 10.3390/cancers12092524 32899474 PMC7564876 109. Gao Y Intratumoral stem-like CCR4+ regulatory T cells"
+   },
+   {
+    "code": "ERS12123729",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "underlying of immune checkpoint blockade therapy Cancers (Basel) 2020 12 3729 10.3390/cancers12123729 33322522 PMC7763130 223. Lang FF Phase I study of DNX-2401 (Delta-24-RGD) onco"
+   },
+   {
+    "code": "ERS12092672",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "genesis and worse prognosis in males and smokers Cancers (Basel) 2020 12 2672 10.3390/cancers12092672 32962112 PMC7565819 247. Zhang M Intratumoral microbiota impacts the first-lin"
+   },
+   {
+    "code": "ERS14071606",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "ineal resection for anal squamous cell carcinoma Cancers (Basel) 2022 14 1606 10.3390/cancers14071606 35406380 PMC8997094 252. Chu CS Endoscopic ultrasound-guided fine-needle biops"
+   }
+  ]
+ },
+ {
+  "row_index": 12351,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1155/2023/7483783",
+  "pmcid": "PMC10070026",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13071640",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "al cancer screening-an update of current literature Cancers 2021 13 7 p. 1640 10.3390/cancers13071640 PMC8036396 33915878 5 Scarinci I. C. Garcia F. A. Kobetz E. Cervical cancer pr"
+   }
+  ]
+ },
+ {
+  "row_index": 12365,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3389/fimmu.2023.1072655",
+  "pmcid": "PMC9900135",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS11091314",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "accines: A new toolkit for cancer therapy . Cancers ( 2019 ) 11 : 1314 . doi: 10.3390/cancers11091314 31500086 PMC6769604 161 Warnke P Warning L Podbielski A . Some are more equal "
+   }
+  ]
+ },
+ {
+  "row_index": 12449,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1093/nar/gkaa970",
+  "pmcid": "PMC7779016",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS01100",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "al map and are displayed only when this network is selected. For the global maps (map numbers 01100s) and the overview maps (01200s), the new map viewer allows additional options t"
+   }
+  ]
+ },
+ {
+  "row_index": 12785,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1371/journal.pone.0181135",
+  "pmcid": "PMC5507447",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS200500003",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "l/ ], the Netherlands Organization for Health Research and Development (ZonMw) [grant numbers 200500003, 7115 0001, and 204005002; https://www.zonmw.nl/en/ ], and the European Unio"
+   }
+  ]
+ },
+ {
+  "row_index": 12827,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1093/cid/ciy477",
+  "pmcid": "PMC6355821",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS1091536",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "eer research fellowships from the National Health and Medical Research Council (award numbers 1091536 to T. R. H. R. and 1091226 to E. P. F. C.). Potential conflicts of interest. K"
+   }
+  ]
+ },
+ {
+  "row_index": 22,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.3390/ijms24043265",
+  "pmcid": "PMC9963782",
+  "n_hits": 2,
+  "hits": [
+   {
+    "code": "ERS13194799",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "btypes That Correlate with Markers of Tumour Progression Cancers 2021 13 4799 10.3390/cancers13194799 34638284 PMC8507728 49. Liu C.J. Zhang Y.L. Shang Y. Wu B. Yang E. Luo Y.Y. Li"
+   },
+   {
+    "code": "ERS12103011",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "is J. Intestinal Microbiota in Colorectal Cancer Surgery Cancers 2020 12 3011 10.3390/cancers12103011 33081401 PMC7602998 57. Liu Y. He W. Yang J. He Y. Wang Z. Li K. The effects o"
+   }
+  ]
+ },
+ {
+  "row_index": 49,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1007/s10096-023-04551-7",
+  "pmcid": "PMC9899194",
+  "n_hits": 2,
+  "hits": [
+   {
+    "code": "ERS14143385",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "ta in colorectal cancer: a systematic review Cancers 2022 14 14 3385 35884445 10.3390/cancers14143385 PMC9317273 11. Koliarakis I, Messaritakis I, Nikolouzakis TK, Hamilos G, Sougl"
+   },
+   {
+    "code": "ERS11101592",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "nucleatum Fap2 for colorectal cancer therapy Cancers 2019 11 10 1592 31635333 10.3390/cancers11101592 PMC6827134"
+   }
+  ]
+ },
+ {
+  "row_index": 200,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1155/2022/5121496",
+  "pmcid": "PMC9519354",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "PRJNA795467",
+    "repo": "BioProject",
+    "kind": "spaced",
+    "context": "nd here: https://submit.ncbi.nlm.nih.gov/subs/sra/SUB10907576/overview , BioProject ID is PRJNA 795467. Other datasets used and analyzed during the current study are available from"
+   }
+  ]
+ },
+ {
+  "row_index": 258,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3389/fcimb.2022.937864",
+  "pmcid": "PMC9363884",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13010013",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": " and Metabolism in Lung Cancer Patients ? Cancers (Basel) 13 ( 1 ), 13 . doi: 10.3390/cancers13010013 PMC7792810 33375062 Yang C. Y. Li S. W. Chin C. Y. Hsu C. W. Lee C. C. Yeh Y. "
+   }
+  ]
+ },
+ {
+  "row_index": 305,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.33073/pjm-2022-019",
+  "pmcid": "PMC9252143",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12092465",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "reast cancer pathogenesis and treatment Cancers (Basel) 2020 Aug 31 12 9 2465 10.3390/cancers12092465 PMC7565530 32878124 Lakritz JR Poutahidis T Levkovich T Varian BJ Ibrahim YM C"
+   }
+  ]
+ },
+ {
+  "row_index": 337,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1136/gutjnl-2021-325168",
+  "pmcid": "PMC9185830",
+  "n_hits": 2,
+  "hits": [
+   {
+    "code": "ERS12061507",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "-3p and piR-5936 increase with higher histologic grades . Cancers 2020 ; 12 . 10.3390/cancers12061507 . [Epub ahead of print: 09 06 2020 ]. PMC7352804 32527011 29 Kozomara A , Birg"
+   },
+   {
+    "code": "ERS12030708",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "145 cluster in tumors: a matter of where and when . Cancers 2020 ; 12 : 708 . 10.3390/cancers12030708 PMC7140083 32192092 54 Craig WJ . Health effects of vegan diets . Am J Clin Nu"
+   }
+  ]
+ },
+ {
+  "row_index": 370,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1016/j.jcmgh.2022.03.008",
+  "pmcid": "PMC9117812",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "S-PRAS40",
+    "repo": "BioStudies",
+    "kind": "unguarded",
+    "context": " BCLXL P53 CD95 Phos-Tuberin Phos-GSK3a PLCG1 Phos-GSK3B Phos-AKT INPP4B MET Phos-AKT1 Phos-PRAS40 Pan-AKT Phos-ERK Phos-JNK Phos-p38 MAPK Phos-RSK Pan-RAS MAPK ERK BRAF EGFR Phos-"
+   }
+  ]
+ },
+ {
+  "row_index": 412,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1007/s00262-021-03080-6",
+  "pmcid": "PMC9016060",
+  "n_hits": 2,
+  "hits": [
+   {
+    "code": "ERS13174426",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "gnaling in the regulation of PD-L1 in cancer. Cancers. 2021;13(17):4426. doi: 10.3390/cancers13174426. 40. Cretella D, Digiacomo G, Giovannetti E, Cavazzoni A. PTEN alterations as "
+   },
+   {
+    "code": "ERS11091318",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": " tumor cell escape from PD-1/PD-L1 inhibition. Cancers. 2019;11(9):1318. doi: 10.3390/cancers11091318. 41. Cha JH, Yang WH, Xia W, et al. Metformin promotes antitumor immunity via "
+   }
+  ]
+ },
+ {
+  "row_index": 543,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1038/s41598-021-04095-w",
+  "pmcid": "PMC8741880",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12092672",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": " and worse prognosis in males and smokers. Cancers (Basel) 2020;12:2672. doi: 10.3390/cancers12092672. 31. Davis NM, Proctor DM, Holmes SP, Relman DA, Callahan BJ. Simple statistic"
+   }
+  ]
+ },
+ {
+  "row_index": 551,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1016/j.jare.2021.04.001",
+  "pmcid": "PMC8721249",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS10090330",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "Dogs Provide Unique Insights into Human Colorectal Cancer Cancers 10 2018 330 10.3390/cancers10090330 PMC6162437 30223484 26 Fenner L. Roux V. Ananian P. Raoult D. Alistipes finego"
+   }
+  ]
+ },
+ {
+  "row_index": 576,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1155/2021/1469339",
+  "pmcid": "PMC8670901",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS81772441",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "y. This work was supported by the National Natural Science Foundation of China (grant numbers 81772441, 81902288, 82000529, and 82072546), the Natural Science Foundation of Jiangsu"
+   }
+  ]
+ },
+ {
+  "row_index": 703,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.3390/nu13082660",
+  "pmcid": "PMC8398773",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "PRJNA678145",
+    "repo": "BioProject",
+    "kind": "spaced",
+    "context": " Read Archive of the National Center for Biotechnology Information under accession number PRJNA 678145. 2.6. Safety Assessment To evaluate the safety of probiotic administration, w"
+   }
+  ]
+ },
+ {
+  "row_index": 736,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.7189/jogh.11.04047",
+  "pmcid": "PMC8325932",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "PRJNA559803",
+    "repo": "BioProject",
+    "kind": "spaced",
+    "context": "6). Data sharing: 16S rRNA gene amplicon sequencing data are available at SRA (Bioproject PRJNA 559803, SUB6166881 and SUB6110437). A detailed description of the data analysis, alo"
+   }
+  ]
+ },
+ {
+  "row_index": 821,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1038/s41598-021-89963-1",
+  "pmcid": "PMC8134445",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "DRA011436",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "t. T.Y. and K.H. revised the manuscript. Data availability Datasets from DDBJ (accession# DRA 011436) are publicly available. The datasets generated during and/or analyzed during t"
+   }
+  ]
+ },
+ {
+  "row_index": 931,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1097/MD.0000000000024845",
+  "pmcid": "PMC7899815",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS81873253",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "k. This work was supported by the National Natural Science Foundation of China [grant numbers 81873253, 81573892, and 81704009], the sixth round of academic experience successors t"
+   }
+  ]
+ },
+ {
+  "row_index": 1011,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1038/s41598-020-77806-4",
+  "pmcid": "PMC7729960",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "KAP1971",
+    "repo": "GSA-KAP",
+    "kind": "delookalike",
+    "context": "H)D] was measured using the DIAsource 25OH vitamin D Total ELISA 90\u2032 Kit (catalog number: KAP1971/F1). Microbial DNA extraction from stool samples A fraction of the collected stool"
+   }
+  ]
+ },
+ {
+  "row_index": 1050,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1038/s41598-020-76467-7",
+  "pmcid": "PMC7669878",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS10020038",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "r and alcohol consumption-populations to molecules Cancers (Basel) 2018 10 38 10.3390/cancers10020038 PMC5836070 29385712 40. Tsuruya A Major anaerobic bacteria responsible for the"
+   }
+  ]
+ },
+ {
+  "row_index": 1261,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1186/s12866-020-01779-7",
+  "pmcid": "PMC7161020",
+  "n_hits": 3,
+  "hits": [
+   {
+    "code": "ERS81872123",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "ng This work was supported by the National Natural Science Foundation of China [grant numbers 81872123]; University innovation team of Liaoning Province; Special Professor of Liaon"
+   },
+   {
+    "code": "ERS3110118029",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "struction Plan\u201d for Discipline Construction of China Medical University in 2018[grant numbers 3110118029] and Outstanding Scientific Fund of Shengjing Hospital [grant numbers 20160"
+   },
+   {
+    "code": "ERS201601",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "rant numbers 3110118029] and Outstanding Scientific Fund of Shengjing Hospital [grant numbers 201601]. Funding bodies had no role in study design,data collection,analysis,and writi"
+   }
+  ]
+ },
+ {
+  "row_index": 1334,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1186/s13048-019-0603-4",
+  "pmcid": "PMC6969417",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS11030309",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "s Identified by Shotgun Metagenomic Sequencing. Cancers. 2019;11(3):309. doi: 10.3390/cancers11030309. 14. Urbaniak C, Gloor GB, Brackstone M, Scott L, Tangney M, Reid G. The micro"
+   }
+  ]
+ },
+ {
+  "row_index": 1418,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1186/s12967-019-2102-1",
+  "pmcid": "PMC6819376",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS11030346",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "orectal primary tumors based on miRNAs. Cancers (Basel). 2019;11(3):346. doi: 10.3390/cancers11030346. 17. Arnold D, Lueza B, Douillard JY, et al. Prognostic and predictive value o"
+   }
+  ]
+ },
+ {
+  "row_index": 1433,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.7150/ijbs.35980",
+  "pmcid": "PMC6775324",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS11010038",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "iota and Cancer: From Pathogenesis to Therapy Cancers (Basel) 2019 11 pii E38 10.3390/cancers11010038 PMC6356461 30609850 37 Pennell NA Arcila ME Gandara DR West H Biomarker Testin"
+   }
+  ]
+ },
+ {
+  "row_index": 1446,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1038/s41598-019-50054-x",
+  "pmcid": "PMC6753194",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS11030309",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "s Identified by Shotgun Metagenomic Sequencing. Cancers. 2019;11(3):309. doi: 10.3390/cancers11030309. 46. Zhang B, Xia C, Lin Q, Huang J. Identification of key pathways and transc"
+   }
+  ]
+ },
+ {
+  "row_index": 1509,
+  "flag": "NO_ACCESSION",
+  "source": "ncbi_fulltext",
+  "doi": "10.1007/s12603-019-1194-x",
+  "pmcid": "PMC6618308",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERA4410265",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "R p-value (F) Erysipelotrichaceae CC-115 807548 35.9% 0.00018 -0.37 0.00 0.04 (F) Megasphaera 4410265 22.3% 0.00034 -0.34 0.02 0.11 (F) Coprobacillus 415427 57.4% 0.00014 -0.29 0.0"
+   }
+  ]
+ },
+ {
+  "row_index": 1535,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1590/1678-7757-2018-0635",
+  "pmcid": "PMC6559755",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS10010020",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "-derived acetaldehyde exposure in the oral cavity Cancers Basel 2018 10 1 E20 10.3390/cancers10010020 PMC5789370 29342885 8 Nieminen MT Uittamo J Salaspuro M Rautemaa R Acetaldehyd"
+   }
+  ]
+ },
+ {
+  "row_index": 1786,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3389/fimmu.2018.00712",
+  "pmcid": "PMC5897428",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS23659342",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "ice, Department of Health Promotion. Funding. Supported in part by JSPS KAKENHI Grant Numbers 23659342, 17K09098, and 26460761. References 1 Miller LE Ouwehand AC Ibarra A . Effect"
+   }
+  ]
+ },
+ {
+  "row_index": 1934,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1111/jdi.12598",
+  "pmcid": "PMC5497035",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS20241016",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "nd staff for their dedication. This study was supported by JSPS KAKENHI grants (grant numbers 20241016 and 15H06087), and grants from the Chiba Foundation for Health Promotion &amp"
+   }
+  ]
+ },
+ {
+  "row_index": 2273,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1128/mBio.01133-14",
+  "pmcid": "PMC4030452",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS4547358",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "ov/ ) under the project Phage Biofilm Study or under consecutive individual accession numbers 4547358.3 to 4547405.3 for the viromes and 4547630.3 to 4547677.3 for the 16S rRNAs. S"
+   }
+  ]
+ },
+ {
+  "row_index": 2535,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1111/jcpe.70029",
+  "pmcid": "PMC12695455",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13092124",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "me Axis in Gastrointestinal Disease and Cancer .\u201d Cancers 13 , no. 9 : 2124 . 10.3390/cancers13092124 . 33924899 PMC8125773 Paster , B. J. , M. K. Russell , T. Alpagot , et al. 200"
+   }
+  ]
+ },
+ {
+  "row_index": 2610,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1007/s00262-025-04175-0",
+  "pmcid": "PMC12552193",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12092619",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "gastric cancer in a Korean population: a case-control study. Cancers (Basel). 10.3390/cancers12092619 31. Png CW, Lee WJJ, Chua SJ, Zhu F, Yeoh KG, Zhang Y (2022) Mucosal microbiom"
+   }
+  ]
+ },
+ {
+  "row_index": 2657,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1002/ctm2.70492",
+  "pmcid": "PMC12485822",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS15194893",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "dult Ethiopian women with breast cancer . Cancers (Basel) . 2023 ; 15 ( 19 ). 10.3390/cancers15194893 PMC10571711 37835588 29 Tavano F , Napoli A , Gioffreda D , et al. Could the m"
+   }
+  ]
+ },
+ {
+  "row_index": 2666,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3390/medicina61091632",
+  "pmcid": "PMC12471758",
+  "n_hits": 2,
+  "hits": [
+   {
+    "code": "ERS982375",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": " work was supported by the Research Council in the South-East of Sweden (FORSS, grant numbers 982375 and 1003664), Futurum\u2014the Academy for Health and Care, Region J\u00f6nk\u00f6ping County "
+   },
+   {
+    "code": "ERS1004436",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "and 1003664), Futurum\u2014the Academy for Health and Care, Region J\u00f6nk\u00f6ping County (grant numbers 1004436, 983581, and 989680), and the Swedish Society of Medicine (SLS, grant number 9"
+   }
+  ]
+ },
+ {
+  "row_index": 2684,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3390/nu17172781",
+  "pmcid": "PMC12430344",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12092531",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "l Symptom Cluster in Patients with Head and Neck Cancers Cancers 2020 12 2531 10.3390/cancers12092531 32899975 PMC7563252 165. Fregatto L.F. Costa I.B. De Bortoli Teixeira D. Duart"
+   }
+  ]
+ },
+ {
+  "row_index": 2707,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.3390/ijms26168104",
+  "pmcid": "PMC12386369",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13133332",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "n-A Metagenomic Comparison with Healthy Subjects. Cancers. 2021;13:3332. doi: 10.3390/cancers13133332. 16. van de Ven S., Bugter O., Hardillo J.A., Bruno M.J., Baatenburg de Jong R"
+   }
+  ]
+ },
+ {
+  "row_index": 2756,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1155/da/9961595",
+  "pmcid": "PMC12303655",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13092124",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "strointestinal Disease and Cancer. Cancers (Basel) . 2021;13(9):p. 2124. doi: 10.3390/cancers13092124. 9. Riviere G. R., Riviere K. H., Smith K. S. Molecular and Immunological Evid"
+   }
+  ]
+ },
+ {
+  "row_index": 2775,
+  "flag": "ON_REQUEST",
+  "source": "ncbi_fulltext",
+  "doi": "10.1016/j.ijrobp.2025.02.044",
+  "pmcid": "PMC12276923",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13225826",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "ated radiation therapy in breast cancer . Cancers 2021 ; 13 : 5826 . 34830981 10.3390/cancers13225826 PMC8616262 43. Hindley A , Zain Z , Wood L , Mometasone furoate cream reduces "
+   }
+  ]
+ },
+ {
+  "row_index": 2785,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3389/fimmu.2025.1590601",
+  "pmcid": "PMC12256228",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12082331",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "enic behavior of pancreatic carcinoma cells. Cancers (Basel). (2020) 12. doi: 10.3390/cancers12082331 36. Dominy SS, Lynch C, Ermini F, Benedyk M, Marczyk A, Konradi A, et al. Porp"
+   }
+  ]
+ },
+ {
+  "row_index": 2811,
+  "flag": "NO_DATA",
+  "source": "fulltext",
+  "doi": "10.1186/s40001-025-02795-x",
+  "pmcid": "PMC12211186",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "S-DDMS2",
+    "repo": "BioStudies",
+    "kind": "unguarded",
+    "context": "20 (Thermo Fisher Scientific, USA) with ESI ion source. Simultaneous MS1 and MS/MS (Full MS-ddMS2 mode, data-dependent MS/MS) acquisition was used. The parameters were as follows: "
+   }
+  ]
+ },
+ {
+  "row_index": 2819,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3390/nu17122047",
+  "pmcid": "PMC12195854",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS17030535",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "multifaceted regulator in cancer pathogenesis and therapy Cancers 2025 17 535 10.3390/cancers17030535 39941901 PMC11816870 72. Myhrstad M.C.W. Tunsj\u00f8 H. Charnock C. Telle-Hansen V."
+   }
+  ]
+ },
+ {
+  "row_index": 2980,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3390/ijms26052339",
+  "pmcid": "PMC11900280",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS15235680",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "s in Tongue Cancer: A Retrospective Cohort Study. Cancers. 2023;15:5680. doi: 10.3390/cancers15235680. 4. Warnakulasriya S. Global epidemiology of oral and oropharyngeal cancer. Or"
+   }
+  ]
+ },
+ {
+  "row_index": 3025,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.3389/fcimb.2024.1518199",
+  "pmcid": "PMC11799255",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS14215394",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "omoting Malignant progression of lung cancer. Cancers (Basel). 14, 5394. doi: 10.3390/cancers14215394 Wang Y., Li J., Wu Q., Chang Q., Guo S. (2023). Pathogen distribution in pulmo"
+   }
+  ]
+ },
+ {
+  "row_index": 3054,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1186/s13023-025-03543-4",
+  "pmcid": "PMC11742751",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS16010104",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "itial stages of intestinal mucosa damage: a pilot study Cancers (Basel). 2023 10.3390/cancers16010104 38201530 PMC10778549 Ruiz-Saavedra S, Arboleya S, Nogacka AM, Gonz\u00e1lez Del Rey"
+   }
+  ]
+ },
+ {
+  "row_index": 3055,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3389/fcimb.2024.1500959",
+  "pmcid": "PMC11739288",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12102983",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "tyle, metabolic disorders and sociological factors . Cancers 12 , 2983 . doi: 10.3390/cancers12102983 33076303 PMC7602474 Goldsworthy M. E. Potter P. K. ( 2014 ). Modelling age-rel"
+   }
+  ]
+ },
+ {
+  "row_index": 3174,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.3390/nu16203544",
+  "pmcid": "PMC11510366",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS7901750034",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "mental symptoms somatic symptoms Centre of Expertise Food aXtion MyMicroZoo Hessing Supervers 7901750034 This project was funded by Centre of Expertise Food, aXtion, MyMicroZoo and"
+   }
+  ]
+ },
+ {
+  "row_index": 3176,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.3390/ijms252010890",
+  "pmcid": "PMC11508181",
+  "n_hits": 2,
+  "hits": [
+   {
+    "code": "ERS15112898",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "ck Cancer, Pancreatic Cancer, and Gastric Cancer. Cancers. 2023;15:2898. doi: 10.3390/cancers15112898. Associated Data Supplementary Materials Data Availability Statement The data "
+   },
+   {
+    "code": "ERS2211690",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "This work was supported by the National Cancer Center (NCC), Republic of Korea (grant numbers 2211690 and 2210660). Footnotes Disclaimer/Publisher\u2019s Note: The statements, opinions "
+   }
+  ]
+ },
+ {
+  "row_index": 3177,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.3390/genes15101263",
+  "pmcid": "PMC11507344",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13092124",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "t microbiome axis in gastrointestinal disease and cancer Cancers 2021 13 2124 10.3390/cancers13092124 33924899 PMC8125773 61. Forst A.A. Heston M.B. Gonz\u00e1lez A. Chin N.A. Przybelsk"
+   }
+  ]
+ },
+ {
+  "row_index": 3202,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1038/s41380-024-02551-3",
+  "pmcid": "PMC11449789",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "PRJNA953406",
+    "repo": "BioProject",
+    "kind": "spaced",
+    "context": "cript for publication. Data availability 16 S amplicon data has been archived in NCBI SRA PRJNA 953406. Clinical data and processing scripts are available from the corresponding au"
+   }
+  ]
+ },
+ {
+  "row_index": 3218,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1038/s41591-024-03086-4",
+  "pmcid": "PMC11405272",
+  "n_hits": 2,
+  "hits": [
+   {
+    "code": "ERS14092049",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "e on the current algorithm and future directions Cancers (Basel) 2022 14 2049 10.3390/cancers14092049 35565179 PMC9106028 Govindarajan, A. et al. Front-line therapy for metastatic "
+   },
+   {
+    "code": "ERS16010047",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "g cancer receiving chemoimmunotherapy combinations Cancers (Basel) 2024 16 47 10.3390/cancers16010047 PMC10778075 38201474 Tomita, Y. et al. Association of Clostridium butyricum th"
+   }
+  ]
+ },
+ {
+  "row_index": 3225,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1007/s00394-024-03406-x",
+  "pmcid": "PMC11377619",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS327698",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "althy Life) funded by the Strategic Research Council at the Academy of Finland (grant numbers 327698, 327699, 352483). KKK was supported by the Aarne Koskelo foundation. Funders ha"
+   }
+  ]
+ },
+ {
+  "row_index": 3275,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3390/medicina60071150",
+  "pmcid": "PMC11279156",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS15143744",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "NASH rapidly progressing into liver cirrhosis and tumors Cancers 2023 15 3744 10.3390/cancers15143744 37509405 PMC10378543 29. Nikkhah A. Ejtahed H.S. Ettehad Marvasti F. Taghavi M"
+   }
+  ]
+ },
+ {
+  "row_index": 3374,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1111/1759-7714.15303",
+  "pmcid": "PMC11091776",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS14215405",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "gut microbiota analysis . Cancers (Basel) . 2022 ; 14 ( 21 ): 5405 . 36358821 10.3390/cancers14215405 PMC9658074 45 He D , Li X , An R , Wang L , Wang Y , Zheng S , et al. Response"
+   }
+  ]
+ },
+ {
+  "row_index": 3380,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1128/mbio.00245-24",
+  "pmcid": "PMC11077998",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13122926",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "en-label, prospective, observational trial . Cancers (Basel) 13 : 2926 . doi: 10.3390/cancers13122926 34208108 PMC8230746 23 Zhang Y , Lou JW , Kang A , Zhang Q , Zhou SK , Bao BH "
+   }
+  ]
+ },
+ {
+  "row_index": 3393,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1111/crj.13762",
+  "pmcid": "PMC11058370",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13194824",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "ancer immunotherapy? Cancers . 2021 ; 13 ( 19 ): 4824 . Epub 2021/10/14. doi: 10.3390/cancers13194824 PubMed PMID: 34638308; PubMed Central PMCID: PMCPMC8508052 34638308 PMC8508052"
+   }
+  ]
+ },
+ {
+  "row_index": 3433,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.3390/nu16060786",
+  "pmcid": "PMC10975138",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "PRJNA922681",
+    "repo": "BioProject",
+    "kind": "spaced",
+    "context": "have been deposited in NCBI\u2019s Sequence Read Archive (SRA) database under accession number PRJNA 922681. Conflicts of Interest The authors declare no conflicts of interest. Referenc"
+   }
+  ]
+ },
+ {
+  "row_index": 3436,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1177/15347354241240141",
+  "pmcid": "PMC10960346",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS14246042",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "ion of the preclinical and clinical evidence . Cancers . 2022 ; 14 : 1 - 20 . 10.3390/cancers14246042 PMC9775518 36551528 13 Campaniello D Corbo MR Sinigaglia M , et al . How diet "
+   }
+  ]
+ },
+ {
+  "row_index": 3470,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.3390/ijms25042323",
+  "pmcid": "PMC10889071",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS14061563",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "cted Lung Cancer: A Single Institution Prospective Study Cancers 2022 14 1563 10.3390/cancers14061563 35326713 PMC8946852 85. Callahan B.J. McMurdie P.J. Rosen M.J. Han A.W. Johnso"
+   }
+  ]
+ },
+ {
+  "row_index": 3479,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1186/s12967-024-04984-4",
+  "pmcid": "PMC10874565",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13010043",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "elation-a special reference to colorectal cancer Cancers (Basel) 2020 13 1 43 10.3390/cancers13010043 33375686 PMC7795476 10. Tanoue T A defined commensal consortium elicits CD8 T "
+   }
+  ]
+ },
+ {
+  "row_index": 3483,
+  "flag": "ON_REQUEST",
+  "source": "ncbi_fulltext",
+  "doi": "10.1002/cncr.35001",
+  "pmcid": "PMC10872366",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS11060857",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "eatment: from pathobiology to bedside . Cancers . 2019 ; 11 ( 6 ): 857 . doi: 10.3390/cancers11060857 31226812 PMC6627284 16. Rosenthal DI , Mendoza TR , Chambers MS , The M. D. An"
+   }
+  ]
+ },
+ {
+  "row_index": 3489,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1097/MD.0000000000037053",
+  "pmcid": "PMC10860994",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "GDS0828",
+    "repo": "GEO",
+    "kind": "unguarded",
+    "context": "a Li, Email: 2867564624@qq.com. Yan Leng, Email: 2556796523@qq.com. Dashi Ying, Email: yingds0828@163.com. References [1] Li Y, Xia R, Zhang B, et al. Chronic atrophic gastritis: a"
+   }
+  ]
+ },
+ {
+  "row_index": 3542,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.3390/nu15245123",
+  "pmcid": "PMC10745889",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS20181203",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "uman Ethics Committee of the Australian Institute of Sport (AIS) with ethics approval numbers 20181203 (study 1) and 20191102 (study 2). All participants provided written informed "
+   }
+  ]
+ },
+ {
+  "row_index": 3550,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1080/19490976.2023.2288200",
+  "pmcid": "PMC10730231",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13184687",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": " Liquid Biopsy and metagenome analysis. Cancers Basel. 2021;13(18):4687. doi: 10.3390/cancers13184687. 44. Bokulich NA, Kaehler BD, Rideout JR, Dillon M, Bolyen E, Knight R, Huttle"
+   }
+  ]
+ },
+ {
+  "row_index": 3566,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1007/s13402-023-00832-7",
+  "pmcid": "PMC10697899",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12061447",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": " adenocarcinoma and lung squamous cell carcinoma Cancers (Basel) 2020 12 1447 10.3390/cancers12061447 32498338 PMC7352186 L.M. Wong, N. Shende, W.T. Li, G. Castaneda, L. Apostol, E"
+   }
+  ]
+ },
+ {
+  "row_index": 3570,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1136/jitc-2023-007840",
+  "pmcid": "PMC10689421",
+  "n_hits": 3,
+  "hits": [
+   {
+    "code": "ERS13051102",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": ": approaches to targeting and Radiosensitizing. Cancers (Basel) 2021;13:1102. 10.3390/cancers13051102 9. Chen Z, Han F, Du Y, et al. Hypoxic Microenvironment in cancer: molecular m"
+   },
+   {
+    "code": "ERS15072101",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "erapy: Current knowledge and future directions. Cancers (Basel) 2023;15:2101. 10.3390/cancers15072101 22. Lozenov S, Krastev B, Nikolaev G, et al. Gut Microbiome composition and it"
+   },
+   {
+    "code": "ERS15051588",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "tabolites on the tumor immune Microenvironment. Cancers (Basel) 2023;15:1588. 10.3390/cancers15051588 24. Gomes S, Rodrigues AC, Pazienza V, et al. Modulation of the tumor Microenv"
+   }
+  ]
+ },
+ {
+  "row_index": 3582,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1093/ecco-jcc/jjad092",
+  "pmcid": "PMC10673813",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13122908",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "rectal cancer occurrence in IBD . Cancers [Basel] 2021 ; 13 : 2908 . 34200768 10.3390/cancers13122908 PMC8230430 24. Fa\u00efs T , Delmas J , Barnich N , Bonnet R , Dalmasso GC. More th"
+   }
+  ]
+ },
+ {
+  "row_index": 3618,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1111/iwj.14267",
+  "pmcid": "PMC10588311",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "PRJNA764460",
+    "repo": "BioProject",
+    "kind": "spaced",
+    "context": " DATA AVAILABILITY STATEMENT Data is available upon request from the authors NCBI SRA no. PRJNA 764460. REFERENCES 1 Hinojosa CA , Boyer\u2010Duck E , Anaya\u2010Ayala JE , et al. Impact of "
+   }
+  ]
+ },
+ {
+  "row_index": 3645,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1136/ard-2023-223929",
+  "pmcid": "PMC10511964",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS813123",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "spaced",
+    "context": "tervals over a period up to 2 years, and we found that 3/8 representative (public identifiers 813123, 641924, 665783) LN patients had anti-LG antibody levels equivalent to those wi"
+   }
+  ]
+ },
+ {
+  "row_index": 3655,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.3390/nu15173705",
+  "pmcid": "PMC10490500",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS14020417",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "olorectal Cancer Survivors up to 24 Months Post-Treatment Cancers 2022 14 417 10.3390/cancers14020417 35053579 PMC8774035 9. Kenkhuis M.-F. van der Linden B.W.A. Breedveld-Peters J"
+   }
+  ]
+ },
+ {
+  "row_index": 3665,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1002/cam4.6283",
+  "pmcid": "PMC10469656",
+  "n_hits": 3,
+  "hits": [
+   {
+    "code": "ERS13184566",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "id leukemia by gemtuzumab ozogamicin. Cancers (Basel). 2021;13(18):4566. doi: 10.3390/cancers13184566 4. Malard F, Vekhoff A, Lapusan S, et al. Gut microbiota diversity after autol"
+   },
+   {
+    "code": "ERS13174367",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "tients: a retrospective cohort study. Cancers (Basel). 2021;13(17):4367. doi: 10.3390/cancers13174367 13. Elgarten CW, Tanes C, Lee JJ, et al. Early stool microbiome and metabolome"
+   },
+   {
+    "code": "ERS14081932",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": " stem cell transplantation recipients. Cancers (Basel). 2022;14(8):1932. doi: 10.3390/cancers14081932 28. Fattizzo B, Cavallaro F, Folino F, Barcellini W. Recent insights into the "
+   }
+  ]
+ },
+ {
+  "row_index": 3709,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.3390/nu15132885",
+  "pmcid": "PMC10343580",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS15092576",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": " The Role of the Microbiota in Esophageal Cancer. Cancers. 2023;15:2576. doi: 10.3390/cancers15092576. 29. M\u00fcnch N.S., Fang H.-Y., Ingermann J., Maurer H.C., Anand A., Kellner V., "
+   }
+  ]
+ },
+ {
+  "row_index": 3737,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1136/jitc-2023-006833",
+  "pmcid": "PMC10254948",
+  "n_hits": 3,
+  "hits": [
+   {
+    "code": "ERS13235876",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "st cancer are associated with reduced survival. Cancers (Basel) 2021;13:5876. 10.3390/cancers13235876 30. Lu Y, Kong X, Zhong W, et al. Diagnostic, therapeutic, and prognostic valu"
+   },
+   {
+    "code": "ERS12071755",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "244), CS1 (CD319), and LLT1 (CLEC2D) in cancer. Cancers (Basel) 2020;12:1755. 10.3390/cancers12071755 37. Boles KS, Nakajima H, Colonna M, et al. Molecular characterization of a no"
+   },
+   {
+    "code": "ERS13246259",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "ancer (NSCLC): a prospective exploratory study. Cancers (Basel) 2021;13:6259. 10.3390/cancers13246259 41. Fehlings M, Jhunjhunwala S, Kowanetz M, et al. Late-differentiated effecto"
+   }
+  ]
+ },
+ {
+  "row_index": 3836,
+  "flag": "NO_ACCESSION",
+  "source": "ncbi_fulltext",
+  "doi": "10.1080/01635581.2022.2163668",
+  "pmcid": "PMC10023443",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12061406",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "evelopment and therapy response . Cancers (Basel) . 12 ( 6 ): 1406 . 32486066 10.3390/cancers12061406 PMC7352899 5. Song M , Garrett WS , Chan AT . 2015 . Nutrients, foods, and col"
+   }
+  ]
+ },
+ {
+  "row_index": 7465,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1128/mbio.01531-23",
+  "pmcid": "PMC10746152",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS11040504",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "among high incidence of gastric cancer area . Cancers (Basel) 11 : 504 . doi: 10.3390/cancers11040504 30974798 PMC6520852 24 Guo Y , Zhang Y , Gerhard M , Gao J-J , Mejias-Luque R "
+   }
+  ]
+ },
+ {
+  "row_index": 7483,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1186/s40168-021-01208-5",
+  "pmcid": "PMC8862353",
+  "n_hits": 2,
+  "hits": [
+   {
+    "code": "ERS10080246",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "tion of colorectal neoplasms: a systematic review. Cancers. 2018;10:246. doi: 10.3390/cancers10080246. 34. Vu\u010deti\u0107 M, Cormerais Y, Parks SK, Pouyss\u00e9gur J. The central role of amino"
+   },
+   {
+    "code": "ERS11050675",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": " functions of non-essential amino acids in Cancer. Cancers. 2019;11:675. doi: 10.3390/cancers11050675. 38. Amelio I, Cutruzzol\u00e1 F, Antonov A, Agostini M, Melino G. Serine and glyci"
+   }
+  ]
+ },
+ {
+  "row_index": 7502,
+  "flag": "ON_REQUEST",
+  "source": "ncbi_fulltext",
+  "doi": "10.1002/jmv.70304",
+  "pmcid": "PMC12085969",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13174269",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "ria in KSHV Infection and KSHV-Induced Cancers ,\u201d Cancers 13 ( 2021 ): 4269 , 10.3390/cancers13174269 . 34503079 PMC8428360 8. Contreras A , Nowzari H , and Slots J , \u201c Herpesvirus"
+   }
+  ]
+ },
+ {
+  "row_index": 7532,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.3390/genes13111967",
+  "pmcid": "PMC9690037",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS12051142",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "Fecal Metagenomics and Metabolomics in Colorectal Cancer Cancers 2020 12 1142 10.3390/cancers12051142 32370168 PMC7281174 25. Tjalsma H. Boleij A. Marchesi J.R. Dutilh B.E. A bacte"
+   }
+  ]
+ },
+ {
+  "row_index": 7534,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1097/CM9.0000000000002421",
+  "pmcid": "PMC10686596",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS11010038",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "obiota and cancer: from pathogenesis to therapy . Cancers 2019 ; 11 : 38 doi: 10.3390/cancers11010038 . 30609850 10.3390/cancers11010038 PMC6356461 41 Youn HS Kim JH Lee JS Yoon YY"
+   }
+  ]
+ },
+ {
+  "row_index": 7564,
+  "flag": "ON_REQUEST",
+  "source": "fulltext",
+  "doi": "10.1038/s43587-024-00590-7",
+  "pmcid": "PMC11031402",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "EGAD00001007035",
+    "repo": "EGA",
+    "kind": "delookalike",
+    "context": "he EHR data. Metagenomic data are available through the European Genome\u2013Phenome Archive ( EGAD00001007035 ). PRSs are available through the Polygenic Score Catalog ( https://www.pg"
+   }
+  ]
+ },
+ {
+  "row_index": 12010,
+  "flag": "NO_ACCESSION",
+  "source": "fulltext",
+  "doi": "10.1016/j.neo.2022.100786",
+  "pmcid": "PMC8971327",
+  "n_hits": 1,
+  "hits": [
+   {
+    "code": "ERS13174287",
+    "repo": "SRA/ENA/DDBJ",
+    "kind": "unguarded",
+    "context": "arkers, and current treatment strategies-an updated review Cancers 13 17 2021 10.3390/cancers13174287 PMC8428369 34503097 3 Baruch E.N. Wang J. Wargo JA. Gut microbiota and antitum"
+   }
+  ]
+ }
+]

@@ -1,0 +1,4023 @@
+[
+ {
+  "row_index": 15,
+  "doi": "10.1177/00220345221125402",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 55,
+  "doi": "10.1093/ibd/izac175",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 69,
+  "doi": "10.1182/blood.2021015352",
+  "is_oa": true,
+  "oa_url": "https://ashpublications.org/blood/article-pdf/140/22/2385/2055498/blood_bld-2021-015352-main.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 109,
+  "doi": "10.1177/15353702221118091",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 152,
+  "doi": "10.2337/db22-0168",
+  "is_oa": true,
+  "oa_url": "https://diabetesjournals.org/diabetes/article-pdf/71/11/2438/689821/db220168.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 182,
+  "doi": "10.19723/j.issn.1671-167X.2022.05.014",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 212,
+  "doi": "10.1093/infdis/jiac010",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 260,
+  "doi": "10.1152/ajpgi.00352.2021",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 264,
+  "doi": "10.1093/ecco-jcc/jjac001",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/ecco-jcc/article-pdf/16/7/1020/45250980/jjac001.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 352,
+  "doi": "10.1007/s42770-022-00721-5",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 373,
+  "doi": "10.1111/joim.13458",
+  "is_oa": true,
+  "oa_url": "https://hdl.handle.net/11250/3056123",
+  "host": "repository",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 391,
+  "doi": "10.1093/ajcn/nqab398",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 401,
+  "doi": "10.7499/j.issn.1008-8830.2111165",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 428,
+  "doi": "10.5152/tjg.2020.20245",
+  "is_oa": true,
+  "oa_url": "https://doaj.org/article/a33664a902fc4e47bf33d2caba7e50a1",
+  "host": "repository",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 429,
+  "doi": "10.5152/tjg.2020.19995",
+  "is_oa": true,
+  "oa_url": "https://doaj.org/article/e39aec79cfe44238a5e2b50b3e42a1a2",
+  "host": "repository",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 430,
+  "doi": "10.7499/j.issn.1008-8830.2109134",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 442,
+  "doi": "10.1210/clinem/dgab883",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/jcem/article-pdf/107/4/1053/42994631/dgab883.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 452,
+  "doi": "10.1177/15353702211057473",
+  "is_oa": true,
+  "oa_url": "https://journals.sagepub.com/doi/pdf/10.1177/15353702211057473",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 470,
+  "doi": "10.1080/10790268.2020.1769949",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 486,
+  "doi": "10.1210/clinem/dgab573",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 517,
+  "doi": "10.5664/jcsm.9640",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 520,
+  "doi": "10.1152/ajpgi.00091.2021",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 521,
+  "doi": "10.34067/KID.0006132020",
+  "is_oa": true,
+  "oa_url": "https://doi.org/10.34067/kid.0006132020",
+  "host": "publisher",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 526,
+  "doi": "10.1038/s41416-021-01578-5",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 533,
+  "doi": "10.1177/1099800421991656",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 534,
+  "doi": "10.1177/1099800420984543",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 538,
+  "doi": "10.12122/j.issn.1673-4254.2021.12.17",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 539,
+  "doi": "10.1097/QAI.0000000000002866",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 571,
+  "doi": "10.34067/KID.0000132021",
+  "is_oa": true,
+  "oa_url": "https://kidney360.asnjournals.org/content/kidney360/2/8/1261.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 591,
+  "doi": "10.4269/ajtmh.21-0310",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 594,
+  "doi": "10.1093/ajcn/nqab273",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 625,
+  "doi": "10.1007/s42770-021-00594-0",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 634,
+  "doi": "10.1093/infdis/jiab094",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 639,
+  "doi": "10.7499/j.issn.1008-8830.2107103",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 650,
+  "doi": "10.1093/gerona/glab167",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/biomedgerontology/article-pdf/76/11/1930/40630893/glab167.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 661,
+  "doi": "10.1128/AEM.01208-21",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 683,
+  "doi": "10.1093/jn/nxab139",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 684,
+  "doi": "10.3748/wjg.v27.i33.5575",
+  "is_oa": true,
+  "oa_url": "https://doi.org/10.3748/wjg.v27.i33.5575",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 708,
+  "doi": "10.1128/JVI.00479-21",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 749,
+  "doi": "10.7499/j.issn.1008-8830.2102039",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 770,
+  "doi": "10.1111/apm.13143",
+  "is_oa": true,
+  "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/apm.13143",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 798,
+  "doi": "10.1093/ajcn/nqab001",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 820,
+  "doi": "10.1093/infdis/jiaa577",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 830,
+  "doi": "10.1159/000511622",
+  "is_oa": true,
+  "oa_url": "https://www.karger.com/Article/Pdf/511622",
+  "host": "publisher",
+  "codes": [],
+  "status": -1
+ },
+ {
+  "row_index": 844,
+  "doi": "10.1093/cid/ciaa778",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 863,
+  "doi": "10.1093/femsle/fnab038",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 877,
+  "doi": "10.1631/jzus.B2000554",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 909,
+  "doi": "10.1093/ajcn/nqaa350",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 910,
+  "doi": "10.1093/ajcn/nqaa361",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 912,
+  "doi": "10.1182/bloodadvances.2020003129",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 944,
+  "doi": "10.1177/1099800420941255",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1000,
+  "doi": "10.1093/ibd/izz335",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1013,
+  "doi": "10.1093/ajcn/nqaa263",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1020,
+  "doi": "10.1093/cid/ciz1117",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1035,
+  "doi": "10.1007/s42770-020-00381-3",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1037,
+  "doi": "10.1182/bloodadvances.2020002677",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1111,
+  "doi": "10.1128/AEM.01421-20",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1114,
+  "doi": "10.1080/19490976.2020.1758010",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1118,
+  "doi": "10.1080/19490976.2019.1686322",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1119,
+  "doi": "10.1080/19490976.2019.1626683",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1122,
+  "doi": "10.1080/19490976.2020.1712985",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1127,
+  "doi": "10.1080/19490976.2020.1737487",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1130,
+  "doi": "10.1080/19490976.2019.1700754",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1131,
+  "doi": "10.1080/19490976.2019.1681861",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1133,
+  "doi": "10.1080/19490976.2020.1778262",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1143,
+  "doi": "10.1093/ibd/izaa183",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1155,
+  "doi": "10.4269/ajtmh.19-0940",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1161,
+  "doi": "10.1099/jmm.0.001130",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1177,
+  "doi": "10.12122/j.issn.1673-4254.2020.07.06",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1182,
+  "doi": "10.1093/ibd/izz263",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1183,
+  "doi": "10.1093/ntr/ntz220",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1186,
+  "doi": "10.4269/ajtmh.19-0761",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1190,
+  "doi": "10.1093/ecco-jcc/jjz189",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1196,
+  "doi": "10.1093/cid/ciaa709",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1206,
+  "doi": "10.1093/gerona/glaa122",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1220,
+  "doi": "10.1681/ASN.2019101131",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1221,
+  "doi": "10.1093/ajcn/nqaa046",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1222,
+  "doi": "10.1093/ajcn/nqaa015",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1223,
+  "doi": "10.1093/ajcn/nqaa076",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1231,
+  "doi": "10.1093/clinchem/hvaa106",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1233,
+  "doi": "10.5152/tjg.2020.19013",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1255,
+  "doi": "10.1093/ibd/izz130",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1258,
+  "doi": "10.1002/jmv.24984",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1259,
+  "doi": "10.1002/jmv.24895",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1296,
+  "doi": "10.1080/19490976.2019.1634416",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1306,
+  "doi": "10.7518/hxkq.2018.02.007",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1315,
+  "doi": "10.1099/jgv.0.000920",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1321,
+  "doi": "10.1093/ajcn/nqz301",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1325,
+  "doi": "10.1513/AnnalsATS.201907-493OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1333,
+  "doi": "10.1080/19490976.2019.1614394",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1347,
+  "doi": "10.4269/ajtmh.19-0355",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1351,
+  "doi": "10.1099/jmm.0.000968",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1353,
+  "doi": "10.5152/iao.2019.6650",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1359,
+  "doi": "10.1007/s11357-019-00098-8",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1365,
+  "doi": "10.1089/AID.2017.0200",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1367,
+  "doi": "10.1096/fj.201900398RR",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1384,
+  "doi": "10.1152/ajpgi.00194.2019",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1386,
+  "doi": "10.11622/smedj.2018152",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1388,
+  "doi": "10.1177/0022034519881978",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1393,
+  "doi": "10.1080/19490976.2019.1592420",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1394,
+  "doi": "10.1093/jn/nxz065",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1437,
+  "doi": "10.1093/ajcn/nqz174",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1442,
+  "doi": "10.1128/AAC.00820-19",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1455,
+  "doi": "10.3969/j.issn.1673-4254.2018.03.03",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1457,
+  "doi": "10.1093/ajcn/nqz139",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1486,
+  "doi": "10.1093/cid/ciy936",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1487,
+  "doi": "10.1093/ajcn/nqy325",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1491,
+  "doi": "10.1177/0022034519860449",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1506,
+  "doi": "10.1177/2050640619845986",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1510,
+  "doi": "10.1182/bloodadvances.2019032276",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1515,
+  "doi": "10.1093/jn/nxy255",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1533,
+  "doi": "10.1177/2380084419834234",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1542,
+  "doi": "10.1080/19490976.2018.1502536",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1543,
+  "doi": "10.1080/19490976.2018.1526583",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1545,
+  "doi": "10.1093/jn/nxz034",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1560,
+  "doi": "10.1093/infdis/jiy741",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1572,
+  "doi": "doi180081 [pii]",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1576,
+  "doi": "10.1093/cid/ciy265",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1578,
+  "doi": "10.1093/femsec/fiz039",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1584,
+  "doi": "10.1089/AID.2018.0250",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1634,
+  "doi": "10.1080/15384047.2018.1507255",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1650,
+  "doi": "10.1164/rccm.201712-2456OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1668,
+  "doi": "10.1177/0022034518790941",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1693,
+  "doi": "10.1172/jci.insight.122061",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1709,
+  "doi": "10.1001/jamapediatrics.2018.1161",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1710,
+  "doi": "10.5664/jcsm.7336",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1751,
+  "doi": "10.1182/blood-2018-01-828996",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1754,
+  "doi": "10.1093/ecco-jcc/jjx154",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1755,
+  "doi": "10.1038/s41396-018-0064-6",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1761,
+  "doi": "10.1164/rccm.201702-0441OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1772,
+  "doi": "10.1128/AEM.00517-18",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1775,
+  "doi": "10.1093/infdis/jix680",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1780,
+  "doi": "10.1172/jci.insight.98019",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1784,
+  "doi": "10.1080/19490976.2017.1361092",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1790,
+  "doi": "10.1001/jamaoncol.2017.4777",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1792,
+  "doi": "10.1099/jmm.0.000640",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1795,
+  "doi": "10.1001/jamapediatrics.2017.5535",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1801,
+  "doi": "10.1093/gerona/glx042",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1807,
+  "doi": "10.1093/cid/cix141",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1822,
+  "doi": "10.1089/chi.2017.0122",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1854,
+  "doi": "10.1001/jamapediatrics.2017.0378",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1867,
+  "doi": "10.1177/0022034517718819",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1896,
+  "doi": "10.3945/ajcn.117.152967",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1897,
+  "doi": "10.1080/19490976.2017.1284733",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1948,
+  "doi": "10.1200/JCO.2016.70.3348",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1980,
+  "doi": "10.4269/ajtmh.16-0617",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1981,
+  "doi": "10.1177/0022034516678169",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1983,
+  "doi": "10.1111/cei.12900",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1987,
+  "doi": "10.1073/pnas.1606722113",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1990,
+  "doi": "10.1128/AEM.02577-16",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 1999,
+  "doi": "10.1164/rccm.201603-0523OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2011,
+  "doi": "10.1093/infdis/jiw456",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2034,
+  "doi": "10.1038/ismej.2016.37",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2042,
+  "doi": "10.1128/AEM.01132-16",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2044,
+  "doi": "10.1164/rccm.201509-1875OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2056,
+  "doi": "10.1128/AEM.04134-15",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2057,
+  "doi": "10.1093/ecco-jcc/jjv209",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2058,
+  "doi": "10.1093/ecco-jcc/jjv204",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2061,
+  "doi": "10.1093/ecco-jcc/jjv203",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2065,
+  "doi": "10.1542/peds.2016-0218",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2103,
+  "doi": "10.3945/ajcn.115.126375",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2112,
+  "doi": "10.1038/ismej.2014.234",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2120,
+  "doi": "10.2500/ajra.2016.30.4278",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2126,
+  "doi": "10.1164/rccm.201501-0128OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2129,
+  "doi": "10.1513/AnnalsATS.201506-319AW",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2140,
+  "doi": "10.4269/ajtmh.15-0322",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2149,
+  "doi": "10.1080/19490976.2015.1044711",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2150,
+  "doi": "10.1080/19490976.2015.1062959",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2151,
+  "doi": "10.1080/19490976.2015.1039223",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2160,
+  "doi": "10.2337/db14-1847",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2169,
+  "doi": "10.1073/pnas.1502875112",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2173,
+  "doi": "10.1093/jnci/djv147",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2174,
+  "doi": "10.1177/0022034515590581",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2176,
+  "doi": "10.1177/0022034514565458",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2177,
+  "doi": "10.1128/JCM.01094-15",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2180,
+  "doi": "10.1093/schbul/sbu197",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2187,
+  "doi": "10.1128/AEM.00780-15",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2209,
+  "doi": "10.1038/ismej.2014.250",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2216,
+  "doi": "10.1093/femsec/fiu002",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2218,
+  "doi": "10.3748/wjg.v21.i9.2759",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2220,
+  "doi": "10.1128/AAC.04506-14",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2228,
+  "doi": "10.1164/rccm.201403-0541OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2230,
+  "doi": "10.1128/IAI.02664-14",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2231,
+  "doi": "10.1128/AEM.03534-14",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2234,
+  "doi": "10.1038/ismej.2014.124",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2238,
+  "doi": "10.1210/jc.2014-2222",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2240,
+  "doi": "10.1073/pnas.1418895111",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2245,
+  "doi": "10.1073/pnas.1415174111",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2251,
+  "doi": "10.1542/peds.2013-3937",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2257,
+  "doi": "10.4161/gmic.28849",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2260,
+  "doi": "10.1038/ismej.2014.28",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2261,
+  "doi": "10.1128/JCM.00035-14",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2262,
+  "doi": "10.1182/blood-2014-02-554725",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2266,
+  "doi": "10.1128/JCM.00556-14",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2270,
+  "doi": "10.1159/000351912",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2275,
+  "doi": "10.1128/AEM.00242-14",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2285,
+  "doi": "10.15288/jsad.2014.75.347",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2287,
+  "doi": "10.1513/AnnalsATS.201211-107OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2297,
+  "doi": "10.1152/ajpgi.00282.2013",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2309,
+  "doi": "10.1093/jnci/djt300",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2311,
+  "doi": "10.1164/rccm.201304-0775OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2312,
+  "doi": "10.1164/rccm.201302-0341OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2319,
+  "doi": "10.1128/JCM.02164-13",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2323,
+  "doi": "10.1128/JCM.00473-13",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2336,
+  "doi": "10.1164/rccm.201210-1913OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2338,
+  "doi": "10.1164/rccm.201211-2145OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2348,
+  "doi": "10.1089/sur.2012.095",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2351,
+  "doi": "10.3945/ajcn.112.056689",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2358,
+  "doi": "10.1093/cid/cis580",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2370,
+  "doi": "10.1128/AEM.03910-12",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2372,
+  "doi": "10.1038/ismej.2012.146",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2378,
+  "doi": "10.1093/infdis/jit005",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2396,
+  "doi": "10.1038/ismej.2012.81",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2402,
+  "doi": "10.1128/AAC.00789-12",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2403,
+  "doi": "10.1128/JCM.00767-12",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2405,
+  "doi": "10.1164/rccm.201204-0693OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2409,
+  "doi": "10.1038/ismej.2012.43",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2416,
+  "doi": "10.1128/JCM.00278-12",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2419,
+  "doi": "10.1128/AEM.01051-12",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2420,
+  "doi": "10.1128/JB.00566-12",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2432,
+  "doi": "10.3748/wjg.v18.i14.1628",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2435,
+  "doi": "10.1177/0022034510377203",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2436,
+  "doi": "10.1073/pnas.1119061109",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2442,
+  "doi": "10.1128/JCM.05176-11",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2449,
+  "doi": "10.1038/ismej.2011.104",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2450,
+  "doi": "10.1073/pnas.1116053109",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2455,
+  "doi": "10.1038/ismej.2011.85",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2456,
+  "doi": "10.1038/ismej.2011.71",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2462,
+  "doi": "10.1164/rccm.201104-0655OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2471,
+  "doi": "10.3945/ajcn.110.010132",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2473,
+  "doi": "10.1038/ismej.2010.149",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2474,
+  "doi": "10.1038/ismej.2010.118",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2475,
+  "doi": "10.1038/ismej.2010.120",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2477,
+  "doi": "10.1038/ismej.2010.88",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2480,
+  "doi": "10.1128/JCM.01507-10",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2481,
+  "doi": "10.1128/AEM.02477-10",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2483,
+  "doi": "10.1073/pnas.1011383107",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2485,
+  "doi": "10.1073/pnas.1000071108",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2497,
+  "doi": "10.1128/JCM.01232-10",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2498,
+  "doi": "10.1128/JCM.01650-10",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2503,
+  "doi": "10.1159/000320158",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2509,
+  "doi": "10.1073/pnas.1002601107",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2512,
+  "doi": "10.1073/pnas.1002355107",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2549,
+  "doi": "10.1016/j.ajcnut.2025.07.030",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2567,
+  "doi": "10.1177/10998004251318397",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2569,
+  "doi": "10.46292/sci24-00061",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2584,
+  "doi": "10.1093/schbul/sbaf028",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2586,
+  "doi": "10.4269/ajtmh.23-0903",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2629,
+  "doi": "10.1093/infdis/jiaf321",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2655,
+  "doi": "10.1016/j.ajcnut.2025.06.026",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2673,
+  "doi": "10.1016/S1473-3099(25)00349-4",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2677,
+  "doi": "10.1001/jamaoncol.2025.3377",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2698,
+  "doi": "10.1016/j.ajcnut.2025.04.031",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2746,
+  "doi": "10.1016/j.chom.2025.07.002",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2749,
+  "doi": "10.1093/ageing/afaf208",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2854,
+  "doi": "10.1016/j.envres.2025.121709",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2871,
+  "doi": "10.1093/glycob/cwae084",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2903,
+  "doi": "10.1164/rccm.202010-3880OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2905,
+  "doi": "10.1128/msphere.00906-24",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2925,
+  "doi": "10.1093/infdis/jiae644",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2969,
+  "doi": "10.3760/cma.j.cn501120-20200916-00414",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2979,
+  "doi": "10.1152/ajpheart.00381.2024",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2992,
+  "doi": "10.13201/j.issn.2096-7993.2024.11.008",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 2993,
+  "doi": "10.1093/ibd/izae238",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3026,
+  "doi": "10.1007/s00432-023-04607-3",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3027,
+  "doi": "10.1007/s00432-023-05453-z",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3030,
+  "doi": "10.1007/s00432-022-04553-6",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3032,
+  "doi": "10.1016/j.tjnut.2024.08.023",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3035,
+  "doi": "10.1128/spectrum.00696-24",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3058,
+  "doi": "10.1080/17501911.2024.2418803",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3089,
+  "doi": "10.1177/00220345241288761",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3101,
+  "doi": "10.1093/infdis/jiae247",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3109,
+  "doi": "10.1128/jcm.00694-24",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3196,
+  "doi": "10.19852/j.cnki.jtcm.2024.05.002",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3211,
+  "doi": "10.1001/jamaoncol.2024.4006",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3303,
+  "doi": "10.1093/jbmr/zjad017",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3314,
+  "doi": "10.1093/milmed/usad488",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3315,
+  "doi": "10.1093/ibd/izad288",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3356,
+  "doi": "10.1177/10998004231205277",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3373,
+  "doi": "10.1164/rccm.202308-1357OC",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3404,
+  "doi": "10.1007/s00262-019-02433-6",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3424,
+  "doi": "10.1007/s00262-022-03256-8",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3434,
+  "doi": "10.1016/j.ajcnut.2024.01.006",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3447,
+  "doi": "10.11817/j.issn.1672-7347.2023.220558",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3451,
+  "doi": "10.1093/gerona/glae030",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3466,
+  "doi": "10.1093/ecco-jcc/jjad143",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3475,
+  "doi": "10.12122/j.issn.1673-4254.2024.01.17",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3476,
+  "doi": "10.1093/gerona/glad276",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3502,
+  "doi": "10.1001/jamaoncol.2023.6533",
+  "is_oa": true,
+  "oa_url": "https://opus.bibliothek.uni-augsburg.de/opus4/files/111105/111105.pdf",
+  "host": "repository",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 3508,
+  "doi": "10.1001/jamapsychiatry.2023.5371",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3514,
+  "doi": "10.1089/thy.2023.0346",
+  "is_oa": true,
+  "oa_url": "https://pure.amsterdamumc.nl/ws/files/142440088/Comparative-analysis-of-taxonomic-and-functional-gut-microbiota-profiles-in-relation-to-seroconversion-of-thyroid-peroxi.pdf",
+  "host": "repository",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 3517,
+  "doi": "10.1128/jb.00239-23",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3518,
+  "doi": "10.1016/j.tjnut.2023.09.009",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3574,
+  "doi": "10.1098/rspb.2023.1174",
+  "is_oa": true,
+  "oa_url": "https://royalsocietypublishing.org/doi/pdf/10.1098/rspb.2023.1174",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 3581,
+  "doi": "10.1093/ecco-jcc/jjad096",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/ecco-jcc/advance-article-pdf/doi/10.1093/ecco-jcc/jjad096/50887755/jjad096.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 3586,
+  "doi": "10.1212/WNL.0000000000207849",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3595,
+  "doi": "10.1093/infdis/jiad371",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3644,
+  "doi": "10.1016/j.tjnut.2023.07.009",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3653,
+  "doi": "10.1089/gtmb.2023.0132",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3667,
+  "doi": "doi230038 [pii]",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3686,
+  "doi": "10.12182/20220360505",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3688,
+  "doi": "10.1093/jnci/djad083",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3690,
+  "doi": "10.1177/10998004231159623",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3692,
+  "doi": "10.19723/j.issn.1671-167X.2023.04.008",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3703,
+  "doi": "10.1016/j.tjnut.2022.12.017",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3718,
+  "doi": "10.19852/j.cnki.jtcm.20230608.003",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3719,
+  "doi": "10.1017/S0031182020000736",
+  "is_oa": true,
+  "oa_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/C7A0E0C48569F3D14666D30F72C10B41/S0031182020000736a.pdf/div-class-title-intestinal-parasites-in-rural-communities-in-nan-province-thailand-changes-in-bacterial-gut-microbiota-associated-with-minute-intestinal-fluke-infection-div.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 3753,
+  "doi": "10.1016/j.tjnut.2022.12.002",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3755,
+  "doi": "10.1016/j.tjnut.2022.10.005",
+  "is_oa": true,
+  "oa_url": "https://escholarship.org/content/qt8073831v/qt8073831v.pdf",
+  "host": "repository",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 3774,
+  "doi": "10.1093/ecco-jcc/jjac173",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3789,
+  "doi": "10.19852/j.cnki.jtcm.20230208.002",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3791,
+  "doi": "10.13201/j.issn.2096-7993.2020.09.008",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3792,
+  "doi": "10.1016/j.tjnut.2022.12.019",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3794,
+  "doi": "10.1089/bio.2021.0169",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3796,
+  "doi": "10.1089/omi.2022.0182",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3804,
+  "doi": "10.1016/j.jare.2022.06.008",
+  "is_oa": true,
+  "oa_url": "https://doi.org/10.1016/j.jare.2022.06.008",
+  "host": "publisher",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 3818,
+  "doi": "10.1177/10998004221124273",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 3828,
+  "doi": "10.1164/rccm.202203-0490OC",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 7439,
+  "doi": "10.1093/neuonc/noaf059",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 7525,
+  "doi": "10.1038/s41416-024-02701-y",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 9189,
+  "doi": "10.3760/cma.j.cn501113-20220830-00440",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 10275,
+  "doi": "10.1177/10998004241227560",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 10808,
+  "doi": "10.1128/spectrum.01806-25",
+  "is_oa": true,
+  "oa_url": "https://doi.org/10.1128/spectrum.01806-25",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 10826,
+  "doi": "10.1007/s12088-023-01062-z",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 10834,
+  "doi": "10.1016/j.heliyon.2023.e13602",
+  "is_oa": true,
+  "oa_url": "http://www.cell.com/article/S2405844023008095/pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 10990,
+  "doi": "10.1159/000497042",
+  "is_oa": true,
+  "oa_url": "https://www.karger.com/Article/Pdf/497042",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 11074,
+  "doi": "10.1177/2050640618804444",
+  "is_oa": true,
+  "oa_url": "https://pure.amsterdamumc.nl/ws/files/158530077/Fecal-scfas-and-scfa-producing-bacteria-in-gut-microbiome-of-human-nafld-as-a-putative-link-to-systemic-t-cell-activatio.pdf",
+  "host": "repository",
+  "codes": [],
+  "status": -1
+ },
+ {
+  "row_index": 11126,
+  "doi": "10.21037/atm.2019.09.41",
+  "is_oa": true,
+  "oa_url": "https://atm.amegroups.com/article/viewFile/30194/pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 11155,
+  "doi": "10.5664/jcsm.8084",
+  "is_oa": true,
+  "oa_url": "https://jcsm.aasm.org/doi/pdf/10.5664/jcsm.8084",
+  "host": "publisher",
+  "codes": [],
+  "status": -1
+ },
+ {
+  "row_index": 11183,
+  "doi": "10.1007/s11357-025-01923-z",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 11283,
+  "doi": "10.21037/jtd.2019.10.39",
+  "is_oa": true,
+  "oa_url": "https://jtd.amegroups.com/article/viewFile/32748/pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 11372,
+  "doi": "10.21037/jgo-21-906",
+  "is_oa": true,
+  "oa_url": "https://jgo.amegroups.com/article/viewFile/60634/pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 11406,
+  "doi": "10.21147/j.issn.1000-9604.2023.04.05",
+  "is_oa": true,
+  "oa_url": "https://doi.org/10.21147/j.issn.1000-9604.2023.04.05",
+  "host": "publisher",
+  "codes": [],
+  "status": 404
+ },
+ {
+  "row_index": 11501,
+  "doi": "10.1177/2050640617736478",
+  "is_oa": true,
+  "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1177/2050640617736478",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 11520,
+  "doi": "10.21147/j.issn.1000-9604.2020.06.07",
+  "is_oa": true,
+  "oa_url": "https://doi.org/10.21147/j.issn.1000-9604.2020.06.07",
+  "host": "publisher",
+  "codes": [],
+  "status": 404
+ },
+ {
+  "row_index": 11592,
+  "doi": "10.15644/asc48/2.116",
+  "is_oa": true,
+  "oa_url": "https://doi.org/10.15644/asc48/2.116",
+  "host": "publisher",
+  "codes": [],
+  "status": 418
+ },
+ {
+  "row_index": 11618,
+  "doi": "10.1136/gut.2003.025403",
+  "is_oa": true,
+  "oa_url": "https://gut.bmj.com/content/gutjnl/53/5/685.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 11702,
+  "doi": "10.1007/s43657-023-00135-9     EA MAY 2024",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 11706,
+  "doi": "10.21037/jgo-22-427     EA JUN 2022",
+  "is_oa": true,
+  "oa_url": "https://doi.org/10.21037/jgo-22-427",
+  "host": "publisher",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 11722,
+  "doi": "10.1159/000539763     EA JUL 2024",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 11850,
+  "doi": "10.1093/ecco-jcc/jjx083",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/ecco-jcc/article-pdf/11/11/1393/24365427/jjx083.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 11853,
+  "doi": "10.62347/HBKG3920",
+  "is_oa": true,
+  "oa_url": "https://doi.org/10.62347/hbkg3920",
+  "host": "publisher",
+  "codes": [
+   {
+    "code": "GSE106892",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE3013",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE14518",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE12446",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE60129",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE137765",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE55691",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE211506",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE126730",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE59644",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE201075",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE21930",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE63531",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE84949",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE72804",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE20940",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE62311",
+    "repo": "GEO",
+    "prov": "unclear"
+   },
+   {
+    "code": "GSE88919",
+    "repo": "GEO",
+    "prov": "unclear"
+   }
+  ],
+  "status": 200
+ },
+ {
+  "row_index": 11908,
+  "doi": "10.1007/s40200-020-00502-7     EA FEB 2020",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 11917,
+  "doi": "10.52965/001c.117647",
+  "is_oa": true,
+  "oa_url": "https://healthpsychologyresearch.openmedicalpublishing.org/article/117647.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 404
+ },
+ {
+  "row_index": 11927,
+  "doi": "10.19852/j.cnki.jtcm.20220902.002",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 11996,
+  "doi": "10.1128/AEM.00651-11",
+  "is_oa": true,
+  "oa_url": "https://aem.asm.org/content/aem/77/19/6739.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 11999,
+  "doi": "10.1096/fj.201901436RR",
+  "is_oa": true,
+  "oa_url": "https://doi.org/10.1096/fj.201901436RR",
+  "host": "repository",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12015,
+  "doi": "10.1152/ajpgi.00380.2011",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12065,
+  "doi": "10.1128/IAI.00436-09",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12128,
+  "doi": "10.1152/physrev.00008.2020",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12142,
+  "doi": "10.1086/657320",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/jid/article-pdf/202/12/1907/18063049/202-12-1907.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12146,
+  "doi": "10.1089/jwh.2022.0309",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12169,
+  "doi": "10.1177/1933719113488838",
+  "is_oa": true,
+  "oa_url": "https://link.springer.com/content/pdf/10.1177/1933719113488838.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 12234,
+  "doi": "10.1128/CMR.00075-15",
+  "is_oa": true,
+  "oa_url": "https://cmr.asm.org/content/cmr/29/2/223.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12240,
+  "doi": "10.1038/embor.2010.160",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12268,
+  "doi": "10.1001/jamacardio.2024.1621",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12290,
+  "doi": "10.1128/JCM.00851-09",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12311,
+  "doi": "10.1128/JCM.03104-15",
+  "is_oa": true,
+  "oa_url": "https://jcm.asm.org/content/jcm/54/4/1017.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12317,
+  "doi": "10.1093/ofid/ofz328",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/ofid/article-pdf/6/9/ofz328/30186640/ofz328.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12325,
+  "doi": "10.1093/humrep/dez041",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/humrep/article-pdf/34/6/1106/28855545/dez041.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12334,
+  "doi": "10.1128/JCM.00851-09",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12364,
+  "doi": "10.1007/s10815-022-02688-6",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12441,
+  "doi": "10.1073/pnas.1502875112",
+  "is_oa": true,
+  "oa_url": "https://www.pnas.org/content/pnas/112/35/11060.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12460,
+  "doi": "10.1093/cid/ciy762",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/cid/article-pdf/68/10/1675/28543427/ciy762.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12489,
+  "doi": "10.1093/aje/kwn103",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/aje/article-pdf/168/2/188/233205/kwn103.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12499,
+  "doi": "10.1128/JCM.00851-09",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12517,
+  "doi": "10.1093/infdis/jiaa780",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12527,
+  "doi": "10.12122/j.issn.1673-4254.2020.12.11",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12533,
+  "doi": "10.1007/s10815-019-01564-0",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12537,
+  "doi": "10.1128/JCM.00851-09",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12541,
+  "doi": "10.1099/mic.0.081034-0",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12575,
+  "doi": "10.1128/JCM.40.5.1698-1704.2002",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12584,
+  "doi": "10.1128/JCM.00558-07",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12590,
+  "doi": "10.1136/sti.75.5.352",
+  "is_oa": true,
+  "oa_url": "https://sti.bmj.com/content/sextrans/75/5/352.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12606,
+  "doi": "10.1093/bioinformatics/btu494",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/bioinformatics/article-pdf/30/21/3123/48930947/bioinformatics_30_21_3123.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12640,
+  "doi": "10.1101/gr.1239303",
+  "is_oa": true,
+  "oa_url": "https://genome.cshlp.org/content/13/11/2498.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12649,
+  "doi": "10.1128/JCM.00851-09",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12654,
+  "doi": "10.1099/mic.0.000238",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12681,
+  "doi": "10.1073/pnas.2036598100",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12693,
+  "doi": "10.1128/CDLI.6.5.751-755.1999",
+  "is_oa": true,
+  "oa_url": "https://cvi.asm.org/content/cdli/6/5/751.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12696,
+  "doi": "10.1038/s41396-020-00868-9",
+  "is_oa": true,
+  "oa_url": "https://www.nature.com/articles/s41396-020-00868-9.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 12700,
+  "doi": "10.1093/infdis/jiaa780",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12702,
+  "doi": "10.1093/cid/ciaa1876",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12709,
+  "doi": "10.1007/s43032-019-00113-5",
+  "is_oa": true,
+  "oa_url": "https://link.springer.com/content/pdf/10.1007/s43032-019-00113-5.pdf",
+  "host": "publisher",
+  "codes": [
+   {
+    "code": "PRJNA424567",
+    "repo": "BioProject",
+    "prov": "own"
+   }
+  ],
+  "status": 200
+ },
+ {
+  "row_index": 12713,
+  "doi": "10.1073/pnas.1000080107",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12722,
+  "doi": "10.1128/MMBR.00017-08",
+  "is_oa": true,
+  "oa_url": "https://lirias.kuleuven.be/handle/123456789/209646",
+  "host": "repository",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 12723,
+  "doi": "10.1093/infdis/jiaa675",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12727,
+  "doi": "10.1128/JCM.00851-09",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12746,
+  "doi": "10.1128/AEM.71.12.8228-8235.2005",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12749,
+  "doi": "10.1128/AAC.00889-15",
+  "is_oa": true,
+  "oa_url": "https://figshare.com/articles/journal_contribution/Antibiotic_resistance_among_clinical_Ureaplasma_isolates_recovered_from_neonates_in_England_and_Wales_between_2007_and_2013/19431674",
+  "host": "repository",
+  "codes": [],
+  "status": 202
+ },
+ {
+  "row_index": 12750,
+  "doi": "10.1128/AEM.01753-15",
+  "is_oa": true,
+  "oa_url": "https://aem.asm.org/content/aem/81/18/6324.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12769,
+  "doi": "10.1128/AEM.65.9.3763-3766.1999",
+  "is_oa": true,
+  "oa_url": "https://aem.asm.org/content/aem/65/9/3763.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12772,
+  "doi": "10.1073/pnas.1502875112",
+  "is_oa": true,
+  "oa_url": "https://www.pnas.org/content/pnas/112/35/11060.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12779,
+  "doi": "10.1093/infdis/jiw140",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/jid/article-pdf/214/suppl_1/S29/6822105/jiw140.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12789,
+  "doi": "10.1128/AEM.00062-07",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12793,
+  "doi": "10.1073/pnas.1502875112",
+  "is_oa": true,
+  "oa_url": "https://www.pnas.org/content/pnas/112/35/11060.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12795,
+  "doi": "10.1128/JCM.41.10.4688-4694.2003",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12803,
+  "doi": "10.1128/JB.00694-10",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12814,
+  "doi": "10.1093/ofid/ofz328",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/ofid/article-pdf/6/9/ofz328/30186640/ofz328.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12817,
+  "doi": "10.1542/peds.2015-2323",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12828,
+  "doi": "10.1093/molbev/msy096",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/mbe/article-pdf/35/6/1547/25091958/msy096.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12829,
+  "doi": "10.1007/s10815-019-01564-0",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12830,
+  "doi": "10.1128/JCM.00851-09",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12846,
+  "doi": "10.1128/JCM.41.7.3260-3264.2003",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12849,
+  "doi": "10.1093/cid/ciz443",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/cid/article-pdf/70/8/1717/33031759/ciz443.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12872,
+  "doi": "10.1093/infdis/jiw121",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/jid/article-pdf/214/suppl_1/S1/6822071/jiw121.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12877,
+  "doi": "10.1093/cid/ciy762",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/cid/article-pdf/68/10/1675/28543427/ciy762.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12896,
+  "doi": "10.1177/0022034515609554",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12906,
+  "doi": "10.1556/EUJMI-D-14-00027",
+  "is_oa": true,
+  "oa_url": "https://akjournals.com/downloadpdf/journals/1886/4/4/article-p193.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12914,
+  "doi": "10.4269/ajtmh.2010.10-0264",
+  "is_oa": true,
+  "oa_url": "https://www.ajtmh.org/downloadpdf/journals/tpmd/83/6/article-p1212.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12931,
+  "doi": "10.1128/AEM.02272-07",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12941,
+  "doi": "10.1073/pnas.92.22.10197",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12947,
+  "doi": "10.1128/JCM.00167-07",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12955,
+  "doi": "10.1093/bioinformatics/btv183",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/bioinformatics/article-pdf/31/15/2461/50307008/bioinformatics_31_15_2461.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12959,
+  "doi": "10.7860/JCDR/2016/21621.8546",
+  "is_oa": true,
+  "oa_url": "https://doi.org/10.7860/jcdr/2016/21621.8546",
+  "host": "publisher",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 12966,
+  "doi": "10.1093/infdis/jiw374",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/jid/article-pdf/214/9/1361/7936156/jiw374.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12971,
+  "doi": "10.1128/JCM.03104-15",
+  "is_oa": true,
+  "oa_url": "https://jcm.asm.org/content/jcm/54/4/1017.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 12974,
+  "doi": "10.1128/AEM.71.12.8228-8235.2005",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 12980,
+  "doi": "10.1128/AEM.68.7.3401-3407.2002",
+  "is_oa": true,
+  "oa_url": "https://research.wur.nl/en/publications/mucosa-associated-bacteria-in-the-human-gastrointestinal-tract-ar",
+  "host": "repository",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 12986,
+  "doi": "10.1073/pnas.1502875112",
+  "is_oa": true,
+  "oa_url": "https://www.pnas.org/content/pnas/112/35/11060.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 13011,
+  "doi": "10.1093/infdis/jit632",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/jid/article-pdf/209/7/1087/13805276/jit632.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 13025,
+  "doi": "10.1177/1933719113503416",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 13026,
+  "doi": "10.1128/IAI.01172-06",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 13029,
+  "doi": "10.1177/1933719113488838",
+  "is_oa": true,
+  "oa_url": "https://link.springer.com/content/pdf/10.1177/1933719113488838.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 13034,
+  "doi": "10.1093/infdis/jit100",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/jid/article-pdf/207/12/1922/18068406/jit100.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 13038,
+  "doi": "10.1101/gr.112730.110",
+  "is_oa": true,
+  "oa_url": "https://genome.cshlp.org/content/21/3/494.full.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 13063,
+  "doi": "10.1128/AEM.02943-10",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 13064,
+  "doi": "10.1093/cid/cir183",
+  "is_oa": true,
+  "oa_url": "https://academic.oup.com/cid/article-pdf/52/10/1212/13802822/cir183.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 403
+ },
+ {
+  "row_index": 13066,
+  "doi": "10.1128/AEM.00973-10",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 13072,
+  "doi": "10.1073/pnas.1002601107",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 13074,
+  "doi": "10.1128/JCM.01710-09",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 13078,
+  "doi": "10.1128/AEM.01640-08",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 13079,
+  "doi": "10.1128/JCM.00854-08",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 13080,
+  "doi": "10.1038/nature03959",
+  "is_oa": true,
+  "oa_url": "https://www.nature.com/articles/nature03959.pdf",
+  "host": "publisher",
+  "codes": [],
+  "status": 200
+ },
+ {
+  "row_index": 13083,
+  "doi": "10.1128/AEM.71.12.8729-8737.2005",
+  "is_oa": true,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ },
+ {
+  "row_index": 13086,
+  "doi": "10.1073/pnas.0503236102",
+  "is_oa": false,
+  "oa_url": null,
+  "host": null,
+  "codes": [],
+  "status": null
+ }
+]
