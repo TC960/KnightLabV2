@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
 Build a single self-contained HTML viewer to adjudicate the 15-paper gold-standard
-test set (test_set_v2) taxa against the Fable-5 re-annotation.
+test set (test_set_v2) taxa against the Opus 4.8 re-annotation.
 
 Question it answers: are the models over-extracting taxa (false positives), or is
 Emily's human gold standard too conservative / incomplete?
 
 Colour logic (as requested by the PI):
   GREEN  = taxon is in the human Gold Standard (test_set_v2). Includes gold-only
-           taxa AND taxa in the gold ∩ Fable intersection.
-  YELLOW = taxon is in the Fable re-annotation ONLY (a candidate false-positive OR
+           taxa AND taxa in the gold ∩ Opus 4.8 intersection.
+  YELLOW = taxon is in the Opus 4.8 re-annotation ONLY (a candidate false-positive OR
            a candidate gap in the gold standard — that's what the viewer helps decide).
 
 For every taxon the viewer shows the sentence(s) in the paper where it appears, so a
@@ -23,7 +23,7 @@ import json, re, html, os
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
 GOLD = os.path.join(ROOT, "EmilySong_GoldStandardPaper", "test_set_v2.json")
-FABLE = os.path.join(ROOT, "dsmlp_model_prompting", "eval-v2", "results", "fable_gold_15.json")
+OPUS = os.path.join(ROOT, "dsmlp_model_prompting", "eval-v2", "results", "opus_gold_15.json")
 OUT = os.path.join(HERE, "test_set_v2_taxa_review.html")
 
 
@@ -92,11 +92,11 @@ def highlight_full(text, taxa):
 
 def main():
     gold = json.load(open(GOLD))
-    fable = json.load(open(FABLE))
+    opus = json.load(open(OPUS))
     gby = {g["link"]: g for g in gold}
 
     papers = []
-    for f in fable:
+    for f in opus:
         g = gby.get(f["link"], {})
         g_en = {t.lower(): t for t in split_taxa(g.get("taxa_enriched"))}
         g_de = {t.lower(): t for t in split_taxa(g.get("taxa_depleted"))}
@@ -116,7 +116,7 @@ def main():
             elif in_g:
                 source, color = "gold_only", "green"
             else:
-                source, color = "fable_only", "yellow"
+                source, color = "opus_only", "yellow"
             # display name + direction (prefer gold's spelling / direction)
             if key in g_en:
                 name, d = g_en[key], "up"
@@ -142,7 +142,7 @@ def main():
 
         papers.append({
             "title": f["title"], "disease": f.get("disease", ""), "link": f["link"],
-            "n_gold": len(gset), "n_fable": len(fset), "n_yellow": n_yellow,
+            "n_gold": len(gset), "n_opus": len(fset), "n_yellow": n_yellow,
             "n_yellow_found": n_yellow_found,
             "taxa": taxa, "full_html": full_html,
         })
@@ -153,11 +153,11 @@ def main():
         fh.write(htmlout)
 
     tg = sum(p["n_gold"] for p in papers)
-    tf = sum(p["n_fable"] for p in papers)
+    tf = sum(p["n_opus"] for p in papers)
     ty = sum(p["n_yellow"] for p in papers)
     tyf = sum(p["n_yellow_found"] for p in papers)
     print(f"wrote {OUT}")
-    print(f"{len(papers)} papers | gold taxa={tg} fable taxa={tf} | fable-only(yellow)={ty} found-in-text={tyf}")
+    print(f"{len(papers)} papers | gold taxa={tg} opus taxa={tf} | opus-only(yellow)={ty} found-in-text={tyf}")
 
 
 TEMPLATE = r"""<!DOCTYPE html>
@@ -165,7 +165,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gold-standard taxa review — test_set_v2 vs Fable</title>
+<title>Gold-standard taxa review — test_set_v2 vs Opus 4.8</title>
 <style>
   :root { --green:#1a7f37; --greenbg:#d7f5dd; --yellow:#9a6700; --yellowbg:#fff3c9; --line:#e2e2e2; }
   * { box-sizing: border-box; }
@@ -225,12 +225,12 @@ TEMPLATE = r"""<!DOCTYPE html>
 </head>
 <body>
 <header>
-  <h1>Gold-standard taxa review — <code>test_set_v2</code> (15 papers) vs Fable-5 re-annotation</h1>
+  <h1>Gold-standard taxa review — <code>test_set_v2</code> (15 papers) vs Opus 4.8 re-annotation</h1>
   <div class="sub">Adjudication aid: is the human gold standard too conservative, or are the models over-extracting?
     Every taxon is shown in its sentence context so you can judge whether it sits near real significance language.</div>
   <div class="legend">
-    <span class="chip green">GREEN</span> in Emily's human gold standard (gold-only + gold∩Fable) &nbsp;·&nbsp;
-    <span class="chip yellow">YELLOW</span> Fable re-annotation only — candidate gap or false positive &nbsp;·&nbsp;
+    <span class="chip green">GREEN</span> in Emily's human gold standard (gold-only + gold∩Opus 4.8) &nbsp;·&nbsp;
+    <span class="chip yellow">YELLOW</span> Opus 4.8 re-annotation only — candidate gap or false positive &nbsp;·&nbsp;
     &nbsp;↑ enriched &nbsp;↓ depleted
   </div>
 </header>
@@ -249,7 +249,7 @@ function buildNav() {
     const b = document.createElement("button");
     b.className = "navbtn" + (i === cur ? " active" : "");
     b.innerHTML = `<div>${i+1}. ${esc(p.disease || p.title)}</div>
-      <div class="np">${esc(shorten(p.title,60))} · gold ${p.n_gold} · fable ${p.n_fable} · <b>${p.n_yellow} yellow</b></div>`;
+      <div class="np">${esc(shorten(p.title,60))} · gold ${p.n_gold} · opus ${p.n_opus} · <b>${p.n_yellow} yellow</b></div>`;
     b.onclick = () => { cur = i; render(); };
     nav.appendChild(b);
   });
@@ -260,9 +260,9 @@ function render() {
   const p = DATA[cur];
   const m = document.getElementById("main");
   const groups = [
-    ["Fable-only (YELLOW) — adjudicate these", p.taxa.filter(t => t.color==="yellow")],
-    ["Gold ∩ Fable (both agree)", p.taxa.filter(t => t.source==="both")],
-    ["Gold only (Fable missed)", p.taxa.filter(t => t.source==="gold_only")],
+    ["Opus 4.8-only (YELLOW) — adjudicate these", p.taxa.filter(t => t.color==="yellow")],
+    ["Gold ∩ Opus 4.8 (both agree)", p.taxa.filter(t => t.source==="both")],
+    ["Gold only (Opus 4.8 missed)", p.taxa.filter(t => t.source==="gold_only")],
   ];
   let body;
   if (view === "taxon") {
@@ -273,7 +273,7 @@ function render() {
       return `<div class="grouphdr">${label} (${items.length})</div>` + items.map(taxCard).join("");
     }).join("");
     if (onlyYellow) {
-      body = `<div class="grouphdr">Fable-only (YELLOW) — adjudicate these</div>` +
+      body = `<div class="grouphdr">Opus 4.8-only (YELLOW) — adjudicate these</div>` +
         p.taxa.filter(t => t.color==="yellow" && (!onlyNotFound || !t.found)).map(taxCard).join("");
     }
   } else {
@@ -284,8 +284,8 @@ function render() {
     <div class="pmeta">${esc(p.disease)} · <a href="${esc(p.link)}" target="_blank">${esc(p.link)}</a></div>
     <div class="stats">
       <div class="stat"><b>${p.n_gold}</b><span>gold taxa</span></div>
-      <div class="stat"><b>${p.n_fable}</b><span>fable taxa</span></div>
-      <div class="stat"><b>${p.n_yellow}</b><span>fable-only (yellow)</span></div>
+      <div class="stat"><b>${p.n_opus}</b><span>opus taxa</span></div>
+      <div class="stat"><b>${p.n_yellow}</b><span>opus-only (yellow)</span></div>
       <div class="stat"><b>${p.n_yellow_found}/${p.n_yellow}</b><span>yellow found in text</span></div>
     </div>
     <div class="controls">
