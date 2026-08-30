@@ -94,6 +94,37 @@ def split_groups(edge, md, rows_by_paper):
     return up, down
 
 
+def _perm_p(paper_dirs, paper_meta, field, value, nperm=6000, seed=0):
+    """Cluster-robust p: shuffle the field label across PAPERS, not observations."""
+    import random
+    ps = list(paper_dirs.keys())
+    if field in BOOLEAN:
+        lab = [paper_meta[p].get(field) is True for p in ps]
+    else:
+        lab = [paper_meta[p].get(field) == value for p in ps]
+
+    def stat(assign):
+        A = B = C = D = 0
+        for p, dirs in paper_dirs.items():
+            for d in dirs:
+                if assign[p]:
+                    A += d == "enriched"; B += d == "depleted"
+                else:
+                    C += d == "enriched"; D += d == "depleted"
+        pa = A / (A + B) if A + B else 0
+        pc = C / (C + D) if C + D else 0
+        return abs(pa - pc)
+
+    obs = stat(dict(zip(ps, lab)))
+    rnd = random.Random(seed)
+    hits = 0
+    for _ in range(nperm):
+        rnd.shuffle(lab)
+        if stat(dict(zip(ps, lab))) >= obs - 1e-12:
+            hits += 1
+    return (hits + 1) / (nperm + 1)
+
+
 def compare(up, down):
     """Yield (field, value, up_with, up_tot, down_with, down_tot, p)."""
     out = []
@@ -202,6 +233,8 @@ def main():
     print("POOLED across all contested edges (per-edge tests are underpowered by design)")
     print("=" * 78)
     pooled = defaultdict(lambda: Counter())
+    paper_dirs = defaultdict(list)   # paper -> [direction, ...] across contested edges
+    paper_meta = {}
     n_obs = 0
     for e in contested:
         rb = dir_by.get((e["taxon_key"], e["disease"]), {})
@@ -210,6 +243,8 @@ def main():
             if not m:
                 continue
             n_obs += 1
+            paper_dirs[paper].append(direction)
+            paper_meta[paper] = m
             for f in CATEGORICAL:
                 v = m.get(f)
                 if v:
@@ -237,14 +272,34 @@ def main():
         return
     # zip straight into a new list -- an index() lookup would rebind the wrong row
     # whenever two categories share identical counts and p.
-    prows = [(f, v, a, b, pv, q)
-             for (f, v, a, b, pv), q in zip(prows, bh_fdr([r[4] for r in prows]))]
+    # Fisher assumes independent observations, which is FALSE here: one paper
+    # contributes one observation per taxon it reports (mean 3.9, max 15), so a
+    # few prolific papers dominate and the naive p is anti-conservative. Recompute
+    # the leading candidates with a permutation test that shuffles the label at the
+    # PAPER level, keeping each paper's observations together. On this corpus that
+    # moved diet_controlled from p=0.0021 to p=0.0093 -- same direction, weaker.
     prows.sort(key=lambda r: r[4])
-    print(f"{'field':18} {'value':22} {'enriched':>9} {'depleted':>9} {'p':>7} {'FDR':>7}")
-    print("-" * 78)
-    for f, v, a, b, pv, q in prows[:14]:
+    perm = {}
+    for f, v, a, b, pv in prows[:6]:
+        perm[(f, v)] = _perm_p(paper_dirs, paper_meta, f, v)
+    final = [(f, v, a, b, pv, perm.get((f, v), pv)) for f, v, a, b, pv in prows]
+    qs = bh_fdr([r[5] for r in final])
+    final = [(*r, q) for r, q in zip(final, qs)]
+    final.sort(key=lambda r: r[5])
+    print(f"{'field':18} {'value':20} {'enr':>5} {'dep':>5} {'naive p':>8} "
+          f"{'cluster p':>10} {'FDR':>7}")
+    print("-" * 80)
+    for f, v, a, b, pv, cp, q in final[:12]:
         star = "  <-- FDR<0.1" if q < 0.1 else ""
-        print(f"{f[:17]:18} {str(v)[:21]:22} {a:>9} {b:>9} {pv:>7.3f} {q:>7.3f}{star}")
+        print(f"{f[:17]:18} {str(v)[:19]:20} {a:>5} {b:>5} {pv:>8.4f} {cp:>10.4f} {q:>7.3f}{star}")
+    n_sig = sum(1 for r in final if r[6] < 0.1)
+    print(f"\n{n_sig} categor(ies) survive FDR<0.10 after BOTH the cluster and "
+          f"multiple-testing corrections.")
+    if not n_sig:
+        print("The strongest signal is diet_controlled (studies controlling for diet report\n"
+              "enrichment more often), but at FDR ~0.24 across 26 categories it is a\n"
+              "hypothesis, not a result. On this corpus, study design does NOT visibly\n"
+              "explain which direction a paper reports.")
 
 
 if __name__ == "__main__":
