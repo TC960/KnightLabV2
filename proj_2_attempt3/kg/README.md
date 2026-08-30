@@ -54,3 +54,45 @@ disagree" — is a diverging bar chart.
   label with `mondo: null` rather than being dropped.
 - **Associations only.** No causal claim, no direction of causality.
 - Not yet validated against Disbiome / Peryton — that is the obvious next step.
+
+## RAG layer (`build_rag.py`)
+
+`rag_corpus.jsonl` — one document per graph edge, ready for any vector store
+(Chroma, FAISS, pgvector, LanceDB): embed `text`, keep `meta`, filter on `meta.*`.
+
+Chunking per **edge**, not per paper: the edge is the unit of claim. A paper-level
+chunk buries "Akkermansia is enriched in Parkinson's" inside 50k characters of
+methods; an edge-level chunk states it, says how many papers agree, how many
+disagree, and names them — which is what you want a model quoting.
+
+```bash
+python build_rag.py                                        # build corpus
+python build_rag.py --query "what is depleted in parkinson's" -k 5
+python build_rag.py --query "contested findings in Alzheimer's"
+```
+
+### Retrieval is hybrid, because pure BM25 measurably failed
+
+First version indexed the paper titles and ranked by BM25 alone. Asking "what
+bacteria are depleted in parkinson's disease" returned **NMDAR encephalitis**:
+
+| token | df | idf |
+|---|---:|---:|
+| `parkinson's` | 289 | 1.58 |
+| `bacteria` | 53 | **3.26** |
+| `are` | 68 | **3.02** |
+
+The NMDAR paper is titled *"Disturbance of Gut **Bacteria** and Metabolites **Are**
+Associated…"*, so its incidental title vocabulary outscored the actual disease —
+disease names are common *inside* this corpus, so their idf is low. Three fixes:
+
+1. **Titles are not indexed** (they stay in the display text).
+2. **Stopwords removed.**
+3. **Entities matched explicitly.** Every disease and taxon is known exactly, so a
+   named entity in the query is a hard filter, not a bag-of-words hint. Direction
+   words ("depleted", "enriched") filter too, and an edge whose *majority*
+   direction matches ranks above a contested edge that only partly matches.
+
+This is more accurate and cheaper than embeddings for a 1.4k-doc corpus of proper
+nouns. Swap in dense retrieval over the same `text` field if paraphrase matching
+is later needed; the corpus format does not change.

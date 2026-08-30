@@ -73,18 +73,14 @@ studies. Report only what the paper states. Output exactly one JSON object and n
 <output>
 """
 
+# GBNF requires each rule on ONE line. A multi-line `root` fails with
+#   parse: error parsing grammar: expecting name at "\"country\":" ...
+# and -- the dangerous part -- LlamaGrammar.from_string() does NOT validate, so it
+# reports success and llama.cpp then SEGFAULTS during sampling. An earlier
+# multi-line version of this grammar killed a run 50s in with rc=139 and no
+# traceback. Keep root on a single line.
 GRAMMAR = r'''
-root ::= "{" ws
-  "\"country\":" ws string "," ws
-  "\"n_cases\":" ws int "," ws
-  "\"n_controls\":" ws int "," ws
-  "\"mean_age\":" ws int "," ws
-  "\"pct_female\":" ws snum "," ws
-  "\"body_site\":" ws string "," ws
-  "\"sequencing\":" ws string "," ws
-  "\"region_16S\":" ws string "," ws
-  "\"medication_controlled\":" ws bool "," ws
-  "\"diet_controlled\":" ws bool ws "}"
+root ::= "{" ws "\"country\":" ws string "," ws "\"n_cases\":" ws int "," ws "\"n_controls\":" ws int "," ws "\"mean_age\":" ws int "," ws "\"pct_female\":" ws snum "," ws "\"body_site\":" ws string "," ws "\"sequencing\":" ws string "," ws "\"region_16S\":" ws string "," ws "\"medication_controlled\":" ws bool "," ws "\"diet_controlled\":" ws bool ws "}"
 string ::= "\"" ([^"\\] | "\\" .)* "\""
 int ::= [0-9]+
 snum ::= "-"? [0-9]+
