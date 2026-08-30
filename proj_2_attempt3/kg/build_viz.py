@@ -1,19 +1,25 @@
 #!/usr/bin/env python3
 """Render kg/graph.json into a self-contained HTML explorer.
 
-Form choice: NOT a node-link diagram. 1,556 edges across 873 taxa is a hairball
-that answers no question. The question this data actually serves is "for this
-disease, which taxa, how well replicated, and where do papers disagree" -- which
-is a diverging bar chart, one row per taxon, depleted left / enriched right.
+Two views over the same graph:
 
-That form also fixes accessibility for free: direction is encoded by horizontal
-position AND color, so it survives colorblindness, greyscale and print. Colors are
-the validated diverging pair (blue/red poles, neutral gray midpoint); the poles
-pass CVD separation at dE 18.5 (protanopia) against both surfaces.
+- **Network** (default): force-directed node-link, canvas, hand-rolled simulation
+  because the artifact CSP blocks CDN libraries. Gated on a paper threshold --
+  the full 1,398 edges genuinely is an unreadable hairball, but at >=2 papers it
+  is 339 edges over 187 nodes and the structure is legible.
+- **Ranked**: diverging bar chart per disease, depleted left / enriched right.
+  Better than the network for "what is the evidence for THIS disease", because
+  ordering and magnitude are readable in a way node position never is.
 
-Bar length  = number of papers (evidence count -- NOT effect size; we have none)
-Split bar   = a contested pair, drawn with both arms so disagreement is visible
-Usage: python build_viz.py [--min-papers 1] [--out kg.html]
+Shared encoding, in both views:
+  edge color   blue enriched / red depleted / grey dashed contested
+  edge width   number of papers (evidence count -- NOT effect size; we have none)
+  edge opacity directional consistency
+Direction is encoded by position as well as color (bar side; dash pattern), so it
+survives colorblindness, greyscale and print. The blue/red poles pass CVD
+separation at dE 18.5 (protanopia) against both light and dark surfaces.
+
+Usage: python build_viz.py [--out kg.html]
 """
 import argparse
 import json
@@ -108,6 +114,14 @@ summary{cursor:pointer;font-size:13px;color:var(--ink-2)}
 .note{font-size:12.5px;color:var(--ink-2);margin-top:26px;border-top:1px solid var(--line);
       padding-top:14px;max-width:70ch}
 .empty{color:var(--ink-3);font-size:14px;padding:26px 0}
+.tabs{display:flex;gap:2px;margin:18px 0 0;border-bottom:1px solid var(--line)}
+.tab{appearance:none;background:none;border:0;border-bottom:2px solid transparent;
+     padding:7px 13px;font-family:var(--sans);font-size:13.5px;color:var(--ink-3);cursor:pointer}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--up);font-weight:600}
+.pane[hidden]{display:none}
+#net{width:100%;height:min(70vh,620px);display:block;border:1px solid var(--line);
+     border-radius:7px;background:var(--panel);margin-top:12px}
+.hint{font-size:12px;color:var(--ink-3);margin-top:7px}
 @media (max-width:640px){.row{grid-template-columns:118px 1fr 48px}.tax{font-size:12px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 """
@@ -125,7 +139,10 @@ diseases.forEach(d => {
   o.value = d; o.textContent = `${d} (${byDisease[d].length})`;
   sel.appendChild(o);
 });
-sel.value = diseases[0];
+const allOpt = document.createElement("option");
+allOpt.value = "__all__"; allOpt.textContent = `All diseases (${G.edges.length})`;
+sel.insertBefore(allOpt, sel.firstChild);
+sel.value = "__all__";
 
 const tip = $("#tip");
 function showTip(e, ed){
@@ -145,7 +162,8 @@ const hideTip = () => tip.style.opacity = 0;
 function render(){
   const d = sel.value, mp = +minp.value;
   minpv.textContent = mp;
-  let rows = (byDisease[d]||[]).filter(e => e.n_papers >= mp);
+  if (window.__netBuild) window.__netBuild(mp, d);
+  let rows = (d === "__all__" ? G.edges : (byDisease[d]||[])).filter(e => e.n_papers >= mp);
   if (onlyC.checked) rows = rows.filter(e => e.contested);
   rows.sort((a,b) => b.n_papers - a.n_papers || b.n_up+b.n_down - (a.n_up+a.n_down));
   rows = rows.slice(0, 60);
@@ -157,7 +175,7 @@ function render(){
   chart.innerHTML = rows.map((e,i) => {
     const up = e.n_up/max*50, dn = e.n_down/max*50;
     return `<div class="row" data-i="${i}">
-      <div class="tax">${e.taxon}<span class="rank">${(G.rank[e.taxon]||"")}</span></div>
+      <div class="tax">${e.taxon}<span class="rank">${e.rank||""}</span></div>
       <div class="track"><div class="axis"></div>
         ${e.n_down?`<div class="bar down${e.contested?" faded":""}" style="right:50%;width:${dn}%"></div>`:""}
         ${e.n_up?`<div class="bar up${e.contested?" faded":""}" style="left:50%;width:${up}%"></div>`:""}
@@ -170,7 +188,7 @@ function render(){
     el.addEventListener("mousemove", ev => showTip(ev, ed));
     el.addEventListener("mouseleave", hideTip);
   });
-  $("#tbody").innerHTML = rows.map(e => `<tr><td>${e.taxon}</td><td>${G.rank[e.taxon]||""}</td>
+  $("#tbody").innerHTML = rows.map(e => `<tr><td>${e.taxon}</td><td>${e.rank||""}</td>
       <td>${e.contested?"contested":e.direction}</td>
       <td class="num">${e.n_up}</td><td class="num">${e.n_down}</td>
       <td class="num">${e.n_papers}</td>
@@ -178,6 +196,18 @@ function render(){
   $("#shown").textContent = rows.length;
 }
 [sel, minp, onlyC].forEach(el => el.addEventListener("input", render));
+
+// tabs
+const tabs = [["tab-net","pane-net"],["tab-rank","pane-rank"]];
+tabs.forEach(([tid,pid]) => document.getElementById(tid).addEventListener("click", () => {
+  tabs.forEach(([t,p]) => {
+    const on = t === tid;
+    document.getElementById(t).setAttribute("aria-selected", on);
+    document.getElementById(p).hidden = !on;
+  });
+  if (tid === "tab-net" && window.__netResize) window.__netResize();
+}));
+
 render();
 """
 
@@ -189,9 +219,9 @@ def main():
     a = ap.parse_args()
     G = json.load(open(a.graph))
     m = G["meta"]
-    rank = {n["label"].lower(): n.get("rank", "") for n in G["nodes"] if n["type"] == "taxon"}
-    payload = {"edges": G["edges"], "rank": rank}
+    payload = {"edges": G["edges"]}
 
+    net_js = open(os.path.join(HERE, "viz_network.js")).read()
     html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Microbe–disease knowledge graph</title><style>{CSS}</style></head><body>
@@ -213,8 +243,8 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
 
 <div class="controls">
   <div><label for="disease">Disease</label><select id="disease"></select></div>
-  <div><label for="minp">Min papers · <span id="minpv">1</span></label>
-       <input type="range" id="minp" min="1" max="8" value="1"></div>
+  <div><label for="minp">Min papers · <span id="minpv">2</span></label>
+       <input type="range" id="minp" min="1" max="8" value="2"></div>
   <div class="toggle"><input type="checkbox" id="onlyc"><label for="onlyc"
        style="margin:0;text-transform:none;letter-spacing:0;font-size:13px">Contested only</label></div>
 </div>
@@ -225,8 +255,23 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
   <span class="key"><span class="chip">split</span>papers disagree — both arms drawn</span>
 </div>
 
-<div class="chart" id="chart"></div>
+<div class="tabs" role="tablist">
+  <button class="tab" id="tab-net"  role="tab" aria-selected="true"  aria-controls="pane-net">Network</button>
+  <button class="tab" id="tab-rank" role="tab" aria-selected="false" aria-controls="pane-rank">Ranked</button>
+</div>
+
+<div class="pane" id="pane-net" role="tabpanel">
+  <canvas id="net"></canvas>
+  <p class="hint">Hover a node to isolate its links · click to pin · dashed grey = papers disagree.
+  Disease nodes are filled; taxa are hollow and sized by how many diseases they touch.
+  Only edges meeting the paper threshold are drawn — at 1 the full graph is a hairball.</p>
+</div>
+
+<div class="pane" id="pane-rank" role="tabpanel" hidden>
+  <div class="chart" id="chart"></div>
+</div>
 <div class="tip" id="tip"></div>
+<div class="tip" id="nettip"></div>
 
 <details><summary>Table view — <span id="shown">0</span> rows shown</summary>
 <div class="tablewrap"><table><thead><tr><th>Taxon</th><th>Rank</th><th>Direction</th>
@@ -244,6 +289,7 @@ Associations only — no causal claim.</p>
 </div>
 <script>window.__KG__={json.dumps(payload)};</script>
 <script>{JS}</script>
+<script>{net_js}</script>
 </body></html>"""
     open(a.out, "w").write(html)
     print(f"wrote {a.out}  ({len(html)/1024:.0f} KB)")

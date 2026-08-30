@@ -90,14 +90,26 @@ def norm_disease(s):
     return (s[:1].upper() + s[1:]) if s else "Unspecified", None
 
 
-def norm_taxon(t):
-    """Canonical key + display name + best-effort rank. Deliberately conservative:
-    we fold case and strip rank prefixes, but do NOT merge across ranks or
-    resolve synonyms (Bacteroidetes/Bacteroidota) without a taxonomy backend."""
+def norm_taxon(t, tax=None):
+    """Canonical key + display name + rank.
+
+    With the NCBI taxdump available (kg/taxonomy.py), the key is the taxid, so
+    synonyms and renames pool into one node: Bacteroidetes/Bacteroidota both
+    become 976, Firmicutes/Bacillota both 1239. Unresolvable names keep their
+    surface string as the key and are marked unresolved rather than dropped.
+
+    Without the taxdump this degrades to the old string folding (case + rank
+    prefix only), so the builder still runs.
+    """
     disp = t.strip()
+    if tax is not None and tax.ok:
+        tid, sci, rank, how = tax.resolve(disp)
+        if tid:
+            return f"ncbi:{tid}", sci, (rank or "no rank"), how
+    # --- fallback: string folding only ---
     key = disp.lower()
     rank = None
-    m = re.match(r"^([pcofgs])[-_]", key)          # "o-Clostridia", "f_Rikenellaceae"
+    m = re.match(r"^([pcofgs])[-_]{1,2}", key)      # "o-Clostridia", "f__Rikenellaceae"
     if m:
         rank = {"p": "phylum", "c": "class", "o": "order",
                 "f": "family", "g": "genus", "s": "species"}[m.group(1)]
@@ -114,23 +126,26 @@ def norm_taxon(t):
                     rank = r
                     break
             rank = rank or "genus"
-    return key, disp, rank
+    return key, disp, rank, "unresolved"
 
 
-def build(rows, min_papers=1):
+def build(rows, min_papers=1, tax=None):
     ev = defaultdict(list)
-    taxon_disp, taxon_rank = {}, {}
+    taxon_disp, taxon_rank, taxon_how = {}, {}, {}
+    aliases = defaultdict(set)          # node key -> every surface string that folded into it
     for r in rows:
         dis_raw = (r.get("predicted_disease") or r.get("disease") or "")
         disease, mondo = norm_disease(dis_raw)
         for direction, col in (("enriched", "predicted_enriched"),
                                ("depleted", "predicted_depleted")):
             for raw in parse_taxa(r.get(col)):
-                key, disp, rank = norm_taxon(raw)
+                key, disp, rank, how = norm_taxon(raw, tax)
                 if not key:
                     continue
                 taxon_disp.setdefault(key, disp)
                 taxon_rank.setdefault(key, rank)
+                taxon_how.setdefault(key, how)
+                aliases[key].add(raw)
                 ev[(key, disease, mondo)].append(
                     {"dir": direction, "paper": r.get("title", ""), "link": r.get("link", ""),
                      "as_written": raw})
@@ -146,7 +161,10 @@ def build(rows, min_papers=1):
         papers = {o["paper"] for o in obs}
         consistency = max(up, dn) / n
         edges.append({
-            "taxon": taxon, "disease": disease, "mondo": mondo,
+            "taxon": taxon_disp.get(taxon, taxon), "taxon_key": taxon,
+            "rank": taxon_rank.get(taxon, ""),
+            "resolved": taxon_how.get(taxon) != "unresolved",
+            "disease": disease, "mondo": mondo,
             "direction": "enriched" if up > dn else "depleted" if dn > up else "contested",
             "n_up": up, "n_down": dn, "n_obs": n, "n_papers": len(papers),
             "consistency": round(consistency, 3),
@@ -154,17 +172,20 @@ def build(rows, min_papers=1):
             "papers": sorted(papers)[:25],
         })
 
-    tax_deg = Counter(e["taxon"] for e in edges)
+    tax_deg = Counter(e["taxon_key"] for e in edges)
     dis_deg = Counter(e["disease"] for e in edges)
     nodes = (
         [{"id": f"t:{k}", "label": taxon_disp[k], "type": "taxon",
+          "taxid": k.split(":")[1] if k.startswith("ncbi:") else None,
+          "resolved": taxon_how[k] != "unresolved",
+          "aliases": sorted(aliases[k]),
           "rank": taxon_rank[k], "degree": tax_deg[k]} for k in tax_deg]
         + [{"id": f"d:{d}", "label": d, "type": "disease",
             "mondo": next((e["mondo"] for e in edges if e["disease"] == d), None),
             "degree": dis_deg[d]} for d in dis_deg]
     )
     for e in edges:
-        e["source"], e["target"] = f"t:{e['taxon']}", f"d:{e['disease']}"
+        e["source"], e["target"] = f"t:{e['taxon_key']}", f"d:{e['disease']}"
     return nodes, edges
 
 
@@ -174,10 +195,20 @@ def main():
     ap.add_argument("--min-papers", type=int, default=1,
                     help="drop edges supported by fewer than N papers")
     ap.add_argument("--out", default=os.path.join(HERE, "graph.json"))
+    ap.add_argument("--no-taxonomy", action="store_true",
+                    help="skip NCBI resolution, fold on strings only")
     a = ap.parse_args()
 
     rows = json.load(open(a.input))
-    nodes, edges = build(rows, a.min_papers)
+    tax = None
+    if not a.no_taxonomy:
+        try:
+            from taxonomy import Taxonomy
+            tax = Taxonomy()
+            print(f"NCBI taxdump: {'loaded' if tax.ok else 'NOT FOUND -> string folding only'}")
+        except Exception as e:
+            print(f"taxonomy unavailable ({e.__class__.__name__}) -> string folding only")
+    nodes, edges = build(rows, a.min_papers, tax)
     meta = {
         "source": os.path.basename(a.input),
         "papers_in": len(rows),
@@ -189,6 +220,7 @@ def main():
         "n_edges": len(edges),
         "n_replicated": sum(1 for e in edges if e["n_papers"] > 1),
         "n_contested": sum(1 for e in edges if e["contested"]),
+        "n_taxa_resolved": sum(1 for n in nodes if n["type"] == "taxon" and n.get("resolved")),
         "min_papers": a.min_papers,
         "note": ("Edge weight is evidence count, not effect size: the extractor yields "
                  "direction only and the source papers report incommensurable statistics. "
