@@ -191,6 +191,61 @@ def main():
               "test here has the power to reach significance. These are leads to check by\n"
               "hand, not findings.")
 
+    # ---- pooled test: the per-edge tests are structurally underpowered -------
+    # A contested edge has 2-8 papers per side, so the smallest attainable Fisher
+    # p is ~0.1 no matter how clean the split. Pooling every (paper, edge)
+    # observation across ALL contested edges trades per-edge specificity for
+    # actual power: it cannot say "China explains Bacteroides in Alzheimer's",
+    # but it can say whether cohort origin or method associates with reported
+    # direction corpus-wide -- which is the reproducibility question anyway.
+    print("\n" + "=" * 78)
+    print("POOLED across all contested edges (per-edge tests are underpowered by design)")
+    print("=" * 78)
+    pooled = defaultdict(lambda: Counter())
+    n_obs = 0
+    for e in contested:
+        rb = dir_by.get((e["taxon_key"], e["disease"]), {})
+        for paper, direction in rb.items():
+            m = md.get(paper)
+            if not m:
+                continue
+            n_obs += 1
+            for f in CATEGORICAL:
+                v = m.get(f)
+                if v:
+                    pooled[(f, v)][direction] += 1
+            for f in BOOLEAN:
+                if m.get(f) is True:
+                    pooled[(f, "true")][direction] += 1
+    all_up = sum(1 for e in contested
+                 for pp, dd in dir_by.get((e["taxon_key"], e["disease"]), {}).items()
+                 if dd == "enriched" and pp in md)
+    all_dn = sum(1 for e in contested
+                 for pp, dd in dir_by.get((e["taxon_key"], e["disease"]), {}).items()
+                 if dd == "depleted" and pp in md)
+    print(f"{n_obs} (paper, edge) observations with metadata "
+          f"— {all_up} report enriched, {all_dn} depleted\n")
+    prows = []
+    for (f, v), c in pooled.items():
+        a, b = c["enriched"], c["depleted"]
+        if a + b < 8:
+            continue
+        cc, d = all_up - a, all_dn - b
+        prows.append((f, v, a, b, fisher_exact_2x2(a, b, cc, d)))
+    if not prows:
+        print("Not enough observations per category yet.")
+        return
+    # zip straight into a new list -- an index() lookup would rebind the wrong row
+    # whenever two categories share identical counts and p.
+    prows = [(f, v, a, b, pv, q)
+             for (f, v, a, b, pv), q in zip(prows, bh_fdr([r[4] for r in prows]))]
+    prows.sort(key=lambda r: r[4])
+    print(f"{'field':18} {'value':22} {'enriched':>9} {'depleted':>9} {'p':>7} {'FDR':>7}")
+    print("-" * 78)
+    for f, v, a, b, pv, q in prows[:14]:
+        star = "  <-- FDR<0.1" if q < 0.1 else ""
+        print(f"{f[:17]:18} {str(v)[:21]:22} {a:>9} {b:>9} {pv:>7.3f} {q:>7.3f}{star}")
+
 
 if __name__ == "__main__":
     main()
