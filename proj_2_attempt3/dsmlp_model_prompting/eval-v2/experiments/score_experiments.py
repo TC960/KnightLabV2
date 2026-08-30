@@ -10,7 +10,7 @@ import common
 from taxonomy_match import TaxResolver, match_taxa_lca
 
 TS = json.load(open(os.path.join(EVAL, "..", "..", "EmilySong_GoldStandardPaper", "test_set_v2.json")))
-FG = json.load(open(os.path.join(EVAL, "results", "opus_gold_15.json")))
+FG = json.load(open(os.path.join(EVAL, "results", "opus-4.8-gold.json")))
 N = len(TS)
 def parse(v): return common.parse_taxa(v)
 

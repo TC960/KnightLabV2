@@ -23,7 +23,7 @@ import json, re, html, os
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
 GOLD = os.path.join(ROOT, "EmilySong_GoldStandardPaper", "test_set_v2.json")
-OPUS = os.path.join(ROOT, "dsmlp_model_prompting", "eval-v2", "results", "opus_gold_15.json")
+OPUS = os.path.join(ROOT, "dsmlp_model_prompting", "eval-v2", "results", "opus-4.8-gold.json")
 OUT = os.path.join(HERE, "test_set_v2_taxa_review.html")
 
 

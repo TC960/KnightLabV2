@@ -10,7 +10,7 @@ if not tools_available():
     setup()
 
 TS = json.load(open(os.path.join(EVAL, "..", "..", "EmilySong_GoldStandardPaper", "test_set_v2.json")))
-FG = json.load(open(os.path.join(EVAL, "results", "opus_gold_15.json")))
+FG = json.load(open(os.path.join(EVAL, "results", "opus-4.8-gold.json")))
 N = len(TS)
 def parse(v): return common.parse_taxa(v)
 ORIG = {i: (parse(TS[i].get("taxa_enriched")), parse(TS[i].get("taxa_depleted"))) for i in range(N)}

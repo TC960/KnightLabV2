@@ -97,10 +97,22 @@ rank variants), else falls back to char-ngram cosine ≥0.5. `--metric char` rev
 any pod reset — `/tmp` is ephemeral**). Taxonomy scoring lifted Qwopus3.5 from **.642 → .751** vs the same
 original gold (fairer metric, not a better model).
 
-**Two benchmarks.** `results/leaderboard.csv` = original human gold. `results/opus_gold_15.json` = a
+**Two benchmarks.** `results/leaderboard.csv` = original human gold. `results/opus-4.8-gold.json` = a
 **thorough Opus 4.8 (Claude) re-annotation** ("Opus 4.8 Benchmark"). Scores diverge because the two disagree
 on ~70 taxa — **UNRESOLVED whether the human gold is incomplete or Opus 4.8 over-extracts** (SMA paper: Opus 4.8
 was wrong; elsewhere its extras sit near significance cues). Needs human adjudication vs Sam's gates.
+
+**Sizing that disagreement** (`taxa_review/adjudicate_extras.py`, rerun any time): the exact figure is
+**72 extras** under the same taxonomy-aware matcher the leaderboard uses — confirming the "~70". Do not
+quote the viewer's **114**: `build_viewer.py` diffs on exact lowercase strings, so 42 near-matches
+(rank prefixes, spelling, synonyms) are painted yellow that the scoring metric already counts as hits.
+The viewer's "found in text" is likewise weak — it only means the name occurs somewhere in the paper.
+Bucketed by the strongest evidence in any sentence naming the taxon: **55% sit with a hard statistical
+cue** (p-value/LEfSe/LDA/FDR), 39% with soft language only, 5% with no significance language, and
+**1 taxon (`[Eubacterium]_ventriosum_group`) never appears in the text at all**. So over-extraction is
+real but bounded and near-zero hallucination — the extras are mostly *under*-annotation in the human
+gold. Caveat: this is sentence co-occurrence, not attribution; `strong` means "worth adjudicating",
+not "confirmed". Adjudication vs Sam's gates is still the open task.
 
 **Leaderboard (taxonomy metric).** vs original gold: Qwopus3.5 **.751**, Qwythos-9B .665, Qwen2.5-32B .606.
 vs Opus 4.8 gold: Qwopus3.5 **.806** (best local). Opus 4.8 tops both but is the reference/oracle, not a
