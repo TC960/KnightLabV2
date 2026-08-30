@@ -19,9 +19,17 @@ Summary appended to results/leaderboard.csv
 import argparse, json, time, os, csv, re, sys, shutil
 
 HERE      = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(HERE, "..", "..", "EmilySong_GoldStandardPaper", "test_set_v2.json")
+_EMILY    = os.path.join(HERE, "..", "..", "EmilySong_GoldStandardPaper")
+DATA_PATH = os.path.join(_EMILY, "test_set_v2.json")
 RESULTS   = os.environ.get("EVAL_OUT_DIR") or os.path.join(HERE, "results")
 HF_CACHE  = os.path.join(os.environ.get("HF_HOME", "/tmp/hf"), "hub")
+
+# ---- dataset registry: label -> path. "testv2" is the 15-paper benchmark the
+# leaderboard was built on; "all250" is every usable Emily paper (corpus run). ----
+DATASETS = {
+    "testv2": os.path.join(_EMILY, "test_set_v2.json"),
+    "all250": os.path.join(_EMILY, "all_usable_papers.json"),
+}
 
 PROMPT_VERSION = "samgated-v1"
 DATASET        = "testv2"
@@ -85,11 +93,25 @@ ws ::= [ \t\n]*
 '''
 
 
-def smart_truncate(text):
+def smart_truncate(text, n_ctx=None):
+    """Drop the reference list, then hard-cap to what n_ctx can actually hold.
+
+    The reference-strip alone does NOT bound length: on the 250-paper set 12
+    papers still exceed a 24576-token window after stripping (max 105k chars
+    ~= 26k tokens), which would silently overflow the context. The cap reserves
+    room for the prompt scaffold + MAX_TOKENS of output and is a no-op whenever
+    the paper already fits (true for all 15 testv2 papers at either n_ctx, so
+    existing leaderboard numbers are unaffected).
+    """
     for marker in ["References\n", "REFERENCES\n", "Bibliography\n", "REFERENCE\n"]:
         idx = text.rfind(marker)
         if idx > 0:
-            return text[:idx]
+            text = text[:idx]
+            break
+    if n_ctx:
+        budget = (n_ctx - MAX_TOKENS - 400) * 4   # ~4 chars/token, 400 for scaffold
+        if len(text) > budget:
+            text = text[:budget]
     return text
 
 
@@ -167,41 +189,68 @@ def main():
     ap.add_argument("--keep", action="store_true", help="keep model in HF cache after run")
     ap.add_argument("--metric", choices=["taxonomy", "char"], default="taxonomy",
                     help="taxonomy = NCBI-lineage (LCA) matching w/ char fallback; char = original fuzzy only")
+    ap.add_argument("--dataset", choices=list(DATASETS), default="testv2",
+                    help="testv2 = 15-paper benchmark (default, leaderboard); all250 = full Emily corpus")
+    ap.add_argument("--n-ctx", type=int, default=N_CTX,
+                    help=f"context window (default {N_CTX}; use 32768 for --dataset all250)")
+    ap.add_argument("--resume", action="store_true",
+                    help="skip papers already present in the checkpoint file")
     args = ap.parse_args()
 
     key = args.model
     repo, fname, quant = MODELS[key]
-    tag = f"{key}__{quant}__{PROMPT_VERSION}__{DATASET}"
+    dataset = args.dataset
+    n_ctx = args.n_ctx
+    tag = f"{key}__{quant}__{PROMPT_VERSION}__{dataset}"
     os.makedirs(RESULTS, exist_ok=True)
+    ckpt_path = os.path.join(RESULTS, f"{tag}.checkpoint.jsonl")
 
-    with open(DATA_PATH) as f:
+    with open(DATASETS[dataset]) as f:
         papers = json.load(f)
     if args.limit:
         papers = papers[:args.limit]
+
+    # ---- resume: replay whatever the checkpoint already holds ----
+    done = {}
+    if args.resume and os.path.exists(ckpt_path):
+        with open(ckpt_path) as f:
+            for line in f:
+                try:
+                    r = json.loads(line)
+                    done[r["title"]] = r
+                except Exception:
+                    continue
+        print(f"resume: {len(done)} papers already done in {os.path.basename(ckpt_path)}", flush=True)
+
     print(f"=== {key} | {repo} / {fname} ===", flush=True)
-    print(f"{len(papers)} papers | prompt={PROMPT_VERSION} | dataset={DATASET}", flush=True)
+    print(f"{len(papers)} papers | prompt={PROMPT_VERSION} | dataset={dataset} | n_ctx={n_ctx}", flush=True)
 
     # ---- load model (robust: a load failure is logged, not fatal) ----
     from llama_cpp import Llama, LlamaGrammar
     try:
         llm = Llama.from_pretrained(repo_id=repo, filename=fname,
-                                    n_ctx=N_CTX, n_gpu_layers=-1, verbose=False)
+                                    n_ctx=n_ctx, n_gpu_layers=-1, verbose=False)
         grammar = LlamaGrammar.from_string(GRAMMAR_STR)
         print("model loaded\n", flush=True)
     except Exception as e:
         note = f"LOAD FAILED: {type(e).__name__}: {str(e)[:160]}"
         print(note, flush=True)
         append_leaderboard({"model_key": key, "repo": repo, "quant": quant,
-                            "prompt": PROMPT_VERSION, "dataset": DATASET,
+                            "prompt": PROMPT_VERSION, "dataset": dataset,
                             "n": len(papers), "load_ok": False, "notes": note})
         if not args.keep:
             cleanup_hf(repo)
         return
 
     results, times = [], []
+    ckpt = open(ckpt_path, "a")
     for i, paper in enumerate(papers):
+        if paper["title"] in done:
+            results.append(done[paper["title"]])
+            print(f"[{i+1}/{len(papers)}] (cached) {paper['title'][:56]}...", flush=True)
+            continue
         print(f"[{i+1}/{len(papers)}] {paper['title'][:68]}...", flush=True)
-        text = smart_truncate(paper["text"])
+        text = smart_truncate(paper["text"], n_ctx=n_ctx)
         t0 = time.time()
         perr = False
         try:
@@ -216,17 +265,21 @@ def main():
             perr = True
         dt = time.time() - t0
         times.append(dt)
-        results.append({
+        row = {
             "title": paper["title"], "disease": paper.get("disease", ""),
+            "link": paper.get("link", ""),
             "in_gold_standard": paper.get("in_gold_standard", ""),
             "expected_enriched": paper.get("taxa_enriched", ""),
             "expected_depleted": paper.get("taxa_depleted", ""),
             "predicted_enriched": ", ".join(p.get("taxa_enriched", [])),
             "predicted_depleted": ", ".join(p.get("taxa_depleted", [])),
             "predicted_disease": p.get("disease", ""),
-            "time_seconds": round(dt, 2), "parse_error": perr})
+            "time_seconds": round(dt, 2), "parse_error": perr}
+        results.append(row)
+        ckpt.write(json.dumps(row) + "\n"); ckpt.flush()   # crash-safe: 250 papers is hours
         print(f"    enr={p.get('taxa_enriched', [])}", flush=True)
         print(f"    dep={p.get('taxa_depleted', [])}  ({dt:.1f}s)", flush=True)
+    ckpt.close()
 
     # ---- save per-model results ----
     with open(os.path.join(RESULTS, f"{tag}.json"), "w") as f:
@@ -272,7 +325,7 @@ def main():
           f"{avg:.1f}s/paper, metric={metric_note})", flush=True)
 
     append_leaderboard({"model_key": key, "repo": repo, "quant": quant,
-                        "prompt": PROMPT_VERSION, "dataset": DATASET, "n": len(results),
+                        "prompt": PROMPT_VERSION, "dataset": dataset, "n": len(results),
                         "TP": TP, "FP": FP, "FN": FN,
                         "precision": round(prec, 4), "recall": round(rec, 4), "f1": round(f1, 4),
                         "avg_sec": round(avg, 1), "load_ok": True, "notes": f"metric={metric_note}"})
