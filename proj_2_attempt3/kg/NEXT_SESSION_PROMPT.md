@@ -9,6 +9,24 @@ You are continuing the Knight Lab microbe–disease knowledge graph. Read
 validated and published (https://www.mohakprakash.com/KnightLabV2/). Everything
 below runs **locally — no GPU, no API credits**.
 
+## Mode: full agency, run until you run out
+
+Work continuously. **Do not stop to ask permission** for anything local — reading,
+writing, rebuilding, committing, pushing, running analyses. Do not end your turn to
+report progress and wait; report *and keep going*. Pick the next task yourself when
+one finishes. Keep going until the context/token budget is genuinely exhausted.
+
+The only things worth pausing for: spending money (GPU instances), anything
+outward-facing beyond this repo, or destructive operations outside `proj_2_attempt3/`.
+
+Maintain `kg/SESSION_LOG.md` as you go — append a dated line per finding, including
+the nulls. Commit after each meaningful step so nothing is lost if the session ends
+abruptly. If a task turns out to be a dead end, write down *why* and move to the
+next one; a documented dead end is a result.
+
+Parallelise where tasks are independent. Task 0, Task 1 and Task 3.1 do not depend
+on each other and can be fanned out to subagents. Task 2 depends on Task 1.
+
 ## Ground rules
 
 - **Permutation-test everything.** This corpus is small and has already produced
@@ -48,15 +66,34 @@ Do:
 4. Rebuild `graph.json`, `kg.html`, `docs/index.html`, and re-run
    `validate_external.py`. Report how the Disbiome/Peryton numbers move.
 
-## TASK 1 — Taxon-vocabulary features (the promising lead)
+## TASK 1 — Relation-bearing sentences (the promising lead)
 
-Full-text vocabulary is ~8,800 distinct terms per 12 papers, which is hopeless at
-this n. Restricting to terms that resolve to an NCBI microbial taxon via
-`kg/taxonomy.py` cuts it to **122 — a 72× reduction** — and the surviving feature
-is meaningful: *which other taxa does this paper report*, i.e. a co-occurrence
-profile.
+**We care about relations, not metadata. Reduce every paper to the sentences that
+could actually state one.**
 
-Build a paper × taxon incidence matrix over all papers and test:
+Two stacked filters, both measured on this corpus:
+
+1. **Entities via NCBI.** Full-text vocabulary is ~8,800 distinct terms per 12
+   papers — hopeless at this n. Terms resolving to an NCBI microbial taxon through
+   `kg/taxonomy.py`: **122. A 72× reduction**, and interpretable.
+2. **Relations via direction words.** Keep only sentences containing *both* an NCBI
+   taxon *and* a direction cue (increase/decrease and synonyms: elevated, reduced,
+   enriched, depleted, higher, lower, abundance, over/under-represented,
+   up/down-regulated, greater, diminished, expanded). Measured over 25 papers:
+   **13,082 sentences -> 312 (2.4%), a 41× reduction; 1.2M chars -> 28.5k.**
+
+A relation can only be stated in that 2.4%. Everything else is background by
+construction. Build this as `kg/relation_sentences.py` producing, per paper, the
+filtered sentences with their taxa and direction cues tagged — it is the shared
+substrate for everything below, and it is also a far better RAG chunk than what
+`build_rag.py` currently emits.
+
+Validate the filter before trusting it: for edges we already extracted, does the
+filtered set still contain the sentence supporting the known relation? Report
+recall. If the filter drops real relations, loosen the cue list — **do not** quietly
+accept a filter that discards signal.
+
+Then build a paper × taxon incidence matrix from the filtered sentences and test:
 - **Pooled across edges** (the version with power, ~530 observations): do papers
   reporting *enrichment* differ from papers reporting *depletion* in their taxon
   co-occurrence profile? Cluster-robust permutation at paper level.
@@ -70,8 +107,11 @@ Build a paper × taxon incidence matrix over all papers and test:
 
 Only after Task 1, and only where Task 1 shows signal worth pursuing.
 
-- Embed full texts locally (`sentence-transformers`, e.g. `all-MiniLM-L6-v2` or a
-  biomedical model). CPU is fine for ~340 documents.
+- Embed the **filtered relation sentences** from Task 1, not raw full texts. 28.5k
+  chars of relation-bearing text per 25 papers is a far better signal-to-noise ratio
+  than 1.2M chars of methods and references, and it is what the question is about.
+- `sentence-transformers` locally (`all-MiniLM-L6-v2`, or a biomedical model). CPU
+  is fine at this scale.
 - **Control for disease.** The dominant axis will be "which disease this paper is
   about", which is already known and useless. Compare within-disease or residualise.
 - Compare embedding-based separation against the taxon-vocabulary baseline from
