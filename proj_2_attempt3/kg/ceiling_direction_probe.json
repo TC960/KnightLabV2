@@ -1,0 +1,30 @@
+[
+ {
+  "label": "contested edges only",
+  "n_obs": 957,
+  "n_papers": 204,
+  "counts": {
+   "e": 442,
+   "d": 515
+  },
+  "mixed_papers": 132,
+  "mixed_obs": 787,
+  "floor": 0.5381,
+  "ceiling": 0.7064,
+  "band": 0.1682
+ },
+ {
+  "label": "ALL edges",
+  "n_obs": 3132,
+  "n_papers": 285,
+  "counts": {
+   "e": 1719,
+   "d": 1413
+  },
+  "mixed_papers": 236,
+  "mixed_obs": 2956,
+  "floor": 0.5489,
+  "ceiling": 0.6663,
+  "band": 0.1175
+ }
+]
