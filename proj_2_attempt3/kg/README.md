@@ -96,3 +96,44 @@ disease names are common *inside* this corpus, so their idf is low. Three fixes:
 This is more accurate and cheaper than embeddings for a 1.4k-doc corpus of proper
 nouns. Swap in dense retrieval over the same `text` field if paraphrase matching
 is later needed; the corpus format does not change.
+
+## Validation against Disbiome (`validate_disbiome.py`)
+
+Disbiome (https://disbiome.ugent.be) is a hand-curated microbe–disease database:
+~10.9k experiments, each recording a taxon Elevated or Reduced in a disease vs
+healthy controls. Its API is open (`:8080/experiment`) and the response is cached
+to `disbiome_experiments.json`.
+
+**11 diseases overlap** with our corpus (Parkinson's, Alzheimer's, MS, ALS, stroke,
+Huntington's, MCI, epilepsy, migraine, myasthenia gravis, neuromyelitis optica).
+
+| | |
+|---|---:|
+| pairs in both | **238** |
+| of our in-scope pairs corroborated | 238/1084 (22.0%) |
+| of Disbiome's pairs we recovered | 238/444 (**53.6%**) |
+| direction **agreement** (both decisive) | **117/151 (77.5%)** |
+| direction disagreement | 34 (22.5%) |
+
+**Normalize both sides with the same resolver — do not trust their taxid.**
+Disbiome's `organism_ncbi_id` is not consistently at the rank the paper reported:
+for a paper saying just "Prevotella" its curators recorded **59823** (*Prevotella
+sp.*, a SPECIES) where the genus is **838**. Joining on their stored id silently
+missed Prevotella/Parkinson's — one of the most replicated findings in the field
+(16 papers here, and 3-of-4 Reduced in Disbiome, i.e. an *agreement*). Re-resolving
+their `organism_name` through our own resolver lifted overlap 188 → 238 and recall
+41.4% → 53.6%. A join is only meaningful when both sides share a normalizer.
+
+**How to read these numbers.** None is pure accuracy. 22% of ours being corroborated
+is mostly a coverage difference — Disbiome curates a different, partly older paper
+set, and 846 of our pairs are simply absent from it (the top ones by evidence, like
+*Faecalibacterium* depleted in Alzheimer's at 14 papers, look like Disbiome gaps
+rather than our errors). The 206 pairs they have and we lack are our recall gap.
+The 34 direction disagreements are the useful output: specific, checkable claims,
+and in most of them our edge rests on more papers than their single record.
+
+### Peryton
+Not validated. Peryton (https://dianalab.e-ce.uth.gr/peryton/) is a client-side JS
+app with no reachable data endpoint — every API path probed returns 404, and the
+page ships ~1 KB of HTML. It needs a manual download through a browser; drop the
+export beside this script and the same join logic applies.
