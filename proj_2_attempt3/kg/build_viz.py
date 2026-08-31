@@ -219,7 +219,7 @@ def main():
     a = ap.parse_args()
     G = json.load(open(a.graph))
     m = G["meta"]
-    payload = {"edges": G["edges"]}
+    payload = {"edges": G["edges"], "hierarchy": G.get("hierarchy", [])}
 
     net_js = open(os.path.join(HERE, "viz_network.js")).read()
     html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
@@ -262,9 +262,12 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
 
 <div class="pane" id="pane-net" role="tabpanel">
   <canvas id="net"></canvas>
-  <p class="hint">Hover a node to isolate its links · click to pin · dashed grey = papers disagree.
-  Disease nodes are filled; taxa are hollow and sized by how many diseases they touch.
-  Only edges meeting the paper threshold are drawn — at 1 the full graph is a hairball.</p>
+  <p class="hint"><b>Scroll</b> to zoom · <b>drag background</b> to pan · <b>drag a node</b> to
+  move and fix it · <b>click</b> to pin its neighbourhood · <b>double-click</b> to reset.
+  Solid links are associations (blue enriched, red depleted, grey dashed = papers disagree);
+  faint dotted links are <b>taxonomic containment</b> — a family and the genera inside it.
+  Containment is not redundancy: <i>Lachnospiraceae</i> is depleted in Parkinson's across 15
+  papers while <i>Hungatella</i> inside it is enriched across 7.</p>
 </div>
 
 <div class="pane" id="pane-rank" role="tabpanel" hidden>

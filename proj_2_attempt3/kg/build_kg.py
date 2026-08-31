@@ -186,7 +186,31 @@ def build(rows, min_papers=1, tax=None):
     )
     for e in edges:
         e["source"], e["target"] = f"t:{e['taxon_key']}", f"d:{e['disease']}"
-    return nodes, edges
+
+    # ---- taxonomic hierarchy between taxon nodes -------------------------
+    # Papers report at whatever rank they resolved to, so the same disease
+    # routinely carries a family AND genera inside it (Lachnospiraceae plus
+    # Roseburia, Blautia, Hungatella in Parkinson's). Without an explicit link
+    # these are unrelated nodes and the graph cannot express that one contains
+    # the other -- which matters because containment is NOT redundancy: in this
+    # corpus Lachnospiraceae is depleted (15 papers) while Hungatella inside it
+    # is enriched (7). A family shrinking while one genus grows is ordinary
+    # biology, and only survives if the nesting is represented rather than
+    # collapsed. So we add parent_of edges and let consumers roll up or not.
+    hierarchy = []
+    if tax is not None and tax.ok:
+        tids = [n["taxid"] for n in nodes if n["type"] == "taxon" and n.get("taxid")]
+        lineage = {t: tax.lineage(t) for t in tids}
+        present = set(tids)
+        for t in tids:
+            # nearest ancestor that is itself a node in this graph
+            for anc in lineage[t][1:]:
+                if anc in present:
+                    hierarchy.append({"parent": f"t:ncbi:{anc}", "child": f"t:ncbi:{t}",
+                                      "parent_rank": tax.rank.get(anc, ""),
+                                      "child_rank": tax.rank.get(t, "")})
+                    break
+    return nodes, edges, hierarchy
 
 
 def main():
@@ -208,7 +232,7 @@ def main():
             print(f"NCBI taxdump: {'loaded' if tax.ok else 'NOT FOUND -> string folding only'}")
         except Exception as e:
             print(f"taxonomy unavailable ({e.__class__.__name__}) -> string folding only")
-    nodes, edges = build(rows, a.min_papers, tax)
+    nodes, edges, hierarchy = build(rows, a.min_papers, tax)
     meta = {
         "source": os.path.basename(a.input),
         "papers_in": len(rows),
@@ -221,12 +245,14 @@ def main():
         "n_replicated": sum(1 for e in edges if e["n_papers"] > 1),
         "n_contested": sum(1 for e in edges if e["contested"]),
         "n_taxa_resolved": sum(1 for n in nodes if n["type"] == "taxon" and n.get("resolved")),
+        "n_hierarchy_links": len(hierarchy),
         "min_papers": a.min_papers,
         "note": ("Edge weight is evidence count, not effect size: the extractor yields "
                  "direction only and the source papers report incommensurable statistics. "
                  "Contested edges are retained, never merged away."),
     }
-    json.dump({"meta": meta, "nodes": nodes, "edges": edges}, open(a.out, "w"), indent=2)
+    json.dump({"meta": meta, "nodes": nodes, "edges": edges, "hierarchy": hierarchy},
+              open(a.out, "w"), indent=2)
     print(json.dumps(meta, indent=2))
     print(f"\nwrote {a.out}")
     top = sorted(edges, key=lambda e: -e["n_papers"])[:10]

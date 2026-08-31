@@ -9,6 +9,7 @@
     "n_replicated": 339,
     "n_contested": 174,
     "n_taxa_resolved": 599,
+    "n_hierarchy_links": 551,
     "min_papers": 1,
     "note": "Edge weight is evidence count, not effect size: the extractor yields direction only and the source papers report incommensurable statistics. Contested edges are retained, never merged away."
   },
@@ -37717,6 +37718,3314 @@
       ],
       "source": "t:ncbi:1623",
       "target": "d:Stroke"
+    }
+  ],
+  "hierarchy": [
+    {
+      "parent": "t:ncbi:1783272",
+      "child": "t:ncbi:201174",
+      "parent_rank": "kingdom",
+      "child_rank": "phylum"
+    },
+    {
+      "parent": "t:ncbi:33958",
+      "child": "t:ncbi:1578",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1300",
+      "child": "t:ncbi:1357",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:543",
+      "child": "t:ncbi:561",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:543",
+      "child": "t:ncbi:620",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1300",
+      "child": "t:ncbi:1301",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:84107",
+      "child": "t:ncbi:102106",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:189330",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1783272",
+      "child": "t:ncbi:1239",
+      "parent_rank": "kingdom",
+      "child_rank": "phylum"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:216851",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:292632",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186806",
+      "child": "t:ncbi:1730",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:841",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1506553",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:3085642",
+      "child": "t:ncbi:580596",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:543",
+      "child": "t:ncbi:570",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:33042",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:1263",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186802",
+      "child": "t:ncbi:216572",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:1508657",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1643826",
+      "child": "t:ncbi:644652",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:84107",
+      "child": "t:ncbi:1472762",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:201174",
+      "child": "t:ncbi:1847725",
+      "parent_rank": "phylum",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1918511",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:52784",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:990719",
+      "child": "t:ncbi:990721",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186802",
+      "child": "t:ncbi:404402",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:3085636",
+      "child": "t:ncbi:186803",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:33958",
+      "child": "t:ncbi:1253",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:909929",
+      "child": "t:ncbi:970",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:909929",
+      "child": "t:ncbi:151037",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:135621",
+      "child": "t:ncbi:286",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:31953",
+      "child": "t:ncbi:1678",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:171552",
+      "child": "t:ncbi:838",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:2005519",
+      "child": "t:ncbi:397864",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:204475",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ncbi:1328",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1737404",
+      "child": "t:ncbi:1737405",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:1239",
+      "child": "t:ncbi:1737404",
+      "parent_rank": "phylum",
+      "child_rank": "class"
+    },
+    {
+      "parent": "t:ncbi:1737405",
+      "child": "t:ncbi:1570339",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:186802",
+      "child": "t:ncbi:186806",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:1643824",
+      "child": "t:ncbi:133925",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1766253",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:526525",
+      "child": "t:ncbi:135858",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:815",
+      "child": "t:ncbi:816",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:2005525",
+      "child": "t:ncbi:375288",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:49928",
+      "child": "t:ncbi:1869227",
+      "parent_rank": "no rank",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:572511",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:31979",
+      "child": "t:ncbi:1485",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1647988",
+      "child": "t:ncbi:239934",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1783272",
+      "child": "t:ncbi:1117",
+      "parent_rank": "kingdom",
+      "child_rank": "phylum"
+    },
+    {
+      "parent": "t:ncbi:171549",
+      "child": "t:ncbi:815",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:85004",
+      "child": "t:ncbi:31953",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:84999",
+      "child": "t:ncbi:84107",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:909932",
+      "child": "t:ncbi:31977",
+      "parent_rank": "class",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:91347",
+      "child": "t:ncbi:543",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:186826",
+      "child": "t:ncbi:81852",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:186826",
+      "child": "t:ncbi:33958",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:48461",
+      "child": "t:ncbi:203557",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:200644",
+      "child": "t:ncbi:2762318",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:91061",
+      "child": "t:ncbi:186817",
+      "parent_rank": "class",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:91061",
+      "child": "t:ncbi:186822",
+      "parent_rank": "class",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:28211",
+      "child": "t:ncbi:118882",
+      "parent_rank": "class",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:1236",
+      "child": "t:ncbi:32033",
+      "parent_rank": "class",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:526525",
+      "child": "t:ncbi:128827",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:28890",
+      "child": "t:ncbi:2159",
+      "parent_rank": "phylum",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:28211",
+      "child": "t:ncbi:41297",
+      "parent_rank": "class",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:72274",
+      "child": "t:ncbi:135621",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:909930",
+      "child": "t:ncbi:33024",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:31977",
+      "child": "t:ncbi:906",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:909930",
+      "child": "t:ncbi:904",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:28050",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:81852",
+      "child": "t:ncbi:1350",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:31977",
+      "child": "t:ncbi:29465",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:194924",
+      "child": "t:ncbi:35832",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:171549",
+      "child": "t:ncbi:171552",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:171551",
+      "child": "t:ncbi:836",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:39492",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:239934",
+      "child": "t:ncbi:239935",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:848",
+      "child": "t:ncbi:856",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:906",
+      "child": "t:ncbi:907",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:358742",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:2292283",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ncbi:1759399",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:995019",
+      "child": "t:ncbi:40544",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:841",
+      "child": "t:ncbi:301302",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:28050",
+      "child": "t:ncbi:39485",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:40544",
+      "child": "t:ncbi:437898",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:31977",
+      "child": "t:ncbi:39948",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:909929",
+      "child": "t:ncbi:158846",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1268",
+      "child": "t:ncbi:32207",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:265975",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1432051",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1407607",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:80864",
+      "child": "t:ncbi:183669",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186826",
+      "child": "t:ncbi:1300",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:171549",
+      "child": "t:ncbi:171550",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:171550",
+      "child": "t:ncbi:239759",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:91061",
+      "child": "t:ncbi:539738",
+      "parent_rank": "class",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:539738",
+      "child": "t:ncbi:1378",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:526525",
+      "child": "t:ncbi:2810281",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:186801",
+      "child": "t:ncbi:186804",
+      "parent_rank": "class",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:186802",
+      "child": "t:ncbi:31979",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:2810281",
+      "child": "t:ncbi:191303",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1643826",
+      "child": "t:ncbi:447020",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:194924",
+      "child": "t:ncbi:872",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1236",
+      "child": "t:ncbi:471",
+      "parent_rank": "class",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:84111",
+      "child": "t:ncbi:84112",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:375288",
+      "child": "t:ncbi:823",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:41297",
+      "child": "t:ncbi:13687",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:91061",
+      "child": "t:ncbi:1279",
+      "parent_rank": "class",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:32033",
+      "child": "t:ncbi:40323",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:75682",
+      "child": "t:ncbi:149698",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:80864",
+      "child": "t:ncbi:34072",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186817",
+      "child": "t:ncbi:1386",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1236",
+      "child": "t:ncbi:231454",
+      "parent_rank": "class",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:33958",
+      "child": "t:ncbi:2742598",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:207244",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1643826",
+      "child": "t:ncbi:84111",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:572511",
+      "child": "t:ncbi:1262756",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:216851",
+      "child": "t:ncbi:853",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1678",
+      "child": "t:ncbi:1680",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1678",
+      "child": "t:ncbi:216816",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:35832",
+      "child": "t:ncbi:35833",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:1550024",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:133925",
+      "child": "t:ncbi:2042683",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1649459",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:265975",
+      "child": "t:ncbi:1501332",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ncbi:1313",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:838",
+      "child": "t:ncbi:60133",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2742598",
+      "child": "t:ncbi:97478",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2767887",
+      "child": "t:ncbi:1624",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1578",
+      "child": "t:ncbi:1596",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1578",
+      "child": "t:ncbi:33959",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:836",
+      "child": "t:ncbi:28124",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:547",
+      "child": "t:ncbi:1296536",
+      "parent_rank": "genus",
+      "child_rank": "subspecies"
+    },
+    {
+      "parent": "t:ncbi:413496",
+      "child": "t:ncbi:28141",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ncbi:1304",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ncbi:1310",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2742598",
+      "child": "t:ncbi:1613",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1578",
+      "child": "t:ncbi:47770",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1224",
+      "child": "t:ncbi:482",
+      "parent_rank": "phylum",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:203691",
+      "child": "t:ncbi:158",
+      "parent_rank": "phylum",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2049",
+      "child": "t:ncbi:1654",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:820",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:841",
+      "child": "t:ncbi:360807",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:572511",
+      "child": "t:ncbi:418240",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:841",
+      "child": "t:ncbi:166486",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:32066",
+      "child": "t:ncbi:203492",
+      "parent_rank": "phylum",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:203492",
+      "child": "t:ncbi:848",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:848",
+      "child": "t:ncbi:851",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:848",
+      "child": "t:ncbi:76859",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2171991",
+      "child": "t:ncbi:2171992",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:102106",
+      "child": "t:ncbi:147206",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:102106",
+      "child": "t:ncbi:626935",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:135625",
+      "child": "t:ncbi:712",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:909932",
+      "child": "t:ncbi:3120688",
+      "parent_rank": "class",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:1485",
+      "child": "t:ncbi:1507",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:171549",
+      "child": "t:ncbi:2840523",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:191303",
+      "child": "t:ncbi:154288",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:171552",
+      "child": "t:ncbi:2518605",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:ncbi:1937008",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1239",
+      "child": "t:ncbi:91061",
+      "parent_rank": "phylum",
+      "child_rank": "class"
+    },
+    {
+      "parent": "t:ncbi:1239",
+      "child": "t:ncbi:186801",
+      "parent_rank": "phylum",
+      "child_rank": "class"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:248744",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:ncbi:1729679",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1224",
+      "child": "t:ncbi:1236",
+      "parent_rank": "phylum",
+      "child_rank": "class"
+    },
+    {
+      "parent": "t:ncbi:1236",
+      "child": "t:ncbi:91347",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:561",
+      "child": "t:ncbi:562",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:818",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:208479",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1512",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:946234",
+      "child": "t:ncbi:292800",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1912855",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:329854",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:189330",
+      "child": "t:ncbi:39486",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:572511",
+      "child": "t:ncbi:40520",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:397864",
+      "child": "t:ncbi:487174",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:207244",
+      "child": "t:ncbi:649756",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2316020",
+      "child": "t:ncbi:46228",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1573535",
+      "child": "t:ncbi:1735",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1407607",
+      "child": "t:ncbi:1150298",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1678",
+      "child": "t:ncbi:28026",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1506553",
+      "child": "t:ncbi:29347",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:574697",
+      "child": "t:ncbi:544645",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:28111",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:909656",
+      "child": "t:ncbi:357276",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1392389",
+      "child": "t:ncbi:1297617",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2316020",
+      "child": "t:ncbi:33039",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2591381",
+      "child": "t:ncbi:2093857",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:2172004",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:644652",
+      "child": "t:ncbi:1335613",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2569097",
+      "child": "t:ncbi:39488",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1017280",
+      "child": "t:ncbi:106588",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:244127",
+      "child": "t:ncbi:169435",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:3025755",
+      "child": "t:ncbi:1547",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2316020",
+      "child": "t:ncbi:33038",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1769710",
+      "child": "t:ncbi:1653434",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:100883",
+      "child": "t:ncbi:100884",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1485",
+      "child": "t:ncbi:1522",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:724",
+      "child": "t:ncbi:729",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:29465",
+      "child": "t:ncbi:423477",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:172900",
+      "child": "t:ncbi:172901",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1678",
+      "child": "t:ncbi:1683",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ncbi:113107",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2172",
+      "child": "t:ncbi:2173",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:171552",
+      "child": "t:ncbi:363265",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:239759",
+      "child": "t:ncbi:328813",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:2591381",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:2840493",
+      "child": "t:ncbi:2840621",
+      "parent_rank": "no rank",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:2039302",
+      "child": "t:ncbi:1981510",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186801",
+      "child": "t:ncbi:2039302",
+      "parent_rank": "class",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:410072",
+      "child": "t:ncbi:470146",
+      "parent_rank": "species",
+      "child_rank": "strain"
+    },
+    {
+      "parent": "t:ncbi:39486",
+      "child": "t:ncbi:411461",
+      "parent_rank": "species",
+      "child_rank": "strain"
+    },
+    {
+      "parent": "t:ncbi:186801",
+      "child": "t:ncbi:1776384",
+      "parent_rank": "class",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:459786",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:239759",
+      "child": "t:ncbi:214856",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:33039",
+      "child": "t:ncbi:411460",
+      "parent_rank": "species",
+      "child_rank": "strain"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:ncbi:1924110",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:91347",
+      "child": "t:ncbi:613",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1678",
+      "child": "t:ncbi:1689",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:371601",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:3082768",
+      "child": "t:ncbi:990719",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:119852",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:990721",
+      "child": "t:ncbi:626937",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:990721",
+      "child": "t:ncbi:270498",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1263",
+      "child": "t:ncbi:40518",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:100175",
+      "child": "t:ncbi:100176",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:909656",
+      "child": "t:ncbi:204516",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:ncbi:1470350",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:909656",
+      "child": "t:ncbi:310298",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:572511",
+      "child": "t:ncbi:536633",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:189330",
+      "child": "t:ncbi:88431",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:33042",
+      "child": "t:ncbi:33043",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1263",
+      "child": "t:ncbi:40519",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:57723",
+      "child": "t:ncbi:1562566",
+      "parent_rank": "phylum",
+      "child_rank": "class"
+    },
+    {
+      "parent": "t:ncbi:508458",
+      "child": "t:ncbi:649775",
+      "parent_rank": "phylum",
+      "child_rank": "class"
+    },
+    {
+      "parent": "t:ncbi:57723",
+      "child": "t:ncbi:1813735",
+      "parent_rank": "phylum",
+      "child_rank": "class"
+    },
+    {
+      "parent": "t:ncbi:976",
+      "child": "t:ncbi:354354",
+      "parent_rank": "phylum",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:75682",
+      "child": "t:ncbi:846",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:49546",
+      "child": "t:ncbi:237",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:171552",
+      "child": "t:ncbi:1283313",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1730",
+      "child": "t:ncbi:290054",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:976",
+      "child": "t:ncbi:1210119",
+      "parent_rank": "phylum",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:29523",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186801",
+      "child": "t:ncbi:2044939",
+      "parent_rank": "class",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:80840",
+      "child": "t:ncbi:359336",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:33958",
+      "child": "t:ncbi:2767886",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:33958",
+      "child": "t:ncbi:2767842",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1506577",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:712",
+      "child": "t:ncbi:724",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:119060",
+      "child": "t:ncbi:48736",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:3085642",
+      "child": "t:ncbi:2048137",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:815",
+      "child": "t:ncbi:909656",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1853231",
+      "child": "t:ncbi:283168",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:84999",
+      "child": "t:ncbi:1643824",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:2037",
+      "child": "t:ncbi:2049",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:135624",
+      "child": "t:ncbi:83763",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:1737404",
+      "child": "t:ncbi:1582879",
+      "parent_rank": "class",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:171549",
+      "child": "t:ncbi:171551",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:830",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:80840",
+      "child": "t:ncbi:75682",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:213115",
+      "child": "t:ncbi:194924",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:186802",
+      "child": "t:ncbi:1392389",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1853231",
+      "child": "t:ncbi:574697",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:2005519",
+      "child": "t:ncbi:1348911",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:995019",
+      "child": "t:ncbi:577310",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:29547",
+      "child": "t:ncbi:194",
+      "parent_rank": "phylum",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186801",
+      "child": "t:ncbi:186802",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:186804",
+      "child": "t:ncbi:1501226",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:ncbi:1573535",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:48461",
+      "child": "t:ncbi:1647988",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:84998",
+      "child": "t:ncbi:84999",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:1263",
+      "child": "t:ncbi:438033",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:1486725",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:100175",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:283168",
+      "child": "t:ncbi:28118",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:570",
+      "child": "t:ncbi:573",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:817",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:447020",
+      "child": "t:ncbi:446660",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:91347",
+      "child": "t:ncbi:204037",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:32033",
+      "child": "t:ncbi:141948",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:543",
+      "child": "t:ncbi:413496",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:41297",
+      "child": "t:ncbi:165696",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:28211",
+      "child": "t:ncbi:68287",
+      "parent_rank": "class",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:91347",
+      "child": "t:ncbi:583",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:80840",
+      "child": "t:ncbi:92793",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:ncbi:61170",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:244127",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:909932",
+      "child": "t:ncbi:909929",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:32066",
+      "child": "t:ncbi:1129771",
+      "parent_rank": "phylum",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:1129771",
+      "child": "t:ncbi:32067",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1239",
+      "child": "t:ncbi:526524",
+      "parent_rank": "phylum",
+      "child_rank": "class"
+    },
+    {
+      "parent": "t:ncbi:526524",
+      "child": "t:ncbi:526525",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1213720",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:909929",
+      "child": "t:ncbi:55506",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1643824",
+      "child": "t:ncbi:1380",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:ncbi:123375",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:649775",
+      "child": "t:ncbi:649776",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:1236",
+      "child": "t:ncbi:135625",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:201174",
+      "child": "t:ncbi:2037",
+      "parent_rank": "phylum",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:201174",
+      "child": "t:ncbi:1268",
+      "parent_rank": "phylum",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:74201",
+      "child": "t:ncbi:203494",
+      "parent_rank": "phylum",
+      "child_rank": "class"
+    },
+    {
+      "parent": "t:ncbi:201174",
+      "child": "t:ncbi:85004",
+      "parent_rank": "phylum",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:712",
+      "child": "t:ncbi:416916",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:119060",
+      "child": "t:ncbi:47670",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1236",
+      "child": "t:ncbi:72274",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:712",
+      "child": "t:ncbi:67757",
+      "parent_rank": "family",
+      "child_rank": "no rank"
+    },
+    {
+      "parent": "t:ncbi:80840",
+      "child": "t:ncbi:995019",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:909932",
+      "child": "t:ncbi:909930",
+      "parent_rank": "class",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:1017280",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:2163168",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:44748",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:712",
+      "child": "t:ncbi:75984",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:171551",
+      "child": "t:ncbi:361210",
+      "parent_rank": "family",
+      "child_rank": "no rank"
+    },
+    {
+      "parent": "t:ncbi:29547",
+      "child": "t:ncbi:148813",
+      "parent_rank": "phylum",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1117",
+      "child": "t:ncbi:3100426",
+      "parent_rank": "phylum",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:28890",
+      "child": "t:ncbi:367189",
+      "parent_rank": "phylum",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1350",
+      "child": "t:ncbi:1355",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:473772",
+      "parent_rank": "family",
+      "child_rank": "no rank"
+    },
+    {
+      "parent": "t:ncbi:203494",
+      "child": "t:ncbi:48461",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:28211",
+      "child": "t:ncbi:13159",
+      "parent_rank": "class",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:84566",
+      "child": "t:ncbi:84567",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:526525",
+      "child": "t:ncbi:100883",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:171552",
+      "child": "t:ncbi:577309",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1730",
+      "child": "t:ncbi:39496",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1570339",
+      "child": "t:ncbi:543311",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:649777",
+      "child": "t:ncbi:508459",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:526525",
+      "child": "t:ncbi:3025755",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:2840588",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:2569097",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:572511",
+      "child": "t:ncbi:871665",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:204475",
+      "child": "t:ncbi:2997294",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1798710",
+      "child": "t:ncbi:1906119",
+      "parent_rank": "phylum",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:543",
+      "child": "t:ncbi:544",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:201174",
+      "child": "t:ncbi:85017",
+      "parent_rank": "phylum",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:626930",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:ncbi:1034346",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186807",
+      "child": "t:ncbi:2740",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:2038676",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1769710",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186802",
+      "child": "t:ncbi:3085642",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ncbi:1318",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:1535",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1485",
+      "child": "t:ncbi:1506",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1263",
+      "child": "t:ncbi:169436",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:158846",
+      "child": "t:ncbi:437897",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:46205",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1783272",
+      "child": "t:ncbi:1798710",
+      "parent_rank": "kingdom",
+      "child_rank": "phylum"
+    },
+    {
+      "parent": "t:ncbi:2159",
+      "child": "t:ncbi:2172",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:2840493",
+      "parent_rank": "family",
+      "child_rank": "no rank"
+    },
+    {
+      "parent": "t:ncbi:976",
+      "child": "t:ncbi:200643",
+      "parent_rank": "phylum",
+      "child_rank": "class"
+    },
+    {
+      "parent": "t:ncbi:200643",
+      "child": "t:ncbi:171549",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:186802",
+      "child": "t:ncbi:2211183",
+      "parent_rank": "order",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1918450",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:244127",
+      "child": "t:ncbi:1673720",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1432051",
+      "child": "t:ncbi:1432052",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1649459",
+      "child": "t:ncbi:154046",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1531",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:2850323",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186801",
+      "child": "t:ncbi:35518",
+      "parent_rank": "class",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:84107",
+      "child": "t:ncbi:1427376",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:177971",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186826",
+      "child": "t:ncbi:1375",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1350",
+      "child": "t:ncbi:1352",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1501226",
+      "child": "t:ncbi:1776391",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:572511",
+      "child": "t:ncbi:2763028",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1485",
+      "child": "t:ncbi:1414720",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1350",
+      "child": "t:ncbi:53345",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1505657",
+      "child": "t:ncbi:261299",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2767887",
+      "child": "t:ncbi:89059",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:561",
+      "child": "t:ncbi:564",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:572511",
+      "child": "t:ncbi:89014",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:204475",
+      "child": "t:ncbi:745368",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2569097",
+      "child": "t:ncbi:105843",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:216851",
+      "child": "t:ncbi:411483",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:216851",
+      "child": "t:ncbi:1851427",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:216851",
+      "child": "t:ncbi:1851428",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:216851",
+      "child": "t:ncbi:2935520",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:39948",
+      "child": "t:ncbi:2161821",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2767887",
+      "child": "t:ncbi:1623",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:239759",
+      "child": "t:ncbi:328814",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1239",
+      "child": "t:ncbi:84086",
+      "parent_rank": "phylum",
+      "child_rank": "no rank"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:84030",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:572511",
+      "child": "t:ncbi:33035",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1485",
+      "child": "t:ncbi:1502",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:102106",
+      "child": "t:ncbi:74426",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:543",
+      "child": "t:ncbi:547",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1279",
+      "child": "t:ncbi:1285",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:91061",
+      "child": "t:ncbi:42858",
+      "parent_rank": "class",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:291644",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:376806",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ncbi:1308",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:46506",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:40544",
+      "child": "t:ncbi:40545",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:2023266",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186801",
+      "child": "t:ncbi:159730",
+      "parent_rank": "class",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1654",
+      "child": "t:ncbi:544580",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ncbi:1309",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:570",
+      "child": "t:ncbi:1463165",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:836",
+      "child": "t:ncbi:28123",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:909929",
+      "child": "t:ncbi:52225",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:83763",
+      "child": "t:ncbi:83770",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1236",
+      "child": "t:ncbi:135624",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:ncbi:1935200",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:946234",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1239",
+      "child": "t:ncbi:1980693",
+      "parent_rank": "phylum",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1678",
+      "child": "t:ncbi:28025",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:1470345",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:204441",
+      "child": "t:ncbi:34012",
+      "parent_rank": "order",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1485",
+      "child": "t:ncbi:59620",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1643826",
+      "child": "t:ncbi:84108",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186817",
+      "child": "t:ncbi:400634",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1378",
+      "child": "t:ncbi:29391",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186828",
+      "child": "t:ncbi:117563",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:117563",
+      "child": "t:ncbi:46124",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:171551",
+      "child": "t:ncbi:1923867",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1923867",
+      "child": "t:ncbi:1686296",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186826",
+      "child": "t:ncbi:186828",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:1578",
+      "child": "t:ncbi:1604",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:91061",
+      "child": "t:ncbi:186826",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1898203",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1236",
+      "child": "t:ncbi:135619",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:28256",
+      "child": "t:ncbi:2745",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:135619",
+      "child": "t:ncbi:28256",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:171549",
+      "child": "t:ncbi:1853231",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:1224",
+      "child": "t:ncbi:80840",
+      "parent_rank": "phylum",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:80840",
+      "child": "t:ncbi:119060",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:28211",
+      "child": "t:ncbi:204441",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:200644",
+      "child": "t:ncbi:49546",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:91061",
+      "child": "t:ncbi:186824",
+      "parent_rank": "class",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:836",
+      "child": "t:ncbi:837",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1263",
+      "child": "t:ncbi:1262954",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:239759",
+      "child": "t:ncbi:1262696",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:39948",
+      "child": "t:ncbi:218538",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1678",
+      "child": "t:ncbi:1681",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:33024",
+      "child": "t:ncbi:33025",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:292632",
+      "child": "t:ncbi:2053618",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2172004",
+      "child": "t:ncbi:2108523",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:84108",
+      "child": "t:ncbi:572010",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:841",
+      "child": "t:ncbi:301301",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:29361",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:239759",
+      "child": "t:ncbi:28117",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:437755",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ncbi:1302",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1279",
+      "child": "t:ncbi:1288",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:909656",
+      "child": "t:ncbi:310297",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:171549",
+      "child": "t:ncbi:2005525",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:209",
+      "child": "t:ncbi:210",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:201174",
+      "child": "t:ncbi:1653",
+      "parent_rank": "phylum",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:1653",
+      "child": "t:ncbi:1716",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:213115",
+      "child": "t:ncbi:213117",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:203557",
+      "child": "t:ncbi:48463",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:201174",
+      "child": "t:ncbi:85019",
+      "parent_rank": "phylum",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:976",
+      "child": "t:ncbi:84566",
+      "parent_rank": "phylum",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:85019",
+      "child": "t:ncbi:1696",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1117",
+      "child": "t:ncbi:748770",
+      "parent_rank": "phylum",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:410072",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:239759",
+      "child": "t:ncbi:2662363",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:33042",
+      "child": "t:ncbi:751585",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:84998",
+      "child": "t:ncbi:1643826",
+      "parent_rank": "class",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:186802",
+      "child": "t:ncbi:186807",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:186806",
+      "child": "t:ncbi:264995",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1570339",
+      "child": "t:ncbi:150022",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1239",
+      "child": "t:ncbi:909932",
+      "parent_rank": "phylum",
+      "child_rank": "class"
+    },
+    {
+      "parent": "t:ncbi:976",
+      "child": "t:ncbi:200644",
+      "parent_rank": "phylum",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:2093825",
+      "child": "t:ncbi:2171986",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:3028852",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:203492",
+      "child": "t:ncbi:180162",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:290055",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:239759",
+      "child": "t:ncbi:626932",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186801",
+      "child": "t:ncbi:3082768",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:186801",
+      "child": "t:ncbi:3085636",
+      "parent_rank": "class",
+      "child_rank": "order"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:ncbi:1774107",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:ncbi:118747",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1570339",
+      "child": "t:ncbi:162289",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186802",
+      "child": "t:ncbi:1470353",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:216572",
+      "child": "t:ncbi:596767",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186804",
+      "child": "t:ncbi:1505657",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:2316020",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:909932",
+      "child": "t:ncbi:2373",
+      "parent_rank": "class",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186801",
+      "child": "t:ncbi:86331",
+      "parent_rank": "class",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186802",
+      "child": "t:ncbi:1980681",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1783272",
+      "child": "t:ncbi:2146",
+      "parent_rank": "kingdom",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:838",
+      "child": "t:ncbi:28132",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:45851",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1283313",
+      "child": "t:ncbi:76122",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:171549",
+      "child": "t:ncbi:2005519",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:2048137",
+      "child": "t:ncbi:1628085",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:28211",
+      "child": "t:ncbi:433",
+      "parent_rank": "class",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:1737405",
+      "child": "t:ncbi:1737406",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:204441",
+      "child": "t:ncbi:41295",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:80840",
+      "child": "t:ncbi:80864",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:433",
+      "child": "t:ncbi:434",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:41295",
+      "child": "t:ncbi:1081",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:135624",
+      "child": "t:ncbi:642",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:29547",
+      "child": "t:ncbi:209",
+      "parent_rank": "phylum",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:31979",
+      "child": "t:ncbi:49082",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186801",
+      "child": "t:ncbi:1481960",
+      "parent_rank": "class",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:201174",
+      "child": "t:ncbi:31957",
+      "parent_rank": "phylum",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:1570339",
+      "child": "t:ncbi:165779",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:2005525",
+      "child": "t:ncbi:195950",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:31957",
+      "child": "t:ncbi:2801844",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:201174",
+      "child": "t:ncbi:36739",
+      "parent_rank": "phylum",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:119060",
+      "child": "t:ncbi:292",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:848",
+      "child": "t:ncbi:859",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:572511",
+      "child": "t:ncbi:53443",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ncbi:1340",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ncbi:1501662",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1654",
+      "child": "t:ncbi:649739",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:31979",
+      "child": "t:ncbi:1266",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186802",
+      "child": "t:ncbi:2086584",
+      "parent_rank": "order",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:2109691",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1501226",
+      "child": "t:ncbi:1115758",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1266",
+      "child": "t:ncbi:2053610",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:ncbi:331630",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:85017",
+      "child": "t:ncbi:254250",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:2762318",
+      "child": "t:ncbi:501783",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:28211",
+      "child": "t:ncbi:212791",
+      "parent_rank": "class",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:201174",
+      "child": "t:ncbi:33882",
+      "parent_rank": "phylum",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:49546",
+      "child": "t:ncbi:76831",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:119060",
+      "child": "t:ncbi:131079",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:649776",
+      "child": "t:ncbi:1434006",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1783272",
+      "child": "t:ncbi:2093",
+      "parent_rank": "kingdom",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186801",
+      "child": "t:ncbi:35517",
+      "parent_rank": "class",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:81852",
+      "child": "t:ncbi:2737",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:649776",
+      "child": "t:ncbi:649777",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:213115",
+      "child": "t:ncbi:213116",
+      "parent_rank": "order",
+      "child_rank": "family"
+    },
+    {
+      "parent": "t:ncbi:213116",
+      "child": "t:ncbi:898",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:216851",
+      "child": "t:ncbi:1946507",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:28211",
+      "child": "t:ncbi:28100",
+      "parent_rank": "class",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:201174",
+      "child": "t:ncbi:84998",
+      "parent_rank": "phylum",
+      "child_rank": "class"
+    },
+    {
+      "parent": "t:ncbi:1224",
+      "child": "t:ncbi:28211",
+      "parent_rank": "phylum",
+      "child_rank": "class"
+    },
+    {
+      "parent": "t:ncbi:1678",
+      "child": "t:ncbi:1685",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:49546",
+      "child": "t:ncbi:1016",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:375288",
+      "child": "t:ncbi:46503",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:246787",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186826",
+      "child": "t:ncbi:46123",
+      "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:33958",
+      "child": "t:ncbi:1243",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:31953",
+      "child": "t:ncbi:196081",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ncbi:1343",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:171552",
+      "child": "t:ncbi:840",
+      "parent_rank": "family",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ncbi:257758",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:33958",
+      "child": "t:ncbi:2767887",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:1236",
+      "child": "t:ncbi:75309",
+      "parent_rank": "class",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:41297",
+      "child": "t:ncbi:1649487",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ncbi:1164882",
+      "parent_rank": "family",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:848",
+      "child": "t:ncbi:850",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:838",
+      "child": "t:ncbi:304215",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1485",
+      "child": "t:ncbi:1720194",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1485",
+      "child": "t:ncbi:84024",
+      "parent_rank": "genus",
+      "child_rank": "species"
     }
   ]
 }
