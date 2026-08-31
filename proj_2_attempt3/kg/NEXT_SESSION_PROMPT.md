@@ -9,6 +9,24 @@ You are continuing the Knight Lab microbe–disease knowledge graph. Read
 validated and published (https://www.mohakprakash.com/KnightLabV2/). Everything
 below runs **locally — no GPU, no API credits**.
 
+## Model policy (important — this controls cost)
+
+You are the **orchestrator**. Stay on Opus for judgement: deciding what to test,
+reading statistical output, catching when a result is noise, writing findings.
+
+**Delegate all information-gathering to Haiku subagents** — `Agent` with
+`model: "haiku"`. Haiku is for: reading papers and pulling quotes, grepping files,
+tabulating, fetching, mechanical checks. Do not spend Opus tokens on retrieval.
+
+Rule of thumb: if the task is "go find/read/count X", it is Haiku. If it is
+"decide whether X means anything", it is you.
+
+Subagents die often (this project has seen network drops and session limits kill
+six in a row). So: give each one a NARROW task with a single output file, have it
+write results to disk as it goes, and check for partial output before relaunching.
+If agents keep failing, do the work yourself in-session rather than burning tokens
+on repeated spawns.
+
 ## Mode: full agency, run until you run out
 
 Work continuously. **Do not stop to ask permission** for anything local — reading,
@@ -41,7 +59,26 @@ on each other and can be fanned out to subagents. Task 2 depends on Task 1.
   every static check.
 - Commit as you go with real reasoning in the messages.
 
-## TASK 0 — Rebuild on the correct datasheet (do this first, everything depends on it)
+## STATE AS OF 2026-08-31 (already done — do not redo)
+
+- Graph rebuilt on the CORRECT datasheet: **348 papers, 299 scoreable** (was 250/88),
+  833 taxa, 43 diseases, 1,927 edges, 226 contested, 625 containment links.
+- Revalidated: Disbiome **72.8%** agreement, Peryton **72.7%** (272 / 221 overlapping pairs).
+- Rescoring finding: the old "F1 0.390" was an artifact of blank gold cells; the old
+  "0.680" was flattering (measured on an easy 88-paper subset). **Honest F1 ~0.59.**
+  Permutation confirms it is real work: observed 0.596 vs null 0.072, p=0.001.
+- LLM-vs-human metadata: country 91.7%, sequencing 90.4% agreement over 246 papers.
+  **CAVEAT: only 3 disagreements were actually read.** That is an anecdote, not a
+  finding. Re-do at n>=20 before anyone cites it.
+
+### Highest-value cleanup, do early
+45 of the 348 papers came from MAIN_DATA by TITLE KEYWORD only and are unfiltered
+for reviews and animal studies. Agreement with both curated databases fell ~4 points
+when they were added. Filter them (human case-control studies with a healthy control
+arm only), rebuild, and report whether agreement recovers. If it does, that is direct
+evidence those papers are contaminating the graph.
+
+## TASK 0 — Rebuild on the correct datasheet (DONE — see state above; skip)
 
 We discovered we have been scoring against the **wrong export**.
 
@@ -120,6 +157,31 @@ Only after Task 1, and only where Task 1 shows signal worth pursuing.
   question being asked.
 - Sanity check: do embeddings reproduce the known structure (same disease cluster,
   same sequencing type cluster)? If not, they are not encoding what we need.
+
+## TASK 2.5 — Replace BM25 retrieval with GraphRAG (do this; the current design is wrong)
+
+`build_rag.py` currently retrieves with BM25 + entity matching. That is the wrong
+primitive **because we have a graph and it ignores it**. Keyword scoring cannot
+answer "what else is connected to this", which is the entire reason the graph exists.
+
+Rebuild retrieval as graph traversal:
+
+- **Entity-link the query** to taxon/disease nodes (the vocabulary is closed and
+  known, so this is exact matching, not guessing).
+- **Personalized PageRank** seeded on the matched nodes, run over the graph. Edge
+  weights should combine evidence count and directional consistency; containment
+  links (625 of them, currently unused by anything) let a query about a genus reach
+  its family and vice versa. Damping ~0.85, a few dozen power iterations — the graph
+  is ~900 nodes, this is milliseconds and needs no library.
+- **Return a connected subgraph**, not a flat list of documents: the seed nodes,
+  their high-PPR neighbours, the edges between them, and the papers backing each
+  edge. That is a context block an LLM can actually reason over.
+- **Multi-hop is the payoff.** "What links Parkinson's and Alzheimer's?" is a graph
+  query — taxa adjacent to both — and BM25 structurally cannot answer it. Make sure
+  that query works.
+
+Keep BM25 only as a **baseline to beat**, and report the comparison honestly on a
+handful of realistic queries. Do not ship it as the primary retriever.
 
 ## TASK 3 — Make the graph useful
 
