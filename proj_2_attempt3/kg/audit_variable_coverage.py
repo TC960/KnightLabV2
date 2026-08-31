@@ -169,6 +169,7 @@ def main():
         kw, val = spec["kw"], spec["val"]
         naive = body = attributed = valued = 0
         examples = []
+        valued_titles = []
         for p in papers:
             text = p["text"]
             if kw.search(text):
@@ -185,6 +186,7 @@ def main():
             hit = [s for s in own if val.search(s)]
             if hit:
                 valued += 1
+                valued_titles.append(p["title"])
                 if len(examples) < 3:
                     examples.append(re.sub(r"\s+", " ", hit[0])[:220])
         n = len(papers)
@@ -195,6 +197,9 @@ def main():
             "naive_pct": round(100 * naive / n, 1),
             "valued_pct": round(100 * valued / n, 1),
             "examples": examples,
+            # paper-level labels so an independent method (semantic retrieval)
+            # can be scored against this one -- see variable_sweep.py
+            "valued_titles": valued_titles,
         })
 
     rows.sort(key=lambda r: -r["valued"])
