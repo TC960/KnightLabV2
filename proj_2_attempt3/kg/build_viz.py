@@ -267,7 +267,11 @@ tabs.forEach(([tid,pid]) => document.getElementById(tid).addEventListener("click
   if (tid === "tab-net" && window.__netResize) window.__netResize();
 }));
 
-render();
+// NOTE: render() is NOT called here. window.__netBuild is defined by
+// viz_network.js, which is a LATER <script>, so calling render() at this point
+// silently skips the network build and leaves a blank canvas on first paint.
+// The bootstrap call lives after that script instead.
+window.__render = render;
 """
 
 
@@ -329,7 +333,7 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
   papers while <i>Hungatella</i> inside it is enriched across 7.</p>
 </div>
 
-<div class="pane" id="pane-rank" role="tabpanel">
+<div class="pane" id="pane-rank" role="tabpanel" hidden>
   <div class="chart" id="chart"></div>
 </div>
 <div id="detail" class="empty">Click any taxon — in either view — to see the individual
@@ -354,6 +358,7 @@ Associations only — no causal claim.</p>
 <script>window.__KG__={json.dumps(payload)};</script>
 <script>{JS}</script>
 <script>{net_js}</script>
+<script>window.__render();</script>
 </body></html>"""
     open(a.out, "w").write(html)
     print(f"wrote {a.out}  ({len(html)/1024:.0f} KB)")

@@ -1,6 +1,6 @@
 # Microbe–disease knowledge graph
 
-Published site: https://tc960.github.io/KnightLabV2/
+Published site: https://www.mohakprakash.com/KnightLabV2/
 
 `index.html` is generated — do not edit by hand. Regenerate with:
 

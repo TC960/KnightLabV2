@@ -156,7 +156,7 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
   papers while <i>Hungatella</i> inside it is enriched across 7.</p>
 </div>
 
-<div class="pane" id="pane-rank" role="tabpanel">
+<div class="pane" id="pane-rank" role="tabpanel" hidden>
   <div class="chart" id="chart"></div>
 </div>
 <div id="detail" class="empty">Click any taxon — in either view — to see the individual
@@ -306,7 +306,11 @@ tabs.forEach(([tid,pid]) => document.getElementById(tid).addEventListener("click
   if (tid === "tab-net" && window.__netResize) window.__netResize();
 }));
 
-render();
+// NOTE: render() is NOT called here. window.__netBuild is defined by
+// viz_network.js, which is a LATER <script>, so calling render() at this point
+// silently skips the network build and leaves a blank canvas on first paint.
+// The bootstrap call lives after that script instead.
+window.__render = render;
 </script>
 <script>// Force-directed node-link view: canvas, hand-rolled simulation (the artifact CSP
 // blocks CDN libraries), with zoom / pan / node-drag.
@@ -564,4 +568,5 @@ render();
   addEventListener("resize", () => { resize(); alpha = Math.max(alpha, 0.4); });
 })();
 </script>
+<script>window.__render();</script>
 </body></html>
