@@ -49,6 +49,9 @@
       nodes[s].deg++; nodes[t].deg++;
       links.push({ s, t, e });
     });
+    nodes.forEach(n => {
+      n.mass = n.type === "disease" ? 1 + Math.sqrt(n.deg) * 0.55 : 1;
+    });
     (window.__KG__.hierarchy || []).forEach(h => {
       if (idx.has(h.parent) && idx.has(h.child))
         hier.push({ s: idx.get(h.parent), t: idx.get(h.child) });
@@ -59,14 +62,21 @@
   }
 
   function step() {
-    const kk = Math.sqrt((W * H) / Math.max(nodes.length, 1)) * 0.72;
+    const kk = Math.sqrt((W * H) / Math.max(nodes.length, 1)) * 0.95;
     for (let i = 0; i < nodes.length; i++) {
       const a = nodes[i];
       for (let j = i + 1; j < nodes.length; j++) {
         const b = nodes[j];
         let dx = a.x - b.x, dy = a.y - b.y, d2 = dx * dx + dy * dy;
         if (d2 < 1) { d2 = 1; dx = Math.random() - .5; dy = Math.random() - .5; }
-        const f = (kk * kk) / d2 * 0.55, d = Math.sqrt(d2);
+        // Mass-weighted repulsion. This is a bipartite graph whose diseases are
+        // high-degree hubs; with uniform repulsion every hub collapses into the
+        // centre and their labels overlap illegibly. Weighting by degree makes
+        // hubs push each other apart, and the disease-disease term is boosted
+        // further so the handful of hubs spread across the canvas.
+        const both = a.type === "disease" && b.type === "disease";
+        const f = (kk * kk) / d2 * 0.55 * a.mass * b.mass * (both ? 7 : 1);
+        const d = Math.sqrt(d2);
         a.vx += dx / d * f; a.vy += dy / d * f;
         b.vx -= dx / d * f; b.vy -= dy / d * f;
       }
@@ -83,7 +93,8 @@
     hier.forEach(h => pull(h.s, h.t, 0.45));   // containment pulls kin together, gently
     nodes.forEach(n => {
       if (n.fixed) { n.vx = n.vy = 0; return; }
-      n.vx += (W / 2 - n.x) * 0.0016; n.vy += (H / 2 - n.y) * 0.0016;
+      const g = n.type === "disease" ? 0.0007 : 0.0018;
+      n.vx += (W / 2 - n.x) * g; n.vy += (H / 2 - n.y) * g;
       n.x += Math.max(-14, Math.min(14, n.vx * alpha));
       n.y += Math.max(-14, Math.min(14, n.vy * alpha));
       n.vx *= 0.82; n.vy *= 0.82;
@@ -91,9 +102,11 @@
     alpha *= 0.985;
   }
 
+  // Disease radii are capped tightly: a huge filled hub hides the links behind it
+  // and, in dark mode where --ink is white, reads as a glare blob.
   const radius = n => n.type === "disease"
-    ? Math.min(26, 11 + Math.sqrt(n.deg) * 1.9)
-    : Math.min(13, 3.4 + Math.sqrt(n.deg) * 1.7);
+    ? Math.min(15, 8 + Math.sqrt(n.deg) * 0.75)
+    : Math.min(10, 3 + Math.sqrt(n.deg) * 1.25);
 
   function draw() {
     const up = css("--up"), down = css("--down"), mixed = css("--mixed");
@@ -138,27 +151,39 @@
     });
     ctx.setLineDash([]);
 
-    nodes.forEach(n => {
+    const placed = [];   // drawn label boxes, world coords — skip anything overlapping
+    const order = nodes.slice().sort((a, b) =>
+      (b.type === "disease") - (a.type === "disease") || b.deg - a.deg);
+    order.forEach(n => {
       const on = !focus || near.has(n.id);
       ctx.globalAlpha = on ? 1 : 0.16;
       const r = radius(n);
       ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, 6.284);
-      ctx.fillStyle = n.type === "disease" ? ink : panel;
+      // diseases: surface fill + heavy ring (readable, doesn't occlude links)
+      ctx.fillStyle = n.type === "disease" ? surf : panel;
       ctx.fill();
-      ctx.lineWidth = (n.fixed ? 2.6 : 1.6) / k;
+      ctx.lineWidth = (n.fixed ? 3.4 : (n.type === "disease" ? 2.6 : 1.4)) / k;
       ctx.strokeStyle = n.type === "disease" ? ink : ink2;
       ctx.stroke();
-      const show = n.type === "disease" || r > 8 || (focus && near.has(n.id)) || k > 1.6;
-      if (show) {
-        const fs = (n.type === "disease" ? 12 : 11) / k;
+      const want = n.type === "disease" || (focus && near.has(n.id)) || k > 1.5 || r > 7;
+      if (want) {
+        const fs = (n.type === "disease" ? 12.5 : 10.5) / k;
         ctx.font = `${n.type === "disease" ? "600 " : ""}${fs}px ui-sans-serif,system-ui`;
         ctx.textAlign = "center";
-        const label = n.label.length > 26 ? n.label.slice(0, 25) + "…" : n.label;
-        const y = n.y + r + fs + 1;
-        ctx.lineWidth = 3 / k; ctx.strokeStyle = surf;
-        ctx.strokeText(label, n.x, y);
-        ctx.fillStyle = n.type === "disease" ? ink : ink2;
-        ctx.fillText(label, n.x, y);
+        const label = n.label.length > 24 ? n.label.slice(0, 23) + "…" : n.label;
+        const w = ctx.measureText(label).width, y = n.y + r + fs + 1;
+        const box = { x0: n.x - w / 2 - 2 / k, x1: n.x + w / 2 + 2 / k,
+                      y0: y - fs, y1: y + 3 / k };
+        const clash = placed.some(b =>
+          box.x0 < b.x1 && box.x1 > b.x0 && box.y0 < b.y1 && box.y1 > b.y0);
+        // a pinned/hovered neighbourhood always wins the space it needs
+        if (!clash || (focus && near.has(n.id))) {
+          placed.push(box);
+          ctx.lineWidth = 3.5 / k; ctx.strokeStyle = surf;
+          ctx.strokeText(label, n.x, y);
+          ctx.fillStyle = n.type === "disease" ? ink : ink2;
+          ctx.fillText(label, n.x, y);
+        }
       }
     });
     ctx.globalAlpha = 1;
