@@ -11,3 +11,7 @@ proj_2_attempt3/dsmlp_model_prompting/benchmark_results
 # python bytecode
 __pycache__/
 *.pyc
+
+# kg: fetch cache and raw GPU pulls
+proj_2_attempt3/kg/fetch_cache/
+proj_2_attempt3/kg/gpu_results/
