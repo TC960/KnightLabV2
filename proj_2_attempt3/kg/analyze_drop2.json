@@ -1,0 +1,38 @@
+{
+  "corr_gold_vs_pred_count": {
+    "r": 0.3021,
+    "p_two_sided": 0.0002,
+    "n": 227
+  },
+  "pred_count_stats": {
+    "mean": 9.97,
+    "sd": 10.57,
+    "median": 7
+  },
+  "gold_count_stats": {
+    "mean": 8.84,
+    "sd": 6.75,
+    "median": 7
+  },
+  "corr_goldsize_vs_precision": {
+    "r": 0.1679,
+    "p_two_sided": 0.0154,
+    "n": 201
+  },
+  "corr_goldsize_vs_recall": {
+    "r": -0.0631,
+    "p_two_sided": 0.3521,
+    "n": 227
+  },
+  "stratum_matched_gap": {
+    "observed_weighted_f1_gap": 0.0684,
+    "p_two_sided": 0.18,
+    "n_perm": 10000,
+    "note": "group label permuted WITHIN gold-size strata"
+  },
+  "power": {
+    "null_sd_of_f1_gap": 0.0505,
+    "min_detectable_gap_at_alpha.05": 0.099,
+    "observed_gap": 0.0843
+  }
+}

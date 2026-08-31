@@ -1,0 +1,881 @@
+{
+  "fp_sample": [
+    {
+      "kind": "FP",
+      "title": "Altered gut microbiota in patients with idiopathic Parkinson's disease: an age-sex matched case-control study.",
+      "direction": "enriched",
+      "taxon": "verrucomicrobiota",
+      "present_in_text": true,
+      "char_len": 6506,
+      "evidence": {
+        "n_sentences": 1,
+        "has_strong_sig": true,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "Results: We observed a significant decrease of Firmicutes and a significant increase of Verrucomicrobiota at the phylum level."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Metagenomic association analysis of cognitive impairment in community-dwelling older adults.",
+      "direction": "enriched",
+      "taxon": "diallister invisus",
+      "present_in_text": true,
+      "char_len": 7896,
+      "evidence": {
+        "n_sentences": 1,
+        "has_strong_sig": true,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": true
+      },
+      "sentences": [
+        "Although Diallister invisus and Streptococcus gordonii were not obviously related to cognition, the former was dominant in individuals with mild cognitive impairment (MCI), while the later was more abundant in cognitively normal (CN) than MCI groups, and positively associated with cognitive performance (p < 0.05)."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Difference in gut microbial dysbiotic patterns between body-first and brain-first Parkinson's disease.",
+      "direction": "enriched",
+      "taxon": "akkermansia muciniphila",
+      "present_in_text": true,
+      "char_len": 5896,
+      "evidence": {
+        "n_sentences": 1,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "The gut microbiome in body-first PD showed a distinct profile, characterized by an increased presence of Escherichia coli and Akkermansia muciniphila, and a decreased abundance of short-chain fatty acid-producing commensal bacteria."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, ",
+      "direction": "enriched",
+      "taxon": "olsenella",
+      "present_in_text": true,
+      "char_len": 81245,
+      "evidence": {
+        "n_sentences": 5,
+        "has_strong_sig": true,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": true
+      },
+      "sentences": [
+        "While there was no difference in \u03b1- or \u03b2-diversity of the microbiome, we identified 40 microbes from different taxonomic levels that differ in abundance between PwMS and HCs, including Barnesiella , Collinsella , Egerthella , Mitsuokella , Olsenella Romboutsia , and Succinivibrio , all enhanced in PwMS, while several members of Lacnospira were reduced.",
+        "The latter included the unspecified family gut metagenome , the genera gut metagenome , Mitsuokella , Negativibacillus , Olsenella , Ruminococcaceae UCG-013 , and the species Ruminococcus gnavus CC55 001C and uncultured Clostridium sp.",
+        "The genera Olsenella and Lachnospiracea correlated significantly when unadjusted for BMI ( p = 0.029, r = 0.29; p = 0.046, r = 0.27, respectively).",
+        "The enrichment of Olsenella supports a report from a Belgium study [ 33 ], while it was reduced in RRMS in a US study [ 34 ].",
+        "Interestingly, Olsenella , which correlated positively with EDSS in our study, belongs to Coriobacteriales , supporting an association with disease activity, while the Lachnospiraceae NK4A136 group was reduced in our PwMS, supporting the finding that depletion of this microbe may contribute to disease activity."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Evaluation of the Microbial Diversity in Amyotrophic Lateral Sclerosis Using High-Throughput Sequencing.",
+      "direction": "depleted",
+      "taxon": "clostridia",
+      "present_in_text": true,
+      "char_len": 30996,
+      "evidence": {
+        "n_sentences": 3,
+        "has_strong_sig": true,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "In Figure 4 , Lachnospiraceae (at family level), Firmicutes (at phylum level), Clostridia (at class level), Oscillibacter (at genus level), Family XIII (at family level), Anaerostipes (at genus level), Lachnospiraceae (at genus level) and Clostridiales (at order level) in group H were significant higher than that in group A, while Bacteroidetes (at phylum level), Bacteroidia (at class level), Bacteroidales (at order level), Dorea (at genus level) were significant higher than that in group H.",
+        "Furthermore, supervised comparisons by LEfSE (LDA > 4.0) were performed to find the significant changed bacteria, and the relative richness of Firmicutes at phylum level, Clostridia at class level, Clostridiales at order level, Lachnospiraceae and Family XIII at family level, Oscillibacter , Anaerostipes and Lachnospiraceae at genus level in group H were significant higher than that in group A, while Bacteroidetes at phylum level, Bacteroidia at class level, Bacteroidales at order level and Dorea at genus level were significant higher in group A ( Figure 4 ).",
+        "Hypothesis: a motor neuron toxin produced by a clostridial species residing in gut causes ALS."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Short chain fatty acids and gut microbiota differ between patients with Parkinson's disease and age-matched co",
+      "direction": "enriched",
+      "taxon": "enterobacteriaceae",
+      "present_in_text": true,
+      "char_len": 5382,
+      "evidence": {
+        "n_sentences": 1,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": true,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "The bacterial phylum Bacteroidetes and the bacterial family Prevotellaceae were reduced, Enterobacteriaceae were more abundant in fecal samples from PD patients compared to matched controls."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Integrated Traditional Chinese Medicine Improves Functional Outcome in Acute Ischemic Stroke: From Clinic to M",
+      "direction": "enriched",
+      "taxon": "roseburia",
+      "present_in_text": true,
+      "char_len": 52344,
+      "evidence": {
+        "n_sentences": 1,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": true,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "3.2 Characterization of Enterotypes in AIS Patients Before Treatment Compared to HCs, 17 genera were differentially abundant in AIS samples before treatment, especially Prevotella , Roseburia , and Ruminococcus ( Supplementary Figure 1 )."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "The Oral and Fecal Microbiota in a Canadian Cohort of Alzheimer's Disease.",
+      "direction": "depleted",
+      "taxon": "actinomycetaceae",
+      "present_in_text": true,
+      "char_len": 6135,
+      "evidence": {
+        "n_sentences": 1,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": true,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "In contrast, the AD oral microbiota displayed higher diversity, with several taxonomic differences relative to controls, including a lower abundance of the families Streptococcaceae and Actinomycetaceae, and a higher abundance of Weeksellaceae, among others."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "B-cell-depletion reverses dysbiosis of the microbiome in multiple sclerosis patients.",
+      "direction": "enriched",
+      "taxon": "haemophilus",
+      "present_in_text": true,
+      "char_len": 34557,
+      "evidence": {
+        "n_sentences": 7,
+        "has_strong_sig": true,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": true
+      },
+      "sentences": [
+        "MS patients generally had significant higher abundances of the genera Campylobacter , Haemophilus and Neisseria \u2014all belonging to the Proteobacteria, though this was only partly evident when splitting up the MS patients in groups (Fig.",
+        "We found a significant decrease of members of the genera Haemophilus and Lautropia out of the Proteobacteria, Porphyromonas out of the Bacteroidetes, Veillonella and Granulicatella out of the Firmicutes as well as unclassified members from the phylum Candidatus Saccharibacteria.",
+        "Thus, during this current study, we sampled and analyzed oral swabs from MS patients and found a significant higher abundance of members of the Proteobacteria, especially Haemophilus , Neisseria and Campylobacter .",
+        "Particularly, for non-typeable Haemophilus influenzae a connection to disease etiology of MS has already been discussed due to their expressed cell-surface N-glycosylated adhesins, which are considered as native antigen potentially be involved in triggering pathogenic antibodies in MS .",
+        "However, additional data on the oral microbiota of MS patients in general are necessary to understand the overall role of Haemophilus and other members of the Proteobacteria in disease manifestation and progression.",
+        "After treatment of MS patients with ocrelizumab we noticed a bidirectional exchange of several specific members of different genera including Prevotella , Actinomyces , Streptococcus and Haemophilus that might resemble the high variation of those strains in the oral cavity in general.",
+        "Antibodies from multiple sclerosis patients preferentially recognize hyperglucosylated adhesin of non-typeable Haemophilus influenzae."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Gut microbiome of treatment-na\u00efve MS patients of different ethnicities early in disease course.",
+      "direction": "depleted",
+      "taxon": "slackia",
+      "present_in_text": true,
+      "char_len": 39844,
+      "evidence": {
+        "n_sentences": 1,
+        "has_strong_sig": true,
+        "has_soft_sig": true,
+        "has_case_control_comparison": true,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "The other taxa showing significant differences include: (i) in Caucasian MS versus controls, there was an increase in the phylum Verrucomicrobiales and in Akkermansia at the genus level; (ii) HA MS and AA MS but not CA MS had an increase in Adlercreutzia versus their respective controls; (iii) HA MS also had an increase in Blautia , Holdemania , and Dorea , and a decrease in Prevotella , Slackia, Lachnospira , and Dialister ; and (iv) AA MS had an increase in Butyricococcus ."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Fecal microbiome alterations in treatment-naive de novo Parkinson's disease.",
+      "direction": "enriched",
+      "taxon": "akkermansia muciniphila",
+      "present_in_text": true,
+      "char_len": 77072,
+      "evidence": {
+        "n_sentences": 7,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": true
+      },
+      "sentences": [
+        "(2) The ASV identified in the FIN cohort belonging to Akkermansia muciniphila was not present in the NL cohort.",
+        "Increased levels of the genus Akkermansia is one of the most replicated taxonomic differences between PD and HC .",
+        "In addition, Akkermansia is increased in RBD-positive probable prodromal PD subjects .",
+        "Akkermansia is hypothesized to aggravate gut inflammation, increase gut permeability and is associated with levels of constipation .",
+        "In particular, Akkermansia muciniphila was increased in PD in previous studies and is known to thrive in fiber-depleted environments as it uses mucin as energy source, thereby degrading the intestinal wall and leaving the host more vulnerable to epithelial access of intestinal pathogens .",
+        "In the current study, an ASV belonging to Akkermansia muciniphila was increased in PD (Table 3 ), indicating that strains belonging to this species can already be increased at the time of diagnosis.",
+        "Potential role of akkermansia muciniphila in Parkinson\u2019s disease and other neurological/autoimmune diseases."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Gut Microbiota and Fecal Metabolites Associated With Neurocognitive Impairment in HIV-Infected Population",
+      "direction": "depleted",
+      "taxon": "ruminococcaceae_nk4a214_group",
+      "present_in_text": true,
+      "char_len": 41253,
+      "evidence": {
+        "n_sentences": 4,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": true
+      },
+      "sentences": [
+        "Faecalibacterium , Ruminococcus_1, Coprococcus_2, and Ruminococcaceae_NK4A214_group were inversely correlated with the left CIMT, while Klebsiella was positively correlated with the left CIMT.",
+        "Furthermore, the plasma 25(OH)D was positively associated with Faecalibacterium , Corprococcus_2, and Ruminococcaceae_NK4A214_groups but negatively associated with Ruminococcus_1, Eubacterium_eligens_group, and uncultured_bacterium ( Table 2 ).",
+        "Among the genera with observed differences between the NCI and non-NCI groups, Faecalibacterium , Corprococcus_2, Ruminococcaceae_NK4A214_group, and Ruminococcus_1 contain butyrate-producing bacteria (BPB).",
+        "Consistently, both fecal and plasma vitamin D were positively associated with BPB ( Faecalibacterium , Corprococcus_2, and Ruminococcaceae_NK4A214_groups), while these were negatively associated with Ruminococcus_1."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Changes in Gastrointestinal Microbiome Composition in PD: A Pivotal Role of Covariates.",
+      "direction": "depleted",
+      "taxon": "phascolarctobacterium",
+      "present_in_text": true,
+      "char_len": 59988,
+      "evidence": {
+        "n_sentences": 1,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": true
+      },
+      "sentences": [
+        "On genus level, in addition to Faecalibacterium , also Bacteroides, Clostridium, Phascolarctobacterium, Coprococcus, Odoribacter were correlated with disease stage."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients",
+      "direction": "depleted",
+      "taxon": "olsenella",
+      "present_in_text": true,
+      "char_len": 92005,
+      "evidence": {
+        "n_sentences": 1,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "However, the abundances of the phylum Firmicutes and its corresponding genus Ezakiella , the family Sutterellaceae, and the genus Olsenella , were depleted ( Figures 5C, D )."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Air particulate pollution exposure associated with impaired cognition via microbiota gut-brain axis: an eviden",
+      "direction": "depleted",
+      "taxon": "faecalibacterium",
+      "present_in_text": true,
+      "char_len": 8074,
+      "evidence": {
+        "n_sentences": 2,
+        "has_strong_sig": true,
+        "has_soft_sig": true,
+        "has_case_control_comparison": true,
+        "has_subgroup_language": true
+      },
+      "sentences": [
+        "Relative abundance of core bacteria Faecalibacterium (top 1 genus) in FAD was reduced (13.65% vs 19.81%, P = 0.0235), while Escherichia_Shigella and Akkermansia was increased.",
+        "Correlation analysis showed Faecalibacterium was negatively correlated with age, and exposure of O 3 , PM 1 , PM 2.5 , and PM 10 ; Akkermansia and Monoglobus were positively correlated with exposure of PM 1 , PM 2.5 and PM 10 ; Escherichia_Shigella was significantly positively correlated with NO 2 ."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belo",
+      "direction": "depleted",
+      "taxon": "clostridia cluster xiva",
+      "present_in_text": true,
+      "char_len": 51851,
+      "evidence": {
+        "n_sentences": 8,
+        "has_strong_sig": true,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "doi: 10.1371/journal.pone.0137429 Search in PMC Search in PubMed View in NLM Catalog Add to search Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters Sachiko Miyake Sachiko Miyake Department of Immunology, National Institute of Neuroscience, 4-1-1, Ogawa-Higashi, Kodaira, Tokyo 187\u20138502, Japan Department of Immunology, Juntendo University School of Medicine, 2-1-1, Hongo, Bunkyo-ku, Tokyo 113\u20138421, Japan Find articles by Sachiko Miyake , Sangwan Kim Sangwan Kim Center for Omics and Bioinformatics, The Department of Computational Biology, Graduate School of Frontier Sciences, The University of Tokyo, Kashiwanoha 5-1-5, Kashiwa, Chiba 277\u20138561, Japan Find articles by Sangwan Kim , Wataru Suda Wataru Suda Center for Omics and Bioinformatics, The Department of Computational Biology, Graduate School of Frontier Sciences, The University of Tokyo, Kashiwanoha 5-1-5, Kashiwa, Chiba 277\u20138561, Japan Find articles by Wataru Suda , Kenshiro Oshima Kenshiro Oshima Center for Omics and Bioinformatics, The Department of Computational Biology, Graduate School of Frontier Sciences, The University of Tokyo, Kashiwanoha 5-1-5, Kashiwa, Chiba 277\u20138561, Japan Find articles by Kenshiro Oshima , Masakazu Nakamura Masakazu Nakamura Department of Immunology, National Institute of Neuroscience, 4-1-1, Ogawa-Higashi, Kodaira, Tokyo 187\u20138502, Japan Find articles by Masakazu Nakamura , Takako Matsuoka Takako Matsuoka Department of Immunology, National Institute of Neuroscience, 4-1-1, Ogawa-Higashi, Kodaira, Tokyo 187\u20138502, Japan Find articles by Takako Matsuoka , Norio Chihara Norio Chihara Department of Immunology, National Institute of Neuroscience, 4-1-1, Ogawa-Higashi, Kodaira, Tokyo 187\u20138502, Japan Find articles by Norio Chihara , Atsuko Tomita Atsuko Tomita Department of Immunology, National Institute of Neuroscience, 4-1-1, Ogawa-Higashi, Kodaira, Tokyo 187\u20138502, Japan Find articles by Atsuko Tomita , Wakiro Sato Wakiro Sato Department of Immunology, National Institute of Neuroscience, 4-1-1, Ogawa-Higashi, Kodaira, Tokyo 187\u20138502, Japan Find articles by Wakiro Sato , Seok-Won Kim Seok-Won Kim Center for Omics and Bioinformatics, The Department of Computational Biology, Graduate School of Frontier Sciences, The University of Tokyo, Kashiwanoha 5-1-5, Kashiwa, Chiba 277\u20138561, Japan Laboratory for Integrated Bioinformatics, RIKEN Center for Integrative Medical Sciences, 1-7-22 Suehiro-cho, Tsurumi-ku, Yokohama, Kanagawa 230\u20130045, Japan Find articles by Seok-Won Kim , Hidetoshi Morita Hidetoshi Morita School of Veterinary Medicine, Azabu University, 1-17-71 Fuchinobe, Chuo-ku, Sagamihara, Kanagawa 229\u20138501, Japan Find articles by Hidetoshi Morita , Masahira Hattori Masahira Hattori Center for Omics and Bioinformatics, The Department of Computational Biology, Graduate School of Frontier Sciences, The University of Tokyo, Kashiwanoha 5-1-5, Kashiwa, Chiba 277\u20138561, Japan Find articles by Masahira Hattori , Takashi Yamamura Takashi Yamamura Department of Immunology, National Institute of Neuroscience, 4-1-1, Ogawa-Higashi, Kodaira, Tokyo 187\u20138502, Japan Find articles by Takashi Yamamura Editor: Brenda A Wilson Author information Article notes Copyright and License information Department of Immunology, National Institute of Neuroscience, 4-1-1, Ogawa-Higashi, Kodaira, Tokyo 187\u20138502, Japan Department of Immunology, Juntendo University School of Medicine, 2-1-1, Hongo, Bunkyo-ku, Tokyo 113\u20138421, Japan Center for Omics and Bioinformatics, The Department of Computational Biology, Graduate School of Frontier Sciences, The University of Tokyo, Kashiwanoha 5-1-5, Kashiwa, Chiba 277\u20138561, Japan Laboratory for Integrated Bioinformatics, RIKEN Center for Integrative Medical Sciences, 1-7-22 Suehiro-cho, Tsurumi-ku, Yokohama, Kanagawa 230\u20130045, Japan School of Veterinary Medicine, Azabu University, 1-17-71 Fuchinobe, Chuo-ku, Sagamihara, Kanagawa 229\u20138501, Japan University of Illinois at Urbana-Champaign, UNITED STATES Competing Interests: The authors have declared that no competing interests exist.",
+        "These taxa comprised primarily of clostridial species belonging to Clostridia clusters XIVa and IV and Bacteroidetes .",
+        "The phylogenetic tree analysis revealed that none of the clostridial species that were significantly reduced in the gut microbiota of patients with MS overlapped with other spore-forming clostridial species capable of inducing colonic regulatory T cells (Treg), which prevent autoimmunity and allergies; this suggests that many of the clostridial species associated with MS might be distinct from those broadly associated with autoimmune conditions.",
+        "Recent studies have shown that Clostridia clusters XIVa, IV, and Bacteroides fragilis derived from human feces have the potential to induce Foxp3 regulatory T cells (Treg) and are able to suppress inflammatory conditions such as colitis and EAE [ 11 \u2013 13 ].",
+        "Moreover, we detected a significant change in the abundance of several taxa, including species belonging to Clostridia clusters XIVa and IV, which are known to exhibit anti-inflammatory effects [ 11 ].",
+        "To determine the detailed taxonomic position of the 14 species assigned to the clostridial clade among 15 Firmicutes species, a phylogenetic tree was constructed based on the 16S rRNA gene V1-V2 region sequences of the 14 species and those of additional known species, including 17 clostridial strains that were shown to induce Tregs in the colon [ 13 ].",
+        "As shown in Fig 5 , 12 species were located in Clostridia cluster XIVa and 2 were located in Clostridia cluster IV, all of which were less abundant in the microbiota of MS20 subjects.",
+        "Interestingly, none of these 14 clostridial species was phylogenetically close to the 17 chloroform-resistant, spore-forming, Treg-inducing clostridial strains ( Fig 5 )."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Gut microbiome differences in Parkinson's disease patients in Central Kerala population.",
+      "direction": "depleted",
+      "taxon": "ruminococcus gnavus",
+      "present_in_text": true,
+      "char_len": 6278,
+      "evidence": {
+        "n_sentences": 3,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "On network analysis Bifidobacterium longum , Bacteroides fragilis , Blautia obeum and Roseburia faecis represented the PD group communities and Ruminococcus bromii and Ruminococcus gnavus represented the controls.",
+        "Faecalibacterium prausnitzii and Ruminococcus gnavus enhanced centrality in the spouse control network and Bifidobacterium longum , Eubacterium biforme , and Roseburia faecis in PD group.",
+        "The species co-occurrence network revealed that bacterial communities interacted as structured networks, with specific taxa such as Bifidobacterium longum , Bacteroides fragilis , Blautia obeum , and Roseburia faecis being predominant in PD patients, while Ruminococcus bromii and Ruminococcus gnavus in controls."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Parkinson\u2019s disease-associated alterations of the gut microbiome predict disease-relevant changes in metabolic",
+      "direction": "enriched",
+      "taxon": "bifidobacterium",
+      "present_in_text": true,
+      "char_len": 100290,
+      "evidence": {
+        "n_sentences": 1,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": true
+      },
+      "sentences": [
+        "In contrast, constipation, a prevalent non-motor symptom in PD patients [ 37 ], was associated with an increased abundance of Bifidobacterium , with a clear effect in constipated PD cases (Fig."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Gut microbiome is not associated with mild cognitive impairment in Parkinson's disease.",
+      "direction": "enriched",
+      "taxon": "methanobrevibacter",
+      "present_in_text": true,
+      "char_len": 30581,
+      "evidence": {
+        "n_sentences": 2,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": true,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "DESeq2 indicated increases in many additional taxa, such as the genera Escherichia/Shigella and Methanobrevibacter .",
+        "Many of the taxa detected as differentially abundant between the PD and control groups were in line with previous publications, including the increased abundances of Enterobacteriaceae , Hungatella and Methanobrevibacter , and decreased abundances of Lachnospiraceae and Butyricicoccaceae in PD."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "The Alterations of Gut Microbiome and Lipid Metabolism in Patients with Spinal Muscular Atrophy",
+      "direction": "depleted",
+      "taxon": "lachnospiraceae_ac2044_group",
+      "present_in_text": true,
+      "char_len": 42559,
+      "evidence": {
+        "n_sentences": 1,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": true,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "However, compared to the control group, the SMA group showed an increased relative abundance of the genera Ruminiclostridium , Gordonibacter , Enorma , Lawsonella , Frisingicoccus , and Anaerofilum and a decreased abundance of the genera Catabacter , Howardella , Marine_Methylotrophic_Group_3 , and Lachnospiraceae_AC2044_group ."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "Gut microbiota in patients with Parkinson's disease in southern China.",
+      "direction": "depleted",
+      "taxon": "lachnospiraceae",
+      "present_in_text": true,
+      "char_len": 6472,
+      "evidence": {
+        "n_sentences": 1,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "In particular, the abundance of Lachnospiraceae was reduced by 42.9% in patients with PD, whereas Bifidobacteriaceae was enriched in patients with PD."
+      ],
+      "in_gold_opposite_direction": false
+    },
+    {
+      "kind": "FP",
+      "title": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis.",
+      "direction": "enriched",
+      "taxon": "gastranaerophilales",
+      "present_in_text": true,
+      "char_len": 85341,
+      "evidence": {
+        "n_sentences": 4,
+        "has_strong_sig": true,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "The difference in the Cyanobacteria phylum is reflected at the family level in the significantly higher abundance in ALS patients of Gastranaerophilales (uncultured bacteria) ( P < 0.05) (Fig.",
+        "Two genera belonging to Gastranaerophilales were more abundant in diseased subjects ( P < 0.05); all the other differences at the genus level were not statistically significant ( P = 0.05 for Ruminiclostridium ).",
+        "a) OTUs distribution for Gastranaerophilales; D_4__uncultured bacterium and Clostridiaceae 1.",
+        "a) OTUs distribution for Gastranaerophilales; D_4__uncultured bacterium and Clostridiaceae 1."
+      ],
+      "in_gold_opposite_direction": false
+    }
+  ],
+  "fn_sample": [
+    {
+      "kind": "FN",
+      "title": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson\u2019s disease based on the presenc",
+      "direction": "enriched",
+      "taxon": "leuconostoc",
+      "present_in_text": true,
+      "char_len": 92520,
+      "evidence": {
+        "n_sentences": 4,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": true,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "In PD-RBD(\u2212), genera Coprobacter , Erysipelatoclostridium (currently renamed to Thomasclavelia ), Leuconostoc (when compared to HC), and Citrobacter (when compared to PD-RBD[+]) were enriched (Fig.",
+        "Notably, Coprobacter , Erysipelatoclostridium , and Leuconostoc \u2014rarely reported in studies of PD [ 82 , 99 ]\u2014were observed to increase in PD-RBD(\u2212).",
+        "We found that Coprobacter , Erysipelatoclostridium , Leuconostoc , and Citrobacter were positively associated with PD-RBD(\u2212) compared with PD-RBD(+) or HC.",
+        "Coprobacter and Leuconostoc are SCFA-producing bacteria, which were positively associated with PD in one study each [ 79 , 80 ], but not in idiopathic RBD or PD-RBD(+) [ 13 , 62 ]."
+      ],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms.",
+      "direction": "enriched",
+      "taxon": "clostridium leptum",
+      "present_in_text": false,
+      "char_len": 99829,
+      "evidence": {
+        "n_sentences": 0,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "Short chain fatty acids and gut microbiota differ between patients with Parkinson's disease and age-matched co",
+      "direction": "enriched",
+      "taxon": "prevotellaceae",
+      "present_in_text": true,
+      "char_len": 5382,
+      "evidence": {
+        "n_sentences": 1,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": true,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "The bacterial phylum Bacteroidetes and the bacterial family Prevotellaceae were reduced, Enterobacteriaceae were more abundant in fecal samples from PD patients compared to matched controls."
+      ],
+      "predicted_in_opposite_direction": true
+    },
+    {
+      "kind": "FN",
+      "title": "Preoperative Microbiomes and Intestinal Barrier Function Can Differentiate Prodromal Alzheimer's Disease From ",
+      "direction": "depleted",
+      "taxon": "alzheimer\u2019s disease : bacteroidetes",
+      "present_in_text": true,
+      "char_len": 71293,
+      "evidence": {
+        "n_sentences": 4,
+        "has_strong_sig": true,
+        "has_soft_sig": true,
+        "has_case_control_comparison": true,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "The relative abundance of Bacteroidetes was higher in the SCD group (P = 0.016, P = 0.008), and Firmicutes were more enriched in the aMCI group than in the SCD group (P= 0.026).",
+        "Bacteroidetes and Firmicutes were the most dominant phyla among the three groups.",
+        "The relative abundance of Bacteroidetes was higher in the SCD group than in the other two groups (40.7 vs.",
+        "Furthermore, the Firmicutes/Bacteroidetes (F/B) ratio (F/B = 1.12) was lower in the SCD group than in the NC (F/B = 1.58) and aMCI (F/B = 1.81) groups (P = 0.017)."
+      ],
+      "predicted_in_opposite_direction": true
+    },
+    {
+      "kind": "FN",
+      "title": "Specific Bacterial Taxa and Their Metabolite, DHPS, May Be Linked to Gut Dyshomeostasis in Patients with Alzhe",
+      "direction": "enriched",
+      "taxon": "and enterococcus",
+      "present_in_text": true,
+      "char_len": 95955,
+      "evidence": {
+        "n_sentences": 3,
+        "has_strong_sig": true,
+        "has_soft_sig": true,
+        "has_case_control_comparison": true,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "There were six taxa significantly altered across all NDDs compared to HCs: Desulfovibrio, Eubacterium , Akkermansia , Paludicola , Sellimonas , and Enterococcus ( Figure 3 , Figures S6 and S7, and Supplementary Data ).",
+        "All of these taxa were more abundant in the NDD cohorts than HC, except for Enterococcus , which was higher in HC.",
+        "DHPS Microbial Metabolism in NDDs Frommeyer and colleagues annotated genes required for a novel bacterial transaldolase pathway by which select gut microbes ( Enterococcus , Clostridium , Desulfovibrio , and Eubacterium strains) can ferment dietary sulfoquinovose (SQ) to H 2 S with DHPS as a transient intermediate [ 56 ]."
+      ],
+      "predicted_in_opposite_direction": true
+    },
+    {
+      "kind": "FN",
+      "title": "Gut microbiome of treatment-na\u00efve MS patients of different ethnicities early in disease course.",
+      "direction": "enriched",
+      "taxon": "coriobacteriaceae",
+      "present_in_text": false,
+      "char_len": 39844,
+      "evidence": {
+        "n_sentences": 0,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "Altered Gut Microbiota in Adults with Subjective Cognitive Decline: The SILCODE Study.",
+      "direction": "enriched",
+      "taxon": "cognative impairment : none",
+      "present_in_text": true,
+      "char_len": 6448,
+      "evidence": {
+        "n_sentences": 2,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": true
+      },
+      "sentences": [
+        "Altered gut microbiota has been reported in patients with mild cognitive impairment (MCI) and AD dementia.",
+        "Methods: In this study, a total of 105 participants including 38 normal controls (NC), 53 individuals with SCD, and 14 patients with cognitive impairment (CI) were recruited."
+      ],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "Gut microbiota in patients with Parkinson's disease in southern China.",
+      "direction": "depleted",
+      "taxon": "euryarchaeota",
+      "present_in_text": false,
+      "char_len": 6472,
+      "evidence": {
+        "n_sentences": 0,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "Detection of Microbial 16S rRNA Gene in the Blood of Patients With Parkinson's Disease.",
+      "direction": "enriched",
+      "taxon": "fdr 5%",
+      "present_in_text": false,
+      "char_len": 54695,
+      "evidence": {
+        "n_sentences": 0,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "Oral and gut microbiome profiles in people with early idiopathic Parkinson's disease.",
+      "direction": "depleted",
+      "taxon": "fusobacterium",
+      "present_in_text": true,
+      "char_len": 71739,
+      "evidence": {
+        "n_sentences": 1,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "However, multiple OTUs within the genera Neisseria and Fusobacterium were found to be depleted in PD."
+      ],
+      "predicted_in_opposite_direction": true
+    },
+    {
+      "kind": "FN",
+      "title": "Metagenomic Analysis Reveals Large-Scale Disruptions of the Gut Microbiome in Parkinson's Disease.",
+      "direction": "enriched",
+      "taxon": "blautia obeum",
+      "present_in_text": false,
+      "char_len": 7574,
+      "evidence": {
+        "n_sentences": 0,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "Microbiota-gut-brain axis dysregulation in Alzheimer's disease and its modulation through probiotic supplement",
+      "direction": "enriched",
+      "taxon": "desulfovibrio",
+      "present_in_text": false,
+      "char_len": 7495,
+      "evidence": {
+        "n_sentences": 0,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "Changes in the Gut Microbiome and Predicted Functional Metabolic Effects in an Australian Parkinson's Disease ",
+      "direction": "depleted",
+      "taxon": "lachnospiraceae",
+      "present_in_text": true,
+      "char_len": 69630,
+      "evidence": {
+        "n_sentences": 4,
+        "has_strong_sig": true,
+        "has_soft_sig": true,
+        "has_case_control_comparison": true,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "In the Northern hemisphere, studies have documented significantly altered levels of various bacterial taxa, predominantly a decrease in the family Bacteroidetes (Prevotellaceae), and Phyla Firmicutes (Clostridiaceae, clostridium and butyricicoccus spp.; Lachnospiraceae, Blautia, dorea, roseburia, and coprococcus spp.,; Ruminococcaceae, Faecalibacterium spp.) ( Keshavarzian et al., 2015 ; Bedarf et al., 2017 ; Petrov et al., 2017 ; Heintz-Buschart et al., 2018 ; Cirstea et al., 2020 ).",
+        "Specifically, our samples indicated significantly increased Proteobacteria ( q = 0.034) [Gammaproteobacteria ( q = 0.051); Enterobacterales ( q = 0.067); Enterobacteriaceae ( q = 0.052)] and Synergistetes ( q < 0.001) [Synergistia ( q = 0.134)], and significantly decreased Clostridia ( q = 0.095) [Clostridiales ( q = 0.126); Lachnospiraceae ( q = 0.011); Roseburia ( q < 0.001), Kineothrix ( q = 0.105), Agathobaculum ( q = 0.121), Colidextribacter ( q = 0.105), and Intestinibacter ( q = 0.121)] in PwP when compared to controls.",
+        "Within our results, Lachnospiraceae and its related genera were decreased in PwP.",
+        "Low levels of the Lachnospiraceae family have also been reported previously in individuals with diarrhea, Crohn\u2019s disease and ulcerative colitis ( Flint et al., 2012 ; Donaldson et al., 2016 )."
+      ],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "Characterizing Gut Microbiota in Older Chinese Adults with Cognitive Impairment: A Cross-Sectional Study.",
+      "direction": "depleted",
+      "taxon": "firmicutes",
+      "present_in_text": false,
+      "char_len": 6996,
+      "evidence": {
+        "n_sentences": 0,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "The impact of dysbiosis in oropharyngeal and gut microbiota on systemic inflammatory response and short-term p",
+      "direction": "depleted",
+      "taxon": "oribacterium sinus",
+      "present_in_text": true,
+      "char_len": 54957,
+      "evidence": {
+        "n_sentences": 5,
+        "has_strong_sig": true,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": true
+      },
+      "sentences": [
+        "Opportunistic pathogens, including Thermus , uncultured Veillonella sp., and Oribacterium sinu , were found to be significantly enriched in the oropharynx.",
+        "Further analysis using LEfSe and LDA score showed that the family Streptococcaceae and Corynebacteriaceae , the uncultured bacterium of Rothia genus, the phylum Deinococcus Thermus and its corresponding class Deinococci , order Thermales , family Thermaceae , genus Thermus and species Thermus scotoductus SA , the species uncultured Veillonella sp., and the genus Mycoplasma were enriched in the AIS-PI patients, while the family Leptotrichiaceae and its corresponding genus Leptotrichia and species uncultured_Leptotrichia_ sp., and species Oribacterium sinus were less abundant ( Figures 4H , I ).",
+        "Conversely, the Leptotrichia genus, Leptotrichia sp., and Oribacterium sinus demonstrated a negative correlation with CRP levels, stroke severity, and poor functional outcome ( Figure 5 ).",
+        "LEfSe analysis revealed an enrichment of Streptococcaceae , Corynebacteriaceae , the uncultured bacterium of Rothia genus , Thermus , uncultured Veillonella sp., and Oribacterium sinus in the oropharynx of AIS-PI patients.",
+        "Conversely, we observed a higher abundance of certain species, such as Leptotrichia and Oribacterium sinus , in NCs, which may relate to oral health and hygiene practices."
+      ],
+      "predicted_in_opposite_direction": true
+    },
+    {
+      "kind": "FN",
+      "title": "Gut Microbiota Altered in Mild Cognitive Impairment Compared With Normal Cognition in Sporadic Parkinson's Dis",
+      "direction": "depleted",
+      "taxon": "bacteroidetes",
+      "present_in_text": true,
+      "char_len": 36388,
+      "evidence": {
+        "n_sentences": 2,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [
+        "The phylum Bacteroidetes was typically the dominant phylum in the gut microbiome ( Figure S2 ).",
+        "At the phylum level, the abundance of Bacteroidetes was obviously higher in the HC group than in the other two groups, while Actinobacteria was more abundant in the PD-MCI group."
+      ],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "Is gut microbiota of patients with ALS different from that of healthy individuals?",
+      "direction": "enriched",
+      "taxon": "actinomyces",
+      "present_in_text": false,
+      "char_len": 6971,
+      "evidence": {
+        "n_sentences": 0,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients",
+      "direction": "depleted",
+      "taxon": "human fecal",
+      "present_in_text": true,
+      "char_len": 92005,
+      "evidence": {
+        "n_sentences": 8,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": true
+      },
+      "sentences": [
+        "The gastrointestinal tract and the oral cavity are the main sites for the distribution of symbiotic microorganisms in the human body ( Ogobuiro et al., 2021 ).",
+        "The human intestinal tract harbors a complex community of microbes accounting for the vast majority of the resident microbial population ( Human Microbiome Project, 2012 ).",
+        "The mouth harbors over 700 bacterial taxa, most residing in the anaerobic environment of the subgingival surface as a biofilm ( Arweiler and Netuschil, 2016 ).The oral microbiota is the second most diverse community in the human body after the gut microbiota ( Chen et al., 2017 ).",
+        "Thus, an increase of Firmicutes in the oral cavity can increase carbohydrate catabolism in the human body.",
+        "Fusobacteria is one of the commonest species in the human gingiva and has a crucial role in the development and progression of periodontal disease ( Diaz et al., 2002 ).",
+        "In the human gut microbiome, the Firmicutes, Bacteroidetes and Proteobacteria phyla are the most dominant ( Kristina et al., 2012 ).",
+        "Our study provides further evidence that human AD is likely to be associated with the progressively diminishing abundance of Firmicutes and the gradually increasing abundance of Proteobacteria in affected patients from healthy individuals to those with moderate AD dementia.",
+        "Although the specific bacteria responsible for these functional alterations may differ between conditions, alterations in the microbiota of patients with AD may change the balanced metabolism and biosynthesis of fatty acids in the human body ( Li et al., 2019 )."
+      ],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "Altered microbiomes distinguish Alzheimer's disease from amnestic mild cognitive impairment and health in a Ch",
+      "direction": "depleted",
+      "taxon": "enterobacteriaceae",
+      "present_in_text": true,
+      "char_len": 10952,
+      "evidence": {
+        "n_sentences": 3,
+        "has_strong_sig": false,
+        "has_soft_sig": true,
+        "has_case_control_comparison": true,
+        "has_subgroup_language": true
+      },
+      "sentences": [
+        "And Gammaproteobacteria, Enterobacteriales and Enterobacteriaceae showed a progressive enriched prevalence from HC to aMCI and AD patients.",
+        "Notably, the models based on the abundance of family Enterobacteriaceae could distinguish AD from both aMCI (AUC = 0.688) and HC (AUC = 0.698).",
+        "Conclusions: Distinct microbial communities, especially enriched Enterobacteriaceae, were associated with patients with AD when compared with predementia stage aMCI and healthy subjects."
+      ],
+      "predicted_in_opposite_direction": true
+    },
+    {
+      "kind": "FN",
+      "title": "Gut Microbiome Alterations in Mild Cognitive Impairment: Findings from the ALBION Greek Cohort.",
+      "direction": "enriched",
+      "taxon": "fdr < 0.05",
+      "present_in_text": false,
+      "char_len": 71908,
+      "evidence": {
+        "n_sentences": 0,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "Gut metagenomics-derived genes as potential biomarkers of Parkinson's disease.",
+      "direction": "enriched",
+      "taxon": "phyla synergistetes and verrucomicrobia",
+      "present_in_text": false,
+      "char_len": 5691,
+      "evidence": {
+        "n_sentences": 0,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [],
+      "predicted_in_opposite_direction": false
+    },
+    {
+      "kind": "FN",
+      "title": "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive Impairment.",
+      "direction": "depleted",
+      "taxon": "colidextribacter massiliensis",
+      "present_in_text": false,
+      "char_len": 84855,
+      "evidence": {
+        "n_sentences": 0,
+        "has_strong_sig": false,
+        "has_soft_sig": false,
+        "has_case_control_comparison": false,
+        "has_subgroup_language": false
+      },
+      "sentences": [],
+      "predicted_in_opposite_direction": false
+    }
+  ]
+}

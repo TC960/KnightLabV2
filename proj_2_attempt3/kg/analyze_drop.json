@@ -1,0 +1,553 @@
+{
+  "n_scoreable": 227,
+  "n_old88": 88,
+  "n_new139": 139,
+  "decomposition": {
+    "A_old88_under_OLD_gold": {
+      "n": 88,
+      "TP": 597,
+      "FP": 317,
+      "FN": 334,
+      "precision": 0.6532,
+      "recall": 0.6412,
+      "f1": 0.6472
+    },
+    "B_old88_under_NEW_gold": {
+      "n": 88,
+      "TP": 598,
+      "FP": 316,
+      "FN": 344,
+      "precision": 0.6543,
+      "recall": 0.6348,
+      "f1": 0.6444
+    },
+    "C_new139_under_NEW_gold": {
+      "n": 139,
+      "TP": 708,
+      "FP": 641,
+      "FN": 471,
+      "precision": 0.5248,
+      "recall": 0.6005,
+      "f1": 0.5601
+    },
+    "D_all227_under_NEW_gold": {
+      "n": 227,
+      "TP": 1306,
+      "FP": 957,
+      "FN": 815,
+      "precision": 0.5771,
+      "recall": 0.6157,
+      "f1": 0.5958
+    }
+  },
+  "annotation_effect_f1": -0.0028,
+  "paper_effect_f1": -0.0843,
+  "annotation_effect_perm": {
+    "observed_diff": -0.0028,
+    "p_two_sided": 0.6227,
+    "n_perm": 10000,
+    "test": "paired paper-level gold swap"
+  },
+  "paper_effect_perm": {
+    "observed_diff": -0.0843,
+    "p_two_sided": 0.0911,
+    "n_perm": 10000
+  },
+  "group_comparison": {
+    "gold_taxa_per_paper": {
+      "mean_a": 10.261,
+      "mean_b": 7.942,
+      "median_a": 9.0,
+      "median_b": 7,
+      "observed_diff": 2.319,
+      "p_two_sided": 0.0119,
+      "n_a": 88,
+      "n_b": 139
+    },
+    "pred_taxa_per_paper": {
+      "mean_a": 10.386,
+      "mean_b": 9.705,
+      "median_a": 7.5,
+      "median_b": 6,
+      "observed_diff": 0.681,
+      "p_two_sided": 0.642,
+      "n_a": 88,
+      "n_b": 139
+    },
+    "paper_chars": {
+      "mean_a": 50205.773,
+      "mean_b": 45852.698,
+      "median_a": 49851.5,
+      "median_b": 51082,
+      "observed_diff": 4353.075,
+      "p_two_sided": 0.237,
+      "n_a": 88,
+      "n_b": 139
+    },
+    "year": {
+      "mean_a": 2022.17,
+      "mean_b": 2021.993,
+      "median_a": 2022.5,
+      "median_b": 2022,
+      "observed_diff": 0.178,
+      "p_two_sided": 0.6242,
+      "n_a": 88,
+      "n_b": 139
+    },
+    "seq_16S": {
+      "mean_a": 0.875,
+      "mean_b": 0.748,
+      "median_a": 1.0,
+      "median_b": 1.0,
+      "observed_diff": 0.127,
+      "p_two_sided": 0.0271,
+      "n_a": 88,
+      "n_b": 139
+    },
+    "seq_shotgun_or_both": {
+      "mean_a": 0.114,
+      "mean_b": 0.237,
+      "median_a": 0.0,
+      "median_b": 0.0,
+      "observed_diff": -0.124,
+      "p_two_sided": 0.0246,
+      "n_a": 88,
+      "n_b": 139
+    },
+    "dat_LEfSe": {
+      "mean_a": 0.443,
+      "mean_b": 0.36,
+      "median_a": 0.0,
+      "median_b": 0.0,
+      "observed_diff": 0.083,
+      "p_two_sided": 0.2697,
+      "n_a": 88,
+      "n_b": 139
+    },
+    "dat_blank": {
+      "mean_a": 0.193,
+      "mean_b": 0.007,
+      "median_a": 0.0,
+      "median_b": 0.0,
+      "observed_diff": 0.186,
+      "p_two_sided": 0.0001,
+      "n_a": 88,
+      "n_b": 139
+    },
+    "src_main_text": {
+      "mean_a": 0.909,
+      "mean_b": 0.971,
+      "median_a": 1.0,
+      "median_b": 1.0,
+      "observed_diff": -0.062,
+      "p_two_sided": 0.0646,
+      "n_a": 88,
+      "n_b": 139
+    },
+    "country_China": {
+      "mean_a": 0.534,
+      "mean_b": 0.288,
+      "median_a": 1.0,
+      "median_b": 0.0,
+      "observed_diff": 0.246,
+      "p_two_sided": 0.0005,
+      "n_a": 88,
+      "n_b": 139
+    }
+  },
+  "disease_mix": {
+    "Parkinson\u2019s disease (PD)": {
+      "old88": 26,
+      "new139": 43,
+      "old88_pct": 29.5,
+      "new139_pct": 30.9
+    },
+    "Multiple sclerosis (MS)": {
+      "old88": 9,
+      "new139": 26,
+      "old88_pct": 10.2,
+      "new139_pct": 18.7
+    },
+    "Alzheimer\u2019s disease (AD)": {
+      "old88": 15,
+      "new139": 15,
+      "old88_pct": 17.0,
+      "new139_pct": 10.8
+    },
+    "Alzheimer\u2019s disease (AD), Dementia": {
+      "old88": 11,
+      "new139": 15,
+      "old88_pct": 12.5,
+      "new139_pct": 10.8
+    },
+    "Other": {
+      "old88": 5,
+      "new139": 8,
+      "old88_pct": 5.7,
+      "new139_pct": 5.8
+    },
+    "Stroke": {
+      "old88": 12,
+      "new139": 1,
+      "old88_pct": 13.6,
+      "new139_pct": 0.7
+    },
+    "Amyotrophic lateral sclerosis (ALS)": {
+      "old88": 3,
+      "new139": 9,
+      "old88_pct": 3.4,
+      "new139_pct": 6.5
+    },
+    "Dementia": {
+      "old88": 1,
+      "new139": 7,
+      "old88_pct": 1.1,
+      "new139_pct": 5.0
+    },
+    "Epilepsy": {
+      "old88": 2,
+      "new139": 1,
+      "old88_pct": 2.3,
+      "new139_pct": 0.7
+    },
+    "Huntington\u2019s disease (HD)": {
+      "old88": 0,
+      "new139": 3,
+      "old88_pct": 0.0,
+      "new139_pct": 2.2
+    },
+    "Multiple system atrophy (MSA), Parkinson\u2019s disease (PD)": {
+      "old88": 0,
+      "new139": 2,
+      "old88_pct": 0.0,
+      "new139_pct": 1.4
+    },
+    "Cognitive Impairment": {
+      "old88": 1,
+      "new139": 0,
+      "old88_pct": 1.1,
+      "new139_pct": 0.0
+    },
+    "Amyotrophic lateral sclerosis (ALS), Parkinson\u2019s disease (PD)": {
+      "old88": 0,
+      "new139": 1,
+      "old88_pct": 0.0,
+      "new139_pct": 0.7
+    },
+    "Alzheimer\u2019s disease (AD), Stroke": {
+      "old88": 0,
+      "new139": 1,
+      "old88_pct": 0.0,
+      "new139_pct": 0.7
+    },
+    "Parkinson\u2019s disease (PD), Dementia": {
+      "old88": 0,
+      "new139": 1,
+      "old88_pct": 0.0,
+      "new139_pct": 0.7
+    },
+    "Dementia, Alzheimer\u2019s disease (AD), Parkinson\u2019s disease (PD)": {
+      "old88": 0,
+      "new139": 1,
+      "old88_pct": 0.0,
+      "new139_pct": 0.7
+    },
+    "Amyotrophic lateral sclerosis (ALS), Spinal cord injury (SCI)": {
+      "old88": 0,
+      "new139": 1,
+      "old88_pct": 0.0,
+      "new139_pct": 0.7
+    },
+    "Dementia, Other": {
+      "old88": 0,
+      "new139": 1,
+      "old88_pct": 0.0,
+      "new139_pct": 0.7
+    },
+    "Encephalopathy": {
+      "old88": 1,
+      "new139": 0,
+      "old88_pct": 1.1,
+      "new139_pct": 0.0
+    },
+    "Other, Parkinson\u2019s disease (PD)": {
+      "old88": 1,
+      "new139": 0,
+      "old88_pct": 1.1,
+      "new139_pct": 0.0
+    },
+    "Other, Multiple sclerosis (MS)": {
+      "old88": 0,
+      "new139": 1,
+      "old88_pct": 0.0,
+      "new139_pct": 0.7
+    },
+    "Multiple system atrophy (MSA)": {
+      "old88": 0,
+      "new139": 1,
+      "old88_pct": 0.0,
+      "new139_pct": 0.7
+    },
+    "Amyotrophic lateral sclerosis (ALS), Alzheimer\u2019s disease (AD), Parkinson\u2019s disease (PD)": {
+      "old88": 0,
+      "new139": 1,
+      "old88_pct": 0.0,
+      "new139_pct": 0.7
+    },
+    "Spinal Muscular Atrophy (SMA)": {
+      "old88": 1,
+      "new139": 0,
+      "old88_pct": 1.1,
+      "new139_pct": 0.0
+    }
+  },
+  "per_disease_f1_new_gold": {
+    "Alzheimer\u2019s disease (AD)": {
+      "old88": {
+        "n": 15,
+        "TP": 128,
+        "FP": 36,
+        "FN": 26,
+        "precision": 0.7805,
+        "recall": 0.8312,
+        "f1": 0.805
+      },
+      "new139": {
+        "n": 15,
+        "TP": 84,
+        "FP": 55,
+        "FN": 26,
+        "precision": 0.6043,
+        "recall": 0.7636,
+        "f1": 0.6747
+      }
+    },
+    "Alzheimer\u2019s disease (AD), Dementia": {
+      "old88": {
+        "n": 11,
+        "TP": 106,
+        "FP": 75,
+        "FN": 51,
+        "precision": 0.5856,
+        "recall": 0.6752,
+        "f1": 0.6272
+      },
+      "new139": {
+        "n": 15,
+        "TP": 79,
+        "FP": 97,
+        "FN": 38,
+        "precision": 0.4489,
+        "recall": 0.6752,
+        "f1": 0.5392
+      }
+    },
+    "Other": {
+      "old88": {
+        "n": 5,
+        "TP": 18,
+        "FP": 6,
+        "FN": 21,
+        "precision": 0.75,
+        "recall": 0.4615,
+        "f1": 0.5714
+      },
+      "new139": {
+        "n": 8,
+        "TP": 45,
+        "FP": 19,
+        "FN": 76,
+        "precision": 0.7031,
+        "recall": 0.3719,
+        "f1": 0.4865
+      }
+    },
+    "Parkinson\u2019s disease (PD)": {
+      "old88": {
+        "n": 26,
+        "TP": 137,
+        "FP": 75,
+        "FN": 84,
+        "precision": 0.6462,
+        "recall": 0.6199,
+        "f1": 0.6328
+      },
+      "new139": {
+        "n": 43,
+        "TP": 211,
+        "FP": 156,
+        "FN": 149,
+        "precision": 0.5749,
+        "recall": 0.5861,
+        "f1": 0.5805
+      }
+    },
+    "Multiple sclerosis (MS)": {
+      "old88": {
+        "n": 9,
+        "TP": 59,
+        "FP": 25,
+        "FN": 38,
+        "precision": 0.7024,
+        "recall": 0.6082,
+        "f1": 0.6519
+      },
+      "new139": {
+        "n": 26,
+        "TP": 119,
+        "FP": 115,
+        "FN": 74,
+        "precision": 0.5085,
+        "recall": 0.6166,
+        "f1": 0.5574
+      }
+    }
+  },
+  "f1_by_gold_size": {
+    "1-5": {
+      "all": {
+        "n": 78,
+        "TP": 167,
+        "FP": 320,
+        "FN": 93,
+        "precision": 0.3429,
+        "recall": 0.6423,
+        "f1": 0.4471
+      },
+      "old88": {
+        "n": 23,
+        "TP": 59,
+        "FP": 108,
+        "FN": 24,
+        "precision": 0.3533,
+        "recall": 0.7108,
+        "f1": 0.472
+      },
+      "new139": {
+        "n": 55,
+        "TP": 108,
+        "FP": 212,
+        "FN": 69,
+        "precision": 0.3375,
+        "recall": 0.6102,
+        "f1": 0.4346
+      }
+    },
+    "6-10": {
+      "all": {
+        "n": 80,
+        "TP": 400,
+        "FP": 298,
+        "FN": 246,
+        "precision": 0.5731,
+        "recall": 0.6192,
+        "f1": 0.5952
+      },
+      "old88": {
+        "n": 30,
+        "TP": 152,
+        "FP": 60,
+        "FN": 94,
+        "precision": 0.717,
+        "recall": 0.6179,
+        "f1": 0.6638
+      },
+      "new139": {
+        "n": 50,
+        "TP": 248,
+        "FP": 238,
+        "FN": 152,
+        "precision": 0.5103,
+        "recall": 0.62,
+        "f1": 0.5598
+      }
+    },
+    "11-15": {
+      "all": {
+        "n": 41,
+        "TP": 398,
+        "FP": 222,
+        "FN": 179,
+        "precision": 0.6419,
+        "recall": 0.6898,
+        "f1": 0.665
+      },
+      "old88": {
+        "n": 20,
+        "TP": 192,
+        "FP": 91,
+        "FN": 77,
+        "precision": 0.6784,
+        "recall": 0.7138,
+        "f1": 0.6957
+      },
+      "new139": {
+        "n": 21,
+        "TP": 206,
+        "FP": 131,
+        "FN": 102,
+        "precision": 0.6113,
+        "recall": 0.6688,
+        "f1": 0.6388
+      }
+    },
+    "16-25": {
+      "all": {
+        "n": 25,
+        "TP": 317,
+        "FP": 117,
+        "FN": 194,
+        "precision": 0.7304,
+        "recall": 0.6204,
+        "f1": 0.6709
+      },
+      "old88": {
+        "n": 13,
+        "TP": 176,
+        "FP": 57,
+        "FN": 93,
+        "precision": 0.7554,
+        "recall": 0.6543,
+        "f1": 0.7012
+      },
+      "new139": {
+        "n": 12,
+        "TP": 141,
+        "FP": 60,
+        "FN": 101,
+        "precision": 0.7015,
+        "recall": 0.5826,
+        "f1": 0.6366
+      }
+    },
+    "26-+": {
+      "all": {
+        "n": 3,
+        "TP": 24,
+        "FP": 0,
+        "FN": 103,
+        "precision": 1.0,
+        "recall": 0.189,
+        "f1": 0.3179
+      },
+      "old88": {
+        "n": 2,
+        "TP": 19,
+        "FP": 0,
+        "FN": 56,
+        "precision": 1.0,
+        "recall": 0.2533,
+        "f1": 0.4043
+      },
+      "new139": {
+        "n": 1,
+        "TP": 5,
+        "FP": 0,
+        "FN": 47,
+        "precision": 1.0,
+        "recall": 0.0962,
+        "f1": 0.1754
+      }
+    }
+  }
+}

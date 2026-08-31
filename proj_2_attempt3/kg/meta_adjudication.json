@@ -1,0 +1,345 @@
+{
+  "country": {
+    "n_compared": 244,
+    "n_disagreements": 20,
+    "counts": {
+      "llm_right": 16,
+      "normalisation": 4
+    },
+    "true_agreement_after_normalisation": 0.9344,
+    "n_adjudicable": 240,
+    "human_error_rate": 0.0667,
+    "human_error_ci95": [
+      0.0375,
+      0.1
+    ],
+    "llm_error_rate": 0.0,
+    "llm_error_ci95": [
+      0.0,
+      0.0
+    ],
+    "verdicts": {
+      "1": {
+        "title": "Alterations of the gut ecological and functional microenvironment in different stages of multiple sclerosis.",
+        "llm": "Japan",
+        "human": "United States",
+        "verdict": "llm_right",
+        "note": "All affiliations Japan (NCNP Tokyo, RIKEN); ethics = NCNP Ethics Committee. 'United States' occurs ONLY in the journal name (Proc Natl Acad Sci U S A) and the reference list. Human recorded the journal's country."
+      },
+      "4": {
+        "title": "Gut microbiome dysbiosis across early Parkinson's disease, REM sleep behavior disorder and their first-degree relatives.",
+        "llm": "Hong Kong SAR, China",
+        "human": "China",
+        "verdict": "normalisation",
+        "note": "'Hong Kong SAR, China' vs 'China' -- same country, finer granularity."
+      },
+      "5": {
+        "title": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis.",
+        "llm": "Switzerland",
+        "human": "Netherlands",
+        "verdict": "llm_right",
+        "note": "Cohort = Geneva Memory Center, ethics = Geneva Ethics Committee (CCER). Human took the FIRST author's affiliation (Leiden, Netherlands)."
+      },
+      "7": {
+        "title": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.",
+        "llm": "T\u00fcrkiye",
+        "human": "Turkey",
+        "verdict": "normalisation",
+        "note": "'T\u00fcrkiye' vs 'Turkey' -- endonym vs exonym."
+      },
+      "10": {
+        "title": "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson's disease.",
+        "llm": "Germany",
+        "human": "Luxembourg",
+        "verdict": "llm_right",
+        "note": "Samples = DeNoPa cohort, Paracelsus-Elena-Klinik Kassel, ethics Physician's Board Hessen, Germany. Human took the lead LAB's country (Luxembourg)."
+      },
+      "12": {
+        "title": "Association between environmental phthalates exposure and gut microbiota and metabolome in dementia with Lewy bodies.",
+        "llm": "PR China",
+        "human": "China",
+        "verdict": "normalisation",
+        "note": "'PR China' vs 'China'."
+      },
+      "13": {
+        "title": "Altered Gut Microbiota in Adults with Subjective Cognitive Decline: The SILCODE Study.",
+        "llm": "China",
+        "human": "Canada",
+        "verdict": "llm_right",
+        "note": "SILCODE cohort recruited in Beijing; all study sites Chinese. 'Canada' is the LAST author's second affiliation (University of Calgary) only."
+      },
+      "18": {
+        "title": "Fecal microbiome alterations in treatment-naive de novo Parkinson's disease.",
+        "llm": "Netherlands, Finland",
+        "human": "Netherlands and Finland",
+        "verdict": "normalisation",
+        "note": "'Netherlands, Finland' vs 'Netherlands and Finland' -- separator only."
+      },
+      "20": {
+        "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+        "llm": "Belgium",
+        "human": "USA",
+        "verdict": "llm_right",
+        "note": "Recruited at National MS Center Melsbroek + University Hospital Brussels; ethics Brussels. 'USA' occurs only in publisher boilerplate ('American Neurological Association') and one reference."
+      },
+      "21": {
+        "title": "Gut Microbiome Features of Chinese Patients Newly Diagnosed with Alzheimer's Disease or Mild Cognitive Impairment",
+        "llm": "China",
+        "human": "United States",
+        "verdict": "llm_right",
+        "note": "Title says 'Chinese Patients'; cohort at Sun Yat-sen Memorial Hospital, Guangzhou. 'United States' is the LAST author's affiliation (Univ. of Virginia)."
+      },
+      "23": {
+        "title": "Oral and gut microbial profiling in periodontitis and Parkinson's disease.",
+        "llm": "Turkey",
+        "human": "United States",
+        "verdict": "llm_right",
+        "note": "Patients enrolled at Istanbul Medipol University periodontology clinics. Human took the first-listed affiliation (ADA Forsyth Institute, Cambridge MA)."
+      },
+      "24": {
+        "title": "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease.",
+        "llm": "USA",
+        "human": "Ireland",
+        "verdict": "llm_right",
+        "note": "Re-analysis of the Wallen et al. US cohort ('Participant recruitment has been described before by Wallen et al.'); authors are at Univ. of Galway, Ireland. The LLM tracked the sample origin across a citation."
+      },
+      "25": {
+        "title": "A prebiotic dietary pilot intervention restores faecal metabolites and may be neuroprotective in Parkinson's Disease.",
+        "llm": "Germany",
+        "human": "UK",
+        "verdict": "llm_right",
+        "note": "Trial run at University Hospital Bonn, ethics committee University of Bonn, Germany. 'UK' is a co-affiliation (Quadram Institute)."
+      },
+      "31": {
+        "title": "A peripheral signature of Alzheimer's disease featuring microbiota-gut-brain axis markers.",
+        "llm": "Italy",
+        "human": "Switzerland",
+        "verdict": "llm_right",
+        "note": "Participants from the Italian INDIA-FBP study, ethics Brescia, Italy. Switzerland is a co-author affiliation (Geneva genetic medicine) with no cohort role."
+      },
+      "32": {
+        "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+        "llm": "Malaysia",
+        "human": "Canada",
+        "verdict": "llm_right",
+        "note": "Cohort at University of Malaya, Kuala Lumpur. 'Canada' is the LAST author's affiliation (Toronto Western Hospital)."
+      },
+      "33": {
+        "title": "Cognitive Function Associated with Gut Microbial Abundance in Sucrose and S-Adenosyl-L-Methionine (SAMe) Metabolic Pathways.",
+        "llm": "Taiwan",
+        "human": "United States",
+        "verdict": "llm_right",
+        "note": "Fecal samples collected at Shuang Ho Hospital, Taipei Medical University, Taiwan. Human took the first-listed affiliation (Hebrew SeniorLife, Boston)."
+      },
+      "34": {
+        "title": "Characterizing Gut Microbiota in Older Chinese Adults with Cognitive Impairment: A Cross-Sectional Study.",
+        "llm": "China",
+        "human": "Australia",
+        "verdict": "llm_right",
+        "note": "Title says 'Older Chinese Adults'; 229 adults recruited in Shenzhen, China. 'Australia' is a co-affiliation (Monash)."
+      },
+      "35": {
+        "title": "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pilot study.",
+        "llm": "Austria",
+        "human": "USA",
+        "verdict": "llm_right",
+        "note": "Medical University of Graz, ethics committee Graz. 'USA' occurs ONLY in reagent vendor addresses (R&D Systems Minneapolis; SPSS Chicago) and one background sentence about other studies."
+      },
+      "36": {
+        "title": "The nasal and gut microbiome in Parkinson's disease and idiopathic rapid eye movement sleep behavior disorder.",
+        "llm": "Germany",
+        "human": "Luxembourg",
+        "verdict": "llm_right",
+        "note": "Same DeNoPa/Kassel cohort as idx 10; ethics Physician's Board Hesse, Germany. Human took the lead lab's country (Luxembourg)."
+      },
+      "37": {
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "llm": "China",
+        "human": "United States",
+        "verdict": "llm_right",
+        "note": "All affiliations West China Hospital, Sichuan University. 'United States' occurs once, in publisher boilerplate."
+      }
+    }
+  },
+  "sequencing": {
+    "n_compared": 242,
+    "n_disagreements": 20,
+    "counts": {
+      "llm_right": 6,
+      "undetermined": 4,
+      "schema": 9,
+      "human_right": 1
+    },
+    "true_agreement_after_normalisation": 0.9174,
+    "n_adjudicable": 229,
+    "human_error_rate": 0.0262,
+    "human_error_ci95": [
+      0.0087,
+      0.048
+    ],
+    "llm_error_rate": 0.0044,
+    "llm_error_ci95": [
+      0.0,
+      0.0131
+    ],
+    "verdicts": {
+      "0": {
+        "title": "Gut dysbiosis is associated with metabolism and systemic inflammation in patients with ischemic stroke",
+        "llm": "qPCR",
+        "human": "16S",
+        "verdict": "llm_right",
+        "note": "Method is '16S and 23S rRNA-targeted quantitative reverse transcription (qRT)-PCR' -- an RT-qPCR assay, not amplicon sequencing. Human matched the string '16S'."
+      },
+      "2": {
+        "title": "Relationship Between Plasma Lipopolysaccharides, Gut Microbiota, and Dementia: A Cross-Sectional Study.",
+        "llm": "16S",
+        "human": "Other",
+        "verdict": "undetermined",
+        "note": "Scraped text is 6.0k chars, abstract-only, no method stated. (Same Japanese group as idx 16, which used T-RFLP, so the human's 'Other' is plausible.)"
+      },
+      "3": {
+        "title": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson\u2019s disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
+        "llm": "shotgun metagenomics",
+        "human": "Both",
+        "verdict": "schema",
+        "note": "Text confirms both 16S amplicon AND shotgun metagenome sequencing; human 'Both' is correct and the LLM schema has no 'Both' class."
+      },
+      "6": {
+        "title": "Alterations of host-gut microbiome interactions in multiple sclerosis.",
+        "llm": "16S",
+        "human": "Both",
+        "verdict": "schema",
+        "note": "'characterized using 16S and metagenomic shotgun sequencing' -- human 'Both' correct."
+      },
+      "8": {
+        "title": "Gut dysbiosis and lack of short chain fatty acids in a Chinese cohort of patients with multiple sclerosis.",
+        "llm": "shotgun metagenomics",
+        "human": "16S",
+        "verdict": "undetermined",
+        "note": "6.4k chars, abstract-only; no sequencing method stated in the scraped text."
+      },
+      "9": {
+        "title": "The alteration of gut microbiome and metabolism in amyotrophic lateral sclerosis patients.",
+        "llm": "16S",
+        "human": "Both",
+        "verdict": "schema",
+        "note": "16S rDNA sequencing plus a later shotgun run -- human 'Both' correct."
+      },
+      "11": {
+        "title": "The link between increased Desulfovibrio and disease severity in Parkinson's disease.",
+        "llm": "16S",
+        "human": "Both",
+        "verdict": "schema",
+        "note": "'The 16S rRNA amplicon and shotgun metagenomic sequencing was performed' -- 'Both'."
+      },
+      "14": {
+        "title": "Oral Pathobiont Streptococcus Anginosus Is Enriched in the Gut of Stroke Patients and Predicts 2-Year Cardiovascular Outcome",
+        "llm": "shotgun metagenomics",
+        "human": "16S",
+        "verdict": "undetermined",
+        "note": "8.4k chars, abstract-only; no method statement in the scraped text."
+      },
+      "15": {
+        "title": "Cognitive Function Associated with Gut Microbial Abundance in Sucrose and S-Adenosyl-L-Methionine (SAMe) Metabolic Pathways.",
+        "llm": "shotgun metagenomics",
+        "human": "Both",
+        "verdict": "schema",
+        "note": "Cases by whole metagenomic sequencing; controls' 16S pulled from the Taiwan Microbiome Database -- human 'Both' defensible."
+      },
+      "16": {
+        "title": "The relationship between the gut microbiome and mild cognitive impairment in patients without dementia: a cross-sectional study conducted in Japan.",
+        "llm": "16S",
+        "human": "Other",
+        "verdict": "human_right",
+        "note": "Method is T-RFLP fingerprinting, described as 'one of the most well-established 16S ribosomal RNA-based methods'. T-RFLP is not sequencing; human 'Other' is right. The LLM matched the string '16S rRNA-based'."
+      },
+      "17": {
+        "title": "Study of the gut microbiome in Egyptian patients with Parkinson's Disease.",
+        "llm": "qPCR",
+        "human": "16S",
+        "verdict": "llm_right",
+        "note": "SYBR-green real-time PCR with 16S rRNA group-specific primers. The paper itself contrasts its method with sequencing: 'they used sequencing technique detecting more bacteria than Real time PCR applied in the present research'."
+      },
+      "19": {
+        "title": "Alterations of the gut ecological and functional microenvironment in different stages of multiple sclerosis.",
+        "llm": "16S",
+        "human": "Both",
+        "verdict": "schema",
+        "note": "'16S rRNA gene and whole metagenomic sequencing data' -- human 'Both' correct."
+      },
+      "22": {
+        "title": "Gut microbiome of treatment-na\u00efve MS patients of different ethnicities early in disease course.",
+        "llm": "16S",
+        "human": "Both",
+        "verdict": "schema",
+        "note": "16S rRNA V4 on 89 subjects + whole metagenomic shotgun on 48 -- 'Both' correct."
+      },
+      "26": {
+        "title": "Gut microbiota in Parkinson's disease patients: hospital-based study",
+        "llm": "qPCR",
+        "human": "16S",
+        "verdict": "llm_right",
+        "note": "'bacterial abundance was quantified by qPCR using 16S rRNA group-specific primers ... SYBR Green qPCR in a Rotor gene 3000'. No sequencing performed. Human matched the string '16S'."
+      },
+      "27": {
+        "title": "Altered gut microbiome and serum metabolome profiles associated with essential tremor",
+        "llm": "shotgun metagenomics",
+        "human": "16S",
+        "verdict": "llm_right",
+        "note": "'the gut microbiota of 19 ET patients and 21 HCs were analysed with metagenomics approach'. No 16S anywhere in the text."
+      },
+      "28": {
+        "title": "The nasal and gut microbiome in Parkinson's disease and idiopathic rapid eye movement sleep behavior disorder.",
+        "llm": "16S",
+        "human": "Both",
+        "verdict": "schema",
+        "note": "16S and 18S amplicon sequencing plus metagenomic shotgun of selected samples."
+      },
+      "29": {
+        "title": "Gut microbiome, cognitive function and brain structure: a multi-omics integration analysis",
+        "llm": "16S",
+        "human": "Both",
+        "verdict": "schema",
+        "note": "'Fecal 16S rRNA and shotgun metagenomic sequencing ... were performed' -- 'Both'."
+      },
+      "30": {
+        "title": "Gut microbes exacerbate systemic inflammation and behavior disorders in neurologic disease CADASIL",
+        "llm": "shotgun metagenomics",
+        "human": "Both",
+        "verdict": "llm_right",
+        "note": "The study's own method is metagenome sequencing. The 16S mentions are (a) a CITED prior CADASIL study, (b) a qPCR normaliser, (c) colony Sanger for isolate ID -- none is community 16S profiling. Human 'Both' over-calls."
+      },
+      "38": {
+        "title": "Correlation between APOE4 gene and gut microbiota in Alzheimer's disease.",
+        "llm": "shotgun metagenomics",
+        "human": "16S",
+        "verdict": "undetermined",
+        "note": "5.7k chars, abstract-only; 'metagenome' appears only inside a feature name ('gut_metagenome_g_Faecalibacterium'), which is not method evidence."
+      },
+      "39": {
+        "title": "The human gut microbiota in people with amyotrophic lateral sclerosis.",
+        "llm": "shotgun metagenomics",
+        "human": "Both",
+        "verdict": "llm_right",
+        "note": "Only 'Metagenomic shotgun sequencing was performed on DNA extracted from stool'. No 16S in the scraped text; human 'Both' unsupported. (Text is abstract-only, so this is the weakest of the llm_right calls.)"
+      }
+    }
+  },
+  "combined": {
+    "n_adjudicable": 469,
+    "human_error_rate": 0.0469,
+    "human_errors": 22,
+    "human_error_ci95": [
+      0.0277,
+      0.0661
+    ],
+    "llm_error_rate": 0.0021,
+    "llm_errors": 1,
+    "llm_error_ci95": [
+      0.0,
+      0.0064
+    ],
+    "sign_test_p_one_sided": 3e-06,
+    "sign_test_note": "Of 23 adjudicated disagreements the LLM was right in 22. Exact binomial vs a 50/50 null, one-sided p=2.86e-06. One observation per PAPER."
+  }
+}

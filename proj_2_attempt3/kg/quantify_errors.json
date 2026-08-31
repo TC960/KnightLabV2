@@ -1,0 +1,128 @@
+{
+  "gold_string_quality": {
+    "total": 2007,
+    "classes": {
+      "ok": 1741,
+      "unsplit_and": 59,
+      "disease_prefixed": 100,
+      "not_a_taxon": 19,
+      "stats_or_placeholder": 88
+    },
+    "n_not_clean": 266,
+    "pct_not_clean": 0.1325
+  },
+  "gold_bad_examples": [
+    "positively correlated with nihss and fire-heat score reduction",
+    "and phocaeicola_coprocola",
+    "and lactic acid bacteria",
+    "ai: actinobacteria pi: verrucomicrobia",
+    "both ais and ais-pi vs. hc : firmicutes",
+    "both ais and ais-pi vs. hc : bacteroidetes",
+    "ais-pi : megamonas",
+    "ais : campylobacter hominis atcc baa",
+    "ais-pi : streptococcaceae",
+    "mycoplasma",
+    "both ais and ais-pi vs. hc : bacteroidetes",
+    "ais : proteobacteria",
+    "ais-pi : leptotrichiaceae",
+    "all is combined: bacilli",
+    "tujia only: bacilli",
+    "miao only: bacilli",
+    "han only: bacilli",
+    "all is combined: clostridia",
+    "tujia only: clostridia",
+    "han only: clostridia",
+    "ad: alistipes",
+    "mci: bacteroides",
+    "ad: streptococcus spp",
+    "mci: streptococcus spp",
+    "and blautia",
+    "and butyricimonas",
+    "n/a",
+    "n/a",
+    "dorea sp. cag:317",
+    "blautia sp. cag:257",
+    "faecalibacterium sp. cag:74_58_120",
+    "n/a",
+    "n/a",
+    "escherichia coli group",
+    "n/a",
+    "n/a",
+    "and negativibacillus",
+    "genus: afonbuvirus",
+    "genus: unclassified\u2212f\u2212lachnospiraceae",
+    "and agathobaculum"
+  ],
+  "fn_pool": {
+    "n_fn": 815,
+    "n_nontaxon_gold": 150,
+    "pct_fn_that_are_gold_artifacts": 0.184,
+    "n_real_fn": 665,
+    "pct_real_fn_present_in_text": 0.403,
+    "pct_real_fn_present_ci95": [
+      0.3654,
+      0.4391
+    ]
+  },
+  "fn_absence_vs_scrape_length": {
+    "short_scrape_present_rate": 0.1037,
+    "n_short": 299,
+    "long_scrape_present_rate": 0.6475,
+    "n_long": 366,
+    "diff": 0.5439,
+    "p_two_sided_taxon_level": 0.0001
+  },
+  "fn_absence_vs_scrape_length_paperlevel": {
+    "short_rate": 0.2045,
+    "n_short_papers": 38,
+    "long_rate": 0.717,
+    "n_long_papers": 84,
+    "diff": 0.5125,
+    "p_two_sided": 0.0001
+  },
+  "fp_pool": {
+    "n_fp": 957,
+    "pct_present_in_text": 0.9896,
+    "hallucination_rate": 0.0104,
+    "hallucination_ci95": [
+      0.0042,
+      0.0178
+    ],
+    "absent_examples": [
+      "ucg-002",
+      "unclassified_pasteurellaceae",
+      "ucg 005",
+      "cag 56",
+      "unclassified bacteria",
+      "faecalibacterium bacterium cag 137",
+      "tyzzerella nexilis",
+      "akkermansia muciniphila",
+      "anaerostipes hadrus",
+      "cag-349"
+    ]
+  },
+  "rescored_on_cleaned_gold": {
+    "TP": 1185,
+    "FP": 1041,
+    "FN": 664,
+    "precision": 0.5323,
+    "recall": 0.6409,
+    "f1": 0.5816,
+    "baseline_f1": 0.5958,
+    "delta_f1": -0.0142
+  },
+  "fn_by_extraction_source": {
+    "Main Text": {
+      "n": 581,
+      "present_rate": 0.4286
+    },
+    "Figure/Table fallback (Top 5)": {
+      "n": 44,
+      "present_rate": 0.3409
+    },
+    "Supplementary File fallback (Top 5)": {
+      "n": 40,
+      "present_rate": 0.1
+    }
+  }
+}

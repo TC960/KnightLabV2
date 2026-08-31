@@ -1,0 +1,105 @@
+{
+  "table": [
+    {
+      "gold": "OLD (blank-ridden)",
+      "n": 250,
+      "TP": 597,
+      "FP": 1720,
+      "FN": 334,
+      "precision": 0.2577,
+      "recall": 0.6412,
+      "f1": 0.3676,
+      "subset": "all papers"
+    },
+    {
+      "gold": "NEW (correct)",
+      "n": 249,
+      "TP": 1306,
+      "FP": 1001,
+      "FN": 815,
+      "precision": 0.5661,
+      "recall": 0.6157,
+      "f1": 0.5899,
+      "subset": "all papers"
+    },
+    {
+      "gold": "OLD (blank-ridden)",
+      "n": 88,
+      "TP": 597,
+      "FP": 317,
+      "FN": 334,
+      "precision": 0.6532,
+      "recall": 0.6412,
+      "f1": 0.6472,
+      "subset": "papers with non-blank gold"
+    },
+    {
+      "gold": "NEW (correct)",
+      "n": 227,
+      "TP": 1306,
+      "FP": 957,
+      "FN": 815,
+      "precision": 0.5771,
+      "recall": 0.6157,
+      "f1": 0.5958,
+      "subset": "papers with non-blank gold"
+    },
+    {
+      "gold": "OLD (blank-ridden)",
+      "n": 15,
+      "TP": 105,
+      "FP": 98,
+      "FN": 19,
+      "precision": 0.5172,
+      "recall": 0.8468,
+      "f1": 0.6422,
+      "subset": "test_set_v2 (15)"
+    },
+    {
+      "gold": "NEW (correct)",
+      "n": 15,
+      "TP": 106,
+      "FP": 97,
+      "FN": 19,
+      "precision": 0.5222,
+      "recall": 0.848,
+      "f1": 0.6463,
+      "subset": "test_set_v2 (15)"
+    }
+  ],
+  "unjoined": [
+    "Metagenome-assembled microbial genomes from Parkinson's disease fecal samples."
+  ],
+  "blank_in_new_gold": [
+    "Signature of Alzheimer's Disease in Intestinal Microbiome: Results From the AlzBiom Study",
+    "Potential Inflammatory Biomarkers and Differential Gut Microbiota in Cognitive Impairment After Ischemic Stroke",
+    "Potential roles of gut microbiome and metabolites in modulating ALS in mice.",
+    "Genetic risk score in multiple sclerosis is associated with unique gut microbiome.",
+    "Idiopathic Rapid Eye Movement Sleep Behavior Disorder (iRBD) Shares Similar Fecal Short-Chain Fatty Acid Alterations with Multiple System Atrophy (MSA) and Parkinson's Disease (PD).",
+    "The impact of device-assisted therapies on the gut microbiome in Parkinson's disease.",
+    "Gut microbiota in Parkinson's disease: Temporal stability and relations to disease progression.",
+    "Potential Role of Gut Microbiota in ALS Pathogenesis and Possible Novel Therapeutic Strategies.",
+    "More than constipation - bowel symptoms in Parkinson's disease and their connection to gut microbiota.",
+    "Altered Gut Microbial Metabolites in Amnestic Mild Cognitive Impairment and Alzheimer's Disease: Signals in Host-Microbe Interplay.",
+    "Normal gut microbiome in NMDA receptor encephalitis.",
+    "Alteration of Gut Microbial Metabolites in the Systemic Circulation of Patients with Parkinson's Disease.",
+    "Mycobacterium avium subspecies paratuberculosis (MAP) infection, and its impact on gut microbiome of individuals with multiple sclerosis.",
+    "Interventional Influence of the Intestinal Microbiome Through Dietary Intervention and Bowel Cleansing Might Improve Motor Symptoms in Parkinson's Disease.",
+    "Progression and survival of patients with motor neuron disease relative to their fecal microbiota.",
+    "APOE4 genotype shapes the role of dietary fibers in cognitive health through gut microbiota changes.",
+    "A probiotic modulates the microbiome and immunity in multiple sclerosis.",
+    "Relationship between the Japanese-style diet, gut microbiota, and dementia: A cross-sectional study.",
+    "Relationship Between Plasma Lipopolysaccharides, Gut Microbiota, and Dementia: A Cross-Sectional Study.",
+    "The relationship between the gut microbiome and mild cognitive impairment in patients without dementia: a cross-sectional study conducted in Japan.",
+    "Education as Risk Factor of Mild Cognitive Impairment: The Link to the Gut Microbiome.",
+    "Gut Microbiota Alterations in Alzheimer's Disease: Relation with Cognitive Impairment and Mediterranean Lifestyle."
+  ],
+  "metric": "char-ngram cosine >= 0.5 (taxonomy/LCA metric unavailable: linux-only binaries)",
+  "permutation_f1": {
+    "observed": 0.5958,
+    "null_mean": 0.0717,
+    "null_max": 0.0959,
+    "p": 0.001,
+    "n_perm": 1000
+  }
+}
