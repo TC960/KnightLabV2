@@ -1,0 +1,3 @@
+[submodule "mega_dump/proj_2"]
+	path = mega_dump/proj_2
+	url = https://github.com/TC960/KG-knightlab.git
