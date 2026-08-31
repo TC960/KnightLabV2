@@ -122,6 +122,20 @@ summary{cursor:pointer;font-size:13px;color:var(--ink-2)}
 #net{width:100%;height:min(70vh,620px);display:block;border:1px solid var(--line);
      border-radius:7px;background:var(--panel);margin-top:12px}
 .hint{font-size:12px;color:var(--ink-3);margin-top:7px}
+#detail{margin-top:16px;border:1px solid var(--line);border-radius:7px;background:var(--panel);
+        padding:13px 15px}
+#detail.empty{color:var(--ink-3);font-size:13px;text-align:center;padding:20px}
+#detail h3{font-family:var(--serif);font-size:17px;margin:0 0 3px;font-weight:600}
+#detail .meta{color:var(--ink-2);font-size:12.5px;margin-bottom:10px}
+#detail table{margin-top:4px}
+#detail td,#detail th{padding:4px 8px;font-size:12.5px}
+.dirpill{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.03em;
+         padding:1px 6px;border-radius:3px;color:#fff}
+.dirpill.up{background:var(--up)} .dirpill.down{background:var(--down)}
+.cohort{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink-2);
+        margin:8px 0 4px;padding:8px 10px;background:var(--surface);border-radius:5px}
+.cohort b{color:var(--ink);font-weight:600}
+.row{cursor:pointer}
 @media (max-width:640px){.row{grid-template-columns:118px 1fr 48px}.tax{font-size:12px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 """
@@ -187,6 +201,7 @@ function render(){
     const ed = rows[+el.dataset.i];
     el.addEventListener("mousemove", ev => showTip(ev, ed));
     el.addEventListener("mouseleave", hideTip);
+    el.addEventListener("click", () => window.__showDetail(ed));
   });
   $("#tbody").innerHTML = rows.map(e => `<tr><td>${e.taxon}</td><td>${e.rank||""}</td>
       <td>${e.contested?"contested":e.direction}</td>
@@ -195,6 +210,50 @@ function render(){
       <td class="num">${(e.consistency*100).toFixed(0)}%</td></tr>`).join("");
   $("#shown").textContent = rows.length;
 }
+const P = G.papers || [];
+window.__showDetail = function(ed, siblings){
+  const d = $("#detail");
+  if (!ed){ d.className="empty"; d.textContent="Click any taxon to see the studies behind it."; return; }
+  d.className = "";
+  const ev = ed.ev || [];
+  const rows = ev.map(x => ({p: P[x.i] || {}, dir: x.d === "e" ? "enriched" : "depleted"}));
+  const withMeta = rows.filter(r => r.p.has_meta);
+  const countries = [...new Set(withMeta.map(r=>r.p.country).filter(Boolean))];
+  const seqs = [...new Set(withMeta.map(r=>r.p.seq).filter(Boolean))];
+  const sizes = withMeta.map(r=>(r.p.n_cases||0)+(r.p.n_controls||0)).filter(n=>n>0);
+  d.innerHTML =
+    `<h3>${ed.taxon} <span style="font-weight:400;color:var(--ink-3);font-size:13px">${ed.rank||""}</span></h3>`
+    + `<div class="meta">in <b>${ed.disease}</b> · ${ed.n_papers} paper${ed.n_papers!==1?"s":""} · `
+    + `<span style="color:var(--up)">${ed.n_up} enriched</span> / `
+    + `<span style="color:var(--down)">${ed.n_down} depleted</span>`
+    + (ed.contested ? ` · <b>contested</b> (${Math.round(ed.consistency*100)}% consistent)` : "")
+    + `</div>`
+    + (withMeta.length ? `<div class="cohort">`
+        + `<span><b>${countries.length}</b> ${countries.length===1?"country":"countries"}: ${countries.slice(0,5).join(", ")}${countries.length>5?"…":""}</span>`
+        + (seqs.length?`<span>method: <b>${seqs.join(", ")}</b></span>`:"")
+        + (sizes.length?`<span>cohort size: <b>${Math.min(...sizes)}–${Math.max(...sizes)}</b> subjects</span>`:"")
+        + `</div>` : "")
+    + `<div class="tablewrap"><table><thead><tr><th>Direction</th><th>Study</th><th>Country</th>`
+    + `<th class="num">Cases</th><th class="num">Controls</th><th>Method</th><th>Site</th></tr></thead><tbody>`
+    + rows.map(r => `<tr><td><span class="dirpill ${r.dir==="enriched"?"up":"down"}">`
+        + `${r.dir==="enriched"?"UP":"DOWN"}</span></td>`
+        + `<td>${(r.p.title||"").slice(0,72)}</td><td>${r.p.country||"—"}</td>`
+        + `<td class="num">${r.p.n_cases||"—"}</td><td class="num">${r.p.n_controls||"—"}</td>`
+        + `<td>${r.p.seq||"—"}</td><td>${r.p.site||"—"}</td></tr>`).join("")
+    + `</tbody></table></div>`
+    + (siblings && siblings.length > 1
+        ? `<div class="meta" style="margin-top:9px">Also linked to: `
+          + siblings.slice(1, 7).map(s2 =>
+              `<a href="#" data-sib="${siblings.indexOf(s2)}" style="color:var(--up)">`
+              + `${s2.disease} (${s2.n_papers}p)</a>`).join(" · ")
+          + (siblings.length > 7 ? ` +${siblings.length - 7} more` : "") + `</div>`
+        : "");
+  if (siblings) d.querySelectorAll("[data-sib]").forEach(a2 =>
+    a2.addEventListener("click", ev2 => { ev2.preventDefault();
+      window.__showDetail(siblings[+a2.dataset.sib], siblings); }));
+  d.scrollIntoView({behavior:"smooth", block:"nearest"});
+};
+
 [sel, minp, onlyC].forEach(el => el.addEventListener("input", render));
 
 // tabs
@@ -219,7 +278,7 @@ def main():
     a = ap.parse_args()
     G = json.load(open(a.graph))
     m = G["meta"]
-    payload = {"edges": G["edges"], "hierarchy": G.get("hierarchy", [])}
+    payload = {"edges": G["edges"], "hierarchy": G.get("hierarchy", []), "papers": G.get("papers", [])}
 
     net_js = open(os.path.join(HERE, "viz_network.js")).read()
     html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
@@ -270,9 +329,11 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
   papers while <i>Hungatella</i> inside it is enriched across 7.</p>
 </div>
 
-<div class="pane" id="pane-rank" role="tabpanel" hidden>
+<div class="pane" id="pane-rank" role="tabpanel">
   <div class="chart" id="chart"></div>
 </div>
+<div id="detail" class="empty">Click any taxon — in either view — to see the individual
+studies behind it, with cohort country, size, and sequencing method.</div>
 <div class="tip" id="tip"></div>
 <div class="tip" id="nettip"></div>
 

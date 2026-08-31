@@ -129,6 +129,22 @@ def norm_taxon(t, tax=None):
     return key, disp, rank, "unresolved"
 
 
+def load_study_metadata():
+    """paper title -> study design fields, from extract_metadata.py output."""
+    path = os.path.join(HERE, "metadata.jsonl")
+    if not os.path.exists(path):
+        return {}
+    out = {}
+    for line in open(path):
+        try:
+            r = json.loads(line)
+            if r.get("meta") and not r.get("parse_error"):
+                out[r["title"]] = r["meta"]
+        except Exception:
+            continue
+    return out
+
+
 def build(rows, min_papers=1, tax=None):
     ev = defaultdict(list)
     taxon_disp, taxon_rank, taxon_how = {}, {}, {}
@@ -159,6 +175,10 @@ def build(rows, min_papers=1, tax=None):
             continue
         # papers, not observations: the same paper naming a taxon twice is one vote
         papers = {o["paper"] for o in obs}
+        # per-paper direction, so the UI can show WHICH studies said what
+        evidence = {}
+        for o in obs:
+            evidence[o["paper"]] = o["dir"]
         consistency = max(up, dn) / n
         edges.append({
             "taxon": taxon_disp.get(taxon, taxon), "taxon_key": taxon,
@@ -170,6 +190,7 @@ def build(rows, min_papers=1, tax=None):
             "consistency": round(consistency, 3),
             "contested": bool(up and dn),
             "papers": sorted(papers)[:25],
+            "evidence": [{"t": t, "d": d} for t, d in sorted(evidence.items())][:25],
         })
 
     tax_deg = Counter(e["taxon_key"] for e in edges)
@@ -210,7 +231,33 @@ def build(rows, min_papers=1, tax=None):
                                       "parent_rank": tax.rank.get(anc, ""),
                                       "child_rank": tax.rank.get(t, "")})
                     break
-    return nodes, edges, hierarchy
+    # ---- paper table: referenced by index so cohort data is stored once ----
+    md = load_study_metadata()
+    titles = sorted({t for e in edges for t in (x["t"] for x in e["evidence"])})
+    pidx = {t: i for i, t in enumerate(titles)}
+    link_by_title = {}
+    for e in edges:
+        for o in e.get("papers", []):
+            link_by_title.setdefault(o, "")
+    papers_tbl = []
+    for t in titles:
+        m = md.get(t, {})
+        papers_tbl.append({
+            "title": t,
+            "country": m.get("country", ""),
+            "n_cases": m.get("n_cases", 0),
+            "n_controls": m.get("n_controls", 0),
+            "seq": m.get("sequencing", ""),
+            "site": m.get("body_site", ""),
+            "region": m.get("region_16S", ""),
+            "med": m.get("medication_controlled"),
+            "diet": m.get("diet_controlled"),
+            "has_meta": t in md,
+        })
+    for e in edges:
+        e["ev"] = [{"i": pidx[x["t"]], "d": x["d"][0]} for x in e["evidence"]]
+        del e["evidence"]
+    return nodes, edges, hierarchy, papers_tbl
 
 
 def main():
@@ -232,7 +279,7 @@ def main():
             print(f"NCBI taxdump: {'loaded' if tax.ok else 'NOT FOUND -> string folding only'}")
         except Exception as e:
             print(f"taxonomy unavailable ({e.__class__.__name__}) -> string folding only")
-    nodes, edges, hierarchy = build(rows, a.min_papers, tax)
+    nodes, edges, hierarchy, papers_tbl = build(rows, a.min_papers, tax)
     meta = {
         "source": os.path.basename(a.input),
         "papers_in": len(rows),
@@ -246,13 +293,15 @@ def main():
         "n_contested": sum(1 for e in edges if e["contested"]),
         "n_taxa_resolved": sum(1 for n in nodes if n["type"] == "taxon" and n.get("resolved")),
         "n_hierarchy_links": len(hierarchy),
+        "n_papers_table": len(papers_tbl),
+        "n_papers_with_metadata": sum(1 for p in papers_tbl if p["has_meta"]),
         "min_papers": a.min_papers,
         "note": ("Edge weight is evidence count, not effect size: the extractor yields "
                  "direction only and the source papers report incommensurable statistics. "
                  "Contested edges are retained, never merged away."),
     }
-    json.dump({"meta": meta, "nodes": nodes, "edges": edges, "hierarchy": hierarchy},
-              open(a.out, "w"), indent=2)
+    json.dump({"meta": meta, "nodes": nodes, "edges": edges,
+               "hierarchy": hierarchy, "papers": papers_tbl}, open(a.out, "w"), indent=2)
     print(json.dumps(meta, indent=2))
     print(f"\nwrote {a.out}")
     top = sorted(edges, key=lambda e: -e["n_papers"])[:10]

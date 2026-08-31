@@ -226,6 +226,13 @@
     if (dragNode && !moved) {                 // click without drag = pin/unpin
       dragNode.fixed = false;
       pinned = (pinned && pinned.id === dragNode.id) ? null : dragNode;
+      // drive the shared detail panel from the node's best-evidenced association
+      if (pinned && window.__showDetail) {
+        const rel = links.filter(l => nodes[l.s].id === pinned.id || nodes[l.t].id === pinned.id)
+                         .map(l => l.e)
+                         .sort((a, b) => b.n_papers - a.n_papers);
+        if (rel.length) window.__showDetail(rel[0], rel);
+      }
     }
     dragNode = null; panning = false;
   });
