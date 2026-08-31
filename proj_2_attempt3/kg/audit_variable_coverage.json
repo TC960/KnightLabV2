@@ -1,0 +1,117 @@
+{
+ "n_papers": 303,
+ "rows": [
+  {
+   "variable": "recruitment setting",
+   "naive": 296,
+   "body": 269,
+   "attributed": 202,
+   "valued": 105,
+   "naive_pct": 97.7,
+   "valued_pct": 34.7,
+   "examples": [
+    "Healthy volunteers were recruited in the community, and the detailed information was recorded using questionnaires.",
+    "Participants Initially, 20 patients with 5qSMA and 20 age- and gender-matched healthy controls from the outpatient physical examination center of our hospital were enrolled in the study.",
+    "Methods Participants and clinical evaluation Participants with EM and CM were recruited from the neurology out-patient clinic of a tertiary-care university hospital between February, 2020 and November, 2020."
+   ]
+  },
+  {
+   "variable": "differential abundance method",
+   "naive": 219,
+   "body": 217,
+   "attributed": 116,
+   "valued": 98,
+   "naive_pct": 72.3,
+   "valued_pct": 32.3,
+   "examples": [
+    "We further identified the differentially abundant taxa in the NCI and non-NCI groups by linear discriminant analysis effect size (LEfSe) ( Li et al., 2019 ).",
+    "DESeq2 analysis was performed to compare differential taxa between MHE and control cases.",
+    "3.6 Intestinal microbes associate PSD with metabolic pathway disorders When we compared the intestinal microbes between stroke patients and PSD patients using the LEfSe analysis, we observed that the communities exhibiti"
+   ]
+  },
+  {
+   "variable": "disease severity",
+   "naive": 229,
+   "body": 228,
+   "attributed": 144,
+   "valued": 78,
+   "naive_pct": 75.6,
+   "valued_pct": 25.7,
+   "examples": [
+    "Given the negative correlation between NIHSS score and the BPB Clostridium_sensu_stricto_1 ( r = \u22120.24, P = 0.035), we speculate that the reduced BPB caused a significant butyrate decrease in CI patients.",
+    "All participants underwent Mini-Mental State Examination (MMSE)-scoring ( Folstein et al., 1975 ) and clinical assessment of cognitive status by means of the Clinical Dementia Rating (CDR) scale ( Morris, 1993 , 1997 ).",
+    "Demographic and clinical data were collected including age, gender, residency (rural/urban), occupation, age of onset, duration of illness, severity of disease, clinical symptoms and signs environmental risk factors (inc"
+   ]
+  },
+  {
+   "variable": "sample storage",
+   "naive": 209,
+   "body": 208,
+   "attributed": 82,
+   "valued": 53,
+   "naive_pct": 69.0,
+   "valued_pct": 17.5,
+   "examples": [
+    "The fecal samples were collected in a feces container and stored at \u221280\u00b0C.",
+    "2.4 Stool sample collection, DNA extraction and 16S RNA gene amplicon and sequencing Stool samples (200 mg) were collected and stored in the Fecal Microbial Collection and Preservation Kit (ML-001A, Shenzhen Dayun Gene T",
+    "Extraction, Amplification, and Sequencing of Bacterial Genomic DNA From Fecal Samples Fresh fecal samples were collected into Eppendorf tubes and frozen at \u221280\u00b0C."
+   ]
+  },
+  {
+   "variable": "antibiotic use",
+   "naive": 205,
+   "body": 205,
+   "attributed": 84,
+   "valued": 47,
+   "naive_pct": 67.7,
+   "valued_pct": 15.5,
+   "examples": [
+    "Patients were excluded if: (1) symptoms of gastrointestinal bleeding such as hematemesis and melena within the past 2 weeks or other serious complications of liver cirrhosis; (2) previous transjugular intrahepatic portos",
+    "The exclusion criteria for AIS patients were as follows: (1) cardiogenic stroke, (2) use of drugs that affect platelet aggregation, such as traditional non-steroidal antiplatelet drugs, ticlopidine, warfarin, heparin, an",
+    "In addition, we excluded patients who had taken antibiotics or probiotic supplements for the 3 months prior to taking samples."
+   ]
+  },
+  {
+   "variable": "bmi",
+   "naive": 146,
+   "body": 146,
+   "attributed": 72,
+   "valued": 22,
+   "naive_pct": 48.2,
+   "valued_pct": 7.3,
+   "examples": [
+    "For the association of severe headache intensity, anxiety, depression, and fibromyalgia with the relative abundance of microbiota, we used logistic regression analyses (adjusting for age, sex, and BMI) using the R packag",
+    "Nine traditional risk factors were BMI, SBP, DBP, TC, LDL-C, HDL-C, ApoB/ApoA1 ratio, FPG and hs-CRP, respectively, just as the differences of these risk factors between NCs and IS patients were all statistically signifi",
+    "Results PD patients have higher calprotectin and lower SCFA levels in stool and lower CXCL8 levels in plasma compared to controls Patient and control groups were similar with regard to basic demographics such as age, sex"
+   ]
+  },
+  {
+   "variable": "dna extraction kit",
+   "naive": 184,
+   "body": 184,
+   "attributed": 66,
+   "valued": 13,
+   "naive_pct": 60.7,
+   "valued_pct": 4.3,
+   "examples": [
+    "DNA extraction DNA extractions were performed using QIAamp DNA Stool Mini Kit (Qiagen, USA) according to the manufacturer\u2019s instructions.",
+    "DNA extraction DNA extraction was performed using the FastDNA Spin Kit for Soil (MP Biomedicals, Irvine, California, USA), according to manufacturer\u2019s instructions.",
+    "DNA extraction was performed using the DNeasy PowerSoil Pro DNA Kit (Cat."
+   ]
+  },
+  {
+   "variable": "probiotic use",
+   "naive": 122,
+   "body": 122,
+   "attributed": 34,
+   "valued": 10,
+   "naive_pct": 40.3,
+   "valued_pct": 3.3,
+   "examples": [
+    "In addition, we excluded patients who had taken antibiotics or probiotic supplements for the 3 months prior to taking samples.",
+    "Of the 119 participants recruited, six non-demented participants were excluded from analyses due to antibiotic or probiotic use at the time of fecal sample collection that was not reported during initial screening.",
+    "Participants were excluded if they had previously used neuroleptic agents; had a history of inflammatory bowel disease, irritable bowel syndrome, colitis, colon cancer, or use of antibiotics or probiotic supplements with"
+   ]
+  }
+ ]
+}
