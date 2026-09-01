@@ -1,0 +1,57 @@
+{
+ "rank": 7,
+ "diseases": [
+  "Alzheimer\u2019s disease (AD)",
+  "Alzheimer\u2019s disease (AD), Dementia",
+  "Amyotrophic lateral sclerosis (ALS)",
+  "Dementia",
+  "Epilepsy",
+  "Multiple sclerosis (MS)",
+  "Other",
+  "Parkinson\u2019s disease (PD)",
+  "Spinal cord injury (SCI)",
+  "Stroke"
+ ],
+ "disease_acc_before": 0.7927927927927928,
+ "disease_acc_after": 0.5315315315315315,
+ "chance": 0.2753623188405797,
+ "variables": [
+  {
+   "variable": "recruitment setting",
+   "auc_before": 0.6015,
+   "auc_after": 0.6089,
+   "delta": 0.0074
+  },
+  {
+   "variable": "antibiotic use",
+   "auc_before": 0.7212,
+   "auc_after": 0.719,
+   "delta": -0.0022
+  },
+  {
+   "variable": "sample storage",
+   "auc_before": 0.6949,
+   "auc_after": 0.6994,
+   "delta": 0.0045
+  },
+  {
+   "variable": "bmi",
+   "auc_before": 0.7988,
+   "auc_after": 0.8214,
+   "delta": 0.0226
+  },
+  {
+   "variable": "disease severity",
+   "auc_before": 0.7186,
+   "auc_after": 0.7228,
+   "delta": 0.0042
+  },
+  {
+   "variable": "differential abundance method",
+   "auc_before": 0.8382,
+   "auc_after": 0.8385,
+   "delta": 0.0002
+  }
+ ],
+ "mean_delta": 0.006116666666666666
+}

@@ -19,3 +19,6 @@ proj_2_attempt3/kg/gpu_results/
 # chunk index: derived, ~30MB of float32 + the chunk text it came from
 proj_2_attempt3/kg/chunk_vecs.npy
 proj_2_attempt3/kg/chunks.jsonl
+
+proj_2_attempt3/kg/chunk_vecs_deconfounded.npy
+proj_2_attempt3/kg/disease_basis.npy
