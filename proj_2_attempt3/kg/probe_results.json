@@ -1,0 +1,26 @@
+{
+  "probe_A_disease": {
+    "n_samples": 251,
+    "accuracy": 0.7166274509803922,
+    "null_mean": 0.30128,
+    "null_p95": 0.3090274509803922,
+    "p_value": 0.0,
+    "verdict": "PASS"
+  },
+  "probe_B_sequencing": {
+    "n_samples": 297,
+    "accuracy": 0.8081920903954802,
+    "null_mean": 0.8081129943502826,
+    "null_p95": 0.8084745762711865,
+    "p_value": 0.34,
+    "verdict": "FAIL"
+  },
+  "probe_C_direction": {
+    "n_samples": 889,
+    "accuracy": 0.4954717838123237,
+    "null_mean": 0.5139161686249046,
+    "null_p95": 0.5332262084826628,
+    "p_value": 0.88,
+    "verdict": "FAIL"
+  }
+}

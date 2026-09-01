@@ -116,6 +116,37 @@ surviving candidate on regex coverage. It has the **worst** AUC (0.597, lift
 diffuse (hospital-vs-community has no distinctive vocabulary, unlike a named kit
 or statistical test).
 
+### 4b. The subagent probe finished late — A passes, C fails as predicted, B is uninformative
+
+`probe_results.json` (from `probe_embeddings_fast.py`, an agent's work — read the
+caveat below before quoting it):
+
+| probe | n | acc | null | p | agent's verdict |
+|---|---:|---:|---:|---:|---|
+| A: predict disease | 251 | 0.717 | 0.301 | 0.0 | PASS |
+| B: predict sequencing (16S vs shotgun) | 297 | 0.808 | 0.808 | 0.34 | FAIL |
+| C: predict enriched vs depleted | 889 | 0.495 | 0.514 | 0.88 | FAIL |
+
+**A passes** — embeddings clearly encode which disease a paper is about.
+Independently corroborated: `nuisance_removal.py` measured 0.793 by a different
+route. The pipeline works.
+
+**C fails**, exactly as `ceiling_direction_probe.py` predicted from arithmetic.
+0.495 is below even the 0.538 majority-class floor. Note the probe was also
+built wrong (paper-level features against edge-level labels), so it was
+unanswerable either way — but the empirical result and the arithmetic agree.
+
+**B's "FAIL" is an artifact — do not quote it as a negative result.** Observed
+accuracy 0.8082 and null mean 0.8081 are the same number, and that number is the
+base rate: `16s` is 240 of 297 labelled papers = **0.808**. The classifier
+predicted "16S" for everything. Accuracy is the wrong metric at that imbalance;
+it needed AUC or balanced accuracy.
+
+The question B *meant* to ask — do embeddings encode concrete study-design facts?
+— is answered YES elsewhere in this handoff: `variable_sweep.py` gets **AUC
+0.838** on differential abundance method and 0.721 on antibiotic use, using AUC,
+which is imbalance-robust. **Rerun B with AUC before drawing any conclusion.**
+
 ### 5. The disease direction has been deleted from the space — surgically
 
 `nuisance_removal.py`. The contrast method (mean of up-papers − mean of
