@@ -4,6 +4,50 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+## 2026-09-01 — GraphRAG built; ties BM25 on ranking, wins only on containment
+
+Full write-up: `FINDINGS_task2.5_graphrag.md`. Code: `graphrag.py`,
+`compare_retrieval.py`.
+
+**Built.** Personalized PageRank retrieval (damping 0.85, ~900 nodes, no library):
+closed-vocabulary entity linking → PPR from the seeds → a connected subgraph with
+directions, evidence counts, containment links and backing papers. Multi-entity
+queries rank by the **geometric mean** of per-seed PPR, not a joint run, so a node
+must be close to *all* seeds rather than merely near the bigger disease.
+
+**Did NOT survive: the claim that GraphRAG beats BM25.** Over 6 queries with truth
+computed from the graph (bridge = ≥2 papers on both diseases), mean precision@10 is
+**GraphRAG 0.800 vs BM25 0.783** — a tie. GraphRAG wins 2, loses 1, ties 3.
+
+**Did NOT survive: "BM25 structurally cannot answer *what links PD and AD*".** It
+answers at P@10 = 1.00. `build_rag.py` is not pure BM25 — it already has entity
+matching and evidence weighting, so it filters to edges about either disease and
+ranks by paper count, and hub taxa *are* the bridges. Retire that claim.
+
+**Two measurement errors I made and corrected, logged so they are not repeated.**
+(1) The first bridge metric was *saturated*: bare co-membership makes 125 of 832
+taxa correct for PD/AD, so any ten hubs scored 1.00 and the systems tied trivially.
+A metric that cannot separate them is not evidence they are equal. (2) **PPR is
+direction-blind** — proximity has no sign, so "what is depleted in Parkinson's"
+returned enriched taxa too (P@10 0.60, a real loss). Direction is now an explicit
+filter on the seed disease; 0.60 → 0.80. It still loses that query type to BM25.
+
+**Survived — the actual case for the graph is containment, and it is quantified.**
+Query *Hungatella*: GraphRAG returns *Lachnospiraceae* depleted in PD (16 papers)
+beside *Hungatella* enriched (7), the rank conflict this project calls load-bearing;
+BM25 returns only Hungatella docs and cannot reach the family, because no document
+holds both claims. Corpus-wide: **903 (taxon, disease) edges have a parent edge in
+the same disease, and 229 of those (25%) point the opposite way.** That is the
+retrievable context BM25 structurally misses — and it doubles as a first result for
+the "are contested edges rank confusion?" question.
+
+**Recommendation.** Ship GraphRAG for its *output* (connected subgraph with
+provenance) and for containment traversal — not on a ranking-accuracy claim, which
+the data does not support. Keep `build_rag.py`: it is genuinely better on
+directional one-hop queries. Caveat: 6 queries is small and the 0.017 gap is noise.
+
+---
+
 ## 2026-09-01 — Relation-sentence filter: recall validated at 93.9%; the "41x reduction" was pilot noise
 
 **Tested.** Whether the relation-bearing sentence filter (`relation_sentences.py`)
