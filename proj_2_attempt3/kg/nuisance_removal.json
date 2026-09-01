@@ -12,46 +12,46 @@
   "Spinal cord injury (SCI)",
   "Stroke"
  ],
- "disease_acc_before": 0.7927927927927928,
- "disease_acc_after": 0.5315315315315315,
+ "disease_acc_before": 0.8198198198198198,
+ "disease_acc_after": 0.5855855855855856,
  "chance": 0.2753623188405797,
  "variables": [
   {
    "variable": "recruitment setting",
-   "auc_before": 0.6015,
-   "auc_after": 0.6089,
-   "delta": 0.0074
+   "auc_before": 0.6506,
+   "auc_after": 0.6232,
+   "delta": -0.0274
   },
   {
    "variable": "antibiotic use",
-   "auc_before": 0.7212,
-   "auc_after": 0.719,
-   "delta": -0.0022
+   "auc_before": 0.7161,
+   "auc_after": 0.7217,
+   "delta": 0.0056
   },
   {
    "variable": "sample storage",
-   "auc_before": 0.6949,
-   "auc_after": 0.6994,
-   "delta": 0.0045
+   "auc_before": 0.6359,
+   "auc_after": 0.6393,
+   "delta": 0.0034
   },
   {
    "variable": "bmi",
-   "auc_before": 0.7988,
-   "auc_after": 0.8214,
-   "delta": 0.0226
+   "auc_before": 0.7798,
+   "auc_after": 0.8141,
+   "delta": 0.0343
   },
   {
    "variable": "disease severity",
-   "auc_before": 0.7186,
-   "auc_after": 0.7228,
-   "delta": 0.0042
+   "auc_before": 0.7181,
+   "auc_after": 0.7291,
+   "delta": 0.0109
   },
   {
    "variable": "differential abundance method",
-   "auc_before": 0.8382,
-   "auc_after": 0.8385,
-   "delta": 0.0002
+   "auc_before": 0.8429,
+   "auc_after": 0.8424,
+   "delta": -0.0005
   }
  ],
- "mean_delta": 0.006116666666666666
+ "mean_delta": 0.004383333333333333
 }

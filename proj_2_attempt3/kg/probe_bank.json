@@ -1,0 +1,154 @@
+{
+  "_comment": "Named study-design concepts, written as prose a Methods section would contain. Querying a variable NAME does not work (chunk_search.py: 'hospital beds' scores 0.347 and retrieves author affiliations); querying a SENTENCE does (0.707). Each concept gets 2-3 phrasings, scored by max cosine, so a paper matching ANY phrasing scores well. Concepts are chosen for coverage the audit actually verified -- see FINDINGS_variable_coverage.md. Probes marked low_coverage are kept as negative controls: if a 3.3%-coverage concept ranks top, the pipeline is finding noise.",
+
+  "recruitment_hospital": [
+    "patients were recruited from the inpatient neurology ward of our hospital",
+    "consecutive patients admitted to the department were enrolled in this study",
+    "subjects were recruited from the outpatient clinic during routine visits"
+  ],
+  "recruitment_community": [
+    "healthy controls were recruited from the local community as volunteers",
+    "participants were enrolled through community-based door-to-door recruitment",
+    "control subjects were spouses or caregivers living in the same household"
+  ],
+  "recruitment_carehome": [
+    "participants were residents of nursing homes and long-term care facilities",
+    "subjects were recruited from residential care institutions"
+  ],
+
+  "storage_minus80": [
+    "fecal samples were immediately frozen and stored at -80 degrees Celsius",
+    "stool specimens were snap frozen in liquid nitrogen upon collection"
+  ],
+  "storage_delayed": [
+    "samples were transported to the laboratory within two hours of collection",
+    "specimens were kept at 4 degrees before being processed the following day"
+  ],
+  "storage_homecollection": [
+    "participants collected stool samples at home using a collection kit",
+    "samples were self-collected and mailed to the laboratory"
+  ],
+
+  "antibiotics_excluded": [
+    "participants who had received antibiotics within three months were excluded",
+    "antibiotic use in the preceding month was an exclusion criterion for both groups"
+  ],
+  "probiotics_excluded": [
+    "subjects who had taken probiotics or prebiotics were excluded from the study",
+    "no participant consumed yogurt or fermented products before sampling"
+  ],
+  "ppi_medication": [
+    "use of proton pump inhibitors or laxatives was recorded for each participant",
+    "patients taking metformin or other drugs affecting the gut were excluded"
+  ],
+
+  "dna_kit_qiagen": [
+    "genomic DNA was extracted using the QIAamp DNA stool mini kit",
+    "total DNA was isolated with the QIAGEN PowerSoil DNA isolation kit"
+  ],
+  "seq_16s_v34": [
+    "the V3-V4 hypervariable region of the 16S rRNA gene was amplified and sequenced",
+    "amplicons targeting the V4 region were sequenced on the Illumina MiSeq platform"
+  ],
+  "seq_shotgun": [
+    "shotgun metagenomic sequencing was performed on the extracted DNA",
+    "whole metagenome shotgun libraries were sequenced to a depth of 10 gigabases"
+  ],
+  "pipeline_qiime": [
+    "sequences were processed using QIIME2 and clustered into operational taxonomic units",
+    "reads were denoised with DADA2 and assigned taxonomy against the SILVA database"
+  ],
+
+  "stats_lefse": [
+    "linear discriminant analysis effect size LEfSe was used to identify differentially abundant taxa",
+    "taxa with an LDA score above 2.0 were considered significantly enriched"
+  ],
+  "stats_parametric": [
+    "differential abundance was assessed with DESeq2 and negative binomial models",
+    "group differences were tested using the Wilcoxon rank sum test"
+  ],
+  "stats_correction": [
+    "p values were adjusted for multiple comparisons using the Benjamini-Hochberg procedure",
+    "the false discovery rate was controlled at 0.05 across all comparisons"
+  ],
+  "stats_confounder_adjusted": [
+    "models were adjusted for age, sex and body mass index as covariates",
+    "multivariate analysis controlled for potential confounding factors"
+  ],
+
+  "severity_motor": [
+    "disease severity was assessed using the UPDRS and Hoehn and Yahr stage",
+    "motor function was scored with the unified rating scale at enrollment"
+  ],
+  "severity_cognitive": [
+    "cognitive function was evaluated with the MMSE and MoCA scores",
+    "participants underwent neuropsychological assessment including the clinical dementia rating"
+  ],
+  "severity_early_disease": [
+    "patients were treatment naive and newly diagnosed at the time of sampling",
+    "only participants with early stage disease and short symptom duration were included"
+  ],
+  "severity_advanced": [
+    "patients had long standing disease with a mean duration exceeding ten years",
+    "the cohort comprised individuals with advanced and progressive disease"
+  ],
+
+  "bmi_matched": [
+    "there was no significant difference in body mass index between patients and controls",
+    "cases and controls were matched for age, sex and body mass index"
+  ],
+  "bmi_reported": [
+    "the mean body mass index of the patients was 24.5 kilograms per square metre",
+    "anthropometric measurements including height, weight and BMI were recorded"
+  ],
+
+  "diet_recorded": [
+    "dietary intake was assessed using a validated food frequency questionnaire",
+    "participants maintained their habitual diet throughout the study period"
+  ],
+  "diet_controlled": [
+    "subjects following a vegetarian or special diet were excluded from the study",
+    "no participant had changed their dietary habits in the preceding month"
+  ],
+
+  "constipation_gi": [
+    "gastrointestinal symptoms including constipation were assessed by questionnaire",
+    "patients with inflammatory bowel disease or gastrointestinal surgery were excluded"
+  ],
+  "comorbidity_metabolic": [
+    "participants with diabetes, hypertension or metabolic syndrome were recorded",
+    "subjects with serious cardiovascular, hepatic or renal dysfunction were excluded"
+  ],
+
+  "cohort_small": [
+    "a total of twenty patients and twenty matched healthy controls were enrolled",
+    "the sample size was limited by the availability of eligible participants"
+  ],
+  "cohort_large": [
+    "we recruited more than two hundred participants across multiple centres",
+    "this multicentre study enrolled patients from several independent cohorts"
+  ],
+  "cohort_longitudinal": [
+    "stool samples were collected at baseline and again at twelve month follow up",
+    "participants were followed prospectively with repeated sampling over time"
+  ],
+
+  "sex_imbalance": [
+    "the majority of participants in the patient group were male",
+    "there was a significant difference in sex distribution between the two groups"
+  ],
+  "age_elderly": [
+    "participants were aged between sixty and ninety five years",
+    "the mean age of the cohort exceeded seventy years"
+  ],
+
+  "_negative_controls": "concepts below are rare in this corpus (audit shows <5% VALUED). If they rank highly, the pipeline is surfacing noise.",
+  "nc_probiotic_intervention": [
+    "participants received a daily probiotic supplement for twelve weeks",
+    "the intervention group was given a multi strain probiotic capsule"
+  ],
+  "nc_animal_model": [
+    "germ free mice were colonised with faecal microbiota from patients",
+    "the animal model was treated with antibiotics to deplete the gut microbiota"
+  ]
+}
