@@ -4,6 +4,53 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+## 2026-09-01 — Adjudicated the doubly-contradicted pairs: 11 of 12 were OUR reading, correctly
+
+Full write-up: `FINDINGS_task3_adjudication.md`. Verdicts + quotes:
+`adjudication_verdicts.json`.
+
+**Tested.** The pairs contradicted by BOTH Disbiome and Peryton — the strongest
+error signal available. On the screened graph there are **14** (the 11 on record
+predates the rebuild). Each read against its source papers' own sentences.
+
+**Survived: our extraction.** 11 of 12 adjudicable pairs faithfully report what the
+paper says. **1 extraction error in fourteen.** The doubly-contradicted set is not a
+pile of our mistakes — it is mostly the literature disagreeing with itself. Nine are
+genuine disputes, and **three are acknowledged by the source papers themselves**:
+Dorea *"contrary to Liu's findings (2019)"*; Dialister *"previously shown to have a
+higher relative abundance ... in a Southern China population ... may reflect dietary
+or other geographical differences"*; Halomonas *"Different from Vogt's and Liu's
+studies"*. Dialister is the model contested edge — correct, >10-fold, and the paper
+names both the conflict and a mechanism.
+
+**The one real error: Phascolarctobacterium / Parkinson's — DROP.** Its only
+supporting sentence says the genus was *"correlated with disease stage"* — a
+severity correlation within patients, with no direction and no case-vs-control
+contrast. The direction was manufactured. A specific, auditable failure mode:
+reading a severity correlation as a disease-vs-healthy direction, despite the
+extraction prompt being gated on exactly that contrast.
+
+**Two structural defects, both bigger than the error.**
+(1) **Rank placeholders are folded into their parent.** Erysipelotrichaceae/PD looked
+like a 4-paper contradiction; in fact 3 of 4 papers report *"Erysipelotrichaceae
+UCG-003"*, a genus-level SILVA placeholder INSIDE the family, folded onto the family
+taxid, and the 4th attributes the change to a member species. No paper measures the
+family aggregate. Systematic: **74 placeholder strings onto 37 taxids, 21 edges named
+only by a placeholder, 170 mixed, 52 of those contested.** Lachnospiraceae alone
+absorbs ND3007/ND3008/NK4A136/UCG-001/UCG-004/UCG-008. This violates the project's own
+rule that synonym folding and containment are different operations — a UCG label is a
+*child*, not a synonym.
+(2) **Body site is not in the edge key.** Rothia/PD is not a contradiction: both our
+papers are saliva studies, the curated records are gut. Gemella/PD is the same paper
+and almost certainly the same story.
+
+**Next lever (highest value in the project right now).** Stop folding rank
+placeholders into parents — give `X UCG-003` its own node as a containment child of
+`X`. It is a bug fix rather than a judgement call, touches ~191 edges, and resolves
+the worst-looking contradiction in the set.
+
+---
+
 ## 2026-09-01 — GraphRAG built; ties BM25 on ranking, wins only on containment
 
 Full write-up: `FINDINGS_task2.5_graphrag.md`. Code: `graphrag.py`,

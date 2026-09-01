@@ -1,0 +1,112 @@
+[
+ {
+  "pair": 1, "taxon": "Erysipelotrichaceae", "disease": "Parkinson's disease",
+  "ours": "depleted", "n_papers": 4, "disbiome": "enriched", "peryton": "enriched",
+  "verdict": "rank_artifact",
+  "summary": "Direction faithfully extracted, but the NODE is wrong. 3 of 4 papers report 'Erysipelotrichaceae UCG-003', an uncultured genus-level SILVA placeholder INSIDE the family, which taxonomy.py folded onto the family taxid. The 4th names the family but attributes the change to a member (Eubacterium biforme). No paper measures the family aggregate, so our family-level 'depleted' is an aggregation artifact. The curated databases record the family enriched in PD; both can be true simultaneously.",
+  "quote": "HC samples consistently exhibited higher relative abundances of SCFA-producing genera such as Blautia, Fusicatenibacter, and Erysipelotrichaceae UCG-003.",
+  "action": "Do not fold rank placeholders into their parent. Split UCG-003 into its own node."
+ },
+ {
+  "pair": 2, "taxon": "Dorea", "disease": "Alzheimer's disease",
+  "ours": "depleted", "n_papers": 3, "disbiome": "enriched", "peryton": "enriched",
+  "verdict": "ours_correct_genuine_dispute",
+  "summary": "Three independent papers, explicit and quantitative. One of them names the contradicting prior study itself.",
+  "quote": "The abundance of Dorea was greatly lower in patients with cognitive impairment than that in normal controls (mean, AD vs. MCI vs. NC: 0.17% vs. 0.13% vs. 0.54%, p < 0.01)",
+  "action": "Keep. The source paper states 'which was contrary to Liu's findings (Liu et al., 2019)' — the disagreement is real and already acknowledged in the literature."
+ },
+ {
+  "pair": 3, "taxon": "Rothia", "disease": "Parkinson's disease",
+  "ours": "enriched", "n_papers": 2, "disbiome": "depleted", "peryton": "depleted",
+  "verdict": "body_site_mismatch",
+  "summary": "Not a contradiction. Both our papers are SALIVA/oral microbiome studies in PD with dementia; the curated records are gut. Our edge does not carry body site, so an oral finding and a gut finding collide on one node.",
+  "quote": "SAL1, enriched in PDD patients, was increased in pathobionts such as Streptococcus, Rothia and Veillonella and showed an enrichment for proline biosynthesis.",
+  "action": "Add body site to the edge key, or restrict the graph to stool."
+ },
+ {
+  "pair": 4, "taxon": "Paraprevotella", "disease": "Parkinson's disease",
+  "ours": "depleted", "n_papers": 2, "disbiome": "enriched", "peryton": "enriched",
+  "verdict": "ours_correct_genuine_dispute",
+  "summary": "Paper 1 is explicit and unconditional. Paper 2's support is weaker and CONDITIONAL — the reduction is female-specific — which our unconditional edge does not record.",
+  "quote": "The NPD group presented higher levels of Bulleidia, Turicibacter, and Adlercreutzia and lower levels of Streptococcus, Ruminococcus, and Paraprevotella compared to the HCs.",
+  "action": "Keep, but note the second paper's effect is sex-conditional; the edge over-claims generality."
+ },
+ {
+  "pair": 5, "taxon": "Sutterella", "disease": "Alzheimer's disease",
+  "ours": "enriched", "n_papers": 1, "disbiome": "depleted", "peryton": "depleted",
+  "verdict": "unadjudicable",
+  "summary": "Source paper is not in relation_sentences.json (which covers only the original 250), so no sentence is retrievable here.",
+  "quote": "", "action": "Re-run the sentence filter over the full 326-paper corpus, then adjudicate."
+ },
+ {
+  "pair": 6, "taxon": "Stenotrophomonas", "disease": "Parkinson's disease",
+  "ours": "enriched", "n_papers": 1, "disbiome": "depleted", "peryton": "depleted",
+  "verdict": "ours_correct_genuine_dispute",
+  "summary": "Correctly extracted. Note the contrast is iRBD and PD-with-RBD versus controls, i.e. a PD subgroup rather than PD at large.",
+  "quote": "4 genera (Aerococcus, Eubacterium, Gordonibacter and Stenotrophomonas) were found consistently increased while 3 genera (Butyricicoccus, Faecalibacterium and Haemophilus) were found consistently decreased in iRBD and PD with RBD group.",
+  "action": "Keep; flag as an RBD-subgroup finding."
+ },
+ {
+  "pair": 7, "taxon": "Roseburia inulinivorans", "disease": "Parkinson's disease",
+  "ours": "depleted", "n_papers": 1, "disbiome": "enriched", "peryton": "enriched",
+  "verdict": "ours_correct_genuine_dispute",
+  "summary": "Correctly extracted from a PDD-prediction feature list.",
+  "quote": "The decrease in beneficial bacteria such as Faecalibacterium prausnitzii, Roseburia faecis, Roseburia inulinivorans, Eubacterium rectale in the gut ... were the most important features in predicting PDD",
+  "action": "Keep. Single paper against single records on both sides — low evidence all round."
+ },
+ {
+  "pair": 8, "taxon": "Phascolarctobacterium", "disease": "Parkinson's disease",
+  "ours": "depleted", "n_papers": 1, "disbiome": "enriched", "peryton": "enriched",
+  "verdict": "EXTRACTION_ERROR",
+  "summary": "The only sentence naming the taxon reports a CORRELATION WITH DISEASE STAGE, not a case-vs-control contrast, and states no direction at all. The 'depleted' direction was manufactured. The curated databases are more likely right here.",
+  "quote": "On genus level, in addition to Faecalibacterium, also Bacteroides, Clostridium, Phascolarctobacterium, Coprococcus, Odoribacter were correlated with disease stage.",
+  "action": "DROP this edge. Correlation-with-severity is not enrichment vs healthy controls."
+ },
+ {
+  "pair": 9, "taxon": "Halomonas", "disease": "Alzheimer's disease",
+  "ours": "enriched", "n_papers": 1, "disbiome": "depleted", "peryton": "depleted",
+  "verdict": "ours_correct_genuine_dispute",
+  "summary": "Correctly extracted, and the paper explicitly frames itself as disagreeing with the studies the databases curate. Caveat: it calls these 'non-abundant genera'.",
+  "quote": "Different from Vogt's and Liu's studies, we found that such non-abundant genera as Collinsella, Enterococcus, Olsenella, Eubacterium, Christensenella, Anaerotruncus, and Halomonas were also enriched in AD-associated fecal microbiota",
+  "action": "Keep; low-abundance taxon, weak on both sides."
+ },
+ {
+  "pair": 10, "taxon": "Gemella", "disease": "Parkinson's disease",
+  "ours": "enriched", "n_papers": 1, "disbiome": "depleted", "peryton": "depleted",
+  "verdict": "unadjudicable",
+  "summary": "No retrievable text. Sole source is the same saliva metaproteogenomic paper behind pair 3, so a body-site mismatch is the likely explanation.",
+  "quote": "", "action": "Treat as probable body-site mismatch; confirm after re-running the filter on the full corpus."
+ },
+ {
+  "pair": 11, "taxon": "Dialister", "disease": "Parkinson's disease",
+  "ours": "depleted", "n_papers": 1, "disbiome": "enriched", "peryton": "enriched",
+  "verdict": "ours_correct_genuine_dispute",
+  "summary": "The best-documented dispute of the fourteen. Correctly extracted, large effect, and the paper identifies the contradicting study AND proposes a mechanism for the discrepancy.",
+  "quote": "the genus Dialister has previously been shown to have a higher relative abundance in PD patients in a Southern China population [50], which may reflect dietary or other geographical differences.",
+  "action": "Keep. This is what a legitimately contested edge looks like."
+ },
+ {
+  "pair": 12, "taxon": "Citrobacter", "disease": "Parkinson's disease",
+  "ours": "depleted", "n_papers": 1, "disbiome": "enriched", "peryton": "enriched",
+  "verdict": "ours_correct_genuine_dispute",
+  "summary": "Correctly extracted from an LEfSe comparison against healthy controls.",
+  "quote": "The mean abundances of the genera Lactobacillus, Streptococcus, Enterobacter, Citrobacter, Hungatella, Erysipelatoclostridium, and Veillonella were higher in the HC group than in the OPD group",
+  "action": "Keep."
+ },
+ {
+  "pair": 13, "taxon": "Bulleidia", "disease": "Parkinson's disease",
+  "ours": "enriched", "n_papers": 1, "disbiome": "depleted", "peryton": "depleted",
+  "verdict": "ours_correct_genuine_dispute",
+  "summary": "Correctly extracted; two sentences in the same paper agree.",
+  "quote": "The NPD group presented higher levels of Bulleidia, Turicibacter, and Adlercreutzia ... compared to the HCs.",
+  "action": "Keep."
+ },
+ {
+  "pair": 14, "taxon": "Acidaminococcus", "disease": "Parkinson's disease",
+  "ours": "depleted", "n_papers": 1, "disbiome": "enriched", "peryton": "enriched",
+  "verdict": "ours_correct_genuine_dispute",
+  "summary": "Correctly extracted.",
+  "quote": "HCs had a slightly (but significantly) lower abundance of Bulleidia, Turicibacter, and Adlercreutzia and higher levels of Streptococcus, Ruminococcus, Paraprevotella, 7N15, and Acidaminococcus than the NPD group",
+  "action": "Keep."
+ }
+]
