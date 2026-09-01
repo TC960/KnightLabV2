@@ -54,6 +54,7 @@ class CachedTaxonomy:
         self.rank = {}         # taxid -> rank
         self.parent = {}       # taxid -> nearest-ancestor taxid (graph-local)
         self.misses = set()
+        self._name2ids = None
         self._source = graph_path
         if not self.ok:
             return
@@ -79,6 +80,20 @@ class CachedTaxonomy:
             par = str(h.get("parent", "")).replace("t:ncbi:", "")
             if child and par:
                 self.parent[child] = par
+
+    @property
+    def name2ids(self):
+        """Mirror of Taxonomy.name2ids so this is a true drop-in.
+
+        Callers use it two ways: as a membership test ("is this string a known
+        name?") and as a candidate list. Both are satisfied by wrapping each cached
+        taxid in the same (taxid, name_class) shape. Everything cached came from a
+        node the taxdump had already resolved, so "scientific name" is the honest
+        class -- the cache never stores a name it could not resolve.
+        """
+        if self._name2ids is None:
+            self._name2ids = {k: [(v, "scientific name")] for k, v in self.name2tid.items()}
+        return self._name2ids
 
     @staticmethod
     def _norm(s):

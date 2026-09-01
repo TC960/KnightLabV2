@@ -235,9 +235,28 @@ def load_taxonomy():
     sys.path.insert(0, HERE)
     from taxonomy import Taxonomy
     t = Taxonomy()
-    if not t.ok:
-        sys.exit("NCBI taxdump not found (see taxonomy.py TAX_DATA) — cannot run.")
-    return t
+    if t.ok:
+        return t
+    # Fall back to the replay cache (taxonomy_cache.py) where the taxdump cannot be
+    # fetched. The bias is ASYMMETRIC and matters differently for the two numbers
+    # this module reports, so it must not be papered over:
+    #
+    #   RECALL is close to unaffected. It asks whether a surviving sentence still
+    #   supports a relation the extractor already found, and those taxa are by
+    #   construction in graph.json — so the cache resolves them.
+    #
+    #   REDUCTION is OVERSTATED. The cache knows only the ~1k names in the graph,
+    #   so taxa the paper mentions but we never extracted go unresolved, their
+    #   sentences are discarded, and the filter looks more aggressive than it is.
+    #
+    # Treat the reduction ratio as an upper bound until this is rerun on a taxdump.
+    from taxonomy_cache import CachedTaxonomy
+    c = CachedTaxonomy()
+    if not c.ok:
+        sys.exit("No taxonomy available: no NCBI taxdump and no graph.json to replay.")
+    print("WARNING: no NCBI taxdump — using the graph.json replay cache.")
+    print("         recall is ~unaffected; REDUCTION RATIO IS AN UPPER BOUND.\n")
+    return c
 
 
 def filter_paper(text, matcher, mode="loose"):

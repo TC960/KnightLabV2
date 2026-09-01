@@ -4,6 +4,44 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+## 2026-09-01 — Relation-sentence filter: recall validated at 93.9%; the "41x reduction" was pilot noise
+
+**Tested.** Whether the relation-bearing sentence filter (`relation_sentences.py`)
+keeps the sentences that actually support the relations we extracted — the check
+that had to pass before anything downstream is allowed to use it.
+
+**Survived — the filter is safe to build on, in `loose` mode.** Replaying all
+**2,262** extracted relations across 250 papers:
+
+| | strict | **loose** |
+|---|---:|---:|
+| sentence reduction | 22.2x | **14.7x** |
+| taxon string anywhere in raw paper (ceiling) | 96.7% | 96.7% |
+| taxon seen by matcher | 94.8% | 95.8% |
+| **taxon in a KEPT sentence (headline recall)** | 84.8% | **93.9%** |
+| share of what the matcher saw (= cue-filter cost) | 89.4% | **98.0%** |
+| kept-sentence cue agrees with direction | 86.7% | 96.4% |
+
+Against a **ceiling of 96.7%** — 3.3% of extracted relations name a taxon that never
+appears literally in the paper, so no sentence filter can reach them — loose mode
+recovers **97.1% of what is recoverable**, and the direction cue filter costs only
+2.0%. Strict mode is the wrong trade: it buys 1.5x more reduction for 9 points of
+recall, discarding 226 real relations at the cue step alone. **Use loose.**
+
+**Correction: the reduction ratio was badly overstated.** The 25-paper pilot on
+record claimed *"13,082 sentences -> 312 (2.4%), a 41x reduction"*. At corpus scale
+it is **14.4x** (75,004 -> 5,210 sentences; 10.2x on characters). The pilot
+generalised from 25 papers and was off by ~3x. Anything reasoning from "2.4% of
+sentences" should be redone at 6.9%.
+
+**Kept the existing `relation_sentences.json`** (taxdump-built, 5,210 sentences)
+rather than overwriting it with a cache-built one (5,102). That 2.1% gap is a clean
+empirical bound on the replay cache's bias for this task — smaller than expected,
+and it confirms the cache understates sentences kept, so measured reduction ratios
+are an upper bound.
+
+---
+
 ## 2026-09-01 — MAIN_DATA screen: contamination confirmed, but it is not what moved agreement
 
 Full write-up: `FINDINGS_task1_maindata_filter.md`.
