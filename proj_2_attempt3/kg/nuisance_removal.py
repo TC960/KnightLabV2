@@ -159,11 +159,23 @@ def main():
             names.append(d)
     C = np.vstack(cents)
     C = C - C.mean(axis=0, keepdims=True)     # centre: remove the global mean first
-    U, S, _ = np.linalg.svd(C, full_matrices=False)
+    U, S, Vt = np.linalg.svd(C, full_matrices=False)
     # keep components explaining 95% of the between-disease variance
     ev = (S ** 2) / (S ** 2).sum()
     k = int(np.searchsorted(np.cumsum(ev), 0.95) + 1)
-    B = np.linalg.qr(C.T[:, :])[0][:, :k]     # orthonormal basis, 384 x k
+    # The RIGHT singular vectors are the principal directions in the 384-dim
+    # embedding space, so the basis must come from Vt.
+    #
+    # This previously read `np.linalg.qr(C.T)[0][:, :k]`, which is Gram-Schmidt
+    # over the centroids IN ALPHABETICAL ORDER OF DISEASE NAME -- an orthonormal
+    # basis for a subspace, but not the top-variance one. Five of seven
+    # directions happened to coincide; two were nearly orthogonal to the
+    # intended ones (principal-angle cosines 0.161 and 0.007). The printed "96%
+    # of variance" described the SVD subspace while the code removed a different
+    # one capturing 83.3%, and held-out disease accuracy stalled at ~0.52
+    # instead of 0.14. That was misread as a method limitation needing INLP
+    # iteration; it was this line.
+    B = Vt[:k].T                              # orthonormal basis, 384 x k
     print(f"disease subspace: {len(names)} centroids -> rank {k} "
           f"({100*ev[:k].sum():.0f}% of between-disease variance)\n")
 

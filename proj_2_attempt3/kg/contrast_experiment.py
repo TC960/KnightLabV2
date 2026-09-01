@@ -50,9 +50,12 @@ Paper score for a probe is the MAX cosine over that paper's chunks, never the
 mean: a paper states its storage protocol in one sentence out of ~69, and
 averaging drowns it.
 
-Runs on the DISEASE-DECONFOUNDED vectors by default, so a hit cannot simply be
-"these two piles are about different diseases". Probes are projected through the
-same basis -- comparing a raw probe against deconfounded chunks is meaningless.
+Runs on the DISEASE-DECONFOUNDED vectors by default. How far that goes is an
+empirical question, not a guarantee: check the held-out disease accuracy printed
+by nuisance_removal.py. If it sits above chance, disease is ATTENUATED, not
+eliminated, and a hit could still be partly a disease effect. Probes are
+projected through the same basis -- comparing a raw probe against deconfounded
+chunks is meaningless.
 
     python contrast_experiment.py
     python contrast_experiment.py --raw-space     # sanity: how much did disease drive it?
@@ -71,6 +74,10 @@ BASIS = os.path.join(HERE, "disease_basis.npy")
 GRAPH = os.path.join(HERE, "graph.json")
 BANK = os.path.join(HERE, "probe_bank.json")
 OUT = os.path.join(HERE, "contrast_experiment.json")
+# --raw-space must NOT share the primary output path: running the sanity check
+# silently overwrote the headline result, so the artifact on disk contradicted
+# the numbers being quoted from it.
+OUT_RAW = os.path.join(HERE, "contrast_experiment_rawspace.json")
 MODEL = "all-MiniLM-L6-v2"
 N_PERM = 10000
 MIN_SIDE = 2          # an edge needs this many papers on BOTH sides to contribute
@@ -202,16 +209,27 @@ def main():
     print(f"\n{len(sig)} concept(s) survive BH at q<0.05 out of {len(names)}")
     if not sig:
         sd = null.std(axis=0).mean()
-        print(f"  NULL RESULT. Mean null SD of the statistic is {sd:.4f}, so the "
-              f"smallest\n  effect this design could detect is roughly "
-              f"{1.96*sd:.4f}; the largest observed is {np.abs(obs).max():.4f}.")
+        # 1.96*SD is the threshold for an UNCORRECTED single test at 50% power.
+        # The actual decision rule is BH q<0.05 across all probes, which is far
+        # stricter, so quoting 1.96*SD as "the minimum detectable effect"
+        # overstates sensitivity by roughly 1.6-2x.
+        from math import sqrt
+        n_p = len(names)
+        z_bh = 3.18 if n_p > 20 else 2.81      # ~BH-corrected z, best case
+        print(f"  NULL RESULT. Mean null SD of the statistic is {sd:.4f}.")
+        print(f"    uncorrected single test, 50% power : {1.96*sd:.3f}")
+        print(f"    BH q<0.05 across {n_p} probes, 50% power : {z_bh*sd:.3f}")
+        print(f"    BH q<0.05, 80% power                : {(z_bh+0.84)*sd:.3f}")
+        print(f"    largest observed effect             : {np.abs(obs).max():.3f}")
+        print("  The largest effect is below even the 50%-power BH threshold.")
         print("  Report as 'no study-design concept separates the camps at n=303',\n"
               "  with that power statement attached -- not as 'there is no effect'.")
 
+    out_path = OUT if use_deconf else OUT_RAW
     json.dump({"space": "deconfounded" if use_deconf else "raw",
                "n_edges": len(edges), "n_pairs": int(w.sum()),
-               "n_perm": N_PERM, "results": res}, open(OUT, "w"), indent=1)
-    print(f"\nwrote {OUT}")
+               "n_perm": N_PERM, "results": res}, open(out_path, "w"), indent=1)
+    print(f"\nwrote {out_path}")
 
 
 if __name__ == "__main__":

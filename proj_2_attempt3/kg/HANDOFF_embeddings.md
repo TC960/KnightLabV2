@@ -160,9 +160,12 @@ between-disease variance.
 
 | test | before | after |
 |---|---:|---:|
-| disease predictable (held-out, 11 classes, chance 0.275) | 0.793 | **0.532** |
-| mean study-design AUC change | — | **+0.006** |
-| bmi AUC | 0.799 | **0.821** |
+| disease predictable (held-out, 11 classes, chance 0.275) | 0.820 | **0.171** — *below* chance |
+| mean study-design AUC change | — | **+0.008** |
+| bmi AUC | 0.780 | **0.801** |
+
+*(Numbers updated 2026-09-01 after an independent audit found a basis bug — see
+`VALIDATION_report.md` G1. The pre-fix figures were 0.820 -> 0.586.)*
 
 Disease collapses, study-design signal survives, BMI *improves* — which is what
 should happen when a dominant nuisance stops crowding a weaker axis. This is also

@@ -13,45 +13,45 @@
   "Stroke"
  ],
  "disease_acc_before": 0.8198198198198198,
- "disease_acc_after": 0.5855855855855856,
+ "disease_acc_after": 0.17117117117117117,
  "chance": 0.2753623188405797,
  "variables": [
   {
    "variable": "recruitment setting",
    "auc_before": 0.6506,
-   "auc_after": 0.6232,
-   "delta": -0.0274
+   "auc_after": 0.6428,
+   "delta": -0.0078
   },
   {
    "variable": "antibiotic use",
    "auc_before": 0.7161,
-   "auc_after": 0.7217,
-   "delta": 0.0056
+   "auc_after": 0.7456,
+   "delta": 0.0295
   },
   {
    "variable": "sample storage",
    "auc_before": 0.6359,
-   "auc_after": 0.6393,
-   "delta": 0.0034
+   "auc_after": 0.6362,
+   "delta": 0.0003
   },
   {
    "variable": "bmi",
    "auc_before": 0.7798,
-   "auc_after": 0.8141,
-   "delta": 0.0343
+   "auc_after": 0.8005,
+   "delta": 0.0207
   },
   {
    "variable": "disease severity",
    "auc_before": 0.7181,
-   "auc_after": 0.7291,
-   "delta": 0.0109
+   "auc_after": 0.7214,
+   "delta": 0.0032
   },
   {
    "variable": "differential abundance method",
    "auc_before": 0.8429,
-   "auc_after": 0.8424,
-   "delta": -0.0005
+   "auc_after": 0.8422,
+   "delta": -0.0007
   }
  ],
- "mean_delta": 0.004383333333333333
+ "mean_delta": 0.007533333333333334
 }

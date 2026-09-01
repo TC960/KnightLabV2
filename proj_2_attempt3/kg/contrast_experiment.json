@@ -1,245 +1,245 @@
 {
- "space": "raw",
+ "space": "deconfounded",
  "n_edges": 43,
  "n_pairs": 509,
  "n_perm": 10000,
  "results": [
   {
    "concept": "stats_correction",
-   "effect": -0.09136,
-   "p": 0.026797320267973202,
-   "q": 0.7764823517648235,
+   "effect": -0.09725,
+   "p": 0.0182981701829817,
+   "q": 0.40455954404559547,
    "higher_in": "down-papers"
   },
   {
    "concept": "cohort_longitudinal",
-   "effect": 0.08153,
-   "p": 0.04709529047095291,
-   "q": 0.7764823517648235,
+   "effect": 0.09332,
+   "p": 0.023797620237976203,
+   "q": 0.40455954404559547,
    "higher_in": "up-papers"
   },
   {
    "concept": "recruitment_hospital",
-   "effect": -0.06582,
-   "p": 0.11228877112288771,
-   "q": 0.7764823517648235,
+   "effect": -0.0835,
+   "p": 0.04279572042795721,
+   "q": 0.4850181648501817,
    "higher_in": "down-papers"
   },
   {
-   "concept": "probiotics_excluded",
-   "effect": 0.05992,
-   "p": 0.148985101489851,
-   "q": 0.7764823517648235,
-   "higher_in": "up-papers"
-  },
-  {
-   "concept": "nc_probiotic_intervention",
-   "effect": 0.05599,
-   "p": 0.18038196180381963,
-   "q": 0.7764823517648235,
-   "higher_in": "up-papers"
-  },
-  {
-   "concept": "storage_homecollection",
-   "effect": 0.05403,
-   "p": 0.18948105189481051,
-   "q": 0.7764823517648235,
-   "higher_in": "up-papers"
-  },
-  {
    "concept": "storage_minus80",
-   "effect": 0.05206,
-   "p": 0.21037896210378962,
-   "q": 0.7764823517648235,
-   "higher_in": "up-papers"
-  },
-  {
-   "concept": "comorbidity_metabolic",
-   "effect": 0.0501,
-   "p": 0.2283771622837716,
-   "q": 0.7764823517648235,
+   "effect": 0.05403,
+   "p": 0.19808019198080193,
+   "q": 0.9171405440101151,
    "higher_in": "up-papers"
   },
   {
    "concept": "diet_controlled",
-   "effect": 0.0501,
-   "p": 0.22357764223577642,
-   "q": 0.7764823517648235,
+   "effect": 0.04813,
+   "p": 0.24087591240875914,
+   "q": 0.9171405440101151,
    "higher_in": "up-papers"
   },
   {
-   "concept": "seq_shotgun",
-   "effect": -0.04813,
-   "p": 0.22747725227477253,
-   "q": 0.7764823517648235,
-   "higher_in": "down-papers"
-  },
-  {
-   "concept": "constipation_gi",
-   "effect": 0.04617,
-   "p": 0.265973402659734,
-   "q": 0.8065400356516073,
-   "higher_in": "up-papers"
-  },
-  {
-   "concept": "cohort_large",
-   "effect": 0.03831,
-   "p": 0.3641635836416358,
-   "q": 0.8065400356516073,
-   "higher_in": "up-papers"
-  },
-  {
-   "concept": "dna_kit_qiagen",
-   "effect": -0.03635,
-   "p": 0.38446155384461556,
-   "q": 0.8065400356516073,
+   "concept": "severity_cognitive",
+   "effect": -0.04224,
+   "p": 0.31286871312868714,
+   "q": 0.9171405440101151,
    "higher_in": "down-papers"
   },
   {
    "concept": "diet_recorded",
+   "effect": 0.04224,
+   "p": 0.30756924307569244,
+   "q": 0.9171405440101151,
+   "higher_in": "up-papers"
+  },
+  {
+   "concept": "storage_homecollection",
+   "effect": 0.04028,
+   "p": 0.32786721327867213,
+   "q": 0.9171405440101151,
+   "higher_in": "up-papers"
+  },
+  {
+   "concept": "seq_shotgun",
+   "effect": -0.03635,
+   "p": 0.37506249375062495,
+   "q": 0.9171405440101151,
+   "higher_in": "down-papers"
+  },
+  {
+   "concept": "probiotics_excluded",
    "effect": 0.03635,
-   "p": 0.38106189381061895,
-   "q": 0.8065400356516073,
-   "higher_in": "up-papers"
-  },
-  {
-   "concept": "storage_delayed",
-   "effect": 0.03438,
-   "p": 0.40845915408459155,
-   "q": 0.8065400356516073,
-   "higher_in": "up-papers"
-  },
-  {
-   "concept": "pipeline_qiime",
-   "effect": 0.03242,
-   "p": 0.43625637436256376,
-   "q": 0.8065400356516073,
-   "higher_in": "up-papers"
-  },
-  {
-   "concept": "severity_early_disease",
-   "effect": 0.03045,
-   "p": 0.46865313468653136,
-   "q": 0.8065400356516073,
+   "p": 0.3835616438356164,
+   "q": 0.9171405440101151,
    "higher_in": "up-papers"
   },
   {
    "concept": "stats_confounder_adjusted",
-   "effect": 0.02849,
-   "p": 0.49305069493050696,
-   "q": 0.8065400356516073,
+   "effect": 0.03242,
+   "p": 0.4353564643535646,
+   "q": 0.9171405440101151,
    "higher_in": "up-papers"
   },
   {
-   "concept": "recruitment_community",
-   "effect": -0.02849,
-   "p": 0.48985101489851013,
-   "q": 0.8065400356516073,
-   "higher_in": "down-papers"
-  },
-  {
-   "concept": "severity_cognitive",
-   "effect": -0.02652,
-   "p": 0.5109489051094891,
-   "q": 0.8065400356516073,
-   "higher_in": "down-papers"
-  },
-  {
-   "concept": "age_elderly",
-   "effect": 0.02063,
-   "p": 0.6157384261573843,
-   "q": 0.8065400356516073,
-   "higher_in": "up-papers"
-  },
-  {
-   "concept": "cohort_small",
-   "effect": 0.02063,
-   "p": 0.6200379962003799,
-   "q": 0.8065400356516073,
-   "higher_in": "up-papers"
-  },
-  {
-   "concept": "ppi_medication",
-   "effect": -0.01866,
-   "p": 0.646035396460354,
-   "q": 0.8065400356516073,
-   "higher_in": "down-papers"
-  },
-  {
-   "concept": "antibiotics_excluded",
-   "effect": 0.01866,
-   "p": 0.6384361563843616,
-   "q": 0.8065400356516073,
-   "higher_in": "up-papers"
-  },
-  {
-   "concept": "bmi_reported",
-   "effect": -0.01866,
-   "p": 0.664933506649335,
-   "q": 0.8065400356516073,
-   "higher_in": "down-papers"
-  },
-  {
-   "concept": "nc_animal_model",
-   "effect": -0.01866,
-   "p": 0.6561343865613438,
-   "q": 0.8065400356516073,
-   "higher_in": "down-papers"
-  },
-  {
-   "concept": "stats_lefse",
-   "effect": 0.01866,
-   "p": 0.6634336566343366,
-   "q": 0.8065400356516073,
-   "higher_in": "up-papers"
-  },
-  {
-   "concept": "stats_parametric",
-   "effect": 0.0167,
-   "p": 0.6879312068793121,
-   "q": 0.8065400356516073,
-   "higher_in": "up-papers"
-  },
-  {
-   "concept": "seq_16s_v34",
-   "effect": 0.0167,
-   "p": 0.6878312168783122,
-   "q": 0.8065400356516073,
-   "higher_in": "up-papers"
-  },
-  {
-   "concept": "severity_motor",
-   "effect": -0.01277,
-   "p": 0.766023397660234,
-   "q": 0.8681598506815985,
-   "higher_in": "down-papers"
-  },
-  {
-   "concept": "severity_advanced",
-   "effect": 0.00884,
-   "p": 0.8448155184481552,
-   "q": 0.9064343565643436,
+   "concept": "cohort_large",
+   "effect": 0.03045,
+   "p": 0.46935306469353066,
+   "q": 0.9171405440101151,
    "higher_in": "up-papers"
   },
   {
    "concept": "recruitment_carehome",
-   "effect": -0.00688,
-   "p": 0.8531146885311469,
-   "q": 0.9064343565643436,
+   "effect": -0.03045,
+   "p": 0.46535346465353467,
+   "q": 0.9171405440101151,
+   "higher_in": "down-papers"
+  },
+  {
+   "concept": "comorbidity_metabolic",
+   "effect": 0.02849,
+   "p": 0.4991500849915009,
+   "q": 0.9171405440101151,
+   "higher_in": "up-papers"
+  },
+  {
+   "concept": "storage_delayed",
+   "effect": 0.02849,
+   "p": 0.49245075492450757,
+   "q": 0.9171405440101151,
+   "higher_in": "up-papers"
+  },
+  {
+   "concept": "pipeline_qiime",
+   "effect": 0.02849,
+   "p": 0.49265073492650735,
+   "q": 0.9171405440101151,
+   "higher_in": "up-papers"
+  },
+  {
+   "concept": "constipation_gi",
+   "effect": 0.02849,
+   "p": 0.4968503149685031,
+   "q": 0.9171405440101151,
+   "higher_in": "up-papers"
+  },
+  {
+   "concept": "severity_motor",
+   "effect": 0.02259,
+   "p": 0.5896410358964104,
+   "q": 0.9171405440101151,
+   "higher_in": "up-papers"
+  },
+  {
+   "concept": "recruitment_community",
+   "effect": -0.02259,
+   "p": 0.5898410158984102,
+   "q": 0.9171405440101151,
+   "higher_in": "down-papers"
+  },
+  {
+   "concept": "ppi_medication",
+   "effect": -0.01866,
+   "p": 0.6405359464053595,
+   "q": 0.9171405440101151,
+   "higher_in": "down-papers"
+  },
+  {
+   "concept": "nc_probiotic_intervention",
+   "effect": -0.0167,
+   "p": 0.6945305469453055,
+   "q": 0.9171405440101151,
+   "higher_in": "down-papers"
+  },
+  {
+   "concept": "bmi_reported",
+   "effect": -0.01473,
+   "p": 0.7034296570342966,
+   "q": 0.9171405440101151,
+   "higher_in": "down-papers"
+  },
+  {
+   "concept": "stats_lefse",
+   "effect": 0.01473,
+   "p": 0.7105289471052895,
+   "q": 0.9171405440101151,
+   "higher_in": "up-papers"
+  },
+  {
+   "concept": "dna_kit_qiagen",
+   "effect": -0.01473,
+   "p": 0.7127287271272873,
+   "q": 0.9171405440101151,
+   "higher_in": "down-papers"
+  },
+  {
+   "concept": "cohort_small",
+   "effect": -0.01473,
+   "p": 0.7247275272472753,
+   "q": 0.9171405440101151,
    "higher_in": "down-papers"
   },
   {
    "concept": "sex_imbalance",
-   "effect": 0.00098,
-   "p": 0.9895010498950105,
-   "q": 0.9903009699030098,
+   "effect": -0.01081,
+   "p": 0.7946205379462054,
+   "q": 0.9171405440101151,
+   "higher_in": "down-papers"
+  },
+  {
+   "concept": "age_elderly",
+   "effect": 0.01081,
+   "p": 0.7924207579242076,
+   "q": 0.9171405440101151,
+   "higher_in": "up-papers"
+  },
+  {
+   "concept": "nc_animal_model",
+   "effect": 0.01081,
+   "p": 0.8116188381161884,
+   "q": 0.9171405440101151,
+   "higher_in": "up-papers"
+  },
+  {
+   "concept": "severity_advanced",
+   "effect": 0.01081,
+   "p": 0.8087191280871913,
+   "q": 0.9171405440101151,
+   "higher_in": "up-papers"
+  },
+  {
+   "concept": "severity_early_disease",
+   "effect": 0.01081,
+   "p": 0.8106189381061893,
+   "q": 0.9171405440101151,
+   "higher_in": "up-papers"
+  },
+  {
+   "concept": "antibiotics_excluded",
+   "effect": 0.00884,
+   "p": 0.8362163783621638,
+   "q": 0.9171405440101151,
    "higher_in": "up-papers"
   },
   {
    "concept": "bmi_matched",
+   "effect": 0.00491,
+   "p": 0.9211078892110789,
+   "q": 0.9786771322867713,
+   "higher_in": "up-papers"
+  },
+  {
+   "concept": "seq_16s_v34",
+   "effect": 0.00295,
+   "p": 0.954904509549045,
+   "q": 0.9838410098384099,
+   "higher_in": "up-papers"
+  },
+  {
+   "concept": "stats_parametric",
    "effect": 0.00098,
-   "p": 0.9903009699030098,
-   "q": 0.9903009699030098,
+   "p": 0.9846015398460154,
+   "q": 0.9846015398460155,
    "higher_in": "up-papers"
   }
  ]

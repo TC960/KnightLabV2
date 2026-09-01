@@ -1,0 +1,4 @@
+337 sheet rows | 91 not yet extracted
+  [60/91] kept=30 main=1 epmc=29 failed=30
+
+wrote /Users/mohak/Desktop/Lab Work/proj_2_attempt3/kg/new_papers.json: 53 papers with full text (3 from MAIN_DATA, 50 from EPMC, 38 unavailable)
