@@ -90,6 +90,31 @@ def norm_disease(s):
     return (s[:1].upper() + s[1:]) if s else "Unspecified", None
 
 
+# Rank placeholders: labels 16S pipelines emit for a clade they could not name to a
+# real taxon -- "Erysipelotrichaceae UCG-003", "Lachnospiraceae ND3007 group",
+# "Clostridia UCG-014", "Christensenellaceae R-7 group". taxonomy.py resolves these
+# by trimming the qualifier tail, so they land on the PARENT taxid and are pooled as
+# if they were the parent itself.
+#
+# That is a rank collapse wearing a synonym's clothes, and adjudication caught it:
+# Erysipelotrichaceae/Parkinson's looked like a 4-paper contradiction of both
+# curated databases, but 3 of those 4 papers report "Erysipelotrichaceae UCG-003",
+# a genus-level placeholder INSIDE the family. No paper measured the family
+# aggregate. Corpus-wide this affects 74 strings over 37 taxids, 21 edges named only
+# by a placeholder and 170 mixed, 52 of them contested.
+#
+# It also breaks the project's own rule: synonym folding (same rank, renamed) and
+# containment (different ranks) are different operations. A UCG label is a CHILD.
+# So with --split-placeholders these get their own node, linked to the parent by a
+# containment edge rather than merged into it.
+PLACEHOLDER = re.compile(
+    r"(UCG[-_ ]?\d+|_?group$|ND\d{3,}|R-\d+\b|incertae[ _]sedis|"
+    r"sensu[ _]stricto|\bAD\d{3,}\b|\b[A-Z]{1,3}\d{2,}\b)")
+
+SPLIT_PLACEHOLDERS = False          # set by --split-placeholders
+PLACEHOLDER_PARENT = {}             # placeholder node key -> parent taxid
+
+
 def norm_taxon(t, tax=None):
     """Canonical key + display name + rank.
 
@@ -105,6 +130,15 @@ def norm_taxon(t, tax=None):
     if tax is not None and tax.ok:
         tid, sci, rank, how = tax.resolve(disp)
         if tid:
+            # A placeholder resolves to its PARENT (the qualifier tail is trimmed),
+            # which is detectable: the raw string differs from the scientific name
+            # it landed on. Keep it as its own node and remember the parent so a
+            # containment link can be added.
+            if (SPLIT_PLACEHOLDERS and PLACEHOLDER.search(disp)
+                    and disp.lower() != (sci or "").lower()):
+                key = "ph:" + re.sub(r"\s+", " ", disp.lower().replace("_", " ")).strip()
+                PLACEHOLDER_PARENT[key] = tid
+                return key, disp, "clade", "placeholder"
             return f"ncbi:{tid}", sci, (rank or "no rank"), how
     # --- fallback: string folding only ---
     key = disp.lower()
@@ -198,7 +232,11 @@ def build(rows, min_papers=1, tax=None):
     nodes = (
         [{"id": f"t:{k}", "label": taxon_disp[k], "type": "taxon",
           "taxid": k.split(":")[1] if k.startswith("ncbi:") else None,
-          "resolved": taxon_how[k] != "unresolved",
+          # "resolved" means "has an NCBI taxid". A placeholder deliberately has
+          # none -- it is positioned by its containment link to the parent, not by
+          # an id -- so it must not inflate the resolved count.
+          "resolved": taxon_how[k] not in ("unresolved", "placeholder"),
+          "placeholder": taxon_how[k] == "placeholder",
           "aliases": sorted(aliases[k]),
           "rank": taxon_rank[k], "degree": tax_deg[k]} for k in tax_deg]
         + [{"id": f"d:{d}", "label": d, "type": "disease",
@@ -219,6 +257,16 @@ def build(rows, min_papers=1, tax=None):
     # biology, and only survives if the nesting is represented rather than
     # collapsed. So we add parent_of edges and let consumers roll up or not.
     hierarchy = []
+    # Placeholder nodes hang off the parent they were previously merged INTO, so
+    # the containment they always had is now explicit instead of implicit.
+    node_ids = {f"t:{k}" for k in tax_deg}
+    for key, parent_tid in PLACEHOLDER_PARENT.items():
+        child, parent = f"t:{key}", f"t:ncbi:{parent_tid}"
+        if child in node_ids and parent in node_ids:
+            hierarchy.append({"parent": parent, "child": child,
+                              "parent_rank": (tax.rank.get(parent_tid, "")
+                                              if tax is not None and tax.ok else ""),
+                              "child_rank": "clade"})
     if tax is not None and tax.ok:
         tids = [n["taxid"] for n in nodes if n["type"] == "taxon" and n.get("taxid")]
         lineage = {t: tax.lineage(t) for t in tids}
@@ -266,9 +314,20 @@ def main():
     ap.add_argument("--min-papers", type=int, default=1,
                     help="drop edges supported by fewer than N papers")
     ap.add_argument("--out", default=os.path.join(HERE, "graph.json"))
+    # Default ON: merging a UCG placeholder into its parent family is a rank
+    # collapse, and it manufactured the worst false contradiction in the graph
+    # (see FINDINGS_task3_adjudication.md). --merge-placeholders restores the old
+    # behaviour for comparison.
+    ap.add_argument("--merge-placeholders", dest="split_placeholders",
+                    action="store_false", default=True,
+                    help="OLD behaviour: fold rank placeholders (UCG-003, ND3007 "
+                         "group) into their parent taxon instead of keeping them "
+                         "as their own node")
     ap.add_argument("--no-taxonomy", action="store_true",
                     help="skip NCBI resolution, fold on strings only")
     a = ap.parse_args()
+    global SPLIT_PLACEHOLDERS
+    SPLIT_PLACEHOLDERS = a.split_placeholders
 
     rows = json.load(open(a.input))
     tax = None
@@ -299,6 +358,9 @@ def main():
         "n_papers_table": len(papers_tbl),
         "n_papers_with_metadata": sum(1 for p in papers_tbl if p["has_meta"]),
         "min_papers": a.min_papers,
+        "split_placeholders": a.split_placeholders,
+        "n_placeholder_nodes": sum(1 for n in nodes
+                                   if n["type"] == "taxon" and str(n.get("id","")).startswith("t:ph:")),
         "note": ("Edge weight is evidence count, not effect size: the extractor yields "
                  "direction only and the source papers report incommensurable statistics. "
                  "Contested edges are retained, never merged away."),

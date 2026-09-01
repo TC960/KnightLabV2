@@ -4,6 +4,101 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+# SUMMARY — session of 2026-09-01
+
+**Tested four things and one follow-on fix. The headline is that three of the four
+premises I was given turned out to be wrong, and the corrections are the result.**
+
+### What survived
+
+- **The MAIN_DATA corpus really is contaminated.** Reading all 45 title-matched
+  full texts, **22 (49%) are not human case-control studies** — 15 animal, 3 with no
+  healthy control, 2 case reports, 2 with no primary cohort. Every verdict carries a
+  verbatim quote.
+- **The relation-sentence filter is safe to build on.** 93.9% recall over 2,262
+  extracted relations in `loose` mode, against a 96.7% ceiling — 97.1% of what is
+  recoverable, with the direction-cue step costing only 2.0%. Use loose, not strict
+  (84.8%).
+- **Our extraction is right where two curated databases both say it is wrong.**
+  Of 14 doubly-contradicted pairs, **11 of 12 adjudicable ones faithfully report
+  what the paper says**. One extraction error in fourteen. Three of the disputes are
+  explicitly acknowledged by the source papers themselves.
+- **Two structural defects, both larger than the error rate**: rank placeholders
+  folded into parents (now fixed), and body site missing from the edge key.
+
+### What did NOT survive
+
+- **"Filtering the contaminated papers will recover agreement."** It changed
+  **zero** decisive pairs against either database (exact McNemar p = 1.00). Not an
+  underpowered null — a true zero. The 22 papers supply 11 of 1,927 edges; 18 of
+  them produced no usable extraction at all. The ~4-point drop was a **composition
+  effect**: the batch added ~21 mostly-autism, mostly-single-paper pairs.
+- **"Autism edges are worse."** 52.6% agreement looks damning but comes from **5
+  papers**. Paper-level permutation: gap −0.225, null SD 0.139, minimum detectable
+  0.273, **p = 0.211**. Pair-level shuffling would have returned a false positive.
+- **"BM25 structurally cannot answer *what links PD and AD*."** It answers at
+  P@10 = 1.00. GraphRAG ties it overall (0.800 vs 0.783 over 6 queries).
+- **"41× sentence reduction."** That was a 25-paper pilot generalised ~3× too far;
+  at corpus scale it is **14.4×**.
+- **Two structural fixes moved agreement by nothing.** Both the paper screen and
+  the placeholder split flip **zero** decisive pairs. Agreement rate is insensitive
+  to structural corrections here, because decisive pairs are dominated by
+  well-evidenced unambiguous taxa. Both were applied on **construct validity**, and
+  neither should ever be cited as an accuracy gain.
+
+### Shipped
+
+`graph.json` / `kg.html` / `docs/index.html` rebuilt: **326 papers, 281
+contributing, 892 taxa, 1,985 edges, 220 contested, 670 containment links, 77
+placeholder nodes.** New: `taxonomy_cache.py`, `graphrag.py`, `compare_retrieval.py`,
+`filter_maindata.py`, `analyze_filter_effect.py`, `build_adjudication_packets.py`,
+plus four findings docs.
+
+### Single highest-value next step
+
+**Put body site into the edge key.** It is diagnosed, cheap, and currently
+manufacturing false contradictions: *Rothia*/PD and almost certainly *Gemella*/PD
+are saliva studies colliding with gut records on one node — 2 of the 14
+doubly-contradicted pairs are this, not disagreement. `metadata.jsonl` already
+carries `body_site` per paper, so this is a keying change, not new extraction. It
+should also make the Disbiome/Peryton comparison honest, since both are gut-weighted
+and we are currently scoring oral findings against them.
+
+*(Runner-up, and a prerequisite for the embedding work: `relation_sentences.json`
+still covers only the original 250 papers, not the current 326. That is why 2 of the
+14 pairs could not be adjudicated at all.)*
+
+---
+
+## 2026-09-01 — Fixed the placeholder rank collapse; agreement again moved by zero
+
+Acting on the top lever from the adjudication. `taxonomy.py` resolves a rank
+placeholder by trimming its qualifier tail, so **"Erysipelotrichaceae UCG-003"** — an
+uncultured *genus-level* label INSIDE the family — landed on the family taxid and
+pooled as if it were the family. `build_kg.py` now gives placeholders their own node
+with a **containment link** to the parent (`--merge-placeholders` restores the old
+behaviour). Default ON, so a rebuild cannot silently revert it.
+
+**The motivating case is fixed.** Erysipelotrichaceae/Parkinson's went from a
+4-paper "depleted" family edge — which no paper actually measured — to a 1-paper
+family edge plus a separate 3-paper *Erysipelotrichaceae UCG-003* edge beneath it.
+The apparent 4-paper contradiction of both curated databases evaporates.
+
+**Effect on agreement: zero, again.** Paired McNemar on pairs decisive in both
+graphs: **0 flips**, p = 1.00, against both Disbiome and Peryton. Headline rates
+wobble (Disbiome 73.1→71.9, Peryton 71.9→72.8) purely through which pairs are
+decisive. That is now three structural corrections in a row that change no decisive
+pair — worth treating as a property of this validation, not a coincidence: the
+decisive set is dominated by well-evidenced unambiguous taxa, so it cannot see
+changes at the margins. **Justified on correctness, not the metric.**
+
+Graph: 892 taxa (+60), 1,985 edges (+69), 670 containment links (+45), contested
+225 → **220**, 77 placeholder nodes. `resolved` still means "has an NCBI taxid", so
+placeholders are `resolved: false, placeholder: true` rather than inflating the
+resolved count.
+
+---
+
 ## 2026-09-01 — Adjudicated the doubly-contradicted pairs: 11 of 12 were OUR reading, correctly
 
 Full write-up: `FINDINGS_task3_adjudication.md`. Verdicts + quotes:
