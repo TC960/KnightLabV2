@@ -1,0 +1,12 @@
+{
+ "n_edges": 47,
+ "n_papers": 140,
+ "consistent": 86,
+ "mixed": 54,
+ "pairs_total": 592,
+ "pairs_both_consistent": 101,
+ "pairs_one_mixed": 243,
+ "pairs_both_mixed": 248,
+ "addressable_share": 0.1706,
+ "clean_edges": 2
+}
