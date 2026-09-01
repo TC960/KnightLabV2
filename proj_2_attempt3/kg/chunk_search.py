@@ -53,8 +53,23 @@ VECS = os.path.join(HERE, "chunk_vecs.npy")
 MODEL = "all-MiniLM-L6-v2"
 
 FRONT_CHARS = 2500          # title + authors + affiliations
-TARGET = 900                # chars per chunk; MiniLM truncates ~256 tokens anyway
-OVERLAP_SENTS = 1
+
+# Chunking is sentence-COUNT based with SYMMETRIC overlap: a core of CORE_SENTS
+# sentences, plus one sentence of context on each side.
+#
+# The asymmetric version (carry the tail forward only) leaves a chunk that opens
+# on "This was significantly higher in the patient group (p = 0.01)" with no way
+# to know what "this" refers to -- the antecedent is in the PRECEDING sentence.
+# Results sections are full of that, so context has to come from both sides.
+#
+# HARD_CAP exists because MiniLM truncates at 256 tokens and does so SILENTLY.
+# Overshoot and the model discards the tail, which is exactly the trailing
+# context sentence we widened the window to include -- the change would appear
+# to work while doing nothing. ~1000 chars is a conservative stand-in for 256
+# tokens on biomedical prose; build() reports how often the cap binds.
+CORE_SENTS = 4
+CONTEXT_SENTS = 1
+HARD_CAP = 1000
 
 REF_HEAD = re.compile(
     r"\n\s*(?:References|REFERENCES|Bibliography|Literature Cited)\s*\n", re.M)
@@ -87,19 +102,29 @@ def sentences(text):
 
 
 def chunk_paper(text):
-    """Pack whole sentences up to TARGET chars, with a one-sentence overlap."""
+    """Sliding window: CORE_SENTS sentences, plus CONTEXT_SENTS on each side.
+
+    Returns (chunk_text, capped) so the caller can report how often HARD_CAP
+    bound and silently cost us context.
+    """
     sents = [s for s in sentences(text) if len(s) > 25]
-    chunks, cur, n = [], [], 0
-    for s in sents:
-        if cur and n + len(s) > TARGET:
-            chunks.append(" ".join(cur))
-            cur = cur[-OVERLAP_SENTS:] if OVERLAP_SENTS else []
-            n = sum(len(x) for x in cur)
-        cur.append(s)
-        n += len(s)
-    if cur:
-        chunks.append(" ".join(cur))
-    return [c for c in chunks if len(c) > 120]
+    out = []
+    for start in range(0, max(len(sents), 1), CORE_SENTS):
+        lo = max(0, start - CONTEXT_SENTS)
+        hi = min(len(sents), start + CORE_SENTS + CONTEXT_SENTS)
+        win = sents[lo:hi]
+        if not win:
+            continue
+        body = " ".join(win)
+        capped = False
+        # Trim from the OUTSIDE in, so the core survives and only context is lost.
+        while len(body) > HARD_CAP and len(win) > 1:
+            capped = True
+            win = win[:-1] if len(win) > CORE_SENTS else win[1:]
+            body = " ".join(win)
+        if len(body) > 120:
+            out.append((body[:HARD_CAP], capped or len(body) > HARD_CAP))
+    return out
 
 
 def s(v):
@@ -127,11 +152,17 @@ def load_papers():
 def build():
     papers = load_papers()
     print(f"{len(papers)} papers")
-    rows = []
+    rows, capped = [], 0
     for p in papers:
-        for c in chunk_paper(body_of(p["text"])):
+        for c, was_capped in chunk_paper(body_of(p["text"])):
+            capped += was_capped
             rows.append({"title": p["title"], "disease": p["disease"], "text": c})
-    print(f"{len(rows)} chunks  (mean {np.mean([len(r['text']) for r in rows]):.0f} chars)")
+    lens = [len(r["text"]) for r in rows]
+    print(f"{len(rows)} chunks  (mean {np.mean(lens):.0f} chars, max {max(lens)})")
+    print(f"window: {CORE_SENTS} core + {CONTEXT_SENTS} context each side, "
+          f"cap {HARD_CAP} chars")
+    print(f"cap bound on {capped} chunks ({100*capped/len(rows):.1f}%) "
+          f"-- those lost some context sentence")
 
     with open(CHUNKS, "w") as f:
         for r in rows:

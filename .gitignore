@@ -22,3 +22,5 @@ proj_2_attempt3/kg/chunks.jsonl
 
 proj_2_attempt3/kg/chunk_vecs_deconfounded.npy
 proj_2_attempt3/kg/disease_basis.npy
+proj_2_attempt3/kg/rag_cache/
+proj_2_attempt3/kg/rebuild.log
