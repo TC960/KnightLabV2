@@ -67,10 +67,28 @@ def uri():
 def collection():
     try:
         from pymongo import MongoClient
+        from pymongo.server_api import ServerApi
     except ImportError:
         sys.exit("pip install 'pymongo[srv]'")
-    c = MongoClient(uri(), appname="knightlab-kg")
-    c.admin.command("ping")                 # fail fast on bad auth / IP allowlist
+    c = MongoClient(uri(), server_api=ServerApi("1"), appname="knightlab-kg",
+                    serverSelectionTimeoutMS=20000)
+    try:
+        c.admin.command("ping")             # fail fast rather than mid-insert
+    except Exception as e:
+        msg = str(e)
+        if "TLSV1_ALERT_INTERNAL_ERROR" in msg or "SSL handshake failed" in msg:
+            # Atlas aborts the TLS handshake for a source IP that is not on the
+            # Network Access allowlist. It is NOT a credential problem -- bad
+            # credentials fail cleanly AFTER the handshake, and a firewall would
+            # fail at TCP. Diagnose by checking the IPv4 address specifically:
+            # `curl -4 ifconfig.me`. A bare `curl ifconfig.me` may answer over
+            # IPv6, and that address is useless here -- the shards are IPv4-only,
+            # so Atlas never sees it.
+            sys.exit("Atlas refused the TLS handshake -- your IP is almost "
+                     "certainly not allowlisted.\n"
+                     "  Atlas -> Network Access -> Add IP Address\n"
+                     "  Use the IPv4 address from:  curl -4 ifconfig.me")
+        raise
     return c[DB][COLL]
 
 
