@@ -15,3 +15,11 @@ __pycache__/
 # kg: fetch cache and raw GPU pulls
 proj_2_attempt3/kg/fetch_cache/
 proj_2_attempt3/kg/gpu_results/
+
+# kg/ session scratch (regenerable: prep_filter_snippets.py, filter_maindata.py)
+proj_2_attempt3/kg/_filter_batches/
+proj_2_attempt3/kg/_filter_out/
+proj_2_attempt3/kg/_variant_*.json
+proj_2_attempt3/kg/_graph_*.json
+proj_2_attempt3/kg/_val_*.json
+proj_2_attempt3/kg/_inventory.md

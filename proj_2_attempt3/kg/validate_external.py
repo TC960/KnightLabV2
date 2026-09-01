@@ -171,15 +171,27 @@ def main():
     ap.add_argument("--source", choices=["disbiome", "peryton", "both"], default="both")
     ap.add_argument("--refresh", action="store_true")
     ap.add_argument("--show", type=int, default=10)
+    ap.add_argument("--graph", default=GRAPH, help="graph.json to validate")
+    ap.add_argument("--json-out", help="write the summary table here")
     a = ap.parse_args()
 
-    G = json.load(open(GRAPH))
-    from taxonomy import Taxonomy
-    tax = Taxonomy()
+    G = json.load(open(a.graph))
+    from taxonomy_cache import load_taxonomy
+    tax = load_taxonomy()
     if not tax.ok:
-        print("FATAL: NCBI taxdump missing — the join needs it. See kg/taxonomy.py.")
+        print("FATAL: no taxonomy available — the join needs one. See kg/taxonomy.py.")
         return
-    print(f"graph: {len(G['edges'])} edges\n")
+    if tax.__class__.__name__ == "CachedTaxonomy":
+        # The replay cache only knows names that appear in graph.json. External
+        # records use their own spellings, so some that the real taxdump would
+        # resolve are missed here and the overlap shrinks. That biases the ABSOLUTE
+        # agreement rate and makes it incomparable to figures measured with the
+        # taxdump. It is still valid for BEFORE/AFTER comparisons run under this
+        # same join, which is what the paper filter needs.
+        print("  !! DEGRADED JOIN: replay cache, not the NCBI taxdump.")
+        print("  !! Absolute agreement is NOT comparable to taxdump-measured runs.")
+        print("  !! Use only for like-for-like before/after deltas.\n")
+    print(f"graph: {len(G['edges'])} edges ({os.path.basename(a.graph)})\n")
 
     summaries = []
     if a.source in ("disbiome", "both"):
@@ -205,6 +217,13 @@ def main():
             rate = f"{100*s['agree']/s['comparable']:.1f}%" if s["comparable"] else "n/a"
             print(f"{s['name']:12} {s['overlap']:>8} {100*s['recall']:>7.1f}% "
                   f"{rate:>8} {s['disagree']:>9}")
+
+    if a.json_out:
+        json.dump({"graph": os.path.basename(a.graph),
+                   "n_edges": len(G["edges"]),
+                   "join": tax.__class__.__name__,
+                   "sources": summaries}, open(a.json_out, "w"), indent=1)
+        print(f"\nwrote {a.json_out}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,68 @@
+[
+ {
+  "source": "Disbiome",
+  "from": "all348",
+  "to": "screened",
+  "n_common": 167,
+  "agree_from": 122,
+  "agree_to": 122,
+  "gained": 0,
+  "lost": 0,
+  "mcnemar_p": 1.0
+ },
+ {
+  "source": "Disbiome",
+  "from": "all348",
+  "to": "no_maindata",
+  "n_common": 147,
+  "agree_from": 112,
+  "agree_to": 112,
+  "gained": 0,
+  "lost": 0,
+  "mcnemar_p": 1.0
+ },
+ {
+  "source": "Disbiome",
+  "from": "screened",
+  "to": "no_maindata",
+  "n_common": 147,
+  "agree_from": 112,
+  "agree_to": 112,
+  "gained": 0,
+  "lost": 0,
+  "mcnemar_p": 1.0
+ },
+ {
+  "source": "Peryton",
+  "from": "all348",
+  "to": "screened",
+  "n_common": 134,
+  "agree_from": 96,
+  "agree_to": 96,
+  "gained": 0,
+  "lost": 0,
+  "mcnemar_p": 1.0
+ },
+ {
+  "source": "Peryton",
+  "from": "all348",
+  "to": "no_maindata",
+  "n_common": 132,
+  "agree_from": 96,
+  "agree_to": 96,
+  "gained": 0,
+  "lost": 0,
+  "mcnemar_p": 1.0
+ },
+ {
+  "source": "Peryton",
+  "from": "screened",
+  "to": "no_maindata",
+  "n_common": 133,
+  "agree_from": 97,
+  "agree_to": 97,
+  "gained": 0,
+  "lost": 0,
+  "mcnemar_p": 1.0
+ }
+]

@@ -273,10 +273,13 @@ def main():
     rows = json.load(open(a.input))
     tax = None
     if not a.no_taxonomy:
+        # Prefer the real taxdump; fall back to replaying graph.json's recorded
+        # resolution. The old code fell straight through to string folding when the
+        # taxdump was missing, which quietly cost 681 taxid resolutions and all 625
+        # containment links while still printing a successful build.
         try:
-            from taxonomy import Taxonomy
-            tax = Taxonomy()
-            print(f"NCBI taxdump: {'loaded' if tax.ok else 'NOT FOUND -> string folding only'}")
+            from taxonomy_cache import load_taxonomy
+            tax = load_taxonomy()
         except Exception as e:
             print(f"taxonomy unavailable ({e.__class__.__name__}) -> string folding only")
     nodes, edges, hierarchy, papers_tbl = build(rows, a.min_papers, tax)
