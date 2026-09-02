@@ -78,6 +78,33 @@ doubly-contradicted pairs that could not be adjudicated.
 
 ---
 
+## 2026-09-02 — relation_sentences rebuilt on the full corpus: 211 -> 281 papers
+
+The prerequisite the previous session flagged as blocking the embedding work.
+`relation_sentences.py` read only `all_usable_papers.json` (the original 250), so
+the filtered-sentence substrate covered **211 of 281** contributing papers and
+excluded every paper the MAIN_DATA expansion added. It now merges every corpus
+file carrying full text (348 papers), and covers **281 of 281**.
+
+**Recall re-validated at corpus scale, and it holds.** Replaying all **3,132**
+extracted relations: headline recall **94.8%** against a **97.3%** ceiling — so
+97.4% of what any sentence filter could recover, with the direction-cue step
+costing 1.9%. That is marginally *better* than the 250-paper measurement (93.9%
+of a 96.7% ceiling). Reduction **14.0x** on sentences, 9.7x on characters —
+consistent with the corrected 14.4x, and still nothing like the retired "41x".
+162 misses: 67 taxa never appear literally in the paper, 56 dropped by the cue
+filter, 39 missed by the matcher.
+
+**Deliberate trade-off, recorded.** The old file was taxdump-built; this one is
+replay-cache built, which on the shared 250 papers keeps 5,210 -> 5,102
+sentences, **−2.1%**. That independently reproduces the exact 2.1% bias measured
+last session. Consistency wins here: a mixed file would apply two different
+matchers to different papers, and every downstream use (embeddings, per-paper
+co-occurrence) compares papers to each other. Reduction ratios from this file are
+therefore an upper bound, as the build warns.
+
+---
+
 # SUMMARY — session of 2026-09-01
 
 **Tested four things and one follow-on fix. The headline is that three of the four
