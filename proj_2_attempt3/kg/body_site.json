@@ -1,0 +1,2898 @@
+{
+ "scanner_vs_llm": {
+  "n": 249,
+  "agree": 230,
+  "confusion": {
+   "stool->stool": 228,
+   "stool->oral": 1,
+   "oral->stool": 3,
+   "stool->unknown": 10,
+   "oral->oral": 1,
+   "blood->blood": 1,
+   "stool->blood": 3,
+   "gut biopsy->stool": 1,
+   "blood->stool": 1
+  },
+  "disagreements": [
+   {
+    "title": "Oral Pathobiont Streptococcus Anginosus Is Enriched in the Gut of Stroke Patients and Predicts 2-Year Cardiovascular Outcome",
+    "llm": "stool",
+    "scanner": "oral",
+    "scores": {
+     "oral": 2
+    }
+   },
+   {
+    "title": "The impact of dysbiosis in oropharyngeal and gut microbiota on systemic inflammatory response and short-term prognosis in acute ischemic stroke with preceding infection",
+    "llm": "oral",
+    "scanner": "stool",
+    "scores": {
+     "stool": 9,
+     "oral": 5,
+     "blood": 4
+    }
+   },
+   {
+    "title": "Association of brain amyloidosis with pro-inflammatory gut bacterial taxa and peripheral inflammation markers in cognitively impaired elderly.",
+    "llm": "stool",
+    "scanner": "unknown",
+    "scores": {}
+   },
+   {
+    "title": "Difference in gut microbial dysbiotic patterns between body-first and brain-first Parkinson's disease.",
+    "llm": "stool",
+    "scanner": "unknown",
+    "scores": {}
+   },
+   {
+    "title": "Correlation between APOE4 gene and gut microbiota in Alzheimer's disease.",
+    "llm": "stool",
+    "scanner": "unknown",
+    "scores": {}
+   },
+   {
+    "title": "Gut dysbiosis influences the pathophysiology of multiple sclerosis: A case-control study from North India.",
+    "llm": "stool",
+    "scanner": "unknown",
+    "scores": {}
+   },
+   {
+    "title": "Association between the relative abundance of butyrate-producing and mucin-degrading taxa and Parkinson's disease.",
+    "llm": "stool",
+    "scanner": "unknown",
+    "scores": {}
+   },
+   {
+    "title": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients",
+    "llm": "oral",
+    "scanner": "stool",
+    "scores": {
+     "stool": 28,
+     "oral": 33,
+     "blood": 1
+    }
+   },
+   {
+    "title": "Altered gut microbiota in Parkinson's disease patients/healthy spouses and its association with clinical features.",
+    "llm": "stool",
+    "scanner": "unknown",
+    "scores": {}
+   },
+   {
+    "title": "Altered microbiomes distinguish Alzheimer's disease from amnestic mild cognitive impairment and health in a Chinese cohort.",
+    "llm": "stool",
+    "scanner": "unknown",
+    "scores": {}
+   },
+   {
+    "title": "Free water in gray matter linked to gut microbiota changes with decreased butyrate producers in Alzheimer's disease and mild cognitive impairment.",
+    "llm": "stool",
+    "scanner": "unknown",
+    "scores": {}
+   },
+   {
+    "title": "Changes in gut microbiota and plasma metabolites in Parkinson's disease patients with pain as analyzed by 16S rDNA sequencing and LC-MS.",
+    "llm": "stool",
+    "scanner": "blood",
+    "scores": {
+     "blood": 4
+    }
+   },
+   {
+    "title": "Landscapes of gut microbiome and blood metabolomic signatures in relapsing remitting multiple sclerosis.",
+    "llm": "stool",
+    "scanner": "blood",
+    "scores": {
+     "blood": 1
+    }
+   },
+   {
+    "title": "Relationship between the Japanese-style diet, gut microbiota, and dementia: A cross-sectional study.",
+    "llm": "stool",
+    "scanner": "unknown",
+    "scores": {}
+   },
+   {
+    "title": "Relationship Between Plasma Lipopolysaccharides, Gut Microbiota, and Dementia: A Cross-Sectional Study.",
+    "llm": "stool",
+    "scanner": "blood",
+    "scores": {
+     "blood": 4
+    }
+   },
+   {
+    "title": "The alteration of intestinal mucosal \u03b1-synuclein expression and mucosal microbiota in Parkinson's disease.",
+    "llm": "gut biopsy",
+    "scanner": "stool",
+    "scores": {
+     "stool": 8,
+     "gut biopsy": 11
+    }
+   },
+   {
+    "title": "Characterizing Gut Microbiota in Older Chinese Adults with Cognitive Impairment: A Cross-Sectional Study.",
+    "llm": "stool",
+    "scanner": "unknown",
+    "scores": {}
+   },
+   {
+    "title": "Oral and gut microbial profiling in periodontitis and Parkinson's disease.",
+    "llm": "oral",
+    "scanner": "stool",
+    "scores": {
+     "stool": 20,
+     "oral": 52,
+     "blood": 1
+    }
+   },
+   {
+    "title": "Detection of Microbial 16S rRNA Gene in the Blood of Patients With Parkinson's Disease.",
+    "llm": "blood",
+    "scanner": "stool",
+    "scores": {
+     "stool": 15,
+     "oral": 1,
+     "blood": 9,
+     "csf": 1
+    }
+   }
+  ]
+ },
+ "papers": {
+  "A Metagenome-Wide Association Study of Gut Microbiome in Patients With Multiple Sclerosis Revealed Novel Disease Pathology.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 4
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "A Pilot Microbiota Study in Parkinson's Disease Patients versus Control Subjects, and Effects of FTY720 and FTY720-Mitoxy Therapies in Parkinsonian and Multiple System Atrophy Mouse Models.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 12
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients": {
+   "site": "oral",
+   "source": "llm",
+   "scores": {
+    "stool": 28,
+    "oral": 33,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": false
+  },
+  "A peripheral signature of Alzheimer's disease featuring microbiota-gut-brain axis markers.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 9,
+    "blood": 7
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "A prebiotic dietary pilot intervention restores faecal metabolites and may be neuroprotective in Parkinson's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 27,
+    "blood": 2,
+    "urine": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 23
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "APOE-\u03b54 Carrier Status and Gut Microbiota Dysbiosis in Patients With Alzheimer Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 11,
+    "blood": 8
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Aging Gut-Brain Interactions: Pro-Inflammatory Gut Bacteria Are Elevated in Fecal Samples from Individuals Living with Alzheimer's Dementia.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 19,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Air particulate pollution exposure associated with impaired cognition via microbiota gut-brain axis: an evidence from rural elderly female in northwest China.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Akkermansia muciniphila and its metabolite propionic acid maintains neuronal mitochondrial division and autophagy homeostasis during Alzheimer's disease pathologic process via GPR41 and GPR43.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 13,
+    "blood": 10,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Alteration of Gut Microbiota in Patients With Epilepsy and the Potential Index as a Biomarker": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 18
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Alteration of the fecal microbiota in Chinese patients with Parkinson's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 9
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Alteration of the gut microbiota profile in children with autism spectrum disorder in China": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 10
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Alterations in Circulating Fatty Acid Are Associated With Gut Microbiota Dysbiosis and Inflammation in Multiple Sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1,
+    "blood": 9
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Alterations in Gut Microbiome-Host Relationships After Immune Perturbation in Patients With Multiple Sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 21
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Alterations in Gut Microbiota and Their Correlation with Brain Beta-Amyloid Burden Measured by (18)F-Florbetaben PET in Mild Cognitive Impairment Due to Alzheimer's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 7
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Alterations in gut microbiota and metabolomic profiles in acute stroke: insights into brain-gut axis dysregulation": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 12,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Alterations in nasal microbiota of patients with amyotrophic lateral sclerosis": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 1,
+    "oral": 1,
+    "nasal": 4
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Alterations in the fecal microbiota of patients with spinal cord injury": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 10
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 26
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Alterations of fecal microbiota and plasma metabolome in patients with Parkinson's disease with rapid eye movement sleep disorder.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 25,
+    "blood": 6
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Alterations of gut microbiota are associated with brain structural changes in the spectrum of Alzheimer's disease: the SILCODE study in Hainan cohort.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 8,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Alterations of host-gut microbiome interactions in multiple sclerosis": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 11,
+    "blood": 11
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Alterations of host-gut microbiome interactions in multiple sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 10,
+    "blood": 9
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Alterations of the Gut Microbiota in Multiple System Atrophy Patients.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 17,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Alterations of the gut ecological and functional microenvironment in different stages of multiple sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 25,
+    "oral": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Alterations of the human gut microbiome in multiple sclerosis": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 16,
+    "gut biopsy": 1,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Alterations of the human gut microbiome in multiple sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 13,
+    "gut biopsy": 1,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Altered Gut Microbial Metabolites in Amnestic Mild Cognitive Impairment and Alzheimer's Disease: Signals in Host-Microbe Interplay.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 21,
+    "blood": 1,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Altered Gut Microbiota Related to Inflammatory Responses in Patients With Huntington's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 32,
+    "blood": 11
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Altered Gut Microbiota and Its Clinical Relevance in Mild Cognitive Impairment and Alzheimer's Disease: Shanghai Aging Study and Shanghai Memory Study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 11,
+    "blood": 3,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Altered Gut Microbiota in Adults with Subjective Cognitive Decline: The SILCODE Study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Altered gut microbial networks and metabolic pathways in multiple system atrophy: a comparative 16S rRNA study": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 8,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Altered gut microbial networks and metabolic pathways in multiple system atrophy: a comparative 16S rRNA study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 9,
+    "blood": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Altered gut microbiome and serum metabolome profiles associated with essential tremor": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 3,
+    "blood": 3
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Altered gut microbiota and inflammatory cytokine responses in patients with Parkinson's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 20,
+    "gut biopsy": 1,
+    "blood": 13
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Altered gut microbiota in individuals with episodic and chronic migraine": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 18,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Altered gut microbiota in older adults with mild cognitive impairment: a case-control study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 5,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Altered gut microbiota in patients with idiopathic Parkinson's disease: an age-sex matched case-control study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Altered microbiomes distinguish Alzheimer's disease from amnestic mild cognitive impairment and health in a Chinese cohort.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {},
+   "scanner": "unknown",
+   "agrees": false
+  },
+  "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the Anti-Inflammatory P-Glycoprotein Pathway.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 11,
+    "blood": 1,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "An analysis of the characteristics of the intestinal flora in patients with Parkinson's disease complicated with constipation.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 9
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Analysis of Gut Microbiota in Patients with Parkinson's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Analysis of gut microbiota in patients with cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy (CADASIL)": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 8
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Analysis of the Gut Microflora in Patients With Parkinson's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 11
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Analysis of the relationship between the gut microbiome and dementia: a cross-sectional study conducted in Japan": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 8,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Analysis of the relationship between the gut microbiome and dementia: a cross-sectional study conducted in Japan.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 8,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Association between Gut Microbiota with Mild Cognitive Impairment and Alzheimer's Disease in a Thai Population.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Association between cognitive functioning and microbiota-gut-brain axis mediators in a memory clinic population.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 7,
+    "blood": 4
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Association between environmental phthalates exposure and gut microbiota and metabolome in dementia with Lewy bodies.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Association between the relative abundance of butyrate-producing and mucin-degrading taxa and Parkinson's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {},
+   "scanner": "unknown",
+   "agrees": false
+  },
+  "Association of brain amyloidosis with pro-inflammatory gut bacterial taxa and peripheral inflammation markers in cognitively impaired elderly.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {},
+   "scanner": "unknown",
+   "agrees": false
+  },
+  "B-cell-depletion reverses dysbiosis of the microbiome in multiple sclerosis patients.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 25,
+    "oral": 8
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Blood microbiome signatures in the REM sleep behavior disorder-Lewy body disease continuum": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 1,
+    "oral": 1,
+    "blood": 10,
+    "nasal": 1
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "CXCR3+ T cells in multiple sclerosis correlate with reduced diversity of the gut microbiome.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 10,
+    "blood": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Change of intestinal microbiota in cerebral ischemic stroke patients": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 4,
+    "blood": 5
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Changes in Gastrointestinal Microbiome Composition in PD: A Pivotal Role of Covariates.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 23,
+    "gut biopsy": 2,
+    "blood": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 19
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 7
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Changes in the Gut Microbiome and Predicted Functional Metabolic Effects in an Australian Parkinson's Disease Cohort.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 11
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Changes of gut microbiota in patients at different phases of stroke": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 6,
+    "blood": 3
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Characterization of the gut microbiome in Alzheimer disease and mild cognitive impairment among older adults in Uganda: A case-control study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 8
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Children and adolescents with attention deficit hyperactivity disorder and autism spectrum disorder share distinct microbiota compositions": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 22,
+    "blood": 12,
+    "urine": 3
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Cognitive Function Associated with Gut Microbial Abundance in Sucrose and S-Adenosyl-L-Methionine (SAMe) Metabolic Pathways.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Colonic bacterial composition in Parkinson's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 6,
+    "gut biopsy": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Combination effect between gut microbiota and traditional potentially modifiable risk factors for first-ever ischemic stroke in Tujia, Miao and Han populations in China": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 9,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Combination of gut microbiota and plasma amyloid-\u03b2 as a potential index for identifying preclinical Alzheimer\u2019s disease: a cross-sectional analysis from the SILCODE study": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 10,
+    "blood": 37
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Comparing the gut microbiome of obese, African American, older adults with and without mild cognitive impairment | PLOS One": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 10,
+    "oral": 3,
+    "blood": 4
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Comparison of the Intestinal Microbiome of Italian Patients with Multiple Sclerosis and Their Household Relatives.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 17,
+    "oral": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 12,
+    "oral": 4,
+    "blood": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 4,
+    "blood": 3
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Correlation between APOE4 gene and gut microbiota in Alzheimer's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {},
+   "scanner": "unknown",
+   "agrees": false
+  },
+  "Cross-Sectional Study on the Gut Microbiome of Parkinson's Disease Patients in Central China.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 8
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Crosstalk between the gut microbiota and brain network topology in poststroke aphasia patients: perspectives from neuroimaging findings": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 3,
+    "blood": 3
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Decoding the Gut Microbiota in Multiple Sclerosis Using Nanopore Long-Read Sequencing: Insights into Disease Severity and Subtypes.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 9,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Deep nasal sinus cavity microbiota dysbiosis in Parkinson\u2019s disease": {
+   "site": "nasal",
+   "source": "scanner",
+   "scores": {
+    "oral": 1,
+    "nasal": 7
+   },
+   "scanner": "nasal",
+   "agrees": null
+  },
+  "Detection of Dysbiosis and Increased Intestinal Permeability in Brazilian Patients with Relapsing-Remitting Multiple Sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 15,
+    "blood": 7
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Detection of Microbial 16S rRNA Gene in the Blood of Patients With Parkinson's Disease.": {
+   "site": "blood",
+   "source": "llm",
+   "scores": {
+    "stool": 15,
+    "oral": 1,
+    "blood": 9,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": false
+  },
+  "Dietary quality and the gut microbiome in early-stage Parkinson's disease patients.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Difference in gut microbial dysbiotic patterns between body-first and brain-first Parkinson's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {},
+   "scanner": "unknown",
+   "agrees": false
+  },
+  "Differences in the Composition of Gut Microbiota between Patients with Parkinson\u2019s Disease and Healthy Controls: A Cohort Study": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 6,
+    "urine": 2
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Differential Patterns of Gut and Oral Microbiomes in Hispanic Individuals with Cognitive Impairment.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 9,
+    "oral": 51,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Disease- and stage-specific alterations of the oral and fecal microbiota in Alzheimer\u2019s disease": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 50,
+    "oral": 13
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Disruptions of Anaerobic Gut Bacteria Are Associated with Stroke and Post-stroke Infection: a Prospective Case-Control Study": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 5,
+    "blood": 7
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Distinct Gut Microbiota Composition and Functional Category in Children With Cerebral Palsy and Epilepsy": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 12
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Distinct gut microbiome characteristics and dynamics in patients with Parkinson\u2019s disease based on the presence of premotor rapid-eye movement sleep behavior disorders": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 5
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Distinct responsiveness to rifaximin in patients with hepatic encephalopathy depends on functional gut microbial species": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 11,
+    "oral": 20,
+    "blood": 8
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Distinctive Gut Microbiota Alteration Is Associated with Poststroke Functional Recovery: Results from a Prospective Cohort Study": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 5,
+    "oral": 1
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Disturbance of Gut Bacteria and Metabolites Are Associated with Disease Severity and Predict Outcome of NMDAR Encephalitis: A Prospective Case-Control Study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 35,
+    "blood": 22
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Disturbed microbial ecology in Alzheimer's disease: evidence from the gut microbiota and fecal metabolome.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 28,
+    "blood": 5,
+    "nasal": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Dysbiosis characteristics of gut microbiota in cerebral infarction patients": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 5
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 16,
+    "gut biopsy": 1,
+    "oral": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Dysbiosis of Gut Microbiota and Short-Chain Fatty Acids in Acute Ischemic Stroke and the Subsequent Risk for Poor Functional Outcomes": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 16
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Dysbiosis of gut microbiota in a selected population of Parkinson's patients.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Dysbiosis of the Beneficial Gut Bacteria in Patients with Parkinson's Disease from India.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 10
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pilot study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 13,
+    "blood": 6
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Effect of Parkinson's disease and related medications on the composition of the fecal bacterial microbiota.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 17,
+    "skin": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Effect of Probiotics Supplementation on REM Sleep Behavior Disorder and Motor Symptoms in Parkinson's Disease: A Pilot Study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 11,
+    "blood": 20
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Effects of Resistant Starch on Symptoms, Fecal Markers, and Gut Microbiota in Parkinson's Disease - The RESISTA-PD Trial.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 23,
+    "oral": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Effects of a ketogenic and low-fat diet on the human metabolome, microbiome, and foodome in adults at risk for Alzheimer's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 3,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Elderly Patients with Mild Cognitive Impairment Exhibit Altered Gut Microbiota Profiles.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 5,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Elevated Lactobacillus salivarius and genus Akkermansia in fecal samples of Taiwanese patients with parkinson's disease and diabetes mellitus.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 14,
+    "oral": 7,
+    "blood": 6,
+    "nasal": 1,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Evaluation of the Microbial Diversity in Amyotrophic Lateral Sclerosis Using High-Throughput Sequencing.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 5
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Examining the complex Interplay between gut microbiota abundance and short-chain fatty acid production in amyotrophic lateral sclerosis patients shortly after onset of disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 19,
+    "oral": 1,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Exploring gut microbiota alterations in Parkinson's disease: insights from a 16S amplicon sequencing Eastern European pilot study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 24,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Exploring the role of acylated ghrelin and gut microbiome in delineating cognitive health in the elderly": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 4,
+    "blood": 5
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Faecal mucoprotein MUC2 is decreased in multiple sclerosis and is associated with mucin degrading bacteria.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 17,
+    "blood": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Fecal Volatile Organic Compounds and Microbiota Associated with the Progression of Cognitive Impairment in Alzheimer's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 35,
+    "blood": 1,
+    "urine": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Fecal microbiome alterations in treatment-naive de novo Parkinson's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 48,
+    "gut biopsy": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Free water in gray matter linked to gut microbiota changes with decreased butyrate producers in Alzheimer's disease and mild cognitive impairment.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {},
+   "scanner": "unknown",
+   "agrees": false
+  },
+  "Functional implications of microbial and viral gut metagenome changes in early stage L-DOPA-na\u00efve Parkinson's disease patients.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 9,
+    "gut biopsy": 2,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Genetic risk score in multiple sclerosis is associated with unique gut microbiome.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 11,
+    "blood": 5
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut Dysbiosis Is Associated With the Severity of Cryptogenic Stroke and Enhanced Systemic Inflammatory Response": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 9
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Gut Dysbiosis: A New Avenue for Stroke Prevention and Therapeutics": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 10,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Gut Microbial Characteristics of Adult Patients With Epilepsy": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 4,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut Microbiome Alterations in Mild Cognitive Impairment: Findings from the ALBION Greek Cohort.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 12,
+    "oral": 4,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut Microbiome Distinguishes Patients With Epilepsy From Healthy Individuals": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 28,
+    "oral": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut Microbiome Features of Chinese Patients Newly Diagnosed with Alzheimer's Disease or Mild Cognitive Impairment": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut Microbiome Signatures in Multiple Sclerosis: A Case-Control Study with Machine Learning and Global Data Integration.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 10
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut Microbiota Altered in Mild Cognitive Impairment Compared With Normal Cognition in Sporadic Parkinson's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 22
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut Microbiota Changes and Their Correlation with Cognitive and Neuropsychiatric Symptoms in Alzheimer's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut Microbiota Differs Between Parkinson\u2019s Disease Patients and Healthy Controls in Northeast China": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 9
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut Microbiota Ecological and Functional Modulation in Post-Stroke Recovery Patients: An Italian Study": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 19,
+    "blood": 2
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Gut Microbiota and Fecal Metabolites Associated With Neurocognitive Impairment in HIV-Infected Population": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 29,
+    "blood": 5
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut Microbiota and Metabolome Alterations Associated with Parkinson's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 18,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive Impairment.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 8,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut Microbiota and Targeted Biomarkers Analysis in Patients With Cognitive Impairment": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 4
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Gut Microbiota as a Potential Predictive Biomarker in Relapsing-Remitting Multiple Sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 8
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 7
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut bacteria from multiple sclerosis patients modulate human T cells and exacerbate symptoms in mouse models.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 6
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut commensal Agathobacter rectalis alleviates microglia-mediated neuroinflammation against pathogenesis of Alzheimer disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 12
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut dysbiosis and lack of short chain fatty acids in a Chinese cohort of patients with multiple sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut dysbiosis in Huntington's disease: associations among gut microbiota, cognitive performance and clinical outcomes.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 11
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut dysbiosis influences the pathophysiology of multiple sclerosis: A case-control study from North India.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {},
+   "scanner": "unknown",
+   "agrees": false
+  },
+  "Gut dysbiosis is associated with metabolism and systemic inflammation in patients with ischemic stroke": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 18,
+    "blood": 8
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut inflammation and dysbiosis in human motor neuron disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 15,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 13
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Gut microbes exacerbate systemic inflammation and behavior disorders in neurologic disease CADASIL": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 28,
+    "blood": 25
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbial profiles of patients with optic neuritis or myasthenia gravis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 15
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiome alterations in Alzheimer's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 11,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiome alterations in preclinical Alzheimer\u2019s disease": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 8,
+    "oral": 1
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Gut microbiome analysis in neuromyelitis optica reveals overabundance of Clostridium perfringens.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 3
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiome changes in anti-N-methyl-D-aspartate receptor encephalitis patients.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 7
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 18,
+    "oral": 1,
+    "blood": 2,
+    "csf": 6
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiome differences between amyotrophic lateral sclerosis patients and spouse controls.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 20,
+    "blood": 10
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiome differences in Parkinson's disease patients in Central Kerala population.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiome dysbiosis across early Parkinson's disease, REM sleep behavior disorder and their first-degree relatives.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 7,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiome dysbiosis across early Parkinson\u2019s disease, REM sleep behavior disorder and their first-degree relatives": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 8,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Gut microbiome dysbiosis drives metabolic dysfunction in Familial dysautonomia.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 38,
+    "blood": 10
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiome is not associated with mild cognitive impairment in Parkinson's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiome of treatment-na\u00efve MS patients of different ethnicities early in disease course.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 12
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiome signatures in iNPH: Insights from a shotgun metagenomics study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 10,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 12
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiome, cognitive function and brain structure: a multi-omics integration analysis": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 15,
+    "blood": 3,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota and intestinal barrier function in subjects with cognitive impairments: a cross-sectional study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 7,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota and metabolome in sporadic Creutzfeldt-Jakob disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota as predictors of the occurrence of high on-treatment platelet reactivity in acute ischemic stroke patients": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 7,
+    "blood": 4
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota characterization in ageing, mild cognitive impairment, and Alzheimer's disease in the context of mediterranean lifestyle in a Spanish population.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 16
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota composition during a 12-week intervention with delayed-release dimethyl fumarate in multiple sclerosis - a pilot trial.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 9,
+    "blood": 4
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota composition reflects disease progression, severity and outcome, and dysfunctional immune responses in patients with hypertensive intracerebral hemorrhage": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 15,
+    "blood": 9
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Gut microbiota distinguishes aging hispanics with Alzheimer's disease: associations with cognitive impairment and severity.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 4
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota dysbiosis and neurological function recovery after intracerebral hemorrhage: an analysis of clinical samples": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 5
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Gut microbiota dysbiosis in male patients with chronic traumatic complete spinal cord injury": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 9,
+    "blood": 5
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Gut microbiota dysbiosis in patients with Alzheimer\u2019s disease and correlation with multiple cognitive domains": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 5,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota in Parkinson's disease patients: hospital-based study": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 14,
+    "gut biopsy": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota in Parkinson's disease: Temporal stability and relations to disease progression.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 12
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota in dementia with Lewy bodies.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 10
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota in multiple sclerosis: possible influence of immunomodulators.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 7
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota in patients with Parkinson's disease in southern China.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota links with cognitive impairment in amyotrophic lateral sclerosis: A multi-omics study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 17,
+    "blood": 1,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota of Parkinson's disease in an appendectomy cohort: a preliminary study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 20
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Gut microbiota signatures in tuberous sclerosis complex and epilepsy: a pilot study": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 6
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 26,
+    "oral": 23,
+    "blood": 10
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Hemorrhagic transformation in patients with large-artery atherosclerotic stroke is associated with the gut microbiota and lipopolysaccharide": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 14,
+    "blood": 8
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 9
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson\u2019s disease": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 8
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Hypercoagulable state and gut microbiota dysbiosis as predictors of poor functional outcomes in acute ischemic stroke patients": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 5,
+    "blood": 6
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Identification of Faecalibacterium prausnitzii strains for gut microbiome-based intervention in Alzheimer's-type dementia.": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 10
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Identification of Faecalibacterium prausnitzii strains for gut microbiome-based intervention in Alzheimer\u2019s-type dementia": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 15
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Identification of disordered profiles of gut microbiota and functional component in stroke and poststroke epilepsy": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 5
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Identifying gut microbiota with high specificity for ischemic stroke with large vessel occlusion": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 10,
+    "blood": 7
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Imbalance of Microbacterial Diversity Is Associated with Functional Prognosis of Stroke": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 12
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Impact of 16S rRNA on Intestinal Flora Alterations and Early Diagnosis in Early Alzheimer's Disease Patients.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 12
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Implications of oral streptococcal bacteriophages in autism spectrum disorder": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 11,
+    "oral": 13
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Inflammatory Manifestations Associated With Gut Dysbiosis in Alzheimer's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 8,
+    "blood": 8,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Integrated Macrogenomics and Metabolomics Explore Alterations and Correlation between Gut Microbiota and Serum Metabolites in Adult Epileptic Patients: A Pilot Study": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 10,
+    "blood": 15
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Integrated Traditional Chinese Medicine Improves Functional Outcome in Acute Ischemic Stroke: From Clinic to Mechanism Exploration With Gut Microbiota": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 6
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Intestinal Dysbiosis and Lowered Serum Lipopolysaccharide-Binding Protein in Parkinson's Disease": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 15,
+    "gut biopsy": 1,
+    "blood": 7
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Intestinal Microbiota in Patients with Spinal Cord Injury.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 7
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 21
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Is gut microbiota of patients with ALS different from that of healthy individuals?": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Landscapes of gut microbiome and blood metabolomic signatures in relapsing remitting multiple sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "blood": 1
+   },
+   "scanner": "blood",
+   "agrees": false
+  },
+  "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 2,
+    "gut biopsy": 1,
+    "oral": 102
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 14,
+    "blood": 8,
+    "urine": 3
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Metagenome-assembled microbial genomes from Parkinson's disease fecal samples.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 6
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Metagenome-assembled microbial genomes from Parkinson\u2019s disease fecal samples": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 6
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Metagenomic association analysis of cognitive impairment in community-dwelling older adults.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 25,
+    "oral": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 19
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Metaproteogenomic analysis of saliva samples from Parkinson\u2019s disease patients with cognitive impairment": {
+   "site": "oral",
+   "source": "scanner",
+   "scores": {
+    "oral": 52
+   },
+   "scanner": "oral",
+   "agrees": null
+  },
+  "Microbial diversity in drug-na\u00efve Parkinson's disease patients.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 15,
+    "oral": 1,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Microbial dysbiosis and lack of SCFA production in a Spanish cohort of patients with multiple sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 13
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 15,
+    "oral": 35,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Microbiota from Alzheimer's patients induce deficits in cognition and hippocampal neurogenesis.": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 21,
+    "blood": 9
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Microbiota-microglia crosstalk between Blautia producta and neuroinflammation of Parkinson's disease: A bench-to-bedside translational approach.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Mild cognitive impairment has similar alterations as Alzheimer's disease in gut microbiota.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 3,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Modified Mediterranean-ketogenic diet modulates gut microbiome and short-chain fatty acids in association with Alzheimer's disease markers in subjects with mild cognitive impairment.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 11,
+    "blood": 1,
+    "csf": 3
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "More than constipation - bowel symptoms in Parkinson's disease and their connection to gut microbiota.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Multi-omics Analysis Reveals Key Gut Microbiota and Metabolites Closely Associated with Huntington's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 2,
+    "blood": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Multi-omics analyses identify gut microbiota-fecal metabolites-brain-cognition pathways in the Alzheimer's disease continuum.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 16,
+    "blood": 1,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 9,
+    "oral": 13
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Multi-omics reveals specific host metabolism-microbiome associations in intracerebral hemorrhage": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 4,
+    "blood": 2
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 10,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Multiple sclerosis and gut microbiota: Lachnospiraceae from the ileum of MS twins trigger MS-like disease in germfree transgenic mice-An unbiased functional study.": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 33,
+    "gut biopsy": 2
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Multiple sclerosis patients have a distinct gut microbiota compared to healthy controls.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 13,
+    "gut biopsy": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Mycobacterium avium subspecies paratuberculosis (MAP) infection, and its impact on gut microbiome of individuals with multiple sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 11,
+    "oral": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Nutritional Intake and Gut Microbiome Composition Predict Parkinson's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 12,
+    "blood": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Ocrelizumab transiently alters microbiota and modulates immune response depending on treatment outcome.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 13,
+    "blood": 14
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Oral Microbiome Stamp in Alzheimer\u2019s Disease": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 2,
+    "oral": 56,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Oral Pathobiont Streptococcus Anginosus Is Enriched in the Gut of Stroke Patients and Predicts 2-Year Cardiovascular Outcome": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "oral": 2
+   },
+   "scanner": "oral",
+   "agrees": false
+  },
+  "Oral and gut dysbiosis leads to functional alterations in Parkinson's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 19,
+    "oral": 30,
+    "blood": 1,
+    "nasal": 3
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Oral and gut microbial profiling in periodontitis and Parkinson's disease.": {
+   "site": "oral",
+   "source": "llm",
+   "scores": {
+    "stool": 20,
+    "oral": 52,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": false
+  },
+  "Oral and gut microbiome profiles in people with early idiopathic Parkinson's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 44,
+    "oral": 72
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Orthopedic Surgery Causes Gut Microbiome Dysbiosis and Intestinal Barrier Dysfunction in Prodromal Alzheimer Disease Patients": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 8,
+    "blood": 7
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Parkinson\u2019s disease-associated alterations of the gut microbiome predict disease-relevant changes in metabolic functions": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 20,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Patients with Infections of The Central Nervous System Have Lowered Gut Microbiota Alpha Diversity": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 9,
+    "blood": 1,
+    "csf": 2
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Perturbed Microbiota/Immune Homeostasis in Multiple Sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 25,
+    "blood": 14
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Pivotal interplays between fecal metabolome and gut microbiome reveal functional signatures in cerebral ischemic stroke": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 48,
+    "blood": 31
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 21,
+    "blood": 18
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Plasma exosomal miRNA expression and gut microbiota dysbiosis are associated with cognitive impairment in Alzheimer's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 4,
+    "blood": 27,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Potential Inflammatory Biomarkers and Differential Gut Microbiota in Cognitive Impairment After Ischemic Stroke": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 6,
+    "blood": 5
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Potential Role of Gut Microbiota in ALS Pathogenesis and Possible Novel Therapeutic Strategies.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Preoperative Microbiomes and Intestinal Barrier Function Can Differentiate Prodromal Alzheimer's Disease From Normal Neurocognition in Elderly Patients Scheduled to Undergo Orthopedic Surgery.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 13,
+    "oral": 1,
+    "blood": 9
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Primary progressive multiple sclerosis in a Russian cohort: relationship with gut bacterial diversity.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 17
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Profile of gut microbiota in patients with traumatic thoracic spinal cord injury and its clinical implications: a case-control study in a rehabilitation setting": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 1,
+    "blood": 8
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Prognostic Value of a Multivariate Gut Microbiome Model for Progression from Normal Cognition to Mild Cognitive Impairment Within 4 Years.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 4
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 12,
+    "blood": 4
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Relationships Between Rapid Eye Movement Sleep Behavior Disorder and Parkinson's Disease: Indication from Gut Microbiota Alterations.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 9
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Retrospective analysis of diet and gut microbiota diversity and clinical pharmacology outcomes in patients with Parkinsonism syndrome.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 14
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Rett Syndrome: A Focus on Gut Microbiota": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 10
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Short chain fatty acids and gut microbiota differ between patients with Parkinson's disease and age-matched controls.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 4
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Specific Bacterial Taxa and Their Metabolite, DHPS, May Be Linked to Gut Dyshomeostasis in Patients with Alzheimer's Disease, Parkinson's Disease, and Amyotrophic Lateral Sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 22,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Specific gut microbiome signatures predict the risk of acute ischemic stroke": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 7
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Specific gut microbiota alterations in essential tremor and its difference from Parkinson's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 24
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 36,
+    "gut biopsy": 2,
+    "blood": 4
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Spinal cord injury-induced gut dysbiosis influences neurological recovery partly through short-chain fatty acids": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 12,
+    "blood": 9
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Stratification of the Gut Microbiota Composition Landscape across the Alzheimer's Disease Continuum in a Turkish Cohort": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 6,
+    "csf": 5
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Stroke Dysbiosis Index (SDI) in Gut Microbiome Are Associated With Brain Injury and Prognosis of Stroke": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 20
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Structural and Functional Dysbiosis of Fecal Microbiota in Chinese Patients With Alzheimer's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 52,
+    "blood": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Structural changes of gut microbiota in Parkinson's disease and its correlation with clinical features.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Study of gut microbiota alterations in Alzheimer's dementia patients from Kazakhstan.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 7,
+    "blood": 12
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Study of the gut microbiome in Egyptian patients with Parkinson's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 7
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "The Alterations of Gut Microbiome and Lipid Metabolism in Patients with Spinal Muscular Atrophy": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 11,
+    "blood": 5
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "The Gut Microbiome in Parkinson's Disease: A Longitudinal Study of the Impacts on Disease Progression and the Use of Device-Assisted Therapies.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 13,
+    "blood": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "The Gut Microbiome in Progressive Multiple Sclerosis": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 5
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "The Gut Microbiota-Immunity Axis in ALS: A Role in Deciphering Disease Heterogeneity?": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 18,
+    "blood": 10
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "The Oral and Fecal Microbiota in a Canadian Cohort of Alzheimer's Disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 3,
+    "oral": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "The alteration of gut microbiome and metabolism in amyotrophic lateral sclerosis patients.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 14
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "The alteration of intestinal mucosal \u03b1-synuclein expression and mucosal microbiota in Parkinson's disease.": {
+   "site": "gut biopsy",
+   "source": "llm",
+   "scores": {
+    "stool": 8,
+    "gut biopsy": 11
+   },
+   "scanner": "stool",
+   "agrees": false
+  },
+  "The altered TBI fecal microbiome is stable and functionally distinct": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 10
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "The characteristics analysis of intestinal microecology on cerebral infarction patients and its correlation with apolipoprotein E": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 6,
+    "blood": 2
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "The effect of multiple sclerosis therapy on gut microbiota dysbiosis: a longitudinal prospective study.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "The gut microbiota and metabolite profiles are altered in patients with spinal cord injury": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 7,
+    "blood": 19
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "The gut microbiota in multiple sclerosis varies with disease activity": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 18,
+    "blood": 14
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "The gut microbiota in multiple sclerosis varies with disease activity.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 18,
+    "blood": 14
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "The human gut microbiota in people with amyotrophic lateral sclerosis.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "The impact of device-assisted therapies on the gut microbiome in Parkinson's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "The impact of dysbiosis in oropharyngeal and gut microbiota on systemic inflammatory response and short-term prognosis in acute ischemic stroke with preceding infection": {
+   "site": "oral",
+   "source": "llm",
+   "scores": {
+    "stool": 9,
+    "oral": 5,
+    "blood": 4
+   },
+   "scanner": "stool",
+   "agrees": false
+  },
+  "The interplay of gut microbiota and heavy metals in multiple sclerosis patients.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 3,
+    "blood": 2
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 15,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "The link between increased Desulfovibrio and disease severity in Parkinson's disease.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "The nasal and gut microbiome in Parkinson's disease and idiopathic rapid eye movement sleep behavior disorder.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 16,
+    "nasal": 3
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "The protective effect of Blautia coccoides in secondary injury of intracerebral hemorrhage": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "The relationship between Alzheimer's disease and intestinal microflora structure and inflammatory factors.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 5,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "The relationship between the gut microbiome and mild cognitive impairment in patients without dementia: a cross-sectional study conducted in Japan.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 5
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Transmission of Alzheimer's disease-associated microbiota dysbiosis and its impact on cognitive function: evidence from mice and patients.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 35,
+    "oral": 7
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Uncovering the characteristics of the gut microbiota in patients with acute ischemic stroke and phlegm-heat syndrome": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 7
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Uncovering the characteristics of the gut microbiota in patients with ischemic stroke and hemorrhagic stroke": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 5,
+    "blood": 2
+   },
+   "scanner": "stool",
+   "agrees": null
+  },
+  "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 11,
+    "oral": 1,
+    "blood": 2,
+    "csf": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Unraveling gut microbiota in Parkinson's disease and atypical parkinsonism.": {
+   "site": "stool",
+   "source": "llm",
+   "scores": {
+    "stool": 1
+   },
+   "scanner": "stool",
+   "agrees": true
+  },
+  "Unveiling the negative association of Faecalibacterium prausnitzii with ischemic stroke severity, impaired prognosis and pro-inflammatory markers": {
+   "site": "stool",
+   "source": "scanner",
+   "scores": {
+    "stool": 5,
+    "blood": 1
+   },
+   "scanner": "stool",
+   "agrees": null
+  }
+ }
+}

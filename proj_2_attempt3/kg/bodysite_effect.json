@@ -1,0 +1,24 @@
+[
+ {
+  "source": "Disbiome",
+  "from": "all_sites",
+  "to": "gut_only",
+  "n_common": 160,
+  "agree_from": 114,
+  "agree_to": 114,
+  "gained": 0,
+  "lost": 0,
+  "mcnemar_p": 1.0
+ },
+ {
+  "source": "Peryton",
+  "from": "all_sites",
+  "to": "gut_only",
+  "n_common": 122,
+  "agree_from": 91,
+  "agree_to": 91,
+  "gained": 0,
+  "lost": 0,
+  "mcnemar_p": 1.0
+ }
+]
