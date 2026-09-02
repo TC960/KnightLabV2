@@ -41,7 +41,8 @@ recompute the change, many times. That is the right null because observations ar
 not independent -- one paper contributes to many pairs -- and because it asks the
 question that matters: is the non-gut evidence unusual, or is any six papers?
 
-    python agreement_metric.py
+    python agreement_metric.py --drop nongut     # the 6 non-gut papers
+    python agreement_metric.py --drop screened   # the 22 the MAIN_DATA screen removed
 """
 import argparse
 import json
@@ -123,7 +124,7 @@ def concordance(votes, ref, exclude=frozenset()):
     return out
 
 
-def verify_against_graph(votes, graph_path=None):
+def verify_against_graph(votes, exclude=frozenset(), graph_path=None):
     """The in-memory tally MUST equal the committed graph, or the shortcut is a bug.
 
     Skipping the rebuild is only legitimate if it produces the same counts the
@@ -136,6 +137,8 @@ def verify_against_graph(votes, graph_path=None):
     seen = defaultdict(set)
     got = defaultdict(lambda: [0, 0])
     for title, vs in votes:
+        if title in exclude:
+            continue
         for tid, disease, d in vs:
             k = (tid, disease)
             if (title, d) in seen[k]:
@@ -157,24 +160,44 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--iters", type=int, default=2000)
     ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument("--drop", choices=["nongut", "screened"], default="nongut",
+                    help="which paper-removal correction to test: the 6 non-gut "
+                         "papers, or the 22 non-human / non-case-control papers "
+                         "the MAIN_DATA screen removed")
     a = ap.parse_args()
     rng = np.random.default_rng(a.seed)
 
-    site = {t: v["site"] for t, v in
-            json.load(open(os.path.join(HERE, "body_site.json")))["papers"].items()}
-    rows = json.load(open(os.path.join(HERE, "extractions_screened.json")))
-    drop = [r["title"] for r in rows if site.get(r.get("title"), "unknown") not in GUT
-            and site.get(r.get("title")) is not None]
-    contributing = sorted({t for t, v in site.items()})
-    print(f"papers: {len(rows)} rows, {len(contributing)} contributing, "
-          f"dropping {len(drop)} non-gut")
+    if a.drop == "nongut":
+        site = {t: v["site"] for t, v in
+                json.load(open(os.path.join(HERE, "body_site.json")))["papers"].items()}
+        rows = json.load(open(os.path.join(HERE, "extractions_screened.json")))
+        drop = [r["title"] for r in rows
+                if site.get(r.get("title"), "unknown") not in GUT
+                and site.get(r.get("title")) is not None]
+        # graph.json is the all-sites graph, i.e. the BEFORE side here.
+        verify_side = "before"
+        label = ("all_sites", "gut_only")
+    else:
+        # The 348-row set, before the screen removed 22 papers. Cache scope was
+        # checked: only 4 of the 22 produce any taxa at all, and their only three
+        # cache misses are misspellings ("Eisenbergiela tayi") the real taxdump
+        # would not resolve either -- so the replay cache does not bias this.
+        rows = json.load(open(os.path.join(HERE, "extractions_corrected.json")))
+        screen = json.load(open(os.path.join(HERE, "maindata_screen.json")))
+        drop = [t for t, v in screen.items() if v["category"] != "KEEP"]
+        verify_side = "after"
+        label = ("all348", "screened")
+    print(f"papers: {len(rows)} rows, dropping {len(drop)} ({a.drop})")
 
     from taxonomy_cache import load_taxonomy
     tax = load_taxonomy()
 
     votes = paper_votes(rows, tax)
     dropset = frozenset(drop)
-    verify_against_graph(votes)
+    # graph.json is the committed graph: the BEFORE side for the body-site test,
+    # the AFTER side for the screen. Whichever it is must reproduce exactly, or
+    # the in-memory shortcut is not faithful and nothing below can be trusted.
+    verify_against_graph(votes, exclude=dropset if verify_side == "after" else frozenset())
 
     results = []
     for name, recs in (("Disbiome", load_disbiome()[0]), ("Peryton", load_peryton()[0])):
@@ -182,6 +205,7 @@ def main():
             continue
         ref = reference(recs, tax)
         A, B = concordance(votes, ref), concordance(votes, ref, dropset)
+        lab_a, lab_b = label
         common = sorted(set(A) & set(B))
         obs = float(np.mean([B[k] - A[k] for k in common]))
         base = float(np.mean([A[k] for k in common]))
@@ -189,8 +213,8 @@ def main():
         print("\n" + "=" * 78)
         print(f"{name.upper()}   pairs scored in both variants: {len(common)}")
         print("=" * 78)
-        print(f"  mean concordance, all sites : {base:+.4f}")
-        print(f"  mean concordance, gut only  : {base+obs:+.4f}")
+        print(f"  mean concordance, {lab_a:10}: {base:+.4f}")
+        print(f"  mean concordance, {lab_b:10}: {base+obs:+.4f}")
         print(f"  observed change             : {obs:+.4f}")
         moved = [k for k in common if abs(B[k] - A[k]) > 1e-12]
         print(f"  pairs whose score moved at all: {len(moved)} of {len(common)}"
@@ -212,7 +236,7 @@ def main():
         print(f"    two-sided p = {p:.3f}")
         print(f"    minimum detectable |change| at this n ~ "
               f"{np.percentile(np.abs(null),95):.4f}")
-        results.append({"source": name, "n_pairs": len(common), "n_moved": len(moved),
+        results.append({"source": name, "correction": a.drop, "n_pairs": len(common), "n_moved": len(moved),
                         "baseline": round(base, 4), "observed_change": round(obs, 4),
                         "null_sd": round(float(null.std()), 4),
                         "min_detectable": round(float(np.percentile(np.abs(null), 95)), 4),

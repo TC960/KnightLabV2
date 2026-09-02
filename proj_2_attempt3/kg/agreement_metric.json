@@ -1,26 +1,54 @@
 [
  {
   "source": "Disbiome",
+  "correction": "nongut",
   "n_pairs": 242,
   "n_moved": 16,
   "baseline": 0.3453,
   "observed_change": -0.0073,
   "null_sd": 0.0044,
-  "min_detectable": 0.0096,
-  "p": 0.131,
+  "min_detectable": 0.0093,
+  "p": 0.12,
   "iters": 2000,
   "n_dropped": 6
  },
  {
   "source": "Peryton",
+  "correction": "nongut",
   "n_pairs": 188,
   "n_moved": 19,
   "baseline": 0.3729,
   "observed_change": -0.0048,
   "null_sd": 0.0052,
-  "min_detectable": 0.0122,
-  "p": 0.283,
+  "min_detectable": 0.0119,
+  "p": 0.285,
   "iters": 2000,
   "n_dropped": 6
+ },
+ {
+  "source": "Disbiome",
+  "correction": "screened",
+  "n_pairs": 250,
+  "n_moved": 2,
+  "baseline": 0.3528,
+  "observed_change": 0.0015,
+  "null_sd": 0.0086,
+  "min_detectable": 0.0174,
+  "p": 0.8515,
+  "iters": 2000,
+  "n_dropped": 22
+ },
+ {
+  "source": "Peryton",
+  "correction": "screened",
+  "n_pairs": 202,
+  "n_moved": 3,
+  "baseline": 0.3527,
+  "observed_change": 0.0043,
+  "null_sd": 0.0093,
+  "min_detectable": 0.0185,
+  "p": 0.6195,
+  "iters": 2000,
+  "n_dropped": 22
  }
 ]

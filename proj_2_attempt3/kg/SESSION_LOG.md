@@ -4,6 +4,80 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+# SUMMARY — session of 2026-09-02
+
+**The headline is that the instrument was broken.** The test used to evaluate the
+last four structural corrections could not, by construction, return anything but
+zero. Full write-up: `FINDINGS_validation_metric.md`.
+
+### What I tested
+
+1. Body site as an edge key — the top lever handed over by the previous session.
+2. Whether the four "zero flips, p = 1.00" results were real nulls.
+3. Both paper-removal corrections, re-run on a metric that can move.
+
+### What did NOT survive
+
+- **"Zero decisive pairs flipped — not underpowered, a true zero."** A tautology.
+  A pair is decisive only when our edge is *unanimous* (`contested = bool(up and
+  dn)`; verified, all 1,765 non-contested edges have minority vote 0), and every
+  correction only removes papers. A unanimous edge that loses papers stays
+  unanimous in the same direction, so **no paper-removal correction can ever flip
+  a decisive pair**. Confirmed empirically: across the gut restriction 17 edges
+  change `direction` and every one is a contested↔decisive transition, never
+  enriched↔depleted. Two sessions of "did this recover agreement?" were asked
+  with an instrument incapable of answering.
+- **"Body site is the highest-value next step."** Wrong on the numbers. Once all
+  281 contributing papers are labelled, the corpus is **97.9% gut** — six non-gut
+  papers. Restricting to gut moves mean concordance **−0.0073** with Disbiome
+  (p = 0.120, min detectable 0.0093) and **−0.0048** with Peryton (p = 0.285) —
+  null, and in the *opposite* direction to the hypothesis. Rejected as an edge
+  key; shipped as an edge attribute instead.
+- **"Rothia/Parkinson's is two saliva studies."** It is one oral and one stool.
+- **The MAIN_DATA screen, re-tested honestly:** +0.0015 (p = 0.852) / +0.0043
+  (p = 0.620), with only 2–3 pairs moving. Still justified on construct validity,
+  still not an accuracy gain.
+
+### What survived
+
+- **A metric that can detect a change.** Signed concordance
+  `(n_up−n_down)/(n_up+n_down) × reference_direction`, with a **paper-level**
+  resampling null (2,000 draws). Sensitive where the old one was blind: the gut
+  restriction moves 16 of 242 Disbiome pairs and 19 of 188 Peryton pairs, where
+  McNemar saw 0. It refuses to run unless its tally reproduces `graph.json`.
+- **Body site for all 281 papers**, via a keyword scanner *scored before it was
+  trusted*: 84.3% by argmax, 92.4% once any stool cue wins outright. The failure
+  mode was co-sampling (stool studies drawing serum for metabolomics), not noise.
+- **Two bugs, both found by verifying rather than reading.** (1) The
+  rank-placeholder fix was **erasing itself on every rebuild** in this
+  environment — 77 placeholder nodes → 0, 670 containment links → 610 — while
+  printing a successful build. Now a verified fixed point. (2) Edge weight
+  counted **observations, not papers**, contradicting the comment directly above
+  it; 44 edges inflated, 7 contested edges change their majority label
+  (*Bacteroides*/Parkinson's flips depleted → enriched).
+
+### Shipped
+
+`graph.json` / `kg.html` / `docs/index.html` rebuilt: 892 taxa, 1,985 edges, 220
+contested, **684 containment links** (+14 correct ones the old build missed), 74
+placeholder nodes, and every edge now carries `sites` + `gut_only` with a body
+site for all 281 papers. New: `body_site.py`, `analyze_bodysite.py`,
+`analyze_bodysite_effect.py`, `agreement_metric.py`,
+`FINDINGS_validation_metric.md`. Disbiome 71.9%, Peryton 72.8%.
+
+### Single highest-value next step
+
+**Stop correcting and start adding papers.** Three structural corrections in a
+row have now moved agreement by less than this corpus can resolve, and the
+minimum detectable effect (~0.01–0.02 mean concordance) is set by *n*, not by the
+metric — so further cleanup cannot be shown to help. The prerequisite that is
+still unmet and blocks the embedding work is narrower: **`relation_sentences.json`
+covers only the original 250 papers, not the current 326.** Rebuild it on the
+full corpus (CPU-only, no GPU needed), which also unblocks the 2 of 14
+doubly-contradicted pairs that could not be adjudicated.
+
+---
+
 # SUMMARY — session of 2026-09-01
 
 **Tested four things and one follow-on fix. The headline is that three of the four
