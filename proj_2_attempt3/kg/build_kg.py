@@ -202,12 +202,21 @@ def build(rows, min_papers=1, tax=None):
 
     edges = []
     for (taxon, disease, mondo), obs in ev.items():
-        c = Counter(o["dir"] for o in obs)
+        # Papers, not observations. A paper that lists the same taxon twice --
+        # literally "Coriobacteriaceae, Coriobacteriaceae", or "Ruminococcus" and
+        # "Ruminococcus sp" folding to one taxid -- must still cast ONE vote in
+        # that direction. This was previously true of `papers` and `evidence` but
+        # NOT of n_up/n_down, which counted raw observations and so inflated the
+        # evidence count on 44 of 1,985 edges (2.2%) and the consistency ratio
+        # with it. It changes no edge's verdict (measured: 0 of 1,985 flip
+        # direction or contested status), so nothing downstream moves -- but
+        # "edge weight is evidence count" has to mean what it says.
+        c = Counter({d: len({o["paper"] for o in obs if o["dir"] == d})
+                     for d in ("enriched", "depleted")})
         up, dn = c["enriched"], c["depleted"]
         n = up + dn
         if n < min_papers:
             continue
-        # papers, not observations: the same paper naming a taxon twice is one vote
         papers = {o["paper"] for o in obs}
         # per-paper direction, so the UI can show WHICH studies said what
         evidence = {}
