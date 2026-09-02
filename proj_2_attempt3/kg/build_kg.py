@@ -112,6 +112,7 @@ PLACEHOLDER = re.compile(
     r"sensu[ _]stricto|\bAD\d{3,}\b|\b[A-Z]{1,3}\d{2,}\b)")
 
 SPLIT_PLACEHOLDERS = False          # set by --split-placeholders
+BODY_SITE = {}                      # paper title -> sampled body site
 PLACEHOLDER_PARENT = {}             # placeholder node key -> parent taxid
 
 
@@ -163,6 +164,25 @@ def norm_taxon(t, tax=None):
     return key, disp, rank, "unresolved"
 
 
+def load_body_sites():
+    """title -> sampled body site, for ALL contributing papers (see body_site.py).
+
+    Deliberately an edge ATTRIBUTE, not part of the edge key. Keying on site was
+    the top lever out of the adjudication, and it was tested and rejected: the
+    corpus is 97.9% gut (6 non-gut papers in 281), so keying would fragment 58
+    mixed edges into singletons to separate evidence that, on a metric sensitive
+    enough to see it, moves mean concordance with Disbiome by -0.007 (p = 0.131,
+    minimum detectable 0.010) and with Peryton by -0.005 (p = 0.283) -- a null,
+    and in the OPPOSITE direction to the hypothesis that oral studies were
+    dragging agreement down. As an attribute it still lets a consumer filter to
+    gut-only evidence, which is the part that was actually worth having.
+    """
+    path = os.path.join(HERE, "body_site.json")
+    if not os.path.exists(path):
+        return {}
+    return {t: v.get("site", "") for t, v in json.load(open(path))["papers"].items()}
+
+
 def load_study_metadata():
     """paper title -> study design fields, from extract_metadata.py output."""
     path = os.path.join(HERE, "metadata.jsonl")
@@ -180,6 +200,8 @@ def load_study_metadata():
 
 
 def build(rows, min_papers=1, tax=None):
+    global BODY_SITE
+    BODY_SITE = load_body_sites()
     ev = defaultdict(list)
     taxon_disp, taxon_rank, taxon_how = {}, {}, {}
     aliases = defaultdict(set)          # node key -> every surface string that folded into it
@@ -223,7 +245,11 @@ def build(rows, min_papers=1, tax=None):
         for o in obs:
             evidence[o["paper"]] = o["dir"]
         consistency = max(up, dn) / n
+        sites = Counter(BODY_SITE.get(p, "") for p in papers)
+        sites.pop("", None)
         edges.append({
+            "sites": dict(sites),
+            "gut_only": bool(sites) and not (set(sites) - {"stool", "gut biopsy"}),
             "taxon": taxon_disp.get(taxon, taxon), "taxon_key": taxon,
             "rank": taxon_rank.get(taxon, ""),
             "resolved": taxon_how.get(taxon) != "unresolved",
@@ -305,7 +331,7 @@ def build(rows, min_papers=1, tax=None):
             "n_cases": m.get("n_cases", 0),
             "n_controls": m.get("n_controls", 0),
             "seq": m.get("sequencing", ""),
-            "site": m.get("body_site", ""),
+            "site": BODY_SITE.get(t, m.get("body_site", "")),
             "region": m.get("region_16S", ""),
             "med": m.get("medication_controlled"),
             "diet": m.get("diet_controlled"),

@@ -1,0 +1,26 @@
+[
+ {
+  "source": "Disbiome",
+  "n_pairs": 242,
+  "n_moved": 16,
+  "baseline": 0.3453,
+  "observed_change": -0.0073,
+  "null_sd": 0.0044,
+  "min_detectable": 0.0096,
+  "p": 0.131,
+  "iters": 2000,
+  "n_dropped": 6
+ },
+ {
+  "source": "Peryton",
+  "n_pairs": 188,
+  "n_moved": 19,
+  "baseline": 0.3729,
+  "observed_change": -0.0048,
+  "null_sd": 0.0052,
+  "min_detectable": 0.0122,
+  "p": 0.283,
+  "iters": 2000,
+  "n_dropped": 6
+ }
+]
