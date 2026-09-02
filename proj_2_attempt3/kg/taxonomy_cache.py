@@ -53,6 +53,8 @@ class CachedTaxonomy:
         self.sci = {}          # taxid -> scientific name
         self.rank = {}         # taxid -> rank
         self.parent = {}       # taxid -> nearest-ancestor taxid (graph-local)
+        self.ph2tid = {}       # rank-placeholder surface string -> PARENT taxid
+        self.ph_unrecovered = set()
         self.misses = set()
         self._name2ids = None
         self._source = graph_path
@@ -60,8 +62,12 @@ class CachedTaxonomy:
             return
 
         g = json.load(open(graph_path))
+        placeholders = []
         for n in g.get("nodes", []):
             if n.get("type") != "taxon":
+                continue
+            if n.get("placeholder"):
+                placeholders.append(n)
                 continue
             tid = n.get("taxid")
             if not tid or not n.get("resolved"):
@@ -75,11 +81,77 @@ class CachedTaxonomy:
                 self.name2tid.setdefault(self._norm(a), tid)
             self.name2tid.setdefault(self._norm(n.get("label", "")), tid)
 
+        # Only taxid->taxid links belong in the lineage chain; placeholder children
+        # are keyed "t:ph:..." and would otherwise sit in here as junk keys.
+        ph_parent_id = {}
         for h in g.get("hierarchy", []):
-            child = str(h.get("child", "")).replace("t:ncbi:", "")
-            par = str(h.get("parent", "")).replace("t:ncbi:", "")
-            if child and par:
-                self.parent[child] = par
+            child, par = str(h.get("child", "")), str(h.get("parent", ""))
+            if not (child and par and par.startswith("t:ncbi:")):
+                continue
+            if child.startswith("t:ncbi:"):
+                self.parent[child[7:]] = par[7:]
+            elif child.startswith("t:ph:"):
+                ph_parent_id[child] = par[7:]
+
+        self._cache_placeholders(placeholders, ph_parent_id)
+
+    def _cache_placeholders(self, nodes, ph_parent_id):
+        """Make rank-placeholder strings resolve to their PARENT taxid again.
+
+        A placeholder node ("Erysipelotrichaceae UCG-003") deliberately carries no
+        taxid, so the loop above skips it -- and then every one of its surface
+        strings is a cache MISS. build_kg.py's placeholder branch only fires when
+        the string resolves to a taxid whose scientific name differs from it, so a
+        miss silently sends the string down the string-folding path: the node keeps
+        no `placeholder` flag, gets NO containment link to its parent, and splits
+        across spelling variants ("X_NK4A214_group" vs "X NK4A214 group") that the
+        real taxdump folds together. The build still prints success.
+
+        That is the fix from 2026-09-01 quietly undoing itself on any rebuild here,
+        so the parent must be recoverable from graph.json. Two ways, in order:
+          1. the `hierarchy` link the placeholder node already has to its parent;
+          2. failing that (the parent is not itself a node), replay the taxdump's
+             own rule -- trim trailing qualifier tokens until the remainder is a
+             name we know.
+        Placeholder strings are kept in their OWN table, not `name2tid`, so this
+        can never make an ordinary taxon name resolve to something it did not
+        before.
+        """
+        for n in nodes:
+            tid = ph_parent_id.get(str(n.get("id", "")))
+            names = [a for a in (n.get("aliases") or [])] + [n.get("label", "")]
+            if not tid:
+                tid = next((t for t in (self._trim_to_parent(a) for a in names) if t), None)
+            if not tid:
+                self.ph_unrecovered.add(n.get("label", ""))
+                continue
+            for a in names:
+                if a:
+                    self.ph2tid.setdefault(self._norm(a), tid)
+
+    # A phage is NOT a member of the genus it infects. build_kg.py's placeholder
+    # regex over-matches strain-code-looking names, so "Escherichia virus JES2013"
+    # and "Klebsiella virus KP36" arrive here looking like rank placeholders; naive
+    # trimming would hang them under Escherichia and Klebsiella as containment
+    # children, inventing two taxonomically false edges. Refuse any trim whose
+    # discarded tail says the string names a different kind of organism.
+    NOT_CONTAINED = ("virus", "phage", "bacteriophage")
+
+    def _trim_to_parent(self, name):
+        """Drop trailing tokens until what is left is a name the cache knows.
+
+        Replays what taxonomy.py does with a qualifier tail, using only names the
+        cache already holds. Brackets are stripped because 16S pipelines write
+        "[Eubacterium] nodatum group" for what NCBI calls Eubacterium.
+        """
+        toks = self._norm(str(name).replace("_", " ").replace("[", "").replace("]", "")).split()
+        for i in range(len(toks) - 1, 0, -1):
+            if any(t in self.NOT_CONTAINED for t in toks[i:]):
+                return None
+            tid = self.name2tid.get(" ".join(toks[:i]))
+            if tid:
+                return tid
+        return None
 
     @property
     def name2ids(self):
@@ -114,7 +186,14 @@ class CachedTaxonomy:
         -> (taxid, scientific_name, rank, how) or (None, cleaned, None, 'unresolved')
         """
         raw = (name or "").strip()
-        tid = self.name2tid.get(self._norm(raw))
+        key = self._norm(raw)
+        tid = self.name2tid.get(key)
+        if tid:
+            return (tid, self.sci.get(tid, raw), self.rank.get(tid, "no rank"), "cached")
+        # A rank placeholder resolves to its parent, and the caller detects that by
+        # the returned scientific name differing from the string it asked about --
+        # which is exactly what makes build_kg.py split it off as a child node.
+        tid = self.ph2tid.get(key) or self.ph2tid.get(self._norm(raw.replace("_", " ")))
         if tid:
             return (tid, self.sci.get(tid, raw), self.rank.get(tid, "no rank"), "cached")
         self.misses.add(raw)
@@ -144,8 +223,13 @@ def load_taxonomy(verbose=True):
     c = CachedTaxonomy()
     if verbose:
         print(f"taxonomy: NO taxdump -> replay cache from {os.path.basename(c._source)} "
-              f"({len(c.name2tid)} names, {len(c.parent)} parent links). "
+              f"({len(c.name2tid)} names, {len(c.parent)} parent links, "
+              f"{len(c.ph2tid)} placeholder strings). "
               f"VALID ONLY FOR SUBSETS of that graph.")
+        if c.ph_unrecovered:
+            print(f"  {len(c.ph_unrecovered)} placeholder node(s) have no recoverable "
+                  f"parent taxid -> they will string-fold (no containment link): "
+                  f"{', '.join(sorted(c.ph_unrecovered)[:5])}")
     return c
 
 

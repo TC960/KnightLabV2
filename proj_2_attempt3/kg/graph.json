@@ -9,12 +9,12 @@
     "n_replicated": 472,
     "n_contested": 220,
     "n_taxa_resolved": 664,
-    "n_hierarchy_links": 670,
+    "n_hierarchy_links": 684,
     "n_papers_table": 281,
     "n_papers_with_metadata": 211,
     "min_papers": 1,
     "split_placeholders": true,
-    "n_placeholder_nodes": 77,
+    "n_placeholder_nodes": 74,
     "note": "Edge weight is evidence count, not effect size: the extractor yields direction only and the source papers report incommensurable statistics. Contested edges are retained, never merged away."
   },
   "nodes": [
@@ -5186,16 +5186,16 @@
       "degree": 1
     },
     {
-      "id": "t:ph:cyanothece sp. ccy0110",
+      "id": "t:cyanothece sp. ccy0110",
       "label": "Cyanothece sp. CCY0110",
       "type": "taxon",
       "taxid": null,
       "resolved": false,
-      "placeholder": true,
+      "placeholder": false,
       "aliases": [
         "Cyanothece sp. CCY0110"
       ],
-      "rank": "clade",
+      "rank": "species",
       "degree": 1
     },
     {
@@ -7489,16 +7489,16 @@
       "degree": 1
     },
     {
-      "id": "t:ph:klebsiella virus kp36",
+      "id": "t:klebsiella virus kp36",
       "label": "Klebsiella virus KP36",
       "type": "taxon",
       "taxid": null,
       "resolved": false,
-      "placeholder": true,
+      "placeholder": false,
       "aliases": [
         "Klebsiella virus KP36"
       ],
-      "rank": "clade",
+      "rank": "species",
       "degree": 1
     },
     {
@@ -7842,16 +7842,16 @@
       "degree": 1
     },
     {
-      "id": "t:ph:escherichia virus jes2013",
+      "id": "t:escherichia virus jes2013",
       "label": "Escherichia virus JES2013",
       "type": "taxon",
       "taxid": null,
       "resolved": false,
-      "placeholder": true,
+      "placeholder": false,
       "aliases": [
         "Escherichia virus JES2013"
       ],
-      "rank": "clade",
+      "rank": "species",
       "degree": 1
     },
     {
@@ -32132,9 +32132,9 @@
     },
     {
       "taxon": "Cyanothece sp. CCY0110",
-      "taxon_key": "ph:cyanothece sp. ccy0110",
-      "rank": "clade",
-      "resolved": true,
+      "taxon_key": "cyanothece sp. ccy0110",
+      "rank": "species",
+      "resolved": false,
       "disease": "Amyotrophic lateral sclerosis",
       "mondo": "MONDO:0004976",
       "direction": "enriched",
@@ -32147,7 +32147,7 @@
       "papers": [
         "The alteration of gut microbiome and metabolism in amyotrophic lateral sclerosis patients."
       ],
-      "source": "t:ph:cyanothece sp. ccy0110",
+      "source": "t:cyanothece sp. ccy0110",
       "target": "d:Amyotrophic lateral sclerosis",
       "ev": [
         {
@@ -43190,9 +43190,9 @@
     },
     {
       "taxon": "Klebsiella virus KP36",
-      "taxon_key": "ph:klebsiella virus kp36",
-      "rank": "clade",
-      "resolved": true,
+      "taxon_key": "klebsiella virus kp36",
+      "rank": "species",
+      "resolved": false,
       "disease": "Mild cognitive impairment",
       "mondo": "MONDO:0005453",
       "direction": "enriched",
@@ -43205,7 +43205,7 @@
       "papers": [
         "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults."
       ],
-      "source": "t:ph:klebsiella virus kp36",
+      "source": "t:klebsiella virus kp36",
       "target": "d:Mild cognitive impairment",
       "ev": [
         {
@@ -44240,9 +44240,9 @@
     },
     {
       "taxon": "Escherichia virus JES2013",
-      "taxon_key": "ph:escherichia virus jes2013",
-      "rank": "clade",
-      "resolved": true,
+      "taxon_key": "escherichia virus jes2013",
+      "rank": "species",
+      "resolved": false,
       "disease": "Mild cognitive impairment",
       "mondo": "MONDO:0005453",
       "direction": "depleted",
@@ -44255,7 +44255,7 @@
       "papers": [
         "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults."
       ],
-      "source": "t:ph:escherichia virus jes2013",
+      "source": "t:escherichia virus jes2013",
       "target": "d:Mild cognitive impairment",
       "ev": [
         {
@@ -69538,9 +69538,33 @@
       "child_rank": "clade"
     },
     {
+      "parent": "t:ncbi:133925",
+      "child": "t:ph:olsenella sp. marseille-p2912",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:239759",
+      "child": "t:ph:alistipes finegoldii dsm17242",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
       "parent": "t:ncbi:990719",
       "child": "t:ph:christensenellaceae r-7 group",
       "parent_rank": "family",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:1730",
+      "child": "t:ph:eubacterium coprostanoligenes group",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ph:bacteroides sp. marseille-p3166",
+      "parent_rank": "genus",
       "child_rank": "clade"
     },
     {
@@ -69568,9 +69592,21 @@
       "child_rank": "clade"
     },
     {
+      "parent": "t:ncbi:1263",
+      "child": "t:ph:ruminococcus gauvreauii group",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
       "parent": "t:ncbi:216572",
       "child": "t:ph:ruminococcaceae ucg 002",
       "parent_rank": "family",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:1730",
+      "child": "t:ph:eubacterium ventriosum group",
+      "parent_rank": "genus",
       "child_rank": "clade"
     },
     {
@@ -69601,6 +69637,18 @@
       "parent": "t:ncbi:186803",
       "child": "t:ph:lachnospiraceae ucg-010",
       "parent_rank": "family",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:1485",
+      "child": "t:ph:clostridium sp. ht03-22",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:1730",
+      "child": "t:ph:[eubacterium] nodatum group",
+      "parent_rank": "genus",
       "child_rank": "clade"
     },
     {
@@ -69664,6 +69712,12 @@
       "child_rank": "clade"
     },
     {
+      "parent": "t:ncbi:292632",
+      "child": "t:ph:subdoligranulum sp. apc924",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
       "parent": "t:ncbi:816",
       "child": "t:ph:bacteroides phage b124 14",
       "parent_rank": "genus",
@@ -69696,6 +69750,12 @@
     {
       "parent": "t:ncbi:1485",
       "child": "t:ph:clostridium sensu stricto",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:1730",
+      "child": "t:ph:eubacterium fissicatena group",
       "parent_rank": "genus",
       "child_rank": "clade"
     },
@@ -69742,9 +69802,27 @@
       "child_rank": "clade"
     },
     {
+      "parent": "t:ncbi:1730",
+      "child": "t:ph:eubacterium brachy group",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:838",
+      "child": "t:ph:prevotella sp. marseille p2931",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
       "parent": "t:ncbi:1578",
       "child": "t:ph:lactobacillus sakei subgroup",
       "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:186802",
+      "child": "t:ph:clostridiales incertae sedis xi",
+      "parent_rank": "order",
       "child_rank": "clade"
     },
     {
@@ -69763,6 +69841,12 @@
       "parent": "t:ncbi:990719",
       "child": "t:ph:christensenellaceae r 7 group",
       "parent_rank": "family",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:1730",
+      "child": "t:ph:eubacterium ruminantium group",
+      "parent_rank": "genus",
       "child_rank": "clade"
     },
     {
