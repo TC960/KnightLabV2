@@ -65,16 +65,34 @@ site for all 281 papers. New: `body_site.py`, `analyze_bodysite.py`,
 `analyze_bodysite_effect.py`, `agreement_metric.py`,
 `FINDINGS_validation_metric.md`. Disbiome 71.9%, Peryton 72.8%.
 
+### Also done this session
+
+**`relation_sentences.json` rebuilt on the full corpus** — the prerequisite the
+previous session named. Coverage 211 → **281 of 281** contributing papers, recall
+re-validated at **94.8%** of a 97.3% ceiling over 3,132 relations. Details in the
+dated entry below.
+
 ### Single highest-value next step
 
-**Stop correcting and start adding papers.** Three structural corrections in a
-row have now moved agreement by less than this corpus can resolve, and the
-minimum detectable effect (~0.01–0.02 mean concordance) is set by *n*, not by the
-metric — so further cleanup cannot be shown to help. The prerequisite that is
-still unmet and blocks the embedding work is narrower: **`relation_sentences.json`
-covers only the original 250 papers, not the current 326.** Rebuild it on the
-full corpus (CPU-only, no GPU needed), which also unblocks the 2 of 14
-doubly-contradicted pairs that could not be adjudicated.
+**Stop correcting the graph and run Task 1's analysis on the substrate that now
+exists.** Three structural corrections in a row have moved agreement by less than
+this corpus can resolve — the minimum detectable effect (~0.01–0.02 mean
+concordance) is set by *n*, not by the metric — so further cleanup cannot be
+shown to help, and the honest options are analysis or more papers.
+
+Analysis is the CPU-only one and is now unblocked: build the paper × taxon
+incidence matrix from the filtered sentences and run the **pooled** test (do
+papers reporting enrichment differ from papers reporting depletion in their taxon
+co-occurrence profile?), with cluster-robust permutation at the paper level.
+Pooled, because that is the version with power — per-contested-edge tests average
+~4 papers a side and cannot be answered at this corpus size.
+
+Expect it to be hard: this corpus has already produced two false positives that
+survived until tested, and a third (the four "true zero" agreement results)
+survived until this session. Anything that looks like a finding gets shuffled at
+the paper level before it is believed.
+
+More papers needs a GPU for extraction — **ask before spending.**
 
 ---
 
