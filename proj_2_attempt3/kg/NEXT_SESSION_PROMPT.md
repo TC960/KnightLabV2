@@ -59,51 +59,93 @@ on each other and can be fanned out to subagents. Task 2 depends on Task 1.
   every static check.
 - Commit as you go with real reasoning in the messages.
 
-## STATE AS OF 2026-08-31 (already done — do not redo)
+## STATE AS OF 2026-09-03 (already done — do not redo)
 
-- Graph rebuilt on the CORRECT datasheet: **348 papers, 299 scoreable** (was 250/88),
-  833 taxa, 43 diseases, 1,927 edges, 226 contested, 625 containment links.
-- Revalidated: Disbiome **72.8%** agreement, Peryton **72.7%** (272 / 221 overlapping pairs).
-- Rescoring finding: the old "F1 0.390" was an artifact of blank gold cells; the old
-  "0.680" was flattering (measured on an easy 88-paper subset). **Honest F1 ~0.59.**
-  Permutation confirms it is real work: observed 0.596 vs null 0.072, p=0.001.
-- LLM-vs-human metadata: country 91.7%, sequencing 90.4% agreement over 246 papers.
-  **CAVEAT: only 3 disagreements were actually read.** That is an anecdote, not a
-  finding. Re-do at n>=20 before anyone cites it.
+Read `SESSION_LOG.md` first; it is the running record and its top entry is the
+current state. In short, **every numbered task below has been done**, and the
+findings docs (`FINDINGS_*.md`) carry the results. What is left is listed under
+"THE ACTUAL NEXT STEPS" at the end of this section.
 
-### Highest-value cleanup, do early
-45 of the 348 papers came from MAIN_DATA by TITLE KEYWORD only and are unfiltered
-for reviews and animal studies. Agreement with both curated databases fell ~4 points
-when they were added. Filter them (human case-control studies with a healthy control
-arm only), rebuild, and report whether agreement recovers. If it does, that is direct
-evidence those papers are contaminating the graph.
+- Graph: **272 contributing papers, 918 taxa, 40 diseases, 2,011 edges, 438
+  replicated, 219 contested, 708 containment links, 100 placeholder nodes.**
+  Disbiome **71.9%**, Peryton **72.5%**.
+- **Task 0 (rebuild on the correct datasheet): done.** Honest F1 ~0.59
+  (permutation p=0.001). The old 0.390 was a blank-cell artifact; the old 0.680
+  was an easy-subset figure.
+- **MAIN_DATA screen: done.** 22 of 45 papers are not human case-control
+  studies. Filtering them changed agreement by nothing (McNemar p=1.00 —
+  and see the warning below about that metric).
+- **Task 1 (relation-sentence filter): done and validated.** 94.8% recall of a
+  97.3% ceiling, 281/281 papers covered, `relation_sentences.json`.
+- **Task 1 pooled analysis: done, NULL.** See `FINDINGS_cooccurrence.md`.
+- **Task 2.5 (GraphRAG): done.** Ties BM25 on ranking (0.800 vs 0.783 over 6
+  queries); the real win is containment traversal, not ranking accuracy.
+- **Task 3.1 (11 doubly-contradicted pairs): done.** 11 of 12 adjudicable pairs
+  faithfully report what the paper says. One extraction error in fourteen.
 
-## TASK 0 — Rebuild on the correct datasheet (DONE — see state above; skip)
+### Five structural corrections, and a property of the validation
 
-We discovered we have been scoring against the **wrong export**.
+Paper screen, placeholder split, body-site keying, paper deduplication, and the
+extended placeholder split have each moved agreement by **less than this corpus
+can resolve** (minimum detectable change ~0.013). That is a property of the
+validation — the decisive set is dominated by well-evidenced, unambiguously
+named taxa — not a coincidence. All are justified on correctness of meaning.
+**None may be cited as an accuracy gain.** Do not run another correction
+expecting the agreement number to move.
 
-- Used: `EmilySong_GoldStandardPaper/ALL_EMILY_PAPERS_WITH_(inGoldStd)_COLUMN.csv`
-  — 340 rows, **218 (64%) blank on both taxa columns**.
-- Correct: `kg/Microbiota Signatures Neurological Disorders Sheet 2 - Main Datasheet.csv`
-  — 337 rows, **only 5 (1%) blank**, and it additionally carries hand-curated
-  `Year`, `Country`, `Continent`, `SequencingType`, `PublicationJournal`,
-  `Differential Abundance Test`.
+Also retired: the binary "decisive pairs flipped / McNemar" metric is
+**incapable** of responding to a paper-removal correction (a unanimous edge that
+loses papers stays unanimous). Use `agreement_metric.py`'s signed concordance
+with a paper-level null.
 
-Do:
-1. Rebuild the paper set and gold from the correct sheet (246 of our 250 papers
-   are in it; reconcile the other 4 and the 7/4 title deltas between sheets).
-2. **Re-score the extraction.** Every F1 on record is suspect. Expect the "0.390
-   over all 250" artifact to disappear, since it was caused by scoring against
-   blank cells. Report old vs new side by side.
-3. **Cross-check the LLM metadata pass.** `kg/metadata.jsonl` extracted `country`
-   and `sequencing` with an LLM; the sheet has them hand-curated at 99%. Compute
-   agreement. This is a free, real accuracy measurement of an LLM extraction
-   against human labels — report it as such, and note where the LLM was *right*
-   and the human wrong, if that happens.
-4. Rebuild `graph.json`, `kg.html`, `docs/index.html`, and re-run
-   `validate_external.py`. Report how the Disbiome/Peryton numbers move.
+### What has been tested against contested edges, and returned null
 
-## TASK 1 — Relation-bearing sentences (the promising lead)
+Study design (FDR 0.243), body site (p=0.120, and the corpus is 97.9% gut), ASD
+being worse (p=0.211), and taxon co-occurrence pooled and per-edge (p=0.14,
+AUC 0.535 p=0.21). **Four explanatory variables, four nulls.** The minimum
+detectable effects are set by n — 130 contested edges averaging ~5 papers — not
+by the statistics. Expect the two remaining Task 1 questions (does profile
+predict disagreement with the curated databases; are there taxon modules) to
+return the same answer at the same n.
+
+### The method that HAS worked, twice
+
+**Anomaly-hunt the graph's own structure instead of testing hypotheses about
+it.** Both real results this month came that way: the placeholder rank collapse,
+and this session's 12 duplicate papers (found because three "signal" edges had
+paper-profile cosine of exactly 1.00). Ask cheap structural questions — does a
+paper contradict itself, do two nodes mean one thing, does a surface string
+extend the name it resolved to — and verify by rebuilding and diffing.
+
+**Verify every fix by rebuilding TWICE and diffing.** Two fixes in this repo
+have silently erased themselves on rebuild while printing success.
+
+### THE ACTUAL NEXT STEPS
+
+1. **Split the 54 named species out of their genera. NEEDS THE NCBI TAXDUMP.**
+   `Prevotella copri` is folded into `Prevotella`, `Klebsiella pneumonia` into
+   `Klebsiella` — a rank collapse the project explicitly forbids, on the graph's
+   flagship edge. All 115 child-folds are classified in `child_folds.json`
+   (54 `named_child` = fix these; 32 `placeholder_child` = already fixed; 29
+   `unspecified_member` = correct as-is, do NOT touch). Several are
+   misspellings (`Faecalibacterium prauznitzii`, `Bacteroides uniforms`) needing
+   fuzzy resolution or they become unresolved singletons. **This is why it was
+   not done in the cloud: that environment's network policy denies
+   `ftp.ncbi.nih.gov` (CONNECT -> 403), so the taxdump is unavailable and
+   splitting them there would have LOST the Disbiome/Peryton join for exactly
+   the species that matter.** On a machine with the taxdump this is mechanical.
+
+2. **More papers.** The binding constraint on every remaining question is n, not
+   method. Extraction needs a GPU — **ask before spending.**
+
+3. Model disease subtypes as containment rather than separate nodes, the way
+   taxa already are: `Intracerebral hemorrhage` / `Hypertensive intracerebral
+   hemorrhage` sit beside `Stroke`, and `Chronic traumatic complete spinal cord
+   injury` beside `Spinal cord injury`, with no link between them. (The one pure
+   *synonym* case, three spellings of anti-NMDAR encephalitis, is already
+   folded.) This is a design decision, not a bug — it needs a human call.
+
+## TASK 1 — Relation-bearing sentences (DONE — kept for the design rationale)
 
 **We care about relations, not metadata. Reduce every paper to the sentences that
 could actually state one.**
@@ -158,7 +200,7 @@ Only after Task 1, and only where Task 1 shows signal worth pursuing.
 - Sanity check: do embeddings reproduce the known structure (same disease cluster,
   same sequencing type cluster)? If not, they are not encoding what we need.
 
-## TASK 2.5 — Replace BM25 retrieval with GraphRAG (do this; the current design is wrong)
+## TASK 2.5 — GraphRAG (DONE — and its premise was wrong; see FINDINGS_task2.5_graphrag.md)
 
 `build_rag.py` currently retrieves with BM25 + entity matching. That is the wrong
 primitive **because we have a graph and it ignores it**. Keyword scoring cannot
@@ -183,7 +225,7 @@ Rebuild retrieval as graph traversal:
 Keep BM25 only as a **baseline to beat**, and report the comparison honestly on a
 handful of realistic queries. Do not ship it as the primary retriever.
 
-## TASK 3 — Make the graph useful
+## TASK 3 — Make the graph useful (3.1 DONE; 3.2-3.4 open)
 
 Concrete, in rough priority order:
 
@@ -204,6 +246,17 @@ Concrete, in rough priority order:
 ## What NOT to do
 
 - Don't re-run extraction on the 250 — it is done and cached.
+- **Don't run another structural correction expecting agreement to move.** Five
+  have now moved it by less than the corpus can resolve. Justify corrections on
+  correctness and say so; never report one as an accuracy gain.
+- **Don't shuffle observations.** Every permutation test here must randomise at
+  the PAPER level. Pair-level shuffling has produced three false positives on
+  record.
+- **Don't trust a subagent's judgement call where a deterministic test exists.**
+  An LLM adjudication of 18 self-contradictions got 4 of its 6 "extraction
+  error" verdicts wrong; a one-line string comparison settled it.
+- **Don't collapse ranks** — and note that `X sp.`/`X spp.`/`X unclassified`
+  folding into the genus is CORRECT and is not an instance of this.
 - Don't trust `in_gold_standard`; it holds the *strings* `'Yes'`/`'No'`, and
   `'No'` is truthy in Python. That bug already produced a wrong claim once.
 - Don't join on an external database's taxid. Disbiome records "Prevotella" as
