@@ -1,209 +1,174 @@
 {
  "profile_size": {
-  "majority_mean": 28.616387337057727,
-  "minority_mean": 29.463917525773194,
-  "majority_n": 537,
-  "minority_n": 194
+  "majority_mean": 29.107632093933464,
+  "minority_mean": 29.55851063829787,
+  "majority_n": 511,
+  "minority_n": 188
  },
  "all_disease": {
-  "n_edges": 138,
-  "n_pairs": 2091,
+  "n_edges": 134,
+  "n_pairs": 1943,
   "singleton_stratum_papers": 15,
   "pooled": {
-   "observed": 0.01549759788493521,
-   "null_mean": -0.0010566059077160102,
-   "null_sd": 0.00889468667669391,
-   "p": 0.059940059940059943,
-   "min_detectable": 0.017433585886320064
+   "observed": 0.00048646546383232514,
+   "null_mean": -8.6094044076374e-05,
+   "null_sd": 0.00921581166375247,
+   "p": 0.9470529470529471,
+   "min_detectable": 0.018062990860954843
   },
   "per_edge": {
-   "observed": 0.04715142722241046,
-   "null_mean": 0.00026311830902044,
-   "null_sd": 0.00881274247049296,
-   "p": 0.000999000999000999,
-   "min_detectable": 0.017272975242166203
+   "observed": 0.014029418612303514,
+   "null_mean": 0.00047666430795942507,
+   "null_sd": 0.0087807911765267,
+   "p": 0.12187812187812187,
+   "min_detectable": 0.017210350705992333
   }
  },
  "balanced": {
-  "n_edges": 40,
-  "n_pairs": 1146,
+  "n_edges": 39,
+  "n_pairs": 1057,
   "singleton_stratum_papers": 15,
   "pooled": {
-   "observed": 0.0046155931737645595,
-   "null_mean": -0.005926871098369386,
-   "null_sd": 0.011519281367195386,
-   "p": 0.36163836163836166,
-   "min_detectable": 0.022577791479702958
+   "observed": -0.007257691677703071,
+   "null_mean": -0.006736845889204527,
+   "null_sd": 0.011399935651447712,
+   "p": 0.964035964035964,
+   "min_detectable": 0.022343873876837516
   },
   "per_edge": {
-   "observed": 0.024377666710473728,
-   "null_mean": -0.0006020045876297322,
-   "null_sd": 0.010003722675903427,
-   "p": 0.00999000999000999,
-   "min_detectable": 0.019607296444770717
+   "observed": 0.0034575538756227943,
+   "null_mean": -0.0009110226425584869,
+   "null_sd": 0.009707863017495169,
+   "p": 0.6453546453546454,
+   "min_detectable": 0.01902741151429053
   }
  },
  "dedup": {
-  "n_edges": 135,
-  "n_pairs": 2062,
+  "n_edges": 134,
+  "n_pairs": 1943,
   "singleton_stratum_papers": 15,
   "pooled": {
-   "observed": 0.0008002059002909234,
-   "null_mean": -0.000690495680794501,
-   "null_sd": 0.009427803343886895,
-   "p": 0.8821178821178821,
-   "min_detectable": 0.018478494554018312
+   "observed": 0.00048646546383232514,
+   "null_mean": -0.0001790118981282664,
+   "null_sd": 0.009451746889159882,
+   "p": 0.939060939060939,
+   "min_detectable": 0.018525423902753368
   },
   "per_edge": {
-   "observed": 0.01396775166053472,
-   "null_mean": 0.000331145402667969,
-   "null_sd": 0.008868812650802766,
-   "p": 0.11288711288711288,
-   "min_detectable": 0.01738287279557342
+   "observed": 0.014029418612303514,
+   "null_mean": 0.00022613238409629517,
+   "null_sd": 0.00891609774288189,
+   "p": 0.12487512487512488,
+   "min_detectable": 0.017475551576048503
   }
  },
  "size_stratified": {
-  "n_edges": 138,
-  "n_pairs": 2091,
+  "n_edges": 134,
+  "n_pairs": 1943,
   "singleton_stratum_papers": 0,
   "pooled": {
-   "observed": 0.01549759788493521,
-   "null_mean": -0.002910663102029095,
-   "null_sd": 0.00799174308886971,
-   "p": 0.02197802197802198,
-   "min_detectable": 0.01566381645418463
+   "observed": 0.00048646546383232514,
+   "null_mean": -0.0022170914434376404,
+   "null_sd": 0.008040876067190221,
+   "p": 0.7402597402597403,
+   "min_detectable": 0.015760117091692834
   },
   "per_edge": {
-   "observed": 0.04715142722241046,
-   "null_mean": -0.000510657377443419,
-   "null_sd": 0.007571464911804763,
-   "p": 0.000999000999000999,
-   "min_detectable": 0.014840071227137335
+   "observed": 0.014029418612303514,
+   "null_mean": 0.0005275703871591264,
+   "null_sd": 0.00776153463602121,
+   "p": 0.07492507492507493,
+   "min_detectable": 0.015212607886601571
   }
  },
  "country": {
-  "n_edges": 138,
-  "n_pairs": 2091,
-  "singleton_stratum_papers": 21,
+  "n_edges": 134,
+  "n_pairs": 1943,
+  "singleton_stratum_papers": 20,
   "pooled": {
-   "observed": 0.01549759788493521,
-   "null_mean": 0.003481782004353973,
-   "null_sd": 0.008437516077218717,
-   "p": 0.17082917082917082,
-   "min_detectable": 0.016537531511348683
+   "observed": 0.00048646546383232514,
+   "null_mean": 0.002966178150139294,
+   "null_sd": 0.00906006436591107,
+   "p": 0.7852147852147852,
+   "min_detectable": 0.017757726157185696
   },
   "per_edge": {
-   "observed": 0.04715142722241046,
-   "null_mean": 0.0018398585280112196,
-   "null_sd": 0.008341335685206844,
-   "p": 0.000999000999000999,
-   "min_detectable": 0.016349017943005414
+   "observed": 0.014029418612303514,
+   "null_mean": 0.001803135717949182,
+   "null_sd": 0.008515578069193676,
+   "p": 0.15484515484515485,
+   "min_detectable": 0.016690533015619603
   }
  },
  "seq": {
-  "n_edges": 138,
-  "n_pairs": 2091,
+  "n_edges": 134,
+  "n_pairs": 1943,
   "singleton_stratum_papers": 1,
   "pooled": {
-   "observed": 0.01549759788493521,
-   "null_mean": -0.00041655175256145513,
-   "null_sd": 0.009521472223589579,
-   "p": 0.0919080919080919,
-   "min_detectable": 0.018662085558235574
+   "observed": 0.00048646546383232514,
+   "null_mean": -0.00018078898097030274,
+   "null_sd": 0.009288598228551818,
+   "p": 0.9500499500499501,
+   "min_detectable": 0.018205652527961563
   },
   "per_edge": {
-   "observed": 0.04715142722241046,
-   "null_mean": -0.00032027928829918046,
-   "null_sd": 0.00901983339253876,
-   "p": 0.000999000999000999,
-   "min_detectable": 0.017678873449375968
+   "observed": 0.014029418612303514,
+   "null_mean": -0.0006126642224627825,
+   "null_sd": 0.008938734026588672,
+   "p": 0.10989010989010989,
+   "min_detectable": 0.0175199186921138
   }
  },
  "jaccard": {
-  "n_edges": 138,
-  "n_pairs": 2091,
+  "n_edges": 134,
+  "n_pairs": 1943,
   "singleton_stratum_papers": 15,
   "pooled": {
-   "observed": 0.016571167677582765,
-   "null_mean": -7.48804674246914e-06,
-   "null_sd": 0.0056180647885683945,
-   "p": 0.007992007992007992,
-   "min_detectable": 0.011011406985594052
+   "observed": 0.00013246336870098574,
+   "null_mean": 0.00044820642192649866,
+   "null_sd": 0.005470276296789692,
+   "p": 0.9460539460539461,
+   "min_detectable": 0.010721741541707797
   },
   "per_edge": {
-   "observed": 0.04518131139532503,
-   "null_mean": 0.0005137537015280138,
-   "null_sd": 0.005874563530340295,
-   "p": 0.000999000999000999,
-   "min_detectable": 0.011514144519466979
+   "observed": 0.008677638031052199,
+   "null_mean": 0.00029333239852679586,
+   "null_sd": 0.00552074910443408,
+   "p": 0.13086913086913088,
+   "min_detectable": 0.010820668244690796
   }
  },
  "median": {
-  "n_edges": 138,
-  "n_pairs": 2091,
+  "n_edges": 134,
+  "n_pairs": 1943,
   "singleton_stratum_papers": 15,
   "pooled": {
-   "observed": 0.01549759788493521,
-   "null_mean": -0.0006797015529561749,
-   "null_sd": 0.00921883923559406,
-   "p": 0.07592407592407592,
-   "min_detectable": 0.018068924901764358
+   "observed": 0.00048646546383232514,
+   "null_mean": -0.00022135296284604214,
+   "null_sd": 0.009532595720214454,
+   "p": 0.9410589410589411,
+   "min_detectable": 0.01868388761162033
   },
   "per_edge": {
-   "observed": 0.015006591170445505,
-   "null_mean": -0.006993914205409204,
-   "null_sd": 0.008861497809921619,
-   "p": 0.008991008991008992,
-   "min_detectable": 0.017368535707446373
+   "observed": 0.0032666389762147363,
+   "null_mean": -0.007346599657218891,
+   "null_sd": 0.009156649853268644,
+   "p": 0.25074925074925075,
+   "min_detectable": 0.01794703371240654
   }
  },
  "per_edge_positive": {
-  "positive": 79,
-  "total": 138,
-  "median": 0.015006591170445505
+  "positive": 69,
+  "total": 134,
+  "median": 0.0032666389762147363
  },
  "top_edges": [
   {
-   "effect": 0.9443585115925343,
-   "taxon": "[Clostridium] leptum",
-   "disease": "Multiple sclerosis",
-   "n_up": 1,
-   "n_dn": 2
-  },
-  {
-   "effect": 0.8699335045713821,
-   "taxon": "Bifidobacterium longum",
-   "disease": "Multiple sclerosis",
-   "n_up": 1,
-   "n_dn": 2
-  },
-  {
-   "effect": 0.7958758547680684,
-   "taxon": "Bacteroides",
-   "disease": "Dementia",
-   "n_up": 1,
-   "n_dn": 2
-  },
-  {
-   "effect": 0.349094896581143,
-   "taxon": "Butyricimonas",
-   "disease": "Multiple sclerosis",
-   "n_up": 2,
-   "n_dn": 2
-  },
-  {
-   "effect": 0.3203548609833042,
+   "effect": 0.268507375728699,
    "taxon": "Butyricicoccus",
    "disease": "Parkinson's disease",
    "n_up": 1,
-   "n_dn": 6
-  },
-  {
-   "effect": 0.3096001577638514,
-   "taxon": "Lachnospiraceae",
-   "disease": "Multiple sclerosis",
-   "n_up": 1,
-   "n_dn": 4
+   "n_dn": 5
   },
   {
    "effect": 0.25904634757327144,
@@ -220,17 +185,52 @@
    "n_dn": 3
   },
   {
-   "effect": 0.24856124785868483,
-   "taxon": "Methanobrevibacter",
-   "disease": "Multiple sclerosis",
-   "n_up": 3,
-   "n_dn": 1
-  },
-  {
    "effect": 0.23104028503910176,
    "taxon": "Lactobacillus",
    "disease": "Multiple sclerosis",
    "n_up": 1,
+   "n_dn": 2
+  },
+  {
+   "effect": 0.1840113639364449,
+   "taxon": "Lachnospiraceae",
+   "disease": "Multiple sclerosis",
+   "n_up": 1,
+   "n_dn": 3
+  },
+  {
+   "effect": 0.16611791218078986,
+   "taxon": "Coprococcus",
+   "disease": "Alzheimer's disease",
+   "n_up": 1,
+   "n_dn": 3
+  },
+  {
+   "effect": 0.16025315645330418,
+   "taxon": "Bilophila",
+   "disease": "Alzheimer's disease",
+   "n_up": 2,
+   "n_dn": 1
+  },
+  {
+   "effect": 0.15642514104631394,
+   "taxon": "Escherichia",
+   "disease": "Stroke",
+   "n_up": 5,
+   "n_dn": 1
+  },
+  {
+   "effect": 0.14141932525595546,
+   "taxon": "Eubacteriales",
+   "disease": "Multiple sclerosis",
+   "n_up": 1,
+   "n_dn": 2
+  },
+  {
+   "effect": 0.12990232062444435,
+   "taxon": "Fusobacterium",
+   "disease": "Alzheimer's disease",
+   "n_up": 4,
    "n_dn": 2
   }
  ],

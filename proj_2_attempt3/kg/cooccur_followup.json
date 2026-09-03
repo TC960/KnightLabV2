@@ -1,101 +1,12 @@
 {
  "auc": {
-  "observed": 0.559564190574116,
-  "n_edges": 138,
-  "null_mean": 0.49953031691640226,
-  "null_sd": 0.025818891203805115,
-  "p": 0.013993003498250875,
-  "min_detectable": 0.05060502675945802,
+  "observed": 0.5419120626263001,
+  "n_edges": 134,
+  "null_mean": 0.5005290610155136,
+  "null_sd": 0.0268278131458917,
+  "p": 0.12493753123438281,
+  "min_detectable": 0.05258251376594773,
   "n_perm": 2000
  },
- "near_duplicate_pairs": [
-  {
-   "cosine": 1.0,
-   "same_direction": true,
-   "paper_a": "Metagenome-assembled microbial genomes from Parkinson's disease fecal samples.",
-   "paper_b": "Metagenome-assembled microbial genomes from Parkinson\u2019s disease fecal samples",
-   "taxa_a": 25,
-   "taxa_b": 25,
-   "country_a": "Finland",
-   "country_b": "",
-   "edge": "Clostridium / Parkinson's disease"
-  },
-  {
-   "cosine": 1.0,
-   "same_direction": true,
-   "paper_a": "Identification of Faecalibacterium prausnitzii strains for gut microbiome-based intervention in Alzheimer's-type dementia.",
-   "paper_b": "Identification of Faecalibacterium prausnitzii strains for gut microbiome-based intervention in Alzheimer\u2019s-type dementia",
-   "taxa_a": 9,
-   "taxa_b": 9,
-   "country_a": "",
-   "country_b": "",
-   "edge": "Oscillospiraceae / Alzheimer's disease"
-  },
-  {
-   "cosine": 1.0,
-   "same_direction": true,
-   "paper_a": "Gut microbiome dysbiosis across early Parkinson's disease, REM sleep behavior disorder and their first-degree relatives.",
-   "paper_b": "Gut microbiome dysbiosis across early Parkinson\u2019s disease, REM sleep behavior disorder and their first-degree relatives",
-   "taxa_a": 11,
-   "taxa_b": 11,
-   "country_a": "Hong Kong SAR, China",
-   "country_b": "",
-   "edge": "Collinsella / Parkinson's disease"
-  },
-  {
-   "cosine": 1.0,
-   "same_direction": true,
-   "paper_a": "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson's disease.",
-   "paper_b": "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson\u2019s disease",
-   "taxa_a": 25,
-   "taxa_b": 25,
-   "country_a": "Germany",
-   "country_b": "",
-   "edge": "Lachnospira / Parkinson's disease"
-  },
-  {
-   "cosine": 1.0,
-   "same_direction": true,
-   "paper_a": "The gut microbiota in multiple sclerosis varies with disease activity",
-   "paper_b": "The gut microbiota in multiple sclerosis varies with disease activity.",
-   "taxa_a": 38,
-   "taxa_b": 38,
-   "country_a": "",
-   "country_b": "Denmark",
-   "edge": "Blautia / Multiple sclerosis"
-  },
-  {
-   "cosine": 1.0,
-   "same_direction": true,
-   "paper_a": "Alterations of host-gut microbiome interactions in multiple sclerosis",
-   "paper_b": "Alterations of host-gut microbiome interactions in multiple sclerosis.",
-   "taxa_a": 20,
-   "taxa_b": 20,
-   "country_a": "",
-   "country_b": "USA",
-   "edge": "Prevotella / Multiple sclerosis"
-  },
-  {
-   "cosine": 1.0,
-   "same_direction": true,
-   "paper_a": "Alterations of the human gut microbiome in multiple sclerosis",
-   "paper_b": "Alterations of the human gut microbiome in multiple sclerosis.",
-   "taxa_a": 28,
-   "taxa_b": 28,
-   "country_a": "",
-   "country_b": "USA",
-   "edge": "Butyricimonas / Multiple sclerosis"
-  },
-  {
-   "cosine": 1.0,
-   "same_direction": true,
-   "paper_a": "Analysis of the relationship between the gut microbiome and dementia: a cross-sectional study conducted in Japan",
-   "paper_b": "Analysis of the relationship between the gut microbiome and dementia: a cross-sectional study conducted in Japan.",
-   "taxa_a": 7,
-   "taxa_b": 7,
-   "country_a": "",
-   "country_b": "Japan",
-   "edge": "Bacteroides / Dementia"
-  }
- ]
+ "near_duplicate_pairs": []
 }

@@ -4,6 +4,94 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+# SUMMARY — session of 2026-09-03
+
+**The assigned analysis returned a null. Attacking it found a corpus bug that
+four sessions of screening had missed: 12 papers were in the corpus twice, and
+35 edges were advertising replication they do not have.** Full write-up:
+`FINDINGS_cooccurrence.md`.
+
+### What I tested
+
+The pooled Task 1 question, named by the last session as the highest-value next
+step: within a fixed (taxon, disease) contested edge, do papers reporting
+enrichment differ from papers reporting depletion in their taxon co-occurrence
+profile? Substrate `relation_sentences.json`; nulls at the paper level.
+
+### What did NOT survive
+
+- **"Same-direction papers share a taxon vocabulary."** First run: per-edge
+  +0.047 against a null SD of 0.009 — five sigma, under *both* paper-level
+  nulls, and it survived four attacks (profile size, country, sequencing type,
+  Jaccard, per-edge median). It was **12 duplicate papers**. On the corrected
+  graph: pooled +0.0005 (p=0.93), per-edge +0.0140 (p=0.12), balanced edges
+  +0.0035 (p=0.65), rank-based AUC 0.5419 (p=0.125), and 69 of 134 edges
+  positive — 51%, chance. Null in all nine variants.
+- **"The lone dissenter is just an atypical paper."** The mechanical explanation
+  I expected to find. Refuted: majority-side members average 28.6 taxa,
+  minority-side 29.5, and permuting within profile-size quintile changed
+  nothing.
+
+### What survived
+
+- **The bug.** 12 papers were scraped once from a PubMed link and again from a
+  PMC or publisher link; the copies' titles differ only by a trailing period or
+  a curly-vs-straight apostrophe, and every paper key in this pipeline is the
+  raw title string. Because edge weight IS paper count, each duplicate voted
+  twice. Contributing papers 281 → 272; **`n_replicated` 472 → 437, so 35 edges
+  (7.4% of all replicated edges) rest on a single paper**; 76 edges change vote
+  counts; **4 lose a majority direction they only had because one paper voted
+  twice** (*Bacteroides*/Dementia, *[Clostridium] leptum*/MS, *Bifidobacterium
+  longum*/MS, and *Butyricimonas*/MS resolves a false 2-2 tie). Fixed in
+  `build_kg.py`, verified a fixed point by rebuilding twice and diffing.
+- **The anomaly pointed straight at the bug.** The three edges the failed
+  analysis ranked strongest (+0.944, +0.870, +0.796) are three of those four
+  direction changes. A statistic found in one step what a full-text screening
+  pass over all 45 title-matched papers had not.
+- **No other pseudo-replication is detectable.** Same-cohort screen on the
+  curated fields (country + n_cases + n_controls): 4 candidate groups, all
+  coincidental, **0 edges drawing >1 paper from any of them**. Power limit: only
+  192 of 272 papers (71%) carry a full cohort signature. Dedup completeness
+  double-checked two ways — no two rows share a PMID/PMC/DOI under different
+  titles (318 of 326 have a resolvable id), and no fuzzy title pair exceeds 0.92.
+
+### Agreement, again, moved by nothing
+
+Disbiome −0.0024 (p=0.689), Peryton −0.0006 (p=0.881). That is the **fourth**
+structural correction in a row that agreement cannot see. The null used here is
+deliberately mismatched and conservative — it drops 12 *random* papers, deleting
+their evidence outright, where dedup deletes only redundant evidence. A
+correctness fix; **not** an accuracy gain.
+
+### Shipped
+
+`graph.json` / `kg.html` / `docs/index.html` rebuilt deduplicated: 272
+contributing papers, 892 taxa, 1,985 edges, **437 replicated (was 472)**, 220
+contested, 684 containment links. New: `cooccur_direction.py`,
+`cooccur_diagnostics.py`, `cooccur_followup.py`, `FINDINGS_cooccurrence.md`,
+`agreement_dedup.json`; `build_kg.py` gains `dedup_rows()` and
+`--keep-duplicate-papers`; `agreement_metric.py` gains `--drop dedup` and
+`--out`.
+
+### Single highest-value next step
+
+**More papers. The binding constraint is n, not method.** Four explanatory
+variables have now been tested against contested edges — study design, body
+site, and taxon co-occurrence pooled and per-edge — and all four are null. The
+minimum detectable effects here (per-edge ≈0.017, |AUC−0.5| ≈0.053, mean
+concordance ≈0.01–0.02) are set by 134 contested edges averaging ~5 papers, not
+by the statistics. The remaining Task 1 questions (does profile predict
+disagreement with the curated databases; are there taxon modules) are the same
+shape at the same n and should be expected to return the same answer.
+
+Extraction needs a GPU — **ask before spending.** The CPU-only alternative worth
+doing first is cheap and was validated this session as a *method*: anomaly-hunt
+the graph's own structure for defects rather than testing hypotheses about it.
+That is what actually produced a result twice now (the placeholder collapse, and
+this).
+
+---
+
 # SUMMARY — session of 2026-09-02
 
 **The headline is that the instrument was broken.** The test used to evaluate the
