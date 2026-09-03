@@ -1,0 +1,312 @@
+[
+ {
+  "paper": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+  "taxon_key": "ncbi:543",
+  "disease": "Stroke",
+  "as_written_enriched": [
+   "Enterobacteriaceae",
+   "Enterobacteriaceae"
+  ],
+  "as_written_depleted": [
+   "Enterobacteriaceae"
+  ],
+  "sentences": [
+   "Bacteroidaceae , Lachnospiraceae , Ruminococcaceae , Bifidobacteriaceae , Enterobacteriaceae , Coriobacteriaceae , Veillonellaceae , and Prevotellaceae were the eight most abundant microbiotic components in all groups.",
+   "Enterobacteriaceae , Enterococcaceae , Lactobacillaceae , and Verrucomicrobiaceae levels were highest in PI group ( P <0.05).",
+   "In LI group, the eight predominated genera (of 100) were Bacteroides, Enterobacteriaceae, Phascolarctobacterium, Megasphaera, Lachnospiraceae , Acidaminococcus , Lachnospira , and Parabacteroides .",
+   "In PI group, Enterobacteriaceae , Enterococcus , Bacteroides , Veillonella , Ruminococcaceae , Akkermansia , Lactobacillus , and Lachnospiraceae were eight predominated genera (of 121)."
+  ]
+ },
+ {
+  "paper": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+  "taxon_key": "ncbi:33958",
+  "disease": "Stroke",
+  "as_written_enriched": [
+   "Lactobacillaceae"
+  ],
+  "as_written_depleted": [
+   "Lactobacillaceae"
+  ],
+  "sentences": [
+   "Enterobacteriaceae , Enterococcaceae , Lactobacillaceae , and Verrucomicrobiaceae levels were highest in PI group ( P <0.05).",
+   "Lactobacillaceae was most abundant in control group."
+  ]
+ },
+ {
+  "paper": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+  "taxon_key": "ncbi:816",
+  "disease": "Stroke",
+  "as_written_enriched": [
+   "Bacteroides"
+  ],
+  "as_written_depleted": [
+   "Bacteroides"
+  ],
+  "sentences": [
+   "We performed fivefold cross-validation using a Random Forest model to identify two optimal bacterial species (operational taxonomic units; OTUs) serving as markers of lacunar infarction; these were Lachnospiraceae (OTU_45) and Bacteroides (OTU_4), and the areas under the receiver operating characteristic curves (AUCs under the ROCs) were 0.881 and 0.872 respectively.",
+   "In LI group, the eight predominated genera (of 100) were Bacteroides, Enterobacteriaceae, Phascolarctobacterium, Megasphaera, Lachnospiraceae , Acidaminococcus , Lachnospira , and Parabacteroides .",
+   "In PI group, Enterobacteriaceae , Enterococcus , Bacteroides , Veillonella , Ruminococcaceae , Akkermansia , Lactobacillus , and Lachnospiraceae were eight predominated genera (of 121).",
+   "Two species afforded optimal LI detection: Lachnospiraceae (OTU_45) and Bacteroides (OTU_4); the areas under the receiver operating characteristic curves (AUCs under the ROCs) were 0.881 and 0.872 respectively ( Figure 8A , Table 2 ).",
+   "Butyric acid significantly enhanced the alpha diversity of gut microbiota and reduced the levels of pathogenic bacteria such as Bacteroides .",
+   "Two species allowed of optimal LI detection: Lachnospiraceae (OTU_45), and Bacteroides (OTU_4); the AUCs under the ROCs were 0.881 and 0.872 respectively."
+  ]
+ },
+ {
+  "paper": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+  "taxon_key": "ncbi:216572",
+  "disease": "Stroke",
+  "as_written_enriched": [
+   "Ruminococcaceae"
+  ],
+  "as_written_depleted": [
+   "Ruminococcaceae",
+   "Ruminococcaceae"
+  ],
+  "sentences": [
+   "Bacteroidaceae , Lachnospiraceae , Ruminococcaceae , Bifidobacteriaceae , Enterobacteriaceae , Coriobacteriaceae , Veillonellaceae , and Prevotellaceae were the eight most abundant microbiotic components in all groups.",
+   "Lachnospiraceae , Ruminococcaceae , and Prevotellaceae levels were maximal in control group ( P <0.05).",
+   "In PI group, Enterobacteriaceae , Enterococcus , Bacteroides , Veillonella , Ruminococcaceae , Akkermansia , Lactobacillus , and Lachnospiraceae were eight predominated genera (of 121).",
+   "Ruminococcaceae levels were dramatically decreased in LI group, and beneficial bacteria such as Meganonas enriched.",
+   "Ruminococcaceae , Bifidobacteriaceae , and Coriobacteriaceae were most abundant in the AI group."
+  ]
+ },
+ {
+  "paper": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+  "taxon_key": "ncbi:572511",
+  "disease": "Stroke",
+  "as_written_enriched": [
+   "Blautia"
+  ],
+  "as_written_depleted": [
+   "Blautia"
+  ],
+  "sentences": []
+ },
+ {
+  "paper": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+  "taxon_key": "ncbi:838",
+  "disease": "Stroke",
+  "as_written_enriched": [
+   "Prevotella"
+  ],
+  "as_written_depleted": [
+   "Prevotella"
+  ],
+  "sentences": [
+   "Bacteroidaceae , Lachnospiraceae , Ruminococcaceae , Bifidobacteriaceae , Enterobacteriaceae , Coriobacteriaceae , Veillonellaceae , and Prevotellaceae were the eight most abundant microbiotic components in all groups.",
+   "Lachnospiraceae , Ruminococcaceae , and Prevotellaceae levels were maximal in control group ( P <0.05)."
+  ]
+ },
+ {
+  "paper": "Potential Inflammatory Biomarkers and Differential Gut Microbiota in Cognitive Impairment After Ischemic Stroke",
+  "taxon_key": "ncbi:1678",
+  "disease": "Stroke",
+  "as_written_enriched": [
+   "Bifidobacterium"
+  ],
+  "as_written_depleted": [
+   "Bifidobacterium brevis"
+  ],
+  "sentences": [
+   "Furthermore, 16S rRNA sequencing of gut microbiota shows that the abundance of blaut, bifidobacterium and macromonas increased, while the abundance of bacteroides and bifidobacterium brevis decreased significantly.",
+   "As depicted in Figure 5 , we observed a marked increase in the relative abundance of Blaut, Bifidobacterium and Macromonas , while Bacteroides and Bifidobacterium brevis showed significant reduction in their abundance profiles.",
+   "Nan Xu et al found that the characteristics of gut microbiota in patients with acute ischemic stroke are mainly elevated levels of Bifidobacterium, Macromonas, Brucella, Haldeman and Clostridiu m.",
+   "Specifically, we observed an increase in the abundance of Blaut, Bifidobacterium and Macromonas , alongside a significant decrease in the abundance of Bacteroides and Bifidobacterium brevis ."
+  ]
+ },
+ {
+  "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.",
+  "taxon_key": "ncbi:28124",
+  "disease": "Parkinson's disease",
+  "as_written_enriched": [
+   "Porphyromonas endodontalis"
+  ],
+  "as_written_depleted": [
+   "Porphyromonas endodontalis"
+  ],
+  "sentences": [
+   "The decrease in beneficial bacteria such as Faecalibacterium prausnitzii, Roseburia faecis, Roseburia inulinivorans, Eubacterium rectale in the gut together with a decrease of Treponema denticola, Porphyromonas endodontalis and Actinomyces in the oral cavity were the most important features in predicting PDD ( Figures 3(d,e ) ) Bacteroides uniformis important for PDD prediction, have been shown to be associated with PD by increasing DAT (dopamine transporter) binding of dopamine and its decrease associated here with PDD might indicate poor dopamine metabolism that cause cognitive decline.",
+   "Porphyromonas endodontalis is also found in patients with chronic periodontitis and its abundance is correlated with P. gingivalis ."
+  ]
+ },
+ {
+  "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.",
+  "taxon_key": "ncbi:838",
+  "disease": "Parkinson's disease",
+  "as_written_enriched": [
+   "Prevotella"
+  ],
+  "as_written_depleted": [
+   "Prevotella"
+  ],
+  "sentences": [
+   "Other potential pathogenic species such as Streptococcus pneumoniae and Prevotella pallens were also increased in PD-MCI compared to HC, albeit not significantly.",
+   "HC patients were enriched for ENT2 with a distinct signature of commensal Prevotella bacteria while PD-MCI and PDD showed a decrease in ENT2 instead.",
+   "The depletion of a Prevotella enterotype and an enrichment of a Bacteroides enterotype in the gut of PD patients recapitulated our previous study.",
+   "Most notably, the enrichment of SAL1 in PDD because of increased Prevotella , Veilonella, Rothia and Streptococcus have enrichment of proline biosynthesis."
+  ]
+ },
+ {
+  "paper": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients",
+  "taxon_key": "ncbi:1239",
+  "disease": "Alzheimer's disease",
+  "as_written_enriched": [
+   "Firmicutes"
+  ],
+  "as_written_depleted": [
+   "Firmicutes"
+  ],
+  "sentences": [
+   "Results: In order of the severity of cognition impairment (from normal to mild and to moderate AD), the oral abundances of the phyla Firmicutes and Fusobacteria showed a gradual upwards trend, while the abundance of the Proteobacteria phylum gradually decreased.",
+   "In contrast, the abundance of the Firmicutes and Bacteroidetes phyla in the gut decreased progressively, while that of the Proteobacteria, Verrucomicrobia and Actinobacteria phyla increased gradually.",
+   "For the oral microbiomes, the phylum Firmicutes and its corresponding order Selenomonadales, the family Veillonellaceae, the family Streptococcaceae, the genus Selenomonas , the genus Veillonella , the genus Streptococcu , and the phylum Fusobacteria and its corresponding family Leptotrichiaceae, the genus Leptotrichia , showed a progressively increased prevalence from NC to mild AD and to moderate AD groups.",
+   "There was a trend towards a progressive increase in the ratio of Firmicutes to Bacteroidetes (F/B ratio) in oral bacteria from the mild AD to the moderate AD groups as compared to the ratio in the NC group.",
+   "The phylum Firmicutes and its corresponding class Erysipelotrichia, the order Erysipelotrichales, the family Acidaminococcaceae, the genus Ruminococcus2 , the genus Phascolarctobacterium , and the genus Clostridium_IV , demonstrated a markedly lower abundance in the moderate AD group than in NC individuals ( p < 0.05).",
+   "In the taxa of subgingival bacteria, 13 taxa were more abundant in the moderate AD group, including the phylum Firmicutes and its corresponding class Erysipelotrichia, the order Erysipelotrichales, the Lactobacillaceae and Erysipelotrichaceae families, the genus Anaeroglobus , the genus Lactobacillus , the genus Stomatobaculum , the genus Schwartzia , and the Actinobacteria phylum\u2019s corresponding order Coriobacteriales and family Coriobacteriaceae, the genus Atopobium ; and the genus Solobacterium .",
+   "However, the abundances of the phylum Firmicutes and its corresponding genus Ezakiella , the family Sutterellaceae, and the genus Olsenella , were depleted ( Figures\u00a05C, D ).",
+   "The Firmicutes and Proteobacteria phyla were responsible for most differences in the compositions of the subgingival microbiotas between the two groups, while the phylum Firmicutes, and the Proteobacteria\u2019s corresponding genus Escherichia_Shigella , the order Enterobacteriales, the family Enterobacteriaceae, and the class Gammaproteobacteria of the fecal microbiotas had the most differential abundances in the fecal bacteria when compared between the AD groups.",
+   "The key differences in the microbiomes between the mild AD and moderate AD groups showed approximately similar tendency for variation in the relative abundance of the Firmicutes and Proteobacteria phyla and their corresponding taxa in different clinical stages of AD (normal controls, mild and moderate AD).",
+   "In the subgingival microbiotas, the relative abundances in the moderate AD group were higher in bacteria of the phylum Firmicutes and showed positive correlation with age and negative correlation with MMSE scores.",
+   "We found that a tendency for variation in the relative abundance of the Firmicutes and Proteobacteria phyla in different clinical stages of AD (normal controls, mild and moderate AD) and that difference was clearest with the moderate AD group.",
+   "In this study, we found that the oral abundances of the Firmicutes and Fusobacteria phyla showed a gradual upwards trend from NC to mild to moderate AD groups, while the abundance of the Proteobacteria phylum decreased gradually in the same order."
+  ]
+ },
+ {
+  "paper": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients",
+  "taxon_key": "ncbi:526524",
+  "disease": "Alzheimer's disease",
+  "as_written_enriched": [
+   "Erysipelotrichia"
+  ],
+  "as_written_depleted": [
+   "Erysipelotrichia"
+  ],
+  "sentences": [
+   "The phylum Firmicutes and its corresponding class Erysipelotrichia, the order Erysipelotrichales, the family Acidaminococcaceae, the genus Ruminococcus2 , the genus Phascolarctobacterium , and the genus Clostridium_IV , demonstrated a markedly lower abundance in the moderate AD group than in NC individuals ( p < 0.05).",
+   "In the taxa of subgingival bacteria, 13 taxa were more abundant in the moderate AD group, including the phylum Firmicutes and its corresponding class Erysipelotrichia, the order Erysipelotrichales, the Lactobacillaceae and Erysipelotrichaceae families, the genus Anaeroglobus , the genus Lactobacillus , the genus Stomatobaculum , the genus Schwartzia , and the Actinobacteria phylum\u2019s corresponding order Coriobacteriales and family Coriobacteriaceae, the genus Atopobium ; and the genus Solobacterium ."
+  ]
+ },
+ {
+  "paper": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients",
+  "taxon_key": "ncbi:526525",
+  "disease": "Alzheimer's disease",
+  "as_written_enriched": [
+   "Erysipelotrichales"
+  ],
+  "as_written_depleted": [
+   "Erysipelotrichales"
+  ],
+  "sentences": [
+   "The phylum Firmicutes and its corresponding class Erysipelotrichia, the order Erysipelotrichales, the family Acidaminococcaceae, the genus Ruminococcus2 , the genus Phascolarctobacterium , and the genus Clostridium_IV , demonstrated a markedly lower abundance in the moderate AD group than in NC individuals ( p < 0.05).",
+   "In the taxa of subgingival bacteria, 13 taxa were more abundant in the moderate AD group, including the phylum Firmicutes and its corresponding class Erysipelotrichia, the order Erysipelotrichales, the Lactobacillaceae and Erysipelotrichaceae families, the genus Anaeroglobus , the genus Lactobacillus , the genus Stomatobaculum , the genus Schwartzia , and the Actinobacteria phylum\u2019s corresponding order Coriobacteriales and family Coriobacteriaceae, the genus Atopobium ; and the genus Solobacterium ."
+  ]
+ },
+ {
+  "paper": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients",
+  "taxon_key": "ncbi:1236",
+  "disease": "Alzheimer's disease",
+  "as_written_enriched": [
+   "Gammaproteobacteria"
+  ],
+  "as_written_depleted": [
+   "Gammaproteobacteria"
+  ],
+  "sentences": [
+   "The phylum Proteobacteria and its corresponding class Gammaproteobacteria, the genus Aggregatibacter , and the genus Lautropia , showed a trend towards a progressive decrease from the NC to the mild AD and the moderate AD groups; these taxa were significantly less abundant in the moderate AD group than in the NC group ( p < 0.05).",
+   "However, the phylum Proteobacteria and its corresponding class Gammaproteobacteria, the order Enterobacteriales, the family Enterobacteriaceae, the genus Escherichia_Shigella , and the phylum Verrucomicrobia and its corresponding class Verrucomicrobiae and genus Akkermansia , and the phylum Actinobacteria and its corresponding class Actinobacteria, the order Bifidobacteriales, the family Actinomycetaceae, and the genus Bifidobacterium showed progressively higher prevalence from the mild AD to the moderate AD groups as compared to those in the NC group; these taxa were more abundant in patients with moderate AD than in NC individuals ( Figures\u00a04D\u2013F ).",
+   "Figure\u00a05 In the taxa of fecal microbiotas, the abundance of 16 taxa (the phylum Synergistetes and its corresponding class Synergistia, order Synergistales and family Synergistales, the phylum Proteobacteria and corresponding class Gammaproteobacteria, the order Pasteurellales, the order Enterobacteriales, the family Pasteurellaceae, the family Enterobacteriaceae, the genus Stenotrophomonas , the genus Proteus , the genus Escherichia_Shigella , and the phylum Actinobacteria\u2019s corresponding order Actinomycetales, the family Micrococcaceae, the genus Rothia , and the genus Alloprevotella ) were enriched in the moderate AD group.",
+   "The Firmicutes and Proteobacteria phyla were responsible for most differences in the compositions of the subgingival microbiotas between the two groups, while the phylum Firmicutes, and the Proteobacteria\u2019s corresponding genus Escherichia_Shigella , the order Enterobacteriales, the family Enterobacteriaceae, and the class Gammaproteobacteria of the fecal microbiotas had the most differential abundances in the fecal bacteria when compared between the AD groups.",
+   "(2021) reported the abundances of Proteobacteria and Gammaproteobacteria were higher in participants with MCI when compared with those in healthy controls.",
+   "Notably, we found that the Proteobacteria phylum and its corresponding class Gammaproteobacteria, order Enterobacteriales, family Enterobacteriaceae, and genus Escherichia_Shigellaa , were broadly enriched in the moderate AD group when compared with their abundance in the NC group.",
+   "(2019) revealed that Gammaproteobacteria, Enterobacteriales, and Enterobacteriaceae were progressively enriched from the prodromal MCI to the AD stages as compared to their abundance in NCs."
+  ]
+ },
+ {
+  "paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis.",
+  "taxon_key": "ncbi:186802",
+  "disease": "Amyotrophic lateral sclerosis",
+  "as_written_enriched": [
+   "Clostridiales Family XI"
+  ],
+  "as_written_depleted": [
+   "Clostridiales Ambiguous taxa"
+  ],
+  "sentences": [
+   "A significantly different amount was also found in families related to Clostridiaceae, such as Clostridiales Ambiguous taxa and Clostridiaceae 1, which were lower in patients ( P <\u20090.05) whereas Clostridiales Family XI resulted higher in patients ( P <\u20090.05) (Fig. 3 d, Additional\u00a0file 1 : Table S1)."
+  ]
+ },
+ {
+  "paper": "Alterations of the gut ecological and functional microenvironment in different stages of multiple sclerosis.",
+  "taxon_key": "ncbi:1730",
+  "disease": "Multiple sclerosis",
+  "as_written_enriched": [
+   "Eubacterium biforme"
+  ],
+  "as_written_depleted": [
+   "Eubacterium rectale"
+  ],
+  "sentences": [
+   "Of these 17 species/OTUs, Eubacterium rectale (mapped_CL145), Streptococcus salivarius/thermophilus (mapped_CL267), Megamonas funiformis (mapped_CL428), unmapped_OTU5, unmapped_OTU6, and unmapped_OTU31 were also identified as those having significant changes between RRMS and HC in the previous study ( 12 ) ( SI Appendix , Table S5 ).",
+   "In the atypical MS group, the abundance of Streptococcus anginosus (mapped_CL121) and S. salivarius / thermophilus (mapped_CL267) was significantly increased, and the abundance of Lactobacillus fermentum (mapped_CL129) and Eubacterium biforme (mapped_CL429) was significantly decreased in the recent activity samples ( P = 0.00004, 0.0118, 0.0043, and 0.0485, respectively; Fig. 2 G \u2013 J )."
+  ]
+ },
+ {
+  "paper": "The effect of multiple sclerosis therapy on gut microbiota dysbiosis: a longitudinal prospective study.",
+  "taxon_key": "ncbi:186803",
+  "disease": "Multiple sclerosis",
+  "as_written_enriched": [
+   "Lachnospiraceae"
+  ],
+  "as_written_depleted": [
+   "Lachnospiraceae species"
+  ],
+  "sentences": [
+   "Following treatment, individuals with MS showed enrichment in Lachnospiraceae and Streptococcus .",
+   "In a study evaluating the effect of two DMTs on MS microbiota, glatiramer acetate and dimethyl fumarate were associated with a decrease in the Firmicutes and Fusobacteria phyla, a reduction in Lachnospiraceae family, a decrease in Clostridiales , and an increase in the Bacteroidetes phylum.",
+   "Additionally, they showed a reduction in Faecalibacterium prausnitzii (p=0.004), Bifidobacterium adolescentis (p=0.002), Bifidobacterium angulatum (p=0.004), Coprococcus (p=0.02), Lachnospiraceae species (p=0.03).",
+   "In comparison to HC, PwMS who underwent treatment showed an increased relative abundance of Prevotella stercorea (p=0.02), Streptococcus (p=0.04), and Lachnospiraceae (p=0.02), along with a decreased relative abundance of Ruminococcus (p=0.02) and Helicobacter pylori (p=0.01).",
+   "The second sample from the group receiving DMT (G(DMT)) highlighted increased levels of Bifidobacterium angulatum (p=0.04) and decreased relative abundances of Oscillospira (p=0.004), Butyricimonas (p=0.04), Lachnospiraceae (p=0.03), and Sporobacter (p=0.02), when compared to the baseline (refer to Fig. S4).",
+   "When compared to G(IFN+Y), the subgroup G(IFN) exhibited increased relative abundance of Collinsella (p=0.02) and decreased Lachnospiraceae rumen (p=0.01) and Bilophila (p=0.04) ( Fig.2 ) after treatment.",
+   "A reduction of Lachnospiraceae (p=0.04) and an increase of Peredibacter (p=0.0008) were encountered in the second sample of G(IFN) compared to the first one, as outlined in Fig. 4 .",
+   "Our results stated that the baseline MS microbiota was associated with significant increase in Prevotella stercorea and reduced Faecalibacterium prausnitzii , Bifidobacterium , and Lachnospiraceae compared to the HC group.",
+   "For treated PwMS, there was an increase in Prevotella stercorea , Lachnospiraceae and a decrease in Ruminococcus species.",
+   "Within the Firmicutes phylum, there is often an increase in Clostridium perfringens , recognized as a potential trigger for the pathological process, alongside a decrease in Roseburia , Lachnospiraceae , and Ruminococcaceae in individuals with MS, compared to HC.",
+   "Our cohort was associated at baseline with a reduction of Faecalibacterium prausnitzii and an increase in Lachnospiraceae after one year of treatment, both bacteria with crucial roles in SCFA metabolism and a reduction in epithelial permeability by increasing tight junction proteins 5 .",
+   "Compared to baseline, people treated with IFN presented reduced Lachnospiraceae , while for TER treated group, we observed an increased Enterococcus faecalis and reduced Sutterella compared to the first sample."
+  ]
+ },
+ {
+  "paper": "Nutritional Intake and Gut Microbiome Composition Predict Parkinson's Disease.",
+  "taxon_key": "ncbi:171550",
+  "disease": "Parkinson's disease",
+  "as_written_enriched": [
+   "Rikenellaceae"
+  ],
+  "as_written_depleted": [
+   "Rikenellaceae"
+  ],
+  "sentences": [
+   "The influence of DBS has been sparsely reported in regards to the GM ( Lubomski et al., 2021c ), but was associated here with overrepresentation of Streptococcaceae and Streptococcus spp. and underrepresentation of Rikenellaceae , potentially suggestive of peripheral effects of DBS on the GM that warrant further investigation.",
+   "In terms of standard therapies, oral Levodopa use was associated with the families Sutterellaceae and Rikenellaceae in our cohort, rather than Bacillaceae , as was reported in another study ( Heintz-Buschart et al., 2018 )."
+  ]
+ },
+ {
+  "paper": "Gut microbiome alterations in preclinical Alzheimer\u2019s disease",
+  "taxon_key": "ncbi:1485",
+  "disease": "Alzheimer's disease",
+  "as_written_enriched": [
+   "Clostridium"
+  ],
+  "as_written_depleted": [
+   "Clostridium"
+  ],
+  "sentences": [
+   "The GLM analysis revealed that the genera Megamonas, Serratia, Leptotrichia and Clostridium (family Clostridiaceae) were increased in the A\u03b2+ CN group compared to the A\u03b2\u2212 CN group, whereas the genera CF231, Victivallis, Enterococcus, Mitsuokella and Clostridium (family Erysipelotrichaceae) were decreased in A\u03b2+ CN (Table 2 and Fig 1) In the ROC analysis, the logistic regression model with variables representing the presence or absence of each of the nine genera effectively distinguish A\u03b2+ and A\u03b2\u2212 CN with the AUC value of 0.",
+   "Four genera were increased, and five genera were decreased, in A\u03b2+ CN compared to A\u03b2\u2212 CN Among the four genera that were increased in the A\u03b2+ CN group, i. e., Megamonas, Serratia, Leptotrichia, and Clostridium (family Clostridiaceae), Megamonas was previously linked to Pre-DM [30], gestational DM [31], and obesity [32].",
+   "In accordance with our result, a decreased Clostridium level induced by probiotic treatment and exercise was associated with better cognitive performance in an AD mouse model [38] In the present study, the most abundant species of genus Clostridium (family Clostridiaceae) was Clostridium celatum, whose level was also positively associated with amyloid positivity when we further analyzed the data.",
+   "Although additional confirmatory studies are needed, the possible pathogenicity of C. celatum [39] and other known pathogenic Clostridia such as C. difficile may be related to harmful effects exerted by this genus on the brain Among the five genera that were decreased in the A\u03b2+ group, i. e., CF231, Victivallis, Enterococcus, Mitsuokella and Clostridium (family Erysipelotrichaceae), Enterococcus is ubiquitous microorganism that produces lactic acid and has demonstrated probiotic potential [40].",
+   "In consistent with our results, a previous study reported reduced Clostridium (Family Erysipelotrichaceae) in AD dementia participants [10].",
+   "Nevertheless, Clostridium ramosum, the representative species of Clostridium (family Erysipelotrichaceae), was reportedly associated with obesity and increased energy absorption in a mouse model [44] and with DM in humans [45] The genus CF231 was also associated with overweight in Korean participants [46]."
+  ]
+ }
+]

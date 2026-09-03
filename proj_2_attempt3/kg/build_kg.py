@@ -58,6 +58,16 @@ DISEASE_MAP = [
     (r"neuromyelitis", "Neuromyelitis optica", "MONDO:0019100"),
     (r"myasthenia", "Myasthenia gravis", "MONDO:0009688"),
     (r"migraine", "Migraine", "MONDO:0005277"),
+    # Three spellings of ONE disease were three separate nodes: "Anti-N-methyl-
+    # D-aspartate receptor encephalitis" (22 edges), "NMDAR encephalitis" (16)
+    # and "Anti-NMDAR encephalitis" (7) -- one paper each. This is the
+    # Bacteroidetes/Bacteroidota case in the disease dimension, and folding it
+    # is synonym folding, not a rank collapse: 45 edges become 38, and 4 edges
+    # that every view showed as single-paper become replicated, 3 of them
+    # CONTESTED -- real inter-study disagreement the fragmentation was hiding.
+    # MONDO id deliberately None rather than guessed: this environment's network
+    # policy denies EBI/OLS, and a wrong ontology id is worse than no id.
+    (r"nmdar?\b|n-methyl-d-aspartate", "Anti-NMDAR encephalitis", None),
 ]
 
 # rank hints from the naming conventions the papers use
@@ -107,9 +117,37 @@ def norm_disease(s):
 # containment (different ranks) are different operations. A UCG label is a CHILD.
 # So with --split-placeholders these get their own node, linked to the parent by a
 # containment edge rather than merged into it.
+#
+# The first version of this pattern caught the UCG / ND / "group" forms and
+# missed the commonest one: SILVA's bare numeric and roman-numeral suffixes.
+# "Prevotella 9", "Prevotella_6", "Coprococcus_1", "Ruminiclostridium 5",
+# "Clostridium IV", "Clostridiaceae 1" are DISTINCT SILVA genera, and every one
+# of them was landing on its parent's taxid. Prevotella/Parkinson's -- the
+# highest-weight edge in the graph at 17 papers, and the one the README calls
+# load-bearing for the external join -- folds 13 surface strings into one node,
+# five of them these placeholders.
+#
+# Detected corpus-wide by asking which surface strings EXTEND the scientific
+# name they resolved to (see child_folds.json): 115 such strings over 52 nodes,
+# none flagged. 32 are placeholders of this kind; 29 are "X sp./spp./
+# unclassified", where folding to the parent is CORRECT and must not change;
+# the remaining 54 are real named species (Prevotella copri, Klebsiella
+# pneumonia) whose split needs real taxids and is left to an environment with
+# the NCBI taxdump -- see FINDINGS_rank_collapse.md.
 PLACEHOLDER = re.compile(
     r"(UCG[-_ ]?\d+|_?group$|ND\d{3,}|R-\d+\b|incertae[ _]sedis|"
-    r"sensu[ _]stricto|\bAD\d{3,}\b|\b[A-Z]{1,3}\d{2,}\b)")
+    r"sensu[ _]stricto|\bAD\d{3,}\b|\b[A-Z]{1,3}\d{2,}\b|"
+    r"[ _]\d{1,3}$|[ _][IVXL]+$|\bcluster[ _]|\bFamily[ _][IVXL]+\b)")
+
+# Guard, agreeing with taxonomy_cache.NOT_CONTAINED. A phage is not a member of
+# the genus it infects, and "uncultured X sp. 1" names an unidentified member
+# rather than a SILVA rank placeholder -- but both end in a bare number and so
+# match the pattern above. Splitting them off produced the only 4 nodes that
+# failed to survive a rebuild: the cache (correctly) refuses to hang a phage
+# under a bacterial genus, so their parent was unrecoverable and the placeholder
+# flag silently evaporated on the second build. Caught by re-running the build
+# and diffing, not by reading the pattern.
+NOT_PLACEHOLDER = re.compile(r"\b(virus|phage|bacteriophage|uncultured)\b", re.I)
 
 SPLIT_PLACEHOLDERS = False          # set by --split-placeholders
 BODY_SITE = {}                      # paper title -> sampled body site
@@ -136,6 +174,7 @@ def norm_taxon(t, tax=None):
             # it landed on. Keep it as its own node and remember the parent so a
             # containment link can be added.
             if (SPLIT_PLACEHOLDERS and PLACEHOLDER.search(disp)
+                    and not NOT_PLACEHOLDER.search(disp)
                     and disp.lower() != (sci or "").lower()):
                 key = "ph:" + re.sub(r"\s+", " ", disp.lower().replace("_", " ")).strip()
                 PLACEHOLDER_PARENT[key] = tid
@@ -319,6 +358,14 @@ def build(rows, min_papers=1, tax=None):
           # an id -- so it must not inflate the resolved count.
           "resolved": taxon_how[k] not in ("unresolved", "placeholder"),
           "placeholder": taxon_how[k] == "placeholder",
+          # Record the parent taxid ON the placeholder node. Without it the only
+          # record of the parent is the containment link, which exists only when
+          # the parent is ITSELF a node -- so "Polaribacter_1" (no other
+          # Polaribacter edge in the corpus) lost its parent on rebuild and
+          # decayed into a plain unresolved string node. Storing it makes the
+          # replay cache's round-trip exact instead of reconstructed.
+          **({"parent_taxid": PLACEHOLDER_PARENT[k]}
+             if taxon_how[k] == "placeholder" and k in PLACEHOLDER_PARENT else {}),
           "aliases": sorted(aliases[k]),
           "rank": taxon_rank[k], "degree": tax_deg[k]} for k in tax_deg]
         + [{"id": f"d:{d}", "label": d, "type": "disease",

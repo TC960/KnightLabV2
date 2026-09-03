@@ -1,0 +1,922 @@
+[
+ {
+  "parent": "Escherichia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:561",
+  "surface": "Escherichia / Shigella",
+  "tail": "/ Shigella",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Escherichia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:561",
+  "surface": "Escherichia spp",
+  "tail": "spp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Escherichia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:561",
+  "surface": "Escherichia \u2013 Shigella",
+  "tail": "\u2013 Shigella",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Escherichia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:561",
+  "surface": "Escherichia_Shigella",
+  "tail": "Shigella",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Streptococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1301",
+  "surface": "Streptococcus salivarius/thermophilus",
+  "tail": "salivarius/thermophilus",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Collinsella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:102106",
+  "surface": "Collinsella spp",
+  "tail": "spp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Dorea",
+  "parent_rank": "genus",
+  "node": "t:ncbi:189330",
+  "surface": "Dorea asp: CAG:317",
+  "tail": "asp: CAG:317",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Faecalibacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:216851",
+  "surface": "Faecalibacterium bacterium CAG 137",
+  "tail": "bacterium CAG 137",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Faecalibacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:216851",
+  "surface": "Faecalibacterium prasunitzii",
+  "tail": "prasunitzii",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Faecalibacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:216851",
+  "surface": "Faecalibacterium prauznitzii",
+  "tail": "prauznitzii",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Faecalibacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:216851",
+  "surface": "Faecalibacterium spp",
+  "tail": "spp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Subdoligranulum",
+  "parent_rank": "genus",
+  "node": "t:ncbi:292632",
+  "surface": "Subdoligranulum g",
+  "tail": "g",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Roseburia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:841",
+  "surface": "Roseburia spp",
+  "tail": "spp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Lachnoclostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1506553",
+  "surface": "Lachnoclostridium spp",
+  "tail": "spp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Lachnoclostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1506553",
+  "surface": "Lachnoclostridium_12",
+  "tail": "12",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Klebsiella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:570",
+  "surface": "Klebsiella pneumonia",
+  "tail": "pneumonia",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Coprococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:33042",
+  "surface": "Coprococcus_1",
+  "tail": "1",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Coprococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:33042",
+  "surface": "Coprococcus_2",
+  "tail": "2",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus 1",
+  "tail": "1",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus 2",
+  "tail": "2",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus _E",
+  "tail": "E",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus bicirculans",
+  "tail": "bicirculans",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus sp",
+  "tail": "sp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus spp",
+  "tail": "spp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus_1",
+  "tail": "1",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus_2",
+  "tail": "2",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Ruminiclostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1508657",
+  "surface": "Ruminiclostridium 5",
+  "tail": "5",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Ruminiclostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1508657",
+  "surface": "Ruminiclostridium 6",
+  "tail": "6",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Ruminiclostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1508657",
+  "surface": "Ruminiclostridium 9",
+  "tail": "9",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Ruminiclostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1508657",
+  "surface": "Ruminiclostridium_ 5",
+  "tail": "5",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Ruminiclostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1508657",
+  "surface": "Ruminiclostridium_9",
+  "tail": "9",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Bifidobacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1678",
+  "surface": "Bifidobacterium brevis",
+  "tail": "brevis",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Bifidobacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1678",
+  "surface": "Bifidobacterium_sp__MC_10",
+  "tail": "sp__MC_10",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella 2",
+  "tail": "2",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella 9",
+  "tail": "9",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella VZCB",
+  "tail": "VZCB",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella buccae",
+  "tail": "buccae",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella copri",
+  "tail": "copri",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella jejunii",
+  "tail": "jejunii",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella shaii",
+  "tail": "shaii",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella spp",
+  "tail": "spp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella timonensis",
+  "tail": "timonensis",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella_6",
+  "tail": "6",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella_9",
+  "tail": "9",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Barnesiella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:397864",
+  "surface": "Barnesiella spp",
+  "tail": "spp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Gemmiger",
+  "parent_rank": "genus",
+  "node": "t:ncbi:204475",
+  "surface": "Gemmiger sp",
+  "tail": "sp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Eubacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1730",
+  "surface": "Eubacterium biforme",
+  "tail": "biforme",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Eubacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1730",
+  "surface": "Eubacterium g",
+  "tail": "g",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Eubacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1730",
+  "surface": "Eubacterium rectale",
+  "tail": "rectale",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Eubacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1730",
+  "surface": "Eubacterium_g4",
+  "tail": "g4",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Agathobacter",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1766253",
+  "surface": "Agathobacter sp",
+  "tail": "sp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Bacteroides",
+  "parent_rank": "genus",
+  "node": "t:ncbi:816",
+  "surface": "Bacteroides coprophilus",
+  "tail": "coprophilus",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Bacteroides",
+  "parent_rank": "genus",
+  "node": "t:ncbi:816",
+  "surface": "Bacteroides dorei",
+  "tail": "dorei",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Bacteroides",
+  "parent_rank": "genus",
+  "node": "t:ncbi:816",
+  "surface": "Bacteroides plebeus",
+  "tail": "plebeus",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Bacteroides",
+  "parent_rank": "genus",
+  "node": "t:ncbi:816",
+  "surface": "Bacteroides uniforms",
+  "tail": "uniforms",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Bacteroides",
+  "parent_rank": "genus",
+  "node": "t:ncbi:816",
+  "surface": "Bacteroides vulgatus",
+  "tail": "vulgatus",
+  "cls": "named_child"
+ },
+ {
+  "parent": "bacterium",
+  "parent_rank": "species",
+  "node": "t:ncbi:1869227",
+  "surface": "bacterium NLAE",
+  "tail": "NLAE",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Blautia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:572511",
+  "surface": "Blautia massiliensis",
+  "tail": "massiliensis",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Blautia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:572511",
+  "surface": "Blautia spp",
+  "tail": "spp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Blautia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:572511",
+  "surface": "Blautia unclassified",
+  "tail": "unclassified",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Blautia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:572511",
+  "surface": "Blautia_A",
+  "tail": "A",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Blautia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:572511",
+  "surface": "Blautia_massiliensis",
+  "tail": "massiliensis",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium IV",
+  "tail": "IV",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium XVIII",
+  "tail": "XVIII",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium clostridioforme",
+  "tail": "clostridioforme",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium cluster I",
+  "tail": "cluster I",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium cluster IV",
+  "tail": "cluster IV",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium g24 FCEY",
+  "tail": "g24 FCEY",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium sp CAG 273",
+  "tail": "sp CAG 273",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium spp",
+  "tail": "spp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium_IV",
+  "tail": "IV",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium_XlVa",
+  "tail": "XlVa",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Erysipelotrichaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:128827",
+  "surface": "Erysipelotrichaceae CCM",
+  "tail": "CCM",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Erysipelotrichaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:128827",
+  "surface": "Erysipelotrichaceae CCMM",
+  "tail": "CCMM",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae sp",
+  "tail": "sp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae species",
+  "tail": "species",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_Eubacterium",
+  "tail": "Eubacterium",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_NC2004",
+  "tail": "NC2004",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_g",
+  "tail": "g",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Sutterella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:40544",
+  "surface": "Sutterella sp",
+  "tail": "sp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Sutterella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:40544",
+  "surface": "Sutterella spp",
+  "tail": "spp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Dialister",
+  "parent_rank": "genus",
+  "node": "t:ncbi:39948",
+  "surface": "Dialister spp",
+  "tail": "spp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Oribacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:265975",
+  "surface": "Oribacterium sinu",
+  "tail": "sinu",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Clostridiaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:31979",
+  "surface": "Clostridiaceae 1",
+  "tail": "1",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Turicibacter",
+  "parent_rank": "genus",
+  "node": "t:ncbi:191303",
+  "surface": "Turicibacter sp001543345",
+  "tail": "sp001543345",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Hungatella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1649459",
+  "surface": "Hungatella effluvia",
+  "tail": "effluvia",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Hungatella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1649459",
+  "surface": "Hungatella hathewyi",
+  "tail": "hathewyi",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Neisseria",
+  "parent_rank": "genus",
+  "node": "t:ncbi:482",
+  "surface": "Neisseria multispecies",
+  "tail": "multispecies",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Fusobacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:848",
+  "surface": "Fusobacterium sp",
+  "tail": "sp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Fusobacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:848",
+  "surface": "Fusobacterium_A",
+  "tail": "A",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Fusobacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:848",
+  "surface": "Fusobacterium_A mortiferum",
+  "tail": "A mortiferum",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Clostridia",
+  "parent_rank": "class",
+  "node": "t:ncbi:186801",
+  "surface": "Clostridia cluster IV",
+  "tail": "cluster IV",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Clostridia",
+  "parent_rank": "class",
+  "node": "t:ncbi:186801",
+  "surface": "Clostridia cluster XIVa",
+  "tail": "cluster XIVa",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Monoglobus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:2039302",
+  "surface": "Monoglobus pectinyliticus",
+  "tail": "pectinyliticus",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Oscillibacter",
+  "parent_rank": "genus",
+  "node": "t:ncbi:459786",
+  "surface": "Oscillibacter_sp_57_20",
+  "tail": "sp_57_20",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Christensenellaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:990719",
+  "surface": "Christensenellaceae group R7",
+  "tail": "group R7",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Tyzzerella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1506577",
+  "surface": "Tyzzerella 3",
+  "tail": "3",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Tyzzerella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1506577",
+  "surface": "Tyzzerella 4",
+  "tail": "4",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Tyzzerella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1506577",
+  "surface": "Tyzzerella sp",
+  "tail": "sp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Odoribacter",
+  "parent_rank": "genus",
+  "node": "t:ncbi:283168",
+  "surface": "Odoribacter spp",
+  "tail": "spp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Coriobacteriales",
+  "parent_rank": "order",
+  "node": "t:ncbi:84999",
+  "surface": "Coriobacteriales Incertae Sedis",
+  "tail": "Incertae Sedis",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Atopobium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1380",
+  "surface": "Atopobium cluster",
+  "tail": "cluster",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Ruminococcus sp. 5",
+  "parent_rank": "species",
+  "node": "t:ncbi:169436",
+  "surface": "Ruminococcus sp. 5_1_39BFAA",
+  "tail": "1_39BFAA",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Cuneatibacter",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1918450",
+  "surface": "Cuneatibacter sp",
+  "tail": "sp",
+  "cls": "unspecified_member"
+ },
+ {
+  "parent": "Azospirillum sp.",
+  "parent_rank": "species",
+  "node": "t:ncbi:34012",
+  "surface": "Azospirillum sp. 47-25",
+  "tail": "47-25",
+  "cls": "named_child"
+ },
+ {
+  "parent": "uncultured Clostridium sp.",
+  "parent_rank": "species",
+  "node": "t:ncbi:59620",
+  "surface": "uncultured Clostridium sp. 1",
+  "tail": "1",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Lachnospiraceae bacterium",
+  "parent_rank": "species",
+  "node": "t:ncbi:1898203",
+  "surface": "Lachnospiraceae bacterium MC-35",
+  "tail": "MC-35",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Escherichia phage",
+  "parent_rank": "species",
+  "node": "t:ncbi:3102713",
+  "surface": "Escherichia phage TL 2011",
+  "tail": "TL 2011",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Escherichia phage",
+  "parent_rank": "species",
+  "node": "t:ncbi:3102713",
+  "surface": "Escherichia phage TL 2011b",
+  "tail": "TL 2011b",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Vibrio phage",
+  "parent_rank": "species",
+  "node": "t:ncbi:3720007",
+  "surface": "Vibrio phage pYD38 A",
+  "tail": "pYD38 A",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Christensenellales",
+  "parent_rank": "order",
+  "node": "t:ncbi:3082768",
+  "surface": "Christensenellales CAG-74 UMGS1633",
+  "tail": "CAG-74 UMGS1633",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Sarcina sp.",
+  "parent_rank": "species",
+  "node": "t:ncbi:2053610",
+  "surface": "Sarcina sp. JB2",
+  "tail": "JB2",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Polaribacter",
+  "parent_rank": "genus",
+  "node": "t:ncbi:52959",
+  "surface": "Polaribacter_1",
+  "tail": "1",
+  "cls": "placeholder_child"
+ },
+ {
+  "parent": "Lawsonibacter",
+  "parent_rank": "genus",
+  "node": "t:ncbi:2172004",
+  "surface": "Lawsonibacter phoceensis",
+  "tail": "phoceensis",
+  "cls": "named_child"
+ },
+ {
+  "parent": "Eikenella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:538",
+  "surface": "Eikenella species NML 130454",
+  "tail": "species NML 130454",
+  "cls": "named_child"
+ }
+]

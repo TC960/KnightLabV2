@@ -47,14 +47,18 @@ already on record.
 
 The first run looked like the best result the project had produced.
 
-| | before dedup | after dedup |
+| | before dedup | final corrected graph |
 |---|---:|---:|
-| usable contested edges | 138 | 134 |
-| within-edge pairs | 2,091 | 1,943 |
-| **pooled** | **+0.0155** (p=0.066 A / 0.035 B) | **+0.0005** (p=0.932 / 0.706) |
-| **per-edge** | **+0.0472** (p=0.001 / 0.001) | **+0.0140** (p=0.121 / 0.050) |
-| per-edge, balanced edges only | +0.0244 (p=0.010) | +0.0035 (p=0.645) |
-| rank-based AUC | 0.5596 (p=0.014) | 0.5419 (p=0.125) |
+| usable contested edges | 138 | 130 |
+| within-edge pairs | 2,091 | 1,848 |
+| **pooled** | **+0.0155** (p=0.066 A / 0.035 B) | **+0.0023** (p=0.794 / 0.513) |
+| **per-edge** | **+0.0472** (p=0.001 / 0.001) | **+0.0137** (p=0.141 / 0.061) |
+| per-edge, balanced edges only | +0.0244 (p=0.010) | +0.0080 (p=0.405) |
+| rank-based AUC | 0.5596 (p=0.014) | 0.5347 (p=0.206) |
+
+("final corrected graph" = after deduplication, the NMDAR disease merge and the
+placeholder split; the numbers were stable across all three — deduplication is
+what moved them.)
 
 Per-edge +0.047 against a null SD of 0.009 is five standard deviations, under
 *both* paper-level nulls. It survived the first four attacks:
@@ -138,28 +142,28 @@ On the corrected graph the co-occurrence effect is **null**, in every variant:
 
 | variant | pooled | p | per-edge | p |
 |---|---:|---:|---:|---:|
-| all edges, null A (within disease) | +0.0005 | 0.947 | +0.0140 | 0.122 |
-| all edges, null B (sign flip) | +0.0005 | 0.706 | +0.0140 | 0.050 |
-| balanced edges only (39, ≥2 a side) | −0.0073 | 0.964 | +0.0035 | 0.645 |
-| permute within profile-size quintile | +0.0005 | 0.740 | +0.0140 | 0.075 |
-| permute within country | +0.0005 | 0.785 | +0.0140 | 0.155 |
-| permute within sequencing type | +0.0005 | 0.950 | +0.0140 | 0.110 |
-| Jaccard instead of cosine | +0.0001 | 0.946 | +0.0087 | 0.131 |
-| per-edge median (outlier-robust) | +0.0005 | 0.941 | +0.0033 | 0.251 |
-| rank-based per-edge AUC | — | — | 0.5419 | 0.125 |
+| all edges, null A (within disease) | +0.0023 | 0.794 | +0.0137 | 0.141 |
+| all edges, null B (sign flip) | +0.0023 | 0.513 | +0.0137 | 0.061 |
+| balanced edges only (37, ≥2 a side) | −0.0034 | 0.757 | +0.0080 | 0.405 |
+| permute within profile-size quintile | +0.0023 | 0.610 | +0.0137 | 0.066 |
+| permute within country | +0.0023 | 0.832 | +0.0137 | 0.195 |
+| permute within sequencing type | +0.0023 | 0.825 | +0.0137 | 0.105 |
+| Jaccard instead of cosine | +0.0013 | 0.900 | +0.0088 | 0.125 |
+| per-edge median (outlier-robust) | +0.0023 | 0.791 | +0.0009 | 0.353 |
+| rank-based per-edge AUC | — | — | 0.5347 | 0.206 |
 
-**69 of 134 edges are positive — 51%, chance.** Before the fix it was 79 of 138
-(57%) with a per-edge median of +0.0150; after, the median is +0.0033.
+**66 of 130 edges are positive — 51%, chance.** Before the fix it was 79 of 138
+(57%) with a per-edge median of +0.0150; after, the median is +0.0009.
 
-**Power.** At 134 contested edges the minimum detectable per-edge effect is
+**Power.** At 130 contested edges the minimum detectable per-edge effect is
 ≈ 0.017 and the minimum detectable |AUC − 0.5| is ≈ 0.053. The observed AUC
-deviation is 0.042 — *below* what this corpus can resolve. So this is
-"no effect visible at 134 edges / 1,943 pairs", not "no effect".
+deviation is 0.035 — *below* what this corpus can resolve. So this is
+"no effect visible at 130 edges / 1,848 pairs", not "no effect".
 
-The one number that still reads borderline is per-edge under null B (p=0.050).
-It is not enough: null A on the same statistic gives 0.121, the balanced subset
-gives 0.645, the rank-based test gives 0.125, and seven variants were tested. A
-single 0.050 among them is what multiplicity looks like.
+The one number that still reads borderline is per-edge under null B (p=0.061).
+It is not enough: null A on the same statistic gives 0.141, the balanced subset
+gives 0.405, the rank-based test gives 0.206, and nine variants were tested. A
+single 0.06 among them is what multiplicity looks like.
 
 ---
 

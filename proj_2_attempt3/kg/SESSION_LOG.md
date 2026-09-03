@@ -6,10 +6,11 @@ Newest first. Nulls and dead ends are logged as results.
 
 # SUMMARY — session of 2026-09-03
 
-**The assigned analysis returned a null. Attacking it found a corpus bug that
-four sessions of screening had missed: 12 papers were in the corpus twice, and
-35 edges were advertising replication they do not have.** Full write-up:
-`FINDINGS_cooccurrence.md`.
+**The assigned analysis returned a null. Attacking it, and then attacking the
+graph the same way, found three structural defects that four sessions of
+screening had missed: 12 duplicate papers, three disease nodes that are one
+disease, and 115 child taxa still folded into their parents.** Write-ups:
+`FINDINGS_cooccurrence.md`, `FINDINGS_rank_collapse.md`.
 
 ### What I tested
 
@@ -24,9 +25,12 @@ profile? Substrate `relation_sentences.json`; nulls at the paper level.
   +0.047 against a null SD of 0.009 — five sigma, under *both* paper-level
   nulls, and it survived four attacks (profile size, country, sequencing type,
   Jaccard, per-edge median). It was **12 duplicate papers**. On the corrected
-  graph: pooled +0.0005 (p=0.93), per-edge +0.0140 (p=0.12), balanced edges
-  +0.0035 (p=0.65), rank-based AUC 0.5419 (p=0.125), and 69 of 134 edges
-  positive — 51%, chance. Null in all nine variants.
+  graph: pooled +0.0023 (p=0.79), per-edge +0.0137 (p=0.14), balanced edges
+  +0.0080 (p=0.41), rank-based AUC 0.5347 (p=0.21), and 66 of 130 edges
+  positive — 51%, chance. Null in all nine variants, and stable across all
+  three of this session's corrections. Reported with power: the minimum
+  detectable per-edge effect is ~0.017 and |AUC−0.5| ~0.053, so this is "no
+  effect visible at 130 edges / 1,848 pairs", not "no effect".
 - **"The lone dissenter is just an atypical paper."** The mechanical explanation
   I expected to find. Refuted: majority-side members average 28.6 taxa,
   minority-side 29.5, and permuting within profile-size quintile changed
@@ -34,7 +38,7 @@ profile? Substrate `relation_sentences.json`; nulls at the paper level.
 
 ### What survived
 
-- **The bug.** 12 papers were scraped once from a PubMed link and again from a
+- **Bug 1 — duplicate papers.** 12 papers were scraped once from a PubMed link and again from a
   PMC or publisher link; the copies' titles differ only by a trailing period or
   a curly-vs-straight apostrophe, and every paper key in this pipeline is the
   raw title string. Because edge weight IS paper count, each duplicate voted
@@ -48,6 +52,43 @@ profile? Substrate `relation_sentences.json`; nulls at the paper level.
   analysis ranked strongest (+0.944, +0.870, +0.796) are three of those four
   direction changes. A statistic found in one step what a full-text screening
   pass over all 45 title-matched papers had not.
+- **Bug 2 — one disease, three nodes.** `Anti-N-methyl-D-aspartate receptor
+  encephalitis` (22 edges), `NMDAR encephalitis` (16) and `Anti-NMDAR
+  encephalitis` (7) were three separate disease nodes, one paper each. This is
+  the Bacteroidetes/Bacteroidota case in the disease dimension. Folding it: 45
+  edges become 38, and **4 edges that every view showed as single-paper become
+  replicated, 3 of them CONTESTED** — real inter-study disagreement the
+  fragmentation was hiding, plus a 3-paper unanimous *Faecalibacterium* edge
+  displayed as three singletons. Fragmentation hides replication AND
+  contradiction; duplication invents it.
+- **Bug 3 — the placeholder split was half a fix.** Asking which surface strings
+  EXTEND the scientific name they resolved to: **115 strings over 52 nodes, none
+  flagged**; 285 edges touch one, 76 contested. 29 are `X sp./spp.` where
+  folding is correct; **32 are SILVA placeholders the 2026-09-01 pattern
+  missed** (`Prevotella 9`, `Coprococcus_1`, `Clostridium IV`, `Clostridiaceae
+  1`); 54 are real named species (`Prevotella copri`, `Klebsiella pneumonia`).
+  *Prevotella*/Parkinson's — the graph's highest-weight edge at 17 papers — had
+  **13 surface strings folded into one node**, five of them distinct SILVA
+  genera. Fixing the placeholder class: taxa 892→918, edges 1,978→2,011,
+  placeholder nodes 74→100, containment 684→708, and **5 contested edges were
+  contested only because placeholder children were folded in**. `Prevotella_9`
+  emerges as its own 2-paper contested edge. The 54 named species are NOT fixed
+  — that needs real taxids and this environment's network policy denies the NCBI
+  taxdump; `child_folds.json` carries all 115 classified, ready for a machine
+  that has it.
+- **The self-erasing fix, again — and killed properly this time.** The extended
+  placeholder split silently decayed on rebuild (106 → 102 placeholder nodes)
+  because a placeholder's parent was recoverable only from a containment link,
+  which exists only when the parent is itself a node. Now recorded as
+  `parent_taxid` on the node; two consecutive builds are byte-identical. The
+  pattern had also over-matched bacteriophages (`Enterococcus phage EFAP 1`);
+  added a `NOT_PLACEHOLDER` guard agreeing with the cache's existing one.
+- **Self-contradicting papers: 18 claims, and 4 were not contradictions.** Does
+  a paper ever call the same taxon both enriched and depleted for one disease?
+  18 do, all on contested edges, one contested by a single paper alone. 14 are
+  genuine (body site, subgroup, different comparator); **4 are two different
+  strings folded onto one key** (*Eubacterium biforme* vs *E. rectale*) — which
+  is what exposed Bug 3.
 - **No other pseudo-replication is detectable.** Same-cohort screen on the
   curated fields (country + n_cases + n_controls): 4 candidate groups, all
   coincidental, **0 edges drawing >1 paper from any of them**. Power limit: only
@@ -57,25 +98,51 @@ profile? Substrate `relation_sentences.json`; nulls at the paper level.
 
 ### Agreement, again, moved by nothing
 
-Disbiome −0.0024 (p=0.689), Peryton −0.0006 (p=0.881). That is the **fourth**
-structural correction in a row that agreement cannot see. The null used here is
-deliberately mismatched and conservative — it drops 12 *random* papers, deleting
-their evidence outright, where dedup deletes only redundant evidence. A
-correctness fix; **not** an accuracy gain.
+Headline rates after all three corrections: Disbiome **71.9%**, Peryton
+**72.5%** (from 71.9% / 72.8%). The dedup correction measured on the sensitive
+metric: −0.0024 (p=0.665) and −0.0007 (p=0.885), against a minimum detectable
+change of ~0.013. Its null is deliberately mismatched and conservative — it
+drops 12 *random* papers, deleting their evidence outright, where dedup deletes
+only redundant evidence.
+
+That makes **five** structural corrections in a row that agreement cannot see.
+Treat it as a property of the validation, not a coincidence: the decisive set is
+dominated by well-evidenced, unambiguously-named taxa, and every correction so
+far acts on the margins. All three are justified on correctness of meaning;
+**none may be cited as an accuracy gain.**
 
 ### Shipped
 
-`graph.json` / `kg.html` / `docs/index.html` rebuilt deduplicated: 272
-contributing papers, 892 taxa, 1,985 edges, **437 replicated (was 472)**, 220
-contested, 684 containment links. New: `cooccur_direction.py`,
-`cooccur_diagnostics.py`, `cooccur_followup.py`, `FINDINGS_cooccurrence.md`,
-`agreement_dedup.json`; `build_kg.py` gains `dedup_rows()` and
-`--keep-duplicate-papers`; `agreement_metric.py` gains `--drop dedup` and
-`--out`.
+`graph.json` / `kg.html` / `docs/index.html` / `rag_corpus.jsonl` rebuilt:
+**272 contributing papers, 918 taxa, 2,011 edges, 438 replicated (was 472), 219
+contested, 708 containment links, 100 placeholder nodes, 40 disease nodes.**
+Disbiome 71.9%, Peryton 72.5%. New: `cooccur_direction.py`,
+`cooccur_diagnostics.py`, `cooccur_followup.py`, `child_folds.json`,
+`selfcontra_packet.json`, `selfcontra_verdicts.json`, `agreement_dedup.json`,
+`FINDINGS_cooccurrence.md`, `FINDINGS_rank_collapse.md`. `build_kg.py` gains
+`dedup_rows()` / `--keep-duplicate-papers`, an NMDAR synonym entry, an extended
+`PLACEHOLDER` + `NOT_PLACEHOLDER` guard, and `parent_taxid` on placeholder
+nodes; `taxonomy_cache.py` prefers it; `agreement_metric.py` gains `--drop
+dedup` and `--out`.
+
+### A method note worth keeping
+
+An LLM subagent asked to adjudicate the 18 self-contradictions from the source
+sentences returned 6 "extraction errors"; **4 of the 6 were wrong**, and its own
+quoted evidence showed an oral-vs-gut contrast or two distinct species. A
+one-line deterministic test (was the same surface string on both sides?)
+settled it. Where a mechanical test exists, prefer it to a judgement call — and
+check the subagent.
 
 ### Single highest-value next step
 
-**More papers. The binding constraint is n, not method.** Four explanatory
+**Split the 54 named species out of their genera — on a machine with the NCBI
+taxdump.** It is diagnosed, classified and listed in `child_folds.json`, it
+touches the graph's flagship edge, and it is the only item this environment was
+blocked from finishing (the network policy denies `ftp.ncbi.nih.gov`). Expect
+it to move no agreement number, like the five corrections before it.
+
+After that: **more papers. The binding constraint is n, not method.** Four explanatory
 variables have now been tested against contested edges — study design, body
 site, and taxon co-occurrence pooled and per-edge — and all four are null. The
 minimum detectable effects here (per-edge ≈0.017, |AUC−0.5| ≈0.053, mean

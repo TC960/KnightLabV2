@@ -118,7 +118,9 @@ class CachedTaxonomy:
         before.
         """
         for n in nodes:
-            tid = ph_parent_id.get(str(n.get("id", "")))
+            # 0. the parent recorded on the node itself (build_kg writes it), which
+            #    is exact and works even when the parent is not a node in the graph.
+            tid = n.get("parent_taxid") or ph_parent_id.get(str(n.get("id", "")))
             names = [a for a in (n.get("aliases") or [])] + [n.get("label", "")]
             if not tid:
                 tid = next((t for t in (self._trim_to_parent(a) for a in names) if t), None)

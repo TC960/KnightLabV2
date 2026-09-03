@@ -191,7 +191,11 @@ def main():
         rows = json.load(open(os.path.join(HERE, "extractions_screened.json")))
         _, dropped_rows = BK.dedup_rows(rows, verbose=False)
         drop = [r["title"] for r in dropped_rows]
-        verify_side = "before"
+        # graph.json is the DEDUPED graph now that the fix is committed, so it is
+        # the AFTER side. (It was the before side only while duplicates were still
+        # in the shipped graph; the verify guard caught the switch rather than
+        # silently scoring against the wrong baseline.)
+        verify_side = "after"
         label = ("with_dupes", "deduped")
     else:
         # The 348-row set, before the screen removed 22 papers. Cache scope was
