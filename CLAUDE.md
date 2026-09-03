@@ -10,9 +10,17 @@ literature — nodes for microbial taxa and diseases, edges for "taxon X is **en
 in disease Y."
 
 Extraction is done and **the graph is built**: see `proj_2_attempt3/kg/`, published at
-<https://www.mohakprakash.com/KnightLabV2/>. 712 taxa (84% resolved to NCBI taxids), 27 diseases,
-1,398 association edges plus 551 taxonomic-containment links, from 250 papers. It agrees with two
-independent hand-curated databases at **77.5%** (Disbiome) and **75.6%** (Peryton) on edge direction.
+<https://www.mohakprakash.com/KnightLabV2/>. **918 taxa** (72% resolved to NCBI
+taxids), **40 diseases**, **2,011 association edges** plus
+**708 taxonomic-containment links**, from **272 contributing
+papers** of a screened 326-paper corpus. It agrees with two independent hand-curated databases at
+**71.9%** (Disbiome) and **72.5%** (Peryton) on edge direction.
+
+*Numbers current as of 2026-09-03; the earlier "712 taxa / 1,398 edges / 77.5% / 75.6%, from 250
+papers" line described a graph three corpus revisions ago. Agreement fell because the corpus grew
+and the question set changed, NOT because the graph got worse — five structural corrections since
+have each moved agreement by less than this corpus can resolve (~0.013). See
+`proj_2_attempt3/kg/SESSION_LOG.md`.*
 
 **Caveat on the gold standard.** The human annotations are under audit and are turning out to be
 unreliable; the annotator expects to report an error rate rather than a corrected set. So the
@@ -170,4 +178,8 @@ Built from the 250-paper extraction. Published: <https://www.mohakprakash.com/Kn
   **ill-posed** — 145 of 211 contributing papers do both, and only 7 are contested-only. The
   comparison must be within a fixed taxon-disease pair.
 - 11 pairs are contradicted by **both** Disbiome and Peryton — the highest-value review targets.
-- 113 of 712 taxa never resolve to a taxid (16S clade labels like `[Eubacterium] ventriosum group`).
+- 258 of 918 taxa never resolve to a taxid (16S clade labels like `[Eubacterium] ventriosum group`),
+  which now includes 100 deliberately-split SILVA rank placeholders (`Prevotella 9`).
+- **54 named species are still folded into their genus** (`Prevotella copri` into `Prevotella`) — a rank
+  collapse the project forbids. Diagnosed and classified in `proj_2_attempt3/kg/child_folds.json`;
+  fixing it needs the NCBI taxdump. This is the top open defect.

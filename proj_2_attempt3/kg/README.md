@@ -1,11 +1,12 @@
 # Knowledge graph — microbe–disease associations
 
-Built from the corpus-scale extraction over Emily's 250 usable papers.
+Built from the corpus-scale extraction over the screened 326-paper corpus
+(Emily's 250 usable papers plus the screened MAIN_DATA expansion).
 
 ## Pipeline
 
 ```
-eval-v2/results/qwopus3.5-27b-v3__q4km__samgated-v1__all250.json   (extraction, 250 papers)
+extractions_screened.json                        (extraction, 326 rows -> 314 after dedup)
    -> build_kg.py    -> graph.json   (nodes + aggregated edges)
    -> build_viz.py   -> kg.html      (self-contained explorer)
 ```
@@ -14,12 +15,20 @@ eval-v2/results/qwopus3.5-27b-v3__q4km__samgated-v1__all250.json   (extraction, 
 
 | | |
 |---|---:|
-| taxon–disease edges | 1,556 |
-| distinct taxa | 873 |
-| diseases (normalized) | 27 |
-| edges seen in >1 paper | 323 |
-| **contested** (papers disagree on direction) | **151** |
-| papers contributing ≥1 association | 211 / 250 |
+| taxon–disease edges | 2,011 |
+| distinct taxa | 918 |
+| diseases (normalized) | 40 |
+| edges seen in >1 paper | 438 |
+| **contested** (papers disagree on direction) | **219** |
+| containment links | 708 |
+| rank-placeholder nodes | 100 |
+| papers contributing ≥1 association | 272 / 326 |
+
+*Updated 2026-09-03. Three structural corrections that session — 12 duplicate
+papers removed, three NMDAR disease nodes folded into one, and 32 more SILVA
+rank placeholders split out of their parents — changed these counts; see
+`SESSION_LOG.md`. None of them moved agreement with the curated databases, and
+none should be cited as an accuracy improvement.*
 
 ## Design decisions, and why
 
@@ -41,7 +50,7 @@ have red-green colorblindness.
 **Ranks are preserved, not collapsed.** Papers report phylum, genus, species and OTU-level labels
 as peers; there is no accepted convention for merging them. Rank is a node attribute.
 
-**Not a node-link diagram.** 1,556 edges over 873 taxa is a hairball that answers no question. The
+**Not a node-link diagram.** 2,011 edges over 918 taxa is a hairball that answers no question. The
 question the data serves — "for this disease, which taxa, how replicated, where do papers
 disagree" — is a diverging bar chart.
 
@@ -109,11 +118,17 @@ Huntington's, MCI, epilepsy, migraine, myasthenia gravis, neuromyelitis optica).
 
 | | |
 |---|---:|
-| pairs in both | **238** |
-| of our in-scope pairs corroborated | 238/1084 (22.0%) |
-| of Disbiome's pairs we recovered | 238/444 (**53.6%**) |
-| direction **agreement** (both decisive) | **117/151 (77.5%)** |
-| direction disagreement | 34 (22.5%) |
+| pairs in both | **264** |
+| of our in-scope pairs corroborated | 264/1254 (21.1%) |
+| of Disbiome's pairs we recovered | 264/501 (**52.7%**) |
+| direction **agreement** (both decisive) | **120/167 (71.9%)** |
+| direction disagreement | 47 (28.1%) |
+
+*(Peryton, same join: 220 overlapping pairs, 72.8% recall, direction agreement
+100/138 = **72.5%**.) These figures are measured with the replay taxonomy cache,
+not the NCBI taxdump — this environment's network policy denies
+`ftp.ncbi.nih.gov` — so they run ~0.2–1.1 points off taxdump-measured runs and
+are sound for before/after deltas rather than as new absolute numbers.*
 
 **Normalize both sides with the same resolver — do not trust their taxid.**
 Disbiome's `organism_ncbi_id` is not consistently at the rank the paper reported:
