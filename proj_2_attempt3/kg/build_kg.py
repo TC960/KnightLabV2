@@ -199,6 +199,53 @@ def load_study_metadata():
     return out
 
 
+def norm_title(s):
+    """Title key robust to the two ways the same paper entered the corpus twice."""
+    return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+
+
+def dedup_rows(rows, verbose=True):
+    """Collapse rows that are the SAME PAPER fetched twice.
+
+    12 papers were scraped once from a PubMed link and again from a PMC or
+    publisher link. The two copies' titles differ only by a trailing period
+    and/or a curly-vs-straight apostrophe ("...disease activity" vs
+    "...disease activity."; "Parkinson's" vs "Parkinson’s"), and every paper
+    key in this pipeline is the raw title string, so nothing ever collapsed
+    them. Because edge weight IS paper count, each duplicate cast two votes:
+    9 of them contribute extractions, and an edge resting on one paper could
+    present itself as replicated.
+
+    Found by the co-occurrence analysis, not by inspection: 8 paper pairs
+    inside contested edges had profile cosine of exactly 1.00.
+
+    The kept copy is the one with the most extracted taxa (the two copies are
+    reads of the same text, so the richer read is the more complete one; one
+    PMC copy is empty where its PubMed twin is not). Ties break on the title
+    string so a rebuild is deterministic.
+    """
+    groups = defaultdict(list)
+    for r in rows:
+        groups[norm_title(r.get("title"))].append(r)
+    out, dropped = [], []
+    for k in sorted(groups):
+        g = groups[k]
+        if len(g) == 1:
+            out.append(g[0])
+            continue
+        g = sorted(g, key=lambda r: (-(len(parse_taxa(r.get("predicted_enriched"))) +
+                                       len(parse_taxa(r.get("predicted_depleted")))),
+                                     r.get("title", "")))
+        out.append(g[0])
+        dropped.extend(g[1:])
+    if verbose and dropped:
+        print(f"deduplicated {len(dropped)} duplicate paper copies "
+              f"({len(rows)} -> {len(out)} rows)")
+    # preserve the input ordering of the kept rows
+    keep = {id(r) for r in out}
+    return [r for r in rows if id(r) in keep], dropped
+
+
 def build(rows, min_papers=1, tax=None):
     global BODY_SITE
     BODY_SITE = load_body_sites()
@@ -360,11 +407,21 @@ def main():
                          "as their own node")
     ap.add_argument("--no-taxonomy", action="store_true",
                     help="skip NCBI resolution, fold on strings only")
+    # Default ON: the same paper scraped twice under two links must not cast two
+    # votes on an edge whose weight is defined as a paper count.
+    ap.add_argument("--keep-duplicate-papers", dest="dedup",
+                    action="store_false", default=True,
+                    help="OLD behaviour: keep both copies of a paper that was "
+                         "scraped twice under different links")
     a = ap.parse_args()
     global SPLIT_PLACEHOLDERS
     SPLIT_PLACEHOLDERS = a.split_placeholders
 
     rows = json.load(open(a.input))
+    n_raw = len(rows)
+    dropped = []
+    if a.dedup:
+        rows, dropped = dedup_rows(rows)
     tax = None
     if not a.no_taxonomy:
         # Prefer the real taxdump; fall back to replaying graph.json's recorded
@@ -379,7 +436,8 @@ def main():
     nodes, edges, hierarchy, papers_tbl = build(rows, a.min_papers, tax)
     meta = {
         "source": os.path.basename(a.input),
-        "papers_in": len(rows),
+        "papers_in": n_raw,
+        "papers_deduped": len(dropped),
         "papers_contributing": len({e for r in rows for e in [r["title"]]
                                     if parse_taxa(r.get("predicted_enriched")) or
                                     parse_taxa(r.get("predicted_depleted"))}),

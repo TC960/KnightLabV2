@@ -160,10 +160,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--iters", type=int, default=2000)
     ap.add_argument("--seed", type=int, default=42)
-    ap.add_argument("--drop", choices=["nongut", "screened"], default="nongut",
+    ap.add_argument("--drop", choices=["nongut", "screened", "dedup"], default="nongut",
                     help="which paper-removal correction to test: the 6 non-gut "
-                         "papers, or the 22 non-human / non-case-control papers "
-                         "the MAIN_DATA screen removed")
+                         "papers, the 22 non-human / non-case-control papers "
+                         "the MAIN_DATA screen removed, or the 12 duplicate paper "
+                         "copies (the same paper scraped under two links)")
+    ap.add_argument("--out", default="agreement_metric.json",
+                    help="result file (do not clobber a previous correction's)")
     a = ap.parse_args()
     rng = np.random.default_rng(a.seed)
 
@@ -177,6 +180,19 @@ def main():
         # graph.json is the all-sites graph, i.e. the BEFORE side here.
         verify_side = "before"
         label = ("all_sites", "gut_only")
+    elif a.drop == "dedup":
+        # The same paper scraped twice under a PubMed and a PMC/publisher link.
+        # NOTE the null is deliberately mismatched and therefore CONSERVATIVE:
+        # it drops 12 RANDOM papers, deleting their evidence outright, whereas
+        # deduplication deletes only redundant evidence -- the twin still votes.
+        # So the null's spread is an upper bound on what this correction could
+        # move, and a small observed change here is expected, not reassuring.
+        import build_kg as BK
+        rows = json.load(open(os.path.join(HERE, "extractions_screened.json")))
+        _, dropped_rows = BK.dedup_rows(rows, verbose=False)
+        drop = [r["title"] for r in dropped_rows]
+        verify_side = "before"
+        label = ("with_dupes", "deduped")
     else:
         # The 348-row set, before the screen removed 22 papers. Cache scope was
         # checked: only 4 of the 22 produce any taxa at all, and their only three
@@ -242,8 +258,8 @@ def main():
                         "min_detectable": round(float(np.percentile(np.abs(null), 95)), 4),
                         "p": round(p, 4), "iters": a.iters, "n_dropped": len(drop)})
 
-    json.dump(results, open(os.path.join(HERE, "agreement_metric.json"), "w"), indent=1)
-    print("\nwrote agreement_metric.json")
+    json.dump(results, open(os.path.join(HERE, a.out), "w"), indent=1)
+    print(f"\nwrote {a.out}")
 
 
 if __name__ == "__main__":
