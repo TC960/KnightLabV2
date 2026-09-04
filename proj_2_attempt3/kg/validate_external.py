@@ -28,6 +28,7 @@ import argparse
 import csv
 import json
 import os
+import re
 import subprocess
 from collections import Counter, defaultdict
 
@@ -102,6 +103,31 @@ def load_peryton():
     return out, "Peryton"
 
 
+def load_species_overrides():
+    """surface string -> species taxid, from resolve_named_children.py.
+
+    The external side needs the SAME override the builder uses, or the split
+    silently costs what it was meant to gain. Disbiome files 34 records under
+    "Prevotella copri" and Peryton 14; while our graph folded that string into
+    *Prevotella*, those records joined onto our GENUS edge -- the same rank
+    collapse, on the reference side. Splitting our node without splitting theirs
+    would drop them from the join entirely.
+
+    Note this cannot be left to the replay cache's alias table. That table only
+    knows strings OUR corpus produced, so an external name we never saw resolves
+    by qualifier-trimming to the genus, which is the behaviour being fixed.
+    """
+    path = os.path.join(HERE, "named_child_taxids.json")
+    if not os.path.exists(path):
+        return {}
+    return {r["surface"].lower(): r["taxid"]
+            for r in json.load(open(path))["resolutions"]
+            if r["verdict"] == "species" and r.get("taxid")}
+
+
+SPECIES_OVERRIDE = {}
+
+
 def compare_against(G, records, name, tax, show=10):
     ref = defaultdict(Counter)
     kept = 0
@@ -110,7 +136,11 @@ def compare_against(G, records, name, tax, show=10):
         out = OUTCOME.get(r["outcome"].lower())
         if not (our and out and r["microbe"]):
             continue
-        tid, _sci, _rank, _how = tax.resolve(r["microbe"]) if tax.ok else (None, 0, 0, 0)
+        mic = re.sub(r"\s+", " ", r["microbe"].strip())
+        tid = SPECIES_OVERRIDE.get(mic.lower())
+        if not tid:
+            tid, _sci, _rank, _how = (tax.resolve(mic) if tax.ok
+                                      else (None, 0, 0, 0))
         if not tid:
             continue
         ref[(tid, our)][out] += 1
@@ -178,6 +208,8 @@ def main():
     G = json.load(open(a.graph))
     from taxonomy_cache import load_taxonomy
     tax = load_taxonomy()
+    global SPECIES_OVERRIDE
+    SPECIES_OVERRIDE = load_species_overrides()
     if not tax.ok:
         print("FATAL: no taxonomy available — the join needs one. See kg/taxonomy.py.")
         return

@@ -1,0 +1,3710 @@
+{
+  "fields_used": {
+    "disbiome": {
+      "organism_name": "organism_name",
+      "disease_name": "disease_name",
+      "qualitative_outcome": "qualitative_outcome"
+    },
+    "peryton": {
+      "organism_name": "microbe_scientific_name",
+      "disease_name": "disease_name",
+      "outcome": "relationship_name"
+    }
+  },
+  "disbiome": {
+    "Prevotella copri": {
+      "exact_n": 34,
+      "substring_n": 0,
+      "diseases": {
+        "Multiple Sclerosis": {
+          "Reduced": 1
+        },
+        "Colorectal cancer": {
+          "Reduced": 2
+        },
+        "HIV infection": {
+          "Elevated": 1
+        },
+        "Type 2 Diabetes": {
+          "Reduced": 1
+        },
+        "Pervasive developmental disorder NOS": {
+          "Reduced": 1
+        },
+        "Autism": {
+          "Elevated": 1
+        },
+        "Parkinson's Disease": {
+          "Reduced": 2,
+          "Elevated": 1
+        },
+        "Atherosclerosis": {
+          "Reduced": 1
+        },
+        "Atrophic gastritis": {
+          "Reduced": 1
+        },
+        "Neuromyelitis optica": {
+          "Reduced": 1
+        },
+        "Primary sclerosing cholangitis": {
+          "Reduced": 1
+        },
+        "Primary sclerosing cholangitis-IBD": {
+          "Reduced": 1
+        },
+        "Rheumatoid Arthritis": {
+          "Elevated": 3
+        },
+        "Obesity": {
+          "Elevated": 1
+        },
+        "Graves' orbitopathy": {
+          "Elevated": 1
+        },
+        "Gastric carcinoma": {
+          "Reduced": 1
+        },
+        "Fibromyalgia": {
+          "Reduced": 1
+        },
+        "Helicobacter pylori infection": {
+          "Elevated": 1
+        },
+        "Acute cerbral infarction": {
+          "Elevated": 1
+        },
+        "Psoriasis": {
+          "Reduced": 1
+        },
+        "Spleen deficiency syndrome": {
+          "Reduced": 1
+        },
+        "Kidney stone": {
+          "Elevated": 1
+        },
+        "Non-alcoholic fatty liver disease": {
+          "Reduced": 1
+        },
+        "Human end-stage renal disease": {
+          "Reduced": 1
+        },
+        "Traumatic Brain Injury": {
+          "Reduced": 1
+        },
+        "Oropharyngeal cancer": {
+          "Elevated": 1
+        },
+        "Hypopharyngeal cancer": {
+          "Elevated": 1
+        },
+        "Myasthenia gravis": {
+          "Elevated": 1
+        },
+        "Sarcopenia": {
+          "Reduced": 1
+        }
+      },
+      "example_names": [
+        "Prevotella copri"
+      ]
+    },
+    "Segatella copri": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Eubacterium rectale": {
+      "exact_n": 32,
+      "substring_n": 0,
+      "diseases": {
+        "Multiple Sclerosis": {
+          "Reduced": 1
+        },
+        "Type 2 Diabetes": {
+          "Reduced": 1
+        },
+        "Alzheimer's Disease": {
+          "Reduced": 1
+        },
+        "Crohn's Disease": {
+          "Reduced": 2
+        },
+        "Colorectal cancer": {
+          "Reduced": 3
+        },
+        "Type 1 Diabetes": {
+          "Reduced": 1
+        },
+        "Cystic Fibrosis": {
+          "Reduced": 3
+        },
+        "Heart failure": {
+          "Reduced": 1
+        },
+        "Ulcerative Colitis": {
+          "Reduced": 2
+        },
+        "Cirrhosis": {
+          "Reduced": 1
+        },
+        "Hypertension": {
+          "Reduced": 1
+        },
+        "Chronic kidney disease": {
+          "Reduced": 2
+        },
+        "Coronary artery disease": {
+          "Reduced": 1
+        },
+        "Spinal cord injury": {
+          "Reduced": 2
+        },
+        "Autism spectrum disorders": {
+          "Reduced": 1
+        },
+        "Inflammatory Bowel Disease": {
+          "Reduced": 1
+        },
+        "Gastric carcinoma": {
+          "Reduced": 1
+        },
+        "Generalized anxiety disorder": {
+          "Reduced": 1
+        },
+        "Colon polyps": {
+          "Elevated": 1
+        },
+        "Pulmonary tubercolosis": {
+          "Reduced": 1
+        },
+        "Rheumatoid Arthritis": {
+          "Reduced": 1
+        },
+        "Human end-stage renal disease": {
+          "Reduced": 1
+        },
+        "Covid-19": {
+          "Reduced": 1
+        },
+        "Amyotrophic lateral sclerosis": {
+          "Reduced": 1
+        }
+      },
+      "example_names": [
+        "Eubacterium rectale"
+      ]
+    },
+    "Eubacterium biforme": {
+      "exact_n": 8,
+      "substring_n": 0,
+      "diseases": {
+        "HIV infection": {
+          "Elevated": 1
+        },
+        "Cystic Fibrosis": {
+          "Elevated": 1
+        },
+        "Type 2 Diabetes": {
+          "Elevated": 1
+        },
+        "Parkinson's Disease": {
+          "Reduced": 1
+        },
+        "Inflammatory Bowel Disease": {
+          "Reduced": 2
+        },
+        "Spleen deficiency syndrome": {
+          "Reduced": 1
+        },
+        "Kidney stone": {
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Eubacterium biforme"
+      ]
+    },
+    "Bacteroides dorei": {
+      "exact_n": 5,
+      "substring_n": 0,
+      "diseases": {
+        "Parkinson's Disease": {
+          "Reduced": 1
+        },
+        "Functional dyspepsia": {
+          "Elevated": 1
+        },
+        "Type 1 Diabetes": {
+          "Elevated": 1
+        },
+        "Cholestasis": {
+          "Reduced": 1
+        },
+        "Non-alcoholic fatty liver disease": {
+          "Reduced": 1
+        }
+      },
+      "example_names": [
+        "Bacteroides dorei"
+      ]
+    },
+    "Bacteroides vulgatus": {
+      "exact_n": 29,
+      "substring_n": 0,
+      "diseases": {
+        "Obesity": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Autism": {
+          "Elevated": 3
+        },
+        "Crohn's Disease": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Irritable Bowel Syndrome": {
+          "Reduced": 2
+        },
+        "Type 1 Diabetes": {
+          "Reduced": 1,
+          "Elevated": 3
+        },
+        "Familial adenomatous polyposis": {
+          "Elevated": 1
+        },
+        "Cystic Fibrosis": {
+          "Reduced": 1
+        },
+        "Viral Diarrhea": {
+          "Reduced": 1
+        },
+        "Pervasive developmental disorder NOS": {
+          "Reduced": 1
+        },
+        "Atopic eczema": {
+          "Reduced": 1
+        },
+        "Amyotrophic lateral sclerosis": {
+          "Elevated": 1
+        },
+        "Acquired Immunodeficiency Syndrome": {
+          "Reduced": 1
+        },
+        "Sj\u00f6gren Syndrome": {
+          "Elevated": 1
+        },
+        "Systemic lupus erythematosus": {
+          "Elevated": 1
+        },
+        "Celiac Disease, Coaliac disease": {
+          "Elevated": 2
+        },
+        "Primary liver cancer": {
+          "Elevated": 1
+        },
+        "Inflammatory Bowel Disease": {
+          "Elevated": 1
+        },
+        "Autism spectrum disorders": {
+          "Reduced": 1
+        },
+        "Colon polyps": {
+          "Elevated": 1
+        },
+        "Helicobacter pylori infection": {
+          "Reduced": 1
+        }
+      },
+      "example_names": [
+        "Bacteroides vulgatus"
+      ]
+    },
+    "Bacteroides uniformis": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Bacteroides coprophilus": {
+      "exact_n": 2,
+      "substring_n": 0,
+      "diseases": {
+        "Multiple Sclerosis": {
+          "Reduced": 1
+        },
+        "Type 2 Diabetes": {
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Bacteroides coprophilus"
+      ]
+    },
+    "Bacteroides plebeius": {
+      "exact_n": 15,
+      "substring_n": 0,
+      "diseases": {
+        "Irritable Bowel Syndrome": {
+          "Reduced": 1
+        },
+        "Atopic eczema": {
+          "Reduced": 1
+        },
+        "Parkinson's Disease": {
+          "Reduced": 1
+        },
+        "Keratitis": {
+          "Reduced": 1
+        },
+        "Coronary artery disease": {
+          "Reduced": 1
+        },
+        "Cardiac valve calcification": {
+          "Elevated": 1
+        },
+        "Polycystic Ovary Syndrome": {
+          "Elevated": 1
+        },
+        "Obesity": {
+          "Reduced": 1
+        },
+        "Ankylosing spondylitis": {
+          "Elevated": 1
+        },
+        "Primary Open-Angle Glaucoma": {
+          "Reduced": 1
+        },
+        "Spleen deficiency syndrome": {
+          "Elevated": 1
+        },
+        "Schizophrenia": {
+          "Elevated": 1
+        },
+        "Kidney stone": {
+          "Elevated": 1
+        },
+        "Idiopathic central precocious puberty": {
+          "Elevated": 1
+        },
+        "Multiple system atrophy": {
+          "Reduced": 1
+        }
+      },
+      "example_names": [
+        "Bacteroides plebeius"
+      ]
+    },
+    "Prevotella buccae": {
+      "exact_n": 1,
+      "substring_n": 0,
+      "diseases": {
+        "Pulmonary tubercolosis": {
+          "Reduced": 1
+        }
+      },
+      "example_names": [
+        "Prevotella buccae"
+      ]
+    },
+    "Prevotella timonensis": {
+      "exact_n": 3,
+      "substring_n": 0,
+      "diseases": {
+        "Bacterial vaginosis": {
+          "Elevated": 1
+        },
+        "Chlamydia": {
+          "Elevated": 1
+        },
+        "Aerobic vaginitis": {
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Prevotella timonensis"
+      ]
+    },
+    "Blautia massiliensis": {
+      "exact_n": 1,
+      "substring_n": 0,
+      "diseases": {
+        "Fibromyalgia": {
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Blautia massiliensis"
+      ]
+    },
+    "Ruminococcus bicirculans": {
+      "exact_n": 1,
+      "substring_n": 0,
+      "diseases": {
+        "Polycystic Ovary Syndrome": {
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Ruminococcus bicirculans"
+      ]
+    },
+    "Bifidobacterium breve": {
+      "exact_n": 4,
+      "substring_n": 0,
+      "diseases": {
+        "Cystic Fibrosis": {
+          "Reduced": 1
+        },
+        "Schizophrenia": {
+          "Elevated": 1
+        },
+        "Preterm birth": {
+          "Reduced": 1
+        },
+        "Alcoholic cirrhosis": {
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Bifidobacterium breve"
+      ]
+    },
+    "Klebsiella pneumoniae": {
+      "exact_n": 14,
+      "substring_n": 0,
+      "diseases": {
+        "Chronic Obstructive Pulmonary Disease": {
+          "Elevated": 1
+        },
+        "Preeclamsia": {
+          "Elevated": 1
+        },
+        "Cystic Fibrosis": {
+          "Elevated": 1
+        },
+        "Autism spectrum disorders": {
+          "Elevated": 1
+        },
+        "Colorectal cancer": {
+          "Elevated": 1
+        },
+        "periodontitis": {
+          "Elevated": 1
+        },
+        "Edentulism": {
+          "Elevated": 1
+        },
+        "Helicobacter pylori infection": {
+          "Elevated": 1
+        },
+        "Necrotizing enterocolitis": {
+          "Elevated": 1
+        },
+        "Systemic lupus erythematosus": {
+          "Reduced": 1
+        },
+        "Non-alcoholic fatty liver disease": {
+          "Elevated": 1
+        },
+        "Obesity": {
+          "Elevated": 1
+        },
+        "Aerobic vaginitis": {
+          "Elevated": 1
+        },
+        "Alcoholism": {
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Klebsiella pneumoniae"
+      ]
+    },
+    "Faecalibacterium prausnitzii": {
+      "exact_n": 100,
+      "substring_n": 0,
+      "diseases": {
+        "Multiple Sclerosis": {
+          "Reduced": 1
+        },
+        "Crohn's Disease": {
+          "Reduced": 18
+        },
+        "Type 2 Diabetes": {
+          "Reduced": 4
+        },
+        "Parkinson's Disease": {
+          "Reduced": 1
+        },
+        "Infective colitis": {
+          "Reduced": 1
+        },
+        "Ulcerative Colitis": {
+          "Reduced": 5
+        },
+        "Colorectal cancer": {
+          "Reduced": 5
+        },
+        "Type 1 Diabetes": {
+          "Reduced": 2
+        },
+        "Atopy": {
+          "Reduced": 1
+        },
+        "Familial adenomatous polyposis": {
+          "Elevated": 1
+        },
+        "Celiac Disease, Coaliac disease": {
+          "Reduced": 2
+        },
+        "Obesity": {
+          "Elevated": 3,
+          "Reduced": 1
+        },
+        "Hepatitis B": {
+          "Reduced": 1
+        },
+        "Atopic dermatitis": {
+          "Elevated": 1
+        },
+        "Cystic Fibrosis": {
+          "Reduced": 5
+        },
+        "Pervasive developmental disorder NOS": {
+          "Elevated": 1
+        },
+        "Autism": {
+          "Reduced": 2
+        },
+        "Spondyloarthritis": {
+          "Reduced": 1
+        },
+        "Inactive Crohn's Disease": {
+          "Reduced": 3
+        },
+        "Chronic kidney disease": {
+          "Reduced": 3
+        },
+        "Psoriasis": {
+          "Reduced": 1
+        },
+        "Inflammatory Bowel Disease": {
+          "Reduced": 3
+        },
+        "Pancreatitis": {
+          "Reduced": 1
+        },
+        "Opisthorchis felineus infection": {
+          "Elevated": 1
+        },
+        "Atherosclerosis": {
+          "Reduced": 1
+        },
+        "Liver transplant": {
+          "Reduced": 1
+        },
+        "Pulmonary tubercolosis": {
+          "Elevated": 1
+        },
+        "Cirrhosis": {
+          "Reduced": 1
+        },
+        "Non-alcoholic fatty liver disease": {
+          "Reduced": 2
+        },
+        "Heart failure": {
+          "Reduced": 1
+        },
+        "Idiopathic nephrotic syndrome": {
+          "Elevated": 1
+        },
+        "Hyperlipidemia": {
+          "Reduced": 1
+        },
+        "Primary sclerosing cholangitis": {
+          "Reduced": 1
+        },
+        "Primary sclerosing cholangitis-IBD": {
+          "Reduced": 1
+        },
+        "Asthma": {
+          "Reduced": 1
+        },
+        "Myasthenia gravis": {
+          "Reduced": 1
+        },
+        "Keratitis": {
+          "Reduced": 1
+        },
+        "Systemic lupus erythematosus": {
+          "Reduced": 1
+        },
+        "Autism spectrum disorders": {
+          "Elevated": 1
+        },
+        "Frailty": {
+          "Reduced": 1
+        },
+        "Metabolic syndrome": {
+          "Reduced": 1
+        },
+        "Juvenile idiopathic arthritis": {
+          "Elevated": 1
+        },
+        "Allergic asthma": {
+          "Reduced": 1
+        },
+        "Fibromyalgia": {
+          "Reduced": 1
+        },
+        "Colon polyps": {
+          "Elevated": 1
+        },
+        "Cholestasis": {
+          "Reduced": 1
+        },
+        "Aerobic vaginitis": {
+          "Elevated": 1
+        },
+        "Migraine": {
+          "Reduced": 1
+        },
+        "Attention Deficit Hyperactivity Disorder": {
+          "Reduced": 1
+        },
+        "Human end-stage renal disease": {
+          "Reduced": 1
+        },
+        "Clostridium difficile infection": {
+          "Reduced": 1
+        },
+        "Lung cancer": {
+          "Reduced": 1
+        },
+        "Normal weight obesity": {
+          "Reduced": 1
+        },
+        "Fatigue": {
+          "Reduced": 1
+        },
+        "Covid-19": {
+          "Reduced": 1
+        }
+      },
+      "example_names": [
+        "Faecalibacterium prausnitzii"
+      ]
+    },
+    "Clostridium clostridioforme": {
+      "exact_n": 5,
+      "substring_n": 0,
+      "diseases": {
+        "Autism": {
+          "Elevated": 1
+        },
+        "Type 2 Diabetes": {
+          "Elevated": 1
+        },
+        "Cystic Fibrosis": {
+          "Elevated": 1
+        },
+        "Autism spectrum disorders": {
+          "Elevated": 1
+        },
+        "Migraine": {
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Clostridium clostridioforme"
+      ]
+    },
+    "Hungatella hathewayi": {
+      "exact_n": 1,
+      "substring_n": 0,
+      "diseases": {
+        "Fibromyalgia": {
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Hungatella hathewayi"
+      ]
+    },
+    "Monoglobus pectinilyticus": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Lawsonibacter phoceensis": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Oribacterium sinus": {
+      "exact_n": 1,
+      "substring_n": 0,
+      "diseases": {
+        "Behcet's Disease": {
+          "Reduced": 1
+        }
+      },
+      "example_names": [
+        "Oribacterium sinus"
+      ]
+    },
+    "Fusobacterium mortiferum": {
+      "exact_n": 3,
+      "substring_n": 0,
+      "diseases": {
+        "Behcet's Disease": {
+          "Reduced": 1
+        },
+        "Obesity": {
+          "Reduced": 1
+        },
+        "Myasthenia gravis": {
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Fusobacterium mortiferum"
+      ]
+    },
+    "Prevotella": {
+      "exact_n": 243,
+      "substring_n": 271,
+      "diseases": {
+        "Type 2 Diabetes": {
+          "Elevated": 4,
+          "Reduced": 2
+        },
+        "Pouchitis": {
+          "Elevated": 1
+        },
+        "Laryngeal carcinoma": {
+          "Elevated": 2
+        },
+        "Crohn's Disease": {
+          "Reduced": 3,
+          "Elevated": 5
+        },
+        "Colorectal cancer": {
+          "Elevated": 4,
+          "Reduced": 1
+        },
+        "Autism": {
+          "Reduced": 2,
+          "Elevated": 1
+        },
+        "Major depressive disorder": {
+          "Reduced": 1
+        },
+        "Parkinson's Disease": {
+          "Elevated": 1,
+          "Reduced": 4
+        },
+        "Ulcerative Colitis": {
+          "Reduced": 3,
+          "Elevated": 2
+        },
+        "Type 1 Diabetes": {
+          "Reduced": 3,
+          "Elevated": 1
+        },
+        "Caries": {
+          "Reduced": 3,
+          "Elevated": 5
+        },
+        "HIV infection": {
+          "Elevated": 4,
+          "Reduced": 2
+        },
+        "Systemic sclerosis": {
+          "Elevated": 2
+        },
+        "Behcet's Disease": {
+          "Reduced": 1
+        },
+        "Sj\u00f6gren Syndrome": {
+          "Reduced": 1
+        },
+        "Aggressive periodontitis": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Preeclamsia": {
+          "Elevated": 1
+        },
+        "Bacterial vaginosis": {
+          "Elevated": 8
+        },
+        "Asthma": {
+          "Reduced": 3
+        },
+        "Chronic Obstructive Pulmonary Disease": {
+          "Reduced": 2,
+          "Elevated": 2
+        },
+        "Rheumatoid Arthritis": {
+          "Elevated": 2,
+          "Reduced": 1
+        },
+        "Periodontal disease": {
+          "Elevated": 2
+        },
+        "Oral lichen planus": {
+          "Elevated": 1
+        },
+        "Interstitial cystitis": {
+          "Reduced": 1
+        },
+        "Cystic Fibrosis": {
+          "Reduced": 2
+        },
+        "Hypertension": {
+          "Elevated": 2
+        },
+        "Transient Ischemic Attack": {
+          "Reduced": 1
+        },
+        "Systemic lupus erythematosus": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Constipation": {
+          "Reduced": 1
+        },
+        "Disease-free": {
+          "Reduced": 1
+        },
+        "Celiac Disease, Coaliac disease": {
+          "Reduced": 4,
+          "Elevated": 1
+        },
+        "Primary sclerosing cholangitis-IBD": {
+          "Reduced": 1
+        },
+        "Gingivitis": {
+          "Reduced": 1
+        },
+        "Chronic prostatitis / Chronic pelvic pain syndrome": {
+          "Reduced": 1
+        },
+        "Kidney stone": {
+          "Reduced": 1
+        },
+        "Obesity": {
+          "Elevated": 3,
+          "Reduced": 1
+        },
+        "Non alcoholic steatohepatitis": {
+          "Elevated": 1
+        },
+        "Cirrhosis": {
+          "Elevated": 3,
+          "Reduced": 1
+        },
+        "Hepatitis B": {
+          "Reduced": 2,
+          "Elevated": 2
+        },
+        "Non-alcoholic fatty liver disease": {
+          "Reduced": 2
+        },
+        "Ankylosing spondylitis": {
+          "Elevated": 2
+        },
+        "Hepatitis C": {
+          "Elevated": 1
+        },
+        "Chronic kidney disease": {
+          "Reduced": 4
+        },
+        "Cervicitis": {
+          "Elevated": 1
+        },
+        "Pregnancy": {
+          "Reduced": 1
+        },
+        "Trichomonas vaginalis infection": {
+          "Elevated": 2
+        },
+        "Idiopathic REM Sleep Behavior Disorder": {
+          "Reduced": 1
+        },
+        "T2D with hypertension and hyperlipidemia": {
+          "Elevated": 1
+        },
+        "Short Bowel Syndrome": {
+          "Elevated": 1,
+          "Reduced": 2
+        },
+        "Otitis Media": {
+          "Elevated": 1
+        },
+        "Chronic alcoholic pancreatitis": {
+          "Reduced": 1
+        },
+        "Autism spectrum disorders": {
+          "Reduced": 1
+        },
+        "Pancreatitis": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Gastric carcinoma": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Acquired Immunodeficiency Syndrome": {
+          "Reduced": 1
+        },
+        "Sickle cell disease": {
+          "Reduced": 1
+        },
+        "Alcoholic hepatitis": {
+          "Reduced": 1
+        },
+        "Pancreatic cancer": {
+          "Elevated": 1
+        },
+        "Protracted bacterial bronchitis": {
+          "Elevated": 2
+        },
+        "Infantile eczema": {
+          "Reduced": 1
+        },
+        "Hashimoto's thyroiditis": {
+          "Reduced": 1
+        },
+        "Oral cancer": {
+          "Elevated": 2
+        },
+        "Viral respiratory tract infection": {
+          "Reduced": 1
+        },
+        "Hirschsprung's disease": {
+          "Elevated": 1
+        },
+        "Uveitits": {
+          "Elevated": 1
+        },
+        "Maturity-onset diabetes of the young 2": {
+          "Elevated": 1
+        },
+        "Smoking": {
+          "Reduced": 2,
+          "Elevated": 4
+        },
+        "Lung cancer": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Severe fever with thrombocytopenia syndrome": {
+          "Reduced": 1
+        },
+        "Pulmonary tubercolosis": {
+          "Reduced": 2
+        },
+        "Breast cancer": {
+          "Reduced": 2
+        },
+        "Coronary Heart Disease": {
+          "Reduced": 1
+        },
+        "Graves' disease": {
+          "Elevated": 1
+        },
+        "Wilson's Disease": {
+          "Reduced": 1
+        },
+        "Microscopic colitis": {
+          "Reduced": 1
+        },
+        "Postmenopausal": {
+          "Elevated": 1
+        },
+        "Macular degeneration": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Palmoplantar pustulosis": {
+          "Elevated": 1
+        },
+        "Henoch-Sch\u00f6nlein Purpura": {
+          "Elevated": 1
+        },
+        "Anovulation": {
+          "Elevated": 1
+        },
+        "Spinal cord injury": {
+          "Reduced": 2
+        },
+        "Alcoholism": {
+          "Elevated": 2,
+          "Reduced": 1
+        },
+        "Hepatocellular cancer": {
+          "Elevated": 1
+        },
+        "Endometriosis": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Urogenital Schistosomiasis": {
+          "Elevated": 2
+        },
+        "Primary biliary cholangitis": {
+          "Elevated": 1
+        },
+        "Inflammatory Bowel Disease": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Gestational diabetes": {
+          "Reduced": 1
+        },
+        "Recurrent miscarriage": {
+          "Elevated": 1
+        },
+        "Thyroid carcinoma": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Invasive pneumococcal disease": {
+          "Elevated": 1
+        },
+        "Alcoholic cirrhosis": {
+          "Reduced": 2
+        },
+        "Sicca syndrome": {
+          "Elevated": 1
+        },
+        "Tongue cancer": {
+          "Reduced": 1
+        },
+        "Giardia intestinalis infection": {
+          "Elevated": 1
+        },
+        "Clostridium difficile infection": {
+          "Reduced": 1
+        },
+        "Halitosis": {
+          "Elevated": 2
+        },
+        "Allergy": {
+          "Reduced": 1
+        },
+        "Obstructive sleep apnea-hypopnea syndrome": {
+          "Elevated": 1
+        },
+        "Psoriasis": {
+          "Elevated": 1
+        },
+        "Multiple Sclerosis": {
+          "Reduced": 5
+        },
+        "Generalized anxiety disorder": {
+          "Reduced": 1
+        },
+        "COPD Exacerbation": {
+          "Reduced": 1
+        },
+        "Irritable Bowel Syndrome": {
+          "Elevated": 1
+        },
+        "Overactive bladder": {
+          "Reduced": 1
+        },
+        "periodontitis": {
+          "Elevated": 3
+        },
+        "Periodontal abscess": {
+          "Reduced": 1
+        },
+        "Gestational diabetes + hyperlipidemia": {
+          "Elevated": 1
+        },
+        "Atrial fibrillation": {
+          "Reduced": 2
+        },
+        "Radiation enteritis": {
+          "Elevated": 1
+        },
+        "Laryngotracheal stenosis": {
+          "Reduced": 1
+        },
+        "Chronic mucocutaneous candidiasis": {
+          "Reduced": 1
+        },
+        "Hyper IgE syndrome": {
+          "Reduced": 1
+        },
+        "Diabetic nephropathy": {
+          "Reduced": 1
+        },
+        "Bladder cancer": {
+          "Reduced": 1
+        },
+        "Polycystic Ovary Syndrome": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Coronary artery disease": {
+          "Elevated": 2
+        },
+        "Chlamydia": {
+          "Elevated": 1
+        },
+        "Pneumonia": {
+          "Elevated": 1
+        },
+        "Acute lymphoblastic leukemia": {
+          "Reduced": 1
+        },
+        "Bleeding gum": {
+          "Elevated": 2
+        },
+        "Aphthous ulcer": {
+          "Elevated": 1
+        },
+        "Stevens-Johnson syndrome": {
+          "Elevated": 1
+        },
+        "Liver fibrosis": {
+          "Elevated": 1
+        },
+        "Preterm birth": {
+          "Elevated": 1
+        },
+        "Gastrointestinal follicular lymphoma": {
+          "Reduced": 1
+        },
+        "Dry eye syndrome": {
+          "Elevated": 1
+        },
+        "H1N1 Influenza": {
+          "Reduced": 1
+        },
+        "Recurrent aphthous stomatitis": {
+          "Elevated": 1
+        },
+        "Frailty": {
+          "Reduced": 1
+        },
+        "Sarcopenia": {
+          "Reduced": 2,
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Prevotella",
+        "Prevotella copri",
+        "Prevotella melaninogenica",
+        "Prevotella oulorum",
+        "Prevotellaceae"
+      ]
+    },
+    "Eubacterium": {
+      "exact_n": 48,
+      "substring_n": 133,
+      "diseases": {
+        "Type 2 Diabetes": {
+          "Reduced": 2,
+          "Elevated": 1
+        },
+        "Pouchitis": {
+          "Elevated": 2
+        },
+        "Crohn's Disease": {
+          "Reduced": 5
+        },
+        "Chronic fatigue syndrome": {
+          "Reduced": 1
+        },
+        "Irritable Bowel Syndrome": {
+          "Reduced": 2
+        },
+        "Colorectal cancer": {
+          "Elevated": 1,
+          "Reduced": 2
+        },
+        "Atherosclerosis": {
+          "Reduced": 1
+        },
+        "HIV infection": {
+          "Reduced": 1
+        },
+        "Chronic Obstructive Pulmonary Disease": {
+          "Elevated": 1
+        },
+        "Aggressive periodontitis": {
+          "Elevated": 1
+        },
+        "Interstitial cystitis": {
+          "Reduced": 1
+        },
+        "Transient Ischemic Attack": {
+          "Elevated": 1
+        },
+        "Systemic lupus erythematosus": {
+          "Elevated": 1
+        },
+        "Kawasaki disease": {
+          "Elevated": 1
+        },
+        "Obesity": {
+          "Reduced": 1
+        },
+        "Non alcoholic steatohepatitis": {
+          "Reduced": 1
+        },
+        "Hepatitis B": {
+          "Elevated": 1
+        },
+        "Cirrhosis": {
+          "Elevated": 1
+        },
+        "Cirrhosis with pneumonia": {
+          "Elevated": 1
+        },
+        "Ankylosing spondylitis": {
+          "Reduced": 1
+        },
+        "Idiopathic nephrotic syndrome": {
+          "Reduced": 2
+        },
+        "Ulcerative Colitis": {
+          "Reduced": 1
+        },
+        "Primary biliary cholangitis": {
+          "Elevated": 1
+        },
+        "Behcet's Disease": {
+          "Reduced": 1
+        },
+        "Myasthenia gravis": {
+          "Reduced": 1
+        },
+        "Graves' disease": {
+          "Reduced": 1
+        },
+        "Hepatocellular cancer": {
+          "Elevated": 1
+        },
+        "Atopic dermatitis": {
+          "Reduced": 1
+        },
+        "Influenza A": {
+          "Elevated": 1
+        },
+        "Pancreatic head cancer": {
+          "Elevated": 1
+        },
+        "Edentulism": {
+          "Elevated": 1
+        },
+        "Asthma": {
+          "Elevated": 1
+        },
+        "periodontitis": {
+          "Elevated": 2
+        },
+        "Atrial fibrillation": {
+          "Elevated": 2
+        },
+        "Fibromyalgia": {
+          "Reduced": 1
+        },
+        "Postmenopausal": {
+          "Reduced": 1
+        },
+        "Major depressive disorder": {
+          "Elevated": 1
+        },
+        "Alcoholism": {
+          "Elevated": 1
+        },
+        "Sarcopenia": {
+          "Elevated": 1
+        },
+        "Multiple Sclerosis": {
+          "Reduced": 1
+        }
+      },
+      "example_names": [
+        "Eubacterium",
+        "Eubacterium rectale",
+        "Eubacterium fissicatena",
+        "Eubacterium ventriosum",
+        "Eubacterium desmolans"
+      ]
+    },
+    "Bacteroides": {
+      "exact_n": 163,
+      "substring_n": 303,
+      "diseases": {
+        "Irritable Bowel Syndrome": {
+          "Elevated": 4,
+          "Reduced": 2
+        },
+        "Pouchitis": {
+          "Reduced": 1
+        },
+        "Crohn's Disease": {
+          "Reduced": 6,
+          "Elevated": 1
+        },
+        "Colorectal cancer": {
+          "Elevated": 3,
+          "Reduced": 6
+        },
+        "Major depressive disorder": {
+          "Reduced": 2
+        },
+        "Multiple Sclerosis": {
+          "Elevated": 1,
+          "Reduced": 3
+        },
+        "Parkinson's Disease": {
+          "Elevated": 2
+        },
+        "Infective colitis": {
+          "Elevated": 1
+        },
+        "Type 1 Diabetes": {
+          "Elevated": 4
+        },
+        "HIV infection": {
+          "Reduced": 5
+        },
+        "Sj\u00f6gren Syndrome": {
+          "Reduced": 1
+        },
+        "Coronary artery disease": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Preterm birth": {
+          "Reduced": 1
+        },
+        "Interstitial cystitis": {
+          "Elevated": 1
+        },
+        "Cystic Fibrosis": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Rectal Carcinoma": {
+          "Elevated": 1
+        },
+        "Polycystic Ovary Syndrome": {
+          "Reduced": 2
+        },
+        "Aggressive periodontitis": {
+          "Reduced": 1
+        },
+        "Transient Ischemic Attack": {
+          "Reduced": 1
+        },
+        "Endometrial cancer": {
+          "Elevated": 1
+        },
+        "Celiac Disease, Coaliac disease": {
+          "Elevated": 2
+        },
+        "Rett Syndrome": {
+          "Reduced": 1
+        },
+        "Kidney stone": {
+          "Elevated": 1
+        },
+        "Cirrhosis": {
+          "Reduced": 1,
+          "Elevated": 2
+        },
+        "Colon adenomas": {
+          "Reduced": 1
+        },
+        "Ulcerative Colitis": {
+          "Elevated": 2,
+          "Reduced": 1
+        },
+        "Cirrhosis with pneumonia": {
+          "Elevated": 2
+        },
+        "Atherosclerosis": {
+          "Reduced": 1
+        },
+        "Chronic kidney disease": {
+          "Elevated": 2,
+          "Reduced": 1
+        },
+        "Alzheimer's Disease": {
+          "Elevated": 2,
+          "Reduced": 1
+        },
+        "Functional dyspepsia": {
+          "Elevated": 1
+        },
+        "Non-alcoholic fatty liver disease": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Short Bowel Syndrome": {
+          "Reduced": 1
+        },
+        "Chronic alcoholic pancreatitis": {
+          "Reduced": 1
+        },
+        "Psoriasis": {
+          "Reduced": 2,
+          "Elevated": 2
+        },
+        "Neuromyelitis optica": {
+          "Elevated": 1
+        },
+        "Hyperlipidemia": {
+          "Reduced": 1
+        },
+        "Pancreatitis": {
+          "Elevated": 1
+        },
+        "Hepatitis B": {
+          "Reduced": 3,
+          "Elevated": 1
+        },
+        "Atopic wheeze": {
+          "Reduced": 1
+        },
+        "Autoimmune polyendocrine syndrome type 1": {
+          "Reduced": 1
+        },
+        "Hashimoto's thyroiditis": {
+          "Reduced": 1
+        },
+        "Uveitits": {
+          "Reduced": 1
+        },
+        "Autism": {
+          "Elevated": 1
+        },
+        "Rheumatoid Arthritis": {
+          "Reduced": 1
+        },
+        "Arsenic exposure": {
+          "Reduced": 1
+        },
+        "Myasthenia gravis": {
+          "Elevated": 1
+        },
+        "Clonorchis sinensis infection": {
+          "Reduced": 1
+        },
+        "Wilson's Disease": {
+          "Elevated": 1
+        },
+        "Postmenopausal": {
+          "Elevated": 2
+        },
+        "Chronic Rhinosinusitis": {
+          "Reduced": 1
+        },
+        "Autism spectrum disorders": {
+          "Elevated": 2
+        },
+        "Cardiac valve calcification": {
+          "Reduced": 1
+        },
+        "Spinal cord injury": {
+          "Elevated": 2
+        },
+        "Silicosis": {
+          "Reduced": 1
+        },
+        "Atopic dermatitis": {
+          "Elevated": 1
+        },
+        "Primary biliary cholangitis": {
+          "Reduced": 1
+        },
+        "Primary sclerosing cholangitis-IBD": {
+          "Reduced": 1
+        },
+        "Gestational diabetes": {
+          "Elevated": 1
+        },
+        "Thyroid carcinoma": {
+          "Reduced": 2
+        },
+        "H7N9": {
+          "Elevated": 1
+        },
+        "Cholestasis": {
+          "Reduced": 1
+        },
+        "Urogenital Schistosomiasis": {
+          "Elevated": 1
+        },
+        "Chagas' disease": {
+          "Reduced": 1
+        },
+        "Clostridium difficile infection": {
+          "Reduced": 2
+        },
+        "Allergy": {
+          "Reduced": 1
+        },
+        "Diarrhea": {
+          "Elevated": 1
+        },
+        "Asthma": {
+          "Elevated": 1
+        },
+        "Generalized anxiety disorder": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Smoking": {
+          "Elevated": 1
+        },
+        "Inflammatory Bowel Disease": {
+          "Reduced": 1
+        },
+        "Bipolar disorder": {
+          "Elevated": 1
+        },
+        "Mucosa-associated lymphoid tissue lymphoma": {
+          "Reduced": 1
+        },
+        "Gastric carcinoma": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Amyotrophic lateral sclerosis": {
+          "Reduced": 1
+        },
+        "Collagenous colitis": {
+          "Elevated": 1
+        },
+        "Bladder cancer": {
+          "Reduced": 1
+        },
+        "Type 2 Diabetes": {
+          "Elevated": 2
+        },
+        "Anti-N-methyl-D-aspartate receptor encephalitis": {
+          "Elevated": 1
+        },
+        "Radiation enteritis": {
+          "Reduced": 1
+        },
+        "Multiple system atrophy": {
+          "Elevated": 1
+        },
+        "Acne": {
+          "Elevated": 1
+        },
+        "Osteoporosis": {
+          "Elevated": 1
+        },
+        "Fibromyalgia": {
+          "Reduced": 1
+        },
+        "Primary sclerosing cholangitis": {
+          "Elevated": 1
+        },
+        "Obesity": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Biliary atresia": {
+          "Reduced": 1
+        },
+        "Idiopathic focal epilepsy": {
+          "Reduced": 1
+        },
+        "Atrophic gastritis": {
+          "Elevated": 1
+        },
+        "Seborrheic dermatitis": {
+          "Reduced": 1
+        },
+        "Wiskott-Aldrich syndrome": {
+          "Reduced": 1
+        },
+        "Chronic stress": {
+          "Elevated": 1
+        },
+        "Oral lichen planus": {
+          "Reduced": 1
+        },
+        "Stevens-Johnson syndrome": {
+          "Elevated": 1
+        },
+        "Pressure ulcers": {
+          "Elevated": 1
+        },
+        "Chronic urticaria": {
+          "Reduced": 1
+        },
+        "Alcoholism": {
+          "Elevated": 1
+        },
+        "Hepatocellular cancer": {
+          "Elevated": 1
+        },
+        "Atrial fibrillation": {
+          "Elevated": 1
+        },
+        "Lung cancer": {
+          "Elevated": 1
+        },
+        "Ischemic stroke": {
+          "Reduced": 1
+        },
+        "Acute lymphoblastic leukemia": {
+          "Elevated": 1
+        },
+        "Cognitive impairment": {
+          "Reduced": 1
+        },
+        "Sarcopenia": {
+          "Reduced": 2,
+          "Elevated": 1
+        },
+        "Frailty": {
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Bacteroides",
+        "Bacteroides stercoris",
+        "Bacteroides coprocola",
+        "Bacteroides coprophilus",
+        "Bacteroides ureolyticus"
+      ]
+    },
+    "Blautia": {
+      "exact_n": 107,
+      "substring_n": 34,
+      "diseases": {
+        "Major depressive disorder": {
+          "Elevated": 2
+        },
+        "Parkinson's Disease": {
+          "Reduced": 7,
+          "Elevated": 1
+        },
+        "Irritable Bowel Syndrome": {
+          "Elevated": 2,
+          "Reduced": 2
+        },
+        "Colorectal cancer": {
+          "Reduced": 3
+        },
+        "HIV infection": {
+          "Reduced": 2
+        },
+        "Sj\u00f6gren Syndrome": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Cystic Fibrosis": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Type 1 Diabetes": {
+          "Elevated": 2,
+          "Reduced": 1
+        },
+        "Constipation": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Rett Syndrome": {
+          "Elevated": 1
+        },
+        "Kawasaki disease": {
+          "Elevated": 1
+        },
+        "Obesity": {
+          "Reduced": 3,
+          "Elevated": 2
+        },
+        "Non alcoholic steatohepatitis": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Cirrhosis": {
+          "Reduced": 1
+        },
+        "Non-alcoholic fatty liver disease": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Ulcerative Colitis": {
+          "Reduced": 3,
+          "Elevated": 4
+        },
+        "Alzheimer's Disease": {
+          "Elevated": 2,
+          "Reduced": 1
+        },
+        "Short Bowel Syndrome": {
+          "Reduced": 2
+        },
+        "Primary sclerosing cholangitis-IBD": {
+          "Reduced": 1
+        },
+        "Chronic alcoholic pancreatitis": {
+          "Reduced": 1
+        },
+        "Acquired Immunodeficiency Syndrome": {
+          "Reduced": 1
+        },
+        "Reactive arthritis": {
+          "Reduced": 1
+        },
+        "Pancreatic cancer": {
+          "Reduced": 1
+        },
+        "Hashimoto's thyroiditis": {
+          "Elevated": 1
+        },
+        "Inflammatory Bowel Disease": {
+          "Reduced": 1
+        },
+        "Crohn's Disease": {
+          "Reduced": 5,
+          "Elevated": 1
+        },
+        "Asthma": {
+          "Elevated": 1
+        },
+        "Arsenic exposure": {
+          "Elevated": 1
+        },
+        "Severe fever with thrombocytopenia syndrome": {
+          "Reduced": 1
+        },
+        "Multiple Sclerosis": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Cardiac valve calcification": {
+          "Reduced": 1
+        },
+        "Graves' orbitopathy": {
+          "Reduced": 1
+        },
+        "Acne": {
+          "Reduced": 1
+        },
+        "Spinal cord injury": {
+          "Elevated": 2
+        },
+        "Silicosis": {
+          "Reduced": 1
+        },
+        "Atopic dermatitis": {
+          "Reduced": 1
+        },
+        "Primary biliary cholangitis": {
+          "Reduced": 1
+        },
+        "Thyroid carcinoma": {
+          "Elevated": 1
+        },
+        "Autism spectrum disorders": {
+          "Reduced": 1
+        },
+        "Cholestasis": {
+          "Reduced": 1
+        },
+        "Celiac Disease, Coaliac disease": {
+          "Reduced": 1
+        },
+        "Primary sclerosing cholangitis": {
+          "Reduced": 2
+        },
+        "Glycogen storage disease": {
+          "Reduced": 1
+        },
+        "Chagas' disease": {
+          "Elevated": 1
+        },
+        "Allergy": {
+          "Elevated": 1
+        },
+        "Psoriasis": {
+          "Elevated": 2
+        },
+        "Juvenile idiopathic arthritis": {
+          "Reduced": 1
+        },
+        "Ankylosing spondylitis": {
+          "Elevated": 1
+        },
+        "Familial Mediterranean fever": {
+          "Elevated": 1
+        },
+        "AA amyloidosis": {
+          "Elevated": 1
+        },
+        "Idiopathic Pulmonary Fibrosis": {
+          "Elevated": 1
+        },
+        "Preeclamsia": {
+          "Elevated": 1
+        },
+        "Atrial fibrillation": {
+          "Elevated": 2
+        },
+        "Radiation enteritis": {
+          "Reduced": 1
+        },
+        "Uveitits": {
+          "Reduced": 1
+        },
+        "Osteoporosis": {
+          "Elevated": 1
+        },
+        "Biliary atresia": {
+          "Reduced": 1
+        },
+        "Pancreatitis": {
+          "Reduced": 1
+        },
+        "Schizophrenia": {
+          "Elevated": 1
+        },
+        "Idiopathic focal epilepsy": {
+          "Reduced": 1
+        },
+        "Neuromyelitis optica": {
+          "Reduced": 1
+        },
+        "Excessive vomiting": {
+          "Reduced": 1
+        },
+        "Acute fatty liver": {
+          "Reduced": 1
+        },
+        "Hypertension": {
+          "Reduced": 1
+        },
+        "Stevens-Johnson syndrome": {
+          "Elevated": 1
+        },
+        "Multiple system atrophy": {
+          "Reduced": 1
+        },
+        "Alcoholism": {
+          "Reduced": 1
+        },
+        "Coronary artery disease": {
+          "Reduced": 1
+        },
+        "H1N1 Influenza": {
+          "Reduced": 1
+        },
+        "Covid-19": {
+          "Reduced": 1
+        },
+        "Ischemic stroke": {
+          "Reduced": 1
+        },
+        "Frailty": {
+          "Reduced": 1
+        },
+        "Sarcopenia": {
+          "Elevated": 1
+        },
+        "Infective colitis": {
+          "Reduced": 1
+        },
+        "Type 2 Diabetes": {
+          "Reduced": 1
+        },
+        "Autism": {
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Blautia",
+        "Blautia faecis",
+        "Blautia coccoides",
+        "Blautia obeum",
+        "Blautia glucerasea"
+      ]
+    },
+    "Bifidobacterium": {
+      "exact_n": 143,
+      "substring_n": 92,
+      "diseases": {
+        "Irritable Bowel Syndrome": {
+          "Reduced": 4,
+          "Elevated": 1
+        },
+        "Cirrhosis": {
+          "Reduced": 6,
+          "Elevated": 1
+        },
+        "Crohn's Disease": {
+          "Elevated": 3,
+          "Reduced": 6
+        },
+        "Autism": {
+          "Reduced": 2,
+          "Elevated": 1
+        },
+        "Multiple Sclerosis": {
+          "Elevated": 1
+        },
+        "Parkinson's Disease": {
+          "Elevated": 5
+        },
+        "Infective colitis": {
+          "Reduced": 1
+        },
+        "Ulcerative Colitis": {
+          "Reduced": 3,
+          "Elevated": 3
+        },
+        "Colorectal cancer": {
+          "Reduced": 6,
+          "Elevated": 2
+        },
+        "Type 1 Diabetes": {
+          "Reduced": 2,
+          "Elevated": 1
+        },
+        "Obesity": {
+          "Reduced": 8,
+          "Elevated": 1
+        },
+        "Celiac Disease, Coaliac disease": {
+          "Reduced": 3
+        },
+        "Systemic sclerosis": {
+          "Elevated": 2
+        },
+        "Behcet's Disease": {
+          "Elevated": 1
+        },
+        "Cystic Fibrosis": {
+          "Reduced": 4
+        },
+        "Autoimmune hepatitis": {
+          "Reduced": 1
+        },
+        "Hepatitis B": {
+          "Reduced": 1
+        },
+        "Chronic Obstructive Pulmonary Disease": {
+          "Elevated": 1
+        },
+        "Interstitial cystitis": {
+          "Elevated": 1
+        },
+        "Hypertension": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Viral Diarrhea": {
+          "Reduced": 1
+        },
+        "Aggressive periodontitis": {
+          "Reduced": 1
+        },
+        "Type 2 Diabetes": {
+          "Elevated": 1,
+          "Reduced": 3
+        },
+        "Spondyloarthritis": {
+          "Elevated": 1
+        },
+        "Atopic dermatitis": {
+          "Reduced": 3
+        },
+        "Rett Syndrome": {
+          "Elevated": 1
+        },
+        "Non alcoholic steatohepatitis": {
+          "Reduced": 1
+        },
+        "Hepatic encephalopathy": {
+          "Elevated": 1
+        },
+        "Hashimoto's thyroiditis": {
+          "Reduced": 1
+        },
+        "Ankylosing spondylitis": {
+          "Elevated": 1
+        },
+        "Chronic kidney disease": {
+          "Reduced": 2,
+          "Elevated": 1
+        },
+        "Alzheimer's Disease": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Liver transplant": {
+          "Reduced": 1
+        },
+        "Hyperthyroidism": {
+          "Reduced": 1
+        },
+        "Alcoholic hepatitis": {
+          "Elevated": 2
+        },
+        "Allergic asthma": {
+          "Elevated": 1
+        },
+        "Pancreatic cancer": {
+          "Reduced": 1
+        },
+        "Protracted bacterial bronchitis": {
+          "Elevated": 1
+        },
+        "Atopic wheeze": {
+          "Reduced": 1
+        },
+        "Infantile eczema": {
+          "Reduced": 2
+        },
+        "Major depressive disorder": {
+          "Reduced": 1
+        },
+        "Hepatocellular cancer": {
+          "Reduced": 1
+        },
+        "Rectal Carcinoma": {
+          "Reduced": 1
+        },
+        "Arsenic exposure": {
+          "Reduced": 1
+        },
+        "Lung cancer": {
+          "Elevated": 1,
+          "Reduced": 2
+        },
+        "Graves' disease": {
+          "Reduced": 1
+        },
+        "Sj\u00f6gren Syndrome": {
+          "Elevated": 2,
+          "Reduced": 1
+        },
+        "Bronchiolitis": {
+          "Reduced": 1
+        },
+        "Asthma": {
+          "Reduced": 1
+        },
+        "Hand, foot and mouth disease": {
+          "Elevated": 1
+        },
+        "Infant colic": {
+          "Reduced": 1
+        },
+        "Obstructive sleep apnea-hypopnea syndrome": {
+          "Reduced": 1
+        },
+        "Systemic lupus erythematosus": {
+          "Reduced": 1
+        },
+        "Silicosis": {
+          "Reduced": 1
+        },
+        "Inflammatory Bowel Disease": {
+          "Reduced": 1
+        },
+        "Primary sclerosing cholangitis-IBD": {
+          "Elevated": 1
+        },
+        "Cholestasis": {
+          "Reduced": 2
+        },
+        "Smoking": {
+          "Elevated": 1
+        },
+        "Glycogen storage disease": {
+          "Elevated": 1
+        },
+        "Gastric carcinoma": {
+          "Elevated": 1
+        },
+        "Clostridium difficile infection": {
+          "Reduced": 2
+        },
+        "Metabolic syndrome": {
+          "Reduced": 1
+        },
+        "Psoriasis": {
+          "Elevated": 1
+        },
+        "Acne": {
+          "Reduced": 1
+        },
+        "Bladder cancer": {
+          "Reduced": 1
+        },
+        "Diarrhea": {
+          "Reduced": 1
+        },
+        "HIV infection": {
+          "Reduced": 2
+        },
+        "Atrial fibrillation": {
+          "Elevated": 2
+        },
+        "Fibromyalgia": {
+          "Reduced": 1
+        },
+        "Attention Deficit Hyperactivity Disorder": {
+          "Elevated": 1
+        },
+        "Biliary atresia": {
+          "Reduced": 1
+        },
+        "Rheumatoid Arthritis": {
+          "Reduced": 1
+        },
+        "Pancreatitis": {
+          "Reduced": 1
+        },
+        "Idiopathic focal epilepsy": {
+          "Reduced": 1
+        },
+        "Acute lymphoblastic leukemia": {
+          "Reduced": 1
+        },
+        "Stevens-Johnson syndrome": {
+          "Elevated": 1
+        },
+        "Autism spectrum disorders": {
+          "Reduced": 1
+        },
+        "Chronic urticaria": {
+          "Reduced": 1
+        },
+        "Alcoholism": {
+          "Reduced": 1
+        },
+        "Human end-stage renal disease": {
+          "Reduced": 1
+        }
+      },
+      "example_names": [
+        "Bifidobacterium",
+        "Bifidobacterium adolescentis",
+        "Bifidobacterium catenulatum",
+        "Bifidobacterium longum",
+        "Bifidobacterium dentium"
+      ]
+    },
+    "Klebsiella": {
+      "exact_n": 56,
+      "substring_n": 17,
+      "diseases": {
+        "Colorectal cancer": {
+          "Elevated": 2,
+          "Reduced": 2
+        },
+        "HIV infection": {
+          "Elevated": 1
+        },
+        "Asthma": {
+          "Elevated": 1
+        },
+        "Irritable Bowel Syndrome": {
+          "Elevated": 2
+        },
+        "Hypertension": {
+          "Elevated": 2,
+          "Reduced": 1
+        },
+        "Type 2 Diabetes": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Systemic lupus erythematosus": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Celiac Disease, Coaliac disease": {
+          "Elevated": 2
+        },
+        "Primary biliary cirrhosis": {
+          "Elevated": 1
+        },
+        "Gastroenteritis": {
+          "Elevated": 1
+        },
+        "Primary biliary cholangitis": {
+          "Elevated": 2
+        },
+        "Ankylosing spondylitis": {
+          "Reduced": 1
+        },
+        "Atherosclerosis": {
+          "Elevated": 1
+        },
+        "Parkinson's Disease": {
+          "Elevated": 2
+        },
+        "T2D with hypertension": {
+          "Reduced": 1
+        },
+        "Short Bowel Syndrome": {
+          "Elevated": 3
+        },
+        "Otitis Media": {
+          "Elevated": 1
+        },
+        "Seminal hyperviscosity": {
+          "Elevated": 1
+        },
+        "Oligoasthenoteratozoospermia": {
+          "Elevated": 1
+        },
+        "Pancreatic cancer": {
+          "Elevated": 1
+        },
+        "Infantile eczema": {
+          "Reduced": 1
+        },
+        "Crohn's Disease": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Cirrhosis": {
+          "Elevated": 2
+        },
+        "Schizophrenia": {
+          "Elevated": 1
+        },
+        "Rheumatoid Arthritis": {
+          "Elevated": 1
+        },
+        "Hepatocellular cancer": {
+          "Reduced": 1
+        },
+        "Keratitis": {
+          "Reduced": 1
+        },
+        "Gestational diabetes": {
+          "Elevated": 1
+        },
+        "Thyroid carcinoma": {
+          "Elevated": 1
+        },
+        "Coronary artery disease": {
+          "Elevated": 1
+        },
+        "Clostridium difficile infection": {
+          "Elevated": 2
+        },
+        "Gastric carcinoma": {
+          "Elevated": 1
+        },
+        "Alcoholism": {
+          "Elevated": 2
+        },
+        "Juvenile idiopathic arthritis": {
+          "Elevated": 1
+        },
+        "Necrotizing enterocolitis": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Obesity": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Autoimmune hepatitis": {
+          "Elevated": 1
+        },
+        "Acne": {
+          "Elevated": 1
+        },
+        "Atopic dermatitis": {
+          "Reduced": 1
+        },
+        "Biliary atresia": {
+          "Elevated": 1
+        },
+        "Helicobacter pylori infection": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Frailty": {
+          "Elevated": 1
+        },
+        "Sarcopenia": {
+          "Elevated": 1
+        },
+        "Chronic Obstructive Pulmonary Disease": {
+          "Elevated": 1
+        },
+        "Autism": {
+          "Reduced": 1
+        },
+        "Preeclamsia": {
+          "Elevated": 1
+        },
+        "Cystic Fibrosis": {
+          "Elevated": 1
+        },
+        "Autism spectrum disorders": {
+          "Elevated": 1
+        },
+        "periodontitis": {
+          "Elevated": 1
+        },
+        "Edentulism": {
+          "Elevated": 2
+        },
+        "Non-alcoholic fatty liver disease": {
+          "Elevated": 1
+        },
+        "Aerobic vaginitis": {
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Klebsiella",
+        "Klebsiella pneumoniae",
+        "Klebsiella oxytoca"
+      ]
+    },
+    "Faecalibacterium": {
+      "exact_n": 137,
+      "substring_n": 100,
+      "diseases": {
+        "Pouchitis": {
+          "Reduced": 2
+        },
+        "Crohn's Disease": {
+          "Reduced": 30
+        },
+        "Major depressive disorder": {
+          "Reduced": 2
+        },
+        "Bipolar disorder": {
+          "Elevated": 1,
+          "Reduced": 2
+        },
+        "Multiple Sclerosis": {
+          "Reduced": 4
+        },
+        "Parkinson's Disease": {
+          "Reduced": 7
+        },
+        "Colorectal cancer": {
+          "Reduced": 10
+        },
+        "HIV infection": {
+          "Reduced": 3
+        },
+        "Systemic sclerosis": {
+          "Reduced": 2
+        },
+        "Sj\u00f6gren Syndrome": {
+          "Reduced": 1
+        },
+        "Cystic Fibrosis": {
+          "Reduced": 7
+        },
+        "Interstitial cystitis": {
+          "Reduced": 1
+        },
+        "Hypertension": {
+          "Reduced": 2
+        },
+        "Type 2 Diabetes": {
+          "Reduced": 6
+        },
+        "Aggressive periodontitis": {
+          "Reduced": 1
+        },
+        "Transient Ischemic Attack": {
+          "Reduced": 1
+        },
+        "Rheumatoid Arthritis": {
+          "Elevated": 1
+        },
+        "Asthma": {
+          "Reduced": 2,
+          "Elevated": 1
+        },
+        "Rett Syndrome": {
+          "Reduced": 1
+        },
+        "Kawasaki disease": {
+          "Elevated": 1
+        },
+        "Colon adenomas": {
+          "Elevated": 1
+        },
+        "Primary biliary cholangitis": {
+          "Reduced": 2
+        },
+        "Ankylosing spondylitis": {
+          "Elevated": 1
+        },
+        "Chronic kidney disease": {
+          "Reduced": 5
+        },
+        "T2D with hyperlipidemia": {
+          "Elevated": 1
+        },
+        "Short Bowel Syndrome": {
+          "Reduced": 2
+        },
+        "Ulcerative Colitis": {
+          "Elevated": 1,
+          "Reduced": 5
+        },
+        "Non-alcoholic fatty liver disease": {
+          "Reduced": 5
+        },
+        "Chronic alcoholic pancreatitis": {
+          "Reduced": 1
+        },
+        "Psoriasis": {
+          "Elevated": 1,
+          "Reduced": 2
+        },
+        "Pancreatitis": {
+          "Elevated": 1,
+          "Reduced": 2
+        },
+        "Obesity": {
+          "Reduced": 3,
+          "Elevated": 4
+        },
+        "Acquired Immunodeficiency Syndrome": {
+          "Reduced": 1
+        },
+        "Sickle cell disease": {
+          "Reduced": 1
+        },
+        "Allergic asthma": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Infantile eczema": {
+          "Elevated": 1
+        },
+        "Hashimoto's thyroiditis": {
+          "Reduced": 1
+        },
+        "Attention Deficit Hyperactivity Disorder": {
+          "Reduced": 2
+        },
+        "Hepatic encephalopathy": {
+          "Reduced": 1
+        },
+        "Uveitits": {
+          "Reduced": 1
+        },
+        "Type 1 Diabetes": {
+          "Reduced": 3
+        },
+        "Maturity-onset diabetes of the young 2": {
+          "Reduced": 1
+        },
+        "Severe fever with thrombocytopenia syndrome": {
+          "Reduced": 1
+        },
+        "Graves' disease": {
+          "Reduced": 1
+        },
+        "Wilson's Disease": {
+          "Elevated": 1
+        },
+        "Irritable Bowel Syndrome": {
+          "Reduced": 3
+        },
+        "Coronary artery disease": {
+          "Reduced": 1
+        },
+        "Inflammatory Bowel Disease": {
+          "Reduced": 4
+        },
+        "Keratitis": {
+          "Reduced": 2
+        },
+        "Polycystic Ovary Syndrome": {
+          "Reduced": 1
+        },
+        "Hepatocellular cancer": {
+          "Elevated": 1
+        },
+        "Atopic dermatitis": {
+          "Elevated": 2
+        },
+        "Clostridium difficile infection": {
+          "Reduced": 5
+        },
+        "Cholestasis": {
+          "Reduced": 2
+        },
+        "Primary sclerosing cholangitis": {
+          "Reduced": 2
+        },
+        "Glycogen storage disease": {
+          "Reduced": 1
+        },
+        "Gastric carcinoma": {
+          "Reduced": 1
+        },
+        "Alcoholism": {
+          "Reduced": 1
+        },
+        "Allergy": {
+          "Elevated": 1
+        },
+        "Generalized anxiety disorder": {
+          "Reduced": 1
+        },
+        "Spinal cord injury": {
+          "Reduced": 1
+        },
+        "Amyotrophic lateral sclerosis": {
+          "Reduced": 1
+        },
+        "Preeclamsia": {
+          "Reduced": 2
+        },
+        "Gestational diabetes + hyperlipidemia": {
+          "Reduced": 1
+        },
+        "Neuromyelitis optica": {
+          "Reduced": 2
+        },
+        "Atrial fibrillation": {
+          "Reduced": 1
+        },
+        "Acne": {
+          "Elevated": 1
+        },
+        "Microscopic colitis": {
+          "Elevated": 1
+        },
+        "Biliary atresia": {
+          "Reduced": 1
+        },
+        "Postmenopausal": {
+          "Reduced": 1
+        },
+        "Chronic pancreatitis": {
+          "Reduced": 1
+        },
+        "Schizophrenia": {
+          "Reduced": 1
+        },
+        "Idiopathic focal epilepsy": {
+          "Reduced": 1
+        },
+        "Pancreatic cancer": {
+          "Reduced": 1
+        },
+        "Atrophic gastritis": {
+          "Reduced": 1
+        },
+        "Wiskott-Aldrich syndrome": {
+          "Reduced": 1
+        },
+        "Kidney stone": {
+          "Reduced": 1
+        },
+        "Stevens-Johnson syndrome": {
+          "Elevated": 1
+        },
+        "Chronic urticaria": {
+          "Reduced": 1
+        },
+        "Dry eye syndrome": {
+          "Reduced": 1
+        },
+        "Covid-19": {
+          "Reduced": 2
+        },
+        "H1N1 Influenza": {
+          "Reduced": 1
+        },
+        "Ischemic stroke": {
+          "Reduced": 1
+        },
+        "Acute lymphoblastic leukemia": {
+          "Reduced": 1
+        },
+        "Frailty": {
+          "Reduced": 3
+        },
+        "Sarcopenia": {
+          "Reduced": 2
+        },
+        "Infective colitis": {
+          "Reduced": 1
+        },
+        "Atopy": {
+          "Reduced": 1
+        },
+        "Familial adenomatous polyposis": {
+          "Elevated": 1
+        },
+        "Celiac Disease, Coaliac disease": {
+          "Reduced": 2
+        },
+        "Hepatitis B": {
+          "Reduced": 1
+        },
+        "Pervasive developmental disorder NOS": {
+          "Elevated": 1
+        },
+        "Autism": {
+          "Reduced": 2
+        },
+        "Spondyloarthritis": {
+          "Reduced": 1
+        },
+        "Inactive Crohn's Disease": {
+          "Reduced": 3
+        },
+        "Opisthorchis felineus infection": {
+          "Elevated": 1
+        },
+        "Atherosclerosis": {
+          "Reduced": 1
+        },
+        "Liver transplant": {
+          "Reduced": 1
+        },
+        "Pulmonary tubercolosis": {
+          "Elevated": 1
+        },
+        "Cirrhosis": {
+          "Reduced": 1
+        },
+        "Heart failure": {
+          "Reduced": 1
+        },
+        "Idiopathic nephrotic syndrome": {
+          "Elevated": 1
+        },
+        "Hyperlipidemia": {
+          "Reduced": 1
+        },
+        "Primary sclerosing cholangitis-IBD": {
+          "Reduced": 1
+        },
+        "Myasthenia gravis": {
+          "Reduced": 1
+        },
+        "Systemic lupus erythematosus": {
+          "Reduced": 1
+        },
+        "Autism spectrum disorders": {
+          "Elevated": 1
+        },
+        "Metabolic syndrome": {
+          "Reduced": 1
+        },
+        "Juvenile idiopathic arthritis": {
+          "Elevated": 1
+        },
+        "Fibromyalgia": {
+          "Reduced": 1
+        },
+        "Colon polyps": {
+          "Elevated": 1
+        },
+        "Aerobic vaginitis": {
+          "Elevated": 1
+        },
+        "Migraine": {
+          "Reduced": 1
+        },
+        "Human end-stage renal disease": {
+          "Reduced": 1
+        },
+        "Lung cancer": {
+          "Reduced": 1
+        },
+        "Normal weight obesity": {
+          "Reduced": 1
+        },
+        "Fatigue": {
+          "Reduced": 1
+        }
+      },
+      "example_names": [
+        "Faecalibacterium",
+        "Faecalibacterium prausnitzii"
+      ]
+    },
+    "Escherichia": {
+      "exact_n": 43,
+      "substring_n": 43,
+      "diseases": {
+        "Pouchitis": {
+          "Elevated": 1,
+          "Reduced": 1
+        },
+        "Short Bowel Syndrome": {
+          "Elevated": 1
+        },
+        "Crohn's Disease": {
+          "Elevated": 9
+        },
+        "Alzheimer's Disease": {
+          "Elevated": 3
+        },
+        "Colorectal cancer": {
+          "Elevated": 4
+        },
+        "HIV infection": {
+          "Elevated": 2
+        },
+        "Sj\u00f6gren Syndrome": {
+          "Elevated": 1
+        },
+        "Preeclamsia": {
+          "Elevated": 1
+        },
+        "Rectal Carcinoma": {
+          "Reduced": 1
+        },
+        "Primary sclerosing cholangitis-IBD": {
+          "Elevated": 2
+        },
+        "Obesity": {
+          "Elevated": 2
+        },
+        "Non alcoholic steatohepatitis": {
+          "Elevated": 1
+        },
+        "Non-alcoholic fatty liver disease": {
+          "Elevated": 1
+        },
+        "Irritable Bowel Syndrome": {
+          "Elevated": 3
+        },
+        "Chronic Rhinosinusitis": {
+          "Elevated": 1
+        },
+        "Hepatitis B": {
+          "Reduced": 1
+        },
+        "Hepatitis C": {
+          "Elevated": 1
+        },
+        "Sickle cell disease": {
+          "Elevated": 1
+        },
+        "Budd-Chiari syndrome": {
+          "Reduced": 1
+        },
+        "Hirschsprung's disease": {
+          "Elevated": 1
+        },
+        "Pelvic inflammatory disease": {
+          "Elevated": 1
+        },
+        "Autism spectrum disorders": {
+          "Reduced": 1
+        },
+        "Severe fever with thrombocytopenia syndrome": {
+          "Elevated": 1
+        },
+        "Myasthenia gravis": {
+          "Elevated": 1
+        },
+        "Pulmonary tubercolosis": {
+          "Elevated": 2
+        },
+        "Hand, foot and mouth disease": {
+          "Elevated": 1
+        },
+        "Alcoholism": {
+          "Elevated": 1
+        },
+        "Aerobic vaginitis": {
+          "Elevated": 2
+        },
+        "Schizophrenia": {
+          "Elevated": 1
+        },
+        "Type 2 Diabetes": {
+          "Elevated": 4
+        },
+        "Neisseria gonorrhoeae infection": {
+          "Reduced": 1
+        },
+        "Aggressive periodontitis": {
+          "Reduced": 1
+        },
+        "Cystic Fibrosis": {
+          "Elevated": 3
+        },
+        "Pervasive developmental disorder NOS": {
+          "Reduced": 1
+        },
+        "Autism": {
+          "Reduced": 1
+        },
+        "Spinal cord injury": {
+          "Elevated": 1
+        },
+        "Gastroenteritis": {
+          "Elevated": 1
+        },
+        "Ulcerative Colitis": {
+          "Elevated": 2
+        },
+        "Hashimoto's thyroiditis": {
+          "Elevated": 1
+        },
+        "Atherosclerosis": {
+          "Elevated": 1
+        },
+        "Chronic kidney disease": {
+          "Reduced": 1,
+          "Elevated": 1
+        },
+        "Asthma": {
+          "Elevated": 1
+        },
+        "Hepatocellular cancer": {
+          "Elevated": 1
+        },
+        "Ankylosing spondylitis": {
+          "Elevated": 1
+        },
+        "Amyotrophic lateral sclerosis": {
+          "Elevated": 1
+        },
+        "Celiac Disease, Coaliac disease": {
+          "Elevated": 3
+        },
+        "Primary liver cancer": {
+          "Elevated": 1
+        },
+        "Breast cancer": {
+          "Reduced": 1
+        },
+        "Atopic eczema": {
+          "Elevated": 1
+        },
+        "Helicobacter pylori infection": {
+          "Reduced": 1
+        },
+        "Primary sclerosing cholangitis": {
+          "Elevated": 1
+        },
+        "Necrotizing enterocolitis": {
+          "Elevated": 1
+        },
+        "Huntington's Disease": {
+          "Elevated": 1
+        },
+        "Primary Open-Angle Glaucoma": {
+          "Elevated": 1
+        },
+        "Clostridium difficile infection": {
+          "Elevated": 1
+        },
+        "Sarcopenia": {
+          "Elevated": 1
+        }
+      },
+      "example_names": [
+        "Escherichia",
+        "Escherichia coli",
+        "Escherichia-Shigella"
+      ]
+    }
+  },
+  "peryton": {
+    "Prevotella copri": {
+      "exact_n": 14,
+      "substring_n": 0,
+      "diseases": {
+        "Colorectal Neoplasms": {
+          "Absent": 1,
+          "Decreased": 1
+        },
+        "Crohn Disease": {
+          "Decreased": 3
+        },
+        "Parkinson Disease": {
+          "Decreased": 2,
+          "Increased": 1
+        },
+        "Atherosclerosis": {
+          "Decreased": 1
+        },
+        "Tongue Neoplasms": {
+          "Increased": 1
+        },
+        "Liver Neoplasms": {
+          "Increased": 1
+        },
+        "Stomach Neoplasms": {
+          "Decreased": 1,
+          "Increased": 1
+        },
+        "Irritable Bowel Syndrome": {
+          "Increased": 1
+        }
+      },
+      "example_names": [
+        "Prevotella copri"
+      ]
+    },
+    "Segatella copri": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Eubacterium rectale": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Eubacterium biforme": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Bacteroides dorei": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Bacteroides vulgatus": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Bacteroides uniformis": {
+      "exact_n": 14,
+      "substring_n": 0,
+      "diseases": {
+        "Irritable Bowel Syndrome": {
+          "Decreased": 1
+        },
+        "Colorectal Neoplasms": {
+          "Decreased": 2
+        },
+        "Crohn Disease": {
+          "Decreased": 4
+        },
+        "Rectal Neoplasms": {
+          "Increased": 2
+        },
+        "Diarrhea": {
+          "Decreased": 1
+        },
+        "Liver Neoplasms": {
+          "Increased": 2
+        },
+        "Ulcerative Colitis": {
+          "Increased": 1
+        },
+        "Stomach Neoplasms": {
+          "Decreased": 1
+        }
+      },
+      "example_names": [
+        "Bacteroides uniformis"
+      ]
+    },
+    "Bacteroides coprophilus": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Bacteroides plebeius": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Prevotella buccae": {
+      "exact_n": 1,
+      "substring_n": 0,
+      "diseases": {
+        "Colorectal Neoplasms": {
+          "Increased": 1
+        }
+      },
+      "example_names": [
+        "Prevotella buccae"
+      ]
+    },
+    "Prevotella timonensis": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Blautia massiliensis": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Ruminococcus bicirculans": {
+      "exact_n": 1,
+      "substring_n": 0,
+      "diseases": {
+        "Crohn Disease": {
+          "Decreased": 1
+        }
+      },
+      "example_names": [
+        "Ruminococcus bicirculans"
+      ]
+    },
+    "Bifidobacterium breve": {
+      "exact_n": 4,
+      "substring_n": 0,
+      "diseases": {
+        "Crohn Disease": {
+          "Decreased": 1
+        },
+        "Colorectal Neoplasms": {
+          "Decreased": 1
+        },
+        "Esophageal Neoplasms": {
+          "Decreased": 1
+        },
+        "Stomach Neoplasms": {
+          "Decreased": 1
+        }
+      },
+      "example_names": [
+        "Bifidobacterium breve"
+      ]
+    },
+    "Klebsiella pneumoniae": {
+      "exact_n": 3,
+      "substring_n": 0,
+      "diseases": {
+        "Irritable Bowel Syndrome": {
+          "Increased": 1
+        },
+        "Colorectal Neoplasms": {
+          "Increased": 1
+        },
+        "Parkinson Disease": {
+          "Increased": 1
+        }
+      },
+      "example_names": [
+        "Klebsiella pneumoniae"
+      ]
+    },
+    "Faecalibacterium prausnitzii": {
+      "exact_n": 37,
+      "substring_n": 0,
+      "diseases": {
+        "Crohn Disease": {
+          "Decreased": 17
+        },
+        "Celiac Disease": {
+          "Decreased": 3
+        },
+        "Colorectal Neoplasms": {
+          "Decreased": 5
+        },
+        "Ulcerative Colitis": {
+          "Decreased": 5,
+          "Increased": 1
+        },
+        "Parkinson Disease": {
+          "Decreased": 1
+        },
+        "Irritable Bowel Syndrome": {
+          "Decreased": 2
+        },
+        "Esophageal Neoplasms": {
+          "Decreased": 1
+        },
+        "Stomach Neoplasms": {
+          "Decreased": 1
+        },
+        "Lung Neoplasms": {
+          "Decreased": 1
+        }
+      },
+      "example_names": [
+        "Faecalibacterium prausnitzii"
+      ]
+    },
+    "Clostridium clostridioforme": {
+      "exact_n": 2,
+      "substring_n": 0,
+      "diseases": {
+        "Esophageal Neoplasms": {
+          "Decreased": 1
+        },
+        "Stomach Neoplasms": {
+          "Decreased": 1
+        }
+      },
+      "example_names": [
+        "Clostridium clostridioforme"
+      ]
+    },
+    "Hungatella hathewayi": {
+      "exact_n": 2,
+      "substring_n": 0,
+      "diseases": {
+        "Ulcerative Colitis": {
+          "Decreased": 1,
+          "Increased": 1
+        }
+      },
+      "example_names": [
+        "Hungatella hathewayi"
+      ]
+    },
+    "Monoglobus pectinilyticus": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Lawsonibacter phoceensis": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Oribacterium sinus": {
+      "exact_n": 0,
+      "substring_n": 0,
+      "diseases": {},
+      "example_names": []
+    },
+    "Fusobacterium mortiferum": {
+      "exact_n": 1,
+      "substring_n": 0,
+      "diseases": {
+        "Diarrhea": {
+          "Increased": 1
+        }
+      },
+      "example_names": [
+        "Fusobacterium mortiferum"
+      ]
+    },
+    "Prevotella": {
+      "exact_n": 57,
+      "substring_n": 123,
+      "diseases": {
+        "Mouth Neoplasms": {
+          "Increased": 3
+        },
+        "Ulcerative Colitis": {
+          "Decreased": 8,
+          "Increased": 1
+        },
+        "Irritable Bowel Syndrome": {
+          "Decreased": 6
+        },
+        "Crohn Disease": {
+          "Increased": 1,
+          "Decreased": 4
+        },
+        "Constipation": {
+          "Decreased": 1
+        },
+        "Colorectal Neoplasms": {
+          "Increased": 4,
+          "Decreased": 7
+        },
+        "Head and Neck Neoplasms": {
+          "Decreased": 1,
+          "Increased": 1
+        },
+        "Breast Neoplasms": {
+          "Decreased": 1
+        },
+        "Parkinson Disease": {
+          "Increased": 3,
+          "Decreased": 5
+        },
+        "Celiac Disease": {
+          "Decreased": 3,
+          "Increased": 1
+        },
+        "Diarrhea": {
+          "Increased": 1
+        },
+        "Atherosclerosis": {
+          "Decreased": 1
+        },
+        "Pancreatic Neoplasms": {
+          "Increased": 2
+        },
+        "Tongue Neoplasms": {
+          "Decreased": 1
+        },
+        "Alzheimer Disease": {
+          "Increased": 1,
+          "Decreased": 1
+        },
+        "Thyroid Neoplasms": {
+          "Increased": 1
+        },
+        "Liver Neoplasms": {
+          "Decreased": 1
+        },
+        "Uterine Cervical Neoplasms": {
+          "Increased": 1
+        },
+        "Stomach Neoplasms": {
+          "Decreased": 1
+        },
+        "Esophageal Neoplasms": {
+          "Decreased": 1
+        }
+      },
+      "example_names": [
+        "Prevotella",
+        "Prevotella melaninogenica",
+        "Alloprevotella tannerae",
+        "Prevotella oralis",
+        "Prevotella ruminicola"
+      ]
+    },
+    "Eubacterium": {
+      "exact_n": 22,
+      "substring_n": 33,
+      "diseases": {
+        "Irritable Bowel Syndrome": {
+          "Decreased": 3,
+          "Increased": 3
+        },
+        "Colorectal Neoplasms": {
+          "Decreased": 12,
+          "Increased": 4
+        },
+        "Crohn Disease": {
+          "Decreased": 4
+        },
+        "Ulcerative Colitis": {
+          "Decreased": 3
+        },
+        "Celiac Disease": {
+          "Decreased": 2
+        },
+        "Parkinson Disease": {
+          "Decreased": 1,
+          "Increased": 1
+        },
+        "Liver Neoplasms": {
+          "Decreased": 1
+        },
+        "Esophageal Neoplasms": {
+          "Decreased": 1
+        }
+      },
+      "example_names": [
+        "Eubacterium",
+        "[Eubacterium] rectale",
+        "[Eubacterium] siraeum",
+        "Eubacterium ventriosum",
+        "[Eubacterium] brachy"
+      ]
+    },
+    "Bacteroides": {
+      "exact_n": 58,
+      "substring_n": 137,
+      "diseases": {
+        "Crohn Disease": {
+          "Increased": 4,
+          "Decreased": 8
+        },
+        "Colorectal Neoplasms": {
+          "Decreased": 10,
+          "Increased": 4
+        },
+        "Celiac Disease": {
+          "Increased": 2
+        },
+        "Irritable Bowel Syndrome": {
+          "Decreased": 1,
+          "Increased": 4
+        },
+        "Ulcerative Colitis": {
+          "Decreased": 4,
+          "Increased": 3
+        },
+        "Parkinson Disease": {
+          "Increased": 2,
+          "Decreased": 3
+        },
+        "Rectal Neoplasms": {
+          "Increased": 2
+        },
+        "Atherosclerosis": {
+          "Decreased": 1
+        },
+        "Alzheimer Disease": {
+          "Increased": 1,
+          "Decreased": 3
+        },
+        "Mouth Neoplasms": {
+          "Increased": 1
+        },
+        "Liver Neoplasms": {
+          "Increased": 1
+        },
+        "Thyroid Neoplasms": {
+          "Decreased": 2
+        },
+        "Stomach Neoplasms": {
+          "Decreased": 2,
+          "Increased": 1
+        },
+        "Pharyngeal Neoplasms": {
+          "Increased": 1
+        },
+        "Uterine Cervical Neoplasms": {
+          "Decreased": 1
+        },
+        "Lung Neoplasms": {
+          "Increased": 1
+        },
+        "Urinary Bladder Neoplasms": {
+          "Decreased": 1
+        }
+      },
+      "example_names": [
+        "Bacteroides",
+        "Bacteroides ovatus",
+        "Parabacteroides distasonis",
+        "Bacteroides fragilis",
+        "Bacteroides zoogleoformans"
+      ]
+    },
+    "Blautia": {
+      "exact_n": 43,
+      "substring_n": 22,
+      "diseases": {
+        "Irritable Bowel Syndrome": {
+          "Increased": 4,
+          "Decreased": 1
+        },
+        "Colorectal Neoplasms": {
+          "Decreased": 7,
+          "Increased": 2
+        },
+        "Constipation": {
+          "Increased": 1
+        },
+        "Crohn Disease": {
+          "Decreased": 8,
+          "Increased": 2
+        },
+        "Ulcerative Colitis": {
+          "Increased": 3,
+          "Decreased": 4
+        },
+        "Parkinson Disease": {
+          "Decreased": 6,
+          "Increased": 1
+        },
+        "Alzheimer Disease": {
+          "Increased": 2,
+          "Decreased": 1
+        },
+        "Pancreatic Neoplasms": {
+          "Decreased": 2
+        },
+        "Liver Neoplasms": {
+          "Increased": 1
+        },
+        "Thyroid Neoplasms": {
+          "Increased": 1
+        },
+        "Celiac Disease": {
+          "Decreased": 1
+        },
+        "Uterine Cervical Neoplasms": {
+          "Decreased": 1
+        },
+        "Esophageal Neoplasms": {
+          "Increased": 1
+        },
+        "Stomach Neoplasms": {
+          "Decreased": 1
+        }
+      },
+      "example_names": [
+        "Blautia",
+        "Blautia coccoides",
+        "Blautia obeum",
+        "Blautia faecis",
+        "Blautia producta"
+      ]
+    },
+    "Bifidobacterium": {
+      "exact_n": 63,
+      "substring_n": 45,
+      "diseases": {
+        "Crohn Disease": {
+          "Decreased": 10,
+          "Increased": 3
+        },
+        "Ulcerative Colitis": {
+          "Decreased": 4,
+          "Increased": 4
+        },
+        "Celiac Disease": {
+          "Decreased": 4
+        },
+        "Diarrhea": {
+          "Decreased": 5
+        },
+        "Irritable Bowel Syndrome": {
+          "Decreased": 12,
+          "Increased": 1
+        },
+        "Colorectal Neoplasms": {
+          "Decreased": 7,
+          "Increased": 3
+        },
+        "Parkinson Disease": {
+          "Increased": 8
+        },
+        "Alzheimer Disease": {
+          "Decreased": 1,
+          "Increased": 1
+        },
+        "Mouth Neoplasms": {
+          "Increased": 1
+        },
+        "Pancreatic Neoplasms": {
+          "Decreased": 2
+        },
+        "Constipation": {
+          "Increased": 1
+        },
+        "Liver Neoplasms": {
+          "Decreased": 2
+        },
+        "Rectal Neoplasms": {
+          "Decreased": 2
+        },
+        "Stomach Neoplasms": {
+          "Increased": 2,
+          "Decreased": 1
+        },
+        "Lung Neoplasms": {
+          "Decreased": 2
+        },
+        "Esophageal Neoplasms": {
+          "Increased": 1
+        }
+      },
+      "example_names": [
+        "Bifidobacterium",
+        "Bifidobacterium catenulatum",
+        "Bifidobacterium adolescentis",
+        "Bifidobacterium bifidum",
+        "Bifidobacterium longum"
+      ]
+    },
+    "Klebsiella": {
+      "exact_n": 26,
+      "substring_n": 6,
+      "diseases": {
+        "Colorectal Neoplasms": {
+          "Increased": 6,
+          "Decreased": 2
+        },
+        "Celiac Disease": {
+          "Increased": 1
+        },
+        "Crohn Disease": {
+          "Decreased": 1,
+          "Increased": 3
+        },
+        "Ulcerative Colitis": {
+          "Increased": 1
+        },
+        "Pancreatic Neoplasms": {
+          "Increased": 2
+        },
+        "Constipation": {
+          "Decreased": 1
+        },
+        "Parkinson Disease": {
+          "Increased": 5
+        },
+        "Liver Neoplasms": {
+          "Increased": 3
+        },
+        "Stomach Neoplasms": {
+          "Increased": 2
+        },
+        "Thyroid Neoplasms": {
+          "Increased": 1
+        },
+        "Urinary Bladder Neoplasms": {
+          "Increased": 1
+        },
+        "Irritable Bowel Syndrome": {
+          "Increased": 1
+        },
+        "Atherosclerosis": {
+          "Increased": 2
+        }
+      },
+      "example_names": [
+        "Klebsiella",
+        "Klebsiella pneumoniae",
+        "Klebsiella aerogenes",
+        "Klebsiella sp.",
+        "Klebsiella oxytoca"
+      ]
+    },
+    "Faecalibacterium": {
+      "exact_n": 51,
+      "substring_n": 39,
+      "diseases": {
+        "Crohn Disease": {
+          "Decreased": 36,
+          "Increased": 1
+        },
+        "Colorectal Neoplasms": {
+          "Decreased": 12,
+          "Increased": 2
+        },
+        "Irritable Bowel Syndrome": {
+          "Decreased": 7,
+          "Increased": 1
+        },
+        "Parkinson Disease": {
+          "Decreased": 7
+        },
+        "Hypertension": {
+          "Increased": 1
+        },
+        "Ulcerative Colitis": {
+          "Decreased": 6,
+          "Increased": 1
+        },
+        "Coronary Artery Disease": {
+          "Decreased": 1
+        },
+        "Stomach Neoplasms": {
+          "Decreased": 3
+        },
+        "Pharyngeal Neoplasms": {
+          "Increased": 1
+        },
+        "Esophageal Neoplasms": {
+          "Increased": 1,
+          "Decreased": 1
+        },
+        "Pancreatic Neoplasms": {
+          "Decreased": 2
+        },
+        "Lung Neoplasms": {
+          "Decreased": 2
+        },
+        "Urinary Bladder Neoplasms": {
+          "Increased": 1
+        },
+        "Celiac Disease": {
+          "Decreased": 3
+        },
+        "Atherosclerosis": {
+          "Decreased": 1
+        }
+      },
+      "example_names": [
+        "Faecalibacterium",
+        "Faecalibacterium prausnitzii",
+        "Faecalibacterium sp.",
+        "Faecalibacterium cf. prausnitzii KLE1255"
+      ]
+    },
+    "Escherichia": {
+      "exact_n": 18,
+      "substring_n": 23,
+      "diseases": {
+        "Irritable Bowel Syndrome": {
+          "Increased": 2
+        },
+        "Colorectal Neoplasms": {
+          "Increased": 1
+        },
+        "Ulcerative Colitis": {
+          "Increased": 8
+        },
+        "Rectal Neoplasms": {
+          "Decreased": 2
+        },
+        "Crohn Disease": {
+          "Increased": 13,
+          "Present": 1
+        },
+        "Atherosclerosis": {
+          "Increased": 2
+        },
+        "Mouth Neoplasms": {
+          "Increased": 1
+        },
+        "Coronary Artery Disease": {
+          "Increased": 1
+        },
+        "Alzheimer Disease": {
+          "Increased": 3
+        },
+        "Esophageal Neoplasms": {
+          "Decreased": 1
+        },
+        "Celiac Disease": {
+          "Increased": 3
+        },
+        "Liver Neoplasms": {
+          "Increased": 2
+        },
+        "Amyotrophic Lateral Sclerosis": {
+          "Increased": 1
+        }
+      },
+      "example_names": [
+        "Escherichia",
+        "Escherichia coli",
+        "Escherichia albertii",
+        "Escherichia fergusonii"
+      ]
+    }
+  }
+}

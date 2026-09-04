@@ -4,18 +4,20 @@
     "papers_in": 326,
     "papers_deduped": 12,
     "papers_contributing": 272,
-    "n_taxa": 918,
+    "n_taxa": 946,
     "n_diseases": 40,
-    "n_edges": 2011,
-    "n_replicated": 438,
-    "n_contested": 219,
-    "n_taxa_resolved": 660,
-    "n_hierarchy_links": 708,
+    "n_edges": 2059,
+    "n_replicated": 437,
+    "n_contested": 209,
+    "n_taxa_resolved": 663,
+    "n_hierarchy_links": 732,
     "n_papers_table": 272,
     "n_papers_with_metadata": 206,
     "min_papers": 1,
     "split_placeholders": true,
-    "n_placeholder_nodes": 100,
+    "split_named_children": true,
+    "n_split_species_nodes": 23,
+    "n_placeholder_nodes": 125,
     "note": "Edge weight is evidence count, not effect size: the extractor yields direction only and the source papers report incommensurable statistics. Contested edges are retained, never merged away."
   },
   "nodes": [
@@ -83,13 +85,10 @@
       "placeholder": false,
       "aliases": [
         "Escherichia",
-        "Escherichia / Shigella",
-        "Escherichia spp",
-        "Escherichia \u2013 Shigella",
-        "Escherichia_Shigella"
+        "Escherichia spp"
       ],
       "rank": "genus",
-      "degree": 10
+      "degree": 7
     },
     {
       "id": "t:ncbi:620",
@@ -112,8 +111,7 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
-        "Streptococcus",
-        "Streptococcus salivarius/thermophilus"
+        "Streptococcus"
       ],
       "rank": "genus",
       "degree": 13
@@ -140,8 +138,7 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
-        "Dorea",
-        "Dorea asp: CAG:317"
+        "Dorea"
       ],
       "rank": "genus",
       "degree": 7
@@ -185,8 +182,6 @@
       "placeholder": false,
       "aliases": [
         "Faecalibacterium",
-        "Faecalibacterium prasunitzii",
-        "Faecalibacterium prauznitzii",
         "Faecalibacterium spp",
         "g_Faecalibacterium"
       ],
@@ -272,8 +267,7 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
-        "Klebsiella",
-        "Klebsiella pneumonia"
+        "Klebsiella"
       ],
       "rank": "genus",
       "degree": 8
@@ -541,8 +535,7 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
-        "Bifidobacterium",
-        "Bifidobacterium brevis"
+        "Bifidobacterium"
       ],
       "rank": "genus",
       "degree": 15
@@ -556,16 +549,10 @@
       "placeholder": false,
       "aliases": [
         "Prevotella",
-        "Prevotella VZCB",
-        "Prevotella buccae",
-        "Prevotella copri",
-        "Prevotella jejunii",
-        "Prevotella shaii",
-        "Prevotella spp",
-        "Prevotella timonensis"
+        "Prevotella spp"
       ],
       "rank": "genus",
-      "degree": 15
+      "degree": 12
     },
     {
       "id": "t:ncbi:397864",
@@ -591,7 +578,6 @@
       "aliases": [
         "Ruminococcus",
         "Ruminococcus _E",
-        "Ruminococcus bicirculans",
         "Ruminococcus sp",
         "Ruminococcus spp"
       ],
@@ -691,21 +677,18 @@
       "degree": 4
     },
     {
-      "id": "t:ncbi:1730",
-      "label": "Eubacterium",
+      "id": "t:ph:eubacterium g4",
+      "label": "Eubacterium_g4",
       "type": "taxon",
-      "taxid": "1730",
-      "resolved": true,
-      "placeholder": false,
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "1730",
       "aliases": [
-        "Eubacterium",
-        "Eubacterium biforme",
-        "Eubacterium g",
-        "Eubacterium rectale",
         "Eubacterium_g4"
       ],
-      "rank": "genus",
-      "degree": 14
+      "rank": "clade",
+      "degree": 1
     },
     {
       "id": "t:ncbi:1766253",
@@ -757,12 +740,7 @@
       "placeholder": false,
       "aliases": [
         "Bacteroides",
-        "Bacteroides coprophilus",
-        "Bacteroides dorei",
-        "Bacteroides phage B124 14",
-        "Bacteroides plebeus",
-        "Bacteroides uniforms",
-        "Bacteroides vulgatus"
+        "Bacteroides phage B124 14"
       ],
       "rank": "genus",
       "degree": 17
@@ -788,7 +766,6 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
-        "bacterium NLAE",
         "unidentified_Bacteria"
       ],
       "rank": "species",
@@ -803,11 +780,9 @@
       "placeholder": false,
       "aliases": [
         "Blautia",
-        "Blautia massiliensis",
         "Blautia spp",
         "Blautia unclassified",
         "Blautia_A",
-        "Blautia_massiliensis",
         "g_Blautia"
       ],
       "rank": "genus",
@@ -1089,12 +1064,10 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
-        "Erysipelotrichaceae",
-        "Erysipelotrichaceae CCM",
-        "Erysipelotrichaceae CCMM"
+        "Erysipelotrichaceae"
       ],
       "rank": "family",
-      "degree": 6
+      "degree": 5
     },
     {
       "id": "t:ncbi:2159",
@@ -1259,8 +1232,6 @@
         "Lachnospiraceae",
         "Lachnospiraceae sp",
         "Lachnospiraceae species",
-        "Lachnospiraceae_Eubacterium",
-        "Lachnospiraceae_NC2004",
         "Lachnospiraceae_g",
         "f_Lachnospiraceae"
       ],
@@ -1537,16 +1508,18 @@
       "degree": 1
     },
     {
-      "id": "t:ncbi:265975",
-      "label": "Oribacterium",
+      "id": "t:ncbi:237576",
+      "label": "Oribacterium sinu",
       "type": "taxon",
-      "taxid": "265975",
+      "taxid": "237576",
       "resolved": true,
       "placeholder": false,
+      "parent_taxid": "265975",
+      "split_from_parent": true,
       "aliases": [
         "Oribacterium sinu"
       ],
-      "rank": "genus",
+      "rank": "species",
       "degree": 1
     },
     {
@@ -1561,6 +1534,20 @@
       ],
       "rank": "genus",
       "degree": 6
+    },
+    {
+      "id": "t:ph:bacterium nlae",
+      "label": "bacterium NLAE",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "1869227",
+      "aliases": [
+        "bacterium NLAE"
+      ],
+      "rank": "clade",
+      "degree": 1
     },
     {
       "id": "t:ncbi:1407607",
@@ -1600,6 +1587,22 @@
       ],
       "rank": "genus",
       "degree": 1
+    },
+    {
+      "id": "t:ncbi:1685",
+      "label": "Bifidobacterium brevis",
+      "type": "taxon",
+      "taxid": "1685",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "1678",
+      "split_from_parent": true,
+      "aliases": [
+        "Bifidobacterium breve",
+        "Bifidobacterium brevis"
+      ],
+      "rank": "species",
+      "degree": 3
     },
     {
       "id": "t:ncbi:1300",
@@ -1741,14 +1744,11 @@
       "placeholder": false,
       "aliases": [
         "Clostridium",
-        "Clostridium clostridioforme",
-        "Clostridium g24 FCEY",
         "Clostridium phage vB CpeS CP51",
-        "Clostridium spp",
-        "Clostridium_XlVa"
+        "Clostridium spp"
       ],
       "rank": "genus",
-      "degree": 12
+      "degree": 11
     },
     {
       "id": "t:ncbi:191303",
@@ -1758,8 +1758,7 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
-        "Turicibacter",
-        "Turicibacter sp001543345"
+        "Turicibacter"
       ],
       "rank": "genus",
       "degree": 7
@@ -2042,6 +2041,20 @@
       "degree": 5
     },
     {
+      "id": "t:ph:dorea asp: cag:317",
+      "label": "Dorea asp: CAG:317",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "189330",
+      "aliases": [
+        "Dorea asp: CAG:317"
+      ],
+      "rank": "clade",
+      "degree": 1
+    },
+    {
       "id": "t:ncbi:1262756",
       "label": "Blautia sp. CAG:257",
       "type": "taxon",
@@ -2055,6 +2068,21 @@
       "degree": 1
     },
     {
+      "id": "t:ncbi:165179",
+      "label": "Prevotella copri",
+      "type": "taxon",
+      "taxid": "165179",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "838",
+      "split_from_parent": true,
+      "aliases": [
+        "Prevotella copri"
+      ],
+      "rank": "species",
+      "degree": 5
+    },
+    {
       "id": "t:ncbi:853",
       "label": "Faecalibacterium prausnitzii",
       "type": "taxon",
@@ -2062,10 +2090,12 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
-        "Faecalibacterium prausnitzii"
+        "Faecalibacterium prasunitzii",
+        "Faecalibacterium prausnitzii",
+        "Faecalibacterium prauznitzii"
       ],
       "rank": "species",
-      "degree": 8
+      "degree": 9
     },
     {
       "id": "t:ncbi:1680",
@@ -2093,6 +2123,21 @@
       ],
       "rank": "genus",
       "degree": 3
+    },
+    {
+      "id": "t:ncbi:39491",
+      "label": "Eubacterium rectale",
+      "type": "taxon",
+      "taxid": "39491",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "1730",
+      "split_from_parent": true,
+      "aliases": [
+        "Eubacterium rectale"
+      ],
+      "rank": "species",
+      "degree": 8
     },
     {
       "id": "t:ncbi:33042",
@@ -2169,12 +2214,10 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
-        "Hungatella",
-        "Hungatella effluvia",
-        "Hungatella hathewyi"
+        "Hungatella"
       ],
       "rank": "genus",
-      "degree": 4
+      "degree": 3
     },
     {
       "id": "t:ncbi:1501332",
@@ -2323,6 +2366,22 @@
       "degree": 1
     },
     {
+      "id": "t:ncbi:573",
+      "label": "Klebsiella pneumonia",
+      "type": "taxon",
+      "taxid": "573",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "570",
+      "split_from_parent": true,
+      "aliases": [
+        "Klebsiella pneumonia",
+        "Klebsiella pneumoniae"
+      ],
+      "rank": "species",
+      "degree": 2
+    },
+    {
       "id": "t:ncbi:28141",
       "label": "Cronobacter sakazakii",
       "type": "taxon",
@@ -2395,8 +2454,7 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
-        "Neisseria",
-        "Neisseria multispecies"
+        "Neisseria"
       ],
       "rank": "genus",
       "degree": 5
@@ -2435,10 +2493,11 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
-        "Bacteroides uniformis"
+        "Bacteroides uniformis",
+        "Bacteroides uniforms"
       ],
       "rank": "species",
-      "degree": 3
+      "degree": 4
     },
     {
       "id": "t:ncbi:360807",
@@ -2529,8 +2588,7 @@
       "aliases": [
         "Fusobacterium",
         "Fusobacterium sp",
-        "Fusobacterium_A",
-        "Fusobacterium_A mortiferum"
+        "Fusobacterium_A"
       ],
       "rank": "genus",
       "degree": 7
@@ -2547,6 +2605,22 @@
       ],
       "rank": "genus",
       "degree": 1
+    },
+    {
+      "id": "t:ncbi:850",
+      "label": "Fusobacterium_A mortiferum",
+      "type": "taxon",
+      "taxid": "850",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "848",
+      "split_from_parent": true,
+      "aliases": [
+        "Fusobacterium mortiferum",
+        "Fusobacterium_A mortiferum"
+      ],
+      "rank": "species",
+      "degree": 2
     },
     {
       "id": "t:ncbi:851",
@@ -3003,10 +3077,11 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
+        "Eubacterium biforme",
         "Holdemanella biformis"
       ],
       "rank": "species",
-      "degree": 1
+      "degree": 4
     },
     {
       "id": "t:ncbi:1150298",
@@ -3081,10 +3156,11 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
+        "Bacteroides dorei",
         "Phocaeicola dorei"
       ],
       "rank": "species",
-      "degree": 1
+      "degree": 6
     },
     {
       "id": "t:ncbi:1297617",
@@ -3264,24 +3340,11 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
-        "Monoglobus pectinilyticus"
+        "Monoglobus pectinilyticus",
+        "Monoglobus pectinyliticus"
       ],
       "rank": "species",
       "degree": 1
-    },
-    {
-      "id": "t:ncbi:2039302",
-      "label": "Monoglobus",
-      "type": "taxon",
-      "taxid": "2039302",
-      "resolved": true,
-      "placeholder": false,
-      "aliases": [
-        "Monoglobus",
-        "Monoglobus pectinyliticus"
-      ],
-      "rank": "genus",
-      "degree": 2
     },
     {
       "id": "t:ncbi:470146",
@@ -3439,6 +3502,22 @@
       ],
       "rank": "species",
       "degree": 1
+    },
+    {
+      "id": "t:ncbi:154046",
+      "label": "Hungatella hathewyi",
+      "type": "taxon",
+      "taxid": "154046",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "1649459",
+      "split_from_parent": true,
+      "aliases": [
+        "Hungatella hathewayi",
+        "Hungatella hathewyi"
+      ],
+      "rank": "species",
+      "degree": 2
     },
     {
       "id": "t:e. ramulus",
@@ -3639,6 +3718,23 @@
       "degree": 3
     },
     {
+      "id": "t:ncbi:310297",
+      "label": "Bacteroides plebeus",
+      "type": "taxon",
+      "taxid": "310297",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "816",
+      "split_from_parent": true,
+      "aliases": [
+        "Bacteroides plebeius",
+        "Bacteroides plebeus",
+        "s_Bacteroides_plebeius"
+      ],
+      "rank": "species",
+      "degree": 3
+    },
+    {
       "id": "t:ncbi:33043",
       "label": "Coprococcus eutactus",
       "type": "taxon",
@@ -3660,6 +3756,21 @@
       "placeholder": false,
       "aliases": [
         "Ruminococcus callidus"
+      ],
+      "rank": "species",
+      "degree": 1
+    },
+    {
+      "id": "t:ncbi:386414",
+      "label": "Prevotella timonensis",
+      "type": "taxon",
+      "taxid": "386414",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "838",
+      "split_from_parent": true,
+      "aliases": [
+        "Prevotella timonensis"
       ],
       "rank": "species",
       "degree": 1
@@ -3933,6 +4044,19 @@
       "degree": 1
     },
     {
+      "id": "t:ncbi:2039302",
+      "label": "Monoglobus",
+      "type": "taxon",
+      "taxid": "2039302",
+      "resolved": true,
+      "placeholder": false,
+      "aliases": [
+        "Monoglobus"
+      ],
+      "rank": "genus",
+      "degree": 1
+    },
+    {
       "id": "t:ncbi:2767886",
       "label": "Levilactobacillus",
       "type": "taxon",
@@ -4066,6 +4190,21 @@
       "degree": 8
     },
     {
+      "id": "t:ncbi:821",
+      "label": "Bacteroides vulgatus",
+      "type": "taxon",
+      "taxid": "821",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "816",
+      "split_from_parent": true,
+      "aliases": [
+        "Bacteroides vulgatus"
+      ],
+      "rank": "species",
+      "degree": 3
+    },
+    {
       "id": "t:ncbi:1643824",
       "label": "Atopobiaceae",
       "type": "taxon",
@@ -4142,6 +4281,20 @@
       ],
       "rank": "genus",
       "degree": 3
+    },
+    {
+      "id": "t:ph:prevotella vzcb",
+      "label": "Prevotella VZCB",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "838",
+      "aliases": [
+        "Prevotella VZCB"
+      ],
+      "rank": "clade",
+      "degree": 1
     },
     {
       "id": "t:bifidobacteria",
@@ -4522,19 +4675,6 @@
       "degree": 1
     },
     {
-      "id": "t:ncbi:573",
-      "label": "Klebsiella pneumoniae",
-      "type": "taxon",
-      "taxid": "573",
-      "resolved": true,
-      "placeholder": false,
-      "aliases": [
-        "Klebsiella pneumoniae"
-      ],
-      "rank": "species",
-      "degree": 2
-    },
-    {
       "id": "t:ncbi:817",
       "label": "Bacteroides fragilis",
       "type": "taxon",
@@ -4547,6 +4687,20 @@
       ],
       "rank": "species",
       "degree": 6
+    },
+    {
+      "id": "t:ncbi:1730",
+      "label": "Eubacterium",
+      "type": "taxon",
+      "taxid": "1730",
+      "resolved": true,
+      "placeholder": false,
+      "aliases": [
+        "Eubacterium",
+        "Eubacterium g"
+      ],
+      "rank": "genus",
+      "degree": 9
     },
     {
       "id": "t:ncbi:446660",
@@ -4866,6 +5020,20 @@
       "degree": 2
     },
     {
+      "id": "t:ph:escherichia shigella",
+      "label": "Escherichia_Shigella",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "561",
+      "aliases": [
+        "Escherichia_Shigella"
+      ],
+      "rank": "clade",
+      "degree": 5
+    },
+    {
       "id": "t:ncbi:2037",
       "label": "Actinomycetales",
       "type": "taxon",
@@ -5006,6 +5174,20 @@
         "Ruminococcus2"
       ],
       "rank": "genus",
+      "degree": 1
+    },
+    {
+      "id": "t:ph:clostridium xlva",
+      "label": "Clostridium_XlVa",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "1485",
+      "aliases": [
+        "Clostridium_XlVa"
+      ],
+      "rank": "clade",
       "degree": 1
     },
     {
@@ -5232,6 +5414,20 @@
       "degree": 2
     },
     {
+      "id": "t:ph:escherichia / shigella",
+      "label": "Escherichia / Shigella",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "561",
+      "aliases": [
+        "Escherichia / Shigella"
+      ],
+      "rank": "clade",
+      "degree": 1
+    },
+    {
       "id": "t:ph:ruminococcaceae ucg 002",
       "label": "Ruminococcaceae_UCG_002",
       "type": "taxon",
@@ -5297,6 +5493,20 @@
       ],
       "rank": "clade",
       "degree": 2
+    },
+    {
+      "id": "t:ph:lachnospiraceae nc2004",
+      "label": "Lachnospiraceae_NC2004",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "186803",
+      "aliases": [
+        "Lachnospiraceae_NC2004"
+      ],
+      "rank": "clade",
+      "degree": 1
     },
     {
       "id": "t:ph:coprococcus 1",
@@ -5445,6 +5655,22 @@
       "degree": 2
     },
     {
+      "id": "t:ncbi:1737424",
+      "label": "Blautia massiliensis",
+      "type": "taxon",
+      "taxid": "1737424",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "572511",
+      "split_from_parent": true,
+      "aliases": [
+        "Blautia massiliensis",
+        "Blautia_massiliensis"
+      ],
+      "rank": "species",
+      "degree": 3
+    },
+    {
       "id": "t:ncbi:2997294",
       "label": "Gemmiger qucibialis",
       "type": "taxon",
@@ -5540,6 +5766,20 @@
       ],
       "rank": "clade",
       "degree": 2
+    },
+    {
+      "id": "t:ph:lachnospiraceae eubacterium",
+      "label": "Lachnospiraceae_Eubacterium",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "186803",
+      "aliases": [
+        "Lachnospiraceae_Eubacterium"
+      ],
+      "rank": "clade",
+      "degree": 1
     },
     {
       "id": "t:subdogranulum",
@@ -5767,6 +6007,20 @@
       "degree": 2
     },
     {
+      "id": "t:ph:streptococcus salivarius/thermophilus",
+      "label": "Streptococcus salivarius/thermophilus",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "1301",
+      "aliases": [
+        "Streptococcus salivarius/thermophilus"
+      ],
+      "rank": "clade",
+      "degree": 1
+    },
+    {
       "id": "t:ncbi:1535",
       "label": "[Clostridium] leptum",
       "type": "taxon",
@@ -5808,16 +6062,17 @@
       "degree": 3
     },
     {
-      "id": "t:ncbi:169436",
-      "label": "Ruminococcus sp. 5",
+      "id": "t:ph:ruminococcus sp. 5 1 39bfaa",
+      "label": "Ruminococcus sp. 5_1_39BFAA",
       "type": "taxon",
-      "taxid": "169436",
-      "resolved": true,
-      "placeholder": false,
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "169436",
       "aliases": [
         "Ruminococcus sp. 5_1_39BFAA"
       ],
-      "rank": "species",
+      "rank": "clade",
       "degree": 1
     },
     {
@@ -6095,19 +6350,6 @@
       "degree": 2
     },
     {
-      "id": "t:ncbi:154046",
-      "label": "Hungatella hathewayi",
-      "type": "taxon",
-      "taxid": "154046",
-      "resolved": true,
-      "placeholder": false,
-      "aliases": [
-        "Hungatella hathewayi"
-      ],
-      "rank": "species",
-      "degree": 1
-    },
-    {
       "id": "t:ncbi:1531",
       "label": "Enterocloster clostridioformis",
       "type": "taxon",
@@ -6115,10 +6357,11 @@
       "resolved": true,
       "placeholder": false,
       "aliases": [
+        "Clostridium clostridioforme",
         "Enterocloster clostridioformis"
       ],
       "rank": "species",
-      "degree": 1
+      "degree": 2
     },
     {
       "id": "t:ncbi:2850323",
@@ -6730,6 +6973,21 @@
       "degree": 2
     },
     {
+      "id": "t:ncbi:387090",
+      "label": "Bacteroides coprophilus",
+      "type": "taxon",
+      "taxid": "387090",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "816",
+      "split_from_parent": true,
+      "aliases": [
+        "Bacteroides coprophilus"
+      ],
+      "rank": "species",
+      "degree": 1
+    },
+    {
       "id": "t:ncbi:40545",
       "label": "Sutterella wadsworthensis",
       "type": "taxon",
@@ -7013,16 +7271,17 @@
       "degree": 1
     },
     {
-      "id": "t:ncbi:34012",
-      "label": "Azospirillum sp.",
+      "id": "t:ph:azospirillum sp. 47-25",
+      "label": "Azospirillum sp. 47-25",
       "type": "taxon",
-      "taxid": "34012",
-      "resolved": true,
-      "placeholder": false,
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "34012",
       "aliases": [
         "Azospirillum sp. 47-25"
       ],
-      "rank": "species",
+      "rank": "clade",
       "degree": 1
     },
     {
@@ -7235,16 +7494,17 @@
       "degree": 6
     },
     {
-      "id": "t:ncbi:1898203",
-      "label": "Lachnospiraceae bacterium",
+      "id": "t:ph:lachnospiraceae bacterium mc-35",
+      "label": "Lachnospiraceae bacterium MC-35",
       "type": "taxon",
-      "taxid": "1898203",
-      "resolved": true,
-      "placeholder": false,
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "1898203",
       "aliases": [
         "Lachnospiraceae bacterium MC-35"
       ],
-      "rank": "species",
+      "rank": "clade",
       "degree": 1
     },
     {
@@ -7616,30 +7876,31 @@
       "degree": 1
     },
     {
-      "id": "t:ncbi:3102713",
-      "label": "Escherichia phage",
+      "id": "t:ph:escherichia phage tl 2011",
+      "label": "Escherichia phage TL 2011",
       "type": "taxon",
-      "taxid": "3102713",
-      "resolved": true,
-      "placeholder": false,
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "3102713",
       "aliases": [
-        "Escherichia phage TL 2011",
-        "Escherichia phage TL 2011b"
+        "Escherichia phage TL 2011"
       ],
-      "rank": "species",
+      "rank": "clade",
       "degree": 1
     },
     {
-      "id": "t:ncbi:3720007",
-      "label": "Vibrio phage",
+      "id": "t:ph:vibrio phage pyd38 a",
+      "label": "Vibrio phage pYD38 A",
       "type": "taxon",
-      "taxid": "3720007",
-      "resolved": true,
-      "placeholder": false,
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "3720007",
       "aliases": [
         "Vibrio phage pYD38 A"
       ],
-      "rank": "species",
+      "rank": "clade",
       "degree": 1
     },
     {
@@ -7770,6 +8031,20 @@
         "Lactococcus phage bIL285"
       ],
       "rank": "species",
+      "degree": 1
+    },
+    {
+      "id": "t:ph:escherichia phage tl 2011b",
+      "label": "Escherichia phage TL 2011b",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "3102713",
+      "aliases": [
+        "Escherichia phage TL 2011b"
+      ],
+      "rank": "clade",
       "degree": 1
     },
     {
@@ -8145,20 +8420,6 @@
       ],
       "rank": "species",
       "degree": 1
-    },
-    {
-      "id": "t:ncbi:310297",
-      "label": "Phocaeicola plebeius",
-      "type": "taxon",
-      "taxid": "310297",
-      "resolved": true,
-      "placeholder": false,
-      "aliases": [
-        "Bacteroides plebeius",
-        "s_Bacteroides_plebeius"
-      ],
-      "rank": "species",
-      "degree": 2
     },
     {
       "id": "t:family xiii",
@@ -8604,6 +8865,20 @@
       ],
       "rank": "genus",
       "degree": 2
+    },
+    {
+      "id": "t:ph:turicibacter sp001543345",
+      "label": "Turicibacter sp001543345",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "191303",
+      "aliases": [
+        "Turicibacter sp001543345"
+      ],
+      "rank": "clade",
+      "degree": 1
     },
     {
       "id": "t:cag-1031",
@@ -9060,6 +9335,20 @@
       "degree": 2
     },
     {
+      "id": "t:ph:neisseria multispecies",
+      "label": "Neisseria multispecies",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "482",
+      "aliases": [
+        "Neisseria multispecies"
+      ],
+      "rank": "clade",
+      "degree": 1
+    },
+    {
       "id": "t:ncbi:45851",
       "label": "Eshraghiella crossota",
       "type": "taxon",
@@ -9476,16 +9765,17 @@
       "degree": 1
     },
     {
-      "id": "t:ncbi:2053610",
-      "label": "Sarcina sp.",
+      "id": "t:ph:sarcina sp. jb2",
+      "label": "Sarcina sp. JB2",
       "type": "taxon",
-      "taxid": "2053610",
-      "resolved": true,
-      "placeholder": false,
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "2053610",
       "aliases": [
         "Sarcina sp. JB2"
       ],
-      "rank": "species",
+      "rank": "clade",
       "degree": 1
     },
     {
@@ -9815,19 +10105,6 @@
       "degree": 1
     },
     {
-      "id": "t:ncbi:1685",
-      "label": "Bifidobacterium breve",
-      "type": "taxon",
-      "taxid": "1685",
-      "resolved": true,
-      "placeholder": false,
-      "aliases": [
-        "Bifidobacterium breve"
-      ],
-      "rank": "species",
-      "degree": 2
-    },
-    {
       "id": "t:ncbi:1016",
       "label": "Capnocytophaga",
       "type": "taxon",
@@ -10102,19 +10379,6 @@
       "degree": 1
     },
     {
-      "id": "t:ncbi:850",
-      "label": "Fusobacterium mortiferum",
-      "type": "taxon",
-      "taxid": "850",
-      "resolved": true,
-      "placeholder": false,
-      "aliases": [
-        "Fusobacterium mortiferum"
-      ],
-      "rank": "species",
-      "degree": 1
-    },
-    {
       "id": "t:ph:prevotella sp. marseille p2931",
       "label": "Prevotella sp. Marseille P2931",
       "type": "taxon",
@@ -10150,6 +10414,21 @@
       "placeholder": false,
       "aliases": [
         "Clostridium disporicum"
+      ],
+      "rank": "species",
+      "degree": 1
+    },
+    {
+      "id": "t:ncbi:1160721",
+      "label": "Ruminococcus bicirculans",
+      "type": "taxon",
+      "taxid": "1160721",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "1263",
+      "split_from_parent": true,
+      "aliases": [
+        "Ruminococcus bicirculans"
       ],
       "rank": "species",
       "degree": 1
@@ -10389,6 +10668,21 @@
       ],
       "rank": "species",
       "degree": 1
+    },
+    {
+      "id": "t:ncbi:28126",
+      "label": "Prevotella buccae",
+      "type": "taxon",
+      "taxid": "28126",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "838",
+      "split_from_parent": true,
+      "aliases": [
+        "Prevotella buccae"
+      ],
+      "rank": "species",
+      "degree": 2
     },
     {
       "id": "t:ruminoccocus_c",
@@ -10761,6 +11055,20 @@
       "parent_taxid": "1506553",
       "aliases": [
         "Lachnoclostridium_12"
+      ],
+      "rank": "clade",
+      "degree": 1
+    },
+    {
+      "id": "t:ph:escherichia \u2013 shigella",
+      "label": "Escherichia \u2013 Shigella",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "561",
+      "aliases": [
+        "Escherichia \u2013 Shigella"
       ],
       "rank": "clade",
       "degree": 1
@@ -11420,6 +11728,20 @@
       "degree": 1
     },
     {
+      "id": "t:ph:clostridium g24 fcey",
+      "label": "Clostridium g24 FCEY",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "1485",
+      "aliases": [
+        "Clostridium g24 FCEY"
+      ],
+      "rank": "clade",
+      "degree": 1
+    },
+    {
       "id": "t:ph:ruminococcaceae fj366134",
       "label": "Ruminococcaceae FJ366134",
       "type": "taxon",
@@ -11555,6 +11877,20 @@
       "degree": 1
     },
     {
+      "id": "t:ph:erysipelotrichaceae ccm",
+      "label": "Erysipelotrichaceae CCM",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "128827",
+      "aliases": [
+        "Erysipelotrichaceae CCM"
+      ],
+      "rank": "clade",
+      "degree": 1
+    },
+    {
       "id": "t:ncbi:33037",
       "label": "Anaerococcus vaginalis",
       "type": "taxon",
@@ -11578,6 +11914,20 @@
         "unclassified Blautia"
       ],
       "rank": "no rank",
+      "degree": 1
+    },
+    {
+      "id": "t:ph:erysipelotrichaceae ccmm",
+      "label": "Erysipelotrichaceae CCMM",
+      "type": "taxon",
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "128827",
+      "aliases": [
+        "Erysipelotrichaceae CCMM"
+      ],
+      "rank": "clade",
       "degree": 1
     },
     {
@@ -11688,16 +12038,32 @@
       "degree": 1
     },
     {
-      "id": "t:ncbi:2172004",
-      "label": "Lawsonibacter",
+      "id": "t:ph:lawsonibacter phoceensis",
+      "label": "Lawsonibacter phoceensis",
       "type": "taxon",
-      "taxid": "2172004",
-      "resolved": true,
-      "placeholder": false,
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "2172004",
       "aliases": [
         "Lawsonibacter phoceensis"
       ],
-      "rank": "genus",
+      "rank": "clade",
+      "degree": 1
+    },
+    {
+      "id": "t:ncbi:1096246",
+      "label": "Hungatella effluvia",
+      "type": "taxon",
+      "taxid": "1096246",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "1649459",
+      "split_from_parent": true,
+      "aliases": [
+        "Hungatella effluvia"
+      ],
+      "rank": "species",
       "degree": 1
     },
     {
@@ -11948,16 +12314,17 @@
       "degree": 1
     },
     {
-      "id": "t:ncbi:538",
-      "label": "Eikenella",
+      "id": "t:ph:eikenella species nml 130454",
+      "label": "Eikenella species NML 130454",
       "type": "taxon",
-      "taxid": "538",
-      "resolved": true,
-      "placeholder": false,
+      "taxid": null,
+      "resolved": false,
+      "placeholder": true,
+      "parent_taxid": "538",
       "aliases": [
         "Eikenella species NML 130454"
       ],
-      "rank": "genus",
+      "rank": "clade",
       "degree": 1
     },
     {
@@ -11995,6 +12362,36 @@
       "placeholder": false,
       "aliases": [
         "Oribacterium parvum"
+      ],
+      "rank": "species",
+      "degree": 1
+    },
+    {
+      "id": "t:ncbi:228603",
+      "label": "Prevotella shaii",
+      "type": "taxon",
+      "taxid": "228603",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "838",
+      "split_from_parent": true,
+      "aliases": [
+        "Prevotella shaii"
+      ],
+      "rank": "species",
+      "degree": 1
+    },
+    {
+      "id": "t:ncbi:1177574",
+      "label": "Prevotella jejunii",
+      "type": "taxon",
+      "taxid": "1177574",
+      "resolved": true,
+      "placeholder": false,
+      "parent_taxid": "838",
+      "split_from_parent": true,
+      "aliases": [
+        "Prevotella jejunii"
       ],
       "rank": "species",
       "degree": 1
@@ -12230,7 +12627,7 @@
       "label": "Stroke",
       "type": "disease",
       "mondo": "MONDO:0005098",
-      "degree": 157
+      "degree": 162
     },
     {
       "id": "d:Neurocognitive impairment",
@@ -12272,7 +12669,7 @@
       "label": "Parkinson's disease",
       "type": "disease",
       "mondo": "MONDO:0005180",
-      "degree": 329
+      "degree": 339
     },
     {
       "id": "d:CADASIL",
@@ -12286,35 +12683,35 @@
       "label": "Alzheimer's disease",
       "type": "disease",
       "mondo": "MONDO:0004975",
-      "degree": 319
+      "degree": 327
     },
     {
       "id": "d:Mild cognitive impairment",
       "label": "Mild cognitive impairment",
       "type": "disease",
       "mondo": "MONDO:0005453",
-      "degree": 154
+      "degree": 157
     },
     {
       "id": "d:Multiple sclerosis",
       "label": "Multiple sclerosis",
       "type": "disease",
       "mondo": "MONDO:0005301",
-      "degree": 249
+      "degree": 258
     },
     {
       "id": "d:Dementia",
       "label": "Dementia",
       "type": "disease",
       "mondo": "MONDO:0001627",
-      "degree": 46
+      "degree": 48
     },
     {
       "id": "d:Amyotrophic lateral sclerosis",
       "label": "Amyotrophic lateral sclerosis",
       "type": "disease",
       "mondo": "MONDO:0004976",
-      "degree": 90
+      "degree": 93
     },
     {
       "id": "d:Huntington's disease",
@@ -12335,7 +12732,7 @@
       "label": "Spinal cord injury",
       "type": "disease",
       "mondo": null,
-      "degree": 86
+      "degree": 87
     },
     {
       "id": "d:Anti-NMDAR encephalitis",
@@ -12398,7 +12795,7 @@
       "label": "Epilepsy",
       "type": "disease",
       "mondo": "MONDO:0005027",
-      "degree": 100
+      "degree": 104
     },
     {
       "id": "d:Hemorrhagic transformation",
@@ -12412,7 +12809,7 @@
       "label": "Rett syndrome",
       "type": "disease",
       "mondo": null,
-      "degree": 12
+      "degree": 13
     },
     {
       "id": "d:Intracerebral hemorrhage",
@@ -12496,14 +12893,14 @@
       "label": "Autism spectrum disorder",
       "type": "disease",
       "mondo": "MONDO:0005260",
-      "degree": 54
+      "degree": 55
     },
     {
       "id": "d:Attention-deficit/hyperactivity disorder",
       "label": "Attention-deficit/hyperactivity disorder",
       "type": "disease",
       "mondo": null,
-      "degree": 12
+      "degree": 13
     }
   ],
   "edges": [
@@ -12669,7 +13066,7 @@
     },
     {
       "sites": {
-        "stool": 6
+        "stool": 4
       },
       "gut_only": true,
       "taxon": "Escherichia",
@@ -12679,18 +13076,16 @@
       "disease": "Stroke",
       "mondo": "MONDO:0005098",
       "direction": "enriched",
-      "n_up": 5,
+      "n_up": 3,
       "n_down": 1,
-      "n_obs": 6,
-      "n_papers": 6,
-      "consistency": 0.833,
+      "n_obs": 4,
+      "n_papers": 4,
+      "consistency": 0.75,
       "contested": true,
       "papers": [
         "Changes of gut microbiota in patients at different phases of stroke",
         "Distinctive Gut Microbiota Alteration Is Associated with Poststroke Functional Recovery: Results from a Prospective Cohort Study",
         "Dysbiosis characteristics of gut microbiota in cerebral infarction patients",
-        "Gut Dysbiosis: A New Avenue for Stroke Prevention and Therapeutics",
-        "Uncovering the characteristics of the gut microbiota in patients with acute ischemic stroke and phlegm-heat syndrome",
         "Uncovering the characteristics of the gut microbiota in patients with ischemic stroke and hemorrhagic stroke"
       ],
       "source": "t:ncbi:561",
@@ -12706,14 +13101,6 @@
         },
         {
           "i": 86,
-          "d": "e"
-        },
-        {
-          "i": 109,
-          "d": "e"
-        },
-        {
-          "i": 267,
           "d": "e"
         },
         {
@@ -14394,9 +14781,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Eubacterium",
-      "taxon_key": "ncbi:1730",
-      "rank": "genus",
+      "taxon": "Eubacterium_g4",
+      "taxon_key": "ph:eubacterium g4",
+      "rank": "clade",
       "resolved": true,
       "disease": "Migraine",
       "mondo": "MONDO:0005277",
@@ -14410,7 +14797,7 @@
       "papers": [
         "Altered gut microbiota in individuals with episodic and chronic migraine"
       ],
-      "source": "t:ncbi:1730",
+      "source": "t:ph:eubacterium g4",
       "target": "d:Migraine",
       "ev": [
         {
@@ -14596,26 +14983,24 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "stool": 1
       },
-      "gut_only": false,
+      "gut_only": true,
       "taxon": "bacterium",
       "taxon_key": "ncbi:1869227",
       "rank": "species",
       "resolved": true,
       "disease": "Stroke",
       "mondo": "MONDO:0005098",
-      "direction": "contested",
+      "direction": "enriched",
       "n_up": 1,
-      "n_down": 1,
-      "n_obs": 2,
-      "n_papers": 2,
-      "consistency": 0.5,
-      "contested": true,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
-        "Gut microbiota as predictors of the occurrence of high on-treatment platelet reactivity in acute ischemic stroke patients",
-        "The impact of dysbiosis in oropharyngeal and gut microbiota on systemic inflammatory response and short-term prognosis in acute ischemic stroke with preceding infection"
+        "Gut microbiota as predictors of the occurrence of high on-treatment platelet reactivity in acute ischemic stroke patients"
       ],
       "source": "t:ncbi:1869227",
       "target": "d:Stroke",
@@ -14623,16 +15008,12 @@
         {
           "i": 151,
           "d": "e"
-        },
-        {
-          "i": 258,
-          "d": "d"
         }
       ]
     },
     {
       "sites": {
-        "stool": 10
+        "stool": 9
       },
       "gut_only": true,
       "taxon": "Blautia",
@@ -14643,14 +15024,13 @@
       "mondo": "MONDO:0005098",
       "direction": "depleted",
       "n_up": 2,
-      "n_down": 9,
-      "n_obs": 11,
-      "n_papers": 10,
-      "consistency": 0.818,
+      "n_down": 8,
+      "n_obs": 10,
+      "n_papers": 9,
+      "consistency": 0.8,
       "contested": true,
       "papers": [
         "Alterations in gut microbiota and metabolomic profiles in acute stroke: insights into brain-gut axis dysregulation",
-        "Changes of gut microbiota in patients at different phases of stroke",
         "Disruptions of Anaerobic Gut Bacteria Are Associated with Stroke and Post-stroke Infection: a Prospective Case-Control Study",
         "Distinctive Gut Microbiota Alteration Is Associated with Poststroke Functional Recovery: Results from a Prospective Cohort Study",
         "Dysbiosis of Gut Microbiota and Short-Chain Fatty Acids in Acute Ischemic Stroke and the Subsequent Risk for Poor Functional Outcomes",
@@ -14666,10 +15046,6 @@
         {
           "i": 16,
           "d": "e"
-        },
-        {
-          "i": 56,
-          "d": "d"
         },
         {
           "i": 79,
@@ -15822,8 +16198,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 2
+        "stool": 2,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Megasphaera",
@@ -16295,10 +16671,10 @@
       "mondo": "MONDO:0005098",
       "direction": "enriched",
       "n_up": 3,
-      "n_down": 2,
-      "n_obs": 5,
+      "n_down": 1,
+      "n_obs": 4,
       "n_papers": 4,
-      "consistency": 0.6,
+      "consistency": 0.75,
       "contested": true,
       "papers": [
         "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
@@ -16319,7 +16695,7 @@
         },
         {
           "i": 222,
-          "d": "d"
+          "d": "e"
         },
         {
           "i": 267,
@@ -17038,9 +17414,9 @@
         "oral": 1
       },
       "gut_only": false,
-      "taxon": "Oribacterium",
-      "taxon_key": "ncbi:265975",
-      "rank": "genus",
+      "taxon": "Oribacterium sinu",
+      "taxon_key": "ncbi:237576",
+      "rank": "species",
       "resolved": true,
       "disease": "Stroke",
       "mondo": "MONDO:0005098",
@@ -17054,7 +17430,7 @@
       "papers": [
         "The impact of dysbiosis in oropharyngeal and gut microbiota on systemic inflammatory response and short-term prognosis in acute ischemic stroke with preceding infection"
       ],
-      "source": "t:ncbi:265975",
+      "source": "t:ncbi:237576",
       "target": "d:Stroke",
       "ev": [
         {
@@ -17095,8 +17471,38 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 2
+        "oral": 1
+      },
+      "gut_only": false,
+      "taxon": "bacterium NLAE",
+      "taxon_key": "ph:bacterium nlae",
+      "rank": "clade",
+      "resolved": true,
+      "disease": "Stroke",
+      "mondo": "MONDO:0005098",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "The impact of dysbiosis in oropharyngeal and gut microbiota on systemic inflammatory response and short-term prognosis in acute ischemic stroke with preceding infection"
+      ],
+      "source": "t:ph:bacterium nlae",
+      "target": "d:Stroke",
+      "ev": [
+        {
+          "i": 258,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 2,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Fusicatenibacter",
@@ -17191,6 +17597,36 @@
         {
           "i": 222,
           "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Bifidobacterium brevis",
+      "taxon_key": "ncbi:1685",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Stroke",
+      "mondo": "MONDO:0005098",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Potential Inflammatory Biomarkers and Differential Gut Microbiota in Cognitive Impairment After Ischemic Stroke"
+      ],
+      "source": "t:ncbi:1685",
+      "target": "d:Stroke",
+      "ev": [
+        {
+          "i": 222,
+          "d": "d"
         }
       ]
     },
@@ -17398,8 +17834,8 @@
     },
     {
       "sites": {
-        "stool": 12,
-        "oral": 1
+        "oral": 1,
+        "stool": 12
       },
       "gut_only": false,
       "taxon": "Bacteroides",
@@ -18312,8 +18748,8 @@
     },
     {
       "sites": {
-        "stool": 8,
-        "oral": 1
+        "oral": 1,
+        "stool": 8
       },
       "gut_only": false,
       "taxon": "Bifidobacterium",
@@ -19274,8 +19710,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 1
+        "stool": 1,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Stenotrophomonas",
@@ -19560,7 +19996,7 @@
     },
     {
       "sites": {
-        "stool": 8
+        "stool": 7
       },
       "gut_only": true,
       "taxon": "Blautia",
@@ -19570,11 +20006,11 @@
       "disease": "Multiple sclerosis",
       "mondo": "MONDO:0005301",
       "direction": "enriched",
-      "n_up": 5,
+      "n_up": 4,
       "n_down": 3,
-      "n_obs": 8,
-      "n_papers": 8,
-      "consistency": 0.625,
+      "n_obs": 7,
+      "n_papers": 7,
+      "consistency": 0.571,
       "contested": true,
       "papers": [
         "Alterations in Circulating Fatty Acid Are Associated With Gut Microbiota Dysbiosis and Inflammation in Multiple Sclerosis.",
@@ -19583,8 +20019,7 @@
         "Multiple sclerosis patients have a distinct gut microbiota compared to healthy controls.",
         "Ocrelizumab transiently alters microbiota and modulates immune response depending on treatment outcome.",
         "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis.",
-        "The Gut Microbiome in Progressive Multiple Sclerosis",
-        "The gut microbiota in multiple sclerosis varies with disease activity"
+        "The Gut Microbiome in Progressive Multiple Sclerosis"
       ],
       "source": "t:ncbi:572511",
       "target": "d:Multiple sclerosis",
@@ -19616,10 +20051,6 @@
         {
           "i": 246,
           "d": "d"
-        },
-        {
-          "i": 255,
-          "d": "e"
         }
       ]
     },
@@ -19760,48 +20191,28 @@
     },
     {
       "sites": {
-        "stool": 5
+        "stool": 1
       },
       "gut_only": true,
-      "taxon": "Dorea",
-      "taxon_key": "ncbi:189330",
-      "rank": "genus",
+      "taxon": "Dorea asp: CAG:317",
+      "taxon_key": "ph:dorea asp: cag:317",
+      "rank": "clade",
       "resolved": true,
       "disease": "Multiple sclerosis",
       "mondo": "MONDO:0005301",
       "direction": "enriched",
-      "n_up": 3,
-      "n_down": 2,
-      "n_obs": 5,
-      "n_papers": 5,
-      "consistency": 0.6,
-      "contested": true,
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
-        "Alterations in Circulating Fatty Acid Are Associated With Gut Microbiota Dysbiosis and Inflammation in Multiple Sclerosis.",
-        "Gut microbiome of treatment-na\u00efve MS patients of different ethnicities early in disease course.",
-        "Multiple sclerosis patients have a distinct gut microbiota compared to healthy controls.",
-        "Ocrelizumab transiently alters microbiota and modulates immune response depending on treatment outcome.",
         "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis."
       ],
-      "source": "t:ncbi:189330",
+      "source": "t:ph:dorea asp: cag:317",
       "target": "d:Multiple sclerosis",
       "ev": [
-        {
-          "i": 13,
-          "d": "d"
-        },
-        {
-          "i": 145,
-          "d": "e"
-        },
-        {
-          "i": 206,
-          "d": "e"
-        },
-        {
-          "i": 209,
-          "d": "d"
-        },
         {
           "i": 236,
           "d": "e"
@@ -19890,12 +20301,47 @@
     },
     {
       "sites": {
+        "stool": 2
+      },
+      "gut_only": true,
+      "taxon": "Prevotella copri",
+      "taxon_key": "ncbi:165179",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Multiple sclerosis",
+      "mondo": "MONDO:0005301",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 2,
+      "n_obs": 2,
+      "n_papers": 2,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters.",
+        "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis."
+      ],
+      "source": "t:ncbi:165179",
+      "target": "d:Multiple sclerosis",
+      "ev": [
+        {
+          "i": 87,
+          "d": "d"
+        },
+        {
+          "i": 236,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
         "stool": 8
       },
       "gut_only": true,
-      "taxon": "Prevotella",
-      "taxon_key": "ncbi:838",
-      "rank": "genus",
+      "taxon": "Faecalibacterium prausnitzii",
+      "taxon_key": "ncbi:853",
+      "rank": "species",
       "resolved": true,
       "disease": "Multiple sclerosis",
       "mondo": "MONDO:0005301",
@@ -19907,77 +20353,13 @@
       "consistency": 0.875,
       "contested": true,
       "papers": [
-        "Alterations of host-gut microbiome interactions in multiple sclerosis",
-        "B-cell-depletion reverses dysbiosis of the microbiome in multiple sclerosis patients.",
-        "Detection of Dysbiosis and Increased Intestinal Permeability in Brazilian Patients with Relapsing-Remitting Multiple Sclerosis.",
-        "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters.",
-        "Gut microbiome of treatment-na\u00efve MS patients of different ethnicities early in disease course.",
-        "Multiple sclerosis and gut microbiota: Lachnospiraceae from the ileum of MS twins trigger MS-like disease in germfree transgenic mice-An unbiased functional study.",
-        "Multiple sclerosis patients have a distinct gut microbiota compared to healthy controls.",
-        "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis."
-      ],
-      "source": "t:ncbi:838",
-      "target": "d:Multiple sclerosis",
-      "ev": [
-        {
-          "i": 22,
-          "d": "d"
-        },
-        {
-          "i": 48,
-          "d": "e"
-        },
-        {
-          "i": 72,
-          "d": "d"
-        },
-        {
-          "i": 87,
-          "d": "d"
-        },
-        {
-          "i": 145,
-          "d": "d"
-        },
-        {
-          "i": 205,
-          "d": "d"
-        },
-        {
-          "i": 206,
-          "d": "d"
-        },
-        {
-          "i": 236,
-          "d": "d"
-        }
-      ]
-    },
-    {
-      "sites": {
-        "stool": 7
-      },
-      "gut_only": true,
-      "taxon": "Faecalibacterium prausnitzii",
-      "taxon_key": "ncbi:853",
-      "rank": "species",
-      "resolved": true,
-      "disease": "Multiple sclerosis",
-      "mondo": "MONDO:0005301",
-      "direction": "depleted",
-      "n_up": 0,
-      "n_down": 7,
-      "n_obs": 7,
-      "n_papers": 7,
-      "consistency": 1.0,
-      "contested": false,
-      "papers": [
         "Alterations in Gut Microbiome-Host Relationships After Immune Perturbation in Patients With Multiple Sclerosis.",
         "Alterations of host-gut microbiome interactions in multiple sclerosis",
         "Decoding the Gut Microbiota in Multiple Sclerosis Using Nanopore Long-Read Sequencing: Insights into Disease Severity and Subtypes.",
         "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters.",
         "Gut dysbiosis influences the pathophysiology of multiple sclerosis: A case-control study from North India.",
         "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis.",
+        "The Gut Microbiome in Progressive Multiple Sclerosis",
         "The effect of multiple sclerosis therapy on gut microbiota dysbiosis: a longitudinal prospective study."
       ],
       "source": "t:ncbi:853",
@@ -20006,6 +20388,10 @@
         {
           "i": 236,
           "d": "d"
+        },
+        {
+          "i": 246,
+          "d": "e"
         },
         {
           "i": 253,
@@ -20135,41 +20521,31 @@
     },
     {
       "sites": {
-        "stool": 3
+        "stool": 1
       },
       "gut_only": true,
-      "taxon": "Eubacterium",
-      "taxon_key": "ncbi:1730",
-      "rank": "genus",
+      "taxon": "Eubacterium rectale",
+      "taxon_key": "ncbi:39491",
+      "rank": "species",
       "resolved": true,
       "disease": "Alzheimer's disease",
       "mondo": "MONDO:0004975",
       "direction": "depleted",
-      "n_up": 1,
-      "n_down": 2,
-      "n_obs": 3,
-      "n_papers": 3,
-      "consistency": 0.667,
-      "contested": true,
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
-        "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the Anti-Inflammatory P-Glycoprotein Pathway.",
-        "Association of brain amyloidosis with pro-inflammatory gut bacterial taxa and peripheral inflammation markers in cognitively impaired elderly.",
-        "Structural and Functional Dysbiosis of Fecal Microbiota in Chinese Patients With Alzheimer's Disease."
+        "Association of brain amyloidosis with pro-inflammatory gut bacterial taxa and peripheral inflammation markers in cognitively impaired elderly."
       ],
-      "source": "t:ncbi:1730",
+      "source": "t:ncbi:39491",
       "target": "d:Alzheimer's disease",
       "ev": [
         {
-          "i": 37,
-          "d": "d"
-        },
-        {
           "i": 47,
           "d": "d"
-        },
-        {
-          "i": 240,
-          "d": "e"
         }
       ]
     },
@@ -20541,7 +20917,7 @@
     },
     {
       "sites": {
-        "stool": 7
+        "stool": 6
       },
       "gut_only": true,
       "taxon": "Hungatella",
@@ -20551,18 +20927,17 @@
       "disease": "Parkinson's disease",
       "mondo": "MONDO:0005180",
       "direction": "enriched",
-      "n_up": 6,
+      "n_up": 5,
       "n_down": 1,
-      "n_obs": 7,
-      "n_papers": 7,
-      "consistency": 0.857,
+      "n_obs": 6,
+      "n_papers": 6,
+      "consistency": 0.833,
       "contested": true,
       "papers": [
         "An analysis of the characteristics of the intestinal flora in patients with Parkinson's disease complicated with constipation.",
         "Analysis of the Gut Microflora in Patients With Parkinson's Disease.",
         "Distinct gut microbiome characteristics and dynamics in patients with Parkinson\u2019s disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
         "Gut microbiome is not associated with mild cognitive impairment in Parkinson's disease.",
-        "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes.",
         "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.",
         "Oral and gut dysbiosis leads to functional alterations in Parkinson's disease."
       ],
@@ -20583,10 +20958,6 @@
         },
         {
           "i": 144,
-          "d": "e"
-        },
-        {
-          "i": 190,
           "d": "e"
         },
         {
@@ -20661,8 +21032,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Prevotella pallens",
@@ -20982,8 +21353,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 6
+        "stool": 6,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Streptococcus",
@@ -21145,7 +21516,7 @@
     },
     {
       "sites": {
-        "stool": 16
+        "stool": 11
       },
       "gut_only": true,
       "taxon": "Prevotella",
@@ -21155,26 +21526,21 @@
       "disease": "Parkinson's disease",
       "mondo": "MONDO:0005180",
       "direction": "depleted",
-      "n_up": 3,
-      "n_down": 14,
-      "n_obs": 17,
-      "n_papers": 16,
-      "consistency": 0.824,
+      "n_up": 2,
+      "n_down": 10,
+      "n_obs": 12,
+      "n_papers": 11,
+      "consistency": 0.833,
       "contested": true,
       "papers": [
         "A prebiotic dietary pilot intervention restores faecal metabolites and may be neuroprotective in Parkinson's Disease.",
         "Altered gut microbiota and inflammatory cytokine responses in patients with Parkinson's disease.",
         "Analysis of Gut Microbiota in Patients with Parkinson's Disease.",
         "Cross-Sectional Study on the Gut Microbiome of Parkinson's Disease Patients in Central China.",
-        "Dietary quality and the gut microbiome in early-stage Parkinson's disease patients.",
         "Distinct gut microbiome characteristics and dynamics in patients with Parkinson\u2019s disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
-        "Functional implications of microbial and viral gut metagenome changes in early stage L-DOPA-na\u00efve Parkinson's disease patients.",
-        "Gut Microbiota Differs Between Parkinson\u2019s Disease Patients and Healthy Controls in Northeast China",
         "Gut microbiota in Parkinson's disease: Temporal stability and relations to disease progression.",
         "Intestinal Dysbiosis and Lowered Serum Lipopolysaccharide-Binding Protein in Parkinson's Disease",
-        "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease.",
         "Metagenome-assembled microbial genomes from Parkinson's disease fecal samples.",
-        "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms.",
         "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.",
         "More than constipation - bowel symptoms in Parkinson's disease and their connection to gut microbiota.",
         "Oral and gut dysbiosis leads to functional alterations in Parkinson's disease."
@@ -21199,20 +21565,8 @@
           "d": "d"
         },
         {
-          "i": 74,
-          "d": "d"
-        },
-        {
           "i": 81,
           "d": "d"
-        },
-        {
-          "i": 106,
-          "d": "d"
-        },
-        {
-          "i": 117,
-          "d": "e"
         },
         {
           "i": 160,
@@ -21223,15 +21577,7 @@
           "d": "d"
         },
         {
-          "i": 186,
-          "d": "d"
-        },
-        {
           "i": 187,
-          "d": "d"
-        },
-        {
-          "i": 189,
           "d": "d"
         },
         {
@@ -21340,40 +21686,35 @@
     },
     {
       "sites": {
-        "stool": 3
+        "stool": 2
       },
       "gut_only": true,
-      "taxon": "Klebsiella",
-      "taxon_key": "ncbi:570",
-      "rank": "genus",
+      "taxon": "Klebsiella pneumonia",
+      "taxon_key": "ncbi:573",
+      "rank": "species",
       "resolved": true,
       "disease": "Parkinson's disease",
       "mondo": "MONDO:0005180",
       "direction": "enriched",
-      "n_up": 3,
+      "n_up": 2,
       "n_down": 0,
-      "n_obs": 3,
-      "n_papers": 3,
+      "n_obs": 2,
+      "n_papers": 2,
       "consistency": 1.0,
       "contested": false,
       "papers": [
-        "Analysis of the Gut Microflora in Patients With Parkinson's Disease.",
-        "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.",
-        "Nutritional Intake and Gut Microbiome Composition Predict Parkinson's Disease."
+        "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms.",
+        "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
       ],
-      "source": "t:ncbi:570",
+      "source": "t:ncbi:573",
       "target": "d:Parkinson's disease",
       "ev": [
         {
-          "i": 41,
+          "i": 189,
           "d": "e"
         },
         {
           "i": 194,
-          "d": "e"
-        },
-        {
-          "i": 208,
           "d": "e"
         }
       ]
@@ -21892,7 +22233,7 @@
     {
       "sites": {
         "stool": 2,
-        "oral": 2
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Neisseria",
@@ -21902,16 +22243,15 @@
       "disease": "Parkinson's disease",
       "mondo": "MONDO:0005180",
       "direction": "depleted",
-      "n_up": 1,
+      "n_up": 0,
       "n_down": 3,
-      "n_obs": 4,
-      "n_papers": 4,
-      "consistency": 0.75,
-      "contested": true,
+      "n_obs": 3,
+      "n_papers": 3,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
         "Metaproteogenomic analysis of saliva samples from Parkinson\u2019s disease patients with cognitive impairment",
         "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.",
-        "Oral and gut microbial profiling in periodontitis and Parkinson's disease.",
         "Oral and gut microbiome profiles in people with early idiopathic Parkinson's disease."
       ],
       "source": "t:ncbi:482",
@@ -21924,10 +22264,6 @@
         {
           "i": 194,
           "d": "d"
-        },
-        {
-          "i": 213,
-          "d": "e"
         },
         {
           "i": 214,
@@ -22037,52 +22373,30 @@
     },
     {
       "sites": {
-        "stool": 9
+        "stool": 3
       },
       "gut_only": true,
-      "taxon": "Eubacterium",
-      "taxon_key": "ncbi:1730",
-      "rank": "genus",
+      "taxon": "Eubacterium rectale",
+      "taxon_key": "ncbi:39491",
+      "rank": "species",
       "resolved": true,
       "disease": "Parkinson's disease",
       "mondo": "MONDO:0005180",
       "direction": "depleted",
-      "n_up": 4,
-      "n_down": 5,
-      "n_obs": 9,
-      "n_papers": 9,
-      "consistency": 0.556,
-      "contested": true,
+      "n_up": 0,
+      "n_down": 3,
+      "n_obs": 3,
+      "n_papers": 3,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
-        "Differences in the Composition of Gut Microbiota between Patients with Parkinson\u2019s Disease and Healthy Controls: A Cohort Study",
-        "Functional implications of microbial and viral gut metagenome changes in early stage L-DOPA-na\u00efve Parkinson's disease patients.",
-        "Gut microbiome differences in Parkinson's disease patients in Central Kerala population.",
-        "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson's disease.",
         "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease.",
         "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes.",
-        "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.",
-        "Relationships Between Rapid Eye Movement Sleep Behavior Disorder and Parkinson's Disease: Indication from Gut Microbiota Alterations.",
-        "Specific Bacterial Taxa and Their Metabolite, DHPS, May Be Linked to Gut Dyshomeostasis in Patients with Alzheimer's Disease, Parkinson's Disease, and Amyotrophic Lateral Sclerosis."
+        "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
       ],
-      "source": "t:ncbi:1730",
+      "source": "t:ncbi:39491",
       "target": "d:Parkinson's disease",
       "ev": [
-        {
-          "i": 76,
-          "d": "e"
-        },
-        {
-          "i": 106,
-          "d": "d"
-        },
-        {
-          "i": 141,
-          "d": "e"
-        },
-        {
-          "i": 169,
-          "d": "d"
-        },
         {
           "i": 186,
           "d": "d"
@@ -22094,14 +22408,6 @@
         {
           "i": 194,
           "d": "d"
-        },
-        {
-          "i": 229,
-          "d": "e"
-        },
-        {
-          "i": 233,
-          "d": "e"
         }
       ]
     },
@@ -22217,8 +22523,8 @@
     },
     {
       "sites": {
-        "nasal": 1,
-        "stool": 4
+        "stool": 4,
+        "nasal": 1
       },
       "gut_only": false,
       "taxon": "Blautia wexlerae",
@@ -22549,6 +22855,36 @@
         "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology."
       ],
       "source": "t:ncbi:2171991",
+      "target": "d:Alzheimer's disease",
+      "ev": [
+        {
+          "i": 139,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Fusobacterium_A mortiferum",
+      "taxon_key": "ncbi:850",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Alzheimer's disease",
+      "mondo": "MONDO:0004975",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology."
+      ],
+      "source": "t:ncbi:850",
       "target": "d:Alzheimer's disease",
       "ev": [
         {
@@ -23005,46 +23341,31 @@
     },
     {
       "sites": {
-        "stool": 4
+        "stool": 1
       },
       "gut_only": true,
-      "taxon": "Prevotella",
-      "taxon_key": "ncbi:838",
-      "rank": "genus",
+      "taxon": "Prevotella copri",
+      "taxon_key": "ncbi:165179",
+      "rank": "species",
       "resolved": true,
       "disease": "Alzheimer's disease",
       "mondo": "MONDO:0004975",
-      "direction": "enriched",
-      "n_up": 3,
+      "direction": "depleted",
+      "n_up": 0,
       "n_down": 1,
-      "n_obs": 4,
-      "n_papers": 4,
-      "consistency": 0.75,
-      "contested": true,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
-        "Gut Microbiome Features of Chinese Patients Newly Diagnosed with Alzheimer's Disease or Mild Cognitive Impairment",
-        "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
-        "Identification of Faecalibacterium prausnitzii strains for gut microbiome-based intervention in Alzheimer's-type dementia.",
-        "Study of gut microbiota alterations in Alzheimer's dementia patients from Kazakhstan."
+        "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology."
       ],
-      "source": "t:ncbi:838",
+      "source": "t:ncbi:165179",
       "target": "d:Alzheimer's disease",
       "ev": [
         {
-          "i": 113,
-          "d": "e"
-        },
-        {
           "i": 139,
           "d": "d"
-        },
-        {
-          "i": 171,
-          "d": "e"
-        },
-        {
-          "i": 242,
-          "d": "e"
         }
       ]
     },
@@ -23325,8 +23646,8 @@
     },
     {
       "sites": {
-        "stool": 5,
-        "oral": 1
+        "oral": 1,
+        "stool": 5
       },
       "gut_only": false,
       "taxon": "Lactobacillus",
@@ -23590,6 +23911,36 @@
           "i": 36,
           "d": "e"
         },
+        {
+          "i": 266,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Bacteroides uniformis",
+      "taxon_key": "ncbi:820",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Alzheimer's disease",
+      "mondo": "MONDO:0004975",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Transmission of Alzheimer's disease-associated microbiota dysbiosis and its impact on cognitive function: evidence from mice and patients."
+      ],
+      "source": "t:ncbi:820",
+      "target": "d:Alzheimer's disease",
+      "ev": [
         {
           "i": 266,
           "d": "d"
@@ -24398,7 +24749,7 @@
     },
     {
       "sites": {
-        "stool": 3
+        "stool": 1
       },
       "gut_only": true,
       "taxon": "Bacteroides",
@@ -24408,28 +24759,18 @@
       "disease": "Multiple sclerosis",
       "mondo": "MONDO:0005301",
       "direction": "enriched",
-      "n_up": 2,
-      "n_down": 1,
-      "n_obs": 3,
-      "n_papers": 3,
-      "consistency": 0.667,
-      "contested": true,
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
-        "Detection of Dysbiosis and Increased Intestinal Permeability in Brazilian Patients with Relapsing-Remitting Multiple Sclerosis.",
-        "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters.",
         "Faecal mucoprotein MUC2 is decreased in multiple sclerosis and is associated with mucin degrading bacteria."
       ],
       "source": "t:ncbi:816",
       "target": "d:Multiple sclerosis",
       "ev": [
-        {
-          "i": 72,
-          "d": "e"
-        },
-        {
-          "i": 87,
-          "d": "d"
-        },
         {
           "i": 102,
           "d": "e"
@@ -24542,6 +24883,61 @@
         },
         {
           "i": 214,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 6
+      },
+      "gut_only": true,
+      "taxon": "Prevotella copri",
+      "taxon_key": "ncbi:165179",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Parkinson's disease",
+      "mondo": "MONDO:0005180",
+      "direction": "depleted",
+      "n_up": 1,
+      "n_down": 5,
+      "n_obs": 6,
+      "n_papers": 6,
+      "consistency": 0.833,
+      "contested": true,
+      "papers": [
+        "Analysis of Gut Microbiota in Patients with Parkinson's Disease.",
+        "Functional implications of microbial and viral gut metagenome changes in early stage L-DOPA-na\u00efve Parkinson's disease patients.",
+        "Gut Microbiota Differs Between Parkinson\u2019s Disease Patients and Healthy Controls in Northeast China",
+        "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease.",
+        "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms.",
+        "Oral and gut dysbiosis leads to functional alterations in Parkinson's disease."
+      ],
+      "source": "t:ncbi:165179",
+      "target": "d:Parkinson's disease",
+      "ev": [
+        {
+          "i": 39,
+          "d": "d"
+        },
+        {
+          "i": 106,
+          "d": "d"
+        },
+        {
+          "i": 117,
+          "d": "e"
+        },
+        {
+          "i": 186,
+          "d": "d"
+        },
+        {
+          "i": 189,
+          "d": "d"
+        },
+        {
+          "i": 212,
           "d": "d"
         }
       ]
@@ -24706,9 +25102,9 @@
         "stool": 2
       },
       "gut_only": true,
-      "taxon": "Prevotella",
-      "taxon_key": "ncbi:838",
-      "rank": "genus",
+      "taxon": "Prevotella copri",
+      "taxon_key": "ncbi:165179",
+      "rank": "species",
       "resolved": true,
       "disease": "Dementia",
       "mondo": "MONDO:0001627",
@@ -24723,7 +25119,7 @@
         "Association between environmental phthalates exposure and gut microbiota and metabolome in dementia with Lewy bodies.",
         "Exploring the role of acylated ghrelin and gut microbiome in delineating cognitive health in the elderly"
       ],
-      "source": "t:ncbi:838",
+      "source": "t:ncbi:165179",
       "target": "d:Dementia",
       "ev": [
         {
@@ -24928,7 +25324,7 @@
     },
     {
       "sites": {
-        "stool": 4
+        "stool": 3
       },
       "gut_only": true,
       "taxon": "Clostridium",
@@ -24937,18 +25333,17 @@
       "resolved": true,
       "disease": "Parkinson's disease",
       "mondo": "MONDO:0005180",
-      "direction": "contested",
-      "n_up": 2,
+      "direction": "depleted",
+      "n_up": 1,
       "n_down": 2,
-      "n_obs": 4,
-      "n_papers": 4,
-      "consistency": 0.5,
+      "n_obs": 3,
+      "n_papers": 3,
+      "consistency": 0.667,
       "contested": true,
       "papers": [
         "Changes in Gastrointestinal Microbiome Composition in PD: A Pivotal Role of Covariates.",
         "Gut Microbiota and Metabolome Alterations Associated with Parkinson's Disease.",
-        "Metagenome-assembled microbial genomes from Parkinson's disease fecal samples.",
-        "The impact of device-assisted therapies on the gut microbiome in Parkinson's disease."
+        "Metagenome-assembled microbial genomes from Parkinson's disease fecal samples."
       ],
       "source": "t:ncbi:1485",
       "target": "d:Parkinson's disease",
@@ -24964,10 +25359,6 @@
         {
           "i": 187,
           "d": "d"
-        },
-        {
-          "i": 257,
-          "d": "e"
         }
       ]
     },
@@ -25068,7 +25459,7 @@
     },
     {
       "sites": {
-        "stool": 1
+        "stool": 2
       },
       "gut_only": true,
       "taxon": "Monoglobus pectinilyticus",
@@ -25077,19 +25468,24 @@
       "resolved": true,
       "disease": "Multiple sclerosis",
       "mondo": "MONDO:0005301",
-      "direction": "depleted",
-      "n_up": 0,
+      "direction": "contested",
+      "n_up": 1,
       "n_down": 1,
-      "n_obs": 1,
-      "n_papers": 1,
-      "consistency": 1.0,
-      "contested": false,
+      "n_obs": 2,
+      "n_papers": 2,
+      "consistency": 0.5,
+      "contested": true,
       "papers": [
+        "Alterations in Gut Microbiome-Host Relationships After Immune Perturbation in Patients With Multiple Sclerosis.",
         "Gut dysbiosis influences the pathophysiology of multiple sclerosis: A case-control study from North India."
       ],
       "source": "t:ncbi:1981510",
       "target": "d:Multiple sclerosis",
       "ev": [
+        {
+          "i": 14,
+          "d": "e"
+        },
         {
           "i": 129,
           "d": "d"
@@ -25123,36 +25519,6 @@
         {
           "i": 129,
           "d": "d"
-        }
-      ]
-    },
-    {
-      "sites": {
-        "stool": 1
-      },
-      "gut_only": true,
-      "taxon": "Monoglobus",
-      "taxon_key": "ncbi:2039302",
-      "rank": "genus",
-      "resolved": true,
-      "disease": "Multiple sclerosis",
-      "mondo": "MONDO:0005301",
-      "direction": "enriched",
-      "n_up": 1,
-      "n_down": 0,
-      "n_obs": 1,
-      "n_papers": 1,
-      "consistency": 1.0,
-      "contested": false,
-      "papers": [
-        "Alterations in Gut Microbiome-Host Relationships After Immune Perturbation in Patients With Multiple Sclerosis."
-      ],
-      "source": "t:ncbi:2039302",
-      "target": "d:Multiple sclerosis",
-      "ev": [
-        {
-          "i": 14,
-          "d": "e"
         }
       ]
     },
@@ -25689,6 +26055,36 @@
         "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes."
       ],
       "source": "t:r. lactatiformans",
+      "target": "d:Parkinson's disease",
+      "ev": [
+        {
+          "i": 190,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Hungatella hathewyi",
+      "taxon_key": "ncbi:154046",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Parkinson's disease",
+      "mondo": "MONDO:0005180",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes."
+      ],
+      "source": "t:ncbi:154046",
       "target": "d:Parkinson's disease",
       "ev": [
         {
@@ -26330,7 +26726,7 @@
     },
     {
       "sites": {
-        "stool": 7
+        "stool": 6
       },
       "gut_only": true,
       "taxon": "Bacteroides",
@@ -26339,12 +26735,12 @@
       "resolved": true,
       "disease": "Parkinson's disease",
       "mondo": "MONDO:0005180",
-      "direction": "enriched",
-      "n_up": 4,
+      "direction": "contested",
+      "n_up": 3,
       "n_down": 3,
-      "n_obs": 7,
-      "n_papers": 7,
-      "consistency": 0.571,
+      "n_obs": 6,
+      "n_papers": 6,
+      "consistency": 0.5,
       "contested": true,
       "papers": [
         "Analysis of Gut Microbiota in Patients with Parkinson's Disease.",
@@ -26352,7 +26748,6 @@
         "Cross-Sectional Study on the Gut Microbiome of Parkinson's Disease Patients in Central China.",
         "Differences in the Composition of Gut Microbiota between Patients with Parkinson\u2019s Disease and Healthy Controls: A Cohort Study",
         "Gut Microbiota and Metabolome Alterations Associated with Parkinson's Disease.",
-        "Oral and gut dysbiosis leads to functional alterations in Parkinson's disease.",
         "Study of the gut microbiome in Egyptian patients with Parkinson's Disease."
       ],
       "source": "t:ncbi:816",
@@ -26377,10 +26772,6 @@
         {
           "i": 120,
           "d": "d"
-        },
-        {
-          "i": 212,
-          "d": "e"
         },
         {
           "i": 243,
@@ -26540,6 +26931,71 @@
     },
     {
       "sites": {
+        "stool": 2
+      },
+      "gut_only": true,
+      "taxon": "Phocaeicola dorei",
+      "taxon_key": "ncbi:357276",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Parkinson's disease",
+      "mondo": "MONDO:0005180",
+      "direction": "contested",
+      "n_up": 1,
+      "n_down": 1,
+      "n_obs": 2,
+      "n_papers": 2,
+      "consistency": 0.5,
+      "contested": true,
+      "papers": [
+        "Analysis of Gut Microbiota in Patients with Parkinson's Disease.",
+        "Oral and gut dysbiosis leads to functional alterations in Parkinson's disease."
+      ],
+      "source": "t:ncbi:357276",
+      "target": "d:Parkinson's disease",
+      "ev": [
+        {
+          "i": 39,
+          "d": "d"
+        },
+        {
+          "i": 212,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Bacteroides plebeus",
+      "taxon_key": "ncbi:310297",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Parkinson's disease",
+      "mondo": "MONDO:0005180",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Analysis of Gut Microbiota in Patients with Parkinson's Disease."
+      ],
+      "source": "t:ncbi:310297",
+      "target": "d:Parkinson's disease",
+      "ev": [
+        {
+          "i": 39,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
         "stool": 1
       },
       "gut_only": true,
@@ -26627,6 +27083,36 @@
           "i": 99,
           "d": "d"
         },
+        {
+          "i": 140,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Prevotella timonensis",
+      "taxon_key": "ncbi:386414",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Amyotrophic lateral sclerosis",
+      "mondo": "MONDO:0004976",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Gut microbiome differences between amyotrophic lateral sclerosis patients and spouse controls."
+      ],
+      "source": "t:ncbi:386414",
+      "target": "d:Amyotrophic lateral sclerosis",
+      "ev": [
         {
           "i": 140,
           "d": "d"
@@ -26963,8 +27449,8 @@
     },
     {
       "sites": {
-        "stool": 4,
-        "oral": 1
+        "oral": 1,
+        "stool": 4
       },
       "gut_only": false,
       "taxon": "Akkermansia",
@@ -27066,6 +27552,46 @@
       "source": "t:ncbi:846",
       "target": "d:Alzheimer's disease",
       "ev": [
+        {
+          "i": 242,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 3
+      },
+      "gut_only": true,
+      "taxon": "Prevotella",
+      "taxon_key": "ncbi:838",
+      "rank": "genus",
+      "resolved": true,
+      "disease": "Alzheimer's disease",
+      "mondo": "MONDO:0004975",
+      "direction": "enriched",
+      "n_up": 3,
+      "n_down": 0,
+      "n_obs": 3,
+      "n_papers": 3,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Gut Microbiome Features of Chinese Patients Newly Diagnosed with Alzheimer's Disease or Mild Cognitive Impairment",
+        "Identification of Faecalibacterium prausnitzii strains for gut microbiome-based intervention in Alzheimer's-type dementia.",
+        "Study of gut microbiota alterations in Alzheimer's dementia patients from Kazakhstan."
+      ],
+      "source": "t:ncbi:838",
+      "target": "d:Alzheimer's disease",
+      "ev": [
+        {
+          "i": 113,
+          "d": "e"
+        },
+        {
+          "i": 171,
+          "d": "e"
+        },
         {
           "i": 242,
           "d": "e"
@@ -28528,36 +29054,31 @@
     },
     {
       "sites": {
-        "stool": 2
+        "stool": 1
       },
       "gut_only": true,
-      "taxon": "Bacteroides",
-      "taxon_key": "ncbi:816",
-      "rank": "genus",
+      "taxon": "Bacteroides vulgatus",
+      "taxon_key": "ncbi:821",
+      "rank": "species",
       "resolved": true,
       "disease": "Amyotrophic lateral sclerosis",
       "mondo": "MONDO:0004976",
-      "direction": "contested",
+      "direction": "enriched",
       "n_up": 1,
-      "n_down": 1,
-      "n_obs": 2,
-      "n_papers": 2,
-      "consistency": 0.5,
-      "contested": true,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
-        "Gut inflammation and dysbiosis in human motor neuron disease.",
-        "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses."
+        "Gut inflammation and dysbiosis in human motor neuron disease."
       ],
-      "source": "t:ncbi:816",
+      "source": "t:ncbi:821",
       "target": "d:Amyotrophic lateral sclerosis",
       "ev": [
         {
           "i": 131,
           "d": "e"
-        },
-        {
-          "i": 182,
-          "d": "d"
         }
       ]
     },
@@ -29081,9 +29602,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Eubacterium",
-      "taxon_key": "ncbi:1730",
-      "rank": "genus",
+      "taxon": "Eubacterium rectale",
+      "taxon_key": "ncbi:39491",
+      "rank": "species",
       "resolved": true,
       "disease": "Amyotrophic lateral sclerosis",
       "mondo": "MONDO:0004976",
@@ -29097,7 +29618,7 @@
       "papers": [
         "The human gut microbiota in people with amyotrophic lateral sclerosis."
       ],
-      "source": "t:ncbi:1730",
+      "source": "t:ncbi:39491",
       "target": "d:Amyotrophic lateral sclerosis",
       "ev": [
         {
@@ -29277,6 +29798,41 @@
         },
         {
           "i": 81,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 2
+      },
+      "gut_only": true,
+      "taxon": "Prevotella VZCB",
+      "taxon_key": "ph:prevotella vzcb",
+      "rank": "clade",
+      "resolved": true,
+      "disease": "Parkinson's disease",
+      "mondo": "MONDO:0005180",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 2,
+      "n_obs": 2,
+      "n_papers": 2,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Dietary quality and the gut microbiome in early-stage Parkinson's disease patients.",
+        "Oral and gut dysbiosis leads to functional alterations in Parkinson's disease."
+      ],
+      "source": "t:ph:prevotella vzcb",
+      "target": "d:Parkinson's disease",
+      "ev": [
+        {
+          "i": 74,
+          "d": "d"
+        },
+        {
+          "i": 212,
           "d": "d"
         }
       ]
@@ -29593,7 +30149,7 @@
     },
     {
       "sites": {
-        "stool": 7
+        "stool": 6
       },
       "gut_only": true,
       "taxon": "Faecalibacterium",
@@ -29603,20 +30159,19 @@
       "disease": "Multiple sclerosis",
       "mondo": "MONDO:0005301",
       "direction": "depleted",
-      "n_up": 1,
+      "n_up": 0,
       "n_down": 6,
-      "n_obs": 7,
-      "n_papers": 7,
-      "consistency": 0.857,
-      "contested": true,
+      "n_obs": 6,
+      "n_papers": 6,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
         "Alterations of host-gut microbiome interactions in multiple sclerosis",
         "Detection of Dysbiosis and Increased Intestinal Permeability in Brazilian Patients with Relapsing-Remitting Multiple Sclerosis.",
         "Gut Microbiome Signatures in Multiple Sclerosis: A Case-Control Study with Machine Learning and Global Data Integration.",
         "Gut microbiota composition during a 12-week intervention with delayed-release dimethyl fumarate in multiple sclerosis - a pilot trial.",
         "Gut microbiota in multiple sclerosis: possible influence of immunomodulators.",
-        "Ocrelizumab transiently alters microbiota and modulates immune response depending on treatment outcome.",
-        "The Gut Microbiome in Progressive Multiple Sclerosis"
+        "Ocrelizumab transiently alters microbiota and modulates immune response depending on treatment outcome."
       ],
       "source": "t:ncbi:216851",
       "target": "d:Multiple sclerosis",
@@ -29644,10 +30199,6 @@
         {
           "i": 209,
           "d": "d"
-        },
-        {
-          "i": 246,
-          "d": "e"
         }
       ]
     },
@@ -30043,6 +30594,56 @@
         {
           "i": 50,
           "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 5
+      },
+      "gut_only": true,
+      "taxon": "Prevotella",
+      "taxon_key": "ncbi:838",
+      "rank": "genus",
+      "resolved": true,
+      "disease": "Multiple sclerosis",
+      "mondo": "MONDO:0005301",
+      "direction": "depleted",
+      "n_up": 1,
+      "n_down": 4,
+      "n_obs": 5,
+      "n_papers": 5,
+      "consistency": 0.8,
+      "contested": true,
+      "papers": [
+        "Alterations of host-gut microbiome interactions in multiple sclerosis",
+        "B-cell-depletion reverses dysbiosis of the microbiome in multiple sclerosis patients.",
+        "Detection of Dysbiosis and Increased Intestinal Permeability in Brazilian Patients with Relapsing-Remitting Multiple Sclerosis.",
+        "Gut microbiome of treatment-na\u00efve MS patients of different ethnicities early in disease course.",
+        "Multiple sclerosis patients have a distinct gut microbiota compared to healthy controls."
+      ],
+      "source": "t:ncbi:838",
+      "target": "d:Multiple sclerosis",
+      "ev": [
+        {
+          "i": 22,
+          "d": "d"
+        },
+        {
+          "i": 48,
+          "d": "e"
+        },
+        {
+          "i": 72,
+          "d": "d"
+        },
+        {
+          "i": 145,
+          "d": "d"
+        },
+        {
+          "i": 206,
+          "d": "d"
         }
       ]
     },
@@ -30748,7 +31349,7 @@
     },
     {
       "sites": {
-        "stool": 7
+        "stool": 6
       },
       "gut_only": true,
       "taxon": "Lachnospiraceae",
@@ -30758,18 +31359,17 @@
       "disease": "Alzheimer's disease",
       "mondo": "MONDO:0004975",
       "direction": "depleted",
-      "n_up": 1,
+      "n_up": 0,
       "n_down": 6,
-      "n_obs": 7,
-      "n_papers": 7,
-      "consistency": 0.857,
-      "contested": true,
+      "n_obs": 6,
+      "n_papers": 6,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
         "Alterations of gut microbiota are associated with brain structural changes in the spectrum of Alzheimer's disease: the SILCODE study in Hainan cohort.",
         "Association between Gut Microbiota with Mild Cognitive Impairment and Alzheimer's Disease in a Thai Population.",
         "Combination of gut microbiota and plasma amyloid-\u03b2 as a potential index for identifying preclinical Alzheimer\u2019s disease: a cross-sectional analysis from the SILCODE study",
         "Disease- and stage-specific alterations of the oral and fecal microbiota in Alzheimer\u2019s disease",
-        "Disturbed microbial ecology in Alzheimer's disease: evidence from the gut microbiota and fecal metabolome.",
         "Orthopedic Surgery Causes Gut Microbiome Dysbiosis and Intestinal Barrier Dysfunction in Prodromal Alzheimer Disease Patients",
         "Structural and Functional Dysbiosis of Fecal Microbiota in Chinese Patients With Alzheimer's Disease."
       ],
@@ -30791,10 +31391,6 @@
         {
           "i": 78,
           "d": "d"
-        },
-        {
-          "i": 85,
-          "d": "e"
         },
         {
           "i": 215,
@@ -31223,8 +31819,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 1
+        "stool": 1,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Fusobacterium",
@@ -31507,7 +32103,37 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Klebsiella pneumoniae",
+      "taxon": "Bacteroides vulgatus",
+      "taxon_key": "ncbi:821",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Alzheimer's disease",
+      "mondo": "MONDO:0004975",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the Anti-Inflammatory P-Glycoprotein Pathway."
+      ],
+      "source": "t:ncbi:821",
+      "target": "d:Alzheimer's disease",
+      "ev": [
+        {
+          "i": 37,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Klebsiella pneumonia",
       "taxon_key": "ncbi:573",
       "rank": "species",
       "resolved": true,
@@ -31594,6 +32220,36 @@
     },
     {
       "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Phocaeicola dorei",
+      "taxon_key": "ncbi:357276",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Alzheimer's disease",
+      "mondo": "MONDO:0004975",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the Anti-Inflammatory P-Glycoprotein Pathway."
+      ],
+      "source": "t:ncbi:357276",
+      "target": "d:Alzheimer's disease",
+      "ev": [
+        {
+          "i": 37,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
         "stool": 4
       },
       "gut_only": true,
@@ -31664,6 +32320,41 @@
         {
           "i": 37,
           "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 2
+      },
+      "gut_only": true,
+      "taxon": "Eubacterium",
+      "taxon_key": "ncbi:1730",
+      "rank": "genus",
+      "resolved": true,
+      "disease": "Alzheimer's disease",
+      "mondo": "MONDO:0004975",
+      "direction": "contested",
+      "n_up": 1,
+      "n_down": 1,
+      "n_obs": 2,
+      "n_papers": 2,
+      "consistency": 0.5,
+      "contested": true,
+      "papers": [
+        "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the Anti-Inflammatory P-Glycoprotein Pathway.",
+        "Structural and Functional Dysbiosis of Fecal Microbiota in Chinese Patients With Alzheimer's Disease."
+      ],
+      "source": "t:ncbi:1730",
+      "target": "d:Alzheimer's disease",
+      "ev": [
+        {
+          "i": 37,
+          "d": "d"
+        },
+        {
+          "i": 240,
+          "d": "e"
         }
       ]
     },
@@ -32533,8 +33224,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Erysipelotrichia",
@@ -32605,8 +33296,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Erysipelotrichaceae",
@@ -32761,8 +33452,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Coriobacteriaceae",
@@ -33005,36 +33696,30 @@
     },
     {
       "sites": {
-        "stool": 1,
         "oral": 1
       },
       "gut_only": false,
-      "taxon": "Escherichia",
-      "taxon_key": "ncbi:561",
-      "rank": "genus",
+      "taxon": "Escherichia_Shigella",
+      "taxon_key": "ph:escherichia shigella",
+      "rank": "clade",
       "resolved": true,
       "disease": "Alzheimer's disease",
       "mondo": "MONDO:0004975",
       "direction": "enriched",
-      "n_up": 2,
+      "n_up": 1,
       "n_down": 0,
-      "n_obs": 2,
-      "n_papers": 2,
+      "n_obs": 1,
+      "n_papers": 1,
       "consistency": 1.0,
       "contested": false,
       "papers": [
-        "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients",
-        "Stratification of the Gut Microbiota Composition Landscape across the Alzheimer's Disease Continuum in a Turkish Cohort"
+        "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients"
       ],
-      "source": "t:ncbi:561",
+      "source": "t:ph:escherichia shigella",
       "target": "d:Alzheimer's disease",
       "ev": [
         {
           "i": 2,
-          "d": "e"
-        },
-        {
-          "i": 238,
           "d": "e"
         }
       ]
@@ -33142,8 +33827,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Verrucomicrobiia",
@@ -33490,8 +34175,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Olsenella",
@@ -33592,8 +34277,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Clostridium IV",
@@ -33628,8 +34313,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 1
+        "stool": 1,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Parabacteroides",
@@ -33658,6 +34343,36 @@
         },
         {
           "i": 210,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Clostridium_XlVa",
+      "taxon_key": "ph:clostridium xlva",
+      "rank": "clade",
+      "resolved": true,
+      "disease": "Parkinson's disease",
+      "mondo": "MONDO:0005180",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "The impact of device-assisted therapies on the gut microbiome in Parkinson's disease."
+      ],
+      "source": "t:ph:clostridium xlva",
+      "target": "d:Parkinson's disease",
+      "ev": [
+        {
+          "i": 257,
           "d": "e"
         }
       ]
@@ -34966,6 +35681,51 @@
     },
     {
       "sites": {
+        "stool": 4
+      },
+      "gut_only": true,
+      "taxon": "Dorea",
+      "taxon_key": "ncbi:189330",
+      "rank": "genus",
+      "resolved": true,
+      "disease": "Multiple sclerosis",
+      "mondo": "MONDO:0005301",
+      "direction": "contested",
+      "n_up": 2,
+      "n_down": 2,
+      "n_obs": 4,
+      "n_papers": 4,
+      "consistency": 0.5,
+      "contested": true,
+      "papers": [
+        "Alterations in Circulating Fatty Acid Are Associated With Gut Microbiota Dysbiosis and Inflammation in Multiple Sclerosis.",
+        "Gut microbiome of treatment-na\u00efve MS patients of different ethnicities early in disease course.",
+        "Multiple sclerosis patients have a distinct gut microbiota compared to healthy controls.",
+        "Ocrelizumab transiently alters microbiota and modulates immune response depending on treatment outcome."
+      ],
+      "source": "t:ncbi:189330",
+      "target": "d:Multiple sclerosis",
+      "ev": [
+        {
+          "i": 13,
+          "d": "d"
+        },
+        {
+          "i": 145,
+          "d": "e"
+        },
+        {
+          "i": 206,
+          "d": "e"
+        },
+        {
+          "i": 209,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
         "stool": 1
       },
       "gut_only": true,
@@ -35416,6 +36176,36 @@
     },
     {
       "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Escherichia / Shigella",
+      "taxon_key": "ph:escherichia / shigella",
+      "rank": "clade",
+      "resolved": true,
+      "disease": "Alzheimer's disease",
+      "mondo": "MONDO:0004975",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Stratification of the Gut Microbiota Composition Landscape across the Alzheimer's Disease Continuum in a Turkish Cohort"
+      ],
+      "source": "t:ph:escherichia / shigella",
+      "target": "d:Alzheimer's disease",
+      "ev": [
+        {
+          "i": 238,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
         "stool": 2
       },
       "gut_only": true,
@@ -35671,6 +36461,36 @@
         "Disturbed microbial ecology in Alzheimer's disease: evidence from the gut microbiota and fecal metabolome."
       ],
       "source": "t:ph:eubacterium ventriosum group",
+      "target": "d:Alzheimer's disease",
+      "ev": [
+        {
+          "i": 85,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Lachnospiraceae_NC2004",
+      "taxon_key": "ph:lachnospiraceae nc2004",
+      "rank": "clade",
+      "resolved": true,
+      "disease": "Alzheimer's disease",
+      "mondo": "MONDO:0004975",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Disturbed microbial ecology in Alzheimer's disease: evidence from the gut microbiota and fecal metabolome."
+      ],
+      "source": "t:ph:lachnospiraceae nc2004",
       "target": "d:Alzheimer's disease",
       "ev": [
         {
@@ -36131,6 +36951,46 @@
     },
     {
       "sites": {
+        "stool": 3
+      },
+      "gut_only": true,
+      "taxon": "Eubacterium",
+      "taxon_key": "ncbi:1730",
+      "rank": "genus",
+      "resolved": true,
+      "disease": "Parkinson's disease",
+      "mondo": "MONDO:0005180",
+      "direction": "enriched",
+      "n_up": 2,
+      "n_down": 1,
+      "n_obs": 3,
+      "n_papers": 3,
+      "consistency": 0.667,
+      "contested": true,
+      "papers": [
+        "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson's disease.",
+        "Relationships Between Rapid Eye Movement Sleep Behavior Disorder and Parkinson's Disease: Indication from Gut Microbiota Alterations.",
+        "Specific Bacterial Taxa and Their Metabolite, DHPS, May Be Linked to Gut Dyshomeostasis in Patients with Alzheimer's Disease, Parkinson's Disease, and Amyotrophic Lateral Sclerosis."
+      ],
+      "source": "t:ncbi:1730",
+      "target": "d:Parkinson's disease",
+      "ev": [
+        {
+          "i": 169,
+          "d": "d"
+        },
+        {
+          "i": 229,
+          "d": "e"
+        },
+        {
+          "i": 233,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
         "stool": 2
       },
       "gut_only": true,
@@ -36158,6 +37018,36 @@
           "i": 76,
           "d": "d"
         },
+        {
+          "i": 169,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Blautia massiliensis",
+      "taxon_key": "ncbi:1737424",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Parkinson's disease",
+      "mondo": "MONDO:0005180",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson's disease."
+      ],
+      "source": "t:ncbi:1737424",
+      "target": "d:Parkinson's disease",
+      "ev": [
         {
           "i": 169,
           "d": "d"
@@ -36835,6 +37725,36 @@
         },
         {
           "i": 167,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Lachnospiraceae_Eubacterium",
+      "taxon_key": "ph:lachnospiraceae eubacterium",
+      "rank": "clade",
+      "resolved": true,
+      "disease": "Amyotrophic lateral sclerosis",
+      "mondo": "MONDO:0004976",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+      ],
+      "source": "t:ph:lachnospiraceae eubacterium",
+      "target": "d:Amyotrophic lateral sclerosis",
+      "ev": [
+        {
+          "i": 5,
           "d": "d"
         }
       ]
@@ -37871,6 +38791,36 @@
     },
     {
       "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Streptococcus salivarius/thermophilus",
+      "taxon_key": "ph:streptococcus salivarius/thermophilus",
+      "rank": "clade",
+      "resolved": true,
+      "disease": "Multiple sclerosis",
+      "mondo": "MONDO:0005301",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Alterations of the gut ecological and functional microenvironment in different stages of multiple sclerosis."
+      ],
+      "source": "t:ph:streptococcus salivarius/thermophilus",
+      "target": "d:Multiple sclerosis",
+      "ev": [
+        {
+          "i": 24,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
         "stool": 2
       },
       "gut_only": true,
@@ -37966,41 +38916,31 @@
     },
     {
       "sites": {
-        "stool": 3
+        "stool": 1
       },
       "gut_only": true,
-      "taxon": "Eubacterium",
-      "taxon_key": "ncbi:1730",
-      "rank": "genus",
+      "taxon": "Holdemanella biformis",
+      "taxon_key": "ncbi:1735",
+      "rank": "species",
       "resolved": true,
       "disease": "Multiple sclerosis",
       "mondo": "MONDO:0005301",
-      "direction": "depleted",
+      "direction": "enriched",
       "n_up": 1,
-      "n_down": 3,
-      "n_obs": 4,
-      "n_papers": 3,
-      "consistency": 0.75,
-      "contested": true,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
-        "Alterations of the gut ecological and functional microenvironment in different stages of multiple sclerosis.",
-        "Decoding the Gut Microbiota in Multiple Sclerosis Using Nanopore Long-Read Sequencing: Insights into Disease Severity and Subtypes.",
-        "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters."
+        "Alterations of the gut ecological and functional microenvironment in different stages of multiple sclerosis."
       ],
-      "source": "t:ncbi:1730",
+      "source": "t:ncbi:1735",
       "target": "d:Multiple sclerosis",
       "ev": [
         {
           "i": 24,
-          "d": "d"
-        },
-        {
-          "i": 70,
-          "d": "d"
-        },
-        {
-          "i": 87,
-          "d": "d"
+          "d": "e"
         }
       ]
     },
@@ -38146,12 +39086,52 @@
     },
     {
       "sites": {
+        "stool": 3
+      },
+      "gut_only": true,
+      "taxon": "Eubacterium rectale",
+      "taxon_key": "ncbi:39491",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Multiple sclerosis",
+      "mondo": "MONDO:0005301",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 3,
+      "n_obs": 3,
+      "n_papers": 3,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Alterations of the gut ecological and functional microenvironment in different stages of multiple sclerosis.",
+        "Decoding the Gut Microbiota in Multiple Sclerosis Using Nanopore Long-Read Sequencing: Insights into Disease Severity and Subtypes.",
+        "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters."
+      ],
+      "source": "t:ncbi:39491",
+      "target": "d:Multiple sclerosis",
+      "ev": [
+        {
+          "i": 24,
+          "d": "d"
+        },
+        {
+          "i": 70,
+          "d": "d"
+        },
+        {
+          "i": 87,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Ruminococcus sp. 5",
-      "taxon_key": "ncbi:169436",
-      "rank": "species",
+      "taxon": "Ruminococcus sp. 5_1_39BFAA",
+      "taxon_key": "ph:ruminococcus sp. 5 1 39bfaa",
+      "rank": "clade",
       "resolved": true,
       "disease": "Multiple sclerosis",
       "mondo": "MONDO:0005301",
@@ -38165,7 +39145,7 @@
       "papers": [
         "Alterations of the gut ecological and functional microenvironment in different stages of multiple sclerosis."
       ],
-      "source": "t:ncbi:169436",
+      "source": "t:ph:ruminococcus sp. 5 1 39bfaa",
       "target": "d:Multiple sclerosis",
       "ev": [
         {
@@ -38681,6 +39661,36 @@
         "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses."
       ],
       "source": "t:ncbi:216851",
+      "target": "d:Amyotrophic lateral sclerosis",
+      "ev": [
+        {
+          "i": 182,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Bacteroides",
+      "taxon_key": "ncbi:816",
+      "rank": "genus",
+      "resolved": true,
+      "disease": "Amyotrophic lateral sclerosis",
+      "mondo": "MONDO:0004976",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses."
+      ],
+      "source": "t:ncbi:816",
       "target": "d:Amyotrophic lateral sclerosis",
       "ev": [
         {
@@ -39489,7 +40499,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Hungatella hathewayi",
+      "taxon": "Hungatella hathewyi",
       "taxon_key": "ncbi:154046",
       "rank": "species",
       "resolved": true,
@@ -41636,6 +42646,46 @@
     },
     {
       "sites": {
+        "stool": 3
+      },
+      "gut_only": true,
+      "taxon": "Holdemanella biformis",
+      "taxon_key": "ncbi:1735",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Parkinson's disease",
+      "mondo": "MONDO:0005180",
+      "direction": "enriched",
+      "n_up": 2,
+      "n_down": 1,
+      "n_obs": 3,
+      "n_papers": 3,
+      "consistency": 0.667,
+      "contested": true,
+      "papers": [
+        "Differences in the Composition of Gut Microbiota between Patients with Parkinson\u2019s Disease and Healthy Controls: A Cohort Study",
+        "Functional implications of microbial and viral gut metagenome changes in early stage L-DOPA-na\u00efve Parkinson's disease patients.",
+        "Gut microbiome differences in Parkinson's disease patients in Central Kerala population."
+      ],
+      "source": "t:ncbi:1735",
+      "target": "d:Parkinson's disease",
+      "ev": [
+        {
+          "i": 76,
+          "d": "e"
+        },
+        {
+          "i": 106,
+          "d": "d"
+        },
+        {
+          "i": 141,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
         "stool": 1
       },
       "gut_only": true,
@@ -41796,33 +42846,28 @@
     },
     {
       "sites": {
-        "stool": 2
+        "stool": 1
       },
       "gut_only": true,
-      "taxon": "Eubacterium",
-      "taxon_key": "ncbi:1730",
-      "rank": "genus",
+      "taxon": "Holdemanella biformis",
+      "taxon_key": "ncbi:1735",
+      "rank": "species",
       "resolved": true,
       "disease": "Dementia",
       "mondo": "MONDO:0001627",
-      "direction": "contested",
+      "direction": "enriched",
       "n_up": 1,
-      "n_down": 1,
-      "n_obs": 2,
-      "n_papers": 2,
-      "consistency": 0.5,
-      "contested": true,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
-        "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pilot study.",
         "Exploring the role of acylated ghrelin and gut microbiome in delineating cognitive health in the elderly"
       ],
-      "source": "t:ncbi:1730",
+      "source": "t:ncbi:1735",
       "target": "d:Dementia",
       "ev": [
-        {
-          "i": 91,
-          "d": "d"
-        },
         {
           "i": 101,
           "d": "e"
@@ -42524,6 +43569,36 @@
         "stool": 1
       },
       "gut_only": true,
+      "taxon": "Bacteroides coprophilus",
+      "taxon_key": "ncbi:387090",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Multiple sclerosis",
+      "mondo": "MONDO:0005301",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters."
+      ],
+      "source": "t:ncbi:387090",
+      "target": "d:Multiple sclerosis",
+      "ev": [
+        {
+          "i": 87,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
       "taxon": "Sutterella wadsworthensis",
       "taxon_key": "ncbi:40545",
       "rank": "species",
@@ -42765,36 +43840,6 @@
         },
         {
           "i": 214,
-          "d": "e"
-        }
-      ]
-    },
-    {
-      "sites": {
-        "stool": 1
-      },
-      "gut_only": true,
-      "taxon": "Klebsiella pneumoniae",
-      "taxon_key": "ncbi:573",
-      "rank": "species",
-      "resolved": true,
-      "disease": "Parkinson's disease",
-      "mondo": "MONDO:0005180",
-      "direction": "enriched",
-      "n_up": 1,
-      "n_down": 0,
-      "n_obs": 1,
-      "n_papers": 1,
-      "consistency": 1.0,
-      "contested": false,
-      "papers": [
-        "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms."
-      ],
-      "source": "t:ncbi:573",
-      "target": "d:Parkinson's disease",
-      "ev": [
-        {
-          "i": 189,
           "d": "e"
         }
       ]
@@ -43614,9 +44659,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Azospirillum sp.",
-      "taxon_key": "ncbi:34012",
-      "rank": "species",
+      "taxon": "Azospirillum sp. 47-25",
+      "taxon_key": "ph:azospirillum sp. 47-25",
+      "rank": "clade",
       "resolved": true,
       "disease": "Multiple sclerosis",
       "mondo": "MONDO:0005301",
@@ -43630,7 +44675,7 @@
       "papers": [
         "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet."
       ],
-      "source": "t:ncbi:34012",
+      "source": "t:ph:azospirillum sp. 47-25",
       "target": "d:Multiple sclerosis",
       "ev": [
         {
@@ -44734,9 +45779,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Clostridium",
-      "taxon_key": "ncbi:1485",
-      "rank": "genus",
+      "taxon": "Enterocloster clostridioformis",
+      "taxon_key": "ncbi:1531",
+      "rank": "species",
       "resolved": true,
       "disease": "Dementia",
       "mondo": "MONDO:0001627",
@@ -44750,7 +45795,7 @@
       "papers": [
         "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pilot study."
       ],
-      "source": "t:ncbi:1485",
+      "source": "t:ncbi:1531",
       "target": "d:Dementia",
       "ev": [
         {
@@ -44791,33 +45836,28 @@
     },
     {
       "sites": {
-        "stool": 2
+        "stool": 1
       },
       "gut_only": true,
-      "taxon": "Bacteroides",
-      "taxon_key": "ncbi:816",
-      "rank": "genus",
+      "taxon": "Phocaeicola dorei",
+      "taxon_key": "ncbi:357276",
+      "rank": "species",
       "resolved": true,
       "disease": "Dementia",
       "mondo": "MONDO:0001627",
-      "direction": "contested",
+      "direction": "enriched",
       "n_up": 1,
-      "n_down": 1,
-      "n_obs": 2,
-      "n_papers": 2,
-      "consistency": 0.5,
-      "contested": true,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
-        "Analysis of the relationship between the gut microbiome and dementia: a cross-sectional study conducted in Japan",
         "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pilot study."
       ],
-      "source": "t:ncbi:816",
+      "source": "t:ncbi:357276",
       "target": "d:Dementia",
       "ev": [
-        {
-          "i": 42,
-          "d": "d"
-        },
         {
           "i": 91,
           "d": "e"
@@ -45039,9 +46079,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Lachnospiraceae bacterium",
-      "taxon_key": "ncbi:1898203",
-      "rank": "species",
+      "taxon": "Lachnospiraceae bacterium MC-35",
+      "taxon_key": "ph:lachnospiraceae bacterium mc-35",
+      "rank": "clade",
       "resolved": true,
       "disease": "Dementia",
       "mondo": "MONDO:0001627",
@@ -45055,7 +46095,7 @@
       "papers": [
         "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pilot study."
       ],
-      "source": "t:ncbi:1898203",
+      "source": "t:ph:lachnospiraceae bacterium mc-35",
       "target": "d:Dementia",
       "ev": [
         {
@@ -45086,6 +46126,36 @@
         "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pilot study."
       ],
       "source": "t:ncbi:186803",
+      "target": "d:Dementia",
+      "ev": [
+        {
+          "i": 91,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Eubacterium rectale",
+      "taxon_key": "ncbi:39491",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Dementia",
+      "mondo": "MONDO:0001627",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pilot study."
+      ],
+      "source": "t:ncbi:39491",
       "target": "d:Dementia",
       "ev": [
         {
@@ -46417,9 +47487,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Escherichia",
-      "taxon_key": "ncbi:561",
-      "rank": "genus",
+      "taxon": "Escherichia_Shigella",
+      "taxon_key": "ph:escherichia shigella",
+      "rank": "clade",
       "resolved": true,
       "disease": "Cognitive impairment",
       "mondo": null,
@@ -46433,7 +47503,7 @@
       "papers": [
         "Air particulate pollution exposure associated with impaired cognition via microbiota gut-brain axis: an evidence from rural elderly female in northwest China."
       ],
-      "source": "t:ncbi:561",
+      "source": "t:ph:escherichia shigella",
       "target": "d:Cognitive impairment",
       "ev": [
         {
@@ -46977,9 +48047,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Escherichia phage",
-      "taxon_key": "ncbi:3102713",
-      "rank": "species",
+      "taxon": "Escherichia phage TL 2011",
+      "taxon_key": "ph:escherichia phage tl 2011",
+      "rank": "clade",
       "resolved": true,
       "disease": "Mild cognitive impairment",
       "mondo": "MONDO:0005453",
@@ -46993,7 +48063,7 @@
       "papers": [
         "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults."
       ],
-      "source": "t:ncbi:3102713",
+      "source": "t:ph:escherichia phage tl 2011",
       "target": "d:Mild cognitive impairment",
       "ev": [
         {
@@ -47007,9 +48077,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Vibrio phage",
-      "taxon_key": "ncbi:3720007",
-      "rank": "species",
+      "taxon": "Vibrio phage pYD38 A",
+      "taxon_key": "ph:vibrio phage pyd38 a",
+      "rank": "clade",
       "resolved": true,
       "disease": "Mild cognitive impairment",
       "mondo": "MONDO:0005453",
@@ -47023,7 +48093,7 @@
       "papers": [
         "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults."
       ],
-      "source": "t:ncbi:3720007",
+      "source": "t:ph:vibrio phage pyd38 a",
       "target": "d:Mild cognitive impairment",
       "ev": [
         {
@@ -47354,6 +48424,36 @@
         "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults."
       ],
       "source": "t:ncbi:151535",
+      "target": "d:Mild cognitive impairment",
+      "ev": [
+        {
+          "i": 269,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Escherichia phage TL 2011b",
+      "taxon_key": "ph:escherichia phage tl 2011b",
+      "rank": "clade",
+      "resolved": true,
+      "disease": "Mild cognitive impairment",
+      "mondo": "MONDO:0005453",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults."
+      ],
+      "source": "t:ph:escherichia phage tl 2011b",
       "target": "d:Mild cognitive impairment",
       "ev": [
         {
@@ -47904,33 +49004,28 @@
     },
     {
       "sites": {
-        "stool": 2
+        "stool": 1
       },
       "gut_only": true,
-      "taxon": "Eubacterium",
-      "taxon_key": "ncbi:1730",
-      "rank": "genus",
+      "taxon": "Eubacterium rectale",
+      "taxon_key": "ncbi:39491",
+      "rank": "species",
       "resolved": true,
       "disease": "Mild cognitive impairment",
       "mondo": "MONDO:0005453",
       "direction": "depleted",
       "n_up": 0,
-      "n_down": 2,
-      "n_obs": 2,
-      "n_papers": 2,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
       "consistency": 1.0,
       "contested": false,
       "papers": [
-        "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive Impairment.",
         "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults."
       ],
-      "source": "t:ncbi:1730",
+      "source": "t:ncbi:39491",
       "target": "d:Mild cognitive impairment",
       "ev": [
-        {
-          "i": 121,
-          "d": "d"
-        },
         {
           "i": 269,
           "d": "d"
@@ -48274,6 +49369,36 @@
         {
           "i": 44,
           "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Bacteroides vulgatus",
+      "taxon_key": "ncbi:821",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Multiple sclerosis",
+      "mondo": "MONDO:0005301",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Detection of Dysbiosis and Increased Intestinal Permeability in Brazilian Patients with Relapsing-Remitting Multiple Sclerosis."
+      ],
+      "source": "t:ncbi:821",
+      "target": "d:Multiple sclerosis",
+      "ev": [
+        {
+          "i": 72,
+          "d": "e"
         }
       ]
     },
@@ -49167,7 +50292,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Phocaeicola plebeius",
+      "taxon": "Bacteroides plebeus",
       "taxon_key": "ncbi:310297",
       "rank": "species",
       "resolved": true,
@@ -52647,6 +53772,36 @@
         "stool": 1
       },
       "gut_only": true,
+      "taxon": "Turicibacter sp001543345",
+      "taxon_key": "ph:turicibacter sp001543345",
+      "rank": "clade",
+      "resolved": true,
+      "disease": "Mild cognitive impairment",
+      "mondo": "MONDO:0005453",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive Impairment."
+      ],
+      "source": "t:ph:turicibacter sp001543345",
+      "target": "d:Mild cognitive impairment",
+      "ev": [
+        {
+          "i": 121,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
       "taxon": "Oscillospiraceae",
       "taxon_key": "ncbi:216572",
       "rank": "family",
@@ -52844,6 +53999,36 @@
         "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive Impairment."
       ],
       "source": "t:ncbi:1432051",
+      "target": "d:Mild cognitive impairment",
+      "ev": [
+        {
+          "i": 121,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Eubacterium",
+      "taxon_key": "ncbi:1730",
+      "rank": "genus",
+      "resolved": true,
+      "disease": "Mild cognitive impairment",
+      "mondo": "MONDO:0005453",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive Impairment."
+      ],
+      "source": "t:ncbi:1730",
       "target": "d:Mild cognitive impairment",
       "ev": [
         {
@@ -53143,6 +54328,41 @@
       "ev": [
         {
           "i": 41,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 2
+      },
+      "gut_only": true,
+      "taxon": "Klebsiella",
+      "taxon_key": "ncbi:570",
+      "rank": "genus",
+      "resolved": true,
+      "disease": "Parkinson's disease",
+      "mondo": "MONDO:0005180",
+      "direction": "enriched",
+      "n_up": 2,
+      "n_down": 0,
+      "n_obs": 2,
+      "n_papers": 2,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Analysis of the Gut Microflora in Patients With Parkinson's Disease.",
+        "Nutritional Intake and Gut Microbiome Composition Predict Parkinson's Disease."
+      ],
+      "source": "t:ncbi:570",
+      "target": "d:Parkinson's disease",
+      "ev": [
+        {
+          "i": 41,
+          "d": "e"
+        },
+        {
+          "i": 208,
           "d": "e"
         }
       ]
@@ -54464,7 +55684,7 @@
     },
     {
       "sites": {
-        "stool": 2
+        "stool": 1
       },
       "gut_only": true,
       "taxon": "Clostridium",
@@ -54473,16 +55693,15 @@
       "resolved": true,
       "disease": "Multiple sclerosis",
       "mondo": "MONDO:0005301",
-      "direction": "contested",
-      "n_up": 1,
+      "direction": "depleted",
+      "n_up": 0,
       "n_down": 1,
-      "n_obs": 2,
-      "n_papers": 2,
-      "consistency": 0.5,
-      "contested": true,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
-        "CXCR3+ T cells in multiple sclerosis correlate with reduced diversity of the gut microbiome.",
-        "The Gut Microbiome in Progressive Multiple Sclerosis"
+        "CXCR3+ T cells in multiple sclerosis correlate with reduced diversity of the gut microbiome."
       ],
       "source": "t:ncbi:1485",
       "target": "d:Multiple sclerosis",
@@ -54490,10 +55709,6 @@
         {
           "i": 50,
           "d": "d"
-        },
-        {
-          "i": 246,
-          "d": "e"
         }
       ]
     },
@@ -54929,6 +56144,36 @@
         "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
       ],
       "source": "t:ncbi:28132",
+      "target": "d:Parkinson's disease",
+      "ev": [
+        {
+          "i": 213,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "oral": 1
+      },
+      "gut_only": false,
+      "taxon": "Neisseria multispecies",
+      "taxon_key": "ph:neisseria multispecies",
+      "rank": "clade",
+      "resolved": true,
+      "disease": "Parkinson's disease",
+      "mondo": "MONDO:0005180",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+      ],
+      "source": "t:ph:neisseria multispecies",
       "target": "d:Parkinson's disease",
       "ev": [
         {
@@ -56145,7 +57390,7 @@
     },
     {
       "sites": {
-        "stool": 4
+        "stool": 3
       },
       "gut_only": true,
       "taxon": "Bacteroides",
@@ -56155,15 +57400,14 @@
       "disease": "Epilepsy",
       "mondo": "MONDO:0005027",
       "direction": "depleted",
-      "n_up": 1,
+      "n_up": 0,
       "n_down": 3,
-      "n_obs": 4,
-      "n_papers": 4,
-      "consistency": 0.75,
-      "contested": true,
+      "n_obs": 3,
+      "n_papers": 3,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
         "Distinct Gut Microbiota Composition and Functional Category in Children With Cerebral Palsy and Epilepsy",
-        "Gut Microbial Characteristics of Adult Patients With Epilepsy",
         "Gut Microbiome Distinguishes Patients With Epilepsy From Healthy Individuals",
         "Integrated Macrogenomics and Metabolomics Explore Alterations and Correlation between Gut Microbiota and Serum Metabolites in Adult Epileptic Patients: A Pilot Study"
       ],
@@ -56173,10 +57417,6 @@
         {
           "i": 80,
           "d": "d"
-        },
-        {
-          "i": 110,
-          "d": "e"
         },
         {
           "i": 112,
@@ -56275,7 +57515,7 @@
     },
     {
       "sites": {
-        "stool": 3
+        "stool": 2
       },
       "gut_only": true,
       "taxon": "Ruminococcus",
@@ -56284,16 +57524,15 @@
       "resolved": true,
       "disease": "Epilepsy",
       "mondo": "MONDO:0005027",
-      "direction": "depleted",
+      "direction": "contested",
       "n_up": 1,
-      "n_down": 2,
-      "n_obs": 3,
-      "n_papers": 3,
-      "consistency": 0.667,
+      "n_down": 1,
+      "n_obs": 2,
+      "n_papers": 2,
+      "consistency": 0.5,
       "contested": true,
       "papers": [
         "Distinct Gut Microbiota Composition and Functional Category in Children With Cerebral Palsy and Epilepsy",
-        "Gut Microbial Characteristics of Adult Patients With Epilepsy",
         "Integrated Macrogenomics and Metabolomics Explore Alterations and Correlation between Gut Microbiota and Serum Metabolites in Adult Epileptic Patients: A Pilot Study"
       ],
       "source": "t:ncbi:1263",
@@ -56301,10 +57540,6 @@
       "ev": [
         {
           "i": 80,
-          "d": "d"
-        },
-        {
-          "i": 110,
           "d": "d"
         },
         {
@@ -56953,9 +58188,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Sarcina sp.",
-      "taxon_key": "ncbi:2053610",
-      "rank": "species",
+      "taxon": "Sarcina sp. JB2",
+      "taxon_key": "ph:sarcina sp. jb2",
+      "rank": "clade",
       "resolved": true,
       "disease": "Alzheimer's disease",
       "mondo": "MONDO:0004975",
@@ -56969,7 +58204,7 @@
       "papers": [
         "Plasma exosomal miRNA expression and gut microbiota dysbiosis are associated with cognitive impairment in Alzheimer's disease."
       ],
-      "source": "t:ncbi:2053610",
+      "source": "t:ph:sarcina sp. jb2",
       "target": "d:Alzheimer's disease",
       "ev": [
         {
@@ -58273,7 +59508,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Bifidobacterium breve",
+      "taxon": "Bifidobacterium brevis",
       "taxon_key": "ncbi:1685",
       "rank": "species",
       "resolved": true,
@@ -60393,7 +61628,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Fusobacterium mortiferum",
+      "taxon": "Fusobacterium_A mortiferum",
       "taxon_key": "ncbi:850",
       "rank": "species",
       "resolved": true,
@@ -60440,6 +61675,36 @@
         "Gut Microbial Characteristics of Adult Patients With Epilepsy"
       ],
       "source": "t:ncbi:363265",
+      "target": "d:Epilepsy",
+      "ev": [
+        {
+          "i": 110,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Phocaeicola dorei",
+      "taxon_key": "ncbi:357276",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Epilepsy",
+      "mondo": "MONDO:0005027",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Gut Microbial Characteristics of Adult Patients With Epilepsy"
+      ],
+      "source": "t:ncbi:357276",
       "target": "d:Epilepsy",
       "ev": [
         {
@@ -60745,6 +62010,36 @@
         "Gut Microbial Characteristics of Adult Patients With Epilepsy"
       ],
       "source": "t:ncbi:84024",
+      "target": "d:Epilepsy",
+      "ev": [
+        {
+          "i": 110,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Ruminococcus bicirculans",
+      "taxon_key": "ncbi:1160721",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Epilepsy",
+      "mondo": "MONDO:0005027",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Gut Microbial Characteristics of Adult Patients With Epilepsy"
+      ],
+      "source": "t:ncbi:1160721",
       "target": "d:Epilepsy",
       "ev": [
         {
@@ -61448,9 +62743,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Faecalibacterium",
-      "taxon_key": "ncbi:216851",
-      "rank": "genus",
+      "taxon": "Faecalibacterium prausnitzii",
+      "taxon_key": "ncbi:853",
+      "rank": "species",
       "resolved": true,
       "disease": "Rett syndrome",
       "mondo": null,
@@ -61464,7 +62759,7 @@
       "papers": [
         "Rett Syndrome: A Focus on Gut Microbiota"
       ],
-      "source": "t:ncbi:216851",
+      "source": "t:ncbi:853",
       "target": "d:Rett syndrome",
       "ev": [
         {
@@ -61525,6 +62820,36 @@
         "Rett Syndrome: A Focus on Gut Microbiota"
       ],
       "source": "t:ncbi:841",
+      "target": "d:Rett syndrome",
+      "ev": [
+        {
+          "i": 231,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Faecalibacterium",
+      "taxon_key": "ncbi:216851",
+      "rank": "genus",
+      "resolved": true,
+      "disease": "Rett syndrome",
+      "mondo": null,
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Rett Syndrome: A Focus on Gut Microbiota"
+      ],
+      "source": "t:ncbi:216851",
       "target": "d:Rett syndrome",
       "ev": [
         {
@@ -62020,6 +63345,36 @@
         "Changes of gut microbiota in patients at different phases of stroke"
       ],
       "source": "t:ncbi:244127",
+      "target": "d:Stroke",
+      "ev": [
+        {
+          "i": 56,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Blautia massiliensis",
+      "taxon_key": "ncbi:1737424",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Stroke",
+      "mondo": "MONDO:0005098",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Changes of gut microbiota in patients at different phases of stroke"
+      ],
+      "source": "t:ncbi:1737424",
       "target": "d:Stroke",
       "ev": [
         {
@@ -63033,6 +64388,36 @@
         "stool": 1
       },
       "gut_only": true,
+      "taxon": "Phocaeicola dorei",
+      "taxon_key": "ncbi:357276",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Stroke",
+      "mondo": "MONDO:0005098",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Unveiling the negative association of Faecalibacterium prausnitzii with ischemic stroke severity, impaired prognosis and pro-inflammatory markers"
+      ],
+      "source": "t:ncbi:357276",
+      "target": "d:Stroke",
+      "ev": [
+        {
+          "i": 271,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
       "taxon": "Akkermansia muciniphila",
       "taxon_key": "ncbi:239935",
       "rank": "species",
@@ -63990,6 +65375,36 @@
         "Multiple sclerosis and gut microbiota: Lachnospiraceae from the ileum of MS twins trigger MS-like disease in germfree transgenic mice-An unbiased functional study."
       ],
       "source": "t:ncbi:487173",
+      "target": "d:Multiple sclerosis",
+      "ev": [
+        {
+          "i": 205,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Prevotella buccae",
+      "taxon_key": "ncbi:28126",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Multiple sclerosis",
+      "mondo": "MONDO:0005301",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Multiple sclerosis and gut microbiota: Lachnospiraceae from the ileum of MS twins trigger MS-like disease in germfree transgenic mice-An unbiased functional study."
+      ],
+      "source": "t:ncbi:28126",
       "target": "d:Multiple sclerosis",
       "ev": [
         {
@@ -67070,36 +68485,31 @@
     },
     {
       "sites": {
-        "stool": 2
+        "stool": 1
       },
       "gut_only": true,
-      "taxon": "Escherichia",
-      "taxon_key": "ncbi:561",
-      "rank": "genus",
+      "taxon": "Escherichia_Shigella",
+      "taxon_key": "ph:escherichia shigella",
+      "rank": "clade",
       "resolved": true,
       "disease": "Spinal cord injury",
       "mondo": null,
-      "direction": "contested",
+      "direction": "enriched",
       "n_up": 1,
-      "n_down": 1,
-      "n_obs": 2,
-      "n_papers": 2,
-      "consistency": 0.5,
-      "contested": true,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
-        "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury",
-        "The gut microbiota and metabolite profiles are altered in patients with spinal cord injury"
+        "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury"
       ],
-      "source": "t:ncbi:561",
+      "source": "t:ph:escherichia shigella",
       "target": "d:Spinal cord injury",
       "ev": [
         {
           "i": 228,
           "d": "e"
-        },
-        {
-          "i": 254,
-          "d": "d"
         }
       ]
     },
@@ -68015,6 +69425,36 @@
         "The gut microbiota and metabolite profiles are altered in patients with spinal cord injury"
       ],
       "source": "t:ncbi:572511",
+      "target": "d:Spinal cord injury",
+      "ev": [
+        {
+          "i": 254,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Escherichia \u2013 Shigella",
+      "taxon_key": "ph:escherichia \u2013 shigella",
+      "rank": "clade",
+      "resolved": true,
+      "disease": "Spinal cord injury",
+      "mondo": null,
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "The gut microbiota and metabolite profiles are altered in patients with spinal cord injury"
+      ],
+      "source": "t:ph:escherichia \u2013 shigella",
       "target": "d:Spinal cord injury",
       "ev": [
         {
@@ -69615,6 +71055,41 @@
     },
     {
       "sites": {
+        "stool": 2
+      },
+      "gut_only": true,
+      "taxon": "Escherichia_Shigella",
+      "taxon_key": "ph:escherichia shigella",
+      "rank": "clade",
+      "resolved": true,
+      "disease": "Stroke",
+      "mondo": "MONDO:0005098",
+      "direction": "enriched",
+      "n_up": 2,
+      "n_down": 0,
+      "n_obs": 2,
+      "n_papers": 2,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Gut Dysbiosis: A New Avenue for Stroke Prevention and Therapeutics",
+        "Uncovering the characteristics of the gut microbiota in patients with acute ischemic stroke and phlegm-heat syndrome"
+      ],
+      "source": "t:ph:escherichia shigella",
+      "target": "d:Stroke",
+      "ev": [
+        {
+          "i": 109,
+          "d": "e"
+        },
+        {
+          "i": 267,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
         "stool": 1
       },
       "gut_only": true,
@@ -69985,41 +71460,31 @@
     },
     {
       "sites": {
-        "stool": 3
+        "stool": 1
       },
       "gut_only": true,
-      "taxon": "Escherichia",
-      "taxon_key": "ncbi:561",
-      "rank": "genus",
+      "taxon": "Escherichia_Shigella",
+      "taxon_key": "ph:escherichia shigella",
+      "rank": "clade",
       "resolved": true,
       "disease": "Epilepsy",
       "mondo": "MONDO:0005027",
-      "direction": "enriched",
-      "n_up": 2,
+      "direction": "depleted",
+      "n_up": 0,
       "n_down": 1,
-      "n_obs": 3,
-      "n_papers": 3,
-      "consistency": 0.667,
-      "contested": true,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
-        "Alteration of Gut Microbiota in Patients With Epilepsy and the Potential Index as a Biomarker",
-        "Integrated Macrogenomics and Metabolomics Explore Alterations and Correlation between Gut Microbiota and Serum Metabolites in Adult Epileptic Patients: A Pilot Study",
-        "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy"
+        "Alteration of Gut Microbiota in Patients With Epilepsy and the Potential Index as a Biomarker"
       ],
-      "source": "t:ncbi:561",
+      "source": "t:ph:escherichia shigella",
       "target": "d:Epilepsy",
       "ev": [
         {
           "i": 10,
           "d": "d"
-        },
-        {
-          "i": 178,
-          "d": "e"
-        },
-        {
-          "i": 260,
-          "d": "e"
         }
       ]
     },
@@ -71555,7 +73020,7 @@
     },
     {
       "sites": {
-        "stool": 2
+        "stool": 1
       },
       "gut_only": true,
       "taxon": "Eubacterium",
@@ -71564,16 +73029,15 @@
       "resolved": true,
       "disease": "Epilepsy",
       "mondo": "MONDO:0005027",
-      "direction": "contested",
+      "direction": "enriched",
       "n_up": 1,
-      "n_down": 1,
-      "n_obs": 2,
-      "n_papers": 2,
-      "consistency": 0.5,
-      "contested": true,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
       "papers": [
-        "Integrated Macrogenomics and Metabolomics Explore Alterations and Correlation between Gut Microbiota and Serum Metabolites in Adult Epileptic Patients: A Pilot Study",
-        "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy"
+        "Integrated Macrogenomics and Metabolomics Explore Alterations and Correlation between Gut Microbiota and Serum Metabolites in Adult Epileptic Patients: A Pilot Study"
       ],
       "source": "t:ncbi:1730",
       "target": "d:Epilepsy",
@@ -71581,10 +73045,6 @@
         {
           "i": 178,
           "d": "e"
-        },
-        {
-          "i": 260,
-          "d": "d"
         }
       ]
     },
@@ -71644,6 +73104,41 @@
       "ev": [
         {
           "i": 178,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 2
+      },
+      "gut_only": true,
+      "taxon": "Escherichia",
+      "taxon_key": "ncbi:561",
+      "rank": "genus",
+      "resolved": true,
+      "disease": "Epilepsy",
+      "mondo": "MONDO:0005027",
+      "direction": "enriched",
+      "n_up": 2,
+      "n_down": 0,
+      "n_obs": 2,
+      "n_papers": 2,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Integrated Macrogenomics and Metabolomics Explore Alterations and Correlation between Gut Microbiota and Serum Metabolites in Adult Epileptic Patients: A Pilot Study",
+        "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy"
+      ],
+      "source": "t:ncbi:561",
+      "target": "d:Epilepsy",
+      "ev": [
+        {
+          "i": 178,
+          "d": "e"
+        },
+        {
+          "i": 260,
           "d": "e"
         }
       ]
@@ -73668,9 +75163,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Eubacterium",
-      "taxon_key": "ncbi:1730",
-      "rank": "genus",
+      "taxon": "Eubacterium rectale",
+      "taxon_key": "ncbi:39491",
+      "rank": "species",
       "resolved": true,
       "disease": "Intracerebral hemorrhage",
       "mondo": null,
@@ -73684,7 +75179,7 @@
       "papers": [
         "Multi-omics reveals specific host metabolism-microbiome associations in intracerebral hemorrhage"
       ],
-      "source": "t:ncbi:1730",
+      "source": "t:ncbi:39491",
       "target": "d:Intracerebral hemorrhage",
       "ev": [
         {
@@ -73955,6 +75450,36 @@
         "The Gut Microbiome in Progressive Multiple Sclerosis"
       ],
       "source": "t:ncbi:1550024",
+      "target": "d:Multiple sclerosis",
+      "ev": [
+        {
+          "i": 246,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Clostridium g24 FCEY",
+      "taxon_key": "ph:clostridium g24 fcey",
+      "rank": "clade",
+      "resolved": true,
+      "disease": "Multiple sclerosis",
+      "mondo": "MONDO:0005301",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "The Gut Microbiome in Progressive Multiple Sclerosis"
+      ],
+      "source": "t:ph:clostridium g24 fcey",
       "target": "d:Multiple sclerosis",
       "ev": [
         {
@@ -74388,9 +75913,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Erysipelotrichaceae",
-      "taxon_key": "ncbi:128827",
-      "rank": "family",
+      "taxon": "Erysipelotrichaceae CCM",
+      "taxon_key": "ph:erysipelotrichaceae ccm",
+      "rank": "clade",
       "resolved": true,
       "disease": "Multiple sclerosis",
       "mondo": "MONDO:0005301",
@@ -74404,7 +75929,7 @@
       "papers": [
         "The Gut Microbiome in Progressive Multiple Sclerosis"
       ],
-      "source": "t:ncbi:128827",
+      "source": "t:ph:erysipelotrichaceae ccm",
       "target": "d:Multiple sclerosis",
       "ev": [
         {
@@ -74555,6 +76080,36 @@
         "The Gut Microbiome in Progressive Multiple Sclerosis"
       ],
       "source": "t:ncbi:2648079",
+      "target": "d:Multiple sclerosis",
+      "ev": [
+        {
+          "i": 246,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Erysipelotrichaceae CCMM",
+      "taxon_key": "ph:erysipelotrichaceae ccmm",
+      "rank": "clade",
+      "resolved": true,
+      "disease": "Multiple sclerosis",
+      "mondo": "MONDO:0005301",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "The Gut Microbiome in Progressive Multiple Sclerosis"
+      ],
+      "source": "t:ph:erysipelotrichaceae ccmm",
       "target": "d:Multiple sclerosis",
       "ev": [
         {
@@ -74898,6 +76453,36 @@
         "stool": 1
       },
       "gut_only": true,
+      "taxon": "Bacteroides",
+      "taxon_key": "ncbi:816",
+      "rank": "genus",
+      "resolved": true,
+      "disease": "Dementia",
+      "mondo": "MONDO:0001627",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Analysis of the relationship between the gut microbiome and dementia: a cross-sectional study conducted in Japan"
+      ],
+      "source": "t:ncbi:816",
+      "target": "d:Dementia",
+      "ev": [
+        {
+          "i": 42,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
       "taxon": "Serratia",
       "taxon_key": "ncbi:613",
       "rank": "genus",
@@ -75168,9 +76753,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Lawsonibacter",
-      "taxon_key": "ncbi:2172004",
-      "rank": "genus",
+      "taxon": "Lawsonibacter phoceensis",
+      "taxon_key": "ph:lawsonibacter phoceensis",
+      "rank": "clade",
       "resolved": true,
       "disease": "Multiple sclerosis",
       "mondo": "MONDO:0005301",
@@ -75184,7 +76769,7 @@
       "papers": [
         "The gut microbiota in multiple sclerosis varies with disease activity"
       ],
-      "source": "t:ncbi:2172004",
+      "source": "t:ph:lawsonibacter phoceensis",
       "target": "d:Multiple sclerosis",
       "ev": [
         {
@@ -75198,9 +76783,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Hungatella",
-      "taxon_key": "ncbi:1649459",
-      "rank": "genus",
+      "taxon": "Hungatella effluvia",
+      "taxon_key": "ncbi:1096246",
+      "rank": "species",
       "resolved": true,
       "disease": "Multiple sclerosis",
       "mondo": "MONDO:0005301",
@@ -75214,7 +76799,7 @@
       "papers": [
         "The gut microbiota in multiple sclerosis varies with disease activity"
       ],
-      "source": "t:ncbi:1649459",
+      "source": "t:ncbi:1096246",
       "target": "d:Multiple sclerosis",
       "ev": [
         {
@@ -75275,6 +76860,36 @@
         "The gut microbiota in multiple sclerosis varies with disease activity"
       ],
       "source": "t:ncbi:106588",
+      "target": "d:Multiple sclerosis",
+      "ev": [
+        {
+          "i": 255,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Blautia massiliensis",
+      "taxon_key": "ncbi:1737424",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Multiple sclerosis",
+      "mondo": "MONDO:0005301",
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "The gut microbiota in multiple sclerosis varies with disease activity"
+      ],
+      "source": "t:ncbi:1737424",
       "target": "d:Multiple sclerosis",
       "ev": [
         {
@@ -76014,9 +77629,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Eikenella",
-      "taxon_key": "ncbi:538",
-      "rank": "genus",
+      "taxon": "Eikenella species NML 130454",
+      "taxon_key": "ph:eikenella species nml 130454",
+      "rank": "clade",
       "resolved": true,
       "disease": "Autism spectrum disorder",
       "mondo": "MONDO:0005260",
@@ -76030,7 +77645,7 @@
       "papers": [
         "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
       ],
-      "source": "t:ncbi:538",
+      "source": "t:ph:eikenella species nml 130454",
       "target": "d:Autism spectrum disorder",
       "ev": [
         {
@@ -76164,9 +77779,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Prevotella",
-      "taxon_key": "ncbi:838",
-      "rank": "genus",
+      "taxon": "Prevotella shaii",
+      "taxon_key": "ncbi:228603",
+      "rank": "species",
       "resolved": true,
       "disease": "Autism spectrum disorder",
       "mondo": "MONDO:0005260",
@@ -76180,7 +77795,37 @@
       "papers": [
         "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
       ],
-      "source": "t:ncbi:838",
+      "source": "t:ncbi:228603",
+      "target": "d:Autism spectrum disorder",
+      "ev": [
+        {
+          "i": 185,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Prevotella jejunii",
+      "taxon_key": "ncbi:1177574",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Autism spectrum disorder",
+      "mondo": "MONDO:0005260",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
+      ],
+      "source": "t:ncbi:1177574",
       "target": "d:Autism spectrum disorder",
       "ev": [
         {
@@ -76259,9 +77904,9 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Prevotella",
-      "taxon_key": "ncbi:838",
-      "rank": "genus",
+      "taxon": "Prevotella copri",
+      "taxon_key": "ncbi:165179",
+      "rank": "species",
       "resolved": true,
       "disease": "Attention-deficit/hyperactivity disorder",
       "mondo": null,
@@ -76275,7 +77920,7 @@
       "papers": [
         "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment"
       ],
-      "source": "t:ncbi:838",
+      "source": "t:ncbi:165179",
       "target": "d:Attention-deficit/hyperactivity disorder",
       "ev": [
         {
@@ -76289,7 +77934,37 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Bifidobacterium breve",
+      "taxon": "Prevotella buccae",
+      "taxon_key": "ncbi:28126",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Attention-deficit/hyperactivity disorder",
+      "mondo": null,
+      "direction": "enriched",
+      "n_up": 1,
+      "n_down": 0,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment"
+      ],
+      "source": "t:ncbi:28126",
+      "target": "d:Attention-deficit/hyperactivity disorder",
+      "ev": [
+        {
+          "i": 132,
+          "d": "e"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Bifidobacterium brevis",
       "taxon_key": "ncbi:1685",
       "rank": "species",
       "resolved": true,
@@ -76696,6 +78371,36 @@
         "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy"
       ],
       "source": "t:ncbi:1680",
+      "target": "d:Epilepsy",
+      "ev": [
+        {
+          "i": 260,
+          "d": "d"
+        }
+      ]
+    },
+    {
+      "sites": {
+        "stool": 1
+      },
+      "gut_only": true,
+      "taxon": "Eubacterium rectale",
+      "taxon_key": "ncbi:39491",
+      "rank": "species",
+      "resolved": true,
+      "disease": "Epilepsy",
+      "mondo": "MONDO:0005027",
+      "direction": "depleted",
+      "n_up": 0,
+      "n_down": 1,
+      "n_obs": 1,
+      "n_papers": 1,
+      "consistency": 1.0,
+      "contested": false,
+      "papers": [
+        "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy"
+      ],
+      "source": "t:ncbi:39491",
       "target": "d:Epilepsy",
       "ev": [
         {
@@ -77819,7 +79524,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Phocaeicola plebeius",
+      "taxon": "Bacteroides plebeus",
       "taxon_key": "ncbi:310297",
       "rank": "species",
       "resolved": true,
@@ -78237,6 +79942,12 @@
       "child_rank": "clade"
     },
     {
+      "parent": "t:ncbi:1730",
+      "child": "t:ph:eubacterium g4",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
       "parent": "t:ncbi:1485",
       "child": "t:ph:clostridium cluster iv",
       "parent_rank": "genus",
@@ -78249,6 +79960,12 @@
       "child_rank": "clade"
     },
     {
+      "parent": "t:ncbi:1869227",
+      "child": "t:ph:bacterium nlae",
+      "parent_rank": "species",
+      "child_rank": "clade"
+    },
+    {
       "parent": "t:ncbi:216572",
       "child": "t:ph:oscillospiraceae ucg-005",
       "parent_rank": "family",
@@ -78258,6 +79975,12 @@
       "parent": "t:ncbi:186803",
       "child": "t:ph:lachnospiraceae nd3007 group",
       "parent_rank": "family",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:189330",
+      "child": "t:ph:dorea asp: cag:317",
+      "parent_rank": "genus",
       "child_rank": "clade"
     },
     {
@@ -78310,6 +80033,12 @@
     },
     {
       "parent": "t:ncbi:838",
+      "child": "t:ph:prevotella vzcb",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:838",
       "child": "t:ph:prevotella 9",
       "parent_rank": "genus",
       "child_rank": "clade"
@@ -78351,6 +80080,24 @@
       "child_rank": "clade"
     },
     {
+      "parent": "t:ncbi:561",
+      "child": "t:ph:escherichia shigella",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:1485",
+      "child": "t:ph:clostridium xlva",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:561",
+      "child": "t:ph:escherichia / shigella",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
       "parent": "t:ncbi:216572",
       "child": "t:ph:ruminococcaceae ucg 002",
       "parent_rank": "family",
@@ -78360,6 +80107,12 @@
       "parent": "t:ncbi:1730",
       "child": "t:ph:eubacterium ventriosum group",
       "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:ph:lachnospiraceae nc2004",
+      "parent_rank": "family",
       "child_rank": "clade"
     },
     {
@@ -78399,6 +80152,12 @@
       "child_rank": "clade"
     },
     {
+      "parent": "t:ncbi:186803",
+      "child": "t:ph:lachnospiraceae eubacterium",
+      "parent_rank": "family",
+      "child_rank": "clade"
+    },
+    {
       "parent": "t:ncbi:1485",
       "child": "t:ph:clostridium cluster i",
       "parent_rank": "genus",
@@ -78414,6 +80173,12 @@
       "parent": "t:ncbi:186803",
       "child": "t:ph:lachnospiraceae ucg-010",
       "parent_rank": "family",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:1301",
+      "child": "t:ph:streptococcus salivarius/thermophilus",
+      "parent_rank": "genus",
       "child_rank": "clade"
     },
     {
@@ -78567,6 +80332,12 @@
       "child_rank": "clade"
     },
     {
+      "parent": "t:ncbi:191303",
+      "child": "t:ph:turicibacter sp001543345",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
       "parent": "t:ncbi:186803",
       "child": "t:ph:lachnospiraceae ucg-008",
       "parent_rank": "family",
@@ -78624,6 +80395,12 @@
       "parent": "t:ncbi:186803",
       "child": "t:ph:lachnospiraceae ucg-001",
       "parent_rank": "family",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:482",
+      "child": "t:ph:neisseria multispecies",
+      "parent_rank": "genus",
       "child_rank": "clade"
     },
     {
@@ -78705,6 +80482,12 @@
       "child_rank": "clade"
     },
     {
+      "parent": "t:ncbi:561",
+      "child": "t:ph:escherichia \u2013 shigella",
+      "parent_rank": "genus",
+      "child_rank": "clade"
+    },
+    {
       "parent": "t:ncbi:216572",
       "child": "t:ph:ruminococcaceae ucg 014",
       "parent_rank": "family",
@@ -78726,6 +80509,12 @@
       "parent": "t:ncbi:817",
       "child": "t:ph:bacteroides fragilis group",
       "parent_rank": "species",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:1485",
+      "child": "t:ph:clostridium g24 fcey",
+      "parent_rank": "genus",
       "child_rank": "clade"
     },
     {
@@ -78755,6 +80544,18 @@
     {
       "parent": "t:ncbi:216572",
       "child": "t:ph:ruminococcaceae pac001607",
+      "parent_rank": "family",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:ph:erysipelotrichaceae ccm",
+      "parent_rank": "family",
+      "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:ph:erysipelotrichaceae ccmm",
       "parent_rank": "family",
       "child_rank": "clade"
     },
@@ -78805,6 +80606,138 @@
       "child": "t:ph:g prevotella 9",
       "parent_rank": "genus",
       "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:1678",
+      "child": "t:ncbi:1685",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:838",
+      "child": "t:ncbi:165179",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1730",
+      "child": "t:ncbi:39491",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:570",
+      "child": "t:ncbi:573",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:848",
+      "child": "t:ncbi:850",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:820",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:2039302",
+      "child": "t:ncbi:1981510",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1649459",
+      "child": "t:ncbi:154046",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:357276",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:310297",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:838",
+      "child": "t:ncbi:386414",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:821",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:572511",
+      "child": "t:ncbi:1737424",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1730",
+      "child": "t:ncbi:1735",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:816",
+      "child": "t:ncbi:387090",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1485",
+      "child": "t:ncbi:1531",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1263",
+      "child": "t:ncbi:1160721",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:216851",
+      "child": "t:ncbi:853",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:838",
+      "child": "t:ncbi:28126",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:1649459",
+      "child": "t:ncbi:1096246",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:838",
+      "child": "t:ncbi:228603",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:838",
+      "child": "t:ncbi:1177574",
+      "parent_rank": "genus",
+      "child_rank": "species"
     },
     {
       "parent": "t:ncbi:1783272",
@@ -79031,12 +80964,6 @@
     {
       "parent": "t:ncbi:1643824",
       "child": "t:ncbi:133925",
-      "parent_rank": "family",
-      "child_rank": "genus"
-    },
-    {
-      "parent": "t:ncbi:186806",
-      "child": "t:ncbi:1730",
       "parent_rank": "family",
       "child_rank": "genus"
     },
@@ -79342,12 +81269,6 @@
     },
     {
       "parent": "t:ncbi:186803",
-      "child": "t:ncbi:265975",
-      "parent_rank": "family",
-      "child_rank": "genus"
-    },
-    {
-      "parent": "t:ncbi:186803",
       "child": "t:ncbi:1432051",
       "parent_rank": "family",
       "child_rank": "genus"
@@ -79521,12 +81442,6 @@
       "child_rank": "species"
     },
     {
-      "parent": "t:ncbi:216851",
-      "child": "t:ncbi:853",
-      "parent_rank": "genus",
-      "child_rank": "species"
-    },
-    {
       "parent": "t:ncbi:1678",
       "child": "t:ncbi:1680",
       "parent_rank": "genus",
@@ -79563,9 +81478,9 @@
       "child_rank": "genus"
     },
     {
-      "parent": "t:ncbi:265975",
+      "parent": "t:ncbi:186803",
       "child": "t:ncbi:1501332",
-      "parent_rank": "genus",
+      "parent_rank": "family",
       "child_rank": "species"
     },
     {
@@ -79663,12 +81578,6 @@
       "child": "t:ncbi:1654",
       "parent_rank": "family",
       "child_rank": "genus"
-    },
-    {
-      "parent": "t:ncbi:816",
-      "child": "t:ncbi:820",
-      "parent_rank": "genus",
-      "child_rank": "species"
     },
     {
       "parent": "t:ncbi:841",
@@ -79971,18 +81880,6 @@
       "child_rank": "genus"
     },
     {
-      "parent": "t:ncbi:2039302",
-      "child": "t:ncbi:1981510",
-      "parent_rank": "genus",
-      "child_rank": "species"
-    },
-    {
-      "parent": "t:ncbi:186801",
-      "child": "t:ncbi:2039302",
-      "parent_rank": "class",
-      "child_rank": "genus"
-    },
-    {
       "parent": "t:ncbi:410072",
       "child": "t:ncbi:470146",
       "parent_rank": "species",
@@ -80103,6 +82000,12 @@
       "child_rank": "species"
     },
     {
+      "parent": "t:ncbi:909656",
+      "child": "t:ncbi:310297",
+      "parent_rank": "genus",
+      "child_rank": "species"
+    },
+    {
       "parent": "t:ncbi:33042",
       "child": "t:ncbi:33043",
       "parent_rank": "genus",
@@ -80172,6 +82075,12 @@
       "parent": "t:ncbi:80840",
       "child": "t:ncbi:359336",
       "parent_rank": "order",
+      "child_rank": "genus"
+    },
+    {
+      "parent": "t:ncbi:186801",
+      "child": "t:ncbi:2039302",
+      "parent_rank": "class",
       "child_rank": "genus"
     },
     {
@@ -80361,16 +82270,16 @@
       "child_rank": "species"
     },
     {
-      "parent": "t:ncbi:570",
-      "child": "t:ncbi:573",
-      "parent_rank": "genus",
-      "child_rank": "species"
-    },
-    {
       "parent": "t:ncbi:816",
       "child": "t:ncbi:817",
       "parent_rank": "genus",
       "child_rank": "species"
+    },
+    {
+      "parent": "t:ncbi:186806",
+      "child": "t:ncbi:1730",
+      "parent_rank": "family",
+      "child_rank": "genus"
     },
     {
       "parent": "t:ncbi:447020",
@@ -80763,12 +82672,6 @@
       "child_rank": "species"
     },
     {
-      "parent": "t:ncbi:1263",
-      "child": "t:ncbi:169436",
-      "parent_rank": "genus",
-      "child_rank": "species"
-    },
-    {
       "parent": "t:ncbi:158846",
       "child": "t:ncbi:437897",
       "parent_rank": "genus",
@@ -80837,12 +82740,6 @@
     {
       "parent": "t:ncbi:244127",
       "child": "t:ncbi:169435",
-      "parent_rank": "genus",
-      "child_rank": "species"
-    },
-    {
-      "parent": "t:ncbi:1649459",
-      "child": "t:ncbi:154046",
       "parent_rank": "genus",
       "child_rank": "species"
     },
@@ -81147,12 +83044,6 @@
       "child_rank": "species"
     },
     {
-      "parent": "t:ncbi:204441",
-      "child": "t:ncbi:34012",
-      "parent_rank": "order",
-      "child_rank": "species"
-    },
-    {
       "parent": "t:ncbi:1643826",
       "child": "t:ncbi:84108",
       "parent_rank": "family",
@@ -81211,12 +83102,6 @@
       "child": "t:ncbi:186826",
       "parent_rank": "class",
       "child_rank": "order"
-    },
-    {
-      "parent": "t:ncbi:186803",
-      "child": "t:ncbi:1898203",
-      "parent_rank": "family",
-      "child_rank": "species"
     },
     {
       "parent": "t:ncbi:1236",
@@ -81321,9 +83206,9 @@
       "child_rank": "species"
     },
     {
-      "parent": "t:ncbi:2172004",
+      "parent": "t:ncbi:216572",
       "child": "t:ncbi:2108523",
-      "parent_rank": "genus",
+      "parent_rank": "family",
       "child_rank": "species"
     },
     {
@@ -81371,12 +83256,6 @@
     {
       "parent": "t:ncbi:1279",
       "child": "t:ncbi:1288",
-      "parent_rank": "genus",
-      "child_rank": "species"
-    },
-    {
-      "parent": "t:ncbi:909656",
-      "child": "t:ncbi:310297",
       "parent_rank": "genus",
       "child_rank": "species"
     },
@@ -81783,12 +83662,6 @@
       "child_rank": "species"
     },
     {
-      "parent": "t:ncbi:1266",
-      "child": "t:ncbi:2053610",
-      "parent_rank": "genus",
-      "child_rank": "species"
-    },
-    {
       "parent": "t:ncbi:128827",
       "child": "t:ncbi:331630",
       "parent_rank": "family",
@@ -81891,12 +83764,6 @@
       "child_rank": "class"
     },
     {
-      "parent": "t:ncbi:1678",
-      "child": "t:ncbi:1685",
-      "parent_rank": "genus",
-      "child_rank": "species"
-    },
-    {
       "parent": "t:ncbi:49546",
       "child": "t:ncbi:1016",
       "parent_rank": "family",
@@ -81979,12 +83846,6 @@
       "child": "t:ncbi:1164882",
       "parent_rank": "family",
       "child_rank": "genus"
-    },
-    {
-      "parent": "t:ncbi:848",
-      "child": "t:ncbi:850",
-      "parent_rank": "genus",
-      "child_rank": "species"
     },
     {
       "parent": "t:ncbi:1485",
@@ -82281,12 +84142,6 @@
       "child_rank": "species"
     },
     {
-      "parent": "t:ncbi:216572",
-      "child": "t:ncbi:2172004",
-      "parent_rank": "family",
-      "child_rank": "genus"
-    },
-    {
       "parent": "t:ncbi:644652",
       "child": "t:ncbi:1335613",
       "parent_rank": "genus",
@@ -82395,12 +84250,6 @@
       "child_rank": "species"
     },
     {
-      "parent": "t:ncbi:481",
-      "child": "t:ncbi:538",
-      "parent_rank": "family",
-      "child_rank": "genus"
-    },
-    {
       "parent": "t:ncbi:32207",
       "child": "t:ncbi:2047",
       "parent_rank": "genus",
@@ -82413,9 +84262,9 @@
       "child_rank": "species"
     },
     {
-      "parent": "t:ncbi:265975",
+      "parent": "t:ncbi:186803",
       "child": "t:ncbi:1501329",
-      "parent_rank": "genus",
+      "parent_rank": "family",
       "child_rank": "species"
     },
     {

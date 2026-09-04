@@ -150,8 +150,50 @@ PLACEHOLDER = re.compile(
 NOT_PLACEHOLDER = re.compile(r"\b(virus|phage|bacteriophage|uncultured)\b", re.I)
 
 SPLIT_PLACEHOLDERS = False          # set by --split-placeholders
+SPLIT_NAMED_CHILDREN = False        # set by --merge-named-children (default on)
 BODY_SITE = {}                      # paper title -> sampled body site
 PLACEHOLDER_PARENT = {}             # placeholder node key -> parent taxid
+SPECIES_PARENT = {}                 # split species node key -> parent taxid
+
+
+def load_named_children():
+    """surface string -> adjudicated verdict, from resolve_named_children.py.
+
+    The other half of the rank collapse. The placeholder split above catches the
+    strings a 16S pipeline invents (`Prevotella 9`); this catches the ones the
+    PAPER names -- `Prevotella copri` inside *Prevotella*, `Eubacterium rectale`
+    inside *Eubacterium* -- which land on the parent for a different reason:
+    taxonomy.py trims the qualifier tail until something resolves, and for a real
+    binomial the genus always does.
+
+    It is the same defect and it is worse here, because these are not obscure.
+    95 observations over 64 edges, 33 of them contested. *Eubacterium*/Multiple
+    sclerosis is 1 up / 3 down and EVERY one of those four papers named a
+    species -- *E. rectale* or *E. biforme*. No paper measured the genus. The
+    edge, and its contradiction, are artefacts of the fold.
+
+    Three verdicts, because `named_child` turned out not to be one thing:
+      - `species`  : a real binomial with an NCBI taxid -> its own node, keyed on
+                     that taxid, contained by the genus it was folded into.
+      - `clade`    : a strain, bin or pipeline clade id (`Clostridium_XlVa`,
+                     `Dorea asp: CAG:317`) with no species taxid -> its own node,
+                     exactly as a SILVA placeholder is treated.
+      - `group_label`: names more than one taxon (`Escherichia_Shigella`,
+                     `Streptococcus salivarius/thermophilus`) -> its own node.
+                     Keeping it as *Escherichia* asserts a genus the paper did
+                     not name; SILVA reports the pair precisely because 16S
+                     cannot separate them.
+
+    The last two get no taxid at all rather than a guessed one, so they stay out
+    of the resolved count and out of the external join.
+    """
+    path = os.path.join(HERE, "named_child_taxids.json")
+    if not os.path.exists(path):
+        return {}
+    return {r["surface"]: r for r in json.load(open(path))["resolutions"]}
+
+
+NAMED_CHILD = {}                    # loaded in build()
 
 
 def norm_taxon(t, tax=None):
@@ -166,6 +208,21 @@ def norm_taxon(t, tax=None):
     prefix only), so the builder still runs.
     """
     disp = t.strip()
+    # Adjudicated named children are intercepted BEFORE resolution: the whole
+    # problem is that tax.resolve() answers these confidently and wrongly, by
+    # trimming "copri" off "Prevotella copri" until the genus matches.
+    if SPLIT_NAMED_CHILDREN and disp in NAMED_CHILD:
+        r = NAMED_CHILD[disp]
+        ptid = r.get("parent_taxid")
+        if r["verdict"] == "species" and r.get("taxid"):
+            key = f"ncbi:{r['taxid']}"
+            if ptid:
+                SPECIES_PARENT[key] = ptid
+            return key, disp, "species", "named_child"
+        key = "ph:" + re.sub(r"\s+", " ", disp.lower().replace("_", " ")).strip()
+        if ptid:
+            PLACEHOLDER_PARENT[key] = ptid
+        return key, disp, "clade", "placeholder"
     if tax is not None and tax.ok:
         tid, sci, rank, how = tax.resolve(disp)
         if tid:
@@ -286,8 +343,9 @@ def dedup_rows(rows, verbose=True):
 
 
 def build(rows, min_papers=1, tax=None):
-    global BODY_SITE
+    global BODY_SITE, NAMED_CHILD
     BODY_SITE = load_body_sites()
+    NAMED_CHILD = load_named_children()
     ev = defaultdict(list)
     taxon_disp, taxon_rank, taxon_how = {}, {}, {}
     aliases = defaultdict(set)          # node key -> every surface string that folded into it
@@ -366,6 +424,11 @@ def build(rows, min_papers=1, tax=None):
           # replay cache's round-trip exact instead of reconstructed.
           **({"parent_taxid": PLACEHOLDER_PARENT[k]}
              if taxon_how[k] == "placeholder" and k in PLACEHOLDER_PARENT else {}),
+          # Same reasoning for a split species: its containment link to the
+          # genus it was folded out of is not derivable from a lineage the
+          # replay cache does not have, so it is recorded on the node.
+          **({"parent_taxid": SPECIES_PARENT[k], "split_from_parent": True}
+             if taxon_how[k] == "named_child" and k in SPECIES_PARENT else {}),
           "aliases": sorted(aliases[k]),
           "rank": taxon_rank[k], "degree": tax_deg[k]} for k in tax_deg]
         + [{"id": f"d:{d}", "label": d, "type": "disease",
@@ -396,6 +459,17 @@ def build(rows, min_papers=1, tax=None):
                               "parent_rank": (tax.rank.get(parent_tid, "")
                                               if tax is not None and tax.ok else ""),
                               "child_rank": "clade"})
+    # A species split out of its genus is contained by that genus, and the link
+    # has to be stated: NCBI has since moved four of these to other genera
+    # (Prevotella copri -> Segatella), so a lineage walk would NOT reproduce the
+    # containment the papers themselves assert by naming the organism that way.
+    for key, parent_tid in SPECIES_PARENT.items():
+        child, parent = f"t:{key}", f"t:ncbi:{parent_tid}"
+        if child in node_ids and parent in node_ids and child != parent:
+            hierarchy.append({"parent": parent, "child": child,
+                              "parent_rank": (tax.rank.get(parent_tid, "")
+                                              if tax is not None and tax.ok else ""),
+                              "child_rank": "species"})
     if tax is not None and tax.ok:
         tids = [n["taxid"] for n in nodes if n["type"] == "taxon" and n.get("taxid")]
         lineage = {t: tax.lineage(t) for t in tids}
@@ -408,6 +482,23 @@ def build(rows, min_papers=1, tax=None):
                                       "parent_rank": tax.rank.get(anc, ""),
                                       "child_rank": tax.rank.get(t, "")})
                     break
+    # Containment can be asserted twice for the same pair: once explicitly, from
+    # the parent recorded on a split node, and once by the lineage walk below --
+    # which only finds it on the SECOND build, once the replay cache has read
+    # that parent back out of graph.json. Build 1 produced 739 links and build 2
+    # produced 750 with 11 duplicates, so the graph was not a fixed point.
+    # Deduplicating on (parent, child) makes it one. Verified by building twice
+    # and diffing, which is the only check that catches this class.
+    seen_h = set()
+    deduped_h = []
+    for h in hierarchy:
+        k = (h["parent"], h["child"])
+        if k in seen_h:
+            continue
+        seen_h.add(k)
+        deduped_h.append(h)
+    hierarchy = deduped_h
+
     # ---- paper table: referenced by index so cohort data is stored once ----
     md = load_study_metadata()
     titles = sorted({t for e in edges for t in (x["t"] for x in e["evidence"])})
@@ -452,6 +543,14 @@ def main():
                     help="OLD behaviour: fold rank placeholders (UCG-003, ND3007 "
                          "group) into their parent taxon instead of keeping them "
                          "as their own node")
+    # Default ON, for the same reason as the placeholder split: folding
+    # "Prevotella copri" into *Prevotella* is a rank collapse, and it is the one
+    # the project's own rules name first.
+    ap.add_argument("--merge-named-children", dest="split_named_children",
+                    action="store_false", default=True,
+                    help="OLD behaviour: fold adjudicated named children "
+                         "(Prevotella copri, Eubacterium rectale) into the "
+                         "parent taxon instead of splitting them out")
     ap.add_argument("--no-taxonomy", action="store_true",
                     help="skip NCBI resolution, fold on strings only")
     # Default ON: the same paper scraped twice under two links must not cast two
@@ -461,8 +560,9 @@ def main():
                     help="OLD behaviour: keep both copies of a paper that was "
                          "scraped twice under different links")
     a = ap.parse_args()
-    global SPLIT_PLACEHOLDERS
+    global SPLIT_PLACEHOLDERS, SPLIT_NAMED_CHILDREN
     SPLIT_PLACEHOLDERS = a.split_placeholders
+    SPLIT_NAMED_CHILDREN = a.split_named_children
 
     rows = json.load(open(a.input))
     n_raw = len(rows)
@@ -499,6 +599,8 @@ def main():
         "n_papers_with_metadata": sum(1 for p in papers_tbl if p["has_meta"]),
         "min_papers": a.min_papers,
         "split_placeholders": a.split_placeholders,
+        "split_named_children": a.split_named_children,
+        "n_split_species_nodes": len(SPECIES_PARENT),
         "n_placeholder_nodes": sum(1 for n in nodes
                                    if n["type"] == "taxon" and str(n.get("id","")).startswith("t:ph:")),
         "note": ("Edge weight is evidence count, not effect size: the extractor yields "
