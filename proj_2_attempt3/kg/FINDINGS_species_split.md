@@ -168,3 +168,57 @@ because it supports anything.
 - **258 → 283 taxa still carry no taxid**, now including the 29 clade and group
   labels this split deliberately declines to guess at. That number going *up* is
   the fix working.
+
+---
+
+## Postscript: auditing the fix found two bugs in the fix
+
+`taxoniq` also makes it possible, for the first time, to check the graph's
+**containment hierarchy** against an independent source. `taxonomy_cache` stores
+"nearest-present-ancestor links, not full NCBI lineages" by its own docstring, so
+containment has only ever been as good as whatever taxonomy built the graph.
+
+`audit_containment.py`, over 616 taxid-to-taxid links:
+
+| | |
+|---|---:|
+| confirmed by NCBI ancestry | 601 |
+| deliberate split links (the paper's own naming) | 11 |
+| true but not the nearest ancestor | 7 |
+| taxid NCBI 2024 no longer carries | 2 |
+| **not an ancestor at all — DEFECT** | **2** |
+
+The two defects are `Oscillospiraceae ⊃ Gemmiger` and `Clostridium ⊃
+[Clostridium] innocuum`, where the bracket in the name is NCBI saying the
+placement is wrong. Both are taxonomy drift rather than build errors, and both
+are **left in place**: fixing two links by overriding the graph's own taxonomy
+with a second, synonym-less source would trade a 0.3% error rate for a
+mixed-provenance hierarchy. Mechanical once the taxdump is reachable.
+
+Writing the audit paid for itself immediately by finding two bugs in this
+session's own change:
+
+- **The split flag was lost on the three most interesting nodes.**
+  `split_from_parent` keyed off `taxon_how`, which is a `setdefault` — the first
+  surface string to reach a node wins. For *Phocaeicola dorei*, *Holdemanella
+  biformis* and *Enterocloster clostridioformis* the corpus **already had a node
+  under the current name**, the legacy string merged into it, and the flag never
+  got set on exactly the cases most worth auditing. (Checked whether those
+  merges pooled evidence: they did not — no shared disease between the two
+  names. Only the *F. prausnitzii* misspelling pooled, and that created the one
+  genuine new contest.)
+- **A misspelling became a node label.** Taxid 573 displayed as *"Klebsiella
+  pneumonia"*. Labelling a split node with its surface string is right for a
+  superseded name and wrong for a typo, and no string property separates them:
+  `rectale` → `rectalis` scores 0.80 and is a real reclassification,
+  `pneumonia` → `pneumoniae` scores 0.95 and is a typo. The 13 misspellings now
+  carry an explicit display name.
+
+Re-running the child-fold detection on the rebuilt graph leaves **36 strings
+that still extend their node, 24 of which are `X sp.` / `X spp.` /
+`X unclassified` where folding is correct.** The ~10 residue — GTDB sub-genus
+suffixes (`Blautia_A`, `Fusobacterium_A`), truncated placeholder tails, and
+forms the regex misses (`Christensenellaceae group R7`, `Atopobium cluster`) —
+is logged and deliberately not chased. It would be a seventh structural
+correction, and this session has just re-confirmed that agreement cannot see one
+of that size.

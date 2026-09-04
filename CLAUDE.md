@@ -10,17 +10,20 @@ literature — nodes for microbial taxa and diseases, edges for "taxon X is **en
 in disease Y."
 
 Extraction is done and **the graph is built**: see `proj_2_attempt3/kg/`, published at
-<https://www.mohakprakash.com/KnightLabV2/>. **918 taxa** (72% resolved to NCBI
-taxids), **40 diseases**, **2,011 association edges** plus
-**708 taxonomic-containment links**, from **272 contributing
+<https://www.mohakprakash.com/KnightLabV2/>. **946 taxa** (70% resolved to NCBI
+taxids), **40 diseases**, **2,059 association edges** plus
+**732 taxonomic-containment links**, from **272 contributing
 papers** of a screened 326-paper corpus. It agrees with two independent hand-curated databases at
-**71.9%** (Disbiome) and **72.5%** (Peryton) on edge direction.
+**73.3%** (Disbiome) and **73.2%** (Peryton) on edge direction.
 
-*Numbers current as of 2026-09-03; the earlier "712 taxa / 1,398 edges / 77.5% / 75.6%, from 250
+*Numbers current as of 2026-09-04; the earlier "712 taxa / 1,398 edges / 77.5% / 75.6%, from 250
 papers" line described a graph three corpus revisions ago. Agreement fell because the corpus grew
-and the question set changed, NOT because the graph got worse — five structural corrections since
-have each moved agreement by less than this corpus can resolve (~0.013). See
-`proj_2_attempt3/kg/SESSION_LOG.md`.*
+and the question set changed, NOT because the graph got worse — **six** structural corrections since
+have each moved agreement by less than this corpus can resolve (~0.013). The latest one looked like
+an exception, and was not: the headline rose 1.4 points, but on the 162 pairs present before and
+after it is unchanged to three decimal places and not one pair flipped. The movement was coverage —
+new pairs entering the comparison — which is why a rate must be decomposed, never quoted, after a
+correction that changes node keys. See `proj_2_attempt3/kg/SESSION_LOG.md`.*
 
 **Caveat on the gold standard.** The human annotations are under audit and are turning out to be
 unreliable; the annotator expects to report an error rate rather than a corrected set. So the
@@ -178,8 +181,14 @@ Built from the 250-paper extraction. Published: <https://www.mohakprakash.com/Kn
   **ill-posed** — 145 of 211 contributing papers do both, and only 7 are contested-only. The
   comparison must be within a fixed taxon-disease pair.
 - 11 pairs are contradicted by **both** Disbiome and Peryton — the highest-value review targets.
-- 258 of 918 taxa never resolve to a taxid (16S clade labels like `[Eubacterium] ventriosum group`),
+- 283 of 946 taxa never resolve to a taxid (16S clade labels like `[Eubacterium] ventriosum group`),
   which now includes 100 deliberately-split SILVA rank placeholders (`Prevotella 9`).
-- **54 named species are still folded into their genus** (`Prevotella copri` into `Prevotella`) — a rank
-  collapse the project forbids. Diagnosed and classified in `proj_2_attempt3/kg/child_folds.json`;
-  fixing it needs the NCBI taxdump. This is the top open defect.
+- ~~54 named species folded into their genus~~ — **FIXED 2026-09-04**
+  (`proj_2_attempt3/kg/FINDINGS_species_split.md`). The taxdump is still unreachable, but `taxoniq`
+  ships NCBI's taxon DB via PyPI. `named_child` turned out to be three categories: 25 real species
+  (own node, own taxid), 24 strain/pipeline clade ids and 5 multi-taxon group labels
+  (`Escherichia_Shigella`) — the last two get **no taxid rather than a guessed one**. 24 edges
+  vanished because no paper had ever measured that taxon, and 12 went contested → decisive because
+  the lone dissenting vote was a folded species: **the fold was manufacturing contradictions.**
+- **The binding constraint is now n, not method.** Six structural corrections have not moved
+  agreement and four explanatory variables have returned nulls. More papers needs a GPU.

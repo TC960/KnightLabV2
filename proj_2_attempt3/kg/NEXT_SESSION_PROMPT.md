@@ -59,91 +59,90 @@ on each other and can be fanned out to subagents. Task 2 depends on Task 1.
   every static check.
 - Commit as you go with real reasoning in the messages.
 
-## STATE AS OF 2026-09-03 (already done — do not redo)
+## STATE AS OF 2026-09-04 (already done — do not redo)
 
-Read `SESSION_LOG.md` first; it is the running record and its top entry is the
-current state. In short, **every numbered task below has been done**, and the
-findings docs (`FINDINGS_*.md`) carry the results. What is left is listed under
-"THE ACTUAL NEXT STEPS" at the end of this section.
+Read `SESSION_LOG.md` first; its top entry is the current state. **Every numbered
+task below has been done**, and the `FINDINGS_*.md` docs carry the results. What
+is left is under "THE ACTUAL NEXT STEPS".
 
-- Graph: **272 contributing papers, 918 taxa, 40 diseases, 2,011 edges, 438
-  replicated, 219 contested, 708 containment links, 100 placeholder nodes.**
-  Disbiome **71.9%**, Peryton **72.5%**.
-- **Task 0 (rebuild on the correct datasheet): done.** Honest F1 ~0.59
-  (permutation p=0.001). The old 0.390 was a blank-cell artifact; the old 0.680
-  was an easy-subset figure.
-- **MAIN_DATA screen: done.** 22 of 45 papers are not human case-control
-  studies. Filtering them changed agreement by nothing (McNemar p=1.00 —
-  and see the warning below about that metric).
-- **Task 1 (relation-sentence filter): done and validated.** 94.8% recall of a
-  97.3% ceiling, 281/281 papers covered, `relation_sentences.json`.
-- **Task 1 pooled analysis: done, NULL.** See `FINDINGS_cooccurrence.md`.
-- **Task 2.5 (GraphRAG): done.** Ties BM25 on ranking (0.800 vs 0.783 over 6
-  queries); the real win is containment traversal, not ranking accuracy.
-- **Task 3.1 (11 doubly-contradicted pairs): done.** 11 of 12 adjudicable pairs
-  faithfully report what the paper says. One extraction error in fourteen.
+- Graph: **272 contributing papers, 946 taxa, 40 diseases, 2,059 edges, 437
+  replicated, 209 contested, 732 containment links, 125 placeholder nodes, 23
+  split-out species.** Disbiome **73.3%**, Peryton **73.2%**.
+- **Task 0, the MAIN_DATA screen, Task 1 + its pooled analysis (NULL), Task 2.5
+  (GraphRAG), Task 3.1: all done.** See the findings docs.
+- **The named-child rank collapse is FIXED** (2026-09-04,
+  `FINDINGS_species_split.md`) — this was step 1 below for two sessions.
 
-### Five structural corrections, and a property of the validation
+### The taxdump is still unreachable, and there is a workaround
 
-Paper screen, placeholder split, body-site keying, paper deduplication, and the
-extended placeholder split have each moved agreement by **less than this corpus
-can resolve** (minimum detectable change ~0.013). That is a property of the
-validation — the decisive set is dominated by well-evidenced, unambiguously
-named taxa — not a coincidence. All are justified on correctness of meaning.
-**None may be cited as an accuracy gain.** Do not run another correction
-expecting the agreement number to move.
+`ftp.ncbi.nih.gov` returns CONNECT → 403 from this network policy. Do not spend
+time retrying it. **`pip install taxoniq`** ships NCBI's 2024 taxon database as a
+PyPI data package, and PyPI is reachable. It gives name → taxid, rank and
+parent/child for 2.6M names.
 
-Also retired: the binary "decisive pairs flipped / McNemar" metric is
-**incapable** of responding to a paper-removal correction (a unanimous edge that
-loses papers stays unanimous). Use `agreement_metric.py`'s signed concordance
-with a paper-level null.
+**It has NO synonyms** (`Bacteroidetes` and `Firmicutes` both KeyError), so it
+**cannot replace `taxonomy.py`** — synonym folding is that module's entire job.
+Use it the way this session did: an additive lookup for named strings, and an
+independent source to audit ancestry against (`audit_containment.py`).
+
+### SIX structural corrections, and a property of the validation
+
+Paper screen, placeholder split, body-site keying, deduplication, extended
+placeholder split, and now the named-child split have each moved agreement by
+**less than this corpus can resolve**. The last one looked like an exception —
+the headline rose 1.4 points — and the decomposition killed it: **on the 162
+pairs present before and after, agreement is unchanged to three decimal places
+and not one pair flipped.** The movement was entirely new pairs entering the
+comparison.
+
+**Do not run another structural correction expecting agreement to move.** Justify
+corrections on correctness of meaning, and say so. And note the general lesson:
+when a correction changes the node KEYS, a rate can move purely through
+coverage — decompose it (`analyze_species_split.py`) rather than reporting the
+rate. `agreement_metric.py` is for paper-REMOVAL corrections only; its null
+resamples dropped papers.
 
 ### What has been tested against contested edges, and returned null
 
-Study design (FDR 0.243), body site (p=0.120, and the corpus is 97.9% gut), ASD
-being worse (p=0.211), and taxon co-occurrence pooled and per-edge (p=0.14,
-AUC 0.535 p=0.21). **Four explanatory variables, four nulls.** The minimum
-detectable effects are set by n — 130 contested edges averaging ~5 papers — not
-by the statistics. Expect the two remaining Task 1 questions (does profile
-predict disagreement with the curated databases; are there taxon modules) to
-return the same answer at the same n.
+Study design (FDR 0.243), body site (p=0.120, corpus is 97.9% gut), ASD being
+worse (p=0.211), taxon co-occurrence pooled and per-edge (p=0.14, AUC 0.535
+p=0.21). **Four explanatory variables, four nulls.** The minimum detectable
+effects are set by n, not by the statistics.
 
-### The method that HAS worked, twice
+### The method that HAS worked, three times now
 
 **Anomaly-hunt the graph's own structure instead of testing hypotheses about
-it.** Both real results this month came that way: the placeholder rank collapse,
-and this session's 12 duplicate papers (found because three "signal" edges had
-paper-profile cosine of exactly 1.00). Ask cheap structural questions — does a
-paper contradict itself, do two nodes mean one thing, does a surface string
-extend the name it resolved to — and verify by rebuilding and diffing.
+it.** The placeholder rank collapse, the 12 duplicate papers, and this session's
+containment audit all came that way — and the audit found two bugs in the very
+change it was written to check. Ask cheap structural questions (does a paper
+contradict itself, do two nodes mean one thing, is this parent actually an
+ancestor) and verify by rebuilding and diffing.
 
-**Verify every fix by rebuilding TWICE and diffing.** Two fixes in this repo
-have silently erased themselves on rebuild while printing success.
+**Verify every fix by rebuilding TWICE and diffing.** Three fixes in this repo
+have now misbehaved on the second build — the latest asserted 11 containment
+links a second time, because the replay cache had by then read the new parents
+back out of `graph.json`.
 
 ### THE ACTUAL NEXT STEPS
 
-1. **Split the 54 named species out of their genera. NEEDS THE NCBI TAXDUMP.**
-   `Prevotella copri` is folded into `Prevotella`, `Klebsiella pneumonia` into
-   `Klebsiella` — a rank collapse the project explicitly forbids, on the graph's
-   flagship edge. All 115 child-folds are classified in `child_folds.json`
-   (54 `named_child` = fix these; 32 `placeholder_child` = already fixed; 29
-   `unspecified_member` = correct as-is, do NOT touch). Several are
-   misspellings (`Faecalibacterium prauznitzii`, `Bacteroides uniforms`) needing
-   fuzzy resolution or they become unresolved singletons. **This is why it was
-   not done in the cloud: that environment's network policy denies
-   `ftp.ncbi.nih.gov` (CONNECT -> 403), so the taxdump is unavailable and
-   splitting them there would have LOST the Disbiome/Peryton join for exactly
-   the species that matter.** On a machine with the taxdump this is mechanical.
+1. **More papers. This is the binding constraint on everything else.** Six
+   structural corrections in a row have not moved agreement, and four
+   explanatory variables have returned nulls at n=130 contested edges. The limit
+   is n, not method. ~47 recoverable Emily papers plus ~57 neuro-titled
+   MAIN_DATA papers not in our set; realistic ceiling ~350. Filter to human
+   case-control FIRST. **Extraction needs a GPU — ask before spending.**
 
-2. **More papers.** The binding constraint on every remaining question is n, not
-   method. Extraction needs a GPU — **ask before spending.**
+2. **Model disease subtypes as containment, the way taxa now are.**
+   `Intracerebral hemorrhage` sits beside `Stroke`, `Chronic traumatic complete
+   spinal cord injury` beside `Spinal cord injury`, with no link. This is a
+   design decision, not a bug — **it needs a human call**, which is why an
+   autonomous session should not just do it.
 
-3. Model disease subtypes as containment rather than separate nodes, the way
-   taxa already are: `Intracerebral hemorrhage` / `Hypertensive intracerebral
-   hemorrhage` sit beside `Stroke`, and `Chronic traumatic complete spinal cord
-   injury` beside `Spinal cord injury`, with no link between them. (The one pure
-   *synonym* case, three spellings of anti-NMDAR encephalitis, is already
-   folded.) This is a design decision, not a bug — it needs a human call.
+3. Small and optional: **~10 residual child-folds** (GTDB `Blautia_A`,
+   `Christensenellaceae group R7`, `Atopobium cluster`) that the PLACEHOLDER
+   regex misses, and **2 containment defects** (`Oscillospiraceae ⊃ Gemmiger`,
+   `Clostridium ⊃ [Clostridium] innocuum`) that want the real taxdump. Both are
+   logged in `SESSION_LOG.md`. Neither will move any number.
 
 ## TASK 1 — Relation-bearing sentences (DONE — kept for the design rationale)
 
