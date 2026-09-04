@@ -1,0 +1,30 @@
+{
+ "disbiome": {
+  "n_before": 166,
+  "n_after": 176,
+  "rate_before": 0.7168674698795181,
+  "rate_after": 0.7329545454545454,
+  "added": 14,
+  "added_agree": 13,
+  "dropped": 4,
+  "dropped_agree": 3,
+  "flipped": 0,
+  "common": 162,
+  "common_rate_before": 0.7160493827160493,
+  "common_rate_after": 0.7160493827160493
+ },
+ "peryton": {
+  "n_before": 137,
+  "n_after": 138,
+  "rate_before": 0.7299270072992701,
+  "rate_after": 0.7318840579710145,
+  "added": 2,
+  "added_agree": 2,
+  "dropped": 1,
+  "dropped_agree": 1,
+  "flipped": 0,
+  "common": 136,
+  "common_rate_before": 0.7279411764705882,
+  "common_rate_after": 0.7279411764705882
+ }
+}

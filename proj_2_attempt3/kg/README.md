@@ -15,20 +15,26 @@ extractions_screened.json                        (extraction, 326 rows -> 314 af
 
 | | |
 |---|---:|
-| taxon–disease edges | 2,011 |
-| distinct taxa | 918 |
+| taxon–disease edges | 2,059 |
+| distinct taxa | 946 |
 | diseases (normalized) | 40 |
-| edges seen in >1 paper | 438 |
-| **contested** (papers disagree on direction) | **219** |
-| containment links | 708 |
-| rank-placeholder nodes | 100 |
+| edges seen in >1 paper | 437 |
+| **contested** (papers disagree on direction) | **209** |
+| containment links | 732 |
+| rank-placeholder nodes | 125 |
+| split-out species nodes | 23 |
 | papers contributing ≥1 association | 272 / 326 |
 
-*Updated 2026-09-03. Three structural corrections that session — 12 duplicate
-papers removed, three NMDAR disease nodes folded into one, and 32 more SILVA
-rank placeholders split out of their parents — changed these counts; see
-`SESSION_LOG.md`. None of them moved agreement with the curated databases, and
-none should be cited as an accuracy improvement.*
+*Updated 2026-09-04. The last known rank collapse is fixed: 54 named children —
+`Prevotella copri` inside *Prevotella*, `Eubacterium rectale` inside
+*Eubacterium* — are split out of their parents (`FINDINGS_species_split.md`).
+24 edges vanished because no paper had ever measured that taxon, and 12 went
+contested → decisive because the lone dissenting vote was a folded species.
+Headline agreement rose (Disbiome 71.9% → 73.3%, Peryton 72.5% → 73.2%) but
+**this is coverage, not accuracy**: on the 162 pairs present before and after,
+agreement is unchanged to three decimal places and not one pair flipped. That is
+now **six** structural corrections that agreement cannot see; none may be cited
+as an accuracy improvement.*
 
 ## Design decisions, and why
 
@@ -118,14 +124,14 @@ Huntington's, MCI, epilepsy, migraine, myasthenia gravis, neuromyelitis optica).
 
 | | |
 |---|---:|
-| pairs in both | **264** |
-| of our in-scope pairs corroborated | 264/1254 (21.1%) |
-| of Disbiome's pairs we recovered | 264/501 (**52.7%**) |
-| direction **agreement** (both decisive) | **120/167 (71.9%)** |
-| direction disagreement | 47 (28.1%) |
+| pairs in both | **267** |
+| of our in-scope pairs corroborated | 267/1272 (21.0%) |
+| of Disbiome's pairs we recovered | 267/505 (**52.9%**) |
+| direction **agreement** (both decisive) | **129/176 (73.3%)** |
+| direction disagreement | 47 (26.7%) |
 
-*(Peryton, same join: 220 overlapping pairs, 72.8% recall, direction agreement
-100/138 = **72.5%**.) These figures are measured with the replay taxonomy cache,
+*(Peryton, same join: 221 overlapping pairs, 73.9% recall, direction agreement
+101/138 = **73.2%**; 37 disagreements.) These figures are measured with the replay taxonomy cache,
 not the NCBI taxdump — this environment's network policy denies
 `ftp.ncbi.nih.gov` — so they run ~0.2–1.1 points off taxdump-measured runs and
 are sound for before/after deltas rather than as new absolute numbers.*

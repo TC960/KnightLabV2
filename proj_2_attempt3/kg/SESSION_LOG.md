@@ -4,6 +4,91 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+# SUMMARY — session of 2026-09-04
+
+**The project's top open defect is fixed: the 54 named children are split out of
+their parents. It is the sixth structural correction in a row that cannot be
+called an accuracy gain — measured properly, agreement on the pairs present
+before and after is unchanged to three decimal places — but it is the first that
+buys real COVERAGE, because the fold was manufacturing contradictions.**
+Write-up: `FINDINGS_species_split.md`.
+
+### What I tested, and what survived
+
+- **The split itself: DONE, and it is not the whole story.** `Prevotella copri`
+  was folded into *Prevotella*, `Eubacterium rectale` into *Eubacterium* — 95
+  observations over 64 edges, 33 contested. ***Eubacterium*/Multiple sclerosis
+  was 1 up / 3 down and all four papers named a species. No paper measured the
+  genus.** Graph: 918 → 946 taxa, 2,011 → 2,059 edges, 708 → 732 containment,
+  219 → **209 contested**. 24 edges vanished, every one an edge no paper ever
+  measured. 12 edges went contested → decisive, 2 the other way.
+- **The agreement gain is coverage. NOT an accuracy gain.** Headline moved
+  Disbiome 71.9% → 73.3%, Peryton 72.5% → 73.2% — more than any previous
+  correction, which is when to be most careful. `agreement_metric.py` does not
+  apply (its null resamples dropped papers; this correction drops none, it
+  re-keys strings), so the rate was decomposed instead. Disbiome: **14 pairs
+  added, 4 dropped, and ZERO of the 162 pairs present in both changed verdict —
+  71.605% → 71.605%.** Peryton the same, 72.794% → 72.794%. The whole movement
+  is new pairs entering the comparison. Six for six.
+- **NULL, tested and reported: do the added pairs agree better than the base
+  rate?** 13 of 14 agree vs 71.6% — one-sided binomial **p = 0.061**. Not
+  significant, and post-hoc besides (the pairs were picked after seeing which
+  moved). At n = 14 nothing short of a very large effect is resolvable.
+- **The taxdump is still unreachable here.** `ftp.ncbi.nih.gov` CONNECT → 403,
+  unchanged. `taxoniq` ships NCBI's taxon DB as a PyPI data package and PyPI is
+  reachable, which is the way in — but it has **scientific names only, no
+  synonyms** (`Bacteroidetes` KeyErrors), so it cannot replace `taxonomy.py` and
+  is used strictly as an additive lookup with recorded provenance.
+
+### What did NOT work, and why it is in the code as a comment
+
+**Automatic matching, twice.** Constrained to the folded-into genus it lost four
+of the five highest-evidence species, because the genus is what has MOVED (NCBI
+reassigned *B. dorei*, *B. vulgatus*, *B. plebeius* to *Phocaeicola*, *P. copri*
+to *Segatella*). Widened to the family it matched `Eubacterium_g4` onto the
+genus *Eubacterium* itself — reintroducing the exact collapse being fixed. A
+similarity score cannot tell a misspelling from a different taxon.
+
+The replacement is a hand-adjudicated table whose every entry is **verified**
+against NCBI (must exist, must be species rank, must share its epithet). It
+rejected **six of my own proposals**, which is the point of having it.
+
+### `named_child` was three categories, not one
+
+25 real species (own node, own taxid); 24 strain/bin/pipeline clade ids
+(`Clostridium_XlVa`, `Dorea asp: CAG:317`) and 5 multi-taxon group labels
+(`Escherichia_Shigella`) — the last two get **no taxid rather than a guessed
+one**. Unresolved taxa therefore go UP, 258 → 283. That is the fix working.
+
+### The self-erasing rebuild, in a new form — caught again by building twice
+
+Build 1 produced 739 containment links, build 2 produced 750: the replay cache
+had by then read the split parents back out of `graph.json`, so the lineage walk
+asserted 11 links the explicit pass had already added. Deduplicated on
+(parent, child); two consecutive builds are now byte-identical. **Three fixes in
+this repo have now misbehaved on the second build. Never ship one without
+rebuilding twice and diffing.**
+
+### Shipped
+
+`graph.json` / `kg.html` / `docs/index.html` / `rag_corpus.jsonl` rebuilt:
+**272 contributing papers, 946 taxa, 2,059 edges, 209 contested, 732 containment
+links, 40 diseases.** Disbiome 73.3%, Peryton 73.2%. New:
+`resolve_named_children.py`, `analyze_species_split.py`,
+`named_child_taxids.json`, `species_split_effect.json`,
+`species_extdb_coverage.json`, `FINDINGS_species_split.md`.
+
+### Highest-value next step
+
+**More papers.** Unchanged, and now better evidenced: this session removed the
+last known structural defect and the agreement number did not move, for the
+sixth time. Every remaining question — contested edges, co-occurrence, embedding
+separation — is limited by n, not by method. Extraction needs a GPU; ask before
+spending. The cheap runner-up is disease-subtype containment (`Intracerebral
+hemorrhage` beside `Stroke`), which is a design decision needing a human call.
+
+---
+
 # SUMMARY — session of 2026-09-03
 
 **The assigned analysis returned a null. Attacking it, and then attacking the
