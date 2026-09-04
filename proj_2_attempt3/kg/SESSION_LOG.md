@@ -69,6 +69,56 @@ asserted 11 links the explicit pass had already added. Deduplicated on
 this repo have now misbehaved on the second build. Never ship one without
 rebuilding twice and diffing.**
 
+### Second finding: the containment hierarchy has never been checked, and now can be
+
+`taxonomy_cache` stores "nearest-present-ancestor links, not full NCBI lineages"
+by its own docstring, so the graph's containment has only ever been as good as
+whatever taxonomy built it — there was no independent source to check it
+against. taxoniq is one. `audit_containment.py`:
+
+**616 taxid-to-taxid links: 601 confirmed by NCBI ancestry, 11 deliberate split
+links, 7 true-but-coarse, 2 taxids NCBI 2024 no longer has, and 2 DEFECTS** —
+`Oscillospiraceae ⊃ Gemmiger` and `Clostridium ⊃ [Clostridium] innocuum`, where
+the bracket in the name is NCBI saying the placement is wrong. Both are taxonomy
+drift, not build errors, and both are left in place: fixing two links by
+overriding the graph's own taxonomy with a second, synonym-less source would
+trade a 0.3% error for a mixed-provenance hierarchy. Mechanical once the taxdump
+is available.
+
+The 7 coarse links are not defects — `Lachnospiraceae ⊃ [Clostridium] symbiosum`
+is true, it is just not the nearest ancestor (*Lachnoclostridium* is, and is
+also a node).
+
+### Two bugs the audit found in this session's own work
+
+- **The split flag was silently lost on the three most interesting nodes.**
+  `split_from_parent` keyed off `taxon_how`, which is a `setdefault` — so the
+  first surface string to reach a node wins. For *Phocaeicola dorei*,
+  *Holdemanella biformis* and *Enterocloster clostridioformis* the corpus
+  ALREADY had a node under the CURRENT name, and the legacy string merged into
+  it, so the flag never got set on exactly the cases most worth auditing. Now
+  keyed on membership in `SPECIES_PARENT`. (Checked whether those merges pooled
+  any evidence: **they did not** — no shared disease between the two names.
+  Only the *F. prausnitzii* misspelling pooled, and it created a real contest.)
+- **A misspelling became a node label.** Taxid 573 displayed as "Klebsiella
+  pneumonia". The default of labelling a split node with the surface string is
+  right for a superseded name (*Prevotella copri*) and wrong for a typo, and no
+  string property separates them — `rectale`→`rectalis` scores 0.80 and is a
+  real reclassification, `pneumonia`→`pneumoniae` scores 0.95 and is a typo. So
+  the 13 misspellings carry an explicit display name.
+
+### Logged, not fixed: 36 surface strings still extend the node they resolved to
+
+Re-running the 2026-09-03 detection on the rebuilt graph. **24 are `X sp.` /
+`X spp.` / `X unclassified`, where folding IS correct** and must not change. The
+residue is ~10: GTDB sub-genus suffixes (`Blautia_A`, `Fusobacterium_A`,
+`Ruminococcus _E`), truncated placeholder tails (`Eubacterium g`,
+`Lachnospiraceae_g`), and forms the PLACEHOLDER regex just misses
+(`Christensenellaceae group R7`, `Atopobium cluster`, `Coriobacteriales Incertae
+Sedis`). Deliberately not chased: it is a seventh structural correction, the
+evidence behind it is thin, and this session has just re-confirmed that
+agreement cannot see corrections of this size.
+
 ### Shipped
 
 `graph.json` / `kg.html` / `docs/index.html` / `rag_corpus.jsonl` rebuilt:
@@ -76,7 +126,8 @@ rebuilding twice and diffing.**
 links, 40 diseases.** Disbiome 73.3%, Peryton 73.2%. New:
 `resolve_named_children.py`, `analyze_species_split.py`,
 `named_child_taxids.json`, `species_split_effect.json`,
-`species_extdb_coverage.json`, `FINDINGS_species_split.md`.
+`species_extdb_coverage.json`, `audit_containment.py`,
+`containment_audit.json`, `FINDINGS_species_split.md`.
 
 ### Highest-value next step
 

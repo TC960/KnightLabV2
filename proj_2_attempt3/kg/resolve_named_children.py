@@ -124,6 +124,34 @@ SPECIES = {
     "Fusobacterium_A mortiferum":       "Fusobacterium mortiferum",
 }
 
+# The node's display name. Default is the surface string, because that is what
+# the corpus and both curated databases call the organism -- renaming the node
+# to *Segatella copri* would be more correct and less useful. But that default is
+# wrong for a MISSPELLING: it made taxid 573 display as "Klebsiella pneumonia",
+# and a graph that shows a typo as a species name is worse than one that shows a
+# superseded name. So a misspelling is displayed under the correct spelling of
+# the name the paper was reaching for -- the legacy binomial, not necessarily
+# NCBI's current one.
+#
+# This cannot be derived from the epithet ratio. `rectale` -> `rectalis` scores
+# 0.80 and is a legitimate reclassification; `pneumonia` -> `pneumoniae` scores
+# 0.95 and is a typo. Nothing in the strings distinguishes them, so it is stated.
+LABEL = {
+    "Klebsiella pneumonia":         "Klebsiella pneumoniae",
+    "Bacteroides uniforms":         "Bacteroides uniformis",
+    "Bacteroides plebeus":          "Bacteroides plebeius",
+    "Faecalibacterium prauznitzii": "Faecalibacterium prausnitzii",
+    "Faecalibacterium prasunitzii": "Faecalibacterium prausnitzii",
+    "Bifidobacterium brevis":       "Bifidobacterium breve",
+    "Hungatella hathewyi":          "Hungatella hathewayi",
+    "Hungatella effluvia":          "Hungatella effluvii",
+    "Monoglobus pectinyliticus":    "Monoglobus pectinilyticus",
+    "Oribacterium sinu":            "Oribacterium sinus",
+    "Prevotella shaii":             "Prevotella shahii",
+    "Prevotella jejunii":           "Prevotella jejuni",
+    "Fusobacterium_A mortiferum":   "Fusobacterium mortiferum",
+}
+
 # Labels that are a strain, an assembly bin, or a pipeline's clade id rather than
 # a species name: CAG bins, GTDB `sp001543345` accessions and `Fusobacterium_A`
 # suffixes, roman-numeral RDP clusters, bare uppercase tags. Case-SENSITIVE on
@@ -233,7 +261,8 @@ def resolve_one(surface, parent_name, parent_taxid):
             return rec
         tfam = family_of(t.tax_id)
         rec.update(verdict="species", taxid=str(t.tax_id),
-                   label=raw, ncbi_current_name=t.scientific_name,
+                   label=LABEL.get(surface, raw), surface_is_misspelling=surface in LABEL,
+                   ncbi_current_name=t.scientific_name,
                    renamed=(t.scientific_name.lower() != raw.lower()),
                    rank="species", family=tfam.scientific_name if tfam else None,
                    moved_family=bool(fam and tfam and fam.tax_id != tfam.tax_id),

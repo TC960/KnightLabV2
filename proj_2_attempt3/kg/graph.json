@@ -1509,7 +1509,7 @@
     },
     {
       "id": "t:ncbi:237576",
-      "label": "Oribacterium sinu",
+      "label": "Oribacterium sinus",
       "type": "taxon",
       "taxid": "237576",
       "resolved": true,
@@ -1590,7 +1590,7 @@
     },
     {
       "id": "t:ncbi:1685",
-      "label": "Bifidobacterium brevis",
+      "label": "Bifidobacterium breve",
       "type": "taxon",
       "taxid": "1685",
       "resolved": true,
@@ -2089,6 +2089,8 @@
       "taxid": "853",
       "resolved": true,
       "placeholder": false,
+      "parent_taxid": "216851",
+      "split_from_parent": true,
       "aliases": [
         "Faecalibacterium prasunitzii",
         "Faecalibacterium prausnitzii",
@@ -2367,7 +2369,7 @@
     },
     {
       "id": "t:ncbi:573",
-      "label": "Klebsiella pneumonia",
+      "label": "Klebsiella pneumoniae",
       "type": "taxon",
       "taxid": "573",
       "resolved": true,
@@ -2492,6 +2494,8 @@
       "taxid": "820",
       "resolved": true,
       "placeholder": false,
+      "parent_taxid": "816",
+      "split_from_parent": true,
       "aliases": [
         "Bacteroides uniformis",
         "Bacteroides uniforms"
@@ -2608,7 +2612,7 @@
     },
     {
       "id": "t:ncbi:850",
-      "label": "Fusobacterium_A mortiferum",
+      "label": "Fusobacterium mortiferum",
       "type": "taxon",
       "taxid": "850",
       "resolved": true,
@@ -3076,6 +3080,8 @@
       "taxid": "1735",
       "resolved": true,
       "placeholder": false,
+      "parent_taxid": "1730",
+      "split_from_parent": true,
       "aliases": [
         "Eubacterium biforme",
         "Holdemanella biformis"
@@ -3155,6 +3161,8 @@
       "taxid": "357276",
       "resolved": true,
       "placeholder": false,
+      "parent_taxid": "816",
+      "split_from_parent": true,
       "aliases": [
         "Bacteroides dorei",
         "Phocaeicola dorei"
@@ -3339,6 +3347,8 @@
       "taxid": "1981510",
       "resolved": true,
       "placeholder": false,
+      "parent_taxid": "2039302",
+      "split_from_parent": true,
       "aliases": [
         "Monoglobus pectinilyticus",
         "Monoglobus pectinyliticus"
@@ -3505,7 +3515,7 @@
     },
     {
       "id": "t:ncbi:154046",
-      "label": "Hungatella hathewyi",
+      "label": "Hungatella hathewayi",
       "type": "taxon",
       "taxid": "154046",
       "resolved": true,
@@ -3719,7 +3729,7 @@
     },
     {
       "id": "t:ncbi:310297",
-      "label": "Bacteroides plebeus",
+      "label": "Bacteroides plebeius",
       "type": "taxon",
       "taxid": "310297",
       "resolved": true,
@@ -6356,6 +6366,8 @@
       "taxid": "1531",
       "resolved": true,
       "placeholder": false,
+      "parent_taxid": "1485",
+      "split_from_parent": true,
       "aliases": [
         "Clostridium clostridioforme",
         "Enterocloster clostridioformis"
@@ -12053,7 +12065,7 @@
     },
     {
       "id": "t:ncbi:1096246",
-      "label": "Hungatella effluvia",
+      "label": "Hungatella effluvii",
       "type": "taxon",
       "taxid": "1096246",
       "resolved": true,
@@ -12368,7 +12380,7 @@
     },
     {
       "id": "t:ncbi:228603",
-      "label": "Prevotella shaii",
+      "label": "Prevotella shahii",
       "type": "taxon",
       "taxid": "228603",
       "resolved": true,
@@ -12383,7 +12395,7 @@
     },
     {
       "id": "t:ncbi:1177574",
-      "label": "Prevotella jejunii",
+      "label": "Prevotella jejuni",
       "type": "taxon",
       "taxid": "1177574",
       "resolved": true,
@@ -17414,7 +17426,7 @@
         "oral": 1
       },
       "gut_only": false,
-      "taxon": "Oribacterium sinu",
+      "taxon": "Oribacterium sinus",
       "taxon_key": "ncbi:237576",
       "rank": "species",
       "resolved": true,
@@ -17605,7 +17617,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Bifidobacterium brevis",
+      "taxon": "Bifidobacterium breve",
       "taxon_key": "ncbi:1685",
       "rank": "species",
       "resolved": true,
@@ -17743,8 +17755,8 @@
     },
     {
       "sites": {
-        "stool": 3,
-        "oral": 1
+        "oral": 1,
+        "stool": 3
       },
       "gut_only": false,
       "taxon": "Bacteroidaceae",
@@ -17834,8 +17846,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 12
+        "stool": 12,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Bacteroides",
@@ -18075,8 +18087,8 @@
     },
     {
       "sites": {
-        "stool": 3,
-        "oral": 1
+        "oral": 1,
+        "stool": 3
       },
       "gut_only": false,
       "taxon": "Phascolarctobacterium",
@@ -18748,8 +18760,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 8
+        "stool": 8,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Bifidobacterium",
@@ -19710,8 +19722,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Stenotrophomonas",
@@ -21032,8 +21044,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 1
+        "stool": 1,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Prevotella pallens",
@@ -21689,7 +21701,7 @@
         "stool": 2
       },
       "gut_only": true,
-      "taxon": "Klebsiella pneumonia",
+      "taxon": "Klebsiella pneumoniae",
       "taxon_key": "ncbi:573",
       "rank": "species",
       "resolved": true,
@@ -22684,8 +22696,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Fusobacteriota",
@@ -22868,7 +22880,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Fusobacterium_A mortiferum",
+      "taxon": "Fusobacterium mortiferum",
       "taxon_key": "ncbi:850",
       "rank": "species",
       "resolved": true,
@@ -23045,8 +23057,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Pasteurellaceae",
@@ -23646,8 +23658,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 5
+        "stool": 5,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Lactobacillus",
@@ -26068,7 +26080,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Hungatella hathewyi",
+      "taxon": "Hungatella hathewayi",
       "taxon_key": "ncbi:154046",
       "rank": "species",
       "resolved": true,
@@ -26969,7 +26981,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Bacteroides plebeus",
+      "taxon": "Bacteroides plebeius",
       "taxon_key": "ncbi:310297",
       "rank": "species",
       "resolved": true,
@@ -27449,8 +27461,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 4
+        "stool": 4,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Akkermansia",
@@ -31819,8 +31831,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Fusobacterium",
@@ -32133,7 +32145,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Klebsiella pneumonia",
+      "taxon": "Klebsiella pneumoniae",
       "taxon_key": "ncbi:573",
       "rank": "species",
       "resolved": true,
@@ -33056,8 +33068,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 1
+        "stool": 1,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Streptococcaceae",
@@ -33188,8 +33200,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Leptotrichia",
@@ -33260,8 +33272,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Erysipelotrichales",
@@ -33893,8 +33905,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 1
+        "stool": 1,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Actinomycetaceae",
@@ -34313,8 +34325,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Parabacteroides",
@@ -35014,8 +35026,8 @@
     },
     {
       "sites": {
-        "stool": 4,
-        "gut biopsy": 1
+        "gut biopsy": 1,
+        "stool": 4
       },
       "gut_only": true,
       "taxon": "Prevotellaceae",
@@ -40499,7 +40511,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Hungatella hathewyi",
+      "taxon": "Hungatella hathewayi",
       "taxon_key": "ncbi:154046",
       "rank": "species",
       "resolved": true,
@@ -50292,7 +50304,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Bacteroides plebeus",
+      "taxon": "Bacteroides plebeius",
       "taxon_key": "ncbi:310297",
       "rank": "species",
       "resolved": true,
@@ -59508,7 +59520,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Bifidobacterium brevis",
+      "taxon": "Bifidobacterium breve",
       "taxon_key": "ncbi:1685",
       "rank": "species",
       "resolved": true,
@@ -61628,7 +61640,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Fusobacterium_A mortiferum",
+      "taxon": "Fusobacterium mortiferum",
       "taxon_key": "ncbi:850",
       "rank": "species",
       "resolved": true,
@@ -76783,7 +76795,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Hungatella effluvia",
+      "taxon": "Hungatella effluvii",
       "taxon_key": "ncbi:1096246",
       "rank": "species",
       "resolved": true,
@@ -77779,7 +77791,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Prevotella shaii",
+      "taxon": "Prevotella shahii",
       "taxon_key": "ncbi:228603",
       "rank": "species",
       "resolved": true,
@@ -77809,7 +77821,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Prevotella jejunii",
+      "taxon": "Prevotella jejuni",
       "taxon_key": "ncbi:1177574",
       "rank": "species",
       "resolved": true,
@@ -77964,7 +77976,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Bifidobacterium brevis",
+      "taxon": "Bifidobacterium breve",
       "taxon_key": "ncbi:1685",
       "rank": "species",
       "resolved": true,
@@ -79524,7 +79536,7 @@
         "stool": 1
       },
       "gut_only": true,
-      "taxon": "Bacteroides plebeus",
+      "taxon": "Bacteroides plebeius",
       "taxon_key": "ncbi:310297",
       "rank": "species",
       "resolved": true,

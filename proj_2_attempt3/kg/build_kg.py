@@ -218,7 +218,9 @@ def norm_taxon(t, tax=None):
             key = f"ncbi:{r['taxid']}"
             if ptid:
                 SPECIES_PARENT[key] = ptid
-            return key, disp, "species", "named_child"
+            # r["label"] is the surface string except where that string is a
+            # misspelling, which is why the node is not simply labelled `disp`.
+            return key, r.get("label", disp), "species", "named_child"
         key = "ph:" + re.sub(r"\s+", " ", disp.lower().replace("_", " ")).strip()
         if ptid:
             PLACEHOLDER_PARENT[key] = ptid
@@ -427,8 +429,15 @@ def build(rows, min_papers=1, tax=None):
           # Same reasoning for a split species: its containment link to the
           # genus it was folded out of is not derivable from a lineage the
           # replay cache does not have, so it is recorded on the node.
+          # Keyed on membership in SPECIES_PARENT, NOT on taxon_how. `taxon_how`
+          # is a setdefault, so the FIRST surface string to reach a node sets it
+          # -- and for three of these the corpus also contains the species under
+          # its CURRENT name (`Phocaeicola dorei` alongside `Bacteroides dorei`,
+          # `Holdemanella biformis` alongside `Eubacterium biforme`). Those nodes
+          # already existed, the legacy string merged into them, and the flag was
+          # silently lost on exactly the cases most worth auditing.
           **({"parent_taxid": SPECIES_PARENT[k], "split_from_parent": True}
-             if taxon_how[k] == "named_child" and k in SPECIES_PARENT else {}),
+             if k in SPECIES_PARENT else {}),
           "aliases": sorted(aliases[k]),
           "rank": taxon_rank[k], "degree": tax_deg[k]} for k in tax_deg]
         + [{"id": f"d:{d}", "label": d, "type": "disease",

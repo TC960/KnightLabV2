@@ -1,0 +1,17 @@
+{
+ "links": 616,
+ "confirmed": 601,
+ "deliberate": 11,
+ "defects": [
+  [
+   "Oscillospiraceae",
+   "Gemmiger"
+  ],
+  [
+   "Clostridium",
+   "[Clostridium] innocuum"
+  ]
+ ],
+ "unknown": 2,
+ "coarse": 7
+}
