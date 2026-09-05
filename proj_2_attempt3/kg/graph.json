@@ -15822,8 +15822,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 2
+        "stool": 2,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Megasphaera",
@@ -17095,8 +17095,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 2
+        "stool": 2,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Fusicatenibacter",
@@ -17236,8 +17236,8 @@
     },
     {
       "sites": {
-        "stool": 8,
-        "oral": 1
+        "oral": 1,
+        "stool": 8
       },
       "gut_only": false,
       "taxon": "Bacteroidota",
@@ -17307,8 +17307,8 @@
     },
     {
       "sites": {
-        "stool": 3,
-        "oral": 1
+        "oral": 1,
+        "stool": 3
       },
       "gut_only": false,
       "taxon": "Bacteroidaceae",
@@ -17398,8 +17398,8 @@
     },
     {
       "sites": {
-        "stool": 12,
-        "oral": 1
+        "oral": 1,
+        "stool": 12
       },
       "gut_only": false,
       "taxon": "Bacteroides",
@@ -17639,8 +17639,8 @@
     },
     {
       "sites": {
-        "stool": 3,
-        "oral": 1
+        "oral": 1,
+        "stool": 3
       },
       "gut_only": false,
       "taxon": "Phascolarctobacterium",
@@ -17765,8 +17765,8 @@
     },
     {
       "sites": {
-        "stool": 10,
-        "oral": 1
+        "oral": 1,
+        "stool": 10
       },
       "gut_only": false,
       "taxon": "Bacillota",
@@ -17846,8 +17846,8 @@
     },
     {
       "sites": {
-        "stool": 4,
-        "oral": 1
+        "oral": 1,
+        "stool": 4
       },
       "gut_only": false,
       "taxon": "Actinomycetota",
@@ -18312,8 +18312,8 @@
     },
     {
       "sites": {
-        "stool": 8,
-        "oral": 1
+        "oral": 1,
+        "stool": 8
       },
       "gut_only": false,
       "taxon": "Bifidobacterium",
@@ -18413,8 +18413,8 @@
     },
     {
       "sites": {
-        "stool": 4,
-        "oral": 1
+        "oral": 1,
+        "stool": 4
       },
       "gut_only": false,
       "taxon": "Pseudomonadota",
@@ -20982,8 +20982,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 6
+        "stool": 6,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Streptococcus",
@@ -21043,8 +21043,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Rothia",
@@ -21891,8 +21891,8 @@
     },
     {
       "sites": {
-        "stool": 2,
-        "oral": 2
+        "oral": 2,
+        "stool": 2
       },
       "gut_only": false,
       "taxon": "Neisseria",
@@ -22378,8 +22378,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Fusobacteriota",
@@ -22709,8 +22709,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Pasteurellaceae",
@@ -23325,8 +23325,8 @@
     },
     {
       "sites": {
-        "stool": 5,
-        "oral": 1
+        "oral": 1,
+        "stool": 5
       },
       "gut_only": false,
       "taxon": "Lactobacillus",
@@ -23481,8 +23481,8 @@
     },
     {
       "sites": {
-        "stool": 2,
-        "oral": 1
+        "oral": 1,
+        "stool": 2
       },
       "gut_only": false,
       "taxon": "Gammaproteobacteria",
@@ -23552,8 +23552,8 @@
     },
     {
       "sites": {
-        "stool": 3,
-        "oral": 1
+        "oral": 1,
+        "stool": 3
       },
       "gut_only": false,
       "taxon": "Enterobacterales",
@@ -25403,8 +25403,8 @@
     },
     {
       "sites": {
-        "gut biopsy": 1,
-        "stool": 3
+        "stool": 3,
+        "gut biopsy": 1
       },
       "gut_only": true,
       "taxon": "Gammaproteobacteria",
@@ -26665,8 +26665,8 @@
     },
     {
       "sites": {
-        "stool": 2,
-        "oral": 1
+        "oral": 1,
+        "stool": 2
       },
       "gut_only": false,
       "taxon": "Verrucomicrobiota",
@@ -26736,8 +26736,8 @@
     },
     {
       "sites": {
-        "stool": 2,
-        "oral": 1
+        "oral": 1,
+        "stool": 2
       },
       "gut_only": false,
       "taxon": "Synergistota",
@@ -26837,8 +26837,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Synergistia",
@@ -26963,8 +26963,8 @@
     },
     {
       "sites": {
-        "stool": 4,
-        "oral": 1
+        "oral": 1,
+        "stool": 4
       },
       "gut_only": false,
       "taxon": "Akkermansia",
@@ -27144,8 +27144,8 @@
     },
     {
       "sites": {
-        "stool": 2,
-        "oral": 1
+        "oral": 1,
+        "stool": 2
       },
       "gut_only": false,
       "taxon": "Alloprevotella",
@@ -27475,8 +27475,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Lactobacillaceae",
@@ -27681,8 +27681,8 @@
     },
     {
       "sites": {
-        "stool": 2,
-        "oral": 1
+        "oral": 1,
+        "stool": 2
       },
       "gut_only": false,
       "taxon": "Veillonella",
@@ -27862,8 +27862,8 @@
     },
     {
       "sites": {
-        "gut biopsy": 1,
-        "stool": 1
+        "stool": 1,
+        "gut biopsy": 1
       },
       "gut_only": true,
       "taxon": "Ralstonia",
@@ -31223,8 +31223,8 @@
     },
     {
       "sites": {
-        "oral": 1,
-        "stool": 1
+        "stool": 1,
+        "oral": 1
       },
       "gut_only": false,
       "taxon": "Fusobacterium",
@@ -32329,8 +32329,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Veillonellaceae",
@@ -32431,8 +32431,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Streptococcus",
@@ -32497,8 +32497,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Leptotrichia",
@@ -32533,8 +32533,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Erysipelotrichia",
@@ -32569,8 +32569,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Erysipelotrichales",
@@ -32605,8 +32605,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Erysipelotrichaceae",
@@ -32761,8 +32761,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Coriobacteriaceae",
@@ -32797,8 +32797,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Atopobium",
@@ -32833,8 +32833,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Solobacterium",
@@ -32929,8 +32929,8 @@
     },
     {
       "sites": {
-        "stool": 3,
-        "oral": 1
+        "oral": 1,
+        "stool": 3
       },
       "gut_only": false,
       "taxon": "Enterobacteriaceae",
@@ -33005,8 +33005,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Escherichia",
@@ -33101,8 +33101,8 @@
     },
     {
       "sites": {
-        "stool": 2,
-        "oral": 1
+        "oral": 1,
+        "stool": 2
       },
       "gut_only": false,
       "taxon": "Rothia",
@@ -33142,8 +33142,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Verrucomicrobiia",
@@ -33364,8 +33364,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Pseudomonas",
@@ -33490,8 +33490,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Olsenella",
@@ -33526,8 +33526,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Acidaminococcaceae",
@@ -33592,8 +33592,8 @@
     },
     {
       "sites": {
-        "stool": 1,
-        "oral": 1
+        "oral": 1,
+        "stool": 1
       },
       "gut_only": false,
       "taxon": "Clostridium IV",
@@ -45881,8 +45881,8 @@
     },
     {
       "sites": {
-        "gut biopsy": 1,
-        "stool": 1
+        "stool": 1,
+        "gut biopsy": 1
       },
       "gut_only": true,
       "taxon": "Burkholderiales",
@@ -45947,8 +45947,8 @@
     },
     {
       "sites": {
-        "gut biopsy": 1,
-        "stool": 1
+        "stool": 1,
+        "gut biopsy": 1
       },
       "gut_only": true,
       "taxon": "Oxalobacteraceae",
@@ -46013,8 +46013,8 @@
     },
     {
       "sites": {
-        "gut biopsy": 1,
-        "stool": 1
+        "stool": 1,
+        "gut biopsy": 1
       },
       "gut_only": true,
       "taxon": "Lactococcus",

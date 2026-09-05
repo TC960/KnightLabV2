@@ -331,7 +331,15 @@ def build(rows, min_papers=1, tax=None):
         for o in obs:
             evidence[o["paper"]] = o["dir"]
         consistency = max(up, dn) / n
-        sites = Counter(BODY_SITE.get(p, "") for p in papers)
+        # sorted(papers), not papers: `papers` is a set of title strings, so its
+        # iteration order is randomised per process by PYTHONHASHSEED, and a
+        # Counter keeps insertion order. That made `sites` key order vary between
+        # runs on the ~30 multi-site edges -- identical content, different bytes.
+        # Harmless in itself, but it meant the project's own verification rule
+        # ("rebuild TWICE and diff") reported a difference on every single build,
+        # which is how a real self-erasing fix would have been waved through.
+        # Everything else emitted here is already sorted; this was the omission.
+        sites = Counter(BODY_SITE.get(p, "") for p in sorted(papers))
         sites.pop("", None)
         edges.append({
             "sites": dict(sites),
