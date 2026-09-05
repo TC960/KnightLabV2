@@ -4,6 +4,102 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+# SUMMARY — session of 2026-09-05 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**The disease dimension of this graph carries reproducible directional
+information for Parkinson's disease and, at n=272 papers, for nothing else.**
+Write-up: `FINDINGS_disease_specificity.md`.
+
+### What I tested
+
+The last open item needing neither the taxdump nor a GPU: quantify the
+disease-side fragmentation nobody had measured (40 disease nodes, zero
+containment links, so `Intracerebral hemorrhage` sits beside `Stroke`
+unconnected while the taxon side models containment with 708 links).
+
+### What did NOT survive
+
+- **"A clinical subtype resembles its parent disease."** NULL across all seven
+  Tier-A is-a pairs (p=0.19–0.75; ICH→Stroke 19/22 decisive at p=0.43,
+  Poststroke aphasia→Stroke 0/3 at p=0.75). With 3–22 decisive shared taxa per
+  pair nothing could have survived — a power statement, not evidence of absence.
+  Tier B (AD→Dementia, the cognitive-decline continuum) behaves the same.
+  So the disease-containment layer is a **bookkeeping** decision, justifiable on
+  correctness of meaning but **not** a signal gain. It still needs a human call;
+  `disease_containment.py` records the tiering and the Tier-C rejections
+  (Multiple system atrophy is a *sibling* of PD, not a subtype; MCI is a stage,
+  not an AD subtype) so they are not re-proposed.
+- **"Disease specificity is a corpus-wide property."** Refuted — see below.
+
+### What survived
+
+- **Disease identity does predict edge direction — p=0.0014.** Over 23,627
+  same-taxon paper pairs: same-disease agreement **0.716**, different-disease
+  **0.657**, gap **+0.0591**, z=3.39, MDE +0.0296, under a **paper-level**
+  permutation of the disease label (pair-level shuffling would have been the
+  fourth false positive on record here).
+- **It is not country and not method.** Country's own gap is −0.0112 (p=0.64)
+  and sequencing platform's −0.0278 (p=0.86) — **neither produces any agreement
+  at all.** The disease gap holds inside same-country pairs (+0.078) and
+  different-country pairs (+0.086); permuting disease within country blocks
+  keeps it (+0.0846, z=2.32, p=0.0128). Both surviving p-values clear BH over
+  the four inferential tests.
+- **But it is ONE DISEASE.** Per-disease internal agreement: Parkinson's
+  **0.807** on 1,220 pairs (lift +0.150 over the 0.657 cross-disease baseline),
+  Stroke 0.725, MS 0.689, **Alzheimer's 0.608 — BELOW the cross-disease
+  baseline, on 806 pairs with ample power** — Epilepsy 0.492. Zero of the other
+  four match Parkinson's. Drop its 67 papers and the gap falls to **+0.0187,
+  p=0.179 against MDE +0.0350**: effects above +0.035 are excluded outside PD,
+  smaller ones are not. That PD is the standout is the field's own consensus, so
+  this is **face validity** for the extraction, not a coincidence.
+- **~70% of the graph's directional agreement is a generic dysbiosis prior.**
+  Decomposing agreement above the 51.4% marginal chance rate: +14.3 points is
+  disease-independent, +5.9 is disease-specific and almost all of that is PD.
+  **59 of 187 taxa reported in ≥3 diseases never flip direction** —
+  *Streptococcus* enriched in all 12 diseases reporting it, *Butyricicoccus*
+  depleted in all 8. For those, "enriched in disease X" is near-contentless.
+  Meanwhile *Prevotella* (6↑/8↓ over 14 diseases, 50 papers) and *Bacteroides*
+  (6↑/8↓ over 14, 54 papers) are simultaneously the highest-evidence and least
+  directionally consistent taxa: **high weight is not high information.**
+- **This explains why five structural corrections could not move agreement.** If
+  70% of directional agreement is a prior shared with Disbiome and Peryton, the
+  validation is largely measuring that prior, not the graph's disease-specific
+  content — and the decisive set is dominated by exactly these generic
+  well-evidenced taxa. Sixth finding in a row the ~0.013 minimum detectable
+  change cannot see; now with a mechanism rather than a shrug.
+
+### Dead end closed: no PyPI package substitutes for the taxdump
+
+The 54 named-species split stayed blocked. `ftp.ncbi.nih.gov` and
+`ftp.ncbi.nlm.nih.gov` both give CONNECT → 403; EBI, Ensembl, GBIF, UniProt and
+LPSN are denied too; only `pypi.org` / `files.pythonhosted.org` are reachable.
+The one offline candidate, **`taxoniq`** (bundles an 89 MB NCBI database), was
+extracted and tested: the full tree (2,609,295 taxa with parent and rank) and all
+scientific names come out of its marisa tries, **but synonyms are deliberately
+excluded — `taxoniq/build.py` indexes only `scientific name`, `common name`,
+`genbank common name`, `blast name`.** Verified: `Bacteroidota`→976 resolves,
+`Bacteroidetes`→**not found**; `Bacillota`→1239 resolves, `Firmicutes`→**not
+found**. Since synonym folding is what stops evidence splitting across duplicate
+nodes, and the Disbiome/Peryton join needs both sides through `taxonomy.py`, a
+synonym-less table would silently break the graph. **Do not re-run this probe.**
+
+### Nothing was rebuilt
+
+All of this is read-only on `graph.json`, so the published graph is untouched:
+still 272 papers, 918 taxa, 2,011 edges, Disbiome 71.9%, Peryton 72.5%.
+
+### Highest-value next step
+
+**Mark generic vs discriminating edges in the viewer.** This is the first result
+in five sessions that changes what the graph *means* rather than correcting it,
+it needs no new data and no GPU, and `disease_specificity.json` already carries
+the per-taxon table. A biologist reading "*Streptococcus* enriched in
+Parkinson's, 5 papers" currently cannot tell it is enriched in eleven other
+diseases too. (The 54 named-species split remains the top *defect*, unchanged and
+still needing the taxdump on the Mac.)
+
+---
+
 # SUMMARY — session of 2026-09-03
 
 **The assigned analysis returned a null. Attacking it, and then attacking the
