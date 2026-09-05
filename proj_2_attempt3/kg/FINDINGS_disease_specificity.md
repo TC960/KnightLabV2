@@ -1,8 +1,10 @@
 # Does the disease dimension carry information? Parkinson's yes, the rest no
 
-**Session of 2026-09-05.** All analysis is read-only on `graph.json` (272
-contributing papers, 918 taxa, 40 diseases, 2,011 edges). No rebuild was run, so
-nothing here can perturb the published graph.
+**Session of 2026-09-05.** All *analysis* below is read-only on `graph.json` (272
+contributing papers, 918 taxa, 40 diseases, 2,011 edges), so no result here
+depends on a rebuild. The graph was rebuilt afterwards to ship the annotation
+described in the addendum; that rebuild changed no pre-existing field and no
+published number.
 
 Scripts: `disease_containment.py`, `disease_specificity.py`,
 `disease_specificity_confounds.py`, `disease_specificity_pd.py`.
@@ -255,3 +257,30 @@ which is dominated by exactly the well-evidenced generic taxa identified above.
 Indeed, this session explains *why*: if 70% of directional agreement is a
 corpus-wide prior shared with the curated databases, agreement is measuring the
 prior, not the graph's disease-specific content.
+
+---
+
+## Addendum — acted on, same session
+
+**The finding is now in the graph.** `build_kg.py` annotates each taxon node with
+a `specificity` block and each edge with `taxon_breadth`, `taxon_purity`,
+`taxon_class` and `restates_prior`. Over 2,011 edges: 291 generic, 155
+discriminating, 664 mixed, 901 narrow (fewer than 3 diseases, so nothing can be
+said), and **252 edges restate their taxon's corpus-wide tendency outright**.
+
+One definitional caveat for anyone comparing numbers across the two artifacts:
+`build_kg.py` lets a **contested** edge cast no directional vote, while the
+exploratory `disease_specificity.py` voted by majority. The build's rule is the
+stricter one — a disease whose own papers disagree has no settled direction to
+contribute — and it shifts a few counts (*Streptococcus* is generic across 11
+diseases under the build, 12 under the analysis). Neither is wrong; the build's
+is the one the graph ships.
+
+**A determinism bug surfaced on the way.** Using this project's own verification
+rule — rebuild twice and diff — revealed that two builds of identical input had
+never been byte-identical: `sites` was built by iterating a **set** of paper
+titles, so its JSON key order varied per process with `PYTHONHASHSEED` on ~30
+multi-site edges. Content was always identical. But it meant the very
+countermeasure adopted after two fixes silently erased themselves on rebuild was
+emitting a false positive on every build. Fixed; three rebuilds are now
+byte-identical. No number moved.

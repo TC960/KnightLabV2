@@ -83,20 +83,60 @@ found**. Since synonym folding is what stops evidence splitting across duplicate
 nodes, and the Disbiome/Peryton join needs both sides through `taxonomy.py`, a
 synonym-less table would silently break the graph. **Do not re-run this probe.**
 
-### Nothing was rebuilt
+### Bug 4 — the build was never byte-deterministic, so the verification rule cried wolf
 
-All of this is read-only on `graph.json`, so the published graph is untouched:
-still 272 papers, 918 taxa, 2,011 edges, Disbiome 71.9%, Peryton 72.5%.
+Tried to *use* the project's own rule (rebuild twice and diff) before trusting a
+rebuild here, and it failed: two builds of the same input differed at byte
+278347. **Content was not the difference** — every node, edge, direction,
+paper-count and meta field matched across two rebuilds and matched the committed
+`graph.json`. The only variation was JSON key order in the `sites` dict on ~30
+multi-site edges, because `sites` was `Counter(... for p in papers)` over a
+**set** of title strings, whose iteration order is randomised per process by
+`PYTHONHASHSEED`. Everything else in that block already went through `sorted()`.
+
+This matters more than a key order sounds: the countermeasure adopted after two
+fixes silently erased themselves on rebuild was *rebuild twice and diff*, and
+that countermeasure was firing a **false positive on every single build** — which
+is exactly how a real regression gets waved through as the usual noise. Fixed by
+iterating `sorted(papers)`; three independent rebuilds are now byte-identical,
+and `graph.json` is regenerated so a future diff against the committed file is
+meaningful. **No number moves.**
+
+### Shipped: generic vs discriminating edges are now IN the graph
+
+Acted on the finding rather than only writing it up. `build_kg.py` now annotates,
+per taxon node, `specificity` (breadth, n_diseases_enriched/depleted, purity,
+consensus, class) and per edge `taxon_breadth`, `taxon_purity`, `taxon_class`,
+`restates_prior`. Over 2,011 edges: **291 generic, 155 discriminating, 664 mixed,
+901 narrow** (<3 diseases, nothing can be said); **252 edges restate the taxon's
+corpus-wide tendency outright**; 61 taxa generic, 19 discriminating.
+
+Computed inside `build()` from the edges just built, deliberately not as a
+sidecar, so it cannot drift out of sync or self-erase on rebuild. A contested
+edge casts **no** vote (stricter than the exploratory script, which voted by
+majority — *Streptococcus* is generic over 11 diseases here, 12 there; documented
+at the code), and the 8 taxa whose every edge is contested get breadth 0 rather
+than a missing field.
+
+Verified by executing: two rebuilds byte-identical, all 2,011 edges and 918 taxa
+annotated, every pre-existing field unchanged. So the published graph's numbers
+are untouched — still 272 papers, 918 taxa, 2,011 edges, Disbiome 71.9%, Peryton
+72.5% — and `kg.html` / `docs/index.html` were **not** regenerated.
 
 ### Highest-value next step
 
-**Mark generic vs discriminating edges in the viewer.** This is the first result
-in five sessions that changes what the graph *means* rather than correcting it,
-it needs no new data and no GPU, and `disease_specificity.json` already carries
-the per-taxon table. A biologist reading "*Streptococcus* enriched in
-Parkinson's, 5 papers" currently cannot tell it is enriched in eleven other
-diseases too. (The 54 named-species split remains the top *defect*, unchanged and
-still needing the taxdump on the Mac.)
+**Surface the new specificity fields in the viewer** (`build_viz.py` +
+`viz_network.js`, then regenerate `kg.html` / `docs/index.html`). The data layer
+landed this session; the UI change is deliberately separate because it is
+outward-facing. A biologist reading "*Streptococcus* enriched in Parkinson's, 5
+papers" still cannot see that it is enriched in eleven other diseases too, and
+`restates_prior` on 252 edges is exactly the flag that fixes it. Suggested
+treatment: de-emphasise `restates_prior` edges and let the ranked bars sort by
+`taxon_purity`, so the discriminating edges surface instead of the loudest ones.
+
+(The 54 named-species split remains the top *defect*, unchanged and still needing
+the taxdump on a machine that can reach NCBI — the offline route is now a closed
+dead end, see above.)
 
 ---
 
