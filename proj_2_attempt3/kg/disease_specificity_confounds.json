@@ -1,0 +1,100 @@
+{
+ "n_pairs": 23627,
+ "n_papers": 272,
+ "n_papers_with_country": 205,
+ "n_papers_with_seq": 204,
+ "gap_disease": {
+  "gap": 0.0591,
+  "same_rate": 0.7161,
+  "diff_rate": 0.657,
+  "n_same_pairs": 2952,
+  "n_diff_pairs": 20675,
+  "null_mean": -0.00023,
+  "null_sd": 0.01739,
+  "z": 3.41,
+  "p": 0.0018,
+  "min_detectable_gap_at_p05": 0.029
+ },
+ "gap_country": {
+  "gap": -0.0112,
+  "same_rate": 0.6416,
+  "diff_rate": 0.6528,
+  "n_same_pairs": 2352,
+  "n_diff_pairs": 9384,
+  "null_mean": -1e-05,
+  "null_sd": 0.02827,
+  "z": -0.4,
+  "p": 0.63947,
+  "min_detectable_gap_at_p05": 0.0476
+ },
+ "gap_sequencing": {
+  "gap": -0.0278,
+  "same_rate": 0.6414,
+  "diff_rate": 0.6691,
+  "n_same_pairs": 8390,
+  "n_diff_pairs": 3246,
+  "null_mean": 0.00092,
+  "null_sd": 0.0272,
+  "z": -1.06,
+  "p": 0.85743,
+  "min_detectable_gap_at_p05": 0.0478
+ },
+ "disease_gap_same-country pairs only": {
+  "gap": 0.0782,
+  "same_rate": 0.706,
+  "diff_rate": 0.6278,
+  "n_same": 415,
+  "n_diff": 1937
+ },
+ "disease_gap_different-country pairs only": {
+  "gap": 0.0862,
+  "same_rate": 0.7234,
+  "diff_rate": 0.6372,
+  "n_same": 1699,
+  "n_diff": 7685
+ },
+ "disease_gap_permuted_within_country": {
+  "gap": 0.0846,
+  "same_rate": 0.72,
+  "diff_rate": 0.6353,
+  "n_same_pairs": 2114,
+  "n_diff_pairs": 9622,
+  "null_mean": 0.03546,
+  "null_sd": 0.02118,
+  "z": 2.32,
+  "p": 0.0128,
+  "min_detectable_gap_at_p05": 0.0709
+ },
+ "leave_one_disease_out": {
+  "Parkinson's disease": {
+   "gap": 0.0187,
+   "n_same": 1732,
+   "n_diff": 12521
+  },
+  "Alzheimer's disease": {
+   "gap": 0.0869,
+   "n_same": 2146,
+   "n_diff": 13626
+  },
+  "Multiple sclerosis": {
+   "gap": 0.0566,
+   "n_same": 2637,
+   "n_diff": 16139
+  },
+  "Stroke": {
+   "gap": 0.0694,
+   "n_same": 2497,
+   "n_diff": 14961
+  },
+  "Amyotrophic lateral sclerosis": {
+   "gap": 0.0577,
+   "n_same": 2926,
+   "n_diff": 19031
+  },
+  "Mild cognitive impairment": {
+   "gap": 0.0521,
+   "n_same": 2939,
+   "n_diff": 19467
+  }
+ }
+}
