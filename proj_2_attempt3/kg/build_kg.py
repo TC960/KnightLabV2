@@ -442,7 +442,91 @@ def build(rows, min_papers=1, tax=None):
     for e in edges:
         e["ev"] = [{"i": pidx[x["t"]], "d": x["d"][0]} for x in e["evidence"]]
         del e["evidence"]
+    annotate_specificity(nodes, edges)
     return nodes, edges, hierarchy, papers_tbl
+
+
+def annotate_specificity(nodes, edges):
+    """Mark how disease-specific each taxon's direction is.
+
+    WHY. The 2026-09-05 analysis (`FINDINGS_disease_specificity.md`) found that
+    ~70% of the directional agreement in this graph is a corpus-wide prior rather
+    than disease-specific signal: 59 of 187 taxa reported in >=3 diseases never
+    flip direction. *Streptococcus* is enriched in all 12 diseases that report
+    it. So "Streptococcus enriched in Parkinson's, 5 papers" reads as a
+    Parkinson's finding when it is really a statement about Streptococcus, and
+    nothing in the graph said so.
+
+    Edge weight already answers "how much evidence"; these fields answer the
+    different question "how much of it is about THIS disease". They are derived
+    purely from the edges just built, so they cannot drift out of sync with them.
+
+    Per taxon, counting one vote per disease (a disease whose own edge is
+    contested casts no vote, since it has no direction to contribute):
+      breadth  -- number of diseases casting a vote
+      purity   -- max(up_diseases, down_diseases) / breadth
+      class    -- generic       : breadth >= 3 and purity == 1.0
+                  discriminating: breadth >= 3 and purity <= 0.6
+                  mixed         : breadth >= 3, in between
+                  narrow        : breadth < 3, too few diseases to say
+    The >=3 floor and the 0.6 cut are reporting thresholds, not test results;
+    the underlying counts are emitted so any other cut can be applied.
+
+    Note the vote rule differs deliberately from the exploratory version in
+    `disease_specificity.py`, which let a contested disease still vote by its
+    majority. Here a contested edge casts no vote at all: if a disease's own
+    papers disagree, it has no settled direction to contribute. That is the
+    stricter reading and it moves a few counts (Streptococcus is generic across
+    11 diseases here, 12 there). Every taxon is annotated either way, so a taxon
+    whose every edge is contested gets breadth 0 rather than a missing field --
+    an absent field is a trap for whatever consumes this.
+    """
+    votes = defaultdict(lambda: {"e": 0, "d": 0})
+    for e in edges:
+        votes[e["taxon_key"]]  # ensure every taxon appears, even if all-contested
+        if e["contested"]:
+            continue
+        votes[e["taxon_key"]]["e" if e["direction"] == "enriched" else "d"] += 1
+
+    stats = {}
+    for t, v in votes.items():
+        breadth = v["e"] + v["d"]
+        purity = max(v["e"], v["d"]) / breadth if breadth else 0.0
+        if breadth < 3:
+            cls = "narrow"
+        elif purity == 1.0:
+            cls = "generic"
+        elif purity <= 0.6:
+            cls = "discriminating"
+        else:
+            cls = "mixed"
+        stats[t] = {
+            "breadth": breadth,
+            "n_diseases_enriched": v["e"],
+            "n_diseases_depleted": v["d"],
+            "purity": round(purity, 3),
+            "consensus": "enriched" if v["e"] > v["d"] else
+                         ("depleted" if v["d"] > v["e"] else "split"),
+            "class": cls,
+        }
+
+    for n in nodes:
+        if n["type"] != "taxon":
+            continue
+        s = stats.get(n["id"].split("t:", 1)[-1])
+        if s:
+            n["specificity"] = s
+    for e in edges:
+        s = stats.get(e["taxon_key"])
+        if not s:
+            continue
+        e["taxon_breadth"] = s["breadth"]
+        e["taxon_purity"] = s["purity"]
+        e["taxon_class"] = s["class"]
+        # Does this edge merely restate the taxon's corpus-wide tendency?
+        e["restates_prior"] = bool(
+            not e["contested"] and s["class"] == "generic"
+            and e["direction"] == s["consensus"])
 
 
 def main():
