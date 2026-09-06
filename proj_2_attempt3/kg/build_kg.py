@@ -389,7 +389,7 @@ def build(rows, min_papers=1, tax=None):
     # Roseburia, Blautia, Hungatella in Parkinson's). Without an explicit link
     # these are unrelated nodes and the graph cannot express that one contains
     # the other -- which matters because containment is NOT redundancy: in this
-    # corpus Lachnospiraceae is depleted (15 papers) while Hungatella inside it
+    # corpus Lachnospiraceae is depleted (8 of 9 papers) while Hungatella inside it
     # is enriched (7). A family shrinking while one genus grows is ordinary
     # biology, and only survives if the nesting is represented rather than
     # collapsed. So we add parent_of edges and let consumers roll up or not.

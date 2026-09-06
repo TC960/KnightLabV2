@@ -438,8 +438,11 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
   move and fix it · <b>click</b> to pin its neighbourhood · <b>double-click</b> to reset.
   Solid links are associations (blue enriched, red depleted, grey dashed = papers disagree);
   faint dotted links are <b>taxonomic containment</b> — a family and the genera inside it.
-  Containment is not redundancy: <i>Lachnospiraceae</i> is depleted in Parkinson's across 15
-  papers while <i>Hungatella</i> inside it is enriched across 7.</p>
+  Containment is not redundancy: <i>Lachnospiraceae</i> is depleted in Parkinson's in 8 of the 9
+  papers reporting it while <i>Hungatella</i> inside it is enriched in 6 of 7 — and one study
+  reports both directions itself, so this is not an artefact of pooling separate cohorts.
+  Across the graph, related taxa agree on direction 89% of the time within a single paper; the
+  11% that do not are the cases this containment layer exists to keep.</p>
 </div>
 
 <div class="pane" id="pane-rank" role="tabpanel" hidden>

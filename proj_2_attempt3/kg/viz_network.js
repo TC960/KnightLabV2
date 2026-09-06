@@ -6,9 +6,11 @@
 //                width = number of papers, opacity = directional consistency.
 //   containment  taxon -> taxon, faint dotted. Papers report at whatever rank they
 //                resolved to, so a family and genera inside it both appear. That is
-//                NOT redundancy: Lachnospiraceae is depleted in Parkinson's (15
-//                papers) while Hungatella inside it is enriched (7). Drawing the
-//                nesting is the only way that reads as biology instead of noise.
+//                NOT redundancy: Lachnospiraceae is depleted in Parkinson's (8 of 9
+//                papers) while Hungatella inside it is enriched (6 of 7), and one
+//                study reports both. Drawing the nesting is the only way that reads
+//                as biology instead of noise. (The "15 papers" this comment used to
+//                claim predates the 2026-09-03 deduplication -- see SESSION_LOG.)
 (function () {
   const C = document.getElementById("net");
   if (!C) return;

@@ -4,6 +4,112 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+# SUMMARY — session of 2026-09-06 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**Shipped the specificity layer into the viewer, then consumed the containment
+links for the first time and found the project's flagship claim was both true
+and misstated.** Write-up: `FINDINGS_rank_conflict.md`.
+
+The scheduled prompt's priority list was stale — Tasks 1, 2.5 and 3.1 and the
+MAIN_DATA filter are all already done per the entries below, so none were
+redone. The taxdump route was re-probed once and is still shut
+(`ftp.ncbi.nih.gov` CONNECT → 403), so the 54 named-species split remains the
+top blocked defect. Work went to the two genuinely open items.
+
+### Shipped: the viewer now says what an edge is worth
+
+The 2026-09-05 session put `specificity` / `taxon_breadth` / `taxon_purity` /
+`restates_prior` into `graph.json` and deliberately stopped short of the UI.
+`build_viz.py` and `viz_network.js` had **zero** references to any of them, so
+the published page still showed "*Streptococcus* enriched in Parkinson's, 5
+papers" with no way to see it is enriched in eleven other diseases too.
+
+- **Hollow bar = `restates_prior`** (252 edges). Encoded as fill-vs-outline, not
+  opacity, so it stays distinct from `.faded` (contested) and survives
+  greyscale; label text keeps full contrast.
+- **"Sort by: disease specificity"** orders discriminating → mixed → narrow →
+  generic. Deliberately **not** `taxon_purity` descending as the last session
+  suggested: purity 1.0 *is* the generic case, so that sort surfaces exactly the
+  edges the control exists to bury. Narrow outranks generic because a narrow
+  taxon is *unjudged* (<3 diseases vote) while a generic one is known
+  uninformative.
+- "Hide edges that restate a prior" filters **both** views; scope chip per row;
+  plain-English specificity sentence in the detail panel; two new table columns;
+  a 155-discriminating tile; network links at 0.45 alpha when they restate a
+  prior — damped, not hidden.
+- Done **without touching `graph.json`**: the per-taxon disease counts live on
+  nodes, which the payload does not ship, so `build_viz.py` sends a compact spec
+  map keyed by `taxon_key`. The graph and its byte-for-byte fixed point are
+  unchanged.
+- **`verify_viz.py` is new and is the point.** "It parses" is not verification
+  here — two fixes have silently erased themselves on rebuild while printing
+  success, and a blank-canvas bug passed every static check. It drives the page
+  in Chromium and reads the DOM and canvas pixels back *after real clicks*: 14
+  assertions, all passing, including that the canvas is non-blank before and
+  after the new filter. `kg.html` rebuilds to a fixed point; `docs/index.html`
+  is back in sync.
+
+### Bug 5 — the flagship example's numbers were stale on the published site
+
+`kg.html`, `CLAUDE.md`, `build_kg.py` and `viz_network.js` all claimed
+*Lachnospiraceae* is "depleted in Parkinson's across **15 papers**". The graph
+says **9 papers, 8 down / 1 up, and the edge is contested**; *Hungatella* is 7
+papers, 6 up / 1 down, also contested. The 15 predates the 2026-09-03
+deduplication and was never updated — a published number that no longer matched
+the artifact it described. All four corrected. Found by checking the anecdote
+against the data rather than by looking for it, which is the method that keeps
+working here.
+
+### What survived: related taxa agree within a paper, and it is ancestry
+
+**Within a single paper, taxonomically related taxa agree on direction 0.8903 of
+the time against 0.5367 for unrelated taxa — gap +0.3536, z=15.5, p=0.0001**
+(10,000 permutations, paper-level null shuffling each paper's direction labels
+across the taxa it reported, preserving its up/down counts; MDE ±0.044). Both
+arms come from the same paper, so cohort, country, pipeline and enrichment
+propensity are differenced out by construction.
+
+A z of 15 here is a reason for suspicion, so it was attacked four ways
+(`attack_rank_conflict.py`) and survived all of them: dropping every split
+placeholder node, since the split *created* both nodes from one mention
+(+0.3592, **stronger**); a cluster-robust one-gap-per-paper statistic, since the
+top paper contributes 35 of 474 related pairs (+0.3611, z=11.4 over 100 units);
+direction skew (0.68, controlled by the shuffle by construction); and
+same-rank-unrelated pairs, in case the effect was really "co-mentioned taxa
+agree" (+0.3502, z=14.6 — it is ancestry specifically).
+
+**This is face validity, not a discovery.** A family's abundance is largely the
+sum of its genera, so ~89% is close to what taxonomy arithmetic predicts; the
+extractor passing that check is the result. The value is the complement: the
+**11% that disagree inside one paper** are neither noise nor rank confusion, and
+they are exactly what collapsing ranks would destroy. The project's refusal to
+collapse ranks now rests on a measured 11% rather than one anecdote.
+
+### What got smaller under scrutiny: the "229 opposite pairs" figure
+
+952 parent/child pairs share a disease — 586 same direction, 241 opposite, 125
+exact ties. Of the 241 opposite pairs, only **33 (14%) are asserted inside a
+single study**; **189 (78%) rest on no shared paper at all**, the family
+measured by one set of studies and the genus by another. The GraphRAG session's
+"903 edges have a parent edge, 229 point the opposite way" is real but reads as
+a much stronger claim than it supports. Cite 14%, not 25%, and say what it
+means. The 33 within-paper conflicts — *Lachnospiraceae*↓/*Hungatella*↑ in
+Parkinson's among them — are the concrete case for the containment layer and the
+best review targets after the doubly-contradicted 11. Caveat: 32 of the 33 rest
+on exactly one shared paper, so each individual pair is a single-study claim
+even though the aggregate is not.
+
+### Highest-value next step
+
+**Surface the 33 within-paper rank conflicts in the viewer, the way specificity
+was surfaced this session.** They are the graph's strongest evidence for its own
+central design decision, they are already computed in `rank_conflict.json`, and
+right now a reader cannot find a single one. Everything else that is not blocked
+on the taxdump or a GPU is now either done or known to be underpowered at
+n=272 papers.
+
+---
+
 # SUMMARY — session of 2026-09-05 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **The disease dimension of this graph carries reproducible directional

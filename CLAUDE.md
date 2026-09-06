@@ -159,7 +159,11 @@ Built from the 250-paper extraction. Published: <https://www.mohakprakash.com/Kn
   3 flips sign between cohorts in this literature, so disagreement is a finding, not noise.
 - **Containment is modelled, not collapsed.** 2,384 ancestor-descendant pairs sit within the same
   disease. Merging ranks would destroy real signal: in Parkinson's, *Lachnospiraceae* (family) is
-  depleted across 15 papers while *Hungatella* (a genus inside it) is enriched across 7. Synonym
+  depleted in 8 of the 9 papers reporting it while *Hungatella* (a genus inside it) is enriched in
+  6 of 7, and one study reports both directions itself. (An earlier "15 papers / 7" here predated
+  the 2026-09-03 deduplication.) Corpus-wide, related taxa agree on direction 89% of the time
+  within a single paper vs 54% for unrelated taxa — so containment is mostly redundant, and the
+  11% that disagree are exactly what this layer is for. Synonym
   folding (same rank, renamed) and containment (different ranks) are different operations.
 - **Never join on another database's taxid.** Disbiome records "Prevotella" as taxid 59823
   (*Prevotella sp.*, a species) where the genus is 838. Joining on their stored id silently dropped
