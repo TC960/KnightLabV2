@@ -29,9 +29,10 @@
     C.width = W * DPR; C.height = H * DPR;
   }
 
-  function build(minPapers, disease) {
+  function build(minPapers, disease, hidePrior) {
     let es = window.__KG__.edges.filter(e => e.n_papers >= minPapers);
     if (disease !== "__all__") es = es.filter(e => e.disease === disease);
+    if (hidePrior) es = es.filter(e => !e.restates_prior);
     const idx = new Map();
     nodes = []; links = []; hier = [];
     const add = (id, type, label, rank) => {
@@ -143,7 +144,12 @@
     links.forEach(l => {
       const a = nodes[l.s], b = nodes[l.t];
       const on = !focus || a.id === focus.id || b.id === focus.id;
-      ctx.globalAlpha = on ? (0.30 + 0.55 * l.e.consistency) : 0.05;
+      // `restates_prior` links are drawn faint: the taxon moves the same way in
+      // every disease reporting it, so the edge carries a corpus-wide prior, not
+      // information about this disease. Damped rather than hidden -- the evidence
+      // is real, it just should not be the first thing the eye lands on.
+      const prior = l.e.restates_prior ? 0.45 : 1;
+      ctx.globalAlpha = on ? (0.30 + 0.55 * l.e.consistency) * prior : 0.05;
       ctx.strokeStyle = l.e.contested ? mixed : (l.e.direction === "enriched" ? up : down);
       ctx.lineWidth = Math.min(5.5, 0.7 + l.e.n_papers * 0.42) / Math.sqrt(k);
       if (l.e.contested) ctx.setLineDash([4 / k, 3 / k]); else ctx.setLineDash([]);
@@ -207,10 +213,26 @@
     const rel = links.filter(l => nodes[l.s].id === f.id || nodes[l.t].id === f.id);
     const kin = hier.filter(h => nodes[h.s].id === f.id || nodes[h.t].id === f.id);
     const con = rel.filter(l => l.e.contested).length;
+    // Corpus-wide specificity of THIS taxon, taken from any of its edges (every
+    // edge of a taxon carries the same taxon_* fields). Diseases have none.
+    const sp = f.type === "taxon" && rel.length ? rel[0].e : null;
+    const spLine = !sp || !(sp.taxon_breadth >= 3) ? ""
+      : sp.taxon_class === "generic"
+        // Deliberately not naming the direction here: rel[0] may be a contested
+        // edge, whose `direction` is that edge's majority and need not be the
+        // taxon's corpus-wide consensus (a contested edge casts no vote at all).
+        ? `<br><span style="opacity:.7">Same direction in all ${sp.taxon_breadth} diseases `
+          + `reporting it — generic, not disease-specific.</span>`
+        : sp.taxon_class === "discriminating"
+          ? `<br><span style="opacity:.7">Direction varies across the ${sp.taxon_breadth} diseases `
+            + `reporting it — disease-discriminating.</span>`
+          : `<br><span style="opacity:.7">Reported in ${sp.taxon_breadth} diseases, `
+            + `mostly one direction (purity ${sp.taxon_purity}).</span>`;
     tip.innerHTML = `<b>${f.label}</b>${f.rank ? ` <span style="opacity:.6">${f.rank}</span>` : ""}<br>`
       + `${rel.length} association${rel.length !== 1 ? "s" : ""}`
       + (con ? ` · <b>${con} contested</b>` : "")
       + (kin.length ? ` · ${kin.length} taxonomic link${kin.length !== 1 ? "s" : ""}` : "")
+      + spLine
       + `<div class="p">${rel.slice(0, 5).map(l => {
           const o = nodes[l.s].id === f.id ? nodes[l.t] : nodes[l.s];
           return `· ${o.label} — ${l.e.contested ? "contested" : l.e.direction} (${l.e.n_papers}p)`;
