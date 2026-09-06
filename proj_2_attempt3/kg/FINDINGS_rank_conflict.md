@@ -104,6 +104,22 @@ the extractor** rather than a discovery. Its value is the complement: the
 they are precisely what merging ranks would destroy. The project's refusal to
 collapse ranks now rests on a measured 11%, not on one anecdote.
 
+## Shipped into the graph and the viewer
+
+`build_kg.py:annotate_rank_conflicts()` writes `rank_conflicts` and
+`has_within_paper_conflict` onto every edge (59 edges carry one — the 33 pairs
+seen from both sides), computed inside `build()` so it cannot drift from the
+graph. The viewer chips them `rank ↕`, filters to them, and explains them in the
+detail panel with the counterpart taxon and the study that reports both
+directions. Only `within_paper` conflicts are surfaced: chipping the 189
+no-shared-paper pairs would re-commit the overstatement this document corrects.
+
+**Found on the way:** `build_kg.py`'s `DEFAULT_IN` pointed at the raw 250-paper
+extraction, so `python3 build_kg.py` with no arguments overwrote `graph.json`
+with a 773-taxon / 1,462-edge / 211-paper graph while printing success. Fixed to
+`extractions_screened.json`; a rebuild now reproduces the committed graph with
+zero drift. See SESSION_LOG Bug 6.
+
 ## What this does and does not license
 
 - **Do not** collapse containment. Confirmed, with a number.

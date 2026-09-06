@@ -53,7 +53,7 @@ with sync_playwright() as p:
     def rows():
         return pg.evaluate("""() => [...document.querySelectorAll('#chart .row')].map(r => ({
             tax: r.querySelector('.tax').textContent.trim(),
-            scope: (r.querySelector('.scope .chip')||{}).textContent || '',
+            scope: (r.querySelector('.scope .chip.cls')||{}).textContent || '',
             hollow: !!r.querySelector('.bar.prior'),
             papers: r.querySelector('.cnt').textContent.trim(),
         }))""")
@@ -101,6 +101,26 @@ with sync_playwright() as p:
           repr(spec_txt[:110]))
     check("specificity sentence has no unresolved placeholder", "?" not in spec_txt.split("—")[0],
           repr(spec_txt[:110]))
+
+    # --- rank-conflict filter and its detail block ---
+    pg.check("#onlyrc")
+    pg.wait_for_timeout(400)
+    rc = pg.evaluate("""() => [...document.querySelectorAll('#chart .row')].map(r => ({
+        chip: !!r.querySelector('.chip.conf'),
+        tax: r.querySelector('.tax').textContent.trim()}))""")
+    check("rank-conflict filter returns rows", len(rc) > 0, f"n={len(rc)}")
+    check("every filtered row carries the rank chip", rc and all(r["chip"] for r in rc),
+          f"missing={sum(1 for r in rc if not r['chip'])}")
+    pg.click("#chart .row:first-child")
+    pg.wait_for_timeout(400)
+    conf = pg.evaluate("() => (document.querySelector('#detail .conflict')||{}).textContent || ''")
+    check("detail panel explains the rank conflict", "single study reports both" in conf,
+          repr(conf[:90]))
+    check("rank-conflict block names the counterpart taxon", " vs its " in conf, repr(conf[:160]))
+    pg.uncheck("#onlyrc")
+    pg.wait_for_timeout(300)
+    check("unchecking rank-conflict filter restores rows",
+          len(rows()) > len(rc), f"{len(rc)} -> {len(rows())}")
 
     # --- table view gained its two columns ---
     heads = pg.evaluate("() => [...document.querySelectorAll('table th')].map(t=>t.textContent.trim())")

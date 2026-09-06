@@ -32,8 +32,17 @@ import re
 from collections import Counter, defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_IN = os.path.join(HERE, "..", "dsmlp_model_prompting", "eval-v2", "results",
-                          "qwopus3.5-27b-v3__q4km__samgated-v1__all250.json")
+# The SCREENED extraction is the source of truth, and `graph.json`'s own
+# meta.source has recorded it since the paper screen landed. This default used to
+# point at the raw 250-paper run
+# (../dsmlp_model_prompting/eval-v2/results/qwopus3.5-27b-v3__q4km__samgated-v1__all250.json),
+# which is three corpus revisions old and is not even present in a fresh clone.
+# Running `python3 build_kg.py` with no arguments therefore OVERWROTE graph.json
+# with a 773-taxon / 1,462-edge / 211-paper graph -- against the shipped 918 /
+# 2,011 / 272 -- and printed success while doing it. That is the exact failure
+# mode the "rebuild twice and diff" rule exists to catch, except the rule tells
+# you to run this very command, so it silently destroyed the thing it verifies.
+DEFAULT_IN = os.path.join(HERE, "extractions_screened.json")
 
 # --- disease normalization -------------------------------------------------
 # The extractor returns free text ("Alzheimer disease" / "Alzheimer's disease" /
@@ -443,7 +452,74 @@ def build(rows, min_papers=1, tax=None):
         e["ev"] = [{"i": pidx[x["t"]], "d": x["d"][0]} for x in e["evidence"]]
         del e["evidence"]
     annotate_specificity(nodes, edges)
+    annotate_rank_conflicts(nodes, edges, hierarchy)
     return nodes, edges, hierarchy, papers_tbl
+
+
+def annotate_rank_conflicts(nodes, edges, hierarchy):
+    """Flag the parent/child pairs that point opposite ways in the same disease.
+
+    WHY. Not collapsing taxonomic ranks is this project's most load-bearing
+    design decision, and until 2026-09-06 it was justified by one anecdote.
+    `FINDINGS_rank_conflict.md` measured it: of 241 opposite-direction
+    parent/child pairs sharing a disease, only 33 are asserted INSIDE a single
+    study -- 189 rest on no shared paper at all, the family measured by one set
+    of studies and the genus by another. Those 33 are the real argument for the
+    containment layer and nothing in the graph pointed at them.
+
+    The verdict distinction is the whole point and must not be flattened:
+
+      within_paper      one study reports the family down and the genus up. This
+                        CANNOT be rank confusion -- same authors, same cohort,
+                        same pipeline produced both numbers. 33 of these.
+      cross_paper_only  studies measured both and AGREED; the conflict comes
+                        from papers that measured only one side.
+      no_shared_paper   no study ever measured both. The weakest kind: an
+                        artefact of pooling, not a disagreement anyone stated.
+
+    Computed inside build() from the edges just built, deliberately not as a
+    sidecar reading rank_conflict.json, so it cannot drift out of sync with the
+    graph or self-erase on rebuild -- the same reasoning as annotate_specificity.
+    """
+    by_node = defaultdict(dict)
+    for e in edges:
+        by_node[e["source"]][e["disease"]] = e
+    label = {n["id"]: n.get("label", n["id"]) for n in nodes}
+
+    def majority(e):
+        return "e" if e["n_up"] > e["n_down"] else ("d" if e["n_down"] > e["n_up"] else None)
+
+    for e in edges:
+        e["rank_conflicts"] = []
+    for h in hierarchy:
+        for P, C, rel in ((h["parent"], h["child"], "child"),
+                          (h["child"], h["parent"], "parent")):
+            for dis in sorted(set(by_node.get(P, {})) & set(by_node.get(C, {}))):
+                pe, ce = by_node[P][dis], by_node[C][dis]
+                pm, cm = majority(pe), majority(ce)
+                if pm is None or cm is None or pm == cm:
+                    continue
+                pdir = {ev["i"]: ev["d"] for ev in pe["ev"]}
+                cdir = {ev["i"]: ev["d"] for ev in ce["ev"]}
+                both = sorted(set(pdir) & set(cdir))
+                within = [i for i in both if pdir[i] != cdir[i]]
+                pe["rank_conflicts"].append({
+                    "other": label.get(C, C),
+                    "other_key": ce["taxon_key"],
+                    "other_rank": ce.get("rank", ""),
+                    "rel": rel,                      # C is this edge's parent/child
+                    "other_direction": ce["direction"],
+                    "other_papers": ce["n_papers"],
+                    "n_shared": len(both),
+                    "verdict": ("within_paper" if within else
+                                "cross_paper_only" if both else "no_shared_paper"),
+                    "witnesses": within[:3],         # paper-table indices
+                })
+    for e in edges:
+        e["rank_conflicts"].sort(key=lambda c: (c["verdict"] != "within_paper",
+                                                -c["other_papers"], c["other"]))
+        e["has_within_paper_conflict"] = any(
+            c["verdict"] == "within_paper" for c in e["rank_conflicts"])
 
 
 def annotate_specificity(nodes, edges):

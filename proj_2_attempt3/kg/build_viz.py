@@ -82,8 +82,10 @@ select:focus-visible,input:focus-visible,button:focus-visible{outline:2px solid 
 .sw{width:19px;height:9px;border-radius:2px;display:inline-block}
 
 .chart{margin-top:10px}
-.row{display:grid;grid-template-columns:186px 1fr 58px 78px;align-items:center;gap:10px;
-     padding:2px 0;border-radius:4px}
+/* min-height keeps every row the same height whether its chip cell wraps to one
+   line or two -- without it the bars step up and down and stop being scannable. */
+.row{display:grid;grid-template-columns:158px 1fr 34px 122px;align-items:center;gap:10px;
+     padding:2px 0;border-radius:4px;min-height:34px}
 .row:hover{background:color-mix(in oklab,var(--ink) 5%,transparent)}
 .tax{font-size:13px;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .tax .rank{color:var(--ink-3);font-size:10.5px;margin-left:4px}
@@ -102,12 +104,18 @@ select:focus-visible,input:focus-visible,button:focus-visible{outline:2px solid 
 .bar.down.prior{box-shadow:inset 0 0 0 1.5px var(--down);background:var(--down-soft)!important}
 .cnt{font-family:var(--mono);font-size:12px;color:var(--ink-2);
      font-variant-numeric:tabular-nums;text-align:right}
-.scope{text-align:left;font-size:10px}
+.scope{text-align:left;font-size:10px;display:flex;gap:3px;flex-wrap:wrap;align-items:center}
 .chip{display:inline-block;font-size:9.5px;letter-spacing:.05em;padding:1px 5px;border-radius:3px;
       border:1px solid var(--mixed);color:var(--ink-2);margin-left:5px;vertical-align:1px}
 .chip.disc{border-color:var(--up);color:var(--up)}
 .chip.gen{border-color:var(--ink-3);color:var(--ink-3)}
 .chip.nar{border-color:var(--line);color:var(--ink-3)}
+.chip.conf{border-color:var(--down);color:var(--down);font-weight:600}
+.conflict{font-size:12px;margin:7px 0 2px;padding:8px 10px;background:var(--surface);
+          border-left:2px solid var(--down);border-radius:0 5px 5px 0;color:var(--ink-2)}
+.conflict b{color:var(--ink);font-weight:600}
+.conflict ul{margin:5px 0 0;padding-left:17px}
+.conflict li{margin:2px 0}
 .scope .chip{margin-left:0}
 .spec{font-size:12px;color:var(--ink-2);margin:7px 0 2px;padding:7px 10px;
       background:var(--surface);border-left:2px solid var(--line);border-radius:0 5px 5px 0}
@@ -151,7 +159,7 @@ summary{cursor:pointer;font-size:13px;color:var(--ink-2)}
         margin:8px 0 4px;padding:8px 10px;background:var(--surface);border-radius:5px}
 .cohort b{color:var(--ink);font-weight:600}
 .row{cursor:pointer}
-@media (max-width:640px){.row{grid-template-columns:106px 1fr 40px 62px}.tax{font-size:12px}}
+@media (max-width:640px){.row{grid-template-columns:98px 1fr 26px 92px}.tax{font-size:12px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 """
 
@@ -201,8 +209,17 @@ function specText(e){
   return spread + `Mostly consistent (purity ${e.taxon_purity}) but not uniform.`;
 }
 
+// ---- rank conflicts -------------------------------------------------------
+// `rank_conflicts` lists, per edge, the parent/child taxa pointing the OTHER way
+// in the same disease, with a verdict on who asserts it. Only `within_paper`
+// matters here: one study reported the family down and the genus up, so it
+// cannot be rank confusion -- same authors, same cohort, same pipeline. 189 of
+// the 241 opposite pairs rest on no shared paper at all and are an artefact of
+// pooling, which is why they are NOT chipped. See FINDINGS_rank_conflict.md.
+const withinPaper = e => (e.rank_conflicts || []).filter(c => c.verdict === "within_paper");
+
 const sel = $("#disease"), minp = $("#minp"), minpv = $("#minpv"), onlyC = $("#onlyc");
-const sortBy = $("#sortby"), hidePrior = $("#hideprior");
+const sortBy = $("#sortby"), hidePrior = $("#hideprior"), onlyRC = $("#onlyrc");
 diseases.forEach(d => {
   const o = document.createElement("option");
   o.value = d; o.textContent = `${d} (${byDisease[d].length})`;
@@ -242,6 +259,7 @@ function render(){
   let rows = (d === "__all__" ? G.edges : (byDisease[d]||[])).filter(e => e.n_papers >= mp);
   if (onlyC.checked) rows = rows.filter(e => e.contested);
   if (hidePrior.checked) rows = rows.filter(e => !e.restates_prior);
+  if (onlyRC.checked) rows = rows.filter(e => e.has_within_paper_conflict);
   const byEvidence = (a,b) => b.n_papers - a.n_papers || b.n_up+b.n_down - (a.n_up+a.n_down);
   if (sortBy.value === "spec")
     // Discriminating first, generic last, narrow in between -- a narrow taxon is
@@ -263,8 +281,12 @@ function render(){
     const c = clsOf(e);
     const bx = (e.contested?" faded":"") + (e.restates_prior?" prior":"");
     const scope = e.taxon_breadth >= 3
-      ? `<span class="chip ${c.chip}" title="reported in ${e.taxon_breadth} diseases; purity ${e.taxon_purity}">${c.label} ${e.taxon_breadth}</span>`
-      : `<span class="chip nar" title="only ${e.taxon_breadth} disease(s) report this taxon — not enough to judge">—</span>`;
+      ? `<span class="chip cls ${c.chip}" title="reported in ${e.taxon_breadth} diseases; purity ${e.taxon_purity}">${c.label} ${e.taxon_breadth}</span>`
+      : `<span class="chip cls nar" title="only ${e.taxon_breadth} disease(s) report this taxon — not enough to judge">—</span>`;
+    const wp = withinPaper(e);
+    const rc = wp.length
+      ? `<span class="chip conf" title="a single study reports this and ${wp[0].other} (its ${wp[0].rel}) in opposite directions">rank ↕</span>`
+      : "";
     // In "All diseases" the same taxon appears once per disease, so three rows
     // read as identical duplicates. The disease is in the hover tooltip; the
     // title makes it reachable without a mouse rather than widening the column.
@@ -274,8 +296,8 @@ function render(){
         ${e.n_down?`<div class="bar down${bx}" style="right:50%;width:${dn}%"></div>`:""}
         ${e.n_up?`<div class="bar up${bx}" style="left:50%;width:${up}%"></div>`:""}
       </div>
-      <div class="cnt">${e.n_papers}${e.contested?'<span class="chip">split</span>':''}</div>
-      <div class="scope">${scope}</div>
+      <div class="cnt">${e.n_papers}</div>
+      <div class="scope">${e.contested?'<span class="chip">split</span>':''}${scope}${rc}</div>
     </div>`;
   }).join("");
   [...chart.querySelectorAll(".row")].forEach(el => {
@@ -313,6 +335,22 @@ window.__showDetail = function(ed, siblings){
     + (ed.contested ? ` · <b>contested</b> (${Math.round(ed.consistency*100)}% consistent)` : "")
     + `</div>`
     + `<div class="spec">${specText(ed)}</div>`
+    + (() => {
+        const wp = withinPaper(ed);
+        if (!wp.length) return "";
+        return `<div class="conflict"><b>Rank conflict — a single study reports both directions.</b>`
+          + ` This is why the graph keeps a family and the genera inside it as separate nodes`
+          + ` instead of merging them: the disagreement is stated by one set of authors on one`
+          + ` cohort, so it cannot be an artefact of pooling different studies.<ul>`
+          + wp.map(c => `<li><i>${ed.taxon}</i> ${ed.direction} vs its ${c.rel}`
+              + ` <i>${c.other}</i>${c.other_rank ? " ("+c.other_rank+")" : ""} ${c.other_direction}`
+              + (c.witnesses && c.witnesses.length
+                  ? ` — <span style="color:var(--ink-3)">${(P[c.witnesses[0]]||{}).title
+                      ? (P[c.witnesses[0]].title||"").slice(0,80) : "shared study"}</span>`
+                  : "")
+              + `</li>`).join("")
+          + `</ul></div>`;
+      })()
     + (withMeta.length ? `<div class="cohort">`
         + `<span><b>${countries.length}</b> ${countries.length===1?"country":"countries"}: ${countries.slice(0,5).join(", ")}${countries.length>5?"…":""}</span>`
         + (seqs.length?`<span>method: <b>${seqs.join(", ")}</b></span>`:"")
@@ -339,7 +377,7 @@ window.__showDetail = function(ed, siblings){
   d.scrollIntoView({behavior:"smooth", block:"nearest"});
 };
 
-[sel, minp, onlyC, sortBy, hidePrior].forEach(el => el.addEventListener("input", render));
+[sel, minp, onlyC, sortBy, hidePrior, onlyRC].forEach(el => el.addEventListener("input", render));
 
 // tabs
 const tabs = [["tab-net","pane-net"],["tab-rank","pane-rank"]];
@@ -378,6 +416,7 @@ def main():
                                               "nd": s["n_diseases_depleted"]}
     n_disc = sum(1 for e in G["edges"] if e.get("taxon_class") == "discriminating")
     n_prior = sum(1 for e in G["edges"] if e.get("restates_prior"))
+    n_rc = sum(1 for e in G["edges"] if e.get("has_within_paper_conflict"))
     payload = {"edges": G["edges"], "hierarchy": G.get("hierarchy", []),
                "papers": G.get("papers", []), "spec": spec}
 
@@ -415,6 +454,10 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
        style="margin:0;text-transform:none;letter-spacing:0;font-size:13px"
        title="{n_prior} edges whose taxon never changes direction across diseases"
        >Hide edges that restate a prior</label></div>
+  <div class="toggle"><input type="checkbox" id="onlyrc"><label for="onlyrc"
+       style="margin:0;text-transform:none;letter-spacing:0;font-size:13px"
+       title="{n_rc} edges where one study reports this taxon and a parent or child taxon in opposite directions"
+       >Rank conflicts only</label></div>
 </div>
 
 <div class="legend">
@@ -425,6 +468,8 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
     = restates the taxon's corpus-wide tendency</span>
   <span class="key"><span class="chip disc">flips</span>direction varies by disease</span>
   <span class="key"><span class="chip gen">generic</span>same direction in every disease</span>
+  <span class="key"><span class="chip conf">rank ↕</span>one study reports this taxon and a
+    parent/child taxon in opposite directions</span>
 </div>
 
 <div class="tabs" role="tablist">
@@ -441,8 +486,9 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
   Containment is not redundancy: <i>Lachnospiraceae</i> is depleted in Parkinson's in 8 of the 9
   papers reporting it while <i>Hungatella</i> inside it is enriched in 6 of 7 — and one study
   reports both directions itself, so this is not an artefact of pooling separate cohorts.
-  Across the graph, related taxa agree on direction 89% of the time within a single paper; the
-  11% that do not are the cases this containment layer exists to keep.</p>
+  Across the graph, related taxa agree on direction 89% of the time within a single paper (vs 54%
+  for unrelated taxa); the 11% that do not are the cases this containment layer exists to keep.
+  <b>{n_rc} edges</b> carry such a conflict — tick <b>Rank conflicts only</b> to see just those.</p>
 </div>
 
 <div class="pane" id="pane-rank" role="tabpanel" hidden>

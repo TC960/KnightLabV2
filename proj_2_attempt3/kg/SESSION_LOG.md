@@ -99,14 +99,53 @@ best review targets after the doubly-contradicted 11. Caveat: 32 of the 33 rest
 on exactly one shared paper, so each individual pair is a single-study claim
 even though the aggregate is not.
 
+### Bug 6 — `python3 build_kg.py` silently rebuilt a three-revisions-old graph
+
+Found by following the project's own "rebuild twice and diff" rule. `DEFAULT_IN`
+still pointed at the raw 250-paper extraction
+(`eval-v2/results/qwopus3.5-27b-v3__q4km__samgated-v1__all250.json`), which is
+**not even present in a fresh clone**, while the shipped graph has been built
+from `extractions_screened.json` since the paper screen landed — as
+`graph.json`'s own `meta.source` has recorded the whole time. So running
+`build_kg.py` with no arguments **overwrote `graph.json` with a 773-taxon /
+1,462-edge / 211-paper graph** against the shipped 918 / 2,011 / 272, and
+printed a normal success summary while doing it.
+
+This is worse than the two fixes that previously erased themselves on rebuild,
+because the verification ritual adopted to catch *those* is "run this command
+twice" — the rule told you to run the thing that destroys the artifact it
+verifies. It is also why the cloud environment looked like it could not rebuild
+the graph: it can, perfectly. `DEFAULT_IN` now points at
+`extractions_screened.json`; with it, a rebuild reproduces the committed graph
+with **zero drift in any pre-existing field** (meta, all 918 nodes, all 708
+hierarchy links, all 272 papers and all 2,011 edges identical), and two rebuilds
+are byte-identical. The taxdump is NOT required for `build_kg.py` — only for the
+still-blocked species split.
+
+### Shipped: the 33 rank conflicts are now findable
+
+`annotate_rank_conflicts()` in `build_kg.py` adds `rank_conflicts` and
+`has_within_paper_conflict` per edge, computed inside `build()` from the edges
+just built rather than as a sidecar reading `rank_conflict.json`, so it cannot
+drift or self-erase — the same reasoning as `annotate_specificity`. **59 edges**
+carry a within-paper conflict (the 33 pairs, counted from both sides). The
+viewer gains a `rank ↕` chip, a "Rank conflicts only" filter, and a detail-panel
+block naming the counterpart taxon and the study that reports both directions.
+Deliberately, only `within_paper` conflicts are chipped: the 189 pairs resting
+on no shared paper are an artefact of pooling and flagging them would relaunch
+the overstatement this session just corrected. `verify_viz.py` grew to **19
+assertions**, all passing — and it earned its keep immediately by catching a
+regression from a layout change of mine, where moving the `split` chip into the
+scope cell silently changed which chip the specificity sort was read from.
+
 ### Highest-value next step
 
-**Surface the 33 within-paper rank conflicts in the viewer, the way specificity
-was surfaced this session.** They are the graph's strongest evidence for its own
-central design decision, they are already computed in `rank_conflict.json`, and
-right now a reader cannot find a single one. Everything else that is not blocked
-on the taxdump or a GPU is now either done or known to be underpowered at
-n=272 papers.
+**The 54 named-species split, on a machine with the taxdump** — unchanged as the
+top defect, and now the only blocked item that is purely mechanical. Everything
+else not needing a GPU is either done or known to be underpowered at n=272.
+Second choice, and unblocked here: per-disease evidence summaries with
+exportable citations (Task 3.4), the last unstarted item on the useful-output
+list.
 
 ---
 
