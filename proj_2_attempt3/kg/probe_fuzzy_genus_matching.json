@@ -1,0 +1,1954 @@
+{
+ "summary": {
+  "n_named_child": 54,
+  "n_resolved": 24,
+  "n_unresolved": 30,
+  "by_how": {
+   "fuzzy_in_genus": 20,
+   "epithet_global": 2,
+   "exact": 2
+  },
+  "n_parent_in_lineage": 20,
+  "n_parent_NOT_in_lineage": 4,
+  "n_nonspecies_tail": 6,
+  "by_rank": {
+   "species": 24
+  }
+ },
+ "records": [
+  {
+   "surface": "Escherichia / Shigella",
+   "parent": "Escherichia",
+   "parent_rank": "genus",
+   "parent_taxid": "561",
+   "tail": "/ Shigella",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": []
+  },
+  {
+   "surface": "Escherichia \u2013 Shigella",
+   "parent": "Escherichia",
+   "parent_rank": "genus",
+   "parent_taxid": "561",
+   "tail": "\u2013 Shigella",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": []
+  },
+  {
+   "surface": "Escherichia_Shigella",
+   "parent": "Escherichia",
+   "parent_rank": "genus",
+   "parent_taxid": "561",
+   "tail": "Shigella",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [],
+   "stem_candidates": []
+  },
+  {
+   "surface": "Streptococcus salivarius/thermophilus",
+   "parent": "Streptococcus",
+   "parent_rank": "genus",
+   "parent_taxid": "1301",
+   "tail": "salivarius/thermophilus",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [],
+   "stem_candidates": []
+  },
+  {
+   "surface": "Dorea asp: CAG:317",
+   "parent": "Dorea",
+   "parent_rank": "genus",
+   "parent_taxid": "189330",
+   "tail": "asp: CAG:317",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "1262873",
+    "scientific_name": "Dorea sp. CAG:317",
+    "rank": "species",
+    "lineage": [
+     [
+      "1262873",
+      "species",
+      "Dorea sp. CAG:317"
+     ],
+     [
+      "189330",
+      "genus",
+      "Dorea"
+     ],
+     [
+      "186803",
+      "family",
+      "Lachnospiraceae"
+     ],
+     [
+      "3085636",
+      "order",
+      "Lachnospirales"
+     ],
+     [
+      "186801",
+      "class",
+      "Clostridia"
+     ],
+     [
+      "1239",
+      "phylum",
+      "Bacillota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.914
+  },
+  {
+   "surface": "Faecalibacterium bacterium CAG 137",
+   "parent": "Faecalibacterium",
+   "parent_rank": "genus",
+   "parent_taxid": "216851",
+   "tail": "bacterium CAG 137",
+   "nonspecies_tail": true,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": []
+  },
+  {
+   "surface": "Faecalibacterium prasunitzii",
+   "parent": "Faecalibacterium",
+   "parent_rank": "genus",
+   "parent_taxid": "216851",
+   "tail": "prasunitzii",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "853",
+    "scientific_name": "Faecalibacterium prausnitzii",
+    "rank": "species",
+    "lineage": [
+     [
+      "853",
+      "species",
+      "Faecalibacterium prausnitzii"
+     ],
+     [
+      "216851",
+      "genus",
+      "Faecalibacterium"
+     ],
+     [
+      "216572",
+      "family",
+      "Oscillospiraceae"
+     ],
+     [
+      "186802",
+      "order",
+      "Eubacteriales"
+     ],
+     [
+      "186801",
+      "class",
+      "Clostridia"
+     ],
+     [
+      "1239",
+      "phylum",
+      "Bacillota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.964
+  },
+  {
+   "surface": "Faecalibacterium prauznitzii",
+   "parent": "Faecalibacterium",
+   "parent_rank": "genus",
+   "parent_taxid": "216851",
+   "tail": "prauznitzii",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "853",
+    "scientific_name": "Faecalibacterium prausnitzii",
+    "rank": "species",
+    "lineage": [
+     [
+      "853",
+      "species",
+      "Faecalibacterium prausnitzii"
+     ],
+     [
+      "216851",
+      "genus",
+      "Faecalibacterium"
+     ],
+     [
+      "216572",
+      "family",
+      "Oscillospiraceae"
+     ],
+     [
+      "186802",
+      "order",
+      "Eubacteriales"
+     ],
+     [
+      "186801",
+      "class",
+      "Clostridia"
+     ],
+     [
+      "1239",
+      "phylum",
+      "Bacillota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.964
+  },
+  {
+   "surface": "Klebsiella pneumonia",
+   "parent": "Klebsiella",
+   "parent_rank": "genus",
+   "parent_taxid": "570",
+   "tail": "pneumonia",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "573",
+    "scientific_name": "Klebsiella pneumoniae",
+    "rank": "species",
+    "lineage": [
+     [
+      "573",
+      "species",
+      "Klebsiella pneumoniae"
+     ],
+     [
+      "570",
+      "genus",
+      "Klebsiella"
+     ],
+     [
+      "543",
+      "family",
+      "Enterobacteriaceae"
+     ],
+     [
+      "91347",
+      "order",
+      "Enterobacterales"
+     ],
+     [
+      "1236",
+      "class",
+      "Gammaproteobacteria"
+     ],
+     [
+      "1224",
+      "phylum",
+      "Pseudomonadota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.976
+  },
+  {
+   "surface": "Ruminococcus bicirculans",
+   "parent": "Ruminococcus",
+   "parent_rank": "genus",
+   "parent_taxid": "1263",
+   "tail": "bicirculans",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [],
+   "stem_candidates": []
+  },
+  {
+   "surface": "Bifidobacterium brevis",
+   "parent": "Bifidobacterium",
+   "parent_rank": "genus",
+   "parent_taxid": "1678",
+   "tail": "brevis",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "1685",
+    "scientific_name": "Bifidobacterium breve",
+    "rank": "species",
+    "lineage": [
+     [
+      "1685",
+      "species",
+      "Bifidobacterium breve"
+     ],
+     [
+      "1678",
+      "genus",
+      "Bifidobacterium"
+     ],
+     [
+      "31953",
+      "family",
+      "Bifidobacteriaceae"
+     ],
+     [
+      "85004",
+      "order",
+      "Bifidobacteriales"
+     ],
+     [
+      "1760",
+      "class",
+      "Actinomycetes"
+     ],
+     [
+      "201174",
+      "phylum",
+      "Actinomycetota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.93
+  },
+  {
+   "surface": "Bifidobacterium_sp__MC_10",
+   "parent": "Bifidobacterium",
+   "parent_rank": "genus",
+   "parent_taxid": "1678",
+   "tail": "sp__MC_10",
+   "nonspecies_tail": true,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "1755601",
+    "scientific_name": "Bifidobacterium sp. MC_10",
+    "rank": "species",
+    "lineage": [
+     [
+      "1755601",
+      "species",
+      "Bifidobacterium sp. MC_10"
+     ],
+     [
+      "1678",
+      "genus",
+      "Bifidobacterium"
+     ],
+     [
+      "31953",
+      "family",
+      "Bifidobacteriaceae"
+     ],
+     [
+      "85004",
+      "order",
+      "Bifidobacteriales"
+     ],
+     [
+      "1760",
+      "class",
+      "Actinomycetes"
+     ],
+     [
+      "201174",
+      "phylum",
+      "Actinomycetota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.939
+  },
+  {
+   "surface": "Prevotella VZCB",
+   "parent": "Prevotella",
+   "parent_rank": "genus",
+   "parent_taxid": "838",
+   "tail": "VZCB",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": []
+  },
+  {
+   "surface": "Prevotella buccae",
+   "parent": "Prevotella",
+   "parent_rank": "genus",
+   "parent_taxid": "838",
+   "tail": "buccae",
+   "nonspecies_tail": false,
+   "how": "epithet_global",
+   "resolved": {
+    "taxid": "28126",
+    "scientific_name": "Segatella buccae",
+    "rank": "species",
+    "lineage": [
+     [
+      "28126",
+      "species",
+      "Segatella buccae"
+     ],
+     [
+      "2974251",
+      "genus",
+      "Segatella"
+     ],
+     [
+      "171552",
+      "family",
+      "Prevotellaceae"
+     ],
+     [
+      "171549",
+      "order",
+      "Bacteroidales"
+     ],
+     [
+      "200643",
+      "class",
+      "Bacteroidia"
+     ],
+     [
+      "976",
+      "phylum",
+      "Bacteroidota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": false,
+   "candidates": [
+    "Segatella buccae"
+   ]
+  },
+  {
+   "surface": "Prevotella copri",
+   "parent": "Prevotella",
+   "parent_rank": "genus",
+   "parent_taxid": "838",
+   "tail": "copri",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "28128",
+    "scientific_name": "Prevotella corporis",
+    "rank": "species",
+    "lineage": [
+     [
+      "28128",
+      "species",
+      "Prevotella corporis"
+     ],
+     [
+      "838",
+      "genus",
+      "Prevotella"
+     ],
+     [
+      "171552",
+      "family",
+      "Prevotellaceae"
+     ],
+     [
+      "171549",
+      "order",
+      "Bacteroidales"
+     ],
+     [
+      "200643",
+      "class",
+      "Bacteroidia"
+     ],
+     [
+      "976",
+      "phylum",
+      "Bacteroidota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.914
+  },
+  {
+   "surface": "Prevotella jejunii",
+   "parent": "Prevotella",
+   "parent_rank": "genus",
+   "parent_taxid": "838",
+   "tail": "jejunii",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "1177574",
+    "scientific_name": "Prevotella jejuni",
+    "rank": "species",
+    "lineage": [
+     [
+      "1177574",
+      "species",
+      "Prevotella jejuni"
+     ],
+     [
+      "838",
+      "genus",
+      "Prevotella"
+     ],
+     [
+      "171552",
+      "family",
+      "Prevotellaceae"
+     ],
+     [
+      "171549",
+      "order",
+      "Bacteroidales"
+     ],
+     [
+      "200643",
+      "class",
+      "Bacteroidia"
+     ],
+     [
+      "976",
+      "phylum",
+      "Bacteroidota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.971
+  },
+  {
+   "surface": "Prevotella shaii",
+   "parent": "Prevotella",
+   "parent_rank": "genus",
+   "parent_taxid": "838",
+   "tail": "shaii",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "419005",
+    "scientific_name": "Prevotella amnii",
+    "rank": "species",
+    "lineage": [
+     [
+      "419005",
+      "species",
+      "Prevotella amnii"
+     ],
+     [
+      "838",
+      "genus",
+      "Prevotella"
+     ],
+     [
+      "171552",
+      "family",
+      "Prevotellaceae"
+     ],
+     [
+      "171549",
+      "order",
+      "Bacteroidales"
+     ],
+     [
+      "200643",
+      "class",
+      "Bacteroidia"
+     ],
+     [
+      "976",
+      "phylum",
+      "Bacteroidota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.875
+  },
+  {
+   "surface": "Prevotella timonensis",
+   "parent": "Prevotella",
+   "parent_rank": "genus",
+   "parent_taxid": "838",
+   "tail": "timonensis",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [
+    "Prevotellamassilia timonensis",
+    "Hoylesella timonensis"
+   ],
+   "stem_candidates": [
+    {
+     "name": "[Lactobacillus] timonensis",
+     "epithet_similarity": 1.0,
+     "genus": "[Lactobacillus]"
+    },
+    {
+     "name": "Urmitella timonensis",
+     "epithet_similarity": 1.0,
+     "genus": "Urmitella"
+    },
+    {
+     "name": "Urinicoccus timonensis",
+     "epithet_similarity": 1.0,
+     "genus": "Urinicoccus"
+    },
+    {
+     "name": "Tessaracoccus timonensis",
+     "epithet_similarity": 1.0,
+     "genus": "Tessaracoccus"
+    },
+    {
+     "name": "Sutterella timonensis",
+     "epithet_similarity": 1.0,
+     "genus": "Sutterella"
+    },
+    {
+     "name": "Streptococcus timonensis",
+     "epithet_similarity": 1.0,
+     "genus": "Streptococcus"
+    }
+   ]
+  },
+  {
+   "surface": "Eubacterium biforme",
+   "parent": "Eubacterium",
+   "parent_rank": "genus",
+   "parent_taxid": "1730",
+   "tail": "biforme",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "39495",
+    "scientific_name": "Eubacterium uniforme",
+    "rank": "species",
+    "lineage": [
+     [
+      "39495",
+      "species",
+      "Eubacterium uniforme"
+     ],
+     [
+      "1730",
+      "genus",
+      "Eubacterium"
+     ],
+     [
+      "186806",
+      "family",
+      "Eubacteriaceae"
+     ],
+     [
+      "186802",
+      "order",
+      "Eubacteriales"
+     ],
+     [
+      "186801",
+      "class",
+      "Clostridia"
+     ],
+     [
+      "1239",
+      "phylum",
+      "Bacillota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.923
+  },
+  {
+   "surface": "Eubacterium rectale",
+   "parent": "Eubacterium",
+   "parent_rank": "genus",
+   "parent_taxid": "1730",
+   "tail": "rectale",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [],
+   "stem_candidates": [
+    {
+     "name": "Treponema rectale",
+     "epithet_similarity": 1.0,
+     "genus": "Treponema"
+    },
+    {
+     "name": "Utricularia recta",
+     "epithet_similarity": 0.833,
+     "genus": "Utricularia"
+    },
+    {
+     "name": "Tubaria recta",
+     "epithet_similarity": 0.833,
+     "genus": "Tubaria"
+    },
+    {
+     "name": "Trochilioides recta",
+     "epithet_similarity": 0.833,
+     "genus": "Trochilioides"
+    },
+    {
+     "name": "Trichodura recta",
+     "epithet_similarity": 0.833,
+     "genus": "Trichodura"
+    },
+    {
+     "name": "Temelucha recta",
+     "epithet_similarity": 0.833,
+     "genus": "Temelucha"
+    }
+   ]
+  },
+  {
+   "surface": "Eubacterium_g4",
+   "parent": "Eubacterium",
+   "parent_rank": "genus",
+   "parent_taxid": "1730",
+   "tail": "g4",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": []
+  },
+  {
+   "surface": "Bacteroides coprophilus",
+   "parent": "Bacteroides",
+   "parent_rank": "genus",
+   "parent_taxid": "816",
+   "tail": "coprophilus",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "151276",
+    "scientific_name": "Bacteroides coprosuis",
+    "rank": "species",
+    "lineage": [
+     [
+      "151276",
+      "species",
+      "Bacteroides coprosuis"
+     ],
+     [
+      "816",
+      "genus",
+      "Bacteroides"
+     ],
+     [
+      "815",
+      "family",
+      "Bacteroidaceae"
+     ],
+     [
+      "171549",
+      "order",
+      "Bacteroidales"
+     ],
+     [
+      "200643",
+      "class",
+      "Bacteroidia"
+     ],
+     [
+      "976",
+      "phylum",
+      "Bacteroidota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.864
+  },
+  {
+   "surface": "Bacteroides dorei",
+   "parent": "Bacteroides",
+   "parent_rank": "genus",
+   "parent_taxid": "816",
+   "tail": "dorei",
+   "nonspecies_tail": false,
+   "how": "epithet_global",
+   "resolved": {
+    "taxid": "357276",
+    "scientific_name": "Phocaeicola dorei",
+    "rank": "species",
+    "lineage": [
+     [
+      "357276",
+      "species",
+      "Phocaeicola dorei"
+     ],
+     [
+      "909656",
+      "genus",
+      "Phocaeicola"
+     ],
+     [
+      "815",
+      "family",
+      "Bacteroidaceae"
+     ],
+     [
+      "171549",
+      "order",
+      "Bacteroidales"
+     ],
+     [
+      "200643",
+      "class",
+      "Bacteroidia"
+     ],
+     [
+      "976",
+      "phylum",
+      "Bacteroidota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": false,
+   "candidates": [
+    "Phocaeicola dorei"
+   ]
+  },
+  {
+   "surface": "Bacteroides plebeus",
+   "parent": "Bacteroides",
+   "parent_rank": "genus",
+   "parent_taxid": "816",
+   "tail": "plebeus",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [],
+   "stem_candidates": [
+    {
+     "name": "Xymene plebeius",
+     "epithet_similarity": 0.933,
+     "genus": "Xymene"
+    },
+    {
+     "name": "Wolbachia endosymbiont of Pleistodontes plebejus",
+     "epithet_similarity": 0.933,
+     "genus": "Wolbachia endosymbiont of Pleistodontes"
+    },
+    {
+     "name": "Wolbachia endosymbiont of Nysius plebeius",
+     "epithet_similarity": 0.933,
+     "genus": "Wolbachia endosymbiont of Nysius"
+    },
+    {
+     "name": "Typhlotanais plebejus",
+     "epithet_similarity": 0.933,
+     "genus": "Typhlotanais"
+    },
+    {
+     "name": "Turdus plebejus",
+     "epithet_similarity": 0.933,
+     "genus": "Turdus"
+    },
+    {
+     "name": "Turdoides plebejus",
+     "epithet_similarity": 0.933,
+     "genus": "Turdoides"
+    }
+   ]
+  },
+  {
+   "surface": "Bacteroides uniforms",
+   "parent": "Bacteroides",
+   "parent_rank": "genus",
+   "parent_taxid": "816",
+   "tail": "uniforms",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "820",
+    "scientific_name": "Bacteroides uniformis",
+    "rank": "species",
+    "lineage": [
+     [
+      "820",
+      "species",
+      "Bacteroides uniformis"
+     ],
+     [
+      "816",
+      "genus",
+      "Bacteroides"
+     ],
+     [
+      "815",
+      "family",
+      "Bacteroidaceae"
+     ],
+     [
+      "171549",
+      "order",
+      "Bacteroidales"
+     ],
+     [
+      "200643",
+      "class",
+      "Bacteroidia"
+     ],
+     [
+      "976",
+      "phylum",
+      "Bacteroidota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.976
+  },
+  {
+   "surface": "Bacteroides vulgatus",
+   "parent": "Bacteroides",
+   "parent_rank": "genus",
+   "parent_taxid": "816",
+   "tail": "vulgatus",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "28116",
+    "scientific_name": "Bacteroides ovatus",
+    "rank": "species",
+    "lineage": [
+     [
+      "28116",
+      "species",
+      "Bacteroides ovatus"
+     ],
+     [
+      "816",
+      "genus",
+      "Bacteroides"
+     ],
+     [
+      "815",
+      "family",
+      "Bacteroidaceae"
+     ],
+     [
+      "171549",
+      "order",
+      "Bacteroidales"
+     ],
+     [
+      "200643",
+      "class",
+      "Bacteroidia"
+     ],
+     [
+      "976",
+      "phylum",
+      "Bacteroidota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.895
+  },
+  {
+   "surface": "bacterium NLAE",
+   "parent": "bacterium",
+   "parent_rank": "species",
+   "parent_taxid": "1869227",
+   "tail": "NLAE",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": []
+  },
+  {
+   "surface": "Blautia massiliensis",
+   "parent": "Blautia",
+   "parent_rank": "genus",
+   "parent_taxid": "572511",
+   "tail": "massiliensis",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [
+    "Candidatus Dorea massiliensis",
+    "Catonella massiliensis",
+    "Africanella massiliensis",
+    "Mediterraneibacter massiliensis",
+    "Luxibacter massiliensis",
+    "Bariatricus massiliensis",
+    "Eisenbergiella massiliensis",
+    "Niameybacter massiliensis",
+    "Konateibacter massiliensis"
+   ],
+   "stem_candidates": [
+    {
+     "name": "[Collinsella] massiliensis",
+     "epithet_similarity": 1.0,
+     "genus": "[Collinsella]"
+    },
+    {
+     "name": "[Candida] massiliensis",
+     "epithet_similarity": 1.0,
+     "genus": "[Candida]"
+    },
+    {
+     "name": "Yersinia massiliensis",
+     "epithet_similarity": 1.0,
+     "genus": "Yersinia"
+    },
+    {
+     "name": "Xanthomonas massiliensis",
+     "epithet_similarity": 1.0,
+     "genus": "Xanthomonas"
+    },
+    {
+     "name": "Weeksella massiliensis",
+     "epithet_similarity": 1.0,
+     "genus": "Weeksella"
+    },
+    {
+     "name": "Vreelandella massiliensis",
+     "epithet_similarity": 1.0,
+     "genus": "Vreelandella"
+    }
+   ]
+  },
+  {
+   "surface": "Blautia_massiliensis",
+   "parent": "Blautia",
+   "parent_rank": "genus",
+   "parent_taxid": "572511",
+   "tail": "massiliensis",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [
+    "Candidatus Dorea massiliensis",
+    "Catonella massiliensis",
+    "Africanella massiliensis",
+    "Mediterraneibacter massiliensis",
+    "Luxibacter massiliensis",
+    "Bariatricus massiliensis",
+    "Eisenbergiella massiliensis",
+    "Niameybacter massiliensis",
+    "Konateibacter massiliensis"
+   ],
+   "stem_candidates": [
+    {
+     "name": "[Collinsella] massiliensis",
+     "epithet_similarity": 1.0,
+     "genus": "[Collinsella]"
+    },
+    {
+     "name": "[Candida] massiliensis",
+     "epithet_similarity": 1.0,
+     "genus": "[Candida]"
+    },
+    {
+     "name": "Yersinia massiliensis",
+     "epithet_similarity": 1.0,
+     "genus": "Yersinia"
+    },
+    {
+     "name": "Xanthomonas massiliensis",
+     "epithet_similarity": 1.0,
+     "genus": "Xanthomonas"
+    },
+    {
+     "name": "Weeksella massiliensis",
+     "epithet_similarity": 1.0,
+     "genus": "Weeksella"
+    },
+    {
+     "name": "Vreelandella massiliensis",
+     "epithet_similarity": 1.0,
+     "genus": "Vreelandella"
+    }
+   ]
+  },
+  {
+   "surface": "Clostridium clostridioforme",
+   "parent": "Clostridium",
+   "parent_rank": "genus",
+   "parent_taxid": "1485",
+   "tail": "clostridioforme",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [],
+   "stem_candidates": [
+    {
+     "name": "Enterocloster clostridioformis",
+     "epithet_similarity": 0.903,
+     "genus": "Enterocloster"
+    }
+   ]
+  },
+  {
+   "surface": "Clostridium g24 FCEY",
+   "parent": "Clostridium",
+   "parent_rank": "genus",
+   "parent_taxid": "1485",
+   "tail": "g24 FCEY",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": []
+  },
+  {
+   "surface": "Clostridium sp CAG 273",
+   "parent": "Clostridium",
+   "parent_rank": "genus",
+   "parent_taxid": "1485",
+   "tail": "sp CAG 273",
+   "nonspecies_tail": true,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "1262789",
+    "scientific_name": "Clostridium sp. CAG:273",
+    "rank": "species",
+    "lineage": [
+     [
+      "1262789",
+      "species",
+      "Clostridium sp. CAG:273"
+     ],
+     [
+      "1485",
+      "genus",
+      "Clostridium"
+     ],
+     [
+      "31979",
+      "family",
+      "Clostridiaceae"
+     ],
+     [
+      "186802",
+      "order",
+      "Eubacteriales"
+     ],
+     [
+      "186801",
+      "class",
+      "Clostridia"
+     ],
+     [
+      "1239",
+      "phylum",
+      "Bacillota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.933
+  },
+  {
+   "surface": "Clostridium_XlVa",
+   "parent": "Clostridium",
+   "parent_rank": "genus",
+   "parent_taxid": "1485",
+   "tail": "XlVa",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": []
+  },
+  {
+   "surface": "Erysipelotrichaceae CCM",
+   "parent": "Erysipelotrichaceae",
+   "parent_rank": "family",
+   "parent_taxid": "128827",
+   "tail": "CCM",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": []
+  },
+  {
+   "surface": "Erysipelotrichaceae CCMM",
+   "parent": "Erysipelotrichaceae",
+   "parent_rank": "family",
+   "parent_taxid": "128827",
+   "tail": "CCMM",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": []
+  },
+  {
+   "surface": "Lachnospiraceae_Eubacterium",
+   "parent": "Lachnospiraceae",
+   "parent_rank": "family",
+   "parent_taxid": "186803",
+   "tail": "Eubacterium",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [],
+   "stem_candidates": [
+    {
+     "name": "unidentified marine eubacterium",
+     "epithet_similarity": 1.0,
+     "genus": "unidentified marine"
+    },
+    {
+     "name": "uncultured hydrothermal vent eubacterium",
+     "epithet_similarity": 1.0,
+     "genus": "uncultured hydrothermal vent"
+    },
+    {
+     "name": "uncultured halophilic eubacterium",
+     "epithet_similarity": 1.0,
+     "genus": "uncultured halophilic"
+    },
+    {
+     "name": "halophilic eubacterium",
+     "epithet_similarity": 1.0,
+     "genus": "halophilic"
+    },
+    {
+     "name": "endosymbiotic eubacteria",
+     "epithet_similarity": 0.857,
+     "genus": "endosymbiotic"
+    }
+   ]
+  },
+  {
+   "surface": "Lachnospiraceae_NC2004",
+   "parent": "Lachnospiraceae",
+   "parent_rank": "family",
+   "parent_taxid": "186803",
+   "tail": "NC2004",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [],
+   "stem_candidates": []
+  },
+  {
+   "surface": "Oribacterium sinu",
+   "parent": "Oribacterium",
+   "parent_rank": "genus",
+   "parent_taxid": "265975",
+   "tail": "sinu",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "237576",
+    "scientific_name": "Oribacterium sinus",
+    "rank": "species",
+    "lineage": [
+     [
+      "237576",
+      "species",
+      "Oribacterium sinus"
+     ],
+     [
+      "265975",
+      "genus",
+      "Oribacterium"
+     ],
+     [
+      "186803",
+      "family",
+      "Lachnospiraceae"
+     ],
+     [
+      "3085636",
+      "order",
+      "Lachnospirales"
+     ],
+     [
+      "186801",
+      "class",
+      "Clostridia"
+     ],
+     [
+      "1239",
+      "phylum",
+      "Bacillota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.971
+  },
+  {
+   "surface": "Turicibacter sp001543345",
+   "parent": "Turicibacter",
+   "parent_rank": "genus",
+   "parent_taxid": "191303",
+   "tail": "sp001543345",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [],
+   "stem_candidates": []
+  },
+  {
+   "surface": "Hungatella effluvia",
+   "parent": "Hungatella",
+   "parent_rank": "genus",
+   "parent_taxid": "1649459",
+   "tail": "effluvia",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "1096246",
+    "scientific_name": "Hungatella effluvii",
+    "rank": "species",
+    "lineage": [
+     [
+      "1096246",
+      "species",
+      "Hungatella effluvii"
+     ],
+     [
+      "1649459",
+      "genus",
+      "Hungatella"
+     ],
+     [
+      "186803",
+      "family",
+      "Lachnospiraceae"
+     ],
+     [
+      "3085636",
+      "order",
+      "Lachnospirales"
+     ],
+     [
+      "186801",
+      "class",
+      "Clostridia"
+     ],
+     [
+      "1239",
+      "phylum",
+      "Bacillota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.947
+  },
+  {
+   "surface": "Hungatella hathewyi",
+   "parent": "Hungatella",
+   "parent_rank": "genus",
+   "parent_taxid": "1649459",
+   "tail": "hathewyi",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "154046",
+    "scientific_name": "Hungatella hathewayi",
+    "rank": "species",
+    "lineage": [
+     [
+      "154046",
+      "species",
+      "Hungatella hathewayi"
+     ],
+     [
+      "1649459",
+      "genus",
+      "Hungatella"
+     ],
+     [
+      "186803",
+      "family",
+      "Lachnospiraceae"
+     ],
+     [
+      "3085636",
+      "order",
+      "Lachnospirales"
+     ],
+     [
+      "186801",
+      "class",
+      "Clostridia"
+     ],
+     [
+      "1239",
+      "phylum",
+      "Bacillota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.974
+  },
+  {
+   "surface": "Neisseria multispecies",
+   "parent": "Neisseria",
+   "parent_rank": "genus",
+   "parent_taxid": "482",
+   "tail": "multispecies",
+   "nonspecies_tail": true,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [],
+   "stem_candidates": [
+    {
+     "name": "Pseudo-nitzschia multiseries",
+     "epithet_similarity": 0.87,
+     "genus": "Pseudo-nitzschia"
+    },
+    {
+     "name": "Sclerodactyla multipes",
+     "epithet_similarity": 0.8,
+     "genus": "Sclerodactyla"
+    },
+    {
+     "name": "Diplopteraster multipes",
+     "epithet_similarity": 0.8,
+     "genus": "Diplopteraster"
+    },
+    {
+     "name": "Bomarea multipes",
+     "epithet_similarity": 0.8,
+     "genus": "Bomarea"
+    }
+   ]
+  },
+  {
+   "surface": "Fusobacterium_A mortiferum",
+   "parent": "Fusobacterium",
+   "parent_rank": "genus",
+   "parent_taxid": "848",
+   "tail": "A mortiferum",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "850",
+    "scientific_name": "Fusobacterium mortiferum",
+    "rank": "species",
+    "lineage": [
+     [
+      "850",
+      "species",
+      "Fusobacterium mortiferum"
+     ],
+     [
+      "848",
+      "genus",
+      "Fusobacterium"
+     ],
+     [
+      "203492",
+      "family",
+      "Fusobacteriaceae"
+     ],
+     [
+      "203491",
+      "order",
+      "Fusobacteriales"
+     ],
+     [
+      "203490",
+      "class",
+      "Fusobacteriia"
+     ],
+     [
+      "32066",
+      "phylum",
+      "Fusobacteriota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.96
+  },
+  {
+   "surface": "Monoglobus pectinyliticus",
+   "parent": "Monoglobus",
+   "parent_rank": "genus",
+   "parent_taxid": "2039302",
+   "tail": "pectinyliticus",
+   "nonspecies_tail": false,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "1981510",
+    "scientific_name": "Monoglobus pectinilyticus",
+    "rank": "species",
+    "lineage": [
+     [
+      "1981510",
+      "species",
+      "Monoglobus pectinilyticus"
+     ],
+     [
+      "2039302",
+      "genus",
+      "Monoglobus"
+     ],
+     [
+      "3085657",
+      "family",
+      "Monoglobaceae"
+     ],
+     [
+      "3085656",
+      "order",
+      "Monoglobales"
+     ],
+     [
+      "186801",
+      "class",
+      "Clostridia"
+     ],
+     [
+      "1239",
+      "phylum",
+      "Bacillota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.92
+  },
+  {
+   "surface": "Oscillibacter_sp_57_20",
+   "parent": "Oscillibacter",
+   "parent_rank": "genus",
+   "parent_taxid": "459786",
+   "tail": "sp_57_20",
+   "nonspecies_tail": true,
+   "how": "fuzzy_in_genus",
+   "resolved": {
+    "taxid": "1897011",
+    "scientific_name": "Oscillibacter sp. 57_20",
+    "rank": "species",
+    "lineage": [
+     [
+      "1897011",
+      "species",
+      "Oscillibacter sp. 57_20"
+     ],
+     [
+      "459786",
+      "genus",
+      "Oscillibacter"
+     ],
+     [
+      "216572",
+      "family",
+      "Oscillospiraceae"
+     ],
+     [
+      "186802",
+      "order",
+      "Eubacteriales"
+     ],
+     [
+      "186801",
+      "class",
+      "Clostridia"
+     ],
+     [
+      "1239",
+      "phylum",
+      "Bacillota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": true,
+   "candidates": [],
+   "fuzzy_score": 0.933
+  },
+  {
+   "surface": "Ruminococcus sp. 5_1_39BFAA",
+   "parent": "Ruminococcus sp. 5",
+   "parent_rank": "species",
+   "parent_taxid": "169436",
+   "tail": "1_39BFAA",
+   "nonspecies_tail": false,
+   "how": "exact",
+   "resolved": {
+    "taxid": "457412",
+    "scientific_name": "Ruminococcus sp. 5_1_39BFAA",
+    "rank": "species",
+    "lineage": [
+     [
+      "457412",
+      "species",
+      "Ruminococcus sp. 5_1_39BFAA"
+     ],
+     [
+      "1263",
+      "genus",
+      "Ruminococcus"
+     ],
+     [
+      "216572",
+      "family",
+      "Oscillospiraceae"
+     ],
+     [
+      "186802",
+      "order",
+      "Eubacteriales"
+     ],
+     [
+      "186801",
+      "class",
+      "Clostridia"
+     ],
+     [
+      "1239",
+      "phylum",
+      "Bacillota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": false,
+   "candidates": []
+  },
+  {
+   "surface": "Azospirillum sp. 47-25",
+   "parent": "Azospirillum sp.",
+   "parent_rank": "species",
+   "parent_taxid": "34012",
+   "tail": "47-25",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [],
+   "stem_candidates": []
+  },
+  {
+   "surface": "Lachnospiraceae bacterium MC-35",
+   "parent": "Lachnospiraceae bacterium",
+   "parent_rank": "species",
+   "parent_taxid": "1898203",
+   "tail": "MC-35",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [],
+   "stem_candidates": []
+  },
+  {
+   "surface": "Escherichia phage TL 2011",
+   "parent": "Escherichia phage",
+   "parent_rank": "species",
+   "parent_taxid": "3102713",
+   "tail": "TL 2011",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": []
+  },
+  {
+   "surface": "Escherichia phage TL 2011b",
+   "parent": "Escherichia phage",
+   "parent_rank": "species",
+   "parent_taxid": "3102713",
+   "tail": "TL 2011b",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": []
+  },
+  {
+   "surface": "Vibrio phage pYD38 A",
+   "parent": "Vibrio phage",
+   "parent_rank": "species",
+   "parent_taxid": "3720007",
+   "tail": "pYD38 A",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": []
+  },
+  {
+   "surface": "Sarcina sp. JB2",
+   "parent": "Sarcina sp.",
+   "parent_rank": "species",
+   "parent_taxid": "2053610",
+   "tail": "JB2",
+   "nonspecies_tail": false,
+   "how": "exact",
+   "resolved": {
+    "taxid": "2726954",
+    "scientific_name": "Sarcina sp. JB2",
+    "rank": "species",
+    "lineage": [
+     [
+      "2726954",
+      "species",
+      "Sarcina sp. JB2"
+     ],
+     [
+      "1266",
+      "genus",
+      "Sarcina"
+     ],
+     [
+      "31979",
+      "family",
+      "Clostridiaceae"
+     ],
+     [
+      "186802",
+      "order",
+      "Eubacteriales"
+     ],
+     [
+      "186801",
+      "class",
+      "Clostridia"
+     ],
+     [
+      "1239",
+      "phylum",
+      "Bacillota"
+     ],
+     [
+      "2",
+      "superkingdom",
+      "Bacteria"
+     ]
+    ]
+   },
+   "parent_in_lineage": false,
+   "candidates": []
+  },
+  {
+   "surface": "Lawsonibacter phoceensis",
+   "parent": "Lawsonibacter",
+   "parent_rank": "genus",
+   "parent_taxid": "2172004",
+   "tail": "phoceensis",
+   "nonspecies_tail": false,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": [],
+   "stem_candidates": [
+    {
+     "name": "Peptoniphilus phoceensis",
+     "epithet_similarity": 1.0,
+     "genus": "Peptoniphilus"
+    },
+    {
+     "name": "Coprococcus phoceensis",
+     "epithet_similarity": 1.0,
+     "genus": "Coprococcus"
+    },
+    {
+     "name": "Clostridium phoceensis",
+     "epithet_similarity": 1.0,
+     "genus": "Clostridium"
+    },
+    {
+     "name": "Candidatus Anaerococcus phoceensis",
+     "epithet_similarity": 1.0,
+     "genus": "Candidatus Anaerococcus"
+    },
+    {
+     "name": "Butyricimonas phoceensis",
+     "epithet_similarity": 1.0,
+     "genus": "Butyricimonas"
+    },
+    {
+     "name": "Bartonella phoceensis",
+     "epithet_similarity": 1.0,
+     "genus": "Bartonella"
+    }
+   ]
+  },
+  {
+   "surface": "Eikenella species NML 130454",
+   "parent": "Eikenella",
+   "parent_rank": "genus",
+   "parent_taxid": "538",
+   "tail": "species NML 130454",
+   "nonspecies_tail": true,
+   "how": null,
+   "resolved": null,
+   "parent_in_lineage": null,
+   "candidates": []
+  }
+ ]
+}

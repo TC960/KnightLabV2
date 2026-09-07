@@ -1,0 +1,30 @@
+{
+ "graph": "graph.json",
+ "links_checked": 608,
+ "confirmed": 604,
+ "false": [
+  [
+   "Gemmiger",
+   "Oscillospiraceae",
+   "t:ncbi:204475",
+   "t:ncbi:216572"
+  ],
+  [
+   "[Clostridium] innocuum",
+   "Clostridium",
+   "t:ncbi:1522",
+   "t:ncbi:1485"
+  ]
+ ],
+ "unknown": [
+  [
+   "Dialisteraceae",
+   "Negativicutes"
+  ],
+  [
+   "Candidatus Copromonas (nom. illeg.)",
+   "Lachnospiraceae"
+  ]
+ ],
+ "multi_parent": {}
+}

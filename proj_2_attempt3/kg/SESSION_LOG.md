@@ -4,6 +4,85 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+# SUMMARY — session of 2026-09-07 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**Audited the unmerged `claude/kg-species-split` branch and found its containment
+links are wrong for the renamed species.** Write-up:
+`FINDINGS_containment_provenance.md`.
+
+The scheduled prompt's priority list is stale again (Tasks 1, 2.5, 3.1 and the
+MAIN_DATA filter were already done); none were redone. `ftp.ncbi.nih.gov` was
+re-probed and is still shut (CONNECT -> 403).
+
+### The taxdump blocker has a way around it, and a trap
+
+`pip install taxoniq` pulls `ncbi-taxon-db`, an NCBI 2024-09 snapshot bundled as
+a wheel: 2.6M scientific names with ranks and full lineages, from PyPI, which is
+reachable. That is enough for ancestry questions. It is **not** a taxonomy: it
+has no synonym table, so `Bacteroidetes` and `Firmicutes` do not resolve in it.
+It must never be substituted for `taxonomy.py`, which exists to fold exactly
+those. A prior session found the same route independently.
+
+### The branch's resolutions are right; its hierarchy is not
+
+Reached the 54 named children by a different path and agreed with the branch on
+every one of the 9 dangerous cases (*Segatella copri* 165179, *Phocaeicola
+vulgatus* 821, *Agathobacter rectalis* 39491, ...). An independent replication of
+the risky part of an unmerged change, so the resolutions should be kept.
+
+The containment links should not. `audit_containment_ncbi.py` (new, shares no
+logic with the build; asks NCBI one question per link -- is the parent anywhere
+in the child's lineage?):
+
+- `main` @ 6b0a131: 608 links, **2 false**, **0** multi-parent children.
+- branch @ c5f8de2: 616 links, **13 false**, **4** multi-parent children.
+
+The split introduces **11 false containment links and all 4 multi-parents**.
+`audit_containment.py` reports 11 of them as "deliberate" -- the graph recording
+the genus the paper named the organism under. That position is coherent but the
+branch does not implement it: 4 of the 11 also get the correct link and the
+choice of which 4 is arbitrary. *Phocaeicola dorei* is linked to *Phocaeicola*,
+*Phocaeicola vulgatus* is not.
+
+**Mechanism:** the parent depends on which spelling the corpus used, not on the
+organism. A node whose aliases include the current name picked up the right link
+through the ordinary path; one mentioned only under the obsolete binomial did
+not, and a node acquires a second parent when both spellings appear. That is the
+"does a surface string extend the name it resolved to" anomaly class again.
+
+**Why it matters:** *Eubacterium rectale* -> *Agathobacter rectalis* carries 12
+papers, 12 depleted / 0 enriched, 8 diseases, 3 of them Parkinson's. NCBI puts
+*Agathobacter* in **Lachnospiraceae**; the branch files it under Eubacteriaceae.
+So the fix moves a block of unanimous depletion evidence *into* the family behind
+the project's flagship claim. `analyze_rank_conflict.py` and GraphRAG both
+consume these links.
+
+**The fix costs nothing:** all ten species have a true nearest ancestor already
+present in the graph, so no new nodes are needed, and provenance is already kept
+in `aliases`. Removing the false links is a re-parenting, not a data loss.
+
+### Dead end, recorded because it is the obvious shortcut
+
+Fuzzy-matching a renamed species **within its old genus** (difflib >= 0.86) gives
+5 confident wrong answers in 20: copri -> *Prevotella corporis*, vulgatus ->
+*Bacteroides ovatus*, biforme -> *Eubacterium uniforme*, coprophilus ->
+*Bacteroides coprosuis*, shaii -> *Prevotella amnii*. The failure is systematic:
+when a species leaves a genus, its former congeners are what remain, so nearest-
+string search inside that genus is biased toward a wrong sibling **precisely for
+the reclassified species**. Every wrong answer is a real organism and would join
+cleanly against Disbiome/Peryton under the wrong taxon. Do not do this.
+
+### Highest-value next step
+
+Land `claude/kg-species-split` with the parentage fix. It is 8 commits behind
+`main` and both sides rewrote `build_kg.py` and the generated artifacts, so merge
+the **code**, rebuild with the repo's tooling, rebuild again and diff, and gate on
+`audit_containment_ncbi.py` reporting 2 false links and 0 multi-parents. Not an
+accuracy gain: the branch's own decomposition shows common-pair agreement
+unchanged (Disbiome 0.7160 -> 0.7160, Peryton 0.7279 -> 0.7279).
+
+---
+
 # SUMMARY — session of 2026-09-06 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **Shipped the specificity layer into the viewer, then consumed the containment
