@@ -32,8 +32,17 @@ import re
 from collections import Counter, defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_IN = os.path.join(HERE, "..", "dsmlp_model_prompting", "eval-v2", "results",
-                          "qwopus3.5-27b-v3__q4km__samgated-v1__all250.json")
+# The SCREENED extraction is the source of truth, and `graph.json`'s own
+# meta.source has recorded it since the paper screen landed. This default used to
+# point at the raw 250-paper run
+# (../dsmlp_model_prompting/eval-v2/results/qwopus3.5-27b-v3__q4km__samgated-v1__all250.json),
+# which is three corpus revisions old and is not even present in a fresh clone.
+# Running `python3 build_kg.py` with no arguments therefore OVERWROTE graph.json
+# with a 773-taxon / 1,462-edge / 211-paper graph -- against the shipped 918 /
+# 2,011 / 272 -- and printed success while doing it. That is the exact failure
+# mode the "rebuild twice and diff" rule exists to catch, except the rule tells
+# you to run this very command, so it silently destroyed the thing it verifies.
+DEFAULT_IN = os.path.join(HERE, "extractions_screened.json")
 
 # --- disease normalization -------------------------------------------------
 # The extractor returns free text ("Alzheimer disease" / "Alzheimer's disease" /
@@ -154,6 +163,13 @@ SPLIT_NAMED_CHILDREN = False        # set by --merge-named-children (default on)
 BODY_SITE = {}                      # paper title -> sampled body site
 PLACEHOLDER_PARENT = {}             # placeholder node key -> parent taxid
 SPECIES_PARENT = {}                 # split species node key -> parent taxid
+# Split species node key -> TRUE NCBI ancestor taxids, nearest first. NCBI has
+# moved 11 of the 25 split species out of the genus their surface string names
+# (Prevotella copri -> Segatella copri), so the surface genus is not an ancestor
+# and linking to it asserts a containment NCBI contradicts. Written into
+# named_child_taxids.json by add_true_ancestors.py; see
+# FINDINGS_containment_provenance.md.
+SPECIES_ANCESTORS = {}
 
 
 def load_named_children():
@@ -218,9 +234,22 @@ def norm_taxon(t, tax=None):
             key = f"ncbi:{r['taxid']}"
             if ptid:
                 SPECIES_PARENT[key] = ptid
-            # r["label"] is the surface string except where that string is a
-            # misspelling, which is why the node is not simply labelled `disp`.
-            return key, r.get("label", disp), "species", "named_child"
+            if r.get("ncbi_ancestors"):
+                SPECIES_ANCESTORS[key] = r["ncbi_ancestors"]
+            # Label with NCBI's CURRENT name. The obsolete binomial the paper used
+            # is not lost -- it stays in the node's `aliases`, which is where
+            # provenance belongs. Labelling by surface string made the graph
+            # inconsistent with itself: `Phocaeicola dorei` and `Bacteroides
+            # vulgatus` are both Phocaeicola species and were displayed under two
+            # different conventions purely because of which spelling the corpus
+            # happened to use.
+            cur = r.get("ncbi_current_name") or r.get("label", disp)
+            # NCBI appends a nomenclatural authority to some scientific names --
+            # "Blautia massiliensis (ex Durand et al. 2017)". That is citation
+            # metadata, not part of the organism's name, and it is not what a
+            # reader of the graph wants on a node. Strip only this exact shape.
+            cur = re.sub(r"\s*\(ex [^)]*\)\s*$", "", cur).strip()
+            return key, cur, "species", "named_child"
         key = "ph:" + re.sub(r"\s+", " ", disp.lower().replace("_", " ")).strip()
         if ptid:
             PLACEHOLDER_PARENT[key] = ptid
@@ -391,7 +420,15 @@ def build(rows, min_papers=1, tax=None):
         for o in obs:
             evidence[o["paper"]] = o["dir"]
         consistency = max(up, dn) / n
-        sites = Counter(BODY_SITE.get(p, "") for p in papers)
+        # sorted(papers), not papers: `papers` is a set of title strings, so its
+        # iteration order is randomised per process by PYTHONHASHSEED, and a
+        # Counter keeps insertion order. That made `sites` key order vary between
+        # runs on the ~30 multi-site edges -- identical content, different bytes.
+        # Harmless in itself, but it meant the project's own verification rule
+        # ("rebuild TWICE and diff") reported a difference on every single build,
+        # which is how a real self-erasing fix would have been waved through.
+        # Everything else emitted here is already sorted; this was the omission.
+        sites = Counter(BODY_SITE.get(p, "") for p in sorted(papers))
         sites.pop("", None)
         edges.append({
             "sites": dict(sites),
@@ -453,7 +490,7 @@ def build(rows, min_papers=1, tax=None):
     # Roseburia, Blautia, Hungatella in Parkinson's). Without an explicit link
     # these are unrelated nodes and the graph cannot express that one contains
     # the other -- which matters because containment is NOT redundancy: in this
-    # corpus Lachnospiraceae is depleted (15 papers) while Hungatella inside it
+    # corpus Lachnospiraceae is depleted (8 of 9 papers) while Hungatella inside it
     # is enriched (7). A family shrinking while one genus grows is ordinary
     # biology, and only survives if the nesting is represented rather than
     # collapsed. So we add parent_of edges and let consumers roll up or not.
@@ -468,22 +505,52 @@ def build(rows, min_papers=1, tax=None):
                               "parent_rank": (tax.rank.get(parent_tid, "")
                                               if tax is not None and tax.ok else ""),
                               "child_rank": "clade"})
-    # A species split out of its genus is contained by that genus, and the link
-    # has to be stated: NCBI has since moved four of these to other genera
-    # (Prevotella copri -> Segatella), so a lineage walk would NOT reproduce the
-    # containment the papers themselves assert by naming the organism that way.
+    # A species split out of its genus needs exactly ONE containment parent, and
+    # it must be a real ancestor.
+    #
+    # This used to link to SPECIES_PARENT -- the genus named by the surface
+    # string -- on the reasoning that the graph records what the papers asserted
+    # by naming the organism that way. That produced 11 links NCBI contradicts
+    # (Segatella copri under Prevotella, Agathobacter rectalis under Eubacterium,
+    # which is not even the same family) and, because the lineage walk below
+    # sometimes ALSO found the true genus, 4 nodes with two different parents in
+    # what is meant to be a tree. Which nodes got the second link was arbitrary:
+    # Phocaeicola dorei was linked to Phocaeicola, Phocaeicola vulgatus was not.
+    #
+    # So link to the nearest TRUE ancestor that is present in this graph, and let
+    # `aliases` carry the provenance -- the obsolete binomial is recorded there
+    # either way, and an alias cannot be mistaken for an ancestry claim. Falls
+    # back to the surface genus only when no true ancestor is a node here.
+    # Verified by audit_containment_ncbi.py, which shares no logic with this file.
+    explicit_children = set()
     for key, parent_tid in SPECIES_PARENT.items():
-        child, parent = f"t:{key}", f"t:ncbi:{parent_tid}"
-        if child in node_ids and parent in node_ids and child != parent:
+        child = f"t:{key}"
+        if child not in node_ids:
+            continue
+        parent = next((f"t:ncbi:{a}" for a in SPECIES_ANCESTORS.get(key, ())
+                       if f"t:ncbi:{a}" in node_ids), None)
+        if parent is None:
+            parent = f"t:ncbi:{parent_tid}"
+        if parent in node_ids and child != parent:
+            ptid = parent.split(":")[-1]
             hierarchy.append({"parent": parent, "child": child,
-                              "parent_rank": (tax.rank.get(parent_tid, "")
+                              "parent_rank": (tax.rank.get(ptid, "")
                                               if tax is not None and tax.ok else ""),
                               "child_rank": "species"})
+            explicit_children.add(child)
     if tax is not None and tax.ok:
         tids = [n["taxid"] for n in nodes if n["type"] == "taxon" and n.get("taxid")]
         lineage = {t: tax.lineage(t) for t in tids}
         present = set(tids)
         for t in tids:
+            # A split species already has its one true parent from the block
+            # above. Letting the walk add another is what produced the
+            # multi-parent nodes: `tax` here is usually the replay cache, whose
+            # lineage() is a graph-local ancestor chain read back out of the
+            # PREVIOUS graph.json, not NCBI ancestry -- so what it found depended
+            # on the last build rather than on the organism.
+            if f"t:ncbi:{t}" in explicit_children:
+                continue
             # nearest ancestor that is itself a node in this graph
             for anc in lineage[t][1:]:
                 if anc in present:
@@ -534,7 +601,158 @@ def build(rows, min_papers=1, tax=None):
     for e in edges:
         e["ev"] = [{"i": pidx[x["t"]], "d": x["d"][0]} for x in e["evidence"]]
         del e["evidence"]
+    annotate_specificity(nodes, edges)
+    annotate_rank_conflicts(nodes, edges, hierarchy)
     return nodes, edges, hierarchy, papers_tbl
+
+
+def annotate_rank_conflicts(nodes, edges, hierarchy):
+    """Flag the parent/child pairs that point opposite ways in the same disease.
+
+    WHY. Not collapsing taxonomic ranks is this project's most load-bearing
+    design decision, and until 2026-09-06 it was justified by one anecdote.
+    `FINDINGS_rank_conflict.md` measured it: of 241 opposite-direction
+    parent/child pairs sharing a disease, only 33 are asserted INSIDE a single
+    study -- 189 rest on no shared paper at all, the family measured by one set
+    of studies and the genus by another. Those 33 are the real argument for the
+    containment layer and nothing in the graph pointed at them.
+
+    The verdict distinction is the whole point and must not be flattened:
+
+      within_paper      one study reports the family down and the genus up. This
+                        CANNOT be rank confusion -- same authors, same cohort,
+                        same pipeline produced both numbers. 33 of these.
+      cross_paper_only  studies measured both and AGREED; the conflict comes
+                        from papers that measured only one side.
+      no_shared_paper   no study ever measured both. The weakest kind: an
+                        artefact of pooling, not a disagreement anyone stated.
+
+    Computed inside build() from the edges just built, deliberately not as a
+    sidecar reading rank_conflict.json, so it cannot drift out of sync with the
+    graph or self-erase on rebuild -- the same reasoning as annotate_specificity.
+    """
+    by_node = defaultdict(dict)
+    for e in edges:
+        by_node[e["source"]][e["disease"]] = e
+    label = {n["id"]: n.get("label", n["id"]) for n in nodes}
+
+    def majority(e):
+        return "e" if e["n_up"] > e["n_down"] else ("d" if e["n_down"] > e["n_up"] else None)
+
+    for e in edges:
+        e["rank_conflicts"] = []
+    for h in hierarchy:
+        for P, C, rel in ((h["parent"], h["child"], "child"),
+                          (h["child"], h["parent"], "parent")):
+            for dis in sorted(set(by_node.get(P, {})) & set(by_node.get(C, {}))):
+                pe, ce = by_node[P][dis], by_node[C][dis]
+                pm, cm = majority(pe), majority(ce)
+                if pm is None or cm is None or pm == cm:
+                    continue
+                pdir = {ev["i"]: ev["d"] for ev in pe["ev"]}
+                cdir = {ev["i"]: ev["d"] for ev in ce["ev"]}
+                both = sorted(set(pdir) & set(cdir))
+                within = [i for i in both if pdir[i] != cdir[i]]
+                pe["rank_conflicts"].append({
+                    "other": label.get(C, C),
+                    "other_key": ce["taxon_key"],
+                    "other_rank": ce.get("rank", ""),
+                    "rel": rel,                      # C is this edge's parent/child
+                    "other_direction": ce["direction"],
+                    "other_papers": ce["n_papers"],
+                    "n_shared": len(both),
+                    "verdict": ("within_paper" if within else
+                                "cross_paper_only" if both else "no_shared_paper"),
+                    "witnesses": within[:3],         # paper-table indices
+                })
+    for e in edges:
+        e["rank_conflicts"].sort(key=lambda c: (c["verdict"] != "within_paper",
+                                                -c["other_papers"], c["other"]))
+        e["has_within_paper_conflict"] = any(
+            c["verdict"] == "within_paper" for c in e["rank_conflicts"])
+
+
+def annotate_specificity(nodes, edges):
+    """Mark how disease-specific each taxon's direction is.
+
+    WHY. The 2026-09-05 analysis (`FINDINGS_disease_specificity.md`) found that
+    ~70% of the directional agreement in this graph is a corpus-wide prior rather
+    than disease-specific signal: 59 of 187 taxa reported in >=3 diseases never
+    flip direction. *Streptococcus* is enriched in all 12 diseases that report
+    it. So "Streptococcus enriched in Parkinson's, 5 papers" reads as a
+    Parkinson's finding when it is really a statement about Streptococcus, and
+    nothing in the graph said so.
+
+    Edge weight already answers "how much evidence"; these fields answer the
+    different question "how much of it is about THIS disease". They are derived
+    purely from the edges just built, so they cannot drift out of sync with them.
+
+    Per taxon, counting one vote per disease (a disease whose own edge is
+    contested casts no vote, since it has no direction to contribute):
+      breadth  -- number of diseases casting a vote
+      purity   -- max(up_diseases, down_diseases) / breadth
+      class    -- generic       : breadth >= 3 and purity == 1.0
+                  discriminating: breadth >= 3 and purity <= 0.6
+                  mixed         : breadth >= 3, in between
+                  narrow        : breadth < 3, too few diseases to say
+    The >=3 floor and the 0.6 cut are reporting thresholds, not test results;
+    the underlying counts are emitted so any other cut can be applied.
+
+    Note the vote rule differs deliberately from the exploratory version in
+    `disease_specificity.py`, which let a contested disease still vote by its
+    majority. Here a contested edge casts no vote at all: if a disease's own
+    papers disagree, it has no settled direction to contribute. That is the
+    stricter reading and it moves a few counts (Streptococcus is generic across
+    11 diseases here, 12 there). Every taxon is annotated either way, so a taxon
+    whose every edge is contested gets breadth 0 rather than a missing field --
+    an absent field is a trap for whatever consumes this.
+    """
+    votes = defaultdict(lambda: {"e": 0, "d": 0})
+    for e in edges:
+        votes[e["taxon_key"]]  # ensure every taxon appears, even if all-contested
+        if e["contested"]:
+            continue
+        votes[e["taxon_key"]]["e" if e["direction"] == "enriched" else "d"] += 1
+
+    stats = {}
+    for t, v in votes.items():
+        breadth = v["e"] + v["d"]
+        purity = max(v["e"], v["d"]) / breadth if breadth else 0.0
+        if breadth < 3:
+            cls = "narrow"
+        elif purity == 1.0:
+            cls = "generic"
+        elif purity <= 0.6:
+            cls = "discriminating"
+        else:
+            cls = "mixed"
+        stats[t] = {
+            "breadth": breadth,
+            "n_diseases_enriched": v["e"],
+            "n_diseases_depleted": v["d"],
+            "purity": round(purity, 3),
+            "consensus": "enriched" if v["e"] > v["d"] else
+                         ("depleted" if v["d"] > v["e"] else "split"),
+            "class": cls,
+        }
+
+    for n in nodes:
+        if n["type"] != "taxon":
+            continue
+        s = stats.get(n["id"].split("t:", 1)[-1])
+        if s:
+            n["specificity"] = s
+    for e in edges:
+        s = stats.get(e["taxon_key"])
+        if not s:
+            continue
+        e["taxon_breadth"] = s["breadth"]
+        e["taxon_purity"] = s["purity"]
+        e["taxon_class"] = s["class"]
+        # Does this edge merely restate the taxon's corpus-wide tendency?
+        e["restates_prior"] = bool(
+            not e["contested"] and s["class"] == "generic"
+            and e["direction"] == s["consensus"])
 
 
 def main():

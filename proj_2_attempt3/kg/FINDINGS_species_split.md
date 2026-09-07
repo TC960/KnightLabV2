@@ -178,15 +178,28 @@ because it supports anything.
 "nearest-present-ancestor links, not full NCBI lineages" by its own docstring, so
 containment has only ever been as good as whatever taxonomy built the graph.
 
-`audit_containment.py`, over 616 taxid-to-taxid links:
+`audit_containment.py`, over 613 taxid-to-taxid links:
 
 | | |
 |---|---:|
-| confirmed by NCBI ancestry | 601 |
-| deliberate split links (the paper's own naming) | 11 |
+| confirmed by NCBI ancestry | 609 |
+| deliberate split links (the paper's own naming) | 0 |
 | true but not the nearest ancestor | 7 |
 | taxid NCBI 2024 no longer carries | 2 |
 | **not an ancestor at all — DEFECT** | **2** |
+
+> **Corrected 2026-09-07.** This table originally read 616 links with **11
+> "deliberate" split links** — split species parented by the genus in their
+> obsolete binomial (*Segatella copri* under *Prevotella*), on the reasoning that
+> the graph should record what the papers asserted by naming the organism that
+> way. That was retired for two reasons. It asserted ancestry NCBI contradicts,
+> and it was **not applied consistently**: the lineage walk sometimes added the
+> true genus as well, giving 4 nodes two different parents in what is meant to be
+> a tree, with the choice of which 4 depending on whether the corpus also used the
+> current name. Split species are now parented by their nearest *true* ancestor
+> present in the graph, and the obsolete binomial is kept in `aliases`, where
+> provenance belongs and cannot be misread as an ancestry claim. See
+> `FINDINGS_containment_provenance.md`.
 
 The two defects are `Oscillospiraceae ⊃ Gemmiger` and `Clostridium ⊃
 [Clostridium] innocuum`, where the bracket in the name is NCBI saying the

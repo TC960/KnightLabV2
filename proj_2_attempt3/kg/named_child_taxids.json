@@ -1,6 +1,6 @@
 {
  "source": "taxoniq / ncbi-taxon-db (NCBI taxonomy, 2024-09 snapshot)",
- "note": "scientific names only -- no synonyms; additive lookup, NOT a replacement for taxonomy.py",
+ "note": "scientific names only -- no synonyms; additive lookup, NOT a replacement for taxonomy.py | ncbi_ancestors/ncbi_genus/parent_is_true_ancestor added by add_true_ancestors.py (NCBI 2024-09 snapshot via taxoniq)",
  "counts": {
   "group_label": 5,
   "clade": 24,
@@ -76,7 +76,20 @@
    "family": "Oscillospiraceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.91"
+   "reason": "epithet ratio 0.91",
+   "ncbi_ancestors": [
+    "216851",
+    "216572",
+    "186802",
+    "186801",
+    "1239",
+    "1783272",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Faecalibacterium",
+   "parent_is_true_ancestor": true
   },
   {
    "surface": "Faecalibacterium prauznitzii",
@@ -93,7 +106,20 @@
    "family": "Oscillospiraceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.91"
+   "reason": "epithet ratio 0.91",
+   "ncbi_ancestors": [
+    "216851",
+    "216572",
+    "186802",
+    "186801",
+    "1239",
+    "1783272",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Faecalibacterium",
+   "parent_is_true_ancestor": true
   },
   {
    "surface": "Klebsiella pneumonia",
@@ -110,7 +136,20 @@
    "family": "Enterobacteriaceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.95"
+   "reason": "epithet ratio 0.95",
+   "ncbi_ancestors": [
+    "570",
+    "2890311",
+    "543",
+    "91347",
+    "1236",
+    "1224",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Klebsiella",
+   "parent_is_true_ancestor": true
   },
   {
    "surface": "Ruminococcus bicirculans",
@@ -127,7 +166,20 @@
    "family": "Oscillospiraceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 1.00"
+   "reason": "epithet ratio 1.00",
+   "ncbi_ancestors": [
+    "1263",
+    "216572",
+    "186802",
+    "186801",
+    "1239",
+    "1783272",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Ruminococcus",
+   "parent_is_true_ancestor": true
   },
   {
    "surface": "Bifidobacterium brevis",
@@ -144,7 +196,20 @@
    "family": "Bifidobacteriaceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.73"
+   "reason": "epithet ratio 0.73",
+   "ncbi_ancestors": [
+    "1678",
+    "31953",
+    "85004",
+    "1760",
+    "201174",
+    "1783272",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Bifidobacterium",
+   "parent_is_true_ancestor": true
   },
   {
    "surface": "Bifidobacterium_sp__MC_10",
@@ -179,7 +244,21 @@
    "family": "Prevotellaceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 1.00"
+   "reason": "epithet ratio 1.00",
+   "ncbi_ancestors": [
+    "2974251",
+    "171552",
+    "171549",
+    "200643",
+    "976",
+    "68336",
+    "1783270",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Segatella",
+   "parent_is_true_ancestor": false
   },
   {
    "surface": "Prevotella copri",
@@ -196,7 +275,21 @@
    "family": "Prevotellaceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 1.00"
+   "reason": "epithet ratio 1.00",
+   "ncbi_ancestors": [
+    "2974251",
+    "171552",
+    "171549",
+    "200643",
+    "976",
+    "68336",
+    "1783270",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Segatella",
+   "parent_is_true_ancestor": false
   },
   {
    "surface": "Prevotella jejunii",
@@ -213,7 +306,21 @@
    "family": "Prevotellaceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.92"
+   "reason": "epithet ratio 0.92",
+   "ncbi_ancestors": [
+    "838",
+    "171552",
+    "171549",
+    "200643",
+    "976",
+    "68336",
+    "1783270",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Prevotella",
+   "parent_is_true_ancestor": true
   },
   {
    "surface": "Prevotella shaii",
@@ -230,7 +337,21 @@
    "family": "Prevotellaceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.91"
+   "reason": "epithet ratio 0.91",
+   "ncbi_ancestors": [
+    "2974257",
+    "171552",
+    "171549",
+    "200643",
+    "976",
+    "68336",
+    "1783270",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Hoylesella",
+   "parent_is_true_ancestor": false
   },
   {
    "surface": "Prevotella timonensis",
@@ -247,7 +368,21 @@
    "family": "Prevotellaceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 1.00"
+   "reason": "epithet ratio 1.00",
+   "ncbi_ancestors": [
+    "2974257",
+    "171552",
+    "171549",
+    "200643",
+    "976",
+    "68336",
+    "1783270",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Hoylesella",
+   "parent_is_true_ancestor": false
   },
   {
    "surface": "Eubacterium biforme",
@@ -264,7 +399,20 @@
    "family": "Erysipelotrichaceae",
    "moved_family": true,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.80"
+   "reason": "epithet ratio 0.80",
+   "ncbi_ancestors": [
+    "1573535",
+    "128827",
+    "526525",
+    "526524",
+    "1239",
+    "1783272",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Holdemanella",
+   "parent_is_true_ancestor": false
   },
   {
    "surface": "Eubacterium rectale",
@@ -281,7 +429,20 @@
    "family": "Lachnospiraceae",
    "moved_family": true,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.80"
+   "reason": "epithet ratio 0.80",
+   "ncbi_ancestors": [
+    "1766253",
+    "186803",
+    "3085636",
+    "186801",
+    "1239",
+    "1783272",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Agathobacter",
+   "parent_is_true_ancestor": false
   },
   {
    "surface": "Eubacterium_g4",
@@ -307,7 +468,21 @@
    "family": "Bacteroidaceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 1.00"
+   "reason": "epithet ratio 1.00",
+   "ncbi_ancestors": [
+    "909656",
+    "815",
+    "171549",
+    "200643",
+    "976",
+    "68336",
+    "1783270",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Phocaeicola",
+   "parent_is_true_ancestor": false
   },
   {
    "surface": "Bacteroides dorei",
@@ -324,7 +499,21 @@
    "family": "Bacteroidaceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 1.00"
+   "reason": "epithet ratio 1.00",
+   "ncbi_ancestors": [
+    "909656",
+    "815",
+    "171549",
+    "200643",
+    "976",
+    "68336",
+    "1783270",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Phocaeicola",
+   "parent_is_true_ancestor": false
   },
   {
    "surface": "Bacteroides plebeus",
@@ -341,7 +530,21 @@
    "family": "Bacteroidaceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.93"
+   "reason": "epithet ratio 0.93",
+   "ncbi_ancestors": [
+    "909656",
+    "815",
+    "171549",
+    "200643",
+    "976",
+    "68336",
+    "1783270",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Phocaeicola",
+   "parent_is_true_ancestor": false
   },
   {
    "surface": "Bacteroides uniforms",
@@ -358,7 +561,21 @@
    "family": "Bacteroidaceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.94"
+   "reason": "epithet ratio 0.94",
+   "ncbi_ancestors": [
+    "816",
+    "815",
+    "171549",
+    "200643",
+    "976",
+    "68336",
+    "1783270",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Bacteroides",
+   "parent_is_true_ancestor": true
   },
   {
    "surface": "Bacteroides vulgatus",
@@ -375,7 +592,21 @@
    "family": "Bacteroidaceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 1.00"
+   "reason": "epithet ratio 1.00",
+   "ncbi_ancestors": [
+    "909656",
+    "815",
+    "171549",
+    "200643",
+    "976",
+    "68336",
+    "1783270",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Phocaeicola",
+   "parent_is_true_ancestor": false
   },
   {
    "surface": "bacterium NLAE",
@@ -401,7 +632,20 @@
    "family": "Lachnospiraceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 1.00"
+   "reason": "epithet ratio 1.00",
+   "ncbi_ancestors": [
+    "572511",
+    "186803",
+    "3085636",
+    "186801",
+    "1239",
+    "1783272",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Blautia",
+   "parent_is_true_ancestor": true
   },
   {
    "surface": "Blautia_massiliensis",
@@ -418,7 +662,20 @@
    "family": "Lachnospiraceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 1.00"
+   "reason": "epithet ratio 1.00",
+   "ncbi_ancestors": [
+    "572511",
+    "186803",
+    "3085636",
+    "186801",
+    "1239",
+    "1783272",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Blautia",
+   "parent_is_true_ancestor": true
   },
   {
    "surface": "Clostridium clostridioforme",
@@ -435,7 +692,20 @@
    "family": "Lachnospiraceae",
    "moved_family": true,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.90"
+   "reason": "epithet ratio 0.90",
+   "ncbi_ancestors": [
+    "2719313",
+    "186803",
+    "3085636",
+    "186801",
+    "1239",
+    "1783272",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Enterocloster",
+   "parent_is_true_ancestor": false
   },
   {
    "surface": "Clostridium g24 FCEY",
@@ -515,7 +785,20 @@
    "family": "Lachnospiraceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.89"
+   "reason": "epithet ratio 0.89",
+   "ncbi_ancestors": [
+    "265975",
+    "186803",
+    "3085636",
+    "186801",
+    "1239",
+    "1783272",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Oribacterium",
+   "parent_is_true_ancestor": true
   },
   {
    "surface": "Turicibacter sp001543345",
@@ -541,7 +824,20 @@
    "family": "Lachnospiraceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.88"
+   "reason": "epithet ratio 0.88",
+   "ncbi_ancestors": [
+    "1649459",
+    "186803",
+    "3085636",
+    "186801",
+    "1239",
+    "1783272",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Hungatella",
+   "parent_is_true_ancestor": true
   },
   {
    "surface": "Hungatella hathewyi",
@@ -558,7 +854,20 @@
    "family": "Lachnospiraceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.94"
+   "reason": "epithet ratio 0.94",
+   "ncbi_ancestors": [
+    "1649459",
+    "186803",
+    "3085636",
+    "186801",
+    "1239",
+    "1783272",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Hungatella",
+   "parent_is_true_ancestor": true
   },
   {
    "surface": "Neisseria multispecies",
@@ -584,7 +893,19 @@
    "family": "Fusobacteriaceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 1.00"
+   "reason": "epithet ratio 1.00",
+   "ncbi_ancestors": [
+    "848",
+    "203492",
+    "203491",
+    "203490",
+    "32066",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Fusobacterium",
+   "parent_is_true_ancestor": true
   },
   {
    "surface": "Monoglobus pectinyliticus",
@@ -601,7 +922,20 @@
    "family": "Monoglobaceae",
    "moved_family": false,
    "how": "adjudicated",
-   "reason": "epithet ratio 0.86"
+   "reason": "epithet ratio 0.86",
+   "ncbi_ancestors": [
+    "2039302",
+    "3085657",
+    "3085656",
+    "186801",
+    "1239",
+    "1783272",
+    "2",
+    "131567",
+    "1"
+   ],
+   "ncbi_genus": "Monoglobus",
+   "parent_is_true_ancestor": true
   },
   {
    "surface": "Oscillibacter_sp_57_20",

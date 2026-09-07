@@ -19,12 +19,19 @@ TWO DIFFERENT QUESTIONS, and only the second is a defect:
   2. Is the parent an ancestor AT ALL? A "no" means the graph asserts a
      containment that does not exist.
 
-The deliberate exception, which this reports separately rather than counting as
-an error: a node split out of its parent by `resolve_named_children.py` is
-contained by the genus THE PAPER NAMED it under. NCBI has since moved several of
-these (*Bacteroides dorei* -> *Phocaeicola*, *Prevotella copri* -> *Segatella*),
-so the link is deliberately not an NCBI ancestry claim. It is a claim about what
-the corpus said, which is the thing the graph is a record of.
+The "deliberate" bucket is RETIRED and should now report 0. It counted split
+species parented by the genus in their obsolete binomial (*Bacteroides dorei*
+under *Bacteroides*, *Prevotella copri* under *Prevotella*), on the reasoning
+that the link recorded what the corpus asserted by naming the organism that way.
+
+That was dropped on 2026-09-07. The reasoning was coherent but the build did not
+implement it: the lineage walk sometimes added the true genus as well, so 4 nodes
+ended up with two different parents, and which 4 depended on whether the corpus
+also happened to use the current name. Split species are now parented by their
+nearest TRUE ancestor present in the graph; the obsolete binomial stays in the
+node's `aliases`, which carries the provenance without asserting an ancestry NCBI
+contradicts. A non-zero count here now means that fix has regressed.
+See FINDINGS_containment_provenance.md.
 
 Run: python audit_containment.py
 """

@@ -4,6 +4,284 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+# SUMMARY — session of 2026-09-06 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**Shipped the specificity layer into the viewer, then consumed the containment
+links for the first time and found the project's flagship claim was both true
+and misstated.** Write-up: `FINDINGS_rank_conflict.md`.
+
+The scheduled prompt's priority list was stale — Tasks 1, 2.5 and 3.1 and the
+MAIN_DATA filter are all already done per the entries below, so none were
+redone. The taxdump route was re-probed once and is still shut
+(`ftp.ncbi.nih.gov` CONNECT → 403), so the 54 named-species split remains the
+top blocked defect. Work went to the two genuinely open items.
+
+### Shipped: the viewer now says what an edge is worth
+
+The 2026-09-05 session put `specificity` / `taxon_breadth` / `taxon_purity` /
+`restates_prior` into `graph.json` and deliberately stopped short of the UI.
+`build_viz.py` and `viz_network.js` had **zero** references to any of them, so
+the published page still showed "*Streptococcus* enriched in Parkinson's, 5
+papers" with no way to see it is enriched in eleven other diseases too.
+
+- **Hollow bar = `restates_prior`** (252 edges). Encoded as fill-vs-outline, not
+  opacity, so it stays distinct from `.faded` (contested) and survives
+  greyscale; label text keeps full contrast.
+- **"Sort by: disease specificity"** orders discriminating → mixed → narrow →
+  generic. Deliberately **not** `taxon_purity` descending as the last session
+  suggested: purity 1.0 *is* the generic case, so that sort surfaces exactly the
+  edges the control exists to bury. Narrow outranks generic because a narrow
+  taxon is *unjudged* (<3 diseases vote) while a generic one is known
+  uninformative.
+- "Hide edges that restate a prior" filters **both** views; scope chip per row;
+  plain-English specificity sentence in the detail panel; two new table columns;
+  a 155-discriminating tile; network links at 0.45 alpha when they restate a
+  prior — damped, not hidden.
+- Done **without touching `graph.json`**: the per-taxon disease counts live on
+  nodes, which the payload does not ship, so `build_viz.py` sends a compact spec
+  map keyed by `taxon_key`. The graph and its byte-for-byte fixed point are
+  unchanged.
+- **`verify_viz.py` is new and is the point.** "It parses" is not verification
+  here — two fixes have silently erased themselves on rebuild while printing
+  success, and a blank-canvas bug passed every static check. It drives the page
+  in Chromium and reads the DOM and canvas pixels back *after real clicks*: 14
+  assertions, all passing, including that the canvas is non-blank before and
+  after the new filter. `kg.html` rebuilds to a fixed point; `docs/index.html`
+  is back in sync.
+
+### Bug 5 — the flagship example's numbers were stale on the published site
+
+`kg.html`, `CLAUDE.md`, `build_kg.py` and `viz_network.js` all claimed
+*Lachnospiraceae* is "depleted in Parkinson's across **15 papers**". The graph
+says **9 papers, 8 down / 1 up, and the edge is contested**; *Hungatella* is 7
+papers, 6 up / 1 down, also contested. The 15 predates the 2026-09-03
+deduplication and was never updated — a published number that no longer matched
+the artifact it described. All four corrected. Found by checking the anecdote
+against the data rather than by looking for it, which is the method that keeps
+working here.
+
+### What survived: related taxa agree within a paper, and it is ancestry
+
+**Within a single paper, taxonomically related taxa agree on direction 0.8903 of
+the time against 0.5367 for unrelated taxa — gap +0.3536, z=15.5, p=0.0001**
+(10,000 permutations, paper-level null shuffling each paper's direction labels
+across the taxa it reported, preserving its up/down counts; MDE ±0.044). Both
+arms come from the same paper, so cohort, country, pipeline and enrichment
+propensity are differenced out by construction.
+
+A z of 15 here is a reason for suspicion, so it was attacked four ways
+(`attack_rank_conflict.py`) and survived all of them: dropping every split
+placeholder node, since the split *created* both nodes from one mention
+(+0.3592, **stronger**); a cluster-robust one-gap-per-paper statistic, since the
+top paper contributes 35 of 474 related pairs (+0.3611, z=11.4 over 100 units);
+direction skew (0.68, controlled by the shuffle by construction); and
+same-rank-unrelated pairs, in case the effect was really "co-mentioned taxa
+agree" (+0.3502, z=14.6 — it is ancestry specifically).
+
+**This is face validity, not a discovery.** A family's abundance is largely the
+sum of its genera, so ~89% is close to what taxonomy arithmetic predicts; the
+extractor passing that check is the result. The value is the complement: the
+**11% that disagree inside one paper** are neither noise nor rank confusion, and
+they are exactly what collapsing ranks would destroy. The project's refusal to
+collapse ranks now rests on a measured 11% rather than one anecdote.
+
+### What got smaller under scrutiny: the "229 opposite pairs" figure
+
+952 parent/child pairs share a disease — 586 same direction, 241 opposite, 125
+exact ties. Of the 241 opposite pairs, only **33 (14%) are asserted inside a
+single study**; **189 (78%) rest on no shared paper at all**, the family
+measured by one set of studies and the genus by another. The GraphRAG session's
+"903 edges have a parent edge, 229 point the opposite way" is real but reads as
+a much stronger claim than it supports. Cite 14%, not 25%, and say what it
+means. The 33 within-paper conflicts — *Lachnospiraceae*↓/*Hungatella*↑ in
+Parkinson's among them — are the concrete case for the containment layer and the
+best review targets after the doubly-contradicted 11. Caveat: 32 of the 33 rest
+on exactly one shared paper, so each individual pair is a single-study claim
+even though the aggregate is not.
+
+### Bug 6 — `python3 build_kg.py` silently rebuilt a three-revisions-old graph
+
+Found by following the project's own "rebuild twice and diff" rule. `DEFAULT_IN`
+still pointed at the raw 250-paper extraction
+(`eval-v2/results/qwopus3.5-27b-v3__q4km__samgated-v1__all250.json`), which is
+**not even present in a fresh clone**, while the shipped graph has been built
+from `extractions_screened.json` since the paper screen landed — as
+`graph.json`'s own `meta.source` has recorded the whole time. So running
+`build_kg.py` with no arguments **overwrote `graph.json` with a 773-taxon /
+1,462-edge / 211-paper graph** against the shipped 918 / 2,011 / 272, and
+printed a normal success summary while doing it.
+
+This is worse than the two fixes that previously erased themselves on rebuild,
+because the verification ritual adopted to catch *those* is "run this command
+twice" — the rule told you to run the thing that destroys the artifact it
+verifies. It is also why the cloud environment looked like it could not rebuild
+the graph: it can, perfectly. `DEFAULT_IN` now points at
+`extractions_screened.json`; with it, a rebuild reproduces the committed graph
+with **zero drift in any pre-existing field** (meta, all 918 nodes, all 708
+hierarchy links, all 272 papers and all 2,011 edges identical), and two rebuilds
+are byte-identical. The taxdump is NOT required for `build_kg.py` — only for the
+still-blocked species split.
+
+### Shipped: the 33 rank conflicts are now findable
+
+`annotate_rank_conflicts()` in `build_kg.py` adds `rank_conflicts` and
+`has_within_paper_conflict` per edge, computed inside `build()` from the edges
+just built rather than as a sidecar reading `rank_conflict.json`, so it cannot
+drift or self-erase — the same reasoning as `annotate_specificity`. **59 edges**
+carry a within-paper conflict (the 33 pairs, counted from both sides). The
+viewer gains a `rank ↕` chip, a "Rank conflicts only" filter, and a detail-panel
+block naming the counterpart taxon and the study that reports both directions.
+Deliberately, only `within_paper` conflicts are chipped: the 189 pairs resting
+on no shared paper are an artefact of pooling and flagging them would relaunch
+the overstatement this session just corrected. `verify_viz.py` grew to **19
+assertions**, all passing — and it earned its keep immediately by catching a
+regression from a layout change of mine, where moving the `split` chip into the
+scope cell silently changed which chip the specificity sort was read from.
+
+### Highest-value next step
+
+**The 54 named-species split, on a machine with the taxdump** — unchanged as the
+top defect, and now the only blocked item that is purely mechanical. Everything
+else not needing a GPU is either done or known to be underpowered at n=272.
+Second choice, and unblocked here: per-disease evidence summaries with
+exportable citations (Task 3.4), the last unstarted item on the useful-output
+list.
+
+---
+
+# SUMMARY — session of 2026-09-05 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**The disease dimension of this graph carries reproducible directional
+information for Parkinson's disease and, at n=272 papers, for nothing else.**
+Write-up: `FINDINGS_disease_specificity.md`.
+
+### What I tested
+
+The last open item needing neither the taxdump nor a GPU: quantify the
+disease-side fragmentation nobody had measured (40 disease nodes, zero
+containment links, so `Intracerebral hemorrhage` sits beside `Stroke`
+unconnected while the taxon side models containment with 708 links).
+
+### What did NOT survive
+
+- **"A clinical subtype resembles its parent disease."** NULL across all seven
+  Tier-A is-a pairs (p=0.19–0.75; ICH→Stroke 19/22 decisive at p=0.43,
+  Poststroke aphasia→Stroke 0/3 at p=0.75). With 3–22 decisive shared taxa per
+  pair nothing could have survived — a power statement, not evidence of absence.
+  Tier B (AD→Dementia, the cognitive-decline continuum) behaves the same.
+  So the disease-containment layer is a **bookkeeping** decision, justifiable on
+  correctness of meaning but **not** a signal gain. It still needs a human call;
+  `disease_containment.py` records the tiering and the Tier-C rejections
+  (Multiple system atrophy is a *sibling* of PD, not a subtype; MCI is a stage,
+  not an AD subtype) so they are not re-proposed.
+- **"Disease specificity is a corpus-wide property."** Refuted — see below.
+
+### What survived
+
+- **Disease identity does predict edge direction — p=0.0014.** Over 23,627
+  same-taxon paper pairs: same-disease agreement **0.716**, different-disease
+  **0.657**, gap **+0.0591**, z=3.39, MDE +0.0296, under a **paper-level**
+  permutation of the disease label (pair-level shuffling would have been the
+  fourth false positive on record here).
+- **It is not country and not method.** Country's own gap is −0.0112 (p=0.64)
+  and sequencing platform's −0.0278 (p=0.86) — **neither produces any agreement
+  at all.** The disease gap holds inside same-country pairs (+0.078) and
+  different-country pairs (+0.086); permuting disease within country blocks
+  keeps it (+0.0846, z=2.32, p=0.0128). Both surviving p-values clear BH over
+  the four inferential tests.
+- **But it is ONE DISEASE.** Per-disease internal agreement: Parkinson's
+  **0.807** on 1,220 pairs (lift +0.150 over the 0.657 cross-disease baseline),
+  Stroke 0.725, MS 0.689, **Alzheimer's 0.608 — BELOW the cross-disease
+  baseline, on 806 pairs with ample power** — Epilepsy 0.492. Zero of the other
+  four match Parkinson's. Drop its 67 papers and the gap falls to **+0.0187,
+  p=0.179 against MDE +0.0350**: effects above +0.035 are excluded outside PD,
+  smaller ones are not. That PD is the standout is the field's own consensus, so
+  this is **face validity** for the extraction, not a coincidence.
+- **~70% of the graph's directional agreement is a generic dysbiosis prior.**
+  Decomposing agreement above the 51.4% marginal chance rate: +14.3 points is
+  disease-independent, +5.9 is disease-specific and almost all of that is PD.
+  **59 of 187 taxa reported in ≥3 diseases never flip direction** —
+  *Streptococcus* enriched in all 12 diseases reporting it, *Butyricicoccus*
+  depleted in all 8. For those, "enriched in disease X" is near-contentless.
+  Meanwhile *Prevotella* (6↑/8↓ over 14 diseases, 50 papers) and *Bacteroides*
+  (6↑/8↓ over 14, 54 papers) are simultaneously the highest-evidence and least
+  directionally consistent taxa: **high weight is not high information.**
+- **This explains why five structural corrections could not move agreement.** If
+  70% of directional agreement is a prior shared with Disbiome and Peryton, the
+  validation is largely measuring that prior, not the graph's disease-specific
+  content — and the decisive set is dominated by exactly these generic
+  well-evidenced taxa. Sixth finding in a row the ~0.013 minimum detectable
+  change cannot see; now with a mechanism rather than a shrug.
+
+### Dead end closed: no PyPI package substitutes for the taxdump
+
+The 54 named-species split stayed blocked. `ftp.ncbi.nih.gov` and
+`ftp.ncbi.nlm.nih.gov` both give CONNECT → 403; EBI, Ensembl, GBIF, UniProt and
+LPSN are denied too; only `pypi.org` / `files.pythonhosted.org` are reachable.
+The one offline candidate, **`taxoniq`** (bundles an 89 MB NCBI database), was
+extracted and tested: the full tree (2,609,295 taxa with parent and rank) and all
+scientific names come out of its marisa tries, **but synonyms are deliberately
+excluded — `taxoniq/build.py` indexes only `scientific name`, `common name`,
+`genbank common name`, `blast name`.** Verified: `Bacteroidota`→976 resolves,
+`Bacteroidetes`→**not found**; `Bacillota`→1239 resolves, `Firmicutes`→**not
+found**. Since synonym folding is what stops evidence splitting across duplicate
+nodes, and the Disbiome/Peryton join needs both sides through `taxonomy.py`, a
+synonym-less table would silently break the graph. **Do not re-run this probe.**
+
+### Bug 4 — the build was never byte-deterministic, so the verification rule cried wolf
+
+Tried to *use* the project's own rule (rebuild twice and diff) before trusting a
+rebuild here, and it failed: two builds of the same input differed at byte
+278347. **Content was not the difference** — every node, edge, direction,
+paper-count and meta field matched across two rebuilds and matched the committed
+`graph.json`. The only variation was JSON key order in the `sites` dict on ~30
+multi-site edges, because `sites` was `Counter(... for p in papers)` over a
+**set** of title strings, whose iteration order is randomised per process by
+`PYTHONHASHSEED`. Everything else in that block already went through `sorted()`.
+
+This matters more than a key order sounds: the countermeasure adopted after two
+fixes silently erased themselves on rebuild was *rebuild twice and diff*, and
+that countermeasure was firing a **false positive on every single build** — which
+is exactly how a real regression gets waved through as the usual noise. Fixed by
+iterating `sorted(papers)`; three independent rebuilds are now byte-identical,
+and `graph.json` is regenerated so a future diff against the committed file is
+meaningful. **No number moves.**
+
+### Shipped: generic vs discriminating edges are now IN the graph
+
+Acted on the finding rather than only writing it up. `build_kg.py` now annotates,
+per taxon node, `specificity` (breadth, n_diseases_enriched/depleted, purity,
+consensus, class) and per edge `taxon_breadth`, `taxon_purity`, `taxon_class`,
+`restates_prior`. Over 2,011 edges: **291 generic, 155 discriminating, 664 mixed,
+901 narrow** (<3 diseases, nothing can be said); **252 edges restate the taxon's
+corpus-wide tendency outright**; 61 taxa generic, 19 discriminating.
+
+Computed inside `build()` from the edges just built, deliberately not as a
+sidecar, so it cannot drift out of sync or self-erase on rebuild. A contested
+edge casts **no** vote (stricter than the exploratory script, which voted by
+majority — *Streptococcus* is generic over 11 diseases here, 12 there; documented
+at the code), and the 8 taxa whose every edge is contested get breadth 0 rather
+than a missing field.
+
+Verified by executing: two rebuilds byte-identical, all 2,011 edges and 918 taxa
+annotated, every pre-existing field unchanged. So the published graph's numbers
+are untouched — still 272 papers, 918 taxa, 2,011 edges, Disbiome 71.9%, Peryton
+72.5% — and `kg.html` / `docs/index.html` were **not** regenerated.
+
+### Highest-value next step
+
+**Surface the new specificity fields in the viewer** (`build_viz.py` +
+`viz_network.js`, then regenerate `kg.html` / `docs/index.html`). The data layer
+landed this session; the UI change is deliberately separate because it is
+outward-facing. A biologist reading "*Streptococcus* enriched in Parkinson's, 5
+papers" still cannot see that it is enriched in eleven other diseases too, and
+`restates_prior` on 252 edges is exactly the flag that fixes it. Suggested
+treatment: de-emphasise `restates_prior` edges and let the ranked bars sort by
+`taxon_purity`, so the discriminating edges surface instead of the loudest ones.
+
+(The 54 named-species split remains the top *defect*, unchanged and still needing
+the taxdump on a machine that can reach NCBI — the offline route is now a closed
+dead end, see above.)
 # SUMMARY — session of 2026-09-04
 
 **The project's top open defect is fixed: the 54 named children are split out of
