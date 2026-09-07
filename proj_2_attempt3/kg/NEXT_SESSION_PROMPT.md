@@ -59,15 +59,27 @@ on each other and can be fanned out to subagents. Task 2 depends on Task 1.
   every static check.
 - Commit as you go with real reasoning in the messages.
 
-## STATE AS OF 2026-09-04 (already done — do not redo)
+## STATE AS OF 2026-09-07 (already done — do not redo)
 
 Read `SESSION_LOG.md` first; its top entry is the current state. **Every numbered
 task below has been done**, and the `FINDINGS_*.md` docs carry the results. What
 is left is under "THE ACTUAL NEXT STEPS".
 
+> **READ THIS FIRST IF YOU ARE ON `main`.** The species split and this branch's
+> containment fix live on **`claude/kg-species-split-merged`**, which is verified
+> but **not merged**. On `main` the rank collapse is still present and the docs
+> still call it the top open defect. Do not redo it — review and land that
+> branch. `FINDINGS_containment_provenance.md` explains what was wrong with the
+> first attempt and why 11 of its containment links were false.
+
 - Graph: **272 contributing papers, 946 taxa, 40 diseases, 2,059 edges, 437
-  replicated, 209 contested, 732 containment links, 125 placeholder nodes, 23
-  split-out species.** Disbiome **73.3%**, Peryton **73.2%**.
+  replicated, 209 contested, 729 containment links, 125 placeholder nodes, 23
+  split-out species.** Disbiome **73.3%**, Peryton **73.4%**.
+- **Containment is now audited against real NCBI lineages**
+  (`audit_containment_ncbi.py`, independent of the build): 613 taxid→taxid links,
+  **2 false** and **0 multi-parent children** — both false links pre-date the
+  split (*Gemmiger*/Oscillospiraceae, *[Clostridium] innocuum*/Clostridium) and
+  are known taxonomy drift. **Treat 2 / 0 as the regression gate.**
 - **Task 0, the MAIN_DATA screen, Task 1 + its pooled analysis (NULL), Task 2.5
   (GraphRAG), Task 3.1: all done.** See the findings docs.
 - **The named-child rank collapse is FIXED** (2026-09-04,
