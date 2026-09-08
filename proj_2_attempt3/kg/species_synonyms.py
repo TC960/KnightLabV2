@@ -232,13 +232,47 @@ def resolve_species(surface, src):
     return None
 
 
+def candidates():
+    """The 115 strings that folded onto an ancestor BEFORE this fix shipped.
+
+    IDEMPOTENCE, and why the input file is deliberately frozen. Regenerating this
+    table must always yield the same 24 entries, however many times the pipeline
+    has run. That rules out deriving candidates from anything describing the
+    CURRENT state, and the two obvious ways to do it are both self-erasing traps:
+
+      - Recompute folds from today's graph: the 24 are no longer folds, so the
+        table comes out EMPTY, so the next `build_kg.py` silently un-splits all 24
+        and prints success.
+      - Ask the live resolver with this supplement suppressed: same empty result,
+        because the split is baked into graph.json's aliases, which is what the
+        replay cache is built from.
+
+    That is the failure mode that has erased two fixes in this repo already. So
+    `child_folds.json` is FROZEN: it is the audit record of what the resolver did
+    before 2026-09-08, an input, not a report on the present. `child_folds.py`
+    answers the present-tense question and writes elsewhere. The assertion below
+    exists because a future session regenerating this file in place is the single
+    most likely way to un-split the graph without noticing.
+    """
+    folds = json.load(open(os.path.join(HERE, "child_folds.json")))
+    if len(folds) < 100:
+        raise SystemExit(
+            f"child_folds.json has {len(folds)} rows, expected the frozen 115.\n"
+            "It looks like it was regenerated against the CURRENT graph, where the\n"
+            "split species are no longer folds. Regenerating this table from that\n"
+            "would silently un-split them on the next build_kg.py run. Restore the\n"
+            "frozen file (git checkout child_folds.json) and use child_folds.py,\n"
+            "which writes child_folds_current.json, for the present-tense question.")
+    # Every fold is a candidate, not just `named_child`: the ladder decides, and
+    # letting that classification decide would re-import its judgement calls.
+    return {f["surface"]: f["parent"] for f in folds}
+
+
 def main():
     src = Sources()
-    folds = json.load(open(os.path.join(HERE, "child_folds.json")))
-    # Every fold is a candidate, not just `named_child`: the ladder decides, and
-    # letting the stale classification decide would re-import its judgement calls.
-    surfaces = sorted({f["surface"] for f in folds})
-    parent_of = {f["surface"]: f["parent"] for f in folds}
+    cand = candidates()
+    surfaces = sorted(cand)
+    parent_of = dict(cand)
 
     table, unresolved = {}, []
     for s in surfaces:
