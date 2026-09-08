@@ -193,16 +193,92 @@ Rebuilt twice → **byte-identical fixed point**. `verify_viz.py` drives the pag
 Chromium and asserts against the live DOM and canvas pixels: **19/19 pass**.
 `docs/index.html` re-synced.
 
+---
+
+# Part 2 — punctuation was fragmenting concepts across nodes
+
+Written after the above, and it corrects a claim in it. The section above ended by
+saying "~20 ambiguous two-genus labels deserve a human decision". Measuring it
+instead of estimating it produced a smaller number and a **bigger, different
+defect underneath**.
+
+## The finding
+
+Asking which concepts land on more than one node — the same cheap structural
+question as before — returns **17**. The worst is the one the estimate had already
+noticed, and it is far worse than "needs a decision":
+
+*Escherichia-Shigella* is the standard SILVA/QIIME label for a pair of genera that
+16S cannot separate. The corpus writes it seven ways, and the graph filed those
+**27 mentions under four different nodes**:
+
+| written as | mentions | filed under |
+|---|---:|---|
+| `Escherichia-Shigella` | 11 | `t:escherichia-shigella` |
+| `Escherichia_Shigella` | 6 | **`t:ncbi:561` — *Escherichia*** |
+| `Escherichia/Shigella` | 5 | `t:escherichia/shigella` |
+| `Escherichia–Shigella` (en dash) | 2 | `t:escherichia–shigella` |
+| `Escherichia / Shigella` | 1 | **`t:ncbi:561` — *Escherichia*** |
+| `Escherichia-shigella` | 1 | `t:escherichia-shigella` |
+| `Escherichia – Shigella` | 1 | **`t:ncbi:561` — *Escherichia*** |
+
+Two bugs in one place. **Fragmentation** — the same concept split by punctuation
+alone, so its evidence never pools. **Misattribution** — and the split is not even
+consistent: when the separator happens to be a space or an underscore, `resolve()`
+turns it into a space, fails to match, then trims the trailing token *as if it were
+a qualifier* and lands the mention on *Escherichia*. A signal from an assay that
+could not tell two genera apart was being recorded as evidence about one of them,
+depending on which punctuation the paper's authors happened to type.
+
+## The three rules, and why each is narrow
+
+1. **Refuse the qualifier trim when the discarded token is itself a taxon name.**
+   "Escherichia" + discard "Shigella" is not a genus with a qualifier; it is two
+   genera. Measured over all 1,090 distinct surface strings: **2 strings change**
+   (`Escherichia_Shigella`, `Lachnospiraceae_Eubacterium`). A rule, not a rewrite.
+2. **Collapse every separator style in the unresolved key.** Hyphen, en dash, em
+   dash, slash and underscore all encode the same "A and/or B" join here. This
+   touches only the *unresolved* path — anything NCBI resolved has already
+   returned — so it cannot merge two taxa the taxonomy told us apart.
+3. **Strip square brackets as a FALLBACK.** Brackets are NCBI's own convention for
+   a genus known to be misplaced, so `[Eubacterium] siraeum` **is** a scientific
+   name and must match as written. Pre-stripping them scores 6 gains and 1 loss;
+   as a fallback it is purely additive and scores 6 gains and 0 losses, resolving
+   `[ Ruminococcus ]`, `[Eubacterium] ventriosum group`, and — the useful one —
+   `[Ruminococcus] gnavus group` → *Mediterraneibacter gnavus*.
+
+## Effect
+
+929 → **925** taxa, 2,043 → **2,034** edges, 719 → **723** containment links,
+215 → **217** contested. Five concepts lost a duplicate node; *Escherichia* goes
+from 10 edges / 21 papers to **7 edges / 13 papers** as eight papers of joint-genus
+evidence leave it for the joint node, which goes to 13 edges / 29 papers.
+
+**Agreement is unchanged, as the standing rule predicts**: Disbiome 73.1% → 73.0%,
+Peryton 72.7% → 72.5%, disagreements identical at 47 and 38. The honest cost is
+**one Disbiome overlap pair**, lost precisely because we stop crediting
+*Escherichia* with evidence the assay could not attribute to it. That is the
+correction working, not failing.
+
+## A regression this caught, and how
+
+The first version of rule 2 collapsed separators *before* the rank heuristic, which
+guesses "two words means a binomial". `Escherichia-Shigella` is one written token
+and is not a species; collapsed first it becomes two, and **~50 unresolved nodes
+silently reranked from genus to species**. Nothing errored. It was caught by
+diffing the rebuild against the previous graph, which is the only reason it is not
+in the shipped artifact — reading the patch would not have found it.
+
 ## What is now the top open defect
 
-Not this. The remaining candidates, in order:
-
-1. **91 child folds stay folded, and ~20 of them deserve a decision a human should
-   make** — chiefly the `Escherichia / Shigella` family of ambiguous two-genus
-   labels (6 papers on `Escherichia_Shigella` alone, currently voting as
-   *Escherichia*). Attributing an unseparated 16S signal to one of its two genera
-   is a modelling choice, not a bug, and it is the same class of question as the
-   disease-subtype containment item.
-2. **More papers.** Unchanged: the binding constraint on every remaining
-   statistical question is n, not method. Needs a GPU.
-3. **Disease subtypes as containment**, still a human call.
+1. **More papers.** The binding constraint on every remaining statistical question
+   is n, not method. Needs a GPU.
+2. **A modelling decision, not an analysis**: should a joint two-genus 16S signal
+   be attributed to one genus, split across both, or held apart on its own node as
+   it now is? The graph no longer decides this by accident; a human should decide
+   it on purpose. Same class as disease subtypes as containment.
+3. **~8 stray mentions still fragmented by run-together spellings**
+   (`ChristensenellaceaeR_7group`, `RuminococcaceaeUCG_005`, `CAG56`,
+   `Rumino coccus_1` — a space inserted *inside* a genus name). These need a
+   fuzzy match against known names rather than a separator rule, and at 8 mentions
+   they are not worth the false-merge risk yet.

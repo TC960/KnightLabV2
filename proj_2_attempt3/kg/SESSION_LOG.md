@@ -105,14 +105,72 @@ which it was for one run, caught by executing the resolver.
 Verified: rebuilt twice, **byte-identical fixed point**; `verify_viz.py` 19/19
 in Chromium; `docs/index.html` re-synced.
 
+### Then: punctuation was fragmenting concepts across nodes (second fix, same day)
+
+Trying to size that "~20 ambiguous labels" claim instead of estimating it turned
+up a smaller number and a **bigger defect underneath**. Asking which concepts land
+on more than one node returns **17**. The worst: *Escherichia-Shigella*, the
+standard SILVA label for two genera 16S cannot separate, written seven ways and
+filed under **four different nodes** — `Escherichia-Shigella` (11 mentions),
+`Escherichia/Shigella` (5), `Escherichia–Shigella` (2, EN DASH), and **8 mentions
+folded into *Escherichia* itself**. Two bugs at once: the concept fragments by
+punctuation, and inconsistently, because when the separator happens to be a space
+or underscore `resolve()` trims the trailing token as though it were a qualifier.
+A signal from an assay that cannot tell two genera apart was recorded as evidence
+about one of them, depending on the authors' typography.
+
+Three narrow rules, each measured before shipping: **refuse the trim when the
+discarded token is itself a taxon name** (2 strings change out of 1,090);
+**collapse all separator styles in the unresolved key only** (cannot merge
+anything NCBI resolved); **strip square brackets as a FALLBACK, never as
+pre-normalisation** — brackets are NCBI's own convention, `[Eubacterium] siraeum`
+IS a scientific name, and pre-stripping scores 6 gains and 1 loss where the
+fallback scores 6 and 0 (it also newly resolves `[Ruminococcus] gnavus group` →
+*Mediterraneibacter gnavus*).
+
+929 → **925** taxa, 2,043 → **2,034** edges, 719 → **723** containment, 215 →
+**217** contested. *Escherichia* drops from 10 edges / 21 papers to 7 / 13.
+**Agreement unchanged** as the standing rule predicts (Disbiome 73.1 → 73.0,
+Peryton 72.7 → 72.5, disagreements identical at 47 / 38); the one lost Disbiome
+overlap pair is the correction working — we stop crediting *Escherichia* with
+evidence the assay could not attribute.
+
+**A regression this nearly shipped:** collapsing separators before the rank
+heuristic ("two words means a binomial") silently reranked **~50 unresolved nodes
+from genus to species**, because "Escherichia-Shigella" is one written token and
+becomes two. Nothing errored. Caught only by diffing the rebuild — reading the
+patch would not have found it.
+
+### And a trap that would have reverted the whole species split
+
+`species_synonyms.py` reads `child_folds.json`. Refreshing that file after the
+split — the obvious tidy-up — drops the 24 species from it, so the table
+regenerates EMPTY and the next `build_kg.py` un-splits them while printing
+success. The second-order version fails too: asking the live resolver with the
+supplement off also yields nothing, because the split is baked into `graph.json`'s
+aliases and the cache is built from those. So `child_folds.json` is now an
+explicitly FROZEN input with a guard that refuses to run below 100 rows (verified
+by truncating it), and `child_folds.py` — a committed generator at last — answers
+the present-tense question into `child_folds_current.json`.
+
+### Nulls from this session
+
+- **The 14 doubly-contradicted pairs are completely unchanged by the split.** Same
+  14, no entries, no exits, no flips.
+- **Zero remaining duplicate-organism collisions.** Re-running the check that found
+  the three (an alias naming an organism that is already another node) returns
+  nothing.
+- **The flagship edge is unmoved.** *Prevotella*/Parkinson's keeps its direction
+  and contested status; *P. copri* agrees with its genus.
+
 ### Highest-value next step
 
-**More papers** — with the species split done, the binding constraint on every
-remaining question is n, not method, and that needs a GPU (ask before spending).
-The best CPU-only item left is a human decision, not an analysis: the ~20
-ambiguous two-genus labels (`Escherichia_Shigella`, 6 papers, currently voting as
-*Escherichia*) are the same class of question as disease-subtype containment, and
-both want a call from the PI rather than another script.
+**More papers** — the binding constraint on every remaining question is n, not
+method, and that needs a GPU (ask before spending). What is left on CPU is a
+decision, not an analysis: should a joint two-genus 16S signal be attributed to one
+genus, split, or held apart on its own node as it now is? The graph no longer
+decides that by accident; a human should decide it on purpose. Same class as
+modelling disease subtypes as containment.
 
 ---
 

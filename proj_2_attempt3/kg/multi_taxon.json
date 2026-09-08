@@ -1,0 +1,19 @@
+{
+ "_note": "strings naming two taxa; see multi_taxon.py. Consulted by the resolvers BEFORE any fold, so neither taxon absorbs the other's evidence.",
+ "entries": {
+  "escherichia shigella": {
+   "discarded": "Shigella",
+   "discarded_is": "Shigella [genus]",
+   "joint_label": "Escherichia Shigella",
+   "surface": "Escherichia_Shigella",
+   "was_folded_into": "Escherichia"
+  },
+  "lachnospiraceae eubacterium": {
+   "discarded": "Eubacterium",
+   "discarded_is": "Eubacterium [genus]",
+   "joint_label": "Lachnospiraceae Eubacterium",
+   "surface": "Lachnospiraceae_Eubacterium",
+   "was_folded_into": "Lachnospiraceae"
+  }
+ }
+}

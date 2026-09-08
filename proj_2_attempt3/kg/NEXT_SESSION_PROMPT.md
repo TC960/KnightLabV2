@@ -66,9 +66,9 @@ current state. In short, **every numbered task below has been done**, and the
 findings docs (`FINDINGS_*.md`) carry the results. What is left is listed under
 "THE ACTUAL NEXT STEPS" at the end of this section.
 
-- Graph: **272 contributing papers, 929 taxa, 40 diseases, 2,043 edges, 439
-  replicated, 215 contested, 719 containment links, 100 placeholder nodes.**
-  Disbiome **73.1%**, Peryton **72.7%**.
+- Graph: **272 contributing papers, 925 taxa, 40 diseases, 2,034 edges, 440
+  replicated, 217 contested, 723 containment links, 100 placeholder nodes.**
+  Disbiome **73.0%**, Peryton **72.5%**.
 - **Task 0 (rebuild on the correct datasheet): done.** Honest F1 ~0.59
   (permutation p=0.001). The old 0.390 was a blank-cell artifact; the old 0.680
   was an easy-subset figure.
@@ -136,11 +136,12 @@ have silently erased themselves on rebuild while printing success.
    remaining question is n, not method. Extraction needs a GPU — **ask before
    spending.**
 
-3. **Two open items are human decisions, not analyses.** First: ~20 ambiguous
-   two-genus labels that stay folded — `Escherichia_Shigella` (6 papers) currently
-   votes as *Escherichia*, and `Streptococcus salivarius/thermophilus` as the
-   genus. Attributing an unseparated 16S signal to one of its two genera is a
-   modelling choice; it wants a call, not a script. Second, the same class of
+3. **One open item is a human decision, not an analysis.** The two-genus labels no
+   longer vote as one of their genera — `Escherichia-Shigella` was fragmented across
+   four nodes by punctuation alone and is now a single joint node (`multi_taxon.py`,
+   2026-09-08). What is left is the modelling call itself: should a joint 16S signal
+   from an assay that cannot separate two genera be attributed to one, split across
+   both, or held apart as it now is? That wants a PI, not a script. The same class of
    question: model disease subtypes as containment rather than separate nodes, the way
    taxa already are: `Intracerebral hemorrhage` / `Hypertensive intracerebral
    hemorrhage` sit beside `Stroke`, and `Chronic traumatic complete spinal cord

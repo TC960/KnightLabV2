@@ -203,9 +203,24 @@ def norm_taxon(t, tax=None):
         key = key[m.end():]
         disp = disp[m.end():]
     key = re.sub(r"^[a-z]__", "", key)
+    # Collapse every separator style to one space BEFORE keying. Hyphen, en dash,
+    # em dash, slash and underscore are all used in this corpus for the same
+    # "A and/or B" join, and keying on them literally is what split one concept
+    # across four nodes: "Escherichia-Shigella", "Escherichia/Shigella" and
+    # "Escherichia–Shigella" (en dash) were three separate unresolved taxa, while
+    # "Escherichia_Shigella" was folded into Escherichia outright. This only
+    # affects the UNRESOLVED path -- anything the taxonomy resolved has already
+    # returned above -- so it cannot merge two taxa NCBI told us apart.
+    # The rank guess must read the string as WRITTEN, before that collapse. The
+    # "two words means a binomial" heuristic is only sound for a real space:
+    # "Escherichia-Shigella" is one written token and is not a species, but
+    # collapsing first makes it two and silently reranked ~50 unresolved nodes
+    # from genus to species. Caught by diffing the rebuild, not by reading this.
+    rank_src = re.sub(r"\s+", " ", key).strip()
+    key = re.sub(r"[/_‐-―-]", " ", key)
     key = re.sub(r"\s+", " ", key).strip()
     if rank is None:
-        if len(key.split()) >= 2:
+        if len(rank_src.split()) >= 2:
             rank = "species"
         else:
             for pat, r in RANK_SUFFIX:

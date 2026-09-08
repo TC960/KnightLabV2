@@ -46,6 +46,15 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_GRAPH = os.path.join(HERE, "graph.json")
 
 
+def _mt_norm(s):
+    """Separator-insensitive form, shared with multi_taxon.py."""
+    try:
+        from multi_taxon import norm
+        return norm(s)
+    except Exception:
+        return " ".join(str(s or "").split())
+
+
 class CachedTaxonomy:
     def __init__(self, graph_path=DEFAULT_GRAPH):
         self.ok = os.path.exists(graph_path)
@@ -120,6 +129,11 @@ class CachedTaxonomy:
             self.sup = load_table()
         except Exception:
             self.sup = {}
+        try:
+            from multi_taxon import load_table as _mt
+            self.multi = _mt()
+        except Exception:
+            self.multi = {}
         for e in self.sup.values():
             tid = e["taxid"]
             self.sci.setdefault(tid, e["scientific_name"])
@@ -246,9 +260,29 @@ class CachedTaxonomy:
         if sup:
             return (sup["taxid"], sup["scientific_name"],
                     sup.get("rank", "species"), "curated synonym")
+        # A string naming TWO taxa must not be filed under either. Checked before
+        # the cached lookup for the same reason as the supplement: graph.json has
+        # "Escherichia_Shigella" sitting as an alias of Escherichia, which is the
+        # misattribution being corrected. See multi_taxon.py.
+        if _mt_norm(raw).lower() in getattr(self, "multi", {}):
+            return (None, _mt_norm(raw), None, "multi-taxon")
         tid = self.name2tid.get(key)
         if tid:
             return (tid, self.sci.get(tid, raw), self.rank.get(tid, "no rank"), "cached")
+        # NCBI's own names carry square brackets for a genus known to be misplaced
+        # ("[Eubacterium] siraeum" IS the scientific name), so brackets can only be
+        # stripped as a FALLBACK, never as pre-normalisation -- pre-stripping turns
+        # 7 correct resolutions into 6 gains and 1 loss. As a fallback it is purely
+        # additive: it runs only where the string already failed.
+        if "[" in raw or "]" in raw:
+            # Re-enter the full ladder on the stripped string rather than probing
+            # one table: "[Ruminococcus] gnavus group" reaches Mediterraneibacter
+            # gnavus through the placeholder path, not through name2tid. The
+            # stripped string has no brackets, so this recurses exactly once.
+            r = self.resolve(raw.replace("[", "").replace("]", ""))
+            if r[0]:
+                self.misses.discard(raw)
+                return (r[0], r[1], r[2], "cached (brackets stripped)")
         # A rank placeholder resolves to its parent, and the caller detects that by
         # the returned scientific name differing from the string it asked about --
         # which is exactly what makes build_kg.py split it off as a child node.

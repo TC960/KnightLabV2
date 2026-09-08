@@ -15,12 +15,12 @@ extractions_screened.json                        (extraction, 326 rows -> 314 af
 
 | | |
 |---|---:|
-| taxon–disease edges | 2,043 |
-| distinct taxa | 929 |
+| taxon–disease edges | 2,034 |
+| distinct taxa | 925 |
 | diseases (normalized) | 40 |
-| edges seen in >1 paper | 439 |
-| **contested** (papers disagree on direction) | **215** |
-| containment links | 719 |
+| edges seen in >1 paper | 440 |
+| **contested** (papers disagree on direction) | **217** |
+| containment links | 723 |
 | rank-placeholder nodes | 100 |
 | papers contributing ≥1 association | 272 / 326 |
 
@@ -50,7 +50,7 @@ have red-green colorblindness.
 **Ranks are preserved, not collapsed.** Papers report phylum, genus, species and OTU-level labels
 as peers; there is no accepted convention for merging them. Rank is a node attribute.
 
-**Not a node-link diagram.** 2,043 edges over 929 taxa is a hairball that answers no question. The
+**Not a node-link diagram.** 2,034 edges over 925 taxa is a hairball that answers no question. The
 question the data serves — "for this disease, which taxa, how replicated, where do papers
 disagree" — is a diverging bar chart.
 
@@ -118,14 +118,14 @@ Huntington's, MCI, epilepsy, migraine, myasthenia gravis, neuromyelitis optica).
 
 | | |
 |---|---:|
-| pairs in both | **269** |
-| of our in-scope pairs corroborated | 269/1282 (21.0%) |
-| of Disbiome's pairs we recovered | 269/506 (**53.2%**) |
-| direction **agreement** (both decisive) | **128/175 (73.1%)** |
+| pairs in both | **268** |
+| of our in-scope pairs corroborated | 268/1282 (20.9%) |
+| of Disbiome's pairs we recovered | 268/506 (**53.0%**) |
+| direction **agreement** (both decisive) | **127/174 (73.0%)** |
 | direction disagreement | 47 (26.9%) |
 
-*(Peryton, same join: 224 overlapping pairs, 73.9% recall, direction agreement
-101/139 = **72.7%**.) These figures are measured with the replay taxonomy cache
+*(Peryton, same join: 223 overlapping pairs, 73.4% recall, direction agreement
+100/138 = **72.5%**.) These figures are measured with the replay taxonomy cache
 plus `species_synonyms.json`, not the NCBI taxdump — this environment's network
 policy denies `ftp.ncbi.nih.gov` — so they run ~0.2–1.1 points off taxdump-measured
 runs and are sound for before/after deltas rather than as new absolute numbers.*
