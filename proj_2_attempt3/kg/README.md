@@ -15,12 +15,12 @@ extractions_screened.json                        (extraction, 326 rows -> 314 af
 
 | | |
 |---|---:|
-| taxon–disease edges | 2,011 |
-| distinct taxa | 918 |
+| taxon–disease edges | 2,043 |
+| distinct taxa | 929 |
 | diseases (normalized) | 40 |
-| edges seen in >1 paper | 438 |
-| **contested** (papers disagree on direction) | **219** |
-| containment links | 708 |
+| edges seen in >1 paper | 439 |
+| **contested** (papers disagree on direction) | **215** |
+| containment links | 719 |
 | rank-placeholder nodes | 100 |
 | papers contributing ≥1 association | 272 / 326 |
 
@@ -50,7 +50,7 @@ have red-green colorblindness.
 **Ranks are preserved, not collapsed.** Papers report phylum, genus, species and OTU-level labels
 as peers; there is no accepted convention for merging them. Rank is a node attribute.
 
-**Not a node-link diagram.** 2,011 edges over 918 taxa is a hairball that answers no question. The
+**Not a node-link diagram.** 2,043 edges over 929 taxa is a hairball that answers no question. The
 question the data serves — "for this disease, which taxa, how replicated, where do papers
 disagree" — is a diverging bar chart.
 
@@ -118,17 +118,26 @@ Huntington's, MCI, epilepsy, migraine, myasthenia gravis, neuromyelitis optica).
 
 | | |
 |---|---:|
-| pairs in both | **264** |
-| of our in-scope pairs corroborated | 264/1254 (21.1%) |
-| of Disbiome's pairs we recovered | 264/501 (**52.7%**) |
-| direction **agreement** (both decisive) | **120/167 (71.9%)** |
-| direction disagreement | 47 (28.1%) |
+| pairs in both | **269** |
+| of our in-scope pairs corroborated | 269/1282 (21.0%) |
+| of Disbiome's pairs we recovered | 269/506 (**53.2%**) |
+| direction **agreement** (both decisive) | **128/175 (73.1%)** |
+| direction disagreement | 47 (26.9%) |
 
-*(Peryton, same join: 220 overlapping pairs, 72.8% recall, direction agreement
-100/138 = **72.5%**.) These figures are measured with the replay taxonomy cache,
-not the NCBI taxdump — this environment's network policy denies
-`ftp.ncbi.nih.gov` — so they run ~0.2–1.1 points off taxdump-measured runs and
-are sound for before/after deltas rather than as new absolute numbers.*
+*(Peryton, same join: 224 overlapping pairs, 73.9% recall, direction agreement
+101/139 = **72.7%**.) These figures are measured with the replay taxonomy cache
+plus `species_synonyms.json`, not the NCBI taxdump — this environment's network
+policy denies `ftp.ncbi.nih.gov` — so they run ~0.2–1.1 points off taxdump-measured
+runs and are sound for before/after deltas rather than as new absolute numbers.*
+
+*The 2026-09-08 species split moved these, and the counts are better evidence than
+the ratios: **11 decisive Disbiome pairs entered, all 11 agreeing, 0 disagreements
+added and 0 verdicts flipped** (Peryton +1, agreeing). Eleven-for-eleven is
+p = 0.026 against a 0.717 baseline, but the 11 come from only **7 distinct taxa**,
+and clustering on taxon gives **p = 0.097** — suggestive, not significant. Cite the
+coverage gain (+9 net decisive pairs, no new disagreement), not an accuracy gain;
+the correction is justified on correctness of meaning. See
+`FINDINGS_species_split.md`.*
 
 **Normalize both sides with the same resolver — do not trust their taxid.**
 Disbiome's `organism_ncbi_id` is not consistently at the rank the paper reported:

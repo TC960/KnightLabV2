@@ -139,10 +139,14 @@ def norm_disease(s):
 # Detected corpus-wide by asking which surface strings EXTEND the scientific
 # name they resolved to (see child_folds.json): 115 such strings over 52 nodes,
 # none flagged. 32 are placeholders of this kind; 29 are "X sp./spp./
-# unclassified", where folding to the parent is CORRECT and must not change;
-# the remaining 54 are real named species (Prevotella copri, Klebsiella
-# pneumonia) whose split needs real taxids and is left to an environment with
-# the NCBI taxdump -- see FINDINGS_rank_collapse.md.
+# unclassified", where folding to the parent is CORRECT and must not change.
+# The remaining 54 were read as "real named species whose split needs the NCBI
+# taxdump". Both halves of that were wrong (2026-09-08): only 24 name a species,
+# and the mapping needs no taxdump -- a taxid is stable across a rename, so
+# Disbiome's pre-rename names join to NCBI on it. Those 24 are split, via
+# species_synonyms.json. The other 91 must NOT be split: "Escherichia / Shigella"
+# names two taxa, "Clostridium_XlVa" is a pipeline cluster label. See
+# FINDINGS_species_split.md and FINDINGS_rank_collapse.md.
 PLACEHOLDER = re.compile(
     r"(UCG[-_ ]?\d+|_?group$|ND\d{3,}|R-\d+\b|incertae[ _]sedis|"
     r"sensu[ _]stricto|\bAD\d{3,}\b|\b[A-Z]{1,3}\d{2,}\b|"

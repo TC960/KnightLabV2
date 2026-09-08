@@ -10,11 +10,11 @@ literature — nodes for microbial taxa and diseases, edges for "taxon X is **en
 in disease Y."
 
 Extraction is done and **the graph is built**: see `proj_2_attempt3/kg/`, published at
-<https://www.mohakprakash.com/KnightLabV2/>. **918 taxa** (72% resolved to NCBI
-taxids), **40 diseases**, **2,011 association edges** plus
-**708 taxonomic-containment links**, from **272 contributing
+<https://www.mohakprakash.com/KnightLabV2/>. **929 taxa** (72% resolved to NCBI
+taxids), **40 diseases**, **2,043 association edges** plus
+**719 taxonomic-containment links**, from **272 contributing
 papers** of a screened 326-paper corpus. It agrees with two independent hand-curated databases at
-**71.9%** (Disbiome) and **72.5%** (Peryton) on edge direction.
+**73.1%** (Disbiome) and **72.7%** (Peryton) on edge direction.
 
 *Numbers current as of 2026-09-03; the earlier "712 taxa / 1,398 edges / 77.5% / 75.6%, from 250
 papers" line described a graph three corpus revisions ago. Agreement fell because the corpus grew
@@ -182,8 +182,13 @@ Built from the 250-paper extraction. Published: <https://www.mohakprakash.com/Kn
   **ill-posed** — 145 of 211 contributing papers do both, and only 7 are contested-only. The
   comparison must be within a fixed taxon-disease pair.
 - 11 pairs are contradicted by **both** Disbiome and Peryton — the highest-value review targets.
-- 258 of 918 taxa never resolve to a taxid (16S clade labels like `[Eubacterium] ventriosum group`),
+- 258 of 929 taxa never resolve to a taxid (16S clade labels like `[Eubacterium] ventriosum group`),
   which now includes 100 deliberately-split SILVA rank placeholders (`Prevotella 9`).
-- **54 named species are still folded into their genus** (`Prevotella copri` into `Prevotella`) — a rank
-  collapse the project forbids. Diagnosed and classified in `proj_2_attempt3/kg/child_folds.json`;
-  fixing it needs the NCBI taxdump. This is the top open defect.
+- ~~54 named species folded into their genus~~ — **FIXED 2026-09-08**, and it was never blocked on
+  the taxdump. It was **24** species, not 54; the other 91 child folds must *not* be split
+  (`Escherichia / Shigella` names two taxa, `Clostridium_XlVa` is a cluster label). The mapping comes
+  from joining Disbiome's pre-rename names to NCBI on the **stable taxid** — see
+  `proj_2_attempt3/kg/species_synonyms.py` and `FINDINGS_species_split.md`.
+- **The open items are now decisions, not analyses.** ~20 ambiguous two-genus labels
+  (`Escherichia_Shigella`, 6 papers, currently voting as *Escherichia*) and disease subtypes as
+  containment both need a human call. Everything else is limited by n=272, which needs a GPU.

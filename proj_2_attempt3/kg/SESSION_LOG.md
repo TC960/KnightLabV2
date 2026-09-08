@@ -4,6 +4,118 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+# SUMMARY — session of 2026-09-08 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**Fixed the top open defect — the species folding into their genus — and found
+that all three things the docs said about it were wrong.** Write-up:
+`FINDINGS_species_split.md`.
+
+The scheduled prompt's priority list was stale again (Tasks 1, 2.5, 3.1 and the
+MAIN_DATA filter are all done per the entries below); none were redone. Work
+went to the one item every recent session has recorded as blocked.
+
+### It was not blocked on the taxdump
+
+`ftp.ncbi.nih.gov` is still shut here (CONNECT → 403, re-probed along with
+`ftp.ncbi.nlm.nih.gov`, eutils, `api.ncbi.nlm.nih.gov`, Ensembl, EBI). It did not
+matter. **An NCBI taxid is stable across a rename**, so it is a join key renaming
+cannot move: Disbiome — already committed in this repo — was curated before the
+2024-25 reclassifications and holds `"Prevotella copri" → 165179`, and
+`ncbi-taxon-db` (the NCBI taxonomy redistributed on PyPI, behind `taxoniq`;
+PyPI is reachable) resolves `165179 → Segatella copri [species]`. Two sources
+that know nothing about each other. Every entry in the new
+`species_synonyms.json` records which route produced it and the evidence string.
+
+Caveat for the next session: **`ncbi-taxon-db` is NOT a general taxdump
+substitute** — current scientific names only, no synonym table. Every genuinely-
+species string here failed a direct lookup on it. It serves the *taxid* side of
+the join and only that.
+
+### It was 24 species, not 54, and the other 91 folds must NOT be split
+
+A mechanical split of the 54 `named_child` strings would have damaged the graph.
+`Escherichia / Shigella` and `Streptococcus salivarius/thermophilus` name two
+taxa each (a 16S assay that cannot separate two genera has measured neither);
+`Clostridium_XlVa`, `Prevotella VZCB`, `Turicibacter sp001543345` are pipeline
+cluster labels; `Neisseria multispecies` names no organism; several are strain
+codes under a parent that is *already* a species; two are phages. The resolution
+ladder in `species_synonyms.py` IS the classifier — those fail it and stay put.
+Nothing was sorted by hand.
+
+### The cause was not a missing taxdump either — and three organisms were duplicated
+
+The shipped graph resolves renamed binomials fine (`Clostridium aldenense` is a
+node labelled *Enterocloster aldenensis*). What failed is a subset of the 2024-25
+renames whose old binomials the lookup does not return, so `resolve()` fell
+through to its qualifier-tail trim, **threw the epithet away**, and landed the
+mention on the genus. **Three of these organisms were ALREADY nodes under their
+new names**: papers writing "Phocaeicola dorei" built a species node, papers
+writing "Bacteroides dorei" were folded into genus *Bacteroides*. One organism,
+two nodes, two ranks. Found by asking a cheap structural question of the graph,
+not by inspection — the method that keeps working here.
+
+### Result, and the honest size of it
+
+918 → **929** taxa, 2,011 → **2,043** edges, 708 → **719** containment links,
+219 → **215** contested, 660 → **671** resolved.
+
+The headline case is ***Eubacterium*, not *Prevotella copri***: *Eubacterium* /
+Parkinson's goes **4up/5dn (contested) → 2up/1dn**, because that contest was two
+species pulling opposite ways inside one genus node — *E. rectale* (now
+*Agathobacter rectalis*, Lachnospiraceae) depleted, *E. biforme* (now
+*Holdemanella biformis*, Erysipelotrichaceae) enriched. NCBI places neither in
+*Eubacterium*, or even in the same family. **NULL on the flagship:** *Prevotella*
+/ Parkinson's goes 3up/14dn → 2up/11dn — direction unchanged, still contested;
+*P. copri* agrees with its genus (5 of 6 depleted) and neither carries nor flips
+that edge.
+
+External validation, reported as counts because the ratio is at the edge of what
+this corpus resolves: Disbiome overlap **260 → 269** (recall 51.2% → 53.0%),
+Peryton **220 → 224** (72.6% → 73.9%). **11 decisive Disbiome pairs entered, all
+11 agree, 0 disagreements added, 0 verdicts flipped**; Peryton +1, agreeing.
+Ratios moved 71.7% → 73.1% and 72.5% → 72.7%. Eleven-for-eleven is p = 0.026
+against the 0.717 baseline, **but those 11 pairs come from only 7 distinct taxa,
+and clustering on taxon gives p = 0.097 — suggestive, not significant.** The
+defensible claim is coverage (+9 net decisive pairs, no new disagreement), not
+accuracy. Consistent with the standing rule: this correction is justified on
+correctness of meaning, and must not be cited as an accuracy gain.
+
+One real cost, logged rather than hidden: *F. prausnitzii* / MS went 0up/7dn →
+1up/7dn (became contested, left the decisive set) because the fuzzy route folded
+in the misspelling `Faecalibacterium prauznitzii`, from a paper reporting
+enrichment. Correct behaviour; de-contesting is not the objective.
+
+### The blocking fear was real, and is handled
+
+The warning that splitting these in the cloud "would have LOST the
+Disbiome/Peryton join" was right, and the mechanism was **ancestry**:
+`build_kg.py` builds containment by walking `tax.lineage()`, and the replay cache
+holds only graph-local links, so a split species would have shipped **detached**.
+`species_synonyms.json` therefore stores the full NCBI lineage per entry. One
+candidate (*Lawsonibacter phoceensis*, absent from the 2024 snapshot) is
+**refused rather than split detached**. Note the right ancestor is usually not the
+old genus: *Segatella copri* links to **Prevotellaceae**.
+
+Subtle bit in the diff: the supplement is consulted AFTER `names.dmp` in
+`taxonomy.py` (NCBI must win) but BEFORE the cached lookup in
+`taxonomy_cache.py`, where the "authority" is a replay of `graph.json` and these
+24 entries are exactly what it got wrong. Checked cache-first it is dead code —
+which it was for one run, caught by executing the resolver.
+
+Verified: rebuilt twice, **byte-identical fixed point**; `verify_viz.py` 19/19
+in Chromium; `docs/index.html` re-synced.
+
+### Highest-value next step
+
+**More papers** — with the species split done, the binding constraint on every
+remaining question is n, not method, and that needs a GPU (ask before spending).
+The best CPU-only item left is a human decision, not an analysis: the ~20
+ambiguous two-genus labels (`Escherichia_Shigella`, 6 papers, currently voting as
+*Escherichia*) are the same class of question as disease-subtype containment, and
+both want a call from the PI rather than another script.
+
+---
+
 # SUMMARY — session of 2026-09-06 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **Shipped the specificity layer into the viewer, then consumed the containment

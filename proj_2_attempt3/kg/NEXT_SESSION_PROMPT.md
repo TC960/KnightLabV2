@@ -66,9 +66,9 @@ current state. In short, **every numbered task below has been done**, and the
 findings docs (`FINDINGS_*.md`) carry the results. What is left is listed under
 "THE ACTUAL NEXT STEPS" at the end of this section.
 
-- Graph: **272 contributing papers, 918 taxa, 40 diseases, 2,011 edges, 438
-  replicated, 219 contested, 708 containment links, 100 placeholder nodes.**
-  Disbiome **71.9%**, Peryton **72.5%**.
+- Graph: **272 contributing papers, 929 taxa, 40 diseases, 2,043 edges, 439
+  replicated, 215 contested, 719 containment links, 100 placeholder nodes.**
+  Disbiome **73.1%**, Peryton **72.7%**.
 - **Task 0 (rebuild on the correct datasheet): done.** Honest F1 ~0.59
   (permutation p=0.001). The old 0.390 was a blank-cell artifact; the old 0.680
   was an easy-subset figure.
@@ -122,23 +122,26 @@ have silently erased themselves on rebuild while printing success.
 
 ### THE ACTUAL NEXT STEPS
 
-1. **Split the 54 named species out of their genera. NEEDS THE NCBI TAXDUMP.**
-   `Prevotella copri` is folded into `Prevotella`, `Klebsiella pneumonia` into
-   `Klebsiella` — a rank collapse the project explicitly forbids, on the graph's
-   flagship edge. All 115 child-folds are classified in `child_folds.json`
-   (54 `named_child` = fix these; 32 `placeholder_child` = already fixed; 29
-   `unspecified_member` = correct as-is, do NOT touch). Several are
-   misspellings (`Faecalibacterium prauznitzii`, `Bacteroides uniforms`) needing
-   fuzzy resolution or they become unresolved singletons. **This is why it was
-   not done in the cloud: that environment's network policy denies
-   `ftp.ncbi.nih.gov` (CONNECT -> 403), so the taxdump is unavailable and
-   splitting them there would have LOST the Disbiome/Peryton join for exactly
-   the species that matter.** On a machine with the taxdump this is mechanical.
+1. ~~Split the 54 named species out of their genera. NEEDS THE NCBI TAXDUMP.~~
+   **DONE 2026-09-08 — and every part of that framing was wrong. Do not redo it.**
+   See `FINDINGS_species_split.md`. It was **24** species, not 54; it needed no
+   taxdump (a taxid is stable across a rename, so Disbiome's pre-rename names join
+   to NCBI on it — `species_synonyms.py`); and the other 91 child folds **must not
+   be split** (`Escherichia / Shigella` names two taxa, `Clostridium_XlVa` is a
+   cluster label). The blocking fear — a split species losing its containment link
+   — was real and is handled by storing NCBI lineages per entry; one candidate that
+   could not be given ancestry is refused rather than shipped detached.
 
-2. **More papers.** The binding constraint on every remaining question is n, not
-   method. Extraction needs a GPU — **ask before spending.**
+2. **More papers — this is now the top item.** The binding constraint on every
+   remaining question is n, not method. Extraction needs a GPU — **ask before
+   spending.**
 
-3. Model disease subtypes as containment rather than separate nodes, the way
+3. **Two open items are human decisions, not analyses.** First: ~20 ambiguous
+   two-genus labels that stay folded — `Escherichia_Shigella` (6 papers) currently
+   votes as *Escherichia*, and `Streptococcus salivarius/thermophilus` as the
+   genus. Attributing an unseparated 16S signal to one of its two genera is a
+   modelling choice; it wants a call, not a script. Second, the same class of
+   question: model disease subtypes as containment rather than separate nodes, the way
    taxa already are: `Intracerebral hemorrhage` / `Hypertensive intracerebral
    hemorrhage` sit beside `Stroke`, and `Chronic traumatic complete spinal cord
    injury` beside `Spinal cord injury`, with no link between them. (The one pure
