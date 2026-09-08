@@ -94,6 +94,41 @@ class CachedTaxonomy:
                 ph_parent_id[child] = par[7:]
 
         self._cache_placeholders(placeholders, ph_parent_id)
+        self._load_supplement()
+
+    def _load_supplement(self):
+        """Curated species synonyms + their TRUE NCBI ancestry (species_synonyms.py).
+
+        The cache is a replay of graph.json, so by construction it can only return
+        what the graph already decided -- including its mistakes. The 24 species
+        that the resolver folded into their genus are exactly such a mistake, and
+        no amount of replaying will undo it. This table is the one thing allowed to
+        ADD to the cache, and it is safe to do so because every entry rests on a
+        taxid-keyed join between two independent sources rather than on the graph.
+
+        The lineage matters as much as the name. The cache's own `parent` map holds
+        only graph-local links, so a freshly split species would have no ancestry at
+        all and would get NO containment link -- a detached node. Installing the
+        real NCBI chain lets build_kg.py find the nearest ancestor that IS a node
+        (Segatella copri -> Segatella -> Prevotellaceae), which is the correct
+        answer and, note, is NOT the genus the string used to fold into.
+        """
+        self.sup = {}
+        self.sup_lineage = {}
+        try:
+            from species_synonyms import load_table
+            self.sup = load_table()
+        except Exception:
+            self.sup = {}
+        for e in self.sup.values():
+            tid = e["taxid"]
+            self.sci.setdefault(tid, e["scientific_name"])
+            self.rank.setdefault(tid, e.get("rank", "species"))
+            lin = e.get("lineage") or []
+            if lin:
+                self.sup_lineage[tid] = lin
+            for anc, r in (e.get("rank_of") or {}).items():
+                self.rank.setdefault(anc, r)
 
     def _cache_placeholders(self, nodes, ph_parent_id):
         """Make rank-placeholder strings resolve to their PARENT taxid again.
@@ -174,7 +209,13 @@ class CachedTaxonomy:
         return " ".join((s or "").strip().split()).lower()
 
     def lineage(self, tid, cap=60):
-        """[tid, nearest ancestor, its nearest ancestor, ...] within the graph."""
+        """[tid, nearest ancestor, its nearest ancestor, ...] within the graph.
+
+        For a curated-split species the chain is the TRUE NCBI lineage instead,
+        because the graph has no link to walk for a node it never contained.
+        """
+        if tid in getattr(self, "sup_lineage", {}):
+            return self.sup_lineage[tid][:cap]
         out, seen = [], set()
         while tid and tid not in seen and len(out) < cap:
             out.append(tid)
@@ -189,6 +230,22 @@ class CachedTaxonomy:
         """
         raw = (name or "").strip()
         key = self._norm(raw)
+        # Curated species synonym, checked BEFORE the cached lookup -- the one
+        # place this class deliberately departs from taxonomy.py's ordering.
+        #
+        # There, the supplement comes second because names.dmp is the authority and
+        # must never be overridden. Here the "authority" is a replay of graph.json,
+        # and the whole point of these 24 entries is that graph.json got them wrong:
+        # "Prevotella copri" is sitting in `name2tid` as an ALIAS of the genus node,
+        # which is precisely the fold being corrected. Checking the cache first
+        # would return 838 forever and this table would be dead code. It is safe
+        # exactly because the supplement is small, closed, and every entry carries
+        # the two-source join that produced it.
+        sup = getattr(self, "sup", {}).get(key) or getattr(self, "sup", {}).get(
+            self._norm(raw.replace("_", " ")))
+        if sup:
+            return (sup["taxid"], sup["scientific_name"],
+                    sup.get("rank", "species"), "curated synonym")
         tid = self.name2tid.get(key)
         if tid:
             return (tid, self.sci.get(tid, raw), self.rank.get(tid, "no rank"), "cached")

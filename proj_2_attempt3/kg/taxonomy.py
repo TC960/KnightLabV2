@@ -110,6 +110,19 @@ class Taxonomy:
             return (None, raw, hint, "unresolved")
 
         cands = self.name2ids.get(raw.lower(), [])
+        # A curated synonym the taxdump lookup above did not return. This covers
+        # the 2024-25 reclassifications whose OLD binomials the papers still use --
+        # "Prevotella copri" for Segatella copri, "Eubacterium rectale" for
+        # Agathobacter rectalis -- plus misspellings. Each entry was established by
+        # joining Disbiome's pre-rename name to NCBI on the STABLE taxid; see
+        # species_synonyms.py. Consulted strictly AFTER names.dmp and strictly
+        # BEFORE the trim below, so it can never override a real NCBI answer -- it
+        # only pre-empts throwing the species epithet away and landing on the genus.
+        if not cands:
+            sup = _supplement().get(raw.lower())
+            if sup:
+                return (sup["taxid"], sup["scientific_name"],
+                        sup.get("rank", "species"), "curated synonym")
         # try trimming qualifier tails: "Clostridium sensu stricto 1" -> "Clostridium"
         if not cands and " " in raw:
             for stop in range(len(raw.split()) - 1, 0, -1):
@@ -131,6 +144,20 @@ class Taxonomy:
         tid, cls = sorted(cands, key=key)[0]
         return (tid, self.sci.get(tid, raw), self.rank.get(tid, hint or "no rank"),
                 "scientific" if cls == "scientific name" else "synonym")
+
+
+_SUP = None
+
+
+def _supplement():
+    global _SUP
+    if _SUP is None:
+        try:
+            from species_synonyms import load_table
+            _SUP = load_table()
+        except Exception:
+            _SUP = {}
+    return _SUP
 
 
 _shared = None
