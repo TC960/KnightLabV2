@@ -24,6 +24,22 @@ extractions_screened.json                        (extraction, 326 rows -> 314 af
 | rank-placeholder nodes | 100 |
 | papers contributing ≥1 association | 272 / 326 |
 
+**Confidence tiers** (`annotate_confidence` in `build_kg.py`, added 2026-09-09).
+Every edge is tiered from its own properties, and each tier carries a *measured*
+agreement rate with the two curated databases rather than an asserted one:
+
+| tier | edges | share | Disbiome | Peryton |
+|---|---:|---:|---:|---:|
+| well-supported (≥3 agreeing papers) | 75 | 3.7% | **93.8%** | **93.3%** |
+| supported (2 agreeing papers) | 135 | 6.6% | 77.8% | 83.3% |
+| provisional (1 paper, or a `discriminating` taxon) | 1,607 | **79.0%** | 66.1% | 61.9% |
+| contested (papers disagree; no direction asserted) | 217 | 10.7% | — | — |
+
+Monotone in both databases. The cuts were chosen after seeing the Disbiome split,
+so Peryton is the out-of-sample check. **79% of this graph is provisional** — that
+is the case for more papers, quantified, and it is the honest thing to show a
+reader looking at any one edge.
+
 *Updated 2026-09-03. Three structural corrections that session — 12 duplicate
 papers removed, three NMDAR disease nodes folded into one, and 32 more SILVA
 rank placeholders split out of their parents — changed these counts; see
@@ -125,7 +141,27 @@ Huntington's, MCI, epilepsy, migraine, myasthenia gravis, neuromyelitis optica).
 | direction disagreement | 47 (26.9%) |
 
 *(Peryton, same join: 223 overlapping pairs, 73.4% recall, direction agreement
-100/138 = **72.5%**.) These figures are measured with the replay taxonomy cache
+100/138 = **72.5%**.)*
+
+> **These two numbers are NOT independent replication, and should not be quoted as
+> such** (measured 2026-09-09, `FINDINGS_independence.md`, `check_independence.py`).
+> 43 of our 272 papers are also cited by Disbiome and 24 by Peryton; because those
+> are the heavily-reported papers they back **half** the decisive pairs. Agreement
+> splits on that line — **87.5% / 96.8%** where both sides read the same paper,
+> **58.1% / 52.6%** where the literature is disjoint (taxon-block permutation
+> p=0.0001, taxon cluster bootstrap CI excluding 0, and it survives stratifying on
+> evidence count). Disease is a confounder and pooling overstates it; held fixed
+> within Parkinson's, both databases independently give **59.0%** and **59.6%**
+> disjoint against 100% and 95.8% shared. In Multiple sclerosis the gap is absent
+> (72.7 vs 70.6, n=39, MDE 28.7) — heterogeneity, not power.
+>
+> The honest split: **extraction fidelity 85–97%** (same paper, two readers — and
+> the best evidence for the extractor that does not lean on the in-house gold),
+> **literature reproducibility ~53–59%** (disjoint sources). 73% is a mixture of
+> the two in a ratio set by how much of our corpus the curators happened to read.
+> Report agreement stratified, not pooled.
+
+*These figures are measured with the replay taxonomy cache
 plus `species_synonyms.json`, not the NCBI taxdump — this environment's network
 policy denies `ftp.ncbi.nih.gov` — so they run ~0.2–1.1 points off taxdump-measured
 runs and are sound for before/after deltas rather than as new absolute numbers.*

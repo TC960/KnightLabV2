@@ -13,8 +13,22 @@ Extraction is done and **the graph is built**: see `proj_2_attempt3/kg/`, publis
 <https://www.mohakprakash.com/KnightLabV2/>. **925 taxa** (72% resolved to NCBI
 taxids), **40 diseases**, **2,034 association edges** plus
 **723 taxonomic-containment links**, from **272 contributing
-papers** of a screened 326-paper corpus. It agrees with two independent hand-curated databases at
-**73.0%** (Disbiome) and **72.5%** (Peryton) on edge direction.
+papers** of a screened 326-paper corpus. It agrees with two hand-curated databases at
+**73.0%** (Disbiome) and **72.5%** (Peryton) on edge direction — but **do not quote those two
+numbers as independent replication**; see the caveat below.
+
+**Caveat on the agreement figures (2026-09-09).** Those curations are *not* independent of our
+corpus. 43 of our 272 papers are also cited by Disbiome and 24 by Peryton, and because the shared
+ones are the heavily-reported papers they back **half** the decisive pairs. Agreement splits hard
+on that line: **87.5% / 96.8%** where the two sides read the same paper, **58.1% / 52.6%** where
+the literature is disjoint. Within Parkinson's — the only disease with both buckets full — both
+databases independently land on the same disjoint rate (**59.0%** and **59.6%**, vs 100% and 95.8%
+shared, p=0.0001 each). So 73% is a blend of ~90% *reading fidelity* and ~55% *cross-literature
+reproducibility* and measures neither. The good half is real and is the cleanest evidence for the
+extractor that does not depend on the in-house gold: where a single-paper edge's one paper **is**
+the curated source, agreement is **85–94%**. Counter-example, logged: in Multiple sclerosis the gap
+is absent (72.7 vs 70.6, n=39) at an MDE that could have seen it. Full write-up and the calibration
+that came with it: `proj_2_attempt3/kg/FINDINGS_independence.md`.
 
 *Numbers current as of 2026-09-03; the earlier "712 taxa / 1,398 edges / 77.5% / 75.6%, from 250
 papers" line described a graph three corpus revisions ago. Agreement fell because the corpus grew

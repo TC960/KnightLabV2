@@ -68,7 +68,14 @@ findings docs (`FINDINGS_*.md`) carry the results. What is left is listed under
 
 - Graph: **272 contributing papers, 925 taxa, 40 diseases, 2,034 edges, 440
   replicated, 217 contested, 723 containment links, 100 placeholder nodes.**
-  Disbiome **73.0%**, Peryton **72.5%**.
+  Disbiome **73.0%**, Peryton **72.5%** — but **2026-09-09: do not quote those as
+  independent replication.** 43 of our 272 papers are also cited by Disbiome and
+  24 by Peryton, and those back half the decisive pairs. Agreement is 87.5%/96.8%
+  where both sides read the same paper and 58.1%/52.6% where the literature is
+  disjoint (within Parkinson's: 100%/95.8% vs **59.0%/59.6%**, p=0.0001 each).
+  73% is a blend of ~90% reading fidelity and ~55% cross-literature
+  reproducibility. See `FINDINGS_independence.md`. Every edge now carries a
+  measured `confidence` tier; **79% of the graph is `provisional`**.
 - **Task 0 (rebuild on the correct datasheet): done.** Honest F1 ~0.59
   (permutation p=0.001). The old 0.390 was a blank-cell artifact; the old 0.680
   was an easy-subset figure.

@@ -4,6 +4,137 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+# SUMMARY — session of 2026-09-09 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**Checked the assumption the whole project rests on and it does not hold: the
+"independent" external validation is only half independent, and the two halves
+measure different things.** Write-up: `FINDINGS_independence.md`.
+
+The scheduled prompt's priority list was stale again — its four priorities (the
+MAIN_DATA filter, Task 1, Task 2.5, Task 3.1) are all done per the entries below
+and none were redone. `ftp.ncbi.nih.gov` was re-probed once and is still shut
+(CONNECT → 403, confirmed in the proxy's own failure log), which no longer blocks
+anything: the species split landed without it.
+
+### The question nobody had asked
+
+Disbiome 73.0% and Peryton 72.5% carry the weight they do *because those
+curations are independent of this pipeline* — the repo says so, and prefers them
+to the in-house gold for exactly that reason. Nobody had checked. Both databases
+curate the primary literature; so do we. It is checkable, because our rows carry
+PubMed links and both databases ship PMIDs, DOIs and titles.
+
+**43 of our 272 papers are also cited by Disbiome (16%), 24 by Peryton (9%) — and
+because the shared ones are the heavily-reported papers, they back HALF the
+decisive pairs** (50.6% / 44.9%). Agreement splits hard on that line:
+
+| | shared source | disjoint source |
+|---|---|---|
+| Disbiome | **87.5%** (n=88) | **58.1%** (n=86) |
+| Peryton | **96.8%** (n=62) | **52.6%** (n=76) |
+
++29.4 / +44.1 pts, taxon-block permutation p=0.0001, taxon cluster-bootstrap CIs
+excluding zero, and it survives stratifying on evidence count — so it is not the
+evidence-count signal in disguise.
+
+**Disease is a confounder and pooling overstates it.** Every ALS pair here is
+shared-source and every autism pair disjoint, so the pooled gap partly measures
+"ALS vs autism". Held fixed within Parkinson's — the only disease with both
+buckets full — the effect is smaller, still large, and **two databases that know
+nothing about each other land on the same disjoint rate**: Disbiome 100.0% (n=40)
+vs **59.0%** (n=39); Peryton 95.8% (n=48) vs **59.6%** (n=47); p=0.0001 each.
+
+### The reframe, and the good news inside it
+
+Crossing source-sharing with evidence count (Disbiome / Peryton):
+
+| | 1 paper | ≥2 papers |
+|---|---|---|
+| shared source | 85.2% / 94.1% | 91.2% / 100% |
+| disjoint source | **47.4% / 38.3%** | **79.3% / 75.9%** |
+
+So **73% measures neither quantity** — it is a blend of ~90% *reading fidelity*
+and ~55% *cross-literature reproducibility*, mixed in a ratio set by how much of
+our corpus the curators happened to read. The top-left corner is the good news
+and is worth more than the headline: a single-paper edge whose one paper **is**
+the curated source agrees **85–94%**, which is the cleanest measurement of the
+extractor this project has and the only one that does not depend on the in-house
+gold standard that is under audit.
+
+The disjoint number is **not** an extraction-accuracy figure and must not be
+reported as one: this literature genuinely disagrees with itself (217 contested
+edges; ~1 taxon in 3 flips sign between cohorts), so ~59% may be near the ceiling
+the field sets.
+
+### The counter-example, kept in the text
+
+**In Multiple sclerosis the gap is absent** — 72.7% (n=22) vs 70.6% (n=17),
+p=1.00, MDE 28.7 pts. That test could have seen a Parkinson's-sized gap and did
+not. The finding is established *in Parkinson's*, not corpus-wide.
+
+### What predicts agreement (24 tests, BH-corrected, block-permuted)
+
+Survives: **evidence count** (1 paper 65.8/61.7 → ≥3 papers **91.7/90.6**;
++23.8/+23.7 pts, near-identical in two databases, both q<0.05 — edge weight IS a
+calibration signal); **disease specificity** (`discriminating` taxa agree 36.4%
+vs 82.4% `mixed`, Disbiome q=0.0024, and it is not evidence count in disguise —
++45.3 pts within single-paper edges alone); **species rank** (93.2% vs 66.7%
+genus, q=0.0038 — and it cannot be an evidence artefact, since species edges
+carry *fewer* papers, 1.61 vs 2.26, and agree *more*).
+
+Nulls with power: **the reference's own evidence depth does NOT predict
+agreement** (Disbiome +6.2 pts, CI [−16.5, +25.4], p=0.49) — a hypothesis this
+session proposed, that the 27% disagreement was mostly thin single-record curated
+entries, and the data killed it. **`restates_prior` does not predict agreement**
+(+0.9/+7.7 pts). Within-paper rank conflict is undetermined at n=9 and the two
+databases point opposite ways.
+
+### Shipped: the viewer now says which edges to trust
+
+`annotate_confidence()` tiers every edge from its own properties only — no
+external data — so it covers all 2,034 edges including the ~1,800 no curation
+judges: **contested 217 (10.7%), provisional 1,607 (79.0%), supported 135 (6.6%),
+well-supported 75 (3.7%)**. Each tier carries its measured rate, and the detail
+panel quotes it rather than asserting quality. The `discriminating` demotion
+earns its place empirically (without it well-supported is 91.7/90.6, with it
+93.8/93.3; it moves four pairs and all four were wrong).
+
+**The number the tiles now show is the sobering one: 79% of this graph is
+provisional**, a tier that agrees ~62–66% — and, on disjoint literature, 38–47%.
+That is the argument for more papers, quantified rather than asserted.
+
+Verified by executing, not by parsing: rebuild gives **zero drift in every
+pre-existing field** (meta, 965 nodes, 723 hierarchy links, 272 papers, all 2,034
+edges identical bar the new key), two rebuilds byte-identical, `kg.html` likewise,
+`docs/index.html` re-synced. `verify_viz.py` 19 → **26 assertions**, all passing
+in Chromium. One new assertion failed first time and was right to: it asserted
+tier diversity in the confidence-sorted view, where 75 well-supported edges fill a
+60-row chart, so correct code shows exactly one tier.
+
+Also fixed a latent trap: `load_disbiome` emitted Disbiome's own row id under the
+key `"pmid"`. Nothing read it yet — which is exactly when to fix it.
+
+### Corrected published claims
+
+`CLAUDE.md` and `kg/README.md` both said the graph "agrees with two **independent**
+hand-curated databases". Both now carry the decomposition. Same class of fix as
+Bug 5 (the stale *Lachnospiraceae* "15 papers"): a published claim that no longer
+matched the artifact.
+
+### Highest-value next step
+
+**More papers, and now the case is quantified rather than asserted**: 79% of the
+graph sits in a tier that is a coin flip against disjoint literature, while the
+≥2-paper tier reaches 76–79% on genuinely independent sources. Moving edges from
+the first bucket to the second is the entire remaining lever, and it needs a GPU
+(ask before spending). Cheapest unblocked item left: the **5 pairs where Disbiome
+and Peryton flatly contradict each other**, all in ALS, one record per side —
+*Eubacteriales*, *Lachnospiraceae*, *Dorea*, *Anaerostipes*, *Oscillibacter*. Same
+class as the 11 doubly-contradicted pairs but stronger, since it is two curations
+disagreeing on one small literature.
+
+---
+
 # SUMMARY — session of 2026-09-08 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **Fixed the top open defect — the species folding into their genus — and found
