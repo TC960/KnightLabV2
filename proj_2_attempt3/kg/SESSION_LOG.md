@@ -121,17 +121,40 @@ hand-curated databases". Both now carry the decomposition. Same class of fix as
 Bug 5 (the stale *Lachnospiraceae* "15 papers"): a published claim that no longer
 matched the artifact.
 
+### Then: five contradictions turned out to be one mis-curated paper
+
+Write-up: `FINDINGS_db_conflicts.md`. Where Disbiome and Peryton contradict *each
+other*, one is wrong by construction — a stronger signal than either disagreeing
+with us. There were 5, all in ALS. Asking the structural question before reading
+anything: **all ten records come from ONE paper (PMID 27703453)**, so it is a
+single curation error, not five contradictions; calling it five would overstate
+the evidence fivefold, the mistake the "229 opposite pairs" figure made.
+
+We extracted that paper too, so `relation_sentences.json` settles it verbatim,
+and the decisive sentence needs no decoding of the paper's group labels:
+"significant increased genus *Dorea* ... and significant reduced genus
+*Oscillibacter*, *Anaerostipes*, *Lachnospiraceae* ... **in ALS patients**".
+**Peryton and this graph are right on all five; Disbiome is inverted on all
+five** — and systematically, since *Dorea* flips with the rest, which is what a
+swapped group assignment produces.
+
+**5 of our 47 Disbiome disagreements (10.6%) trace to this one paper.** Correcting
+them gives 132/174 = **75.9%** — offered as an error in the REFERENCE, not an
+accuracy gain for the graph, and not to be quoted unlabelled. It is also the first
+demonstrated case that some of the 27% disagreement is the reference being wrong
+rather than us. Worth reporting upstream to Disbiome.
+
 ### Highest-value next step
 
 **More papers, and now the case is quantified rather than asserted**: 79% of the
 graph sits in a tier that is a coin flip against disjoint literature, while the
 ≥2-paper tier reaches 76–79% on genuinely independent sources. Moving edges from
 the first bucket to the second is the entire remaining lever, and it needs a GPU
-(ask before spending). Cheapest unblocked item left: the **5 pairs where Disbiome
-and Peryton flatly contradict each other**, all in ALS, one record per side —
-*Eubacteriales*, *Lachnospiraceae*, *Dorea*, *Anaerostipes*, *Oscillibacter*. Same
-class as the 11 doubly-contradicted pairs but stronger, since it is two curations
-disagreeing on one small literature.
+(ask before spending). The 5 mutually-contradicted pairs, listed here earlier as the
+cheapest unblocked item, were **done in this session** (above). Next cheapest:
+re-run `adjudicate_db_conflicts.py` whenever the corpus grows — any cluster of
+disagreements tracing to one publication is a candidate curation error rather
+than N findings — and report PMID 27703453 upstream to Disbiome.
 
 ---
 
