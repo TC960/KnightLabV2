@@ -472,7 +472,72 @@ def build(rows, min_papers=1, tax=None):
         del e["evidence"]
     annotate_specificity(nodes, edges)
     annotate_rank_conflicts(nodes, edges, hierarchy)
+    annotate_confidence(edges)
     return nodes, edges, hierarchy, papers_tbl
+
+
+# Measured agreement with the two curated databases, per tier, from
+# calibrate_agreement.py / FINDINGS_independence.md. These are OBSERVED rates on
+# the decisive pairs each database judges, not model outputs, and they are
+# carried here so the viewer can quote a number it did not invent. The two
+# columns are independent references and they agree, which is the only check
+# available on tier boundaries that were chosen after seeing Disbiome.
+CONFIDENCE_RATES = {
+    "well-supported": {"disbiome": 0.938, "peryton": 0.933,
+                       "n_disbiome": 32, "n_peryton": 30},
+    "supported": {"disbiome": 0.778, "peryton": 0.833,
+                  "n_disbiome": 27, "n_peryton": 24},
+    "provisional": {"disbiome": 0.661, "peryton": 0.619,
+                    "n_disbiome": 115, "n_peryton": 84},
+    "contested": {"disbiome": None, "peryton": None,
+                  "n_disbiome": 0, "n_peryton": 0},
+}
+
+
+def annotate_confidence(edges):
+    """Tier each edge by how often edges like it agree with independent curation.
+
+    WHY. The 2026-09-09 calibration found that edge properties predict external
+    agreement, and that the graph's headline 73% hides a wide spread: edges from
+    >=3 papers agree 92-94% with Disbiome and Peryton, single-paper edges 62-66%.
+    A reader looking at one edge has no way to tell those apart, and the viewer
+    encodes evidence count as bar length -- which reads as "how much" rather than
+    "how much to trust it". So the tier is stated outright.
+
+    The tier uses only properties of the edge itself, never the external
+    databases, so it is deterministic and computable for all 2,034 edges
+    including the ~1,800 no curation judges.
+
+      contested       the papers disagree; the graph asserts no direction
+      provisional     one paper, OR a taxon that points different ways in
+                      different diseases (`discriminating`, purity <= 0.6 --
+                      the strongest single predictor of external disagreement)
+      supported       two papers agreeing
+      well-supported  three or more papers agreeing
+
+    The `discriminating` demotion earns its place empirically: without it,
+    well-supported agreement is 91.7%/90.6%; with it, 93.8%/93.3%, in both
+    databases. It moves four pairs and all four were wrong.
+
+    HONEST LIMIT, and it belongs next to the numbers: the cuts were chosen after
+    looking at the Disbiome split, so the Disbiome rates are in-sample. Peryton
+    is the out-of-sample check and reproduces them (93.3 / 83.3 / 61.9). Computed
+    inside build() rather than as a sidecar so it cannot drift from the edges it
+    describes or self-erase on rebuild -- the same reasoning as
+    annotate_specificity.
+    """
+    for e in edges:
+        if e["contested"]:
+            tier = "contested"
+        elif e.get("taxon_class") == "discriminating":
+            tier = "provisional"
+        elif e["n_papers"] >= 3:
+            tier = "well-supported"
+        elif e["n_papers"] == 2:
+            tier = "supported"
+        else:
+            tier = "provisional"
+        e["confidence"] = tier
 
 
 def annotate_rank_conflicts(nodes, edges, hierarchy):

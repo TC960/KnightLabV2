@@ -111,6 +111,19 @@ select:focus-visible,input:focus-visible,button:focus-visible{outline:2px solid 
 .chip.gen{border-color:var(--ink-3);color:var(--ink-3)}
 .chip.nar{border-color:var(--line);color:var(--ink-3)}
 .chip.conf{border-color:var(--down);color:var(--down);font-weight:600}
+/* Confidence tier. Deliberately its own class, NOT `cls` or `conf`: those two
+   are what verify_viz.py reads to test the specificity chip and the rank-conflict
+   chip, and reusing either would make one of those assertions pass for the wrong
+   reason. Filled for well-supported, outlined as it weakens, so the tier reads
+   in greyscale as well as in colour. */
+.chip.tier{font-weight:600}
+.chip.tier.t-well{background:var(--up);border-color:var(--up);color:var(--panel)}
+.chip.tier.t-sup{border-color:var(--up);color:var(--up)}
+.chip.tier.t-prov{border-color:var(--ink-3);color:var(--ink-3)}
+.chip.tier.t-cont{border-color:var(--down);color:var(--down)}
+.trust{font-size:12px;color:var(--ink-2);margin:7px 0 2px;padding:7px 10px;
+       background:var(--surface);border-left:2px solid var(--up);border-radius:0 5px 5px 0}
+.trust b{color:var(--ink);font-weight:600}
 .conflict{font-size:12px;margin:7px 0 2px;padding:8px 10px;background:var(--surface);
           border-left:2px solid var(--down);border-radius:0 5px 5px 0;color:var(--ink-2)}
 .conflict b{color:var(--ink);font-weight:600}
@@ -209,6 +222,37 @@ function specText(e){
   return spread + `Mostly consistent (purity ${e.taxon_purity}) but not uniform.`;
 }
 
+// ---- confidence -----------------------------------------------------------
+// `confidence` tiers each edge by how often edges LIKE IT agreed with two
+// independent curated databases (Disbiome, Peryton). The rates below are
+// measured, not modelled -- see FINDINGS_independence.md. They matter because
+// bar length encodes evidence count, which reads as "how much" and not as "how
+// much to trust it": a one-paper edge and an eleven-paper edge look like the
+// same kind of claim, and they are not. 79% of the graph is `provisional`.
+const CONF = {
+  "well-supported": {chip:"t-well", label:"well-supported", rank:0, dis:94, per:93},
+  "supported":      {chip:"t-sup",  label:"supported",      rank:1, dis:78, per:83},
+  "provisional":    {chip:"t-prov", label:"provisional",    rank:2, dis:66, per:62},
+  "contested":      {chip:"t-cont", label:"contested",      rank:3, dis:null, per:null},
+};
+const confOf = e => CONF[e.confidence] || CONF.provisional;
+
+function trustText(e){
+  const c = confOf(e);
+  if (e.confidence === "contested")
+    return `<b>Contested</b> — the papers disagree, so the graph asserts no direction `
+         + `here. Disagreement is kept rather than averaged away: about one taxon in `
+         + `three flips sign between cohorts in this literature.`;
+  const why = e.taxon_class === "discriminating" && e.n_papers >= 2
+    ? ` Held at <b>provisional</b> despite ${e.n_papers} papers because <i>${e.taxon}</i> `
+      + `points different ways in different diseases, which is the strongest single `
+      + `predictor of disagreeing with curation.`
+    : "";
+  return `<b>${c.label}</b> — edges in this tier agree with independent curation `
+       + `<b>${c.dis}%</b> of the time (Disbiome) and <b>${c.per}%</b> (Peryton).${why}`
+       + ` Measured on the pairs those databases judge, not a model estimate.`;
+}
+
 // ---- rank conflicts -------------------------------------------------------
 // `rank_conflicts` lists, per edge, the parent/child taxa pointing the OTHER way
 // in the same disease, with a verdict on who asserts it. Only `within_paper`
@@ -268,6 +312,10 @@ function render(){
     // purity 1.0 IS the generic case, so sorting by it descending surfaces exactly
     // the edges this control exists to bury.
     rows.sort((a,b) => clsOf(a).rank - clsOf(b).rank || byEvidence(a,b));
+  else if (sortBy.value === "conf")
+    // Best-evidenced first. Unlike the specificity sort this is a plain quality
+    // ordering: the top of the list is what a reader should actually rely on.
+    rows.sort((a,b) => confOf(a).rank - confOf(b).rank || byEvidence(a,b));
   else
     rows.sort(byEvidence);
   rows = rows.slice(0, 60);
@@ -297,7 +345,7 @@ function render(){
         ${e.n_up?`<div class="bar up${bx}" style="left:50%;width:${up}%"></div>`:""}
       </div>
       <div class="cnt">${e.n_papers}</div>
-      <div class="scope">${e.contested?'<span class="chip">split</span>':''}${scope}${rc}</div>
+      <div class="scope"><span class="chip tier ${confOf(e).chip}" title="${confOf(e).label} — see the detail panel for the measured agreement rate">${confOf(e).label}</span>${e.contested?'<span class="chip">split</span>':''}${scope}${rc}</div>
     </div>`;
   }).join("");
   [...chart.querySelectorAll(".row")].forEach(el => {
@@ -334,6 +382,7 @@ window.__showDetail = function(ed, siblings){
     + `<span style="color:var(--down)">${ed.n_down} depleted</span>`
     + (ed.contested ? ` · <b>contested</b> (${Math.round(ed.consistency*100)}% consistent)` : "")
     + `</div>`
+    + `<div class="trust">${trustText(ed)}</div>`
     + `<div class="spec">${specText(ed)}</div>`
     + (() => {
         const wp = withinPaper(ed);
@@ -417,6 +466,8 @@ def main():
     n_disc = sum(1 for e in G["edges"] if e.get("taxon_class") == "discriminating")
     n_prior = sum(1 for e in G["edges"] if e.get("restates_prior"))
     n_rc = sum(1 for e in G["edges"] if e.get("has_within_paper_conflict"))
+    n_well = sum(1 for e in G["edges"] if e.get("confidence") == "well-supported")
+    n_prov = sum(1 for e in G["edges"] if e.get("confidence") == "provisional")
     payload = {"edges": G["edges"], "hierarchy": G.get("hierarchy", []),
                "papers": G.get("papers", []), "spec": spec}
 
@@ -439,6 +490,8 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
   <div class="tile"><div class="n">{m['n_replicated']}</div><div class="l">seen in &gt;1 paper</div></div>
   <div class="tile"><div class="n">{m['n_contested']}</div><div class="l">contested</div></div>
   <div class="tile"><div class="n">{n_disc}</div><div class="l">disease-discriminating</div></div>
+  <div class="tile"><div class="n">{n_well}</div><div class="l">well-supported (94% agree)</div></div>
+  <div class="tile"><div class="n">{n_prov}</div><div class="l">provisional (66% agree)</div></div>
 </div>
 
 <div class="controls">
@@ -447,7 +500,8 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
        <input type="range" id="minp" min="1" max="8" value="2"></div>
   <div><label for="sortby">Sort by</label><select id="sortby">
        <option value="ev">Evidence (papers)</option>
-       <option value="spec">Disease specificity</option></select></div>
+       <option value="spec">Disease specificity</option>
+       <option value="conf">Confidence tier</option></select></div>
   <div class="toggle"><input type="checkbox" id="onlyc"><label for="onlyc"
        style="margin:0;text-transform:none;letter-spacing:0;font-size:13px">Contested only</label></div>
   <div class="toggle"><input type="checkbox" id="hideprior"><label for="hideprior"
@@ -463,6 +517,8 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
 <div class="legend">
   <span class="key"><span class="sw" style="background:var(--down)"></span>depleted (bar left)</span>
   <span class="key"><span class="sw" style="background:var(--up)"></span>enriched (bar right)</span>
+  <span class="key"><span class="chip tier t-well">well-supported</span>≥3 papers agreeing — 94%/93% agreement with Disbiome/Peryton</span>
+  <span class="key"><span class="chip tier t-prov">provisional</span>one paper, or a taxon whose direction varies by disease — 66%/62%</span>
   <span class="key"><span class="chip">split</span>papers disagree — both arms drawn</span>
   <span class="key"><span class="sw" style="background:var(--up-soft);box-shadow:inset 0 0 0 1.5px var(--up)"></span>hollow
     = restates the taxon's corpus-wide tendency</span>

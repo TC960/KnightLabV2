@@ -54,6 +54,7 @@ with sync_playwright() as p:
         return pg.evaluate("""() => [...document.querySelectorAll('#chart .row')].map(r => ({
             tax: r.querySelector('.tax').textContent.trim(),
             scope: (r.querySelector('.scope .chip.cls')||{}).textContent || '',
+            tier: (r.querySelector('.scope .chip.tier')||{}).textContent || '',
             hollow: !!r.querySelector('.bar.prior'),
             papers: r.querySelector('.cnt').textContent.trim(),
         }))""")
@@ -62,6 +63,31 @@ with sync_playwright() as p:
     check("ranked rows render", len(base) > 10, f"n={len(base)}")
     check("scope chip on every row", all(r["scope"] for r in base),
           f"missing={sum(1 for r in base if not r['scope'])}")
+
+    check("confidence tier chip on every row", all(r["tier"] for r in base),
+          f"missing={sum(1 for r in base if not r['tier'])}")
+
+    # --- sort by confidence tier: best-evidenced first, contested last ---
+    # A tier chip that never varies would pass the assertion above while telling
+    # the reader nothing, so the sort has to demonstrate the tiers are distinct.
+    pg.select_option("#sortby", "conf")
+    pg.wait_for_timeout(300)
+    cf = rows()
+    trank = {"well-supported": 0, "supported": 1, "provisional": 2, "contested": 3}
+    tseq = [trank.get(r["tier"], 9) for r in cf]
+    check("confidence sort is monotonic (well-supported -> contested)",
+          tseq == sorted(tseq), f"first5={[r['tier'] for r in cf[:5]]}")
+    check("confidence sort surfaces well-supported first",
+          cf[0]["tier"] == "well-supported", f"got={cf[0]['tier']}")
+    # Tier diversity is checked on the DEFAULT (evidence) sort, not this one:
+    # there are 75 well-supported edges and the chart renders only the top 60, so
+    # a correct confidence sort shows a single tier here. Asserting diversity on
+    # the sorted view would fail on working code.
+    check("more than one tier is actually present",
+          len({r["tier"] for r in base}) > 1,
+          f"tiers={sorted({r['tier'] for r in base})}")
+    pg.select_option("#sortby", "ev")
+    pg.wait_for_timeout(200)
 
     n_hollow_default = sum(r["hollow"] for r in base)
     check("hollow (restates-prior) bars present by default", n_hollow_default > 0,
@@ -101,6 +127,21 @@ with sync_playwright() as p:
           repr(spec_txt[:110]))
     check("specificity sentence has no unresolved placeholder", "?" not in spec_txt.split("—")[0],
           repr(spec_txt[:110]))
+
+    # --- detail panel quotes the MEASURED agreement rate for this edge's tier ---
+    # The whole point of the tier is the number attached to it; a chip with no
+    # rate behind it is decoration. "null%" is the failure mode to catch — the
+    # contested tier has no rate, so it must not fall through to the template.
+    trust_txt = pg.evaluate(
+        "() => (document.querySelector('#detail .trust')||{}).textContent || ''")
+    check("detail panel shows the confidence tier", trust_txt.strip() != "",
+          repr(trust_txt[:110]))
+    check("confidence sentence quotes a measured rate or says contested",
+          ("agree with independent curation" in trust_txt) or ("Contested" in trust_txt),
+          repr(trust_txt[:130]))
+    check("confidence sentence has no null/undefined rate",
+          "null" not in trust_txt and "undefined" not in trust_txt,
+          repr(trust_txt[:130]))
 
     # --- rank-conflict filter and its detail block ---
     pg.check("#onlyrc")
