@@ -1,0 +1,119 @@
+{
+ "corpus_papers": 272,
+ "sources": [
+  {
+   "source": "Disbiome",
+   "ref_publications": 1147,
+   "shared_corpus_papers": 43,
+   "n_pairs": 174,
+   "n_shared_source": 88,
+   "n_disjoint": 86,
+   "agreement_shared": 0.875,
+   "agreement_disjoint": 0.5814,
+   "pooled": 0.7299,
+   "ci": [
+    0.1736,
+    0.4113
+   ],
+   "diff": 0.2936,
+   "p": 0.0001,
+   "mde": 0.134,
+   "by_disease": [
+    {
+     "disease": "Multiple sclerosis",
+     "n_shared": 22,
+     "n_disjoint": 17,
+     "agreement_shared": 0.7273,
+     "agreement_disjoint": 0.7059,
+     "diff": 0.0214,
+     "p": 1.0,
+     "mde": 0.2873
+    },
+    {
+     "disease": "Parkinson's disease",
+     "n_shared": 40,
+     "n_disjoint": 39,
+     "agreement_shared": 1.0,
+     "agreement_disjoint": 0.5897,
+     "diff": 0.4103,
+     "p": 0.0001,
+     "mde": 0.1789
+    }
+   ],
+   "strata": [
+    {
+     "stratum": "1 paper",
+     "n_shared": 54,
+     "n_disjoint": 57,
+     "agreement_shared": 0.8519,
+     "agreement_disjoint": 0.4737,
+     "diff": 0.3782,
+     "p": 0.0002,
+     "mde": 0.1813
+    },
+    {
+     "stratum": ">=2 papers",
+     "n_shared": 34,
+     "n_disjoint": 29,
+     "agreement_shared": 0.9118,
+     "agreement_disjoint": 0.7931,
+     "diff": 0.1187,
+     "p": 0.2822,
+     "mde": 0.1741
+    }
+   ]
+  },
+  {
+   "source": "Peryton",
+   "ref_publications": 235,
+   "shared_corpus_papers": 24,
+   "n_pairs": 138,
+   "n_shared_source": 62,
+   "n_disjoint": 76,
+   "agreement_shared": 0.9677,
+   "agreement_disjoint": 0.5263,
+   "pooled": 0.7246,
+   "ci": [
+    0.3206,
+    0.5625
+   ],
+   "diff": 0.4414,
+   "p": 0.0001,
+   "mde": 0.1491,
+   "by_disease": [
+    {
+     "disease": "Parkinson's disease",
+     "n_shared": 48,
+     "n_disjoint": 47,
+     "agreement_shared": 0.9583,
+     "agreement_disjoint": 0.5957,
+     "diff": 0.3626,
+     "p": 0.0001,
+     "mde": 0.1687
+    }
+   ],
+   "strata": [
+    {
+     "stratum": "1 paper",
+     "n_shared": 34,
+     "n_disjoint": 47,
+     "agreement_shared": 0.9412,
+     "agreement_disjoint": 0.383,
+     "diff": 0.5582,
+     "p": 0.0001,
+     "mde": 0.2148
+    },
+    {
+     "stratum": ">=2 papers",
+     "n_shared": 28,
+     "n_disjoint": 29,
+     "agreement_shared": 1.0,
+     "agreement_disjoint": 0.7586,
+     "diff": 0.2414,
+     "p": 0.0112,
+     "mde": 0.1721
+    }
+   ]
+  }
+ ]
+}
