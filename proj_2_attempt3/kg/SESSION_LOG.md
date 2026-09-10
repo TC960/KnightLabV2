@@ -123,6 +123,35 @@ that produces is small. Consequences:
   edges rather than average them — and an argument against any further
   paper-level covariate hunt.
 
+### Shipped: the viewer now tells a reader what protocol the evidence used
+
+The methods variables would have been another JSON file nothing reads, so they are
+wired through. `build_kg.py` joins them onto the paper table **on the normalised
+title, deliberately not on the `paper` index the records also carry** — that index
+points into whatever paper table existed when the file was written and goes stale
+silently the moment the corpus changes. Every edge gains `n_methods_papers`,
+`n_pipelines`, `n_kits`, `n_platforms` and a `methods_diversity` label:
+**313 multi-method, 116 single-method, 1,605 unknown** (single-paper edges cannot
+have one by construction). The detail panel gains a protocol note and the study
+table a Protocol column ("DADA2 · FastDNA", "QIIME1/UPARSE · Omega").
+
+**And the panel says out loud that this is provenance, not quality.**
+`methods_diversity_calibration.py` asked whether multi-method edges agree with
+curated databases more often, as `annotate_confidence` had to earn its tiers:
+86.0% vs 87.5% (Disbiome), 89.5% vs 87.5% (Peryton), taxon-block permutation
+**p = 1.00 both**. Stratifying on evidence count is mandatory — multi-method edges
+average 4.81 papers against 2.44 — and leaves cells of 4–12 pairs with nothing
+significant. The structural reason is worth keeping: **there are zero
+single-method edges with ≥5 papers**, so diversity and evidence count are
+near-collinear exactly where the evidence is strong. It must not become a
+confidence tier.
+
+Verified by executing: zero drift in every pre-existing field (meta identical, 965
+nodes, 723 hierarchy links, all 272 paper rows and 2,034 edges unchanged bar the
+new keys), two rebuilds byte-identical, rebuild from the installed graph a fixed
+point, `kg.html` byte-identical on rebuild, `docs/index.html` re-synced.
+`verify_viz.py` **26 → 32 assertions**, all passing in Chromium.
+
 ### Highest-value next step
 
 **More papers, and now the alternative is closed rather than merely unexplored.**
@@ -131,7 +160,7 @@ it has been done and it is null, for a reason that is arithmetic rather than
 contingent. 109 papers with ≥4 decisive observations is what sets every MDE here.
 Extraction needs a GPU — **ask before spending.**
 
-One cheap thing worth doing first: `methods_metadata.py` now has nine families of
+~~One cheap thing worth doing first~~ — DONE in this session, see "Shipped" above: `methods_metadata.py` has nine families of
 study-methods variables for all 272 papers at 0.90 recall and **nothing in the
 graph consumes them**. They are weak predictors of discordance — that was tested —
 but they are good *provenance* for a reader judging an edge ("these 6 papers used

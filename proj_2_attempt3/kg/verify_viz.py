@@ -168,6 +168,40 @@ with sync_playwright() as p:
     check("table has Diseases + Specificity columns",
           "Diseases" in heads and "Specificity" in heads, str(heads))
 
+    # --- study protocol provenance (methods_metadata.py -> build_kg.py) ---
+    # Open a well-evidenced edge, which is where a protocol note can exist at all:
+    # the label is "unknown" for single-paper edges by construction.
+    pg.select_option("#sortby", "ev")
+    pg.wait_for_timeout(400)
+    n_rows = len(rows())
+    opened = False
+    for i in range(1, min(13, n_rows + 1)):
+        pg.click(f"#chart .row:nth-child({i})")
+        pg.wait_for_timeout(250)
+        if pg.evaluate("() => !!document.querySelector('#detail .proto-note')"):
+            opened = True
+            break
+    check("a well-evidenced edge shows the protocol note", opened,
+          "checked the 12 most-replicated edges")
+    if opened:
+        pn = pg.evaluate("() => document.querySelector('#detail .proto-note').textContent")
+        check("protocol note says which kind of evidence it is",
+              ("Multi-method evidence" in pn) or ("Single-method evidence" in pn),
+              repr(pn[:80]))
+        check("protocol note refuses to sell diversity as quality",
+              "does not predict agreement" in pn.replace(" ", " ")
+              or "not folded into" in pn, repr(pn[-120:]))
+        check("protocol note has no unresolved placeholder",
+              "undefined" not in pn and "NaN" not in pn and "null" not in pn,
+              repr(pn[:120]))
+        heads2 = pg.evaluate(
+            "() => [...document.querySelectorAll('#detail table th')].map(t=>t.textContent.trim())")
+        check("study table has a Protocol column", "Protocol" in heads2, str(heads2))
+        cells = pg.evaluate(
+            "() => [...document.querySelectorAll('#detail td.proto')].map(t=>t.textContent.trim())")
+        check("at least one study names its protocol",
+              any(c and c != "—" for c in cells), str(cells[:6]))
+
     # --- tiles ---
     tiles = pg.evaluate("() => [...document.querySelectorAll('.tile')].map(t=>t.textContent.trim())")
     check("discriminating tile present", any("discriminating" in t for t in tiles), str(tiles))

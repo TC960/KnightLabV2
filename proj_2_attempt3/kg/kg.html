@@ -105,6 +105,11 @@ select:focus-visible,input:focus-visible,button:focus-visible{outline:2px solid 
 .spec{font-size:12px;color:var(--ink-2);margin:7px 0 2px;padding:7px 10px;
       background:var(--surface);border-left:2px solid var(--line);border-radius:0 5px 5px 0}
 .spec b{color:var(--ink);font-weight:600}
+.proto-note{font-size:12px;color:var(--ink-2);margin:7px 0 2px;padding:7px 10px;
+      background:var(--surface);border-left:2px solid var(--line);border-radius:0 5px 5px 0}
+.proto-note b{color:var(--ink);font-weight:600}
+td.proto{color:var(--ink-2);font-size:11px;white-space:nowrap;max-width:170px;
+      overflow:hidden;text-overflow:ellipsis}
 
 .tip{position:fixed;pointer-events:none;background:var(--panel);color:var(--ink);
      border:1px solid var(--line);border-radius:6px;padding:9px 11px;font-size:12.5px;
@@ -331,6 +336,43 @@ function trustText(e){
        + ` Measured on the pairs those databases judge, not a model estimate.`;
 }
 
+// ---- study protocol -------------------------------------------------------
+// Wet-lab and bioinformatics choices per paper, from methods_metadata.py (recall
+// 0.90 against an independent read of sampled methods sections). These are shown
+// as PROVENANCE, never as a quality signal: methods_diversity_calibration.py
+// tested multi- against single-method edges on both curated databases and found
+// nothing (86.0% vs 87.5% Disbiome, 89.5% vs 87.5% Peryton, block-permutation
+// p = 1.00 each), and there are zero single-method edges with >=5 papers, so
+// diversity and evidence count are near-collinear where the evidence is strong.
+// The reader gets the facts and draws their own conclusion.
+function protocolCell(p){
+  if (!p || !p.has_methods) return "—";
+  const bits = [];
+  if (p.pipeline && p.pipeline.length) bits.push(p.pipeline.slice(0,2).join("/"));
+  if (p.kit && p.kit.length) bits.push(p.kit[0]);
+  if (!bits.length && p.platform && p.platform.length) bits.push(p.platform[0]);
+  return bits.length ? bits.join(" · ") : "—";
+}
+
+function protocolText(e){
+  if (!e || e.methods_diversity === "unknown" || !e.n_methods_papers) return "";
+  const multi = e.methods_diversity === "multi-method";
+  const parts = [];
+  if (e.n_pipelines) parts.push(`<b>${e.n_pipelines}</b> pipeline${e.n_pipelines!==1?"s":""}`);
+  if (e.n_kits) parts.push(`<b>${e.n_kits}</b> extraction kit${e.n_kits!==1?"s":""}`);
+  const detail = parts.length ? ` (${parts.join(", ")})` : "";
+  return `<div class="proto-note">`
+    + (multi
+        ? `<b>Multi-method evidence</b> — the ${e.n_methods_papers} studies with `
+          + `recoverable methods did not all use the same protocol${detail}.`
+        : `<b>Single-method evidence</b> — all ${e.n_methods_papers} studies with `
+          + `recoverable methods used the same protocol${detail}, so they are closer `
+          + `to repeated looks through one instrument than to independent replication.`)
+    + ` Shown as provenance: protocol diversity does <i>not</i> predict agreement `
+    + `with curated databases in this corpus (p = 1.00), so it is not folded into `
+    + `the confidence tier.</div>`;
+}
+
 // ---- rank conflicts -------------------------------------------------------
 // `rank_conflicts` lists, per edge, the parent/child taxa pointing the OTHER way
 // in the same disease, with a verdict on who asserts it. Only `within_paper`
@@ -483,13 +525,15 @@ window.__showDetail = function(ed, siblings){
         + (seqs.length?`<span>method: <b>${seqs.join(", ")}</b></span>`:"")
         + (sizes.length?`<span>cohort size: <b>${Math.min(...sizes)}–${Math.max(...sizes)}</b> subjects</span>`:"")
         + `</div>` : "")
+    + protocolText(ed)
     + `<div class="tablewrap"><table><thead><tr><th>Direction</th><th>Study</th><th>Country</th>`
-    + `<th class="num">Cases</th><th class="num">Controls</th><th>Method</th><th>Site</th></tr></thead><tbody>`
+    + `<th class="num">Cases</th><th class="num">Controls</th><th>Method</th><th>Protocol</th><th>Site</th></tr></thead><tbody>`
     + rows.map(r => `<tr><td><span class="dirpill ${r.dir==="enriched"?"up":"down"}">`
         + `${r.dir==="enriched"?"UP":"DOWN"}</span></td>`
         + `<td>${(r.p.title||"").slice(0,72)}</td><td>${r.p.country||"—"}</td>`
         + `<td class="num">${r.p.n_cases||"—"}</td><td class="num">${r.p.n_controls||"—"}</td>`
-        + `<td>${r.p.seq||"—"}</td><td>${r.p.site||"—"}</td></tr>`).join("")
+        + `<td>${r.p.seq||"—"}</td><td class="proto">${protocolCell(r.p)}</td>`
+        + `<td>${r.p.site||"—"}</td></tr>`).join("")
     + `</tbody></table></div>`
     + (siblings && siblings.length > 1
         ? `<div class="meta" style="margin-top:9px">Also linked to: `
