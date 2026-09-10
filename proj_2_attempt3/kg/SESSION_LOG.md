@@ -7,9 +7,11 @@ Newest first. Nulls and dead ends are logged as results.
 # SUMMARY — session of 2026-09-10 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **Asked of our own extractions the question that caught Disbiome last session —
-is any single paper systematically inverted? — and got a well-powered no, plus
-the first structure anyone has found in contested edges.** Write-up:
-`FINDINGS_paper_discordance.md`.
+is any single paper systematically inverted? — and got a well-powered no. Then
+found paper-level structure in contested edges, sized it, and found it too small
+to chase: 3.4 percentage points, CI including zero.** The 24 explanatory variables
+tested against it are all null *because of* that size, not independently of it.
+Write-up: `FINDINGS_paper_discordance.md`.
 
 The scheduled prompt's priority list was stale for the third session running:
 its four priorities (MAIN_DATA filter, Task 1, Task 2.5, Task 3.1) are all done
@@ -73,17 +75,68 @@ disagreed. Recomputing contestedness leave-one-out **reverses the sign**
 (+0.225 → −0.154, and −0.733 with ties dropped, p = 0.0004). Neither construction
 is interpretable. Contestedness cannot predict discordance.
 
+### The methods metadata pass — done in the same session, and null
+
+The step above was written mid-session as the next lever, then done, so it is
+recorded as closed rather than pending. **It did not need a GPU and it never
+did.** Full text for all 272 contributing papers was already in the repo across
+`all_usable_papers.json` (250), `extract_input.json` (98) and `new_papers.json`
+(53) — union 272/272 — and the variables of interest are tool names, which a
+regex reads deterministically where an LLM would not give the same answer twice.
+`methods_metadata.py` extracts nine families; the first run scoped 272/272 papers
+to the full body because the cleaned texts have no line breaks and headings sit
+inline, so an anchored `^heading$` could never fire. Fixed, 155/272 now resolve to
+a real Methods section and assay agreement rose 61.4% → 74.8%.
+
+**Detector validated before use**, as the rule requires: 74.8% on 16S-vs-shotgun
+and 80.8% on 16S region against the existing LLM labels; against an independent
+read of 12 sampled methods sections, **recall 0.90 / precision 0.77 overall** and
+**1.00 / 0.83** on the named tools the analysis keys on. Publication year, parsed
+from the header, is exact for 21 of 22 checkable papers.
+
+Fifteen predictors — LEfSe, DESeq2/ANCOM, nonparametric-only, multiple-testing
+correction, ASV vs OTU, QIAamp, bead-beating kits, QIIME2/DADA2, legacy pipelines,
+MiSeq, rarefaction, CLR/absolute quantification, publication year, cohort
+imbalance, breadth of reporting — plus two planted controls. **No survivors**;
+best raw p = 0.042 (bead-beating), q = 0.61. Both controls behave (p = 0.90, 0.94).
+**24 variables tested across two passes, 24 nulls.**
+
+### And the reason they were all going to be null
+
+`paper_effect_size.py` puts a magnitude on the thing being explained instead of
+testing a twenty-fifth variable. Excess variance over the within-edge null is 9.7
+of 66.6 (17%), giving σ = 0.123 — a paper-level SD of **3.4 percentage points** of
+discordance on a 27.6% base, cluster-bootstrap 95% CI **[0.0, 6.0], including
+zero**, with 15% of resamples showing no excess at all.
+
+**This cuts against the framing above and is the honest headline.** The
+permutation test and the magnitude estimate answer different questions and both
+are right: labels are not exchangeable across papers (p = 0.0003), and the spread
+that produces is small. Consequences:
+
+- **The 24 nulls were foreordained.** MDEs of ±4 to ±7 points against a total
+  spread of ±3.4. The defensible claim is "this corpus cannot answer whether kit
+  or pipeline drives disagreement", NOT "they do not".
+- **~83% of the variance in disagreement is edge structure, not paper identity.**
+  Papers are close to interchangeable; disagreement lives in the taxon–disease
+  pairs. That is quantitative support for the standing decision to keep contested
+  edges rather than average them — and an argument against any further
+  paper-level covariate hunt.
+
 ### Highest-value next step
 
-**A second metadata pass over papers already in hand — CPU-cheap, no GPU, and it
-targets the variance we just proved exists.** `metadata.jsonl` carries country,
-cohort size, sequencing, body site, 16S region, medication and diet, and none of
-them explain the paper-level offset. It does *not* carry the variables the
-microbiome methods literature blames for exactly this: DNA extraction kit, primer
-set, pipeline (QIIME/DADA2/mothur), OTU vs ASV, rarefaction depth,
-differential-abundance method (LEfSe vs DESeq2 vs Wilcoxon), relative vs absolute
-abundance. That is the first unblocked lever this project has had in three
-sessions that is not "get a GPU".
+**More papers, and now the alternative is closed rather than merely unexplored.**
+Every recent session named the methods metadata pass as the cheap unblocked lever;
+it has been done and it is null, for a reason that is arithmetic rather than
+contingent. 109 papers with ≥4 decisive observations is what sets every MDE here.
+Extraction needs a GPU — **ask before spending.**
+
+One cheap thing worth doing first: `methods_metadata.py` now has nine families of
+study-methods variables for all 272 papers at 0.90 recall and **nothing in the
+graph consumes them**. They are weak predictors of discordance — that was tested —
+but they are good *provenance* for a reader judging an edge ("these 6 papers used
+the same kit and pipeline"), which is what Task 3.4 ("ship something a biologist
+would use") has always wanted.
 
 ---
 

@@ -1,4 +1,4 @@
-# Discordance is a property of the paper — and study design does not explain it
+# No paper is inverted; discordance is paper-level, small, and unexplainable at this n
 
 **Session of 2026-09-10. CPU-only; no `MAIN_DATA.json`, no NCBI taxdump
 (`ftp.ncbi.nih.gov` re-probed once, still `CONNECT → 403`, third session running).**
@@ -6,8 +6,14 @@
 Scripts: `paper_inversion.py`, `paper_inversion_control.py`,
 `paper_inversion_decompose.py`, `paper_inversion_power.py`,
 `paper_discordance_predictors.py`, `paper_discordance_offset.py`,
-`paper_discordance_endogeneity.py`. All outputs verified byte-identical on a
-second run.
+`paper_discordance_endogeneity.py`, `methods_metadata.py`,
+`methods_discordance.py`, `paper_effect_size.py`. All outputs verified
+byte-identical on a second run.
+
+**Read Result 4 before quoting Result 2.** The paper-level effect is statistically
+solid and practically small — 3.4 percentage points of discordance, 95% CI
+[0.0, 6.0] — and that magnitude is what makes the twenty-four accompanying nulls
+uninformative rather than reassuring.
 
 ---
 
@@ -182,37 +188,150 @@ discordance in either construction.
 
 ---
 
+---
+
+## Result 4 — the effect is real and small, and that retires the whole line of inquiry
+
+`paper_discordance_offset.py` tested nine study-design variables and found nothing.
+The obvious reply is that we were testing the wrong variables: the microbiome
+methods literature blames DNA extraction kit, primer set, pipeline, OTU-vs-ASV and
+the differential-abundance test for cohorts disagreeing, and `metadata.jsonl`
+carries none of them. Every recent session filed that under "needs a GPU".
+
+**It did not.** Full text for **all 272 contributing papers** was already in the
+repo, split across `all_usable_papers.json` (250), `extract_input.json` (98) and
+`new_papers.json` (53); the union covers 272/272. And the variables of interest
+are tool names — literal strings a regex reads deterministically, giving the same
+answer twice, which an LLM pass would not. `methods_metadata.py` does it.
+
+**Detector validated before use, two ways.** Against the existing LLM-extracted
+labels: 16S-vs-shotgun agreement 74.8% (n=202), 16S region 80.8% (n=125). Against
+an independent read of 12 sampled methods sections: overall **recall 0.90,
+precision 0.77**, and for the specific named tools the analysis keys on
+(LEfSe, DESeq2, ANCOM, ALDEx2, edgeR, metagenomeSeq) **recall 1.00, precision
+0.83**. The false positives concentrate in PERMANOVA (5) and Wilcoxon (3) — tests
+named in the methods for beta-diversity or baseline comparisons, which the reader
+excluded as "not the differential-abundance test". That is a definitional
+difference, not a detection failure. The weak family is `normalisation`
+(recall 0.57), so the `rarefied` and `absolute_or_CLR` nulls are attenuated and
+should be read as such. Publication year, parsed from the article header, is exact
+for 21 of the 22 papers carrying an explicit year field.
+
+Fifteen predictors, plus two planted controls, on the same offset:
+
+| predictor | O/E | vs | diff | p | q |
+|---|---|---|---|---|---|
+| kit uses bead-beating | 0.894 (n=29) | 1.064 (n=36) | −0.171 | 0.042 | 0.606 |
+| uses DESeq2 / ANCOM / ALDEx2 | 0.860 (n=22) | 0.987 (n=77) | −0.127 | 0.179 | 0.606 |
+| platform MiSeq | 0.952 (n=55) | 1.076 (n=26) | −0.124 | 0.190 | 0.606 |
+| uses LEfSe | 1.003 (n=54) | 0.912 (n=45) | +0.091 | 0.245 | 0.606 |
+| rarefied | 1.029 (n=14) | 0.887 (n=50) | +0.142 | 0.247 | 0.606 |
+| kit QIAamp vs other | 1.042 (n=23) | 0.944 (n=42) | +0.099 | 0.259 | 0.606 |
+| absolute quantification or CLR | 0.831 (n=15) | 0.961 (n=49) | −0.129 | 0.281 | 0.606 |
+| pipeline QIIME2 / DADA2 | 1.056 (n=35) | 0.962 (n=37) | +0.094 | 0.285 | 0.606 |
+| published recently | 1.048 (n=61) | 0.987 (n=31) | +0.062 | 0.477 | 0.901 |
+| feature ASV vs OTU | 1.023 (n=23) | 0.976 (n=53) | +0.047 | 0.615 | 0.937 |
+| reports multiple-testing correction | 0.986 (n=59) | 1.006 (n=50) | −0.020 | 0.793 | 0.937 |
+| cohort imbalanced ≥1.5× | 1.021 (n=35) | 1.038 (n=48) | −0.017 | 0.857 | 0.937 |
+| pipeline legacy (QIIME1/mothur/UPARSE) | 1.015 (n=35) | 0.999 (n=37) | +0.016 | 0.859 | 0.937 |
+| reports many taxa | 0.998 (n=63) | 0.987 (n=46) | +0.012 | 0.884 | 0.937 |
+| nonparametric tests only | 0.958 (n=22) | 0.969 (n=77) | −0.011 | 0.907 | 0.937 |
+| *(control)* found methods section | 0.997 (n=71) | 0.991 (n=38) | +0.006 | 0.937 | 0.937 |
+| *(control)* sits on deep edges | 0.990 (n=56) | 0.999 (n=53) | −0.009 | 0.902 | 0.937 |
+
+**No survivors.** Both planted controls behave. That is **24 variables tested
+against paper discordance across two passes, and 24 nulls.**
+
+### Why they were all going to be null
+
+Rather than test a twenty-fifth, put a magnitude on the thing being explained.
+Modelling each paper as carrying a multiplicative discordance propensity r_p with
+mean 1 and SD σ, and solving Var(dis_p) = Var_null(dis_p) + (E_p·σ)² by moments:
+
+| quantity | value |
+|---|---|
+| observed Σ(observed − expected)² | 66.6 |
+| expected under the within-edge null | 56.9 |
+| **excess** | **9.7 (17%)** |
+| σ (SD of the propensity multiplier) | **0.123** |
+| paper-level SD of discordance | **3.4 percentage points** on a 27.6% base |
+| cluster bootstrap over papers, 95% CI | **[0.0, 6.0] points** — includes zero |
+
+A paper one SD above the mean disagrees 31.0% of the time; one SD below, 24.2%.
+15% of bootstrap resamples show no excess variance at all.
+
+**This is the result that matters, and it cuts against the earlier framing in this
+document.** The permutation test and the magnitude estimate are answering different
+questions and both are right: the permutation conditions on the actual papers and
+asks whether the minority-direction labels are exchangeable across them (they are
+not, p = 0.0003), while the moment estimator asks how large the resulting spread
+is, and that is small and unstably estimated.
+
+Two consequences:
+
+1. **The 24 nulls were foreordained.** The tests have MDEs of ±0.15 to ±0.24 in
+   O/E — roughly ±4 to ±7 percentage points of discordance — against a total
+   paper-level spread of ±3.4 points. No subdivision of a 3.4-point effect was ever
+   going to clear a 4-to-7-point threshold. The honest conclusion is not "kit and
+   pipeline do not matter" but **"this corpus cannot answer that question, and
+   could not have"**.
+2. **Roughly 83% of the variance in disagreement is edge structure, not paper
+   identity.** Papers are close to interchangeable; the disagreement lives in the
+   taxon–disease pairs themselves. That is quantitative support for the standing
+   design decision — contested edges are kept and never averaged because
+   disagreement is a finding about the evidence base — and it argues against
+   spending further effort on paper-level covariates of any kind.
+
 ## What this adds up to
 
-1. **The extractor is not inverting papers.** A well-powered null (81/134 would
-   have been caught), and it is independent of both compromised references.
-2. **Consensus-disagreement is real, paper-level variance** — the first structure
-   anything in this project has found in contested edges after four edge-level
-   nulls.
-3. **No measured study-design variable explains it.** Country, cohort size,
-   sequencing platform, 16S region, medication and diet control, and disease
-   identity are all null at MDEs of 16–22%.
+1. **The extractor is not inverting papers.** A well-powered null — 0 of 134
+   survive BH and a fully inverted copy would have been caught for 81 of them —
+   and it depends on neither the in-house gold (under audit) nor the external
+   curations (only half independent). This is the most useful thing in this
+   document.
+2. **Consensus-disagreement is genuinely paper-level, and genuinely small.**
+   Minority-direction labels are not exchangeable across papers (p = 0.0003), but
+   the spread is only **3.4 percentage points** on a 27.6% base, with a cluster
+   bootstrap CI of [0.0, 6.0] that includes zero. Both statements are true and
+   they are not in tension: the permutation test detects the non-exchangeability,
+   the moment estimator sizes it.
+3. **Twenty-four variables, twenty-four nulls — and the nulls were foreordained.**
+   Nine study-design plus fifteen wet-lab/bioinformatics, at MDEs of ±4 to ±7
+   percentage points of discordance against a total paper-level spread of ±3.4.
+   The defensible conclusion is that **this corpus cannot answer whether extraction
+   kit or pipeline drives disagreement**, not that they do not.
+4. **About 83% of the variance in disagreement is edge structure, not paper
+   identity.** Papers are close to interchangeable. Disagreement lives in the
+   taxon–disease pairs themselves.
 
-Point 3 is the fifth documented false positive this corpus has produced and the
-first caught by an exact offset rather than a permutation — the raw-rate analysis
-would have shipped "Parkinson's papers are more reliable" at q = 0.0005. Worth
-noting that the previous four nulls were all edge-level; this one is not weaker
-for being paper-level, it is the same answer at a better-conditioned denominator.
+Point 3 also produced the fifth documented false positive in this corpus, and the
+first caught by an exact offset rather than a permutation: on raw disagreement
+rates the analysis would have shipped "Parkinson's papers are more reliable" at
+q = 0.0005, along with two cohort-size effects, all three of them edge depth in
+disguise.
 
-## What would move it
+## What would move it — and what would not
 
-The variance is real and unexplained by anything currently extracted, which makes
-it a **measurement** problem rather than an analysis one. Two levers, in order:
+**Not more covariates.** That lever is now measured and it is too short. A
+paper-level spread of 3.4 points cannot be subdivided by a corpus that resolves
+4-to-7-point differences, and adding a twenty-fifth variable changes nothing about
+that arithmetic. The second metadata pass was the item every recent session called
+the highest-value unblocked step; it has now been done — CPU-only, no GPU, from
+full text that was in the repo all along — and it is null. Recording that as a
+closed lever is the point of writing it down.
 
-- **Extract variables we do not currently have.** `metadata.jsonl` carries country,
-  cohort size, sequencing, body site, 16S region, medication and diet. It does not
-  carry the things most likely to drive a whole-paper direction offset: DNA
-  extraction kit, primer set beyond the region label, bioinformatics pipeline
-  (QIIME/DADA2/mothur), OTU-vs-ASV, rarefaction depth, differential-abundance
-  method (LEfSe vs DESeq2 vs Wilcoxon), and whether abundance is relative or
-  absolute. Batch effects of exactly this kind are the standard explanation in the
-  microbiome methods literature for cohorts disagreeing. This is a second metadata
-  pass over papers already in hand — **CPU-cheap if done by prompt, and the single
-  highest-value unblocked item.**
-- **More papers.** 109 papers with ≥4 decisive observations is what sets the
-  ±0.16–0.22 MDE. Needs a GPU; ask before spending.
+**Not paper-level modelling at all**, for the same reason. If 83% of the variance
+is edge structure, the remaining question is about taxon–disease pairs, not about
+studies.
+
+**More papers, and only more papers.** 109 papers with ≥4 decisive observations is
+what sets every MDE here. This is the same conclusion the last three sessions
+reached from different directions, now with the alternative explicitly closed off
+rather than left open. Extraction needs a GPU — **ask before spending.**
+
+**One thing worth doing cheaply first:** `methods_metadata.py` extracts nine
+families of study-methods variables for all 272 papers at 0.90 recall, and nothing
+in the graph consumes them. They are weak predictors of *discordance*, which is
+what was tested, but they are perfectly good **provenance** for a reader deciding
+whether to trust an edge — "these 6 papers all used the same kit and pipeline" is
+information a biologist wants, and it is already computed.

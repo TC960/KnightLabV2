@@ -97,9 +97,19 @@ resolution and external validation landed. Corrected 2026-09-10.*
   systematically *inverted* — that is a well-powered null, 0 of 134 survive BH and
   a fully inverted copy would have been caught for 81 of them — but country,
   cohort size, sequencing platform, 16S region, medication and diet control, and
-  disease identity are all null at MDEs of 16–22%. See
-  `FINDINGS_paper_discordance.md`; the untested candidates are extraction kit,
-  primer set, pipeline, OTU-vs-ASV and differential-abundance method.
+  disease identity are all null at MDEs of 16–22%, and so are 15 wet-lab and
+  bioinformatics variables added in a second pass (extraction kit, pipeline,
+  OTU-vs-ASV, LEfSe vs DESeq2, rarefaction, platform, publication year) —
+  **24 variables, 24 nulls**. The magnitude explains why: the paper-level SD of
+  discordance is only **3.4 percentage points** on a 27.6% base
+  (cluster-bootstrap CI [0.0, 6.0]) against MDEs of ±4–7 points, so this corpus
+  *cannot answer* whether kit or pipeline matters. Corollary: **~83% of the
+  variance in disagreement is edge structure, not paper identity.** See
+  `FINDINGS_paper_discordance.md`.
+- **`methods_metadata.py` extracts nine families of study-methods variables for
+  all 272 papers (recall 0.90 against an independent read) and nothing consumes
+  them yet.** They are weak predictors of discordance but good provenance for a
+  reader judging an edge.
 
 ## RAG layer (`build_rag.py`)
 

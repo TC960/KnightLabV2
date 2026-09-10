@@ -1,0 +1,8602 @@
+{
+ "families": {
+  "amplicon_region": [
+   "V1-V2",
+   "V1-V3",
+   "V3",
+   "V3-V4",
+   "V4",
+   "V4-V5",
+   "V6"
+  ],
+  "assay": [
+   "16S",
+   "ITS",
+   "shotgun"
+  ],
+  "diff_abundance": [
+   "ALDEx2",
+   "ANCOM",
+   "DESeq2",
+   "KruskalWallis",
+   "LDA",
+   "LEfSe",
+   "MaAsLin",
+   "PERMANOVA",
+   "RandomForest",
+   "Wilcoxon",
+   "edgeR",
+   "metagenomeSeq",
+   "t-test"
+  ],
+  "extraction_kit": [
+   "CTAB",
+   "DNeasy",
+   "FastDNA",
+   "MagAttract",
+   "MoBio",
+   "NucleoSpin",
+   "Omega",
+   "PowerFecal",
+   "PowerSoil",
+   "QIAamp",
+   "TIANamp",
+   "Zymo",
+   "phenol-chloroform"
+  ],
+  "feature_type": [
+   "ASV",
+   "OTU"
+  ],
+  "multiple_testing": [
+   "Bonferroni",
+   "FDR"
+  ],
+  "normalisation": [
+   "CLR",
+   "absolute_quant",
+   "rarefied",
+   "relative_abundance"
+  ],
+  "pipeline": [
+   "DADA2",
+   "Deblur",
+   "HUMAnN",
+   "Kraken",
+   "MetaPhlAn",
+   "QIIME1",
+   "QIIME2",
+   "UPARSE",
+   "USEARCH",
+   "VSEARCH",
+   "mothur"
+  ],
+  "platform": [
+   "454",
+   "BGI",
+   "HiSeq",
+   "IonTorrent",
+   "MiSeq",
+   "Nanopore",
+   "NextSeq",
+   "NovaSeq",
+   "PacBio"
+  ]
+ },
+ "n_papers": 272,
+ "n_with_text": 272,
+ "records": [
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [
+    "phenol-chloroform"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 0,
+   "pipeline": [],
+   "platform": [
+    "HiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 8918,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "A Metagenome-Wide Association Study of Gut Microbiome in Patients With"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "FastDNA"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 1,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 27198,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "A Pilot Microbiota Study in Parkinson's Disease Patients versus Contro"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4",
+    "V6"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "KruskalWallis",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [],
+   "paper": 2,
+   "pipeline": [
+    "QIIME2",
+    "mothur"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 11158,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "A comparison of the composition and functions of the oral and gut micr"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 3,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 8863,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "A peripheral signature of Alzheimer's disease featuring microbiota-gut"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "CTAB",
+    "NucleoSpin"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 4,
+   "pipeline": [],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 63938,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "A prebiotic dietary pilot intervention restores faecal metabolites and"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4",
+    "V6"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "t-test"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "absolute_quant"
+   ],
+   "paper": 5,
+   "pipeline": [
+    "QIIME1",
+    "USEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 59974,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "A prospective longitudinal study on the microbiota composition in amyo"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "MaAsLin",
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 6,
+   "pipeline": [
+    "QIIME1",
+    "UPARSE"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 10789,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "APOE-\u03b54 Carrier Status and Gut Microbiota Dysbiosis in Patients With A"
+  },
+  {
+   "amplicon_region": [
+    "V1-V2",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "FastDNA",
+    "Zymo"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 7,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 13276,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Aging Gut-Brain Interactions: Pro-Inflammatory Gut Bacteria Are Elevat"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 8,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5315,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Air particulate pollution exposure associated with impaired cognition "
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "t-test"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "absolute_quant"
+   ],
+   "paper": 9,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 27967,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Akkermansia muciniphila and its metabolite propionic acid maintains ne"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied"
+   ],
+   "paper": 10,
+   "pipeline": [
+    "QIIME1",
+    "UPARSE"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 10397,
+   "source": "extract_input.json",
+   "title": "Alteration of Gut Microbiota in Patients With Epilepsy and the Potenti"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 11,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 5994,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Alteration of the fecal microbiota in Chinese patients with Parkinson'"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "TIANamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 12,
+   "pipeline": [
+    "QIIME1",
+    "mothur"
+   ],
+   "platform": [
+    "MiSeq",
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 7908,
+   "source": "extract_input.json",
+   "title": "Alteration of the gut microbiota profile in children with autism spect"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "KruskalWallis",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 13,
+   "pipeline": [
+    "QIIME2",
+    "DADA2",
+    "VSEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 8643,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Alterations in Circulating Fatty Acid Are Associated With Gut Microbio"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR",
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "CLR"
+   ],
+   "paper": 14,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [
+    "PacBio"
+   ],
+   "scope": "full_body",
+   "scope_chars": 42523,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Alterations in Gut Microbiome-Host Relationships After Immune Perturba"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "MaAsLin",
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 15,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 8286,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Alterations in Gut Microbiota and Their Correlation with Brain Beta-Am"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "KruskalWallis",
+    "RandomForest"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 16,
+   "pipeline": [
+    "QIIME2",
+    "DADA2",
+    "VSEARCH"
+   ],
+   "platform": [
+    "NextSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 9726,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Alterations in gut microbiota and metabolomic profiles in acute stroke"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4",
+    "V6"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 17,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [],
+   "scope": "methods_section_weak",
+   "scope_chars": 4500,
+   "source": "extract_input.json",
+   "title": "Alterations in nasal microbiota of patients with amyotrophic lateral s"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "RandomForest"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 18,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 16745,
+   "source": "extract_input.json",
+   "title": "Alterations in the fecal microbiota of patients with spinal cord injur"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [],
+   "paper": 19,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "454"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 5743,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate r"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis",
+    "t-test"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied"
+   ],
+   "paper": 20,
+   "pipeline": [
+    "mothur",
+    "UPARSE"
+   ],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 41476,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Alterations of fecal microbiota and plasma metabolome in patients with"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 21,
+   "pipeline": [
+    "QIIME1",
+    "USEARCH"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 13572,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Alterations of gut microbiota are associated with brain structural cha"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V1-V3"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "DESeq2",
+    "Wilcoxon",
+    "t-test",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "PowerSoil",
+    "MoBio"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 22,
+   "pipeline": [
+    "USEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 36866,
+   "source": "extract_input.json",
+   "title": "Alterations of host-gut microbiome interactions in multiple sclerosis"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "edgeR"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "FastDNA"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 23,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 6637,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Alterations of the Gut Microbiota in Multiple System Atrophy Patients."
+  },
+  {
+   "amplicon_region": [
+    "V1-V2"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 24,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 11867,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Alterations of the gut ecological and functional microenvironment in d"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "DESeq2",
+    "Wilcoxon"
+   ],
+   "extraction_kit": [
+    "PowerSoil",
+    "MoBio"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 25,
+   "pipeline": [
+    "mothur"
+   ],
+   "platform": [
+    "MiSeq",
+    "454"
+   ],
+   "scope": "full_body",
+   "scope_chars": 55894,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Alterations of the human gut microbiome in multiple sclerosis"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 26,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 8157,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Altered Gut Microbial Metabolites in Amnestic Mild Cognitive Impairmen"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "FastDNA"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "rarefied"
+   ],
+   "paper": 27,
+   "pipeline": [
+    "QIIME1",
+    "UPARSE",
+    "USEARCH"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 9157,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Altered Gut Microbiota Related to Inflammatory Responses in Patients W"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [],
+   "paper": 28,
+   "pipeline": [
+    "mothur",
+    "UPARSE"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 11569,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Altered Gut Microbiota and Its Clinical Relevance in Mild Cognitive Im"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 29,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 6448,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Altered Gut Microbiota in Adults with Subjective Cognitive Decline: Th"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "ANCOM",
+    "MaAsLin",
+    "ALDEx2",
+    "RandomForest"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "FastDNA"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR",
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "CLR"
+   ],
+   "paper": 30,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 8404,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Altered gut microbial networks and metabolic pathways in multiple syst"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [
+    "LEfSe"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 31,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 13719,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Altered gut microbiome and serum metabolome profiles associated with e"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "ANCOM",
+    "Wilcoxon",
+    "KruskalWallis",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 32,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 35229,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Altered gut microbiota and inflammatory cytokine responses in patients"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon"
+   ],
+   "extraction_kit": [
+    "FastDNA"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 33,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 7609,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Altered gut microbiota in individuals with episodic and chronic migrai"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "FastDNA"
+   ],
+   "feature_type": [
+    "ASV",
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 34,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 8469,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Altered gut microbiota in older adults with mild cognitive impairment:"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 35,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 4705,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Altered gut microbiota in patients with idiopathic Parkinson's disease"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 36,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 10952,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Altered microbiomes distinguish Alzheimer's disease from amnestic mild"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "t-test",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "MoBio"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 37,
+   "pipeline": [
+    "Kraken"
+   ],
+   "platform": [
+    "NextSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 11628,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "t-test"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 38,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 4434,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "An analysis of the characteristics of the intestinal flora in patients"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 39,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5524,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Analysis of Gut Microbiota in Patients with Parkinson's Disease."
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 40,
+   "pipeline": [
+    "QIIME1",
+    "USEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 3258,
+   "source": "extract_input.json",
+   "title": "Analysis of gut microbiota in patients with cerebral autosomal dominan"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 41,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 2268,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Analysis of the Gut Microflora in Patients With Parkinson's Disease."
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 42,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 33910,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Analysis of the relationship between the gut microbiome and dementia: "
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 43,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5427,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Association between Gut Microbiota with Mild Cognitive Impairment and "
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "KruskalWallis"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "FastDNA"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [],
+   "paper": 44,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 34504,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Association between cognitive functioning and microbiota-gut-brain axi"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 45,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 6581,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Association between environmental phthalates exposure and gut microbio"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "ANCOM"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 46,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 7100,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Association between the relative abundance of butyrate-producing and m"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 47,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 11050,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Association of brain amyloidosis with pro-inflammatory gut bacterial t"
+  },
+  {
+   "amplicon_region": [
+    "V1-V2"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 48,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 28080,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "B-cell-depletion reverses dysbiosis of the microbiome in multiple scle"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [],
+   "diff_abundance": [
+    "ANCOM",
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR",
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "CLR"
+   ],
+   "paper": 49,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 8403,
+   "source": "extract_input.json",
+   "title": "Blood microbiome signatures in the REM sleep behavior disorder-Lewy bo"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon"
+   ],
+   "extraction_kit": [
+    "PowerSoil",
+    "MoBio",
+    "Omega"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 50,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 29386,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "CXCR3+ T cells in multiple sclerosis correlate with reduced diversity "
+  },
+  {
+   "amplicon_region": [
+    "V1-V2"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "CTAB"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 51,
+   "pipeline": [
+    "QIIME1",
+    "UPARSE"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 24320,
+   "source": "extract_input.json",
+   "title": "Change of intestinal microbiota in cerebral ischemic stroke patients"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "KruskalWallis",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "rarefied"
+   ],
+   "paper": 52,
+   "pipeline": [
+    "USEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 9229,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Changes in Gastrointestinal Microbiome Composition in PD: A Pivotal Ro"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "DNeasy"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 53,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 60992,
+   "source": "extract_input.json",
+   "title": "Changes in gut microbiota in the acute phase after spinal cord injury "
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "t-test"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 54,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 2337,
+   "source": "extract_input.json",
+   "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis wit"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon"
+   ],
+   "extraction_kit": [
+    "phenol-chloroform"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 55,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 9065,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Changes in the Gut Microbiome and Predicted Functional Metabolic Effec"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 56,
+   "pipeline": [
+    "QIIME2",
+    "USEARCH"
+   ],
+   "platform": [
+    "PacBio"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 25045,
+   "source": "extract_input.json",
+   "title": "Changes of gut microbiota in patients at different phases of stroke"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "DESeq2",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "FastDNA"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR",
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 57,
+   "pipeline": [],
+   "platform": [
+    "Nanopore"
+   ],
+   "scope": "full_body",
+   "scope_chars": 62107,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Characterization of the gut microbiome in Alzheimer disease and mild c"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "ANCOM",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "PowerFecal"
+   ],
+   "feature_type": [
+    "ASV",
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 58,
+   "pipeline": [
+    "QIIME2",
+    "DADA2",
+    "USEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 35131,
+   "source": "extract_input.json",
+   "title": "Children and adolescents with attention deficit hyperactivity disorder"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "DESeq2",
+    "MaAsLin"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 59,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5248,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Cognitive Function Associated with Gut Microbial Abundance in Sucrose "
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 60,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 6145,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Colonic bacterial composition in Parkinson's disease."
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon"
+   ],
+   "extraction_kit": [
+    "TIANamp",
+    "CTAB"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 61,
+   "pipeline": [
+    "QIIME1",
+    "mothur",
+    "UPARSE",
+    "USEARCH"
+   ],
+   "platform": [
+    "IonTorrent"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 8464,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Combination effect between gut microbiota and traditional potentially "
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "ASV",
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 62,
+   "pipeline": [
+    "USEARCH",
+    "VSEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 13728,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Combination of gut microbiota and plasma amyloid-\u03b2 as a potential inde"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V6"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "metagenomeSeq",
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "absolute_quant"
+   ],
+   "paper": 63,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 14956,
+   "source": "extract_input.json",
+   "title": "Comparing the gut microbiome of obese, African American, older adults "
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 64,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 4128,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Comparison of the Intestinal Microbiome of Italian Patients with Multi"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "DESeq2",
+    "t-test",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "FastDNA"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 65,
+   "pipeline": [
+    "QIIME2",
+    "VSEARCH",
+    "Deblur"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 5918,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in t"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "metagenomeSeq",
+    "ALDEx2",
+    "Wilcoxon",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "CLR"
+   ],
+   "paper": 66,
+   "pipeline": [
+    "MetaPhlAn",
+    "HUMAnN"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 19011,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Compositional and functional gut microbiota alterations in mild cognit"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [
+    "KruskalWallis"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 67,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5701,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Correlation between APOE4 gene and gut microbiota in Alzheimer's disea"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 68,
+   "pipeline": [
+    "MetaPhlAn"
+   ],
+   "platform": [
+    "BGI"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 9235,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Cross-Sectional Study on the Gut Microbiome of Parkinson's Disease Pat"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "PowerFecal"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [],
+   "paper": 69,
+   "pipeline": [
+    "QIIME1",
+    "mothur",
+    "UPARSE"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 13571,
+   "source": "extract_input.json",
+   "title": "Crosstalk between the gut microbiota and brain network topology in pos"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "DESeq2",
+    "ALDEx2",
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 70,
+   "pipeline": [],
+   "platform": [
+    "Nanopore"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 9584,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Decoding the Gut Microbiota in Multiple Sclerosis Using Nanopore Long-"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "DESeq2",
+    "ANCOM",
+    "Wilcoxon",
+    "t-test",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "FastDNA"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 71,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "454"
+   ],
+   "scope": "full_body",
+   "scope_chars": 51185,
+   "source": "extract_input.json",
+   "title": "Deep nasal sinus cavity microbiota dysbiosis in Parkinson\u2019s disease"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "t-test"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 72,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 7013,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Detection of Dysbiosis and Increased Intestinal Permeability in Brazil"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "RandomForest"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 73,
+   "pipeline": [
+    "QIIME1",
+    "UPARSE"
+   ],
+   "platform": [
+    "HiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 10987,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Detection of Microbial 16S rRNA Gene in the Blood of Patients With Par"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [
+    "t-test"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 74,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5157,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Dietary quality and the gut microbiome in early-stage Parkinson's dise"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 75,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5896,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Difference in gut microbial dysbiotic patterns between body-first and "
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "PowerFecal"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 76,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 6135,
+   "source": "extract_input.json",
+   "title": "Differences in the Composition of Gut Microbiota between Patients with"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LDA",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 77,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [
+    "HiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 6362,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Differential Patterns of Gut and Oral Microbiomes in Hispanic Individu"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V1-V2"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "DESeq2",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "CLR"
+   ],
+   "paper": 78,
+   "pipeline": [
+    "DADA2",
+    "mothur"
+   ],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 62140,
+   "source": "extract_input.json",
+   "title": "Disease- and stage-specific alterations of the oral and fecal microbio"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "DESeq2",
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 79,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 6999,
+   "source": "extract_input.json",
+   "title": "Disruptions of Anaerobic Gut Bacteria Are Associated with Stroke and P"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 80,
+   "pipeline": [
+    "USEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 4792,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Distinct Gut Microbiota Composition and Functional Category in Childre"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "ANCOM",
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 81,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq",
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 10410,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Distinct gut microbiome characteristics and dynamics in patients with "
+  },
+  {
+   "amplicon_region": [
+    "V6"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance",
+    "absolute_quant"
+   ],
+   "paper": 82,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 38042,
+   "source": "extract_input.json",
+   "title": "Distinct responsiveness to rifaximin in patients with hepatic encephal"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "RandomForest"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 83,
+   "pipeline": [
+    "QIIME1",
+    "VSEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 4926,
+   "source": "extract_input.json",
+   "title": "Distinctive Gut Microbiota Alteration Is Associated with Poststroke Fu"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "t-test",
+    "RandomForest"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 84,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 46833,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Disturbance of Gut Bacteria and Metabolites Are Associated with Diseas"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "t-test",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied"
+   ],
+   "paper": 85,
+   "pipeline": [
+    "QIIME1",
+    "UPARSE"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 44702,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Disturbed microbial ecology in Alzheimer's disease: evidence from the "
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "t-test",
+    "RandomForest"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR",
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 86,
+   "pipeline": [],
+   "platform": [
+    "MiSeq",
+    "454"
+   ],
+   "scope": "full_body",
+   "scope_chars": 47404,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Dysbiosis characteristics of gut microbiota in cerebral infarction pat"
+  },
+  {
+   "amplicon_region": [
+    "V1-V2"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 87,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 10805,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, w"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "PowerSoil",
+    "Omega"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 88,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "HiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 29250,
+   "source": "extract_input.json",
+   "title": "Dysbiosis of Gut Microbiota and Short-Chain Fatty Acids in Acute Ische"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 89,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5985,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Dysbiosis of gut microbiota in a selected population of Parkinson's pa"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "RandomForest"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV",
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 90,
+   "pipeline": [],
+   "platform": [
+    "Nanopore"
+   ],
+   "scope": "full_body",
+   "scope_chars": 41780,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Dysbiosis of the Beneficial Gut Bacteria in Patients with Parkinson's "
+  },
+  {
+   "amplicon_region": [
+    "V1-V2"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "ANCOM",
+    "Wilcoxon",
+    "t-test",
+    "RandomForest"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied"
+   ],
+   "paper": 91,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 43190,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pil"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "FastDNA"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "absolute_quant"
+   ],
+   "paper": 92,
+   "pipeline": [
+    "QIIME2",
+    "VSEARCH"
+   ],
+   "platform": [
+    "MiSeq",
+    "IonTorrent",
+    "454"
+   ],
+   "scope": "full_body",
+   "scope_chars": 41131,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Effect of Parkinson's disease and related medications on the compositi"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 93,
+   "pipeline": [
+    "QIIME1",
+    "mothur",
+    "UPARSE",
+    "VSEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 36355,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Effect of Probiotics Supplementation on REM Sleep Behavior Disorder an"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "ALDEx2",
+    "Wilcoxon"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 94,
+   "pipeline": [
+    "Kraken"
+   ],
+   "platform": [
+    "BGI",
+    "Nanopore"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 16209,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Effects of Resistant Starch on Symptoms, Fecal Markers, and Gut Microb"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 95,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 49840,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Effects of a ketogenic and low-fat diet on the human metabolome, micro"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "Wilcoxon",
+    "KruskalWallis",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 96,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 17548,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Elderly Patients with Mild Cognitive Impairment Exhibit Altered Gut Mi"
+  },
+  {
+   "amplicon_region": [
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "PowerFecal"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 97,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [
+    "PacBio"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 10059,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Elevated Lactobacillus salivarius and genus Akkermansia in fecal sampl"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [
+    "TIANamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 98,
+   "pipeline": [
+    "QIIME1",
+    "mothur"
+   ],
+   "platform": [
+    "454"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 3607,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Evaluation of the Microbial Diversity in Amyotrophic Lateral Sclerosis"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [],
+   "diff_abundance": [
+    "t-test"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 99,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 7624,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Examining the complex Interplay between gut microbiota abundance and s"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "NucleoSpin"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "absolute_quant",
+    "CLR"
+   ],
+   "paper": 100,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 14344,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Exploring gut microbiota alterations in Parkinson's disease: insights "
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 101,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 11968,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Exploring the role of acylated ghrelin and gut microbiome in delineati"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "t-test"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 102,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 13156,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Faecal mucoprotein MUC2 is decreased in multiple sclerosis and is asso"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [
+    "QIAamp",
+    "PowerFecal",
+    "Omega"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 103,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 12337,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Fecal Volatile Organic Compounds and Microbiota Associated with the Pr"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "DESeq2",
+    "ANCOM",
+    "Wilcoxon",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "CLR"
+   ],
+   "paper": 104,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 61310,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Fecal microbiome alterations in treatment-naive de novo Parkinson's di"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 105,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 7684,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Free water in gray matter linked to gut microbiota changes with decrea"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "ANCOM",
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 106,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 51276,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Functional implications of microbial and viral gut metagenome changes "
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "KruskalWallis",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "PowerSoil",
+    "MoBio"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 107,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 8927,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Genetic risk score in multiple sclerosis is associated with unique gut"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 108,
+   "pipeline": [],
+   "platform": [
+    "454"
+   ],
+   "scope": "full_body",
+   "scope_chars": 20266,
+   "source": "extract_input.json",
+   "title": "Gut Dysbiosis Is Associated With the Severity of Cryptogenic Stroke an"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "PowerFecal"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "rarefied"
+   ],
+   "paper": 109,
+   "pipeline": [
+    "QIIME2",
+    "DADA2",
+    "VSEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 8014,
+   "source": "extract_input.json",
+   "title": "Gut Dysbiosis: A New Avenue for Stroke Prevention and Therapeutics"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "RandomForest"
+   ],
+   "extraction_kit": [
+    "PowerSoil",
+    "Omega"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 110,
+   "pipeline": [
+    "QIIME1",
+    "mothur",
+    "UPARSE"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 6840,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut Microbial Characteristics of Adult Patients With Epilepsy"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied",
+    "CLR"
+   ],
+   "paper": 111,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 10430,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut Microbiome Alterations in Mild Cognitive Impairment: Findings from"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "RandomForest"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "MoBio",
+    "FastDNA"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 112,
+   "pipeline": [
+    "UPARSE",
+    "USEARCH",
+    "HUMAnN"
+   ],
+   "platform": [
+    "MiSeq",
+    "HiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 11389,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut Microbiome Distinguishes Patients With Epilepsy From Healthy Indiv"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 113,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5446,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut Microbiome Features of Chinese Patients Newly Diagnosed with Alzhe"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance",
+    "CLR"
+   ],
+   "paper": 114,
+   "pipeline": [
+    "VSEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 10635,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut Microbiome Signatures in Multiple Sclerosis: A Case-Control Study "
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LDA",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [],
+   "paper": 115,
+   "pipeline": [
+    "mothur",
+    "UPARSE",
+    "USEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 5975,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut Microbiota Altered in Mild Cognitive Impairment Compared With Norm"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 116,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5330,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut Microbiota Changes and Their Correlation with Cognitive and Neurop"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "FastDNA"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 117,
+   "pipeline": [
+    "QIIME1",
+    "mothur",
+    "UPARSE"
+   ],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 9123,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut Microbiota Differs Between Parkinson\u2019s Disease Patients and Health"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "FastDNA"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 118,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 11206,
+   "source": "extract_input.json",
+   "title": "Gut Microbiota Ecological and Functional Modulation in Post-Stroke Rec"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 119,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 6191,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut Microbiota and Fecal Metabolites Associated With Neurocognitive Im"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR",
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 120,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 38021,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut Microbiota and Metabolome Alterations Associated with Parkinson's "
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "RandomForest"
+   ],
+   "extraction_kit": [
+    "PowerSoil"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 121,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [
+    "MiSeq",
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 14395,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive I"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "RandomForest"
+   ],
+   "extraction_kit": [
+    "FastDNA",
+    "TIANamp"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 122,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 2602,
+   "source": "extract_input.json",
+   "title": "Gut Microbiota and Targeted Biomarkers Analysis in Patients With Cogni"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 123,
+   "pipeline": [
+    "USEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 37154,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut Microbiota as a Potential Predictive Biomarker in Relapsing-Remitt"
+  },
+  {
+   "amplicon_region": [
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis",
+    "RandomForest"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 124,
+   "pipeline": [
+    "mothur"
+   ],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 4929,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 125,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 28809,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut bacteria from multiple sclerosis patients modulate human T cells a"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "edgeR",
+    "Wilcoxon",
+    "KruskalWallis",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "absolute_quant"
+   ],
+   "paper": 126,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 45653,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut commensal Agathobacter rectalis alleviates microglia-mediated neur"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 127,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 6406,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut dysbiosis and lack of short chain fatty acids in a Chinese cohort "
+  },
+  {
+   "amplicon_region": [
+    "V3-V4",
+    "V6"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 128,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 18158,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut dysbiosis in Huntington's disease: associations among gut microbio"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 129,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 8632,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut dysbiosis influences the pathophysiology of multiple sclerosis: A "
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 130,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 7789,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut dysbiosis is associated with metabolism and systemic inflammation "
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 131,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section_weak",
+   "scope_chars": 5940,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut inflammation and dysbiosis in human motor neuron disease."
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "t-test",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "Omega",
+    "NucleoSpin"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 132,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [
+    "MiSeq",
+    "HiSeq",
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 16716,
+   "source": "extract_input.json",
+   "title": "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "FastDNA"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "absolute_quant"
+   ],
+   "paper": 133,
+   "pipeline": [
+    "MetaPhlAn",
+    "HUMAnN"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 19122,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbes exacerbate systemic inflammation and behavior disorders i"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 134,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 6477,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbial profiles of patients with optic neuritis or myasthenia g"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "DESeq2",
+    "Wilcoxon",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "NucleoSpin"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 135,
+   "pipeline": [
+    "mothur"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 37778,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiome alterations in Alzheimer's disease."
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "FastDNA",
+    "Zymo"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 136,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 36364,
+   "source": "extract_input.json",
+   "title": "Gut microbiome alterations in preclinical Alzheimer\u2019s disease"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "MoBio"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 137,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 2776,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiome analysis in neuromyelitis optica reveals overabundance "
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 138,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 25541,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiome changes in anti-N-methyl-D-aspartate receptor encephali"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "MoBio"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "CLR"
+   ],
+   "paper": 139,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 55856,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiome compositional and functional features associate with Al"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "DESeq2",
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil",
+    "MoBio"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 140,
+   "pipeline": [
+    "mothur",
+    "UPARSE"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 8049,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiome differences between amyotrophic lateral sclerosis patie"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 141,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 6278,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiome differences in Parkinson's disease patients in Central "
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "MaAsLin",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "CLR"
+   ],
+   "paper": 142,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 33349,
+   "source": "extract_input.json",
+   "title": "Gut microbiome dysbiosis across early Parkinson's disease, REM sleep b"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [],
+   "diff_abundance": [
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied"
+   ],
+   "paper": 143,
+   "pipeline": [
+    "mothur",
+    "VSEARCH"
+   ],
+   "platform": [],
+   "scope": "methods_section_weak",
+   "scope_chars": 24705,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiome dysbiosis drives metabolic dysfunction in Familial dysa"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [],
+   "diff_abundance": [
+    "DESeq2",
+    "ANCOM",
+    "Wilcoxon",
+    "KruskalWallis",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "CLR"
+   ],
+   "paper": 144,
+   "pipeline": [
+    "DADA2",
+    "mothur"
+   ],
+   "platform": [],
+   "scope": "methods_section_weak",
+   "scope_chars": 12089,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiome is not associated with mild cognitive impairment in Par"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA"
+   ],
+   "extraction_kit": [
+    "PowerSoil",
+    "MoBio"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance",
+    "absolute_quant"
+   ],
+   "paper": 145,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "MiSeq",
+    "HiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 6944,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiome of treatment-na\u00efve MS patients of different ethnicities"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [],
+   "diff_abundance": [
+    "ANCOM",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 146,
+   "pipeline": [
+    "QIIME2",
+    "MetaPhlAn",
+    "HUMAnN"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 11436,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiome signatures in iNPH: Insights from a shotgun metagenomic"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3",
+    "V6"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "MoBio"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 147,
+   "pipeline": [
+    "USEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 9601,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypi"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 148,
+   "pipeline": [],
+   "platform": [
+    "MiSeq",
+    "HiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 45724,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiome, cognitive function and brain structure: a multi-omics "
+  },
+  {
+   "amplicon_region": [
+    "V4-V5"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "KruskalWallis",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "TIANamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 149,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 8593,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiota and intestinal barrier function in subjects with cognit"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 150,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 3553,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiota and metabolome in sporadic Creutzfeldt-Jakob disease."
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "CTAB"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 151,
+   "pipeline": [
+    "QIIME1",
+    "UPARSE"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 8104,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiota as predictors of the occurrence of high on-treatment pl"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "FastDNA"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "absolute_quant"
+   ],
+   "paper": 152,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 59194,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiota characterization in ageing, mild cognitive impairment, "
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [],
+   "diff_abundance": [
+    "Wilcoxon"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 153,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 5160,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiota composition during a 12-week intervention with delayed-"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis",
+    "t-test",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "TIANamp"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 154,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 55732,
+   "source": "extract_input.json",
+   "title": "Gut microbiota composition reflects disease progression, severity and "
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "t-test",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 155,
+   "pipeline": [
+    "QIIME2",
+    "Deblur"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 15039,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiota distinguishes aging hispanics with Alzheimer's disease:"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 156,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 24945,
+   "source": "extract_input.json",
+   "title": "Gut microbiota dysbiosis and neurological function recovery after intr"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 157,
+   "pipeline": [
+    "QIIME1",
+    "UPARSE"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 6815,
+   "source": "extract_input.json",
+   "title": "Gut microbiota dysbiosis in male patients with chronic traumatic compl"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 158,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 4788,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiota dysbiosis in patients with Alzheimer\u2019s disease and corr"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "absolute_quant"
+   ],
+   "paper": 159,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section_weak",
+   "scope_chars": 4757,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiota in Parkinson's disease patients: hospital-based study"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "DESeq2",
+    "ANCOM",
+    "Wilcoxon",
+    "t-test",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 160,
+   "pipeline": [
+    "mothur"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 14214,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiota in Parkinson's disease: Temporal stability and relation"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "ANCOM",
+    "Wilcoxon",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 161,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 39163,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiota in dementia with Lewy bodies."
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "MoBio"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [],
+   "paper": 162,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 18019,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiota in multiple sclerosis: possible influence of immunomodu"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 163,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 6472,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiota in patients with Parkinson's disease in southern China."
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "TIANamp"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 164,
+   "pipeline": [
+    "mothur"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 5371,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiota links with cognitive impairment in amyotrophic lateral "
+  },
+  {
+   "amplicon_region": [
+    "V1-V2",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "rarefied"
+   ],
+   "paper": 165,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 7332,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut microbiota of Parkinson's disease in an appendectomy cohort: a pre"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 166,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 3833,
+   "source": "extract_input.json",
+   "title": "Gut microbiota signatures in tuberous sclerosis complex and epilepsy: "
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 167,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section_weak",
+   "scope_chars": 1748,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "CTAB"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 168,
+   "pipeline": [
+    "QIIME1",
+    "mothur",
+    "UPARSE"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 18365,
+   "source": "extract_input.json",
+   "title": "Hemorrhagic transformation in patients with large-artery atherosclerot"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [
+    "Wilcoxon"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 169,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 5060,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Human gut microbiome gene co-expression network reveals a loss in taxo"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis",
+    "RandomForest"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 170,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 32758,
+   "source": "extract_input.json",
+   "title": "Hypercoagulable state and gut microbiota dysbiosis as predictors of po"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "DESeq2",
+    "ALDEx2",
+    "Wilcoxon",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 171,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq",
+    "NovaSeq",
+    "PacBio"
+   ],
+   "scope": "full_body",
+   "scope_chars": 81490,
+   "source": "extract_input.json",
+   "title": "Identification of Faecalibacterium prausnitzii strains for gut microbi"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "RandomForest"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 172,
+   "pipeline": [
+    "DADA2",
+    "mothur",
+    "VSEARCH",
+    "Deblur"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 23665,
+   "source": "extract_input.json",
+   "title": "Identification of disordered profiles of gut microbiota and functional"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe"
+   ],
+   "extraction_kit": [
+    "FastDNA"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 173,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 9880,
+   "source": "extract_input.json",
+   "title": "Identifying gut microbiota with high specificity for ischemic stroke w"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [],
+   "paper": 174,
+   "pipeline": [
+    "QIIME1",
+    "UPARSE",
+    "USEARCH"
+   ],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 5647,
+   "source": "extract_input.json",
+   "title": "Imbalance of Microbacterial Diversity Is Associated with Functional Pr"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "DESeq2",
+    "ANCOM",
+    "KruskalWallis"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 175,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 8052,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Impact of 16S rRNA on Intestinal Flora Alterations and Early Diagnosis"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "PowerSoil",
+    "PowerFecal"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 176,
+   "pipeline": [],
+   "platform": [
+    "HiSeq",
+    "Nanopore"
+   ],
+   "scope": "full_body",
+   "scope_chars": 57856,
+   "source": "extract_input.json",
+   "title": "Implications of oral streptococcal bacteriophages in autism spectrum d"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "Zymo"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 177,
+   "pipeline": [
+    "UPARSE"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 9407,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Inflammatory Manifestations Associated With Gut Dysbiosis in Alzheimer"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "Wilcoxon"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "absolute_quant"
+   ],
+   "paper": 178,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 5330,
+   "source": "extract_input.json",
+   "title": "Integrated Macrogenomics and Metabolomics Explore Alterations and Corr"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 179,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 13308,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Integrated Traditional Chinese Medicine Improves Functional Outcome in"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "absolute_quant"
+   ],
+   "paper": 180,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 7894,
+   "source": "extract_input.json",
+   "title": "Intestinal Dysbiosis and Lowered Serum Lipopolysaccharide-Binding Prot"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [
+    "PowerSoil",
+    "MoBio"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 181,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 4857,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Intestinal Microbiota in Patients with Spinal Cord Injury."
+  },
+  {
+   "amplicon_region": [
+    "V4-V5"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 182,
+   "pipeline": [],
+   "platform": [
+    "MiSeq",
+    "454"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 4817,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Intestinal microbiota composition in patients with amyotrophic lateral"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 183,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 6159,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Is gut microbiota of patients with ALS different from that of healthy "
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 184,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 6355,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Landscapes of gut microbiome and blood metabolomic signatures in relap"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "KruskalWallis",
+    "t-test",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "CLR"
+   ],
+   "paper": 185,
+   "pipeline": [
+    "MetaPhlAn",
+    "HUMAnN"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 102401,
+   "source": "extract_input.json",
+   "title": "Large-scale metagenomic analysis of oral microbiomes reveals markers f"
+  },
+  {
+   "amplicon_region": [
+    "V3"
+   ],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "Wilcoxon"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 186,
+   "pipeline": [],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 24951,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Metabolic modeling links gut microbiota to metabolic markers of Parkin"
+  },
+  {
+   "amplicon_region": [
+    "V3"
+   ],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "DESeq2"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 187,
+   "pipeline": [],
+   "platform": [
+    "NovaSeq",
+    "NextSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 6564,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Metagenome-assembled microbial genomes from Parkinson's disease fecal "
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 188,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 7896,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Metagenomic association analysis of cognitive impairment in community-"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "ANCOM",
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR",
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "CLR"
+   ],
+   "paper": 189,
+   "pipeline": [
+    "MetaPhlAn",
+    "HUMAnN"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 114540,
+   "source": "extract_input.json",
+   "title": "Metagenomics of Parkinson's disease implicates the gut microbiome in m"
+  },
+  {
+   "amplicon_region": [
+    "V3"
+   ],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "MaAsLin",
+    "Wilcoxon",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 190,
+   "pipeline": [
+    "MetaPhlAn",
+    "HUMAnN"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 36871,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal C"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "ANCOM",
+    "KruskalWallis",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance",
+    "CLR"
+   ],
+   "paper": 191,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 49988,
+   "source": "extract_input.json",
+   "title": "Metaproteogenomic analysis of saliva samples from Parkinson\u2019s disease "
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "DESeq2",
+    "Wilcoxon"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 192,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 6926,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3",
+    "V6"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "Wilcoxon",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 193,
+   "pipeline": [],
+   "platform": [
+    "IonTorrent"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 5153,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Microbial dysbiosis and lack of SCFA production in a Spanish cohort of"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 194,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 58783,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Microbiome signatures of virulence in the oral-gut-brain axis influenc"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "ALDEx2",
+    "Wilcoxon",
+    "KruskalWallis",
+    "t-test"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR",
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 195,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 93253,
+   "source": "extract_input.json",
+   "title": "Microbiota from Alzheimer's patients induce deficits in cognition and "
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 196,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 7406,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Microbiota-microglia crosstalk between Blautia producta and neuroinfla"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 197,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 6519,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Mild cognitive impairment has similar alterations as Alzheimer's disea"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "KruskalWallis",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "PowerFecal"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "rarefied"
+   ],
+   "paper": 198,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 24076,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Modified Mediterranean-ketogenic diet modulates gut microbiome and sho"
+  },
+  {
+   "amplicon_region": [
+    "V1-V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 199,
+   "pipeline": [],
+   "platform": [
+    "454"
+   ],
+   "scope": "full_body",
+   "scope_chars": 5147,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "More than constipation - bowel symptoms in Parkinson's disease and the"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 200,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5203,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Multi-omics Analysis Reveals Key Gut Microbiota and Metabolites Closel"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "KruskalWallis",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "CTAB"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 201,
+   "pipeline": [
+    "USEARCH",
+    "VSEARCH"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 19616,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Multi-omics analyses identify gut microbiota-fecal metabolites-brain-c"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LDA",
+    "Wilcoxon",
+    "t-test",
+    "RandomForest"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 202,
+   "pipeline": [
+    "QIIME2",
+    "USEARCH"
+   ],
+   "platform": [
+    "PacBio"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 7301,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Multi-omics profiling reveals key microbial and metabolic variations i"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 203,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 23512,
+   "source": "extract_input.json",
+   "title": "Multi-omics reveals specific host metabolism-microbiome associations i"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "DESeq2",
+    "edgeR",
+    "metagenomeSeq",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "PowerFecal"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 204,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 51162,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Po"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [
+    "QIAamp",
+    "PowerFecal"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 205,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 46127,
+   "source": "extract_input.json",
+   "title": "Multiple sclerosis and gut microbiota: Lachnospiraceae from the ileum "
+  },
+  {
+   "amplicon_region": [
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "PowerSoil",
+    "MoBio"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR",
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 206,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 29613,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Multiple sclerosis patients have a distinct gut microbiota compared to"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 207,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 43434,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Mycobacterium avium subspecies paratuberculosis (MAP) infection, and i"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "FastDNA",
+    "Zymo"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 208,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 10331,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Nutritional Intake and Gut Microbiome Composition Predict Parkinson's "
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "DESeq2",
+    "Wilcoxon",
+    "KruskalWallis",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "Zymo"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance",
+    "absolute_quant"
+   ],
+   "paper": 209,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq",
+    "NextSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 69471,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Ocrelizumab transiently alters microbiota and modulates immune respons"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "Zymo"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied"
+   ],
+   "paper": 210,
+   "pipeline": [
+    "UPARSE"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 8089,
+   "source": "extract_input.json",
+   "title": "Oral Microbiome Stamp in Alzheimer\u2019s Disease"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 211,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 8366,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Oral Pathobiont Streptococcus Anginosus Is Enriched in the Gut of Stro"
+  },
+  {
+   "amplicon_region": [
+    "V3"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "CLR"
+   ],
+   "paper": 212,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [
+    "MiSeq",
+    "NovaSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 44468,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Oral and gut dysbiosis leads to functional alterations in Parkinson's "
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "ANCOM",
+    "KruskalWallis"
+   ],
+   "extraction_kit": [
+    "Zymo"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 213,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 5884,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Oral and gut microbial profiling in periodontitis and Parkinson's dise"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "ALDEx2",
+    "Wilcoxon",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "PowerSoil"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 214,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 58288,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Oral and gut microbiome profiles in people with early idiopathic Parki"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "KruskalWallis"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 215,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 29454,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Orthopedic Surgery Causes Gut Microbiome Dysbiosis and Intestinal Barr"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 216,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 29517,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Parkinson\u2019s disease-associated alterations of the gut microbiome predi"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "metagenomeSeq",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "NucleoSpin"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 217,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 7270,
+   "source": "extract_input.json",
+   "title": "Patients with Infections of The Central Nervous System Have Lowered Gu"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4",
+    "V6"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 218,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 45289,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Perturbed Microbiota/Immune Homeostasis in Multiple Sclerosis."
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 219,
+   "pipeline": [],
+   "platform": [
+    "HiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 36523,
+   "source": "extract_input.json",
+   "title": "Pivotal interplays between fecal metabolome and gut microbiome reveal "
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR",
+    "Bonferroni"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 220,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 32140,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Plasma and feces multiomics unveil cognition-associated perturbations "
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "DESeq2",
+    "Wilcoxon"
+   ],
+   "extraction_kit": [
+    "CTAB"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 221,
+   "pipeline": [
+    "Kraken"
+   ],
+   "platform": [
+    "NovaSeq",
+    "BGI"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 10443,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Plasma exosomal miRNA expression and gut microbiota dysbiosis are asso"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "t-test"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 222,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 4366,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Potential Inflammatory Biomarkers and Differential Gut Microbiota in C"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 223,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 6211,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Potential Role of Gut Microbiota in ALS Pathogenesis and Possible Nove"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 224,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 9136,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Preoperative Microbiomes and Intestinal Barrier Function Can Different"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 225,
+   "pipeline": [
+    "UPARSE",
+    "USEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 25944,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Primary progressive multiple sclerosis in a Russian cohort: relationsh"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 226,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 18710,
+   "source": "extract_input.json",
+   "title": "Profile of gut microbiota in patients with traumatic thoracic spinal c"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [
+    "Zymo"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "rarefied"
+   ],
+   "paper": 227,
+   "pipeline": [
+    "Kraken",
+    "MetaPhlAn",
+    "HUMAnN"
+   ],
+   "platform": [
+    "HiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 42022,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Prognostic Value of a Multivariate Gut Microbiome Model for Progressio"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon"
+   ],
+   "extraction_kit": [
+    "PowerFecal"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 228,
+   "pipeline": [
+    "UPARSE"
+   ],
+   "platform": [
+    "HiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 5649,
+   "source": "extract_input.json",
+   "title": "Relationship between gut microbiota and lymphocyte subsets in Chinese "
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "FastDNA"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance",
+    "absolute_quant"
+   ],
+   "paper": 229,
+   "pipeline": [
+    "mothur",
+    "UPARSE",
+    "USEARCH"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 39269,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Relationships Between Rapid Eye Movement Sleep Behavior Disorder and P"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "DESeq2",
+    "ANCOM",
+    "Wilcoxon",
+    "KruskalWallis",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 230,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 8447,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Retrospective analysis of diet and gut microbiota diversity and clinic"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 231,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 39121,
+   "source": "extract_input.json",
+   "title": "Rett Syndrome: A Focus on Gut Microbiota"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 232,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5382,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Short chain fatty acids and gut microbiota differ between patients wit"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "edgeR"
+   ],
+   "extraction_kit": [
+    "Zymo"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 233,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 12095,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Specific Bacterial Taxa and Their Metabolite, DHPS, May Be Linked to G"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 234,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 5020,
+   "source": "extract_input.json",
+   "title": "Specific gut microbiome signatures predict the risk of acute ischemic "
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "FastDNA"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "absolute_quant"
+   ],
+   "paper": 235,
+   "pipeline": [
+    "mothur",
+    "UPARSE"
+   ],
+   "platform": [
+    "NovaSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 34665,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Specific gut microbiota alterations in essential tremor and its differ"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 236,
+   "pipeline": [],
+   "platform": [
+    "BGI"
+   ],
+   "scope": "full_body",
+   "scope_chars": 53166,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Specific microbial ratio in the gut microbiome is associated with mult"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [],
+   "diff_abundance": [
+    "LEfSe",
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "Omega"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 237,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 53563,
+   "source": "extract_input.json",
+   "title": "Spinal cord injury-induced gut dysbiosis influences neurological recov"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "ANCOM",
+    "MaAsLin",
+    "ALDEx2",
+    "Wilcoxon",
+    "KruskalWallis",
+    "t-test",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied",
+    "relative_abundance"
+   ],
+   "paper": 238,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 62006,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Stratification of the Gut Microbiota Composition Landscape across the "
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 239,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 14699,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Stroke Dysbiosis Index (SDI) in Gut Microbiome Are Associated With Bra"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4",
+    "V6"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 240,
+   "pipeline": [
+    "QIIME1",
+    "mothur",
+    "USEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section_weak",
+   "scope_chars": 10640,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Structural and Functional Dysbiosis of Fecal Microbiota in Chinese Pat"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 241,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5136,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Structural changes of gut microbiota in Parkinson's disease and its co"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 242,
+   "pipeline": [
+    "USEARCH"
+   ],
+   "platform": [],
+   "scope": "methods_section_weak",
+   "scope_chars": 6124,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Study of gut microbiota alterations in Alzheimer's dementia patients f"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "KruskalWallis",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 243,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 32919,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Study of the gut microbiome in Egyptian patients with Parkinson's Dise"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 244,
+   "pipeline": [
+    "QIIME1",
+    "VSEARCH"
+   ],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 29411,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The Alterations of Gut Microbiome and Lipid Metabolism in Patients wit"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "ALDEx2",
+    "t-test",
+    "RandomForest",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "FastDNA",
+    "Zymo"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 245,
+   "pipeline": [
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 11767,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The Gut Microbiome in Parkinson's Disease: A Longitudinal Study of the"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "MaAsLin",
+    "KruskalWallis",
+    "t-test",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 246,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 52080,
+   "source": "extract_input.json",
+   "title": "The Gut Microbiome in Progressive Multiple Sclerosis"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "PERMANOVA"
+   ],
+   "extraction_kit": [
+    "DNeasy",
+    "PowerSoil"
+   ],
+   "feature_type": [
+    "ASV"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 247,
+   "pipeline": [
+    "QIIME2",
+    "DADA2"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 9034,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The Gut Microbiota-Immunity Axis in ALS: A Role in Deciphering Disease"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 248,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 6135,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The Oral and Fecal Microbiota in a Canadian Cohort of Alzheimer's Dise"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 249,
+   "pipeline": [
+    "QIIME1",
+    "VSEARCH"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 36494,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The alteration of gut microbiome and metabolism in amyotrophic lateral"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "ASV",
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 250,
+   "pipeline": [
+    "QIIME2"
+   ],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 7112,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The alteration of intestinal mucosal \u03b1-synuclein expression and mucosa"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance",
+    "absolute_quant"
+   ],
+   "paper": 251,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 40059,
+   "source": "extract_input.json",
+   "title": "The altered TBI fecal microbiome is stable and functionally distinct"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4",
+    "V4-V5"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "t-test"
+   ],
+   "extraction_kit": [
+    "TIANamp"
+   ],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 252,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 15342,
+   "source": "extract_input.json",
+   "title": "The characteristics analysis of intestinal microecology on cerebral in"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4",
+    "V1-V3"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 253,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 39004,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The effect of multiple sclerosis therapy on gut microbiota dysbiosis: "
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA"
+   ],
+   "extraction_kit": [
+    "CTAB"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 254,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "MiSeq",
+    "HiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 4858,
+   "source": "extract_input.json",
+   "title": "The gut microbiota and metabolite profiles are altered in patients wit"
+  },
+  {
+   "amplicon_region": [
+    "V3"
+   ],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "Wilcoxon",
+    "KruskalWallis",
+    "PERMANOVA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "absolute_quant"
+   ],
+   "paper": 255,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 59570,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The gut microbiota in multiple sclerosis varies with disease activity"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 256,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5555,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The human gut microbiota in people with amyotrophic lateral sclerosis."
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 257,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 5412,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The impact of device-assisted therapies on the gut microbiome in Parki"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "KruskalWallis"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 258,
+   "pipeline": [
+    "USEARCH"
+   ],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 5722,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The impact of dysbiosis in oropharyngeal and gut microbiota on systemi"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 259,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 6368,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The interplay of gut microbiota and heavy metals in multiple sclerosis"
+  },
+  {
+   "amplicon_region": [
+    "V3"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA"
+   ],
+   "extraction_kit": [],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "relative_abundance",
+    "absolute_quant"
+   ],
+   "paper": 260,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 59674,
+   "source": "extract_input.json",
+   "title": "The ketogenic diet influences taxonomic and functional composition of "
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 261,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 4984,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The link between increased Desulfovibrio and disease severity in Parki"
+  },
+  {
+   "amplicon_region": [
+    "V4",
+    "V3"
+   ],
+   "assay": [
+    "16S",
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "DESeq2",
+    "ANCOM"
+   ],
+   "extraction_kit": [
+    "PowerSoil",
+    "MoBio"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [
+    "rarefied"
+   ],
+   "paper": 262,
+   "pipeline": [],
+   "platform": [
+    "HiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 7347,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The nasal and gut microbiome in Parkinson's disease and idiopathic rap"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 263,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 20108,
+   "source": "extract_input.json",
+   "title": "The protective effect of Blautia coccoides in secondary injury of intr"
+  },
+  {
+   "amplicon_region": [
+    "V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 264,
+   "pipeline": [],
+   "platform": [
+    "MiSeq"
+   ],
+   "scope": "full_body",
+   "scope_chars": 28060,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The relationship between Alzheimer's disease and intestinal microflora"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 265,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 37653,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "The relationship between the gut microbiome and mild cognitive impairm"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "Wilcoxon"
+   ],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [
+    "Bonferroni"
+   ],
+   "normalisation": [],
+   "paper": 266,
+   "pipeline": [],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 22171,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Transmission of Alzheimer's disease-associated microbiota dysbiosis an"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "KruskalWallis"
+   ],
+   "extraction_kit": [
+    "NucleoSpin"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [
+    "FDR"
+   ],
+   "normalisation": [],
+   "paper": 267,
+   "pipeline": [
+    "mothur",
+    "USEARCH"
+   ],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 6522,
+   "source": "extract_input.json",
+   "title": "Uncovering the characteristics of the gut microbiota in patients with "
+  },
+  {
+   "amplicon_region": [
+    "V4-V5"
+   ],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon",
+    "t-test"
+   ],
+   "extraction_kit": [
+    "QIAamp"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 268,
+   "pipeline": [
+    "mothur",
+    "UPARSE",
+    "USEARCH"
+   ],
+   "platform": [
+    "MiSeq",
+    "HiSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 9006,
+   "source": "extract_input.json",
+   "title": "Uncovering the characteristics of the gut microbiota in patients with "
+  },
+  {
+   "amplicon_region": [
+    "V3"
+   ],
+   "assay": [
+    "shotgun"
+   ],
+   "diff_abundance": [
+    "RandomForest"
+   ],
+   "extraction_kit": [
+    "QIAamp",
+    "PowerFecal"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 269,
+   "pipeline": [
+    "QIIME2",
+    "MetaPhlAn",
+    "HUMAnN"
+   ],
+   "platform": [
+    "NextSeq"
+   ],
+   "scope": "methods_section",
+   "scope_chars": 5186,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Unique trans-kingdom microbiome structural and functional signatures p"
+  },
+  {
+   "amplicon_region": [],
+   "assay": [
+    "16S"
+   ],
+   "diff_abundance": [],
+   "extraction_kit": [],
+   "feature_type": [],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [],
+   "paper": 270,
+   "pipeline": [],
+   "platform": [],
+   "scope": "full_body",
+   "scope_chars": 6544,
+   "source": "../EmilySong_GoldStandardPaper/all_usable_papers.json",
+   "title": "Unraveling gut microbiota in Parkinson's disease and atypical parkinso"
+  },
+  {
+   "amplicon_region": [
+    "V3-V4"
+   ],
+   "assay": [],
+   "diff_abundance": [
+    "LEfSe",
+    "LDA",
+    "Wilcoxon"
+   ],
+   "extraction_kit": [
+    "CTAB"
+   ],
+   "feature_type": [
+    "OTU"
+   ],
+   "have_text": true,
+   "multiple_testing": [],
+   "normalisation": [
+    "relative_abundance"
+   ],
+   "paper": 271,
+   "pipeline": [
+    "QIIME1"
+   ],
+   "platform": [],
+   "scope": "methods_section",
+   "scope_chars": 5824,
+   "source": "extract_input.json",
+   "title": "Unveiling the negative association of Faecalibacterium prausnitzii wit"
+  }
+ ],
+ "scopes": {
+  "full_body": 117,
+  "methods_section": 128,
+  "methods_section_weak": 27
+ },
+ "validation": {
+  "assay_agree": 151,
+  "assay_confusion": {
+   "16S|16S": 130,
+   "16S|both": 24,
+   "16S|none": 12,
+   "shotgun|both": 9,
+   "shotgun|none": 6,
+   "shotgun|shotgun": 21
+  },
+  "assay_total": 202,
+  "region_agree": 101,
+  "region_total": 125
+ },
+ "year": {
+  "exact": 21,
+  "n_parsed": 221,
+  "validated_against": 22
+ }
+}

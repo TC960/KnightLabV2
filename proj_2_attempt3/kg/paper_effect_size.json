@@ -1,0 +1,21 @@
+{
+ "base_rate": 0.2761,
+ "bootstrap_frac_no_excess": 0.1505,
+ "excess": 9.71,
+ "n_boot": 2000,
+ "n_papers": 112,
+ "n_perm": 8000,
+ "null_sumsq": 56.9,
+ "observed_sumsq": 66.61,
+ "sd_points": 3.38,
+ "sd_points_ci95": [
+  0.0,
+  5.98
+ ],
+ "seed": 20260910,
+ "sigma": 0.1226,
+ "sigma_ci95": [
+  0.0,
+  0.2166
+ ]
+}

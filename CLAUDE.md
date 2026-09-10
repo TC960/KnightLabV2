@@ -196,9 +196,16 @@ Built from the 250-paper extraction. Published: <https://www.mohakprakash.com/Kn
   would have been caught for 81 of them. But nothing extracted explains the offset. Country,
   cohort size, sequencing platform, 16S region, medication and diet control and disease identity
   are all null at MDEs of 16–22% **once the exact within-edge expectation is used as the offset**;
-  on raw disagreement rate three of them survive BH and all three are edge-depth artifacts.
-  See `proj_2_attempt3/kg/FINDINGS_paper_discordance.md`. The earlier edge-level result stands
-  too: study design at FDR 0.243, `country=China` splitting 45/44.
+  on raw disagreement rate three of them survive BH and all three are edge-depth artifacts. A
+  second pass adding 15 wet-lab/bioinformatics variables (extraction kit, pipeline, OTU vs ASV,
+  LEfSe vs DESeq2, rarefaction, platform, year) is also null — **24 variables, 24 nulls**.
+  **The size is why:** the paper-level SD of discordance is only **3.4 percentage points** on a
+  27.6% base (cluster-bootstrap CI [0.0, 6.0], including zero), against MDEs of ±4–7 points. So
+  the defensible claim is that this corpus *cannot answer* whether kit or pipeline drives
+  disagreement, not that they don't — and **~83% of the variance is edge structure, not paper
+  identity**, which is quantitative support for keeping contested edges rather than averaging
+  them. See `proj_2_attempt3/kg/FINDINGS_paper_discordance.md`. The earlier edge-level result
+  stands too: study design at FDR 0.243, `country=China` splitting 45/44.
 - **Next planned analysis: embeddings.** Embed the full texts and test, *within* each contested edge,
   whether the up-papers separate from the down-papers, with permutation testing. Note the naive
   framing "do papers producing contested edges differ from papers producing unanimous ones" is
