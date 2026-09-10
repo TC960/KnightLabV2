@@ -452,10 +452,11 @@ def build(rows, min_papers=1, tax=None):
     for e in edges:
         for o in e.get("papers", []):
             link_by_title.setdefault(o, "")
+    mm = load_methods_metadata()
     papers_tbl = []
     for t in titles:
         m = md.get(t, {})
-        papers_tbl.append({
+        row = {
             "title": t,
             "country": m.get("country", ""),
             "n_cases": m.get("n_cases", 0),
@@ -466,14 +467,90 @@ def build(rows, min_papers=1, tax=None):
             "med": m.get("medication_controlled"),
             "diet": m.get("diet_controlled"),
             "has_meta": t in md,
-        })
+        }
+        row.update(methods_fields(mm.get(norm_title_key(t))))
+        papers_tbl.append(row)
     for e in edges:
         e["ev"] = [{"i": pidx[x["t"]], "d": x["d"][0]} for x in e["evidence"]]
         del e["evidence"]
     annotate_specificity(nodes, edges)
     annotate_rank_conflicts(nodes, edges, hierarchy)
     annotate_confidence(edges)
+    annotate_methods_diversity(edges, papers_tbl)
     return nodes, edges, hierarchy, papers_tbl
+
+
+def norm_title_key(t):
+    return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()
+
+
+def load_methods_metadata(path=None):
+    """Wet-lab / bioinformatics variables per paper, from methods_metadata.py.
+
+    Joined on the normalised title, NOT on the `paper` index those records also
+    carry -- that index points into whatever paper table existed when the file was
+    written and silently goes stale the moment the corpus changes.
+    """
+    path = path or os.path.join(HERE, "methods_metadata.json")
+    if not os.path.exists(path):
+        return {}
+    with open(path) as fh:
+        data = json.load(fh)
+    return {r["title_key"]: r for r in data.get("records", [])
+            if r.get("title_key") and r.get("have_text")}
+
+
+# Only the families worth carrying into the viewer. `multiple_testing` and
+# `amplicon_region` are omitted: the first is near-binary and the second already
+# has a column from the LLM pass.
+METHODS_FIELDS = [("kit", "extraction_kit"), ("platform", "platform"),
+                  ("pipeline", "pipeline"), ("feature", "feature_type"),
+                  ("da", "diff_abundance"), ("norm", "normalisation")]
+
+
+def methods_fields(rec):
+    """Flatten one methods record into compact, sorted list fields."""
+    if not rec:
+        return {k: [] for k, _ in METHODS_FIELDS} | {"has_methods": False}
+    out = {k: sorted(rec.get(src) or []) for k, src in METHODS_FIELDS}
+    out["has_methods"] = True
+    return out
+
+
+def annotate_methods_diversity(edges, papers_tbl):
+    """How methodologically independent is the evidence behind each edge?
+
+    WHY THIS AND NOT A QUALITY SCORE. `methods_discordance.py` tested fifteen of
+    these variables against whether a paper disagrees with the literature and
+    every one was null, so none of them earns a place as a predictor of
+    correctness. What they DO support is a distinction a reader actually needs:
+    six papers agreeing while all running the same kit and the same pipeline are
+    six looks through one instrument, and six agreeing across different pipelines
+    are closer to six independent measurements. That is provenance, and it is
+    reported as counts rather than folded into a score, for the same reason edge
+    weight is evidence count and not effect size.
+
+    Adds, per edge:
+      n_methods_papers   supporting papers for which methods were recoverable
+      n_pipelines / n_kits / n_platforms   distinct values among them
+      methods_diversity  "single-method" | "multi-method" | "unknown"
+    """
+    for e in edges:
+        rows = [papers_tbl[o["i"]] for o in e["ev"]]
+        known = [r for r in rows if r.get("has_methods")]
+        pipes = {tuple(r["pipeline"]) for r in known if r["pipeline"]}
+        kits = {tuple(r["kit"]) for r in known if r["kit"]}
+        plats = {tuple(r["platform"]) for r in known if r["platform"]}
+        e["n_methods_papers"] = len(known)
+        e["n_pipelines"] = len(pipes)
+        e["n_kits"] = len(kits)
+        e["n_platforms"] = len(plats)
+        if len(known) < 2 or not (pipes or kits):
+            e["methods_diversity"] = "unknown"
+        elif len(pipes) <= 1 and len(kits) <= 1:
+            e["methods_diversity"] = "single-method"
+        else:
+            e["methods_diversity"] = "multi-method"
 
 
 # Measured agreement with the two curated databases, per tier, from

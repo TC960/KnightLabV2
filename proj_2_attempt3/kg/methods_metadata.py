@@ -278,15 +278,17 @@ def main():
     records = []
     scopes = Counter()
     for i, t in enumerate(gtitles):
+        # `paper` is an index into THIS graph's paper table and moves whenever the
+        # corpus changes; `title_key` is the stable join key for build_kg.py.
+        base = {"paper": i, "title": graph["papers"][i]["title"][:70],
+                "title_key": t}
         if t not in texts:
-            records.append({"paper": i, "title": graph["papers"][i]["title"][:70],
-                            "have_text": False})
+            records.append({**base, "have_text": False})
             continue
         seg, scope = methods_section(texts[t])
         scopes[scope] += 1
         d = detect(seg)
-        records.append({"paper": i, "title": graph["papers"][i]["title"][:70],
-                        "have_text": True, "scope": scope,
+        records.append({**base, "have_text": True, "scope": scope,
                         "scope_chars": len(seg), "source": prov[t], **d})
     print(f"  scope: {dict(scopes)}")
 
