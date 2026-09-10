@@ -169,7 +169,8 @@ Built from the 250-paper extraction. Published: <https://www.mohakprakash.com/Kn
 - **Edge weight is evidence count, not effect size.** The extractor returns direction only, and the
   source papers report incommensurable statistics (LEfSe LDA, fold-change, p-values). A pooled
   "magnitude" would be invented precision.
-- **Contested edges are kept, never averaged.** 174 pairs have papers pointing both ways. ~1 taxon in
+- **Contested edges are kept, never averaged.** 217 pairs are contested (215 with papers pointing
+  both ways, 2 where one paper contradicts itself); "174" here was stale. ~1 taxon in
   3 flips sign between cohorts in this literature, so disagreement is a finding, not noise.
 - **Containment is modelled, not collapsed.** 2,384 ancestor-descendant pairs sit within the same
   disease. Merging ranks would destroy real signal: in Parkinson's, *Lachnospiraceae* (family) is
@@ -186,10 +187,18 @@ Built from the 250-paper extraction. Published: <https://www.mohakprakash.com/Kn
 
 ### Open questions
 
-- **Contested edges are unexplained.** Study design does not account for them: after a cluster-robust
-  permutation test (533 observations come from only 136 papers) and BH correction across 26
-  categories, nothing survives — the best, `diet_controlled`, sits at FDR 0.243. `country=China`
-  splits 45/44. This is "no effect visible at n=250", not "no effect".
+- **Contested edges are unexplained — but as of 2026-09-10 we know the variance is real and
+  where it lives.** Disagreement with the rest of the literature is a property of the **paper**:
+  scored against the leave-one-out majority, 377 of 1,367 decisive observations (27.6%) disagree,
+  and which papers hold the minority direction is clustered far beyond a within-edge null
+  (p = 0.0003; p = 0.0013 after dropping within-paper taxonomic relatives). No paper is
+  systematically *inverted* — a well-powered null: 0 of 134 survive BH, and a fully inverted copy
+  would have been caught for 81 of them. But nothing extracted explains the offset. Country,
+  cohort size, sequencing platform, 16S region, medication and diet control and disease identity
+  are all null at MDEs of 16–22% **once the exact within-edge expectation is used as the offset**;
+  on raw disagreement rate three of them survive BH and all three are edge-depth artifacts.
+  See `proj_2_attempt3/kg/FINDINGS_paper_discordance.md`. The earlier edge-level result stands
+  too: study design at FDR 0.243, `country=China` splitting 45/44.
 - **Next planned analysis: embeddings.** Embed the full texts and test, *within* each contested edge,
   whether the up-papers separate from the down-papers, with permutation testing. Note the naive
   framing "do papers producing contested edges differ from papers producing unanimous ones" is

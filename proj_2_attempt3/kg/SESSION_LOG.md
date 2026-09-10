@@ -4,6 +4,89 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+# SUMMARY — session of 2026-09-10 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**Asked of our own extractions the question that caught Disbiome last session —
+is any single paper systematically inverted? — and got a well-powered no, plus
+the first structure anyone has found in contested edges.** Write-up:
+`FINDINGS_paper_discordance.md`.
+
+The scheduled prompt's priority list was stale for the third session running:
+its four priorities (MAIN_DATA filter, Task 1, Task 2.5, Task 3.1) are all done
+per the entries below and none were redone. `ftp.ncbi.nih.gov` re-probed once,
+still `CONNECT → 403`. Ten commits from the previous two sessions were sitting
+on a detached HEAD; `main` was re-pointed at them and confirmed pushed.
+
+### What was tested
+
+Every paper's vote on every multi-paper edge, scored against the leave-one-out
+majority of the other papers: 440 edges, 1,493 observations, **1,367 decisive, 377
+(27.6%) disagreeing**. Null shuffles directions WITHIN each edge, so every edge
+keeps its up/down counts and every paper keeps its exact edge set.
+
+### Survived
+
+**Discordance is a paper-level property.** Minority-direction status is clustered
+by paper well beyond the null: dispersion 164.2 vs 132.7, **p = 0.0003**. Not the
+known within-paper taxonomic correlation — dropping every within-paper relative
+across the 723 containment links (28.4% of observations) leaves p = 0.0013 — and
+not the structurally forced two-paper edges, where both papers are scored as
+disagreeing under every permutation: restricting to ≥3-paper edges leaves
+p = 0.0003. Both tails move.
+
+Both controls at once give p = 0.058, and that is **power, not refutation**:
+subsampling the containment-controlled set to the strict set's 637 decisive
+observations 200 times, the test reaches p<0.05 only **58%** of the time, median
+p 0.035. This is the first explanatory structure found in contested edges after
+four edge-level nulls.
+
+### Did not survive — and one of them would have shipped
+
+**No paper is inverted.** 0 of 134 testable survive BH (best q = 0.41), and the
+power is measured: a fully inverted copy would have been caught for **100/134**
+at raw p<0.05 and **81/134** Bonferroni-strict. So the extractor does not have
+Disbiome's PMID 27703453 failure mode — a fidelity statement that needs neither
+the in-house gold (under audit) nor the external curations (half independent).
+
+**No study-design variable explains the paper-level variance.** Tested naively on
+raw disagreement rate, three predictors survived BH: Parkinson's (q=0.0005),
+n_cases (q=0.0010), cohort total (q=0.0043). **All three are edge-depth artifacts**
+— a 2-paper contested edge scores both papers as disagreeing (rate 1.00) while a
+10-paper 8/2 edge scores only two (rate 0.20), and Parkinson's is the
+most-reported disease while large cohorts study well-studied diseases.
+
+Replacing the rate with the **exact closed-form within-edge expectation**
+(`P(disagree) = 1 if n_e==n_d else min(n_e,n_d)/n`, verified against 4,000
+simulated permutations, global O/E = 0.995) makes all nine metadata predictors
+null, best **q = 0.234**, MDEs ±0.16–0.22 in O/E. The planted control confirms it:
+edge depth, which drove all three false positives, goes flat at **p = 0.90**.
+
+**Fifth documented false positive in this corpus, and the first caught by an
+offset rather than a permutation.** The raw-rate analysis would have published
+"Parkinson's papers are more reliable" at q = 0.0005.
+
+### Disqualified on construction, recorded so it is not rediscovered
+
+`sits_on_contested_edges` is the lone BH survivor of the offset analysis
+(p = 0.0029) and is endogenous: an edge is contested *because* its papers
+disagreed. Recomputing contestedness leave-one-out **reverses the sign**
+(+0.225 → −0.154, and −0.733 with ties dropped, p = 0.0004). Neither construction
+is interpretable. Contestedness cannot predict discordance.
+
+### Highest-value next step
+
+**A second metadata pass over papers already in hand — CPU-cheap, no GPU, and it
+targets the variance we just proved exists.** `metadata.jsonl` carries country,
+cohort size, sequencing, body site, 16S region, medication and diet, and none of
+them explain the paper-level offset. It does *not* carry the variables the
+microbiome methods literature blames for exactly this: DNA extraction kit, primer
+set, pipeline (QIIME/DADA2/mothur), OTU vs ASV, rarefaction depth,
+differential-abundance method (LEfSe vs DESeq2 vs Wilcoxon), relative vs absolute
+abundance. That is the first unblocked lever this project has had in three
+sessions that is not "get a GPU".
+
+---
+
 # SUMMARY — session of 2026-09-09 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **Checked the assumption the whole project rests on and it does not hold: the

@@ -53,7 +53,9 @@ with effect sizes the source papers report incommensurable statistics (LEfSe LDA
 fold-changes, p-values) that cannot be pooled into one magnitude — a unified "strength" number
 would be invented precision. Bar length = number of papers.
 
-**Contested edges are kept, never merged.** 151 pairs have papers pointing both ways. The
+**Contested edges are kept, never merged.** 217 pairs are contested — 215 with papers
+pointing both ways, plus 2 where a single paper contradicts itself. *(Was written as 151,
+a count from three corpus revisions ago; corrected 2026-09-10.)* The
 microbiome replication literature reports ~1 taxon in 3 flipping sign between cohorts, so
 disagreement is a finding about the evidence base, not noise. Disbiome and Peryton both store
 conflicting entries separately for the same reason.
@@ -72,13 +74,32 @@ disagree" — is a diverging bar chart.
 
 ## Known gaps
 
-- **Taxa are surface strings, not NCBI taxids.** Case and rank prefixes are folded; synonyms are
-  not (Bacteroidetes/Bacteroidota remain distinct nodes). Wiring in `taxonomy_match.TaxResolver`
-  would fix this and needs taxonkit + the NCBI taxdump.
+*The first and last bullets here described the graph as it stood before taxonomy
+resolution and external validation landed. Corrected 2026-09-10.*
+
+- **254 of 925 taxa never resolve to an NCBI taxid.** The rest do — `taxonomy.py`
+  reads `names.dmp` directly and folds synonyms (Bacteroidetes + Bacteroidota → 976,
+  Firmicutes + Bacillota → 1239). What does not resolve is mostly 16S clade labels
+  (`[Eubacterium] ventriosum group`), including 100 deliberately-split SILVA rank
+  placeholders (`Prevotella 9`).
 - **Diseases carry MONDO ids only for the 16 mapped patterns**; anything else keeps its cleaned
   label with `mondo: null` rather than being dropped.
 - **Associations only.** No causal claim, no direction of causality.
-- Not yet validated against Disbiome / Peryton — that is the obvious next step.
+- **Validated against Disbiome (73.0%) and Peryton (72.5%)** — but those are *not*
+  independent replication. 43 of our 272 papers are cited by Disbiome and 24 by
+  Peryton, and agreement splits hard on that line (87.5%/96.8% shared-source vs
+  58.1%/52.6% disjoint). See `FINDINGS_independence.md`.
+- **Disagreement with the rest of the literature is a property of the PAPER, and
+  nothing we extract explains it.** Scored against the leave-one-out majority, 377
+  of 1,367 decisive observations (27.6%) disagree, and which papers hold the
+  minority direction is clustered far beyond a within-edge null (p = 0.0003;
+  p = 0.0013 after dropping within-paper taxonomic relatives). No paper is
+  systematically *inverted* — that is a well-powered null, 0 of 134 survive BH and
+  a fully inverted copy would have been caught for 81 of them — but country,
+  cohort size, sequencing platform, 16S region, medication and diet control, and
+  disease identity are all null at MDEs of 16–22%. See
+  `FINDINGS_paper_discordance.md`; the untested candidates are extraction kit,
+  primer set, pipeline, OTU-vs-ASV and differential-abundance method.
 
 ## RAG layer (`build_rag.py`)
 
