@@ -1,5 +1,41 @@
 # Session prompt — KG usefulness + embeddings
 
+> ## ⚠️ READ THIS BEFORE THE TASK LIST BELOW — updated 2026-09-10
+>
+> **The numbered tasks in this file are all DONE and have been for four sessions.**
+> The scheduled routine still fires the old priority list (MAIN_DATA filter,
+> Task 1, Task 2.5, Task 3.1), and three consecutive sessions have each opened by
+> confirming they were already complete. If you are reading this because that
+> prompt sent you here: **do not redo any of them.** Read `SESSION_LOG.md` — its
+> top entry is the current state — and pick from the short list below.
+>
+> **Genuinely open, in order:**
+>
+> 1. **More papers.** This is the binding constraint on everything and has been
+>    for four sessions. 109 papers with ≥4 decisive observations sets every MDE in
+>    the project. **Needs a GPU — ask before spending.**
+> 2. **Two modelling calls that want a human, not a script.** Should a joint 16S
+>    signal from an assay that cannot separate two genera
+>    (`Escherichia-Shigella`) be attributed to one, split, or held apart as it now
+>    is? And should disease subtypes be modelled as containment the way taxa are
+>    (`Intracerebral hemorrhage` beside `Stroke`)? Both are design decisions.
+> 3. **Report PMID 27703453 upstream to Disbiome** — their case/control assignment
+>    is inverted on all five records, per `FINDINGS_db_conflicts.md`.
+> 4. Re-run `adjudicate_db_conflicts.py` whenever the corpus grows.
+>
+> **Closed levers — do not reopen without new data:**
+>
+> - **Paper-level covariates of discordance.** 24 variables tested across two
+>   passes (9 study-design, 15 wet-lab/bioinformatics), 24 nulls — and the
+>   arithmetic says why: the paper-level SD of discordance is 3.4 points against
+>   MDEs of 4–7. See `FINDINGS_paper_discordance.md`.
+> - **Another structural correction expecting agreement to move.** Five have now
+>   moved it by less than this corpus can resolve.
+> - **The NCBI taxdump.** `ftp.ncbi.nih.gov` is blocked in the cloud environment
+>   (CONNECT → 403, probed in four sessions). `taxonomy_cache.py` replays
+>   `graph.json`'s own resolution and is valid for rebuilds over a SUBSET of the
+>   current papers — which is every rebuild that does not add papers.
+
 Paste everything below into a fresh Claude Code session in `/Users/mohak/Desktop/Lab Work`.
 
 ---

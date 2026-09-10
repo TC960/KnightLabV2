@@ -4,6 +4,45 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+## TL;DR — 2026-09-10
+
+**Tested.** Whether any of our own papers is systematically inverted (the failure
+mode found in Disbiome last session); whether discordance with the literature is a
+paper-level property; and 24 candidate explanations for it — 9 study-design, then
+15 wet-lab/bioinformatics extracted fresh from full text.
+
+**Survived correction.**
+- *No paper is inverted.* 0 of 134 survive BH, and the power is measured: a fully
+  inverted copy would have been caught for 81 of them. Best extraction-fidelity
+  statement in the repo that depends on neither compromised reference.
+- *Discordance is paper-level* — minority-direction labels are not exchangeable
+  across papers, p = 0.0003, robust to containment thinning and to dropping
+  two-paper edges.
+
+**Did not survive.**
+- *Three predictors that would have shipped* — "Parkinson's papers are more
+  reliable" (q = 0.0005) and two cohort-size effects — all edge-depth artifacts,
+  killed by using the exact within-edge expectation as an offset.
+- *All 24 explanations.* Best q = 0.234 and 0.61 across the two passes.
+- *The paper-level effect's practical size.* 3.4 percentage points of discordance,
+  cluster-bootstrap CI [0.0, 6.0] **including zero**. That is why the 24 nulls
+  were foreordained (MDEs of 4–7 points), and it means ~83% of the variance in
+  disagreement is edge structure, not paper identity.
+- *Methods diversity as a quality signal.* p = 1.00 on both databases; shipped as
+  provenance only.
+
+**Also.** The "needs a GPU" blocker on the methods pass was false — full text for
+all 272 papers was in the repo. Ten commits from prior sessions were stranded on a
+detached HEAD and are now pushed. Stale published claims corrected in `README.md`
+and `CLAUDE.md` (contested count 151/174 → 217; "taxa are unresolved strings";
+"not yet validated against Disbiome/Peryton").
+
+**Single highest-value next step: more papers, and it needs a GPU — ask before
+spending.** Every remaining question is n-limited, and this session closed the
+main alternative (paper-level covariates) rather than leaving it open.
+
+---
+
 # SUMMARY — session of 2026-09-10 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **Asked of our own extractions the question that caught Disbiome last session —
