@@ -26,7 +26,7 @@ paper-level property; and 24 candidate explanations for it — 9 study-design, t
 - *All 24 explanations.* Best q = 0.234 and 0.61 across the two passes.
 - *The paper-level effect's practical size.* 3.4 percentage points of discordance,
   cluster-bootstrap CI [0.0, 6.0] **including zero**. That is why the 24 nulls
-  were foreordained (MDEs of 4–7 points), and it means ~83% of the variance in
+  were foreordained (MDEs of 4–7 points), and it means ~85% of the variance in
   disagreement is edge structure, not paper identity.
 - *Methods diversity as a quality signal.* p = 1.00 on both databases; shipped as
   provenance only.
@@ -156,7 +156,7 @@ that produces is small. Consequences:
 - **The 24 nulls were foreordained.** MDEs of ±4 to ±7 points against a total
   spread of ±3.4. The defensible claim is "this corpus cannot answer whether kit
   or pipeline drives disagreement", NOT "they do not".
-- **~83% of the variance in disagreement is edge structure, not paper identity.**
+- **~85% of the variance in disagreement is edge structure, not paper identity.**
   Papers are close to interchangeable; disagreement lives in the taxon–disease
   pairs. That is quantitative support for the standing decision to keep contested
   edges rather than average them — and an argument against any further

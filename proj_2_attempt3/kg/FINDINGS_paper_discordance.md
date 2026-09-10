@@ -252,7 +252,9 @@ mean 1 and SD σ, and solving Var(dis_p) = Var_null(dis_p) + (E_p·σ)² by mome
 |---|---|
 | observed Σ(observed − expected)² | 66.6 |
 | expected under the within-edge null | 56.9 |
-| **excess** | **9.7 (17%)** |
+| **excess** | **9.7** |
+| share of observed dispersion the within-edge null already predicts | **85.4%** |
+| share attributable to paper identity | **14.6%** |
 | σ (SD of the propensity multiplier) | **0.123** |
 | paper-level SD of discordance | **3.4 percentage points** on a 27.6% base |
 | cluster bootstrap over papers, 95% CI | **[0.0, 6.0] points** — includes zero |
@@ -275,7 +277,7 @@ Two consequences:
    going to clear a 4-to-7-point threshold. The honest conclusion is not "kit and
    pipeline do not matter" but **"this corpus cannot answer that question, and
    could not have"**.
-2. **Roughly 83% of the variance in disagreement is edge structure, not paper
+2. **Roughly 85% of the variance in disagreement is edge structure, not paper
    identity.** Papers are close to interchangeable; the disagreement lives in the
    taxon–disease pairs themselves. That is quantitative support for the standing
    design decision — contested edges are kept and never averaged because
@@ -300,7 +302,7 @@ Two consequences:
    percentage points of discordance against a total paper-level spread of ±3.4.
    The defensible conclusion is that **this corpus cannot answer whether extraction
    kit or pipeline drives disagreement**, not that they do not.
-4. **About 83% of the variance in disagreement is edge structure, not paper
+4. **About 85% of the variance in disagreement is edge structure, not paper
    identity.** Papers are close to interchangeable. Disagreement lives in the
    taxon–disease pairs themselves.
 
@@ -320,7 +322,7 @@ the highest-value unblocked step; it has now been done — CPU-only, no GPU, fro
 full text that was in the repo all along — and it is null. Recording that as a
 closed lever is the point of writing it down.
 
-**Not paper-level modelling at all**, for the same reason. If 83% of the variance
+**Not paper-level modelling at all**, for the same reason. If 85% of the variance
 is edge structure, the remaining question is about taxon–disease pairs, not about
 studies.
 
