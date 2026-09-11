@@ -138,6 +138,88 @@ replace the agents was *also* wrong, and more quietly: it missed
 "43 **DLB** patients" because it required the number to sit adjacent to the
 noun. Both instruments were weaker than the thing they were auditing.
 
+## Part 3 — screening the other 249, and why the result is "do not act"
+
+The gap above was then actually attacked: all 249 never-screened papers were put
+through an abstract-level screen (`screen_corpus.py`, Haiku subagents, 9 batches
+of 34) against the four failure modes, with **24 blinded controls** drawn from
+the already-adjudicated 45 and shuffled in under the same id scheme.
+
+### The headline, and the number that matters more
+
+| | |
+|---|---|
+| exact category agreement on controls | 19/24 = **0.792** |
+| keep-vs-drop agreement | 20/24 = **0.833** |
+| false drops (gold KEEP → predicted drop) | 2/12 = **0.167** |
+| missed drops (gold drop → predicted KEEP) | 2/12 = **0.167** |
+
+The control set is balanced by construction (12 KEEP, 12 drop) and includes the
+rat-FMT paper from Part 1. **The screen marked that paper KEEP** — the one case
+this whole line of work exists to catch, missed from its abstract, on an axis
+where the deterministic full-text filter scored 15/15.
+
+### The result on the 249
+
+**231 KEEP · 14 UNCLEAR · 4 proposed drops · 0 animal drops.**
+
+Zero animal drops is worth stating plainly: an LLM reading abstracts and a
+regex reading full texts independently agree there is no animal-only study left
+in the corpus. Two methods, one conclusion.
+
+### Every proposed drop was then checked against full text, and none survived
+
+All four fell in `DROP_NO_HEALTHY_CONTROL` — **the single category both false
+positives landed in.** That is not a coincidence to shrug at, so all four were
+read:
+
+| paper | verdict | evidence |
+|---|---|---|
+| Probiotics/rifaximin/lactulose in MHE | **false positive** | "stool samples from healthy controls and MHE patients" |
+| Gut microbiota in dementia with Lewy bodies | **false positive** | "224 PD patients, 26 iRBD patients, 28 DLB patients, and **147 controls**" |
+| MCI in patients without dementia | **arguable** | 82 patients, "61 were classified as MCI, and 21 were classified as NC" — a cognitively-normal comparison group exists |
+| Neurocognitive impairment in HIV | **arguable** | "122 controls (**HIV-infected patients without NCI**)" — not healthy, but a matched disease-vs-no-disease contrast, which is a valid control for NCI |
+
+**Zero of four are unambiguous. The graph was not modified.**
+
+### So the method does not work well enough, and that is the finding
+
+At a false-discovery rate of 50–100% on the drop list, an abstract-level screen
+cannot prune this corpus. It can only *nominate*, and every nomination costs a
+full-text read anyway — which is most of the work the screen was meant to save.
+
+Two honest qualifications in opposite directions:
+
+- **The controls are harder than the population.** They are drawn from the 45
+  unvetted keyword-matched MAIN_DATA papers, which are far messier than the
+  datasheet papers being screened. A 0.167 false-positive rate applied to 245
+  KEEP papers predicts ~41 false drops; only 4 drops were proposed in total. So
+  0.833 is probably a **lower bound** on this population — but by how much
+  cannot be measured, because no representative gold set exists.
+- **Some of the failure was mine.** The abstract extractor anchored on the first
+  "Abstract" marker and returned pure front matter — journal navigation, author
+  lists, affiliations — for **12.9% of the corpus (35 of 271 papers)**. Those
+  papers came back UNCLEAR because the screen never saw an abstract. One agent
+  diagnosed it unprompted: *"unclear abstracts due to heavy metadata in the
+  source text."* Replaced with a sliding best-scoring window, which cuts
+  zero-cue spans from 35 papers to 5 (1.8%). **The run reported here used the
+  old extractor**, so its 14 UNCLEAR are inflated and a re-run would do better.
+
+### What to do instead
+
+1. **Do not re-run this screen expecting a cleaner answer.** The extractor fix
+   will reduce UNCLEAR, but it does not touch the false-positive rate, which is
+   a judgement problem and not an input problem — both false positives had
+   perfectly good abstracts.
+2. **The animal axis is solved** and needs nothing further: deterministic,
+   full-text, recall 15/15, and corroborated independently here.
+3. **The remaining three axes need full text, not abstracts.** That is what
+   produced the trustworthy `maindata_screen.json`. It is the expensive option
+   and it is the one that works.
+4. **The 14 UNCLEAR papers and the 4 nominations are a ready-made worklist** —
+   18 papers, full text, for a human or a stronger model. That is a tractable
+   afternoon, and it is recorded in `corpus_screen.json`.
+
 ## What is still open, and it is not small
 
 This screen covers **one** failure mode. In the 45-paper gold set, animal
@@ -153,14 +235,12 @@ drops in 45 papers, 15.6% — that would be on the order of **35 more papers** t
 do not belong. That number is an extrapolation from 45 papers, not a measurement,
 and it should be treated as a reason to screen rather than as a finding.
 
-**This is now the cheapest unblocked lever in the project**, and unlike the
-paper-level covariate hunt it is not n-limited: it does not need more papers, a
-GPU, or the taxdump. It needs 248 abstracts read against four criteria. It is
-also the one remaining correction with a *mechanism* by which agreement could
-move — every previous one was a renaming or a re-keying, whereas removing a
-study that measured the wrong organism removes evidence.
+**This was the cheapest unblocked lever in the project, and Part 3 spent it.**
+The answer is that 248 abstracts are not enough — the screen nominates, it does
+not decide. What remains is the same work at full-text resolution, which is
+what produced the one screen in this repo that can be trusted.
 
-That said, the prior is against a large effect: the MAIN_DATA screen removed 22
-papers and moved agreement by nothing (McNemar p = 1.00, and on the signed
-concordance metric by less than the corpus can resolve). Expect the same, and
-justify the work on correctness.
+The prior is still against a large effect on agreement: the MAIN_DATA screen
+removed 22 papers and moved it by nothing (McNemar p = 1.00, and below
+resolution on the signed concordance metric). Removing a handful more will not
+move it either. Justify the work on correctness, not on the number.

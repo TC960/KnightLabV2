@@ -11,17 +11,21 @@
 >
 > **Genuinely open, in order:**
 >
-> 0. **NEW 2026-09-11 — screen the 248 papers nobody has ever screened. This is
->    now the top item, above "more papers", because it needs nothing you do not
->    have.** Only 23 of 271 contributing papers have ever been checked for study
->    design; `maindata_screen.json` covers the 45 title-matched MAIN_DATA
->    additions only. This session's animal sweep closes one of the four failure
->    modes (validated recall 15/15, null on the rest — no animal-only study is in
->    the graph). **No healthy-control arm, case reports and reviews are
->    uncovered**, were 7 of 22 drops in the gold set, and have no deterministic
->    detector. No GPU, no taxdump, no new papers — 248 abstracts against four
->    criteria. See `FINDINGS_corpus_screen.md`. Expect agreement not to move
->    (the 22-paper screen moved it by nothing); justify on correctness.
+> 0. **NEW 2026-09-11 — full-text screen of 18 named papers. Top item, above
+>    "more papers", because it needs nothing you do not have and the list is
+>    already written.** Only 23 of 271 contributing papers had ever been checked
+>    for study design. The 249 others were screened in-session at ABSTRACT level
+>    and **the method failed its own validation**: 20/24 keep-vs-drop on blinded
+>    controls, and it marked a known rat-FMT study KEEP. All 4 of its proposed
+>    drops were read against full text and **none survived** — the graph was NOT
+>    modified, correctly. Do not re-run the abstract screen; the extractor bug
+>    found alongside it is fixed but does not touch the judgement problem.
+>    **What is left is 18 papers at full-text resolution** — the 14 UNCLEAR plus
+>    the 4 nominations, listed in `corpus_screen.json`. The animal axis is CLOSED
+>    (deterministic, recall 15/15, corroborated independently by the LLM screen
+>    finding zero animal papers). Only no-healthy-control, case reports and
+>    reviews remain. See `FINDINGS_corpus_screen.md`. Expect agreement not to
+>    move (the 22-paper screen moved it by nothing); justify on correctness.
 >
 > 1. **More papers.** The binding constraint on every *statistical* question, and
 >    has been for four sessions. 109 papers with ≥4 decisive observations sets

@@ -45,13 +45,24 @@ hierarchy acyclicity, paper table) with zero defects. `ftp.ncbi.nih.gov`
 re-probed, still CONNECT -> 403 (fifth session). The container again came up on
 a detached HEAD; `main` re-attached and pushed.
 
-**Single highest-value next step: screen the 248 papers nobody has ever
-screened.** Only 23 of 271 contributing papers have been checked for study
-design at all. This session's animal sweep closes ONE of the four failure modes
-(animal studies were 15 of 22 drops in the gold set); no healthy-control arm,
-case reports and reviews are uncovered and undetectable deterministically.
-Unlike everything else outstanding it needs no GPU, no taxdump and no new
-papers — 248 abstracts against four criteria.
+**The 248-paper screen was then DONE in-session, and the method failed its own
+validation.** All 249 never-screened papers went through an abstract-level
+screen with 24 blinded controls: **19/24 exact, 20/24 keep-vs-drop**, false
+drops 2/12 and missed drops 2/12 — and it marked the Part-1 rat-FMT paper KEEP,
+the single case the work exists to catch. It returned 231 KEEP, 14 UNCLEAR and
+4 proposed drops, all 4 in the one category both false positives landed in.
+**All 4 were read against full text and none survived**: two are flatly wrong
+(one names "147 controls"), two are arguable. **The graph was NOT modified.**
+
+Corroboration worth keeping: **zero animal drops among the 249**, which agrees
+with the deterministic full-text sweep by an independent method.
+
+**Single highest-value next step: the same screen at FULL-TEXT resolution, on
+18 papers, not 249.** Abstracts nominate but cannot decide, and each nomination
+costs a full-text read anyway. The worklist is already written down — the 14
+UNCLEAR plus the 4 nominations, in `corpus_screen.json`. The animal axis is
+closed (deterministic, recall 15/15, corroborated); only no-healthy-control,
+case reports and reviews remain.
 
 ---
 
@@ -124,6 +135,30 @@ Three consecutive rebuilds byte-identical (a fixed point); `kg.html`
 byte-identical on rebuild; `docs/index.html` re-synced; `verify_viz.py` 32/32 in
 Chromium; `taxon_typos.py --verify` 33/33; full internal-consistency audit of
 `graph.json` clean (edge arithmetic, hierarchy acyclicity, no orphan papers).
+
+### The 249-paper screen, and a bug of mine inside it
+
+`screen_corpus.py --prepare/--score` is reproducible (fixed seed, byte-identical
+batches on re-run, verified). The blinded controls are the entire validation,
+which is why they exist: an unvalidated 249-paper classification is a pile of
+opinions. They said do not act, and so the graph was left alone.
+
+**The controls are harder than the population**, and this cuts against the
+headline: they are drawn from the 45 unvetted keyword-matched MAIN_DATA papers,
+far messier than the datasheet papers being screened. A 0.167 false-positive
+rate over 245 KEEP papers predicts ~41 false drops; only 4 drops were proposed
+in total. So 0.833 is probably a LOWER bound here — by an unmeasurable amount,
+since no representative gold set exists.
+
+**And part of the failure was mine.** The abstract extractor anchored on the
+first "Abstract" marker and returned pure front matter — journal navigation,
+author lists, affiliations — for **12.9% of the corpus (35 of 271 papers)**,
+which is why they came back UNCLEAR. A screening agent diagnosed it unprompted:
+"unclear abstracts due to heavy metadata in the source text". Replaced with a
+sliding best-scoring window: zero-cue spans 35 -> 5 (1.8%). The run reported
+above used the OLD extractor, so its 14 UNCLEAR are inflated. Note this does
+NOT explain the false positives — both had perfectly good abstracts. The
+extractor fix would reduce UNCLEAR and leave the judgement problem untouched.
 
 ### Sized but NOT decided — the disease-subtype question
 
