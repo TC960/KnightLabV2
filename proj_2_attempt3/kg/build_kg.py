@@ -150,7 +150,15 @@ def norm_disease(s):
 PLACEHOLDER = re.compile(
     r"(UCG[-_ ]?\d+|_?group$|ND\d{3,}|R-\d+\b|incertae[ _]sedis|"
     r"sensu[ _]stricto|\bAD\d{3,}\b|\b[A-Z]{1,3}\d{2,}\b|"
-    r"[ _]\d{1,3}$|[ _][IVXL]+$|\bcluster[ _]|\bFamily[ _][IVXL]+\b)")
+    # A SILVA numeric suffix may be joined by a hyphen as well as a space or
+    # underscore ("Ruminiclostridium-5" beside "Ruminiclostridium 5"), but ONLY
+    # when the stem is a single word. Allowing the hyphen generally swallowed
+    # strain designations -- "Azospirillum sp. 47-25" and "Lachnospiraceae
+    # bacterium MC-35" both resolve to real taxids and were demoted to
+    # unresolved placeholders by the looser pattern. Caught by diffing the
+    # rebuild (n_taxa_resolved fell by 2), not by reading the regex.
+    r"[ _]\d{1,3}$|^[A-Za-z]+-\d{1,3}$|[ _][IVXL]+$|"
+    r"\bcluster[ _]|\bFamily[ _][IVXL]+\b)")
 
 # Guard, agreeing with taxonomy_cache.NOT_CONTAINED. A phage is not a member of
 # the genus it infects, and "uncultured X sp. 1" names an unidentified member
@@ -167,6 +175,45 @@ BODY_SITE = {}                      # paper title -> sampled body site
 PLACEHOLDER_PARENT = {}             # placeholder node key -> parent taxid
 
 
+def _load_typos():
+    """Surface spellings the SOURCE PAPERS get wrong. See taxon_typos.py.
+
+    Applied as a rewrite of the raw string BEFORE resolution, so a corrected
+    name pools into the existing node by taxid rather than needing its own
+    merge rule. The raw string is still recorded in `aliases`, so nothing is
+    lost: the node for Faecalibacterium lists "Fecalibacterium" among the
+    strings that folded into it, and a reader can see the paper's spelling.
+
+    All 33 entries are verified to occur verbatim in their own paper's full
+    text -- these are the papers' errors, faithfully copied, not the
+    extractor's. Curated rather than edit-distance, because the near-misses
+    include real distinct taxa (Oscillospirales vs Oscillospira) and the SILVA
+    rank placeholders the graph deliberately holds apart (Prevotella_9).
+    """
+    path = os.path.join(HERE, "taxon_typos.json")
+    if not os.path.exists(path):
+        return {}
+    d = json.load(open(path))["typos"]
+    # key on a case- and whitespace-insensitive form so "fecalibacterium" and
+    # "Fecalibacterium " hit the same entry
+    return {re.sub(r"\s+", " ", k.lower()).strip(): v for k, v in d.items()}
+
+
+TAXON_TYPOS = {}                    # loaded in main(); empty means "no rewrite"
+
+
+def _sep_key(s):
+    """Lowercase, drop NCBI's [misplaced genus] brackets, collapse separators.
+
+    Hyphen, en dash, em dash, slash and underscore are all used interchangeably
+    in this corpus; keying on them literally fragments one concept across
+    several nodes.
+    """
+    s = s.lower().replace("[", "").replace("]", "")
+    s = re.sub(r"[/_‐-―-]", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
 def norm_taxon(t, tax=None):
     """Canonical key + display name + rank.
 
@@ -179,6 +226,8 @@ def norm_taxon(t, tax=None):
     prefix only), so the builder still runs.
     """
     disp = t.strip()
+    # The papers' own misspellings, corrected before resolution (taxon_typos.py).
+    disp = TAXON_TYPOS.get(re.sub(r"\s+", " ", disp.lower()).strip(), disp)
     if tax is not None and tax.ok:
         tid, sci, rank, how = tax.resolve(disp)
         if tid:
@@ -189,7 +238,19 @@ def norm_taxon(t, tax=None):
             if (SPLIT_PLACEHOLDERS and PLACEHOLDER.search(disp)
                     and not NOT_PLACEHOLDER.search(disp)
                     and disp.lower() != (sci or "").lower()):
-                key = "ph:" + re.sub(r"\s+", " ", disp.lower().replace("_", " ")).strip()
+                # The placeholder key must collapse EVERY separator style, not
+                # just the underscore, and must drop NCBI's "misplaced genus"
+                # brackets. Keying on `_`->space alone split 12 concepts across
+                # two nodes apiece: "Ruminococcaceae_UCG_002" vs
+                # "Ruminococcaceae UCG-002", "[Ruminococcus] gnavus group" vs
+                # "Ruminococcus_gnavus_group", "Christensenellaceae_R_7_group"
+                # vs "Christensenellaceae R-7 group". This is the SAME defect
+                # fixed for the unresolved path on 2026-09-08 (see the comment
+                # at the separator collapse below); the placeholder branch
+                # returns before reaching it and kept the old behaviour.
+                # Two of the twelve are one paper reporting one taxon under two
+                # spellings, so the graph counted a single study twice.
+                key = "ph:" + _sep_key(disp)
                 PLACEHOLDER_PARENT[key] = tid
                 return key, disp, "clade", "placeholder"
             return f"ncbi:{tid}", sci, (rank or "no rank"), how
@@ -217,8 +278,7 @@ def norm_taxon(t, tax=None):
     # collapsing first makes it two and silently reranked ~50 unresolved nodes
     # from genus to species. Caught by diffing the rebuild, not by reading this.
     rank_src = re.sub(r"\s+", " ", key).strip()
-    key = re.sub(r"[/_‐-―-]", " ", key)
-    key = re.sub(r"\s+", " ", key).strip()
+    key = _sep_key(key)
     if rank is None:
         if len(rank_src.split()) >= 2:
             rank = "species"
@@ -790,8 +850,10 @@ def main():
                     help="OLD behaviour: keep both copies of a paper that was "
                          "scraped twice under different links")
     a = ap.parse_args()
-    global SPLIT_PLACEHOLDERS
+    global SPLIT_PLACEHOLDERS, TAXON_TYPOS
     SPLIT_PLACEHOLDERS = a.split_placeholders
+    TAXON_TYPOS = _load_typos()
+    print(f"taxon spelling corrections loaded: {len(TAXON_TYPOS)}")
 
     rows = json.load(open(a.input))
     n_raw = len(rows)
