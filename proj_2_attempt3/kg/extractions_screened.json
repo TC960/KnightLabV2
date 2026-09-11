@@ -4425,23 +4425,6 @@
   "in_sheet": true
  },
  {
-  "title": "Microbiota from Alzheimer's patients induce deficits in cognition and hippocampal neurogenesis.",
-  "disease": "Alzheimer\u2019s disease (AD)",
-  "link": "https://doi.org/10.1093/brain/awad303",
-  "in_gold_standard": "",
-  "expected_enriched": "Bacteroidetes, Desulfovibrio",
-  "expected_depleted": "Firmicutes, Verruocomicrobiota, Clostridium sensu stricto 1, Coprococcus",
-  "predicted_enriched": "Bacteroidetes, Desulfovibrio",
-  "predicted_depleted": "Firmicutes, Verruocomicrobiota, Clostridium sensu stricto 1, Coprococcus",
-  "predicted_disease": "Alzheimer's disease",
-  "time_seconds": 12.29,
-  "parse_error": false,
-  "country": "Ireland",
-  "sequencing": "16S",
-  "year": "2023",
-  "in_sheet": true
- },
- {
   "title": "Multiple sclerosis and gut microbiota: Lachnospiraceae from the ileum of MS twins trigger MS-like disease in germfree transgenic mice-An unbiased functional study.",
   "disease": "Multiple sclerosis (MS)",
   "link": "https://doi.org/10.1073/pnas.2419689122",

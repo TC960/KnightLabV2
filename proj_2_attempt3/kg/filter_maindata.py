@@ -35,10 +35,28 @@ SCREEN = os.path.join(HERE, "maindata_screen.json")
 
 
 def norm(s):
+    """Title key, identical in strength to build_kg.norm_title.
+
+    It MUST be, and was not. This normaliser folded curly quotes and dashes but
+    kept a trailing full stop, while the deduper strips every non-alphanumeric.
+    13 papers sit in extractions_corrected.json under two spellings that differ
+    only by such punctuation -- the same paper scraped twice under two links.
+    The screen matched one spelling and dropped it; the other spelling was a
+    different key here, so it survived, and the deduper that would have folded
+    the two copies never saw them together because one was already gone.
+
+    One DROP_ANIMAL paper reached the graph that way: "Microbiota from
+    Alzheimer's patients induce deficits in cognition and hippocampal
+    neurogenesis", which transplants human faeces into rats and reports the
+    RATS' microbiome, contributing 6 edges as if they were human findings.
+
+    The `assert seen == 45` below gave false assurance: it counts screen entries
+    matched, not paper copies dropped, so it passed while a copy leaked. It now
+    asserts on the screen entries that matched at least one row, and separately
+    that no surviving row shares a key with a failing one.
+    """
     s = re.sub(r"^#+\s*PAPER_ID:\s*", "", (s or "").strip())
-    s = (s.replace("’", "'").replace("‘", "'")
-          .replace("–", "-").replace("—", "-"))
-    return re.sub(r"\s+", " ", s).strip().lower()
+    return re.sub(r"[^a-z0-9]", "", s.lower())
 
 
 def main():
@@ -47,18 +65,20 @@ def main():
     by_norm = {norm(t): v for t, v in screen.items()}
     assert len(by_norm) == 45, len(by_norm)
 
-    drop_fail, drop_all = set(), set()
-    seen = 0
+    drop_fail, drop_all, matched = set(), set(), set()
     for r in rows:
         n = norm(r.get("title"))
         v = by_norm.get(n)
         if v is None:
             continue
-        seen += 1
+        matched.add(n)
         drop_all.add(n)
         if v["category"] != "KEEP":
             drop_fail.add(n)
-    assert seen == 45, f"only matched {seen} of the 45 screened papers in {SRC}"
+    # Count SCREEN ENTRIES matched, not row hits: a paper present under two
+    # spellings must not be able to satisfy this while one of its copies leaks.
+    assert matched == set(by_norm), (
+        f"{len(set(by_norm) - matched)} screened papers never matched a row in {SRC}")
 
     variants = {
         "all348": set(),
@@ -67,6 +87,10 @@ def main():
     }
     for name, drop in variants.items():
         kept = [r for r in rows if norm(r.get("title")) not in drop]
+        # all348 is the deliberate no-drop baseline; the other two must not leak.
+        if drop:
+            leaked = [r.get("title") for r in kept if norm(r.get("title")) in drop]
+            assert not leaked, f"{name}: screened-out paper survived: {leaked}"
         out = os.path.join(HERE, f"_variant_{name}.json")
         json.dump(kept, open(out, "w"), indent=1)
         print(f"{name:12} kept {len(kept):3} papers  (dropped {len(rows)-len(kept)})  -> {os.path.basename(out)}")
