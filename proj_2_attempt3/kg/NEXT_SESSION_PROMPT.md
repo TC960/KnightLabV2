@@ -11,9 +11,21 @@
 >
 > **Genuinely open, in order:**
 >
-> 1. **More papers.** This is the binding constraint on everything and has been
->    for four sessions. 109 papers with ≥4 decisive observations sets every MDE in
->    the project. **Needs a GPU — ask before spending.**
+> 0. **NEW 2026-09-11 — screen the 248 papers nobody has ever screened. This is
+>    now the top item, above "more papers", because it needs nothing you do not
+>    have.** Only 23 of 271 contributing papers have ever been checked for study
+>    design; `maindata_screen.json` covers the 45 title-matched MAIN_DATA
+>    additions only. This session's animal sweep closes one of the four failure
+>    modes (validated recall 15/15, null on the rest — no animal-only study is in
+>    the graph). **No healthy-control arm, case reports and reviews are
+>    uncovered**, were 7 of 22 drops in the gold set, and have no deterministic
+>    detector. No GPU, no taxdump, no new papers — 248 abstracts against four
+>    criteria. See `FINDINGS_corpus_screen.md`. Expect agreement not to move
+>    (the 22-paper screen moved it by nothing); justify on correctness.
+>
+> 1. **More papers.** The binding constraint on every *statistical* question, and
+>    has been for four sessions. 109 papers with ≥4 decisive observations sets
+>    every MDE in the project. **Needs a GPU — ask before spending.**
 > 2. **Two modelling calls that want a human, not a script.** Should a joint 16S
 >    signal from an assay that cannot separate two genera
 >    (`Escherichia-Shigella`) be attributed to one, split, or held apart as it now
@@ -29,8 +41,15 @@
 >   passes (9 study-design, 15 wet-lab/bioinformatics), 24 nulls — and the
 >   arithmetic says why: the paper-level SD of discordance is 3.4 points against
 >   MDEs of 4–7. See `FINDINGS_paper_discordance.md`.
-> - **Another structural correction expecting agreement to move.** Five have now
->   moved it by less than this corpus can resolve.
+> - **Another structural correction expecting agreement to move.** SIX have now
+>   moved it by less than this corpus can resolve, and the 2026-09-11 pair moved
+>   the two databases in OPPOSITE directions (+0.004 Disbiome, −0.002 Peryton),
+>   which is what noise looks like. Corrections are still worth making — they are
+>   justified on correctness of meaning — but never report one as an accuracy gain.
+> - **Rebuilding on top of a failed build.** `taxonomy_cache.py` replays
+>   `graph.json`'s own resolution and `build_kg.py` overwrites `graph.json`, so a
+>   bad intermediate silently becomes the authority for the next build. Restore a
+>   known-good `graph.json` before re-running. This bit on 2026-09-11.
 > - **The NCBI taxdump.** `ftp.ncbi.nih.gov` is blocked in the cloud environment
 >   (CONNECT → 403, probed in four sessions). `taxonomy_cache.py` replays
 >   `graph.json`'s own resolution and is valid for rebuilds over a SUBSET of the

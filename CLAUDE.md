@@ -10,10 +10,10 @@ literature — nodes for microbial taxa and diseases, edges for "taxon X is **en
 in disease Y."
 
 Extraction is done and **the graph is built**: see `proj_2_attempt3/kg/`, published at
-<https://www.mohakprakash.com/KnightLabV2/>. **925 taxa** (72% resolved to NCBI
-taxids), **40 diseases**, **2,034 association edges** plus
-**723 taxonomic-containment links**, from **272 contributing
-papers** of a screened 326-paper corpus. It agrees with two hand-curated databases at
+<https://www.mohakprakash.com/KnightLabV2/>. **883 taxa** (76% resolved to NCBI
+taxids), **40 diseases**, **2,008 association edges** plus
+**713 taxonomic-containment links**, from **271 contributing
+papers** of a screened 325-paper corpus. It agrees with two hand-curated databases at
 **73.0%** (Disbiome) and **72.5%** (Peryton) on edge direction — but **do not quote those two
 numbers as independent replication**; see the caveat below.
 
@@ -212,8 +212,25 @@ Built from the 250-paper extraction. Published: <https://www.mohakprakash.com/Kn
   **ill-posed** — 145 of 211 contributing papers do both, and only 7 are contested-only. The
   comparison must be within a fixed taxon-disease pair.
 - 11 pairs are contradicted by **both** Disbiome and Peryton — the highest-value review targets.
-- 254 of 925 taxa never resolve to a taxid (16S clade labels like `[Eubacterium] ventriosum group`),
-  which now includes 100 deliberately-split SILVA rank placeholders (`Prevotella 9`).
+- ~~254 of 925 taxa never resolve to a taxid (16S clade labels)~~ — **that framing was wrong,
+  2026-09-11.** It is now **212 of 883**, and the difference was not clade labels at all: 12
+  concepts were split across two nodes by punctuation alone (the placeholder branch of
+  `norm_taxon` returns before the separator collapse added on 2026-09-08), and 33 labels are
+  **the papers' own misspellings** — `Fecalibacterium`, `Subdogranulum`, `Lachinospiracea` —
+  all 33 verified to occur verbatim in their source paper's text, so none is an extraction
+  error. Folded via a curated table with 13 recorded refusals, because edit distance would
+  have merged `Oscillospirales` into `Oscillospira` and undone the placeholder split. See
+  `proj_2_attempt3/kg/FINDINGS_taxon_spelling.md` and `taxon_typos.py`. What remains really
+  is clade labels (`SMB53`, `cc115`, `PAC000195_g`) plus real taxa absent from the cached
+  taxdump (`Anaerostignum`, `Mogibacteriaceae`).
+- **Only 23 of the 271 contributing papers have ever been screened for study design
+  (2026-09-11).** `maindata_screen.json` covers the 45 title-matched MAIN_DATA additions only;
+  the ~250 datasheet papers were never put through it. An animal-study prefilter validated at
+  **recall 15/15** against that gold set returns a null on the rest (13 flagged, all 13 genuine
+  human case-control), so no animal-only study is in the graph — but animal studies were only
+  15 of 22 drop reasons, and no-healthy-control / case-report / review remain unscreened across
+  248 papers. See `proj_2_attempt3/kg/FINDINGS_corpus_screen.md`. **This is the cheapest
+  unblocked lever left: no GPU, no taxdump, no new papers.**
 - ~~54 named species folded into their genus~~ — **FIXED 2026-09-08**, and it was never blocked on
   the taxdump. It was **24** species, not 54; the other 91 child folds must *not* be split
   (`Escherichia / Shigella` names two taxa, `Clostridium_XlVa` is a cluster label). The mapping comes

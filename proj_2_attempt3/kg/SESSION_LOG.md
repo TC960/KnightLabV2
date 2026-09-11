@@ -4,6 +4,140 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+## TL;DR — 2026-09-11
+
+**Tested.** Whether the 254 "unresolved 16S clade labels" really are all clade
+labels; whether the extractor or the papers own the misspellings in them;
+whether any animal study is in a graph that claims to be human case-control.
+
+**Survived.**
+- *The unresolved residue is not all clade labels.* 12 concepts were split
+  across two nodes by punctuation alone, and 33 labels are misspellings.
+  41 taxa merged, 925 -> 883.
+- *The misspellings are the PAPERS', not the extractor's* — 33/33 occur verbatim
+  in their own source paper's full text. A third independent fidelity signal,
+  depending on neither the compromised in-house gold nor the half-independent
+  curations.
+- *A screened-out rat FMT study was in the graph*, contributing 6 Alzheimer's
+  edges, because `filter_maindata.py` normalised titles more weakly than the
+  deduper does and the paper existed under two spellings.
+- *Four edges were unanimous only because of a spelling.* Bifidobacterium/PD,
+  Butyricicoccus/MS, Clostridia_UCG-014/PD, Verrucomicrobiota/AD are now
+  correctly contested.
+
+**Did not survive / null.**
+- *No further animal study is in the corpus.* An animal prefilter validated at
+  **recall 15/15** against the existing 45-paper screen flags 13 of 271 papers;
+  all 13 read out as genuine human case-control. Rule-of-three bound: miss rate
+  <= 20% at 95%.
+- *Agreement moved by nothing, for the sixth time.* Disbiome 73.0 -> 73.4%,
+  Peryton 72.5 -> 72.5%, both under the ~0.013 this corpus resolves and in
+  OPPOSITE directions. Recall is the honest gain: +1 pair against each database.
+- *A review-language filter* was built and discarded before use — 87 papers
+  flagged, almost all good studies citing a meta-analysis.
+- *Two of my own instruments were weaker than what they audited*: a regex that
+  demoted `Azospirillum sp. 47-25` from a real taxid (caught by the rebuild
+  diff), and a verbatim-quote check that failed 9 of 13 correct adjudications
+  because the agents paraphrased.
+
+**Also.** The graph passes a full internal-consistency audit (edge arithmetic,
+hierarchy acyclicity, paper table) with zero defects. `ftp.ncbi.nih.gov`
+re-probed, still CONNECT -> 403 (fifth session). The container again came up on
+a detached HEAD; `main` re-attached and pushed.
+
+**Single highest-value next step: screen the 248 papers nobody has ever
+screened.** Only 23 of 271 contributing papers have been checked for study
+design at all. This session's animal sweep closes ONE of the four failure modes
+(animal studies were 15 of 22 drops in the gold set); no healthy-control arm,
+case reports and reviews are uncovered and undetectable deterministically.
+Unlike everything else outstanding it needs no GPU, no taxdump and no new
+papers — 248 abstracts against four criteria.
+
+---
+
+# SUMMARY — session of 2026-09-11 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**Anomaly-hunted the graph's own structure, which is the method that has now
+worked three times. The 254 unresolved taxon labels, carried for three sessions
+as "16S clade labels", turned out to contain 12 punctuation-split concepts and
+33 misspellings; and following one merge's supporting quote ("AD Tg mice")
+surfaced a screened-out rat study in the graph and the fact that 248 of 271
+papers were never screened at all.** Write-ups:
+`FINDINGS_taxon_spelling.md`, `FINDINGS_corpus_screen.md`.
+
+The scheduled prompt's priority list was stale for the FOURTH session running;
+its four priorities were confirmed done and none were redone.
+
+### The spelling sweep
+
+`taxon_typos.py` re-derives the candidates, holds 33 curated folds and **13
+recorded refusals**, and verifies every fold against source full text.
+
+Curated rather than edit-distance on purpose: `Oscillospirales`/`Oscillospira`
+and `Thermoactinomycetales`/`Thermoactinomycetaceae` are distinct real taxa, and
+`Prevotella_9`, `Ruminococcus_1`, `Coprococcus_2` are ~1 edit from their parent
+genus and **deliberately held apart** — an edit-distance rule would have
+silently undone the placeholder split. `Corynebacteria` (the paper writes "class
+Corynebacteria", and no such class exists), bare `UCG-002`, and `lactic acid
+bacteria` (a physiological guild, not a taxon) are refused as undecidable from
+the text; the last is flagged as a node that probably should not exist.
+
+Root cause of the 12 splits: the placeholder branch of `norm_taxon` returns
+before reaching the separator collapse added on 2026-09-08, so it still keyed on
+`_`->space alone. Two of the twelve are **one paper reporting one taxon under
+two spellings in two figures**, i.e. a single study casting two votes on an edge.
+
+### The screening leak, and the gap behind it
+
+`filter_maindata.norm()` kept trailing punctuation where `dedup_rows` strips
+every non-alphanumeric; 13 papers exist under two such spellings. A `DROP_ANIMAL`
+paper was dropped under one spelling and survived under the other, and the
+deduper never saw the pair because the filter had already removed one copy. The
+guarding `assert seen == 45` counted screen entries matched rather than copies
+dropped, so it passed throughout.
+
+Behind it: **only 23 of 271 contributing papers have ever been screened.** The
+animal prefilter built to test this was validated at recall 15/15 / precision
+0.882 on the existing gold set BEFORE use, per the standing rule, and returns a
+null on the remaining corpus — 13 flagged, 13 genuine human case-control.
+
+### Two instrument failures worth remembering
+
+**My regex was looser than the concept.** Allowing a hyphen before a trailing
+number swallowed strain designations; `Azospirillum sp. 47-25` and
+`Lachnospiraceae bacterium MC-35` were demoted from real taxids to unresolved
+placeholders. Visible only as `n_taxa_resolved` falling by 2 in the rebuild diff.
+
+**The build is self-referential.** `taxonomy_cache.py` replays `graph.json`'s own
+resolution and `build_kg.py` overwrites `graph.json`, so the bad intermediate
+became the authority for the next build and silently changed two display labels.
+Any future correction must rebuild from a known-good graph, never from the
+output of a failed attempt. This hazard is general and will recur.
+
+**The verbatim-quote check on subagent output cried wolf.** 9 of 13 adjudications
+failed it; all 9 were correct and merely paraphrased. Worth running — it would
+catch a fabrication — but "quote not found" is not evidence of a wrong verdict.
+
+### Verified by executing
+
+Three consecutive rebuilds byte-identical (a fixed point); `kg.html`
+byte-identical on rebuild; `docs/index.html` re-synced; `verify_viz.py` 32/32 in
+Chromium; `taxon_typos.py --verify` 33/33; full internal-consistency audit of
+`graph.json` clean (edge arithmetic, hierarchy acyclicity, no orphan papers).
+
+### Sized but NOT decided — the disease-subtype question
+
+`Cognitive impairment` and `Mild cognitive impairment` share 18 decisive taxa and
+agree on direction for only **9 of them (50%)**, the 13.7th percentile of all 182
+disease pairs with >=5 shared taxa (mean 0.670, sd 0.186). `Spinal cord injury` /
+`Chronic traumatic complete SCI` sit at 0.600 (29th pct);
+`Intracerebral haemorrhage` / `Hypertensive ICH` at 0.800 (70th pct). So the
+subtype labels carry **no consistent extra similarity** over unrelated disease
+pairs, and merging them would manufacture contested edges rather than resolve
+them. This is a number for the standing human decision, not the decision.
+
+---
+
 ## TL;DR — 2026-09-10
 
 **Tested.** Whether any of our own papers is systematically inverted (the failure
