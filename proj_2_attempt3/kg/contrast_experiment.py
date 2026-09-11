@@ -78,6 +78,7 @@ OUT = os.path.join(HERE, "contrast_experiment.json")
 # silently overwrote the headline result, so the artifact on disk contradicted
 # the numbers being quoted from it.
 OUT_RAW = os.path.join(HERE, "contrast_experiment_rawspace.json")
+OUT_CLEAN = os.path.join(HERE, "contrast_experiment_clean.json")
 MODEL = "all-MiniLM-L6-v2"
 N_PERM = 10000
 MIN_SIDE = 2          # an edge needs this many papers on BOTH sides to contribute
@@ -107,6 +108,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--raw-space", action="store_true",
                     help="use the original vectors instead of the deconfounded ones")
+    ap.add_argument("--clean-only", action="store_true",
+                    help="keep only papers with a CONSISTENT stance across all their "
+                         "contested edges. within_between_decomposition.py shows only "
+                         "17%% of pairs compare two such papers -- the rest pit a paper "
+                         "against itself, since a paper reporting both directions "
+                         "carries an identical feature vector on both sides. This is "
+                         "the honest denominator: a study-level variable can only "
+                         "explain BETWEEN-study contrasts.")
     a = ap.parse_args()
 
     rows = [json.loads(l) for l in open(CHUNKS)]
@@ -165,6 +174,23 @@ def main():
         up, dn = sorted(set(up)), sorted(set(dn))
         if len(up) >= MIN_SIDE and len(dn) >= MIN_SIDE:
             edges.append((up, dn))
+    if a.clean_only:
+        stance = {}
+        for up, dn in edges:
+            for i in up:
+                stance.setdefault(i, set()).add("e")
+            for i in dn:
+                stance.setdefault(i, set()).add("d")
+        keep = {i for i, v in stance.items() if len(v) == 1}
+        filt = []
+        for up, dn in edges:
+            u2 = [i for i in up if i in keep]
+            d2 = [i for i in dn if i in keep]
+            if u2 and d2:
+                filt.append((u2, d2))
+        print(f"--clean-only: {len(keep)} of {len(stance)} papers have a consistent "
+              f"stance; {len(filt)} of {len(edges)} edges retain both sides")
+        edges = filt
     if not edges:
         raise SystemExit("no edges with enough papers on both sides")
     w = np.array([len(u) * len(d) for u, d in edges], float)
@@ -225,7 +251,7 @@ def main():
         print("  Report as 'no study-design concept separates the camps at n=303',\n"
               "  with that power statement attached -- not as 'there is no effect'.")
 
-    out_path = OUT if use_deconf else OUT_RAW
+    out_path = OUT_CLEAN if a.clean_only else (OUT if use_deconf else OUT_RAW)
     json.dump({"space": "deconfounded" if use_deconf else "raw",
                "n_edges": len(edges), "n_pairs": int(w.sum()),
                "n_perm": N_PERM, "results": res}, open(out_path, "w"), indent=1)
