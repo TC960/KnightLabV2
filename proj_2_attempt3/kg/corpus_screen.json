@@ -143,6 +143,33 @@
    "evidence": "We analysed 82 patients, 61 of whom exhibited MCI"
   }
  },
+ "full_text_adjudication": {
+  "graph_modified": false,
+  "n_adjudicated": 18,
+  "n_confirmed_drops": 0,
+  "note": "All 18 papers the abstract screen could not clear -- the 4 proposed drops and the 14 UNCLEAR -- were read against full text on 2026-09-11. All 18 have an explicit control group. Zero drops. The graph was NOT modified. The abstract screen is therefore a TRIAGE tool (249 -> 18 for human review), not a decision procedure: its drop list was 0-for-4 and its UNCLEAR list 0-for-14.",
+  "residual": "231 papers were called KEEP from an abstract and never re-read; the measured missed-drop rate on the (harder) blinded controls is 2/12 = 0.167. The count of remaining bad papers is consistent with zero but not proven to be zero.",
+  "verdicts": {
+   "Association of brain amyloidosis with pro-inflammatory gut bacterial taxa and peripheral inflammation markers in cognitively impaired elderly.": "KEEP",
+   "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota": "KEEP",
+   "Effect of Probiotics Supplementation on REM Sleep Behavior Disorder and Motor Symptoms in Parkinson's Disease: A Pilot Study.": "KEEP",
+   "Effects of a ketogenic and low-fat diet on the human metabolome, microbiome, and foodome in adults at risk for Alzheimer's disease.": "KEEP",
+   "Gut Microbiota and Fecal Metabolites Associated With Neurocognitive Impairment in HIV-Infected Population": "KEEP",
+   "Gut Microbiota and Metabolome Alterations Associated with Parkinson's Disease.": "KEEP",
+   "Gut commensal Agathobacter rectalis alleviates microglia-mediated neuroinflammation against pathogenesis of Alzheimer disease.": "KEEP",
+   "Gut microbiota composition during a 12-week intervention with delayed-release dimethyl fumarate in multiple sclerosis - a pilot trial.": "KEEP",
+   "Gut microbiota composition reflects disease progression, severity and outcome, and dysfunctional immune responses in patients with hypertensive intracerebral hemorrhage": "KEEP",
+   "Gut microbiota in dementia with Lewy bodies.": "KEEP",
+   "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.": "KEEP",
+   "Ocrelizumab transiently alters microbiota and modulates immune response depending on treatment outcome.": "KEEP",
+   "Oral Pathobiont Streptococcus Anginosus Is Enriched in the Gut of Stroke Patients and Predicts 2-Year Cardiovascular Outcome": "KEEP",
+   "Oral and gut microbial profiling in periodontitis and Parkinson's disease.": "KEEP",
+   "Potential Inflammatory Biomarkers and Differential Gut Microbiota in Cognitive Impairment After Ischemic Stroke": "KEEP",
+   "The altered TBI fecal microbiome is stable and functionally distinct": "KEEP",
+   "The nasal and gut microbiome in Parkinson's disease and idiopathic rapid eye movement sleep behavior disorder.": "KEEP",
+   "The relationship between the gut microbiome and mild cognitive impairment in patients without dementia: a cross-sectional study conducted in Japan.": "KEEP"
+  }
+ },
  "missing": [],
  "n_expected": 273,
  "n_missing": 0,

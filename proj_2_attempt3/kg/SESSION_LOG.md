@@ -57,12 +57,20 @@ the single case the work exists to catch. It returned 231 KEEP, 14 UNCLEAR and
 Corroboration worth keeping: **zero animal drops among the 249**, which agrees
 with the deterministic full-text sweep by an independent method.
 
-**Single highest-value next step: the same screen at FULL-TEXT resolution, on
-18 papers, not 249.** Abstracts nominate but cannot decide, and each nomination
-costs a full-text read anyway. The worklist is already written down — the 14
-UNCLEAR plus the 4 nominations, in `corpus_screen.json`. The animal axis is
-closed (deterministic, recall 15/15, corroborated); only no-healthy-control,
-case reports and reviews remain.
+**That 18-paper worklist was then done in-session too: 18/18 KEEP, zero drops,
+graph unchanged.** Every one names an explicit control group ("64 patients with
+ICH, 46 coronary heart disease controls, and 23 healthy controls"). So the
+never-screened half of the corpus shows no evidence of any of the four failure
+modes. Residual, stated honestly: 231 papers were called KEEP from an abstract
+and never re-read, against a measured 2/12 missed-drop rate on harder controls
+— the count of remaining bad papers is consistent with zero, not proven zero.
+The abstract screen's value was TRIAGE (249 -> 18 worth a human's time), not
+adjudication; it was 0-for-4 on drops and 0-for-14 on unclears.
+
+**Single highest-value next step is now back to: more papers, which needs a
+GPU — ask before spending.** The corpus-screening lever is spent. What is left
+below it is two human design decisions and reporting one Disbiome record
+upstream.
 
 ---
 

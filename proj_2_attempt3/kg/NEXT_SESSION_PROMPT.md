@@ -11,25 +11,11 @@
 >
 > **Genuinely open, in order:**
 >
-> 0. **NEW 2026-09-11 — full-text screen of 18 named papers. Top item, above
->    "more papers", because it needs nothing you do not have and the list is
->    already written.** Only 23 of 271 contributing papers had ever been checked
->    for study design. The 249 others were screened in-session at ABSTRACT level
->    and **the method failed its own validation**: 20/24 keep-vs-drop on blinded
->    controls, and it marked a known rat-FMT study KEEP. All 4 of its proposed
->    drops were read against full text and **none survived** — the graph was NOT
->    modified, correctly. Do not re-run the abstract screen; the extractor bug
->    found alongside it is fixed but does not touch the judgement problem.
->    **What is left is 18 papers at full-text resolution** — the 14 UNCLEAR plus
->    the 4 nominations, listed in `corpus_screen.json`. The animal axis is CLOSED
->    (deterministic, recall 15/15, corroborated independently by the LLM screen
->    finding zero animal papers). Only no-healthy-control, case reports and
->    reviews remain. See `FINDINGS_corpus_screen.md`. Expect agreement not to
->    move (the 22-paper screen moved it by nothing); justify on correctness.
->
-> 1. **More papers.** The binding constraint on every *statistical* question, and
->    has been for four sessions. 109 papers with ≥4 decisive observations sets
->    every MDE in the project. **Needs a GPU — ask before spending.**
+> 1. **More papers.** The binding constraint on every statistical question, and
+>    has been for five sessions. 109 papers with ≥4 decisive observations sets
+>    every MDE in the project. **Needs a GPU — ask before spending.** The
+>    corpus-screening alternative below is now SPENT, so this really is the top
+>    item again.
 > 2. **Two modelling calls that want a human, not a script.** Should a joint 16S
 >    signal from an assay that cannot separate two genera
 >    (`Escherichia-Shigella`) be attributed to one, split, or held apart as it now
@@ -40,6 +26,18 @@
 > 4. Re-run `adjudicate_db_conflicts.py` whenever the corpus grows.
 >
 > **Closed levers — do not reopen without new data:**
+>
+> - **Corpus screening for study design. DONE 2026-09-11, and it is clean.**
+>   Only 23 of 271 papers had ever been screened; the other 249 now have been.
+>   Animal studies: deterministic full-text filter, recall 15/15 on the existing
+>   gold set, and a null on the rest. The other three failure modes: an abstract
+>   screen with 24 blinded controls flagged 18 papers as droppable or unclear,
+>   **all 18 were read against full text, and all 18 are KEEP.** Zero papers
+>   removed. Do NOT re-run the abstract screen — it was 0-for-4 on drops and
+>   0-for-14 on unclears, and it marked a known rat-FMT study KEEP; its value is
+>   triage, not adjudication. Residual: 231 papers were cleared from an abstract
+>   and never re-read, against a measured 2/12 missed-drop rate, so "consistent
+>   with zero, not proven zero". See `FINDINGS_corpus_screen.md`.
 >
 > - **Paper-level covariates of discordance.** 24 variables tested across two
 >   passes (9 study-design, 15 wet-lab/bioinformatics), 24 nulls — and the

@@ -205,20 +205,69 @@ Two honest qualifications in opposite directions:
   zero-cue spans from 35 papers to 5 (1.8%). **The run reported here used the
   old extractor**, so its 14 UNCLEAR are inflated and a re-run would do better.
 
-### What to do instead
+### Part 4 — the 18-paper worklist was then done, and it is 18/18 KEEP
 
-1. **Do not re-run this screen expecting a cleaner answer.** The extractor fix
-   will reduce UNCLEAR, but it does not touch the false-positive rate, which is
-   a judgement problem and not an input problem — both false positives had
-   perfectly good abstracts.
-2. **The animal axis is solved** and needs nothing further: deterministic,
-   full-text, recall 15/15, and corroborated independently here.
-3. **The remaining three axes need full text, not abstracts.** That is what
-   produced the trustworthy `maindata_screen.json`. It is the expensive option
-   and it is the one that works.
-4. **The 14 UNCLEAR papers and the 4 nominations are a ready-made worklist** —
-   18 papers, full text, for a human or a stronger model. That is a tractable
-   afternoon, and it is recorded in `corpus_screen.json`.
+The screen's output was not left as a worklist. All 18 papers it could not
+clear — the 4 nominations plus the 14 UNCLEAR — were read against full text.
+**Every one has an explicit control group. Zero drops. The graph is unchanged.**
+
+The 14 UNCLEAR, each with the sentence that settles it:
+
+| paper | control group |
+|---|---|
+| Brain amyloidosis / gut taxa | "compared with both healthy controls" |
+| Probiotics in PD REM sleep | "Normal controls (15 samples)" |
+| Ketogenic vs low-fat diet, MCI | MCI vs "cognitively normal (CN) groups" |
+| Gut microbiota/metabolome in PD | "the PD group compared to the HC group" |
+| *Agathobacter rectalis* / AD | "between the AD group and HC group" |
+| Dimethyl fumarate in MS | "We included 165 healthy individuals as controls" |
+| ICH progression & severity | "64 patients with ICH, 46 coronary heart disease controls, and 23 healthy controls" |
+| Oral-gut-brain virulence in PD | "did not differ significantly from healthy controls (HC)" |
+| Ocrelizumab in MS | "approaching healthy control levels" |
+| *S. anginosus* in stroke | "189 acute stroke and 55 non-stroke subjects" |
+| Periodontitis and PD | "Healthy individuals (n = 17)" |
+| Post-stroke cognitive impairment | "healthy controls (HC, n=15)" |
+| TBI fecal microbiome | "a new cohort of control fecal samples were analyzed similarly" |
+| Nasal and gut microbiome in PD | "78 healthy controls" |
+
+The TBI paper was checked specifically because it names controls only three
+times: its 2015 control cohort could not be resampled, so it recruited a new
+one. Still a control group, still KEEP.
+
+### So the corpus is clean, with a stated residual
+
+**249 papers screened, 18 flagged for doubt, 18 cleared, 0 removed.** Combined
+with Part 2's deterministic animal null, the never-screened half of the corpus
+shows no evidence of the four failure modes.
+
+The residual is the screen's **missed-drop rate, not its false positives**: 231
+papers were called KEEP from an abstract and never re-read, and the measured
+miss rate on (harder) controls is 2/12 = 0.167. So the honest claim is that the
+number of remaining bad papers is **consistent with zero and not proven to be
+zero** — an undetected drop would have to be one the abstract screen called KEEP
+outright, which is the failure mode that hid the rat-FMT paper in Part 1.
+
+Closing that residual means reading 231 full texts, which is a different order
+of work and is not justified by anything found here.
+
+### What this cost, and what it bought
+
+The abstract screen's drop list was 0-for-4 and its UNCLEAR list 0-for-14. As a
+*decision* procedure it is worthless at this reliability. As a *triage* procedure
+it did exactly one useful thing: it reduced 249 papers to 18 that needed a human
+judgement, and 18 was small enough to actually do. That is the honest framing —
+**triage, not adjudication** — and it is how the tool should be used next time
+the corpus grows.
+
+The three lessons that generalise beyond this task:
+
+1. **The animal axis is solved deterministically** (recall 15/15, full text) and
+   should never be handed to an LLM again — the LLM missed the one case that
+   mattered while a regex caught all 15.
+2. **Blinded controls were the whole of the validation**, and they are what
+   stopped 2 good papers being deleted from a published graph.
+3. **Check the input before blaming the reader.** 12.9% of the spans handed to
+   the screen contained no abstract at all.
 
 ## What is still open, and it is not small
 
