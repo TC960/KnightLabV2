@@ -24,3 +24,6 @@ proj_2_attempt3/kg/_graph_*.json
 proj_2_attempt3/kg/_val_*.json
 proj_2_attempt3/kg/_inventory.md
 proj_2_attempt3/kg/_adjudication/
+
+# kg: screening batch scratch (regenerable: screen_corpus.py --prepare)
+proj_2_attempt3/kg/_screen248/
