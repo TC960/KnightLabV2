@@ -144,18 +144,56 @@ def prepare(workdir):
     print(f"{N_CONTROLS} blinded controls mixed in, seed {SEED}")
 
 
+def load_records(path):
+    """Parse one agent output, tolerating invalid JSON.
+
+    An `evidence` value is a verbatim span copied out of a paper, so it can
+    contain quote characters -- and one batch came back with
+    `"evidence": "..." and "..."`, two quoted spans joined by a bare `and`,
+    which is not JSON. All 34 records were present and correct; only the
+    serialisation was broken.
+
+    Rather than lose a batch to that, fall back to a field-wise recovery. It
+    reads only id / category / confidence, which is everything the verdict
+    depends on, and drops `evidence` for the recovered records -- so a
+    recovered batch is scored on its verdicts and contributes nothing to the
+    verbatim-span rate. Returns (records, recovered?).
+    """
+    raw = open(path).read()
+    try:
+        return json.load(open(path)), False
+    except json.JSONDecodeError:
+        pass
+    out = []
+    for block in re.split(r"\}\s*,?\s*\{", raw):
+        pid = re.search(r'"id"\s*:\s*"([^"]+)"', block)
+        cat = re.search(r'"category"\s*:\s*"([^"]+)"', block)
+        con = re.search(r'"confidence"\s*:\s*"([^"]+)"', block)
+        if pid and cat:
+            out.append({"id": pid.group(1), "category": cat.group(1),
+                        "confidence": con.group(1) if con else None,
+                        "evidence": None, "_recovered": True})
+    return out, True
+
+
 def score(workdir, out_json):
     key = json.load(open(os.path.join(workdir, "key.json")))
     verdicts = {}
     dupes = []
+    recovered = []
     for fn in sorted(os.listdir(workdir)):
         if not re.fullmatch(r"out\d+\.json", fn):
             continue
-        for r in json.load(open(os.path.join(workdir, fn))):
+        recs, was_recovered = load_records(os.path.join(workdir, fn))
+        if was_recovered:
+            recovered.append(f"{fn} ({len(recs)} records)")
+        for r in recs:
             pid = r.get("id")
             if pid in verdicts:
                 dupes.append(pid)
             verdicts[pid] = r
+    if recovered:
+        print(f"recovered from invalid JSON: {', '.join(recovered)}")
 
     missing = sorted(set(key) - set(verdicts))
     extra = sorted(set(verdicts) - set(key))
