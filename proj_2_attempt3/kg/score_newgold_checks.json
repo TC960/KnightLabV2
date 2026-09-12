@@ -1,0 +1,825 @@
+{
+  "A_old_gold_reproduction": {
+    "raw_rows": {
+      "n": 276,
+      "TP": 1751,
+      "FP": 1135,
+      "FN": 955,
+      "precision": 0.6067,
+      "recall": 0.6471,
+      "f1": 0.6263
+    },
+    "deduped": {
+      "n": 274,
+      "TP": 1747,
+      "FP": 1135,
+      "FN": 953,
+      "precision": 0.6062,
+      "recall": 0.647,
+      "f1": 0.6259
+    },
+    "findings_md_reported": {
+      "n": 227,
+      "f1": 0.596
+    }
+  },
+  "B_gold_drift": {
+    "kept": {
+      "n": 1913,
+      "we_predicted": 1594,
+      "rate": 0.8332
+    },
+    "added": {
+      "n": 820,
+      "we_predicted": 545,
+      "rate": 0.6646
+    },
+    "removed": {
+      "n": 647,
+      "we_predicted": 192,
+      "rate": 0.2968
+    },
+    "added_examples": [
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "enriched",
+        "taxon": "fusobacterium",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "enriched",
+        "taxon": "parabacteroides",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "enriched",
+        "taxon": "bacteroides",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "depleted",
+        "taxon": "clostridiales",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "depleted",
+        "taxon": "clostridia",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.51004",
+        "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+        "direction": "enriched",
+        "taxon": "clostridium cluster iv",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.51004",
+        "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+        "direction": "enriched",
+        "taxon": "parabacteroides",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.51004",
+        "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+        "direction": "enriched",
+        "taxon": "ruminococcus",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.51004",
+        "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+        "direction": "depleted",
+        "taxon": "butyricicoccus",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/acn3.51004",
+        "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+        "direction": "depleted",
+        "taxon": "gemmiger",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.51004",
+        "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+        "direction": "depleted",
+        "taxon": "roseburia",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/alz.70417",
+        "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+        "direction": "enriched",
+        "taxon": "bacteroidota",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/alz.70417",
+        "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+        "direction": "enriched",
+        "taxon": "patescibacteria",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/alz.70417",
+        "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+        "direction": "enriched",
+        "taxon": "fusobacteriota",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/alz.70417",
+        "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+        "direction": "enriched",
+        "taxon": "fusobacteriaceae",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/alz.70417",
+        "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+        "direction": "enriched",
+        "taxon": "gemellaceae",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/alz.70417",
+        "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+        "direction": "enriched",
+        "taxon": "bacteroidaceae",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/alz.70417",
+        "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+        "direction": "enriched",
+        "taxon": "gemella",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/alz.70417",
+        "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+        "direction": "depleted",
+        "taxon": "firmicutes a",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/alz.70417",
+        "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+        "direction": "depleted",
+        "taxon": "clostridiaceae",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/alz.70417",
+        "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+        "direction": "depleted",
+        "taxon": "pasteurellaceae",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/alz.70417",
+        "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+        "direction": "depleted",
+        "taxon": "dialisteraceae",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/alz.70417",
+        "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+        "direction": "depleted",
+        "taxon": "enterococcaceae",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/alz.70417",
+        "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+        "direction": "depleted",
+        "taxon": "ruminococcaceae",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/alz.70417",
+        "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+        "direction": "depleted",
+        "taxon": "ruminococcus",
+        "we_predicted": true
+      }
+    ],
+    "removed_examples": [
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "enriched",
+        "taxon": "anti-nmdar encephalitis: prevotella",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "enriched",
+        "taxon": "streptophyta",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "enriched",
+        "taxon": "lactobacillaceae",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "enriched",
+        "taxon": "lactobacillus",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "enriched",
+        "taxon": "gemellaceae",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "enriched",
+        "taxon": "gemellales",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "enriched",
+        "taxon": "coriobacteriaceae",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "enriched",
+        "taxon": "coriobacteriales",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "enriched",
+        "taxon": "actinomyces",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "enriched",
+        "taxon": "actinomycetaceae",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "depleted",
+        "taxon": "anti-nmdar encephalitis: bacteroides",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "depleted",
+        "taxon": "oceanospirillales",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "depleted",
+        "taxon": "halomonas",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "depleted",
+        "taxon": "halomonadaceae",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "depleted",
+        "taxon": "butyricimonas",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "depleted",
+        "taxon": "odoribacteraceae",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "depleted",
+        "taxon": "coprococcus",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "depleted",
+        "taxon": "porphyromonadaceae",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "depleted",
+        "taxon": "parabacteroides",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "depleted",
+        "taxon": "faecalibacterium",
+        "we_predicted": true
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "depleted",
+        "taxon": "ruminococcaceae",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.51004",
+        "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+        "direction": "enriched",
+        "taxon": "anaerotruncus",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.51004",
+        "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+        "direction": "enriched",
+        "taxon": "butyricicoccus",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/acn3.51004",
+        "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+        "direction": "enriched",
+        "taxon": "lactobacillus",
+        "we_predicted": false
+      },
+      {
+        "doi": "10.1002/alz.70844",
+        "title": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis.",
+        "direction": "enriched",
+        "taxon": "verrucomicrobiae",
+        "we_predicted": false
+      }
+    ]
+  },
+  "C_fn_text_presence": {
+    "n": 678,
+    "exact_in_text": 316,
+    "loose_in_text": 329,
+    "genus_in_text": 359,
+    "fn_rate_by_text_length": {
+      "20-50k": {
+        "fn": 128,
+        "gold": 941
+      },
+      "<20k": {
+        "fn": 352,
+        "gold": 556
+      },
+      ">=50k": {
+        "fn": 198,
+        "gold": 1236
+      }
+    },
+    "examples_not_in_text": [
+      {
+        "doi": "10.1002/ana.25982",
+        "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+        "direction": "enriched",
+        "taxon": "bacteroides fragilis",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 9977
+      },
+      {
+        "doi": "10.1002/ana.25982",
+        "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+        "direction": "enriched",
+        "taxon": "bifidobacterium",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 9977
+      },
+      {
+        "doi": "10.1002/ana.25982",
+        "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+        "direction": "enriched",
+        "taxon": "butyrivibrio",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 9977
+      },
+      {
+        "doi": "10.1002/ana.25982",
+        "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+        "direction": "enriched",
+        "taxon": "catabacter",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 9977
+      },
+      {
+        "doi": "10.1002/ana.25982",
+        "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+        "direction": "enriched",
+        "taxon": "christensenella",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 9977
+      },
+      {
+        "doi": "10.1002/ana.25982",
+        "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+        "direction": "enriched",
+        "taxon": "cloacibacillus",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 9977
+      },
+      {
+        "doi": "10.1002/ana.25982",
+        "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+        "direction": "enriched",
+        "taxon": "unclassified gammaproteobacteria",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 9977
+      },
+      {
+        "doi": "10.1002/ana.25982",
+        "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+        "direction": "enriched",
+        "taxon": "lactobacillus acidophilus",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 9977
+      },
+      {
+        "doi": "10.1002/ana.25982",
+        "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+        "direction": "enriched",
+        "taxon": "unclassified megasphaera",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 9977
+      },
+      {
+        "doi": "10.1002/ana.25982",
+        "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+        "direction": "enriched",
+        "taxon": "unclassified veillonella",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 9977
+      },
+      {
+        "doi": "10.1002/ana.25982",
+        "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+        "direction": "enriched",
+        "taxon": "unclassified coriobacteria",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 9977
+      },
+      {
+        "doi": "10.1002/ana.25982",
+        "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+        "direction": "enriched",
+        "taxon": "akkermansia muciniphila",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 9977
+      },
+      {
+        "doi": "10.1002/ana.25982",
+        "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+        "direction": "enriched",
+        "taxon": "clostridium saccharolyticum",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 9977
+      },
+      {
+        "doi": "10.1002/ana.26719",
+        "title": "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes.",
+        "direction": "enriched",
+        "taxon": "eisenbergiella tayi",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 63224
+      },
+      {
+        "doi": "10.1002/ana.26719",
+        "title": "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes.",
+        "direction": "enriched",
+        "taxon": "clostridium leptum",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 63224
+      },
+      {
+        "doi": "10.1002/mds.26307",
+        "title": "Colonic bacterial composition in Parkinson's disease.",
+        "direction": "enriched",
+        "taxon": "akkermansia",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 6145
+      },
+      {
+        "doi": "10.1002/mds.26307",
+        "title": "Colonic bacterial composition in Parkinson's disease.",
+        "direction": "enriched",
+        "taxon": "bacteroides",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 6145
+      },
+      {
+        "doi": "10.1002/mds.26307",
+        "title": "Colonic bacterial composition in Parkinson's disease.",
+        "direction": "enriched",
+        "taxon": "oscillospira",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 6145
+      },
+      {
+        "doi": "10.1002/mds.26307",
+        "title": "Colonic bacterial composition in Parkinson's disease.",
+        "direction": "enriched",
+        "taxon": "oxalobacteraceae",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 6145
+      },
+      {
+        "doi": "10.1002/mds.26307",
+        "title": "Colonic bacterial composition in Parkinson's disease.",
+        "direction": "depleted",
+        "taxon": "dorea",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 6145
+      },
+      {
+        "doi": "10.1002/mds.26307",
+        "title": "Colonic bacterial composition in Parkinson's disease.",
+        "direction": "depleted",
+        "taxon": "coprobacillaceae",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 6145
+      },
+      {
+        "doi": "10.1002/mds.27581",
+        "title": "Unraveling gut microbiota in Parkinson's disease and atypical parkinsonism.",
+        "direction": "enriched",
+        "taxon": "akkermansia",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 6544
+      },
+      {
+        "doi": "10.1002/mds.27581",
+        "title": "Unraveling gut microbiota in Parkinson's disease and atypical parkinsonism.",
+        "direction": "enriched",
+        "taxon": "bifidobacteriaceae",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 6544
+      },
+      {
+        "doi": "10.1002/mds.27581",
+        "title": "Unraveling gut microbiota in Parkinson's disease and atypical parkinsonism.",
+        "direction": "enriched",
+        "taxon": "coriobacteriaceae",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 6544
+      },
+      {
+        "doi": "10.1002/mds.27581",
+        "title": "Unraveling gut microbiota in Parkinson's disease and atypical parkinsonism.",
+        "direction": "enriched",
+        "taxon": "enterobacteriaceae",
+        "exact_in_text": false,
+        "loose_in_text": false,
+        "genus_in_text": false,
+        "text_chars": 6544
+      }
+    ]
+  },
+  "D_fp_sample": [
+    {
+      "doi": "10.1128/spectrum.01178-24",
+      "title": "Gut microbiota dysbiosis and neurological function recovery after intracerebral hemorrhage: an analysis of clinical samples",
+      "direction": "enriched",
+      "taxon": "corynebacterium",
+      "in_text": true,
+      "n_sentences": 1,
+      "has_stat_cue": true,
+      "sentence": "Prevotella , Peptoniphilus , Porphyromonas , and Campylobacter were all significantly overrepresented in patients with ICH at T1, whereas Enterococcus , Corynebacterium , Staphylococcus , Ralstonia , and Phenylobacterium were all significantly overrepresented in patients with ICH at T3 ( Fig."
+    },
+    {
+      "doi": "10.1038/s41531-022-00351-6",
+      "title": "Oral and gut dysbiosis leads to functional alterations in Parkinson's disease.",
+      "direction": "depleted",
+      "taxon": "abiotrophia",
+      "in_text": true,
+      "n_sentences": 1,
+      "has_stat_cue": true,
+      "sentence": "In the oral samples of PD patients, Lautropia , Abiotrophia , and Oscillibacter had lower LDA scores while Lactobacillus , Capnocytophaga , and Megasphaera had higher LDA scores than in HCs (Fig."
+    },
+    {
+      "doi": "10.1186/s13195-025-01769-9",
+      "title": "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology.",
+      "direction": "enriched",
+      "taxon": "holdemanella biformis",
+      "in_text": true,
+      "n_sentences": 1,
+      "has_stat_cue": false,
+      "sentence": "Differential taxonomic profiles included Holdemanella biformis , Fusicatenibacter saccharivorans , Clostridium symbiosum , Bifidobacterium pseudocatenulatum , and Anaerostipes hadrus , all of which exhibited the same direction of association in our study."
+    },
+    {
+      "doi": "10.3390/microorganisms11112628",
+      "title": "Integrated Macrogenomics and Metabolomics Explore Alterations and Correlation between Gut Microbiota and Serum Metabolites in Adult Epileptic Patients: A Pilot Study",
+      "direction": "enriched",
+      "taxon": "sfi21dt1virus",
+      "in_text": true,
+      "n_sentences": 1,
+      "has_stat_cue": false,
+      "sentence": "Among viral microorganisms, we found that, compared with the normal controls, the EP patients had a lower relative abundance of Myoviridae (family), Cba41virus (genus), Se1virus (genus) and Sp18virus (genus), as well as a higher relative abundance of Podoviridae (family), Marseilleviridae (family), Cbastvirus (genus), "
+    },
+    {
+      "doi": "10.1007/s11357-023-00799-1",
+      "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+      "direction": "enriched",
+      "taxon": "lactococcus virus c2",
+      "in_text": false,
+      "n_sentences": 0,
+      "has_stat_cue": false,
+      "sentence": null
+    },
+    {
+      "doi": "10.1007/s11357-023-00799-1",
+      "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+      "direction": "depleted",
+      "taxon": "bacillus phage phbc6a51",
+      "in_text": false,
+      "n_sentences": 0,
+      "has_stat_cue": false,
+      "sentence": null
+    },
+    {
+      "doi": "10.3389/fimmu.2022.869846",
+      "title": "Gut microbiota composition reflects disease progression, severity and outcome, and dysfunctional immune responses in patients with hypertensive intracerebral hemorrhage",
+      "direction": "enriched",
+      "taxon": "veillonella",
+      "in_text": true,
+      "n_sentences": 2,
+      "has_stat_cue": true,
+      "sentence": "As Tables S2A, B shows, Enterococcus , Parabacteroides , Streptococcus , Veillonella , Clostridium _innocuum_group , and Eubacterium_eligens_group differed significantly between the ICH and control groups after adjustment."
+    },
+    {
+      "doi": "10.1007/s12035-025-05194-9",
+      "title": "Decoding the Gut Microbiota in Multiple Sclerosis Using Nanopore Long-Read Sequencing: Insights into Disease Severity and Subtypes.",
+      "direction": "enriched",
+      "taxon": "ligilactobacillus salivarius",
+      "in_text": true,
+      "n_sentences": 1,
+      "has_stat_cue": false,
+      "sentence": "Meanwhile, the Relapsing group exhibited elevated levels of inflammation-associated species, including Blautia intestinalis , Blautia obeum , Blautia luti , Gemmiger formicilis , Ligilactobacillus salivarius , Blautia wexlerae , and Anaerobutyricum soehngenii ."
+    },
+    {
+      "doi": "10.1186/s12916-020-01607-9",
+      "title": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis.",
+      "direction": "enriched",
+      "taxon": "eubacterium eligens group",
+      "in_text": true,
+      "n_sentences": 4,
+      "has_stat_cue": true,
+      "sentence": "In addition, genera belonging to Enterobacteriaceae (such as Escherichia and Shigella) , Akkermansia , Eubacterium eligens group, Odoribacter , Bifidobacterium , Pseudoflavonifractor , and other genera belonging to Prevotellaceae and Ruminococcaceae, specifically Ruminococcaceae NK4A214 group and Ruminococcaceae UCG-01"
+    },
+    {
+      "doi": "10.3389/fneur.2022.834403",
+      "title": "Gut Microbiota and Targeted Biomarkers Analysis in Patients With Cognitive Impairment",
+      "direction": "enriched",
+      "taxon": "proteobacteria",
+      "in_text": true,
+      "n_sentences": 3,
+      "has_stat_cue": false,
+      "sentence": "Patients with CI had higher abundances of Actinobacteria and Proteobacteria but lower proportions of Bcateroidetes and Firmicutes vs."
+    },
+    {
+      "doi": "10.1007/s11357-023-00799-1",
+      "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+      "direction": "depleted",
+      "taxon": "alistipes putredinis",
+      "in_text": false,
+      "n_sentences": 0,
+      "has_stat_cue": false,
+      "sentence": null
+    },
+    {
+      "doi": "10.3389/fcimb.2022.942460",
+      "title": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients",
+      "direction": "enriched",
+      "taxon": "atopobium",
+      "in_text": true,
+      "n_sentences": 1,
+      "has_stat_cue": false,
+      "sentence": "In the taxa of subgingival bacteria, 13 taxa were more abundant in the moderate AD group, including the phylum Firmicutes and its corresponding class Erysipelotrichia, the order Erysipelotrichales, the Lactobacillaceae and Erysipelotrichaceae families, the genus Anaeroglobus , the genus Lactobacillus , the genus Stomat"
+    },
+    {
+      "doi": "10.1080/19490976.2025.2506843",
+      "title": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.",
+      "direction": "enriched",
+      "taxon": "e. coli",
+      "in_text": true,
+      "n_sentences": 0,
+      "has_stat_cue": false,
+      "sentence": null
+    },
+    {
+      "doi": "10.1007/s11357-023-00799-1",
+      "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+      "direction": "enriched",
+      "taxon": "lactococcus phage bil309",
+      "in_text": false,
+      "n_sentences": 0,
+      "has_stat_cue": false,
+      "sentence": null
+    },
+    {
+      "doi": "10.1007/s12035-024-04271-9",
+      "title": "Multi-omics Analysis Reveals Key Gut Microbiota and Metabolites Closely Associated with Huntington's Disease.",
+      "direction": "depleted",
+      "taxon": "phocaeicola",
+      "in_text": true,
+      "n_sentences": 1,
+      "has_stat_cue": false,
+      "sentence": "At the genus level, the presence of Bacteroides, Faecalibacterium, Parabacteroides, Alistipes, Dialister, and Christensenella was higher in HD patients, while the abundance of Lachnospira, Roseburia, Clostridium, Ruminococcus, Blautia, Butyricicoccus, Agathobaculum, Phocaeicola, Coprococcus, and Fusicatenibacter decrea"
+    }
+  ],
+  "D_fp_overall": {
+    "n": 722,
+    "in_text": 674
+  }
+}

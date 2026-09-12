@@ -1,0 +1,1565 @@
+{
+  "metric": "TF-IDF char_wb n-gram(2,4) cosine >= 0.5, micro-averaged (identical to eval-v1/eval-v2 --metric char)",
+  "reconciliation": {
+    "gold_dois": 334,
+    "joined_to_datasheet": 334,
+    "joined_to_extraction": 296,
+    "no_extraction": 38,
+    "blank_gold_excluded": 36,
+    "scoreable": 260,
+    "dup_extraction_rows_dropped": 13,
+    "no_extraction_detail": [
+      {
+        "doi": "10.1002/ana.26454",
+        "title": "Gut Microbiota in Monozygotic Twins Discordant for Parkinson's Disease.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1002/jpen.2370",
+        "title": "Effect of enteral nutrition on the intestinal microbiome and risk of death in ischemic stroke patients",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1002/mds.26069",
+        "title": "Gut microbiota are related to Parkinson's disease and clinical phenotype.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1002/mds.26942",
+        "title": "Parkinson's disease and Parkinson's disease medications have distinct signatures of the gut microbiome.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1007/s12275-018-8327-5",
+        "title": "Astragaloside IV reversed the autophagy and oxidative stress induced by the intestinal microbiota of AIS in mice",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.brainres.2017.04.019",
+        "title": "Gut microbiota in Parkinson disease in a northern German cohort.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.brainres.2024.149367",
+        "title": "Altered gut microbiome profiles in epileptic children are associated with spectrum of anti-seizure medication responsiveness",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.cell.2022.08.021",
+        "title": "Gut microbiome of multiple sclerosis patients and paired household healthy controls reveal associations with disease risk and course.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.cmet.2024.10.006",
+        "title": "Microbiota-derived lysophosphatidylcholine alleviates Alzheimer's disease pathology via suppressing ferroptosis.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.eplepsyres.2018.09.013",
+        "title": "Altered composition of the gut microbiome in patients with drug-resistant epilepsy",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.jneuroim.2019.577126",
+        "title": "Dysbiosis of gut microbiota in patients with neuromyelitis optica spectrum disorders: A cross sectional study",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.jneuroim.2023.578087",
+        "title": "The role of multiple sclerosis therapies on the dynamic of human gut microbiota.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.micpath.2021.105187",
+        "title": "Alterations of gut microbiota and metabolome with Parkinson's disease.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.msard.2021.103354",
+        "title": "Molecular characterization of the gut microbiome in egyptian patients with remitting relapsing multiple sclerosis.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.msard.2023.104619",
+        "title": "Gut microbiota dysbiosis associated with different types of demyelinating optic neuritis in patients",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.neulet.2019.134297",
+        "title": "Alteration of the fecal microbiota in North-Eastern Han Chinese population with sporadic Parkinson's disease.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.neurobiolaging.2017.09.023",
+        "title": "The fecal microbiome of ALS patients.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.neuropharm.2023.109566",
+        "title": "Differences in the gut microbiome across typical ageing and in Parkinson's disease.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.nrleng.2020.05.006",
+        "title": "The influence of interferon \u03b2-1b on gut microbiota composition in patients with multiple sclerosis.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1016/j.numecd.2021.08.045",
+        "title": "Compositional and functional alterations of gut microbiota in patients with stroke",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1039/d2fo00552b",
+        "title": "Urolithins: potential biomarkers of gut dysbiosis and disease stage in Parkinson's patients.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1080/1028415x.2023.2242121",
+        "title": "The gut microbial signatures of patients with lacunar cerebral infarction",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1089/neu.2019.6688",
+        "title": "Altered Fecal Microbiome Years after Traumatic Brain Injury",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1093/ajcn/nqab078",
+        "title": "Diet quality, gut microbiota, and microRNAs associated with mild cognitive impairment in middle-aged and elderly Chinese population.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1097/htr.0000000000000615",
+        "title": "Microbial Diversity and Community Structures Among Those With Moderate to Severe TBI: A United States-Veteran Microbiome Project Study",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1126/scitranslmed.abo2984",
+        "title": "Gut microbiome composition may be an indicator of preclinical Alzheimer's disease.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1177/13872877251372522",
+        "title": "Role of Ruminococcus gnavus in the elderly with cognitive impairment: A case-control study and an animal experiment.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1177/15459683241252608",
+        "title": "Relationship Between the Gut Microbiota and Neurological Deficits in Patients With Cerebral Ischemic Stroke",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.1177/1877718x251354931",
+        "title": "Differences in intestinal microbiota in Parkinson's disease and isolated REM sleep behavior disorder.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.2217/fmb-2019-0336",
+        "title": "The impact of intestinal microbiota on weight loss in Parkinson's disease patients: a pilot study.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.3233/jad-180176",
+        "title": "Gut Microbiota is Altered in Patients with Alzheimer\u2019s Disease",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.3233/jad-220076",
+        "title": "Intestinal Microflora Changes in Patients with Mild Alzheimer\u2019s Disease in a Chinese Cohort",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.3233/jad-220101",
+        "title": "Crosstalk Between Gut Microflora and Vitamin D Receptor SNPs Are Associated with the Risk of Amnestic Mild Cognitive Impairment in a Chinese Elderly Population.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.3233/jad-220176",
+        "title": "Alteration of Gut Microbiota in Alzheimer\u2019s Disease and Their Relation to the Cognitive Impairment",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.3233/jpd-223500",
+        "title": "Parkinson\u2019s Disease and the Gut Microbiome in Rural California",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "10.5414/cp204285",
+        "title": "Changes in the intestinal microbiota of\u00a0patients with Parkinson's disease and their clinical significance.",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "pmid/31497202",
+        "title": "Dysbiosis of gut microbiota is associated with serum lipid profiles in male patients with chronic traumatic cervical spinal cord injury",
+        "reason": "no full text scraped"
+      },
+      {
+        "doi": "pmid/37083652",
+        "title": "Ischemic Stroke and Dysbiosis of Gut Microbiota: Changes to LPS Levels and Effects on Functional Outcomes",
+        "reason": "no full text scraped"
+      }
+    ],
+    "blank_gold_papers": [
+      {
+        "doi": "10.1002/alz.13007",
+        "title": "Effects of a ketogenic and low-fat diet on the human metabolome, microbiome, and foodome in adults at risk for Alzheimer's disease."
+      },
+      {
+        "doi": "10.1002/ana.25244",
+        "title": "A probiotic modulates the microbiome and immunity in multiple sclerosis."
+      },
+      {
+        "doi": "10.1016/j.bbi.2025.106138",
+        "title": "Microbiota-gut-brain axis dysregulation in Alzheimer's disease and its modulation through probiotic supplementation."
+      },
+      {
+        "doi": "10.1016/j.dib.2025.111778",
+        "title": "Dataset on neuropsychological profile and microbiota composition in cognitively unimpaired elderly and Alzheimer's patients."
+      },
+      {
+        "doi": "10.1016/j.ebiom.2025.105721",
+        "title": "Faecal mucoprotein MUC2 is decreased in multiple sclerosis and is associated with mucin degrading bacteria."
+      },
+      {
+        "doi": "10.1016/j.nut.2021.111524",
+        "title": "Relationship between the Japanese-style diet, gut microbiota, and dementia: A cross-sectional study."
+      },
+      {
+        "doi": "10.1038/s41380-025-02973-7",
+        "title": "Metagenomic analysis characterizes stage-specific gut microbiota in Alzheimer's disease."
+      },
+      {
+        "doi": "10.1038/s41586-019-1443-5",
+        "title": "Potential roles of gut microbiome and metabolites in modulating ALS in mice."
+      },
+      {
+        "doi": "10.1038/s41598-023-43217-4",
+        "title": "Genetic risk score in multiple sclerosis is associated with unique gut microbiome."
+      },
+      {
+        "doi": "10.1038/s41598-024-74975-4",
+        "title": "Mycobacterium avium subspecies paratuberculosis (MAP) infection, and its impact on gut microbiome of individuals with multiple sclerosis."
+      },
+      {
+        "doi": "10.1080/19490976.2025.2526133",
+        "title": "APOE4 genotype shapes the role of dietary fibers in cognitive health through gut microbiota changes."
+      },
+      {
+        "doi": "10.1080/20002297.2024.2331264",
+        "title": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+      },
+      {
+        "doi": "10.1080/21678421.2020.1772825",
+        "title": "Progression and survival of patients with motor neuron disease relative to their fecal microbiota."
+      },
+      {
+        "doi": "10.1097/mcg.0000000000001042",
+        "title": "Potential Role of Gut Microbiota in ALS Pathogenesis and Possible Novel Therapeutic Strategies."
+      },
+      {
+        "doi": "10.1111/ene.13398",
+        "title": "More than constipation - bowel symptoms in Parkinson's disease and their connection to gut microbiota."
+      },
+      {
+        "doi": "10.1177/17562864211035657",
+        "title": "Gut bacterial microbiota in patients with myasthenia gravis: results from the MYBIOM study"
+      },
+      {
+        "doi": "10.1186/s12883-024-03926-3",
+        "title": "Quantitative proteomics and multi-omics analysis identifies potential biomarkers and the underlying pathological molecular networks in Chinese patients with multiple sclerosis."
+      },
+      {
+        "doi": "10.1186/s13024-021-00427-6",
+        "title": "Relationships of gut microbiota, short-chain fatty acids, inflammation, and the gut barrier in Parkinson's disease."
+      },
+      {
+        "doi": "10.1212/nxi.0000000000000632",
+        "title": "Normal gut microbiome in NMDA receptor encephalitis."
+      },
+      {
+        "doi": "10.1212/wnl.0000000000013225",
+        "title": "Association of Fecal and Plasma Levels of Short-Chain Fatty Acids With Gut Microbiota and Clinical Severity in Patients With Parkinson Disease."
+      },
+      {
+        "doi": "10.14283/jpad.2024.19",
+        "title": "Education as Risk Factor of Mild Cognitive Impairment: The Link to the Gut Microbiome."
+      },
+      {
+        "doi": "10.14814/phy2.13443",
+        "title": "Gut inflammation and dysbiosis in human motor neuron disease."
+      },
+      {
+        "doi": "10.18632/aging.206200",
+        "title": "Exploring the role of acylated ghrelin and gut microbiome in delineating cognitive health in the elderly"
+      },
+      {
+        "doi": "10.2147/ndt.s507156",
+        "title": "Potential Inflammatory Biomarkers and Differential Gut Microbiota in Cognitive Impairment After Ischemic Stroke"
+      },
+      {
+        "doi": "10.2147/ndt.s513364",
+        "title": "Altered Gut Microbiota and Plasma Metabolome Profiles Characterize Depression Individuals with Ischemic Stroke: A Comparative Analysis"
+      },
+      {
+        "doi": "10.3233/jad-215653",
+        "title": "Relationship Between Plasma Lipopolysaccharides, Gut Microbiota, and Dementia: A Cross-Sectional Study."
+      },
+      {
+        "doi": "10.3233/jpd-223179",
+        "title": "Alteration of Gut Microbial Metabolites in the Systemic Circulation of Patients with Parkinson's Disease."
+      },
+      {
+        "doi": "10.3389/fcimb.2022.827129",
+        "title": "Integrated Traditional Chinese Medicine Improves Functional Outcome in Acute Ischemic Stroke: From Clinic to Mechanism Exploration With Gut Microbiota"
+      },
+      {
+        "doi": "10.3389/fcimb.2025.1594152",
+        "title": "Anxiety-related gut microbiota alterations in Parkinson's disease: distinct associations compared to healthy individuals."
+      },
+      {
+        "doi": "10.3389/fnagi.2023.1266955",
+        "title": "Effects of the multidomain intervention with nutritional supplements on cognition and gut microbiome in early symptomatic Alzheimer's disease: a randomized controlled trial"
+      },
+      {
+        "doi": "10.3389/fnins.2022.792996",
+        "title": "Signature of Alzheimer's Disease in Intestinal Microbiome: Results From the AlzBiom Study"
+      },
+      {
+        "doi": "10.3390/brainsci12060739",
+        "title": "Not just a Snapshot: An Italian Longitudinal Evaluation of Stability of Gut Microbiota Findings in Parkinson's Disease."
+      },
+      {
+        "doi": "10.3390/cells9020376",
+        "title": "Interventional Influence of the Intestinal Microbiome Through Dietary Intervention and Bowel Cleansing Might Improve Motor Symptoms in Parkinson's Disease."
+      },
+      {
+        "doi": "10.3390/microorganisms12102046",
+        "title": "Gut Microbiota Alterations in Alzheimer's Disease: Relation with Cognitive Impairment and Mediterranean Lifestyle"
+      },
+      {
+        "doi": "10.3390/nu16132061",
+        "title": "Association of Methyl Donor Nutrients' Dietary Intake and Cognitive Impairment in the Elderly Based on the Intestinal Microbiome."
+      },
+      {
+        "doi": "10.7555/jbr.36.20220198",
+        "title": "Gut microbiota links with cognitive impairment in amyotrophic lateral sclerosis: A multi-omics study."
+      }
+    ]
+  },
+  "scores_new_gold": {
+    "enriched": {
+      "n": 260,
+      "TP": 1173,
+      "FP": 413,
+      "FN": 362,
+      "precision": 0.7396,
+      "recall": 0.7642,
+      "f1": 0.7517
+    },
+    "depleted": {
+      "n": 260,
+      "TP": 983,
+      "FP": 309,
+      "FN": 316,
+      "precision": 0.7608,
+      "recall": 0.7567,
+      "f1": 0.7588
+    },
+    "combined": {
+      "n": 260,
+      "TP": 2156,
+      "FP": 722,
+      "FN": 678,
+      "precision": 0.7491,
+      "recall": 0.7608,
+      "f1": 0.7549
+    }
+  },
+  "dedup_sensitivity_f1_last": 0.7513,
+  "like_for_like": {
+    "n": 253,
+    "old_gold": {
+      "enriched": {
+        "n": 253,
+        "TP": 934,
+        "FP": 632,
+        "FN": 503,
+        "precision": 0.5964,
+        "recall": 0.65,
+        "f1": 0.622
+      },
+      "depleted": {
+        "n": 253,
+        "TP": 793,
+        "FP": 478,
+        "FN": 341,
+        "precision": 0.6239,
+        "recall": 0.6993,
+        "f1": 0.6595
+      },
+      "combined": {
+        "n": 253,
+        "TP": 1727,
+        "FP": 1110,
+        "FN": 844,
+        "precision": 0.6087,
+        "recall": 0.6717,
+        "f1": 0.6387
+      }
+    },
+    "new_gold": {
+      "enriched": {
+        "n": 253,
+        "TP": 1166,
+        "FP": 400,
+        "FN": 356,
+        "precision": 0.7446,
+        "recall": 0.7661,
+        "f1": 0.7552
+      },
+      "depleted": {
+        "n": 253,
+        "TP": 963,
+        "FP": 308,
+        "FN": 296,
+        "precision": 0.7577,
+        "recall": 0.7649,
+        "f1": 0.7613
+      },
+      "combined": {
+        "n": 253,
+        "TP": 2129,
+        "FP": 708,
+        "FN": 652,
+        "precision": 0.7504,
+        "recall": 0.7656,
+        "f1": 0.7579
+      }
+    },
+    "delta_f1": 0.1192,
+    "gold_taxa_old": 2419,
+    "gold_taxa_new": 2682
+  },
+  "permutation": {
+    "observed_f1": 0.7549,
+    "null_mean": 0.0967,
+    "null_sd": 0.0077,
+    "null_max": 0.1226,
+    "p": 0.001,
+    "n_perm": 1000
+  },
+  "error_analysis": {
+    "counts": {
+      "direction_flip": 19,
+      "rank_mismatch": 8,
+      "false_positive": 695,
+      "false_negative": 653,
+      "total_metric_charges": 1402
+    },
+    "shares": {
+      "direction_flip": 0.0271,
+      "rank_mismatch": 0.0114,
+      "false_positive": 0.4957,
+      "false_negative": 0.4658
+    },
+    "fn_rank_profile": {
+      "genus": 334,
+      "species": 92,
+      "family": 77,
+      "phylum": 55,
+      "class": 32,
+      "order": 26,
+      "no rank": 3,
+      "domain": 1
+    },
+    "fn_unresolved": 33,
+    "fn_in_text": 295,
+    "fn_total": 653,
+    "gold_rank_profile": {
+      "genus": 1459,
+      "species": 415,
+      "family": 404,
+      "phylum": 172,
+      "unresolved": 108,
+      "class": 85,
+      "order": 80,
+      "no rank": 6,
+      "clade": 2,
+      "domain": 1,
+      "kingdom": 1
+    },
+    "fp_in_text": 647,
+    "fp_rank_profile": {
+      "genus": 318,
+      "species": 131,
+      "family": 109,
+      "unresolved": 55,
+      "phylum": 45,
+      "order": 18,
+      "class": 13,
+      "no rank": 5,
+      "subspecies": 1
+    },
+    "examples": {
+      "direction_flip": [
+        {
+          "doi": "10.1007/s00415-021-10657-9",
+          "title": "The impact of device-assisted therapies on the gut microbiome in Parkinson's disease.",
+          "taxon_pred": "parabacteroides",
+          "taxon_gold": "bacteroidetes",
+          "we_said": "enriched",
+          "gold_says": "depleted",
+          "sim": 0.545
+        },
+        {
+          "doi": "10.1038/s41380-023-02216-7",
+          "title": "Transmission of Alzheimer's disease-associated microbiota dysbiosis and its impact on cognitive function: evidence from mice and patients.",
+          "taxon_pred": "bilophila wadsworthia",
+          "taxon_gold": "bilophila wadsworthia",
+          "we_said": "enriched",
+          "gold_says": "depleted",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.1038/s41380-023-02216-7",
+          "title": "Transmission of Alzheimer's disease-associated microbiota dysbiosis and its impact on cognitive function: evidence from mice and patients.",
+          "taxon_pred": "parabacteroides distasonis",
+          "taxon_gold": "parabacteroides distasonis",
+          "we_said": "enriched",
+          "gold_says": "depleted",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.1038/s41531-022-00395-8",
+          "title": "Fecal microbiome alterations in treatment-naive de novo Parkinson's disease.",
+          "taxon_pred": "christensenellaceae",
+          "taxon_gold": "christensenellaceae",
+          "we_said": "enriched",
+          "gold_says": "depleted",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.1038/s41598-022-19393-0",
+          "title": "Study of gut microbiota alterations in Alzheimer's dementia patients from Kazakhstan.",
+          "taxon_pred": "actinobacteria",
+          "taxon_gold": "actinobacteria",
+          "we_said": "enriched",
+          "gold_says": "depleted",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.1038/s41598-023-27586-4",
+          "title": "Altered gut microbiota in individuals with episodic and chronic migraine",
+          "taxon_pred": "catenibacterium",
+          "taxon_gold": "catenibacterium",
+          "we_said": "enriched",
+          "gold_says": "depleted",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.1128/msphere.00590-24",
+          "title": "Alterations of fecal microbiota and plasma metabolome in patients with Parkinson's disease with rapid eye movement sleep disorder.",
+          "taxon_pred": "fusobacterium",
+          "taxon_gold": "fusobacterium",
+          "we_said": "enriched",
+          "gold_says": "depleted",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.1186/s13195-025-01769-9",
+          "title": "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology.",
+          "taxon_pred": "bacteroides intestinalis",
+          "taxon_gold": "bacteroides intestinalis",
+          "we_said": "enriched",
+          "gold_says": "depleted",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.1186/s13195-025-01769-9",
+          "title": "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology.",
+          "taxon_pred": "fusicatenibacter saccharivorans",
+          "taxon_gold": "fusicatenibacter saccharivorans",
+          "we_said": "enriched",
+          "gold_says": "depleted",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.1186/s13195-025-01769-9",
+          "title": "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology.",
+          "taxon_pred": "bifidobacterium pseudocatenulatum",
+          "taxon_gold": "bifidobacterium pseudocatenulatum",
+          "we_said": "enriched",
+          "gold_says": "depleted",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.1371/journal.pone.0276598",
+          "title": "Uncovering the characteristics of the gut microbiota in patients with acute ischemic stroke and phlegm-heat syndrome",
+          "taxon_pred": "olsenella",
+          "taxon_gold": "olsenella",
+          "we_said": "depleted",
+          "gold_says": "enriched",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.3389/fcimb.2022.942460",
+          "title": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients",
+          "taxon_pred": "proteobacteria",
+          "taxon_gold": "proteobacteria",
+          "we_said": "depleted",
+          "gold_says": "enriched",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.3389/fcimb.2022.942460",
+          "title": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients",
+          "taxon_pred": "gammaproteobacteria",
+          "taxon_gold": "proteobacteria",
+          "we_said": "depleted",
+          "gold_says": "enriched",
+          "sim": 0.7
+        },
+        {
+          "doi": "10.3389/fnagi.2022.881872",
+          "title": "Nutritional Intake and Gut Microbiome Composition Predict Parkinson's Disease.",
+          "taxon_pred": "candidatus soleaferre",
+          "taxon_gold": "candidatus soleaferre",
+          "we_said": "depleted",
+          "gold_says": "enriched",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.3389/fnagi.2022.881872",
+          "title": "Nutritional Intake and Gut Microbiome Composition Predict Parkinson's Disease.",
+          "taxon_pred": "faecalibacterium sp. uba1819",
+          "taxon_gold": "faecalibacterium sp. uba1819",
+          "we_said": "depleted",
+          "gold_says": "enriched",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.3389/fneur.2020.00137",
+          "title": "Gut Microbiota Altered in Mild Cognitive Impairment Compared With Normal Cognition in Sporadic Parkinson's Disease.",
+          "taxon_pred": "ruminococcus",
+          "taxon_gold": "ruminococcus",
+          "we_said": "depleted",
+          "gold_says": "enriched",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.3390/ijms241915024",
+          "title": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet.",
+          "taxon_pred": "tyzzerella 4",
+          "taxon_gold": "tyzzerella 4",
+          "we_said": "enriched",
+          "gold_says": "depleted",
+          "sim": 1.0
+        },
+        {
+          "doi": "10.55730/1300-0144.5825",
+          "title": "Is gut microbiota of patients with ALS different from that of healthy individuals?",
+          "taxon_pred": "streptococcaceae",
+          "taxon_gold": "peptococcaceae",
+          "we_said": "enriched",
+          "gold_says": "depleted",
+          "sim": 0.617
+        },
+        {
+          "doi": "10.55730/1300-0144.5825",
+          "title": "Is gut microbiota of patients with ALS different from that of healthy individuals?",
+          "taxon_pred": "peptococcacceae",
+          "taxon_gold": "peptococcaceae",
+          "we_said": "enriched",
+          "gold_says": "depleted",
+          "sim": 0.826
+        }
+      ],
+      "rank_mismatch": [
+        {
+          "doi": "10.1002/acn3.50874",
+          "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+          "direction": "depleted",
+          "predicted": "faecalibacterium",
+          "pred_rank": "genus",
+          "gold": "clostridiales",
+          "gold_rank": "order"
+        },
+        {
+          "doi": "10.1007/s00415-021-10657-9",
+          "title": "The impact of device-assisted therapies on the gut microbiome in Parkinson's disease.",
+          "direction": "depleted",
+          "predicted": "dorea",
+          "pred_rank": "genus",
+          "gold": "firmicutes",
+          "gold_rank": "phylum"
+        },
+        {
+          "doi": "10.1155/2024/9741811",
+          "title": "Inflammatory Manifestations Associated With Gut Dysbiosis in Alzheimer's Disease.",
+          "direction": "depleted",
+          "predicted": "actinobacteria",
+          "pred_rank": "phylum",
+          "gold": "collinsella",
+          "gold_rank": "genus"
+        },
+        {
+          "doi": "10.1186/s12866-019-1685-2",
+          "title": "Primary progressive multiple sclerosis in a Russian cohort: relationship with gut bacterial diversity.",
+          "direction": "enriched",
+          "predicted": "bilophila wadsworthia",
+          "pred_rank": "species",
+          "gold": "desulfovibrionaceae",
+          "gold_rank": "family"
+        },
+        {
+          "doi": "10.1371/journal.pone.0137429",
+          "title": "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters.",
+          "direction": "depleted",
+          "predicted": "clostridia cluster xiva",
+          "pred_rank": "class",
+          "gold": "anaerostipes",
+          "gold_rank": "genus"
+        },
+        {
+          "doi": "10.3389/fcimb.2022.999627",
+          "title": "Multi-omics reveals specific host metabolism-microbiome associations in intracerebral hemorrhage",
+          "direction": "depleted",
+          "predicted": "firmicutes",
+          "pred_rank": "phylum",
+          "gold": "blautia",
+          "gold_rank": "genus"
+        },
+        {
+          "doi": "10.3390/microorganisms11112628",
+          "title": "Integrated Macrogenomics and Metabolomics Explore Alterations and Correlation between Gut Microbiota and Serum Metabolites in Adult Epileptic Patients: A Pilot Study",
+          "direction": "depleted",
+          "predicted": "firmicutes",
+          "pred_rank": "phylum",
+          "gold": "roseburia intestinalis",
+          "gold_rank": "species"
+        },
+        {
+          "doi": "10.3390/microorganisms13102350",
+          "title": "Differential Patterns of Gut and Oral Microbiomes in Hispanic Individuals with Cognitive Impairment.",
+          "direction": "depleted",
+          "predicted": "ruminococcus",
+          "pred_rank": "genus",
+          "gold": "clostridia",
+          "gold_rank": "class"
+        }
+      ],
+      "true_fp": [
+        {
+          "doi": "10.1002/acn3.50874",
+          "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+          "taxon": "prevotella_6",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/acn3.50874",
+          "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+          "taxon": "bifidobacterium",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/ana.26719",
+          "title": "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes.",
+          "taxon": "e. tayi",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/ana.26719",
+          "title": "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes.",
+          "taxon": "c. leptum",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/ana.26719",
+          "title": "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes.",
+          "taxon": "hungatella hathewyi",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/ana.26719",
+          "title": "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes.",
+          "taxon": "roseburia intestinalis",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/ana.26719",
+          "title": "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes.",
+          "taxon": "faecalibacterium prausnitzii",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/hep4.1954",
+          "title": "Distinct responsiveness to rifaximin in patients with hepatic encephalopathy depends on functional gut microbial species",
+          "taxon": "ruminococcus gnavus",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/mds.27105",
+          "title": "The nasal and gut microbiome in Parkinson's disease and idiopathic rapid eye movement sleep behavior disorder.",
+          "taxon": "melainabacteria",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/mds.27105",
+          "title": "The nasal and gut microbiome in Parkinson's disease and idiopathic rapid eye movement sleep behavior disorder.",
+          "taxon": "otu_171",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/mds.27105",
+          "title": "The nasal and gut microbiome in Parkinson's disease and idiopathic rapid eye movement sleep behavior disorder.",
+          "taxon": "otu_469",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "porphyromonas",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "fusobacterium",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "aggregatibacter",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "agathobacter",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "eubacterium",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "neisseria",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "massilia",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "sphingomonas",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "rhodanobacter",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "tm7a",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "rhizorhapis",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "pseudomonas",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "ruminococcus",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "campylobacter",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "faecalibacterium",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "lachnoanaerobaculum",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00203-025-04494-x",
+          "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+          "taxon": "akkermansia",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00415-021-10657-9",
+          "title": "The impact of device-assisted therapies on the gut microbiome in Parkinson's disease.",
+          "taxon": "clostridium_xlva",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00415-021-10657-9",
+          "title": "The impact of device-assisted therapies on the gut microbiome in Parkinson's disease.",
+          "taxon": "bilophila",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00415-021-10657-9",
+          "title": "The impact of device-assisted therapies on the gut microbiome in Parkinson's disease.",
+          "taxon": "pseudoflavonifractor",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s00415-021-10657-9",
+          "title": "The impact of device-assisted therapies on the gut microbiome in Parkinson's disease.",
+          "taxon": "escherichia/shigella",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s11357-023-00799-1",
+          "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+          "taxon": "lactobacillus phage sha1",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1007/s11357-023-00799-1",
+          "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+          "taxon": "klebsiella virus kp36",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1007/s11357-023-00799-1",
+          "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+          "taxon": "lactobacillus phage lf1",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1007/s11357-023-00799-1",
+          "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+          "taxon": "lactococcus phage bil309",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1007/s11357-023-00799-1",
+          "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+          "taxon": "stx2 converting phage 1717",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1007/s11357-023-00799-1",
+          "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+          "taxon": "escherichia phage tl 2011",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1007/s11357-023-00799-1",
+          "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+          "taxon": "vibrio phage pyd38 a",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1007/s11357-023-00799-1",
+          "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+          "taxon": "streptococcus phage ej 1",
+          "direction": "enriched",
+          "in_text": false
+        }
+      ],
+      "true_fn": [
+        {
+          "doi": "10.1002/acn3.50874",
+          "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+          "taxon": "clostridia",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/acn3.51004",
+          "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+          "taxon": "alistipes",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/acn3.51004",
+          "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+          "taxon": "methanobrevibacter",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/acn3.51004",
+          "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+          "taxon": "olsenella",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/acn3.51004",
+          "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+          "taxon": "sporobacter",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/acn3.51004",
+          "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+          "taxon": "clostridium cluster iv",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/acn3.51004",
+          "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+          "taxon": "parabacteroides",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/acn3.51004",
+          "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+          "taxon": "ruminococcus",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/acn3.51004",
+          "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+          "taxon": "gemmiger",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/acn3.51004",
+          "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+          "taxon": "roseburia",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/alz.70417",
+          "title": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology.",
+          "taxon": "fusobacterium a",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/alz.70844",
+          "title": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis.",
+          "taxon": "akkermansia",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/alz.70844",
+          "title": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis.",
+          "taxon": "bacteroides",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/alz.70844",
+          "title": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis.",
+          "taxon": "coprococcus",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/alz.70844",
+          "title": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis.",
+          "taxon": "roseburia",
+          "direction": "depleted",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/ana.25982",
+          "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+          "taxon": "bacteroides fragilis",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/ana.25982",
+          "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+          "taxon": "bifidobacterium",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/ana.25982",
+          "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+          "taxon": "butyrivibrio",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/ana.25982",
+          "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+          "taxon": "catabacter",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/ana.25982",
+          "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+          "taxon": "christensenella",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/ana.25982",
+          "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+          "taxon": "cloacibacillus",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/ana.25982",
+          "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+          "taxon": "unclassified gammaproteobacteria",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/ana.25982",
+          "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+          "taxon": "lactobacillus acidophilus",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/ana.25982",
+          "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+          "taxon": "unclassified megasphaera",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/ana.25982",
+          "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+          "taxon": "unclassified veillonella",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/ana.25982",
+          "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+          "taxon": "unclassified coriobacteria",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/ana.25982",
+          "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+          "taxon": "akkermansia muciniphila",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/ana.25982",
+          "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+          "taxon": "clostridium saccharolyticum",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/ana.26719",
+          "title": "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes.",
+          "taxon": "eisenbergiella tayi",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/ana.26719",
+          "title": "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes.",
+          "taxon": "clostridium leptum",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/hep4.1954",
+          "title": "Distinct responsiveness to rifaximin in patients with hepatic encephalopathy depends on functional gut microbial species",
+          "taxon": "bifidobacterium",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/hep4.1954",
+          "title": "Distinct responsiveness to rifaximin in patients with hepatic encephalopathy depends on functional gut microbial species",
+          "taxon": "lactobacillus",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/hep4.1954",
+          "title": "Distinct responsiveness to rifaximin in patients with hepatic encephalopathy depends on functional gut microbial species",
+          "taxon": "streptococcus",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/hep4.1954",
+          "title": "Distinct responsiveness to rifaximin in patients with hepatic encephalopathy depends on functional gut microbial species",
+          "taxon": "veillonella",
+          "direction": "enriched",
+          "in_text": true
+        },
+        {
+          "doi": "10.1002/mds.26307",
+          "title": "Colonic bacterial composition in Parkinson's disease.",
+          "taxon": "akkermansia",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/mds.26307",
+          "title": "Colonic bacterial composition in Parkinson's disease.",
+          "taxon": "bacteroides",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/mds.26307",
+          "title": "Colonic bacterial composition in Parkinson's disease.",
+          "taxon": "oscillospira",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/mds.26307",
+          "title": "Colonic bacterial composition in Parkinson's disease.",
+          "taxon": "oxalobacteraceae",
+          "direction": "enriched",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/mds.26307",
+          "title": "Colonic bacterial composition in Parkinson's disease.",
+          "taxon": "dorea",
+          "direction": "depleted",
+          "in_text": false
+        },
+        {
+          "doi": "10.1002/mds.26307",
+          "title": "Colonic bacterial composition in Parkinson's disease.",
+          "taxon": "coprobacillaceae",
+          "direction": "depleted",
+          "in_text": false
+        }
+      ]
+    },
+    "all_direction_flips": [
+      {
+        "doi": "10.1007/s00415-021-10657-9",
+        "title": "The impact of device-assisted therapies on the gut microbiome in Parkinson's disease.",
+        "taxon_pred": "parabacteroides",
+        "taxon_gold": "bacteroidetes",
+        "we_said": "enriched",
+        "gold_says": "depleted",
+        "sim": 0.545
+      },
+      {
+        "doi": "10.1038/s41380-023-02216-7",
+        "title": "Transmission of Alzheimer's disease-associated microbiota dysbiosis and its impact on cognitive function: evidence from mice and patients.",
+        "taxon_pred": "bilophila wadsworthia",
+        "taxon_gold": "bilophila wadsworthia",
+        "we_said": "enriched",
+        "gold_says": "depleted",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.1038/s41380-023-02216-7",
+        "title": "Transmission of Alzheimer's disease-associated microbiota dysbiosis and its impact on cognitive function: evidence from mice and patients.",
+        "taxon_pred": "parabacteroides distasonis",
+        "taxon_gold": "parabacteroides distasonis",
+        "we_said": "enriched",
+        "gold_says": "depleted",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.1038/s41531-022-00395-8",
+        "title": "Fecal microbiome alterations in treatment-naive de novo Parkinson's disease.",
+        "taxon_pred": "christensenellaceae",
+        "taxon_gold": "christensenellaceae",
+        "we_said": "enriched",
+        "gold_says": "depleted",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.1038/s41598-022-19393-0",
+        "title": "Study of gut microbiota alterations in Alzheimer's dementia patients from Kazakhstan.",
+        "taxon_pred": "actinobacteria",
+        "taxon_gold": "actinobacteria",
+        "we_said": "enriched",
+        "gold_says": "depleted",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.1038/s41598-023-27586-4",
+        "title": "Altered gut microbiota in individuals with episodic and chronic migraine",
+        "taxon_pred": "catenibacterium",
+        "taxon_gold": "catenibacterium",
+        "we_said": "enriched",
+        "gold_says": "depleted",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.1128/msphere.00590-24",
+        "title": "Alterations of fecal microbiota and plasma metabolome in patients with Parkinson's disease with rapid eye movement sleep disorder.",
+        "taxon_pred": "fusobacterium",
+        "taxon_gold": "fusobacterium",
+        "we_said": "enriched",
+        "gold_says": "depleted",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.1186/s13195-025-01769-9",
+        "title": "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology.",
+        "taxon_pred": "bacteroides intestinalis",
+        "taxon_gold": "bacteroides intestinalis",
+        "we_said": "enriched",
+        "gold_says": "depleted",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.1186/s13195-025-01769-9",
+        "title": "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology.",
+        "taxon_pred": "fusicatenibacter saccharivorans",
+        "taxon_gold": "fusicatenibacter saccharivorans",
+        "we_said": "enriched",
+        "gold_says": "depleted",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.1186/s13195-025-01769-9",
+        "title": "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology.",
+        "taxon_pred": "bifidobacterium pseudocatenulatum",
+        "taxon_gold": "bifidobacterium pseudocatenulatum",
+        "we_said": "enriched",
+        "gold_says": "depleted",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.1371/journal.pone.0276598",
+        "title": "Uncovering the characteristics of the gut microbiota in patients with acute ischemic stroke and phlegm-heat syndrome",
+        "taxon_pred": "olsenella",
+        "taxon_gold": "olsenella",
+        "we_said": "depleted",
+        "gold_says": "enriched",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.3389/fcimb.2022.942460",
+        "title": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients",
+        "taxon_pred": "proteobacteria",
+        "taxon_gold": "proteobacteria",
+        "we_said": "depleted",
+        "gold_says": "enriched",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.3389/fcimb.2022.942460",
+        "title": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients",
+        "taxon_pred": "gammaproteobacteria",
+        "taxon_gold": "proteobacteria",
+        "we_said": "depleted",
+        "gold_says": "enriched",
+        "sim": 0.7
+      },
+      {
+        "doi": "10.3389/fnagi.2022.881872",
+        "title": "Nutritional Intake and Gut Microbiome Composition Predict Parkinson's Disease.",
+        "taxon_pred": "candidatus soleaferre",
+        "taxon_gold": "candidatus soleaferre",
+        "we_said": "depleted",
+        "gold_says": "enriched",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.3389/fnagi.2022.881872",
+        "title": "Nutritional Intake and Gut Microbiome Composition Predict Parkinson's Disease.",
+        "taxon_pred": "faecalibacterium sp. uba1819",
+        "taxon_gold": "faecalibacterium sp. uba1819",
+        "we_said": "depleted",
+        "gold_says": "enriched",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.3389/fneur.2020.00137",
+        "title": "Gut Microbiota Altered in Mild Cognitive Impairment Compared With Normal Cognition in Sporadic Parkinson's Disease.",
+        "taxon_pred": "ruminococcus",
+        "taxon_gold": "ruminococcus",
+        "we_said": "depleted",
+        "gold_says": "enriched",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.3390/ijms241915024",
+        "title": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet.",
+        "taxon_pred": "tyzzerella 4",
+        "taxon_gold": "tyzzerella 4",
+        "we_said": "enriched",
+        "gold_says": "depleted",
+        "sim": 1.0
+      },
+      {
+        "doi": "10.55730/1300-0144.5825",
+        "title": "Is gut microbiota of patients with ALS different from that of healthy individuals?",
+        "taxon_pred": "streptococcaceae",
+        "taxon_gold": "peptococcaceae",
+        "we_said": "enriched",
+        "gold_says": "depleted",
+        "sim": 0.617
+      },
+      {
+        "doi": "10.55730/1300-0144.5825",
+        "title": "Is gut microbiota of patients with ALS different from that of healthy individuals?",
+        "taxon_pred": "peptococcacceae",
+        "taxon_gold": "peptococcaceae",
+        "we_said": "enriched",
+        "gold_says": "depleted",
+        "sim": 0.826
+      }
+    ],
+    "all_rank_mismatch": [
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "depleted",
+        "predicted": "faecalibacterium",
+        "pred_rank": "genus",
+        "gold": "clostridiales",
+        "gold_rank": "order"
+      },
+      {
+        "doi": "10.1007/s00415-021-10657-9",
+        "title": "The impact of device-assisted therapies on the gut microbiome in Parkinson's disease.",
+        "direction": "depleted",
+        "predicted": "dorea",
+        "pred_rank": "genus",
+        "gold": "firmicutes",
+        "gold_rank": "phylum"
+      },
+      {
+        "doi": "10.1155/2024/9741811",
+        "title": "Inflammatory Manifestations Associated With Gut Dysbiosis in Alzheimer's Disease.",
+        "direction": "depleted",
+        "predicted": "actinobacteria",
+        "pred_rank": "phylum",
+        "gold": "collinsella",
+        "gold_rank": "genus"
+      },
+      {
+        "doi": "10.1186/s12866-019-1685-2",
+        "title": "Primary progressive multiple sclerosis in a Russian cohort: relationship with gut bacterial diversity.",
+        "direction": "enriched",
+        "predicted": "bilophila wadsworthia",
+        "pred_rank": "species",
+        "gold": "desulfovibrionaceae",
+        "gold_rank": "family"
+      },
+      {
+        "doi": "10.1371/journal.pone.0137429",
+        "title": "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters.",
+        "direction": "depleted",
+        "predicted": "clostridia cluster xiva",
+        "pred_rank": "class",
+        "gold": "anaerostipes",
+        "gold_rank": "genus"
+      },
+      {
+        "doi": "10.3389/fcimb.2022.999627",
+        "title": "Multi-omics reveals specific host metabolism-microbiome associations in intracerebral hemorrhage",
+        "direction": "depleted",
+        "predicted": "firmicutes",
+        "pred_rank": "phylum",
+        "gold": "blautia",
+        "gold_rank": "genus"
+      },
+      {
+        "doi": "10.3390/microorganisms11112628",
+        "title": "Integrated Macrogenomics and Metabolomics Explore Alterations and Correlation between Gut Microbiota and Serum Metabolites in Adult Epileptic Patients: A Pilot Study",
+        "direction": "depleted",
+        "predicted": "firmicutes",
+        "pred_rank": "phylum",
+        "gold": "roseburia intestinalis",
+        "gold_rank": "species"
+      },
+      {
+        "doi": "10.3390/microorganisms13102350",
+        "title": "Differential Patterns of Gut and Oral Microbiomes in Hispanic Individuals with Cognitive Impairment.",
+        "direction": "depleted",
+        "predicted": "ruminococcus",
+        "pred_rank": "genus",
+        "gold": "clostridia",
+        "gold_rank": "class"
+      }
+    ]
+  }
+}

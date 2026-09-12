@@ -1,0 +1,417 @@
+{
+  "E_decomposition": {
+    "steps": {
+      "OLD gold": {
+        "n": 260,
+        "TP": 1727,
+        "FP": 1151,
+        "FN": 844,
+        "precision": 0.6001,
+        "recall": 0.6717,
+        "f1": 0.6339
+      },
+      "MID = old \u2229 new (removals applied)": {
+        "n": 260,
+        "TP": 1584,
+        "FP": 1294,
+        "FN": 476,
+        "precision": 0.5504,
+        "recall": 0.7689,
+        "f1": 0.6416
+      },
+      "NEW gold (removals + additions)": {
+        "n": 260,
+        "TP": 2156,
+        "FP": 722,
+        "FN": 678,
+        "precision": 0.7491,
+        "recall": 0.7608,
+        "f1": 0.7549
+      }
+    },
+    "removal_effect": 0.0077,
+    "addition_effect": 0.1133,
+    "total": 0.121
+  },
+  "F_removal_evidence": {
+    "removed": {
+      "n": 647,
+      "in_text": 290,
+      "stat_cue": 142,
+      "no_mention": 357
+    },
+    "added": {
+      "n": 820,
+      "in_text": 636,
+      "stat_cue": 379,
+      "no_mention": 184
+    },
+    "removed_examples": [
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Enriched",
+        "taxon": "anti-nmdar encephalitis: prevotella",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Enriched",
+        "taxon": "streptophyta",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Enriched",
+        "taxon": "lactobacillaceae",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Enriched",
+        "taxon": "lactobacillus",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Enriched",
+        "taxon": "gemellaceae",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Enriched",
+        "taxon": "gemellales",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Enriched",
+        "taxon": "coriobacteriaceae",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Enriched",
+        "taxon": "coriobacteriales",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Enriched",
+        "taxon": "actinomyces",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Enriched",
+        "taxon": "actinomycetaceae",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Depleted",
+        "taxon": "anti-nmdar encephalitis: bacteroides",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Depleted",
+        "taxon": "oceanospirillales",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Depleted",
+        "taxon": "halomonas",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Depleted",
+        "taxon": "halomonadaceae",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Depleted",
+        "taxon": "butyricimonas",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Depleted",
+        "taxon": "odoribacteraceae",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Depleted",
+        "taxon": "coprococcus",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Depleted",
+        "taxon": "porphyromonadaceae",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Depleted",
+        "taxon": "parabacteroides",
+        "n_sentences": 6,
+        "stat_cue": false,
+        "sentence": "Additionally, our results showed that all subgroups had a distinct bacterial species, with an increase in the genus Fusobacterium in the acute phase group and the genera Streptococcus and Parabacteroides in patients with relapse."
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Depleted",
+        "taxon": "faecalibacterium",
+        "n_sentences": 2,
+        "stat_cue": false,
+        "sentence": "The relative abundance of species heatmap showed a tendency toward depletion for some commensal genera, such as Prevotella_6 , Bifidobacterium , Faecalibacterium , and other short\u2010chain fatty acid (SCFA)\u2010producing bacteria."
+      },
+      {
+        "doi": "10.1002/acn3.50874",
+        "title": "Alterations in the human gut microbiome in anti-N-methyl-D-aspartate receptor encephalitis.",
+        "direction": "Depleted",
+        "taxon": "ruminococcaceae",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.51004",
+        "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+        "direction": "Enriched",
+        "taxon": "anaerotruncus",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/acn3.51004",
+        "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+        "direction": "Enriched",
+        "taxon": "butyricicoccus",
+        "n_sentences": 12,
+        "stat_cue": true,
+        "sentence": "Butyricicoccus abundance was lower in PPMS than in RRMS_U ( Z =\u00a0\u22123.00, P corr\u00a0=\u00a00.014) and BMS ( Z =\u00a0\u22122.56, P corr\u00a0=\u00a00.031), lower in RRMS_I than in BMS ( Z =\u00a0\u22122.50, P corr\u00a0=\u00a00.034) and RRMS_U ( Z =\u00a0\u22122.91, P corr\u00a0=\u00a00.013), and inversely correlated with self\u2010reported physical symptoms (rho\u00a0=\u00a0\u22120.400, "
+      },
+      {
+        "doi": "10.1002/acn3.51004",
+        "title": "Gut microbiome variation is associated to Multiple Sclerosis phenotypic subtypes.",
+        "direction": "Enriched",
+        "taxon": "lactobacillus",
+        "n_sentences": 1,
+        "stat_cue": false,
+        "sentence": "Not in line with other studies, Lactobacillus , Parabacteroides, Sporobacter, and Clostridium cluster IV , results are possibly explained by different population subtypes, since we also included less inflammatory phenotypes, or confounder control."
+      },
+      {
+        "doi": "10.1002/alz.70844",
+        "title": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis.",
+        "direction": "Enriched",
+        "taxon": "verrucomicrobiae",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/alz.70844",
+        "title": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis.",
+        "direction": "Enriched",
+        "taxon": "collineslla",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/alz.70844",
+        "title": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis.",
+        "direction": "Enriched",
+        "taxon": "coriobacteriaceae",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/alz.70844",
+        "title": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis.",
+        "direction": "Enriched",
+        "taxon": "flavonifractor",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/ana.24718",
+        "title": "Gut microbiome analysis in neuromyelitis optica reveals overabundance of Clostridium perfringens.",
+        "direction": "Enriched",
+        "taxon": "acholeplasma",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/ana.24718",
+        "title": "Gut microbiome analysis in neuromyelitis optica reveals overabundance of Clostridium perfringens.",
+        "direction": "Enriched",
+        "taxon": "coprococcus",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/ana.24718",
+        "title": "Gut microbiome analysis in neuromyelitis optica reveals overabundance of Clostridium perfringens.",
+        "direction": "Enriched",
+        "taxon": "blautia",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/ana.24718",
+        "title": "Gut microbiome analysis in neuromyelitis optica reveals overabundance of Clostridium perfringens.",
+        "direction": "Enriched",
+        "taxon": "prevotella",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/ana.24718",
+        "title": "Gut microbiome analysis in neuromyelitis optica reveals overabundance of Clostridium perfringens.",
+        "direction": "Enriched",
+        "taxon": "bacteroides",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/ana.24718",
+        "title": "Gut microbiome analysis in neuromyelitis optica reveals overabundance of Clostridium perfringens.",
+        "direction": "Enriched",
+        "taxon": "flavobacterium",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/ana.24718",
+        "title": "Gut microbiome analysis in neuromyelitis optica reveals overabundance of Clostridium perfringens.",
+        "direction": "Enriched",
+        "taxon": "da101",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/ana.24718",
+        "title": "Gut microbiome analysis in neuromyelitis optica reveals overabundance of Clostridium perfringens.",
+        "direction": "Enriched",
+        "taxon": "corynebacterium",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/ana.24718",
+        "title": "Gut microbiome analysis in neuromyelitis optica reveals overabundance of Clostridium perfringens.",
+        "direction": "Enriched",
+        "taxon": "ruminococcus",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/ana.24718",
+        "title": "Gut microbiome analysis in neuromyelitis optica reveals overabundance of Clostridium perfringens.",
+        "direction": "Enriched",
+        "taxon": "treponema",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/ana.24718",
+        "title": "Gut microbiome analysis in neuromyelitis optica reveals overabundance of Clostridium perfringens.",
+        "direction": "Enriched",
+        "taxon": "candidatus phytoplasma",
+        "n_sentences": 0,
+        "stat_cue": false
+      },
+      {
+        "doi": "10.1002/brb3.3318",
+        "title": "Identification of disordered profiles of gut microbiota and functional component in stroke and poststroke epilepsy",
+        "direction": "Enriched",
+        "taxon": "epilepsy: escherichia shigella",
+        "n_sentences": 0,
+        "stat_cue": false
+      }
+    ]
+  },
+  "G_abbreviation": {
+    "recoverable_pairs": 3,
+    "abbrev_predictions": 10,
+    "examples": [
+      {
+        "doi": "10.1002/ana.26719",
+        "title": "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes.",
+        "direction": "enriched",
+        "predicted": "e. tayi",
+        "gold": "eisenbergiella tayi"
+      },
+      {
+        "doi": "10.1002/ana.26719",
+        "title": "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal Changes.",
+        "direction": "enriched",
+        "predicted": "c. leptum",
+        "gold": "clostridium leptum"
+      },
+      {
+        "doi": "10.1080/19490976.2025.2506843",
+        "title": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.",
+        "direction": "enriched",
+        "predicted": "e. coli",
+        "gold": "escherichia coli"
+      }
+    ]
+  },
+  "G_viruses": {
+    "fp": 38,
+    "in_gold": 1,
+    "top_papers": [
+      [
+        "Unique trans-kingdom microbiome structural and functional si",
+        29
+      ],
+      [
+        "Integrated Macrogenomics and Metabolomics Explore Alteration",
+        9
+      ]
+    ]
+  }
+}

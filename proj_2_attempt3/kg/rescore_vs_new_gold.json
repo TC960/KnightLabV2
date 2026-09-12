@@ -1,0 +1,22 @@
+{
+ "n_staged": 265,
+ "n_scoreable": 260,
+ "n_never_extracted": 5,
+ "vs_new_gold": {
+  "TP": 2137,
+  "FP": 723,
+  "FN": 692,
+  "precision": 0.7472,
+  "recall": 0.7554,
+  "f1": 0.7513
+ },
+ "vs_old_sheet": {
+  "TP": 1023,
+  "FP": 1837,
+  "FN": 415,
+  "precision": 0.3577,
+  "recall": 0.7114,
+  "f1": 0.476
+ },
+ "metric": "char-ngram cosine >=0.5 (run_eval.match_taxa); LCA would score higher"
+}
