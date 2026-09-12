@@ -24,9 +24,16 @@ variance and manufacture a false positive (as pair-level shuffling did for the
 `diet_controlled` and ASD results already on record).
 """
 import json
+import os
 import re
 import sys
 import numpy as np
+
+# Substrate file. Defaults to the shipped relation_sentences.json; set
+# RELSENT=relation_sentences_clean.json to re-run on the abbreviation-repaired
+# corpus (see clean_abbrev.py) and confirm the published null is not an artefact
+# of 362 misattributed genus mentions.
+RELSENT = os.environ.get("RELSENT", "relation_sentences.json")
 
 RNG = np.random.default_rng(20260903)
 N_PERM = 2000
@@ -38,7 +45,7 @@ def norm(s):
 
 def load():
     g = json.load(open("graph.json"))
-    rs = json.load(open("relation_sentences.json"))["papers"]
+    rs = json.load(open(RELSENT))["papers"]
     rsn = {norm(k): k for k in rs}
 
     titles = [p["title"] for p in g["papers"]]

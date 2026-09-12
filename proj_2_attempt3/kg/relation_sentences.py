@@ -39,7 +39,15 @@ Taxon matching notes
   already by taxonomy.resolve(), which rejects any candidate whose lineage is not
   under Bacteria/Archaea/Fungi/Viruses -- all four of those resolve to nothing.
 * Genus abbreviations are expanded per paper: if a paper names Bacteroides
-  anywhere, "B. fragilis" later in that paper resolves.
+  anywhere, "B. fragilis" later in that paper resolves. The expansion is refused
+  when the initial is AMBIGUOUS within the paper -- see below. Until 2026-09-12
+  it was not, and the first genus seen with that letter won: a paper naming
+  Bacteroides, Bifidobacterium and Blautia sent every later "B. <sp>" to
+  Blautia, and an oral/gut Alzheimer's paper filed *P. gingivalis*
+  (Porphyromonas, the classic periodontal pathogen) under Phascolarctobacterium,
+  a gut genus. 774 mentions came from this path and 362 of them sat in a paper
+  with a letter clash. A mention we cannot attribute is worse than no mention,
+  so ambiguous initials now resolve to nothing.
 * Ranks above phylum are dropped as features ("Bacteria", "bacterium" are real
   taxids but carry no information about which organisms a paper reports).
 """
@@ -270,15 +278,18 @@ def filter_paper(text, matcher, mode="loose"):
     """
     body = strip_references(text)
     sents = sentences(body)
-    # pass 1: collect this paper's genera so abbreviations can be expanded in pass 2
-    alias = {}
+    # pass 1: collect this paper's genera so abbreviations can be expanded in pass 2.
+    # Collect ALL genera per initial, not the first one seen: an initial that two
+    # genera in this paper share cannot be attributed from the text and is refused.
+    by_initial = {}
     prelim = []
     for s in sents:
         hits = matcher.find(s)
         prelim.append(hits)
         for _surf, _tid, sci, rank in hits:
             if rank == "genus" and sci:
-                alias.setdefault(sci[0].upper(), sci)
+                by_initial.setdefault(sci[0].upper(), set()).add(sci)
+    alias = {k: next(iter(v)) for k, v in by_initial.items() if len(v) == 1}
     kept, seen = [], set()
     for s, hits in zip(sents, prelim):
         if _ABBREV_SP.search(s):

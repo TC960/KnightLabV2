@@ -1,0 +1,1651 @@
+{
+  "n_ambiguous_mentions": 195,
+  "n_distinct_surfaces": 115,
+  "cases": [
+    {
+      "surface": "A. actinomycetemcomitans",
+      "assigned_sci": "Aggregatibacter",
+      "assigned_rank": "genus",
+      "true_genus": "Aggregatibacter",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Actinomyces",
+        "Aggregatibacter",
+        "Akkermansia",
+        "Alistipes",
+        "Alloprevotella",
+        "Anaerostipes"
+      ],
+      "example_paper": "Oral Microbiome Stamp in Alzheimer\u2019s Disease"
+    },
+    {
+      "surface": "A. butyriciproducens",
+      "assigned_sci": "Alistipes",
+      "assigned_rank": "genus",
+      "true_genus": "Alistipes",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Akkermansia",
+        "Alistipes"
+      ],
+      "example_paper": "Gut microbiota and metabolites are linked to disease progression in multiple sclerosis."
+    },
+    {
+      "surface": "A. characterized",
+      "assigned_sci": "Actinobacillus",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 1,
+      "candidates": [
+        "Acidaminococcus",
+        "Actinobacillus",
+        "Actinomyces",
+        "Akkermansia",
+        "Alistipes"
+      ],
+      "example_paper": "Disease- and stage-specific alterations of the oral and fecal microbiota in Alzheimer\u2019s disease"
+    },
+    {
+      "surface": "A. glycaniphila",
+      "assigned_sci": "Akkermansia",
+      "assigned_rank": "genus",
+      "true_genus": "Akkermansia",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Adlercreutzia",
+        "Akkermansia"
+      ],
+      "example_paper": "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis."
+    },
+    {
+      "surface": "A. hallii",
+      "assigned_sci": "Alistipes",
+      "assigned_rank": "genus",
+      "true_genus": "Alistipes",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Akkermansia",
+        "Alistipes"
+      ],
+      "example_paper": "Gut microbiota and metabolites are linked to disease progression in multiple sclerosis."
+    },
+    {
+      "surface": "A. indistinctus",
+      "assigned_sci": "Akkermansia",
+      "assigned_rank": "genus",
+      "true_genus": "Alistipes",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Akkermansia",
+        "Alistipes",
+        "Anaerostipes"
+      ],
+      "example_paper": "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive Impairment."
+    },
+    {
+      "surface": "A. muciniphila",
+      "assigned_sci": "Akkermansia",
+      "assigned_rank": "species",
+      "true_genus": "Akkermansia",
+      "verdict": "RIGHT",
+      "n_mentions": 10,
+      "candidates": [
+        "Acidaminococcus",
+        "Actinomyces",
+        "Adlercreutzia",
+        "Agathobaculum",
+        "Aggregatibacter",
+        "Akkermansia",
+        "Alistipes",
+        "Anaerofustis",
+        "Anaerostipes",
+        "Anaerotruncus",
+        "Atopobium"
+      ],
+      "example_paper": "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis."
+    },
+    {
+      "surface": "A. onderdonkii",
+      "assigned_sci": "Akkermansia",
+      "assigned_rank": "genus",
+      "true_genus": "Alistipes",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Aggregatibacter",
+        "Akkermansia"
+      ],
+      "example_paper": "Alterations of the Gut Microbiota in Multiple System Atrophy Patients."
+    },
+    {
+      "surface": "A.\u00a0onderdonkii",
+      "assigned_sci": "Alistipes",
+      "assigned_rank": "species",
+      "true_genus": "Alistipes",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Akkermansia",
+        "Alistipes"
+      ],
+      "example_paper": "Gut microbiota and metabolites are linked to disease progression in multiple sclerosis."
+    },
+    {
+      "surface": "B. adolescentis",
+      "assigned_sci": "Blautia",
+      "assigned_rank": "genus",
+      "true_genus": "Bifidobacterium",
+      "verdict": "WRONG",
+      "n_mentions": 4,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricimonas"
+      ],
+      "example_paper": "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis."
+    },
+    {
+      "surface": "B. and",
+      "assigned_sci": "Bacteroides",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 2,
+      "candidates": [
+        "Bacteroides",
+        "Barnesiella",
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricicoccus",
+        "Butyricimonas"
+      ],
+      "example_paper": "Gut microbiota distinguishes aging hispanics with Alzheimer's disease: associations with cognitive impairment and severity."
+    },
+    {
+      "surface": "B. are",
+      "assigned_sci": "Butyricimonas",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Barnesiella",
+        "Blautia",
+        "Butyricimonas"
+      ],
+      "example_paper": "Disease- and stage-specific alterations of the oral and fecal microbiota in Alzheimer\u2019s disease"
+    },
+    {
+      "surface": "B. bifidum",
+      "assigned_sci": "Blautia",
+      "assigned_rank": "genus",
+      "true_genus": "Bifidobacterium",
+      "verdict": "WRONG",
+      "n_mentions": 3,
+      "candidates": [
+        "Bacillus",
+        "Bacteroides",
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricicoccus"
+      ],
+      "example_paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+    },
+    {
+      "surface": "B. breve",
+      "assigned_sci": "Bifidobacterium",
+      "assigned_rank": "species",
+      "true_genus": "Bifidobacterium",
+      "verdict": "RIGHT",
+      "n_mentions": 2,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricicoccus",
+        "Butyricimonas"
+      ],
+      "example_paper": "A probiotic modulates the microbiome and immunity in multiple sclerosis."
+    },
+    {
+      "surface": "B. caccae",
+      "assigned_sci": "Bacteroides",
+      "assigned_rank": "species",
+      "true_genus": "Bacteroides",
+      "verdict": "RIGHT",
+      "n_mentions": 2,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Blautia"
+      ],
+      "example_paper": "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology."
+    },
+    {
+      "surface": "B. catenulatum",
+      "assigned_sci": "Bifidobacterium",
+      "assigned_rank": "genus",
+      "true_genus": "Bifidobacterium",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium"
+      ],
+      "example_paper": "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy"
+    },
+    {
+      "surface": "B. contributed",
+      "assigned_sci": "Butyricimonas",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Barnesiella",
+        "Blautia",
+        "Butyricimonas"
+      ],
+      "example_paper": "Disease- and stage-specific alterations of the oral and fecal microbiota in Alzheimer\u2019s disease"
+    },
+    {
+      "surface": "B. coprocola",
+      "assigned_sci": "Bifidobacterium",
+      "assigned_rank": "genus",
+      "true_genus": "Bifidobacterium",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Blautia"
+      ],
+      "example_paper": "Alterations of the Gut Microbiota in Multiple System Atrophy Patients."
+    },
+    {
+      "surface": "B. dorei",
+      "assigned_sci": "Bacteroides",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Blautia"
+      ],
+      "example_paper": "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease."
+    },
+    {
+      "surface": "B. egger",
+      "assigned_sci": "Barnesiella",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Barnesiella",
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricicoccus"
+      ],
+      "example_paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+    },
+    {
+      "surface": "B. eggerthii",
+      "assigned_sci": "Barnesiella",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Barnesiella",
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricicoccus"
+      ],
+      "example_paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+    },
+    {
+      "surface": "B. fluxus",
+      "assigned_sci": "Barnesiella",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Barnesiella",
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricicoccus"
+      ],
+      "example_paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+    },
+    {
+      "surface": "B. fragilis",
+      "assigned_sci": "Bacteroides",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "RIGHT",
+      "n_mentions": 5,
+      "candidates": [
+        "Bacteroides",
+        "Barnesiella",
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricicoccus",
+        "Butyrivibrio"
+      ],
+      "example_paper": "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the Anti-Inflammatory P-Glycoprotein Pathway."
+    },
+    {
+      "surface": "B. hungatei",
+      "assigned_sci": "Bacteroides",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Barnesiella",
+        "Blautia",
+        "Butyrivibrio"
+      ],
+      "example_paper": "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the Anti-Inflammatory P-Glycoprotein Pathway."
+    },
+    {
+      "surface": "B. infantis",
+      "assigned_sci": "Bifidobacterium",
+      "assigned_rank": "genus",
+      "true_genus": "Bifidobacterium",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricimonas"
+      ],
+      "example_paper": "A probiotic modulates the microbiome and immunity in multiple sclerosis."
+    },
+    {
+      "surface": "B. interstinalis",
+      "assigned_sci": "Barnesiella",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Barnesiella",
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricicoccus"
+      ],
+      "example_paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+    },
+    {
+      "surface": "B. intestinalis",
+      "assigned_sci": "Barnesiella",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "WRONG",
+      "n_mentions": 2,
+      "candidates": [
+        "Bacteroides",
+        "Barnesiella",
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricicoccus",
+        "Butyrivibrio"
+      ],
+      "example_paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+    },
+    {
+      "surface": "B. lactis",
+      "assigned_sci": "Butyricicoccus",
+      "assigned_rank": "genus",
+      "true_genus": "Bifidobacterium",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacillus",
+        "Bifidobacterium",
+        "Butyricicoccus"
+      ],
+      "example_paper": "Gut microbiota dysbiosis in patients with Alzheimer\u2019s disease and correlation with multiple cognitive domains"
+    },
+    {
+      "surface": "B. longum",
+      "assigned_sci": "Bifidobacterium",
+      "assigned_rank": "species",
+      "true_genus": "Bifidobacterium",
+      "verdict": "RIGHT",
+      "n_mentions": 7,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricicoccus",
+        "Butyricimonas"
+      ],
+      "example_paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+    },
+    {
+      "surface": "B. luti",
+      "assigned_sci": "Blautia",
+      "assigned_rank": "species",
+      "true_genus": "Blautia",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricicoccus"
+      ],
+      "example_paper": "The Gut Microbiome in Progressive Multiple Sclerosis"
+    },
+    {
+      "surface": "B. ovatus",
+      "assigned_sci": "Bacteroides",
+      "assigned_rank": "species",
+      "true_genus": "Bacteroides",
+      "verdict": "RIGHT",
+      "n_mentions": 2,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Bilophila",
+        "Blautia"
+      ],
+      "example_paper": "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease."
+    },
+    {
+      "surface": "B. ovatus-colonized",
+      "assigned_sci": "Bacteroides",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Bilophila"
+      ],
+      "example_paper": "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment"
+    },
+    {
+      "surface": "B. ovatus-treated",
+      "assigned_sci": "Bacteroides",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Bilophila"
+      ],
+      "example_paper": "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment"
+    },
+    {
+      "surface": "B. plebeius",
+      "assigned_sci": "Bifidobacterium",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Blautia"
+      ],
+      "example_paper": "Alterations of the Gut Microbiota in Multiple System Atrophy Patients."
+    },
+    {
+      "surface": "B. proteoclasticus",
+      "assigned_sci": "Bacteroides",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Barnesiella",
+        "Blautia",
+        "Butyrivibrio"
+      ],
+      "example_paper": "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the Anti-Inflammatory P-Glycoprotein Pathway."
+    },
+    {
+      "surface": "B. pseudocatenulatum",
+      "assigned_sci": "Bifidobacterium",
+      "assigned_rank": "species",
+      "true_genus": "Bifidobacterium",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Blautia"
+      ],
+      "example_paper": "Alterations of the Gut Microbiota in Multiple System Atrophy Patients."
+    },
+    {
+      "surface": "B. pseudolongum",
+      "assigned_sci": "Bacteroides",
+      "assigned_rank": "genus",
+      "true_genus": "Bifidobacterium",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium"
+      ],
+      "example_paper": "Gut Dysbiosis: A New Avenue for Stroke Prevention and Therapeutics"
+    },
+    {
+      "surface": "B. shows",
+      "assigned_sci": "Blautia",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 1,
+      "candidates": [
+        "Bifidobacterium",
+        "Blautia"
+      ],
+      "example_paper": "Effects of Resistant Starch on Symptoms, Fecal Markers, and Gut Microbiota in Parkinson's Disease - The RESISTA-PD Trial."
+    },
+    {
+      "surface": "B. stercoris",
+      "assigned_sci": "Blautia",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricimonas"
+      ],
+      "example_paper": "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis."
+    },
+    {
+      "surface": "B. synergistica",
+      "assigned_sci": "Butyricimonas",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "WRONG",
+      "n_mentions": 2,
+      "candidates": [
+        "Bifidobacterium",
+        "Butyricimonas"
+      ],
+      "example_paper": "Alterations of the human gut microbiome in multiple sclerosis."
+    },
+    {
+      "surface": "B. thetaiotaomicron",
+      "assigned_sci": "Bacteroides",
+      "assigned_rank": "species",
+      "true_genus": "Bacteroides",
+      "verdict": "RIGHT",
+      "n_mentions": 4,
+      "candidates": [
+        "Bacillus",
+        "Bacteroides",
+        "Bifidobacterium",
+        "Bilophila",
+        "Blautia"
+      ],
+      "example_paper": "Gut microbiome compositional and functional features associate with Alzheimer's disease pathology."
+    },
+    {
+      "surface": "B. uniformis",
+      "assigned_sci": "Blautia",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "WRONG",
+      "n_mentions": 3,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Blautia"
+      ],
+      "example_paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+    },
+    {
+      "surface": "B. virosa",
+      "assigned_sci": "Butyricimonas",
+      "assigned_rank": "species",
+      "true_genus": null,
+      "verdict": "UNKNOWN",
+      "n_mentions": 1,
+      "candidates": [
+        "Bifidobacterium",
+        "Butyricimonas"
+      ],
+      "example_paper": "Alterations of the human gut microbiome in multiple sclerosis."
+    },
+    {
+      "surface": "B. vulgatus",
+      "assigned_sci": "Bacteroides",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "RIGHT",
+      "n_mentions": 3,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Bilophila",
+        "Blautia"
+      ],
+      "example_paper": "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease."
+    },
+    {
+      "surface": "B. wadsworthia",
+      "assigned_sci": "Bilophila",
+      "assigned_rank": "species",
+      "true_genus": "Bilophila",
+      "verdict": "RIGHT",
+      "n_mentions": 4,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Bilophila",
+        "Blautia"
+      ],
+      "example_paper": "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease."
+    },
+    {
+      "surface": "B. wexlerae",
+      "assigned_sci": "Blautia",
+      "assigned_rank": "species",
+      "true_genus": "Blautia",
+      "verdict": "RIGHT",
+      "n_mentions": 3,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Blautia",
+        "Butyricicoccus",
+        "Butyricimonas"
+      ],
+      "example_paper": "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis."
+    },
+    {
+      "surface": "B. xylanivsolvens",
+      "assigned_sci": "Bacteroides",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Bifidobacterium",
+        "Butyrivibrio"
+      ],
+      "example_paper": "Gut microbiota regulate Alzheimer\u2019s disease pathologies and cognitive disorders via PUFA-associated neuroinflammation"
+    },
+    {
+      "surface": "B.\u00a0xylanisolvens",
+      "assigned_sci": "Blautia",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Bacteroides",
+        "Blautia",
+        "Butyricicoccus"
+      ],
+      "example_paper": "Gut microbiota and metabolites are linked to disease progression in multiple sclerosis."
+    },
+    {
+      "surface": "C. acnes",
+      "assigned_sci": "Campylobacter",
+      "assigned_rank": "genus",
+      "true_genus": "Cutibacterium",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Campylobacter",
+        "Corynebacterium"
+      ],
+      "example_paper": "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
+    },
+    {
+      "surface": "C. aerofaciens",
+      "assigned_sci": "Campylobacter",
+      "assigned_rank": "genus",
+      "true_genus": "Collinsella",
+      "verdict": "WRONG",
+      "n_mentions": 2,
+      "candidates": [
+        "Campylobacter",
+        "Collinsella"
+      ],
+      "example_paper": "Alterations of the human gut microbiome in multiple sclerosis."
+    },
+    {
+      "surface": "C. analyzed",
+      "assigned_sci": "Clostridium",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 1,
+      "candidates": [
+        "Clostridium",
+        "Coprococcus"
+      ],
+      "example_paper": "Fecal Volatile Organic Compounds and Microbiota Associated with the Progression of Cognitive Impairment in Alzheimer's Disease."
+    },
+    {
+      "surface": "C. and",
+      "assigned_sci": "Clostridium",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 2,
+      "candidates": [
+        "Christensenella",
+        "Clostridium",
+        "Coprococcus"
+      ],
+      "example_paper": "Fecal Volatile Organic Compounds and Microbiota Associated with the Progression of Cognitive Impairment in Alzheimer's Disease."
+    },
+    {
+      "surface": "C. baratii",
+      "assigned_sci": "Clostridium",
+      "assigned_rank": "genus",
+      "true_genus": "Clostridium",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Citrobacter",
+        "Clostridium",
+        "Coprococcus"
+      ],
+      "example_paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+    },
+    {
+      "surface": "C. beta-",
+      "assigned_sci": "Coprococcus",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 1,
+      "candidates": [
+        "Clostridium",
+        "Coprococcus"
+      ],
+      "example_paper": "CXCR3+ T cells in multiple sclerosis correlate with reduced diversity of the gut microbiome."
+    },
+    {
+      "surface": "C. botulinum",
+      "assigned_sci": "Clostridium",
+      "assigned_rank": "genus",
+      "true_genus": "Clostridium",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Citrobacter",
+        "Clostridium",
+        "Coprococcus"
+      ],
+      "example_paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+    },
+    {
+      "surface": "C. butyricum",
+      "assigned_sci": "Clostridium",
+      "assigned_rank": "genus",
+      "true_genus": "Clostridium",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Citrobacter",
+        "Clostridium",
+        "Coprococcus"
+      ],
+      "example_paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+    },
+    {
+      "surface": "C. celatum",
+      "assigned_sci": "Clostridium",
+      "assigned_rank": "genus",
+      "true_genus": "Clostridium",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Clostridium",
+        "Coprococcus"
+      ],
+      "example_paper": "Gut microbiome alterations in preclinical Alzheimer\u2019s disease"
+    },
+    {
+      "surface": "C. contributed",
+      "assigned_sci": "Coprococcus",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 1,
+      "candidates": [
+        "Capnocytophaga",
+        "Citrobacter",
+        "Collinsella",
+        "Coprococcus"
+      ],
+      "example_paper": "Oral and gut dysbiosis leads to functional alterations in Parkinson's disease."
+    },
+    {
+      "surface": "C. difficile",
+      "assigned_sci": "Clostridium",
+      "assigned_rank": "genus",
+      "true_genus": "Clostridioides",
+      "verdict": "WRONG",
+      "n_mentions": 2,
+      "candidates": [
+        "Campylobacter",
+        "Clostridium",
+        "Coprococcus"
+      ],
+      "example_paper": "Gut microbiome alterations in preclinical Alzheimer\u2019s disease"
+    },
+    {
+      "surface": "C. durum",
+      "assigned_sci": "Campylobacter",
+      "assigned_rank": "genus",
+      "true_genus": "Campylobacter",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Campylobacter",
+        "Corynebacterium"
+      ],
+      "example_paper": "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
+    },
+    {
+      "surface": "C. hystoliticum",
+      "assigned_sci": "Clostridium",
+      "assigned_rank": "genus",
+      "true_genus": "Clostridium",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Citrobacter",
+        "Clostridium",
+        "Coprococcus"
+      ],
+      "example_paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+    },
+    {
+      "surface": "C. jejuni",
+      "assigned_sci": "Clostridium",
+      "assigned_rank": "genus",
+      "true_genus": "Campylobacter",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Campylobacter",
+        "Clostridium",
+        "Coprococcus"
+      ],
+      "example_paper": "Perturbed Microbiota/Immune Homeostasis in Multiple Sclerosis."
+    },
+    {
+      "surface": "C. orbiscindens",
+      "assigned_sci": "Clostridium",
+      "assigned_rank": "genus",
+      "true_genus": "Clostridium",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Catenibacterium",
+        "Clostridium"
+      ],
+      "example_paper": "Immunotherapy-mediated modulation of the gut microbiota in multiple sclerosis and associations with diet and clinical response-the effect of dimethyl fumarate therapy."
+    },
+    {
+      "surface": "C. prefringens",
+      "assigned_sci": "Clostridium",
+      "assigned_rank": "genus",
+      "true_genus": "Clostridium",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Citrobacter",
+        "Clostridium",
+        "Coprococcus"
+      ],
+      "example_paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+    },
+    {
+      "surface": "C. rodentium",
+      "assigned_sci": "Clostridium",
+      "assigned_rank": "genus",
+      "true_genus": "Citrobacter",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Citrobacter",
+        "Clostridium",
+        "Coprococcus"
+      ],
+      "example_paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+    },
+    {
+      "surface": "C. tetani",
+      "assigned_sci": "Clostridium",
+      "assigned_rank": "genus",
+      "true_genus": "Clostridium",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Citrobacter",
+        "Clostridium",
+        "Coprococcus"
+      ],
+      "example_paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+    },
+    {
+      "surface": "C. vadin",
+      "assigned_sci": "Clostridium",
+      "assigned_rank": "genus",
+      "true_genus": "Clostridium",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Catenibacterium",
+        "Clostridium"
+      ],
+      "example_paper": "Immunotherapy-mediated modulation of the gut microbiota in multiple sclerosis and associations with diet and clinical response-the effect of dimethyl fumarate therapy."
+    },
+    {
+      "surface": "E. coli",
+      "assigned_sci": "Eubacterium",
+      "assigned_rank": "genus",
+      "true_genus": "Escherichia",
+      "verdict": "WRONG",
+      "n_mentions": 10,
+      "candidates": [
+        "Eggerthella",
+        "Eisenbergiella",
+        "Enterobacter",
+        "Enterococcus",
+        "Escherichia",
+        "Eubacterium",
+        "Ezakiella"
+      ],
+      "example_paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+    },
+    {
+      "surface": "E. eligens",
+      "assigned_sci": "Lachnospira",
+      "assigned_rank": "species",
+      "true_genus": "Eubacterium",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Enterococcus",
+        "Eubacterium"
+      ],
+      "example_paper": "Functional implications of microbial and viral gut metagenome changes in early stage L-DOPA-na\u00efve Parkinson's disease patients."
+    },
+    {
+      "surface": "E. faecalis",
+      "assigned_sci": "Eubacterium",
+      "assigned_rank": "genus",
+      "true_genus": "Enterococcus",
+      "verdict": "WRONG",
+      "n_mentions": 2,
+      "candidates": [
+        "Enterococcus",
+        "Eubacterium"
+      ],
+      "example_paper": "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms."
+    },
+    {
+      "surface": "E. faecium",
+      "assigned_sci": "Eubacterium",
+      "assigned_rank": "genus",
+      "true_genus": "Enterococcus",
+      "verdict": "WRONG",
+      "n_mentions": 3,
+      "candidates": [
+        "Enterococcus",
+        "Eubacterium"
+      ],
+      "example_paper": "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms."
+    },
+    {
+      "surface": "E. hallii",
+      "assigned_sci": "Anaerobutyricum",
+      "assigned_rank": "species",
+      "true_genus": "Eubacterium",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Enterococcus",
+        "Eubacterium"
+      ],
+      "example_paper": "Functional implications of microbial and viral gut metagenome changes in early stage L-DOPA-na\u00efve Parkinson's disease patients."
+    },
+    {
+      "surface": "E. rectale",
+      "assigned_sci": "Escherichia",
+      "assigned_rank": "genus",
+      "true_genus": "Eubacterium",
+      "verdict": "WRONG",
+      "n_mentions": 5,
+      "candidates": [
+        "Eggerthella",
+        "Enterobacter",
+        "Enterococcus",
+        "Escherichia",
+        "Eubacterium"
+      ],
+      "example_paper": "Association of brain amyloidosis with pro-inflammatory gut bacterial taxa and peripheral inflammation markers in cognitively impaired elderly."
+    },
+    {
+      "surface": "E.rectale",
+      "assigned_sci": "Eubacterium",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 1,
+      "candidates": [
+        "Escherichia",
+        "Eubacterium"
+      ],
+      "example_paper": "Study of gut microbiota alterations in Alzheimer's dementia patients from Kazakhstan."
+    },
+    {
+      "surface": "E.\u00a0bacterium",
+      "assigned_sci": "Eggerthella",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 1,
+      "candidates": [
+        "Eggerthella",
+        "Eubacterium"
+      ],
+      "example_paper": "Gut microbiota and metabolites are linked to disease progression in multiple sclerosis."
+    },
+    {
+      "surface": "F. prausnitzii",
+      "assigned_sci": "Faecalibacterium",
+      "assigned_rank": "species",
+      "true_genus": "Faecalibacterium",
+      "verdict": "RIGHT",
+      "n_mentions": 5,
+      "candidates": [
+        "Faecalibacterium",
+        "Faecousia",
+        "Flavonifractor",
+        "Fusicatenibacter"
+      ],
+      "example_paper": "Disturbed microbial ecology in Alzheimer's disease: evidence from the gut microbiota and fecal metabolome."
+    },
+    {
+      "surface": "L. acidophilus",
+      "assigned_sci": "Lactobacillus",
+      "assigned_rank": "genus",
+      "true_genus": "Lactobacillus",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Lachnospira",
+        "Lactobacillus",
+        "Leuconostoc"
+      ],
+      "example_paper": "Gut microbiota dysbiosis in patients with Alzheimer\u2019s disease and correlation with multiple cognitive domains"
+    },
+    {
+      "surface": "L. amylovorus",
+      "assigned_sci": "Lachnospira",
+      "assigned_rank": "genus",
+      "true_genus": "Lactobacillus",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Lachnospira",
+        "Lactobacillus"
+      ],
+      "example_paper": "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pilot study."
+    },
+    {
+      "surface": "L. and",
+      "assigned_sci": "Lachnoclostridium",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 3,
+      "candidates": [
+        "Lachnobacterium",
+        "Lachnoclostridium",
+        "Lachnospira",
+        "Lactobacillus"
+      ],
+      "example_paper": "Patients with Infections of The Central Nervous System Have Lowered Gut Microbiota Alpha Diversity"
+    },
+    {
+      "surface": "L. contributed",
+      "assigned_sci": "Lachnospira",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 1,
+      "candidates": [
+        "Lachnoclostridium",
+        "Lachnospira"
+      ],
+      "example_paper": "Specific gut microbiota alterations in essential tremor and its difference from Parkinson's disease."
+    },
+    {
+      "surface": "L. fermentum",
+      "assigned_sci": "Limosilactobacillus",
+      "assigned_rank": "species",
+      "true_genus": "Lactobacillus",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Lactobacillus",
+        "Limosilactobacillus"
+      ],
+      "example_paper": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion"
+    },
+    {
+      "surface": "L. gasseri",
+      "assigned_sci": "Lactobacillus",
+      "assigned_rank": "species",
+      "true_genus": "Lactobacillus",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Lactobacillus",
+        "Limosilactobacillus"
+      ],
+      "example_paper": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion"
+    },
+    {
+      "surface": "L. helveticus",
+      "assigned_sci": "Lactobacillus",
+      "assigned_rank": "genus",
+      "true_genus": "Lactobacillus",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Lactobacillus",
+        "Limosilactobacillus"
+      ],
+      "example_paper": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion"
+    },
+    {
+      "surface": "L. lactis",
+      "assigned_sci": "Ligilactobacillus",
+      "assigned_rank": "genus",
+      "true_genus": "Lactococcus",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Lachnoanaerobaculum",
+        "Lachnoclostridium",
+        "Leptotrichia",
+        "Ligilactobacillus",
+        "Limosilactobacillus"
+      ],
+      "example_paper": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota"
+    },
+    {
+      "surface": "L. mucosae",
+      "assigned_sci": "Limosilactobacillus",
+      "assigned_rank": "species",
+      "true_genus": "Lactobacillus",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Lactobacillus",
+        "Limosilactobacillus"
+      ],
+      "example_paper": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion"
+    },
+    {
+      "surface": "L. rhamnosus",
+      "assigned_sci": "Lactobacillus",
+      "assigned_rank": "genus",
+      "true_genus": "Lactobacillus",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Lactobacillus",
+        "Limosilactobacillus"
+      ],
+      "example_paper": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion"
+    },
+    {
+      "surface": "L. salivarius",
+      "assigned_sci": "Ligilactobacillus",
+      "assigned_rank": "species",
+      "true_genus": "Lactobacillus",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Lactobacillus",
+        "Lactococcus"
+      ],
+      "example_paper": "Elevated Lactobacillus salivarius and genus Akkermansia in fecal samples of Taiwanese patients with parkinson's disease and diabetes mellitus."
+    },
+    {
+      "surface": "P. aeruginosa",
+      "assigned_sci": "Pseudomonas",
+      "assigned_rank": "genus",
+      "true_genus": "Pseudomonas",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Parvimonas",
+        "Pseudomonas"
+      ],
+      "example_paper": "Disturbed microbial ecology in Alzheimer's disease: evidence from the gut microbiota and fecal metabolome."
+    },
+    {
+      "surface": "P. and",
+      "assigned_sci": "Parabacteroides",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 2,
+      "candidates": [
+        "Parabacteroides",
+        "Peptoniphilus",
+        "Phascolarctobacterium",
+        "Porphyromonas",
+        "Prevotella"
+      ],
+      "example_paper": "Gut Microbiota as a Potential Predictive Biomarker in Relapsing-Remitting Multiple Sclerosis."
+    },
+    {
+      "surface": "P. copri",
+      "assigned_sci": "Prevotella",
+      "assigned_rank": "genus",
+      "true_genus": "Prevotella",
+      "verdict": "RIGHT",
+      "n_mentions": 3,
+      "candidates": [
+        "Parabacteroides",
+        "Phascolarctobacterium",
+        "Prevotella"
+      ],
+      "example_paper": "Stratification of the Gut Microbiota Composition Landscape across the Alzheimer's Disease Continuum in a Turkish Cohort"
+    },
+    {
+      "surface": "P. distasonis",
+      "assigned_sci": "Parvimonas",
+      "assigned_rank": "genus",
+      "true_genus": "Bacteroides",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Parvimonas",
+        "Prevotella"
+      ],
+      "example_paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+    },
+    {
+      "surface": "P. endodontalis",
+      "assigned_sci": "Prevotella",
+      "assigned_rank": "genus",
+      "true_genus": "Porphyromonas",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Porphyromonas",
+        "Prevotella"
+      ],
+      "example_paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+    },
+    {
+      "surface": "P. gingivalis",
+      "assigned_sci": "Prevotella",
+      "assigned_rank": "genus",
+      "true_genus": "Porphyromonas",
+      "verdict": "WRONG",
+      "n_mentions": 5,
+      "candidates": [
+        "Parabacteroides",
+        "Paraprevotella",
+        "Parasutterella",
+        "Parvimonas",
+        "Phascolarctobacterium",
+        "Porphyromonas",
+        "Prevotella",
+        "Proteus",
+        "Pseudomonas"
+      ],
+      "example_paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+    },
+    {
+      "surface": "P. melaninogenica",
+      "assigned_sci": "Parvimonas",
+      "assigned_rank": "genus",
+      "true_genus": "Prevotella",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Parvimonas",
+        "Prevotella"
+      ],
+      "example_paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+    },
+    {
+      "surface": "P. merdae",
+      "assigned_sci": "Parabacteroides",
+      "assigned_rank": "species",
+      "true_genus": "Prevotella",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Parabacteroides",
+        "Prevotella"
+      ],
+      "example_paper": "Human Gut Microbiota from Autism Spectrum Disorder Promote Behavioral Symptoms in Mice"
+    },
+    {
+      "surface": "P. micra",
+      "assigned_sci": "Parvimonas",
+      "assigned_rank": "genus",
+      "true_genus": "Parvimonas",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Parvimonas",
+        "Prevotella"
+      ],
+      "example_paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+    },
+    {
+      "surface": "P. pallens",
+      "assigned_sci": "Parvimonas",
+      "assigned_rank": "genus",
+      "true_genus": "Prevotella",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Parvimonas",
+        "Prevotella"
+      ],
+      "example_paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+    },
+    {
+      "surface": "P.micra",
+      "assigned_sci": "Parvimonas",
+      "assigned_rank": "genus",
+      "true_genus": "Parvimonas",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Parvimonas",
+        "Prevotella"
+      ],
+      "example_paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+    },
+    {
+      "surface": "R. and",
+      "assigned_sci": "Roseburia",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 3,
+      "candidates": [
+        "Romboutsia",
+        "Roseburia",
+        "Ruminiclostridium",
+        "Ruminococcus"
+      ],
+      "example_paper": "Gut Microbiota as a Potential Predictive Biomarker in Relapsing-Remitting Multiple Sclerosis."
+    },
+    {
+      "surface": "R. are",
+      "assigned_sci": "Ruminococcus",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 1,
+      "candidates": [
+        "Romboutsia",
+        "Roseburia",
+        "Rothia",
+        "Ruminococcus"
+      ],
+      "example_paper": "Disease- and stage-specific alterations of the oral and fecal microbiota in Alzheimer\u2019s disease"
+    },
+    {
+      "surface": "R. faecis",
+      "assigned_sci": "Roseburia",
+      "assigned_rank": "species",
+      "true_genus": "Roseburia",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Roseburia",
+        "Rothia",
+        "Ruminococcus"
+      ],
+      "example_paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+    },
+    {
+      "surface": "R. gnavus",
+      "assigned_sci": "Roseburia",
+      "assigned_rank": "genus",
+      "true_genus": "Ruminococcus",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Roseburia",
+        "Ruminococcus"
+      ],
+      "example_paper": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis."
+    },
+    {
+      "surface": "R. hominis",
+      "assigned_sci": "Roseburia",
+      "assigned_rank": "species",
+      "true_genus": "Ruminococcus",
+      "verdict": "WRONG",
+      "n_mentions": 2,
+      "candidates": [
+        "Ralstonia",
+        "Roseburia",
+        "Ruminococcus"
+      ],
+      "example_paper": "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the Anti-Inflammatory P-Glycoprotein Pathway."
+    },
+    {
+      "surface": "R. intestinalis",
+      "assigned_sci": "Roseburia",
+      "assigned_rank": "species",
+      "true_genus": "Roseburia",
+      "verdict": "RIGHT",
+      "n_mentions": 3,
+      "candidates": [
+        "Roseburia",
+        "Rothia",
+        "Ruminococcus"
+      ],
+      "example_paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+    },
+    {
+      "surface": "R. lactatiformans",
+      "assigned_sci": "Roseburia",
+      "assigned_rank": "genus",
+      "true_genus": "Roseburia",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Roseburia",
+        "Rothia",
+        "Ruminococcus"
+      ],
+      "example_paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+    },
+    {
+      "surface": "R.\u00a0gnavus",
+      "assigned_sci": "Roseburia",
+      "assigned_rank": "genus",
+      "true_genus": "Ruminococcus",
+      "verdict": "WRONG",
+      "n_mentions": 1,
+      "candidates": [
+        "Roseburia",
+        "Ruminococcus"
+      ],
+      "example_paper": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis."
+    },
+    {
+      "surface": "S. and",
+      "assigned_sci": "Shuttleworthella",
+      "assigned_rank": "genus",
+      "true_genus": null,
+      "verdict": "NOT_A_BINOMIAL",
+      "n_mentions": 1,
+      "candidates": [
+        "Shuttleworthella",
+        "Staphylococcus",
+        "Streptococcus",
+        "Subdoligranulum"
+      ],
+      "example_paper": "Differential Patterns of Gut and Oral Microbiomes in Hispanic Individuals with Cognitive Impairment."
+    },
+    {
+      "surface": "S. gordonii",
+      "assigned_sci": "Streptococcus",
+      "assigned_rank": "species",
+      "true_genus": "Streptococcus",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Staphylococcus",
+        "Streptococcus"
+      ],
+      "example_paper": "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
+    },
+    {
+      "surface": "S. isoflavoniconvertens",
+      "assigned_sci": "Sutterella",
+      "assigned_rank": "genus",
+      "true_genus": "Sutterella",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Sarcina",
+        "Slackia",
+        "Sutterella"
+      ],
+      "example_paper": "Alterations of the human gut microbiome in multiple sclerosis."
+    },
+    {
+      "surface": "S. moorei",
+      "assigned_sci": "Sutterella",
+      "assigned_rank": "genus",
+      "true_genus": "Sutterella",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Shigella",
+        "Solobacterium",
+        "Streptococcus",
+        "Sutterella"
+      ],
+      "example_paper": "Disease- and stage-specific alterations of the oral and fecal microbiota in Alzheimer\u2019s disease"
+    },
+    {
+      "surface": "S. piriformis",
+      "assigned_sci": "Sutterella",
+      "assigned_rank": "genus",
+      "true_genus": "Sutterella",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Sarcina",
+        "Slackia",
+        "Sutterella"
+      ],
+      "example_paper": "Alterations of the human gut microbiome in multiple sclerosis."
+    },
+    {
+      "surface": "S. salivarius",
+      "assigned_sci": "Streptococcus",
+      "assigned_rank": "species",
+      "true_genus": "Streptococcus",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Staphylococcus",
+        "Streptococcus"
+      ],
+      "example_paper": "Distinct responsiveness to rifaximin in patients with hepatic encephalopathy depends on functional gut microbial species"
+    },
+    {
+      "surface": "S. stercoricanis",
+      "assigned_sci": "Sutterella",
+      "assigned_rank": "genus",
+      "true_genus": "Sutterella",
+      "verdict": "RIGHT",
+      "n_mentions": 2,
+      "candidates": [
+        "Sarcina",
+        "Slackia",
+        "Sutterella"
+      ],
+      "example_paper": "Alterations of the human gut microbiome in multiple sclerosis."
+    },
+    {
+      "surface": "S. ventriculi",
+      "assigned_sci": "Sutterella",
+      "assigned_rank": "genus",
+      "true_genus": "Sutterella",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Sarcina",
+        "Slackia",
+        "Sutterella"
+      ],
+      "example_paper": "Alterations of the human gut microbiome in multiple sclerosis."
+    },
+    {
+      "surface": "S. wadsworthensis",
+      "assigned_sci": "Sutterella",
+      "assigned_rank": "species",
+      "true_genus": "Sutterella",
+      "verdict": "RIGHT",
+      "n_mentions": 1,
+      "candidates": [
+        "Sarcina",
+        "Slackia",
+        "Sutterella"
+      ],
+      "example_paper": "Alterations of the human gut microbiome in multiple sclerosis."
+    }
+  ],
+  "counts": {
+    "RIGHT": 54,
+    "NOT_A_BINOMIAL": 19,
+    "WRONG": 41,
+    "UNKNOWN": 1
+  }
+}
