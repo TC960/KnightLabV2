@@ -231,6 +231,36 @@ Two readings, both worth keeping:
 
 ---
 
+## What the evidence base actually looks like, counted
+
+The discordance null above can only speak to edges with more than one paper —
+a single-paper edge has no leave-one-out majority, so provenance is the *only*
+signal available for it and is by construction untestable. That blind spot is
+worth sizing:
+
+| | edges |
+|---|---|
+| single-paper edges | **1,561 of 2,008 (77.7%)** |
+|  — with an own-result sentence naming the taxon | 981 |
+|  — witnessed only by background/citation | 279 |
+|  — no kept sentence names the taxon at all | 301 |
+
+So **580 edges (28.9% of the graph)** rest on one paper *and* have no
+own-result prose witness. That sounds alarming and mostly is not, for two
+reasons that must be stated together:
+
+1. **The confidence tier already covers them.** All 580 are tagged
+   `provisional` — the graph does not claim more for them than it should.
+2. **`silent` is not `unsupported`.** A study reporting twenty differentially
+   abundant taxa in one table names most of them in no sentence at all, and
+   `relation_sentences.json` keeps 7.5k of 106k sentences by design. For these
+   edges the instrument is blind, not the paper silent.
+
+The honest statement is therefore: *no current signal can verify 580 edges, and
+the existing `provisional` tier is the correct place for them.* Verifying them
+needs either more papers (so they stop being single-paper) or table and figure
+extraction, which prose-level filtering cannot reach.
+
 ## What a PI should take from this
 
 1. **Reading fidelity is ≥86.6% [81.7, 91.3], measured without the gold standard

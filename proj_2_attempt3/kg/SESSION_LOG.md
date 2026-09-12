@@ -66,6 +66,15 @@ mentions between taxa the paper names anyway, so a binary incidence profile
 cannot see it. *A representation immune to a class of error is also blind to it.*
 The graph itself was never affected: `build_kg.py` does not read this file.
 
+**Sizing the evidence base while there.** 1,561 of 2,008 edges (77.7%) rest on a
+single paper; of those, 981 have an own-result sentence witness, 279 only
+background, 301 none at all. So **580 edges (28.9%) rest on one paper AND have no
+own-result prose witness** — all 580 already tagged `provisional`, which is the
+correct place for them. `silent` is not `unsupported`: a study listing twenty
+taxa in a table names most of them in no sentence, and the filter keeps 7.5k of
+106k sentences by design. Verifying these needs more papers or table/figure
+extraction; prose filtering cannot reach them.
+
 **Single highest-value next step is unchanged: more papers, which needs a GPU —
 ask before spending.** Everything below it is two human design decisions and
 reporting PMID 27703453 upstream to Disbiome. Write-up:
