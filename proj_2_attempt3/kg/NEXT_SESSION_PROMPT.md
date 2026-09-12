@@ -27,6 +27,19 @@
 >
 > **Closed levers — do not reopen without new data:**
 >
+> - **Sentence-level direction audit. DONE 2026-09-12, and it is the best
+>   fidelity number the project has.** Reading fidelity **≥86.6%** [81.7, 91.3]
+>   against the papers' own sentences, independent of the gold AND of both
+>   curated databases. All 28 residual disagreements adjudicated twice — **zero
+>   extraction errors** — so it is a lower bound. Do NOT rebuild the
+>   comparison-frame corrector: it was built, measured, and made agreement worse
+>   (0.866 → 0.774), because 41 of 54 "control-framed" sentences name controls as
+>   the *reference*, not the subject. See `FINDINGS_direction_audit.md`.
+> - **Textual provenance as a predictor of discordance.** own-result 27.6% vs
+>   background-only 27.1%, pooled difference −0.6 points at an MDE of 8.4. The
+>   **25th** variable, the 25th null. The 585 background-only observations are
+>   not worse evidence, so there is no defective subset to review.
+>
 > - **Corpus screening for study design. DONE 2026-09-11, and it is clean.**
 >   Only 23 of 271 papers had ever been screened; the other 249 now have been.
 >   Animal studies: deterministic full-text filter, recall 15/15 on the existing

@@ -1,0 +1,40 @@
+{
+  "verdicts": [
+    {"id": 1, "category": "BACKGROUND_LEAK", "reason": "Sentence contains speculation ('we assume', 'appears to be') rather than measured result"},
+    {"id": 2, "category": "LOCATIVE_CONTROL", "reason": "Sentence explicitly states 'healthy individuals were dominated by Bacteroides', showing control group has high levels"},
+    {"id": 3, "category": "BACKGROUND_LEAK", "reason": "Sentence reports 'another previous study' finding, not this paper's own result"},
+    {"id": 4, "category": "LOCATIVE_CONTROL", "reason": "Sentence says 'significantly more abundant in the mucosa of controls than PD', indicating control has higher levels"},
+    {"id": 5, "category": "UNRESOLVED", "reason": "Sentence says 'differentially abundant' but does not state direction (up or down)"},
+    {"id": 6, "category": "OTHER_CONTRAST", "reason": "Sentence compares IgA antibody response across treatment timepoints (M0 vs M12) and responders vs non-responders, not disease vs healthy control"},
+    {"id": 7, "category": "OTHER_CONTRAST", "reason": "Sentence compares mouse treatment groups (PV, PC, BW), not human disease vs healthy control"},
+    {"id": 8, "category": "TAXON_MISMATCH", "reason": "Direction word belongs to COG (gene) categories, not Prevotella taxon abundance"},
+    {"id": 9, "category": "TAXON_MISMATCH", "reason": "Sentence is about 'Candidatus Blochmannia' (specific genus), not Pseudomonadota (whole phylum)"},
+    {"id": 10, "category": "LOCATIVE_CONTROL", "reason": "Sentence says genomes 'more abundant in the control group', indicating control has higher levels"},
+    {"id": 11, "category": "LOCATIVE_CONTROL", "reason": "Sentence explicitly states 'Bacteroides were enriched in the control group'"},
+    {"id": 12, "category": "LOCATIVE_CONTROL", "reason": "Comparative statement 'lower in NC group than in aMCI group' indicates control/healthy has lower levels, thus disease has higher"},
+    {"id": 13, "category": "LOCATIVE_CONTROL", "reason": "Sentence says 'enriched Faecalibacterium' is 'best discriminant predictor for the healthy controls'"},
+    {"id": 14, "category": "LOCATIVE_CONTROL", "reason": "Sentence explicitly states 'significantly higher in the healthy control group compared to that in the HD group'"},
+    {"id": 15, "category": "OTHER_CONTRAST", "reason": "Sentence appears to compare timepoints post-operation ('higher in the NC group on day 7 postoperation'), not disease vs control groups"},
+    {"id": 16, "category": "TAXON_MISMATCH", "reason": "Direction word applies to Ruminococcaceae, but record is about Oscillospiraceae"},
+    {"id": 17, "category": "OTHER_CONTRAST", "reason": "Sentence compares treatment responders at M12 to healthy controls, not baseline disease vs control"},
+    {"id": 18, "category": "OTHER_CONTRAST", "reason": "Sentence compares 'MCI converters' (subgroup that progressed) vs other MCI groups, not disease vs healthy control"},
+    {"id": 19, "category": "TAXON_MISMATCH", "reason": "Sentence mentions Kiloniellales, Flavorbacteriaceae, and CAG56, but record is about Rhodospirillales"},
+    {"id": 20, "category": "LOCATIVE_CONTROL", "reason": "Sentence states abundances 'in the control group were higher than those in the PD group'"},
+    {"id": 21, "category": "OTHER_CONTRAST", "reason": "Sentence is a correlation with cognitive score, not a direct disease vs healthy control comparison"},
+    {"id": 22, "category": "LOCATIVE_CONTROL", "reason": "Sentence explicitly states Streptococcus gordonii 'more abundant in cognitively normal (CN) than MCI groups'"},
+    {"id": 23, "category": "OTHER_CONTRAST", "reason": "Sentence compares MS patients at baseline vs month 12 (timepoint comparison), not disease vs healthy control"},
+    {"id": 24, "category": "LOCATIVE_CONTROL", "reason": "Sentence states 'greater proportions... detected in the healthy group than in the PD group'"},
+    {"id": 25, "category": "OTHER_CONTRAST", "reason": "Sentence compares SAP vs non-SAP complication groups, not disease vs healthy control"},
+    {"id": 26, "category": "OTHER_CONTRAST", "reason": "Sentence compares bloating vs non-bloating symptom subgroups, not disease vs healthy control"},
+    {"id": 27, "category": "LOCATIVE_CONTROL", "reason": "Sentence explicitly states 'significantly higher in healthy males', indicating control has higher levels"},
+    {"id": 28, "category": "UNRESOLVED", "reason": "Sentence is incomplete, cutting off mid-statement at 'p-value FDR ≤ 0.'"}
+  ],
+  "counts": {
+    "LOCATIVE_CONTROL": 11,
+    "OTHER_CONTRAST": 9,
+    "BACKGROUND_LEAK": 2,
+    "TAXON_MISMATCH": 4,
+    "EXTRACTION_ERROR": 0,
+    "UNRESOLVED": 2
+  }
+}

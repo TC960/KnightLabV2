@@ -43,6 +43,14 @@ of this: 162 of 250 papers have blank taxa columns, a thorough Opus 4.8 re-annot
 the humans missed, and the 15-paper benchmark only rose 0.64 -> 0.84 once the gold was corrected.
 Prefer the Disbiome/Peryton agreement figures — they do not depend on the in-house gold.
 
+**Best current fidelity number (2026-09-12): reading fidelity ≥ 86.6%**, 95% CI [81.7, 91.3], from
+181/209 scoreable observations across 122 papers — measured against *the papers' own sentences*, so it
+depends on neither the in-house gold nor the curated databases. All 28 residual disagreements were
+adjudicated twice independently (25/28 exact agreement) and **none is an extraction error**, so this is
+a lower bound. It is a *different quantity* from the 73%/72.5% agreement figures — reading fidelity,
+not cross-literature reproducibility — and must not be quoted as moving them. See
+`proj_2_attempt3/kg/FINDINGS_direction_audit.md`.
+
 **The KG is broad-scoped** — all microbe–disease relationships, not a single disease area. The current
 gold-standard/test set happens to skew neuro-adjacent (Parkinson's, MS, Alzheimer's, ALS, stroke,
 dementia, SMA, epilepsy, and others) simply because that's the disease mix in the test papers we have

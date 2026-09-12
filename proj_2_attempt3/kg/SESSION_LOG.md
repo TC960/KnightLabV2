@@ -4,6 +4,75 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+## TL;DR — 2026-09-12 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**Tested.** Whether the extractor actually read each paper correctly, measured
+against the papers' OWN sentences — depending on neither the compromised
+in-house gold nor the half-independent curated databases. And whether an
+observation's textual provenance (own result vs background/citation) predicts
+disagreement with the rest of the literature.
+
+**Survived.**
+- *Reading fidelity is **>= 86.6%** (181/209), 95% CI [81.7, 91.3]*, paper-cluster
+  bootstrap over 122 papers, disagreement NOT clustered by paper (p=0.28). This
+  is the project's **fourth gold-free fidelity signal** and the first that covers
+  the whole graph rather than a subset. It corroborates the ~90% reading-fidelity
+  half of `FINDINGS_independence.md` by an independent route. It does NOT move
+  73.0/72.5 and must not be quoted as doing so — different quantity.
+- *All 28 residual disagreements are audit artefacts, not extraction errors.*
+  Adjudicated twice independently (orchestrator wrote its verdicts before reading
+  the second pass): **25/28 exact category agreement, 0 and 0 extraction errors**.
+  12 are sentences attributing abundance to the CONTROL group (so the graph's
+  "depleted" is right and the cue is the inverted one), 9 compare something other
+  than disease-vs-control (treatment arms, timepoints, symptom subgroups, a
+  regression on a continuous score), 4 carry a direction belonging to a different
+  taxon, 2 are background leaks, 1 is truncated. So 86.6% is a **lower bound**.
+- *One letter was deciding which genus a paper meant.* `relation_sentences.py`
+  expanded abbreviated binomials via `alias.setdefault(sci[0].upper(), sci)` —
+  first genus with that initial wins. An oral/gut Alzheimer's paper filed
+  *P. gingivalis* (**Porphyromonas**, the periodontal pathogen it is largely
+  about) under **Phascolarctobacterium**, a gut genus. 774 mentions came from
+  that path, 362 in papers with a letter clash, 78 of 348 papers. Fixed at source
+  and repaired in place — 84 reassigned, 29 already right, 117 dropped.
+
+**Did not survive / null.**
+- *Textual provenance does not predict discordance.* own 27.6% (285/1032),
+  background 27.1% (76/281), silent 28.6%. Pooled difference −0.6 points at an
+  **MDE of 8.4 points**; paired within paper +5.5 points, p=0.28, MDE 14.1.
+  **The 25th variable tested against discordance, the 25th null.** Good news for
+  the graph — the 585 background-only observations are not worse evidence — and
+  the screen is spent as a lever.
+- *A comparison-frame corrector was built, measured and REJECTED.* Flipping
+  control-framed sentences moved agreement 0.866 -> 0.774, because the dominant
+  construction names controls as the REFERENCE ("lower in PD patients compared
+  with the healthy controls"), not the subject. **41 of 54** control-framed
+  witnesses were already correct unflipped. Do not rebuild it.
+- *My own curated table was briefly weaker than what it audited*, for the third
+  time in this repo. A first draft keyed on the epithet alone would have
+  rewritten the correctly species-resolved "L. salivarius" (*Ligilactobacillus*)
+  to *Streptococcus* and "R. hominis" (*Roseburia*) to *Dialister*. Caught in
+  spot-check; two guards added (never override a species-rank resolution; the
+  candidate genus must share the mention's initial).
+
+**Also.** `ftp.ncbi.nih.gov` re-probed: still CONNECT -> 403 (**sixth** session).
+Container again came up on a detached HEAD; `main` re-attached and pushed.
+
+**A structural lesson worth keeping.** Re-running `cooccur_direction.py` on the
+repaired corpus reproduced every statistic **bit-for-bit**, and that was checked
+rather than assumed: **zero of 348 papers change their taxid SET**. Reassignment
+*requires* the true genus to be named in full in the same paper, and the wrongly
+assigned genus was too — that is how it entered the alias map. The bug moved
+mentions between taxa the paper names anyway, so a binary incidence profile
+cannot see it. *A representation immune to a class of error is also blind to it.*
+The graph itself was never affected: `build_kg.py` does not read this file.
+
+**Single highest-value next step is unchanged: more papers, which needs a GPU —
+ask before spending.** Everything below it is two human design decisions and
+reporting PMID 27703453 upstream to Disbiome. Write-up:
+`FINDINGS_direction_audit.md`.
+
+---
+
 ## TL;DR — 2026-09-11
 
 **Tested.** Whether the 254 "unresolved 16S clade labels" really are all clade

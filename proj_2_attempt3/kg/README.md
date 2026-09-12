@@ -89,6 +89,16 @@ resolution and external validation landed. Corrected 2026-09-10.*
   independent replication. 43 of our 272 papers are cited by Disbiome and 24 by
   Peryton, and agreement splits hard on that line (87.5%/96.8% shared-source vs
   58.1%/52.6% disjoint). See `FINDINGS_independence.md`.
+- **Reading fidelity, measured without the gold or either database: ≥86.6%**
+  (181/209, 95% CI [81.7, 91.3], 122 papers). `audit_direction_witness.py` goes
+  back to each paper's own sentences for every observation backing an edge and
+  compares the direction words beside the taxon with what we extracted. All 28
+  residual disagreements were adjudicated twice independently (25/28 exact
+  agreement) and **none is an extraction error** — 12 attribute the abundance to
+  the control group, 9 compare something other than disease-vs-control, 4 carry a
+  direction belonging to a different taxon — so 86.6% is a **lower bound**. This
+  is a different quantity from the 73%/72.5% headline and **must not be quoted as
+  moving it**. See `FINDINGS_direction_audit.md`.
 - **Disagreement with the rest of the literature is a property of the PAPER, and
   nothing we extract explains it.** Scored against the leave-one-out majority, 377
   of 1,367 decisive observations (27.6%) disagree, and which papers hold the
@@ -100,7 +110,10 @@ resolution and external validation landed. Corrected 2026-09-10.*
   disease identity are all null at MDEs of 16–22%, and so are 15 wet-lab and
   bioinformatics variables added in a second pass (extraction kit, pipeline,
   OTU-vs-ASV, LEfSe vs DESeq2, rarefaction, platform, publication year) —
-  **24 variables, 24 nulls**. The magnitude explains why: the paper-level SD of
+  **24 variables, 24 nulls**, now **25 with the textual-provenance test of
+  2026-09-12** (whether the taxon is named in an own-result sentence or only in
+  background/citation: 27.6% vs 27.1%, pooled difference −0.6 points at an MDE of
+  8.4; `FINDINGS_direction_audit.md`). The magnitude explains why: the paper-level SD of
   discordance is only **3.4 percentage points** on a 27.6% base
   (cluster-bootstrap CI [0.0, 6.0]) against MDEs of ±4–7 points, so this corpus
   *cannot answer* whether kit or pipeline matters. Corollary: **~83% of the

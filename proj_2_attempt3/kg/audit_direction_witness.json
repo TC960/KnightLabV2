@@ -1,0 +1,444 @@
+{
+ "substrate": "relation_sentences_clean.json",
+ "n_observations": 3077,
+ "n_with_any_witness": 2694,
+ "n_with_own_witness": 2109,
+ "n_witness_but_none_own": 585,
+ "tiers": {
+  "T0_all_strict": {
+   "n_scored": 442,
+   "n_agree": 375,
+   "agreement": 0.8484,
+   "n_disagree": 67,
+   "n_papers": 193
+  },
+  "T1_own_result": {
+   "n_scored": 209,
+   "n_agree": 181,
+   "agreement": 0.866,
+   "n_disagree": 28,
+   "n_papers": 122
+  },
+  "T1_own_result_framed": {
+   "n_scored": 204,
+   "n_agree": 158,
+   "agreement": 0.7745,
+   "n_disagree": 46,
+   "n_papers": 121
+  }
+ },
+ "headline_tier": "T1_own_result",
+ "headline_ci95": [
+  0.8173,
+  0.9127
+ ],
+ "paper_clustering_p": 0.27717,
+ "disagreements": [
+  {
+   "taxon": "Bifidobacterium",
+   "disease": "Parkinson's disease",
+   "paper": "Study of the gut microbiome in Egyptian patients with Parkinson's Disease.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "We assume that low Bifidobacterium level is risky for PD and its progression, and that increased level observed in most studies appears to be rather a compensatory mechanism which may take place at different stages and duration of the disease and may occur more in severe stages, like in our study."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": true
+  },
+  {
+   "taxon": "Bacteroides",
+   "disease": "Stroke",
+   "paper": "Alterations in gut microbiota and metabolomic profiles in acute stroke: insights into brain-gut axis dysregulation",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "In contrast, healthy individuals were dominated by Bacteroides and Escherichia-Shigella (LEfSe, P < 0.05, LDA > 2.0; Figure 2B )."
+   ],
+   "frames": [
+    "control"
+   ],
+   "contested": true
+  },
+  {
+   "taxon": "Bifidobacterium",
+   "disease": "Stroke",
+   "paper": "Identifying gut microbiota with high specificity for ischemic stroke with large vessel occlusion",
+   "extracted": "up",
+   "cue": "down",
+   "sents": [
+    "However, the findings in the present study were inconsistent with another previous study 25 , which reported a reduced relative abundance of genus Bifidobacterium in stroke patients as compared to normal subjects."
+   ],
+   "frames": [
+    "control"
+   ],
+   "contested": true
+  },
+  {
+   "taxon": "Faecalibacterium",
+   "disease": "Parkinson's disease",
+   "paper": "Colonic bacterial composition in Parkinson's disease.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "Bacteria from the genus Faecalibacterium were significantly more abundant in the mucosa of controls than PD."
+   ],
+   "frames": [
+    "control"
+   ],
+   "contested": false
+  },
+  {
+   "taxon": "Lachnospiraceae",
+   "disease": "Parkinson's disease",
+   "paper": "Fecal microbiome alterations in treatment-naive de novo Parkinson's disease.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "Only one taxon at the ASV level, belonging to the Lachnospiraceae GCA-900066575 genus, was identified as differentially abundant by both ANCOM and DESeq2 in the FIN cohort (Supplementary Table 5 )."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": true
+  },
+  {
+   "taxon": "Ruminococcus",
+   "disease": "Multiple sclerosis",
+   "paper": "Ocrelizumab transiently alters microbiota and modulates immune response depending on treatment outcome.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "Interestingly, all analyzed IgA anti-commensal antibody levels increased slightly during treatment, with a significant increase in IgA against Ruminococcus flavefaciens at the end of M12 compared to M0.",
+    "There were no significant changes in IgG in responders or non-responders ( Figure S9 ); additionally, we found a significant increase in IgA antibodies in responders but only against Ruminococcus flavefaciens ( Figure S10 )."
+   ],
+   "frames": [
+    "patient",
+    "patient"
+   ],
+   "contested": true
+  },
+  {
+   "taxon": "Bifidobacterium",
+   "disease": "Multiple sclerosis",
+   "paper": "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "Bifidobacterium was significantly higher in the PV -administered mice compared to both PC- and BW -administered mice ( SI Appendix , Fig. S8 E )."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": true
+  },
+  {
+   "taxon": "Prevotella",
+   "disease": "Parkinson's disease",
+   "paper": "Metagenome-assembled microbial genomes from Parkinson's disease fecal samples.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "We observed that the three most common COG categories in Prevotella MAGs were \u201cCell wall/membrane/envelope biogenesis\u201d, \u201cTranslation, ribosomal structure and biogenesis\u201d, and \u201cCarbohydrate transport and metabolism\u201d (Supplementary Fig. S8) To observe if any COG group was enriched in either or both PD and control groups, we used the \u201ccompute-functional-enrichment-in-pan\u201d functionality in the Anvi\u2019o tool20."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": true
+  },
+  {
+   "taxon": "Pseudomonadota",
+   "disease": "Parkinson's disease",
+   "paper": "Gut Microbiota and Metabolome Alterations Associated with Parkinson's Disease.",
+   "extracted": "up",
+   "cue": "down",
+   "sents": [
+    "Concerning Proteobacteria , \u201c Candidatus Blochmannia\u201d was significantly reduced in PD patients."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": true
+  },
+  {
+   "taxon": "Methanomethylophilaceae",
+   "disease": "Parkinson's disease",
+   "paper": "Metagenome-assembled microbial genomes from Parkinson's disease fecal samples.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "Four genomes were found to be statistically significantly more abundant in the control group, all of which were annotated as Methanomethylophilaceae at the family level."
+   ],
+   "frames": [
+    "control"
+   ],
+   "contested": false
+  },
+  {
+   "taxon": "Bacteroides",
+   "disease": "Parkinson's disease",
+   "paper": "Cross-Sectional Study on the Gut Microbiome of Parkinson's Disease Patients in Central China.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "In addition, we found that Bacteroides were enriched in the control group."
+   ],
+   "frames": [
+    "control"
+   ],
+   "contested": true
+  },
+  {
+   "taxon": "Faecalibacterium",
+   "disease": "Alzheimer's disease",
+   "paper": "Preoperative Microbiomes and Intestinal Barrier Function Can Differentiate Prodromal Alzheimer's Disease From Normal Neurocognition in Elderly Patients Scheduled to Undergo Orthopedic Surgery.",
+   "extracted": "up",
+   "cue": "down",
+   "sents": [
+    "However, the levels of Faecalibacterium of SCFA-producing bacteria were lower in the NC group than in the aMCI group (P = 0.019, Table 4 and Figure 2F )."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": true
+  },
+  {
+   "taxon": "Faecalibacterium",
+   "disease": "Alzheimer's disease",
+   "paper": "Structural and Functional Dysbiosis of Fecal Microbiota in Chinese Patients With Alzheimer's Disease.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "Figure 4 shows that enriched Faecalibacterium was the best discriminant predictor for the healthy controls (AUC: 0.797), with a best cut-off value of 3.2149%."
+   ],
+   "frames": [
+    "control"
+   ],
+   "contested": true
+  },
+  {
+   "taxon": "Clostridium XVIII",
+   "disease": "Huntington's disease",
+   "paper": "Altered Gut Microbiota Related to Inflammatory Responses in Patients With Huntington's Disease.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "In contrast, Clostridium XVIII at genus level was significantly higher in the healthy control group compared to that in the HD group ( Figure 4 )."
+   ],
+   "frames": [
+    "control"
+   ],
+   "contested": false
+  },
+  {
+   "taxon": "Lachnospira",
+   "disease": "Alzheimer's disease",
+   "paper": "Orthopedic Surgery Causes Gut Microbiome Dysbiosis and Intestinal Barrier Dysfunction in Prodromal Alzheimer Disease Patients",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "Meanwhile, the relative abundance of Lachnospira was remarkably higher in the NC group on day 7 postoperation (FDR- P =0.139) (Fig. 4 E)."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": false
+  },
+  {
+   "taxon": "Oscillospiraceae",
+   "disease": "Multiple sclerosis",
+   "paper": "Comparison of the Intestinal Microbiome of Italian Patients with Multiple Sclerosis and Their Household Relatives.",
+   "extracted": "up",
+   "cue": "down",
+   "sents": [
+    "Although it was excluded from the study, analysis of the gut microbiome of the only MS patient with EDSS 7.5 showed a significant decrease of Ruminococcaceae compared to the household control (9.3% vs. 32.7%, data not shown)."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": true
+  },
+  {
+   "taxon": "Roseburia",
+   "disease": "Multiple sclerosis",
+   "paper": "Ocrelizumab transiently alters microbiota and modulates immune response depending on treatment outcome.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "In responders at the end of M12, only levels of genus Roseburia were higher compared to HCs ( Figure 4 D)."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": false
+  },
+  {
+   "taxon": "Merdimonas",
+   "disease": "Mild cognitive impairment",
+   "paper": "Prognostic Value of a Multivariate Gut Microbiome Model for Progression from Normal Cognition to Mild Cognitive Impairment Within 4 Years.",
+   "extracted": "up",
+   "cue": "down",
+   "sents": [
+    "Merdimonas , the third significantly altered genus, also exhibited a marked decline in MCI converters."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": false
+  },
+  {
+   "taxon": "Rhodospirillales",
+   "disease": "Parkinson's disease",
+   "paper": "The alteration of intestinal mucosal \u03b1-synuclein expression and mucosal microbiota in Parkinson's disease.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "The results showed that in terms of duodenal mucosal microbiota (Fig. 5 c), the relative abundances of Kiloniellales (at order the level), Flavorbacteriaceae (at the family level), and CAG56 (at the genus level) in the control group were higher than those in the PD group."
+   ],
+   "frames": [
+    "control"
+   ],
+   "contested": false
+  },
+  {
+   "taxon": "Thermoactinomycetaceae",
+   "disease": "Parkinson's disease",
+   "paper": "The alteration of intestinal mucosal \u03b1-synuclein expression and mucosal microbiota in Parkinson's disease.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "In terms of sigmoid mucosal microbiota (Fig. 5 d), the relative abundances of Thermoactinomycetales (at the order level) and Thermoactinomycetaceae (at the family level) in the control group were higher than those in the PD group."
+   ],
+   "frames": [
+    "control"
+   ],
+   "contested": false
+  },
+  {
+   "taxon": "Bacteroides",
+   "disease": "Cognitive impairment",
+   "paper": "Gut microbiome, cognitive function and brain structure: a multi-omics integration analysis",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "Among the 3 identified key genera, we found that enrichment of Bacteroides was associated with better cognitive performance quantified by the global cognitive scores (\u03b2\u2009=\u20090.14, 95% CI 0.00\u20130.27) in the CHNS (Fig. 3 e and Additional file 1 : Table S6)."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": true
+  },
+  {
+   "taxon": "Streptococcus gordonii",
+   "disease": "Mild cognitive impairment",
+   "paper": "Metagenomic association analysis of cognitive impairment in community-dwelling older adults.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "Although Diallister invisus and Streptococcus gordonii were not obviously related to cognition, the former was dominant in individuals with mild cognitive impairment (MCI), while the later was more abundant in cognitively normal (CN) than MCI groups, and positively associated with cognitive performance (p < 0.05)."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": false
+  },
+  {
+   "taxon": "Bifidobacterium angulatum",
+   "disease": "Multiple sclerosis",
+   "paper": "The effect of multiple sclerosis therapy on gut microbiota dysbiosis: a longitudinal prospective study.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "By examining the longitudinal changes in our study, it becomes evident that individuals with MS experienced an increase in Bifidobacterium angulatum after one year of treatment compared to baseline."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": false
+  },
+  {
+   "taxon": "Limnobacter",
+   "disease": "Parkinson's disease",
+   "paper": "Detection of Microbial 16S rRNA Gene in the Blood of Patients With Parkinson's Disease.",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "Within LEfSe analysis, greater proportions of the genus Limnobacter were detected in the healthy group than in the PD group."
+   ],
+   "frames": [
+    "control"
+   ],
+   "contested": false
+  },
+  {
+   "taxon": "Prevotella",
+   "disease": "Hypertensive intracerebral hemorrhage",
+   "paper": "Gut microbiota composition reflects disease progression, severity and outcome, and dysfunctional immune responses in patients with hypertensive intracerebral hemorrhage",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "We found that ET1 only appears in the SAP group (22%), and ET2 was predominant in the non-SAP group (85%), with a high abundance of Prevotella ( Figures S4C, D ) ."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": false
+  },
+  {
+   "taxon": "Megamonas",
+   "disease": "Chronic traumatic complete spinal cord injury",
+   "paper": "Gut microbiota dysbiosis in male patients with chronic traumatic complete spinal cord injury",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "Here, the relative abundance of Megamonas was significantly higher in the bloating group than in the non-bloating group, possibly because some carbohydrates in food cannot be digested and absorbed by intestinal digestive enzymes."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": false
+  },
+  {
+   "taxon": "Dialister",
+   "disease": "Chronic traumatic complete spinal cord injury",
+   "paper": "Gut microbiota dysbiosis in male patients with chronic traumatic complete spinal cord injury",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "In our study, Dialister was significantly higher in healthy males, and these bacteria were negatively correlated with UA, LDL, TG and TCHO."
+   ],
+   "frames": [
+    "control"
+   ],
+   "contested": false
+  },
+  {
+   "taxon": "Clostridiaceae",
+   "disease": "Stroke",
+   "paper": "Gut Microbiota Ecological and Functional Modulation in Post-Stroke Recovery Patients: An Italian Study",
+   "extracted": "down",
+   "cue": "up",
+   "sents": [
+    "The analysis of ASVs distribution at family level (L5) showed a significant higher abundance of Clostridiaceae (p-value FDR \u2264 0."
+   ],
+   "frames": [
+    "patient"
+   ],
+   "contested": false
+  }
+ ],
+ "contested_split": {
+  "contested": [
+   64,
+   77,
+   0.8312
+  ],
+  "uncontested": [
+   117,
+   132,
+   0.8864
+  ]
+ }
+}

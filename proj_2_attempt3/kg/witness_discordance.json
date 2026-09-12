@@ -1,0 +1,44 @@
+{
+ "n_observations": 3077,
+ "provenance_counts": {
+  "own": 2109,
+  "background": 585,
+  "silent": 383
+ },
+ "n_decisive": 1390,
+ "overall_discordance": 0.2755,
+ "discordance_own": [
+  285,
+  1032,
+  0.2762
+ ],
+ "discordance_background": [
+  76,
+  281,
+  0.2705
+ ],
+ "discordance_silent": [
+  22,
+  77,
+  0.2857
+ ],
+ "own_vs_background": {
+  "pooled_own": [
+   285,
+   1032,
+   0.2762
+  ],
+  "pooled_background": [
+   76,
+   281,
+   0.2705
+  ],
+  "pooled_difference": -0.0057,
+  "n_papers_with_both": 59,
+  "mde_80pct_pooled": 0.0841,
+  "paired_mean_difference": 0.0554,
+  "paired_sd": 0.3871,
+  "p_sign_flip": 0.28137,
+  "mde_80pct_paired": 0.1411
+ }
+}
