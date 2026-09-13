@@ -1,0 +1,113 @@
+{
+  "superset_violations": 0,
+  "delta_tp": 112,
+  "delta_fp": -112,
+  "delta_fn": -9,
+  "bootstrap": {
+    "B": 2000,
+    "n_papers": 15,
+    "ci": {
+      "qwen2.5-32b-instruct|old_char": [
+        0.4324,
+        0.6908
+      ],
+      "qwen2.5-32b-instruct|old_lca": [
+        0.5068,
+        0.7321
+      ],
+      "qwen2.5-32b-instruct|new_char": [
+        0.4101,
+        0.7101
+      ],
+      "qwen2.5-32b-instruct|new_lca": [
+        0.4605,
+        0.7314
+      ],
+      "qwen3.6-35b-a3b|old_char": [
+        0.3551,
+        0.7139
+      ],
+      "qwen3.6-35b-a3b|old_lca": [
+        0.5674,
+        0.8419
+      ],
+      "qwen3.6-35b-a3b|new_char": [
+        0.4891,
+        0.8179
+      ],
+      "qwen3.6-35b-a3b|new_lca": [
+        0.6183,
+        0.865
+      ],
+      "qwopus3.5-27b-v3|old_char": [
+        0.4615,
+        0.8086
+      ],
+      "qwopus3.5-27b-v3|old_lca": [
+        0.6409,
+        0.8812
+      ],
+      "qwopus3.5-27b-v3|new_char": [
+        0.6361,
+        0.8765
+      ],
+      "qwopus3.5-27b-v3|new_lca": [
+        0.7419,
+        0.8882
+      ],
+      "qwopus3.6-35b-a3b-mtp|old_char": [
+        0.361,
+        0.7187
+      ],
+      "qwopus3.6-35b-a3b-mtp|old_lca": [
+        0.5814,
+        0.8225
+      ],
+      "qwopus3.6-35b-a3b-mtp|new_char": [
+        0.4846,
+        0.8167
+      ],
+      "qwopus3.6-35b-a3b-mtp|new_lca": [
+        0.6016,
+        0.8531
+      ],
+      "qwythos-9b|old_char": [
+        0.3989,
+        0.7608
+      ],
+      "qwythos-9b|old_lca": [
+        0.5666,
+        0.8144
+      ],
+      "qwythos-9b|new_char": [
+        0.53,
+        0.8368
+      ],
+      "qwythos-9b|new_lca": [
+        0.6009,
+        0.8657
+      ]
+    },
+    "p_qwopus35_beats": {
+      "qwen2.5-32b-instruct": 1.0,
+      "qwen3.6-35b-a3b": 0.951,
+      "qwopus3.6-35b-a3b-mtp": 0.9815,
+      "qwythos-9b": 0.883
+    },
+    "p_rank1": {
+      "qwopus3.5-27b-v3": 0.8355,
+      "qwythos-9b": 0.1155,
+      "qwen3.6-35b-a3b": 0.044,
+      "qwopus3.6-35b-a3b-mtp": 0.005
+    }
+  },
+  "genus_rollup_char": {
+    "n": 260,
+    "TP": 2164,
+    "FP": 714,
+    "FN": 775,
+    "precision": 0.7519,
+    "recall": 0.7363,
+    "f1": 0.744
+  }
+}

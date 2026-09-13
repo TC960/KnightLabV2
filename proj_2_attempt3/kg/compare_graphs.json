@@ -1,0 +1,616 @@
+{
+  "fold": true,
+  "gold_edges": 1740,
+  "ext_edges": 1814,
+  "both": 1199,
+  "gold_only": 541,
+  "ext_only": 615,
+  "jaccard": 0.509,
+  "decisive": 1056,
+  "agree": 1013,
+  "disagree": 43,
+  "agree_pct": 95.9,
+  "edges_with_a_contested_side": 321,
+  "top_disagreements": [
+    {
+      "taxon": "Bifidobacterium",
+      "taxon_key": "ncbi:1678",
+      "disease": "Alzheimer's disease",
+      "gold": "enriched",
+      "gold_papers": 13,
+      "gold_up": 8,
+      "gold_down": 6,
+      "ext": "depleted",
+      "ext_papers": 9,
+      "ext_up": 4,
+      "ext_down": 5
+    },
+    {
+      "taxon": "Clostridium",
+      "taxon_key": "ncbi:1485",
+      "disease": "Parkinson's disease",
+      "gold": "depleted",
+      "gold_papers": 9,
+      "gold_up": 3,
+      "gold_down": 6,
+      "ext": "enriched",
+      "ext_papers": 7,
+      "ext_up": 5,
+      "ext_down": 3
+    },
+    {
+      "taxon": "Bacteroides",
+      "taxon_key": "ncbi:816",
+      "disease": "Mild cognitive impairment",
+      "gold": "enriched",
+      "gold_papers": 11,
+      "gold_up": 6,
+      "gold_down": 5,
+      "ext": "depleted",
+      "ext_papers": 5,
+      "ext_up": 2,
+      "ext_down": 3
+    },
+    {
+      "taxon": "Veillonella",
+      "taxon_key": "ncbi:29465",
+      "disease": "Parkinson's disease",
+      "gold": "depleted",
+      "gold_papers": 7,
+      "gold_up": 3,
+      "gold_down": 4,
+      "ext": "enriched",
+      "ext_papers": 8,
+      "ext_up": 6,
+      "ext_down": 2
+    },
+    {
+      "taxon": "Actinomycetota",
+      "taxon_key": "ncbi:201174",
+      "disease": "Stroke",
+      "gold": "enriched",
+      "gold_papers": 7,
+      "gold_up": 5,
+      "gold_down": 2,
+      "ext": "depleted",
+      "ext_papers": 4,
+      "ext_up": 2,
+      "ext_down": 3
+    },
+    {
+      "taxon": "Bifidobacterium",
+      "taxon_key": "ncbi:1678",
+      "disease": "Multiple sclerosis",
+      "gold": "depleted",
+      "gold_papers": 5,
+      "gold_up": 2,
+      "gold_down": 3,
+      "ext": "enriched",
+      "ext_papers": 5,
+      "ext_up": 3,
+      "ext_down": 2
+    },
+    {
+      "taxon": "Christensenellaceae",
+      "taxon_key": "ncbi:990719",
+      "disease": "Alzheimer's disease",
+      "gold": "enriched",
+      "gold_papers": 3,
+      "gold_up": 2,
+      "gold_down": 1,
+      "ext": "depleted",
+      "ext_papers": 5,
+      "ext_up": 2,
+      "ext_down": 5
+    },
+    {
+      "taxon": "Eubacteriales",
+      "taxon_key": "ncbi:186802",
+      "disease": "Parkinson's disease",
+      "gold": "enriched",
+      "gold_papers": 5,
+      "gold_up": 3,
+      "gold_down": 2,
+      "ext": "depleted",
+      "ext_papers": 2,
+      "ext_up": 1,
+      "ext_down": 3
+    },
+    {
+      "taxon": "Anaerostipes",
+      "taxon_key": "ncbi:207244",
+      "disease": "Multiple sclerosis",
+      "gold": "enriched",
+      "gold_papers": 5,
+      "gold_up": 3,
+      "gold_down": 2,
+      "ext": "depleted",
+      "ext_papers": 2,
+      "ext_up": 0,
+      "ext_down": 2
+    },
+    {
+      "taxon": "Bifidobacterium longum",
+      "taxon_key": "ncbi:216816",
+      "disease": "Multiple sclerosis",
+      "gold": "enriched",
+      "gold_papers": 3,
+      "gold_up": 2,
+      "gold_down": 1,
+      "ext": "depleted",
+      "ext_papers": 3,
+      "ext_up": 1,
+      "ext_down": 2
+    },
+    {
+      "taxon": "Megamonas",
+      "taxon_key": "ncbi:158846",
+      "disease": "Alzheimer's disease",
+      "gold": "depleted",
+      "gold_papers": 3,
+      "gold_up": 1,
+      "gold_down": 2,
+      "ext": "enriched",
+      "ext_papers": 3,
+      "ext_up": 2,
+      "ext_down": 1
+    },
+    {
+      "taxon": "Eubacterium",
+      "taxon_key": "ncbi:1730",
+      "disease": "Mild cognitive impairment",
+      "gold": "enriched",
+      "gold_papers": 3,
+      "gold_up": 2,
+      "gold_down": 1,
+      "ext": "depleted",
+      "ext_papers": 3,
+      "ext_up": 1,
+      "ext_down": 2
+    },
+    {
+      "taxon": "Lactobacillus",
+      "taxon_key": "ncbi:1578",
+      "disease": "Multiple sclerosis",
+      "gold": "enriched",
+      "gold_papers": 3,
+      "gold_up": 2,
+      "gold_down": 1,
+      "ext": "depleted",
+      "ext_papers": 3,
+      "ext_up": 1,
+      "ext_down": 2
+    },
+    {
+      "taxon": "Ruminococcus",
+      "taxon_key": "ncbi:1263",
+      "disease": "Spinal cord injury",
+      "gold": "depleted",
+      "gold_papers": 3,
+      "gold_up": 1,
+      "gold_down": 2,
+      "ext": "enriched",
+      "ext_papers": 3,
+      "ext_up": 3,
+      "ext_down": 2
+    },
+    {
+      "taxon": "Parabacteroides distasonis",
+      "taxon_key": "ncbi:823",
+      "disease": "Alzheimer's disease",
+      "gold": "depleted",
+      "gold_papers": 2,
+      "gold_up": 0,
+      "gold_down": 2,
+      "ext": "enriched",
+      "ext_papers": 3,
+      "ext_up": 2,
+      "ext_down": 1
+    }
+  ],
+  "diseases_gold_only": [
+    "Cerebral palsy"
+  ],
+  "diseases_ext_only": [
+    "Alcohol use disorder",
+    "Attention-deficit/hyperactivity disorder",
+    "Autism spectrum disorder",
+    "CADASIL",
+    "Hepatitis B virus-associated liver cirrhosis",
+    "REM sleep behavior disorder\u2013Lewy body disease continuum"
+  ],
+  "papers_in_both": 244,
+  "paper_triples_shared": 1894,
+  "paper_triples_agree": 1872,
+  "paper_triples_flip": 22,
+  "paper_flip_pct": 1.16,
+  "gold_taxa_extraction_missed": 966,
+  "extraction_taxa_not_in_gold": 890,
+  "paper_flip_hotspots": [
+    {
+      "taxon": "Bilophila wadsworthia",
+      "disease": "Alzheimer's disease",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Parabacteroides distasonis",
+      "disease": "Alzheimer's disease",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Bacteroides intestinalis",
+      "disease": "Mild cognitive impairment",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Bifidobacterium pseudocatenulatum",
+      "disease": "Mild cognitive impairment",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Fusicatenibacter saccharivorans",
+      "disease": "Mild cognitive impairment",
+      "n_papers": 1
+    },
+    {
+      "taxon": "[Ruminococcus] lactaris",
+      "disease": "Mild cognitive impairment",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Lachnospiraceae",
+      "disease": "Multiple sclerosis",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Tyzzerella",
+      "disease": "Multiple sclerosis",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Christensenellaceae",
+      "disease": "Parkinson's disease",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Bifidobacterium",
+      "disease": "Alzheimer's disease",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Actinomycetota",
+      "disease": "Alzheimer's disease",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Olsenella",
+      "disease": "Stroke",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Oscillospiraceae",
+      "disease": "Stroke",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Pseudomonadota",
+      "disease": "Alzheimer's disease",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Gammaproteobacteria",
+      "disease": "Alzheimer's disease",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Fusobacterium",
+      "disease": "Parkinson's disease",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Eubacteriales",
+      "disease": "Amyotrophic lateral sclerosis",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Catenibacterium",
+      "disease": "Migraine",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Candidatus Soleaferre",
+      "disease": "Parkinson's disease",
+      "n_papers": 1
+    },
+    {
+      "taxon": "Faecalibacterium sp. UBA1819",
+      "disease": "Parkinson's disease",
+      "n_papers": 1
+    }
+  ],
+  "paper_flips": [
+    {
+      "paper": "transmission of alzheimer s disease associated microbiota dysbiosis and its impact on cognitive function evidence from mice and patients",
+      "taxon": "Bilophila wadsworthia",
+      "disease": "Alzheimer's disease",
+      "gold": "depleted",
+      "ext": "enriched"
+    },
+    {
+      "paper": "transmission of alzheimer s disease associated microbiota dysbiosis and its impact on cognitive function evidence from mice and patients",
+      "taxon": "Parabacteroides distasonis",
+      "disease": "Alzheimer's disease",
+      "gold": "depleted",
+      "ext": "enriched"
+    },
+    {
+      "paper": "compositional and functional gut microbiota alterations in mild cognitive impairment links to alzheimer s disease pathology",
+      "taxon": "Bacteroides intestinalis",
+      "disease": "Mild cognitive impairment",
+      "gold": "depleted",
+      "ext": "enriched"
+    },
+    {
+      "paper": "compositional and functional gut microbiota alterations in mild cognitive impairment links to alzheimer s disease pathology",
+      "taxon": "Bifidobacterium pseudocatenulatum",
+      "disease": "Mild cognitive impairment",
+      "gold": "depleted",
+      "ext": "enriched"
+    },
+    {
+      "paper": "compositional and functional gut microbiota alterations in mild cognitive impairment links to alzheimer s disease pathology",
+      "taxon": "Fusicatenibacter saccharivorans",
+      "disease": "Mild cognitive impairment",
+      "gold": "depleted",
+      "ext": "enriched"
+    },
+    {
+      "paper": "compositional and functional gut microbiota alterations in mild cognitive impairment links to alzheimer s disease pathology",
+      "taxon": "[Ruminococcus] lactaris",
+      "disease": "Mild cognitive impairment",
+      "gold": "depleted",
+      "ext": "enriched"
+    },
+    {
+      "paper": "gut microbiome signatures in multiple sclerosis a case control study with machine learning and global data integration",
+      "taxon": "Lachnospiraceae",
+      "disease": "Multiple sclerosis",
+      "gold": "enriched",
+      "ext": "depleted"
+    },
+    {
+      "paper": "multiple sclerosis associated gut microbiome in the israeli diverse populations associations with ethnicity gender disability status vitamin d levels and mediterranean diet",
+      "taxon": "Tyzzerella",
+      "disease": "Multiple sclerosis",
+      "gold": "depleted",
+      "ext": "enriched"
+    },
+    {
+      "paper": "fecal microbiome alterations in treatment naive de novo parkinson s disease",
+      "taxon": "Christensenellaceae",
+      "disease": "Parkinson's disease",
+      "gold": "depleted",
+      "ext": "enriched"
+    },
+    {
+      "paper": "study of gut microbiota alterations in alzheimer s dementia patients from kazakhstan",
+      "taxon": "Bifidobacterium",
+      "disease": "Alzheimer's disease",
+      "gold": "enriched",
+      "ext": "depleted"
+    },
+    {
+      "paper": "study of gut microbiota alterations in alzheimer s dementia patients from kazakhstan",
+      "taxon": "Actinomycetota",
+      "disease": "Alzheimer's disease",
+      "gold": "depleted",
+      "ext": "enriched"
+    },
+    {
+      "paper": "uncovering the characteristics of the gut microbiota in patients with acute ischemic stroke and phlegm heat syndrome",
+      "taxon": "Olsenella",
+      "disease": "Stroke",
+      "gold": "enriched",
+      "ext": "depleted"
+    },
+    {
+      "paper": "the impact of dysbiosis in oropharyngeal and gut microbiota on systemic inflammatory response and short term prognosis in acute ischemic stroke with preceding infection",
+      "taxon": "Oscillospiraceae",
+      "disease": "Stroke",
+      "gold": "enriched",
+      "ext": "depleted"
+    },
+    {
+      "paper": "a comparison of the composition and functions of the oral and gut microbiotas in alzheimer s patients",
+      "taxon": "Pseudomonadota",
+      "disease": "Alzheimer's disease",
+      "gold": "enriched",
+      "ext": "depleted"
+    },
+    {
+      "paper": "a comparison of the composition and functions of the oral and gut microbiotas in alzheimer s patients",
+      "taxon": "Gammaproteobacteria",
+      "disease": "Alzheimer's disease",
+      "gold": "enriched",
+      "ext": "depleted"
+    },
+    {
+      "paper": "alterations of fecal microbiota and plasma metabolome in patients with parkinson s disease with rapid eye movement sleep disorder",
+      "taxon": "Fusobacterium",
+      "disease": "Parkinson's disease",
+      "gold": "depleted",
+      "ext": "enriched"
+    },
+    {
+      "paper": "a prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis",
+      "taxon": "Eubacteriales",
+      "disease": "Amyotrophic lateral sclerosis",
+      "gold": "enriched",
+      "ext": "depleted"
+    },
+    {
+      "paper": "altered gut microbiota in individuals with episodic and chronic migraine",
+      "taxon": "Catenibacterium",
+      "disease": "Migraine",
+      "gold": "depleted",
+      "ext": "enriched"
+    },
+    {
+      "paper": "nutritional intake and gut microbiome composition predict parkinson s disease",
+      "taxon": "Candidatus Soleaferre",
+      "disease": "Parkinson's disease",
+      "gold": "enriched",
+      "ext": "depleted"
+    },
+    {
+      "paper": "nutritional intake and gut microbiome composition predict parkinson s disease",
+      "taxon": "Faecalibacterium sp. UBA1819",
+      "disease": "Parkinson's disease",
+      "gold": "enriched",
+      "ext": "depleted"
+    },
+    {
+      "paper": "nutritional intake and gut microbiome composition predict parkinson s disease",
+      "taxon": "Flavonifractor",
+      "disease": "Parkinson's disease",
+      "gold": "enriched",
+      "ext": "depleted"
+    },
+    {
+      "paper": "gut microbiota altered in mild cognitive impairment compared with normal cognition in sporadic parkinson s disease",
+      "taxon": "Ruminococcus",
+      "disease": "Mild cognitive impairment",
+      "gold": "enriched",
+      "ext": "depleted"
+    }
+  ],
+  "taxon_only_agree": 1933,
+  "taxon_only_flip": 22,
+  "taxon_only_gold_missed_by_ext": 605,
+  "taxon_only_ext_not_in_gold": 829,
+  "taxon_only_jaccard": 0.577,
+  "external_adjudication": {
+    "gold": 7,
+    "ext": 6,
+    "n": 13,
+    "rows": [
+      {
+        "taxon": "Clostridium",
+        "disease": "Parkinson's disease",
+        "gold": "depleted",
+        "ext": "enriched",
+        "curated": "enriched",
+        "supports": "ext",
+        "curated_n": 3
+      },
+      {
+        "taxon": "Bacteroides",
+        "disease": "Mild cognitive impairment",
+        "gold": "enriched",
+        "ext": "depleted",
+        "curated": "depleted",
+        "supports": "ext",
+        "curated_n": 1
+      },
+      {
+        "taxon": "Veillonella",
+        "disease": "Parkinson's disease",
+        "gold": "depleted",
+        "ext": "enriched",
+        "curated": "enriched",
+        "supports": "ext",
+        "curated_n": 4
+      },
+      {
+        "taxon": "Bifidobacterium",
+        "disease": "Multiple sclerosis",
+        "gold": "depleted",
+        "ext": "enriched",
+        "curated": "enriched",
+        "supports": "ext",
+        "curated_n": 1
+      },
+      {
+        "taxon": "Christensenellaceae",
+        "disease": "Alzheimer's disease",
+        "gold": "enriched",
+        "ext": "depleted",
+        "curated": "enriched",
+        "supports": "gold",
+        "curated_n": 1
+      },
+      {
+        "taxon": "Eubacteriales",
+        "disease": "Parkinson's disease",
+        "gold": "enriched",
+        "ext": "depleted",
+        "curated": "enriched",
+        "supports": "gold",
+        "curated_n": 2
+      },
+      {
+        "taxon": "Anaerostipes",
+        "disease": "Multiple sclerosis",
+        "gold": "enriched",
+        "ext": "depleted",
+        "curated": "depleted",
+        "supports": "ext",
+        "curated_n": 1
+      },
+      {
+        "taxon": "Lactobacillus",
+        "disease": "Multiple sclerosis",
+        "gold": "enriched",
+        "ext": "depleted",
+        "curated": "enriched",
+        "supports": "gold",
+        "curated_n": 2
+      },
+      {
+        "taxon": "Bacteroidales",
+        "disease": "Alzheimer's disease",
+        "gold": "depleted",
+        "ext": "enriched",
+        "curated": "depleted",
+        "supports": "gold",
+        "curated_n": 1
+      },
+      {
+        "taxon": "Bacteroides fragilis",
+        "disease": "Alzheimer's disease",
+        "gold": "depleted",
+        "ext": "enriched",
+        "curated": "depleted",
+        "supports": "gold",
+        "curated_n": 1
+      },
+      {
+        "taxon": "Acidaminococcus",
+        "disease": "Parkinson's disease",
+        "gold": "enriched",
+        "ext": "depleted",
+        "curated": "enriched",
+        "supports": "gold",
+        "curated_n": 3
+      },
+      {
+        "taxon": "Haemophilus",
+        "disease": "Multiple sclerosis",
+        "gold": "depleted",
+        "ext": "enriched",
+        "curated": "enriched",
+        "supports": "ext",
+        "curated_n": 1
+      },
+      {
+        "taxon": "Lactobacillus gasseri",
+        "disease": "Parkinson's disease",
+        "gold": "depleted",
+        "ext": "enriched",
+        "curated": "depleted",
+        "supports": "gold",
+        "curated_n": 2
+      }
+    ]
+  }
+}

@@ -171,9 +171,12 @@ def main():
     ap.add_argument("--source", choices=["disbiome", "peryton", "both"], default="both")
     ap.add_argument("--refresh", action="store_true")
     ap.add_argument("--show", type=int, default=10)
+    ap.add_argument("--graph", default=GRAPH,
+                    help="graph to validate (graph.json, or graph_gold.json to "
+                         "score the human gold standard on the same footing)")
     a = ap.parse_args()
 
-    G = json.load(open(GRAPH))
+    G = json.load(open(a.graph))
     from taxonomy import Taxonomy
     tax = Taxonomy()
     if not tax.ok:
