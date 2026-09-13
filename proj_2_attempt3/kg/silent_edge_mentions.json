@@ -12,165 +12,23 @@
   },
   "silent": {
    "not_scoreable": 95,
-   "mentioned": 230,
-   "absent": 58
+   "mentioned": 278,
+   "absent": 10
   }
  },
  "mention_rate_by_provenance": {
   "own": 1.0,
   "background": 1.0,
-  "silent": 0.7986
+  "silent": 0.9653
  },
  "single_paper_no_own_witness_edges": {
   "total": 580,
-  "mentioned": 387,
-  "absent": 49,
+  "mentioned": 429,
+  "absent": 7,
   "not_scoreable": 144
  },
- "single_paper_no_own_witness_mention_rate": 0.8876,
+ "single_paper_no_own_witness_mention_rate": 0.9839,
  "absent_observations": [
-  {
-   "taxon": "Akkermansia muciniphila",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 2,
-   "node_label": "Akkermansia muciniphila",
-   "aliases": [
-    "Akkermansia muciniphila"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Alistipes putredinis",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Alistipes putredinis",
-   "aliases": [
-    "Alistipes putredinis"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Anaerobutyricum hallii",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Anaerobutyricum hallii",
-   "aliases": [
-    "Anaerobutyricum hallii",
-    "Eubacterium hallii"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Anaerostipes hadrus",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 2,
-   "node_label": "Anaerostipes hadrus",
-   "aliases": [
-    "Anaerostipes hadrus"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Bacillus phage phBC6A51",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Bacillus phage phBC6A51",
-   "aliases": [
-    "Bacillus phage phBC6A51"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Bacteroides stercoris",
-   "disease": "Multiple sclerosis",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters.",
-   "n_papers_on_edge": 1,
-   "node_label": "Bacteroides stercoris",
-   "aliases": [
-    "Bacteroides stercoris"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Bacteroides stercoris",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Bacteroides stercoris",
-   "aliases": [
-    "Bacteroides stercoris"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Bacteroides xylanisolvens",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Bacteroides xylanisolvens",
-   "aliases": [
-    "Bacteroides xylanisolvens"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Bifidobacterium bifidum",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Bifidobacterium bifidum",
-   "aliases": [
-    "Bifidobacterium Bifidum",
-    "Bifidobacterium bifidum"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Bifidobacterium pseudocatenulatum",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 2,
-   "node_label": "Bifidobacterium pseudocatenulatum",
-   "aliases": [
-    "Bifidobacterium pseudocatenulatum"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
   {
    "taxon": "Blautia faecis",
    "disease": "Parkinson's disease",
@@ -186,20 +44,6 @@
    "placeholder": false
   },
   {
-   "taxon": "Blautia obeum",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 2,
-   "node_label": "Blautia obeum",
-   "aliases": [
-    "Blautia obeum"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
    "taxon": "Blautia wexlerae",
    "disease": "Parkinson's disease",
    "direction": "down",
@@ -209,34 +53,6 @@
    "node_label": "Blautia wexlerae",
    "aliases": [
     "Blautia wexlerae"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Blautia wexlerae",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Blautia wexlerae",
-   "aliases": [
-    "Blautia wexlerae"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Ceduovirus c2",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Ceduovirus c2",
-   "aliases": [
-    "Lactococcus virus c2"
    ],
    "resolved": true,
    "placeholder": false
@@ -285,121 +101,6 @@
    "placeholder": true
   },
   {
-   "taxon": "Enterobacteria phage mEp460",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Enterobacteria phage mEp460",
-   "aliases": [
-    "Enterobacteria phage mEp460"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Enterocloster bolteae",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 2,
-   "node_label": "Enterocloster bolteae",
-   "aliases": [
-    "Clostridium bolteae",
-    "Enterocloster bolteae"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Enterococcus phage EFAP 1",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Enterococcus phage EFAP 1",
-   "aliases": [
-    "Enterococcus phage EFAP 1"
-   ],
-   "resolved": false,
-   "placeholder": false
-  },
-  {
-   "taxon": "Enterococcus phage EFRM31",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Enterococcus phage EFRM31",
-   "aliases": [
-    "Enterococcus phage EFRM31"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Escherichia phage",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Escherichia phage",
-   "aliases": [
-    "Escherichia phage TL 2011",
-    "Escherichia phage TL 2011b"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Escherichia virus JES2013",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Escherichia virus JES2013",
-   "aliases": [
-    "Escherichia virus JES2013"
-   ],
-   "resolved": false,
-   "placeholder": false
-  },
-  {
-   "taxon": "Faecalibacterium bacterium CAG 137",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Faecalibacterium bacterium CAG 137",
-   "aliases": [
-    "Faecalibacterium bacterium CAG 137"
-   ],
-   "resolved": false,
-   "placeholder": true
-  },
-  {
-   "taxon": "Faecalimonas nexilis",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Faecalimonas nexilis",
-   "aliases": [
-    "Clostridium nexile",
-    "Tyzzerella nexilis"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
    "taxon": "Gemmiger formicilis",
    "disease": "Mild cognitive impairment",
    "direction": "down",
@@ -414,188 +115,6 @@
    "placeholder": false
   },
   {
-   "taxon": "Jerseyvirus jersey",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Jerseyvirus jersey",
-   "aliases": [
-    "Salmonella virus Jersey"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Klebsiella virus KP36",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Klebsiella virus KP36",
-   "aliases": [
-    "Klebsiella virus KP36"
-   ],
-   "resolved": false,
-   "placeholder": false
-  },
-  {
-   "taxon": "Lachnospira eligens",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Lachnospira eligens",
-   "aliases": [
-    "Eubacterium eligens"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Lactobacillus phage LF1",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Lactobacillus phage LF1",
-   "aliases": [
-    "Lactobacillus phage LF1"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Lactobacillus phage Sha1",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Lactobacillus phage Sha1",
-   "aliases": [
-    "Lactobacillus phage Sha1"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Lactobacillus phage phiadh",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Lactobacillus phage phiadh",
-   "aliases": [
-    "Lactobacillus phage phiadh"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Lactococcus phage bIL285",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Lactococcus phage bIL285",
-   "aliases": [
-    "Lactococcus phage bIL285"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Lactococcus phage bIL309",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Lactococcus phage bIL309",
-   "aliases": [
-    "Lactococcus phage bIL309"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Lactococcus phage bIL310",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Lactococcus phage bIL310",
-   "aliases": [
-    "Lactococcus phage bIL310"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Lawsonibacter asaccharolyticus",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Lawsonibacter asaccharolyticus",
-   "aliases": [
-    "Lawsonibacter asaccharolyticus"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Mediterraneibacter torques",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Mediterraneibacter torques",
-   "aliases": [
-    "Ruminococcus torques"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Moineauvirus Abc2",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Moineauvirus Abc2",
-   "aliases": [
-    "Streptococcus virus phiAbc2"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Moineauvirus mv7201",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Moineauvirus mv7201",
-   "aliases": [
-    "Streptococcus virus 7201"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
    "taxon": "Phascolarctobacterium faecium",
    "disease": "Mild cognitive impairment",
    "direction": "up",
@@ -605,76 +124,6 @@
    "node_label": "Phascolarctobacterium faecium",
    "aliases": [
     "Phascolarctobacterium faecium"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Phifelvirus FL3",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Phifelvirus FL3",
-   "aliases": [
-    "Enterococcus virus FL3"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Phocaeicola coprocola",
-   "disease": "Multiple sclerosis",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters.",
-   "n_papers_on_edge": 1,
-   "node_label": "Phocaeicola coprocola",
-   "aliases": [
-    "Bacteroides coprocola"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Phocaeicola coprophilus",
-   "disease": "Multiple sclerosis",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters.",
-   "n_papers_on_edge": 1,
-   "node_label": "Phocaeicola coprophilus",
-   "aliases": [
-    "Bacteroides coprophilus"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Primolicivirus Pf1",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Primolicivirus Pf1",
-   "aliases": [
-    "Pseudomonas phage Pf1"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Pseudomonas phage PAJU2",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Pseudomonas phage PAJU2",
-   "aliases": [
-    "Pseudomonas phage PAJU2"
    ],
    "resolved": true,
    "placeholder": false
@@ -695,90 +144,6 @@
    "placeholder": false
   },
   {
-   "taxon": "Roseburia inulinivorans",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Roseburia inulinivorans",
-   "aliases": [
-    "Roseburia inulinivorans"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Ruminococcus bromii",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Ruminococcus bromii",
-   "aliases": [
-    "Ruminococcus bromii"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Slackia isoflavoniconvertens",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Slackia isoflavoniconvertens",
-   "aliases": [
-    "Slackia isoflavoniconvertens"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Streptococcus phage EJ 1",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Streptococcus phage EJ 1",
-   "aliases": [
-    "Streptococcus phage EJ 1"
-   ],
-   "resolved": false,
-   "placeholder": false
-  },
-  {
-   "taxon": "Streptococcus phage P7132",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Streptococcus phage P7132",
-   "aliases": [
-    "Streptococcus phage P7132"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "Streptococcus salivarius",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Streptococcus salivarius",
-   "aliases": [
-    "Streptococcus salivarius"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
    "taxon": "Subdoligranulum sp. APC924",
    "disease": "Mild cognitive impairment",
    "direction": "down",
@@ -793,20 +158,6 @@
    "placeholder": true
   },
   {
-   "taxon": "Uetakevirus epsilon15",
-   "disease": "Mild cognitive impairment",
-   "direction": "up",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "Uetakevirus epsilon15",
-   "aliases": [
-    "Salmonella virus Epsilon15"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
    "taxon": "Vibrio phage",
    "disease": "Mild cognitive impairment",
    "direction": "up",
@@ -819,36 +170,7 @@
    ],
    "resolved": true,
    "placeholder": false
-  },
-  {
-   "taxon": "[Eubacterium] siraeum",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 1,
-   "node_label": "[Eubacterium] siraeum",
-   "aliases": [
-    "Eubacterium siraeum",
-    "Eubacterium_siraeum"
-   ],
-   "resolved": true,
-   "placeholder": false
-  },
-  {
-   "taxon": "[Ruminococcus] lactaris",
-   "disease": "Mild cognitive impairment",
-   "direction": "down",
-   "prov": "silent",
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "n_papers_on_edge": 2,
-   "node_label": "[Ruminococcus] lactaris",
-   "aliases": [
-    "Ruminococcus lactaris"
-   ],
-   "resolved": true,
-   "placeholder": false
   }
  ],
- "n_absent_total": 58
+ "n_absent_total": 10
 }

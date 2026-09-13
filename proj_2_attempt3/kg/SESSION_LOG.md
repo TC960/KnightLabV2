@@ -4,6 +4,70 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+## TL;DR — 2026-09-13 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**Tested.** Whether the 580 edges the last session sized as beyond any prose
+instrument are fabrications or merely table-only reports. The scheduled routine's
+priority list (MAIN_DATA filter, Task 1, 2.5, 3.1) is spent — four sessions
+running — so this went after the largest unverified block in the graph instead.
+
+**Survived.**
+- *The "unverifiable" 580 are overwhelmingly real.* **429 of the 436 scoreable
+  (98.4%)** name their taxon in their own source paper; 144 are unscoreable here
+  because their full text lives only in the gitignored MAIN_DATA.json. Across the
+  whole extraction, **2,291/2,301 claims (99.57%)**. `silent` meant "invisible to
+  the relation filter", never "absent from the paper" — those are now separated.
+- *And it is not a vacuous test.* Paper-level shuffle, 100 permutations: null
+  **14.96% ± 0.81** vs true **99.58%**, gap **84.6 points**, p=0.0099 (the floor
+  at 100 perms; the gap is ~105 null SDs). Rarity-weighted rate **99.52%** and
+  only 2.7% of claims name a taxon in over half the corpus, so ubiquitous genera
+  are not carrying it. `relation_sentences.py --validate` has reported this
+  ceiling since Task 1 with **no null attached**; now it has one.
+- *One confirmed extraction error in 2,301 claims (0.04%).*
+  `Clostridiales incerte sedis XIII` / Parkinson's: the paper says `incerte sedis
+  **xii**` once and XIII **zero** times. Both are real RDP labels, so this is a
+  moved roman numeral, not a parse artifact — the same class as the 2026-09-12
+  one-letter genus bug. Blast radius: one placeholder-node edge.
+
+**Did not survive / corrected.**
+- *My own matcher, caught by a POSITIVE control.* `own` and `background`
+  observations name their taxon in a sentence by construction and must score
+  100%. The first join scored `own` at 79.7% — impossible. It fed
+  `taxon_matchers()`'s `norm_surface`'d forms (whitespace stripped,
+  `akkermansiamuciniphila`) into unstripped text, forcing every multi-word taxon
+  absent. Final: **1520/1520 and 474/474**. Fourth time an instrument here was
+  weaker than what it audited; **first time a built-in control caught it instead
+  of a spot-check.** Cheap, and should be standard.
+- *A subagent's adjudication, overturned by one line of code.* Haiku called
+  `Lachnospiraceae_UCG-001` a genuine fabrication ("paper has UCG-004, not
+  UCG-001"). The paper has both — `g_ lachnospiraceae _ucg-001`, with a space
+  before the underscore. Its other nine verdicts were correct and diagnostic.
+  The standing rule held.
+- *Seven of ten residuals are matcher limits, not graph errors*: genus factored
+  over a list (`blautia species wexlerae , faecis and massiliensis`),
+  parenthetical abbreviation (`gemmiger (ge.) formicilis`), and short epithets
+  (`cl. sp cag 273`). **Deliberately not absorbed** — the matcher understates by
+  design rather than being tuned to flatter its own result.
+
+**Scope discipline.** This bounds **fabrication only**. It does NOT move
+73.0/72.5, and is a different quantity from the 86.6% reading fidelity. The 429
+edges keep their `provisional` tier: their direction is still unverified by
+anything in this repo.
+
+**Also.** `ftp.ncbi.nih.gov` AND `eutils.ncbi.nlm.nih.gov` both probed: CONNECT →
+403 (**seventh** session; eutils is newly confirmed blocked too, so the HTTPS
+workaround is dead). Container again came up on a **detached HEAD**, and local
+`main` was **29 commits behind** it — checking out `main` silently reverted the
+tree. Fast-forwarded before any work; this is the third session to hit it.
+
+**Highest-value next step: re-run `silent_edge_mentions.py` on a machine that has
+`MAIN_DATA.json`.** It closes the 144 unscoreable edges and the 795 unscoreable
+observations (25.8%) with no GPU, no taxdump and no new papers — the cheapest
+open lever in the project. Below that, unchanged: more papers (needs a GPU, ask
+first) and two human design calls. Write-up: `FINDINGS_mention_audit.md`.
+
+---
+
 ## TL;DR — 2026-09-12 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **Tested.** Whether the extractor actually read each paper correctly, measured

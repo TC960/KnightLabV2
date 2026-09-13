@@ -11,6 +11,15 @@
 >
 > **Genuinely open, in order:**
 >
+> 0. **Re-run `silent_edge_mentions.py` where `MAIN_DATA.json` exists** (i.e. on
+>    the Mac, not in the cloud). NEW 2026-09-13, and the cheapest open lever in
+>    the project: no GPU, no taxdump, no new papers. The mention audit verified
+>    that 429 of 436 scoreable "unverifiable" edges (98.4%) do name their taxon in
+>    their source paper — but **144 of the 580, and 795 of 3,077 observations
+>    (25.8%), are unscoreable in the cloud** purely because their full text is
+>    gitignored. Running it locally closes that hole outright. See
+>    `FINDINGS_mention_audit.md`.
+>
 > 1. **More papers.** The binding constraint on every statistical question, and
 >    has been for five sessions. 109 papers with ≥4 decisive observations sets
 >    every MDE in the project. **Needs a GPU — ask before spending.** The
@@ -65,8 +74,15 @@
 >   `graph.json`'s own resolution and `build_kg.py` overwrites `graph.json`, so a
 >   bad intermediate silently becomes the authority for the next build. Restore a
 >   known-good `graph.json` before re-running. This bit on 2026-09-11.
+> - **One confirmed extraction error is open and unfixed (2026-09-13).**
+>   `Clostridiales incerte sedis XIII` / Parkinson's: the source paper says
+>   `incerte sedis XII` once and XIII zero times. Both are real RDP labels. One
+>   placeholder-node edge; correcting it needs a rebuild, so it was left rather
+>   than rebuilt on a cloud checkout. See `FINDINGS_mention_audit.md`.
+>
 > - **The NCBI taxdump.** `ftp.ncbi.nih.gov` is blocked in the cloud environment
->   (CONNECT → 403, probed in four sessions). `taxonomy_cache.py` replays
+>   (CONNECT → 403, probed in four sessions). **2026-09-13: `eutils.ncbi.nlm.nih.gov`
+>   is blocked too (403), so there is no HTTPS API workaround — stop probing.** `taxonomy_cache.py` replays
 >   `graph.json`'s own resolution and is valid for rebuilds over a SUBSET of the
 >   current papers — which is every rebuild that does not add papers.
 

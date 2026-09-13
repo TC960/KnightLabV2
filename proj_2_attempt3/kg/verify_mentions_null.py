@@ -25,7 +25,7 @@ import sys
 from collections import Counter, defaultdict
 
 from verify_taxon_mentions import (EXTRACTIONS, PAPERS, classify, norm_taxon,
-                                   norm_text)
+                                   norm_text, squash)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "taxon_mentions_null.json")
@@ -40,7 +40,8 @@ def load():
     for p in papers:
         key = re.sub(r"[^a-z0-9]", "", (p.get("title") or "").lower())
         if key and len(p.get("text") or "") > 500:
-            by_title[key] = norm_text(p["text"])
+            t = norm_text(p["text"])
+            by_title[key] = (t, squash(t))
 
     # paper -> list of claimed taxon surface strings (deduped within paper)
     claims = defaultdict(list)
@@ -69,9 +70,9 @@ def rate(claims, by_title, pairing, strict=True):
     strict=True excludes the weak `head` (genus-only) tier."""
     hit = tot = 0
     for paper_key, taxa in claims.items():
-        text = by_title[pairing[paper_key]]
+        text, text_sq = by_title[pairing[paper_key]]
         for t in taxa:
-            tier, _ = classify(t, text)
+            tier, _ = classify(t, text, text_sq)
             if tier == "unscoreable":
                 continue
             tot += 1
@@ -112,7 +113,7 @@ def main():
 
     # Per-taxon discriminativeness: how many of the corpus's papers contain this
     # string at all? A taxon in 90% of papers is not evidence of anything.
-    texts = list(by_title.values())
+    texts = [v[0] for v in by_title.values()]
     ubiquity = {}
     all_taxa = sorted({norm_taxon(t) for v in claims.values() for t in v})
     for t in all_taxa:
@@ -124,14 +125,14 @@ def main():
     # weight each claim by (1 - ubiquity): evidential mass, not claim count
     mass_hit = mass_tot = 0.0
     for paper_key, taxa in claims.items():
-        text = by_title[paper_key]
+        text, text_sq = by_title[paper_key]
         for t in taxa:
             n = norm_taxon(t)
             if n not in ubiquity:
                 continue
             w = 1.0 - ubiquity[n]
             mass_tot += w
-            tier, _ = classify(t, text)
+            tier, _ = classify(t, text, text_sq)
             if tier in ("exact", "variant", "abbrev"):
                 mass_hit += w
 

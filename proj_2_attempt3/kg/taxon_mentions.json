@@ -6,96 +6,15 @@
   "claims_scored": 2301,
   "tiers": {
    "exact": 2226,
-   "abbrev": 9,
-   "MISS": 10,
-   "head": 56
+   "abbrev": 60,
+   "variant": 5,
+   "head": 10
   },
-  "mention_rate_any": 0.9957,
-  "mention_rate_strict_excl_head": 0.9713,
-  "n_miss": 10
+  "mention_rate_any": 1.0,
+  "mention_rate_strict_excl_head": 0.9957,
+  "n_miss": 0
  },
- "misses": [
-  {
-   "paper": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients",
-   "taxon": "unclassified_Pasteurellaceae",
-   "normalised": "unclassified_pasteurellaceae",
-   "direction": "depleted",
-   "link": "https://www.frontiersin.org/articles/10.3389/fcimb.2022.942460/full",
-   "disease": "Alzheimer\u2019s disease (AD), Dementia"
-  },
-  {
-   "paper": "Gut microbiota dysbiosis in patients with Alzheimer\u2019s disease and correlation with multiple cognitive domains",
-   "taxon": "Lachnospiraceae_ND3007_group",
-   "normalised": "lachnospiraceae_nd3007_group",
-   "direction": "depleted",
-   "link": "https://doi.org/10.3389/fnagi.2024.1478557",
-   "disease": "Alzheimer\u2019s disease (AD)"
-  },
-  {
-   "paper": "Gut microbiota dysbiosis in patients with Alzheimer\u2019s disease and correlation with multiple cognitive domains",
-   "taxon": "Lachnospiraceae_UCG-001",
-   "normalised": "lachnospiraceae_ucg-001",
-   "direction": "depleted",
-   "link": "https://doi.org/10.3389/fnagi.2024.1478557",
-   "disease": "Alzheimer\u2019s disease (AD)"
-  },
-  {
-   "paper": "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson\u2019s disease",
-   "taxon": "Ruminococcus_E",
-   "normalised": "ruminococcus_e",
-   "direction": "depleted",
-   "link": "https://www.nature.com/articles/s41522-025-00780-0",
-   "disease": ""
-  },
-  {
-   "paper": "Mycobacterium avium subspecies paratuberculosis (MAP) infection, and its impact on gut microbiome of individuals with multiple sclerosis.",
-   "taxon": "Lachnospiraceae_NC2004_group",
-   "normalised": "lachnospiraceae_nc2004_group",
-   "direction": "depleted",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/39402079/",
-   "disease": "Multiple sclerosis (MS)"
-  },
-  {
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "taxon": "Akkermansia muciniphila",
-   "normalised": "akkermansia muciniphila",
-   "direction": "depleted",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/37213047/",
-   "disease": "Dementia"
-  },
-  {
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "taxon": "Anaerostipes hadrus",
-   "normalised": "anaerostipes hadrus",
-   "direction": "depleted",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/37213047/",
-   "disease": "Dementia"
-  },
-  {
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "taxon": "Faecalibacterium bacterium CAG 137",
-   "normalised": "faecalibacterium bacterium cag 137",
-   "direction": "depleted",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/37213047/",
-   "disease": "Dementia"
-  },
-  {
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "taxon": "Slackia isoflavoniconvertens",
-   "normalised": "slackia isoflavoniconvertens",
-   "direction": "depleted",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/37213047/",
-   "disease": "Dementia"
-  },
-  {
-   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
-   "taxon": "Tyzzerella nexilis",
-   "normalised": "tyzzerella nexilis",
-   "direction": "depleted",
-   "link": "https://pubmed.ncbi.nlm.nih.gov/37213047/",
-   "disease": "Dementia"
-  }
- ],
+ "misses": [],
  "per_paper": {
   "Dysbiosis characteristics of gut microbiota in cerebral infarction patients": {
    "exact": 17
@@ -314,7 +233,7 @@
   },
   "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients": {
    "exact": 61,
-   "MISS": 1
+   "variant": 1
   },
   "The impact of device-assisted therapies on the gut microbiome in Parkinson's disease.": {
    "exact": 7
@@ -424,7 +343,7 @@
   },
   "Mycobacterium avium subspecies paratuberculosis (MAP) infection, and its impact on gut microbiome of individuals with multiple sclerosis.": {
    "exact": 17,
-   "MISS": 1
+   "variant": 1
   },
   "Free water in gray matter linked to gut microbiota changes with decreased butyrate producers in Alzheimer's disease and mild cognitive impairment.": {
    "exact": 3
@@ -473,7 +392,7 @@
   },
   "Dysbiosis in the Gut Microbiota of Patients with Multiple Sclerosis, with a Striking Depletion of Species Belonging to Clostridia XIVa and IV Clusters.": {
    "exact": 8,
-   "head": 3
+   "abbrev": 3
   },
   "Prognostic Value of a Multivariate Gut Microbiome Model for Progression from Normal Cognition to Mild Cognitive Impairment Within 4 Years.": {
    "exact": 3
@@ -545,10 +464,9 @@
    "exact": 1
   },
   "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.": {
-   "head": 49,
-   "exact": 5,
-   "MISS": 5,
-   "abbrev": 1
+   "abbrev": 49,
+   "head": 6,
+   "exact": 5
   },
   "A peripheral signature of Alzheimer's disease featuring microbiota-gut-brain axis markers.": {
    "exact": 3
@@ -706,7 +624,7 @@
   },
   "Gut microbiota dysbiosis in patients with Alzheimer\u2019s disease and correlation with multiple cognitive domains": {
    "exact": 11,
-   "MISS": 2
+   "variant": 2
   },
   "Altered gut microbial networks and metabolic pathways in multiple system atrophy: a comparative 16S rRNA study.": {
    "exact": 4
@@ -743,7 +661,7 @@
    "exact": 3
   },
   "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson\u2019s disease": {
-   "MISS": 1,
+   "variant": 1,
    "exact": 1
   }
  }

@@ -103,6 +103,43 @@ def abbrev_forms(t: str):
     return set()
 
 
+# A genus abbreviated to 1-4 letters immediately before the epithet. The space
+# before the period is real in this corpus: `bacteroides ( b . stercoris , ...`.
+_ABBREV_BEFORE = re.compile(r"([a-z]{1,4})\s*\.\s*$")
+
+
+def _is_subsequence(abbr: str, genus: str) -> bool:
+    it = iter(genus)
+    return all(c in it for c in abbr)
+
+
+def abbrev_epithet_match(t: str, text: str):
+    """Catch the multi-letter genus abbreviation several papers in this corpus use:
+    `Ak. muciniphila`, `Bl. wexlerae`, `Ba. stercoris`, `Rb. intestinalis`.
+    One-letter initials alone miss all of these.
+
+    Anchored on the EPITHET, which is distinctive, then the token before it must
+    be a plausible abbreviation of the genus: same first letter, and a
+    subsequence of it. `Rb.` -> Roseburia passes (r,b in order); `Bl.` ->
+    Blautia passes; an unrelated genus does not. Returns the matched evidence or
+    None."""
+    parts = re.sub(r"[\[\]]", "", t).split()
+    if len(parts) < 2:
+        return None
+    genus, epithet = parts[0], parts[1]
+    if len(genus) < 4 or len(epithet) < 5 or not epithet.isalpha():
+        return None
+    for m in re.finditer(re.escape(epithet), text):
+        before = text[max(0, m.start() - 8):m.start()]
+        am = _ABBREV_BEFORE.search(before)
+        if not am:
+            continue
+        abbr = am.group(1)
+        if abbr[0] == genus[0] and _is_subsequence(abbr, genus):
+            return f"{abbr}. {epithet}"
+    return None
+
+
 def squash(s: str) -> str:
     """Drop every non-alphanumeric. Used ONLY symmetrically -- a squashed needle
     against a squashed haystack -- so that separator and whitespace conventions
@@ -126,6 +163,9 @@ def classify(taxon: str, text: str, text_squashed: str = None):
     for a in abbrev_forms(t):
         if a in text:
             return "abbrev", a
+    ev = abbrev_epithet_match(t, text)
+    if ev:
+        return "abbrev", ev
     if text_squashed is not None:
         sq = squash(t)
         # >=8 chars: short squashed needles match across word boundaries by chance.
@@ -165,6 +205,7 @@ def main():
             continue
         scoreable_papers.add(title)
         text = norm_text(text_raw)
+        text_sq = squash(text)
 
         for field, direction in (("predicted_enriched", "enriched"),
                                  ("predicted_depleted", "depleted")):
@@ -183,7 +224,7 @@ def main():
                     continue
                 seen_claims.add(claim)
 
-                tier, ev = classify(taxon, text)
+                tier, ev = classify(taxon, text, text_sq)
                 tiers[tier] += 1
                 per_paper[title][tier] += 1
                 if tier == "MISS":
