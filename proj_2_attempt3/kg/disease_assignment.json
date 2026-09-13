@@ -1,0 +1,547 @@
+{
+ "n_records": 325,
+ "tally": {
+  "agree": 222,
+  "prediction_unmapped": 21,
+  "sheet_uninformative": 33,
+  "refinement": 33,
+  "family_conflict": 15,
+  "conflict_comparative": 5,
+  "conflict_prediction_correct_by_title": 7,
+  "conflict_sheet_in_title": 1,
+  "conflict_ambiguous": 2,
+  "no_prediction_falls_back_to_sheet": 1
+ },
+ "conflicts": [
+  {
+   "title": "Mild cognitive impairment has similar alterations as Alzheimer's disease in gut microbiota.",
+   "sheet": "Alzheimer\u2019s disease (AD), Dementia",
+   "pred": "Mild cognitive impairment",
+   "sheet_families": [
+    "alzheimer",
+    "dementia"
+   ],
+   "pred_families": [
+    "mild cognitive impairment"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/31434623/",
+   "evidence": {
+    "alzheimer": {
+     "full_name_hits": 9,
+     "abbrev_hits": 14
+    },
+    "dementia": {
+     "full_name_hits": 5,
+     "abbrev_hits": 0
+    },
+    "mild cognitive impairment": {
+     "full_name_hits": 4,
+     "abbrev_hits": 10
+    }
+   },
+   "pred_fullname_hits": 4,
+   "sheet_fullname_hits": 9,
+   "pred_in_title": true,
+   "sheet_in_title": true,
+   "verdict": "comparative_study_both_in_title"
+  },
+  {
+   "title": "Modified Mediterranean-ketogenic diet modulates gut microbiome and short-chain fatty acids in association with Alzheimer's disease markers in subjects with mild cognitive impairment.",
+   "sheet": "Alzheimer\u2019s disease (AD)",
+   "pred": "mild cognitive impairment",
+   "sheet_families": [
+    "alzheimer"
+   ],
+   "pred_families": [
+    "mild cognitive impairment"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/31477562/",
+   "evidence": {
+    "alzheimer": {
+     "full_name_hits": 42,
+     "abbrev_hits": 78
+    },
+    "mild cognitive impairment": {
+     "full_name_hits": 11,
+     "abbrev_hits": 80
+    }
+   },
+   "pred_fullname_hits": 11,
+   "sheet_fullname_hits": 42,
+   "pred_in_title": true,
+   "sheet_in_title": true,
+   "verdict": "comparative_study_both_in_title"
+  },
+  {
+   "title": "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology.",
+   "sheet": "Alzheimer\u2019s disease (AD), Dementia",
+   "pred": "Mild cognitive impairment",
+   "sheet_families": [
+    "alzheimer",
+    "dementia"
+   ],
+   "pred_families": [
+    "mild cognitive impairment"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40448221/",
+   "evidence": {
+    "alzheimer": {
+     "full_name_hits": 55,
+     "abbrev_hits": 66
+    },
+    "dementia": {
+     "full_name_hits": 14,
+     "abbrev_hits": 0
+    },
+    "mild cognitive impairment": {
+     "full_name_hits": 13,
+     "abbrev_hits": 63
+    }
+   },
+   "pred_fullname_hits": 13,
+   "sheet_fullname_hits": 55,
+   "pred_in_title": true,
+   "sheet_in_title": true,
+   "verdict": "comparative_study_both_in_title"
+  },
+  {
+   "title": "Faecal mucoprotein MUC2 is decreased in multiple sclerosis and is associated with mucin degrading bacteria.",
+   "sheet": "Amyotrophic lateral sclerosis (ALS), Parkinson\u2019s disease (PD)",
+   "pred": "multiple sclerosis",
+   "sheet_families": [
+    "als",
+    "parkinson"
+   ],
+   "pred_families": [
+    "multiple sclerosis"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40344717/",
+   "evidence": {
+    "als": {
+     "full_name_hits": 0,
+     "abbrev_hits": 0
+    },
+    "multiple sclerosis": {
+     "full_name_hits": 21,
+     "abbrev_hits": 98
+    },
+    "parkinson": {
+     "full_name_hits": 12,
+     "abbrev_hits": 4
+    }
+   },
+   "pred_fullname_hits": 21,
+   "sheet_fullname_hits": 12,
+   "pred_in_title": true,
+   "sheet_in_title": false,
+   "verdict": "prediction_correct_by_title_sheet_coarse"
+  },
+  {
+   "title": "Gut microbiome analysis in neuromyelitis optica reveals overabundance of Clostridium perfringens.",
+   "sheet": "Other, Multiple sclerosis (MS)",
+   "pred": "neuromyelitis optica",
+   "sheet_families": [
+    "multiple sclerosis"
+   ],
+   "pred_families": [
+    "neuromyelitis"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/27398819/",
+   "evidence": {
+    "multiple sclerosis": {
+     "full_name_hits": 6,
+     "abbrev_hits": 22
+    },
+    "neuromyelitis": {
+     "full_name_hits": 4,
+     "abbrev_hits": 0
+    }
+   },
+   "pred_fullname_hits": 4,
+   "sheet_fullname_hits": 6,
+   "pred_in_title": true,
+   "sheet_in_title": false,
+   "verdict": "prediction_correct_by_title_sheet_coarse"
+  },
+  {
+   "title": "The relationship between the gut microbiome and mild cognitive impairment in patients without dementia: a cross-sectional study conducted in Japan.",
+   "sheet": "Alzheimer\u2019s disease (AD), Dementia",
+   "pred": "Mild cognitive impairment",
+   "sheet_families": [
+    "alzheimer",
+    "dementia"
+   ],
+   "pred_families": [
+    "mild cognitive impairment"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/31852995/",
+   "evidence": {
+    "alzheimer": {
+     "full_name_hits": 15,
+     "abbrev_hits": 10
+    },
+    "dementia": {
+     "full_name_hits": 45,
+     "abbrev_hits": 0
+    },
+    "mild cognitive impairment": {
+     "full_name_hits": 6,
+     "abbrev_hits": 47
+    }
+   },
+   "pred_fullname_hits": 6,
+   "sheet_fullname_hits": 45,
+   "pred_in_title": true,
+   "sheet_in_title": true,
+   "verdict": "comparative_study_both_in_title"
+  },
+  {
+   "title": "Effects of a ketogenic and low-fat diet on the human metabolome, microbiome, and foodome in adults at risk for Alzheimer's disease.",
+   "sheet": "Alzheimer\u2019s disease (AD)",
+   "pred": "mild cognitive impairment",
+   "sheet_families": [
+    "alzheimer"
+   ],
+   "pred_families": [
+    "mild cognitive impairment"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37017243/",
+   "evidence": {
+    "alzheimer": {
+     "full_name_hits": 46,
+     "abbrev_hits": 37
+    },
+    "mild cognitive impairment": {
+     "full_name_hits": 8,
+     "abbrev_hits": 32
+    }
+   },
+   "pred_fullname_hits": 8,
+   "sheet_fullname_hits": 46,
+   "pred_in_title": false,
+   "sheet_in_title": true,
+   "verdict": "SHEET_IN_TITLE_PREDICTION_SUSPECT"
+  },
+  {
+   "title": "Education as Risk Factor of Mild Cognitive Impairment: The Link to the Gut Microbiome.",
+   "sheet": "Dementia",
+   "pred": "Mild cognitive impairment",
+   "sheet_families": [
+    "dementia"
+   ],
+   "pred_families": [
+    "mild cognitive impairment"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/38706292/",
+   "evidence": {
+    "dementia": {
+     "full_name_hits": 15,
+     "abbrev_hits": 0
+    },
+    "mild cognitive impairment": {
+     "full_name_hits": 8,
+     "abbrev_hits": 66
+    }
+   },
+   "pred_fullname_hits": 8,
+   "sheet_fullname_hits": 15,
+   "pred_in_title": true,
+   "sheet_in_title": false,
+   "verdict": "prediction_correct_by_title_sheet_coarse"
+  },
+  {
+   "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+   "sheet": "Dementia",
+   "pred": "Mild cognitive impairment",
+   "sheet_families": [
+    "dementia"
+   ],
+   "pred_families": [
+    "mild cognitive impairment"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37213047/",
+   "evidence": {
+    "dementia": {
+     "full_name_hits": 15,
+     "abbrev_hits": 0
+    },
+    "mild cognitive impairment": {
+     "full_name_hits": 7,
+     "abbrev_hits": 76
+    }
+   },
+   "pred_fullname_hits": 7,
+   "sheet_fullname_hits": 15,
+   "pred_in_title": false,
+   "sheet_in_title": false,
+   "verdict": "ambiguous_both_present"
+  },
+  {
+   "title": "Metagenomic association analysis of cognitive impairment in community-dwelling older adults.",
+   "sheet": "Dementia, Other",
+   "pred": "Mild cognitive impairment",
+   "sheet_families": [
+    "dementia"
+   ],
+   "pred_families": [
+    "mild cognitive impairment"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/36931530/",
+   "evidence": {
+    "dementia": {
+     "full_name_hits": 4,
+     "abbrev_hits": 0
+    },
+    "mild cognitive impairment": {
+     "full_name_hits": 2,
+     "abbrev_hits": 2
+    }
+   },
+   "pred_fullname_hits": 2,
+   "sheet_fullname_hits": 4,
+   "pred_in_title": false,
+   "sheet_in_title": false,
+   "verdict": "ambiguous_both_present"
+  },
+  {
+   "title": "Altered gut microbiota in older adults with mild cognitive impairment: a case-control study.",
+   "sheet": "Alzheimer\u2019s disease (AD)",
+   "pred": "mild cognitive impairment",
+   "sheet_families": [
+    "alzheimer"
+   ],
+   "pred_families": [
+    "mild cognitive impairment"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/37346147/",
+   "evidence": {
+    "alzheimer": {
+     "full_name_hits": 34,
+     "abbrev_hits": 14
+    },
+    "mild cognitive impairment": {
+     "full_name_hits": 20,
+     "abbrev_hits": 49
+    }
+   },
+   "pred_fullname_hits": 20,
+   "sheet_fullname_hits": 34,
+   "pred_in_title": true,
+   "sheet_in_title": false,
+   "verdict": "prediction_correct_by_title_sheet_coarse"
+  },
+  {
+   "title": "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive Impairment.",
+   "sheet": "Alzheimer\u2019s disease (AD), Stroke",
+   "pred": "amnestic mild cognitive impairment",
+   "sheet_families": [
+    "alzheimer",
+    "stroke"
+   ],
+   "pred_families": [
+    "mild cognitive impairment"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/40563710/",
+   "evidence": {
+    "alzheimer": {
+     "full_name_hits": 36,
+     "abbrev_hits": 50
+    },
+    "mild cognitive impairment": {
+     "full_name_hits": 11,
+     "abbrev_hits": 14
+    },
+    "stroke": {
+     "full_name_hits": 1,
+     "abbrev_hits": 0
+    }
+   },
+   "pred_fullname_hits": 11,
+   "sheet_fullname_hits": 36,
+   "pred_in_title": true,
+   "sheet_in_title": false,
+   "verdict": "prediction_correct_by_title_sheet_coarse"
+  },
+  {
+   "title": "Gut Microbiome Alterations in Mild Cognitive Impairment: Findings from the ALBION Greek Cohort.",
+   "sheet": "Alzheimer\u2019s disease (AD), Dementia",
+   "pred": "Mild cognitive impairment",
+   "sheet_families": [
+    "alzheimer",
+    "dementia"
+   ],
+   "pred_families": [
+    "mild cognitive impairment"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/41011443/",
+   "evidence": {
+    "alzheimer": {
+     "full_name_hits": 46,
+     "abbrev_hits": 23
+    },
+    "dementia": {
+     "full_name_hits": 19,
+     "abbrev_hits": 0
+    },
+    "mild cognitive impairment": {
+     "full_name_hits": 21,
+     "abbrev_hits": 106
+    }
+   },
+   "pred_fullname_hits": 21,
+   "sheet_fullname_hits": 46,
+   "pred_in_title": true,
+   "sheet_in_title": false,
+   "verdict": "prediction_correct_by_title_sheet_coarse"
+  },
+  {
+   "title": "Specific gut microbiota alterations in essential tremor and its difference from Parkinson's disease.",
+   "sheet": "Other, Parkinson\u2019s disease (PD)",
+   "pred": "Essential tremor",
+   "sheet_families": [
+    "parkinson"
+   ],
+   "pred_families": [
+    "essential tremor"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/35931717/",
+   "evidence": {
+    "essential tremor": {
+     "full_name_hits": 11,
+     "abbrev_hits": 0
+    },
+    "parkinson": {
+     "full_name_hits": 37,
+     "abbrev_hits": 67
+    }
+   },
+   "pred_fullname_hits": 11,
+   "sheet_fullname_hits": 37,
+   "pred_in_title": true,
+   "sheet_in_title": true,
+   "verdict": "comparative_study_both_in_title"
+  },
+  {
+   "title": "Analysis of gut microbiota in patients with cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy (CADASIL)",
+   "sheet": "Stroke",
+   "pred": "CADASIL",
+   "sheet_families": [
+    "stroke"
+   ],
+   "pred_families": [
+    "cadasil"
+   ],
+   "link": "https://pubmed.ncbi.nlm.nih.gov/31777426/",
+   "pred_in_title": true,
+   "sheet_in_title": false,
+   "verdict": "prediction_correct_by_title_sheet_coarse"
+  }
+ ],
+ "unmapped_predictions": [
+  {
+   "title": "Gut Microbiota and Fecal Metabolites Associated With Neurocognitive Impairment in HIV-Infected Population",
+   "sheet": "Cognitive Impairment",
+   "pred": "neurocognitive impairment"
+  },
+  {
+   "title": "Idiopathic Rapid Eye Movement Sleep Behavior Disorder (iRBD) Shares Similar Fecal Short-Chain Fatty Acid Alterations with Multiple System Atrophy (MSA) and Parkinson's Disease (PD).",
+   "sheet": "Multiple system atrophy (MSA), Parkinson\u2019s disease (PD)",
+   "pred": "Idiopathic Rapid Eye Movement Sleep Behavior Disorder"
+  },
+  {
+   "title": "Taxonomic intestinal microbiota differences in Lewy body spectrum disease and cohabitant controls.",
+   "sheet": "Other",
+   "pred": "Lewy body disease"
+  },
+  {
+   "title": "Altered Gut Microbiota in Adults with Subjective Cognitive Decline: The SILCODE Study.",
+   "sheet": "Alzheimer\u2019s disease (AD), Dementia",
+   "pred": "Subjective cognitive decline"
+  },
+  {
+   "title": "Gut microbiome signatures in iNPH: Insights from a shotgun metagenomics study.",
+   "sheet": "Alzheimer\u2019s disease (AD), Dementia",
+   "pred": "idiopathic normal pressure hydrocephalus"
+  },
+  {
+   "title": "Progression and survival of patients with motor neuron disease relative to their fecal microbiota.",
+   "sheet": "Amyotrophic lateral sclerosis (ALS)",
+   "pred": "Motor Neuron Disease"
+  },
+  {
+   "title": "Gut microbiota and metabolome in sporadic Creutzfeldt-Jakob disease.",
+   "sheet": "Other",
+   "pred": "sporadic Creutzfeldt-Jakob disease"
+  },
+  {
+   "title": "Gut microbiome dysbiosis drives metabolic dysfunction in Familial dysautonomia.",
+   "sheet": "Other",
+   "pred": "Familial dysautonomia"
+  },
+  {
+   "title": "Characterizing Gut Microbiota in Older Chinese Adults with Cognitive Impairment: A Cross-Sectional Study.",
+   "sheet": "Other",
+   "pred": "Cognitive impairment"
+  },
+  {
+   "title": "Air particulate pollution exposure associated with impaired cognition via microbiota gut-brain axis: an evidence from rural elderly female in northwest China.",
+   "sheet": "Dementia",
+   "pred": "Cognitive impairment"
+  },
+  {
+   "title": "Gut microbiome, cognitive function and brain structure: a multi-omics integration analysis",
+   "sheet": "Alzheimer\u2019s disease (AD), Dementia",
+   "pred": "cognitive impairment"
+  },
+  {
+   "title": "Differential Patterns of Gut and Oral Microbiomes in Hispanic Individuals with Cognitive Impairment.",
+   "sheet": "Alzheimer\u2019s disease (AD), Dementia",
+   "pred": "Cognitive impairment"
+  },
+  {
+   "title": "Hemorrhagic transformation in patients with large-artery atherosclerotic stroke is associated with the gut microbiota and lipopolysaccharide",
+   "sheet": "Stroke",
+   "pred": "hemorrhagic transformation"
+  },
+  {
+   "title": "Rett Syndrome: A Focus on Gut Microbiota",
+   "sheet": "Rett syndrome",
+   "pred": "Rett syndrome"
+  },
+  {
+   "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+   "sheet": "Encephalopathy",
+   "pred": "hepatitis B virus-associated liver cirrhosis"
+  },
+  {
+   "title": "Gut Microbiota and Targeted Biomarkers Analysis in Patients With Cognitive Impairment",
+   "sheet": "Other",
+   "pred": "Cognitive impairment"
+  },
+  {
+   "title": "The altered TBI fecal microbiome is stable and functionally distinct",
+   "sheet": "Traumatic Brain Injury (TBI)",
+   "pred": "Traumatic brain injury"
+  },
+  {
+   "title": "Gut microbiota signatures in tuberous sclerosis complex and epilepsy: a pilot study",
+   "sheet": "Epilepsy, Other",
+   "pred": "Tuberous sclerosis complex"
+  },
+  {
+   "title": "Patients with Infections of The Central Nervous System Have Lowered Gut Microbiota Alpha Diversity",
+   "sheet": "Other",
+   "pred": "neuroinfection"
+  },
+  {
+   "title": "Blood microbiome signatures in the REM sleep behavior disorder-Lewy body disease continuum",
+   "sheet": "Parkinson\u2019s disease (PD), Dementia",
+   "pred": "REM sleep behavior disorder\u2013Lewy body disease continuum"
+  },
+  {
+   "title": "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment",
+   "sheet": "",
+   "pred": "Attention-deficit/hyperactivity disorder"
+  }
+ ]
+}

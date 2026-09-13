@@ -30,6 +30,13 @@
 >    (`Escherichia-Shigella`) be attributed to one, split, or held apart as it now
 >    is? And should disease subtypes be modelled as containment the way taxa are
 >    (`Intracerebral hemorrhage` beside `Stroke`)? Both are design decisions.
+>    **2026-09-13: the disease-subtype half of this is now SIZED, and it is
+>    bigger than it looked.** Six cognitive-decline nodes carry **71 papers**
+>    (Alzheimer's 46, MCI 13, Dementia 6, Cognitive impairment 4, + 2 singletons)
+>    with **0 hierarchy links between any two disease nodes** in the whole graph,
+>    against 708 for taxa — so a query for Alzheimer's silently misses 13 MCI
+>    papers. This is the largest disease cluster in the graph, not an edge case.
+>    See `FINDINGS_disease_assignment.md`.
 > 3. **Report PMID 27703453 upstream to Disbiome** — their case/control assignment
 >    is inverted on all five records, per `FINDINGS_db_conflicts.md`.
 > 4. Re-run `adjudicate_db_conflicts.py` whenever the corpus grows.

@@ -49,7 +49,31 @@ running — so this went after the largest unverified block in the graph instead
   (`cl. sp cag 273`). **Deliberately not absorbed** — the matcher understates by
   design rather than being tuned to flatter its own result.
 
-**Scope discipline.** This bounds **fabrication only**. It does NOT move
+**Second finding — the disease half of every edge had never been audited.**
+`build_kg.py:383` keys the disease node on the LLM's `predicted_disease`, using
+the human label only as fallback, so every fidelity instrument in this repo
+scores the taxon half and none scores this one. A wrong disease misfiles a whole
+paper's edges. Audited deterministically (`verify_disease_assignment.py`):
+**zero of 325 records name a disease absent from the paper's text.** Of 15
+family-level conflicts with the datasheet — 7 are the extractor right and the
+sheet coarse, 5 comparative studies, 2 ambiguous, 1 suspect, **0 unsupported.**
+One is a *datasheet* error: the MUC2 paper is labelled ALS+Parkinson's but
+`amyotrophic lateral sclerosis` occurs **0 times** in it and `multiple sclerosis`
+119 times including the title — a fourth independent sign the in-house
+annotations are unreliable. Note the instrument trap: scoring on body-text
+frequency alone called six CORRECT MCI assignments suspect, because an MCI study
+discusses Alzheimer's throughout (MCI is its prodrome). Title evidence first.
+- *And it sizes a modelling decision that has been open for three sessions.*
+  **11 of the 15 conflicts sit on the MCI/Alzheimer's/Dementia boundary.** The
+  graph holds **six** cognitive-decline nodes over **71 papers** — AD 46, MCI 13,
+  Dementia 6, Cognitive impairment 4, Neurocognitive impairment 1, Subjective
+  cognitive decline 1 — and **0 hierarchy links between any two disease nodes**,
+  against 708 for taxa. A query for Alzheimer's silently misses 13 MCI papers.
+  "Should disease subtypes be modelled as containment?" is still a PI's call, but
+  it is not a tidy-up of a few edge cases: it is the largest disease cluster in
+  the graph. **Raise its priority.** See `FINDINGS_disease_assignment.md`.
+
+**Scope discipline.** The mention audit bounds **fabrication only**. It does NOT move
 73.0/72.5, and is a different quantity from the 86.6% reading fidelity. The 429
 edges keep their `provisional` tier: their direction is still unverified by
 anything in this repo.
