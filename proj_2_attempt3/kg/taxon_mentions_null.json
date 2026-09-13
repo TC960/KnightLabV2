@@ -1,0 +1,97 @@
+{
+ "n_papers": 211,
+ "n_claims": 2374,
+ "true_strict": 0.9722,
+ "true_any_incl_head": 0.9958,
+ "n_permutations": 200,
+ "null_mean_strict": 0.1474,
+ "null_sd": 0.0079,
+ "null_min": 0.1281,
+ "null_max": 0.1647,
+ "gap_points": 82.48,
+ "p_empirical": 0.004975124378109453,
+ "rarity_weighted_rate": 0.9682,
+ "most_ubiquitous_20": [
+  [
+   "bacteroides",
+   0.624
+  ],
+  [
+   "prevotella",
+   0.524
+  ],
+  [
+   "bifidobacterium",
+   0.496
+  ],
+  [
+   "firmicutes",
+   0.496
+  ],
+  [
+   "clostridium",
+   0.488
+  ],
+  [
+   "faecalibacterium",
+   0.488
+  ],
+  [
+   "lachnospira",
+   0.476
+  ],
+  [
+   "lachnospiraceae",
+   0.428
+  ],
+  [
+   "bacillus",
+   0.416
+  ],
+  [
+   "bacteroidetes",
+   0.408
+  ],
+  [
+   "ruminococcus",
+   0.396
+  ],
+  [
+   "akkermansia",
+   0.376
+  ],
+  [
+   "blaut",
+   0.372
+  ],
+  [
+   "clostridia",
+   0.372
+  ],
+  [
+   "lactobacillus",
+   0.368
+  ],
+  [
+   "roseburia",
+   0.364
+  ],
+  [
+   "blautia",
+   0.352
+  ],
+  [
+   "proteobacteria",
+   0.344
+  ],
+  [
+   "escherichia",
+   0.332
+  ],
+  [
+   "ruminococcaceae",
+   0.328
+  ]
+ ],
+ "frac_claims_in_over_half_of_corpus": 0.027
+}
