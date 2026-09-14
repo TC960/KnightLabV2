@@ -1,0 +1,343 @@
+{
+ "clusters": {
+  "cognitive-decline": {
+   "nodes_present": [
+    "Alzheimer's disease",
+    "Mild cognitive impairment",
+    "Dementia",
+    "Cognitive impairment",
+    "Neurocognitive impairment",
+    "Subjective cognitive decline",
+    "Sporadic Creutzfeldt-Jakob disease"
+   ],
+   "n_papers": 72,
+   "pairs": [
+    {
+     "a": "Alzheimer's disease",
+     "b": "Mild cognitive impairment",
+     "n": 26,
+     "k": 13,
+     "rate": 0.5
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Dementia",
+     "n": 16,
+     "k": 15,
+     "rate": 0.938
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Cognitive impairment",
+     "n": 8,
+     "k": 5,
+     "rate": 0.625
+    },
+    {
+     "a": "Mild cognitive impairment",
+     "b": "Dementia",
+     "n": 13,
+     "k": 4,
+     "rate": 0.308
+    },
+    {
+     "a": "Mild cognitive impairment",
+     "b": "Cognitive impairment",
+     "n": 18,
+     "k": 9,
+     "rate": 0.5
+    },
+    {
+     "a": "Mild cognitive impairment",
+     "b": "Neurocognitive impairment",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Mild cognitive impairment",
+     "b": "Subjective cognitive decline",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Mild cognitive impairment",
+     "b": "Sporadic Creutzfeldt-Jakob disease",
+     "n": 3,
+     "k": 1,
+     "rate": 0.333
+    },
+    {
+     "a": "Dementia",
+     "b": "Cognitive impairment",
+     "n": 8,
+     "k": 7,
+     "rate": 0.875
+    },
+    {
+     "a": "Dementia",
+     "b": "Neurocognitive impairment",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Dementia",
+     "b": "Subjective cognitive decline",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Dementia",
+     "b": "Sporadic Creutzfeldt-Jakob disease",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Cognitive impairment",
+     "b": "Neurocognitive impairment",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "Cognitive impairment",
+     "b": "Subjective cognitive decline",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Cognitive impairment",
+     "b": "Sporadic Creutzfeldt-Jakob disease",
+     "n": 2,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Neurocognitive impairment",
+     "b": "Subjective cognitive decline",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    }
+   ],
+   "null": {
+    "n_pairs": 16,
+    "n_obs": 103,
+    "n_agree": 61,
+    "rate": 0.5922,
+    "null_mean": 0.6687,
+    "null_sd": 0.0633,
+    "null_p95": 0.7708,
+    "p": 0.883,
+    "mde_points": 0.1021
+   }
+  },
+  "cerebrovascular": {
+   "nodes_present": [
+    "Stroke",
+    "Intracerebral hemorrhage",
+    "Hypertensive intracerebral hemorrhage",
+    "Poststroke aphasia",
+    "Hemorrhagic transformation"
+   ],
+   "n_papers": 36,
+   "pairs": [
+    {
+     "a": "Stroke",
+     "b": "Intracerebral hemorrhage",
+     "n": 22,
+     "k": 19,
+     "rate": 0.864
+    },
+    {
+     "a": "Stroke",
+     "b": "Hypertensive intracerebral hemorrhage",
+     "n": 4,
+     "k": 4,
+     "rate": 1.0
+    },
+    {
+     "a": "Stroke",
+     "b": "Poststroke aphasia",
+     "n": 3,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Stroke",
+     "b": "Hemorrhagic transformation",
+     "n": 5,
+     "k": 4,
+     "rate": 0.8
+    },
+    {
+     "a": "Intracerebral hemorrhage",
+     "b": "Hypertensive intracerebral hemorrhage",
+     "n": 5,
+     "k": 4,
+     "rate": 0.8
+    },
+    {
+     "a": "Intracerebral hemorrhage",
+     "b": "Poststroke aphasia",
+     "n": 5,
+     "k": 2,
+     "rate": 0.4
+    },
+    {
+     "a": "Intracerebral hemorrhage",
+     "b": "Hemorrhagic transformation",
+     "n": 5,
+     "k": 4,
+     "rate": 0.8
+    },
+    {
+     "a": "Hypertensive intracerebral hemorrhage",
+     "b": "Poststroke aphasia",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Hypertensive intracerebral hemorrhage",
+     "b": "Hemorrhagic transformation",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Poststroke aphasia",
+     "b": "Hemorrhagic transformation",
+     "n": 3,
+     "k": 2,
+     "rate": 0.667
+    }
+   ],
+   "null": {
+    "n_pairs": 10,
+    "n_obs": 54,
+    "n_agree": 41,
+    "rate": 0.7593,
+    "null_mean": 0.6676,
+    "null_sd": 0.0813,
+    "null_p95": 0.7979,
+    "p": 0.1256,
+    "mde_points": 0.1303
+   }
+  },
+  "spinal-cord-injury": {
+   "nodes_present": [
+    "Spinal cord injury",
+    "Chronic traumatic complete spinal cord injury",
+    "Traumatic thoracic spinal cord injury"
+   ],
+   "n_papers": 8,
+   "pairs": [
+    {
+     "a": "Spinal cord injury",
+     "b": "Chronic traumatic complete spinal cord injury",
+     "n": 4,
+     "k": 2,
+     "rate": 0.5
+    },
+    {
+     "a": "Spinal cord injury",
+     "b": "Traumatic thoracic spinal cord injury",
+     "n": 4,
+     "k": 3,
+     "rate": 0.75
+    }
+   ],
+   "null": {
+    "n_pairs": 2,
+    "n_obs": 8,
+    "n_agree": 5,
+    "rate": 0.625,
+    "null_mean": 0.6551,
+    "null_sd": 0.2159,
+    "null_p95": 1.0,
+    "p": 0.6002,
+    "mde_points": 0.3449
+   }
+  },
+  "hepatic-encephalopathy": {
+   "nodes_present": [
+    "Hepatic encephalopathy",
+    "Minimal hepatic encephalopathy"
+   ],
+   "n_papers": 2,
+   "pairs": [],
+   "null": null
+  }
+ },
+ "negative_control": [
+  {
+   "a": "Multiple system atrophy",
+   "b": "Parkinson's disease",
+   "n": 8,
+   "k": 8,
+   "rate": 1.0
+  },
+  {
+   "a": "Essential tremor",
+   "b": "Parkinson's disease",
+   "n": 2,
+   "k": 1,
+   "rate": 0.5
+  },
+  {
+   "a": "Essential tremor",
+   "b": "Multiple system atrophy",
+   "n": 0,
+   "k": 0,
+   "rate": null
+  }
+ ],
+ "background": {
+  "n_pairs": 453,
+  "n_obs": 2648,
+  "n_agree": 1779,
+  "pooled_rate": 0.6718
+ },
+ "ubiquity_confound": {
+  "n_pairs": 249,
+  "corr_breadth_agreement": 0.0001,
+  "corr_noverlap_agreement": 0.0429,
+  "tertiles": [
+   {
+    "bucket": "low",
+    "mean_breadth": 7.283,
+    "mean_agreement": 0.6811,
+    "n_pairs": 83
+   },
+   {
+    "bucket": "mid",
+    "mean_breadth": 10.902,
+    "mean_agreement": 0.6363,
+    "n_pairs": 83
+   },
+   {
+    "bucket": "high",
+    "mean_breadth": 14.1,
+    "mean_agreement": 0.6734,
+    "n_pairs": 83
+   }
+  ]
+ },
+ "negative_control_null": {
+  "n_pairs": 2,
+  "n_obs": 10,
+  "n_agree": 9,
+  "rate": 0.9,
+  "null_mean": 0.6574,
+  "null_sd": 0.2126,
+  "null_p95": 1.0,
+  "p": 0.1303,
+  "mde_points": 0.3426
+ }
+}
