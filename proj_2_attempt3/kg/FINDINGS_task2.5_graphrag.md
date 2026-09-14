@@ -122,3 +122,45 @@ one-hop queries and should not be deleted.
   whether a retriever finds what the graph contains — not biological correctness.
 - The bridge metric rewards recall of a large set at k=10; recall@10 is capped at
   10/64 for the biggest truth set, so precision is doing most of the work.
+
+---
+
+## Addendum, 2026-09-14: the numbers were scored on a stale corpus — the conclusion survives, the sign flips
+
+`rag_corpus.jsonl` had never been regenerated after the 2026-09-08 punctuation
+fold (`multi_taxon.py`) or the 2026-09-11 spelling fold (`taxon_typos.py`). It
+therefore disagreed with `graph.json` on **293 documents**: 148 phantom documents
+for taxa that are no longer nodes (`[ eubacterium ]`, `[eubacterium]_rectale_group`,
+`bacteroides-prevotella`) and **145 real edges missing entirely** — 7% of a
+2,008-edge graph. Both retrievers were being scored on it, *and so was the ground
+truth*, which is derived from the corpus: per-query truth counts moved 64→66,
+25→21, 8→5, 12→11, 116→120 on the rebuild.
+
+Rebuilt (`build_rag.py`) and re-run. The corpus now matches the graph's edge set
+**exactly** (set equality, 2,008 = 2,008).
+
+| | stale corpus | corrected corpus |
+|---|---|---|
+| GraphRAG mean precision@10 | 0.800 | **0.683** |
+| BM25 mean precision@10 | 0.783 | **0.700** |
+| GraphRAG mean recall@10 | 0.390 | 0.351 |
+| BM25 mean recall@10 | 0.365 | 0.333 |
+
+**The ordering reverses.** GraphRAG was ahead by 1.7 points; BM25 is now ahead by
+1.7 points. This does not overturn this document's conclusion — it is the
+strongest available evidence *for* it. A 1.7-point gap whose sign flips under an
+unrelated data correction is noise, and the table above should be read as
+confirming "it is a tie, not a win" rather than as a new result in BM25's favour.
+
+Tested rather than asserted. Per-query differences (GraphRAG − BM25) are
+`[0, +0.30, 0, 0, 0, −0.40]`; an **exact** two-sided sign-flip permutation over
+all 2⁶ = 64 assignments gives **p = 1.000**. Only two of six queries differ at
+all, and they point opposite ways. With this per-query spread the comparison
+cannot resolve a mean difference below about **0.17** — ten times the observed
+gap. Six queries was never enough to rank these retrievers, and neither the old
+number nor the new one should be quoted as a ranking.
+
+**What is unaffected:** the containment-traversal capability, which is this
+document's actual finding. That is a structural property of the retriever, not a
+ranking score, and 145 of the edges it can now reach were absent from the corpus
+BM25 was searching.
