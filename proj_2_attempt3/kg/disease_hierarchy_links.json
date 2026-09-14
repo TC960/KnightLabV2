@@ -1,0 +1,24 @@
+{
+ "mondo_version": "releases/2026-09-01",
+ "provenance": "MONDO is-a closure over disease labels resolved by mondo.py; no hand-written parent-child assertions are included here. The hand-written tiers in disease_containment.py cover subtype labels MONDO does not carry and are deliberately NOT shipped in this file.",
+ "links": [
+  {
+   "child": "d:Alzheimer's disease",
+   "parent": "d:Dementia",
+   "child_label": "Alzheimer's disease",
+   "parent_label": "Dementia",
+   "child_mondo": "MONDO:0004975",
+   "parent_mondo": "MONDO:0001627",
+   "mondo_distance": 1
+  },
+  {
+   "child": "d:Intracerebral hemorrhage",
+   "parent": "d:Stroke",
+   "child_label": "Intracerebral hemorrhage",
+   "parent_label": "Stroke",
+   "child_mondo": "MONDO:0013792",
+   "parent_mondo": "MONDO:0005098",
+   "mondo_distance": 2
+  }
+ ]
+}

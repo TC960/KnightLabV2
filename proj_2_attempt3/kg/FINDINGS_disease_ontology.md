@@ -108,15 +108,40 @@ cannot do, and equally **cannot be validated by it**.
 
 ## 3. What a containment layer buys, and what it does not
 
-Only **2 is-a links** can be formed between the graph's 40 disease nodes. The
-retrieval payoff is nonetheless real and does not depend on any significance
-test:
+Only **2 is-a links** can be formed between the graph's 40 disease nodes.
 
-- a query for **`Dementia`** returns its own 6 papers / 47 taxa, and misses
-  **46 papers and 289 taxa** sitting on `Alzheimer's disease`, which MONDO says
-  is a *kind of* dementia — an 8× expansion;
-- a query for **`Stroke`** returns 30 papers and misses 3 on
-  `Intracerebral hemorrhage`.
+**For a node-scoped view the gap is large.** A view that filters edges by
+`disease == "Dementia"` — which is what the per-disease panels and any naive
+disease filter do — returns its own 6 papers / 47 taxa and misses the **46
+papers and 289 taxa** on `Alzheimer's disease`, which MONDO says is a kind of
+dementia. Likewise `Stroke` misses 3 papers on `Intracerebral hemorrhage`.
+
+**For the PPR retriever the layer buys nothing, and this was measured rather
+than assumed.** The layer was implemented in `graphrag.py` (opt-in, loaded from
+`disease_hierarchy_links.json`) and the retrieved subgraph compared with and
+without it:
+
+| query | k | child node retrieved? | papers | diseases |
+|---|---|---|---|---|
+| `Dementia` (child: Alzheimer's) | 12 | **yes both ways** | 79 = 79 | 9 = 9 |
+| `Dementia` | 25 | yes both ways | 152 = 152 | 10 = 10 |
+| `Stroke` (child: ICH) | 12 | no both ways | 85 = 85 | 8 = 8 |
+| `Stroke` | 25 | yes both ways | 157 = 157 | 11 = 11 |
+
+**Identical in every cell.** The only measurable effect is a PPR score nudge on
+one node (Alzheimer's 0.0499 → 0.0532) that changes no rank. The reason is
+structural: personalized PageRank already connects any two diseases that share a
+single taxon, and at the disease level this graph is nearly complete — 453 of the
+possible pairs share enough taxa to be compared at all. **Adding 2 links to an
+already-connected layer cannot add reach.**
+
+So the layer is kept for a narrower and honest reason: it makes the relation
+**explicit and attributed** in the returned subgraph (`Dementia contains
+Alzheimer's disease (disease) [MONDO]`), which tells a reader *why* the two are
+related and licenses a deliberate is-a expansion in a node-scoped view. It is
+**not** a retrieval improvement and must not be reported as one. This is the
+same shape as Task 2.5's own conclusion — the value of containment traversal is
+expressiveness, not ranking.
 
 **Does ontological proximity predict directional agreement?** No, not at this
 size. Bucketing all 23 resolved multi-taxon diseases by MONDO relation:
@@ -210,9 +235,11 @@ disagreement is a property of the node, not of a study.
   retrospectively supports the Tier-C rejection of exactly that fold, which was
   made on clinical grounds ("MCI is a stage that may or may not convert") before
   any of this was measured.
-- **Ship the 2 MONDO is-a links** (AD→Dementia, ICH→Stroke). They are lookups,
-  not judgements, and they are what makes the 8× `Dementia` retrieval expansion
-  possible.
+- **Ship the 2 MONDO is-a links** (AD→Dementia, ICH→Stroke) — shipped, as an
+  opt-in `disease_hierarchy_links.json` that leaves `graph.json` untouched. They
+  are lookups, not judgements. But note §3: they buy **no** retrieval reach in
+  the PPR retriever (measured, identical subgraphs), only explicit attribution.
+  The 8× figure applies to node-scoped views, not to GraphRAG.
 - The containment layer is justified **on retrieval and on correctness of
   meaning, not as an accuracy gain** — the standing rule for structural
   corrections in this repo, and it applies here.

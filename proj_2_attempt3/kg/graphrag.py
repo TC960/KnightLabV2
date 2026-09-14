@@ -109,6 +109,29 @@ class GraphRAG:
                 self.adj[p][c] = self.adj[p].get(c, 0.0) + CONTAINMENT_W
                 self.adj[c][p] = self.adj[c].get(p, 0.0) + CONTAINMENT_W
 
+        # --- disease hierarchy (opt-in, MONDO-derived) ----------------------
+        # The taxon dimension has conducted containment since this retriever was
+        # written; the disease dimension had no hierarchy to conduct, so a query
+        # for `Dementia` could not reach `Alzheimer's disease` even though MONDO
+        # says one is a kind of the other. Loaded from a separate committed file
+        # rather than graph.json: build_kg.py regenerates graph.json and would
+        # drop the key, and whether subtypes should be containment at all is a
+        # human call that this keeps reversible. Same fixed weight as taxon
+        # containment -- inventing a second tunable would be unjustified
+        # precision, and these links are taxonomy facts, not evidence.
+        self.disease_contains = set()
+        self.disease_layer = None
+        dh = os.path.join(os.path.dirname(os.path.abspath(graph_path)),
+                          "disease_hierarchy_links.json")
+        if os.path.exists(dh):
+            self.disease_layer = json.load(open(dh))
+            for l in self.disease_layer.get("links", []):
+                p, c = l["parent"], l["child"]
+                if p in self.nodes and c in self.nodes:
+                    self.adj[p][c] = self.adj[p].get(c, 0.0) + CONTAINMENT_W
+                    self.adj[c][p] = self.adj[c].get(p, 0.0) + CONTAINMENT_W
+                    self.disease_contains.add((p, c))
+
         self.edge_by_pair = {}
         for e in self.G["edges"]:
             self.edge_by_pair[(e["source"], e["target"])] = e
@@ -276,7 +299,15 @@ class GraphRAG:
                 })
         for p, c in self.contains:
             if p in keepset and c in keepset:
-                contain.append({"parent": self.nodes[p]["label"], "child": self.nodes[c]["label"]})
+                contain.append({"parent": self.nodes[p]["label"], "child": self.nodes[c]["label"],
+                                "dimension": "taxon"})
+        # Disease containment is reported with its dimension named, because a
+        # user reading "Dementia contains Alzheimer's disease" needs to know
+        # that came from MONDO and not from NCBI.
+        for p, c in self.disease_contains:
+            if p in keepset and c in keepset:
+                contain.append({"parent": self.nodes[p]["label"], "child": self.nodes[c]["label"],
+                                "dimension": "disease", "source": "MONDO"})
 
         assoc.sort(key=lambda a: -a["n_papers"])
         return {
@@ -310,7 +341,9 @@ def render(sg):
     if sg["containment"]:
         out.append(f"\n  containment links used ({len(sg['containment'])}):")
         for c in sg["containment"][:10]:
-            out.append(f"    {c['parent']} contains {c['child']}")
+            dim = c.get("dimension", "taxon")
+            src = f" [{c['source']}]" if c.get("source") else ""
+            out.append(f"    {c['parent']} contains {c['child']}  ({dim}){src}")
     return "\n".join(out)
 
 
@@ -327,8 +360,11 @@ def main():
     a = ap.parse_args()
 
     g = GraphRAG(a.graph)
+    dl = (f", {len(g.disease_contains)} disease is-a links from MONDO "
+          f"{g.disease_layer.get('mondo_version', '?')}" if g.disease_contains
+          else ", NO disease hierarchy (disease_hierarchy_links.json absent)")
     print(f"graph: {len(g.nodes)} nodes, {len(g.G['edges'])} edges, "
-          f"{len(g.G.get('hierarchy', []))} containment links\n")
+          f"{len(g.G.get('hierarchy', []))} taxon containment links{dl}\n")
 
     if a.query:
         sg = g.subgraph(a.query, k=a.k, node_type=a.node_type)
