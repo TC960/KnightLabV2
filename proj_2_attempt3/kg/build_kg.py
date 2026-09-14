@@ -532,6 +532,31 @@ def build(rows, min_papers=1, tax=None):
                               "parent_rank": (tax.rank.get(parent_tid, "")
                                               if tax is not None and tax.ok else ""),
                               "child_rank": "clade"})
+    # Orphan nodes whose own LABEL names their parent. `taxonomy.py` can give
+    # these no lineage (they resolve to no taxid at all) and the placeholder
+    # branch above only fires for labels the taxonomy DID resolve, so they sat
+    # detached from the containment layer entirely. The mapping is curated, not
+    # inferred, because a substring rule would link four bacteriophages into the
+    # genus they infect -- see orphan_parents.py, where the refusals are
+    # recorded with their reasons.
+    n_orphan_links = 0
+    _op = os.path.join(HERE, "orphan_parents.json")
+    if os.path.exists(_op):
+        for l in json.load(open(_op))["links"]:
+            child, parent = l["child_id"], l["parent_id"]
+            if child in node_ids and parent in node_ids:
+                hierarchy.append({"parent": parent, "child": child,
+                                  "parent_rank": l.get("parent_rank") or "",
+                                  "child_rank": "clade",
+                                  "source": "curated_orphan_parent"})
+                n_orphan_links += 1
+        print(f"orphan parent links added: {n_orphan_links} "
+              f"(curated; see orphan_parents.py)")
+    else:
+        print("note: orphan_parents.json absent -- 14 label-recoverable orphan "
+              "taxa will have no parent link. Regenerate with "
+              "`python3 orphan_parents.py`.")
+
     if tax is not None and tax.ok:
         tids = [n["taxid"] for n in nodes if n["type"] == "taxon" and n.get("taxid")]
         lineage = {t: tax.lineage(t) for t in tids}

@@ -10,7 +10,7 @@
     "n_replicated": 447,
     "n_contested": 220,
     "n_taxa_resolved": 671,
-    "n_hierarchy_links": 713,
+    "n_hierarchy_links": 727,
     "n_papers_table": 271,
     "n_papers_with_metadata": 206,
     "min_papers": 1,
@@ -36190,7 +36190,19 @@
       "taxon_purity": 1.0,
       "taxon_class": "narrow",
       "restates_prior": false,
-      "rank_conflicts": [],
+      "rank_conflicts": [
+        {
+          "other": "Faecalibacterium",
+          "other_key": "ncbi:216851",
+          "other_rank": "genus",
+          "rel": "parent",
+          "other_direction": "depleted",
+          "other_papers": 16,
+          "n_shared": 0,
+          "verdict": "no_shared_paper",
+          "witnesses": []
+        }
+      ],
       "has_within_paper_conflict": false,
       "confidence": "provisional",
       "n_methods_papers": 1,
@@ -40751,7 +40763,19 @@
       "taxon_purity": 0.842,
       "taxon_class": "mixed",
       "restates_prior": false,
-      "rank_conflicts": [],
+      "rank_conflicts": [
+        {
+          "other": "gut_metagenome_g_Faecalibacterium",
+          "other_key": "gut metagenome g faecalibacterium",
+          "other_rank": "genus",
+          "rel": "child",
+          "other_direction": "enriched",
+          "other_papers": 1,
+          "n_shared": 0,
+          "verdict": "no_shared_paper",
+          "witnesses": []
+        }
+      ],
       "has_within_paper_conflict": false,
       "confidence": "contested",
       "n_methods_papers": 16,
@@ -90335,7 +90359,19 @@
       "taxon_purity": 1.0,
       "taxon_class": "generic",
       "restates_prior": true,
-      "rank_conflicts": [],
+      "rank_conflicts": [
+        {
+          "other": "norank_p_Flavobacteriaceae",
+          "other_key": "norank p flavobacteriaceae",
+          "other_rank": "family",
+          "rel": "child",
+          "other_direction": "enriched",
+          "other_papers": 1,
+          "n_shared": 0,
+          "verdict": "no_shared_paper",
+          "witnesses": []
+        }
+      ],
       "has_within_paper_conflict": false,
       "confidence": "provisional",
       "n_methods_papers": 1,
@@ -106372,7 +106408,19 @@
       "taxon_purity": 1.0,
       "taxon_class": "narrow",
       "restates_prior": false,
-      "rank_conflicts": [],
+      "rank_conflicts": [
+        {
+          "other": "Flavobacteriaceae",
+          "other_key": "ncbi:49546",
+          "other_rank": "family",
+          "rel": "parent",
+          "other_direction": "depleted",
+          "other_papers": 1,
+          "n_shared": 0,
+          "verdict": "no_shared_paper",
+          "witnesses": []
+        }
+      ],
       "has_within_paper_conflict": false,
       "confidence": "provisional",
       "n_methods_papers": 1,
@@ -115231,6 +115279,104 @@
       "child": "t:ph:g prevotella 9",
       "parent_rank": "genus",
       "child_rank": "clade"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:unclassified f lachnospiraceae",
+      "parent_rank": "family",
+      "child_rank": "clade",
+      "source": "curated_orphan_parent"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:lachnospiraceae unclassified",
+      "parent_rank": "family",
+      "child_rank": "clade",
+      "source": "curated_orphan_parent"
+    },
+    {
+      "parent": "t:ncbi:186803",
+      "child": "t:uncultured lachnospiraceae feature",
+      "parent_rank": "family",
+      "child_rank": "clade",
+      "source": "curated_orphan_parent"
+    },
+    {
+      "parent": "t:ncbi:990719",
+      "child": "t:norank f christensenellaceae",
+      "parent_rank": "family",
+      "child_rank": "clade",
+      "source": "curated_orphan_parent"
+    },
+    {
+      "parent": "t:ncbi:128827",
+      "child": "t:norank f erysipelotrichaceae",
+      "parent_rank": "family",
+      "child_rank": "clade",
+      "source": "curated_orphan_parent"
+    },
+    {
+      "parent": "t:ncbi:49546",
+      "child": "t:norank p flavobacteriaceae",
+      "parent_rank": "family",
+      "child_rank": "clade",
+      "source": "curated_orphan_parent"
+    },
+    {
+      "parent": "t:ncbi:543",
+      "child": "t:enterobacteriaceae unclassified",
+      "parent_rank": "family",
+      "child_rank": "clade",
+      "source": "curated_orphan_parent"
+    },
+    {
+      "parent": "t:ncbi:91061",
+      "child": "t:unclassified c bacilli",
+      "parent_rank": "class",
+      "child_rank": "clade",
+      "source": "curated_orphan_parent"
+    },
+    {
+      "parent": "t:ncbi:1485",
+      "child": "t:unclassified g clostridium sensu stricto 1",
+      "parent_rank": "genus",
+      "child_rank": "clade",
+      "source": "curated_orphan_parent"
+    },
+    {
+      "parent": "t:ncbi:1485",
+      "child": "t:uncultured clostridium sp. 1",
+      "parent_rank": "genus",
+      "child_rank": "clade",
+      "source": "curated_orphan_parent"
+    },
+    {
+      "parent": "t:ncbi:216851",
+      "child": "t:gut metagenome g faecalibacterium",
+      "parent_rank": "genus",
+      "child_rank": "clade",
+      "source": "curated_orphan_parent"
+    },
+    {
+      "parent": "t:ncbi:1730",
+      "child": "t:ec eubacterium xylanophilumgroup",
+      "parent_rank": "genus",
+      "child_rank": "clade",
+      "source": "curated_orphan_parent"
+    },
+    {
+      "parent": "t:ncbi:1508657",
+      "child": "t:ruminiclostridium 5",
+      "parent_rank": "genus",
+      "child_rank": "clade",
+      "source": "curated_orphan_parent"
+    },
+    {
+      "parent": "t:ncbi:1508657",
+      "child": "t:ruminiclostridium 1",
+      "parent_rank": "genus",
+      "child_rank": "clade",
+      "source": "curated_orphan_parent"
     },
     {
       "parent": "t:ncbi:1783272",
