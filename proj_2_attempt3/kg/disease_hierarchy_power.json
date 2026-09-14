@@ -1,0 +1,1357 @@
+{
+ "summary": {
+  "is-a": {
+   "n_pairs": 2,
+   "n_obs": 38,
+   "n_agree": 34,
+   "pooled_rate": 0.8947,
+   "mean_pair_rate": 0.9006,
+   "pairs": [
+    {
+     "a": "Alzheimer's disease",
+     "b": "Dementia",
+     "n": 16,
+     "k": 15,
+     "rate": 0.938
+    },
+    {
+     "a": "Intracerebral hemorrhage",
+     "b": "Stroke",
+     "n": 22,
+     "k": 19,
+     "rate": 0.864
+    }
+   ]
+  },
+  "sibling": {
+   "n_pairs": 11,
+   "n_obs": 50,
+   "n_agree": 34,
+   "pooled_rate": 0.68,
+   "mean_pair_rate": 0.6116,
+   "pairs": [
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Spinal muscular atrophy",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Rett syndrome",
+     "n": 2,
+     "k": 1,
+     "rate": 0.5
+    },
+    {
+     "a": "CADASIL",
+     "b": "Rett syndrome",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Epilepsy",
+     "b": "Migraine",
+     "n": 2,
+     "k": 1,
+     "rate": 0.5
+    },
+    {
+     "a": "Epilepsy",
+     "b": "Multiple sclerosis",
+     "n": 22,
+     "k": 16,
+     "rate": 0.727
+    },
+    {
+     "a": "Essential tremor",
+     "b": "Huntington's disease",
+     "n": 2,
+     "k": 1,
+     "rate": 0.5
+    },
+    {
+     "a": "Essential tremor",
+     "b": "Parkinson's disease",
+     "n": 2,
+     "k": 1,
+     "rate": 0.5
+    },
+    {
+     "a": "Huntington's disease",
+     "b": "Multiple system atrophy",
+     "n": 3,
+     "k": 3,
+     "rate": 1.0
+    },
+    {
+     "a": "Idiopathic normal pressure hydrocephalus",
+     "b": "Parkinson's disease",
+     "n": 5,
+     "k": 3,
+     "rate": 0.6
+    },
+    {
+     "a": "Migraine",
+     "b": "Multiple sclerosis",
+     "n": 5,
+     "k": 3,
+     "rate": 0.6
+    },
+    {
+     "a": "Parkinson's disease",
+     "b": "Tuberous sclerosis complex",
+     "n": 5,
+     "k": 4,
+     "rate": 0.8
+    }
+   ]
+  },
+  "cousin": {
+   "n_pairs": 174,
+   "n_obs": 1610,
+   "n_agree": 1114,
+   "pooled_rate": 0.6919,
+   "mean_pair_rate": 0.642,
+   "pairs": [
+    {
+     "a": "Alzheimer's disease",
+     "b": "Amyotrophic lateral sclerosis",
+     "n": 30,
+     "k": 24,
+     "rate": 0.8
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Anti-NMDAR encephalitis",
+     "n": 12,
+     "k": 6,
+     "rate": 0.5
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Attention-deficit/hyperactivity disorder",
+     "n": 3,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Autism spectrum disorder",
+     "n": 11,
+     "k": 6,
+     "rate": 0.545
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "CADASIL",
+     "n": 7,
+     "k": 4,
+     "rate": 0.571
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Epilepsy",
+     "n": 20,
+     "k": 14,
+     "rate": 0.7
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Huntington's disease",
+     "n": 13,
+     "k": 8,
+     "rate": 0.615
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Idiopathic normal pressure hydrocephalus",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Intracerebral hemorrhage",
+     "n": 19,
+     "k": 18,
+     "rate": 0.947
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Migraine",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Multiple sclerosis",
+     "n": 44,
+     "k": 29,
+     "rate": 0.659
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Multiple system atrophy",
+     "n": 5,
+     "k": 5,
+     "rate": 1.0
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Parkinson's disease",
+     "n": 66,
+     "k": 50,
+     "rate": 0.758
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Rett syndrome",
+     "n": 6,
+     "k": 5,
+     "rate": 0.833
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Spinal cord injury",
+     "n": 25,
+     "k": 13,
+     "rate": 0.52
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Spinal muscular atrophy",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Stroke",
+     "n": 44,
+     "k": 31,
+     "rate": 0.705
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Traumatic brain injury",
+     "n": 4,
+     "k": 2,
+     "rate": 0.5
+    },
+    {
+     "a": "Alzheimer's disease",
+     "b": "Tuberous sclerosis complex",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Anti-NMDAR encephalitis",
+     "n": 13,
+     "k": 6,
+     "rate": 0.462
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Autism spectrum disorder",
+     "n": 10,
+     "k": 5,
+     "rate": 0.5
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "CADASIL",
+     "n": 3,
+     "k": 2,
+     "rate": 0.667
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Dementia",
+     "n": 11,
+     "k": 7,
+     "rate": 0.636
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Epilepsy",
+     "n": 21,
+     "k": 14,
+     "rate": 0.667
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Essential tremor",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Huntington's disease",
+     "n": 17,
+     "k": 10,
+     "rate": 0.588
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Idiopathic normal pressure hydrocephalus",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Intracerebral hemorrhage",
+     "n": 19,
+     "k": 17,
+     "rate": 0.895
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Migraine",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Multiple sclerosis",
+     "n": 25,
+     "k": 15,
+     "rate": 0.6
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Multiple system atrophy",
+     "n": 4,
+     "k": 3,
+     "rate": 0.75
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Parkinson's disease",
+     "n": 39,
+     "k": 27,
+     "rate": 0.692
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Rett syndrome",
+     "n": 9,
+     "k": 5,
+     "rate": 0.556
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Spinal cord injury",
+     "n": 23,
+     "k": 17,
+     "rate": 0.739
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Sporadic Creutzfeldt-Jakob disease",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Stroke",
+     "n": 28,
+     "k": 20,
+     "rate": 0.714
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Traumatic brain injury",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "Amyotrophic lateral sclerosis",
+     "b": "Tuberous sclerosis complex",
+     "n": 5,
+     "k": 3,
+     "rate": 0.6
+    },
+    {
+     "a": "Anti-NMDAR encephalitis",
+     "b": "Autism spectrum disorder",
+     "n": 4,
+     "k": 2,
+     "rate": 0.5
+    },
+    {
+     "a": "Anti-NMDAR encephalitis",
+     "b": "Dementia",
+     "n": 9,
+     "k": 8,
+     "rate": 0.889
+    },
+    {
+     "a": "Anti-NMDAR encephalitis",
+     "b": "Epilepsy",
+     "n": 11,
+     "k": 8,
+     "rate": 0.727
+    },
+    {
+     "a": "Anti-NMDAR encephalitis",
+     "b": "Essential tremor",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Anti-NMDAR encephalitis",
+     "b": "Huntington's disease",
+     "n": 10,
+     "k": 5,
+     "rate": 0.5
+    },
+    {
+     "a": "Anti-NMDAR encephalitis",
+     "b": "Intracerebral hemorrhage",
+     "n": 10,
+     "k": 7,
+     "rate": 0.7
+    },
+    {
+     "a": "Anti-NMDAR encephalitis",
+     "b": "Migraine",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Anti-NMDAR encephalitis",
+     "b": "Multiple sclerosis",
+     "n": 12,
+     "k": 9,
+     "rate": 0.75
+    },
+    {
+     "a": "Anti-NMDAR encephalitis",
+     "b": "Multiple system atrophy",
+     "n": 4,
+     "k": 3,
+     "rate": 0.75
+    },
+    {
+     "a": "Anti-NMDAR encephalitis",
+     "b": "Parkinson's disease",
+     "n": 12,
+     "k": 6,
+     "rate": 0.5
+    },
+    {
+     "a": "Anti-NMDAR encephalitis",
+     "b": "Rett syndrome",
+     "n": 4,
+     "k": 3,
+     "rate": 0.75
+    },
+    {
+     "a": "Anti-NMDAR encephalitis",
+     "b": "Spinal cord injury",
+     "n": 13,
+     "k": 10,
+     "rate": 0.769
+    },
+    {
+     "a": "Anti-NMDAR encephalitis",
+     "b": "Stroke",
+     "n": 10,
+     "k": 8,
+     "rate": 0.8
+    },
+    {
+     "a": "Anti-NMDAR encephalitis",
+     "b": "Tuberous sclerosis complex",
+     "n": 3,
+     "k": 2,
+     "rate": 0.667
+    },
+    {
+     "a": "Attention-deficit/hyperactivity disorder",
+     "b": "Autism spectrum disorder",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Attention-deficit/hyperactivity disorder",
+     "b": "Dementia",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Attention-deficit/hyperactivity disorder",
+     "b": "Epilepsy",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Attention-deficit/hyperactivity disorder",
+     "b": "Multiple sclerosis",
+     "n": 3,
+     "k": 1,
+     "rate": 0.333
+    },
+    {
+     "a": "Attention-deficit/hyperactivity disorder",
+     "b": "Parkinson's disease",
+     "n": 2,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Attention-deficit/hyperactivity disorder",
+     "b": "Stroke",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "CADASIL",
+     "n": 3,
+     "k": 2,
+     "rate": 0.667
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Dementia",
+     "n": 6,
+     "k": 3,
+     "rate": 0.5
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Epilepsy",
+     "n": 15,
+     "k": 9,
+     "rate": 0.6
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Huntington's disease",
+     "n": 12,
+     "k": 5,
+     "rate": 0.417
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Intracerebral hemorrhage",
+     "n": 9,
+     "k": 4,
+     "rate": 0.444
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Migraine",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Multiple sclerosis",
+     "n": 18,
+     "k": 7,
+     "rate": 0.389
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Multiple system atrophy",
+     "n": 3,
+     "k": 2,
+     "rate": 0.667
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Parkinson's disease",
+     "n": 18,
+     "k": 9,
+     "rate": 0.5
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Spinal cord injury",
+     "n": 15,
+     "k": 7,
+     "rate": 0.467
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Spinal muscular atrophy",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Sporadic Creutzfeldt-Jakob disease",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Stroke",
+     "n": 14,
+     "k": 10,
+     "rate": 0.714
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Traumatic brain injury",
+     "n": 5,
+     "k": 3,
+     "rate": 0.6
+    },
+    {
+     "a": "Autism spectrum disorder",
+     "b": "Tuberous sclerosis complex",
+     "n": 4,
+     "k": 1,
+     "rate": 0.25
+    },
+    {
+     "a": "CADASIL",
+     "b": "Dementia",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "CADASIL",
+     "b": "Epilepsy",
+     "n": 4,
+     "k": 2,
+     "rate": 0.5
+    },
+    {
+     "a": "CADASIL",
+     "b": "Huntington's disease",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "CADASIL",
+     "b": "Intracerebral hemorrhage",
+     "n": 3,
+     "k": 3,
+     "rate": 1.0
+    },
+    {
+     "a": "CADASIL",
+     "b": "Multiple sclerosis",
+     "n": 5,
+     "k": 3,
+     "rate": 0.6
+    },
+    {
+     "a": "CADASIL",
+     "b": "Multiple system atrophy",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "CADASIL",
+     "b": "Parkinson's disease",
+     "n": 6,
+     "k": 4,
+     "rate": 0.667
+    },
+    {
+     "a": "CADASIL",
+     "b": "Spinal cord injury",
+     "n": 3,
+     "k": 2,
+     "rate": 0.667
+    },
+    {
+     "a": "CADASIL",
+     "b": "Stroke",
+     "n": 8,
+     "k": 5,
+     "rate": 0.625
+    },
+    {
+     "a": "CADASIL",
+     "b": "Traumatic brain injury",
+     "n": 2,
+     "k": 1,
+     "rate": 0.5
+    },
+    {
+     "a": "CADASIL",
+     "b": "Tuberous sclerosis complex",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Dementia",
+     "b": "Epilepsy",
+     "n": 13,
+     "k": 9,
+     "rate": 0.692
+    },
+    {
+     "a": "Dementia",
+     "b": "Essential tremor",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Dementia",
+     "b": "Huntington's disease",
+     "n": 9,
+     "k": 7,
+     "rate": 0.778
+    },
+    {
+     "a": "Dementia",
+     "b": "Idiopathic normal pressure hydrocephalus",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "Dementia",
+     "b": "Intracerebral hemorrhage",
+     "n": 10,
+     "k": 9,
+     "rate": 0.9
+    },
+    {
+     "a": "Dementia",
+     "b": "Migraine",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Dementia",
+     "b": "Multiple sclerosis",
+     "n": 19,
+     "k": 14,
+     "rate": 0.737
+    },
+    {
+     "a": "Dementia",
+     "b": "Multiple system atrophy",
+     "n": 3,
+     "k": 3,
+     "rate": 1.0
+    },
+    {
+     "a": "Dementia",
+     "b": "Parkinson's disease",
+     "n": 17,
+     "k": 13,
+     "rate": 0.765
+    },
+    {
+     "a": "Dementia",
+     "b": "Rett syndrome",
+     "n": 5,
+     "k": 4,
+     "rate": 0.8
+    },
+    {
+     "a": "Dementia",
+     "b": "Spinal cord injury",
+     "n": 14,
+     "k": 12,
+     "rate": 0.857
+    },
+    {
+     "a": "Dementia",
+     "b": "Sporadic Creutzfeldt-Jakob disease",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Dementia",
+     "b": "Stroke",
+     "n": 12,
+     "k": 9,
+     "rate": 0.75
+    },
+    {
+     "a": "Dementia",
+     "b": "Traumatic brain injury",
+     "n": 2,
+     "k": 1,
+     "rate": 0.5
+    },
+    {
+     "a": "Dementia",
+     "b": "Tuberous sclerosis complex",
+     "n": 3,
+     "k": 2,
+     "rate": 0.667
+    },
+    {
+     "a": "Epilepsy",
+     "b": "Essential tremor",
+     "n": 2,
+     "k": 1,
+     "rate": 0.5
+    },
+    {
+     "a": "Epilepsy",
+     "b": "Huntington's disease",
+     "n": 11,
+     "k": 6,
+     "rate": 0.545
+    },
+    {
+     "a": "Epilepsy",
+     "b": "Idiopathic normal pressure hydrocephalus",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Epilepsy",
+     "b": "Intracerebral hemorrhage",
+     "n": 11,
+     "k": 11,
+     "rate": 1.0
+    },
+    {
+     "a": "Epilepsy",
+     "b": "Multiple system atrophy",
+     "n": 4,
+     "k": 3,
+     "rate": 0.75
+    },
+    {
+     "a": "Epilepsy",
+     "b": "Parkinson's disease",
+     "n": 25,
+     "k": 15,
+     "rate": 0.6
+    },
+    {
+     "a": "Epilepsy",
+     "b": "Rett syndrome",
+     "n": 5,
+     "k": 3,
+     "rate": 0.6
+    },
+    {
+     "a": "Epilepsy",
+     "b": "Spinal cord injury",
+     "n": 20,
+     "k": 10,
+     "rate": 0.5
+    },
+    {
+     "a": "Epilepsy",
+     "b": "Sporadic Creutzfeldt-Jakob disease",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Epilepsy",
+     "b": "Stroke",
+     "n": 26,
+     "k": 16,
+     "rate": 0.615
+    },
+    {
+     "a": "Epilepsy",
+     "b": "Traumatic brain injury",
+     "n": 2,
+     "k": 1,
+     "rate": 0.5
+    },
+    {
+     "a": "Epilepsy",
+     "b": "Tuberous sclerosis complex",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "Essential tremor",
+     "b": "Intracerebral hemorrhage",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "Essential tremor",
+     "b": "Multiple sclerosis",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Essential tremor",
+     "b": "Rett syndrome",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Essential tremor",
+     "b": "Spinal cord injury",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Essential tremor",
+     "b": "Stroke",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Huntington's disease",
+     "b": "Idiopathic normal pressure hydrocephalus",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Huntington's disease",
+     "b": "Intracerebral hemorrhage",
+     "n": 16,
+     "k": 11,
+     "rate": 0.688
+    },
+    {
+     "a": "Huntington's disease",
+     "b": "Migraine",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Huntington's disease",
+     "b": "Multiple sclerosis",
+     "n": 22,
+     "k": 15,
+     "rate": 0.682
+    },
+    {
+     "a": "Huntington's disease",
+     "b": "Parkinson's disease",
+     "n": 27,
+     "k": 17,
+     "rate": 0.63
+    },
+    {
+     "a": "Huntington's disease",
+     "b": "Rett syndrome",
+     "n": 8,
+     "k": 3,
+     "rate": 0.375
+    },
+    {
+     "a": "Huntington's disease",
+     "b": "Spinal cord injury",
+     "n": 20,
+     "k": 15,
+     "rate": 0.75
+    },
+    {
+     "a": "Huntington's disease",
+     "b": "Spinal muscular atrophy",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Huntington's disease",
+     "b": "Sporadic Creutzfeldt-Jakob disease",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Huntington's disease",
+     "b": "Stroke",
+     "n": 21,
+     "k": 11,
+     "rate": 0.524
+    },
+    {
+     "a": "Huntington's disease",
+     "b": "Traumatic brain injury",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "Huntington's disease",
+     "b": "Tuberous sclerosis complex",
+     "n": 5,
+     "k": 2,
+     "rate": 0.4
+    },
+    {
+     "a": "Idiopathic normal pressure hydrocephalus",
+     "b": "Multiple sclerosis",
+     "n": 7,
+     "k": 6,
+     "rate": 0.857
+    },
+    {
+     "a": "Idiopathic normal pressure hydrocephalus",
+     "b": "Stroke",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Intracerebral hemorrhage",
+     "b": "Migraine",
+     "n": 2,
+     "k": 1,
+     "rate": 0.5
+    },
+    {
+     "a": "Intracerebral hemorrhage",
+     "b": "Multiple sclerosis",
+     "n": 18,
+     "k": 14,
+     "rate": 0.778
+    },
+    {
+     "a": "Intracerebral hemorrhage",
+     "b": "Multiple system atrophy",
+     "n": 4,
+     "k": 3,
+     "rate": 0.75
+    },
+    {
+     "a": "Intracerebral hemorrhage",
+     "b": "Parkinson's disease",
+     "n": 26,
+     "k": 23,
+     "rate": 0.885
+    },
+    {
+     "a": "Intracerebral hemorrhage",
+     "b": "Rett syndrome",
+     "n": 8,
+     "k": 4,
+     "rate": 0.5
+    },
+    {
+     "a": "Intracerebral hemorrhage",
+     "b": "Spinal cord injury",
+     "n": 15,
+     "k": 14,
+     "rate": 0.933
+    },
+    {
+     "a": "Intracerebral hemorrhage",
+     "b": "Traumatic brain injury",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "Intracerebral hemorrhage",
+     "b": "Tuberous sclerosis complex",
+     "n": 8,
+     "k": 8,
+     "rate": 1.0
+    },
+    {
+     "a": "Migraine",
+     "b": "Parkinson's disease",
+     "n": 2,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Migraine",
+     "b": "Rett syndrome",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Migraine",
+     "b": "Spinal cord injury",
+     "n": 3,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Migraine",
+     "b": "Stroke",
+     "n": 1,
+     "k": 0,
+     "rate": 0.0
+    },
+    {
+     "a": "Multiple sclerosis",
+     "b": "Multiple system atrophy",
+     "n": 9,
+     "k": 8,
+     "rate": 0.889
+    },
+    {
+     "a": "Multiple sclerosis",
+     "b": "Parkinson's disease",
+     "n": 59,
+     "k": 50,
+     "rate": 0.847
+    },
+    {
+     "a": "Multiple sclerosis",
+     "b": "Rett syndrome",
+     "n": 9,
+     "k": 6,
+     "rate": 0.667
+    },
+    {
+     "a": "Multiple sclerosis",
+     "b": "Spinal cord injury",
+     "n": 26,
+     "k": 20,
+     "rate": 0.769
+    },
+    {
+     "a": "Multiple sclerosis",
+     "b": "Sporadic Creutzfeldt-Jakob disease",
+     "n": 3,
+     "k": 2,
+     "rate": 0.667
+    },
+    {
+     "a": "Multiple sclerosis",
+     "b": "Stroke",
+     "n": 35,
+     "k": 22,
+     "rate": 0.629
+    },
+    {
+     "a": "Multiple sclerosis",
+     "b": "Traumatic brain injury",
+     "n": 5,
+     "k": 2,
+     "rate": 0.4
+    },
+    {
+     "a": "Multiple sclerosis",
+     "b": "Tuberous sclerosis complex",
+     "n": 4,
+     "k": 3,
+     "rate": 0.75
+    },
+    {
+     "a": "Multiple system atrophy",
+     "b": "Parkinson's disease",
+     "n": 8,
+     "k": 8,
+     "rate": 1.0
+    },
+    {
+     "a": "Multiple system atrophy",
+     "b": "Spinal cord injury",
+     "n": 5,
+     "k": 4,
+     "rate": 0.8
+    },
+    {
+     "a": "Multiple system atrophy",
+     "b": "Stroke",
+     "n": 5,
+     "k": 3,
+     "rate": 0.6
+    },
+    {
+     "a": "Multiple system atrophy",
+     "b": "Traumatic brain injury",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    },
+    {
+     "a": "Multiple system atrophy",
+     "b": "Tuberous sclerosis complex",
+     "n": 3,
+     "k": 2,
+     "rate": 0.667
+    },
+    {
+     "a": "Parkinson's disease",
+     "b": "Rett syndrome",
+     "n": 9,
+     "k": 7,
+     "rate": 0.778
+    },
+    {
+     "a": "Parkinson's disease",
+     "b": "Spinal cord injury",
+     "n": 34,
+     "k": 31,
+     "rate": 0.912
+    },
+    {
+     "a": "Parkinson's disease",
+     "b": "Spinal muscular atrophy",
+     "n": 2,
+     "k": 1,
+     "rate": 0.5
+    },
+    {
+     "a": "Parkinson's disease",
+     "b": "Sporadic Creutzfeldt-Jakob disease",
+     "n": 3,
+     "k": 3,
+     "rate": 1.0
+    },
+    {
+     "a": "Parkinson's disease",
+     "b": "Stroke",
+     "n": 47,
+     "k": 37,
+     "rate": 0.787
+    },
+    {
+     "a": "Parkinson's disease",
+     "b": "Traumatic brain injury",
+     "n": 7,
+     "k": 3,
+     "rate": 0.429
+    },
+    {
+     "a": "Rett syndrome",
+     "b": "Spinal cord injury",
+     "n": 4,
+     "k": 4,
+     "rate": 1.0
+    },
+    {
+     "a": "Rett syndrome",
+     "b": "Stroke",
+     "n": 5,
+     "k": 5,
+     "rate": 1.0
+    },
+    {
+     "a": "Rett syndrome",
+     "b": "Traumatic brain injury",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "Rett syndrome",
+     "b": "Tuberous sclerosis complex",
+     "n": 3,
+     "k": 2,
+     "rate": 0.667
+    },
+    {
+     "a": "Spinal cord injury",
+     "b": "Spinal muscular atrophy",
+     "n": 2,
+     "k": 1,
+     "rate": 0.5
+    },
+    {
+     "a": "Spinal cord injury",
+     "b": "Sporadic Creutzfeldt-Jakob disease",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "Spinal cord injury",
+     "b": "Stroke",
+     "n": 29,
+     "k": 22,
+     "rate": 0.759
+    },
+    {
+     "a": "Spinal cord injury",
+     "b": "Traumatic brain injury",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "Spinal cord injury",
+     "b": "Tuberous sclerosis complex",
+     "n": 4,
+     "k": 4,
+     "rate": 1.0
+    },
+    {
+     "a": "Sporadic Creutzfeldt-Jakob disease",
+     "b": "Stroke",
+     "n": 2,
+     "k": 1,
+     "rate": 0.5
+    },
+    {
+     "a": "Stroke",
+     "b": "Traumatic brain injury",
+     "n": 4,
+     "k": 3,
+     "rate": 0.75
+    },
+    {
+     "a": "Stroke",
+     "b": "Tuberous sclerosis complex",
+     "n": 2,
+     "k": 2,
+     "rate": 1.0
+    },
+    {
+     "a": "Traumatic brain injury",
+     "b": "Tuberous sclerosis complex",
+     "n": 1,
+     "k": 1,
+     "rate": 1.0
+    }
+   ]
+  },
+  "unrelated": {
+   "n_pairs": 0
+  }
+ },
+ "pair_clustered_null": {
+  "n_isa_pairs": 2,
+  "n_pool_pairs": 185,
+  "n_obs": 38,
+  "n_agree": 34,
+  "rate": 0.8947,
+  "null_mean": 0.6642,
+  "null_sd": 0.1776,
+  "null_p95": 0.963,
+  "p": 0.0821,
+  "mde_points": 0.2987,
+  "draws": 20000,
+  "pairs_needed_for_20pt_effect": 4
+ }
+}
