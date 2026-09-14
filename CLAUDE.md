@@ -249,7 +249,25 @@ Built from the 250-paper extraction. Published: <https://www.mohakprakash.com/Kn
   hyphen/slash/en-dash/underscore alone, and the underscore spelling was being filed under
   *Escherichia* outright. 17 concepts were affected. See `multi_taxon.py` and
   `FINDINGS_species_split.md`.
-- **What remains is a decision, not an analysis.** Whether a joint two-genus 16S signal should be
-  attributed to one genus, split, or held separate (it is now held separate, on its own node) is a
-  modelling call for a human — as is modelling disease subtypes as containment. Everything else is
+- **What remains is a decision, not an analysis** — but there is now one fewer of them.
+  Whether a joint two-genus 16S signal should be attributed to one genus, split, or held
+  separate (it is now held separate, on its own node) is still a modelling call for a human.
+  **Disease subtypes as containment is ANSWERED (2026-09-14).** The disease half of the graph
+  now resolves against MONDO (`kg/mondo.py`; the MONDO GitHub release is reachable even though
+  NCBI is not), which confirmed 2 of 2 checkable is-a claims and upheld 2 of 2 rejections — and
+  the 71-paper cognitive-decline cluster **does not cohere microbially**: 0.592 directional
+  agreement against a 0.672 background over 453 cross-cluster pairs, with every MCI pair at or
+  below a coin flip while the MONDO-confirmed Alzheimer's/Dementia link runs 0.938. So: link
+  those nodes for **retrieval**, do **not** pool their evidence, and do **not** fold MCI into
+  Alzheimer's. The 2 MONDO is-a links ship as an opt-in `kg/disease_hierarchy_links.json`; they
+  add **no** retrieval reach in the PPR retriever (measured — identical subgraphs), only
+  explicit attribution. See `kg/FINDINGS_disease_ontology.md`. Everything else is
   limited by n=272, which needs a GPU.
+
+**Disease identifiers were wrong on 209 edges until 2026-09-14.** `Mild cognitive impairment`
+(13 papers, 154 edges) carried `MONDO:0005453`, which is *congenital heart disease*, and
+`Autism spectrum disorder` carried the id for narrow *autism*, a child of ASD. Both were live
+in `graph.json`, `rag_corpus.jsonl` and the published `kg.html`. The rule already in this file —
+**never join on another database's identifier** — applies to the disease dimension too, and this
+shipped because every fidelity instrument here scores the *taxon* half of an edge. `MCI` now
+correctly has **no** MONDO id; do not add one.

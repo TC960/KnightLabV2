@@ -124,6 +124,47 @@ resolution and external validation landed. Corrected 2026-09-10.*
   them yet.** They are weak predictors of discordance but good provenance for a
   reader judging an edge.
 
+## Disease ontology (`mondo.py`) — the disease-side analog of `taxonomy.py`
+
+The taxon half of every edge resolves against NCBI; until 2026-09-14 the disease
+half resolved against nothing but a hand-written table of 16 ids. `mondo.py`
+parses the MONDO release (cached at `~/.mondo/mondo.obo`, **not committed**,
+53 MB) and resolves **28 of the 40** disease labels by exact label/synonym match
+plus 3 curated aliases, with 12 documented refusals. Fetch the .obo with:
+
+```bash
+mkdir -p ~/.mondo && curl -sSL -o ~/.mondo/mondo.obo \
+  https://github.com/monarch-initiative/mondo/releases/latest/download/mondo.obo
+python3 mondo.py --validate      # positive control against build_kg.DISEASE_MAP
+```
+
+`ftp.ncbi.nih.gov`, `eutils`, `purl.obolibrary.org` and `ebi.ac.uk` are all
+blocked in the cloud environment; **the MONDO GitHub release is not.**
+
+Three things to know before touching this:
+
+- **Do not give `Mild cognitive impairment` a MONDO id.** MONDO has no term of
+  that name (0 of 104,643 index keys); `None` is the correct value. It previously
+  carried `MONDO:0005453` = *congenital heart disease*, live on 154 edges.
+- **Resolution is exact-match only.** Unresolved labels are reported, never
+  guessed — edit distance would merge `Cognitive impairment` into `specific
+  language impairment`. Aliases live in `mondo.ALIASES` with reasons; refusals in
+  `disease_hierarchy.REFUSED_ALIASES`.
+- **`mondo.py --validate` reads `DISEASE_MAP` live from `build_kg.py`**, so it
+  detects drift in the table it checks. Keep it that way.
+
+| script | what it does |
+|---|---|
+| `mondo.py` | MONDO parser/resolver, is-a DAG, self-test + positive control |
+| `disease_hierarchy.py` | grades the hand-written tiers against MONDO, derives the link layer, ontology-shuffled null |
+| `disease_hierarchy_power.py` | pair-clustered null and the MDE arithmetic (4 pairs needed; 2 exist) |
+| `disease_cluster_coherence.py` | do clinically adjacent nodes behave like one disease? + ubiquity confound + negative control |
+
+Findings: `FINDINGS_disease_ontology.md`. Headline for a reader: the 71-paper
+cognitive-decline cluster **does not cohere** (0.592 vs a 0.672 background, every
+MCI pair at or below chance), so those nodes should be linked for *retrieval* and
+their evidence should **not** be pooled.
+
 ## RAG layer (`build_rag.py`)
 
 `rag_corpus.jsonl` — one document per graph edge, ready for any vector store

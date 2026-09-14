@@ -1,8 +1,8 @@
 # Session prompt — KG usefulness + embeddings
 
-> ## ⚠️ READ THIS BEFORE THE TASK LIST BELOW — updated 2026-09-10
+> ## ⚠️ READ THIS BEFORE THE TASK LIST BELOW — updated 2026-09-14
 >
-> **The numbered tasks in this file are all DONE and have been for four sessions.**
+> **The numbered tasks in this file are all DONE and have been for five sessions.**
 > The scheduled routine still fires the old priority list (MAIN_DATA filter,
 > Task 1, Task 2.5, Task 3.1), and three consecutive sessions have each opened by
 > confirming they were already complete. If you are reading this because that
@@ -25,18 +25,23 @@
 >    every MDE in the project. **Needs a GPU — ask before spending.** The
 >    corpus-screening alternative below is now SPENT, so this really is the top
 >    item again.
-> 2. **Two modelling calls that want a human, not a script.** Should a joint 16S
->    signal from an assay that cannot separate two genera
->    (`Escherichia-Shigella`) be attributed to one, split, or held apart as it now
->    is? And should disease subtypes be modelled as containment the way taxa are
->    (`Intracerebral hemorrhage` beside `Stroke`)? Both are design decisions.
->    **2026-09-13: the disease-subtype half of this is now SIZED, and it is
->    bigger than it looked.** Six cognitive-decline nodes carry **71 papers**
->    (Alzheimer's 46, MCI 13, Dementia 6, Cognitive impairment 4, + 2 singletons)
->    with **0 hierarchy links between any two disease nodes** in the whole graph,
->    against 708 for taxa — so a query for Alzheimer's silently misses 13 MCI
->    papers. This is the largest disease cluster in the graph, not an edge case.
->    See `FINDINGS_disease_assignment.md`.
+> 2. **ONE modelling call left, and it is now precisely scoped.** The
+>    disease-subtype half of this is **largely ANSWERED, 2026-09-14** — see
+>    `FINDINGS_disease_ontology.md` and do not redo it. MONDO is reachable here
+>    (GitHub release, 200; `purl.obolibrary.org` and EBI are blocked), so
+>    `mondo.py` resolves 28 of 40 disease labels and **confirmed 2 of 2 checkable
+>    is-a claims and upheld 2 of 2 rejections** — the hand-written tiers were
+>    right. The 2 MONDO links are shipped (`disease_hierarchy_links.json`,
+>    opt-in). And the 71-paper cognitive cluster **does not cohere**: 0.592 vs a
+>    0.672 background, with every MCI pair at or below a coin flip while the
+>    MONDO-confirmed AD/Dementia link runs 0.938. **So: link those nodes for
+>    retrieval, do NOT pool their evidence, do NOT fold MCI into Alzheimer's.**
+>    What genuinely remains for a human: (a) the `Escherichia-Shigella` question
+>    — should a joint 16S signal from an assay that cannot separate two genera be
+>    attributed to one, split, or held apart as it now is; (b) whether the
+>    MCI / `Cognitive impairment` / `Neurocognitive impairment` labels are
+>    *synonyms of each other* (a folding question) given MONDO carries none of
+>    them. Not (b)-as-containment — that is now answered no.
 > 3. **Report PMID 27703453 upstream to Disbiome** — their case/control assignment
 >    is inverted on all five records, per `FINDINGS_db_conflicts.md`.
 > 4. Re-run `adjudicate_db_conflicts.py` whenever the corpus grows.
@@ -86,6 +91,27 @@
 >   `incerte sedis XII` once and XIII zero times. Both are real RDP labels. One
 >   placeholder-node edge; correcting it needs a rebuild, so it was left rather
 >   than rebuilt on a cloud checkout. See `FINDINGS_mention_audit.md`.
+>
+> - **Disease ontology resolution. DONE 2026-09-14 and it found shipped errors.**
+>   Two wrong MONDO ids were live on 209 of 2,008 edges and in `kg.html`: the MCI
+>   node carried `MONDO:0005453` = *congenital heart disease*, and ASD carried the
+>   id for narrow *autism*. Fixed at source, graph/RAG/viz/docs rebuilt under a
+>   strict diff gate. **Do not re-add an id for MCI** — MONDO has no such term,
+>   `None` is correct. Coverage is 28/40 with 12 documented refusals; don't
+>   fuzzy-match the rest. Note for any future statistical work here: **paper
+>   overlap between disease nodes is ZERO for every pair**, so cross-disease
+>   comparisons are not subject to the shared-paper inflation that makes
+>   73.0/72.5 a blend. And **4 is-a disease pairs would be needed** to resolve a
+>   20-point ontology-proximity effect; the graph can form 2.
+> - **`rag_corpus.jsonl` staleness. FIXED 2026-09-14** — it had never been
+>   regenerated after the 2026-09-08 punctuation or 2026-09-11 spelling folds and
+>   was wrong on 293 documents (7%). If you change taxon normalisation again,
+>   **re-run `build_rag.py`**; the retrieval ground truth is derived from that
+>   file, so a stale corpus silently rescores the retriever. Re-running the
+>   comparison on the fixed corpus flips Task 2.5's ordering (GraphRAG 0.683 vs
+>   BM25 0.700, exact permutation **p=1.000**) — which confirms that comparison is
+>   a tie and that **neither number is a ranking**. Six queries cannot resolve a
+>   gap below ~0.17.
 >
 > - **The NCBI taxdump.** `ftp.ncbi.nih.gov` is blocked in the cloud environment
 >   (CONNECT → 403, probed in four sessions). **2026-09-13: `eutils.ncbi.nlm.nih.gov`

@@ -4,6 +4,136 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+## TL;DR — 2026-09-14 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**Tested.** Whether the disease half of the graph survives contact with a disease
+ontology. The scheduled routine's priority list (MAIN_DATA filter, Task 1, 2.5,
+3.1) is spent — five sessions running — and the top open lever needs
+`MAIN_DATA.json`, which is gitignored and absent here. So this went at the #2
+item: the disease-subtype modelling call, open three sessions and logged as
+"needs a PI, not a script" **because there was no authority to appeal to**.
+
+**The unblock.** There is one, and it was a network assumption that was too
+broad. `ftp.ncbi.nih.gov` and `eutils` are blocked (403, re-probed today, ninth
+session) — but
+`github.com/monarch-initiative/mondo/releases/latest/download/mondo.obo` returns
+**200 and 53 MB**. `purl.obolibrary.org` and `ebi.ac.uk` are blocked; the GitHub
+release is not. So `mondo.py` is now the disease-side analog of `taxonomy.py`:
+exact label/synonym matching, obsolete terms followed through `replaced_by`,
+unresolved labels reported rather than guessed, curated aliases with recorded
+refusals. **28 of 40 disease labels resolve.**
+
+**Survived.**
+- *Two wrong MONDO ids were shipped on 209 of 2,008 edges, and the published
+  page carried them.* `Mild cognitive impairment` — 13 papers, **154 edges** —
+  carried `MONDO:0005453` = **congenital heart disease**. `Autism spectrum
+  disorder` carried `MONDO:0005260` = *autism*, a **child** of ASD. MONDO holds
+  **no term named "mild cognitive impairment" at all** (0 of 104,643 index keys),
+  so `None` is now correct and must not be "fixed" back. A third id was settled
+  rather than guessed: Anti-NMDAR encephalitis → `MONDO:0021081`. `CLAUDE.md`
+  already forbids joining on another database's taxid; **this is that failure one
+  dimension over**, and it shipped because every fidelity instrument in this repo
+  scores the taxon half.
+- *MONDO grades the hand-written tiers, and upholds them.* 2 of 2 checkable is-a
+  claims **CONFIRMED** (Alzheimer's under Dementia, ICH under Stroke); 2 of 2
+  checkable Tier-C **rejections upheld** (MSA cousin, essential tremor sibling of
+  Parkinson's). The 2026-09-10 human judgement call was right. The other 8 are
+  unresolvable — MONDO carries no graded or cause-specified subtype terms — which
+  cuts both ways: the tiers do work MONDO cannot, and cannot be validated by it.
+- *The 71-paper cognitive-decline cluster does NOT cohere, and that settles the
+  design call.* Pair as the unit: **61/103 = 0.592** against a background of
+  **0.672** over 453 cross-cluster pairs, p=0.883 — it fails in the **wrong
+  direction**, so no power statement rescues it. Inside it the structure is
+  sharp: the MONDO-confirmed Alzheimer's/Dementia link runs **15/16 = 0.938**
+  while **every MCI pair is at or below a coin flip** (AD/MCI 13/26, MCI/CI 9/18,
+  **MCI/Dementia 4/13**). Two authorities consulted separately agree — MONDO's
+  vocabulary refuses MCI as a disease, and the graph's own microbial data says
+  MCI's directions are uncorrelated with Alzheimer's. Neither was derived from
+  the other, and it retrospectively supports the Tier-C rejection of exactly that
+  fold, made on clinical grounds before any of this was measured.
+  **Recommendation: link the cognitive nodes for RETRIEVAL, do not pool their
+  EVIDENCE, do not fold MCI into Alzheimer's.**
+- *Three confounds checked before believing it, all null.* (a) Not one contrarian
+  paper — discordance clusters by paper here (p=0.0003), and this is spread over
+  **at least 6 of 13** MCI papers, the largest contributor backing agreements too
+  (3 vs 2). (b) Not taxon ubiquity — over 249 pairs, **corr(mean shared-taxon
+  breadth, agreement) = +0.000**, tertiles flat (0.681/0.636/0.673). (c) Not
+  shared papers — **paper overlap between disease nodes is ZERO for every pair**,
+  so the inflation that makes 73.0/72.5 a blend cannot operate here. That was the
+  main statistical risk and it does not apply.
+
+**Did not survive / null / corrected.**
+- *My own parser, caught by its own self-test before any result was read.*
+  MONDO's `is_a` lines carry trailing `{source="..."}` qualifiers, so ids were
+  read with the qualifier attached and **every ancestor lookup silently returned
+  nothing**. Fifth time an instrument here was weaker than what it audited;
+  **second consecutive time a built-in control caught it instead of a
+  spot-check.** Keep doing this. The control now reads `DISEASE_MAP` *live* from
+  `build_kg.py` rather than copying it — a control holding its own copy cannot
+  detect drift in the table it checks, which is how "174 contested" survived
+  three sessions after the number became 217. 16/16.
+- *Does ontological proximity predict directional agreement? NO, and the power
+  statement is unusually actionable.* is-a pairs agree 34/38 = 0.895 vs 0.692 for
+  distant pairs — which looks like a 20-point effect and **is not evidence**,
+  because those 38 observations come from exactly **2** disease pairs. Pair-
+  clustered null: p=0.082, **MDE +29.9 points** on a 66.4% base. **4 is-a disease
+  pairs would resolve a 20-point effect; the graph can form 2.** Not "more
+  papers" — two more linkable disease pairs.
+- *The shipped disease layer buys NO retrieval reach, measured not assumed.*
+  `graphrag.py` now loads the 2 links (opt-in `disease_hierarchy_links.json`, so
+  `graph.json` is untouched and `build_kg.py` cannot drop it). Subgraph with vs
+  without: **identical in every cell** — Dementia k=12 79=79 papers, k=25
+  152=152; Stroke k=25 157=157 — one PPR nudge (0.0499→0.0532) that changes no
+  rank. PPR already connects any two diseases sharing one taxon, and at the
+  disease level this graph is nearly complete. **I corrected my own claim from
+  earlier the same session:** the "8× Dementia expansion" is real for a
+  *node-scoped* view and is **not** a GraphRAG gain.
+- *`rag_corpus.jsonl` was 7% stale and nobody had noticed.* Never regenerated
+  after the 2026-09-08 punctuation fold or the 2026-09-11 spelling fold: **148
+  phantom documents** for taxa that are no longer nodes (`[ eubacterium ]`,
+  `[eubacterium]_rectale_group`) and **145 real edges missing outright**. The
+  retriever served them *and the retrieval ground truth was derived from them*
+  (per-query truth counts moved 64→66, 25→21, 8→5, 12→11, 116→120 on rebuild).
+  Rebuilt; now matches the graph's edge set by set equality.
+- *Which REVERSES Task 2.5's ordering, confirming that gap was always noise.*
+  GraphRAG 0.800→**0.683**, BM25 0.783→**0.700**. A 1.7-point gap whose sign
+  flips under an unrelated data correction is noise. **Exact** two-sided
+  sign-flip permutation over all 2⁶=64 assignments: **p = 1.000**, with only 2 of
+  6 queries differing at all and in opposite directions; the comparison cannot
+  resolve a mean difference below ~0.17, ten times the gap. Neither number should
+  ever have been quoted as a ranking. Addendum appended to
+  `FINDINGS_task2.5_graphrag.md`.
+- *The negative control has ZERO power and is reported as void, not as passing.*
+  MSA/Parkinson's agrees 8/8 and essential tremor/Parkinson's 1/2 (pooled 9/10,
+  p=0.130) — but its MDE requires a rate above **1.000**, so it cannot reject
+  anything at 2 pairs. The 8/8 is a hypothesis worth noting (both are
+  α-synucleinopathies) not a result. The SCI and hepatic clusters are void too.
+  Only the cognitive cluster (16 pairs) has any power at all.
+
+**The rebuild was gated, not trusted**, because two fixes here have silently
+erased themselves on rebuild while printing success. Acceptance condition set in
+advance — *nothing but the `mondo` field may change* — and met exactly: 923→923
+nodes, 2008→2008 edges, 713→713 hierarchy, 271→271 papers, hierarchy and papers
+tables identical, no meta diffs, 248 edges differing in `mondo` **and no other
+field**, and a second rebuild bit-identical to the first. `kg.html` differs on
+exactly 496 lines, all `"mondo"`; `docs/index.html` re-synced and md5-identical.
+
+**Scope discipline.** These are **identifier** corrections. They touch no edge,
+no direction, no count, so agreement with Disbiome/Peryton **cannot move** and
+was not re-measured. Do not report any of this as an accuracy gain.
+
+**Also.** Container came up on a **detached HEAD** for the fourth session
+running; re-attached to `main` before any work.
+
+**Highest-value next step, unchanged and now the only cheap one left: re-run
+`silent_edge_mentions.py` on a machine that has `MAIN_DATA.json`.** It closes 144
+unscoreable edges and 795 unscoreable observations (25.8%) with no GPU, no
+taxdump, no new papers. Below that: more papers (needs a GPU — **ask first**),
+and the one design call MONDO could *not* settle, now precisely scoped to the
+MCI/Cognitive-impairment boundary. Write-up: `FINDINGS_disease_ontology.md`.
+
+---
+
 ## TL;DR — 2026-09-13 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **Tested.** Whether the 580 edges the last session sized as beyond any prose
