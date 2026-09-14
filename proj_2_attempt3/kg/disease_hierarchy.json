@@ -30,7 +30,7 @@
   "CADASIL": {
    "mondo": "MONDO:0007432",
    "how": "curated_alias",
-   "why": "the acronym is ambiguous between the general term and type 1/type 2; the general term is what a CADASIL cohort means",
+   "why": "the acronym is ambiguous between the general term and type 1 / type 2; the general term is what a CADASIL cohort means",
    "mondo_name": "cerebral arteriopathy with subcortical infarcts and leukoencephalopathy"
   },
   "Chronic traumatic complete spinal cord injury": {
@@ -238,7 +238,7 @@
   ],
   "CADASIL": [
    "MONDO:0007432",
-   "the acronym is ambiguous between the general term and type 1/type 2; the general term is what a CADASIL cohort means"
+   "the acronym is ambiguous between the general term and type 1 / type 2; the general term is what a CADASIL cohort means"
   ],
   "Idiopathic normal pressure hydrocephalus": [
    "MONDO:0009366",

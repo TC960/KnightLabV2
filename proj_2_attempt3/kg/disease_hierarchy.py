@@ -47,7 +47,7 @@ import random
 import sys
 from collections import defaultdict
 
-from mondo import Mondo, norm_label
+from mondo import ALIASES, Mondo, norm_label
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 GRAPH = os.path.join(HERE, "graph.json")
@@ -60,14 +60,8 @@ OUT = os.path.join(HERE, "disease_hierarchy.json")
 # as `taxon_typos.py`, for the same reason: edit distance would merge
 # `Cognitive impairment` into `specific language impairment`.
 # ---------------------------------------------------------------------------
-ALIASES = {
-    "Anti-NMDAR encephalitis": ("MONDO:0021081", "MONDO spells it 'anti-NMDA receptor encephalitis'"),
-    "CADASIL": ("MONDO:0007432", "the acronym is ambiguous between the general term and "
-                                 "type 1/type 2; the general term is what a CADASIL cohort means"),
-    "Idiopathic normal pressure hydrocephalus": (
-        "MONDO:0009366", "MONDO carries 'normal pressure hydrocephalus'; iNPH is the "
-                         "idiopathic form and MONDO has no separate term"),
-}
+# ALIASES now live in mondo.py -- resolution is the resolver's business, and a
+# second copy here could drift from it.
 
 REFUSED_ALIASES = {
     "Mild cognitive impairment":

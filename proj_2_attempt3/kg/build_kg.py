@@ -55,13 +55,22 @@ DISEASE_MAP = [
     (r"\balzheimer", "Alzheimer's disease", "MONDO:0004975"),
     (r"multiple sclerosis|\bms\b", "Multiple sclerosis", "MONDO:0005301"),
     (r"amyotrophic lateral|\bals\b", "Amyotrophic lateral sclerosis", "MONDO:0004976"),
-    (r"mild cognitive impairment|\bmci\b", "Mild cognitive impairment", "MONDO:0005453"),
+    # mondo=None is CORRECT here and must not be "fixed" back. This entry used to
+    # read MONDO:0005453, which is *congenital heart disease* -- caught 2026-09-14
+    # by mondo.py's positive control against the MONDO release itself. MONDO
+    # contains no term named "mild cognitive impairment" at all (zero index keys
+    # match the phrase); MCI is a clinical STAGE, not a MONDO disease. The nearest
+    # term, "cognitive disorder" (MONDO:0002039), is broader and would merge MCI
+    # with a dozen unrelated conditions. 13 papers sit on this node.
+    (r"mild cognitive impairment|\bmci\b", "Mild cognitive impairment", None),
     (r"\bstroke|cerebral infarct", "Stroke", "MONDO:0005098"),
     (r"huntington", "Huntington's disease", "MONDO:0007739"),
     (r"\bdementia", "Dementia", "MONDO:0001627"),
     (r"spinal muscular atrophy|\bsma\b", "Spinal muscular atrophy", "MONDO:0001516"),
     (r"epilep", "Epilepsy", "MONDO:0005027"),
-    (r"autism|\basd\b", "Autism spectrum disorder", "MONDO:0005260"),
+    # was MONDO:0005260, which is "autism" -- a CHILD of MONDO:0005258 "autism
+    # spectrum disorder". One rank too narrow for a node labelled ASD.
+    (r"autism|\basd\b", "Autism spectrum disorder", "MONDO:0005258"),
     (r"depress", "Depressive disorder", "MONDO:0002050"),
     (r"schizophren", "Schizophrenia", "MONDO:0005090"),
     (r"neuromyelitis", "Neuromyelitis optica", "MONDO:0019100"),
@@ -74,9 +83,12 @@ DISEASE_MAP = [
     # is synonym folding, not a rank collapse: 45 edges become 38, and 4 edges
     # that every view showed as single-paper become replicated, 3 of them
     # CONTESTED -- real inter-study disagreement the fragmentation was hiding.
-    # MONDO id deliberately None rather than guessed: this environment's network
-    # policy denies EBI/OLS, and a wrong ontology id is worse than no id.
-    (r"nmdar?\b|n-methyl-d-aspartate", "Anti-NMDAR encephalitis", None),
+    # The id was deliberately left None because EBI/OLS is blocked here and a
+    # wrong ontology id is worse than no id. That reasoning was right, and the
+    # block is real -- but the MONDO release on GitHub is NOT blocked, so the id
+    # is now a lookup rather than a guess: MONDO spells it "anti-NMDA receptor
+    # encephalitis". See mondo.py.
+    (r"nmdar?\b|n-methyl-d-aspartate", "Anti-NMDAR encephalitis", "MONDO:0021081"),
 ]
 
 # rank hints from the naming conventions the papers use

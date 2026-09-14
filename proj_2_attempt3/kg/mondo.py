@@ -89,6 +89,26 @@ def norm_label(s: str) -> str:
     return " ".join(s.split())
 
 
+# ---------------------------------------------------------------------------
+# Curated aliases: a graph label whose MONDO term exists under a different
+# surface form. Each carries its reason. This is the ONLY place judgement enters
+# resolution, and it is additive -- an alias never overrides an exact match.
+# Same pattern, and same justification, as `taxon_typos.py`: edit distance would
+# merge `Cognitive impairment` into `specific language impairment`.
+# ---------------------------------------------------------------------------
+ALIASES = {
+    "Anti-NMDAR encephalitis": (
+        "MONDO:0021081", "MONDO spells it 'anti-NMDA receptor encephalitis'"),
+    "CADASIL": (
+        "MONDO:0007432", "the acronym is ambiguous between the general term and "
+                         "type 1 / type 2; the general term is what a CADASIL cohort means"),
+    "Idiopathic normal pressure hydrocephalus": (
+        "MONDO:0009366", "MONDO carries 'normal pressure hydrocephalus'; iNPH is "
+                         "the idiopathic form and MONDO has no separate term"),
+}
+_ALIAS_BY_NORM = None
+
+
 class Mondo:
     """Parsed MONDO: labels -> ids, and the is-a DAG."""
 
@@ -169,10 +189,16 @@ class Mondo:
 
     # -- resolution ---------------------------------------------------------
     def resolve(self, label):
-        """-> (mondo_id | None, how). Exact normalised match only."""
+        """-> (mondo_id | None, how). Exact normalised match, then curated alias."""
+        global _ALIAS_BY_NORM
         k = norm_label(label)
         hits = self.index.get(k)
         if not hits:
+            if _ALIAS_BY_NORM is None:
+                _ALIAS_BY_NORM = {norm_label(a): v for a, v in ALIASES.items()}
+            hit = _ALIAS_BY_NORM.get(k)
+            if hit and hit[0] in self.name:
+                return hit[0], "curated_alias"
             return None, "unresolved"
         live = {self.replaced_by.get(h, h) for h in hits}
         live = {h for h in live if h in self.name}
@@ -239,31 +265,26 @@ class Mondo:
 # ---------------------------------------------------------------------------
 # The positive control: build_kg.py's hand-curated table must come back out.
 # ---------------------------------------------------------------------------
-HAND_CURATED = {
-    "Parkinson's disease": "MONDO:0005180",
-    "Alzheimer's disease": "MONDO:0004975",
-    "Multiple sclerosis": "MONDO:0005301",
-    "Amyotrophic lateral sclerosis": "MONDO:0004976",
-    "Mild cognitive impairment": "MONDO:0005453",
-    "Stroke": "MONDO:0005098",
-    "Huntington's disease": "MONDO:0007739",
-    "Dementia": "MONDO:0001627",
-    "Spinal muscular atrophy": "MONDO:0001516",
-    "Epilepsy": "MONDO:0005027",
-    "Autism spectrum disorder": "MONDO:0005260",
-    "Depressive disorder": "MONDO:0002050",
-    "Schizophrenia": "MONDO:0005090",
-    "Neuromyelitis optica": "MONDO:0019100",
-    "Myasthenia gravis": "MONDO:0009688",
-    "Migraine": "MONDO:0005277",
-}
+# Read live from build_kg.py rather than copied. A control that carries its own
+# copy of the table it is controlling cannot detect drift in that table -- and a
+# stale duplicated constant is exactly how this repo ended up quoting "174
+# contested edges" for three sessions after the number became 217.
+def hand_curated():
+    from build_kg import DISEASE_MAP
+    return {label: mondo for _pat, label, mondo in DISEASE_MAP if mondo}
+
+
+def hand_curated_unmapped():
+    from build_kg import DISEASE_MAP
+    return [label for _pat, label, mondo in DISEASE_MAP if not mondo]
 
 
 def validate(m):
-    """Resolve the 16 hand-curated labels and diff against the curated ids."""
+    """Resolve build_kg.py's curated labels and diff against its ids."""
     ok = bad = 0
     rows = []
-    for label, expect in HAND_CURATED.items():
+    curated = hand_curated()
+    for label, expect in curated.items():
         got, how = m.resolve(label)
         # An id that MONDO has since merged is not a mismatch: follow it.
         expect_live = m.replaced_by.get(expect, expect)
@@ -279,7 +300,8 @@ def validate(m):
                      "resolved_name": m.name.get(got), "note": note})
         ok += agree
         bad += (not agree)
-    return {"n": len(HAND_CURATED), "agree": ok, "disagree": bad, "rows": rows}
+    return {"n": len(curated), "agree": ok, "disagree": bad, "rows": rows,
+            "deliberately_unmapped": hand_curated_unmapped()}
 
 
 def main():
