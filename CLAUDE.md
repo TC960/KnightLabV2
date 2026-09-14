@@ -12,7 +12,7 @@ in disease Y."
 Extraction is done and **the graph is built**: see `proj_2_attempt3/kg/`, published at
 <https://www.mohakprakash.com/KnightLabV2/>. **883 taxa** (76% resolved to NCBI
 taxids), **40 diseases**, **2,008 association edges** plus
-**713 taxonomic-containment links**, from **271 contributing
+**727 taxonomic-containment links**, from **271 contributing
 papers** of a screened 325-paper corpus. It agrees with two hand-curated databases at
 **73.0%** (Disbiome) and **72.5%** (Peryton) on edge direction — but **do not quote those two
 numbers as independent replication**; see the caveat below.

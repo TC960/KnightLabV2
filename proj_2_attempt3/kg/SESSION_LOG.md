@@ -137,6 +137,47 @@ refusals. **28 of 40 disease labels resolve.**
   apparently-single-paper edges into replicated ones, 3 contested). **Zero
   collisions** among resolvable labels — there is no second such case hiding.
 
+- *Anomaly hunt, and it paid off for the third time: 24 taxon nodes had their
+  parent written in their own label and were detached anyway.* 170 of 883 taxon
+  nodes have no parent containment link, 118 of those unresolved; for 24 the
+  label names a parent that is already a resolved node
+  (`unclassified_f_Lachnospiraceae`, `norank_f_Christensenellaceae`,
+  `gut_metagenome_g_Faecalibacterium`). They fell between two mechanisms — the
+  placeholder branch only fires for labels the taxonomy DID resolve, and these
+  resolve to nothing, so `taxonomy.py` gives them no lineage either. The
+  contrast proving it is a gap and not a policy: the *resolved* `unclassified X`
+  nodes are already linked, because NCBI mints real taxids for those subtrees
+  (`unclassified Bacteroides` = 2646097). **14 linked, 13 refused with reasons,
+  91 correctly left detached. Orphans 170 → 156, hierarchy 713 → 727.**
+- *And the refusals are the more useful half — FOUR of the 24 are
+  bacteriophages.* `Klebsiella virus KP36`, `Streptococcus phage EJ 1`,
+  `Enterococcus phage EFAP 1`, `Escherichia virus JES2013`. A phage *infects*
+  Klebsiella; it is not contained in it, and a generic "link to the taxon named
+  in the label" rule would assert four false taxonomic relations and let a query
+  rolling up Klebsiella absorb virus evidence. Same lesson as `taxon_typos.py`
+  (edit distance would have merged `Oscillospirales` into `Oscillospira`). Hence
+  a curated table with recorded refusals, `orphan_parents.py`.
+- *Two cross-rank disagreements became visible — the layer working, not a side
+  effect.* **`Faecalibacterium` depleted in Alzheimer's across 16 papers while
+  `gut_metagenome_g_Faecalibacterium` is reported enriched** (1 paper, no shared
+  paper), and `Flavobacteriaceae` depleted vs `norank_p_Flavobacteriaceae`
+  enriched in Stroke. Both correctly tagged `no_shared_paper`. The first is worth
+  a reviewer's attention.
+- *The joint-label refusal SHARPENS the last open modelling call rather than
+  resolving it.* `Escherichia-Shigella` denotes reads that could be **either**
+  genus, so it is not a subset of Escherichia and containment is the wrong
+  primitive in both directions. The question has always been posed as
+  *attribute-to-one / split / hold-apart*; what a user actually wants — the joint
+  node reachable from either parent without either absorbing its evidence —
+  needs a **different edge type** ("ambiguous assay", not `parent_of`). That is a
+  schema decision for a human, and with the disease-subtype call now answered it
+  is **the last genuinely open modelling call in the graph**: 5 nodes, 13 edges.
+  See `FINDINGS_orphan_parents.md`.
+- *The published page was verified by RENDERING it, not by reading it.* Installed
+  playwright and ran `verify_viz.py` against the rebuilt `kg.html`: **32 passed,
+  0 failed.** A blank-canvas bug here once passed every static check, so this is
+  the check that counts.
+
 **The rebuild was gated, not trusted**, because two fixes here have silently
 erased themselves on rebuild while printing success. Acceptance condition set in
 advance — *nothing but the `mondo` field may change* — and met exactly: 923→923
@@ -156,8 +197,9 @@ running; re-attached to `main` before any work.
 `silent_edge_mentions.py` on a machine that has `MAIN_DATA.json`.** It closes 144
 unscoreable edges and 795 unscoreable observations (25.8%) with no GPU, no
 taxdump, no new papers. Below that: more papers (needs a GPU — **ask first**),
-and the one design call MONDO could *not* settle, now precisely scoped to the
-MCI/Cognitive-impairment boundary. Write-up: `FINDINGS_disease_ontology.md`.
+and two precisely scoped design calls: the MCI/Cognitive-impairment boundary
+(MONDO carries none of those labels), and an "ambiguous assay" edge type for the
+joint two-genus nodes. Write-up: `FINDINGS_disease_ontology.md`.
 
 ---
 

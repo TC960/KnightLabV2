@@ -36,9 +36,14 @@
 >    0.672 background, with every MCI pair at or below a coin flip while the
 >    MONDO-confirmed AD/Dementia link runs 0.938. **So: link those nodes for
 >    retrieval, do NOT pool their evidence, do NOT fold MCI into Alzheimer's.**
->    What genuinely remains for a human: (a) the `Escherichia-Shigella` question
->    — should a joint 16S signal from an assay that cannot separate two genera be
->    attributed to one, split, or held apart as it now is; (b) whether the
+>    What genuinely remains for a human: (a) the `Escherichia-Shigella` question,
+>    and **2026-09-14 reframes it** — containment is the WRONG primitive, because
+>    a joint label denotes reads that could be either genus and so is not a
+>    subset of either. The three options on record (attribute-to-one / split /
+>    hold-apart) all miss what a user wants, which is the joint node reachable
+>    from either parent without either absorbing its evidence. That needs a new
+>    **edge type** ("ambiguous assay", not `parent_of`) — a schema decision. 5
+>    nodes, 13 edges. See `FINDINGS_orphan_parents.md`. (b) whether the
 >    MCI / `Cognitive impairment` / `Neurocognitive impairment` labels are
 >    *synonyms of each other* (a folding question) given MONDO carries none of
 >    them. Not (b)-as-containment — that is now answered no.
@@ -92,6 +97,16 @@
 >   placeholder-node edge; correcting it needs a rebuild, so it was left rather
 >   than rebuilt on a cloud checkout. See `FINDINGS_mention_audit.md`.
 >
+> - **Orphan containment. DONE 2026-09-14.** 24 taxon nodes had their parent
+>   written in their own label and were detached anyway (the placeholder branch
+>   only fires for labels the taxonomy resolved; these resolve to nothing). 14
+>   linked, 13 refused with reasons in `orphan_parents.py`, 91 correctly left
+>   detached. Orphans 170 → 156, hierarchy 713 → 727. **Do not replace that
+>   curated table with a substring rule** — four of the 24 candidates are
+>   bacteriophages, and a phage is not contained in the genus it infects.
+>   Re-run `orphan_parents.py` after any taxon-normalisation change. The 156
+>   still-orphaned nodes are mostly 16S clade labels with no recoverable parent;
+>   that residue is not worth another pass without new data.
 > - **Disease ontology resolution. DONE 2026-09-14 and it found shipped errors.**
 >   Two wrong MONDO ids were live on 209 of 2,008 edges and in `kg.html`: the MCI
 >   node carried `MONDO:0005453` = *congenital heart disease*, and ASD carried the
