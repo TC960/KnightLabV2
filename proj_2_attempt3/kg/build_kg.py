@@ -112,13 +112,41 @@ def parse_taxa(v):
     return out
 
 
+# MONDO ids for the disease labels DISEASE_MAP does not carry one for, generated
+# by `mondo.py` into a small committed table. Loaded lazily and NOISILY: a
+# missing table degrades ids to None, which is safe, but it must say so rather
+# than quietly shipping a graph with 12 fewer ontology ids than the last one.
+_MONDO_IDS = None
+
+
+def _mondo_ids():
+    global _MONDO_IDS
+    if _MONDO_IDS is None:
+        path = os.path.join(HERE, "disease_mondo_ids.json")
+        if os.path.exists(path):
+            d = json.load(open(path))
+            _MONDO_IDS = {k: v["mondo"] for k, v in d["ids"].items() if v.get("mondo")}
+            print(f"disease MONDO ids loaded: {len(_MONDO_IDS)} "
+                  f"(MONDO {d.get('mondo_version')})")
+        else:
+            _MONDO_IDS = {}
+            print("WARNING: disease_mondo_ids.json absent -- disease nodes outside "
+                  "DISEASE_MAP will have mondo=None. Regenerate with "
+                  "`python3 mondo.py`.")
+    return _MONDO_IDS
+
+
 def norm_disease(s):
     s = (s or "").strip()
     low = s.lower()
     for pat, label, mondo in DISEASE_MAP:
         if re.search(pat, low):
+            # DISEASE_MAP wins outright, including when its id is deliberately
+            # None (Mild cognitive impairment -- MONDO has no term for it and
+            # the table must not be allowed to put one back).
             return label, mondo
-    return (s[:1].upper() + s[1:]) if s else "Unspecified", None
+    label = (s[:1].upper() + s[1:]) if s else "Unspecified"
+    return label, _mondo_ids().get(label)
 
 
 # Rank placeholders: labels 16S pipelines emit for a clade they could not name to a

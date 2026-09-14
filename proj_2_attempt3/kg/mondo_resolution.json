@@ -2,8 +2,8 @@
  "mondo_version": "releases/2026-09-01",
  "control": {
   "n": 16,
-  "agree": 14,
-  "disagree": 2,
+  "agree": 16,
+  "disagree": 0,
   "rows": [
    {
     "label": "Parkinson's disease",
@@ -43,16 +43,6 @@
     "how": "exact",
     "agree": true,
     "resolved_name": "amyotrophic lateral sclerosis",
-    "note": ""
-   },
-   {
-    "label": "Mild cognitive impairment",
-    "curated": "MONDO:0005453",
-    "curated_live": "MONDO:0005453",
-    "resolved": null,
-    "how": "unresolved",
-    "agree": false,
-    "resolved_name": null,
     "note": ""
    },
    {
@@ -107,13 +97,13 @@
    },
    {
     "label": "Autism spectrum disorder",
-    "curated": "MONDO:0005260",
-    "curated_live": "MONDO:0005260",
+    "curated": "MONDO:0005258",
+    "curated_live": "MONDO:0005258",
     "resolved": "MONDO:0005258",
     "how": "exact",
-    "agree": false,
+    "agree": true,
     "resolved_name": "autism spectrum disorder",
-    "note": "relation(got, curated)=ancestor"
+    "note": ""
    },
    {
     "label": "Depressive disorder",
@@ -164,7 +154,20 @@
     "agree": true,
     "resolved_name": "migraine disorder",
     "note": ""
+   },
+   {
+    "label": "Anti-NMDAR encephalitis",
+    "curated": "MONDO:0021081",
+    "curated_live": "MONDO:0021081",
+    "resolved": "MONDO:0021081",
+    "how": "curated_alias",
+    "agree": true,
+    "resolved_name": "anti-NMDA receptor encephalitis",
+    "note": ""
    }
+  ],
+  "deliberately_unmapped": [
+   "Mild cognitive impairment"
   ]
  },
  "labels": {
@@ -181,9 +184,9 @@
    "n_papers": 14
   },
   "Anti-NMDAR encephalitis": {
-   "mondo": null,
-   "how": "unresolved",
-   "mondo_name": null,
+   "mondo": "MONDO:0021081",
+   "how": "curated_alias",
+   "mondo_name": "anti-NMDA receptor encephalitis",
    "n_papers": 3
   },
   "Attention-deficit/hyperactivity disorder": {
@@ -199,9 +202,9 @@
    "n_papers": 4
   },
   "CADASIL": {
-   "mondo": null,
-   "how": "ambiguous:MONDO:0000914,MONDO:0007432",
-   "mondo_name": null,
+   "mondo": "MONDO:0007432",
+   "how": "curated_alias",
+   "mondo_name": "cerebral arteriopathy with subcortical infarcts and leukoencephalopathy",
    "n_papers": 2
   },
   "Chronic traumatic complete spinal cord injury": {
@@ -271,9 +274,9 @@
    "n_papers": 1
   },
   "Idiopathic normal pressure hydrocephalus": {
-   "mondo": null,
-   "how": "unresolved",
-   "mondo_name": null,
+   "mondo": "MONDO:0009366",
+   "how": "curated_alias",
+   "mondo_name": "normal pressure hydrocephalus",
    "n_papers": 1
   },
   "Intracerebral hemorrhage": {

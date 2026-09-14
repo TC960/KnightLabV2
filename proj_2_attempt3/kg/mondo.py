@@ -48,6 +48,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OBO = os.path.expanduser("~/.mondo/mondo.obo")
 GRAPH = os.path.join(HERE, "graph.json")
 OUT = os.path.join(HERE, "mondo_resolution.json")
+IDS_OUT = os.path.join(HERE, "disease_mondo_ids.json")
 
 DOWNLOAD_HINT = (
     "mondo.obo not found. Fetch it with:\n"
@@ -191,27 +192,40 @@ class Mondo:
     def resolve(self, label):
         """-> (mondo_id | None, how). Exact normalised match, then curated alias."""
         global _ALIAS_BY_NORM
+        if _ALIAS_BY_NORM is None:
+            _ALIAS_BY_NORM = {norm_label(a): v for a, v in ALIASES.items()}
         k = norm_label(label)
-        hits = self.index.get(k)
-        if not hits:
-            if _ALIAS_BY_NORM is None:
-                _ALIAS_BY_NORM = {norm_label(a): v for a, v in ALIASES.items()}
+
+        def alias():
+            """Curated fallback. Consulted whenever exact matching fails to
+            produce ONE live id -- not only when there are no hits at all.
+            `CADASIL` hits two MONDO terms (the general term and type 1), so an
+            alias-on-empty-hits-only rule left it unresolved and silently
+            ignored its curated entry. Caught by the resolved-count disagreeing
+            with the alias count by exactly one."""
             hit = _ALIAS_BY_NORM.get(k)
             if hit and hit[0] in self.name:
                 return hit[0], "curated_alias"
-            return None, "unresolved"
+            return None, None
+
+        hits = self.index.get(k)
+        if not hits:
+            a, how = alias()
+            return (a, how) if a else (None, "unresolved")
         live = {self.replaced_by.get(h, h) for h in hits}
         live = {h for h in live if h in self.name}
         if len(live) == 1:
             return next(iter(live)), "exact"
         if not live:
-            return None, "obsolete_no_replacement"
+            a, how = alias()
+            return (a, how) if a else (None, "obsolete_no_replacement")
         # Ambiguous: prefer the term whose PRIMARY name matches, which
         # disambiguates "Dementia" (a grouping) from a synonym of a subtype.
         primary = {h for h in live if norm_label(self.name[h]) == k}
         if len(primary) == 1:
             return next(iter(primary)), "exact_primary"
-        return None, "ambiguous:" + ",".join(sorted(live))
+        a, how = alias()
+        return (a, how) if a else (None, "ambiguous:" + ",".join(sorted(live)))
 
     # -- hierarchy ----------------------------------------------------------
     def ancestors(self, tid):
@@ -359,6 +373,28 @@ def main():
     json.dump({"mondo_version": m.version, "control": v, "labels": res},
               open(OUT, "w"), indent=1)
     print(f"\nwrote {OUT}")
+
+    # ---- the lean table build_kg.py consumes --------------------------------
+    # Committed, small, and regenerable, so build_kg.py never depends on the
+    # 53 MB .obo -- which does not exist on most checkouts. A builder that
+    # silently loses ontology ids when a data file is missing is the failure
+    # mode that cost this repo 681 taxid resolutions while printing success.
+    #
+    # Only labels the resolver settled are included. Mild cognitive impairment
+    # is ABSENT on purpose: MONDO has no such term and `None` is correct.
+    ids = {lb: {"mondo": r["mondo"], "mondo_name": r["mondo_name"], "how": r["how"]}
+           for lb, r in sorted(res.items()) if r["mondo"]}
+    assert "Mild cognitive impairment" not in ids, \
+        "MCI must never receive a MONDO id -- MONDO has no term for it"
+    json.dump({"mondo_version": m.version,
+               "note": "label -> MONDO id, for labels build_kg.DISEASE_MAP leaves "
+                       "unmapped. Exact primary-name / EXACT-synonym matches plus "
+                       "curated aliases only; regenerate with `python3 mondo.py`. "
+                       "Mild cognitive impairment is deliberately absent.",
+               "unresolved": sorted(lb for lb, r in res.items() if not r["mondo"]),
+               "ids": ids}, open(IDS_OUT, "w"), indent=1)
+    print(f"wrote {IDS_OUT} ({len(ids)} ids, "
+          f"{sum(1 for r in res.values() if not r['mondo'])} left unresolved)")
 
 
 if __name__ == "__main__":
