@@ -1,0 +1,319 @@
+{
+ "summary": {
+  "nodes_total": 40,
+  "nodes_disease_map": 15,
+  "edges_disease_map": 1609,
+  "nodes_fallback": 25,
+  "edges_fallback": 399,
+  "edges_total": 2008,
+  "fallback_edge_share": 0.1987,
+  "fallback_nodes_without_mondo": 11,
+  "fallback_edges_without_mondo": 145
+ },
+ "nodes": [
+  {
+   "disease": "Alzheimer's disease",
+   "origin": "DISEASE_MAP",
+   "n_papers": 46,
+   "n_edges": 316,
+   "mondo": "MONDO:0004975"
+  },
+  {
+   "disease": "Amyotrophic lateral sclerosis",
+   "origin": "DISEASE_MAP",
+   "n_papers": 14,
+   "n_edges": 92,
+   "mondo": "MONDO:0004976"
+  },
+  {
+   "disease": "Anti-NMDAR encephalitis",
+   "origin": "DISEASE_MAP",
+   "n_papers": 3,
+   "n_edges": 39,
+   "mondo": "MONDO:0021081"
+  },
+  {
+   "disease": "Attention-deficit/hyperactivity disorder",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 13,
+   "mondo": "MONDO:0007743"
+  },
+  {
+   "disease": "Autism spectrum disorder",
+   "origin": "DISEASE_MAP",
+   "n_papers": 4,
+   "n_edges": 55,
+   "mondo": "MONDO:0005258"
+  },
+  {
+   "disease": "CADASIL",
+   "origin": "fallback",
+   "n_papers": 2,
+   "n_edges": 20,
+   "mondo": "MONDO:0007432"
+  },
+  {
+   "disease": "Chronic traumatic complete spinal cord injury",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 12,
+   "mondo": null
+  },
+  {
+   "disease": "Cognitive impairment",
+   "origin": "fallback",
+   "n_papers": 4,
+   "n_edges": 55,
+   "mondo": null
+  },
+  {
+   "disease": "Dementia",
+   "origin": "DISEASE_MAP",
+   "n_papers": 6,
+   "n_edges": 47,
+   "mondo": "MONDO:0001627"
+  },
+  {
+   "disease": "Epilepsy",
+   "origin": "DISEASE_MAP",
+   "n_papers": 6,
+   "n_edges": 103,
+   "mondo": "MONDO:0005027"
+  },
+  {
+   "disease": "Essential tremor",
+   "origin": "fallback",
+   "n_papers": 2,
+   "n_edges": 8,
+   "mondo": "MONDO:0003233"
+  },
+  {
+   "disease": "Familial dysautonomia",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 2,
+   "mondo": "MONDO:0009131"
+  },
+  {
+   "disease": "Hemorrhagic transformation",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 11,
+   "mondo": null
+  },
+  {
+   "disease": "Hepatic encephalopathy",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 2,
+   "mondo": "MONDO:0001711"
+  },
+  {
+   "disease": "Hepatitis B virus-associated liver cirrhosis",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 13,
+   "mondo": null
+  },
+  {
+   "disease": "Huntington's disease",
+   "origin": "DISEASE_MAP",
+   "n_papers": 3,
+   "n_edges": 47,
+   "mondo": "MONDO:0007739"
+  },
+  {
+   "disease": "Hypertensive intracerebral hemorrhage",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 11,
+   "mondo": null
+  },
+  {
+   "disease": "Idiopathic normal pressure hydrocephalus",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 18,
+   "mondo": "MONDO:0009366"
+  },
+  {
+   "disease": "Intracerebral hemorrhage",
+   "origin": "fallback",
+   "n_papers": 3,
+   "n_edges": 50,
+   "mondo": "MONDO:0013792"
+  },
+  {
+   "disease": "Migraine",
+   "origin": "DISEASE_MAP",
+   "n_papers": 1,
+   "n_edges": 10,
+   "mondo": "MONDO:0005277"
+  },
+  {
+   "disease": "Mild cognitive impairment",
+   "origin": "DISEASE_MAP",
+   "n_papers": 13,
+   "n_edges": 154,
+   "mondo": null
+  },
+  {
+   "disease": "Minimal hepatic encephalopathy",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 10,
+   "mondo": null
+  },
+  {
+   "disease": "Multiple sclerosis",
+   "origin": "DISEASE_MAP",
+   "n_papers": 37,
+   "n_edges": 252,
+   "mondo": "MONDO:0005301"
+  },
+  {
+   "disease": "Multiple system atrophy",
+   "origin": "fallback",
+   "n_papers": 2,
+   "n_edges": 20,
+   "mondo": "MONDO:0007803"
+  },
+  {
+   "disease": "Myasthenia gravis",
+   "origin": "DISEASE_MAP",
+   "n_papers": 1,
+   "n_edges": 3,
+   "mondo": "MONDO:0009688"
+  },
+  {
+   "disease": "Neurocognitive impairment",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 7,
+   "mondo": null
+  },
+  {
+   "disease": "Neuroinfection",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 5,
+   "mondo": null
+  },
+  {
+   "disease": "Neuromyelitis optica",
+   "origin": "DISEASE_MAP",
+   "n_papers": 1,
+   "n_edges": 1,
+   "mondo": "MONDO:0019100"
+  },
+  {
+   "disease": "Parkinson's disease",
+   "origin": "DISEASE_MAP",
+   "n_papers": 67,
+   "n_edges": 326,
+   "mondo": "MONDO:0005180"
+  },
+  {
+   "disease": "Poststroke aphasia",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 9,
+   "mondo": null
+  },
+  {
+   "disease": "REM sleep behavior disorder\u2013Lewy body disease continuum",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 4,
+   "mondo": null
+  },
+  {
+   "disease": "Rett syndrome",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 13,
+   "mondo": "MONDO:0010726"
+  },
+  {
+   "disease": "Spinal cord injury",
+   "origin": "fallback",
+   "n_papers": 6,
+   "n_edges": 81,
+   "mondo": "MONDO:0043797"
+  },
+  {
+   "disease": "Spinal muscular atrophy",
+   "origin": "DISEASE_MAP",
+   "n_papers": 1,
+   "n_edges": 10,
+   "mondo": "MONDO:0001516"
+  },
+  {
+   "disease": "Sporadic Creutzfeldt-Jakob disease",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 5,
+   "mondo": "MONDO:0016079"
+  },
+  {
+   "disease": "Stroke",
+   "origin": "DISEASE_MAP",
+   "n_papers": 30,
+   "n_edges": 154,
+   "mondo": "MONDO:0005098"
+  },
+  {
+   "disease": "Subjective cognitive decline",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 1,
+   "mondo": "MONDO:0850292"
+  },
+  {
+   "disease": "Traumatic brain injury",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 12,
+   "mondo": "MONDO:0858950"
+  },
+  {
+   "disease": "Traumatic thoracic spinal cord injury",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 8,
+   "mondo": null
+  },
+  {
+   "disease": "Tuberous sclerosis complex",
+   "origin": "fallback",
+   "n_papers": 1,
+   "n_edges": 9,
+   "mondo": "MONDO:0001734"
+  }
+ ],
+ "candidate_families": {
+  "s disease": [
+   "Alzheimer's disease",
+   "Huntington's disease",
+   "Parkinson's disease"
+  ],
+  "cord injury": [
+   "Chronic traumatic complete spinal cord injury",
+   "Spinal cord injury",
+   "Traumatic thoracic spinal cord injury"
+  ],
+  "cognitive impairment": [
+   "Cognitive impairment",
+   "Mild cognitive impairment"
+  ],
+  "hepatic encephalopathy": [
+   "Hepatic encephalopathy",
+   "Minimal hepatic encephalopathy"
+  ],
+  "intracerebral hemorrhage": [
+   "Hypertensive intracerebral hemorrhage",
+   "Intracerebral hemorrhage"
+  ]
+ }
+}

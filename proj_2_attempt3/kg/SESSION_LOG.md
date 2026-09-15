@@ -4,6 +4,95 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+## TL;DR — 2026-09-15 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**Tested.** Whether a disease node's LABEL describes the cohort its papers actually
+studied — the one question the 2026-09-14 assignment audit did not ask (that audit
+compared predicted label vs datasheet label, never label vs cohort, and does not
+mention HIV anywhere). **Nothing in the graph was changed.** `graph.json`,
+`rag_corpus.jsonl`, `kg.html` and `docs/` are untouched, so nothing here can be
+miscited as an accuracy gain.
+
+**The suspected error was NOT an error — and the title would have fooled me.**
+`Neurocognitive impairment` (1 paper, 7 edges) sits in the cognitive-decline cluster
+and its one paper is *"...Neurocognitive Impairment in **HIV-Infected Population**"*.
+That looked like the disease-dimension twin of the never-join-on-another-database's-id
+rule. It is not. The paper's own sentences say the contrast is **"the NCI group" vs
+"the non-NCI group"**, and *"associated with NCI **in people with HIV**"* — HIV is the
+background population **held constant across both arms**. The edges are correctly
+typed; the extractor was right and the datasheet ("Cognitive Impairment") was coarser.
+**Rejected by reading the paper, not by reasoning from its title.** Residual caveat is
+interpretive only: every observation comes from an HIV⁺ population where composition
+and immune status are entangled (the paper has *Treponema_2* inversely correlated with
+CD4 count), so transfer to non-HIV cognitive impairment is untested.
+
+**Survived.**
+- *20% of the graph's edges hang off strings no vocabulary ever approved.*
+  `norm_disease` tries 17 `DISEASE_MAP` regexes and on a miss falls through to the
+  extractor's `predicted_disease`, title-cased, as a node label. Never measured
+  before: **`DISEASE_MAP` 15 nodes / 1,609 edges (80.1%) vs fallback 25 nodes / 399
+  edges (19.9%) over 38 papers**, and **11 of those 25 nodes (145 edges) carry no
+  MONDO id either** — neither a regex nor an ontology has ever seen them. This is a
+  census of all 2,008 edges, not a sample, so no permutation test applies and none is
+  reported. The fallback is deliberate and defensible (don't silently drop papers);
+  what is new is its size.
+- *The asymmetry that exposes.* The taxon half has `taxon_typos.py` and
+  `multi_taxon.py`. The disease half has **no curation instrument at all**.
+  `Cognitive impairment` is a node distinct from `Mild cognitive impairment` not
+  because anyone judged them distinct but because a string matched no regex — and
+  **all four of its papers were labelled Dementia / Alzheimer's / Other by the human
+  datasheet.**
+- *4 genuine candidate label families, 383 edges*: `[cognitive impairment]` 209,
+  `[cord injury]` 101, `[intracerebral hemorrhage]` 61, `[hepatic encephalopathy]` 12.
+  **Nothing folded — that stays a human call.**
+- *The 5th family is the heuristic's own false positive and is left in the output on
+  purpose.* `[s disease]` groups Parkinson's + Alzheimer's + Huntington's — **689
+  edges — on a shared suffix.** A string-similarity folding rule would have merged
+  three unrelated neurodegenerative diseases. Same lesson the taxon side paid for with
+  `Oscillospirales`/`Oscillospira`; it is why this ships as a candidate generator and
+  why `taxon_typos.py` uses a curated table, not a threshold.
+
+**Did not survive / null / corrected.**
+- *Correction supplied to a shipped claim: **0 of 16 cognitive-cluster pairs survive
+  BH** at q=0.05.* The 2026-09-14 cluster-level conclusion stands and is robust —
+  dropping the HIV node moves 0.592 → **0.582**, i.e. *further* from the 0.669
+  background, not toward it. But that session's per-pair language ("the structure is
+  sharp inside it", and `CLAUDE.md`'s "0.938" line) reads as established pair-level
+  structure. Tested individually with an exact two-sided binomial + Benjamini–Hochberg
+  over all 16 pairs: MCI/Dementia 4/13 p=0.014 (crit 0.0031), AD/Dementia 15/16
+  p=0.030 (crit 0.0063), AD/MCI 13/26 p=0.093, MCI/CI 9/18 p=0.138 — **none survives,
+  including the MONDO-confirmed AD/Dementia link.** The pooled test is still a result;
+  **no individual pair contrast should be quoted as established.**
+- *Both folding questions are underpowered, not answered.* MCI vs `Cognitive
+  impairment`: 9/18 = 0.500 vs 0.669, p=0.138, **MDE 28.0 points** against an observed
+  gap of 16.9 — this corpus cannot resolve it. `Neurocognitive impairment`: n=5, **MDE
+  46.9 points**, essentially no power. So NCI should not be folded **because its
+  source population is HIV⁺**, not because the data says so; the data says nothing.
+- *`Neurocognitive impairment`'s MONDO id stays `None`, as a recorded refusal.* MONDO
+  2026-09 has **no term whose name contains "neurocognitive"** (0 of 36,017 named
+  terms). The nearest reachable candidate is `MONDO:0020689` "AIDS dementia complex"
+  (`is_a` dementia) — the dementia-stage endpoint, so assigning it would repeat the
+  **ASD/autism one-rank-too-narrow mistake fixed on 2026-09-14**. Do not "fix" it.
+- *A standing cross-session assumption is wrong, and this unblocks cloud work.* Since
+  2026-09-11 every session has recorded that cohort/sentence questions are blocked in
+  the cloud because `MAIN_DATA.json` is gitignored. True of **full** text, false of
+  the text these questions need: **`relation_sentences_clean.json` is committed and
+  covers 271 of 271 contributing papers (100%) — 6,294 sentences, 1.74 MB**, taxa and
+  direction cues tagged. The HIV question above was settled entirely from it, in the
+  cloud. **The limit is real though:** it holds ~10% of corpus text (16.78 M → 1.74 M
+  chars), so it cannot answer "does taxon X appear *anywhere* in this paper", which is
+  what `silent_edge_mentions.py` needs — **item 0 really does still require the Mac.**
+- *`ftp.ncbi.nih.gov` re-probed, still 403.* Tenth session. The scheduled routine's
+  prompt still instructs sessions to download the taxdump; that instruction is stale.
+
+**Highest-value next step.** Unchanged and now better evidenced: **more papers.** Both
+folding questions above, and 0-of-16 surviving BH, are n-limited rather than
+method-limited. The cheapest thing that does not need a GPU is a **curated disease
+label table** — the disease-side analog of `taxon_typos.py`, covering the 25 fallback
+nodes — but the folds themselves are a clinical call and must not be automated.
+
+---
+
 ## TL;DR — 2026-09-14 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **Tested.** Whether the disease half of the graph survives contact with a disease

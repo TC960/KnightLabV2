@@ -18,7 +18,20 @@
 >    their source paper — but **144 of the 580, and 795 of 3,077 observations
 >    (25.8%), are unscoreable in the cloud** purely because their full text is
 >    gitignored. Running it locally closes that hole outright. See
->    `FINDINGS_mention_audit.md`.
+>    `FINDINGS_mention_audit.md`. **Still true as of 2026-09-15 — but see the
+>    correction below: it is true of THIS task, not of paper text in general.**
+>
+> **CORRECTION 2026-09-15 — "no paper text in the cloud" is too broad, and it has
+> been costing sessions.** `relation_sentences_clean.json` is **committed** and
+> covers **271 of 271 contributing papers (100%)** — 6,294 relation-bearing
+> sentences, 1.74 MB, each tagged with resolved taxa and direction cues. Any
+> question of the form *"what did this paper compare?"*, *"what is the cohort?"*,
+> or *"which direction does it report for taxon X?"* **is answerable in the
+> cloud.** The 2026-09-15 HIV/`Neurocognitive impairment` question was settled
+> entirely from it with no `MAIN_DATA.json`. The limit is real and specific: it
+> holds ~10% of corpus text (16.78 M → 1.74 M chars), so it **cannot** answer
+> "does taxon X appear *anywhere* in this paper" — which is precisely why item 0
+> above still needs the Mac. Do not generalise item 0's blocker to all text work.
 >
 > 1. **More papers.** The binding constraint on every statistical question, and
 >    has been for five sessions. 109 papers with ≥4 decisive observations sets
@@ -47,6 +60,32 @@
 >    MCI / `Cognitive impairment` / `Neurocognitive impairment` labels are
 >    *synonyms of each other* (a folding question) given MONDO carries none of
 >    them. Not (b)-as-containment — that is now answered no.
+>
+>    **(b) is now ANSWERED for `Neurocognitive impairment`, 2026-09-15: DO NOT
+>    FOLD — for a cohort reason, not a data reason.** Its one paper studies NCI⁺
+>    vs NCI⁻ *within an HIV-infected population* (verified from the paper's own
+>    sentences, in the cloud). The edges are correctly typed, so this is **not** an
+>    error — but the source population is HIV⁺ and transfer to non-HIV cognitive
+>    impairment is untested. The graph's data cannot decide it: n=5, **MDE 46.9
+>    points**. Its MONDO id stays `None` — MONDO has no "neurocognitive" term, and
+>    `MONDO:0020689` "AIDS dementia complex" is one rank too narrow (the ASD
+>    mistake). **`MCI` vs `Cognitive impairment` remains open and is UNRESOLVABLE
+>    at this n**: 9/18 = 0.500 vs a 0.669 background, p=0.138, **MDE 28.0 points**
+>    against an observed gap of 16.9. It needs a clinical call or more papers.
+>
+> 2b. **NEW 2026-09-15 — the cheapest remaining non-GPU lever: a curated disease
+>    label table.** `norm_disease` falls through to the extractor's free-text label
+>    whenever its 17 regexes miss, so **25 of 40 disease nodes (399 edges, 19.9% of
+>    the graph, 38 papers) are unvalidated strings**, 11 of them (145 edges) with
+>    no MONDO id either. The taxon half has `taxon_typos.py` and `multi_taxon.py`;
+>    the disease half has **nothing**. 4 genuine candidate families carry 383 edges
+>    (`[cognitive impairment]` 209, `[cord injury]` 101, `[intracerebral
+>    hemorrhage]` 61, `[hepatic encephalopathy]` 12). Census and instrument:
+>    `disease_node_provenance.py`, `FINDINGS_disease_node_provenance.md`. **Do NOT
+>    automate the folds** — that script's own head-noun heuristic grouped
+>    Parkinson's + Alzheimer's + Huntington's (689 edges) on a shared suffix, which
+>    is exactly why the taxon side uses curated tables and not thresholds.
+>
 > 3. **Report PMID 27703453 upstream to Disbiome** — their case/control assignment
 >    is inverted on all five records, per `FINDINGS_db_conflicts.md`.
 > 4. Re-run `adjudicate_db_conflicts.py` whenever the corpus grows.

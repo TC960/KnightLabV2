@@ -257,7 +257,12 @@ Built from the 250-paper extraction. Published: <https://www.mohakprakash.com/Kn
   NCBI is not), which confirmed 2 of 2 checkable is-a claims and upheld 2 of 2 rejections — and
   the 71-paper cognitive-decline cluster **does not cohere microbially**: 0.592 directional
   agreement against a 0.672 background over 453 cross-cluster pairs, with every MCI pair at or
-  below a coin flip while the MONDO-confirmed Alzheimer's/Dementia link runs 0.938. So: link
+  below a coin flip while the MONDO-confirmed Alzheimer's/Dementia link runs 0.938.
+  **Caveat added 2026-09-15: the pooled result is robust, but NO individual pair survives
+  multiple-comparison correction** — exact binomial + BH over all 16 pairs at q=0.05 gives
+  **0 of 16**, the AD/Dementia 0.938 link (p=0.030) included. Quote the cluster-level number,
+  not the per-pair ones. The pooled conclusion is unmoved by dropping the HIV-cohort
+  `Neurocognitive impairment` node (0.592 → 0.582, i.e. *further* from background). So: link
   those nodes for **retrieval**, do **not** pool their evidence, and do **not** fold MCI into
   Alzheimer's. The 2 MONDO is-a links ship as an opt-in `kg/disease_hierarchy_links.json`; they
   add **no** retrieval reach in the PPR retriever (measured — identical subgraphs), only
