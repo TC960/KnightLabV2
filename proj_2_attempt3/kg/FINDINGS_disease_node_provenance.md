@@ -205,6 +205,48 @@ answerable here.
 
 ---
 
+## 6. Dead end, tested and rejected: the datasheet label is NOT a hierarchy source
+
+The obvious cheap follow-up is tempting enough that it is worth closing off
+explicitly. For 3 of the 4 candidate families, **the human datasheet already assigns
+every member paper to one label**:
+
+| family | datasheet label on every member paper |
+|---|---|
+| `[cord injury]` (3 nodes, 8 papers) | `Spinal cord injury (SCI)` |
+| `[intracerebral hemorrhage]` (2 nodes, 4 papers) | `Stroke` |
+| `[hepatic encephalopathy]` (2 nodes, 2 papers) | `Encephalopathy` |
+
+So the datasheet looks like a free, human-authored source of parent links for the
+fallback nodes — the disease-side analog of taxonomic containment. **It is not, and
+the check that kills it is already on record.**
+
+Scoring "every backing paper's datasheet label maps to one `DISEASE_MAP` node" as an
+is-a claim yields 9 nodes / 219 edges. Inspecting them:
+
+| proposed link | verdict |
+|---|---|
+| Spinal cord injury → **Amyotrophic lateral sclerosis** | absurd — one member is a *comparative* ALS-vs-SCI study carrying both labels, and "Spinal cord injury" matches no `DISEASE_MAP` regex, so only ALS survived |
+| Essential tremor → Parkinson's | **contradicts MONDO** — `FINDINGS_disease_ontology.md`: *rejection upheld (sibling)* |
+| Multiple system atrophy → Parkinson's | **contradicts MONDO** — *rejection upheld (cousin)* |
+| CADASIL → Stroke | wrong direction of reasoning — CADASIL *causes* strokes |
+| Tuberous sclerosis complex → Epilepsy | backwards — TSC causes epilepsy |
+| Chronic traumatic complete SCI → *(none)* | inconsistent with plain SCI above, on identical datasheet labels |
+
+**On the only two cases where an external authority exists, the heuristic goes 0 for
+2** — and it proposes precisely the two folds the 2026-09-14 MONDO pass independently
+*rejected*. The reason is simple once seen: the datasheet's `disease` column is a
+**topic/cohort tag** ("what disease area is this paper about"), not a taxonomy.
+Comparative studies carry two tags, and a tag naming the condition a cohort *has* says
+nothing about whether the node is a subtype of it.
+
+**Do not build disease hierarchy from the datasheet label.** MONDO remains the only
+authority here, and it resolves 28 of 40 labels with 12 documented refusals.
+
+This also sharpens §2: the fallback nodes are not merely unvalidated, they are
+**unvalidatable from the material already in the repo**. Closing the gap needs either
+MONDO coverage these labels do not have, or a human.
+
 ## Files
 
 - `disease_node_provenance.py` — the census. Reads `DISEASE_MAP` live from

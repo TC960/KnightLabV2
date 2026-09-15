@@ -85,6 +85,22 @@ CD4 count), so transfer to non-HIV cognitive impairment is untested.
 - *`ftp.ncbi.nih.gov` re-probed, still 403.* Tenth session. The scheduled routine's
   prompt still instructs sessions to download the taxdump; that instruction is stale.
 
+- *Dead end closed, because it is tempting: the datasheet label is NOT a hierarchy
+  source.* For 3 of the 4 candidate families the human datasheet already puts every
+  member paper under one label (all 8 cord-injury papers = `Spinal cord injury (SCI)`,
+  all 4 ICH papers = `Stroke`, both HE papers = `Encephalopathy`), which makes it look
+  like a free source of parent links. Scoring it that way yields 9 nodes / 219 edges
+  and is **wrong**: it proposes `Spinal cord injury is-a ALS` (one member is a
+  comparative ALS-vs-SCI study carrying both tags), `CADASIL is-a Stroke` (CADASIL
+  *causes* strokes), `Tuberous sclerosis is-a Epilepsy` (backwards), and — decisively
+  — `Essential tremor is-a Parkinson's` and `MSA is-a Parkinson's`, **the exact two
+  folds the 2026-09-14 MONDO pass independently REJECTED** (sibling and cousin,
+  rejections upheld). **0 for 2 on the only cases with an external authority.** The
+  datasheet's `disease` column is a topic/cohort tag, not a taxonomy; comparative
+  studies carry two. So the fallback nodes are not just unvalidated, they are
+  **unvalidatable from material already in the repo** — closing the gap needs MONDO
+  coverage these labels lack, or a human.
+
 **Highest-value next step.** Unchanged and now better evidenced: **more papers.** Both
 folding questions above, and 0-of-16 surviving BH, are n-limited rather than
 method-limited. The cheapest thing that does not need a GPU is a **curated disease
