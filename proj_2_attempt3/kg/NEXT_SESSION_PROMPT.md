@@ -1,13 +1,35 @@
 # Session prompt — KG usefulness + embeddings
 
-> ## ⚠️ READ THIS BEFORE THE TASK LIST BELOW — updated 2026-09-14
+> ## ⚠️ READ THIS BEFORE THE TASK LIST BELOW — updated 2026-09-16
 >
-> **The numbered tasks in this file are all DONE and have been for five sessions.**
+> **The numbered tasks in this file are all DONE and have been for six sessions.**
 > The scheduled routine still fires the old priority list (MAIN_DATA filter,
-> Task 1, Task 2.5, Task 3.1), and three consecutive sessions have each opened by
+> Task 1, Task 2.5, Task 3.1), and **five** consecutive sessions have each opened by
 > confirming they were already complete. If you are reading this because that
 > prompt sent you here: **do not redo any of them.** Read `SESSION_LOG.md` — its
 > top entry is the current state — and pick from the short list below.
+>
+> **Two other standing instructions in that routine prompt are also stale:**
+> 1. It tells you to download the NCBI taxdump from `ftp.ncbi.nih.gov`. That host
+>    has returned **403 in eleven consecutive sessions** (re-probed 2026-09-16);
+>    `eutils.ncbi.nlm.nih.gov` is 403 too. Use `taxonomy_cache.py`, which replays
+>    `graph.json`'s own resolution and is valid for any rebuild that does not add
+>    papers. **Do not spend a tool call re-probing.**
+> 2. It says paper text is unavailable in the cloud because `MAIN_DATA.json` is
+>    gitignored. That is true only of FULL text — see the 2026-09-15 correction
+>    below. `relation_sentences_clean.json` is committed and covers 271/271
+>    contributing papers.
+>
+> **NEW 2026-09-16 — the top open lever is now a specific, cloud-doable measurement,
+> not "more papers".** The 2026-09-16 session opened the recall direction for the
+> first time: `zero_yield_audit.py` / `FINDINGS_zero_yield.md` established
+> **paper-level recall 98.5%** [96.3, 99.4] against the papers' own sentences, and
+> found that the extractor's dominant failure mode is **a paper framed as an
+> intervention/therapy study that still reports a baseline disease-vs-control
+> comparison** (3 of its 4 confirmed misses). The successor measurement —
+> **edge-level recall inside the 271 contributing papers** — is the natural next
+> item and needs no GPU, no taxdump and no `MAIN_DATA.json`. See the log's top entry
+> for how far it got.
 >
 > **Genuinely open, in order:**
 >

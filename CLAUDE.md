@@ -51,6 +51,22 @@ a lower bound. It is a *different quantity* from the 73%/72.5% agreement figures
 not cross-literature reproducibility — and must not be quoted as moving them. See
 `proj_2_attempt3/kg/FINDINGS_direction_audit.md`.
 
+**Best current recall number (2026-09-16): paper-level recall 98.5%**, 95% CI
+[96.3, 99.4] — 96.1% under the worst-case reading. Also measured against *the papers'
+own sentences*, so like the fidelity figure it depends on neither the in-house gold nor
+the curated databases. Of 313 deduplicated screened papers, 271 contribute at least one
+edge (86.6% paper yield); of the 42 that contribute nothing, 9 have no relation-bearing
+sentence at all and the other 33 adjudicate to 14 correct refusals on study design, 4
+explicit negative results, 4 background-only, 7 unclear and **4 genuine misses**. Three
+of those 4 share one failure mode — *a paper framed as an intervention or therapy study
+that nonetheless reports a baseline disease-vs-healthy-control comparison* — which makes
+it a prompt-level fix, not a model-level one. Two things this number is **not**: it is
+*paper*-level, so it must never be quoted as edge-level recall (whether every taxon
+inside the 271 contributing papers was caught is a separate, harder question), and it is
+not an accuracy gain — nothing in the graph was changed. A deterministic side-result
+worth keeping: `build_kg.py` loses nothing, i.e. zero papers had extracted taxa that
+failed to become an edge. See `proj_2_attempt3/kg/FINDINGS_zero_yield.md`.
+
 **The KG is broad-scoped** — all microbe–disease relationships, not a single disease area. The current
 gold-standard/test set happens to skew neuro-adjacent (Parkinson's, MS, Alzheimer's, ALS, stroke,
 dementia, SMA, epilepsy, and others) simply because that's the disease mix in the test papers we have
