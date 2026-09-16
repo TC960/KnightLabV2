@@ -1,0 +1,54 @@
+{
+ "n_conflicts": 5,
+ "n_publications": 1,
+ "conflicts": [
+  {
+   "taxon": "Lachnospiraceae",
+   "disease": "Amyotrophic lateral sclerosis",
+   "Disbiome": "enriched",
+   "Peryton": "depleted",
+   "ours": "depleted"
+  },
+  {
+   "taxon": "Dorea",
+   "disease": "Amyotrophic lateral sclerosis",
+   "Disbiome": "depleted",
+   "Peryton": "enriched",
+   "ours": "enriched"
+  },
+  {
+   "taxon": "Eubacteriales",
+   "disease": "Amyotrophic lateral sclerosis",
+   "Disbiome": "enriched",
+   "Peryton": "depleted",
+   "ours": "depleted"
+  },
+  {
+   "taxon": "Oscillibacter",
+   "disease": "Amyotrophic lateral sclerosis",
+   "Disbiome": "enriched",
+   "Peryton": "depleted",
+   "ours": "depleted"
+  },
+  {
+   "taxon": "Anaerostipes",
+   "disease": "Amyotrophic lateral sclerosis",
+   "Disbiome": "enriched",
+   "Peryton": "depleted",
+   "ours": "depleted"
+  }
+ ],
+ "publications": {
+  "27703453": [
+   "Evaluation of the microbial diversity in amyotrophic lateral sclerosis using high-throughput sequencing"
+  ]
+ },
+ "quotes": {
+  "27703453": [
+   "Furthermore, the decreased Firmicutes/Bacteroidetes ratio at phylum level using LEfSE (LDA > 4.0), together with the significant increased genus Dorea (harmful microorganisms) and significant reduced genus Oscillibacter , Anaerostipes , Lachnospiraceae (beneficial microorganisms) in ALS patients, indicated that the imbalance in intestinal microflora constitution had a strong association with the pathogenesis of ALS.",
+   "In Figure 4 , Lachnospiraceae (at family level), Firmicutes (at phylum level), Clostridia (at class level), Oscillibacter (at genus level), Family XIII (at family level), Anaerostipes (at genus level), Lachnospiraceae (at genus level) and Clostridiales (at order level) in group H were significant higher than that in group A, while Bacteroidetes (at phylum level), Bacteroidia (at class level), Bacteroidales (at order level), Dorea (at genus level) were significant higher than that in group H.",
+   "Furthermore, supervised comparisons by LEfSE (LDA > 4.0) were performed to find the significant changed bacteria, and the relative richness of Firmicutes at phylum level, Clostridia at class level, Clostridiales at order level, Lachnospiraceae and Family XIII at family level, Oscillibacter , Anaerostipes and Lachnospiraceae at genus level in group H were significant higher than that in group A, while Bacteroidetes at phylum level, Bacteroidia at class level, Bacteroidales at order level and Dorea at genus level were significant higher in group A ( Figure 4 ).",
+   "Moreover, the significant decrease of Oscillibacter (was found in significantly more samples from healthy control test subjects than from patients diagnosed with Crohn\u2019s disease; Mondot et al., 2011 ), Anaerostipes (represents more than 2% of total colonic microbiota in the healthy colon, and are believed to play an important functional role in the gut ecosystem due to their ability to produce butyrate from lactate; Bui et al., 2014 ) and Lachnospiraceae (can protect from colon cancer in humans by producing butyric acid; Meehan and Beiko, 2014 ) in group A further confirmed the interaction of ALS with intestinal microbiota."
+  ]
+ }
+}

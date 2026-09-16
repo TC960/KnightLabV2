@@ -1,0 +1,70 @@
+{
+ "all_links": {
+  "attack_C_mean_direction_skew": 0.672,
+  "clustered__attack_B": {
+   "mde": 0.0634,
+   "n_units_contributing": 101,
+   "null_mean": -0.00036,
+   "null_sd": 0.03233,
+   "obs": 0.3563,
+   "p": 0.0005,
+   "z": 11.03
+  },
+  "n_papers_contributing": 102,
+  "n_related_pairs": 474,
+  "n_units": 102,
+  "n_unrelated_pairs": 23673,
+  "pairs_from_top_5_papers": 96,
+  "pairs_from_top_paper": 35,
+  "pooled": {
+   "mde": 0.0437,
+   "null_mean": 0.00824,
+   "null_sd": 0.0223,
+   "obs": 0.3536,
+   "p": 0.0005,
+   "z": 15.49
+  },
+  "vs_same_rank_unrelated__attack_D": {
+   "mde": 0.0443,
+   "null_mean": 0.01086,
+   "null_sd": 0.02261,
+   "obs": 0.3435,
+   "p": 0.0005,
+   "z": 14.71
+  }
+ },
+ "named_only__attack_A": {
+  "attack_C_mean_direction_skew": 0.676,
+  "clustered__attack_B": {
+   "mde": 0.0619,
+   "n_units_contributing": 100,
+   "null_mean": 0.0002,
+   "null_sd": 0.03158,
+   "obs": 0.3611,
+   "p": 0.0005,
+   "z": 11.43
+  },
+  "n_papers_contributing": 101,
+  "n_related_pairs": 450,
+  "n_units": 101,
+  "n_unrelated_pairs": 20973,
+  "pairs_from_top_5_papers": 95,
+  "pairs_from_top_paper": 35,
+  "pooled": {
+   "mde": 0.044,
+   "null_mean": 0.01192,
+   "null_sd": 0.02243,
+   "obs": 0.3592,
+   "p": 0.0005,
+   "z": 15.49
+  },
+  "vs_same_rank_unrelated__attack_D": {
+   "mde": 0.045,
+   "null_mean": 0.01525,
+   "null_sd": 0.02294,
+   "obs": 0.3502,
+   "p": 0.0005,
+   "z": 14.6
+  }
+ }
+}

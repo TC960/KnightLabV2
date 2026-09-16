@@ -1,0 +1,146 @@
+[
+  {
+    "paper": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+    "taxon_key": "ncbi:543",
+    "disease": "Stroke",
+    "category": "subgroup",
+    "quote": "Enterobacteriaceae , Enterococcaceae , Lactobacillaceae , and Verrucomicrobiaceae levels were highest in PI group ( P <0.05).",
+    "reason": "Different stroke types (PI vs LI) show differential Enterobacteriaceae levels."
+  },
+  {
+    "paper": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+    "taxon_key": "ncbi:33958",
+    "disease": "Stroke",
+    "category": "different_comparison",
+    "quote": "Lactobacillaceae was most abundant in control group.",
+    "reason": "Highest in PI patient group vs most abundant in healthy control group."
+  },
+  {
+    "paper": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+    "taxon_key": "ncbi:816",
+    "disease": "Stroke",
+    "category": "different_comparison",
+    "quote": "Butyric acid significantly enhanced the alpha diversity of gut microbiota and reduced the levels of pathogenic bacteria such as Bacteroides .",
+    "reason": "Bacteroides as stroke biomarker vs reduced by butyric acid treatment."
+  },
+  {
+    "paper": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+    "taxon_key": "ncbi:216572",
+    "disease": "Stroke",
+    "category": "subgroup",
+    "quote": "Ruminococcaceae levels were dramatically decreased in LI group, and beneficial bacteria such as Meganonas enriched.",
+    "reason": "Different stroke subtypes (LI, PI, AI) show differential Ruminococcaceae abundance patterns."
+  },
+  {
+    "paper": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+    "taxon_key": "ncbi:572511",
+    "disease": "Stroke",
+    "category": "unclear",
+    "quote": "",
+    "reason": "No sentences provided to evaluate contradictory extraction."
+  },
+  {
+    "paper": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+    "taxon_key": "ncbi:838",
+    "disease": "Stroke",
+    "category": "extraction_error",
+    "quote": "Lachnospiraceae , Ruminococcaceae , and Prevotellaceae levels were maximal in control group ( P <0.05).",
+    "reason": "Only depletion (maximal in control) clearly supported; enrichment unsupported by provided sentences."
+  },
+  {
+    "paper": "Potential Inflammatory Biomarkers and Differential Gut Microbiota in Cognitive Impairment After Ischemic Stroke",
+    "taxon_key": "ncbi:1678",
+    "disease": "Stroke",
+    "category": "extraction_error",
+    "quote": "abundance of blaut, bifidobacterium and macromonas increased, while the abundance of bacteroides and bifidobacterium brevis decreased significantly.",
+    "reason": "Genus Bifidobacterium increased but species B. brevis decreased; mixed taxonomic rank extraction error."
+  },
+  {
+    "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.",
+    "taxon_key": "ncbi:28124",
+    "disease": "Parkinson's disease",
+    "category": "extraction_error",
+    "quote": "The decrease in beneficial bacteria such as Faecalibacterium prausnitzii, Roseburia faecis, Roseburia inulinivorans, Eubacterium rectale in the gut together with a decrease of Treponema denticola, Porphyromonas endodontalis and Actinomyces in the oral cavity were the most important features in predicting PDD",
+    "reason": "Only decrease is documented; enrichment of Porphyromonas endodontalis unsupported by provided sentences."
+  },
+  {
+    "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.",
+    "taxon_key": "ncbi:838",
+    "disease": "Parkinson's disease",
+    "category": "subgroup",
+    "quote": "Most notably, the enrichment of SAL1 in PDD because of increased Prevotella , Veilonella, Rothia and Streptococcus have enrichment of proline biosynthesis.",
+    "reason": "Different disease stages (PD-MCI, PDD vs HC) show opposite Prevotella patterns."
+  },
+  {
+    "paper": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer’s patients",
+    "taxon_key": "ncbi:1239",
+    "disease": "Alzheimer's disease",
+    "category": "body_site",
+    "quote": "In order of the severity of cognition impairment (from normal to mild and to moderate AD), the oral abundances of the phyla Firmicutes and Fusobacteria showed a gradual upwards trend, while the abundance of the Firmicutes and Bacteroidetes phyla in the gut decreased progressively",
+    "reason": "Firmicutes increase in oral cavity but decrease in gut microbiota."
+  },
+  {
+    "paper": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer’s patients",
+    "taxon_key": "ncbi:526524",
+    "disease": "Alzheimer's disease",
+    "category": "body_site",
+    "quote": "In the taxa of subgingival bacteria, 13 taxa were more abundant in the moderate AD group, including the phylum Firmicutes and its corresponding class Erysipelotrichia, the order Erysipelotrichales, the Lactobacillaceae and Erysipelotrichaceae families",
+    "reason": "Erysipelotrichia depleted in fecal microbiota but enriched in oral subgingival."
+  },
+  {
+    "paper": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer’s patients",
+    "taxon_key": "ncbi:526525",
+    "disease": "Alzheimer's disease",
+    "category": "body_site",
+    "quote": "In the taxa of subgingival bacteria, 13 taxa were more abundant in the moderate AD group, including the phylum Firmicutes and its corresponding class Erysipelotrichia, the order Erysipelotrichales, the Lactobacillaceae and Erysipelotrichaceae families",
+    "reason": "Order Erysipelotrichales depleted in fecal but enriched in oral subgingival microbiota."
+  },
+  {
+    "paper": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer’s patients",
+    "taxon_key": "ncbi:1236",
+    "disease": "Alzheimer's disease",
+    "category": "extraction_error",
+    "quote": "class Gammaproteobacteria, the genus Aggregatibacter , and the genus Lautropia , showed a trend towards a progressive decrease from the NC to the mild AD and the moderate AD groups",
+    "reason": "Contradictory genera within class; class-level extraction conflates decreasing genera with increasing ones."
+  },
+  {
+    "paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis.",
+    "taxon_key": "ncbi:186802",
+    "disease": "Amyotrophic lateral sclerosis",
+    "category": "extraction_error",
+    "quote": "Clostridiales Family XI resulted higher in patients ( P <0.05)",
+    "reason": "Family XI and Ambiguous taxa are distinct subgroups; different taxa should not create pseudo-contradiction."
+  },
+  {
+    "paper": "Alterations of the gut ecological and functional microenvironment in different stages of multiple sclerosis.",
+    "taxon_key": "ncbi:1730",
+    "disease": "Multiple sclerosis",
+    "category": "extraction_error",
+    "quote": "the abundance of Lactobacillus fermentum (mapped_CL129) and Eubacterium biforme (mapped_CL429) was significantly decreased in the recent activity samples",
+    "reason": "E. biforme shown as decreased, not enriched; different species within genus not true contradiction."
+  },
+  {
+    "paper": "The effect of multiple sclerosis therapy on gut microbiota dysbiosis: a longitudinal prospective study.",
+    "taxon_key": "ncbi:186803",
+    "disease": "Multiple sclerosis",
+    "category": "different_comparison",
+    "quote": "Following treatment, individuals with MS showed enrichment in Lachnospiraceae and Streptococcus .",
+    "reason": "Contrasting treatment effects (post-treatment enrichment vs DMT-associated reduction) and longitudinal changes."
+  },
+  {
+    "paper": "Nutritional Intake and Gut Microbiome Composition Predict Parkinson's Disease.",
+    "taxon_key": "ncbi:171550",
+    "disease": "Parkinson's disease",
+    "category": "different_comparison",
+    "quote": "DBS has been sparsely reported in regards to the GM ( Lubomski et al., 2021c ), but was associated here with overrepresentation of Streptococcaceae and Streptococcus spp. and underrepresentation of Rikenellaceae",
+    "reason": "Different Parkinson's treatments show opposite effects (DBS depletes vs Levodopa associates with Rikenellaceae)."
+  },
+  {
+    "paper": "Gut microbiome alterations in preclinical Alzheimer’s disease",
+    "taxon_key": "ncbi:1485",
+    "disease": "Alzheimer's disease",
+    "category": "subgroup",
+    "quote": "Clostridium (family Clostridiaceae) were increased in the Aβ+ CN group compared to the Aβ− CN group, whereas the genera CF231, Victivallis, Enterococcus, Mitsuokella and Clostridium (family Erysipelotrichaceae) were decreased in Aβ+ CN",
+    "reason": "Different Clostridium species from different families show opposite patterns; subgroup/species-level variation."
+  }
+]

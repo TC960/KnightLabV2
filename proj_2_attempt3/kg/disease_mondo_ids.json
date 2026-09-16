@@ -1,0 +1,160 @@
+{
+ "mondo_version": "releases/2026-09-01",
+ "note": "label -> MONDO id, for labels build_kg.DISEASE_MAP leaves unmapped. Exact primary-name / EXACT-synonym matches plus curated aliases only; regenerate with `python3 mondo.py`. Mild cognitive impairment is deliberately absent.",
+ "unresolved": [
+  "Chronic traumatic complete spinal cord injury",
+  "Cognitive impairment",
+  "Hemorrhagic transformation",
+  "Hepatitis B virus-associated liver cirrhosis",
+  "Hypertensive intracerebral hemorrhage",
+  "Mild cognitive impairment",
+  "Minimal hepatic encephalopathy",
+  "Neurocognitive impairment",
+  "Neuroinfection",
+  "Poststroke aphasia",
+  "REM sleep behavior disorder\u2013Lewy body disease continuum",
+  "Traumatic thoracic spinal cord injury"
+ ],
+ "ids": {
+  "Alzheimer's disease": {
+   "mondo": "MONDO:0004975",
+   "mondo_name": "Alzheimer disease",
+   "how": "exact"
+  },
+  "Amyotrophic lateral sclerosis": {
+   "mondo": "MONDO:0004976",
+   "mondo_name": "amyotrophic lateral sclerosis",
+   "how": "exact"
+  },
+  "Anti-NMDAR encephalitis": {
+   "mondo": "MONDO:0021081",
+   "mondo_name": "anti-NMDA receptor encephalitis",
+   "how": "curated_alias"
+  },
+  "Attention-deficit/hyperactivity disorder": {
+   "mondo": "MONDO:0007743",
+   "mondo_name": "attention deficit-hyperactivity disorder",
+   "how": "exact"
+  },
+  "Autism spectrum disorder": {
+   "mondo": "MONDO:0005258",
+   "mondo_name": "autism spectrum disorder",
+   "how": "exact"
+  },
+  "CADASIL": {
+   "mondo": "MONDO:0007432",
+   "mondo_name": "cerebral arteriopathy with subcortical infarcts and leukoencephalopathy",
+   "how": "curated_alias"
+  },
+  "Dementia": {
+   "mondo": "MONDO:0001627",
+   "mondo_name": "dementia",
+   "how": "exact"
+  },
+  "Epilepsy": {
+   "mondo": "MONDO:0005027",
+   "mondo_name": "epilepsy",
+   "how": "exact"
+  },
+  "Essential tremor": {
+   "mondo": "MONDO:0003233",
+   "mondo_name": "essential tremor",
+   "how": "exact"
+  },
+  "Familial dysautonomia": {
+   "mondo": "MONDO:0009131",
+   "mondo_name": "Riley-Day syndrome",
+   "how": "exact"
+  },
+  "Hepatic encephalopathy": {
+   "mondo": "MONDO:0001711",
+   "mondo_name": "hepatic encephalopathy",
+   "how": "exact"
+  },
+  "Huntington's disease": {
+   "mondo": "MONDO:0007739",
+   "mondo_name": "Huntington disease",
+   "how": "exact"
+  },
+  "Idiopathic normal pressure hydrocephalus": {
+   "mondo": "MONDO:0009366",
+   "mondo_name": "normal pressure hydrocephalus",
+   "how": "curated_alias"
+  },
+  "Intracerebral hemorrhage": {
+   "mondo": "MONDO:0013792",
+   "mondo_name": "intracerebral hemorrhage",
+   "how": "exact"
+  },
+  "Migraine": {
+   "mondo": "MONDO:0005277",
+   "mondo_name": "migraine disorder",
+   "how": "exact"
+  },
+  "Multiple sclerosis": {
+   "mondo": "MONDO:0005301",
+   "mondo_name": "multiple sclerosis",
+   "how": "exact"
+  },
+  "Multiple system atrophy": {
+   "mondo": "MONDO:0007803",
+   "mondo_name": "multiple system atrophy",
+   "how": "exact"
+  },
+  "Myasthenia gravis": {
+   "mondo": "MONDO:0009688",
+   "mondo_name": "myasthenia gravis",
+   "how": "exact"
+  },
+  "Neuromyelitis optica": {
+   "mondo": "MONDO:0019100",
+   "mondo_name": "neuromyelitis optica",
+   "how": "exact"
+  },
+  "Parkinson's disease": {
+   "mondo": "MONDO:0005180",
+   "mondo_name": "Parkinson disease",
+   "how": "exact"
+  },
+  "Rett syndrome": {
+   "mondo": "MONDO:0010726",
+   "mondo_name": "Rett syndrome",
+   "how": "exact"
+  },
+  "Spinal cord injury": {
+   "mondo": "MONDO:0043797",
+   "mondo_name": "spinal cord injury",
+   "how": "exact"
+  },
+  "Spinal muscular atrophy": {
+   "mondo": "MONDO:0001516",
+   "mondo_name": "spinal muscular atrophy",
+   "how": "exact"
+  },
+  "Sporadic Creutzfeldt-Jakob disease": {
+   "mondo": "MONDO:0016079",
+   "mondo_name": "sporadic Creutzfeldt-Jakob disease",
+   "how": "exact"
+  },
+  "Stroke": {
+   "mondo": "MONDO:0005098",
+   "mondo_name": "stroke disorder",
+   "how": "exact"
+  },
+  "Subjective cognitive decline": {
+   "mondo": "MONDO:0850292",
+   "mondo_name": "subjective cognitive decline",
+   "how": "exact"
+  },
+  "Traumatic brain injury": {
+   "mondo": "MONDO:0858950",
+   "mondo_name": "traumatic brain injury",
+   "how": "exact"
+  },
+  "Tuberous sclerosis complex": {
+   "mondo": "MONDO:0001734",
+   "mondo_name": "tuberous sclerosis",
+   "how": "exact"
+  }
+ }
+}

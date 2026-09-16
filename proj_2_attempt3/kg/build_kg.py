@@ -32,8 +32,17 @@ import re
 from collections import Counter, defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_IN = os.path.join(HERE, "..", "dsmlp_model_prompting", "eval-v2", "results",
-                          "qwopus3.5-27b-v3__q4km__samgated-v1__all250.json")
+# The SCREENED extraction is the source of truth, and `graph.json`'s own
+# meta.source has recorded it since the paper screen landed. This default used to
+# point at the raw 250-paper run
+# (../dsmlp_model_prompting/eval-v2/results/qwopus3.5-27b-v3__q4km__samgated-v1__all250.json),
+# which is three corpus revisions old and is not even present in a fresh clone.
+# Running `python3 build_kg.py` with no arguments therefore OVERWROTE graph.json
+# with a 773-taxon / 1,462-edge / 211-paper graph -- against the shipped 918 /
+# 2,011 / 272 -- and printed success while doing it. That is the exact failure
+# mode the "rebuild twice and diff" rule exists to catch, except the rule tells
+# you to run this very command, so it silently destroyed the thing it verifies.
+DEFAULT_IN = os.path.join(HERE, "extractions_screened.json")
 
 # --- disease normalization -------------------------------------------------
 # The extractor returns free text ("Alzheimer disease" / "Alzheimer's disease" /
@@ -46,18 +55,40 @@ DISEASE_MAP = [
     (r"\balzheimer", "Alzheimer's disease", "MONDO:0004975"),
     (r"multiple sclerosis|\bms\b", "Multiple sclerosis", "MONDO:0005301"),
     (r"amyotrophic lateral|\bals\b", "Amyotrophic lateral sclerosis", "MONDO:0004976"),
-    (r"mild cognitive impairment|\bmci\b", "Mild cognitive impairment", "MONDO:0005453"),
+    # mondo=None is CORRECT here and must not be "fixed" back. This entry used to
+    # read MONDO:0005453, which is *congenital heart disease* -- caught 2026-09-14
+    # by mondo.py's positive control against the MONDO release itself. MONDO
+    # contains no term named "mild cognitive impairment" at all (zero index keys
+    # match the phrase); MCI is a clinical STAGE, not a MONDO disease. The nearest
+    # term, "cognitive disorder" (MONDO:0002039), is broader and would merge MCI
+    # with a dozen unrelated conditions. 13 papers sit on this node.
+    (r"mild cognitive impairment|\bmci\b", "Mild cognitive impairment", None),
     (r"\bstroke|cerebral infarct", "Stroke", "MONDO:0005098"),
     (r"huntington", "Huntington's disease", "MONDO:0007739"),
     (r"\bdementia", "Dementia", "MONDO:0001627"),
     (r"spinal muscular atrophy|\bsma\b", "Spinal muscular atrophy", "MONDO:0001516"),
     (r"epilep", "Epilepsy", "MONDO:0005027"),
-    (r"autism|\basd\b", "Autism spectrum disorder", "MONDO:0005260"),
+    # was MONDO:0005260, which is "autism" -- a CHILD of MONDO:0005258 "autism
+    # spectrum disorder". One rank too narrow for a node labelled ASD.
+    (r"autism|\basd\b", "Autism spectrum disorder", "MONDO:0005258"),
     (r"depress", "Depressive disorder", "MONDO:0002050"),
     (r"schizophren", "Schizophrenia", "MONDO:0005090"),
     (r"neuromyelitis", "Neuromyelitis optica", "MONDO:0019100"),
     (r"myasthenia", "Myasthenia gravis", "MONDO:0009688"),
     (r"migraine", "Migraine", "MONDO:0005277"),
+    # Three spellings of ONE disease were three separate nodes: "Anti-N-methyl-
+    # D-aspartate receptor encephalitis" (22 edges), "NMDAR encephalitis" (16)
+    # and "Anti-NMDAR encephalitis" (7) -- one paper each. This is the
+    # Bacteroidetes/Bacteroidota case in the disease dimension, and folding it
+    # is synonym folding, not a rank collapse: 45 edges become 38, and 4 edges
+    # that every view showed as single-paper become replicated, 3 of them
+    # CONTESTED -- real inter-study disagreement the fragmentation was hiding.
+    # The id was deliberately left None because EBI/OLS is blocked here and a
+    # wrong ontology id is worse than no id. That reasoning was right, and the
+    # block is real -- but the MONDO release on GitHub is NOT blocked, so the id
+    # is now a lookup rather than a guess: MONDO spells it "anti-NMDA receptor
+    # encephalitis". See mondo.py.
+    (r"nmdar?\b|n-methyl-d-aspartate", "Anti-NMDAR encephalitis", "MONDO:0021081"),
 ]
 
 # rank hints from the naming conventions the papers use
@@ -81,13 +112,146 @@ def parse_taxa(v):
     return out
 
 
+# MONDO ids for the disease labels DISEASE_MAP does not carry one for, generated
+# by `mondo.py` into a small committed table. Loaded lazily and NOISILY: a
+# missing table degrades ids to None, which is safe, but it must say so rather
+# than quietly shipping a graph with 12 fewer ontology ids than the last one.
+_MONDO_IDS = None
+
+
+def _mondo_ids():
+    global _MONDO_IDS
+    if _MONDO_IDS is None:
+        path = os.path.join(HERE, "disease_mondo_ids.json")
+        if os.path.exists(path):
+            d = json.load(open(path))
+            _MONDO_IDS = {k: v["mondo"] for k, v in d["ids"].items() if v.get("mondo")}
+            print(f"disease MONDO ids loaded: {len(_MONDO_IDS)} "
+                  f"(MONDO {d.get('mondo_version')})")
+        else:
+            _MONDO_IDS = {}
+            print("WARNING: disease_mondo_ids.json absent -- disease nodes outside "
+                  "DISEASE_MAP will have mondo=None. Regenerate with "
+                  "`python3 mondo.py`.")
+    return _MONDO_IDS
+
+
 def norm_disease(s):
     s = (s or "").strip()
     low = s.lower()
     for pat, label, mondo in DISEASE_MAP:
         if re.search(pat, low):
+            # DISEASE_MAP wins outright, including when its id is deliberately
+            # None (Mild cognitive impairment -- MONDO has no term for it and
+            # the table must not be allowed to put one back).
             return label, mondo
-    return (s[:1].upper() + s[1:]) if s else "Unspecified", None
+    label = (s[:1].upper() + s[1:]) if s else "Unspecified"
+    return label, _mondo_ids().get(label)
+
+
+# Rank placeholders: labels 16S pipelines emit for a clade they could not name to a
+# real taxon -- "Erysipelotrichaceae UCG-003", "Lachnospiraceae ND3007 group",
+# "Clostridia UCG-014", "Christensenellaceae R-7 group". taxonomy.py resolves these
+# by trimming the qualifier tail, so they land on the PARENT taxid and are pooled as
+# if they were the parent itself.
+#
+# That is a rank collapse wearing a synonym's clothes, and adjudication caught it:
+# Erysipelotrichaceae/Parkinson's looked like a 4-paper contradiction of both
+# curated databases, but 3 of those 4 papers report "Erysipelotrichaceae UCG-003",
+# a genus-level placeholder INSIDE the family. No paper measured the family
+# aggregate. Corpus-wide this affects 74 strings over 37 taxids, 21 edges named only
+# by a placeholder and 170 mixed, 52 of them contested.
+#
+# It also breaks the project's own rule: synonym folding (same rank, renamed) and
+# containment (different ranks) are different operations. A UCG label is a CHILD.
+# So with --split-placeholders these get their own node, linked to the parent by a
+# containment edge rather than merged into it.
+#
+# The first version of this pattern caught the UCG / ND / "group" forms and
+# missed the commonest one: SILVA's bare numeric and roman-numeral suffixes.
+# "Prevotella 9", "Prevotella_6", "Coprococcus_1", "Ruminiclostridium 5",
+# "Clostridium IV", "Clostridiaceae 1" are DISTINCT SILVA genera, and every one
+# of them was landing on its parent's taxid. Prevotella/Parkinson's -- the
+# highest-weight edge in the graph at 17 papers, and the one the README calls
+# load-bearing for the external join -- folds 13 surface strings into one node,
+# five of them these placeholders.
+#
+# Detected corpus-wide by asking which surface strings EXTEND the scientific
+# name they resolved to (see child_folds.json): 115 such strings over 52 nodes,
+# none flagged. 32 are placeholders of this kind; 29 are "X sp./spp./
+# unclassified", where folding to the parent is CORRECT and must not change.
+# The remaining 54 were read as "real named species whose split needs the NCBI
+# taxdump". Both halves of that were wrong (2026-09-08): only 24 name a species,
+# and the mapping needs no taxdump -- a taxid is stable across a rename, so
+# Disbiome's pre-rename names join to NCBI on it. Those 24 are split, via
+# species_synonyms.json. The other 91 must NOT be split: "Escherichia / Shigella"
+# names two taxa, "Clostridium_XlVa" is a pipeline cluster label. See
+# FINDINGS_species_split.md and FINDINGS_rank_collapse.md.
+PLACEHOLDER = re.compile(
+    r"(UCG[-_ ]?\d+|_?group$|ND\d{3,}|R-\d+\b|incertae[ _]sedis|"
+    r"sensu[ _]stricto|\bAD\d{3,}\b|\b[A-Z]{1,3}\d{2,}\b|"
+    # A SILVA numeric suffix may be joined by a hyphen as well as a space or
+    # underscore ("Ruminiclostridium-5" beside "Ruminiclostridium 5"), but ONLY
+    # when the stem is a single word. Allowing the hyphen generally swallowed
+    # strain designations -- "Azospirillum sp. 47-25" and "Lachnospiraceae
+    # bacterium MC-35" both resolve to real taxids and were demoted to
+    # unresolved placeholders by the looser pattern. Caught by diffing the
+    # rebuild (n_taxa_resolved fell by 2), not by reading the regex.
+    r"[ _]\d{1,3}$|^[A-Za-z]+-\d{1,3}$|[ _][IVXL]+$|"
+    r"\bcluster[ _]|\bFamily[ _][IVXL]+\b)")
+
+# Guard, agreeing with taxonomy_cache.NOT_CONTAINED. A phage is not a member of
+# the genus it infects, and "uncultured X sp. 1" names an unidentified member
+# rather than a SILVA rank placeholder -- but both end in a bare number and so
+# match the pattern above. Splitting them off produced the only 4 nodes that
+# failed to survive a rebuild: the cache (correctly) refuses to hang a phage
+# under a bacterial genus, so their parent was unrecoverable and the placeholder
+# flag silently evaporated on the second build. Caught by re-running the build
+# and diffing, not by reading the pattern.
+NOT_PLACEHOLDER = re.compile(r"\b(virus|phage|bacteriophage|uncultured)\b", re.I)
+
+SPLIT_PLACEHOLDERS = False          # set by --split-placeholders
+BODY_SITE = {}                      # paper title -> sampled body site
+PLACEHOLDER_PARENT = {}             # placeholder node key -> parent taxid
+
+
+def _load_typos():
+    """Surface spellings the SOURCE PAPERS get wrong. See taxon_typos.py.
+
+    Applied as a rewrite of the raw string BEFORE resolution, so a corrected
+    name pools into the existing node by taxid rather than needing its own
+    merge rule. The raw string is still recorded in `aliases`, so nothing is
+    lost: the node for Faecalibacterium lists "Fecalibacterium" among the
+    strings that folded into it, and a reader can see the paper's spelling.
+
+    All 33 entries are verified to occur verbatim in their own paper's full
+    text -- these are the papers' errors, faithfully copied, not the
+    extractor's. Curated rather than edit-distance, because the near-misses
+    include real distinct taxa (Oscillospirales vs Oscillospira) and the SILVA
+    rank placeholders the graph deliberately holds apart (Prevotella_9).
+    """
+    path = os.path.join(HERE, "taxon_typos.json")
+    if not os.path.exists(path):
+        return {}
+    d = json.load(open(path))["typos"]
+    # key on a case- and whitespace-insensitive form so "fecalibacterium" and
+    # "Fecalibacterium " hit the same entry
+    return {re.sub(r"\s+", " ", k.lower()).strip(): v for k, v in d.items()}
+
+
+TAXON_TYPOS = {}                    # loaded in main(); empty means "no rewrite"
+
+
+def _sep_key(s):
+    """Lowercase, drop NCBI's [misplaced genus] brackets, collapse separators.
+
+    Hyphen, en dash, em dash, slash and underscore are all used interchangeably
+    in this corpus; keying on them literally fragments one concept across
+    several nodes.
+    """
+    s = s.lower().replace("[", "").replace("]", "")
+    s = re.sub(r"[/_‐-―-]", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
 
 
 def norm_taxon(t, tax=None):
@@ -102,9 +266,33 @@ def norm_taxon(t, tax=None):
     prefix only), so the builder still runs.
     """
     disp = t.strip()
+    # The papers' own misspellings, corrected before resolution (taxon_typos.py).
+    disp = TAXON_TYPOS.get(re.sub(r"\s+", " ", disp.lower()).strip(), disp)
     if tax is not None and tax.ok:
         tid, sci, rank, how = tax.resolve(disp)
         if tid:
+            # A placeholder resolves to its PARENT (the qualifier tail is trimmed),
+            # which is detectable: the raw string differs from the scientific name
+            # it landed on. Keep it as its own node and remember the parent so a
+            # containment link can be added.
+            if (SPLIT_PLACEHOLDERS and PLACEHOLDER.search(disp)
+                    and not NOT_PLACEHOLDER.search(disp)
+                    and disp.lower() != (sci or "").lower()):
+                # The placeholder key must collapse EVERY separator style, not
+                # just the underscore, and must drop NCBI's "misplaced genus"
+                # brackets. Keying on `_`->space alone split 12 concepts across
+                # two nodes apiece: "Ruminococcaceae_UCG_002" vs
+                # "Ruminococcaceae UCG-002", "[Ruminococcus] gnavus group" vs
+                # "Ruminococcus_gnavus_group", "Christensenellaceae_R_7_group"
+                # vs "Christensenellaceae R-7 group". This is the SAME defect
+                # fixed for the unresolved path on 2026-09-08 (see the comment
+                # at the separator collapse below); the placeholder branch
+                # returns before reaching it and kept the old behaviour.
+                # Two of the twelve are one paper reporting one taxon under two
+                # spellings, so the graph counted a single study twice.
+                key = "ph:" + _sep_key(disp)
+                PLACEHOLDER_PARENT[key] = tid
+                return key, disp, "clade", "placeholder"
             return f"ncbi:{tid}", sci, (rank or "no rank"), how
     # --- fallback: string folding only ---
     key = disp.lower()
@@ -116,9 +304,23 @@ def norm_taxon(t, tax=None):
         key = key[m.end():]
         disp = disp[m.end():]
     key = re.sub(r"^[a-z]__", "", key)
-    key = re.sub(r"\s+", " ", key).strip()
+    # Collapse every separator style to one space BEFORE keying. Hyphen, en dash,
+    # em dash, slash and underscore are all used in this corpus for the same
+    # "A and/or B" join, and keying on them literally is what split one concept
+    # across four nodes: "Escherichia-Shigella", "Escherichia/Shigella" and
+    # "Escherichia–Shigella" (en dash) were three separate unresolved taxa, while
+    # "Escherichia_Shigella" was folded into Escherichia outright. This only
+    # affects the UNRESOLVED path -- anything the taxonomy resolved has already
+    # returned above -- so it cannot merge two taxa NCBI told us apart.
+    # The rank guess must read the string as WRITTEN, before that collapse. The
+    # "two words means a binomial" heuristic is only sound for a real space:
+    # "Escherichia-Shigella" is one written token and is not a species, but
+    # collapsing first makes it two and silently reranked ~50 unresolved nodes
+    # from genus to species. Caught by diffing the rebuild, not by reading this.
+    rank_src = re.sub(r"\s+", " ", key).strip()
+    key = _sep_key(key)
     if rank is None:
-        if len(key.split()) >= 2:
+        if len(rank_src.split()) >= 2:
             rank = "species"
         else:
             for pat, r in RANK_SUFFIX:
@@ -127,6 +329,25 @@ def norm_taxon(t, tax=None):
                     break
             rank = rank or "genus"
     return key, disp, rank, "unresolved"
+
+
+def load_body_sites():
+    """title -> sampled body site, for ALL contributing papers (see body_site.py).
+
+    Deliberately an edge ATTRIBUTE, not part of the edge key. Keying on site was
+    the top lever out of the adjudication, and it was tested and rejected: the
+    corpus is 97.9% gut (6 non-gut papers in 281), so keying would fragment 58
+    mixed edges into singletons to separate evidence that, on a metric sensitive
+    enough to see it, moves mean concordance with Disbiome by -0.007 (p = 0.131,
+    minimum detectable 0.010) and with Peryton by -0.005 (p = 0.283) -- a null,
+    and in the OPPOSITE direction to the hypothesis that oral studies were
+    dragging agreement down. As an attribute it still lets a consumer filter to
+    gut-only evidence, which is the part that was actually worth having.
+    """
+    path = os.path.join(HERE, "body_site.json")
+    if not os.path.exists(path):
+        return {}
+    return {t: v.get("site", "") for t, v in json.load(open(path))["papers"].items()}
 
 
 def load_study_metadata():
@@ -145,7 +366,56 @@ def load_study_metadata():
     return out
 
 
+def norm_title(s):
+    """Title key robust to the two ways the same paper entered the corpus twice."""
+    return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+
+
+def dedup_rows(rows, verbose=True):
+    """Collapse rows that are the SAME PAPER fetched twice.
+
+    12 papers were scraped once from a PubMed link and again from a PMC or
+    publisher link. The two copies' titles differ only by a trailing period
+    and/or a curly-vs-straight apostrophe ("...disease activity" vs
+    "...disease activity."; "Parkinson's" vs "Parkinson’s"), and every paper
+    key in this pipeline is the raw title string, so nothing ever collapsed
+    them. Because edge weight IS paper count, each duplicate cast two votes:
+    9 of them contribute extractions, and an edge resting on one paper could
+    present itself as replicated.
+
+    Found by the co-occurrence analysis, not by inspection: 8 paper pairs
+    inside contested edges had profile cosine of exactly 1.00.
+
+    The kept copy is the one with the most extracted taxa (the two copies are
+    reads of the same text, so the richer read is the more complete one; one
+    PMC copy is empty where its PubMed twin is not). Ties break on the title
+    string so a rebuild is deterministic.
+    """
+    groups = defaultdict(list)
+    for r in rows:
+        groups[norm_title(r.get("title"))].append(r)
+    out, dropped = [], []
+    for k in sorted(groups):
+        g = groups[k]
+        if len(g) == 1:
+            out.append(g[0])
+            continue
+        g = sorted(g, key=lambda r: (-(len(parse_taxa(r.get("predicted_enriched"))) +
+                                       len(parse_taxa(r.get("predicted_depleted")))),
+                                     r.get("title", "")))
+        out.append(g[0])
+        dropped.extend(g[1:])
+    if verbose and dropped:
+        print(f"deduplicated {len(dropped)} duplicate paper copies "
+              f"({len(rows)} -> {len(out)} rows)")
+    # preserve the input ordering of the kept rows
+    keep = {id(r) for r in out}
+    return [r for r in rows if id(r) in keep], dropped
+
+
 def build(rows, min_papers=1, tax=None):
+    global BODY_SITE
+    BODY_SITE = load_body_sites()
     ev = defaultdict(list)
     taxon_disp, taxon_rank, taxon_how = {}, {}, {}
     aliases = defaultdict(set)          # node key -> every surface string that folded into it
@@ -168,19 +438,40 @@ def build(rows, min_papers=1, tax=None):
 
     edges = []
     for (taxon, disease, mondo), obs in ev.items():
-        c = Counter(o["dir"] for o in obs)
+        # Papers, not observations. A paper that lists the same taxon twice --
+        # literally "Coriobacteriaceae, Coriobacteriaceae", or "Ruminococcus" and
+        # "Ruminococcus sp" folding to one taxid -- must still cast ONE vote in
+        # that direction. This was previously true of `papers` and `evidence` but
+        # NOT of n_up/n_down, which counted raw observations and so inflated the
+        # evidence count on 44 of 1,985 edges (2.2%) and the consistency ratio
+        # with it. It changes no edge's verdict (measured: 0 of 1,985 flip
+        # direction or contested status), so nothing downstream moves -- but
+        # "edge weight is evidence count" has to mean what it says.
+        c = Counter({d: len({o["paper"] for o in obs if o["dir"] == d})
+                     for d in ("enriched", "depleted")})
         up, dn = c["enriched"], c["depleted"]
         n = up + dn
         if n < min_papers:
             continue
-        # papers, not observations: the same paper naming a taxon twice is one vote
         papers = {o["paper"] for o in obs}
         # per-paper direction, so the UI can show WHICH studies said what
         evidence = {}
         for o in obs:
             evidence[o["paper"]] = o["dir"]
         consistency = max(up, dn) / n
+        # sorted(papers), not papers: `papers` is a set of title strings, so its
+        # iteration order is randomised per process by PYTHONHASHSEED, and a
+        # Counter keeps insertion order. That made `sites` key order vary between
+        # runs on the ~30 multi-site edges -- identical content, different bytes.
+        # Harmless in itself, but it meant the project's own verification rule
+        # ("rebuild TWICE and diff") reported a difference on every single build,
+        # which is how a real self-erasing fix would have been waved through.
+        # Everything else emitted here is already sorted; this was the omission.
+        sites = Counter(BODY_SITE.get(p, "") for p in sorted(papers))
+        sites.pop("", None)
         edges.append({
+            "sites": dict(sites),
+            "gut_only": bool(sites) and not (set(sites) - {"stool", "gut biopsy"}),
             "taxon": taxon_disp.get(taxon, taxon), "taxon_key": taxon,
             "rank": taxon_rank.get(taxon, ""),
             "resolved": taxon_how.get(taxon) != "unresolved",
@@ -198,7 +489,19 @@ def build(rows, min_papers=1, tax=None):
     nodes = (
         [{"id": f"t:{k}", "label": taxon_disp[k], "type": "taxon",
           "taxid": k.split(":")[1] if k.startswith("ncbi:") else None,
-          "resolved": taxon_how[k] != "unresolved",
+          # "resolved" means "has an NCBI taxid". A placeholder deliberately has
+          # none -- it is positioned by its containment link to the parent, not by
+          # an id -- so it must not inflate the resolved count.
+          "resolved": taxon_how[k] not in ("unresolved", "placeholder"),
+          "placeholder": taxon_how[k] == "placeholder",
+          # Record the parent taxid ON the placeholder node. Without it the only
+          # record of the parent is the containment link, which exists only when
+          # the parent is ITSELF a node -- so "Polaribacter_1" (no other
+          # Polaribacter edge in the corpus) lost its parent on rebuild and
+          # decayed into a plain unresolved string node. Storing it makes the
+          # replay cache's round-trip exact instead of reconstructed.
+          **({"parent_taxid": PLACEHOLDER_PARENT[k]}
+             if taxon_how[k] == "placeholder" and k in PLACEHOLDER_PARENT else {}),
           "aliases": sorted(aliases[k]),
           "rank": taxon_rank[k], "degree": tax_deg[k]} for k in tax_deg]
         + [{"id": f"d:{d}", "label": d, "type": "disease",
@@ -214,11 +517,46 @@ def build(rows, min_papers=1, tax=None):
     # Roseburia, Blautia, Hungatella in Parkinson's). Without an explicit link
     # these are unrelated nodes and the graph cannot express that one contains
     # the other -- which matters because containment is NOT redundancy: in this
-    # corpus Lachnospiraceae is depleted (15 papers) while Hungatella inside it
+    # corpus Lachnospiraceae is depleted (8 of 9 papers) while Hungatella inside it
     # is enriched (7). A family shrinking while one genus grows is ordinary
     # biology, and only survives if the nesting is represented rather than
     # collapsed. So we add parent_of edges and let consumers roll up or not.
     hierarchy = []
+    # Placeholder nodes hang off the parent they were previously merged INTO, so
+    # the containment they always had is now explicit instead of implicit.
+    node_ids = {f"t:{k}" for k in tax_deg}
+    for key, parent_tid in PLACEHOLDER_PARENT.items():
+        child, parent = f"t:{key}", f"t:ncbi:{parent_tid}"
+        if child in node_ids and parent in node_ids:
+            hierarchy.append({"parent": parent, "child": child,
+                              "parent_rank": (tax.rank.get(parent_tid, "")
+                                              if tax is not None and tax.ok else ""),
+                              "child_rank": "clade"})
+    # Orphan nodes whose own LABEL names their parent. `taxonomy.py` can give
+    # these no lineage (they resolve to no taxid at all) and the placeholder
+    # branch above only fires for labels the taxonomy DID resolve, so they sat
+    # detached from the containment layer entirely. The mapping is curated, not
+    # inferred, because a substring rule would link four bacteriophages into the
+    # genus they infect -- see orphan_parents.py, where the refusals are
+    # recorded with their reasons.
+    n_orphan_links = 0
+    _op = os.path.join(HERE, "orphan_parents.json")
+    if os.path.exists(_op):
+        for l in json.load(open(_op))["links"]:
+            child, parent = l["child_id"], l["parent_id"]
+            if child in node_ids and parent in node_ids:
+                hierarchy.append({"parent": parent, "child": child,
+                                  "parent_rank": l.get("parent_rank") or "",
+                                  "child_rank": "clade",
+                                  "source": "curated_orphan_parent"})
+                n_orphan_links += 1
+        print(f"orphan parent links added: {n_orphan_links} "
+              f"(curated; see orphan_parents.py)")
+    else:
+        print("note: orphan_parents.json absent -- 14 label-recoverable orphan "
+              "taxa will have no parent link. Regenerate with "
+              "`python3 orphan_parents.py`.")
+
     if tax is not None and tax.ok:
         tids = [n["taxid"] for n in nodes if n["type"] == "taxon" and n.get("taxid")]
         lineage = {t: tax.lineage(t) for t in tids}
@@ -239,25 +577,318 @@ def build(rows, min_papers=1, tax=None):
     for e in edges:
         for o in e.get("papers", []):
             link_by_title.setdefault(o, "")
+    mm = load_methods_metadata()
     papers_tbl = []
     for t in titles:
         m = md.get(t, {})
-        papers_tbl.append({
+        row = {
             "title": t,
             "country": m.get("country", ""),
             "n_cases": m.get("n_cases", 0),
             "n_controls": m.get("n_controls", 0),
             "seq": m.get("sequencing", ""),
-            "site": m.get("body_site", ""),
+            "site": BODY_SITE.get(t, m.get("body_site", "")),
             "region": m.get("region_16S", ""),
             "med": m.get("medication_controlled"),
             "diet": m.get("diet_controlled"),
             "has_meta": t in md,
-        })
+        }
+        row.update(methods_fields(mm.get(norm_title_key(t))))
+        papers_tbl.append(row)
     for e in edges:
         e["ev"] = [{"i": pidx[x["t"]], "d": x["d"][0]} for x in e["evidence"]]
         del e["evidence"]
+    annotate_specificity(nodes, edges)
+    annotate_rank_conflicts(nodes, edges, hierarchy)
+    annotate_confidence(edges)
+    annotate_methods_diversity(edges, papers_tbl)
     return nodes, edges, hierarchy, papers_tbl
+
+
+def norm_title_key(t):
+    return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()
+
+
+def load_methods_metadata(path=None):
+    """Wet-lab / bioinformatics variables per paper, from methods_metadata.py.
+
+    Joined on the normalised title, NOT on the `paper` index those records also
+    carry -- that index points into whatever paper table existed when the file was
+    written and silently goes stale the moment the corpus changes.
+    """
+    path = path or os.path.join(HERE, "methods_metadata.json")
+    if not os.path.exists(path):
+        return {}
+    with open(path) as fh:
+        data = json.load(fh)
+    return {r["title_key"]: r for r in data.get("records", [])
+            if r.get("title_key") and r.get("have_text")}
+
+
+# Only the families worth carrying into the viewer. `multiple_testing` and
+# `amplicon_region` are omitted: the first is near-binary and the second already
+# has a column from the LLM pass.
+METHODS_FIELDS = [("kit", "extraction_kit"), ("platform", "platform"),
+                  ("pipeline", "pipeline"), ("feature", "feature_type"),
+                  ("da", "diff_abundance"), ("norm", "normalisation")]
+
+
+def methods_fields(rec):
+    """Flatten one methods record into compact, sorted list fields."""
+    if not rec:
+        return {k: [] for k, _ in METHODS_FIELDS} | {"has_methods": False}
+    out = {k: sorted(rec.get(src) or []) for k, src in METHODS_FIELDS}
+    out["has_methods"] = True
+    return out
+
+
+def annotate_methods_diversity(edges, papers_tbl):
+    """How methodologically independent is the evidence behind each edge?
+
+    WHY THIS AND NOT A QUALITY SCORE. `methods_discordance.py` tested fifteen of
+    these variables against whether a paper disagrees with the literature and
+    every one was null, so none of them earns a place as a predictor of
+    correctness. What they DO support is a distinction a reader actually needs:
+    six papers agreeing while all running the same kit and the same pipeline are
+    six looks through one instrument, and six agreeing across different pipelines
+    are closer to six independent measurements. That is provenance, and it is
+    reported as counts rather than folded into a score, for the same reason edge
+    weight is evidence count and not effect size.
+
+    Adds, per edge:
+      n_methods_papers   supporting papers for which methods were recoverable
+      n_pipelines / n_kits / n_platforms   distinct values among them
+      methods_diversity  "single-method" | "multi-method" | "unknown"
+    """
+    for e in edges:
+        rows = [papers_tbl[o["i"]] for o in e["ev"]]
+        known = [r for r in rows if r.get("has_methods")]
+        pipes = {tuple(r["pipeline"]) for r in known if r["pipeline"]}
+        kits = {tuple(r["kit"]) for r in known if r["kit"]}
+        plats = {tuple(r["platform"]) for r in known if r["platform"]}
+        e["n_methods_papers"] = len(known)
+        e["n_pipelines"] = len(pipes)
+        e["n_kits"] = len(kits)
+        e["n_platforms"] = len(plats)
+        if len(known) < 2 or not (pipes or kits):
+            e["methods_diversity"] = "unknown"
+        elif len(pipes) <= 1 and len(kits) <= 1:
+            e["methods_diversity"] = "single-method"
+        else:
+            e["methods_diversity"] = "multi-method"
+
+
+# Measured agreement with the two curated databases, per tier, from
+# calibrate_agreement.py / FINDINGS_independence.md. These are OBSERVED rates on
+# the decisive pairs each database judges, not model outputs, and they are
+# carried here so the viewer can quote a number it did not invent. The two
+# columns are independent references and they agree, which is the only check
+# available on tier boundaries that were chosen after seeing Disbiome.
+CONFIDENCE_RATES = {
+    "well-supported": {"disbiome": 0.938, "peryton": 0.933,
+                       "n_disbiome": 32, "n_peryton": 30},
+    "supported": {"disbiome": 0.778, "peryton": 0.833,
+                  "n_disbiome": 27, "n_peryton": 24},
+    "provisional": {"disbiome": 0.661, "peryton": 0.619,
+                    "n_disbiome": 115, "n_peryton": 84},
+    "contested": {"disbiome": None, "peryton": None,
+                  "n_disbiome": 0, "n_peryton": 0},
+}
+
+
+def annotate_confidence(edges):
+    """Tier each edge by how often edges like it agree with independent curation.
+
+    WHY. The 2026-09-09 calibration found that edge properties predict external
+    agreement, and that the graph's headline 73% hides a wide spread: edges from
+    >=3 papers agree 92-94% with Disbiome and Peryton, single-paper edges 62-66%.
+    A reader looking at one edge has no way to tell those apart, and the viewer
+    encodes evidence count as bar length -- which reads as "how much" rather than
+    "how much to trust it". So the tier is stated outright.
+
+    The tier uses only properties of the edge itself, never the external
+    databases, so it is deterministic and computable for all 2,034 edges
+    including the ~1,800 no curation judges.
+
+      contested       the papers disagree; the graph asserts no direction
+      provisional     one paper, OR a taxon that points different ways in
+                      different diseases (`discriminating`, purity <= 0.6 --
+                      the strongest single predictor of external disagreement)
+      supported       two papers agreeing
+      well-supported  three or more papers agreeing
+
+    The `discriminating` demotion earns its place empirically: without it,
+    well-supported agreement is 91.7%/90.6%; with it, 93.8%/93.3%, in both
+    databases. It moves four pairs and all four were wrong.
+
+    HONEST LIMIT, and it belongs next to the numbers: the cuts were chosen after
+    looking at the Disbiome split, so the Disbiome rates are in-sample. Peryton
+    is the out-of-sample check and reproduces them (93.3 / 83.3 / 61.9). Computed
+    inside build() rather than as a sidecar so it cannot drift from the edges it
+    describes or self-erase on rebuild -- the same reasoning as
+    annotate_specificity.
+    """
+    for e in edges:
+        if e["contested"]:
+            tier = "contested"
+        elif e.get("taxon_class") == "discriminating":
+            tier = "provisional"
+        elif e["n_papers"] >= 3:
+            tier = "well-supported"
+        elif e["n_papers"] == 2:
+            tier = "supported"
+        else:
+            tier = "provisional"
+        e["confidence"] = tier
+
+
+def annotate_rank_conflicts(nodes, edges, hierarchy):
+    """Flag the parent/child pairs that point opposite ways in the same disease.
+
+    WHY. Not collapsing taxonomic ranks is this project's most load-bearing
+    design decision, and until 2026-09-06 it was justified by one anecdote.
+    `FINDINGS_rank_conflict.md` measured it: of 241 opposite-direction
+    parent/child pairs sharing a disease, only 33 are asserted INSIDE a single
+    study -- 189 rest on no shared paper at all, the family measured by one set
+    of studies and the genus by another. Those 33 are the real argument for the
+    containment layer and nothing in the graph pointed at them.
+
+    The verdict distinction is the whole point and must not be flattened:
+
+      within_paper      one study reports the family down and the genus up. This
+                        CANNOT be rank confusion -- same authors, same cohort,
+                        same pipeline produced both numbers. 33 of these.
+      cross_paper_only  studies measured both and AGREED; the conflict comes
+                        from papers that measured only one side.
+      no_shared_paper   no study ever measured both. The weakest kind: an
+                        artefact of pooling, not a disagreement anyone stated.
+
+    Computed inside build() from the edges just built, deliberately not as a
+    sidecar reading rank_conflict.json, so it cannot drift out of sync with the
+    graph or self-erase on rebuild -- the same reasoning as annotate_specificity.
+    """
+    by_node = defaultdict(dict)
+    for e in edges:
+        by_node[e["source"]][e["disease"]] = e
+    label = {n["id"]: n.get("label", n["id"]) for n in nodes}
+
+    def majority(e):
+        return "e" if e["n_up"] > e["n_down"] else ("d" if e["n_down"] > e["n_up"] else None)
+
+    for e in edges:
+        e["rank_conflicts"] = []
+    for h in hierarchy:
+        for P, C, rel in ((h["parent"], h["child"], "child"),
+                          (h["child"], h["parent"], "parent")):
+            for dis in sorted(set(by_node.get(P, {})) & set(by_node.get(C, {}))):
+                pe, ce = by_node[P][dis], by_node[C][dis]
+                pm, cm = majority(pe), majority(ce)
+                if pm is None or cm is None or pm == cm:
+                    continue
+                pdir = {ev["i"]: ev["d"] for ev in pe["ev"]}
+                cdir = {ev["i"]: ev["d"] for ev in ce["ev"]}
+                both = sorted(set(pdir) & set(cdir))
+                within = [i for i in both if pdir[i] != cdir[i]]
+                pe["rank_conflicts"].append({
+                    "other": label.get(C, C),
+                    "other_key": ce["taxon_key"],
+                    "other_rank": ce.get("rank", ""),
+                    "rel": rel,                      # C is this edge's parent/child
+                    "other_direction": ce["direction"],
+                    "other_papers": ce["n_papers"],
+                    "n_shared": len(both),
+                    "verdict": ("within_paper" if within else
+                                "cross_paper_only" if both else "no_shared_paper"),
+                    "witnesses": within[:3],         # paper-table indices
+                })
+    for e in edges:
+        e["rank_conflicts"].sort(key=lambda c: (c["verdict"] != "within_paper",
+                                                -c["other_papers"], c["other"]))
+        e["has_within_paper_conflict"] = any(
+            c["verdict"] == "within_paper" for c in e["rank_conflicts"])
+
+
+def annotate_specificity(nodes, edges):
+    """Mark how disease-specific each taxon's direction is.
+
+    WHY. The 2026-09-05 analysis (`FINDINGS_disease_specificity.md`) found that
+    ~70% of the directional agreement in this graph is a corpus-wide prior rather
+    than disease-specific signal: 59 of 187 taxa reported in >=3 diseases never
+    flip direction. *Streptococcus* is enriched in all 12 diseases that report
+    it. So "Streptococcus enriched in Parkinson's, 5 papers" reads as a
+    Parkinson's finding when it is really a statement about Streptococcus, and
+    nothing in the graph said so.
+
+    Edge weight already answers "how much evidence"; these fields answer the
+    different question "how much of it is about THIS disease". They are derived
+    purely from the edges just built, so they cannot drift out of sync with them.
+
+    Per taxon, counting one vote per disease (a disease whose own edge is
+    contested casts no vote, since it has no direction to contribute):
+      breadth  -- number of diseases casting a vote
+      purity   -- max(up_diseases, down_diseases) / breadth
+      class    -- generic       : breadth >= 3 and purity == 1.0
+                  discriminating: breadth >= 3 and purity <= 0.6
+                  mixed         : breadth >= 3, in between
+                  narrow        : breadth < 3, too few diseases to say
+    The >=3 floor and the 0.6 cut are reporting thresholds, not test results;
+    the underlying counts are emitted so any other cut can be applied.
+
+    Note the vote rule differs deliberately from the exploratory version in
+    `disease_specificity.py`, which let a contested disease still vote by its
+    majority. Here a contested edge casts no vote at all: if a disease's own
+    papers disagree, it has no settled direction to contribute. That is the
+    stricter reading and it moves a few counts (Streptococcus is generic across
+    11 diseases here, 12 there). Every taxon is annotated either way, so a taxon
+    whose every edge is contested gets breadth 0 rather than a missing field --
+    an absent field is a trap for whatever consumes this.
+    """
+    votes = defaultdict(lambda: {"e": 0, "d": 0})
+    for e in edges:
+        votes[e["taxon_key"]]  # ensure every taxon appears, even if all-contested
+        if e["contested"]:
+            continue
+        votes[e["taxon_key"]]["e" if e["direction"] == "enriched" else "d"] += 1
+
+    stats = {}
+    for t, v in votes.items():
+        breadth = v["e"] + v["d"]
+        purity = max(v["e"], v["d"]) / breadth if breadth else 0.0
+        if breadth < 3:
+            cls = "narrow"
+        elif purity == 1.0:
+            cls = "generic"
+        elif purity <= 0.6:
+            cls = "discriminating"
+        else:
+            cls = "mixed"
+        stats[t] = {
+            "breadth": breadth,
+            "n_diseases_enriched": v["e"],
+            "n_diseases_depleted": v["d"],
+            "purity": round(purity, 3),
+            "consensus": "enriched" if v["e"] > v["d"] else
+                         ("depleted" if v["d"] > v["e"] else "split"),
+            "class": cls,
+        }
+
+    for n in nodes:
+        if n["type"] != "taxon":
+            continue
+        s = stats.get(n["id"].split("t:", 1)[-1])
+        if s:
+            n["specificity"] = s
+    for e in edges:
+        s = stats.get(e["taxon_key"])
+        if not s:
+            continue
+        e["taxon_breadth"] = s["breadth"]
+        e["taxon_purity"] = s["purity"]
+        e["taxon_class"] = s["class"]
+        # Does this edge merely restate the taxon's corpus-wide tendency?
+        e["restates_prior"] = bool(
+            not e["contested"] and s["class"] == "generic"
+            and e["direction"] == s["consensus"])
 
 
 def main():
@@ -266,23 +897,50 @@ def main():
     ap.add_argument("--min-papers", type=int, default=1,
                     help="drop edges supported by fewer than N papers")
     ap.add_argument("--out", default=os.path.join(HERE, "graph.json"))
+    # Default ON: merging a UCG placeholder into its parent family is a rank
+    # collapse, and it manufactured the worst false contradiction in the graph
+    # (see FINDINGS_task3_adjudication.md). --merge-placeholders restores the old
+    # behaviour for comparison.
+    ap.add_argument("--merge-placeholders", dest="split_placeholders",
+                    action="store_false", default=True,
+                    help="OLD behaviour: fold rank placeholders (UCG-003, ND3007 "
+                         "group) into their parent taxon instead of keeping them "
+                         "as their own node")
     ap.add_argument("--no-taxonomy", action="store_true",
                     help="skip NCBI resolution, fold on strings only")
+    # Default ON: the same paper scraped twice under two links must not cast two
+    # votes on an edge whose weight is defined as a paper count.
+    ap.add_argument("--keep-duplicate-papers", dest="dedup",
+                    action="store_false", default=True,
+                    help="OLD behaviour: keep both copies of a paper that was "
+                         "scraped twice under different links")
     a = ap.parse_args()
+    global SPLIT_PLACEHOLDERS, TAXON_TYPOS
+    SPLIT_PLACEHOLDERS = a.split_placeholders
+    TAXON_TYPOS = _load_typos()
+    print(f"taxon spelling corrections loaded: {len(TAXON_TYPOS)}")
 
     rows = json.load(open(a.input))
+    n_raw = len(rows)
+    dropped = []
+    if a.dedup:
+        rows, dropped = dedup_rows(rows)
     tax = None
     if not a.no_taxonomy:
+        # Prefer the real taxdump; fall back to replaying graph.json's recorded
+        # resolution. The old code fell straight through to string folding when the
+        # taxdump was missing, which quietly cost 681 taxid resolutions and all 625
+        # containment links while still printing a successful build.
         try:
-            from taxonomy import Taxonomy
-            tax = Taxonomy()
-            print(f"NCBI taxdump: {'loaded' if tax.ok else 'NOT FOUND -> string folding only'}")
+            from taxonomy_cache import load_taxonomy
+            tax = load_taxonomy()
         except Exception as e:
             print(f"taxonomy unavailable ({e.__class__.__name__}) -> string folding only")
     nodes, edges, hierarchy, papers_tbl = build(rows, a.min_papers, tax)
     meta = {
         "source": os.path.basename(a.input),
-        "papers_in": len(rows),
+        "papers_in": n_raw,
+        "papers_deduped": len(dropped),
         "papers_contributing": len({e for r in rows for e in [r["title"]]
                                     if parse_taxa(r.get("predicted_enriched")) or
                                     parse_taxa(r.get("predicted_depleted"))}),
@@ -296,6 +954,9 @@ def main():
         "n_papers_table": len(papers_tbl),
         "n_papers_with_metadata": sum(1 for p in papers_tbl if p["has_meta"]),
         "min_papers": a.min_papers,
+        "split_placeholders": a.split_placeholders,
+        "n_placeholder_nodes": sum(1 for n in nodes
+                                   if n["type"] == "taxon" and str(n.get("id","")).startswith("t:ph:")),
         "note": ("Edge weight is evidence count, not effect size: the extractor yields "
                  "direction only and the source papers report incommensurable statistics. "
                  "Contested edges are retained, never merged away."),

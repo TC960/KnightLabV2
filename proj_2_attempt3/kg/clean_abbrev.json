@@ -1,0 +1,2239 @@
+{
+ "mentions_reassigned": 84,
+ "mentions_kept_already_correct": 29,
+ "mentions_dropped": 117,
+ "mentions_unambiguous_untouched": 179,
+ "mentions_species_protected": 365,
+ "sentences_before": 7545,
+ "sentences_after": 7509,
+ "sentences_dropped": 36,
+ "n_curated_epithets": 77,
+ "refused": {
+  "bacterium": "not a species epithet; 'E. bacterium' is a parse artefact of '...Eubacterium bacterium...' or a truncated label",
+  "sp": "'X. sp' is a genus-level placeholder, already handled by norm_taxon",
+  "spp": "as above",
+  "species": "generic word, not an epithet",
+  "difficile_toxin": "names a toxin, not an organism",
+  "pneumoniae_ambiguous": "'K. pneumoniae' and 'S. pneumoniae' are different organisms sharing an epithet; resolved by the paper's own initial, never by the epithet alone"
+ },
+ "actions": [
+  {
+   "action": "REASSIGN",
+   "surface": "B.\u00a0xylanisolvens",
+   "from": "Blautia",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "Gut microbiota and metabolites are linked to disease progression in multiple sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "A. hallii",
+   "from": "Alistipes",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Anaerobutyricum",
+    "Eubacterium"
+   ],
+   "candidates": [
+    "Akkermansia",
+    "Alistipes"
+   ],
+   "paper": "Gut microbiota and metabolites are linked to disease progression in multiple sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "A. butyriciproducens",
+   "from": "Alistipes",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Akkermansia",
+    "Alistipes"
+   ],
+   "paper": "Gut microbiota and metabolites are linked to disease progression in multiple sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "E.\u00a0bacterium",
+   "from": "Eggerthella",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Eggerthella",
+    "Eubacterium"
+   ],
+   "paper": "Gut microbiota and metabolites are linked to disease progression in multiple sclerosis."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. adolescentis",
+   "from": "Blautia",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. adolescentis",
+   "from": "Blautia",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. stercoris",
+   "from": "Blautia",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "Specific microbial ratio in the gut microbiome is associated with multiple sclerosis."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. rectale",
+   "from": "Escherichia",
+   "to": "Eubacterium",
+   "taxid": "1730",
+   "paper": "Association of brain amyloidosis with pro-inflammatory gut bacterial taxa and peripheral inflammation markers in cognitively impaired elderly."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. rectale",
+   "from": "Escherichia",
+   "to": "Eubacterium",
+   "taxid": "1730",
+   "paper": "Association of brain amyloidosis with pro-inflammatory gut bacterial taxa and peripheral inflammation markers in cognitively impaired elderly."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. rectale",
+   "from": "Escherichia",
+   "to": "Eubacterium",
+   "taxid": "1730",
+   "paper": "Association of brain amyloidosis with pro-inflammatory gut bacterial taxa and peripheral inflammation markers in cognitively impaired elderly."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. longum",
+   "from": "Blautia",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. adolescentis",
+   "from": "Blautia",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+  },
+  {
+   "action": "DROP",
+   "surface": "R. lactatiformans",
+   "from": "Roseburia",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Roseburia",
+    "Rothia",
+    "Ruminococcus"
+   ],
+   "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. bifidum",
+   "from": "Blautia",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. longum",
+   "from": "Blautia",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. bifidum",
+   "from": "Blautia",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. adolescentis",
+   "from": "Blautia",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+  },
+  {
+   "action": "DROP",
+   "surface": "E. coli",
+   "from": "Eubacterium",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Escherichia"
+   ],
+   "candidates": [
+    "Enterobacter",
+    "Eubacterium"
+   ],
+   "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. longum",
+   "from": "Blautia",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. adolescentis",
+   "from": "Blautia",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+  },
+  {
+   "action": "DROP",
+   "surface": "P. endodontalis",
+   "from": "Prevotella",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Porphyromonas",
+    "Prevotella"
+   ],
+   "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "P. gingivalis",
+   "from": "Prevotella",
+   "to": "Porphyromonas",
+   "taxid": "836",
+   "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. uniformis",
+   "from": "Blautia",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+  },
+  {
+   "action": "DROP",
+   "surface": "E. coli",
+   "from": "Eubacterium",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Escherichia"
+   ],
+   "candidates": [
+    "Enterobacter",
+    "Eubacterium"
+   ],
+   "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. jejuni",
+   "from": "Clostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Campylobacter",
+    "Clostridium",
+    "Coprococcus"
+   ],
+   "paper": "Perturbed Microbiota/Immune Homeostasis in Multiple Sclerosis."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. wexlerae",
+   "from": "Bacteroides",
+   "to": "Blautia",
+   "taxid": "572511",
+   "paper": "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. longum",
+   "from": "Bacteroides",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. longum",
+   "from": "Bacteroides",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. longum",
+   "from": "Bacteroides",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. longum",
+   "from": "Bacteroides",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. longum",
+   "from": "Bacteroides",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. wexlerae",
+   "from": "Bacteroides",
+   "to": "Blautia",
+   "taxid": "572511",
+   "paper": "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. wexlerae",
+   "from": "Bacteroides",
+   "to": "Blautia",
+   "taxid": "572511",
+   "paper": "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. wadsworthia",
+   "from": "Bacteroides",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Bilophila"
+   ],
+   "candidates": [
+    "Bacteroides",
+    "Bifidobacterium",
+    "Blautia"
+   ],
+   "paper": "Metabolic modeling links gut microbiota to metabolic markers of Parkinson's disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "R. and",
+   "from": "Roseburia",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Roseburia",
+    "Ruminiclostridium",
+    "Ruminococcus"
+   ],
+   "paper": "Gut Microbiota as a Potential Predictive Biomarker in Relapsing-Remitting Multiple Sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "P. and",
+   "from": "Parabacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Parabacteroides",
+    "Phascolarctobacterium",
+    "Porphyromonas",
+    "Prevotella"
+   ],
+   "paper": "Gut Microbiota as a Potential Predictive Biomarker in Relapsing-Remitting Multiple Sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "P. and",
+   "from": "Parabacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Parabacteroides",
+    "Phascolarctobacterium",
+    "Porphyromonas",
+    "Prevotella"
+   ],
+   "paper": "Gut Microbiota as a Potential Predictive Biomarker in Relapsing-Remitting Multiple Sclerosis."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "R. gnavus",
+   "from": "Roseburia",
+   "to": "Ruminococcus",
+   "taxid": "1263",
+   "paper": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "R. gnavus",
+   "from": "Roseburia",
+   "to": "Ruminococcus",
+   "taxid": "1263",
+   "paper": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "R.\u00a0gnavus",
+   "from": "Roseburia",
+   "to": "Ruminococcus",
+   "taxid": "1263",
+   "paper": "Plasma and feces multiomics unveil cognition-associated perturbations of chronic inflammatory pathways of the gut-microbiota-brain axis."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. hungatei",
+   "from": "Bacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Barnesiella",
+    "Blautia",
+    "Butyrivibrio"
+   ],
+   "paper": "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the Anti-Inflammatory P-Glycoprotein Pathway."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. proteoclasticus",
+   "from": "Bacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Barnesiella",
+    "Blautia",
+    "Butyrivibrio"
+   ],
+   "paper": "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the Anti-Inflammatory P-Glycoprotein Pathway."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. hungatei",
+   "from": "Bacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Barnesiella",
+    "Blautia",
+    "Butyrivibrio"
+   ],
+   "paper": "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the Anti-Inflammatory P-Glycoprotein Pathway."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. hungatei",
+   "from": "Bacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Barnesiella",
+    "Blautia",
+    "Butyrivibrio"
+   ],
+   "paper": "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the Anti-Inflammatory P-Glycoprotein Pathway."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. proteoclasticus",
+   "from": "Bacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Barnesiella",
+    "Blautia",
+    "Butyrivibrio"
+   ],
+   "paper": "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the Anti-Inflammatory P-Glycoprotein Pathway."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "P. gingivalis",
+   "from": "Phascolarctobacterium",
+   "to": "Porphyromonas",
+   "taxid": "836",
+   "paper": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "P. gingivalis",
+   "from": "Phascolarctobacterium",
+   "to": "Porphyromonas",
+   "taxid": "836",
+   "paper": "A comparison of the composition and functions of the oral and gut microbiotas in Alzheimer\u2019s patients"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. fragilis",
+   "from": "Bifidobacterium",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "Gut microbiota in Parkinson's disease: Temporal stability and relations to disease progression."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "A. muciniphila",
+   "from": "Acidaminococcus",
+   "to": "Akkermansia",
+   "taxid": "239934",
+   "paper": "Primary progressive multiple sclerosis in a Russian cohort: relationship with gut bacterial diversity."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "A. muciniphila",
+   "from": "Anaerotruncus",
+   "to": "Akkermansia",
+   "taxid": "239934",
+   "paper": "Parkinson\u2019s disease-associated alterations of the gut microbiome predict disease-relevant changes in metabolic functions"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "A. muciniphila",
+   "from": "Anaerotruncus",
+   "to": "Akkermansia",
+   "taxid": "239934",
+   "paper": "Parkinson\u2019s disease-associated alterations of the gut microbiome predict disease-relevant changes in metabolic functions"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "A. muciniphila",
+   "from": "Anaerotruncus",
+   "to": "Akkermansia",
+   "taxid": "239934",
+   "paper": "Parkinson\u2019s disease-associated alterations of the gut microbiome predict disease-relevant changes in metabolic functions"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "A. muciniphila",
+   "from": "Anaerotruncus",
+   "to": "Akkermansia",
+   "taxid": "239934",
+   "paper": "Parkinson\u2019s disease-associated alterations of the gut microbiome predict disease-relevant changes in metabolic functions"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "A. muciniphila",
+   "from": "Anaerotruncus",
+   "to": "Akkermansia",
+   "taxid": "239934",
+   "paper": "Parkinson\u2019s disease-associated alterations of the gut microbiome predict disease-relevant changes in metabolic functions"
+  },
+  {
+   "action": "DROP",
+   "surface": "B. and",
+   "from": "Bacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Bifidobacterium",
+    "Blautia",
+    "Butyricicoccus"
+   ],
+   "paper": "Gut microbiota distinguishes aging hispanics with Alzheimer's disease: associations with cognitive impairment and severity."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. baratii",
+   "from": "Clostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Citrobacter",
+    "Clostridium",
+    "Coprococcus"
+   ],
+   "paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. hystoliticum",
+   "from": "Clostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Citrobacter",
+    "Clostridium",
+    "Coprococcus"
+   ],
+   "paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. prefringens",
+   "from": "Clostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Citrobacter",
+    "Clostridium",
+    "Coprococcus"
+   ],
+   "paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. botulinum",
+   "from": "Clostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Citrobacter",
+    "Clostridium",
+    "Coprococcus"
+   ],
+   "paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. tetani",
+   "from": "Clostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Citrobacter",
+    "Clostridium",
+    "Coprococcus"
+   ],
+   "paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. rodentium",
+   "from": "Clostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Citrobacter",
+    "Clostridium",
+    "Coprococcus"
+   ],
+   "paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. rodentium",
+   "from": "Clostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Citrobacter",
+    "Clostridium",
+    "Coprococcus"
+   ],
+   "paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. interstinalis",
+   "from": "Barnesiella",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Barnesiella",
+    "Bifidobacterium",
+    "Blautia",
+    "Butyricicoccus"
+   ],
+   "paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. eggerthii",
+   "from": "Barnesiella",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. intestinalis",
+   "from": "Barnesiella",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. egger",
+   "from": "Barnesiella",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Barnesiella",
+    "Bifidobacterium",
+    "Blautia",
+    "Butyricicoccus"
+   ],
+   "paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. intestinalis",
+   "from": "Barnesiella",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. eggerthii",
+   "from": "Barnesiella",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. eggerthii",
+   "from": "Barnesiella",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. intestinalis",
+   "from": "Barnesiella",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. fluxus",
+   "from": "Barnesiella",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Barnesiella",
+    "Bifidobacterium",
+    "Blautia",
+    "Butyricicoccus"
+   ],
+   "paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. intestinalis",
+   "from": "Barnesiella",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. fluxus",
+   "from": "Barnesiella",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Barnesiella",
+    "Bifidobacterium",
+    "Blautia",
+    "Butyricicoccus"
+   ],
+   "paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. fragilis",
+   "from": "Barnesiella",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "Microbial diversity in drug-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. and",
+   "from": "Clostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Clostridium",
+    "Coprococcus"
+   ],
+   "paper": "Fecal Volatile Organic Compounds and Microbiota Associated with the Progression of Cognitive Impairment in Alzheimer's Disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "R. and",
+   "from": "Ruminococcus",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Roseburia",
+    "Ruminococcus"
+   ],
+   "paper": "Fecal Volatile Organic Compounds and Microbiota Associated with the Progression of Cognitive Impairment in Alzheimer's Disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. analyzed",
+   "from": "Clostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Clostridium",
+    "Coprococcus"
+   ],
+   "paper": "Fecal Volatile Organic Compounds and Microbiota Associated with the Progression of Cognitive Impairment in Alzheimer's Disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. shows",
+   "from": "Blautia",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bifidobacterium",
+    "Blautia"
+   ],
+   "paper": "Effects of Resistant Starch on Symptoms, Fecal Markers, and Gut Microbiota in Parkinson's Disease - The RESISTA-PD Trial."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. shows",
+   "from": "Blautia",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bifidobacterium",
+    "Blautia"
+   ],
+   "paper": "Effects of Resistant Starch on Symptoms, Fecal Markers, and Gut Microbiota in Parkinson's Disease - The RESISTA-PD Trial."
+  },
+  {
+   "action": "DROP",
+   "surface": "E. coli",
+   "from": "Eubacterium",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Escherichia"
+   ],
+   "candidates": [
+    "Eubacterium",
+    "Ezakiella"
+   ],
+   "paper": "Mycobacterium avium subspecies paratuberculosis (MAP) infection, and its impact on gut microbiome of individuals with multiple sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "E. coli",
+   "from": "Eubacterium",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Escherichia"
+   ],
+   "candidates": [
+    "Eubacterium",
+    "Ezakiella"
+   ],
+   "paper": "Mycobacterium avium subspecies paratuberculosis (MAP) infection, and its impact on gut microbiome of individuals with multiple sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "E. coli",
+   "from": "Eubacterium",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Escherichia"
+   ],
+   "candidates": [
+    "Enterococcus",
+    "Eubacterium"
+   ],
+   "paper": "Functional implications of microbial and viral gut metagenome changes in early stage L-DOPA-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "action": "DROP",
+   "surface": "E. coli",
+   "from": "Eubacterium",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Escherichia"
+   ],
+   "candidates": [
+    "Enterococcus",
+    "Eubacterium"
+   ],
+   "paper": "Functional implications of microbial and viral gut metagenome changes in early stage L-DOPA-na\u00efve Parkinson's disease patients."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. faecium",
+   "from": "Eubacterium",
+   "to": "Enterococcus",
+   "taxid": "1350",
+   "paper": "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. faecalis",
+   "from": "Eubacterium",
+   "to": "Enterococcus",
+   "taxid": "1350",
+   "paper": "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. faecium",
+   "from": "Eubacterium",
+   "to": "Enterococcus",
+   "taxid": "1350",
+   "paper": "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. faecalis",
+   "from": "Eubacterium",
+   "to": "Enterococcus",
+   "taxid": "1350",
+   "paper": "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. infantis",
+   "from": "Bifidobacterium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bifidobacterium",
+    "Blautia",
+    "Butyricimonas"
+   ],
+   "paper": "A probiotic modulates the microbiome and immunity in multiple sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "R. and",
+   "from": "Romboutsia",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Romboutsia",
+    "Ruminococcus"
+   ],
+   "paper": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet."
+  },
+  {
+   "action": "DROP",
+   "surface": "R. and",
+   "from": "Romboutsia",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Romboutsia",
+    "Ruminococcus"
+   ],
+   "paper": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet."
+  },
+  {
+   "action": "DROP",
+   "surface": "R. and",
+   "from": "Romboutsia",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Romboutsia",
+    "Ruminococcus"
+   ],
+   "paper": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet."
+  },
+  {
+   "action": "DROP",
+   "surface": "R. and",
+   "from": "Romboutsia",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Romboutsia",
+    "Ruminococcus"
+   ],
+   "paper": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet."
+  },
+  {
+   "action": "DROP",
+   "surface": "R. and",
+   "from": "Romboutsia",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Romboutsia",
+    "Ruminococcus"
+   ],
+   "paper": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet."
+  },
+  {
+   "action": "DROP",
+   "surface": "R. and",
+   "from": "Romboutsia",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Romboutsia",
+    "Ruminococcus"
+   ],
+   "paper": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet."
+  },
+  {
+   "action": "DROP",
+   "surface": "R. and",
+   "from": "Romboutsia",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Romboutsia",
+    "Ruminococcus"
+   ],
+   "paper": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. synergistica",
+   "from": "Butyricimonas",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bifidobacterium",
+    "Butyricimonas"
+   ],
+   "paper": "Alterations of the human gut microbiome in multiple sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. aerofaciens",
+   "from": "Campylobacter",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Campylobacter",
+    "Collinsella"
+   ],
+   "paper": "Alterations of the human gut microbiome in multiple sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "S. isoflavoniconvertens",
+   "from": "Sutterella",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Sarcina",
+    "Slackia",
+    "Sutterella"
+   ],
+   "paper": "Alterations of the human gut microbiome in multiple sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "S. piriformis",
+   "from": "Sutterella",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Sarcina",
+    "Slackia",
+    "Sutterella"
+   ],
+   "paper": "Alterations of the human gut microbiome in multiple sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "S. stercoricanis",
+   "from": "Sutterella",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Sarcina",
+    "Slackia",
+    "Sutterella"
+   ],
+   "paper": "Alterations of the human gut microbiome in multiple sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "S. ventriculi",
+   "from": "Sutterella",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Sarcina",
+    "Slackia",
+    "Sutterella"
+   ],
+   "paper": "Alterations of the human gut microbiome in multiple sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "S. ventriculi",
+   "from": "Sutterella",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Sarcina",
+    "Slackia",
+    "Sutterella"
+   ],
+   "paper": "Alterations of the human gut microbiome in multiple sclerosis."
+  },
+  {
+   "action": "DROP",
+   "surface": "L. amylovorus",
+   "from": "Lachnospira",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Lachnospira",
+    "Lactobacillus"
+   ],
+   "paper": "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pilot study."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. longum",
+   "from": "Bacteroides",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "The alteration of intestinal mucosal \u03b1-synuclein expression and mucosal microbiota in Parkinson's disease."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. rectale",
+   "from": "Escherichia",
+   "to": "Eubacterium",
+   "taxid": "1730",
+   "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults."
+  },
+  {
+   "action": "DROP",
+   "surface": "R. hominis",
+   "from": "Ralstonia",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Ralstonia",
+    "Roseburia",
+    "Ruminococcus"
+   ],
+   "paper": "Alterations of the Gut Microbiota in Multiple System Atrophy Patients."
+  },
+  {
+   "action": "DROP",
+   "surface": "A. onderdonkii",
+   "from": "Akkermansia",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Alistipes"
+   ],
+   "candidates": [
+    "Aggregatibacter",
+    "Akkermansia"
+   ],
+   "paper": "Alterations of the Gut Microbiota in Multiple System Atrophy Patients."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. coprocola",
+   "from": "Bifidobacterium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Bifidobacterium",
+    "Blautia"
+   ],
+   "paper": "Alterations of the Gut Microbiota in Multiple System Atrophy Patients."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. plebeius",
+   "from": "Bifidobacterium",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "Alterations of the Gut Microbiota in Multiple System Atrophy Patients."
+  },
+  {
+   "action": "DROP",
+   "surface": "E. coli",
+   "from": "Eggerthella",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Escherichia"
+   ],
+   "candidates": [
+    "Eggerthella",
+    "Eubacterium"
+   ],
+   "paper": "Gut microbiota in dementia with Lewy bodies."
+  },
+  {
+   "action": "DROP",
+   "surface": "A. indistinctus",
+   "from": "Akkermansia",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Akkermansia",
+    "Alistipes",
+    "Anaerostipes"
+   ],
+   "paper": "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive Impairment."
+  },
+  {
+   "action": "DROP",
+   "surface": "E. coli",
+   "from": "Eisenbergiella",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Escherichia"
+   ],
+   "candidates": [
+    "Eisenbergiella",
+    "Eubacterium"
+   ],
+   "paper": "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive Impairment."
+  },
+  {
+   "action": "DROP",
+   "surface": "A. indistinctus",
+   "from": "Akkermansia",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Akkermansia",
+    "Alistipes",
+    "Anaerostipes"
+   ],
+   "paper": "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive Impairment."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. orbiscindens",
+   "from": "Clostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Catenibacterium",
+    "Clostridium"
+   ],
+   "paper": "Immunotherapy-mediated modulation of the gut microbiota in multiple sclerosis and associations with diet and clinical response-the effect of dimethyl fumarate therapy."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. vadin",
+   "from": "Clostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Catenibacterium",
+    "Clostridium"
+   ],
+   "paper": "Immunotherapy-mediated modulation of the gut microbiota in multiple sclerosis and associations with diet and clinical response-the effect of dimethyl fumarate therapy."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. beta-",
+   "from": "Coprococcus",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Clostridium",
+    "Coprococcus"
+   ],
+   "paper": "CXCR3+ T cells in multiple sclerosis correlate with reduced diversity of the gut microbiome."
+  },
+  {
+   "action": "DROP",
+   "surface": "P. micra",
+   "from": "Parvimonas",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Parvimonas",
+    "Prevotella"
+   ],
+   "paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "P. pallens",
+   "from": "Parvimonas",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Parvimonas",
+    "Prevotella"
+   ],
+   "paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "P. melaninogenica",
+   "from": "Parvimonas",
+   "to": "Prevotella",
+   "taxid": "838",
+   "paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "P.micra",
+   "from": "Parvimonas",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Parvimonas",
+    "Prevotella"
+   ],
+   "paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "P. melaninogenica",
+   "from": "Parvimonas",
+   "to": "Prevotella",
+   "taxid": "838",
+   "paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "P. gingivalis",
+   "from": "Parvimonas",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Porphyromonas"
+   ],
+   "candidates": [
+    "Parvimonas",
+    "Prevotella"
+   ],
+   "paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "P. distasonis",
+   "from": "Parvimonas",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Parabacteroides"
+   ],
+   "candidates": [
+    "Parvimonas",
+    "Prevotella"
+   ],
+   "paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "P. distasonis",
+   "from": "Parvimonas",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Parabacteroides"
+   ],
+   "candidates": [
+    "Parvimonas",
+    "Prevotella"
+   ],
+   "paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "P. distasonis",
+   "from": "Parvimonas",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Parabacteroides"
+   ],
+   "candidates": [
+    "Parvimonas",
+    "Prevotella"
+   ],
+   "paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "P. gingivalis",
+   "from": "Parvimonas",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Porphyromonas"
+   ],
+   "candidates": [
+    "Parvimonas",
+    "Prevotella"
+   ],
+   "paper": "Oral and gut microbial profiling in periodontitis and Parkinson's disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "L. contributed",
+   "from": "Lachnospira",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Lachnoclostridium",
+    "Lachnospira"
+   ],
+   "paper": "Specific gut microbiota alterations in essential tremor and its difference from Parkinson's disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "S. and",
+   "from": "Shuttleworthella",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Shuttleworthella",
+    "Staphylococcus",
+    "Streptococcus",
+    "Subdoligranulum"
+   ],
+   "paper": "Differential Patterns of Gut and Oral Microbiomes in Hispanic Individuals with Cognitive Impairment."
+  },
+  {
+   "action": "DROP",
+   "surface": "S. and",
+   "from": "Shuttleworthella",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Shuttleworthella",
+    "Staphylococcus",
+    "Streptococcus",
+    "Subdoligranulum"
+   ],
+   "paper": "Differential Patterns of Gut and Oral Microbiomes in Hispanic Individuals with Cognitive Impairment."
+  },
+  {
+   "action": "DROP",
+   "surface": "C. contributed",
+   "from": "Coprococcus",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Capnocytophaga",
+    "Citrobacter",
+    "Collinsella",
+    "Coprococcus"
+   ],
+   "paper": "Oral and gut dysbiosis leads to functional alterations in Parkinson's disease."
+  },
+  {
+   "action": "DROP",
+   "surface": "B. lactis",
+   "from": "Butyricicoccus",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacillus",
+    "Bifidobacterium",
+    "Butyricicoccus"
+   ],
+   "paper": "Gut microbiota dysbiosis in patients with Alzheimer\u2019s disease and correlation with multiple cognitive domains"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. bifidum",
+   "from": "Butyricicoccus",
+   "to": "Bifidobacterium",
+   "taxid": "1678",
+   "paper": "Gut microbiota dysbiosis in patients with Alzheimer\u2019s disease and correlation with multiple cognitive domains"
+  },
+  {
+   "action": "DROP",
+   "surface": "L. lactis",
+   "from": "Ligilactobacillus",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Lachnoanaerobaculum",
+    "Lachnoclostridium",
+    "Leptotrichia",
+    "Ligilactobacillus",
+    "Limosilactobacillus"
+   ],
+   "paper": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "A. muciniphila",
+   "from": "Anaerostipes",
+   "to": "Akkermansia",
+   "taxid": "239934",
+   "paper": "Differences in the Composition of Gut Microbiota between Patients with Parkinson\u2019s Disease and Healthy Controls: A Cohort Study"
+  },
+  {
+   "action": "DROP",
+   "surface": "B. contributed",
+   "from": "Butyricimonas",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Barnesiella",
+    "Blautia",
+    "Butyricimonas"
+   ],
+   "paper": "Disease- and stage-specific alterations of the oral and fecal microbiota in Alzheimer\u2019s disease"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "S. moorei",
+   "from": "Sutterella",
+   "to": "Solobacterium",
+   "taxid": "123375",
+   "paper": "Disease- and stage-specific alterations of the oral and fecal microbiota in Alzheimer\u2019s disease"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "S. moorei",
+   "from": "Sutterella",
+   "to": "Solobacterium",
+   "taxid": "123375",
+   "paper": "Disease- and stage-specific alterations of the oral and fecal microbiota in Alzheimer\u2019s disease"
+  },
+  {
+   "action": "DROP",
+   "surface": "B. are",
+   "from": "Butyricimonas",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Barnesiella",
+    "Blautia",
+    "Butyricimonas"
+   ],
+   "paper": "Disease- and stage-specific alterations of the oral and fecal microbiota in Alzheimer\u2019s disease"
+  },
+  {
+   "action": "DROP",
+   "surface": "B. and",
+   "from": "Butyricimonas",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Barnesiella",
+    "Blautia",
+    "Butyricimonas"
+   ],
+   "paper": "Disease- and stage-specific alterations of the oral and fecal microbiota in Alzheimer\u2019s disease"
+  },
+  {
+   "action": "DROP",
+   "surface": "R. are",
+   "from": "Ruminococcus",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Romboutsia",
+    "Roseburia",
+    "Rothia",
+    "Ruminococcus"
+   ],
+   "paper": "Disease- and stage-specific alterations of the oral and fecal microbiota in Alzheimer\u2019s disease"
+  },
+  {
+   "action": "DROP",
+   "surface": "A. characterized",
+   "from": "Actinobacillus",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Acidaminococcus",
+    "Actinobacillus",
+    "Actinomyces",
+    "Akkermansia",
+    "Alistipes"
+   ],
+   "paper": "Disease- and stage-specific alterations of the oral and fecal microbiota in Alzheimer\u2019s disease"
+  },
+  {
+   "action": "DROP",
+   "surface": "L. helveticus",
+   "from": "Lactobacillus",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Lactobacillus",
+    "Limosilactobacillus"
+   ],
+   "paper": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. vulgatus",
+   "from": "Blautia",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "The altered TBI fecal microbiome is stable and functionally distinct"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. uniformis",
+   "from": "Blautia",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "The altered TBI fecal microbiome is stable and functionally distinct"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. caccae",
+   "from": "Blautia",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "The altered TBI fecal microbiome is stable and functionally distinct"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. uniformis",
+   "from": "Blautia",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "The altered TBI fecal microbiome is stable and functionally distinct"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. uniformis",
+   "from": "Blautia",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "The altered TBI fecal microbiome is stable and functionally distinct"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. vulgatus",
+   "from": "Blautia",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "The altered TBI fecal microbiome is stable and functionally distinct"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. uniformis",
+   "from": "Blautia",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "The altered TBI fecal microbiome is stable and functionally distinct"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. vulgatus",
+   "from": "Blautia",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "The altered TBI fecal microbiome is stable and functionally distinct"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. uniformis",
+   "from": "Blautia",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "The altered TBI fecal microbiome is stable and functionally distinct"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. vulgatus",
+   "from": "Blautia",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "The altered TBI fecal microbiome is stable and functionally distinct"
+  },
+  {
+   "action": "DROP",
+   "surface": "L. and",
+   "from": "Lachnobacterium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Lachnobacterium",
+    "Lachnospira"
+   ],
+   "paper": "Patients with Infections of The Central Nervous System Have Lowered Gut Microbiota Alpha Diversity"
+  },
+  {
+   "action": "DROP",
+   "surface": "L. and",
+   "from": "Lachnobacterium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Lachnobacterium",
+    "Lachnospira"
+   ],
+   "paper": "Patients with Infections of The Central Nervous System Have Lowered Gut Microbiota Alpha Diversity"
+  },
+  {
+   "action": "DROP",
+   "surface": "L. and",
+   "from": "Lachnobacterium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Lachnobacterium",
+    "Lachnospira"
+   ],
+   "paper": "Patients with Infections of The Central Nervous System Have Lowered Gut Microbiota Alpha Diversity"
+  },
+  {
+   "action": "DROP",
+   "surface": "L. and",
+   "from": "Lachnobacterium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Lachnobacterium",
+    "Lachnospira"
+   ],
+   "paper": "Patients with Infections of The Central Nervous System Have Lowered Gut Microbiota Alpha Diversity"
+  },
+  {
+   "action": "DROP",
+   "surface": "B. pseudolongum",
+   "from": "Bacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Bifidobacterium"
+   ],
+   "paper": "Gut Dysbiosis: A New Avenue for Stroke Prevention and Therapeutics"
+  },
+  {
+   "action": "DROP",
+   "surface": "L. and",
+   "from": "Lachnoclostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Lachnoclostridium",
+    "Lactobacillus"
+   ],
+   "paper": "Gut Dysbiosis: A New Avenue for Stroke Prevention and Therapeutics"
+  },
+  {
+   "action": "DROP",
+   "surface": "P. and",
+   "from": "Parabacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Parabacteroides",
+    "Peptoniphilus",
+    "Prevotella"
+   ],
+   "paper": "Gut Dysbiosis: A New Avenue for Stroke Prevention and Therapeutics"
+  },
+  {
+   "action": "DROP",
+   "surface": "P. and",
+   "from": "Parabacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Parabacteroides",
+    "Peptoniphilus",
+    "Prevotella"
+   ],
+   "paper": "Gut Dysbiosis: A New Avenue for Stroke Prevention and Therapeutics"
+  },
+  {
+   "action": "DROP",
+   "surface": "P. and",
+   "from": "Parabacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Parabacteroides",
+    "Peptoniphilus",
+    "Prevotella"
+   ],
+   "paper": "Gut Dysbiosis: A New Avenue for Stroke Prevention and Therapeutics"
+  },
+  {
+   "action": "DROP",
+   "surface": "L. and",
+   "from": "Lachnoclostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Lachnoclostridium",
+    "Lachnospira"
+   ],
+   "paper": "Uncovering the characteristics of the gut microbiota in patients with ischemic stroke and hemorrhagic stroke"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. and",
+   "from": "Coprococcus",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Christensenella",
+    "Coprococcus"
+   ],
+   "paper": "Uncovering the characteristics of the gut microbiota in patients with ischemic stroke and hemorrhagic stroke"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. and",
+   "from": "Coprococcus",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Christensenella",
+    "Coprococcus"
+   ],
+   "paper": "Uncovering the characteristics of the gut microbiota in patients with ischemic stroke and hemorrhagic stroke"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. and",
+   "from": "Coprococcus",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Christensenella",
+    "Coprococcus"
+   ],
+   "paper": "Uncovering the characteristics of the gut microbiota in patients with ischemic stroke and hemorrhagic stroke"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. and",
+   "from": "Coprococcus",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Christensenella",
+    "Coprococcus"
+   ],
+   "paper": "Uncovering the characteristics of the gut microbiota in patients with ischemic stroke and hemorrhagic stroke"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. celatum",
+   "from": "Clostridium",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Clostridium",
+    "Coprococcus"
+   ],
+   "paper": "Gut microbiome alterations in preclinical Alzheimer\u2019s disease"
+  },
+  {
+   "action": "DROP",
+   "surface": "E. coli",
+   "from": "Eubacterium",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Escherichia"
+   ],
+   "candidates": [
+    "Enterococcus",
+    "Eubacterium"
+   ],
+   "paper": "Metagenomics of Parkinson\u2019s disease implicates the gut microbiome in multiple disease mechanisms"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. faecium",
+   "from": "Eubacterium",
+   "to": "Enterococcus",
+   "taxid": "1350",
+   "paper": "Metagenomics of Parkinson\u2019s disease implicates the gut microbiome in multiple disease mechanisms"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. faecalis",
+   "from": "Eubacterium",
+   "to": "Enterococcus",
+   "taxid": "1350",
+   "paper": "Metagenomics of Parkinson\u2019s disease implicates the gut microbiome in multiple disease mechanisms"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. faecium",
+   "from": "Eubacterium",
+   "to": "Enterococcus",
+   "taxid": "1350",
+   "paper": "Metagenomics of Parkinson\u2019s disease implicates the gut microbiome in multiple disease mechanisms"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "P. gingivalis",
+   "from": "Parabacteroides",
+   "to": "Porphyromonas",
+   "taxid": "836",
+   "paper": "Oral Microbiome Stamp in Alzheimer\u2019s Disease"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "P. gingivalis",
+   "from": "Parabacteroides",
+   "to": "Porphyromonas",
+   "taxid": "836",
+   "paper": "Oral Microbiome Stamp in Alzheimer\u2019s Disease"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "P. gingivalis",
+   "from": "Parabacteroides",
+   "to": "Porphyromonas",
+   "taxid": "836",
+   "paper": "Oral Microbiome Stamp in Alzheimer\u2019s Disease"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "P. gingivalis",
+   "from": "Parabacteroides",
+   "to": "Porphyromonas",
+   "taxid": "836",
+   "paper": "Oral Microbiome Stamp in Alzheimer\u2019s Disease"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "P. gingivalis",
+   "from": "Parabacteroides",
+   "to": "Porphyromonas",
+   "taxid": "836",
+   "paper": "Oral Microbiome Stamp in Alzheimer\u2019s Disease"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. durum",
+   "from": "Campylobacter",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Campylobacter",
+    "Corynebacterium"
+   ],
+   "paper": "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. acnes",
+   "from": "Campylobacter",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Cutibacterium",
+    "Propionibacterium"
+   ],
+   "candidates": [
+    "Campylobacter",
+    "Corynebacterium"
+   ],
+   "paper": "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. acnes",
+   "from": "Campylobacter",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Cutibacterium",
+    "Propionibacterium"
+   ],
+   "candidates": [
+    "Campylobacter",
+    "Corynebacterium"
+   ],
+   "paper": "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. acnes",
+   "from": "Campylobacter",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Cutibacterium",
+    "Propionibacterium"
+   ],
+   "candidates": [
+    "Campylobacter",
+    "Corynebacterium"
+   ],
+   "paper": "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. acnes",
+   "from": "Campylobacter",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Cutibacterium",
+    "Propionibacterium"
+   ],
+   "candidates": [
+    "Campylobacter",
+    "Corynebacterium"
+   ],
+   "paper": "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. acnes",
+   "from": "Campylobacter",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Cutibacterium",
+    "Propionibacterium"
+   ],
+   "candidates": [
+    "Campylobacter",
+    "Corynebacterium"
+   ],
+   "paper": "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. acnes",
+   "from": "Campylobacter",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Cutibacterium",
+    "Propionibacterium"
+   ],
+   "candidates": [
+    "Campylobacter",
+    "Corynebacterium"
+   ],
+   "paper": "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. acnes",
+   "from": "Campylobacter",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Cutibacterium",
+    "Propionibacterium"
+   ],
+   "candidates": [
+    "Campylobacter",
+    "Corynebacterium"
+   ],
+   "paper": "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. acnes",
+   "from": "Campylobacter",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Cutibacterium",
+    "Propionibacterium"
+   ],
+   "candidates": [
+    "Campylobacter",
+    "Corynebacterium"
+   ],
+   "paper": "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. acnes",
+   "from": "Campylobacter",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Cutibacterium",
+    "Propionibacterium"
+   ],
+   "candidates": [
+    "Campylobacter",
+    "Corynebacterium"
+   ],
+   "paper": "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders"
+  },
+  {
+   "action": "DROP",
+   "surface": "A. muciniphila",
+   "from": "Atopobium",
+   "reason": "no acceptable genus with this initial named in full in this paper",
+   "allowed": [
+    "Akkermansia"
+   ],
+   "candidates": [
+    "Actinomyces",
+    "Aggregatibacter",
+    "Atopobium"
+   ],
+   "paper": "Deep DNA metagenomic sequencing reveals oral microbiome divergence between monozygotic twins discordant for multiple sclerosis severity"
+  },
+  {
+   "action": "DROP",
+   "surface": "B. ovatus-colonized",
+   "from": "Bacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Bifidobacterium",
+    "Bilophila"
+   ],
+   "paper": "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment"
+  },
+  {
+   "action": "DROP",
+   "surface": "B. ovatus-treated",
+   "from": "Bacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Bifidobacterium",
+    "Bilophila"
+   ],
+   "paper": "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. rectale",
+   "from": "Escherichia",
+   "to": "Eubacterium",
+   "taxid": "1730",
+   "paper": "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. rectale",
+   "from": "Escherichia",
+   "to": "Eubacterium",
+   "taxid": "1730",
+   "paper": "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. rectale",
+   "from": "Escherichia",
+   "to": "Eubacterium",
+   "taxid": "1730",
+   "paper": "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. rectale",
+   "from": "Escherichia",
+   "to": "Eubacterium",
+   "taxid": "1730",
+   "paper": "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. rectale",
+   "from": "Escherichia",
+   "to": "Eubacterium",
+   "taxid": "1730",
+   "paper": "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. rectale",
+   "from": "Escherichia",
+   "to": "Eubacterium",
+   "taxid": "1730",
+   "paper": "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "E. rectale",
+   "from": "Escherichia",
+   "to": "Eubacterium",
+   "taxid": "1730",
+   "paper": "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy"
+  },
+  {
+   "action": "DROP",
+   "surface": "B. xylanivsolvens",
+   "from": "Bacteroides",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bacteroides",
+    "Bifidobacterium",
+    "Butyrivibrio"
+   ],
+   "paper": "Gut microbiota regulate Alzheimer\u2019s disease pathologies and cognitive disorders via PUFA-associated neuroinflammation"
+  },
+  {
+   "action": "DROP",
+   "surface": "B. synergistica",
+   "from": "Butyricimonas",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Bifidobacterium",
+    "Butyricimonas"
+   ],
+   "paper": "Alterations of the human gut microbiome in multiple sclerosis"
+  },
+  {
+   "action": "DROP",
+   "surface": "C. aerofaciens",
+   "from": "Campylobacter",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Campylobacter",
+    "Collinsella"
+   ],
+   "paper": "Alterations of the human gut microbiome in multiple sclerosis"
+  },
+  {
+   "action": "DROP",
+   "surface": "S. stercoricanis",
+   "from": "Sutterella",
+   "reason": "epithet not in curated table",
+   "allowed": [],
+   "candidates": [
+    "Sarcina",
+    "Slackia",
+    "Sutterella"
+   ],
+   "paper": "Alterations of the human gut microbiome in multiple sclerosis"
+  },
+  {
+   "action": "REASSIGN",
+   "surface": "B. fragilis",
+   "from": "Bifidobacterium",
+   "to": "Bacteroides",
+   "taxid": "816",
+   "paper": "Role of Gut Microbiome in Autism Spectrum Disorder and Its Therapeutic Regulation"
+  }
+ ]
+}

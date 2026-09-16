@@ -33,3 +33,14 @@ proj_2_attempt3/kg/extract_input_gold.json
 proj_2_attempt3/kg/gold_missing_papers.json
 proj_2_attempt3/kg/extract_input.json
 proj_2_attempt3/kg/new_papers.json
+# kg/ session scratch (regenerable: prep_filter_snippets.py, filter_maindata.py)
+proj_2_attempt3/kg/_filter_batches/
+proj_2_attempt3/kg/_filter_out/
+proj_2_attempt3/kg/_variant_*.json
+proj_2_attempt3/kg/_graph_*.json
+proj_2_attempt3/kg/_val_*.json
+proj_2_attempt3/kg/_inventory.md
+proj_2_attempt3/kg/_adjudication/
+
+# kg: screening batch scratch (regenerable: screen_corpus.py --prepare)
+proj_2_attempt3/kg/_screen248/

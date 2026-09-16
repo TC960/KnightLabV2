@@ -1,0 +1,1032 @@
+{
+ "n_perm": 20000,
+ "n_testable": 112,
+ "n_with_metadata": 89,
+ "papers": [
+  {
+   "dec": 15,
+   "dis": 8,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 2,
+   "title": "A comparison of the composition and functions of the oral an"
+  },
+  {
+   "dec": 7,
+   "dis": 3,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 4,
+   "title": "A prebiotic dietary pilot intervention restores faecal metab"
+  },
+  {
+   "dec": 6,
+   "dis": 1,
+   "disease": "Amyotrophic lateral sclerosis",
+   "meta": true,
+   "paper": 5,
+   "title": "A prospective longitudinal study on the microbiota compositi"
+  },
+  {
+   "dec": 6,
+   "dis": 2,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 6,
+   "title": "APOE-\u03b54 Carrier Status and Gut Microbiota Dysbiosis in Patie"
+  },
+  {
+   "dec": 6,
+   "dis": 2,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 7,
+   "title": "Aging Gut-Brain Interactions: Pro-Inflammatory Gut Bacteria "
+  },
+  {
+   "dec": 7,
+   "dis": 4,
+   "disease": "Epilepsy",
+   "meta": false,
+   "paper": 10,
+   "title": "Alteration of Gut Microbiota in Patients With Epilepsy and t"
+  },
+  {
+   "dec": 10,
+   "dis": 3,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 13,
+   "title": "Alterations in Circulating Fatty Acid Are Associated With Gu"
+  },
+  {
+   "dec": 7,
+   "dis": 3,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 15,
+   "title": "Alterations in Gut Microbiota and Their Correlation with Bra"
+  },
+  {
+   "dec": 8,
+   "dis": 6,
+   "disease": "Stroke",
+   "meta": true,
+   "paper": 16,
+   "title": "Alterations in gut microbiota and metabolomic profiles in ac"
+  },
+  {
+   "dec": 6,
+   "dis": 0,
+   "disease": "Spinal cord injury",
+   "meta": false,
+   "paper": 18,
+   "title": "Alterations in the fecal microbiota of patients with spinal "
+  },
+  {
+   "dec": 6,
+   "dis": 2,
+   "disease": "Multiple sclerosis",
+   "meta": false,
+   "paper": 22,
+   "title": "Alterations of host-gut microbiome interactions in multiple "
+  },
+  {
+   "dec": 7,
+   "dis": 2,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 24,
+   "title": "Alterations of the gut ecological and functional microenviro"
+  },
+  {
+   "dec": 9,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 32,
+   "title": "Altered gut microbiota and inflammatory cytokine responses i"
+  },
+  {
+   "dec": 7,
+   "dis": 2,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 37,
+   "title": "Alzheimer's Disease Microbiome Is Associated with Dysregulat"
+  },
+  {
+   "dec": 4,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 38,
+   "title": "An analysis of the characteristics of the intestinal flora i"
+  },
+  {
+   "dec": 11,
+   "dis": 4,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 39,
+   "title": "Analysis of Gut Microbiota in Patients with Parkinson's Dise"
+  },
+  {
+   "dec": 14,
+   "dis": 5,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 41,
+   "title": "Analysis of the Gut Microflora in Patients With Parkinson's "
+  },
+  {
+   "dec": 7,
+   "dis": 3,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 43,
+   "title": "Association between Gut Microbiota with Mild Cognitive Impai"
+  },
+  {
+   "dec": 4,
+   "dis": 1,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 44,
+   "title": "Association between cognitive functioning and microbiota-gut"
+  },
+  {
+   "dec": 5,
+   "dis": 1,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 46,
+   "title": "Association between the relative abundance of butyrate-produ"
+  },
+  {
+   "dec": 4,
+   "dis": 4,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 48,
+   "title": "B-cell-depletion reverses dysbiosis of the microbiome in mul"
+  },
+  {
+   "dec": 4,
+   "dis": 3,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 50,
+   "title": "CXCR3+ T cells in multiple sclerosis correlate with reduced "
+  },
+  {
+   "dec": 10,
+   "dis": 3,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 52,
+   "title": "Changes in Gastrointestinal Microbiome Composition in PD: A "
+  },
+  {
+   "dec": 4,
+   "dis": 1,
+   "disease": "Spinal cord injury",
+   "meta": false,
+   "paper": 53,
+   "title": "Changes in gut microbiota in the acute phase after spinal co"
+  },
+  {
+   "dec": 5,
+   "dis": 1,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 55,
+   "title": "Changes in the Gut Microbiome and Predicted Functional Metab"
+  },
+  {
+   "dec": 4,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 60,
+   "title": "Colonic bacterial composition in Parkinson's disease."
+  },
+  {
+   "dec": 5,
+   "dis": 0,
+   "disease": "Stroke",
+   "meta": true,
+   "paper": 61,
+   "title": "Combination effect between gut microbiota and traditional po"
+  },
+  {
+   "dec": 4,
+   "dis": 2,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 62,
+   "title": "Combination of gut microbiota and plasma amyloid-\u03b2 as a pote"
+  },
+  {
+   "dec": 4,
+   "dis": 2,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 64,
+   "title": "Comparison of the Intestinal Microbiome of Italian Patients "
+  },
+  {
+   "dec": 8,
+   "dis": 4,
+   "disease": "Mild cognitive impairment",
+   "meta": true,
+   "paper": 66,
+   "title": "Compositional and functional gut microbiota alterations in m"
+  },
+  {
+   "dec": 9,
+   "dis": 1,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 68,
+   "title": "Cross-Sectional Study on the Gut Microbiome of Parkinson's D"
+  },
+  {
+   "dec": 4,
+   "dis": 1,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 70,
+   "title": "Decoding the Gut Microbiota in Multiple Sclerosis Using Nano"
+  },
+  {
+   "dec": 7,
+   "dis": 2,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 72,
+   "title": "Detection of Dysbiosis and Increased Intestinal Permeability"
+  },
+  {
+   "dec": 4,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 74,
+   "title": "Dietary quality and the gut microbiome in early-stage Parkin"
+  },
+  {
+   "dec": 7,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": false,
+   "paper": 76,
+   "title": "Differences in the Composition of Gut Microbiota between Pat"
+  },
+  {
+   "dec": 4,
+   "dis": 2,
+   "disease": "Cognitive impairment",
+   "meta": true,
+   "paper": 77,
+   "title": "Differential Patterns of Gut and Oral Microbiomes in Hispani"
+  },
+  {
+   "dec": 4,
+   "dis": 0,
+   "disease": "Stroke",
+   "meta": false,
+   "paper": 79,
+   "title": "Disruptions of Anaerobic Gut Bacteria Are Associated with St"
+  },
+  {
+   "dec": 9,
+   "dis": 2,
+   "disease": "Epilepsy",
+   "meta": true,
+   "paper": 80,
+   "title": "Distinct Gut Microbiota Composition and Functional Category "
+  },
+  {
+   "dec": 6,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 81,
+   "title": "Distinct gut microbiome characteristics and dynamics in pati"
+  },
+  {
+   "dec": 14,
+   "dis": 5,
+   "disease": "Stroke",
+   "meta": false,
+   "paper": 83,
+   "title": "Distinctive Gut Microbiota Alteration Is Associated with Pos"
+  },
+  {
+   "dec": 6,
+   "dis": 3,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 85,
+   "title": "Disturbed microbial ecology in Alzheimer's disease: evidence"
+  },
+  {
+   "dec": 4,
+   "dis": 0,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 87,
+   "title": "Dysbiosis in the Gut Microbiota of Patients with Multiple Sc"
+  },
+  {
+   "dec": 7,
+   "dis": 1,
+   "disease": "Stroke",
+   "meta": false,
+   "paper": 88,
+   "title": "Dysbiosis of Gut Microbiota and Short-Chain Fatty Acids in A"
+  },
+  {
+   "dec": 5,
+   "dis": 1,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 90,
+   "title": "Dysbiosis of the Beneficial Gut Bacteria in Patients with Pa"
+  },
+  {
+   "dec": 4,
+   "dis": 2,
+   "disease": "Amyotrophic lateral sclerosis",
+   "meta": true,
+   "paper": 99,
+   "title": "Examining the complex Interplay between gut microbiota abund"
+  },
+  {
+   "dec": 6,
+   "dis": 1,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 100,
+   "title": "Exploring gut microbiota alterations in Parkinson's disease:"
+  },
+  {
+   "dec": 8,
+   "dis": 5,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 103,
+   "title": "Fecal Volatile Organic Compounds and Microbiota Associated w"
+  },
+  {
+   "dec": 4,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 104,
+   "title": "Fecal microbiome alterations in treatment-naive de novo Park"
+  },
+  {
+   "dec": 4,
+   "dis": 1,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 106,
+   "title": "Functional implications of microbial and viral gut metagenom"
+  },
+  {
+   "dec": 6,
+   "dis": 0,
+   "disease": "Stroke",
+   "meta": false,
+   "paper": 108,
+   "title": "Gut Dysbiosis Is Associated With the Severity of Cryptogenic"
+  },
+  {
+   "dec": 8,
+   "dis": 1,
+   "disease": "Stroke",
+   "meta": false,
+   "paper": 109,
+   "title": "Gut Dysbiosis: A New Avenue for Stroke Prevention and Therap"
+  },
+  {
+   "dec": 10,
+   "dis": 7,
+   "disease": "Epilepsy",
+   "meta": true,
+   "paper": 112,
+   "title": "Gut Microbiome Distinguishes Patients With Epilepsy From Hea"
+  },
+  {
+   "dec": 6,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 115,
+   "title": "Gut Microbiota Altered in Mild Cognitive Impairment Compared"
+  },
+  {
+   "dec": 4,
+   "dis": 3,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 116,
+   "title": "Gut Microbiota Changes and Their Correlation with Cognitive "
+  },
+  {
+   "dec": 9,
+   "dis": 1,
+   "disease": "Stroke",
+   "meta": false,
+   "paper": 118,
+   "title": "Gut Microbiota Ecological and Functional Modulation in Post-"
+  },
+  {
+   "dec": 7,
+   "dis": 2,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 120,
+   "title": "Gut Microbiota and Metabolome Alterations Associated with Pa"
+  },
+  {
+   "dec": 5,
+   "dis": 2,
+   "disease": "Cognitive impairment",
+   "meta": false,
+   "paper": 122,
+   "title": "Gut Microbiota and Targeted Biomarkers Analysis in Patients "
+  },
+  {
+   "dec": 12,
+   "dis": 3,
+   "disease": "Stroke",
+   "meta": true,
+   "paper": 124,
+   "title": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ische"
+  },
+  {
+   "dec": 10,
+   "dis": 2,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 126,
+   "title": "Gut commensal Agathobacter rectalis alleviates microglia-med"
+  },
+  {
+   "dec": 4,
+   "dis": 0,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 135,
+   "title": "Gut microbiome alterations in Alzheimer's disease."
+  },
+  {
+   "dec": 4,
+   "dis": 0,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 139,
+   "title": "Gut microbiome compositional and functional features associa"
+  },
+  {
+   "dec": 5,
+   "dis": 3,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 141,
+   "title": "Gut microbiome differences in Parkinson's disease patients i"
+  },
+  {
+   "dec": 8,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 142,
+   "title": "Gut microbiome dysbiosis across early Parkinson's disease, R"
+  },
+  {
+   "dec": 4,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 144,
+   "title": "Gut microbiome is not associated with mild cognitive impairm"
+  },
+  {
+   "dec": 6,
+   "dis": 3,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 145,
+   "title": "Gut microbiome of treatment-na\u00efve MS patients of different e"
+  },
+  {
+   "dec": 5,
+   "dis": 2,
+   "disease": "Stroke",
+   "meta": true,
+   "paper": 151,
+   "title": "Gut microbiota as predictors of the occurrence of high on-tr"
+  },
+  {
+   "dec": 5,
+   "dis": 2,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 155,
+   "title": "Gut microbiota distinguishes aging hispanics with Alzheimer'"
+  },
+  {
+   "dec": 6,
+   "dis": 1,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 158,
+   "title": "Gut microbiota dysbiosis in patients with Alzheimer\u2019s diseas"
+  },
+  {
+   "dec": 7,
+   "dis": 1,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 169,
+   "title": "Human gut microbiome gene co-expression network reveals a lo"
+  },
+  {
+   "dec": 8,
+   "dis": 0,
+   "disease": "Stroke",
+   "meta": false,
+   "paper": 170,
+   "title": "Hypercoagulable state and gut microbiota dysbiosis as predic"
+  },
+  {
+   "dec": 4,
+   "dis": 2,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 175,
+   "title": "Impact of 16S rRNA on Intestinal Flora Alterations and Early"
+  },
+  {
+   "dec": 7,
+   "dis": 2,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 177,
+   "title": "Inflammatory Manifestations Associated With Gut Dysbiosis in"
+  },
+  {
+   "dec": 14,
+   "dis": 5,
+   "disease": "Epilepsy",
+   "meta": false,
+   "paper": 178,
+   "title": "Integrated Macrogenomics and Metabolomics Explore Alteration"
+  },
+  {
+   "dec": 9,
+   "dis": 1,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 186,
+   "title": "Metabolic modeling links gut microbiota to metabolic markers"
+  },
+  {
+   "dec": 4,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 187,
+   "title": "Metagenome-assembled microbial genomes from Parkinson's dise"
+  },
+  {
+   "dec": 8,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 189,
+   "title": "Metagenomics of Parkinson's disease implicates the gut micro"
+  },
+  {
+   "dec": 5,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 190,
+   "title": "Metagenomics of the Gut Microbiome in Parkinson's Disease: P"
+  },
+  {
+   "dec": 5,
+   "dis": 1,
+   "disease": "Parkinson's disease",
+   "meta": false,
+   "paper": 191,
+   "title": "Metaproteogenomic analysis of saliva samples from Parkinson\u2019"
+  },
+  {
+   "dec": 10,
+   "dis": 2,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 194,
+   "title": "Microbiome signatures of virulence in the oral-gut-brain axi"
+  },
+  {
+   "dec": 5,
+   "dis": 2,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 201,
+   "title": "Multi-omics analyses identify gut microbiota-fecal metabolit"
+  },
+  {
+   "dec": 11,
+   "dis": 5,
+   "disease": "Stroke",
+   "meta": true,
+   "paper": 202,
+   "title": "Multi-omics profiling reveals key microbial and metabolic va"
+  },
+  {
+   "dec": 7,
+   "dis": 1,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 204,
+   "title": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli "
+  },
+  {
+   "dec": 6,
+   "dis": 3,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 206,
+   "title": "Multiple sclerosis patients have a distinct gut microbiota c"
+  },
+  {
+   "dec": 4,
+   "dis": 1,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 207,
+   "title": "Mycobacterium avium subspecies paratuberculosis (MAP) infect"
+  },
+  {
+   "dec": 15,
+   "dis": 3,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 208,
+   "title": "Nutritional Intake and Gut Microbiome Composition Predict Pa"
+  },
+  {
+   "dec": 15,
+   "dis": 7,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 209,
+   "title": "Ocrelizumab transiently alters microbiota and modulates immu"
+  },
+  {
+   "dec": 7,
+   "dis": 4,
+   "disease": "Alzheimer's disease",
+   "meta": false,
+   "paper": 210,
+   "title": "Oral Microbiome Stamp in Alzheimer\u2019s Disease"
+  },
+  {
+   "dec": 18,
+   "dis": 1,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 212,
+   "title": "Oral and gut dysbiosis leads to functional alterations in Pa"
+  },
+  {
+   "dec": 6,
+   "dis": 2,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 214,
+   "title": "Oral and gut microbiome profiles in people with early idiopa"
+  },
+  {
+   "dec": 12,
+   "dis": 1,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 215,
+   "title": "Orthopedic Surgery Causes Gut Microbiome Dysbiosis and Intes"
+  },
+  {
+   "dec": 7,
+   "dis": 1,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 216,
+   "title": "Parkinson\u2019s disease-associated alterations of the gut microb"
+  },
+  {
+   "dec": 7,
+   "dis": 3,
+   "disease": "Spinal cord injury",
+   "meta": false,
+   "paper": 228,
+   "title": "Relationship between gut microbiota and lymphocyte subsets i"
+  },
+  {
+   "dec": 8,
+   "dis": 1,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 230,
+   "title": "Retrospective analysis of diet and gut microbiota diversity "
+  },
+  {
+   "dec": 4,
+   "dis": 1,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 233,
+   "title": "Specific Bacterial Taxa and Their Metabolite, DHPS, May Be L"
+  },
+  {
+   "dec": 8,
+   "dis": 3,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 236,
+   "title": "Specific microbial ratio in the gut microbiome is associated"
+  },
+  {
+   "dec": 5,
+   "dis": 0,
+   "disease": "Spinal cord injury",
+   "meta": false,
+   "paper": 237,
+   "title": "Spinal cord injury-induced gut dysbiosis influences neurolog"
+  },
+  {
+   "dec": 8,
+   "dis": 2,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 238,
+   "title": "Stratification of the Gut Microbiota Composition Landscape a"
+  },
+  {
+   "dec": 6,
+   "dis": 0,
+   "disease": "Stroke",
+   "meta": true,
+   "paper": 239,
+   "title": "Stroke Dysbiosis Index (SDI) in Gut Microbiome Are Associate"
+  },
+  {
+   "dec": 6,
+   "dis": 2,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 240,
+   "title": "Structural and Functional Dysbiosis of Fecal Microbiota in C"
+  },
+  {
+   "dec": 5,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 241,
+   "title": "Structural changes of gut microbiota in Parkinson's disease "
+  },
+  {
+   "dec": 10,
+   "dis": 3,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 242,
+   "title": "Study of gut microbiota alterations in Alzheimer's dementia "
+  },
+  {
+   "dec": 5,
+   "dis": 0,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 245,
+   "title": "The Gut Microbiome in Parkinson's Disease: A Longitudinal St"
+  },
+  {
+   "dec": 9,
+   "dis": 5,
+   "disease": "Multiple sclerosis",
+   "meta": false,
+   "paper": 246,
+   "title": "The Gut Microbiome in Progressive Multiple Sclerosis"
+  },
+  {
+   "dec": 5,
+   "dis": 1,
+   "disease": "Multiple sclerosis",
+   "meta": true,
+   "paper": 253,
+   "title": "The effect of multiple sclerosis therapy on gut microbiota d"
+  },
+  {
+   "dec": 8,
+   "dis": 1,
+   "disease": "Spinal cord injury",
+   "meta": false,
+   "paper": 254,
+   "title": "The gut microbiota and metabolite profiles are altered in pa"
+  },
+  {
+   "dec": 5,
+   "dis": 0,
+   "disease": "Multiple sclerosis",
+   "meta": false,
+   "paper": 255,
+   "title": "The gut microbiota in multiple sclerosis varies with disease"
+  },
+  {
+   "dec": 6,
+   "dis": 1,
+   "disease": "Parkinson's disease",
+   "meta": true,
+   "paper": 257,
+   "title": "The impact of device-assisted therapies on the gut microbiom"
+  },
+  {
+   "dec": 6,
+   "dis": 2,
+   "disease": "Stroke",
+   "meta": true,
+   "paper": 258,
+   "title": "The impact of dysbiosis in oropharyngeal and gut microbiota "
+  },
+  {
+   "dec": 4,
+   "dis": 4,
+   "disease": "Alzheimer's disease",
+   "meta": true,
+   "paper": 266,
+   "title": "Transmission of Alzheimer's disease-associated microbiota dy"
+  },
+  {
+   "dec": 8,
+   "dis": 2,
+   "disease": "Stroke",
+   "meta": false,
+   "paper": 267,
+   "title": "Uncovering the characteristics of the gut microbiota in pati"
+  },
+  {
+   "dec": 7,
+   "dis": 5,
+   "disease": "Mild cognitive impairment",
+   "meta": true,
+   "paper": 269,
+   "title": "Unique trans-kingdom microbiome structural and functional si"
+  },
+  {
+   "dec": 7,
+   "dis": 2,
+   "disease": "Stroke",
+   "meta": false,
+   "paper": 271,
+   "title": "Unveiling the negative association of Faecalibacterium praus"
+  }
+ ],
+ "pooled_base_rate": 0.2761,
+ "seed": 20260910,
+ "survivors": [
+  "cohort_total_above_median",
+  "n_cases_above_median",
+  "disease_is_Parkinsons"
+ ],
+ "tests": {
+  "cohort_total_above_median": {
+   "dec_false": 258,
+   "dec_true": 336,
+   "diff": -0.145,
+   "mde_abs_diff": 0.0935,
+   "n_false": 43,
+   "n_true": 44,
+   "p": 0.0013,
+   "q": 0.0043,
+   "rate_false": 0.3682,
+   "rate_true": 0.2232
+  },
+  "country_China": {
+   "dec_false": 409,
+   "dec_true": 200,
+   "diff": 0.0659,
+   "mde_abs_diff": 0.1014,
+   "n_false": 62,
+   "n_true": 27,
+   "p": 0.19404,
+   "q": 0.2772,
+   "rate_false": 0.2641,
+   "rate_true": 0.33
+  },
+  "diet_controlled": {
+   "dec_false": 412,
+   "dec_true": 197,
+   "diff": -0.1072,
+   "mde_abs_diff": 0.0978,
+   "n_false": 60,
+   "n_true": 29,
+   "p": 0.03005,
+   "q": 0.0669,
+   "rate_false": 0.3204,
+   "rate_true": 0.2132
+  },
+  "disease_is_Parkinsons": {
+   "dec_false": 509,
+   "dec_true": 266,
+   "diff": -0.1857,
+   "mde_abs_diff": 0.0849,
+   "n_false": 74,
+   "n_true": 38,
+   "p": 5e-05,
+   "q": 0.0005,
+   "rate_false": 0.3399,
+   "rate_true": 0.1541
+  },
+  "medication_controlled": {
+   "dec_false": 100,
+   "dec_true": 509,
+   "diff": -0.065,
+   "mde_abs_diff": 0.1188,
+   "n_false": 17,
+   "n_true": 72,
+   "p": 0.28819,
+   "q": 0.3602,
+   "rate_false": 0.34,
+   "rate_true": 0.275
+  },
+  "n_cases_above_median": {
+   "dec_false": 255,
+   "dec_true": 339,
+   "diff": -0.1788,
+   "mde_abs_diff": 0.0934,
+   "n_false": 42,
+   "n_true": 45,
+   "p": 0.0002,
+   "q": 0.001,
+   "rate_false": 0.3882,
+   "rate_true": 0.2094
+  },
+  "n_controls_above_median": {
+   "dec_false": 259,
+   "dec_true": 327,
+   "diff": -0.1012,
+   "mde_abs_diff": 0.0945,
+   "n_false": 42,
+   "n_true": 43,
+   "p": 0.03345,
+   "q": 0.0669,
+   "rate_false": 0.3398,
+   "rate_true": 0.2385
+  },
+  "region_V3V4": {
+   "dec_false": 116,
+   "dec_true": 285,
+   "diff": -0.0367,
+   "mde_abs_diff": 0.1216,
+   "n_false": 21,
+   "n_true": 38,
+   "p": 0.56032,
+   "q": 0.5603,
+   "rate_false": 0.3103,
+   "rate_true": 0.2737
+  },
+  "reports_a_lot_above_median": {
+   "dec_false": 180,
+   "dec_true": 595,
+   "diff": 0.0268,
+   "mde_abs_diff": 0.0845,
+   "n_false": 41,
+   "n_true": 71,
+   "p": 0.52687,
+   "q": 0.5603,
+   "rate_false": 0.2556,
+   "rate_true": 0.2824
+  },
+  "sequencing_16S_vs_shotgun": {
+   "dec_false": 127,
+   "dec_true": 478,
+   "diff": 0.1049,
+   "mde_abs_diff": 0.1194,
+   "n_false": 17,
+   "n_true": 71,
+   "p": 0.07825,
+   "q": 0.1304,
+   "rate_false": 0.2047,
+   "rate_true": 0.3096
+  }
+ }
+}

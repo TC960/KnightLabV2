@@ -1,0 +1,415 @@
+{
+ "mondo_version": "releases/2026-09-01",
+ "control": {
+  "n": 16,
+  "agree": 16,
+  "disagree": 0,
+  "rows": [
+   {
+    "label": "Parkinson's disease",
+    "curated": "MONDO:0005180",
+    "curated_live": "MONDO:0005180",
+    "resolved": "MONDO:0005180",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "Parkinson disease",
+    "note": ""
+   },
+   {
+    "label": "Alzheimer's disease",
+    "curated": "MONDO:0004975",
+    "curated_live": "MONDO:0004975",
+    "resolved": "MONDO:0004975",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "Alzheimer disease",
+    "note": ""
+   },
+   {
+    "label": "Multiple sclerosis",
+    "curated": "MONDO:0005301",
+    "curated_live": "MONDO:0005301",
+    "resolved": "MONDO:0005301",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "multiple sclerosis",
+    "note": ""
+   },
+   {
+    "label": "Amyotrophic lateral sclerosis",
+    "curated": "MONDO:0004976",
+    "curated_live": "MONDO:0004976",
+    "resolved": "MONDO:0004976",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "amyotrophic lateral sclerosis",
+    "note": ""
+   },
+   {
+    "label": "Stroke",
+    "curated": "MONDO:0005098",
+    "curated_live": "MONDO:0005098",
+    "resolved": "MONDO:0005098",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "stroke disorder",
+    "note": ""
+   },
+   {
+    "label": "Huntington's disease",
+    "curated": "MONDO:0007739",
+    "curated_live": "MONDO:0007739",
+    "resolved": "MONDO:0007739",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "Huntington disease",
+    "note": ""
+   },
+   {
+    "label": "Dementia",
+    "curated": "MONDO:0001627",
+    "curated_live": "MONDO:0001627",
+    "resolved": "MONDO:0001627",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "dementia",
+    "note": ""
+   },
+   {
+    "label": "Spinal muscular atrophy",
+    "curated": "MONDO:0001516",
+    "curated_live": "MONDO:0001516",
+    "resolved": "MONDO:0001516",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "spinal muscular atrophy",
+    "note": ""
+   },
+   {
+    "label": "Epilepsy",
+    "curated": "MONDO:0005027",
+    "curated_live": "MONDO:0005027",
+    "resolved": "MONDO:0005027",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "epilepsy",
+    "note": ""
+   },
+   {
+    "label": "Autism spectrum disorder",
+    "curated": "MONDO:0005258",
+    "curated_live": "MONDO:0005258",
+    "resolved": "MONDO:0005258",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "autism spectrum disorder",
+    "note": ""
+   },
+   {
+    "label": "Depressive disorder",
+    "curated": "MONDO:0002050",
+    "curated_live": "MONDO:0002050",
+    "resolved": "MONDO:0002050",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "depressive disorder",
+    "note": ""
+   },
+   {
+    "label": "Schizophrenia",
+    "curated": "MONDO:0005090",
+    "curated_live": "MONDO:0005090",
+    "resolved": "MONDO:0005090",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "schizophrenia",
+    "note": ""
+   },
+   {
+    "label": "Neuromyelitis optica",
+    "curated": "MONDO:0019100",
+    "curated_live": "MONDO:0019100",
+    "resolved": "MONDO:0019100",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "neuromyelitis optica",
+    "note": ""
+   },
+   {
+    "label": "Myasthenia gravis",
+    "curated": "MONDO:0009688",
+    "curated_live": "MONDO:0009688",
+    "resolved": "MONDO:0009688",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "myasthenia gravis",
+    "note": ""
+   },
+   {
+    "label": "Migraine",
+    "curated": "MONDO:0005277",
+    "curated_live": "MONDO:0005277",
+    "resolved": "MONDO:0005277",
+    "how": "exact",
+    "agree": true,
+    "resolved_name": "migraine disorder",
+    "note": ""
+   },
+   {
+    "label": "Anti-NMDAR encephalitis",
+    "curated": "MONDO:0021081",
+    "curated_live": "MONDO:0021081",
+    "resolved": "MONDO:0021081",
+    "how": "curated_alias",
+    "agree": true,
+    "resolved_name": "anti-NMDA receptor encephalitis",
+    "note": ""
+   }
+  ],
+  "deliberately_unmapped": [
+   "Mild cognitive impairment"
+  ]
+ },
+ "labels": {
+  "Alzheimer's disease": {
+   "mondo": "MONDO:0004975",
+   "how": "exact",
+   "mondo_name": "Alzheimer disease",
+   "n_papers": 46
+  },
+  "Amyotrophic lateral sclerosis": {
+   "mondo": "MONDO:0004976",
+   "how": "exact",
+   "mondo_name": "amyotrophic lateral sclerosis",
+   "n_papers": 14
+  },
+  "Anti-NMDAR encephalitis": {
+   "mondo": "MONDO:0021081",
+   "how": "curated_alias",
+   "mondo_name": "anti-NMDA receptor encephalitis",
+   "n_papers": 3
+  },
+  "Attention-deficit/hyperactivity disorder": {
+   "mondo": "MONDO:0007743",
+   "how": "exact",
+   "mondo_name": "attention deficit-hyperactivity disorder",
+   "n_papers": 1
+  },
+  "Autism spectrum disorder": {
+   "mondo": "MONDO:0005258",
+   "how": "exact",
+   "mondo_name": "autism spectrum disorder",
+   "n_papers": 4
+  },
+  "CADASIL": {
+   "mondo": "MONDO:0007432",
+   "how": "curated_alias",
+   "mondo_name": "cerebral arteriopathy with subcortical infarcts and leukoencephalopathy",
+   "n_papers": 2
+  },
+  "Chronic traumatic complete spinal cord injury": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "n_papers": 1
+  },
+  "Cognitive impairment": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "n_papers": 4
+  },
+  "Dementia": {
+   "mondo": "MONDO:0001627",
+   "how": "exact",
+   "mondo_name": "dementia",
+   "n_papers": 6
+  },
+  "Epilepsy": {
+   "mondo": "MONDO:0005027",
+   "how": "exact",
+   "mondo_name": "epilepsy",
+   "n_papers": 6
+  },
+  "Essential tremor": {
+   "mondo": "MONDO:0003233",
+   "how": "exact",
+   "mondo_name": "essential tremor",
+   "n_papers": 2
+  },
+  "Familial dysautonomia": {
+   "mondo": "MONDO:0009131",
+   "how": "exact",
+   "mondo_name": "Riley-Day syndrome",
+   "n_papers": 1
+  },
+  "Hemorrhagic transformation": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "n_papers": 1
+  },
+  "Hepatic encephalopathy": {
+   "mondo": "MONDO:0001711",
+   "how": "exact",
+   "mondo_name": "hepatic encephalopathy",
+   "n_papers": 1
+  },
+  "Hepatitis B virus-associated liver cirrhosis": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "n_papers": 1
+  },
+  "Huntington's disease": {
+   "mondo": "MONDO:0007739",
+   "how": "exact",
+   "mondo_name": "Huntington disease",
+   "n_papers": 3
+  },
+  "Hypertensive intracerebral hemorrhage": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "n_papers": 1
+  },
+  "Idiopathic normal pressure hydrocephalus": {
+   "mondo": "MONDO:0009366",
+   "how": "curated_alias",
+   "mondo_name": "normal pressure hydrocephalus",
+   "n_papers": 1
+  },
+  "Intracerebral hemorrhage": {
+   "mondo": "MONDO:0013792",
+   "how": "exact",
+   "mondo_name": "intracerebral hemorrhage",
+   "n_papers": 3
+  },
+  "Migraine": {
+   "mondo": "MONDO:0005277",
+   "how": "exact",
+   "mondo_name": "migraine disorder",
+   "n_papers": 1
+  },
+  "Mild cognitive impairment": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "n_papers": 13
+  },
+  "Minimal hepatic encephalopathy": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "n_papers": 1
+  },
+  "Multiple sclerosis": {
+   "mondo": "MONDO:0005301",
+   "how": "exact",
+   "mondo_name": "multiple sclerosis",
+   "n_papers": 37
+  },
+  "Multiple system atrophy": {
+   "mondo": "MONDO:0007803",
+   "how": "exact",
+   "mondo_name": "multiple system atrophy",
+   "n_papers": 2
+  },
+  "Myasthenia gravis": {
+   "mondo": "MONDO:0009688",
+   "how": "exact",
+   "mondo_name": "myasthenia gravis",
+   "n_papers": 1
+  },
+  "Neurocognitive impairment": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "n_papers": 1
+  },
+  "Neuroinfection": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "n_papers": 1
+  },
+  "Neuromyelitis optica": {
+   "mondo": "MONDO:0019100",
+   "how": "exact",
+   "mondo_name": "neuromyelitis optica",
+   "n_papers": 1
+  },
+  "Parkinson's disease": {
+   "mondo": "MONDO:0005180",
+   "how": "exact",
+   "mondo_name": "Parkinson disease",
+   "n_papers": 67
+  },
+  "Poststroke aphasia": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "n_papers": 1
+  },
+  "REM sleep behavior disorder\u2013Lewy body disease continuum": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "n_papers": 1
+  },
+  "Rett syndrome": {
+   "mondo": "MONDO:0010726",
+   "how": "exact",
+   "mondo_name": "Rett syndrome",
+   "n_papers": 1
+  },
+  "Spinal cord injury": {
+   "mondo": "MONDO:0043797",
+   "how": "exact",
+   "mondo_name": "spinal cord injury",
+   "n_papers": 6
+  },
+  "Spinal muscular atrophy": {
+   "mondo": "MONDO:0001516",
+   "how": "exact",
+   "mondo_name": "spinal muscular atrophy",
+   "n_papers": 1
+  },
+  "Sporadic Creutzfeldt-Jakob disease": {
+   "mondo": "MONDO:0016079",
+   "how": "exact",
+   "mondo_name": "sporadic Creutzfeldt-Jakob disease",
+   "n_papers": 1
+  },
+  "Stroke": {
+   "mondo": "MONDO:0005098",
+   "how": "exact",
+   "mondo_name": "stroke disorder",
+   "n_papers": 30
+  },
+  "Subjective cognitive decline": {
+   "mondo": "MONDO:0850292",
+   "how": "exact",
+   "mondo_name": "subjective cognitive decline",
+   "n_papers": 1
+  },
+  "Traumatic brain injury": {
+   "mondo": "MONDO:0858950",
+   "how": "exact",
+   "mondo_name": "traumatic brain injury",
+   "n_papers": 1
+  },
+  "Traumatic thoracic spinal cord injury": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "n_papers": 1
+  },
+  "Tuberous sclerosis complex": {
+   "mondo": "MONDO:0001734",
+   "how": "exact",
+   "mondo_name": "tuberous sclerosis",
+   "n_papers": 1
+  }
+ }
+}

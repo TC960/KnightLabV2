@@ -1,0 +1,42 @@
+{
+ "note": "Orchestrator (Opus) adjudication of the 28 residual T1 disagreements from audit_direction_witness.py. Written BEFORE reading the independent Haiku pass (disagree_adjudication_haiku.json) so the two can be compared honestly. Categories are defined in FINDINGS_direction_audit.md.",
+ "verdicts": [
+  {"id": 1, "taxon": "Bifidobacterium", "disease": "Parkinson's disease", "category": "BACKGROUND_LEAK", "reason": "'We assume that low Bifidobacterium level is risky' plus 'increased level observed in most studies' -- speculation about the wider literature, not this cohort's result."},
+  {"id": 2, "taxon": "Bacteroides", "disease": "Stroke", "category": "LOCATIVE_CONTROL", "reason": "'healthy individuals were dominated by Bacteroides' -- abundance attributed to controls, so depleted in disease; extraction 'down' is right."},
+  {"id": 3, "taxon": "Bifidobacterium", "disease": "Stroke", "category": "BACKGROUND_LEAK", "reason": "'inconsistent with another previous study 25, which reported a reduced...' -- another study's finding. The bare numeric citation 'study 25' has no brackets, so the CITATION regex missed it."},
+  {"id": 4, "taxon": "Faecalibacterium", "disease": "Parkinson's disease", "category": "LOCATIVE_CONTROL", "reason": "'more abundant in the mucosa of controls than PD'."},
+  {"id": 5, "taxon": "Lachnospiraceae", "disease": "Parkinson's disease", "category": "TAXON_MISMATCH", "reason": "The sentence is about the 'Lachnospiraceae GCA-900066575' ASV-level genus and states differential abundance without a direction for the family node."},
+  {"id": 6, "taxon": "Ruminococcus", "disease": "Multiple sclerosis", "category": "OTHER_CONTRAST", "reason": "IgA antibody levels against R. flavefaciens at M12 vs M0 -- a treatment timepoint, and an antibody titre rather than taxon abundance."},
+  {"id": 7, "taxon": "Bifidobacterium", "disease": "Multiple sclerosis", "category": "OTHER_CONTRAST", "reason": "PV- vs PC-/BW-administered mice -- an intervention arm comparison in an animal sub-experiment."},
+  {"id": 8, "taxon": "Prevotella", "disease": "Parkinson's disease", "category": "TAXON_MISMATCH", "reason": "Describes COG functional categories in Prevotella MAGs; states no abundance direction at all."},
+  {"id": 9, "taxon": "Pseudomonadota", "disease": "Parkinson's disease", "category": "TAXON_MISMATCH", "reason": "The reduction belongs to 'Candidatus Blochmannia', not to the Pseudomonadota phylum node."},
+  {"id": 10, "taxon": "Methanomethylophilaceae", "disease": "Parkinson's disease", "category": "LOCATIVE_CONTROL", "reason": "'significantly more abundant in the control group'."},
+  {"id": 11, "taxon": "Bacteroides", "disease": "Parkinson's disease", "category": "LOCATIVE_CONTROL", "reason": "'Bacteroides were enriched in the control group'."},
+  {"id": 12, "taxon": "Faecalibacterium", "disease": "Alzheimer's disease", "category": "LOCATIVE_CONTROL", "reason": "'lower in the NC group than in the aMCI group' means HIGHER in the patient group; extraction 'up' is right and the raw 'lower' cue is the inverted one."},
+  {"id": 13, "taxon": "Faecalibacterium", "disease": "Alzheimer's disease", "category": "LOCATIVE_CONTROL", "reason": "'enriched Faecalibacterium was the best discriminant predictor for the healthy controls'."},
+  {"id": 14, "taxon": "Clostridium XVIII", "disease": "Huntington's disease", "category": "LOCATIVE_CONTROL", "reason": "'significantly higher in the healthy control group compared to that in the HD group'."},
+  {"id": 15, "taxon": "Lachnospira", "disease": "Alzheimer's disease", "category": "LOCATIVE_CONTROL", "reason": "'remarkably higher in the NC group' -- normal-cognition group. Also FDR-P=0.139, i.e. not significant."},
+  {"id": 16, "taxon": "Oscillospiraceae", "disease": "Multiple sclerosis", "category": "OTHER_CONTRAST", "reason": "A single patient explicitly 'excluded from the study', compared against a household control, 'data not shown'."},
+  {"id": 17, "taxon": "Roseburia", "disease": "Multiple sclerosis", "category": "OTHER_CONTRAST", "reason": "'In responders at the end of M12' -- a post-treatment responder subgroup, not the baseline disease-vs-control contrast."},
+  {"id": 18, "taxon": "Merdimonas", "disease": "Mild cognitive impairment", "category": "OTHER_CONTRAST", "reason": "'marked decline in MCI converters' -- a converter subgroup trajectory."},
+  {"id": 19, "taxon": "Rhodospirillales", "disease": "Parkinson's disease", "category": "TAXON_MISMATCH", "reason": "The direction belongs to Kiloniellales, Flavorbacteriaceae and CAG56, which are the taxa the sentence names."},
+  {"id": 20, "taxon": "Thermoactinomycetaceae", "disease": "Parkinson's disease", "category": "LOCATIVE_CONTROL", "reason": "'in the control group were higher than those in the PD group'."},
+  {"id": 21, "taxon": "Bacteroides", "disease": "Cognitive impairment", "category": "OTHER_CONTRAST", "reason": "A regression coefficient against a continuous cognitive score, not a case-control contrast; and the CI (0.00-0.27) touches zero."},
+  {"id": 22, "taxon": "Streptococcus gordonii", "disease": "Mild cognitive impairment", "category": "LOCATIVE_CONTROL", "reason": "'more abundant in cognitively normal' individuals."},
+  {"id": 23, "taxon": "Bifidobacterium angulatum", "disease": "Multiple sclerosis", "category": "OTHER_CONTRAST", "reason": "'after one year of treatment compared to baseline' -- a within-MS longitudinal change."},
+  {"id": 24, "taxon": "Limnobacter", "disease": "Parkinson's disease", "category": "LOCATIVE_CONTROL", "reason": "'greater proportions ... in the healthy group than in the PD group'."},
+  {"id": 25, "taxon": "Prevotella", "disease": "Hypertensive intracerebral hemorrhage", "category": "OTHER_CONTRAST", "reason": "SAP vs non-SAP enterotype split within the patient cohort, not disease vs healthy control."},
+  {"id": 26, "taxon": "Megamonas", "disease": "Chronic traumatic complete spinal cord injury", "category": "OTHER_CONTRAST", "reason": "'higher in the bloating group than in the non-bloating group' -- a symptom subgroup within the injured cohort."},
+  {"id": 27, "taxon": "Dialister", "disease": "Chronic traumatic complete spinal cord injury", "category": "LOCATIVE_CONTROL", "reason": "'significantly higher in healthy males'."},
+  {"id": 28, "taxon": "Clostridiaceae", "disease": "Stroke", "category": "UNRESOLVED", "reason": "The matched sentence is truncated mid-clause ('p-value FDR <= 0.') and never names which group carries the higher abundance."}
+ ],
+ "counts": {
+  "LOCATIVE_CONTROL": 12,
+  "OTHER_CONTRAST": 9,
+  "BACKGROUND_LEAK": 2,
+  "TAXON_MISMATCH": 4,
+  "EXTRACTION_ERROR": 0,
+  "UNRESOLVED": 1
+ },
+ "conclusion": "Zero of the 28 residual disagreements is a confirmed extraction error. Every one is an artefact of what the AUDIT can see: 12 sentences attribute the abundance to the control group (so the graph's 'depleted in disease' is correct and the raw cue is the inverted one), 9 compare something other than disease vs healthy control (treatment arms, timepoints, symptom or converter subgroups, a regression on a continuous score), 4 carry a direction belonging to a different taxon, 2 are background that leaked past the provenance filter, and 1 is truncated. So 86.6% is a LOWER BOUND on reading fidelity, not an estimate of it."
+}

@@ -1,0 +1,73 @@
+{
+ "per_disease_internal": [
+  {
+   "disease": "Parkinson's disease",
+   "n_pairs": 1220,
+   "agree": 984,
+   "rate": 0.8066,
+   "lift_over_cross_disease": 0.1495
+  },
+  {
+   "disease": "Stroke",
+   "n_pairs": 455,
+   "agree": 330,
+   "rate": 0.7253,
+   "lift_over_cross_disease": 0.0682
+  },
+  {
+   "disease": "Multiple sclerosis",
+   "n_pairs": 315,
+   "agree": 217,
+   "rate": 0.6889,
+   "lift_over_cross_disease": 0.0319
+  },
+  {
+   "disease": "Alzheimer's disease",
+   "n_pairs": 806,
+   "agree": 490,
+   "rate": 0.6079,
+   "lift_over_cross_disease": -0.0491
+  },
+  {
+   "disease": "Epilepsy",
+   "n_pairs": 67,
+   "agree": 33,
+   "rate": 0.4925,
+   "lift_over_cross_disease": -0.1645
+  }
+ ],
+ "cross_disease_baseline": 0.657,
+ "pd_vs_others": {
+  "pd_rate": 0.8066,
+  "pd_n_pairs": 1220,
+  "median_other_rate": 0.6889,
+  "n_others_at_or_above": 0,
+  "n_others": 4
+ },
+ "pd_share_of_same_disease_pairs": 0.4261,
+ "full_corpus": {
+  "gap": 0.0591,
+  "same_rate": 0.7161,
+  "diff_rate": 0.657,
+  "n_same_pairs": 2952,
+  "n_diff_pairs": 20675,
+  "null_mean": 0.0005,
+  "null_sd": 0.01727,
+  "z": 3.39,
+  "p": 0.0014,
+  "min_detectable_gap_at_p05": 0.0296
+ },
+ "parkinsons_removed": {
+  "gap": 0.0187,
+  "same_rate": 0.6524,
+  "diff_rate": 0.6337,
+  "n_same_pairs": 1732,
+  "n_diff_pairs": 12521,
+  "null_mean": -0.00082,
+  "null_sd": 0.0214,
+  "z": 0.91,
+  "p": 0.17936,
+  "min_detectable_gap_at_p05": 0.035
+ },
+ "verdict_without_pd": "does NOT survive without Parkinson's -- the pooled effect is substantially carried by one disease"
+}

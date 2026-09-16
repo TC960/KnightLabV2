@@ -1,0 +1,217 @@
+"""Drive the built kg.html in a real browser and assert the viewer actually works.
+
+    pip install playwright && python3 verify_viz.py kg.html
+
+WHY THIS EXISTS. Two fixes in this repo have silently erased themselves on
+rebuild while printing success, and a blank-canvas bug passed every static
+check -- `build_viz.py` emitting well-formed HTML proves nothing about whether
+the page renders. So every assertion below reads the rendered DOM or the canvas
+pixels back out of Chromium AFTER real user input (tab clicks, select changes,
+checkbox toggles), never the source string.
+
+Set BROWSER to a chromium binary if the default path is wrong.
+"""
+import os, sys, json, pathlib
+from playwright.sync_api import sync_playwright
+
+PAGE = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else
+                    os.path.join(os.path.dirname(os.path.abspath(__file__)), "kg.html")).resolve().as_uri()
+BROWSER = os.environ.get("BROWSER", "/opt/pw-browsers/chromium-1194/chrome-linux/chrome")
+fails, notes = [], []
+
+
+def check(name, cond, detail=""):
+    (notes if cond else fails).append(f"{'PASS' if cond else 'FAIL'} {name} {detail}")
+
+
+with sync_playwright() as p:
+    b = p.chromium.launch(executable_path=BROWSER)
+    pg = b.new_page(viewport={"width": 1280, "height": 1000})
+    errs = []
+    pg.on("console", lambda m: errs.append(m.text) if m.type == "error" else None)
+    pg.on("pageerror", lambda e: errs.append(f"pageerror: {e}"))
+    pg.goto(PAGE)
+    pg.wait_for_timeout(3500)
+
+    check("no console/page errors", not errs, str(errs[:3]))
+
+    # --- network canvas actually painted (the historical blank-canvas bug) ---
+    ink = pg.evaluate("""() => {
+      const c = document.getElementById('net');
+      const x = c.getContext('2d');
+      const d = x.getImageData(0,0,c.width,c.height).data;
+      const seen = new Set();
+      for (let i=0;i<d.length;i+=4*97) seen.add(d[i]+','+d[i+1]+','+d[i+2]);
+      return {w:c.width, h:c.height, distinct: seen.size};
+    }""")
+    check("network canvas painted", ink["distinct"] > 5, json.dumps(ink))
+
+    # --- ranked view ---
+    pg.click("#tab-rank")
+    pg.wait_for_timeout(400)
+
+    def rows():
+        return pg.evaluate("""() => [...document.querySelectorAll('#chart .row')].map(r => ({
+            tax: r.querySelector('.tax').textContent.trim(),
+            scope: (r.querySelector('.scope .chip.cls')||{}).textContent || '',
+            tier: (r.querySelector('.scope .chip.tier')||{}).textContent || '',
+            hollow: !!r.querySelector('.bar.prior'),
+            papers: r.querySelector('.cnt').textContent.trim(),
+        }))""")
+
+    base = rows()
+    check("ranked rows render", len(base) > 10, f"n={len(base)}")
+    check("scope chip on every row", all(r["scope"] for r in base),
+          f"missing={sum(1 for r in base if not r['scope'])}")
+
+    check("confidence tier chip on every row", all(r["tier"] for r in base),
+          f"missing={sum(1 for r in base if not r['tier'])}")
+
+    # --- sort by confidence tier: best-evidenced first, contested last ---
+    # A tier chip that never varies would pass the assertion above while telling
+    # the reader nothing, so the sort has to demonstrate the tiers are distinct.
+    pg.select_option("#sortby", "conf")
+    pg.wait_for_timeout(300)
+    cf = rows()
+    trank = {"well-supported": 0, "supported": 1, "provisional": 2, "contested": 3}
+    tseq = [trank.get(r["tier"], 9) for r in cf]
+    check("confidence sort is monotonic (well-supported -> contested)",
+          tseq == sorted(tseq), f"first5={[r['tier'] for r in cf[:5]]}")
+    check("confidence sort surfaces well-supported first",
+          cf[0]["tier"] == "well-supported", f"got={cf[0]['tier']}")
+    # Tier diversity is checked on the DEFAULT (evidence) sort, not this one:
+    # there are 75 well-supported edges and the chart renders only the top 60, so
+    # a correct confidence sort shows a single tier here. Asserting diversity on
+    # the sorted view would fail on working code.
+    check("more than one tier is actually present",
+          len({r["tier"] for r in base}) > 1,
+          f"tiers={sorted({r['tier'] for r in base})}")
+    pg.select_option("#sortby", "ev")
+    pg.wait_for_timeout(200)
+
+    n_hollow_default = sum(r["hollow"] for r in base)
+    check("hollow (restates-prior) bars present by default", n_hollow_default > 0,
+          f"n={n_hollow_default}")
+
+    # --- sort by specificity: discriminating must come first, generic last ---
+    pg.select_option("#sortby", "spec")
+    pg.wait_for_timeout(300)
+    sp = rows()
+    order = [r["scope"].split()[0] for r in sp]
+    rank = {"flips": 0, "mixed": 1, "narrow": 2, "—": 2, "generic": 3}
+    seq = [rank.get(o, 9) for o in order]
+    check("specificity sort is monotonic (discriminating->generic)",
+          seq == sorted(seq), f"first10={order[:10]} last5={order[-5:]}")
+    check("specificity sort surfaces 'flips' first", order[0] == "flips", f"got={order[0]}")
+    check("evidence sort differs from specificity sort",
+          [r["tax"] for r in base] != [r["tax"] for r in sp])
+
+    # --- hide-prior filter ---
+    pg.select_option("#sortby", "ev")
+    pg.wait_for_timeout(200)
+    pg.check("#hideprior")
+    pg.wait_for_timeout(300)
+    hid = rows()
+    check("hide-prior removes every hollow bar", sum(r["hollow"] for r in hid) == 0,
+          f"remaining={sum(r['hollow'] for r in hid)}")
+    check("hide-prior actually changes the row set",
+          [r["tax"] for r in hid] != [r["tax"] for r in base])
+    pg.uncheck("#hideprior")
+    pg.wait_for_timeout(300)
+
+    # --- detail panel carries the plain-English specificity sentence ---
+    pg.click("#chart .row:first-child")
+    pg.wait_for_timeout(400)
+    spec_txt = pg.evaluate("() => (document.querySelector('#detail .spec')||{}).textContent || ''")
+    check("detail panel shows specificity sentence", "Reported in" in spec_txt,
+          repr(spec_txt[:110]))
+    check("specificity sentence has no unresolved placeholder", "?" not in spec_txt.split("—")[0],
+          repr(spec_txt[:110]))
+
+    # --- detail panel quotes the MEASURED agreement rate for this edge's tier ---
+    # The whole point of the tier is the number attached to it; a chip with no
+    # rate behind it is decoration. "null%" is the failure mode to catch — the
+    # contested tier has no rate, so it must not fall through to the template.
+    trust_txt = pg.evaluate(
+        "() => (document.querySelector('#detail .trust')||{}).textContent || ''")
+    check("detail panel shows the confidence tier", trust_txt.strip() != "",
+          repr(trust_txt[:110]))
+    check("confidence sentence quotes a measured rate or says contested",
+          ("agree with independent curation" in trust_txt) or ("Contested" in trust_txt),
+          repr(trust_txt[:130]))
+    check("confidence sentence has no null/undefined rate",
+          "null" not in trust_txt and "undefined" not in trust_txt,
+          repr(trust_txt[:130]))
+
+    # --- rank-conflict filter and its detail block ---
+    pg.check("#onlyrc")
+    pg.wait_for_timeout(400)
+    rc = pg.evaluate("""() => [...document.querySelectorAll('#chart .row')].map(r => ({
+        chip: !!r.querySelector('.chip.conf'),
+        tax: r.querySelector('.tax').textContent.trim()}))""")
+    check("rank-conflict filter returns rows", len(rc) > 0, f"n={len(rc)}")
+    check("every filtered row carries the rank chip", rc and all(r["chip"] for r in rc),
+          f"missing={sum(1 for r in rc if not r['chip'])}")
+    pg.click("#chart .row:first-child")
+    pg.wait_for_timeout(400)
+    conf = pg.evaluate("() => (document.querySelector('#detail .conflict')||{}).textContent || ''")
+    check("detail panel explains the rank conflict", "single study reports both" in conf,
+          repr(conf[:90]))
+    check("rank-conflict block names the counterpart taxon", " vs its " in conf, repr(conf[:160]))
+    pg.uncheck("#onlyrc")
+    pg.wait_for_timeout(300)
+    check("unchecking rank-conflict filter restores rows",
+          len(rows()) > len(rc), f"{len(rc)} -> {len(rows())}")
+
+    # --- table view gained its two columns ---
+    heads = pg.evaluate("() => [...document.querySelectorAll('table th')].map(t=>t.textContent.trim())")
+    check("table has Diseases + Specificity columns",
+          "Diseases" in heads and "Specificity" in heads, str(heads))
+
+    # --- study protocol provenance (methods_metadata.py -> build_kg.py) ---
+    # Open a well-evidenced edge, which is where a protocol note can exist at all:
+    # the label is "unknown" for single-paper edges by construction.
+    pg.select_option("#sortby", "ev")
+    pg.wait_for_timeout(400)
+    n_rows = len(rows())
+    opened = False
+    for i in range(1, min(13, n_rows + 1)):
+        pg.click(f"#chart .row:nth-child({i})")
+        pg.wait_for_timeout(250)
+        if pg.evaluate("() => !!document.querySelector('#detail .proto-note')"):
+            opened = True
+            break
+    check("a well-evidenced edge shows the protocol note", opened,
+          "checked the 12 most-replicated edges")
+    if opened:
+        pn = pg.evaluate("() => document.querySelector('#detail .proto-note').textContent")
+        check("protocol note says which kind of evidence it is",
+              ("Multi-method evidence" in pn) or ("Single-method evidence" in pn),
+              repr(pn[:80]))
+        check("protocol note refuses to sell diversity as quality",
+              "does not predict agreement" in pn.replace(" ", " ")
+              or "not folded into" in pn, repr(pn[-120:]))
+        check("protocol note has no unresolved placeholder",
+              "undefined" not in pn and "NaN" not in pn and "null" not in pn,
+              repr(pn[:120]))
+        heads2 = pg.evaluate(
+            "() => [...document.querySelectorAll('#detail table th')].map(t=>t.textContent.trim())")
+        check("study table has a Protocol column", "Protocol" in heads2, str(heads2))
+        cells = pg.evaluate(
+            "() => [...document.querySelectorAll('#detail td.proto')].map(t=>t.textContent.trim())")
+        check("at least one study names its protocol",
+              any(c and c != "—" for c in cells), str(cells[:6]))
+
+    # --- tiles ---
+    tiles = pg.evaluate("() => [...document.querySelectorAll('.tile')].map(t=>t.textContent.trim())")
+    check("discriminating tile present", any("discriminating" in t for t in tiles), str(tiles))
+
+    pg.screenshot(path=os.environ.get("SHOT_RANK", "/tmp/kg_shot_rank.png"), full_page=False)
+    pg.click("#tab-net"); pg.wait_for_timeout(2500)
+    pg.screenshot(path=os.environ.get("SHOT_NET", "/tmp/kg_shot_net.png"), full_page=False)
+    b.close()
+
+print("\n".join(notes))
+print("\n".join(fails))
+print(f"\n{len(notes)} passed, {len(fails)} failed")
+sys.exit(1 if fails else 0)

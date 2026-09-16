@@ -1,5 +1,214 @@
 # Session prompt — KG usefulness + embeddings
 
+> ## ⚠️ READ THIS BEFORE THE TASK LIST BELOW — updated 2026-09-16
+>
+> **The numbered tasks in this file are all DONE and have been for six sessions.**
+> The scheduled routine still fires the old priority list (MAIN_DATA filter,
+> Task 1, Task 2.5, Task 3.1), and **five** consecutive sessions have each opened by
+> confirming they were already complete. If you are reading this because that
+> prompt sent you here: **do not redo any of them.** Read `SESSION_LOG.md` — its
+> top entry is the current state — and pick from the short list below.
+>
+> **Two other standing instructions in that routine prompt are also stale:**
+> 1. It tells you to download the NCBI taxdump from `ftp.ncbi.nih.gov`. That host
+>    has returned **403 in eleven consecutive sessions** (re-probed 2026-09-16);
+>    `eutils.ncbi.nlm.nih.gov` is 403 too. Use `taxonomy_cache.py`, which replays
+>    `graph.json`'s own resolution and is valid for any rebuild that does not add
+>    papers. **Do not spend a tool call re-probing.**
+> 2. It says paper text is unavailable in the cloud because `MAIN_DATA.json` is
+>    gitignored. That is true only of FULL text — see the 2026-09-15 correction
+>    below. `relation_sentences_clean.json` is committed and covers 271/271
+>    contributing papers.
+>
+> **NEW 2026-09-16 — the recall direction is now open, measured, and it changes the
+> top lever.** Two new instruments: `zero_yield_audit.py` / `FINDINGS_zero_yield.md`
+> (paper-level recall **≥96.1%**, 99.6% counting only confirmable misses) and
+> `edge_recall_audit.py` / `FINDINGS_edge_recall.md` (**edge-level recall at most
+> ~98.1%** [96.4, 99.5], ~60 missed observations of 3,077 — the first edge-level
+> recall number that does not depend on the flawed gold).
+>
+> **READ THIS BEFORE ANY FURTHER RECALL WORK — it cost this session a wrong
+> headline.** The extraction prompt (`eval-v2/run_eval.py`, `samgated-v1`) does NOT
+> extract anything that merely states a direction. It requires **reported
+> statistical significance** (*"if significance is unclear or unreported for a taxon,
+> omit it"*), **main text only**, and **disease vs healthy control only**. An audit
+> that scores the extractor without applying its own gate **manufactures misses**:
+> the first pass reported 4 paper-level misses where 1 is confirmable, and 36
+> edge-level miss verdicts where 15 survive. Also: adjudicators' "verbatim" quotes
+> are often paraphrases — 7 of 36 failed a machine verbatim check. Always
+> machine-check the quote, then apply the gate.
+>
+> **The top lever is no longer "more papers" in general — it is a SHORT LIST.**
+> 12 of the 15 confirmed missed observations come from just 3 papers, and the 94
+> candidate papers are already enumerated in `edge_recall_packets.json`. A bounded
+> re-extraction over the worst ~20 recovers most of the recoverable loss and is far
+> cheaper than a corpus-scale run. Still needs a GPU — **ask before spending** — but
+> it is a much smaller ask than item 1 below.
+>
+> **Genuinely open, in order:**
+>
+> 0. **Re-run `silent_edge_mentions.py` where `MAIN_DATA.json` exists** (i.e. on
+>    the Mac, not in the cloud). NEW 2026-09-13, and the cheapest open lever in
+>    the project: no GPU, no taxdump, no new papers. The mention audit verified
+>    that 429 of 436 scoreable "unverifiable" edges (98.4%) do name their taxon in
+>    their source paper — but **144 of the 580, and 795 of 3,077 observations
+>    (25.8%), are unscoreable in the cloud** purely because their full text is
+>    gitignored. Running it locally closes that hole outright. See
+>    `FINDINGS_mention_audit.md`. **Still true as of 2026-09-15 — but see the
+>    correction below: it is true of THIS task, not of paper text in general.**
+>
+> **CORRECTION 2026-09-15 — "no paper text in the cloud" is too broad, and it has
+> been costing sessions.** `relation_sentences_clean.json` is **committed** and
+> covers **271 of 271 contributing papers (100%)** — 6,294 relation-bearing
+> sentences, 1.74 MB, each tagged with resolved taxa and direction cues. Any
+> question of the form *"what did this paper compare?"*, *"what is the cohort?"*,
+> or *"which direction does it report for taxon X?"* **is answerable in the
+> cloud.** The 2026-09-15 HIV/`Neurocognitive impairment` question was settled
+> entirely from it with no `MAIN_DATA.json`. The limit is real and specific: it
+> holds ~10% of corpus text (16.78 M → 1.74 M chars), so it **cannot** answer
+> "does taxon X appear *anywhere* in this paper" — which is precisely why item 0
+> above still needs the Mac. Do not generalise item 0's blocker to all text work.
+>
+> 1. **More papers.** The binding constraint on every statistical question, and
+>    has been for five sessions. 109 papers with ≥4 decisive observations sets
+>    every MDE in the project. **Needs a GPU — ask before spending.** The
+>    corpus-screening alternative below is now SPENT, so this really is the top
+>    item again.
+> 2. **ONE modelling call left, and it is now precisely scoped.** The
+>    disease-subtype half of this is **largely ANSWERED, 2026-09-14** — see
+>    `FINDINGS_disease_ontology.md` and do not redo it. MONDO is reachable here
+>    (GitHub release, 200; `purl.obolibrary.org` and EBI are blocked), so
+>    `mondo.py` resolves 28 of 40 disease labels and **confirmed 2 of 2 checkable
+>    is-a claims and upheld 2 of 2 rejections** — the hand-written tiers were
+>    right. The 2 MONDO links are shipped (`disease_hierarchy_links.json`,
+>    opt-in). And the 71-paper cognitive cluster **does not cohere**: 0.592 vs a
+>    0.672 background, with every MCI pair at or below a coin flip while the
+>    MONDO-confirmed AD/Dementia link runs 0.938. **So: link those nodes for
+>    retrieval, do NOT pool their evidence, do NOT fold MCI into Alzheimer's.**
+>    What genuinely remains for a human: (a) the `Escherichia-Shigella` question,
+>    and **2026-09-14 reframes it** — containment is the WRONG primitive, because
+>    a joint label denotes reads that could be either genus and so is not a
+>    subset of either. The three options on record (attribute-to-one / split /
+>    hold-apart) all miss what a user wants, which is the joint node reachable
+>    from either parent without either absorbing its evidence. That needs a new
+>    **edge type** ("ambiguous assay", not `parent_of`) — a schema decision. 5
+>    nodes, 13 edges. See `FINDINGS_orphan_parents.md`. (b) whether the
+>    MCI / `Cognitive impairment` / `Neurocognitive impairment` labels are
+>    *synonyms of each other* (a folding question) given MONDO carries none of
+>    them. Not (b)-as-containment — that is now answered no.
+>
+>    **(b) is now ANSWERED for `Neurocognitive impairment`, 2026-09-15: DO NOT
+>    FOLD — for a cohort reason, not a data reason.** Its one paper studies NCI⁺
+>    vs NCI⁻ *within an HIV-infected population* (verified from the paper's own
+>    sentences, in the cloud). The edges are correctly typed, so this is **not** an
+>    error — but the source population is HIV⁺ and transfer to non-HIV cognitive
+>    impairment is untested. The graph's data cannot decide it: n=5, **MDE 46.9
+>    points**. Its MONDO id stays `None` — MONDO has no "neurocognitive" term, and
+>    `MONDO:0020689` "AIDS dementia complex" is one rank too narrow (the ASD
+>    mistake). **`MCI` vs `Cognitive impairment` remains open and is UNRESOLVABLE
+>    at this n**: 9/18 = 0.500 vs a 0.669 background, p=0.138, **MDE 28.0 points**
+>    against an observed gap of 16.9. It needs a clinical call or more papers.
+>
+> 2b. **NEW 2026-09-15 — the cheapest remaining non-GPU lever: a curated disease
+>    label table.** `norm_disease` falls through to the extractor's free-text label
+>    whenever its 17 regexes miss, so **25 of 40 disease nodes (399 edges, 19.9% of
+>    the graph, 38 papers) are unvalidated strings**, 11 of them (145 edges) with
+>    no MONDO id either. The taxon half has `taxon_typos.py` and `multi_taxon.py`;
+>    the disease half has **nothing**. 4 genuine candidate families carry 383 edges
+>    (`[cognitive impairment]` 209, `[cord injury]` 101, `[intracerebral
+>    hemorrhage]` 61, `[hepatic encephalopathy]` 12). Census and instrument:
+>    `disease_node_provenance.py`, `FINDINGS_disease_node_provenance.md`. **Do NOT
+>    automate the folds** — that script's own head-noun heuristic grouped
+>    Parkinson's + Alzheimer's + Huntington's (689 edges) on a shared suffix, which
+>    is exactly why the taxon side uses curated tables and not thresholds.
+>
+> 3. **Report PMID 27703453 upstream to Disbiome** — their case/control assignment
+>    is inverted on all five records, per `FINDINGS_db_conflicts.md`.
+> 4. Re-run `adjudicate_db_conflicts.py` whenever the corpus grows.
+>
+> **Closed levers — do not reopen without new data:**
+>
+> - **Sentence-level direction audit. DONE 2026-09-12, and it is the best
+>   fidelity number the project has.** Reading fidelity **≥86.6%** [81.7, 91.3]
+>   against the papers' own sentences, independent of the gold AND of both
+>   curated databases. All 28 residual disagreements adjudicated twice — **zero
+>   extraction errors** — so it is a lower bound. Do NOT rebuild the
+>   comparison-frame corrector: it was built, measured, and made agreement worse
+>   (0.866 → 0.774), because 41 of 54 "control-framed" sentences name controls as
+>   the *reference*, not the subject. See `FINDINGS_direction_audit.md`.
+> - **Textual provenance as a predictor of discordance.** own-result 27.6% vs
+>   background-only 27.1%, pooled difference −0.6 points at an MDE of 8.4. The
+>   **25th** variable, the 25th null. The 585 background-only observations are
+>   not worse evidence, so there is no defective subset to review.
+>
+> - **Corpus screening for study design. DONE 2026-09-11, and it is clean.**
+>   Only 23 of 271 papers had ever been screened; the other 249 now have been.
+>   Animal studies: deterministic full-text filter, recall 15/15 on the existing
+>   gold set, and a null on the rest. The other three failure modes: an abstract
+>   screen with 24 blinded controls flagged 18 papers as droppable or unclear,
+>   **all 18 were read against full text, and all 18 are KEEP.** Zero papers
+>   removed. Do NOT re-run the abstract screen — it was 0-for-4 on drops and
+>   0-for-14 on unclears, and it marked a known rat-FMT study KEEP; its value is
+>   triage, not adjudication. Residual: 231 papers were cleared from an abstract
+>   and never re-read, against a measured 2/12 missed-drop rate, so "consistent
+>   with zero, not proven zero". See `FINDINGS_corpus_screen.md`.
+>
+> - **Paper-level covariates of discordance.** 24 variables tested across two
+>   passes (9 study-design, 15 wet-lab/bioinformatics), 24 nulls — and the
+>   arithmetic says why: the paper-level SD of discordance is 3.4 points against
+>   MDEs of 4–7. See `FINDINGS_paper_discordance.md`.
+> - **Another structural correction expecting agreement to move.** SIX have now
+>   moved it by less than this corpus can resolve, and the 2026-09-11 pair moved
+>   the two databases in OPPOSITE directions (+0.004 Disbiome, −0.002 Peryton),
+>   which is what noise looks like. Corrections are still worth making — they are
+>   justified on correctness of meaning — but never report one as an accuracy gain.
+> - **Rebuilding on top of a failed build.** `taxonomy_cache.py` replays
+>   `graph.json`'s own resolution and `build_kg.py` overwrites `graph.json`, so a
+>   bad intermediate silently becomes the authority for the next build. Restore a
+>   known-good `graph.json` before re-running. This bit on 2026-09-11.
+> - **One confirmed extraction error is open and unfixed (2026-09-13).**
+>   `Clostridiales incerte sedis XIII` / Parkinson's: the source paper says
+>   `incerte sedis XII` once and XIII zero times. Both are real RDP labels. One
+>   placeholder-node edge; correcting it needs a rebuild, so it was left rather
+>   than rebuilt on a cloud checkout. See `FINDINGS_mention_audit.md`.
+>
+> - **Orphan containment. DONE 2026-09-14.** 24 taxon nodes had their parent
+>   written in their own label and were detached anyway (the placeholder branch
+>   only fires for labels the taxonomy resolved; these resolve to nothing). 14
+>   linked, 13 refused with reasons in `orphan_parents.py`, 91 correctly left
+>   detached. Orphans 170 → 156, hierarchy 713 → 727. **Do not replace that
+>   curated table with a substring rule** — four of the 24 candidates are
+>   bacteriophages, and a phage is not contained in the genus it infects.
+>   Re-run `orphan_parents.py` after any taxon-normalisation change. The 156
+>   still-orphaned nodes are mostly 16S clade labels with no recoverable parent;
+>   that residue is not worth another pass without new data.
+> - **Disease ontology resolution. DONE 2026-09-14 and it found shipped errors.**
+>   Two wrong MONDO ids were live on 209 of 2,008 edges and in `kg.html`: the MCI
+>   node carried `MONDO:0005453` = *congenital heart disease*, and ASD carried the
+>   id for narrow *autism*. Fixed at source, graph/RAG/viz/docs rebuilt under a
+>   strict diff gate. **Do not re-add an id for MCI** — MONDO has no such term,
+>   `None` is correct. Coverage is 28/40 with 12 documented refusals; don't
+>   fuzzy-match the rest. Note for any future statistical work here: **paper
+>   overlap between disease nodes is ZERO for every pair**, so cross-disease
+>   comparisons are not subject to the shared-paper inflation that makes
+>   73.0/72.5 a blend. And **4 is-a disease pairs would be needed** to resolve a
+>   20-point ontology-proximity effect; the graph can form 2.
+> - **`rag_corpus.jsonl` staleness. FIXED 2026-09-14** — it had never been
+>   regenerated after the 2026-09-08 punctuation or 2026-09-11 spelling folds and
+>   was wrong on 293 documents (7%). If you change taxon normalisation again,
+>   **re-run `build_rag.py`**; the retrieval ground truth is derived from that
+>   file, so a stale corpus silently rescores the retriever. Re-running the
+>   comparison on the fixed corpus flips Task 2.5's ordering (GraphRAG 0.683 vs
+>   BM25 0.700, exact permutation **p=1.000**) — which confirms that comparison is
+>   a tie and that **neither number is a ranking**. Six queries cannot resolve a
+>   gap below ~0.17.
+>
+> - **The NCBI taxdump.** `ftp.ncbi.nih.gov` is blocked in the cloud environment
+>   (CONNECT → 403, probed in four sessions). **2026-09-13: `eutils.ncbi.nlm.nih.gov`
+>   is blocked too (403), so there is no HTTPS API workaround — stop probing.** `taxonomy_cache.py` replays
+>   `graph.json`'s own resolution and is valid for rebuilds over a SUBSET of the
+>   current papers — which is every rebuild that does not add papers.
+
 Paste everything below into a fresh Claude Code session in `/Users/mohak/Desktop/Lab Work`.
 
 ---
@@ -59,51 +268,104 @@ on each other and can be fanned out to subagents. Task 2 depends on Task 1.
   every static check.
 - Commit as you go with real reasoning in the messages.
 
-## STATE AS OF 2026-08-31 (already done — do not redo)
+## STATE AS OF 2026-09-03 (already done — do not redo)
 
-- Graph rebuilt on the CORRECT datasheet: **348 papers, 299 scoreable** (was 250/88),
-  833 taxa, 43 diseases, 1,927 edges, 226 contested, 625 containment links.
-- Revalidated: Disbiome **72.8%** agreement, Peryton **72.7%** (272 / 221 overlapping pairs).
-- Rescoring finding: the old "F1 0.390" was an artifact of blank gold cells; the old
-  "0.680" was flattering (measured on an easy 88-paper subset). **Honest F1 ~0.59.**
-  Permutation confirms it is real work: observed 0.596 vs null 0.072, p=0.001.
-- LLM-vs-human metadata: country 91.7%, sequencing 90.4% agreement over 246 papers.
-  **CAVEAT: only 3 disagreements were actually read.** That is an anecdote, not a
-  finding. Re-do at n>=20 before anyone cites it.
+Read `SESSION_LOG.md` first; it is the running record and its top entry is the
+current state. In short, **every numbered task below has been done**, and the
+findings docs (`FINDINGS_*.md`) carry the results. What is left is listed under
+"THE ACTUAL NEXT STEPS" at the end of this section.
 
-### Highest-value cleanup, do early
-45 of the 348 papers came from MAIN_DATA by TITLE KEYWORD only and are unfiltered
-for reviews and animal studies. Agreement with both curated databases fell ~4 points
-when they were added. Filter them (human case-control studies with a healthy control
-arm only), rebuild, and report whether agreement recovers. If it does, that is direct
-evidence those papers are contaminating the graph.
+- Graph: **272 contributing papers, 925 taxa, 40 diseases, 2,034 edges, 440
+  replicated, 217 contested, 723 containment links, 100 placeholder nodes.**
+  Disbiome **73.0%**, Peryton **72.5%** — but **2026-09-09: do not quote those as
+  independent replication.** 43 of our 272 papers are also cited by Disbiome and
+  24 by Peryton, and those back half the decisive pairs. Agreement is 87.5%/96.8%
+  where both sides read the same paper and 58.1%/52.6% where the literature is
+  disjoint (within Parkinson's: 100%/95.8% vs **59.0%/59.6%**, p=0.0001 each).
+  73% is a blend of ~90% reading fidelity and ~55% cross-literature
+  reproducibility. See `FINDINGS_independence.md`. Every edge now carries a
+  measured `confidence` tier; **79% of the graph is `provisional`**.
+- **Task 0 (rebuild on the correct datasheet): done.** Honest F1 ~0.59
+  (permutation p=0.001). The old 0.390 was a blank-cell artifact; the old 0.680
+  was an easy-subset figure.
+- **MAIN_DATA screen: done.** 22 of 45 papers are not human case-control
+  studies. Filtering them changed agreement by nothing (McNemar p=1.00 —
+  and see the warning below about that metric).
+- **Task 1 (relation-sentence filter): done and validated.** 94.8% recall of a
+  97.3% ceiling, 281/281 papers covered, `relation_sentences.json`.
+- **Task 1 pooled analysis: done, NULL.** See `FINDINGS_cooccurrence.md`.
+- **Task 2.5 (GraphRAG): done.** Ties BM25 on ranking (0.800 vs 0.783 over 6
+  queries); the real win is containment traversal, not ranking accuracy.
+- **Task 3.1 (11 doubly-contradicted pairs): done.** 11 of 12 adjudicable pairs
+  faithfully report what the paper says. One extraction error in fourteen.
 
-## TASK 0 — Rebuild on the correct datasheet (DONE — see state above; skip)
+### Five structural corrections, and a property of the validation
 
-We discovered we have been scoring against the **wrong export**.
+Paper screen, placeholder split, body-site keying, paper deduplication, and the
+extended placeholder split have each moved agreement by **less than this corpus
+can resolve** (minimum detectable change ~0.013). That is a property of the
+validation — the decisive set is dominated by well-evidenced, unambiguously
+named taxa — not a coincidence. All are justified on correctness of meaning.
+**None may be cited as an accuracy gain.** Do not run another correction
+expecting the agreement number to move.
 
-- Used: `EmilySong_GoldStandardPaper/ALL_EMILY_PAPERS_WITH_(inGoldStd)_COLUMN.csv`
-  — 340 rows, **218 (64%) blank on both taxa columns**.
-- Correct: `kg/Microbiota Signatures Neurological Disorders Sheet 2 - Main Datasheet.csv`
-  — 337 rows, **only 5 (1%) blank**, and it additionally carries hand-curated
-  `Year`, `Country`, `Continent`, `SequencingType`, `PublicationJournal`,
-  `Differential Abundance Test`.
+Also retired: the binary "decisive pairs flipped / McNemar" metric is
+**incapable** of responding to a paper-removal correction (a unanimous edge that
+loses papers stays unanimous). Use `agreement_metric.py`'s signed concordance
+with a paper-level null.
 
-Do:
-1. Rebuild the paper set and gold from the correct sheet (246 of our 250 papers
-   are in it; reconcile the other 4 and the 7/4 title deltas between sheets).
-2. **Re-score the extraction.** Every F1 on record is suspect. Expect the "0.390
-   over all 250" artifact to disappear, since it was caused by scoring against
-   blank cells. Report old vs new side by side.
-3. **Cross-check the LLM metadata pass.** `kg/metadata.jsonl` extracted `country`
-   and `sequencing` with an LLM; the sheet has them hand-curated at 99%. Compute
-   agreement. This is a free, real accuracy measurement of an LLM extraction
-   against human labels — report it as such, and note where the LLM was *right*
-   and the human wrong, if that happens.
-4. Rebuild `graph.json`, `kg.html`, `docs/index.html`, and re-run
-   `validate_external.py`. Report how the Disbiome/Peryton numbers move.
+### What has been tested against contested edges, and returned null
 
-## TASK 1 — Relation-bearing sentences (the promising lead)
+Study design (FDR 0.243), body site (p=0.120, and the corpus is 97.9% gut), ASD
+being worse (p=0.211), and taxon co-occurrence pooled and per-edge (p=0.14,
+AUC 0.535 p=0.21). **Four explanatory variables, four nulls.** The minimum
+detectable effects are set by n — 130 contested edges averaging ~5 papers — not
+by the statistics. Expect the two remaining Task 1 questions (does profile
+predict disagreement with the curated databases; are there taxon modules) to
+return the same answer at the same n.
+
+### The method that HAS worked, twice
+
+**Anomaly-hunt the graph's own structure instead of testing hypotheses about
+it.** Both real results this month came that way: the placeholder rank collapse,
+and this session's 12 duplicate papers (found because three "signal" edges had
+paper-profile cosine of exactly 1.00). Ask cheap structural questions — does a
+paper contradict itself, do two nodes mean one thing, does a surface string
+extend the name it resolved to — and verify by rebuilding and diffing.
+
+**Verify every fix by rebuilding TWICE and diffing.** Two fixes in this repo
+have silently erased themselves on rebuild while printing success.
+
+### THE ACTUAL NEXT STEPS
+
+1. ~~Split the 54 named species out of their genera. NEEDS THE NCBI TAXDUMP.~~
+   **DONE 2026-09-08 — and every part of that framing was wrong. Do not redo it.**
+   See `FINDINGS_species_split.md`. It was **24** species, not 54; it needed no
+   taxdump (a taxid is stable across a rename, so Disbiome's pre-rename names join
+   to NCBI on it — `species_synonyms.py`); and the other 91 child folds **must not
+   be split** (`Escherichia / Shigella` names two taxa, `Clostridium_XlVa` is a
+   cluster label). The blocking fear — a split species losing its containment link
+   — was real and is handled by storing NCBI lineages per entry; one candidate that
+   could not be given ancestry is refused rather than shipped detached.
+
+2. **More papers — this is now the top item.** The binding constraint on every
+   remaining question is n, not method. Extraction needs a GPU — **ask before
+   spending.**
+
+3. **One open item is a human decision, not an analysis.** The two-genus labels no
+   longer vote as one of their genera — `Escherichia-Shigella` was fragmented across
+   four nodes by punctuation alone and is now a single joint node (`multi_taxon.py`,
+   2026-09-08). What is left is the modelling call itself: should a joint 16S signal
+   from an assay that cannot separate two genera be attributed to one, split across
+   both, or held apart as it now is? That wants a PI, not a script. The same class of
+   question: model disease subtypes as containment rather than separate nodes, the way
+   taxa already are: `Intracerebral hemorrhage` / `Hypertensive intracerebral
+   hemorrhage` sit beside `Stroke`, and `Chronic traumatic complete spinal cord
+   injury` beside `Spinal cord injury`, with no link between them. (The one pure
+   *synonym* case, three spellings of anti-NMDAR encephalitis, is already
+   folded.) This is a design decision, not a bug — it needs a human call.
+
+## TASK 1 — Relation-bearing sentences (DONE — kept for the design rationale)
 
 **We care about relations, not metadata. Reduce every paper to the sentences that
 could actually state one.**
@@ -158,7 +420,7 @@ Only after Task 1, and only where Task 1 shows signal worth pursuing.
 - Sanity check: do embeddings reproduce the known structure (same disease cluster,
   same sequencing type cluster)? If not, they are not encoding what we need.
 
-## TASK 2.5 — Replace BM25 retrieval with GraphRAG (do this; the current design is wrong)
+## TASK 2.5 — GraphRAG (DONE — and its premise was wrong; see FINDINGS_task2.5_graphrag.md)
 
 `build_rag.py` currently retrieves with BM25 + entity matching. That is the wrong
 primitive **because we have a graph and it ignores it**. Keyword scoring cannot
@@ -183,7 +445,7 @@ Rebuild retrieval as graph traversal:
 Keep BM25 only as a **baseline to beat**, and report the comparison honestly on a
 handful of realistic queries. Do not ship it as the primary retriever.
 
-## TASK 3 — Make the graph useful
+## TASK 3 — Make the graph useful (3.1 DONE; 3.2-3.4 open)
 
 Concrete, in rough priority order:
 
@@ -204,6 +466,17 @@ Concrete, in rough priority order:
 ## What NOT to do
 
 - Don't re-run extraction on the 250 — it is done and cached.
+- **Don't run another structural correction expecting agreement to move.** Five
+  have now moved it by less than the corpus can resolve. Justify corrections on
+  correctness and say so; never report one as an accuracy gain.
+- **Don't shuffle observations.** Every permutation test here must randomise at
+  the PAPER level. Pair-level shuffling has produced three false positives on
+  record.
+- **Don't trust a subagent's judgement call where a deterministic test exists.**
+  An LLM adjudication of 18 self-contradictions got 4 of its 6 "extraction
+  error" verdicts wrong; a one-line string comparison settled it.
+- **Don't collapse ranks** — and note that `X sp.`/`X spp.`/`X unclassified`
+  folding into the genus is CORRECT and is not an instance of this.
 - Don't trust `in_gold_standard`; it holds the *strings* `'Yes'`/`'No'`, and
   `'No'` is truthy in Python. That bug already produced a wrong claim once.
 - Don't join on an external database's taxid. Disbiome records "Prevotella" as

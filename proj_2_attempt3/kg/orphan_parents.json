@@ -1,0 +1,178 @@
+{
+ "_note": "Curated parents for orphan taxon nodes whose label names their parent. The REFUSALS are part of the product: a generic substring rule would link four bacteriophages into the genus they infect. See orphan_parents.py.",
+ "links": [
+  {
+   "child_label": "unclassified_f_Lachnospiraceae",
+   "child_id": "t:unclassified f lachnospiraceae",
+   "child_key": "unclassified f lachnospiraceae",
+   "parent_label": "Lachnospiraceae",
+   "parent_id": "t:ncbi:186803",
+   "parent_taxid": "186803",
+   "parent_rank": "family",
+   "n_edges": 1,
+   "why": "unclassified member of the family"
+  },
+  {
+   "child_label": "Lachnospiraceae-unclassified",
+   "child_id": "t:lachnospiraceae unclassified",
+   "child_key": "lachnospiraceae unclassified",
+   "parent_label": "Lachnospiraceae",
+   "parent_id": "t:ncbi:186803",
+   "parent_taxid": "186803",
+   "parent_rank": "family",
+   "n_edges": 1,
+   "why": "same, suffix word order"
+  },
+  {
+   "child_label": "uncultured Lachnospiraceae feature",
+   "child_id": "t:uncultured lachnospiraceae feature",
+   "child_key": "uncultured lachnospiraceae feature",
+   "parent_label": "Lachnospiraceae",
+   "parent_id": "t:ncbi:186803",
+   "parent_taxid": "186803",
+   "parent_rank": "family",
+   "n_edges": 1,
+   "why": "uncultured member of the family"
+  },
+  {
+   "child_label": "norank_f_Christensenellaceae",
+   "child_id": "t:norank f christensenellaceae",
+   "child_key": "norank f christensenellaceae",
+   "parent_label": "Christensenellaceae",
+   "parent_id": "t:ncbi:990719",
+   "parent_taxid": "990719",
+   "parent_rank": "family",
+   "n_edges": 1,
+   "why": "SILVA 'no rank' child of the family"
+  },
+  {
+   "child_label": "norank_f_Erysipelotrichaceae",
+   "child_id": "t:norank f erysipelotrichaceae",
+   "child_key": "norank f erysipelotrichaceae",
+   "parent_label": "Erysipelotrichaceae",
+   "parent_id": "t:ncbi:128827",
+   "parent_taxid": "128827",
+   "parent_rank": "family",
+   "n_edges": 1,
+   "why": "SILVA 'no rank' child of the family"
+  },
+  {
+   "child_label": "norank_p_Flavobacteriaceae",
+   "child_id": "t:norank p flavobacteriaceae",
+   "child_key": "norank p flavobacteriaceae",
+   "parent_label": "Flavobacteriaceae",
+   "parent_id": "t:ncbi:49546",
+   "parent_taxid": "49546",
+   "parent_rank": "family",
+   "n_edges": 1,
+   "why": "SILVA 'no rank' child; the p_ prefix is mislabelled in the source, the named taxon is a family"
+  },
+  {
+   "child_label": "Enterobacteriaceae-unclassified",
+   "child_id": "t:enterobacteriaceae unclassified",
+   "child_key": "enterobacteriaceae unclassified",
+   "parent_label": "Enterobacteriaceae",
+   "parent_id": "t:ncbi:543",
+   "parent_taxid": "543",
+   "parent_rank": "family",
+   "n_edges": 1,
+   "why": "unclassified member of the family"
+  },
+  {
+   "child_label": "unclassified_c_Bacilli",
+   "child_id": "t:unclassified c bacilli",
+   "child_key": "unclassified c bacilli",
+   "parent_label": "Bacilli",
+   "parent_id": "t:ncbi:91061",
+   "parent_taxid": "91061",
+   "parent_rank": "class",
+   "n_edges": 1,
+   "why": "unclassified member of the class"
+  },
+  {
+   "child_label": "unclassified_g_Clostridium_sensu_stricto_1",
+   "child_id": "t:unclassified g clostridium sensu stricto 1",
+   "child_key": "unclassified g clostridium sensu stricto 1",
+   "parent_label": "Clostridium",
+   "parent_id": "t:ncbi:1485",
+   "parent_taxid": "1485",
+   "parent_rank": "genus",
+   "n_edges": 1,
+   "why": "Clostridium sensu stricto 1 is an RDP/SILVA cluster inside Clostridium"
+  },
+  {
+   "child_label": "uncultured Clostridium sp. 1",
+   "child_id": "t:uncultured clostridium sp. 1",
+   "child_key": "uncultured clostridium sp. 1",
+   "parent_label": "Clostridium",
+   "parent_id": "t:ncbi:1485",
+   "parent_taxid": "1485",
+   "parent_rank": "genus",
+   "n_edges": 1,
+   "why": "uncultured species in the genus"
+  },
+  {
+   "child_label": "gut_metagenome_g_Faecalibacterium",
+   "child_id": "t:gut metagenome g faecalibacterium",
+   "child_key": "gut metagenome g faecalibacterium",
+   "parent_label": "Faecalibacterium",
+   "parent_id": "t:ncbi:216851",
+   "parent_taxid": "216851",
+   "parent_rank": "genus",
+   "n_edges": 1,
+   "why": "metagenome-assembled entry under the genus; the g_ tag names it"
+  },
+  {
+   "child_label": "EC_Eubacterium_xylanophilumgroup",
+   "child_id": "t:ec eubacterium xylanophilumgroup",
+   "child_key": "ec eubacterium xylanophilumgroup",
+   "parent_label": "Eubacterium",
+   "parent_id": "t:ncbi:1730",
+   "parent_taxid": "1730",
+   "parent_rank": "genus",
+   "n_edges": 1,
+   "why": "the [Eubacterium] xylanophilum group sits under Eubacterium"
+  },
+  {
+   "child_label": "Ruminiclostridium-5",
+   "child_id": "t:ruminiclostridium 5",
+   "child_key": "ruminiclostridium 5",
+   "parent_label": "Ruminiclostridium",
+   "parent_id": "t:ncbi:1508657",
+   "parent_taxid": "1508657",
+   "parent_rank": "genus",
+   "n_edges": 1,
+   "why": "numbered RDP cluster inside the genus"
+  },
+  {
+   "child_label": "Ruminiclostridium-1",
+   "child_id": "t:ruminiclostridium 1",
+   "child_key": "ruminiclostridium 1",
+   "parent_label": "Ruminiclostridium",
+   "parent_id": "t:ncbi:1508657",
+   "parent_taxid": "1508657",
+   "parent_rank": "genus",
+   "n_edges": 1,
+   "why": "numbered RDP cluster inside the genus"
+  }
+ ],
+ "refused": {
+  "Klebsiella virus KP36": "a BACTERIOPHAGE. It infects Klebsiella; it is not contained in it. Linking it would assert a false taxonomic relation, and a query rolling up Klebsiella would absorb virus evidence.",
+  "Streptococcus phage EJ 1": "bacteriophage, as above.",
+  "Enterococcus phage EFAP 1": "bacteriophage, as above.",
+  "Escherichia virus JES2013": "bacteriophage, as above.",
+  "Escherichia-Shigella": "joint two-genus 16S label (10 edges, the largest orphan). NOT contained in either genus -- see the note above. Needs an 'ambiguous assay' edge type, not parent_of. PI decision.",
+  "unclassified_g__Escherichia-Shigella": "same, and its natural parent is the joint node, which is itself refused.",
+  "Bacteroides-Prevotella": "joint two-genus label, as above.",
+  "Hafnia-Obesumbacterium": "joint two-genus label; Obesumbacterium is not even a node here, so only half the join is representable.",
+  "Lachnospiraceae_Eubacterium": "the SILVA 'Lachnospiraceae [Eubacterium] group' label. Family + a bracketed misplaced genus, not a clean is-a, and multi_taxon.py already holds it as a joint concept deliberately.",
+  "unclassified genus belonging to Barnesiellaceae and Lachnospiraceae": "names TWO families; the paper itself could not place it. Ambiguous.",
+  "unclassified genus belonging to order SHA-98": "SHA-98 is not a node in this graph, so there is no parent to link to.",
+  "Unclassified Absconditabacteriales": "Absconditabacteriales is not a node in this graph.",
+  "norank_p_Parcubacteria": "Parcubacteria is not a node in this graph."
+ },
+ "n_orphans": 170,
+ "n_unresolved_orphans": 118,
+ "n_uncovered": 91,
+ "problems": []
+}

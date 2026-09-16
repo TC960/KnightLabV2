@@ -1,0 +1,1714 @@
+{
+ "qa": {
+  "statistic": "taxon directional purity",
+  "observed": 0.7742,
+  "n_calls": 2493,
+  "null_mean": 0.6418,
+  "null_sd": 0.00624,
+  "z": 21.23,
+  "p": 0.0002
+ },
+ "qb": {
+  "statistic": "same-disease minus different-disease agreement",
+  "observed_delta": 0.0591,
+  "same_disease_rate": 0.7161,
+  "different_disease_rate": 0.657,
+  "n_same_disease_pairs": 2952,
+  "n_different_disease_pairs": 20675,
+  "null_mean": 0.0005,
+  "null_sd": 0.01727,
+  "z": 3.39,
+  "p": 0.0014,
+  "min_detectable_delta_at_p05": 0.0296
+ },
+ "n_calls": 3071,
+ "n_papers": 272,
+ "multi_disease_papers": 0,
+ "taxa_in_3plus_diseases": 187,
+ "n_never_flip": 59,
+ "generic_vs_specific": [
+  {
+   "taxon_key": "ncbi:1301",
+   "n_diseases_voting": 12,
+   "n_enriched": 12,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 34
+  },
+  {
+   "taxon_key": "ncbi:580596",
+   "n_diseases_voting": 8,
+   "n_enriched": 0,
+   "n_depleted": 8,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 19
+  },
+  {
+   "taxon_key": "ncbi:1350",
+   "n_diseases_voting": 8,
+   "n_enriched": 8,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 24
+  },
+  {
+   "taxon_key": "ncbi:33958",
+   "n_diseases_voting": 7,
+   "n_enriched": 7,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 21
+  },
+  {
+   "taxon_key": "ncbi:186802",
+   "n_diseases_voting": 7,
+   "n_enriched": 0,
+   "n_depleted": 7,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 11
+  },
+  {
+   "taxon_key": "ncbi:508458",
+   "n_diseases_voting": 6,
+   "n_enriched": 6,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 9
+  },
+  {
+   "taxon_key": "ncbi:203557",
+   "n_diseases_voting": 6,
+   "n_enriched": 6,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 9
+  },
+  {
+   "taxon_key": "ncbi:1300",
+   "n_diseases_voting": 6,
+   "n_enriched": 6,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 13
+  },
+  {
+   "taxon_key": "ncbi:31979",
+   "n_diseases_voting": 6,
+   "n_enriched": 0,
+   "n_depleted": 6,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 8
+  },
+  {
+   "taxon_key": "ncbi:836",
+   "n_diseases_voting": 5,
+   "n_enriched": 5,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 6
+  },
+  {
+   "taxon_key": "ncbi:84111",
+   "n_diseases_voting": 5,
+   "n_enriched": 5,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ncbi:2172",
+   "n_diseases_voting": 5,
+   "n_enriched": 5,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 9
+  },
+  {
+   "taxon_key": "ncbi:171549",
+   "n_diseases_voting": 5,
+   "n_enriched": 5,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:186826",
+   "n_diseases_voting": 5,
+   "n_enriched": 5,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ncbi:872",
+   "n_diseases_voting": 4,
+   "n_enriched": 4,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 13
+  },
+  {
+   "taxon_key": "ncbi:13687",
+   "n_diseases_voting": 4,
+   "n_enriched": 4,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:35833",
+   "n_diseases_voting": 4,
+   "n_enriched": 4,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ncbi:1649459",
+   "n_diseases_voting": 4,
+   "n_enriched": 4,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 10
+  },
+  {
+   "taxon_key": "ncbi:1624",
+   "n_diseases_voting": 4,
+   "n_enriched": 4,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:360807",
+   "n_diseases_voting": 4,
+   "n_enriched": 0,
+   "n_depleted": 4,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:166486",
+   "n_diseases_voting": 4,
+   "n_enriched": 0,
+   "n_depleted": 4,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 10
+  },
+  {
+   "taxon_key": "ncbi:186801",
+   "n_diseases_voting": 4,
+   "n_enriched": 0,
+   "n_depleted": 4,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 12
+  },
+  {
+   "taxon_key": "ncbi:292800",
+   "n_diseases_voting": 4,
+   "n_enriched": 4,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:310298",
+   "n_diseases_voting": 4,
+   "n_enriched": 0,
+   "n_depleted": 4,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:2048137",
+   "n_diseases_voting": 4,
+   "n_enriched": 0,
+   "n_depleted": 4,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:194924",
+   "n_diseases_voting": 4,
+   "n_enriched": 4,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ncbi:508459",
+   "n_diseases_voting": 4,
+   "n_enriched": 4,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:946234",
+   "n_diseases_voting": 4,
+   "n_enriched": 4,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 6
+  },
+  {
+   "taxon_key": "ncbi:162289",
+   "n_diseases_voting": 4,
+   "n_enriched": 4,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:644652",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:286",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 6
+  },
+  {
+   "taxon_key": "ncbi:301302",
+   "n_diseases_voting": 3,
+   "n_enriched": 0,
+   "n_depleted": 3,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 6
+  },
+  {
+   "taxon_key": "ncbi:539738",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:1378",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ph:lachnospiraceae nd3007 group",
+   "n_diseases_voting": 3,
+   "n_enriched": 0,
+   "n_depleted": 3,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 8
+  },
+  {
+   "taxon_key": "ncbi:84112",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:40323",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "escherichia/shigella",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:1550024",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "e. coli",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:208479",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:371601",
+   "n_diseases_voting": 3,
+   "n_enriched": 0,
+   "n_depleted": 3,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:270498",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:1506577",
+   "n_diseases_voting": 3,
+   "n_enriched": 0,
+   "n_depleted": 3,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ncbi:28221",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 6
+  },
+  {
+   "taxon_key": "ncbi:213115",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:1392389",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:194",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:203494",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:729",
+   "n_diseases_voting": 3,
+   "n_enriched": 0,
+   "n_depleted": 3,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:48461",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:3025755",
+   "n_diseases_voting": 3,
+   "n_enriched": 0,
+   "n_depleted": 3,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ph:eubacterium eligens group",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:3085642",
+   "n_diseases_voting": 3,
+   "n_enriched": 0,
+   "n_depleted": 3,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ph:lachnospiraceae ucg-004",
+   "n_diseases_voting": 3,
+   "n_enriched": 0,
+   "n_depleted": 3,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:1352",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ph:ruminococcus gnavus group",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:49546",
+   "n_diseases_voting": 3,
+   "n_enriched": 0,
+   "n_depleted": 3,
+   "purity": 1.0,
+   "consensus": "depleted",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:1505657",
+   "n_diseases_voting": 3,
+   "n_enriched": 3,
+   "n_depleted": 0,
+   "purity": 1.0,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:239934",
+   "n_diseases_voting": 14,
+   "n_enriched": 13,
+   "n_depleted": 1,
+   "purity": 0.929,
+   "consensus": "enriched",
+   "n_papers": 41
+  },
+  {
+   "taxon_key": "ncbi:1239",
+   "n_diseases_voting": 11,
+   "n_enriched": 1,
+   "n_depleted": 10,
+   "purity": 0.909,
+   "consensus": "depleted",
+   "n_papers": 36
+  },
+  {
+   "taxon_key": "ncbi:543",
+   "n_diseases_voting": 10,
+   "n_enriched": 9,
+   "n_depleted": 1,
+   "purity": 0.9,
+   "consensus": "enriched",
+   "n_papers": 26
+  },
+  {
+   "taxon_key": "ncbi:841",
+   "n_diseases_voting": 18,
+   "n_enriched": 2,
+   "n_depleted": 16,
+   "purity": 0.889,
+   "consensus": "depleted",
+   "n_papers": 52
+  },
+  {
+   "taxon_key": "ncbi:561",
+   "n_diseases_voting": 9,
+   "n_enriched": 8,
+   "n_depleted": 1,
+   "purity": 0.889,
+   "consensus": "enriched",
+   "n_papers": 21
+  },
+  {
+   "taxon_key": "ncbi:29465",
+   "n_diseases_voting": 9,
+   "n_enriched": 8,
+   "n_depleted": 1,
+   "purity": 0.889,
+   "consensus": "enriched",
+   "n_papers": 20
+  },
+  {
+   "taxon_key": "ncbi:40544",
+   "n_diseases_voting": 9,
+   "n_enriched": 8,
+   "n_depleted": 1,
+   "purity": 0.889,
+   "consensus": "enriched",
+   "n_papers": 11
+  },
+  {
+   "taxon_key": "escherichia-shigella",
+   "n_diseases_voting": 9,
+   "n_enriched": 8,
+   "n_depleted": 1,
+   "purity": 0.889,
+   "consensus": "enriched",
+   "n_papers": 12
+  },
+  {
+   "taxon_key": "ncbi:292632",
+   "n_diseases_voting": 8,
+   "n_enriched": 1,
+   "n_depleted": 7,
+   "purity": 0.875,
+   "consensus": "depleted",
+   "n_papers": 15
+  },
+  {
+   "taxon_key": "ncbi:570",
+   "n_diseases_voting": 8,
+   "n_enriched": 7,
+   "n_depleted": 1,
+   "purity": 0.875,
+   "consensus": "enriched",
+   "n_papers": 11
+  },
+  {
+   "taxon_key": "ncbi:375288",
+   "n_diseases_voting": 8,
+   "n_enriched": 7,
+   "n_depleted": 1,
+   "purity": 0.875,
+   "consensus": "enriched",
+   "n_papers": 30
+  },
+  {
+   "taxon_key": "ncbi:74201",
+   "n_diseases_voting": 8,
+   "n_enriched": 7,
+   "n_depleted": 1,
+   "purity": 0.875,
+   "consensus": "enriched",
+   "n_papers": 16
+  },
+  {
+   "taxon_key": "ncbi:158846",
+   "n_diseases_voting": 8,
+   "n_enriched": 1,
+   "n_depleted": 7,
+   "purity": 0.875,
+   "consensus": "depleted",
+   "n_papers": 17
+  },
+  {
+   "taxon_key": "ncbi:853",
+   "n_diseases_voting": 8,
+   "n_enriched": 1,
+   "n_depleted": 7,
+   "purity": 0.875,
+   "consensus": "depleted",
+   "n_papers": 19
+  },
+  {
+   "taxon_key": "ncbi:216851",
+   "n_diseases_voting": 22,
+   "n_enriched": 3,
+   "n_depleted": 19,
+   "purity": 0.864,
+   "consensus": "depleted",
+   "n_papers": 72
+  },
+  {
+   "taxon_key": "ncbi:1263",
+   "n_diseases_voting": 14,
+   "n_enriched": 2,
+   "n_depleted": 12,
+   "purity": 0.857,
+   "consensus": "depleted",
+   "n_papers": 43
+  },
+  {
+   "taxon_key": "ncbi:397864",
+   "n_diseases_voting": 7,
+   "n_enriched": 6,
+   "n_depleted": 1,
+   "purity": 0.857,
+   "consensus": "enriched",
+   "n_papers": 12
+  },
+  {
+   "taxon_key": "ncbi:1766253",
+   "n_diseases_voting": 7,
+   "n_enriched": 1,
+   "n_depleted": 6,
+   "purity": 0.857,
+   "consensus": "depleted",
+   "n_papers": 16
+  },
+  {
+   "taxon_key": "ncbi:239935",
+   "n_diseases_voting": 7,
+   "n_enriched": 6,
+   "n_depleted": 1,
+   "purity": 0.857,
+   "consensus": "enriched",
+   "n_papers": 22
+  },
+  {
+   "taxon_key": "ph:prevotella 9",
+   "n_diseases_voting": 7,
+   "n_enriched": 1,
+   "n_depleted": 6,
+   "purity": 0.857,
+   "consensus": "depleted",
+   "n_papers": 11
+  },
+  {
+   "taxon_key": "ncbi:1578",
+   "n_diseases_voting": 13,
+   "n_enriched": 11,
+   "n_depleted": 2,
+   "purity": 0.846,
+   "consensus": "enriched",
+   "n_papers": 38
+  },
+  {
+   "taxon_key": "ncbi:216572",
+   "n_diseases_voting": 12,
+   "n_enriched": 2,
+   "n_depleted": 10,
+   "purity": 0.833,
+   "consensus": "depleted",
+   "n_papers": 35
+  },
+  {
+   "taxon_key": "ncbi:186803",
+   "n_diseases_voting": 12,
+   "n_enriched": 2,
+   "n_depleted": 10,
+   "purity": 0.833,
+   "consensus": "depleted",
+   "n_papers": 36
+  },
+  {
+   "taxon_key": "ncbi:1407607",
+   "n_diseases_voting": 12,
+   "n_enriched": 2,
+   "n_depleted": 10,
+   "purity": 0.833,
+   "consensus": "depleted",
+   "n_papers": 25
+  },
+  {
+   "taxon_key": "ncbi:32207",
+   "n_diseases_voting": 6,
+   "n_enriched": 5,
+   "n_depleted": 1,
+   "purity": 0.833,
+   "consensus": "enriched",
+   "n_papers": 9
+  },
+  {
+   "taxon_key": "ncbi:33038",
+   "n_diseases_voting": 6,
+   "n_enriched": 5,
+   "n_depleted": 1,
+   "purity": 0.833,
+   "consensus": "enriched",
+   "n_papers": 9
+  },
+  {
+   "taxon_key": "ncbi:207244",
+   "n_diseases_voting": 11,
+   "n_enriched": 2,
+   "n_depleted": 9,
+   "purity": 0.818,
+   "consensus": "depleted",
+   "n_papers": 20
+  },
+  {
+   "taxon_key": "ncbi:33042",
+   "n_diseases_voting": 11,
+   "n_enriched": 2,
+   "n_depleted": 9,
+   "purity": 0.818,
+   "consensus": "depleted",
+   "n_papers": 21
+  },
+  {
+   "taxon_key": "ncbi:35832",
+   "n_diseases_voting": 10,
+   "n_enriched": 8,
+   "n_depleted": 2,
+   "purity": 0.8,
+   "consensus": "enriched",
+   "n_papers": 16
+  },
+  {
+   "taxon_key": "ncbi:990721",
+   "n_diseases_voting": 5,
+   "n_enriched": 4,
+   "n_depleted": 1,
+   "purity": 0.8,
+   "consensus": "enriched",
+   "n_papers": 6
+  },
+  {
+   "taxon_key": "ncbi:84107",
+   "n_diseases_voting": 5,
+   "n_enriched": 4,
+   "n_depleted": 1,
+   "purity": 0.8,
+   "consensus": "enriched",
+   "n_papers": 10
+  },
+  {
+   "taxon_key": "ncbi:81852",
+   "n_diseases_voting": 5,
+   "n_enriched": 4,
+   "n_depleted": 1,
+   "purity": 0.8,
+   "consensus": "enriched",
+   "n_papers": 10
+  },
+  {
+   "taxon_key": "ncbi:848",
+   "n_diseases_voting": 5,
+   "n_enriched": 4,
+   "n_depleted": 1,
+   "purity": 0.8,
+   "consensus": "enriched",
+   "n_papers": 16
+  },
+  {
+   "taxon_key": "ncbi:562",
+   "n_diseases_voting": 5,
+   "n_enriched": 4,
+   "n_depleted": 1,
+   "purity": 0.8,
+   "consensus": "enriched",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ncbi:724",
+   "n_diseases_voting": 5,
+   "n_enriched": 1,
+   "n_depleted": 4,
+   "purity": 0.8,
+   "consensus": "depleted",
+   "n_papers": 8
+  },
+  {
+   "taxon_key": "ncbi:1647988",
+   "n_diseases_voting": 5,
+   "n_enriched": 4,
+   "n_depleted": 1,
+   "purity": 0.8,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:61170",
+   "n_diseases_voting": 5,
+   "n_enriched": 4,
+   "n_depleted": 1,
+   "purity": 0.8,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:1769710",
+   "n_diseases_voting": 5,
+   "n_enriched": 4,
+   "n_depleted": 1,
+   "purity": 0.8,
+   "consensus": "enriched",
+   "n_papers": 6
+  },
+  {
+   "taxon_key": "ncbi:200643",
+   "n_diseases_voting": 5,
+   "n_enriched": 4,
+   "n_depleted": 1,
+   "purity": 0.8,
+   "consensus": "enriched",
+   "n_papers": 6
+  },
+  {
+   "taxon_key": "ncbi:1224",
+   "n_diseases_voting": 9,
+   "n_enriched": 7,
+   "n_depleted": 2,
+   "purity": 0.778,
+   "consensus": "enriched",
+   "n_papers": 27
+  },
+  {
+   "taxon_key": "ncbi:572511",
+   "n_diseases_voting": 16,
+   "n_enriched": 4,
+   "n_depleted": 12,
+   "purity": 0.75,
+   "consensus": "depleted",
+   "n_papers": 52
+  },
+  {
+   "taxon_key": "ncbi:32066",
+   "n_diseases_voting": 8,
+   "n_enriched": 6,
+   "n_depleted": 2,
+   "purity": 0.75,
+   "consensus": "enriched",
+   "n_papers": 12
+  },
+  {
+   "taxon_key": "ncbi:283168",
+   "n_diseases_voting": 8,
+   "n_enriched": 6,
+   "n_depleted": 2,
+   "purity": 0.75,
+   "consensus": "enriched",
+   "n_papers": 19
+  },
+  {
+   "taxon_key": "ph:lachnospiraceae nk4a136 group",
+   "n_diseases_voting": 8,
+   "n_enriched": 2,
+   "n_depleted": 6,
+   "purity": 0.75,
+   "consensus": "depleted",
+   "n_papers": 8
+  },
+  {
+   "taxon_key": "ncbi:1357",
+   "n_diseases_voting": 4,
+   "n_enriched": 3,
+   "n_depleted": 1,
+   "purity": 0.75,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:31953",
+   "n_diseases_voting": 4,
+   "n_enriched": 3,
+   "n_depleted": 1,
+   "purity": 0.75,
+   "consensus": "enriched",
+   "n_papers": 10
+  },
+  {
+   "taxon_key": "ncbi:2159",
+   "n_diseases_voting": 4,
+   "n_enriched": 3,
+   "n_depleted": 1,
+   "purity": 0.75,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:39492",
+   "n_diseases_voting": 4,
+   "n_enriched": 3,
+   "n_depleted": 1,
+   "purity": 0.75,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:171550",
+   "n_diseases_voting": 4,
+   "n_enriched": 3,
+   "n_depleted": 1,
+   "purity": 0.75,
+   "consensus": "enriched",
+   "n_papers": 9
+  },
+  {
+   "taxon_key": "ncbi:33039",
+   "n_diseases_voting": 4,
+   "n_enriched": 3,
+   "n_depleted": 1,
+   "purity": 0.75,
+   "consensus": "enriched",
+   "n_papers": 6
+  },
+  {
+   "taxon_key": "ncbi:1283313",
+   "n_diseases_voting": 4,
+   "n_enriched": 3,
+   "n_depleted": 1,
+   "purity": 0.75,
+   "consensus": "enriched",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ph:erysipelotrichaceae ucg-003",
+   "n_diseases_voting": 4,
+   "n_enriched": 1,
+   "n_depleted": 3,
+   "purity": 0.75,
+   "consensus": "depleted",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ncbi:171551",
+   "n_diseases_voting": 4,
+   "n_enriched": 3,
+   "n_depleted": 1,
+   "purity": 0.75,
+   "consensus": "enriched",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ncbi:1501226",
+   "n_diseases_voting": 4,
+   "n_enriched": 1,
+   "n_depleted": 3,
+   "purity": 0.75,
+   "consensus": "depleted",
+   "n_papers": 9
+  },
+  {
+   "taxon_key": "ncbi:1573535",
+   "n_diseases_voting": 4,
+   "n_enriched": 1,
+   "n_depleted": 3,
+   "purity": 0.75,
+   "consensus": "depleted",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ph:eubacterium hallii group",
+   "n_diseases_voting": 4,
+   "n_enriched": 1,
+   "n_depleted": 3,
+   "purity": 0.75,
+   "consensus": "depleted",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:244127",
+   "n_diseases_voting": 4,
+   "n_enriched": 3,
+   "n_depleted": 1,
+   "purity": 0.75,
+   "consensus": "enriched",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ncbi:85004",
+   "n_diseases_voting": 4,
+   "n_enriched": 3,
+   "n_depleted": 1,
+   "purity": 0.75,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:577309",
+   "n_diseases_voting": 4,
+   "n_enriched": 1,
+   "n_depleted": 3,
+   "purity": 0.75,
+   "consensus": "depleted",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:547",
+   "n_diseases_voting": 4,
+   "n_enriched": 3,
+   "n_depleted": 1,
+   "purity": 0.75,
+   "consensus": "enriched",
+   "n_papers": 6
+  },
+  {
+   "taxon_key": "ncbi:201174",
+   "n_diseases_voting": 11,
+   "n_enriched": 8,
+   "n_depleted": 3,
+   "purity": 0.727,
+   "consensus": "enriched",
+   "n_papers": 24
+  },
+  {
+   "taxon_key": "ncbi:1730",
+   "n_diseases_voting": 11,
+   "n_enriched": 3,
+   "n_depleted": 8,
+   "purity": 0.727,
+   "consensus": "depleted",
+   "n_papers": 30
+  },
+  {
+   "taxon_key": "ncbi:28050",
+   "n_diseases_voting": 11,
+   "n_enriched": 3,
+   "n_depleted": 8,
+   "purity": 0.727,
+   "consensus": "depleted",
+   "n_papers": 21
+  },
+  {
+   "taxon_key": "ncbi:239759",
+   "n_diseases_voting": 11,
+   "n_enriched": 8,
+   "n_depleted": 3,
+   "purity": 0.727,
+   "consensus": "enriched",
+   "n_papers": 25
+  },
+  {
+   "taxon_key": "ncbi:102106",
+   "n_diseases_voting": 7,
+   "n_enriched": 5,
+   "n_depleted": 2,
+   "purity": 0.714,
+   "consensus": "enriched",
+   "n_papers": 18
+  },
+  {
+   "taxon_key": "ncbi:906",
+   "n_diseases_voting": 7,
+   "n_enriched": 5,
+   "n_depleted": 2,
+   "purity": 0.714,
+   "consensus": "enriched",
+   "n_papers": 9
+  },
+  {
+   "taxon_key": "ncbi:186804",
+   "n_diseases_voting": 7,
+   "n_enriched": 2,
+   "n_depleted": 5,
+   "purity": 0.714,
+   "consensus": "depleted",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ncbi:191303",
+   "n_diseases_voting": 7,
+   "n_enriched": 5,
+   "n_depleted": 2,
+   "purity": 0.714,
+   "consensus": "enriched",
+   "n_papers": 11
+  },
+  {
+   "taxon_key": "ncbi:31977",
+   "n_diseases_voting": 6,
+   "n_enriched": 2,
+   "n_depleted": 4,
+   "purity": 0.667,
+   "consensus": "depleted",
+   "n_papers": 12
+  },
+  {
+   "taxon_key": "ncbi:1432051",
+   "n_diseases_voting": 6,
+   "n_enriched": 4,
+   "n_depleted": 2,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 6
+  },
+  {
+   "taxon_key": "ncbi:1304",
+   "n_diseases_voting": 6,
+   "n_enriched": 4,
+   "n_depleted": 2,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 6
+  },
+  {
+   "taxon_key": "ncbi:577310",
+   "n_diseases_voting": 6,
+   "n_enriched": 2,
+   "n_depleted": 4,
+   "purity": 0.667,
+   "consensus": "depleted",
+   "n_papers": 8
+  },
+  {
+   "taxon_key": "ph:ruminococcaceae nk4a214 group",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:133925",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:447020",
+   "n_diseases_voting": 3,
+   "n_enriched": 1,
+   "n_depleted": 2,
+   "purity": 0.667,
+   "consensus": "depleted",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:1386",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:216816",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 9
+  },
+  {
+   "taxon_key": "ncbi:1613",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:820",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:418240",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 9
+  },
+  {
+   "taxon_key": "ncbi:203492",
+   "n_diseases_voting": 3,
+   "n_enriched": 1,
+   "n_depleted": 2,
+   "purity": 0.667,
+   "consensus": "depleted",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:91061",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:1236",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 8
+  },
+  {
+   "taxon_key": "ncbi:818",
+   "n_diseases_voting": 3,
+   "n_enriched": 1,
+   "n_depleted": 2,
+   "purity": 0.667,
+   "consensus": "depleted",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:28111",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:363265",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:88431",
+   "n_diseases_voting": 3,
+   "n_enriched": 1,
+   "n_depleted": 2,
+   "purity": 0.667,
+   "consensus": "depleted",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:57723",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:846",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:1582879",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:75682",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:172900",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:84999",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:1380",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:416916",
+   "n_diseases_voting": 3,
+   "n_enriched": 1,
+   "n_depleted": 2,
+   "purity": 0.667,
+   "consensus": "depleted",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:1017280",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:44748",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:39488",
+   "n_diseases_voting": 3,
+   "n_enriched": 1,
+   "n_depleted": 2,
+   "purity": 0.667,
+   "consensus": "depleted",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:177971",
+   "n_diseases_voting": 3,
+   "n_enriched": 1,
+   "n_depleted": 2,
+   "purity": 0.667,
+   "consensus": "depleted",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:52225",
+   "n_diseases_voting": 3,
+   "n_enriched": 1,
+   "n_depleted": 2,
+   "purity": 0.667,
+   "consensus": "depleted",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "uba1819",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:2745",
+   "n_diseases_voting": 3,
+   "n_enriched": 2,
+   "n_depleted": 1,
+   "purity": 0.667,
+   "consensus": "enriched",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ncbi:29361",
+   "n_diseases_voting": 3,
+   "n_enriched": 1,
+   "n_depleted": 2,
+   "purity": 0.667,
+   "consensus": "depleted",
+   "n_papers": 3
+  },
+  {
+   "taxon_key": "ph:clostridia ucg-014",
+   "n_diseases_voting": 3,
+   "n_enriched": 1,
+   "n_depleted": 2,
+   "purity": 0.667,
+   "consensus": "depleted",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:46503",
+   "n_diseases_voting": 3,
+   "n_enriched": 1,
+   "n_depleted": 2,
+   "purity": 0.667,
+   "consensus": "depleted",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:815",
+   "n_diseases_voting": 8,
+   "n_enriched": 3,
+   "n_depleted": 5,
+   "purity": 0.625,
+   "consensus": "depleted",
+   "n_papers": 18
+  },
+  {
+   "taxon_key": "ncbi:1678",
+   "n_diseases_voting": 13,
+   "n_enriched": 8,
+   "n_depleted": 5,
+   "purity": 0.615,
+   "consensus": "enriched",
+   "n_papers": 41
+  },
+  {
+   "taxon_key": "ncbi:39948",
+   "n_diseases_voting": 13,
+   "n_enriched": 5,
+   "n_depleted": 8,
+   "purity": 0.615,
+   "consensus": "depleted",
+   "n_papers": 24
+  },
+  {
+   "taxon_key": "ncbi:204475",
+   "n_diseases_voting": 5,
+   "n_enriched": 2,
+   "n_depleted": 3,
+   "purity": 0.6,
+   "consensus": "depleted",
+   "n_papers": 9
+  },
+  {
+   "taxon_key": "ncbi:904",
+   "n_diseases_voting": 5,
+   "n_enriched": 3,
+   "n_depleted": 2,
+   "purity": 0.6,
+   "consensus": "enriched",
+   "n_papers": 5
+  },
+  {
+   "taxon_key": "ncbi:1680",
+   "n_diseases_voting": 5,
+   "n_enriched": 2,
+   "n_depleted": 3,
+   "purity": 0.6,
+   "consensus": "depleted",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ph:christensenellaceae r-7 group",
+   "n_diseases_voting": 5,
+   "n_enriched": 3,
+   "n_depleted": 2,
+   "purity": 0.6,
+   "consensus": "enriched",
+   "n_papers": 9
+  },
+  {
+   "taxon_key": "ncbi:817",
+   "n_diseases_voting": 5,
+   "n_enriched": 3,
+   "n_depleted": 2,
+   "purity": 0.6,
+   "consensus": "enriched",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ncbi:976",
+   "n_diseases_voting": 12,
+   "n_enriched": 5,
+   "n_depleted": 7,
+   "purity": 0.583,
+   "consensus": "depleted",
+   "n_papers": 31
+  },
+  {
+   "taxon_key": "ncbi:838",
+   "n_diseases_voting": 14,
+   "n_enriched": 6,
+   "n_depleted": 8,
+   "purity": 0.571,
+   "consensus": "depleted",
+   "n_papers": 50
+  },
+  {
+   "taxon_key": "ncbi:816",
+   "n_diseases_voting": 14,
+   "n_enriched": 6,
+   "n_depleted": 8,
+   "purity": 0.571,
+   "consensus": "depleted",
+   "n_papers": 54
+  },
+  {
+   "taxon_key": "ncbi:33024",
+   "n_diseases_voting": 7,
+   "n_enriched": 3,
+   "n_depleted": 4,
+   "purity": 0.571,
+   "consensus": "depleted",
+   "n_papers": 12
+  },
+  {
+   "taxon_key": "ncbi:171552",
+   "n_diseases_voting": 7,
+   "n_enriched": 3,
+   "n_depleted": 4,
+   "purity": 0.571,
+   "consensus": "depleted",
+   "n_papers": 11
+  },
+  {
+   "taxon_key": "ncbi:459786",
+   "n_diseases_voting": 7,
+   "n_enriched": 4,
+   "n_depleted": 3,
+   "purity": 0.571,
+   "consensus": "enriched",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ncbi:1485",
+   "n_diseases_voting": 9,
+   "n_enriched": 4,
+   "n_depleted": 5,
+   "purity": 0.556,
+   "consensus": "depleted",
+   "n_papers": 20
+  },
+  {
+   "taxon_key": "ncbi:1506553",
+   "n_diseases_voting": 8,
+   "n_enriched": 4,
+   "n_depleted": 4,
+   "purity": 0.5,
+   "consensus": "depleted",
+   "n_papers": 14
+  },
+  {
+   "taxon_key": "ncbi:189330",
+   "n_diseases_voting": 6,
+   "n_enriched": 3,
+   "n_depleted": 3,
+   "purity": 0.5,
+   "consensus": "depleted",
+   "n_papers": 17
+  },
+  {
+   "taxon_key": "ncbi:128827",
+   "n_diseases_voting": 6,
+   "n_enriched": 3,
+   "n_depleted": 3,
+   "purity": 0.5,
+   "consensus": "depleted",
+   "n_papers": 7
+  },
+  {
+   "taxon_key": "ncbi:574697",
+   "n_diseases_voting": 6,
+   "n_enriched": 3,
+   "n_depleted": 3,
+   "purity": 0.5,
+   "consensus": "depleted",
+   "n_papers": 18
+  },
+  {
+   "taxon_key": "ncbi:1117",
+   "n_diseases_voting": 4,
+   "n_enriched": 2,
+   "n_depleted": 2,
+   "purity": 0.5,
+   "consensus": "depleted",
+   "n_papers": 4
+  },
+  {
+   "taxon_key": "ncbi:482",
+   "n_diseases_voting": 4,
+   "n_enriched": 2,
+   "n_depleted": 2,
+   "purity": 0.5,
+   "consensus": "depleted",
+   "n_papers": 9
+  },
+  {
+   "taxon_key": "ncbi:40520",
+   "n_diseases_voting": 4,
+   "n_enriched": 2,
+   "n_depleted": 2,
+   "purity": 0.5,
+   "consensus": "depleted",
+   "n_papers": 6
+  },
+  {
+   "taxon_key": "ncbi:990719",
+   "n_diseases_voting": 4,
+   "n_enriched": 2,
+   "n_depleted": 2,
+   "purity": 0.5,
+   "consensus": "depleted",
+   "n_papers": 13
+  }
+ ]
+}

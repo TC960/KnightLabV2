@@ -28,12 +28,14 @@ import argparse
 import csv
 import json
 import os
+import re
 import subprocess
 from collections import Counter, defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 GRAPH = os.path.join(HERE, "graph.json")
 DISBIOME_CACHE = os.path.join(HERE, "disbiome_experiments.json")
+DISBIOME_PUBS = os.path.join(HERE, "disbiome_publications.json")
 DISBIOME_API = "https://disbiome.ugent.be:8080/experiment"
 PERYTON_TSV = os.path.join(HERE, "Peryton-results.tsv")
 
@@ -66,20 +68,67 @@ DISEASE_MAP = {
 OUTCOME = {"elevated": "enriched", "increased": "enriched",
            "reduced": "depleted", "decreased": "depleted"}
 
+_PMID_RE = re.compile(r"pubmed\.ncbi\.nlm\.nih\.gov/(\d+)|/pubmed/(\d+)"
+                      r"|(?:^|[^a-z])pmid[:/ ]?(\d+)", re.I)
+_DOI_RE = re.compile(r"\b(10\.\d{4,9}/[^\s\"'<>&]+)", re.I)
+
+
+def paper_keys(link="", pmid=None, doi=None, title=None):
+    """Identity keys for one publication, for matching ACROSS sources.
+
+    check_independence.py has to decide whether a curated entry and one of our
+    edges rest on the same paper. Only 69% of our rows carry a PubMed id, so a
+    PMID-only match silently files genuinely-shared papers as disjoint. Every
+    available key is emitted and a match on ANY ONE counts: PMID, normalised DOI,
+    and a normalised title. Under-matching is not the safe direction here -- it
+    inflates the "independent" subset with shared-source pairs.
+    """
+    keys = set()
+    text = link or ""
+    if pmid and str(pmid).strip().isdigit():
+        keys.add("pmid:" + str(pmid).strip())
+    m = _PMID_RE.search(text)
+    if m:
+        keys.add("pmid:" + next(g for g in m.groups() if g))
+    for src in (doi or "", text):
+        d = _DOI_RE.search(src)
+        if d:
+            keys.add("doi:" + d.group(1).rstrip(".").lower())
+    if title:
+        t = re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()
+        if len(t) > 25:  # too-short titles collide
+            keys.add("ti:" + t)
+    return keys
+
 
 def load_disbiome(refresh=False):
     if not os.path.exists(DISBIOME_CACHE) or refresh:
         print(f"fetching {DISBIOME_API} ...")
         subprocess.run(["curl", "-sL", "--max-time", "180", DISBIOME_API,
                         "-o", DISBIOME_CACHE], check=True)
+    # `publication_id` is Disbiome's OWN row id, not a PMID. Emitting it under
+    # the key "pmid" would be a trap for anything that later tries to join on
+    # publication identity (check_independence.py does), so resolve it through
+    # the publications table to the real PubMed id here.
+    pub_of = {}
+    if os.path.exists(DISBIOME_PUBS):
+        for p in json.load(open(DISBIOME_PUBS)):
+            url = (p.get("pubmed_url") or "").strip()
+            tail = url.rstrip("/").rsplit("/", 1)[-1] if url else ""
+            pub_of[p.get("publication_id")] = {
+                "pmid": tail if tail.isdigit() else None,
+                "doi": p.get("doi"), "ptitle": p.get("title")}
+
     out = []
     for r in json.load(open(DISBIOME_CACHE)):
         if r.get("host_type") != "Human":
             continue
+        pub = pub_of.get(r.get("publication_id"), {})
         out.append({"disease": (r.get("disease_name") or "").strip(),
                     "microbe": (r.get("organism_name") or "").strip(),
                     "outcome": (r.get("qualitative_outcome") or "").strip(),
-                    "pmid": r.get("publication_id")})
+                    "pmid": pub.get("pmid"), "doi": pub.get("doi"),
+                    "ptitle": pub.get("ptitle")})
     return out, "Disbiome"
 
 
@@ -98,7 +147,9 @@ def load_peryton():
             out.append({"disease": (r.get("disease_name") or "").strip(),
                         "microbe": (r.get("microbe_scientific_name") or "").strip(),
                         "outcome": (r.get("relationship_name") or "").strip(),
-                        "pmid": r.get("publication_PMID")})
+                        "pmid": r.get("publication_PMID"),
+                        "doi": r.get("publication_doi"),
+                        "ptitle": r.get("publication_title")})
     return out, "Peryton"
 
 
@@ -174,15 +225,26 @@ def main():
     ap.add_argument("--graph", default=GRAPH,
                     help="graph to validate (graph.json, or graph_gold.json to "
                          "score the human gold standard on the same footing)")
+    ap.add_argument("--json-out", help="write the summary table here")
     a = ap.parse_args()
 
     G = json.load(open(a.graph))
-    from taxonomy import Taxonomy
-    tax = Taxonomy()
+    from taxonomy_cache import load_taxonomy
+    tax = load_taxonomy()
     if not tax.ok:
-        print("FATAL: NCBI taxdump missing — the join needs it. See kg/taxonomy.py.")
+        print("FATAL: no taxonomy available — the join needs one. See kg/taxonomy.py.")
         return
-    print(f"graph: {len(G['edges'])} edges\n")
+    if tax.__class__.__name__ == "CachedTaxonomy":
+        # The replay cache only knows names that appear in graph.json. External
+        # records use their own spellings, so some that the real taxdump would
+        # resolve are missed here and the overlap shrinks. That biases the ABSOLUTE
+        # agreement rate and makes it incomparable to figures measured with the
+        # taxdump. It is still valid for BEFORE/AFTER comparisons run under this
+        # same join, which is what the paper filter needs.
+        print("  !! DEGRADED JOIN: replay cache, not the NCBI taxdump.")
+        print("  !! Absolute agreement is NOT comparable to taxdump-measured runs.")
+        print("  !! Use only for like-for-like before/after deltas.\n")
+    print(f"graph: {len(G['edges'])} edges ({os.path.basename(a.graph)})\n")
 
     summaries = []
     if a.source in ("disbiome", "both"):
@@ -208,6 +270,13 @@ def main():
             rate = f"{100*s['agree']/s['comparable']:.1f}%" if s["comparable"] else "n/a"
             print(f"{s['name']:12} {s['overlap']:>8} {100*s['recall']:>7.1f}% "
                   f"{rate:>8} {s['disagree']:>9}")
+
+    if a.json_out:
+        json.dump({"graph": os.path.basename(a.graph),
+                   "n_edges": len(G["edges"]),
+                   "join": tax.__class__.__name__,
+                   "sources": summaries}, open(a.json_out, "w"), indent=1)
+        print(f"\nwrote {a.json_out}")
 
 
 if __name__ == "__main__":

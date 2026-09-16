@@ -1,0 +1,272 @@
+{
+ "Alteration of Gut Microbiome and Correlated Lipid Metabolism in Post-Stroke Depression": {
+  "category": "DROP_ANIMAL",
+  "evidence": "After the PSD rat model was successfully established, gut microbiome combined with fecal metabolome approach were performed to identify potentially PSD-related gut microbes",
+  "confidence": "high",
+  "notes": "Study uses rat model (Sprague-Dawley rats, n=86) with ischemia-reperfusion surgery; reports microbiome from animals, not humans."
+ },
+ "Alteration of the gut microbiota profile in children with autism spectrum disorder in China": {
+  "category": "KEEP",
+  "evidence": "In total, 1,118 participants from 12 provinces of China including 957 participants with clinical definition as ASD (aged between 2 and 12 years, average age 4.6) and 161 health children (HC)",
+  "confidence": "high",
+  "notes": "Human observational study with ASD patients (n=957) vs healthy controls (n=161); 16S rRNA sequencing."
+ },
+ "Alterations in nasal microbiota of patients with amyotrophic lateral sclerosis": {
+  "category": "KEEP",
+  "evidence": "Sixty-six ALS patients and 40 healthy caregivers who live in close proximity with patients were enrolled High throughput metagenomic sequencing of the 16S ribosomal deoxyribonucleic acid (rDNA) gene",
+  "confidence": "high",
+  "notes": "Human cross-sectional observational study comparing ALS patients (n=66) to healthy controls (n=40)."
+ },
+ "Alterations of host-gut microbiome interactions in multiple sclerosis": {
+  "category": "KEEP",
+  "evidence": "We performed a six-month longitudinal multi-omics study of 49 participants (24 untreated relapse remitting MS patients and 25 age, sex, race matched healthy control individuals",
+  "confidence": "high",
+  "notes": "Human longitudinal case-control study with MS patients vs matched healthy controls; 16S and metagenomic sequencing."
+ },
+ "Alterations of the human gut microbiome in multiple sclerosis": {
+  "category": "KEEP",
+  "evidence": "Faecal samples were collected from 60 MS patients and 43 healthy controls (Fig 1); details of the study population are provided in Table 1",
+  "confidence": "high",
+  "notes": "Human case-control observational study; 16S rRNA sequencing on MS patients vs healthy controls."
+ },
+ "Analysis of the relationship between the gut microbiome and dementia: a cross-sectional study conducted in Japan": {
+  "category": "KEEP",
+  "evidence": "We recruited outpatients visiting our memory clinic to participate in this study... Patients were divided into two groups, demented and non-demented",
+  "confidence": "high",
+  "notes": "Human cross-sectional observational study; 128 patients stratified into demented (n=34) vs non-demented (n=94) groups."
+ },
+ "Application of Metagenomics Sequencing in a Patient with Dementia: A New Case Report": {
+  "category": "DROP_CASE_REPORT",
+  "evidence": "we report a new case concerning a patient who was initially evaluated genetically for dementia and late-onset dyskinesia, and later tested with 16S metagenomics sequencing",
+  "confidence": "high",
+  "notes": "Single case report (n=1); no control group or comparison arm."
+ },
+ "Associations between gut microbiota and Alzheimer’s disease, major depressive disorder, and schizophrenia": {
+  "category": "DROP_REVIEW",
+  "evidence": "A two-sample bi-directional Mendelian randomization analysis was performed by using genetic variants from genome-wide association studies as instrumental variables",
+  "confidence": "high",
+  "notes": "Secondary analysis using GWAS summary data; does not report primary human microbiome sequencing data. Mendelian randomization meta-analysis, not observational case-control."
+ },
+ "Characterization of gut microbiota dynamics in an Alzheimer’s disease mouse model through clade-specific marker-based analysis of shotgun metagenomic data": {
+  "category": "DROP_ANIMAL",
+  "evidence": "Fecal samples were collected from homozygous 3xTgAD mice (n = 6, for each timepoint) carrying all three mutant alleles and wild-type (WT) mice (n = 6, for each timepoint)",
+  "confidence": "high",
+  "notes": "Study uses transgenic AD mice (3xTgAD) model; primary results are from animal microbiome, not human."
+ },
+ "Children and adolescents with attention deficit hyperactivity disorder and autism spectrum disorder share distinct microbiota compositions": {
+  "category": "KEEP",
+  "evidence": "We recruited study participants diagnosed with ADHD, ASD, and comorbid ADHD/ASD, while the control groups consisted both of siblings and non-related children. The gut microbiota was analyzed by 16S rRNA gene sequencing",
+  "confidence": "high",
+  "notes": "Clear case-control design with diseased children (n=95 total: 32 ADHD, 12 ASD, 11 comorbid, 14 sibling controls, 17 non-related controls) sequenced and compared to healthy controls."
+ },
+ "Comparing the gut microbiome of obese, African American, older adults with and without mild cognitive impairment | PLOS One": {
+  "category": "KEEP",
+  "evidence": "using amplicon 16S rRNA gene sequencing in a case-control study of 60 older (ages 55–76), obese, predominately female, African American adults, those with MCI (cases) had different gut microbiota profiles than controls",
+  "confidence": "high",
+  "notes": "Case-control study comparing MCI patients (n=30) to healthy controls (n=30)."
+ },
+ "Deep DNA metagenomic sequencing reveals oral microbiome divergence between monozygotic twins discordant for multiple sclerosis severity": {
+  "category": "DROP_CASE_REPORT",
+  "evidence": "Deep sequencing of saliva DNA from a pair of monozygotic twins (MSF1 with relapsing remitting MS; MSF2 with clinically isolated syndrome)",
+  "confidence": "high",
+  "notes": "n=2 twins with MS (different severity levels); no healthy control group. Only compared the two siblings to each other."
+ },
+ "Deep nasal sinus cavity microbiota dysbiosis in Parkinson’s disease": {
+  "category": "KEEP",
+  "evidence": "characterized the microbiota of the deep nasal cavity using 16S rRNA gene amplicon sequencing in PD subjects and compared it to that of spousal and non-spousal healthy controls",
+  "confidence": "high",
+  "notes": "Case-control study with 30 PD subjects vs 11 spousal and 17 random non-spousal healthy controls."
+ },
+ "Faecal microbiota transplant ameliorates gut dysbiosis and cognitive deficits in Huntington’s disease mice": {
+  "category": "DROP_ANIMAL",
+  "evidence": "R6/1 transgenic Huntington's disease mice express the mutant human HTT transgene and provide an excellent preclinical model",
+  "confidence": "high",
+  "notes": "Primary results from mouse models (R6/1 transgenic HD mice and WT littermates); FMT and behavioral testing all performed on mice."
+ },
+ "Fecal Microbiota Transplantation (FMT) From a Human at Low Risk for Alzheimer's Disease Improves Short‐Term Recognition Memory and Increases Neuroinflammation in a 3xTg AD Mouse Model": {
+  "category": "DROP_ANIMAL",
+  "evidence": "Female 3xTgAD mice received weekly FMT for 2 months from (i) an 80‐year‐old AD patient...Twelve‐months‐old female 3xTgAD (APPSWE, PS1M146V and TauP301L) mice",
+  "confidence": "high",
+  "notes": "Human stool donors but primary microbiome sequencing and all behavioral/pathology results are from AD transgenic mice."
+ },
+ "Fecal Microbiota Transplantation Derived from Alzheimer’s Disease Mice Worsens Brain Trauma Outcomes in Wild-Type Controls": {
+  "category": "DROP_ANIMAL",
+  "evidence": "FMTs were administered orally to young control C57BL/6 (wild-type, WT) mice after they underwent controlled cortical impact (CCI) injury, as a model of TBI",
+  "confidence": "high",
+  "notes": "FMT from aged AD transgenic mice into WT mice; all primary microbiome and injury outcome data from mice."
+ },
+ "Functional Outcome Prediction of Acute Ischemic Stroke Based on the Oral and Gut Microbiota": {
+  "category": "DROP_NO_HEALTHY_CONTROL",
+  "evidence": "160 AIS patients who were admitted within 24 h after a stroke event. We collected oral and rectal swab samples for analysis using 16S rRNA high-throughput sequencing",
+  "confidence": "high",
+  "notes": "All subjects are stroke patients (n=160); stratified by favorable vs unfavorable outcomes post-stroke, but no healthy control comparison group."
+ },
+ "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment": {
+  "category": "KEEP",
+  "evidence": "A total of 207 Chinese children and adolescents, consisting of 98 patients with ADHD (Y = 9. 0 years, SD = 2. 0) and 109 HCs (Y = 8. 9 years, SD = 1. 8)",
+  "confidence": "high",
+  "notes": "Human case-control study (98 ADHD patients vs 109 healthy controls). Rat transplant experiments are secondary results, not primary microbiome sequencing."
+ },
+ "Gut microbiome alterations in preclinical Alzheimer’s disease": {
+  "category": "KEEP",
+  "evidence": "Seventy-eight CN older participants (18 Aβ+ CN and 60 Aβ− CN) were included, and the V3–V4 region of the 16S rRNA gene of genomic DNA extracted from feces was amplified and sequenced to establish the microbial community.",
+  "confidence": "high",
+  "notes": "Human observational study comparing cognitively normal individuals with amyloid deposition (Aβ+ CN) vs. without (Aβ− CN control group)"
+ },
+ "Gut microbiome dysbiosis across early Parkinson’s disease, REM sleep behavior disorder and their first-degree relatives": {
+  "category": "KEEP",
+  "evidence": "We performed a cross-sectional study to profile gut microbiota across early PD, REM sleep behavior disorder (RBD), first-degree relatives of RBD (RBD-FDR), and healthy controls, which could reflect the gut-brain staging model of PD.",
+  "confidence": "high",
+  "notes": "Human case-control study with healthy controls (Braak stage 0-1) as comparison"
+ },
+ "Gut microbiome is associated with multiple sclerosis activity in children": {
+  "category": "DROP_NO_HEALTHY_CONTROL",
+  "evidence": "We used 16S ribosomal RNA sequencing from stool of 55 recently diagnosed pediatric‐onset multiple sclerosis patients. Participants were followed, on average, 2. 1 years.",
+  "confidence": "high",
+  "notes": "Human study but only MS patients enrolled; no healthy control group; compares disease activity outcomes within patients only"
+ },
+ "Gut microbiota regulate Alzheimer’s disease pathologies and cognitive disorders via PUFA-associated neuroinflammation": {
+  "category": "DROP_ANIMAL",
+  "evidence": "We analysed the gut microbiota composition of 3×Tg mice in an age-dependent manner. We generated germ-free 3×Tg mice and recolonisation of germ-free 3×Tg mice with fecal samples from both patients with AD and age-matched healthy donors.",
+  "confidence": "high",
+  "notes": "Human samples transplanted into germ-free mice; primary reported microbiome results come from mice not humans"
+ },
+ "Gut microbiota-driven metabolic alterations reveal gut–brain communication in Alzheimer’s disease model mice": {
+  "category": "DROP_ANIMAL",
+  "evidence": "we investigated the GM and the fecal, serum, cortical metabolomes in APP/PS1 and wild-type (WT) mice, revealing distinct hub bacteria in AD mice within scale-free GM networks",
+  "confidence": "high",
+  "notes": "16S rRNA sequencing performed on mouse feces, not human samples"
+ },
+ "Human Gut Microbiota from Autism Spectrum Disorder Promote Behavioral Symptoms in Mice": {
+  "category": "DROP_ANIMAL",
+  "evidence": "We transplanted gut microbiota from human donors with ASD or TD controls into germ-free mice, and reveal that colonization with ASD microbiota is sufficient to induce hallmark autistic behaviors.",
+  "confidence": "high",
+  "notes": "Human-to-mouse fecal microbiota transplant; reported microbiome results are from mice, not humans"
+ },
+ "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson’s disease": {
+  "category": "KEEP",
+  "evidence": "We used a cohort of 49 healthy controls (HC) and 46 PD donors for which groups were not different in age, sex, diabetes or drug consumption. Fecal samples from PD patients and healthy controls were collected during the 4-year follow-up visit.",
+  "confidence": "high",
+  "notes": "Human observational study with PD patients and healthy controls as comparison group"
+ },
+ "Identification of Faecalibacterium prausnitzii strains for gut microbiome-based intervention in Alzheimer’s-type dementia": {
+  "category": "KEEP",
+  "evidence": "We performed a fecal microbiome analysis in healthy subjects and those with mild cognitive impairment (MCI) and AD. We compared the gut microbial composition of healthy, MCI, and AD groups by fecal 16S rRNA gene sequencing.",
+  "confidence": "high",
+  "notes": "Primary human observational cross-sectional study comparing healthy, MCI, and AD groups; mouse studies are mechanistic validation"
+ },
+ "Implications of oral streptococcal bacteriophages in autism spectrum disorder": {
+  "category": "KEEP",
+  "evidence": "We enrolled 52 participants for this study, including 26 ASD children and 26 age- and gender-matched typically developed healthy control (HC) subjects. The metagenomes of both oral and fecal samples are shotgun-sequenced and compared.",
+  "confidence": "high",
+  "notes": "Human case-control study comparing ASD children with age-matched neurotypical controls"
+ },
+ "Large-scale metagenomic analysis of oral microbiomes reveals markers for autism spectrum disorders": {
+  "category": "KEEP",
+  "evidence": "our cross-sectional study shows that the oral microbiome composition can discriminate ASD subjects from neurotypical siblings (NTs, AUC = 0. 66), with 108 differentiating species",
+  "confidence": "high",
+  "notes": "Human cross-sectional study comparing ASD children to neurotypical sibling controls."
+ },
+ "Metagenome-assembled microbial genomes from Parkinson’s disease fecal samples": {
+  "category": "KEEP",
+  "evidence": "We included 68 control and 68 PD patients in this case–control study (Table 1)",
+  "confidence": "high",
+  "notes": "Human case-control study comparing 68 PD patients to 68 healthy controls."
+ },
+ "Metagenomics of Parkinson’s disease implicates the gut microbiome in multiple disease mechanisms": {
+  "category": "KEEP",
+  "evidence": "We enrolled 490 PD and 234 control individuals, conducted deep shotgun sequencing of fecal DNA",
+  "confidence": "high",
+  "notes": "Large human case-control cohort comparing 490 PD to 234 neurologically healthy controls."
+ },
+ "Metaproteogenomic analysis of saliva samples from Parkinson’s disease patients with cognitive impairment": {
+  "category": "KEEP",
+  "evidence": "A total of 115 individuals (43 PDD, 45 PD-MCI) and 27 HC were included in this study",
+  "confidence": "high",
+  "notes": "Human observational study comparing PD patients at different cognitive stages to healthy controls."
+ },
+ "Microbiota Transfer Therapy alters gut ecosystem and improves gastrointestinal and autism symptoms: an open-label study": {
+  "category": "DROP_NO_HEALTHY_CONTROL",
+  "evidence": "MTT involved a 2-week antibiotic treatment, a bowel cleanse, and then an extended fecal microbiota transplant (FMT)... Improvements in GI symptoms, ASD symptoms, and the microbiome all persisted for at least 8 weeks",
+  "confidence": "high",
+  "notes": "Intervention trial measuring pre/post microbiota changes within diseased patients, not case-control comparison."
+ },
+ "Microbiota from Alzheimer’s patients induce deficits in cognition and hippocampal neurogenesis": {
+  "category": "DROP_ANIMAL",
+  "evidence": "we transplanted faecal microbiota from Alzheimer's patients and age-matched healthy controls into microbiota-depleted young adult rats",
+  "confidence": "high",
+  "notes": "Primary reported microbiome results from rats receiving human microbiota transplants, not humans."
+ },
+ "Modulation of Alzheimer’s disease brain pathology in mice by gut bacterial depletion: the role of IL-17a": {
+  "category": "DROP_ANIMAL",
+  "evidence": "In this study, 3-month-old APP-transgenic female mice with and without knock-out of Il-17a gene were treated with antibiotics-supplemented or normal drinking water for 2 months",
+  "confidence": "high",
+  "notes": "Transgenic mouse models (APP/PS1 and IL-17a knockout mice), not human subjects."
+ },
+ "Neuroprotective and probiotic potential of Lactiplantibacillus plantarum AM2 in cognitive impairment": {
+  "category": "DROP_ANIMAL",
+  "evidence": "Twenty-four adults male Wistar albino rats weighting 180 ± 20 g were obtained from animal house at Pharos University",
+  "confidence": "high",
+  "notes": "All experimental work in D-galactose-induced cognitive impairment rat model, not human subjects."
+ },
+ "Nitrate ameliorates alcohol-induced cognitive impairment via oral microbiota": {
+  "category": "DROP_ANIMAL",
+  "evidence": "Oral microbiota from donor alcohol use disordered humans who had been taking the nitrate intervention were transplanted into germ-free mice which then showed increased cognitive function",
+  "confidence": "high",
+  "notes": "Primary mechanistic findings from mouse experiments. Human data (63 alcohol drinkers) lacks healthy control comparison."
+ },
+ "Oral Microbiome Stamp in Alzheimer’s Disease": {
+  "category": "KEEP",
+  "evidence": "case-control study of oral microbiota diversity in AD patients compared to healthy seniors from Central Asia. We have characterized the bacterial taxonomic composition of the oral microbiome from AD patients (n = 64) compared to the healthy group (n = 71)",
+  "confidence": "high",
+  "notes": "Clear case-control design with human patients (AD, n=64) vs healthy controls (n=71), 16S rRNA sequencing"
+ },
+ "Periodontitis-related salivary microbiota aggravates Alzheimer’s disease via gut-brain axis crosstalk": {
+  "category": "DROP_ANIMAL",
+  "evidence": "Saliva samples were collected from patients with periodontitis and healthy individuals. The salivary microbiota was gavaged into PAP mice for two months. Continuous gavage of periodontitis-related salivary microbiota in PAP mice",
+  "confidence": "high",
+  "notes": "While human saliva was collected, the primary reported microbiome results come from mice (APPswe/PS1ΔE9 transgenic mice) receiving the human salivary microbiota via gavage"
+ },
+ "Predicting Neurodegenerative Disease Using Prepathology Gut Microbiota Composition: a Longitudinal Study in Mice Modeling Alzheimer’s Disease Pathologies": {
+  "category": "DROP_ANIMAL",
+  "evidence": "we characterized the gut microbiota of female 3xTg-AD mice modeling amyloidosis and tauopathy and wild-type (WT) genetic controls",
+  "confidence": "high",
+  "notes": "Transgenic mouse model (3xTg-AD) study; primary reported microbiota results from mice, not human subjects"
+ },
+ "Prognostic Value of Gut Microbiome for Conversion from Mild Cognitive Impairment to Alzheimer’s Disease Dementia within 4 Years: Results from the AlzBiom Study": {
+  "category": "KEEP",
+  "evidence": "In this longitudinal study, we investigated the intestinal microbiome in 49 mild cognitive impairment (MCI) patients over a mean (SD) follow-up of 3.7 (0.6) years. At the end of the 4yFU, 27 MCI patients converted to AD dementia and 22 MCI patients remained stable",
+  "confidence": "high",
+  "notes": "Human longitudinal cohort study; diseased group (MCI/AD) tracked over 4 years with microbiome sequencing; includes healthy controls per study protocol (AlzBiom)"
+ },
+ "Role of Gut Microbiome in Autism Spectrum Disorder and Its Therapeutic Regulation": {
+  "category": "DROP_REVIEW",
+  "evidence": "This review integrates the findings of recent years on the gut microbiota and ASD association, mainly focusing on the characterization of specific microbiota that leads to ASD",
+  "confidence": "high",
+  "notes": "Explicitly a review/mini-review paper; does not report primary microbiome sequencing data from an original cohort"
+ },
+ "The Gut Microbiome in Progressive Multiple Sclerosis": {
+  "category": "KEEP",
+  "evidence": "We sequenced the microbiota from healthy controls, relapsing remitting MS (RRMS), and progressive MS patients and correlated the levels of bacteria with clinical features of disease",
+  "confidence": "high",
+  "notes": "Human case-control study; 16S rRNA sequencing; MS patients (diseased) vs healthy controls"
+ },
+ "The gut microbiota in multiple sclerosis varies with disease activity": {
+  "category": "KEEP",
+  "evidence": "in a case-control setting involving 148 Danish cases with multiple sclerosis and 148 matched healthy control subjects, we performed shotgun sequencing of fecal microbial DNA",
+  "confidence": "high",
+  "notes": "Human case-control study; 148 MS patients vs 148 matched healthy controls; shotgun metagenomics sequencing"
+ },
+ "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy": {
+  "category": "KEEP",
+  "evidence": "Twelve patients starting KD and 11 healthy parents not starting KD were enrolled. Applying shotgun metagenomic DNA sequencing, both taxonomic and functional profiles were established",
+  "confidence": "high",
+  "notes": "Human study; diseased group (12 children with therapy-resistant epilepsy) compared to healthy control group (11 parents); shotgun metagenomic sequencing; intervention study with pre/post measurements"
+ },
+ "β-glucan attenuates cognitive impairment via the gut-brain axis in diet-induced obese mice": {
+  "category": "DROP_ANIMAL",
+  "evidence": "This study aimed to evaluate the effect of β-glucan on the microbiota gut-brain axis and cognitive function in an obese mouse model induced by a high-fat and fiber-deficient diet (HFFD)",
+  "confidence": "high",
+  "notes": "Mouse model study; diet-induced obesity in mice; no human subjects with primary microbiome results"
+ }
+}

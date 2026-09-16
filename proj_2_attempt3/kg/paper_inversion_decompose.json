@@ -1,0 +1,668 @@
+{
+ "containment_controlled": {
+  "base_rate": 0.2749,
+  "excess_agreement": {
+   "null_mean": 44.06,
+   "obs": 52.06,
+   "p": 0.00625
+  },
+  "excess_disagreement": {
+   "null_mean": 58.62,
+   "obs": 73.63,
+   "p": 0.0036
+  },
+  "label": "containment-controlled",
+  "n_decisive": 975,
+  "n_disagree": 268,
+  "n_edges": 332,
+  "n_obs": 1069,
+  "n_testable": 112,
+  "total": {
+   "null_mean": 102.68,
+   "obs": 125.69,
+   "p": 0.0013
+  }
+ },
+ "full": {
+  "base_rate": 0.2758,
+  "excess_agreement": {
+   "null_mean": 58.77,
+   "obs": 66.74,
+   "p": 0.024
+  },
+  "excess_disagreement": {
+   "null_mean": 73.91,
+   "obs": 97.49,
+   "p": 5e-05
+  },
+  "label": "full",
+  "n_decisive": 1367,
+  "n_disagree": 377,
+  "n_edges": 440,
+  "n_obs": 1493,
+  "n_testable": 134,
+  "total": {
+   "null_mean": 132.68,
+   "obs": 164.23,
+   "p": 0.00025
+  }
+ },
+ "ge3_papers": {
+  "base_rate": 0.2238,
+  "excess_agreement": {
+   "null_mean": 36.91,
+   "obs": 45.73,
+   "p": 0.0063
+  },
+  "excess_disagreement": {
+   "null_mean": 50.43,
+   "obs": 76.1,
+   "p": 0.0014
+  },
+  "label": ">=3 papers per edge",
+  "n_decisive": 907,
+  "n_disagree": 203,
+  "n_edges": 210,
+  "n_obs": 1033,
+  "n_testable": 96,
+  "total": {
+   "null_mean": 87.33,
+   "obs": 121.83,
+   "p": 0.0003
+  }
+ },
+ "ge3_papers_containment_controlled": {
+  "base_rate": 0.2229,
+  "excess_agreement": {
+   "null_mean": 25.66,
+   "obs": 30.0,
+   "p": 0.0554
+  },
+  "excess_disagreement": {
+   "null_mean": 33.09,
+   "obs": 40.56,
+   "p": 0.11454
+  },
+  "label": ">=3 papers, containment-controlled",
+  "n_decisive": 637,
+  "n_disagree": 142,
+  "n_edges": 163,
+  "n_obs": 731,
+  "n_testable": 71,
+  "total": {
+   "null_mean": 58.75,
+   "obs": 70.55,
+   "p": 0.05815
+  }
+ },
+ "strict_paper_residuals": [
+  {
+   "expected": 1.78,
+   "n_decisive": 8,
+   "n_disagree": 6,
+   "paper": 16,
+   "residual": 4.22,
+   "title": "Alterations in gut microbiota and metabolomic profiles in acute stroke"
+  },
+  {
+   "expected": 1.78,
+   "n_decisive": 8,
+   "n_disagree": 5,
+   "paper": 103,
+   "residual": 3.22,
+   "title": "Fecal Volatile Organic Compounds and Microbiota Associated with the Pr"
+  },
+  {
+   "expected": 1.56,
+   "n_decisive": 7,
+   "n_disagree": 4,
+   "paper": 2,
+   "residual": 2.44,
+   "title": "A comparison of the composition and functions of the oral and gut micr"
+  },
+  {
+   "expected": 2.68,
+   "n_decisive": 12,
+   "n_disagree": 5,
+   "paper": 209,
+   "residual": 2.32,
+   "title": "Ocrelizumab transiently alters microbiota and modulates immune respons"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 3,
+   "paper": 10,
+   "residual": 2.11,
+   "title": "Alteration of Gut Microbiota in Patients With Epilepsy and the Potenti"
+  },
+  {
+   "expected": 2.23,
+   "n_decisive": 10,
+   "n_disagree": 4,
+   "paper": 41,
+   "residual": 1.77,
+   "title": "Analysis of the Gut Microflora in Patients With Parkinson's Disease."
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 3,
+   "paper": 236,
+   "residual": 1.66,
+   "title": "Specific microbial ratio in the gut microbiome is associated with mult"
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 3,
+   "paper": 112,
+   "residual": 1.66,
+   "title": "Gut Microbiome Distinguishes Patients With Epilepsy From Healthy Indiv"
+  },
+  {
+   "expected": 1.56,
+   "n_decisive": 7,
+   "n_disagree": 3,
+   "paper": 15,
+   "residual": 1.44,
+   "title": "Alterations in Gut Microbiota and Their Correlation with Brain Beta-Am"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 2,
+   "paper": 155,
+   "residual": 1.11,
+   "title": "Gut microbiota distinguishes aging hispanics with Alzheimer's disease:"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 2,
+   "paper": 246,
+   "residual": 1.11,
+   "title": "The Gut Microbiome in Progressive Multiple Sclerosis"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 2,
+   "paper": 206,
+   "residual": 1.11,
+   "title": "Multiple sclerosis patients have a distinct gut microbiota compared to"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 2,
+   "paper": 177,
+   "residual": 1.11,
+   "title": "Inflammatory Manifestations Associated With Gut Dysbiosis in Alzheimer"
+  },
+  {
+   "expected": 2.01,
+   "n_decisive": 9,
+   "n_disagree": 3,
+   "paper": 202,
+   "residual": 0.99,
+   "title": "Multi-omics profiling reveals key microbial and metabolic variations i"
+  },
+  {
+   "expected": 2.01,
+   "n_decisive": 9,
+   "n_disagree": 3,
+   "paper": 13,
+   "residual": 0.99,
+   "title": "Alterations in Circulating Fatty Acid Are Associated With Gut Microbio"
+  },
+  {
+   "expected": 2.23,
+   "n_decisive": 10,
+   "n_disagree": 3,
+   "paper": 242,
+   "residual": 0.77,
+   "title": "Study of gut microbiota alterations in Alzheimer's dementia patients f"
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 2,
+   "paper": 267,
+   "residual": 0.66,
+   "title": "Uncovering the characteristics of the gut microbiota in patients with "
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 2,
+   "paper": 271,
+   "residual": 0.66,
+   "title": "Unveiling the negative association of Faecalibacterium prausnitzii wit"
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 2,
+   "paper": 72,
+   "residual": 0.66,
+   "title": "Detection of Dysbiosis and Increased Intestinal Permeability in Brazil"
+  },
+  {
+   "expected": 1.56,
+   "n_decisive": 7,
+   "n_disagree": 2,
+   "paper": 120,
+   "residual": 0.44,
+   "title": "Gut Microbiota and Metabolome Alterations Associated with Parkinson's "
+  },
+  {
+   "expected": 1.56,
+   "n_decisive": 7,
+   "n_disagree": 2,
+   "paper": 194,
+   "residual": 0.44,
+   "title": "Microbiome signatures of virulence in the oral-gut-brain axis influenc"
+  },
+  {
+   "expected": 1.56,
+   "n_decisive": 7,
+   "n_disagree": 2,
+   "paper": 52,
+   "residual": 0.44,
+   "title": "Changes in Gastrointestinal Microbiome Composition in PD: A Pivotal Ro"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 1,
+   "paper": 151,
+   "residual": 0.11,
+   "title": "Gut microbiota as predictors of the occurrence of high on-treatment pl"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 1,
+   "paper": 258,
+   "residual": 0.11,
+   "title": "The impact of dysbiosis in oropharyngeal and gut microbiota on systemi"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 1,
+   "paper": 106,
+   "residual": 0.11,
+   "title": "Functional implications of microbial and viral gut metagenome changes "
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 1,
+   "paper": 43,
+   "residual": 0.11,
+   "title": "Association between Gut Microbiota with Mild Cognitive Impairment and "
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 1,
+   "paper": 240,
+   "residual": 0.11,
+   "title": "Structural and Functional Dysbiosis of Fecal Microbiota in Chinese Pat"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 1,
+   "paper": 6,
+   "residual": 0.11,
+   "title": "APOE-\u03b54 Carrier Status and Gut Microbiota Dysbiosis in Patients With A"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 1,
+   "paper": 90,
+   "residual": 0.11,
+   "title": "Dysbiosis of the Beneficial Gut Bacteria in Patients with Parkinson's "
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 1,
+   "paper": 253,
+   "residual": 0.11,
+   "title": "The effect of multiple sclerosis therapy on gut microbiota dysbiosis: "
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 1,
+   "paper": 4,
+   "residual": 0.11,
+   "title": "A prebiotic dietary pilot intervention restores faecal metabolites and"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 1,
+   "paper": 178,
+   "residual": 0.11,
+   "title": "Integrated Macrogenomics and Metabolomics Explore Alterations and Corr"
+  },
+  {
+   "expected": 1.11,
+   "n_decisive": 5,
+   "n_disagree": 1,
+   "paper": 46,
+   "residual": -0.11,
+   "title": "Association between the relative abundance of butyrate-producing and m"
+  },
+  {
+   "expected": 1.11,
+   "n_decisive": 5,
+   "n_disagree": 1,
+   "paper": 7,
+   "residual": -0.11,
+   "title": "Aging Gut-Brain Interactions: Pro-Inflammatory Gut Bacteria Are Elevat"
+  },
+  {
+   "expected": 1.11,
+   "n_decisive": 5,
+   "n_disagree": 1,
+   "paper": 24,
+   "residual": -0.11,
+   "title": "Alterations of the gut ecological and functional microenvironment in d"
+  },
+  {
+   "expected": 1.11,
+   "n_decisive": 5,
+   "n_disagree": 1,
+   "paper": 257,
+   "residual": -0.11,
+   "title": "The impact of device-assisted therapies on the gut microbiome in Parki"
+  },
+  {
+   "expected": 2.23,
+   "n_decisive": 10,
+   "n_disagree": 2,
+   "paper": 126,
+   "residual": -0.23,
+   "title": "Gut commensal Agathobacter rectalis alleviates microglia-mediated neur"
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 1,
+   "paper": 124,
+   "residual": -0.34,
+   "title": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke"
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 1,
+   "paper": 216,
+   "residual": -0.34,
+   "title": "Parkinson\u2019s disease-associated alterations of the gut microbiome predi"
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 1,
+   "paper": 37,
+   "residual": -0.34,
+   "title": "Alzheimer's Disease Microbiome Is Associated with Dysregulation of the"
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 1,
+   "paper": 238,
+   "residual": -0.34,
+   "title": "Stratification of the Gut Microbiota Composition Landscape across the "
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 1,
+   "paper": 169,
+   "residual": -0.34,
+   "title": "Human gut microbiome gene co-expression network reveals a loss in taxo"
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 1,
+   "paper": 158,
+   "residual": -0.34,
+   "title": "Gut microbiota dysbiosis in patients with Alzheimer\u2019s disease and corr"
+  },
+  {
+   "expected": 2.45,
+   "n_decisive": 11,
+   "n_disagree": 2,
+   "paper": 83,
+   "residual": -0.45,
+   "title": "Distinctive Gut Microbiota Alteration Is Associated with Poststroke Fu"
+  },
+  {
+   "expected": 1.56,
+   "n_decisive": 7,
+   "n_disagree": 1,
+   "paper": 39,
+   "residual": -0.56,
+   "title": "Analysis of Gut Microbiota in Patients with Parkinson's Disease."
+  },
+  {
+   "expected": 1.56,
+   "n_decisive": 7,
+   "n_disagree": 1,
+   "paper": 230,
+   "residual": -0.56,
+   "title": "Retrospective analysis of diet and gut microbiota diversity and clinic"
+  },
+  {
+   "expected": 1.56,
+   "n_decisive": 7,
+   "n_disagree": 1,
+   "paper": 68,
+   "residual": -0.56,
+   "title": "Cross-Sectional Study on the Gut Microbiome of Parkinson's Disease Pat"
+  },
+  {
+   "expected": 2.68,
+   "n_decisive": 12,
+   "n_disagree": 2,
+   "paper": 208,
+   "residual": -0.68,
+   "title": "Nutritional Intake and Gut Microbiome Composition Predict Parkinson's "
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 0,
+   "paper": 79,
+   "residual": -0.89,
+   "title": "Disruptions of Anaerobic Gut Bacteria Are Associated with Stroke and P"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 0,
+   "paper": 239,
+   "residual": -0.89,
+   "title": "Stroke Dysbiosis Index (SDI) in Gut Microbiome Are Associated With Bra"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 0,
+   "paper": 74,
+   "residual": -0.89,
+   "title": "Dietary quality and the gut microbiome in early-stage Parkinson's dise"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 0,
+   "paper": 61,
+   "residual": -0.89,
+   "title": "Combination effect between gut microbiota and traditional potentially "
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 0,
+   "paper": 38,
+   "residual": -0.89,
+   "title": "An analysis of the characteristics of the intestinal flora in patients"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 0,
+   "paper": 100,
+   "residual": -0.89,
+   "title": "Exploring gut microbiota alterations in Parkinson's disease: insights "
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 0,
+   "paper": 245,
+   "residual": -0.89,
+   "title": "The Gut Microbiome in Parkinson's Disease: A Longitudinal Study of the"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 0,
+   "paper": 190,
+   "residual": -0.89,
+   "title": "Metagenomics of the Gut Microbiome in Parkinson's Disease: Prodromal C"
+  },
+  {
+   "expected": 0.89,
+   "n_decisive": 4,
+   "n_disagree": 0,
+   "paper": 22,
+   "residual": -0.89,
+   "title": "Alterations of host-gut microbiome interactions in multiple sclerosis"
+  },
+  {
+   "expected": 1.11,
+   "n_decisive": 5,
+   "n_disagree": 0,
+   "paper": 88,
+   "residual": -1.11,
+   "title": "Dysbiosis of Gut Microbiota and Short-Chain Fatty Acids in Acute Ische"
+  },
+  {
+   "expected": 1.11,
+   "n_decisive": 5,
+   "n_disagree": 0,
+   "paper": 170,
+   "residual": -1.11,
+   "title": "Hypercoagulable state and gut microbiota dysbiosis as predictors of po"
+  },
+  {
+   "expected": 1.11,
+   "n_decisive": 5,
+   "n_disagree": 0,
+   "paper": 81,
+   "residual": -1.11,
+   "title": "Distinct gut microbiome characteristics and dynamics in patients with "
+  },
+  {
+   "expected": 1.11,
+   "n_decisive": 5,
+   "n_disagree": 0,
+   "paper": 118,
+   "residual": -1.11,
+   "title": "Gut Microbiota Ecological and Functional Modulation in Post-Stroke Rec"
+  },
+  {
+   "expected": 1.11,
+   "n_decisive": 5,
+   "n_disagree": 0,
+   "paper": 241,
+   "residual": -1.11,
+   "title": "Structural changes of gut microbiota in Parkinson's disease and its co"
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 0,
+   "paper": 108,
+   "residual": -1.34,
+   "title": "Gut Dysbiosis Is Associated With the Severity of Cryptogenic Stroke an"
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 0,
+   "paper": 109,
+   "residual": -1.34,
+   "title": "Gut Dysbiosis: A New Avenue for Stroke Prevention and Therapeutics"
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 0,
+   "paper": 186,
+   "residual": -1.34,
+   "title": "Metabolic modeling links gut microbiota to metabolic markers of Parkin"
+  },
+  {
+   "expected": 1.34,
+   "n_decisive": 6,
+   "n_disagree": 0,
+   "paper": 115,
+   "residual": -1.34,
+   "title": "Gut Microbiota Altered in Mild Cognitive Impairment Compared With Norm"
+  },
+  {
+   "expected": 1.56,
+   "n_decisive": 7,
+   "n_disagree": 0,
+   "paper": 189,
+   "residual": -1.56,
+   "title": "Metagenomics of Parkinson's disease implicates the gut microbiome in m"
+  },
+  {
+   "expected": 1.78,
+   "n_decisive": 8,
+   "n_disagree": 0,
+   "paper": 142,
+   "residual": -1.78,
+   "title": "Gut microbiome dysbiosis across early Parkinson's disease, REM sleep b"
+  },
+  {
+   "expected": 2.01,
+   "n_decisive": 9,
+   "n_disagree": 0,
+   "paper": 32,
+   "residual": -2.01,
+   "title": "Altered gut microbiota and inflammatory cytokine responses in patients"
+  },
+  {
+   "expected": 2.45,
+   "n_decisive": 11,
+   "n_disagree": 0,
+   "paper": 215,
+   "residual": -2.45,
+   "title": "Orthopedic Surgery Causes Gut Microbiome Dysbiosis and Intestinal Barr"
+  },
+  {
+   "expected": 2.68,
+   "n_decisive": 12,
+   "n_disagree": 0,
+   "paper": 212,
+   "residual": -2.68,
+   "title": "Oral and gut dysbiosis leads to functional alterations in Parkinson's "
+  }
+ ]
+}

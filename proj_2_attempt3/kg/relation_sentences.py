@@ -39,7 +39,15 @@ Taxon matching notes
   already by taxonomy.resolve(), which rejects any candidate whose lineage is not
   under Bacteria/Archaea/Fungi/Viruses -- all four of those resolve to nothing.
 * Genus abbreviations are expanded per paper: if a paper names Bacteroides
-  anywhere, "B. fragilis" later in that paper resolves.
+  anywhere, "B. fragilis" later in that paper resolves. The expansion is refused
+  when the initial is AMBIGUOUS within the paper -- see below. Until 2026-09-12
+  it was not, and the first genus seen with that letter won: a paper naming
+  Bacteroides, Bifidobacterium and Blautia sent every later "B. <sp>" to
+  Blautia, and an oral/gut Alzheimer's paper filed *P. gingivalis*
+  (Porphyromonas, the classic periodontal pathogen) under Phascolarctobacterium,
+  a gut genus. 774 mentions came from this path and 362 of them sat in a paper
+  with a letter clash. A mention we cannot attribute is worse than no mention,
+  so ambiguous initials now resolve to nothing.
 * Ranks above phylum are dropped as features ("Bacteria", "bacterium" are real
   taxids but carry no information about which organisms a paper reports).
 """
@@ -52,6 +60,7 @@ from collections import Counter, defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAPERS = os.path.join(HERE, "..", "EmilySong_GoldStandardPaper", "all_usable_papers.json")
+PAPER_FILES = [PAPERS, os.path.join(HERE, "extract_input.json")]
 EXTRACTIONS = os.path.join(HERE, "..", "dsmlp_model_prompting", "eval-v2", "results",
                            "qwopus3.5-27b-v3__q4km__samgated-v1__all250.json")
 OUT = os.path.join(HERE, "relation_sentences.json")
@@ -235,9 +244,28 @@ def load_taxonomy():
     sys.path.insert(0, HERE)
     from taxonomy import Taxonomy
     t = Taxonomy()
-    if not t.ok:
-        sys.exit("NCBI taxdump not found (see taxonomy.py TAX_DATA) — cannot run.")
-    return t
+    if t.ok:
+        return t
+    # Fall back to the replay cache (taxonomy_cache.py) where the taxdump cannot be
+    # fetched. The bias is ASYMMETRIC and matters differently for the two numbers
+    # this module reports, so it must not be papered over:
+    #
+    #   RECALL is close to unaffected. It asks whether a surviving sentence still
+    #   supports a relation the extractor already found, and those taxa are by
+    #   construction in graph.json — so the cache resolves them.
+    #
+    #   REDUCTION is OVERSTATED. The cache knows only the ~1k names in the graph,
+    #   so taxa the paper mentions but we never extracted go unresolved, their
+    #   sentences are discarded, and the filter looks more aggressive than it is.
+    #
+    # Treat the reduction ratio as an upper bound until this is rerun on a taxdump.
+    from taxonomy_cache import CachedTaxonomy
+    c = CachedTaxonomy()
+    if not c.ok:
+        sys.exit("No taxonomy available: no NCBI taxdump and no graph.json to replay.")
+    print("WARNING: no NCBI taxdump — using the graph.json replay cache.")
+    print("         recall is ~unaffected; REDUCTION RATIO IS AN UPPER BOUND.\n")
+    return c
 
 
 def filter_paper(text, matcher, mode="loose"):
@@ -250,15 +278,18 @@ def filter_paper(text, matcher, mode="loose"):
     """
     body = strip_references(text)
     sents = sentences(body)
-    # pass 1: collect this paper's genera so abbreviations can be expanded in pass 2
-    alias = {}
+    # pass 1: collect this paper's genera so abbreviations can be expanded in pass 2.
+    # Collect ALL genera per initial, not the first one seen: an initial that two
+    # genera in this paper share cannot be attributed from the text and is refused.
+    by_initial = {}
     prelim = []
     for s in sents:
         hits = matcher.find(s)
         prelim.append(hits)
         for _surf, _tid, sci, rank in hits:
             if rank == "genus" and sci:
-                alias.setdefault(sci[0].upper(), sci)
+                by_initial.setdefault(sci[0].upper(), set()).add(sci)
+    alias = {k: next(iter(v)) for k, v in by_initial.items() if len(v) == 1}
     kept, seen = [], set()
     for s, hits in zip(sents, prelim):
         if _ABBREV_SP.search(s):
@@ -271,8 +302,28 @@ def filter_paper(text, matcher, mode="loose"):
     return kept, len(sents), len(body), seen
 
 
+def load_papers():
+    """Merge every corpus file that carries full text, deduped by title.
+
+    PAPERS alone is the original 250. The graph now rests on 326 papers, and the
+    filtered sentences are the substrate for the embedding work, so building on
+    250 would silently exclude a quarter of the corpus -- including every paper
+    the MAIN_DATA expansion added.
+    """
+    out, seen = [], set()
+    for p in PAPER_FILES:
+        if not os.path.exists(p):
+            continue
+        for r in json.load(open(p)):
+            t = r.get("title")
+            if t and r.get("text") and t not in seen:
+                seen.add(t)
+                out.append(r)
+    return out
+
+
 def build(mode="loose", limit=None, quiet=False):
-    papers = json.load(open(PAPERS))
+    papers = load_papers()
     if limit:
         papers = papers[:limit]
     tax = load_taxonomy()
@@ -336,7 +387,7 @@ def validate(mode="loose", limit=None):
     """
     kept_by_paper, stats, tax = build(mode=mode, limit=limit)
     rel = _extraction_relations(tax)
-    papers = {p["title"]: p for p in json.load(open(PAPERS))}
+    papers = {p["title"]: p for p in load_papers()}
 
     n = Counter()
     misses = []
@@ -397,7 +448,14 @@ def main():
     ap.add_argument("--build", action="store_true", help="write relation_sentences.json")
     ap.add_argument("--limit", type=int, help="first N papers only (debug)")
     ap.add_argument("--out", default=OUT)
+    ap.add_argument("--extractions", default=None,
+                    help="extraction rows to replay for --validate (default: the "
+                         "original 250-paper run; use extractions_screened.json "
+                         "for the current 326-paper corpus)")
     a = ap.parse_args()
+    if a.extractions:
+        global EXTRACTIONS
+        EXTRACTIONS = os.path.join(HERE, a.extractions)
 
     if a.validate:
         for mode in (["strict", "loose"] if a.mode == "loose" else [a.mode]):

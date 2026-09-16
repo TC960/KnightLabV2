@@ -1,0 +1,200 @@
+[
+ {
+  "query": "What links Parkinson's disease and Alzheimer's disease?",
+  "kind": "bridge (multi-hop)",
+  "n_truth": 66,
+  "graph_p": 1.0,
+  "graph_r": 0.152,
+  "bm25_p": 1.0,
+  "bm25_r": 0.152,
+  "graph_top": [
+   "Lachnospiraceae",
+   "Faecalibacterium",
+   "Oscillospiraceae",
+   "Roseburia",
+   "Bacteroides",
+   "Blautia",
+   "Bifidobacterium",
+   "Ruminococcus",
+   "Prevotella",
+   "Bacillota"
+  ],
+  "bm25_top": [
+   "Bacteroides",
+   "Faecalibacterium",
+   "Lactobacillus",
+   "Prevotella",
+   "Blautia",
+   "Roseburia",
+   "Akkermansia",
+   "Bacillota",
+   "Bifidobacterium",
+   "Lachnospiraceae"
+  ]
+ },
+ {
+  "query": "What links Multiple sclerosis and Stroke?",
+  "kind": "bridge (multi-hop)",
+  "n_truth": 21,
+  "graph_p": 0.9,
+  "graph_r": 0.429,
+  "bm25_p": 0.6,
+  "bm25_r": 0.286,
+  "graph_top": [
+   "Lachnospiraceae",
+   "Faecalibacterium",
+   "Oscillospiraceae",
+   "Blautia",
+   "Roseburia",
+   "Streptococcus",
+   "Bacteroides",
+   "Akkermansia",
+   "Ruminococcus",
+   "Prevotella"
+  ],
+  "bm25_top": [
+   "Faecalibacterium",
+   "Roseburia",
+   "Blautia",
+   "Faecalibacterium prausnitzii",
+   "Parabacteroides",
+   "Streptococcus",
+   "Akkermansia muciniphila",
+   "Bacteroides",
+   "Akkermansia",
+   "Coprococcus"
+  ]
+ },
+ {
+  "query": "What links Alzheimer's disease and Mild cognitive impairment?",
+  "kind": "bridge (multi-hop)",
+  "n_truth": 5,
+  "graph_p": 0.2,
+  "graph_r": 0.4,
+  "bm25_p": 0.2,
+  "bm25_r": 0.4,
+  "graph_top": [
+   "Lachnospiraceae",
+   "Faecalibacterium",
+   "Oscillospiraceae",
+   "Bacteroides",
+   "Roseburia",
+   "Ruminococcus",
+   "Blautia",
+   "Bifidobacterium",
+   "Streptococcus",
+   "Alistipes"
+  ],
+  "bm25_top": [
+   "Bacteroides",
+   "Faecalibacterium",
+   "Bacillota",
+   "Roseburia",
+   "Bifidobacterium",
+   "Ruminococcus",
+   "Dialister invisus",
+   "Bacteroidota",
+   "Oscillospiraceae",
+   "Streptococcus"
+  ]
+ },
+ {
+  "query": "What links Multiple sclerosis and Amyotrophic lateral sclerosis?",
+  "kind": "bridge (multi-hop)",
+  "n_truth": 11,
+  "graph_p": 0.4,
+  "graph_r": 0.364,
+  "bm25_p": 0.4,
+  "bm25_r": 0.364,
+  "graph_top": [
+   "Lachnospiraceae",
+   "Oscillospiraceae",
+   "Faecalibacterium",
+   "Ruminococcus",
+   "Roseburia",
+   "Prevotella",
+   "Blautia",
+   "Bacteroides",
+   "Bifidobacterium",
+   "Streptococcus"
+  ],
+  "bm25_top": [
+   "Faecalibacterium prausnitzii",
+   "Oscillospiraceae",
+   "Lachnospiraceae",
+   "Odoribacter",
+   "Bacteroidota",
+   "Bacillota",
+   "Gaiella",
+   "Sphingomonas",
+   "Klebsiella",
+   "Alistipes"
+  ]
+ },
+ {
+  "query": "Akkermansia",
+  "kind": "neighbour (1 hop)",
+  "n_truth": 14,
+  "graph_p": 1.0,
+  "graph_r": 0.714,
+  "bm25_p": 1.0,
+  "bm25_r": 0.714,
+  "graph_top": [
+   "Parkinson's disease",
+   "Alzheimer's disease",
+   "Stroke",
+   "Multiple sclerosis",
+   "Epilepsy",
+   "Mild cognitive impairment",
+   "Amyotrophic lateral sclerosis",
+   "Cognitive impairment",
+   "Spinal cord injury",
+   "Autism spectrum disorder"
+  ],
+  "bm25_top": [
+   "Parkinson's disease",
+   "Stroke",
+   "Alzheimer's disease",
+   "Multiple sclerosis",
+   "Epilepsy",
+   "Cognitive impairment",
+   "Intracerebral hemorrhage",
+   "Spinal cord injury",
+   "Tuberous sclerosis complex",
+   "Autism spectrum disorder"
+  ]
+ },
+ {
+  "query": "What is depleted in Parkinson's disease?",
+  "kind": "directional (1 hop)",
+  "n_truth": 120,
+  "graph_p": 0.6,
+  "graph_r": 0.05,
+  "bm25_p": 1.0,
+  "bm25_r": 0.083,
+  "graph_top": [
+   "Lachnospiraceae",
+   "Faecalibacterium",
+   "Blautia",
+   "Roseburia",
+   "Prevotella",
+   "Bifidobacterium",
+   "Lactobacillus",
+   "Streptococcus",
+   "Bacteroides",
+   "Ruminococcus"
+  ],
+  "bm25_top": [
+   "Prevotella",
+   "Faecalibacterium",
+   "Blautia",
+   "Roseburia",
+   "Bacillota",
+   "Lachnospiraceae",
+   "Fusicatenibacter",
+   "Ruminococcus",
+   "Butyricicoccus",
+   "Faecalibacterium prausnitzii"
+  ]
+ }
+]

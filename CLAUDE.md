@@ -10,9 +10,31 @@ literature — nodes for microbial taxa and diseases, edges for "taxon X is **en
 in disease Y."
 
 Extraction is done and **the graph is built**: see `proj_2_attempt3/kg/`, published at
-<https://www.mohakprakash.com/KnightLabV2/>. 712 taxa (84% resolved to NCBI taxids), 27 diseases,
-1,398 association edges plus 551 taxonomic-containment links, from 250 papers. It agrees with two
-independent hand-curated databases at **77.5%** (Disbiome) and **75.6%** (Peryton) on edge direction.
+<https://www.mohakprakash.com/KnightLabV2/>. **883 taxa** (76% resolved to NCBI
+taxids), **40 diseases**, **2,008 association edges** plus
+**727 taxonomic-containment links**, from **271 contributing
+papers** of a screened 325-paper corpus. It agrees with two hand-curated databases at
+**73.0%** (Disbiome) and **72.5%** (Peryton) on edge direction — but **do not quote those two
+numbers as independent replication**; see the caveat below.
+
+**Caveat on the agreement figures (2026-09-09).** Those curations are *not* independent of our
+corpus. 43 of our 272 papers are also cited by Disbiome and 24 by Peryton, and because the shared
+ones are the heavily-reported papers they back **half** the decisive pairs. Agreement splits hard
+on that line: **87.5% / 96.8%** where the two sides read the same paper, **58.1% / 52.6%** where
+the literature is disjoint. Within Parkinson's — the only disease with both buckets full — both
+databases independently land on the same disjoint rate (**59.0%** and **59.6%**, vs 100% and 95.8%
+shared, p=0.0001 each). So 73% is a blend of ~90% *reading fidelity* and ~55% *cross-literature
+reproducibility* and measures neither. The good half is real and is the cleanest evidence for the
+extractor that does not depend on the in-house gold: where a single-paper edge's one paper **is**
+the curated source, agreement is **85–94%**. Counter-example, logged: in Multiple sclerosis the gap
+is absent (72.7 vs 70.6, n=39) at an MDE that could have seen it. Full write-up and the calibration
+that came with it: `proj_2_attempt3/kg/FINDINGS_independence.md`.
+
+*Numbers current as of 2026-09-03; the earlier "712 taxa / 1,398 edges / 77.5% / 75.6%, from 250
+papers" line described a graph three corpus revisions ago. Agreement fell because the corpus grew
+and the question set changed, NOT because the graph got worse — five structural corrections since
+have each moved agreement by less than this corpus can resolve (~0.013). See
+`proj_2_attempt3/kg/SESSION_LOG.md`.*
 
 **Caveat on the gold standard.** The human annotations are under audit and are turning out to be
 unreliable; the annotator expects to report an error rate rather than a corrected set. So the
@@ -20,6 +42,57 @@ extractor's "F1 0.680" is *agreement with a flawed reference*, not accuracy. Thr
 of this: 162 of 250 papers have blank taxa columns, a thorough Opus 4.8 re-annotation found 72 taxa
 the humans missed, and the 15-paper benchmark only rose 0.64 -> 0.84 once the gold was corrected.
 Prefer the Disbiome/Peryton agreement figures — they do not depend on the in-house gold.
+
+**Best current fidelity number (2026-09-12): reading fidelity ≥ 86.6%**, 95% CI [81.7, 91.3], from
+181/209 scoreable observations across 122 papers — measured against *the papers' own sentences*, so it
+depends on neither the in-house gold nor the curated databases. All 28 residual disagreements were
+adjudicated twice independently (25/28 exact agreement) and **none is an extraction error**, so this is
+a lower bound. It is a *different quantity* from the 73%/72.5% agreement figures — reading fidelity,
+not cross-literature reproducibility — and must not be quoted as moving them. See
+`proj_2_attempt3/kg/FINDINGS_direction_audit.md`.
+
+**Best current recall number (2026-09-16): paper-level recall ≥96.1%**, and **99.6%**
+[97.9, 99.9] counting only the one miss that is *confirmable*. Like the fidelity figure
+this is measured against *the papers' own sentences*, so it depends on neither the
+in-house gold nor the curated databases. Of 313 deduplicated screened papers, 271
+contribute at least one edge (86.6% paper yield); of the 42 that contribute nothing, 9
+have no relation-bearing sentence at all and the other 33 adjudicate to 14 correct
+refusals on study design, 4 explicit negative results, 4 background-only, 7 unclear, and
+**1 confirmed miss** (3 further papers state a direction but report no significance —
+see below). **Quote the range, not a point estimate.**
+
+**The reason that is a range is the most transferable thing here, and it caught a wrong
+number in this very file within the hour.** The extraction prompt
+(`eval-v2/run_eval.py`, `samgated-v1`) does not extract anything that merely *states a
+direction*: it requires **reported statistical significance** ("if significance is
+unclear or unreported for a taxon, **omit it**"), **main text only** (not tables,
+figures or supplementary), and **disease vs healthy control only**. An audit that scores
+the extractor without applying its own gate will manufacture misses — the first pass
+here reported 4 and the true confirmable count is 1. Conversely
+`relation_sentences_clean.json` holds only sentences with a taxon *and* a direction cue
+(~10% of corpus text), so a sentence reporting significance without a direction word is
+invisible to it. **Net: this instrument can confirm a miss but cannot refute one.** Any
+future recall work must apply the gate and state that asymmetry.
+
+It is not an accuracy gain — nothing in the graph was changed. A deterministic
+side-result worth keeping: `build_kg.py` loses nothing, i.e. zero papers had extracted
+taxa that failed to become an edge. See `proj_2_attempt3/kg/FINDINGS_zero_yield.md`.
+
+**Edge-level recall (2026-09-16): at most ~98.1%**, 95% CI [96.4, 99.5] — roughly 60
+missed observations [14, 116] against the 3,077 in the graph. This is the *separate,
+harder* question the paper-level figure above does not answer, and it is the first
+edge-level recall number the project has that does not depend on the flawed gold. From
+378 candidate (paper, taxon) pairs across 94 papers, a random sample of 24 papers / 95
+candidates adjudicated with the gate applied. **Quote it as an upper bound**: the
+candidate generator only sees taxa in sentences the provenance screen keeps (~75%
+paper-level recall), and the significance gate can be confirmed from visible text but
+never refuted — both biases push recall down, not up. **The actionable part is the
+clustering, not the average: 12 of the 15 confirmed misses come from 3 papers**, so a
+short-list re-extraction recovers most of the loss without a corpus-scale GPU run
+(candidates enumerated in `kg/edge_recall_packets.json`). A tempting false finding was
+tested and rejected here — high-rank taxa are *not* missed more often (p=0.054); the
+apparent 33%-vs-6.5% phylum skew is a property of the candidate generator, 27% of whose
+candidates are already phylum/class. See `proj_2_attempt3/kg/FINDINGS_edge_recall.md`.
 
 **The KG is broad-scoped** — all microbe–disease relationships, not a single disease area. The current
 gold-standard/test set happens to skew neuro-adjacent (Parkinson's, MS, Alzheimer's, ALS, stroke,
@@ -147,11 +220,16 @@ Built from the 250-paper extraction. Published: <https://www.mohakprakash.com/Kn
 - **Edge weight is evidence count, not effect size.** The extractor returns direction only, and the
   source papers report incommensurable statistics (LEfSe LDA, fold-change, p-values). A pooled
   "magnitude" would be invented precision.
-- **Contested edges are kept, never averaged.** 174 pairs have papers pointing both ways. ~1 taxon in
+- **Contested edges are kept, never averaged.** 217 pairs are contested (215 with papers pointing
+  both ways, 2 where one paper contradicts itself); "174" here was stale. ~1 taxon in
   3 flips sign between cohorts in this literature, so disagreement is a finding, not noise.
 - **Containment is modelled, not collapsed.** 2,384 ancestor-descendant pairs sit within the same
   disease. Merging ranks would destroy real signal: in Parkinson's, *Lachnospiraceae* (family) is
-  depleted across 15 papers while *Hungatella* (a genus inside it) is enriched across 7. Synonym
+  depleted in 8 of the 9 papers reporting it while *Hungatella* (a genus inside it) is enriched in
+  6 of 7, and one study reports both directions itself. (An earlier "15 papers / 7" here predated
+  the 2026-09-03 deduplication.) Corpus-wide, related taxa agree on direction 89% of the time
+  within a single paper vs 54% for unrelated taxa — so containment is mostly redundant, and the
+  11% that disagree are exactly what this layer is for. Synonym
   folding (same rank, renamed) and containment (different ranks) are different operations.
 - **Never join on another database's taxid.** Disbiome records "Prevotella" as taxid 59823
   (*Prevotella sp.*, a species) where the genus is 838. Joining on their stored id silently dropped
@@ -160,14 +238,84 @@ Built from the 250-paper extraction. Published: <https://www.mohakprakash.com/Kn
 
 ### Open questions
 
-- **Contested edges are unexplained.** Study design does not account for them: after a cluster-robust
-  permutation test (533 observations come from only 136 papers) and BH correction across 26
-  categories, nothing survives — the best, `diet_controlled`, sits at FDR 0.243. `country=China`
-  splits 45/44. This is "no effect visible at n=250", not "no effect".
+- **Contested edges are unexplained — but as of 2026-09-10 we know the variance is real and
+  where it lives.** Disagreement with the rest of the literature is a property of the **paper**:
+  scored against the leave-one-out majority, 377 of 1,367 decisive observations (27.6%) disagree,
+  and which papers hold the minority direction is clustered far beyond a within-edge null
+  (p = 0.0003; p = 0.0013 after dropping within-paper taxonomic relatives). No paper is
+  systematically *inverted* — a well-powered null: 0 of 134 survive BH, and a fully inverted copy
+  would have been caught for 81 of them. But nothing extracted explains the offset. Country,
+  cohort size, sequencing platform, 16S region, medication and diet control and disease identity
+  are all null at MDEs of 16–22% **once the exact within-edge expectation is used as the offset**;
+  on raw disagreement rate three of them survive BH and all three are edge-depth artifacts. A
+  second pass adding 15 wet-lab/bioinformatics variables (extraction kit, pipeline, OTU vs ASV,
+  LEfSe vs DESeq2, rarefaction, platform, year) is also null — **24 variables, 24 nulls**.
+  **The size is why:** the paper-level SD of discordance is only **3.4 percentage points** on a
+  27.6% base (cluster-bootstrap CI [0.0, 6.0], including zero), against MDEs of ±4–7 points. So
+  the defensible claim is that this corpus *cannot answer* whether kit or pipeline drives
+  disagreement, not that they don't — and **~85% of the variance is edge structure, not paper
+  identity**, which is quantitative support for keeping contested edges rather than averaging
+  them. See `proj_2_attempt3/kg/FINDINGS_paper_discordance.md`. The earlier edge-level result
+  stands too: study design at FDR 0.243, `country=China` splitting 45/44.
 - **Next planned analysis: embeddings.** Embed the full texts and test, *within* each contested edge,
   whether the up-papers separate from the down-papers, with permutation testing. Note the naive
   framing "do papers producing contested edges differ from papers producing unanimous ones" is
   **ill-posed** — 145 of 211 contributing papers do both, and only 7 are contested-only. The
   comparison must be within a fixed taxon-disease pair.
 - 11 pairs are contradicted by **both** Disbiome and Peryton — the highest-value review targets.
-- 113 of 712 taxa never resolve to a taxid (16S clade labels like `[Eubacterium] ventriosum group`).
+- ~~254 of 925 taxa never resolve to a taxid (16S clade labels)~~ — **that framing was wrong,
+  2026-09-11.** It is now **212 of 883**, and the difference was not clade labels at all: 12
+  concepts were split across two nodes by punctuation alone (the placeholder branch of
+  `norm_taxon` returns before the separator collapse added on 2026-09-08), and 33 labels are
+  **the papers' own misspellings** — `Fecalibacterium`, `Subdogranulum`, `Lachinospiracea` —
+  all 33 verified to occur verbatim in their source paper's text, so none is an extraction
+  error. Folded via a curated table with 13 recorded refusals, because edit distance would
+  have merged `Oscillospirales` into `Oscillospira` and undone the placeholder split. See
+  `proj_2_attempt3/kg/FINDINGS_taxon_spelling.md` and `taxon_typos.py`. What remains really
+  is clade labels (`SMB53`, `cc115`, `PAC000195_g`) plus real taxa absent from the cached
+  taxdump (`Anaerostignum`, `Mogibacteriaceae`).
+- **Only 23 of the 271 contributing papers have ever been screened for study design
+  (2026-09-11).** `maindata_screen.json` covers the 45 title-matched MAIN_DATA additions only;
+  the ~250 datasheet papers were never put through it. An animal-study prefilter validated at
+  **recall 15/15** against that gold set returns a null on the rest (13 flagged, all 13 genuine
+  human case-control), so no animal-only study is in the graph — but animal studies were only
+  15 of 22 drop reasons, and no-healthy-control / case-report / review remain unscreened across
+  248 papers. See `proj_2_attempt3/kg/FINDINGS_corpus_screen.md`. **This is the cheapest
+  unblocked lever left: no GPU, no taxdump, no new papers.**
+- ~~54 named species folded into their genus~~ — **FIXED 2026-09-08**, and it was never blocked on
+  the taxdump. It was **24** species, not 54; the other 91 child folds must *not* be split
+  (`Escherichia / Shigella` names two taxa, `Clostridium_XlVa` is a cluster label). The mapping comes
+  from joining Disbiome's pre-rename names to NCBI on the **stable taxid** — see
+  `proj_2_attempt3/kg/species_synonyms.py` and `FINDINGS_species_split.md`.
+- **Punctuation was fragmenting concepts across nodes — FIXED 2026-09-08.** `Escherichia-Shigella`
+  (the standard SILVA label for two genera 16S cannot separate) was split over **four** nodes by
+  hyphen/slash/en-dash/underscore alone, and the underscore spelling was being filed under
+  *Escherichia* outright. 17 concepts were affected. See `multi_taxon.py` and
+  `FINDINGS_species_split.md`.
+- **What remains is a decision, not an analysis** — but there is now one fewer of them.
+  Whether a joint two-genus 16S signal should be attributed to one genus, split, or held
+  separate (it is now held separate, on its own node) is still a modelling call for a human.
+  **Disease subtypes as containment is ANSWERED (2026-09-14).** The disease half of the graph
+  now resolves against MONDO (`kg/mondo.py`; the MONDO GitHub release is reachable even though
+  NCBI is not), which confirmed 2 of 2 checkable is-a claims and upheld 2 of 2 rejections — and
+  the 71-paper cognitive-decline cluster **does not cohere microbially**: 0.592 directional
+  agreement against a 0.672 background over 453 cross-cluster pairs, with every MCI pair at or
+  below a coin flip while the MONDO-confirmed Alzheimer's/Dementia link runs 0.938.
+  **Caveat added 2026-09-15: the pooled result is robust, but NO individual pair survives
+  multiple-comparison correction** — exact binomial + BH over all 16 pairs at q=0.05 gives
+  **0 of 16**, the AD/Dementia 0.938 link (p=0.030) included. Quote the cluster-level number,
+  not the per-pair ones. The pooled conclusion is unmoved by dropping the HIV-cohort
+  `Neurocognitive impairment` node (0.592 → 0.582, i.e. *further* from background). So: link
+  those nodes for **retrieval**, do **not** pool their evidence, and do **not** fold MCI into
+  Alzheimer's. The 2 MONDO is-a links ship as an opt-in `kg/disease_hierarchy_links.json`; they
+  add **no** retrieval reach in the PPR retriever (measured — identical subgraphs), only
+  explicit attribution. See `kg/FINDINGS_disease_ontology.md`. Everything else is
+  limited by n=272, which needs a GPU.
+
+**Disease identifiers were wrong on 209 edges until 2026-09-14.** `Mild cognitive impairment`
+(13 papers, 154 edges) carried `MONDO:0005453`, which is *congenital heart disease*, and
+`Autism spectrum disorder` carried the id for narrow *autism*, a child of ASD. Both were live
+in `graph.json`, `rag_corpus.jsonl` and the published `kg.html`. The rule already in this file —
+**never join on another database's identifier** — applies to the disease dimension too, and this
+shipped because every fidelity instrument here scores the *taxon* half of an edge. `MCI` now
+correctly has **no** MONDO id; do not add one.

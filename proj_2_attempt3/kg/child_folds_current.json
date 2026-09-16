@@ -1,0 +1,1316 @@
+[
+ {
+  "parent": "Agathobacter",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1766253",
+  "surface": "Agathobacter sp",
+  "tail": "sp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Agathobaculum",
+  "parent_rank": "genus",
+  "node": "t:ncbi:2048137",
+  "surface": "Agathobaculum DQ795333",
+  "tail": "DQ795333",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Alistipes",
+  "parent_rank": "genus",
+  "node": "t:ncbi:239759",
+  "surface": "Alistipes finegoldii DSM17242",
+  "tail": "finegoldii DSM17242",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Atopobium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1380",
+  "surface": "Atopobium cluster",
+  "tail": "cluster",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Azospirillum sp.",
+  "parent_rank": "species",
+  "node": "t:ncbi:34012",
+  "surface": "Azospirillum sp. 47-25",
+  "tail": "47-25",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Bacteroides",
+  "parent_rank": "genus",
+  "node": "t:ncbi:816",
+  "surface": "Bacteroides phage B124 14",
+  "tail": "phage B124 14",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Bacteroides",
+  "parent_rank": "genus",
+  "node": "t:ncbi:816",
+  "surface": "Bacteroides sp. Marseille-P3166",
+  "tail": "sp. Marseille-P3166",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Bacteroides fragilis",
+  "parent_rank": "species",
+  "node": "t:ncbi:817",
+  "surface": "Bacteroides fragilis group",
+  "tail": "group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Barnesiella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:397864",
+  "surface": "Barnesiella spp",
+  "tail": "spp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Bifidobacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1678",
+  "surface": "Bifidobacterium_sp__MC_10",
+  "tail": "sp MC 10",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Blautia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:572511",
+  "surface": "Blautia spp",
+  "tail": "spp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Blautia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:572511",
+  "surface": "Blautia unclassified",
+  "tail": "unclassified",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Blautia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:572511",
+  "surface": "Blautia_A",
+  "tail": "A",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Christensenellaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:990719",
+  "surface": "Christensenellaceae R-7 group",
+  "tail": "R-7 group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Christensenellaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:990719",
+  "surface": "Christensenellaceae group R7",
+  "tail": "group R7",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Christensenellaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:990719",
+  "surface": "Christensenellaceae_R-7_group",
+  "tail": "R-7 group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Christensenellaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:990719",
+  "surface": "Christensenellaceae_R7 group",
+  "tail": "R7 group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Christensenellaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:990719",
+  "surface": "Christensenellaceae_R_7_group",
+  "tail": "R 7 group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Christensenellales",
+  "parent_rank": "order",
+  "node": "t:ncbi:3082768",
+  "surface": "Christensenellales CAG-74 UMGS1633",
+  "tail": "CAG-74 UMGS1633",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridia",
+  "parent_rank": "class",
+  "node": "t:ncbi:186801",
+  "surface": "Clostridia UCG 014",
+  "tail": "UCG 014",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridia",
+  "parent_rank": "class",
+  "node": "t:ncbi:186801",
+  "surface": "Clostridia UCG-014",
+  "tail": "UCG-014",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridia",
+  "parent_rank": "class",
+  "node": "t:ncbi:186801",
+  "surface": "Clostridia _UCG-014",
+  "tail": "UCG-014",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridia",
+  "parent_rank": "class",
+  "node": "t:ncbi:186801",
+  "surface": "Clostridia cluster IV",
+  "tail": "cluster IV",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridia",
+  "parent_rank": "class",
+  "node": "t:ncbi:186801",
+  "surface": "Clostridia cluster XIVa",
+  "tail": "cluster XIVa",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridia",
+  "parent_rank": "class",
+  "node": "t:ncbi:186801",
+  "surface": "Clostridia_UCG-014",
+  "tail": "UCG-014",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridia",
+  "parent_rank": "class",
+  "node": "t:ncbi:186801",
+  "surface": "Clostridia_UCG_014 group",
+  "tail": "UCG 014 group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridia",
+  "parent_rank": "class",
+  "node": "t:ncbi:186801",
+  "surface": "Clostridia_vadinBB60 group",
+  "tail": "vadinBB60 group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridiaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:31979",
+  "surface": "Clostridiaceae 1",
+  "tail": "1",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium IV",
+  "tail": "IV",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium XVIII",
+  "tail": "XVIII",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium cluster I",
+  "tail": "cluster I",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium cluster IV",
+  "tail": "cluster IV",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium g24 FCEY",
+  "tail": "g24 FCEY",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium phage vB CpeS CP51",
+  "tail": "phage vB CpeS CP51",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium sensu stricto",
+  "tail": "sensu stricto",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium sensu stricto 1",
+  "tail": "sensu stricto 1",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium sp CAG 273",
+  "tail": "sp CAG 273",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium sp. HT03-22",
+  "tail": "sp. HT03-22",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium spp",
+  "tail": "spp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium_IV",
+  "tail": "IV",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium_XlVa",
+  "tail": "XlVa",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Clostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1485",
+  "surface": "Clostridium_sensu_stricto_1",
+  "tail": "sensu stricto 1",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Collinsella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:102106",
+  "surface": "Collinsella spp",
+  "tail": "spp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Coprococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:33042",
+  "surface": "Coprococcus_1",
+  "tail": "1",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Coprococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:33042",
+  "surface": "Coprococcus_2",
+  "tail": "2",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Coriobacteriales",
+  "parent_rank": "order",
+  "node": "t:ncbi:84999",
+  "surface": "Coriobacteriales Incertae Sedis",
+  "tail": "Incertae Sedis",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Cuneatibacter",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1918450",
+  "surface": "Cuneatibacter sp",
+  "tail": "sp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Dialister",
+  "parent_rank": "genus",
+  "node": "t:ncbi:39948",
+  "surface": "Dialister spp",
+  "tail": "spp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Dorea",
+  "parent_rank": "genus",
+  "node": "t:ncbi:189330",
+  "surface": "Dorea asp: CAG:317",
+  "tail": "asp: CAG:317",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Eikenella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:538",
+  "surface": "Eikenella species NML 130454",
+  "tail": "species NML 130454",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Eisenbergiella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1432051",
+  "surface": "Eisenbergiella KE992700",
+  "tail": "KE992700",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Erysipelotrichaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:128827",
+  "surface": "Erysipelotrichaceae CCM",
+  "tail": "CCM",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Erysipelotrichaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:128827",
+  "surface": "Erysipelotrichaceae CCMM",
+  "tail": "CCMM",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Erysipelotrichaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:128827",
+  "surface": "Erysipelotrichaceae UCG-003",
+  "tail": "UCG-003",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Erysipelotrichaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:128827",
+  "surface": "Erysipelotrichaceae_UCG-003",
+  "tail": "UCG-003",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Escherichia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:561",
+  "surface": "Escherichia / Shigella",
+  "tail": "/ Shigella",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Escherichia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:561",
+  "surface": "Escherichia spp",
+  "tail": "spp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Escherichia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:561",
+  "surface": "Escherichia \u2013 Shigella",
+  "tail": "\u2013 Shigella",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Escherichia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:561",
+  "surface": "Escherichia_Shigella",
+  "tail": "Shigella",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Escherichia phage",
+  "parent_rank": "species",
+  "node": "t:ncbi:3102713",
+  "surface": "Escherichia phage TL 2011",
+  "tail": "TL 2011",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Escherichia phage",
+  "parent_rank": "species",
+  "node": "t:ncbi:3102713",
+  "surface": "Escherichia phage TL 2011b",
+  "tail": "TL 2011b",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Eubacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1730",
+  "surface": "Eubacterium brachy group",
+  "tail": "brachy group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Eubacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1730",
+  "surface": "Eubacterium coprostanoligenes group",
+  "tail": "coprostanoligenes group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Eubacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1730",
+  "surface": "Eubacterium fissicatena group",
+  "tail": "fissicatena group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Eubacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1730",
+  "surface": "Eubacterium g",
+  "tail": "g",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Eubacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1730",
+  "surface": "Eubacterium rectal group",
+  "tail": "rectal group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Eubacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1730",
+  "surface": "Eubacterium_g4",
+  "tail": "g4",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Eubacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1730",
+  "surface": "Eubacterium_ruminantium _group",
+  "tail": "ruminantium group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Eubacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1730",
+  "surface": "Eubacterium_ventriosum_group",
+  "tail": "ventriosum group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Faecalibacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:216851",
+  "surface": "Faecalibacterium bacterium CAG 137",
+  "tail": "bacterium CAG 137",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Faecalibacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:216851",
+  "surface": "Faecalibacterium spp",
+  "tail": "spp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Fusobacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:848",
+  "surface": "Fusobacterium sp",
+  "tail": "sp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Fusobacterium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:848",
+  "surface": "Fusobacterium_A",
+  "tail": "A",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Gemmiger",
+  "parent_rank": "genus",
+  "node": "t:ncbi:204475",
+  "surface": "Gemmiger sp",
+  "tail": "sp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnoclostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1506553",
+  "surface": "Lachnoclostridium spp",
+  "tail": "spp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnoclostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1506553",
+  "surface": "Lachnoclostridium_12",
+  "tail": "12",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae ND3007 group",
+  "tail": "ND3007 group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae ND3008",
+  "tail": "ND3008",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae NK4A136 group",
+  "tail": "NK4A136 group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae PAC001046",
+  "tail": "PAC001046",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae PAC002349",
+  "tail": "PAC002349",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae UCG-001",
+  "tail": "UCG-001",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae UCG-004",
+  "tail": "UCG-004",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae UCG-008",
+  "tail": "UCG-008",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae _ NK4A136 group",
+  "tail": "NK4A136 group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae sp",
+  "tail": "sp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae species",
+  "tail": "species",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_AC2044_group",
+  "tail": "AC2044 group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_Eubacterium",
+  "tail": "Eubacterium",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_NC2004",
+  "tail": "NC2004",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_NC2004_group",
+  "tail": "NC2004 group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_ND3007_group",
+  "tail": "ND3007 group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_NK4A136_group",
+  "tail": "NK4A136 group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_UCG-001",
+  "tail": "UCG-001",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_UCG-003",
+  "tail": "UCG-003",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_UCG-004",
+  "tail": "UCG-004",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_UCG-010",
+  "tail": "UCG-010",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_UCG004",
+  "tail": "UCG004",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_UCG_008",
+  "tail": "UCG 008",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:186803",
+  "surface": "Lachnospiraceae_g",
+  "tail": "g",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lachnospiraceae bacterium",
+  "parent_rank": "species",
+  "node": "t:ncbi:1898203",
+  "surface": "Lachnospiraceae bacterium MC-35",
+  "tail": "MC-35",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lactobacillus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1578",
+  "surface": "Lactobacillus sakei subgroup",
+  "tail": "sakei subgroup",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Lawsonibacter",
+  "parent_rank": "genus",
+  "node": "t:ncbi:2172004",
+  "surface": "Lawsonibacter phoceensis",
+  "tail": "phoceensis",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Neisseria",
+  "parent_rank": "genus",
+  "node": "t:ncbi:482",
+  "surface": "Neisseria multispecies",
+  "tail": "multispecies",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Odoribacter",
+  "parent_rank": "genus",
+  "node": "t:ncbi:283168",
+  "surface": "Odoribacter spp",
+  "tail": "spp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Olsenella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:133925",
+  "surface": "Olsenella sp. Marseille-P2912",
+  "tail": "sp. Marseille-P2912",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Oscillibacter",
+  "parent_rank": "genus",
+  "node": "t:ncbi:459786",
+  "surface": "Oscillibacter_sp_57_20",
+  "tail": "sp 57 20",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Oscillospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:216572",
+  "surface": "Oscillospiraceae UCG 002",
+  "tail": "UCG 002",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Oscillospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:216572",
+  "surface": "Oscillospiraceae of the NK4A214 group",
+  "tail": "of the NK4A214 group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Oscillospiraceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:216572",
+  "surface": "Oscillospiraceae_UCG-005",
+  "tail": "UCG-005",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella 2",
+  "tail": "2",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella 9",
+  "tail": "9",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella VZCB",
+  "tail": "VZCB",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella sp. Marseille P2931",
+  "tail": "sp. Marseille P2931",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella spp",
+  "tail": "spp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella_6",
+  "tail": "6",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Prevotella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:838",
+  "surface": "Prevotella_9",
+  "tail": "9",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Pseudoflavonifractor",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1017280",
+  "surface": "Pseudoflavonifractor PAC001038",
+  "tail": "PAC001038",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Rikenellaceae",
+  "parent_rank": "family",
+  "node": "t:ncbi:171550",
+  "surface": "Rikenellaceae RC9 gut group",
+  "tail": "RC9 gut group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Roseburia",
+  "parent_rank": "genus",
+  "node": "t:ncbi:841",
+  "surface": "Roseburia spp",
+  "tail": "spp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Ruminiclostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1508657",
+  "surface": "Ruminiclostridium 5",
+  "tail": "5",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Ruminiclostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1508657",
+  "surface": "Ruminiclostridium 6",
+  "tail": "6",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Ruminiclostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1508657",
+  "surface": "Ruminiclostridium 9",
+  "tail": "9",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Ruminiclostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1508657",
+  "surface": "Ruminiclostridium_ 5",
+  "tail": "5",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Ruminiclostridium",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1508657",
+  "surface": "Ruminiclostridium_9",
+  "tail": "9",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus 1",
+  "tail": "1",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus 2",
+  "tail": "2",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus _E",
+  "tail": "E",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus gauvreauii group",
+  "tail": "gauvreauii group",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus sp",
+  "tail": "sp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus spp",
+  "tail": "spp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus_1",
+  "tail": "1",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Ruminococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1263",
+  "surface": "Ruminococcus_2",
+  "tail": "2",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Ruminococcus sp. 5",
+  "parent_rank": "species",
+  "node": "t:ncbi:169436",
+  "surface": "Ruminococcus sp. 5_1_39BFAA",
+  "tail": "1 39BFAA",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Sarcina sp.",
+  "parent_rank": "species",
+  "node": "t:ncbi:2053610",
+  "surface": "Sarcina sp. JB2",
+  "tail": "JB2",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Streptococcus",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1301",
+  "surface": "Streptococcus salivarius/thermophilus",
+  "tail": "salivarius/thermophilus",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Subdoligranulum",
+  "parent_rank": "genus",
+  "node": "t:ncbi:292632",
+  "surface": "Subdoligranulum g",
+  "tail": "g",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Subdoligranulum",
+  "parent_rank": "genus",
+  "node": "t:ncbi:292632",
+  "surface": "Subdoligranulum sp. APC924",
+  "tail": "sp. APC924",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Sutterella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:40544",
+  "surface": "Sutterella sp",
+  "tail": "sp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Sutterella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:40544",
+  "surface": "Sutterella spp",
+  "tail": "spp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Turicibacter",
+  "parent_rank": "genus",
+  "node": "t:ncbi:191303",
+  "surface": "Turicibacter sp001543345",
+  "tail": "sp001543345",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Tyzzerella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1506577",
+  "surface": "Tyzzerella 3",
+  "tail": "3",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Tyzzerella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1506577",
+  "surface": "Tyzzerella 4",
+  "tail": "4",
+  "cls": "placeholder_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "Tyzzerella",
+  "parent_rank": "genus",
+  "node": "t:ncbi:1506577",
+  "surface": "Tyzzerella sp",
+  "tail": "sp",
+  "cls": "unspecified_member",
+  "resolved_species": false
+ },
+ {
+  "parent": "Vibrio phage",
+  "parent_rank": "species",
+  "node": "t:ncbi:3720007",
+  "surface": "Vibrio phage pYD38 A",
+  "tail": "pYD38 A",
+  "cls": "named_child",
+  "resolved_species": false
+ },
+ {
+  "parent": "bacterium",
+  "parent_rank": "species",
+  "node": "t:ncbi:1869227",
+  "surface": "bacterium NLAE",
+  "tail": "NLAE",
+  "cls": "named_child",
+  "resolved_species": false
+ }
+]

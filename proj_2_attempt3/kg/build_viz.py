@@ -82,8 +82,10 @@ select:focus-visible,input:focus-visible,button:focus-visible{outline:2px solid 
 .sw{width:19px;height:9px;border-radius:2px;display:inline-block}
 
 .chart{margin-top:10px}
-.row{display:grid;grid-template-columns:190px 1fr 62px;align-items:center;gap:10px;
-     padding:2px 0;border-radius:4px}
+/* min-height keeps every row the same height whether its chip cell wraps to one
+   line or two -- without it the bars step up and down and stop being scannable. */
+.row{display:grid;grid-template-columns:158px 1fr 34px 122px;align-items:center;gap:10px;
+     padding:2px 0;border-radius:4px;min-height:34px}
 .row:hover{background:color-mix(in oklab,var(--ink) 5%,transparent)}
 .tax{font-size:13px;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .tax .rank{color:var(--ink-3);font-size:10.5px;margin-left:4px}
@@ -93,10 +95,49 @@ select:focus-visible,input:focus-visible,button:focus-visible{outline:2px solid 
 .bar.up{background:var(--up)}
 .bar.down{background:var(--down)}
 .bar.faded{opacity:.45}
+/* A HOLLOW bar means the direction restates what this taxon does in every other
+   disease -- it is not evidence about THIS disease. Encoded as fill-vs-outline,
+   not as opacity, so it stays distinct from .faded (contested) and survives
+   greyscale; the label text keeps full contrast either way. */
+.bar.prior{background:transparent!important}
+.bar.up.prior{box-shadow:inset 0 0 0 1.5px var(--up);background:var(--up-soft)!important}
+.bar.down.prior{box-shadow:inset 0 0 0 1.5px var(--down);background:var(--down-soft)!important}
 .cnt{font-family:var(--mono);font-size:12px;color:var(--ink-2);
      font-variant-numeric:tabular-nums;text-align:right}
+.scope{text-align:left;font-size:10px;display:flex;gap:3px;flex-wrap:wrap;align-items:center}
 .chip{display:inline-block;font-size:9.5px;letter-spacing:.05em;padding:1px 5px;border-radius:3px;
       border:1px solid var(--mixed);color:var(--ink-2);margin-left:5px;vertical-align:1px}
+.chip.disc{border-color:var(--up);color:var(--up)}
+.chip.gen{border-color:var(--ink-3);color:var(--ink-3)}
+.chip.nar{border-color:var(--line);color:var(--ink-3)}
+.chip.conf{border-color:var(--down);color:var(--down);font-weight:600}
+/* Confidence tier. Deliberately its own class, NOT `cls` or `conf`: those two
+   are what verify_viz.py reads to test the specificity chip and the rank-conflict
+   chip, and reusing either would make one of those assertions pass for the wrong
+   reason. Filled for well-supported, outlined as it weakens, so the tier reads
+   in greyscale as well as in colour. */
+.chip.tier{font-weight:600}
+.chip.tier.t-well{background:var(--up);border-color:var(--up);color:var(--panel)}
+.chip.tier.t-sup{border-color:var(--up);color:var(--up)}
+.chip.tier.t-prov{border-color:var(--ink-3);color:var(--ink-3)}
+.chip.tier.t-cont{border-color:var(--down);color:var(--down)}
+.trust{font-size:12px;color:var(--ink-2);margin:7px 0 2px;padding:7px 10px;
+       background:var(--surface);border-left:2px solid var(--up);border-radius:0 5px 5px 0}
+.trust b{color:var(--ink);font-weight:600}
+.conflict{font-size:12px;margin:7px 0 2px;padding:8px 10px;background:var(--surface);
+          border-left:2px solid var(--down);border-radius:0 5px 5px 0;color:var(--ink-2)}
+.conflict b{color:var(--ink);font-weight:600}
+.conflict ul{margin:5px 0 0;padding-left:17px}
+.conflict li{margin:2px 0}
+.scope .chip{margin-left:0}
+.spec{font-size:12px;color:var(--ink-2);margin:7px 0 2px;padding:7px 10px;
+      background:var(--surface);border-left:2px solid var(--line);border-radius:0 5px 5px 0}
+.spec b{color:var(--ink);font-weight:600}
+.proto-note{font-size:12px;color:var(--ink-2);margin:7px 0 2px;padding:7px 10px;
+      background:var(--surface);border-left:2px solid var(--line);border-radius:0 5px 5px 0}
+.proto-note b{color:var(--ink);font-weight:600}
+td.proto{color:var(--ink-2);font-size:11px;white-space:nowrap;max-width:170px;
+      overflow:hidden;text-overflow:ellipsis}
 
 .tip{position:fixed;pointer-events:none;background:var(--panel);color:var(--ink);
      border:1px solid var(--line);border-radius:6px;padding:9px 11px;font-size:12.5px;
@@ -136,7 +177,7 @@ summary{cursor:pointer;font-size:13px;color:var(--ink-2)}
         margin:8px 0 4px;padding:8px 10px;background:var(--surface);border-radius:5px}
 .cohort b{color:var(--ink);font-weight:600}
 .row{cursor:pointer}
-@media (max-width:640px){.row{grid-template-columns:118px 1fr 48px}.tax{font-size:12px}}
+@media (max-width:640px){.row{grid-template-columns:98px 1fr 26px 92px}.tax{font-size:12px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 """
 
@@ -147,7 +188,124 @@ const byDisease = {};
 G.edges.forEach(e => (byDisease[e.disease] = byDisease[e.disease] || []).push(e));
 const diseases = Object.keys(byDisease).sort((a,b)=>byDisease[b].length-byDisease[a].length);
 
+// ---- specificity ----------------------------------------------------------
+// Every edge carries the corpus-wide behaviour of its taxon: `taxon_breadth`
+// (how many diseases vote on it), `taxon_purity` (max(up,down)/breadth) and
+// `taxon_class`. A taxon that is enriched in all 12 diseases reporting it
+// (purity 1.0, class "generic") tells you nothing about any one of them, and
+// `restates_prior` marks the 252 edges that do exactly that. Without this the
+// reader sees "Streptococcus enriched in Parkinson's, 5 papers" and has no way
+// to know it is enriched in eleven other diseases too.
+const CLS = {
+  discriminating: {chip: "disc", label: "flips",   rank: 0},
+  mixed:          {chip: "",     label: "mixed",   rank: 1},
+  narrow:         {chip: "nar",  label: "narrow",  rank: 2},
+  generic:        {chip: "gen",  label: "generic", rank: 3},
+};
+const clsOf = e => CLS[e.taxon_class] || CLS.narrow;
+
+// Per-taxon disease counts live on the NODES, which the payload does not carry.
+// Shipped as a compact side map keyed by taxon_key instead of widening every
+// edge -- and deliberately NOT by adding fields to graph.json, so this UI change
+// cannot perturb the built graph or its committed byte-for-byte fixed point.
+const SPEC = G.spec || {};
+
+function specText(e){
+  const s = SPEC[e.taxon_key] || {};
+  const b = e.taxon_breadth || 0;
+  const nEnr = s.ne == null ? "?" : s.ne, nDep = s.nd == null ? "?" : s.nd;
+  if (b < 3)
+    return `<b>Reported in ${b} disease${b===1?"":"s"}</b> corpus-wide — too few to say `
+         + `whether this taxon's direction is disease-specific.`;
+  const spread = `<b>Reported in ${b} diseases</b> corpus-wide (${nEnr} enriched, ${nDep} depleted). `;
+  if (e.taxon_class === "generic")
+    return spread + `It never changes direction, so "${e.direction} in ${e.disease}" `
+         + `<b>restates a corpus-wide tendency</b> rather than saying something about ${e.disease}.`;
+  if (e.taxon_class === "discriminating")
+    return spread + `Its direction <b>varies by disease</b> (purity ${e.taxon_purity}), so the `
+         + `direction here does carry disease-specific information.`;
+  return spread + `Mostly consistent (purity ${e.taxon_purity}) but not uniform.`;
+}
+
+// ---- confidence -----------------------------------------------------------
+// `confidence` tiers each edge by how often edges LIKE IT agreed with two
+// independent curated databases (Disbiome, Peryton). The rates below are
+// measured, not modelled -- see FINDINGS_independence.md. They matter because
+// bar length encodes evidence count, which reads as "how much" and not as "how
+// much to trust it": a one-paper edge and an eleven-paper edge look like the
+// same kind of claim, and they are not. 79% of the graph is `provisional`.
+const CONF = {
+  "well-supported": {chip:"t-well", label:"well-supported", rank:0, dis:94, per:93},
+  "supported":      {chip:"t-sup",  label:"supported",      rank:1, dis:78, per:83},
+  "provisional":    {chip:"t-prov", label:"provisional",    rank:2, dis:66, per:62},
+  "contested":      {chip:"t-cont", label:"contested",      rank:3, dis:null, per:null},
+};
+const confOf = e => CONF[e.confidence] || CONF.provisional;
+
+function trustText(e){
+  const c = confOf(e);
+  if (e.confidence === "contested")
+    return `<b>Contested</b> — the papers disagree, so the graph asserts no direction `
+         + `here. Disagreement is kept rather than averaged away: about one taxon in `
+         + `three flips sign between cohorts in this literature.`;
+  const why = e.taxon_class === "discriminating" && e.n_papers >= 2
+    ? ` Held at <b>provisional</b> despite ${e.n_papers} papers because <i>${e.taxon}</i> `
+      + `points different ways in different diseases, which is the strongest single `
+      + `predictor of disagreeing with curation.`
+    : "";
+  return `<b>${c.label}</b> — edges in this tier agree with independent curation `
+       + `<b>${c.dis}%</b> of the time (Disbiome) and <b>${c.per}%</b> (Peryton).${why}`
+       + ` Measured on the pairs those databases judge, not a model estimate.`;
+}
+
+// ---- study protocol -------------------------------------------------------
+// Wet-lab and bioinformatics choices per paper, from methods_metadata.py (recall
+// 0.90 against an independent read of sampled methods sections). These are shown
+// as PROVENANCE, never as a quality signal: methods_diversity_calibration.py
+// tested multi- against single-method edges on both curated databases and found
+// nothing (86.0% vs 87.5% Disbiome, 89.5% vs 87.5% Peryton, block-permutation
+// p = 1.00 each), and there are zero single-method edges with >=5 papers, so
+// diversity and evidence count are near-collinear where the evidence is strong.
+// The reader gets the facts and draws their own conclusion.
+function protocolCell(p){
+  if (!p || !p.has_methods) return "—";
+  const bits = [];
+  if (p.pipeline && p.pipeline.length) bits.push(p.pipeline.slice(0,2).join("/"));
+  if (p.kit && p.kit.length) bits.push(p.kit[0]);
+  if (!bits.length && p.platform && p.platform.length) bits.push(p.platform[0]);
+  return bits.length ? bits.join(" · ") : "—";
+}
+
+function protocolText(e){
+  if (!e || e.methods_diversity === "unknown" || !e.n_methods_papers) return "";
+  const multi = e.methods_diversity === "multi-method";
+  const parts = [];
+  if (e.n_pipelines) parts.push(`<b>${e.n_pipelines}</b> pipeline${e.n_pipelines!==1?"s":""}`);
+  if (e.n_kits) parts.push(`<b>${e.n_kits}</b> extraction kit${e.n_kits!==1?"s":""}`);
+  const detail = parts.length ? ` (${parts.join(", ")})` : "";
+  return `<div class="proto-note">`
+    + (multi
+        ? `<b>Multi-method evidence</b> — the ${e.n_methods_papers} studies with `
+          + `recoverable methods did not all use the same protocol${detail}.`
+        : `<b>Single-method evidence</b> — all ${e.n_methods_papers} studies with `
+          + `recoverable methods used the same protocol${detail}, so they are closer `
+          + `to repeated looks through one instrument than to independent replication.`)
+    + ` Shown as provenance: protocol diversity does <i>not</i> predict agreement `
+    + `with curated databases in this corpus (p = 1.00), so it is not folded into `
+    + `the confidence tier.</div>`;
+}
+
+// ---- rank conflicts -------------------------------------------------------
+// `rank_conflicts` lists, per edge, the parent/child taxa pointing the OTHER way
+// in the same disease, with a verdict on who asserts it. Only `within_paper`
+// matters here: one study reported the family down and the genus up, so it
+// cannot be rank confusion -- same authors, same cohort, same pipeline. 189 of
+// the 241 opposite pairs rest on no shared paper at all and are an artefact of
+// pooling, which is why they are NOT chipped. See FINDINGS_rank_conflict.md.
+const withinPaper = e => (e.rank_conflicts || []).filter(c => c.verdict === "within_paper");
+
 const sel = $("#disease"), minp = $("#minp"), minpv = $("#minpv"), onlyC = $("#onlyc");
+const sortBy = $("#sortby"), hidePrior = $("#hideprior"), onlyRC = $("#onlyrc");
 diseases.forEach(d => {
   const o = document.createElement("option");
   o.value = d; o.textContent = `${d} (${byDisease[d].length})`;
@@ -165,6 +323,13 @@ function showTip(e, ed){
     + `<span style="color:var(--up)">${ed.n_up} enriched</span> / `
     + `<span style="color:var(--down)">${ed.n_down} depleted</span>`
     + (ed.contested ? `<br><b>Contested</b> — consistency ${(ed.consistency*100).toFixed(0)}%` : "")
+    + (ed.restates_prior
+        ? `<br><span style="color:var(--ink-3)">Restates a corpus-wide tendency — `
+          + `${ed.taxon} is ${ed.direction} in all ${ed.taxon_breadth} diseases reporting it.</span>`
+        : ed.taxon_class === "discriminating"
+          ? `<br><span style="color:var(--up)">Direction varies across the `
+            + `${ed.taxon_breadth} diseases reporting it — disease-specific.</span>`
+          : "")
     + `<div class="p">${ed.papers.slice(0,3).map(p=>"· "+p.slice(0,74)).join("<br>")}`
     + (ed.papers.length>3 ? `<br>· +${ed.papers.length-3} more` : "") + `</div>`;
   tip.style.opacity = 1;
@@ -176,10 +341,25 @@ const hideTip = () => tip.style.opacity = 0;
 function render(){
   const d = sel.value, mp = +minp.value;
   minpv.textContent = mp;
-  if (window.__netBuild) window.__netBuild(mp, d);
+  if (window.__netBuild) window.__netBuild(mp, d, hidePrior.checked);
   let rows = (d === "__all__" ? G.edges : (byDisease[d]||[])).filter(e => e.n_papers >= mp);
   if (onlyC.checked) rows = rows.filter(e => e.contested);
-  rows.sort((a,b) => b.n_papers - a.n_papers || b.n_up+b.n_down - (a.n_up+a.n_down));
+  if (hidePrior.checked) rows = rows.filter(e => !e.restates_prior);
+  if (onlyRC.checked) rows = rows.filter(e => e.has_within_paper_conflict);
+  const byEvidence = (a,b) => b.n_papers - a.n_papers || b.n_up+b.n_down - (a.n_up+a.n_down);
+  if (sortBy.value === "spec")
+    // Discriminating first, generic last, narrow in between -- a narrow taxon is
+    // UNJUDGED (fewer than 3 diseases vote), whereas a generic one is known to be
+    // uninformative, so narrow outranks generic. Purity alone would invert this:
+    // purity 1.0 IS the generic case, so sorting by it descending surfaces exactly
+    // the edges this control exists to bury.
+    rows.sort((a,b) => clsOf(a).rank - clsOf(b).rank || byEvidence(a,b));
+  else if (sortBy.value === "conf")
+    // Best-evidenced first. Unlike the specificity sort this is a plain quality
+    // ordering: the top of the list is what a reader should actually rely on.
+    rows.sort((a,b) => confOf(a).rank - confOf(b).rank || byEvidence(a,b));
+  else
+    rows.sort(byEvidence);
   rows = rows.slice(0, 60);
 
   const max = Math.max(1, ...rows.map(e => Math.max(e.n_up, e.n_down)));
@@ -188,13 +368,26 @@ function render(){
                      $("#tbody").innerHTML=""; $("#shown").textContent="0"; return; }
   chart.innerHTML = rows.map((e,i) => {
     const up = e.n_up/max*50, dn = e.n_down/max*50;
-    return `<div class="row" data-i="${i}">
+    const c = clsOf(e);
+    const bx = (e.contested?" faded":"") + (e.restates_prior?" prior":"");
+    const scope = e.taxon_breadth >= 3
+      ? `<span class="chip cls ${c.chip}" title="reported in ${e.taxon_breadth} diseases; purity ${e.taxon_purity}">${c.label} ${e.taxon_breadth}</span>`
+      : `<span class="chip cls nar" title="only ${e.taxon_breadth} disease(s) report this taxon — not enough to judge">—</span>`;
+    const wp = withinPaper(e);
+    const rc = wp.length
+      ? `<span class="chip conf" title="a single study reports this and ${wp[0].other} (its ${wp[0].rel}) in opposite directions">rank ↕</span>`
+      : "";
+    // In "All diseases" the same taxon appears once per disease, so three rows
+    // read as identical duplicates. The disease is in the hover tooltip; the
+    // title makes it reachable without a mouse rather than widening the column.
+    return `<div class="row" data-i="${i}" title="${e.taxon} — ${e.disease}">
       <div class="tax">${e.taxon}<span class="rank">${e.rank||""}</span></div>
       <div class="track"><div class="axis"></div>
-        ${e.n_down?`<div class="bar down${e.contested?" faded":""}" style="right:50%;width:${dn}%"></div>`:""}
-        ${e.n_up?`<div class="bar up${e.contested?" faded":""}" style="left:50%;width:${up}%"></div>`:""}
+        ${e.n_down?`<div class="bar down${bx}" style="right:50%;width:${dn}%"></div>`:""}
+        ${e.n_up?`<div class="bar up${bx}" style="left:50%;width:${up}%"></div>`:""}
       </div>
-      <div class="cnt">${e.n_papers}${e.contested?'<span class="chip">split</span>':''}</div>
+      <div class="cnt">${e.n_papers}</div>
+      <div class="scope"><span class="chip tier ${confOf(e).chip}" title="${confOf(e).label} — see the detail panel for the measured agreement rate">${confOf(e).label}</span>${e.contested?'<span class="chip">split</span>':''}${scope}${rc}</div>
     </div>`;
   }).join("");
   [...chart.querySelectorAll(".row")].forEach(el => {
@@ -207,7 +400,10 @@ function render(){
       <td>${e.contested?"contested":e.direction}</td>
       <td class="num">${e.n_up}</td><td class="num">${e.n_down}</td>
       <td class="num">${e.n_papers}</td>
-      <td class="num">${(e.consistency*100).toFixed(0)}%</td></tr>`).join("");
+      <td class="num">${(e.consistency*100).toFixed(0)}%</td>
+      <td class="num">${e.taxon_breadth}</td>
+      <td>${e.taxon_breadth>=3?clsOf(e).label:"—"}${e.restates_prior?" (restates prior)":""}</td>
+      </tr>`).join("");
   $("#shown").textContent = rows.length;
 }
 const P = G.papers || [];
@@ -228,18 +424,38 @@ window.__showDetail = function(ed, siblings){
     + `<span style="color:var(--down)">${ed.n_down} depleted</span>`
     + (ed.contested ? ` · <b>contested</b> (${Math.round(ed.consistency*100)}% consistent)` : "")
     + `</div>`
+    + `<div class="trust">${trustText(ed)}</div>`
+    + `<div class="spec">${specText(ed)}</div>`
+    + (() => {
+        const wp = withinPaper(ed);
+        if (!wp.length) return "";
+        return `<div class="conflict"><b>Rank conflict — a single study reports both directions.</b>`
+          + ` This is why the graph keeps a family and the genera inside it as separate nodes`
+          + ` instead of merging them: the disagreement is stated by one set of authors on one`
+          + ` cohort, so it cannot be an artefact of pooling different studies.<ul>`
+          + wp.map(c => `<li><i>${ed.taxon}</i> ${ed.direction} vs its ${c.rel}`
+              + ` <i>${c.other}</i>${c.other_rank ? " ("+c.other_rank+")" : ""} ${c.other_direction}`
+              + (c.witnesses && c.witnesses.length
+                  ? ` — <span style="color:var(--ink-3)">${(P[c.witnesses[0]]||{}).title
+                      ? (P[c.witnesses[0]].title||"").slice(0,80) : "shared study"}</span>`
+                  : "")
+              + `</li>`).join("")
+          + `</ul></div>`;
+      })()
     + (withMeta.length ? `<div class="cohort">`
         + `<span><b>${countries.length}</b> ${countries.length===1?"country":"countries"}: ${countries.slice(0,5).join(", ")}${countries.length>5?"…":""}</span>`
         + (seqs.length?`<span>method: <b>${seqs.join(", ")}</b></span>`:"")
         + (sizes.length?`<span>cohort size: <b>${Math.min(...sizes)}–${Math.max(...sizes)}</b> subjects</span>`:"")
         + `</div>` : "")
+    + protocolText(ed)
     + `<div class="tablewrap"><table><thead><tr><th>Direction</th><th>Study</th><th>Country</th>`
-    + `<th class="num">Cases</th><th class="num">Controls</th><th>Method</th><th>Site</th></tr></thead><tbody>`
+    + `<th class="num">Cases</th><th class="num">Controls</th><th>Method</th><th>Protocol</th><th>Site</th></tr></thead><tbody>`
     + rows.map(r => `<tr><td><span class="dirpill ${r.dir==="enriched"?"up":"down"}">`
         + `${r.dir==="enriched"?"UP":"DOWN"}</span></td>`
         + `<td>${(r.p.title||"").slice(0,72)}</td><td>${r.p.country||"—"}</td>`
         + `<td class="num">${r.p.n_cases||"—"}</td><td class="num">${r.p.n_controls||"—"}</td>`
-        + `<td>${r.p.seq||"—"}</td><td>${r.p.site||"—"}</td></tr>`).join("")
+        + `<td>${r.p.seq||"—"}</td><td class="proto">${protocolCell(r.p)}</td>`
+        + `<td>${r.p.site||"—"}</td></tr>`).join("")
     + `</tbody></table></div>`
     + (siblings && siblings.length > 1
         ? `<div class="meta" style="margin-top:9px">Also linked to: `
@@ -254,7 +470,7 @@ window.__showDetail = function(ed, siblings){
   d.scrollIntoView({behavior:"smooth", block:"nearest"});
 };
 
-[sel, minp, onlyC].forEach(el => el.addEventListener("input", render));
+[sel, minp, onlyC, sortBy, hidePrior, onlyRC].forEach(el => el.addEventListener("input", render));
 
 // tabs
 const tabs = [["tab-net","pane-net"],["tab-rank","pane-rank"]];
@@ -282,7 +498,22 @@ def main():
     a = ap.parse_args()
     G = json.load(open(a.graph))
     m = G["meta"]
-    payload = {"edges": G["edges"], "hierarchy": G.get("hierarchy", []), "papers": G.get("papers", [])}
+    # Per-taxon disease counts for the specificity panel. Nodes are not shipped
+    # (they would roughly double the payload for two integers), so send a compact
+    # map keyed by the same taxon_key the edges already carry.
+    spec = {}
+    for n in G["nodes"]:
+        s = n.get("specificity")
+        if n.get("type") == "taxon" and s:
+            spec[n["id"].split(":", 1)[1]] = {"ne": s["n_diseases_enriched"],
+                                              "nd": s["n_diseases_depleted"]}
+    n_disc = sum(1 for e in G["edges"] if e.get("taxon_class") == "discriminating")
+    n_prior = sum(1 for e in G["edges"] if e.get("restates_prior"))
+    n_rc = sum(1 for e in G["edges"] if e.get("has_within_paper_conflict"))
+    n_well = sum(1 for e in G["edges"] if e.get("confidence") == "well-supported")
+    n_prov = sum(1 for e in G["edges"] if e.get("confidence") == "provisional")
+    payload = {"edges": G["edges"], "hierarchy": G.get("hierarchy", []),
+               "papers": G.get("papers", []), "spec": spec}
 
     net_js = open(os.path.join(HERE, "viz_network.js")).read()
     html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
@@ -302,20 +533,43 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
   <div class="tile"><div class="n">{m['n_diseases']}</div><div class="l">diseases</div></div>
   <div class="tile"><div class="n">{m['n_replicated']}</div><div class="l">seen in &gt;1 paper</div></div>
   <div class="tile"><div class="n">{m['n_contested']}</div><div class="l">contested</div></div>
+  <div class="tile"><div class="n">{n_disc}</div><div class="l">disease-discriminating</div></div>
+  <div class="tile"><div class="n">{n_well}</div><div class="l">well-supported (94% agree)</div></div>
+  <div class="tile"><div class="n">{n_prov}</div><div class="l">provisional (66% agree)</div></div>
 </div>
 
 <div class="controls">
   <div><label for="disease">Disease</label><select id="disease"></select></div>
   <div><label for="minp">Min papers · <span id="minpv">2</span></label>
        <input type="range" id="minp" min="1" max="8" value="2"></div>
+  <div><label for="sortby">Sort by</label><select id="sortby">
+       <option value="ev">Evidence (papers)</option>
+       <option value="spec">Disease specificity</option>
+       <option value="conf">Confidence tier</option></select></div>
   <div class="toggle"><input type="checkbox" id="onlyc"><label for="onlyc"
        style="margin:0;text-transform:none;letter-spacing:0;font-size:13px">Contested only</label></div>
+  <div class="toggle"><input type="checkbox" id="hideprior"><label for="hideprior"
+       style="margin:0;text-transform:none;letter-spacing:0;font-size:13px"
+       title="{n_prior} edges whose taxon never changes direction across diseases"
+       >Hide edges that restate a prior</label></div>
+  <div class="toggle"><input type="checkbox" id="onlyrc"><label for="onlyrc"
+       style="margin:0;text-transform:none;letter-spacing:0;font-size:13px"
+       title="{n_rc} edges where one study reports this taxon and a parent or child taxon in opposite directions"
+       >Rank conflicts only</label></div>
 </div>
 
 <div class="legend">
   <span class="key"><span class="sw" style="background:var(--down)"></span>depleted (bar left)</span>
   <span class="key"><span class="sw" style="background:var(--up)"></span>enriched (bar right)</span>
+  <span class="key"><span class="chip tier t-well">well-supported</span>≥3 papers agreeing — 94%/93% agreement with Disbiome/Peryton</span>
+  <span class="key"><span class="chip tier t-prov">provisional</span>one paper, or a taxon whose direction varies by disease — 66%/62%</span>
   <span class="key"><span class="chip">split</span>papers disagree — both arms drawn</span>
+  <span class="key"><span class="sw" style="background:var(--up-soft);box-shadow:inset 0 0 0 1.5px var(--up)"></span>hollow
+    = restates the taxon's corpus-wide tendency</span>
+  <span class="key"><span class="chip disc">flips</span>direction varies by disease</span>
+  <span class="key"><span class="chip gen">generic</span>same direction in every disease</span>
+  <span class="key"><span class="chip conf">rank ↕</span>one study reports this taxon and a
+    parent/child taxon in opposite directions</span>
 </div>
 
 <div class="tabs" role="tablist">
@@ -329,8 +583,12 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
   move and fix it · <b>click</b> to pin its neighbourhood · <b>double-click</b> to reset.
   Solid links are associations (blue enriched, red depleted, grey dashed = papers disagree);
   faint dotted links are <b>taxonomic containment</b> — a family and the genera inside it.
-  Containment is not redundancy: <i>Lachnospiraceae</i> is depleted in Parkinson's across 15
-  papers while <i>Hungatella</i> inside it is enriched across 7.</p>
+  Containment is not redundancy: <i>Lachnospiraceae</i> is depleted in Parkinson's in 8 of the 9
+  papers reporting it while <i>Hungatella</i> inside it is enriched in 6 of 7 — and one study
+  reports both directions itself, so this is not an artefact of pooling separate cohorts.
+  Across the graph, related taxa agree on direction 89% of the time within a single paper (vs 54%
+  for unrelated taxa); the 11% that do not are the cases this containment layer exists to keep.
+  <b>{n_rc} edges</b> carry such a conflict — tick <b>Rank conflicts only</b> to see just those.</p>
 </div>
 
 <div class="pane" id="pane-rank" role="tabpanel" hidden>
@@ -344,13 +602,25 @@ studies behind it, with cohort country, size, and sequencing method.</div>
 <details><summary>Table view — <span id="shown">0</span> rows shown</summary>
 <div class="tablewrap"><table><thead><tr><th>Taxon</th><th>Rank</th><th>Direction</th>
 <th class="num">Enriched</th><th class="num">Depleted</th><th class="num">Papers</th>
-<th class="num">Consistency</th></tr></thead><tbody id="tbody"></tbody></table></div></details>
+<th class="num">Consistency</th><th class="num">Diseases</th><th>Specificity</th>
+</tr></thead><tbody id="tbody"></tbody></table></div></details>
 
 <p class="note"><b>How to read a contested edge.</b> {m['n_contested']} pairs have papers pointing
 both ways, and they are kept, never averaged into a single direction. That is deliberate: the
 microbiome replication literature reports roughly one taxon in three flipping sign between cohorts,
 so disagreement is a finding about the evidence, not noise to be smoothed. Direction is encoded by
 position as well as color, so the chart survives colorblindness, greyscale and print.<br><br>
+<b>High evidence is not high information.</b> Some taxa move the same way in every disease that
+reports them — <i>Streptococcus</i> is enriched in all 12 here, <i>Butyricicoccus</i> depleted in
+all 8 — so "enriched in disease X" for those restates a generic dysbiosis prior and says almost
+nothing about X. {n_prior} of {m['n_edges']:,} edges do exactly that; they are drawn <b>hollow</b>
+and can be hidden outright. {n_disc} edges are the opposite case: their taxon changes direction
+across diseases, so the direction here is disease-specific. The remainder are either partly
+consistent or reported in fewer than three diseases, which is too few to judge either way.
+Measured across the corpus, roughly 70% of this graph's directional agreement with Disbiome and
+Peryton is that shared prior rather than disease-specific content, which is why the loudest edges
+are often the least informative — <i>Prevotella</i> and <i>Bacteroides</i> carry the most papers
+(50 and 54) and are among the least directionally consistent taxa in the graph.<br><br>
 Source: <span style="font-family:var(--mono);font-size:11.5px">{m['source']}</span> ·
 {m['papers_contributing']} of {m['papers_in']} papers contributed at least one association.
 Associations only — no causal claim.</p>

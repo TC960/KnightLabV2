@@ -1,0 +1,854 @@
+{
+ "tiers": {
+  "A": [
+   {
+    "child": "Intracerebral hemorrhage",
+    "parent": "Stroke",
+    "n_child_taxa": 50,
+    "n_parent_taxa": 157,
+    "n_shared": 35,
+    "n_agree": 19,
+    "n_disagree": 3,
+    "n_either_contested": 13,
+    "child_singleton_edges": 49,
+    "agree": [
+     [
+      "ncbi:1239",
+      "depleted"
+     ],
+     [
+      "ncbi:1300",
+      "enriched"
+     ],
+     [
+      "ncbi:1301",
+      "enriched"
+     ],
+     [
+      "ncbi:1350",
+      "enriched"
+     ],
+     [
+      "ncbi:1578",
+      "enriched"
+     ],
+     [
+      "ncbi:162289",
+      "enriched"
+     ],
+     [
+      "ncbi:186801",
+      "depleted"
+     ],
+     [
+      "ncbi:186802",
+      "depleted"
+     ],
+     [
+      "ncbi:186804",
+      "depleted"
+     ],
+     [
+      "ncbi:186826",
+      "enriched"
+     ],
+     [
+      "ncbi:194",
+      "enriched"
+     ],
+     [
+      "ncbi:203557",
+      "enriched"
+     ],
+     [
+      "ncbi:239935",
+      "enriched"
+     ],
+     [
+      "ncbi:31953",
+      "enriched"
+     ],
+     [
+      "ncbi:31979",
+      "depleted"
+     ],
+     [
+      "ncbi:74201",
+      "enriched"
+     ],
+     [
+      "ncbi:81852",
+      "enriched"
+     ],
+     [
+      "ncbi:836",
+      "enriched"
+     ],
+     [
+      "ncbi:853",
+      "depleted"
+     ]
+    ],
+    "disagree": [
+     [
+      "ncbi:1485",
+      "depleted",
+      "enriched"
+     ],
+     [
+      "ncbi:815",
+      "depleted",
+      "enriched"
+     ],
+     [
+      "ncbi:976",
+      "enriched",
+      "depleted"
+     ]
+    ],
+    "either_contested": [
+     [
+      "ncbi:1263",
+      "depleted",
+      "contested"
+     ],
+     [
+      "ncbi:1678",
+      "enriched",
+      "contested"
+     ],
+     [
+      "ncbi:1730",
+      "depleted",
+      "contested"
+     ],
+     [
+      "ncbi:186803",
+      "depleted",
+      "contested"
+     ],
+     [
+      "ncbi:216572",
+      "depleted",
+      "contested"
+     ],
+     [
+      "ncbi:216851",
+      "depleted",
+      "contested"
+     ],
+     [
+      "ncbi:239934",
+      "enriched",
+      "contested"
+     ],
+     [
+      "ncbi:31977",
+      "depleted",
+      "contested"
+     ],
+     [
+      "ncbi:33958",
+      "enriched",
+      "contested"
+     ],
+     [
+      "ncbi:572511",
+      "depleted",
+      "contested"
+     ],
+     [
+      "ncbi:816",
+      "depleted",
+      "contested"
+     ],
+     [
+      "ncbi:838",
+      "enriched",
+      "contested"
+     ],
+     [
+      "ncbi:841",
+      "depleted",
+      "contested"
+     ]
+    ],
+    "rationale": "ICH is hemorrhagic stroke",
+    "null_test": {
+     "n_decisive": 22,
+     "n_agree": 19,
+     "rate": 0.8636,
+     "null_mean": 0.759,
+     "null_n": 9084,
+     "p": 0.4292
+    }
+   },
+   {
+    "child": "Hypertensive intracerebral hemorrhage",
+    "parent": "Intracerebral hemorrhage",
+    "n_child_taxa": 11,
+    "n_parent_taxa": 50,
+    "n_shared": 5,
+    "n_agree": 4,
+    "n_disagree": 1,
+    "n_either_contested": 0,
+    "child_singleton_edges": 11,
+    "agree": [
+     [
+      "ncbi:1301",
+      "enriched"
+     ],
+     [
+      "ncbi:1350",
+      "enriched"
+     ],
+     [
+      "ncbi:216851",
+      "depleted"
+     ],
+     [
+      "ncbi:841",
+      "depleted"
+     ]
+    ],
+    "disagree": [
+     [
+      "ncbi:838",
+      "depleted",
+      "enriched"
+     ]
+    ],
+    "either_contested": [],
+    "rationale": "cause-specified ICH",
+    "null_test": {
+     "n_decisive": 5,
+     "n_agree": 4,
+     "rate": 0.8,
+     "null_mean": 0.7192,
+     "null_n": 8151,
+     "p": 0.5065
+    }
+   },
+   {
+    "child": "Poststroke aphasia",
+    "parent": "Stroke",
+    "n_child_taxa": 9,
+    "n_parent_taxa": 157,
+    "n_shared": 7,
+    "n_agree": 0,
+    "n_disagree": 3,
+    "n_either_contested": 4,
+    "child_singleton_edges": 9,
+    "agree": [],
+    "disagree": [
+     [
+      "ncbi:200643",
+      "enriched",
+      "depleted"
+     ],
+     [
+      "ncbi:201174",
+      "depleted",
+      "enriched"
+     ],
+     [
+      "ncbi:976",
+      "enriched",
+      "depleted"
+     ]
+    ],
+    "either_contested": [
+     [
+      "ncbi:1730",
+      "depleted",
+      "contested"
+     ],
+     [
+      "ncbi:216851",
+      "depleted",
+      "contested"
+     ],
+     [
+      "ncbi:572511",
+      "enriched",
+      "contested"
+     ],
+     [
+      "ncbi:816",
+      "enriched",
+      "contested"
+     ]
+    ],
+    "rationale": "stroke sequela; cohort is stroke patients",
+    "null_test": {
+     "n_decisive": 3,
+     "n_agree": 0,
+     "rate": 0.0,
+     "null_mean": 0.5413,
+     "null_n": 7518,
+     "p": 0.7518
+    }
+   },
+   {
+    "child": "Hemorrhagic transformation",
+    "parent": "Stroke",
+    "n_child_taxa": 11,
+    "n_parent_taxa": 157,
+    "n_shared": 9,
+    "n_agree": 4,
+    "n_disagree": 2,
+    "n_either_contested": 3,
+    "child_singleton_edges": 11,
+    "agree": [
+     [
+      "ncbi:1224",
+      "enriched"
+     ],
+     [
+      "ncbi:186802",
+      "depleted"
+     ],
+     [
+      "ncbi:570",
+      "enriched"
+     ],
+     [
+      "ncbi:976",
+      "depleted"
+     ]
+    ],
+    "disagree": [
+     [
+      "escherichia-shigella",
+      "enriched",
+      "depleted"
+     ],
+     [
+      "ncbi:201174",
+      "depleted",
+      "enriched"
+     ]
+    ],
+    "either_contested": [
+     [
+      "ncbi:216572",
+      "depleted",
+      "contested"
+     ],
+     [
+      "ncbi:216851",
+      "depleted",
+      "contested"
+     ],
+     [
+      "ncbi:543",
+      "enriched",
+      "contested"
+     ]
+    ],
+    "rationale": "complication of ischemic stroke; cohort is stroke patients",
+    "null_test": {
+     "n_decisive": 6,
+     "n_agree": 4,
+     "rate": 0.6667,
+     "null_mean": 0.7827,
+     "null_n": 6302,
+     "p": 0.5046
+    }
+   },
+   {
+    "child": "Chronic traumatic complete spinal cord injury",
+    "parent": "Spinal cord injury",
+    "n_child_taxa": 12,
+    "n_parent_taxa": 86,
+    "n_shared": 6,
+    "n_agree": 3,
+    "n_disagree": 2,
+    "n_either_contested": 1,
+    "child_singleton_edges": 12,
+    "agree": [
+     [
+      "escherichia-shigella",
+      "enriched"
+     ],
+     [
+      "ncbi:158846",
+      "depleted"
+     ],
+     [
+      "ncbi:292632",
+      "depleted"
+     ]
+    ],
+    "disagree": [
+     [
+      "ncbi:171552",
+      "enriched",
+      "depleted"
+     ],
+     [
+      "ncbi:572511",
+      "enriched",
+      "depleted"
+     ]
+    ],
+    "either_contested": [
+     [
+      "ncbi:39948",
+      "depleted",
+      "contested"
+     ]
+    ],
+    "rationale": "severity/chronicity-specified SCI",
+    "null_test": {
+     "n_decisive": 5,
+     "n_agree": 3,
+     "rate": 0.6,
+     "null_mean": 0.5499,
+     "null_n": 6891,
+     "p": 0.2796
+    }
+   },
+   {
+    "child": "Traumatic thoracic spinal cord injury",
+    "parent": "Spinal cord injury",
+    "n_child_taxa": 8,
+    "n_parent_taxa": 86,
+    "n_shared": 4,
+    "n_agree": 3,
+    "n_disagree": 1,
+    "n_either_contested": 0,
+    "child_singleton_edges": 8,
+    "agree": [
+     [
+      "ncbi:508458",
+      "enriched"
+     ],
+     [
+      "ncbi:508459",
+      "enriched"
+     ],
+     [
+      "ncbi:84107",
+      "enriched"
+     ]
+    ],
+    "disagree": [
+     [
+      "ncbi:1730",
+      "enriched",
+      "depleted"
+     ]
+    ],
+    "either_contested": [],
+    "rationale": "level-specified traumatic SCI",
+    "null_test": {
+     "n_decisive": 4,
+     "n_agree": 3,
+     "rate": 0.75,
+     "null_mean": 0.5967,
+     "null_n": 4412,
+     "p": 0.1881
+    }
+   },
+   {
+    "child": "Minimal hepatic encephalopathy",
+    "parent": "Hepatic encephalopathy",
+    "n_child_taxa": 10,
+    "n_parent_taxa": 2,
+    "n_shared": 0,
+    "n_agree": 0,
+    "n_disagree": 0,
+    "n_either_contested": 0,
+    "child_singleton_edges": 10,
+    "agree": [],
+    "disagree": [],
+    "either_contested": [],
+    "rationale": "subclinical grade of HE",
+    "null_test": {
+     "n_decisive": 0,
+     "note": "no decisive shared taxa -- untestable"
+    }
+   }
+  ],
+  "B": [
+   {
+    "child": "Alzheimer's disease",
+    "parent": "Dementia",
+    "n_child_taxa": 319,
+    "n_parent_taxa": 46,
+    "n_shared": 27,
+    "n_agree": 12,
+    "n_disagree": 1,
+    "n_either_contested": 14,
+    "child_singleton_edges": 202,
+    "agree": [
+     [
+      "ncbi:102106",
+      "enriched"
+     ],
+     [
+      "ncbi:1407607",
+      "depleted"
+     ],
+     [
+      "ncbi:186826",
+      "enriched"
+     ],
+     [
+      "ncbi:28050",
+      "depleted"
+     ],
+     [
+      "ncbi:33042",
+      "depleted"
+     ],
+     [
+      "ncbi:580596",
+      "depleted"
+     ],
+     [
+      "ncbi:830",
+      "depleted"
+     ],
+     [
+      "ncbi:84111",
+      "enriched"
+     ],
+     [
+      "ncbi:84112",
+      "enriched"
+     ],
+     [
+      "ncbi:853",
+      "depleted"
+     ],
+     [
+      "ph:lachnospiraceae nd3007 group",
+      "depleted"
+     ],
+     [
+      "ph:prevotella 9",
+      "depleted"
+     ]
+    ],
+    "disagree": [
+     [
+      "ph:lachnospiraceae nk4a136 group",
+      "enriched",
+      "depleted"
+     ]
+    ],
+    "either_contested": [
+     [
+      "escherichia-shigella",
+      "contested",
+      "enriched"
+     ],
+     [
+      "ncbi:1485",
+      "contested",
+      "enriched"
+     ],
+     [
+      "ncbi:1578",
+      "contested",
+      "enriched"
+     ],
+     [
+      "ncbi:1678",
+      "contested",
+      "depleted"
+     ],
+     [
+      "ncbi:1730",
+      "contested",
+      "contested"
+     ],
+     [
+      "ncbi:1766253",
+      "contested",
+      "depleted"
+     ],
+     [
+      "ncbi:186803",
+      "contested",
+      "depleted"
+     ],
+     [
+      "ncbi:216572",
+      "contested",
+      "depleted"
+     ],
+     [
+      "ncbi:216851",
+      "contested",
+      "depleted"
+     ],
+     [
+      "ncbi:292632",
+      "contested",
+      "depleted"
+     ],
+     [
+      "ncbi:33958",
+      "contested",
+      "enriched"
+     ],
+     [
+      "ncbi:724",
+      "contested",
+      "depleted"
+     ],
+     [
+      "ncbi:816",
+      "contested",
+      "contested"
+     ],
+     [
+      "ncbi:838",
+      "contested",
+      "depleted"
+     ]
+    ],
+    "rationale": "AD is the commonest dementia",
+    "null_test": {
+     "n_decisive": 13,
+     "n_agree": 12,
+     "rate": 0.9231,
+     "null_mean": 0.7585,
+     "null_n": 9086,
+     "p": 0.4058
+    }
+   },
+   {
+    "child": "Sporadic Creutzfeldt-Jakob disease",
+    "parent": "Dementia",
+    "n_child_taxa": 5,
+    "n_parent_taxa": 46,
+    "n_shared": 1,
+    "n_agree": 1,
+    "n_disagree": 0,
+    "n_either_contested": 0,
+    "child_singleton_edges": 5,
+    "agree": [
+     [
+      "ncbi:1432051",
+      "enriched"
+     ]
+    ],
+    "disagree": [],
+    "either_contested": [],
+    "rationale": "sCJD presents as dementia",
+    "null_test": {
+     "n_decisive": 1,
+     "n_agree": 1,
+     "rate": 1.0,
+     "null_mean": 0.6431,
+     "null_n": 3181,
+     "p": 0.1551
+    }
+   },
+   {
+    "child": "Mild cognitive impairment",
+    "parent": "Cognitive impairment",
+    "n_child_taxa": 154,
+    "n_parent_taxa": 56,
+    "n_shared": 22,
+    "n_agree": 10,
+    "n_disagree": 9,
+    "n_either_contested": 3,
+    "child_singleton_edges": 141,
+    "agree": [
+     [
+      "ncbi:1224",
+      "enriched"
+     ],
+     [
+      "ncbi:1263",
+      "depleted"
+     ],
+     [
+      "ncbi:1301",
+      "enriched"
+     ],
+     [
+      "ncbi:1678",
+      "enriched"
+     ],
+     [
+      "ncbi:283168",
+      "depleted"
+     ],
+     [
+      "ncbi:292632",
+      "depleted"
+     ],
+     [
+      "ncbi:561",
+      "enriched"
+     ],
+     [
+      "ncbi:572511",
+      "depleted"
+     ],
+     [
+      "ncbi:841",
+      "depleted"
+     ],
+     [
+      "ncbi:976",
+      "depleted"
+     ]
+    ],
+    "disagree": [
+     [
+      "ncbi:1357",
+      "enriched",
+      "depleted"
+     ],
+     [
+      "ncbi:1730",
+      "depleted",
+      "enriched"
+     ],
+     [
+      "ncbi:207244",
+      "enriched",
+      "depleted"
+     ],
+     [
+      "ncbi:216851",
+      "enriched",
+      "depleted"
+     ],
+     [
+      "ncbi:239759",
+      "depleted",
+      "enriched"
+     ],
+     [
+      "ncbi:239934",
+      "depleted",
+      "enriched"
+     ],
+     [
+      "ncbi:33024",
+      "enriched",
+      "depleted"
+     ],
+     [
+      "ncbi:35832",
+      "enriched",
+      "depleted"
+     ],
+     [
+      "ncbi:39948",
+      "depleted",
+      "enriched"
+     ]
+    ],
+    "either_contested": [
+     [
+      "ncbi:2172",
+      "contested",
+      "enriched"
+     ],
+     [
+      "ncbi:574697",
+      "depleted",
+      "contested"
+     ],
+     [
+      "ncbi:816",
+      "contested",
+      "contested"
+     ]
+    ],
+    "rationale": "MCI is graded CI",
+    "null_test": {
+     "n_decisive": 19,
+     "n_agree": 10,
+     "rate": 0.5263,
+     "null_mean": 0.5192,
+     "null_n": 9701,
+     "p": 0.4413
+    }
+   },
+   {
+    "child": "Neurocognitive impairment",
+    "parent": "Cognitive impairment",
+    "n_child_taxa": 7,
+    "n_parent_taxa": 56,
+    "n_shared": 2,
+    "n_agree": 2,
+    "n_disagree": 0,
+    "n_either_contested": 0,
+    "child_singleton_edges": 7,
+    "agree": [
+     [
+      "ncbi:216851",
+      "depleted"
+     ],
+     [
+      "ncbi:570",
+      "enriched"
+     ]
+    ],
+    "disagree": [],
+    "either_contested": [],
+    "rationale": "possible synonym of CI",
+    "null_test": {
+     "n_decisive": 2,
+     "n_agree": 2,
+     "rate": 1.0,
+     "null_mean": 0.6807,
+     "null_n": 5077,
+     "p": 0.2885
+    }
+   },
+   {
+    "child": "Subjective cognitive decline",
+    "parent": "Cognitive impairment",
+    "n_child_taxa": 1,
+    "n_parent_taxa": 56,
+    "n_shared": 1,
+    "n_agree": 1,
+    "n_disagree": 0,
+    "n_either_contested": 0,
+    "child_singleton_edges": 1,
+    "agree": [
+     [
+      "ncbi:216851",
+      "depleted"
+     ]
+    ],
+    "disagree": [],
+    "either_contested": [],
+    "rationale": "earliest point on the same continuum",
+    "null_test": {
+     "n_decisive": 1,
+     "n_agree": 1,
+     "rate": 1.0,
+     "null_mean": 0.7982,
+     "null_n": 4495,
+     "p": 0.3589
+    }
+   }
+  ]
+ },
+ "rejected": {
+  "Multiple system atrophy": "atypical parkinsonism -- a SIBLING of PD under parkinsonian syndromes, not a subtype of PD",
+  "Essential tremor": "distinct movement disorder, not parkinsonism",
+  "REM sleep behavior disorder-Lewy body disease continuum": "prodromal state spanning PD and DLB; not contained by either",
+  "Hepatitis B virus-associated liver cirrhosis": "hepatic disease, not a neurological subtype",
+  "Mild cognitive impairment -> Alzheimer's disease": "MCI is a clinical STAGE that may or may not convert; not an AD subtype"
+ },
+ "missing_labels": [],
+ "baseline": {
+  "n_disease_pairs_with_3plus_decisive": 251,
+  "pooled_decisive": 2419,
+  "pooled_agree": 1625,
+  "pooled_rate": 0.6718
+ }
+}

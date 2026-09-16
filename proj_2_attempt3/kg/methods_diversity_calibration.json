@@ -1,0 +1,94 @@
+{
+ "iters": 10000,
+ "seed": 42,
+ "sources": [
+  {
+   "composition": {
+    "multi-method": 43,
+    "single-method": 16,
+    "unknown": 115
+   },
+   "mean_papers": {
+    "multi": 4.814,
+    "single": 2.438
+   },
+   "n_pairs": 174,
+   "pooled": {
+    "multi_rate": 0.8605,
+    "n_multi": 43,
+    "n_single": 16,
+    "p": 1.0,
+    "single_rate": 0.875
+   },
+   "source": "Disbiome",
+   "strata": {
+    "2 papers": {
+     "multi_rate": 0.7273,
+     "n_multi": 11,
+     "n_single": 12,
+     "p": 0.64834,
+     "single_rate": 0.8333,
+     "testable": true
+    },
+    "3-4 papers": {
+     "multi_rate": 0.8182,
+     "n_multi": 11,
+     "n_single": 4,
+     "p": 0.59814,
+     "single_rate": 1.0,
+     "testable": true
+    },
+    ">=5 papers": {
+     "n_multi": 21,
+     "n_single": 0,
+     "testable": false
+    }
+   },
+   "testable": true
+  },
+  {
+   "composition": {
+    "multi-method": 38,
+    "single-method": 16,
+    "unknown": 84
+   },
+   "mean_papers": {
+    "multi": 4.763,
+    "single": 2.562
+   },
+   "n_pairs": 138,
+   "pooled": {
+    "multi_rate": 0.8947,
+    "n_multi": 38,
+    "n_single": 16,
+    "p": 1.0,
+    "single_rate": 0.875
+   },
+   "source": "Peryton",
+   "strata": {
+    "2 papers": {
+     "multi_rate": 0.9091,
+     "n_multi": 11,
+     "n_single": 11,
+     "p": 1.0,
+     "single_rate": 0.8182,
+     "testable": true
+    },
+    "3-4 papers": {
+     "multi_rate": 0.7,
+     "n_multi": 10,
+     "n_single": 5,
+     "p": 0.49665,
+     "single_rate": 1.0,
+     "testable": true
+    },
+    ">=5 papers": {
+     "n_multi": 17,
+     "n_single": 0,
+     "testable": false
+    }
+   },
+   "testable": true
+  }
+ ]
+}

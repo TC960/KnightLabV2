@@ -1,0 +1,156 @@
+[
+ {
+  "taxid": "128827",
+  "taxon": "Erysipelotrichaceae",
+  "disease": "Parkinson's disease",
+  "ours": "depleted",
+  "n_papers": 4,
+  "disbiome": "enriched",
+  "disbiome_n": 1,
+  "peryton": "enriched",
+  "peryton_n": 4
+ },
+ {
+  "taxid": "189330",
+  "taxon": "Dorea",
+  "disease": "Alzheimer's disease",
+  "ours": "depleted",
+  "n_papers": 3,
+  "disbiome": "enriched",
+  "disbiome_n": 1,
+  "peryton": "enriched",
+  "peryton_n": 1
+ },
+ {
+  "taxid": "32207",
+  "taxon": "Rothia",
+  "disease": "Parkinson's disease",
+  "ours": "enriched",
+  "n_papers": 2,
+  "disbiome": "depleted",
+  "disbiome_n": 1,
+  "peryton": "depleted",
+  "peryton_n": 1
+ },
+ {
+  "taxid": "577309",
+  "taxon": "Paraprevotella",
+  "disease": "Parkinson's disease",
+  "ours": "depleted",
+  "n_papers": 2,
+  "disbiome": "enriched",
+  "disbiome_n": 1,
+  "peryton": "enriched",
+  "peryton_n": 1
+ },
+ {
+  "taxid": "40544",
+  "taxon": "Sutterella",
+  "disease": "Alzheimer's disease",
+  "ours": "enriched",
+  "n_papers": 1,
+  "disbiome": "depleted",
+  "disbiome_n": 1,
+  "peryton": "depleted",
+  "peryton_n": 1
+ },
+ {
+  "taxid": "40323",
+  "taxon": "Stenotrophomonas",
+  "disease": "Parkinson's disease",
+  "ours": "enriched",
+  "n_papers": 1,
+  "disbiome": "depleted",
+  "disbiome_n": 1,
+  "peryton": "depleted",
+  "peryton_n": 1
+ },
+ {
+  "taxid": "360807",
+  "taxon": "Roseburia inulinivorans",
+  "disease": "Parkinson's disease",
+  "ours": "depleted",
+  "n_papers": 1,
+  "disbiome": "enriched",
+  "disbiome_n": 1,
+  "peryton": "enriched",
+  "peryton_n": 1
+ },
+ {
+  "taxid": "33024",
+  "taxon": "Phascolarctobacterium",
+  "disease": "Parkinson's disease",
+  "ours": "depleted",
+  "n_papers": 1,
+  "disbiome": "enriched",
+  "disbiome_n": 1,
+  "peryton": "enriched",
+  "peryton_n": 1
+ },
+ {
+  "taxid": "2745",
+  "taxon": "Halomonas",
+  "disease": "Alzheimer's disease",
+  "ours": "enriched",
+  "n_papers": 1,
+  "disbiome": "depleted",
+  "disbiome_n": 1,
+  "peryton": "depleted",
+  "peryton_n": 1
+ },
+ {
+  "taxid": "1378",
+  "taxon": "Gemella",
+  "disease": "Parkinson's disease",
+  "ours": "enriched",
+  "n_papers": 1,
+  "disbiome": "depleted",
+  "disbiome_n": 1,
+  "peryton": "depleted",
+  "peryton_n": 1
+ },
+ {
+  "taxid": "39948",
+  "taxon": "Dialister",
+  "disease": "Parkinson's disease",
+  "ours": "depleted",
+  "n_papers": 1,
+  "disbiome": "enriched",
+  "disbiome_n": 1,
+  "peryton": "enriched",
+  "peryton_n": 1
+ },
+ {
+  "taxid": "544",
+  "taxon": "Citrobacter",
+  "disease": "Parkinson's disease",
+  "ours": "depleted",
+  "n_papers": 1,
+  "disbiome": "enriched",
+  "disbiome_n": 1,
+  "peryton": "enriched",
+  "peryton_n": 1
+ },
+ {
+  "taxid": "118747",
+  "taxon": "Bulleidia",
+  "disease": "Parkinson's disease",
+  "ours": "enriched",
+  "n_papers": 1,
+  "disbiome": "depleted",
+  "disbiome_n": 1,
+  "peryton": "depleted",
+  "peryton_n": 1
+ },
+ {
+  "taxid": "904",
+  "taxon": "Acidaminococcus",
+  "disease": "Parkinson's disease",
+  "ours": "depleted",
+  "n_papers": 1,
+  "disbiome": "enriched",
+  "disbiome_n": 1,
+  "peryton": "enriched",
+  "peryton_n": 2
+ }
+]

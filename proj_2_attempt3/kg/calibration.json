@@ -1,0 +1,387 @@
+{
+ "graph": "graph.json",
+ "iters": 5000,
+ "seed": 42,
+ "sources": [
+  {
+   "source": "Disbiome",
+   "n_pairs": 174,
+   "n_taxa": 133,
+   "pooled": 0.7299,
+   "tests": [
+    {
+     "predictor": "our evidence (n_papers)",
+     "p_block_perm": 0.03,
+     "observed_spread": 0.259,
+     "min_detectable_spread": 0.1246,
+     "cells": {
+      "1": {
+       "agree": 73,
+       "n": 111,
+       "rate": 0.6577
+      },
+      ">=3": {
+       "agree": 33,
+       "n": 36,
+       "rate": 0.9167
+      },
+      "2": {
+       "agree": 21,
+       "n": 27,
+       "rate": 0.7778
+      }
+     },
+     "bootstrap_diff": {
+      "mean": 0.2345,
+      "ci_lo": 0.1156,
+      "ci_hi": 0.3412
+     }
+    },
+    {
+     "predictor": "their evidence (n_records)",
+     "p_block_perm": 0.4781,
+     "observed_spread": 0.1362,
+     "min_detectable_spread": 0.1551,
+     "cells": {
+      "1": {
+       "agree": 96,
+       "n": 136,
+       "rate": 0.7059
+      },
+      ">=3": {
+       "agree": 15,
+       "n": 19,
+       "rate": 0.7895
+      },
+      "2": {
+       "agree": 16,
+       "n": 19,
+       "rate": 0.8421
+      }
+     },
+     "bootstrap_diff": {
+      "mean": 0.064,
+      "ci_lo": -0.1504,
+      "ci_hi": 0.2485
+     }
+    },
+    {
+     "predictor": "rank",
+     "p_block_perm": 0.6111,
+     "observed_spread": 1.0,
+     "min_detectable_spread": 0.5858,
+     "cells": {
+      "genus": {
+       "agree": 72,
+       "n": 108,
+       "rate": 0.6667
+      },
+      "species": {
+       "agree": 41,
+       "n": 44,
+       "rate": 0.9318
+      },
+      "family": {
+       "agree": 11,
+       "n": 16,
+       "rate": 0.6875
+      },
+      "phylum": {
+       "agree": 2,
+       "n": 3,
+       "rate": 0.6667
+      },
+      "class": {
+       "agree": 1,
+       "n": 1,
+       "rate": 1.0
+      },
+      "no rank": {
+       "agree": 0,
+       "n": 1,
+       "rate": 0.0
+      },
+      "order": {
+       "agree": 0,
+       "n": 1,
+       "rate": 0.0
+      }
+     }
+    },
+    {
+     "predictor": "disease specificity",
+     "p_block_perm": 0.0002,
+     "observed_spread": 0.4599,
+     "min_detectable_spread": 0.1317,
+     "cells": {
+      "mixed": {
+       "agree": 56,
+       "n": 68,
+       "rate": 0.8235
+      },
+      "narrow": {
+       "agree": 35,
+       "n": 46,
+       "rate": 0.7609
+      },
+      "generic": {
+       "agree": 28,
+       "n": 38,
+       "rate": 0.7368
+      },
+      "discriminating": {
+       "agree": 8,
+       "n": 22,
+       "rate": 0.3636
+      }
+     }
+    },
+    {
+     "predictor": "restates a parent",
+     "p_block_perm": 1.0,
+     "observed_spread": 0.0089,
+     "min_detectable_spread": 0.0967,
+     "cells": {
+      "False": {
+       "agree": 99,
+       "n": 136,
+       "rate": 0.7279
+      },
+      "True": {
+       "agree": 28,
+       "n": 38,
+       "rate": 0.7368
+      }
+     }
+    },
+    {
+     "predictor": "within-paper rank conflict",
+     "p_block_perm": 0.0608,
+     "observed_spread": 0.301,
+     "min_detectable_spread": 0.1703,
+     "cells": {
+      "False": {
+       "agree": 123,
+       "n": 165,
+       "rate": 0.7455
+      },
+      "True": {
+       "agree": 4,
+       "n": 9,
+       "rate": 0.4444
+      }
+     }
+    }
+   ]
+  },
+  {
+   "source": "Peryton",
+   "n_pairs": 138,
+   "n_taxa": 121,
+   "pooled": 0.7246,
+   "tests": [
+    {
+     "predictor": "our evidence (n_papers)",
+     "p_block_perm": 0.0188,
+     "observed_spread": 0.289,
+     "min_detectable_spread": 0.1323,
+     "cells": {
+      "1": {
+       "agree": 50,
+       "n": 81,
+       "rate": 0.6173
+      },
+      ">=3": {
+       "agree": 29,
+       "n": 32,
+       "rate": 0.9062
+      },
+      "2": {
+       "agree": 21,
+       "n": 25,
+       "rate": 0.84
+      }
+     },
+     "bootstrap_diff": {
+      "mean": 0.2362,
+      "ci_lo": 0.0957,
+      "ci_hi": 0.3594
+     }
+    },
+    {
+     "predictor": "their evidence (n_records)",
+     "p_block_perm": 0.216,
+     "observed_spread": 0.1978,
+     "min_detectable_spread": 0.1458,
+     "cells": {
+      "1": {
+       "agree": 60,
+       "n": 91,
+       "rate": 0.6593
+      },
+      ">=3": {
+       "agree": 24,
+       "n": 28,
+       "rate": 0.8571
+      },
+      "2": {
+       "agree": 16,
+       "n": 19,
+       "rate": 0.8421
+      }
+     },
+     "bootstrap_diff": {
+      "mean": 0.1694,
+      "ci_lo": 0.0017,
+      "ci_hi": 0.3208
+     }
+    },
+    {
+     "predictor": "rank",
+     "p_block_perm": 0.1264,
+     "observed_spread": 0.5385,
+     "min_detectable_spread": 0.2961,
+     "cells": {
+      "genus": {
+       "agree": 41,
+       "n": 58,
+       "rate": 0.7069
+      },
+      "family": {
+       "agree": 20,
+       "n": 28,
+       "rate": 0.7143
+      },
+      "species": {
+       "agree": 24,
+       "n": 27,
+       "rate": 0.8889
+      },
+      "order": {
+       "agree": 6,
+       "n": 13,
+       "rate": 0.4615
+      },
+      "class": {
+       "agree": 6,
+       "n": 9,
+       "rate": 0.6667
+      },
+      "phylum": {
+       "agree": 3,
+       "n": 3,
+       "rate": 1.0
+      }
+     }
+    },
+    {
+     "predictor": "disease specificity",
+     "p_block_perm": 0.0234,
+     "observed_spread": 0.4077,
+     "min_detectable_spread": 0.1759,
+     "cells": {
+      "mixed": {
+       "agree": 42,
+       "n": 52,
+       "rate": 0.8077
+      },
+      "narrow": {
+       "agree": 32,
+       "n": 48,
+       "rate": 0.6667
+      },
+      "generic": {
+       "agree": 22,
+       "n": 28,
+       "rate": 0.7857
+      },
+      "discriminating": {
+       "agree": 4,
+       "n": 10,
+       "rate": 0.4
+      }
+     }
+    },
+    {
+     "predictor": "restates a parent",
+     "p_block_perm": 0.4849,
+     "observed_spread": 0.0766,
+     "min_detectable_spread": 0.1107,
+     "cells": {
+      "False": {
+       "agree": 78,
+       "n": 110,
+       "rate": 0.7091
+      },
+      "True": {
+       "agree": 22,
+       "n": 28,
+       "rate": 0.7857
+      }
+     }
+    },
+    {
+     "predictor": "within-paper rank conflict",
+     "p_block_perm": 0.4331,
+     "observed_spread": 0.1757,
+     "min_detectable_spread": 0.1689,
+     "cells": {
+      "False": {
+       "agree": 92,
+       "n": 129,
+       "rate": 0.7132
+      },
+      "True": {
+       "agree": 8,
+       "n": 9,
+       "rate": 0.8889
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "both": {
+  "n_pairs": 84,
+  "n_concurring": 79,
+  "n_contradicting": 5,
+  "our_agreement_where_concur": 0.8228,
+  "contradicting": [
+   {
+    "taxon": "Eubacteriales",
+    "disease": "Amyotrophic lateral sclerosis",
+    "Disbiome": "enriched",
+    "Peryton": "depleted",
+    "ours": "depleted"
+   },
+   {
+    "taxon": "Lachnospiraceae",
+    "disease": "Amyotrophic lateral sclerosis",
+    "Disbiome": "enriched",
+    "Peryton": "depleted",
+    "ours": "depleted"
+   },
+   {
+    "taxon": "Dorea",
+    "disease": "Amyotrophic lateral sclerosis",
+    "Disbiome": "depleted",
+    "Peryton": "enriched",
+    "ours": "enriched"
+   },
+   {
+    "taxon": "Anaerostipes",
+    "disease": "Amyotrophic lateral sclerosis",
+    "Disbiome": "enriched",
+    "Peryton": "depleted",
+    "ours": "depleted"
+   },
+   {
+    "taxon": "Oscillibacter",
+    "disease": "Amyotrophic lateral sclerosis",
+    "Disbiome": "enriched",
+    "Peryton": "depleted",
+    "ours": "depleted"
+   }
+  ]
+ }
+}

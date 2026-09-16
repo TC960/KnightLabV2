@@ -1,0 +1,1251 @@
+{
+ "total_candidates": 378,
+ "total_papers": 94,
+ "sampled": [
+  {
+   "key": "thegutmicrobiomeinprogressivemultiplesclerosis",
+   "title": "The Gut Microbiome in Progressive Multiple Sclerosis",
+   "disease": "",
+   "edges_taxa": [
+    "Agathobaculum",
+    "Agathobaculum DQ795333",
+    "Akkermansia",
+    "Akkermansia muciniphila",
+    "Alistipes communis",
+    "Anaerococcus vaginalis",
+    "Bacteroides uniformis",
+    "Bifidobacterium animalis",
+    "Blautia",
+    "Blautia faecis",
+    "Blautia wexlerae",
+    "Candidatus Dorea massiliensis",
+    "Clostridaceae g24 FCEY",
+    "Clostridium",
+    "Dorea formicigenerans",
+    "Dorea longicatena",
+    "Eisenbergiella KE992700",
+    "Enterobacteriaceae",
+    "Enterocloster bolteae",
+    "Erysipelotrichaceae",
+    "Faecalibacterium prausnitzii",
+    "Faecalimonas nexilis",
+    "Lachnospiraceae PAC001046",
+    "Lachnospiraceae PAC002349",
+    "Longicatena",
+    "Phascolarctobacterium faecium",
+    "Pseudoflavonifractor PAC001038",
+    "Romboutsia timonensis",
+    "Roseburia intestinalis",
+    "Ruminococcaceae FJ366134",
+    "Ruminococcaceae PAC000672",
+    "Ruminococcaceae PAC001607",
+    "Ruthenibacterium lactatiformans",
+    "Streptococcus",
+    "[Clostridium] scindens",
+    "unclassified Bacteroides",
+    "unclassified Blautia"
+   ],
+   "missing": [
+    {
+     "taxid": "216572",
+     "name": "Oscillospiraceae",
+     "rank": "family",
+     "sentences": [
+      "As shown in Figure 3C, we found that 14 bacteria were increased and 2 decreased in both progressive and RRMS vs. healthy controls, with the largest increases in Romboutsia timonensis and unclassified Bacteroides, and the largest decreases in Blautia wexlerae and Dorea formicigenerans (Fig 3D) RRMS had unique differences vs. HC in our adjusted model, including decreased Erysipelotrichaceae CCMM and Ruminococcaceae PAC000672 and increased Bacteroides uniformis and Pseudoflavonifractor PAC001038 (Fig 3E).",
+      "Examining alpha-diversity, we found no changes in evenness, but found slightly elevated phylogenetic diversity, Shannon diversity, and richness in both RRMS and progressive MS compared to healthy controls (Fig 1A) Examining \u03b2-diversity, we found that overall microbiota community structure differed between both progressive and relapsing patients vs. healthy controls but did not differ between progressive and RRMS (Fig 1B,C) At the phylum through genus (Fig 2AB) and at species levels (Fig 2C), we found that progressive patients had unique changes compared to RRMS and healthy controls including an increase in Enterobacteriaceae, Ruminococcaceae FJ366134 and Clostridaceae g24 FCEY and a decrease in Dorea longicatena, Anaerococcus vaginalis, and Blautia faecis Progressive MS patients shared microbiota alterations with RRMS patients compared to healthy controls, including an increase in Akkermansia at the genus level and Clostridium bolteae at the species level and a decrease in Dorea formicigenerans and unclassified Blautia at the species level."
+     ]
+    },
+    {
+     "taxid": "1017280",
+     "name": "Pseudoflavonifractor",
+     "rank": "genus",
+     "sentences": [
+      "As shown in Figure 3C, we found that 14 bacteria were increased and 2 decreased in both progressive and RRMS vs. healthy controls, with the largest increases in Romboutsia timonensis and unclassified Bacteroides, and the largest decreases in Blautia wexlerae and Dorea formicigenerans (Fig 3D) RRMS had unique differences vs. HC in our adjusted model, including decreased Erysipelotrichaceae CCMM and Ruminococcaceae PAC000672 and increased Bacteroides uniformis and Pseudoflavonifractor PAC001038 (Fig 3E)."
+     ]
+    },
+    {
+     "taxid": "1432051",
+     "name": "Eisenbergiella",
+     "rank": "genus",
+     "sentences": [
+      "As shown in Fig 4C-D, many of the bacteria that differed between untreated-MS vs. HC also differed between treated-MS vs HC including an increase in Clostridium bolteae, Eisenbergiella KE992700, Alistipes obesi, and Lachnospiraceae PAC002349 and a decrease in Erysipelotrichaceae CCMM."
+     ]
+    },
+    {
+     "taxid": "186803",
+     "name": "Lachnospiraceae",
+     "rank": "family",
+     "sentences": [
+      "As shown in Fig 4C-D, many of the bacteria that differed between untreated-MS vs. HC also differed between treated-MS vs HC including an increase in Clostridium bolteae, Eisenbergiella KE992700, Alistipes obesi, and Lachnospiraceae PAC002349 and a decrease in Erysipelotrichaceae CCMM."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "changesinintestinalmicrobiotaofhbvassociatedlivercirrhosiswithwithouthepaticencephalopathy",
+   "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+   "disease": "Encephalopathy",
+   "edges_taxa": [
+    "Adlercreutzia",
+    "Bacteroidales",
+    "Bacteroidia",
+    "Blautia",
+    "Blautia obeum",
+    "Lachnospiraceae",
+    "Lactobacillales",
+    "Pasteurellales",
+    "Streptococcaceae",
+    "Streptococcus",
+    "Turicibacterales",
+    "Veillonella",
+    "Veillonella parvula"
+   ],
+   "missing": [
+    {
+     "taxid": "33042",
+     "name": "Coprococcus",
+     "rank": "genus",
+     "sentences": [
+      "At the same time, in the control group, there was a significant increase in the relative abundance of Lachnospiraceae (9.09 \u00b1 6.39 and 11.48 \u00b1 6.53 vs 29.67 \u00b1 16.73, P = .004) at the family level; Adlercreutzia (0.01 \u00b1 0.02 and 0 \u00b1 0 vs 0.059 \u00b1 0.108, P = .039), Blautia (1.36 \u00b1 1.88 and 1.13 \u00b1 1.27 vs 13.48 \u00b1 11.82, P .001), Coprococcus (0.31 \u00b1 0.43 and 0.31 \u00b1 0.29 vs 4.50 \u00b1 5.39, P = .007), and Dorea (0.33 \u00b1 0.42 and 0.86 \u00b1 0.72 vs 1.28 \u00b1 1.2, P = .024) at the genus level; Turicibacterales (0.13 \u00b1 0.04 and 0 \u00b1 0 vs 1.65 \u00b1 4.35, P = .044) at the order level; and B . producta (0.07 \u00b1 0.16 and 0.11 \u00b1 0.13 vs 0.65 \u00b1 0.88, P = .011), Clostridium clostridioforme (0.11 \u00b1 0.17 and 0.18 \u00b1 0.21 vs 1.26 \u00b1 1.878, P = .011), Collinsella stercoris (0 \u00b1 0 and 0 \u00b1 0 vs 0.14 \u00b1 0.26, P = .004), and Enterococcus casseliflavus (0 \u00b1 0 and 0 \u00b1 0 vs 0.101 \u00b1 0.02, P = .036) at the species level (Table 3 , Fig. 1 D, Supplement material, http://links.lww.com/MD/H238 ).",
+      "However, the relative abundance of Lachnospiraceae , Blautia , Coprococcus , Turicibacterales , Anaerofustis , Dorea , and Finegoldia was significantly higher in the control group.",
+      "In the present study, it was found that the relative abundance of Coprococcus in the feces of healthy people was significantly higher than that of patients with HBV-LC."
+     ]
+    },
+    {
+     "taxid": "189330",
+     "name": "Dorea",
+     "rank": "genus",
+     "sentences": [
+      "At the same time, in the control group, there was a significant increase in the relative abundance of Lachnospiraceae (9.09 \u00b1 6.39 and 11.48 \u00b1 6.53 vs 29.67 \u00b1 16.73, P = .004) at the family level; Adlercreutzia (0.01 \u00b1 0.02 and 0 \u00b1 0 vs 0.059 \u00b1 0.108, P = .039), Blautia (1.36 \u00b1 1.88 and 1.13 \u00b1 1.27 vs 13.48 \u00b1 11.82, P .001), Coprococcus (0.31 \u00b1 0.43 and 0.31 \u00b1 0.29 vs 4.50 \u00b1 5.39, P = .007), and Dorea (0.33 \u00b1 0.42 and 0.86 \u00b1 0.72 vs 1.28 \u00b1 1.2, P = .024) at the genus level; Turicibacterales (0.13 \u00b1 0.04 and 0 \u00b1 0 vs 1.65 \u00b1 4.35, P = .044) at the order level; and B . producta (0.07 \u00b1 0.16 and 0.11 \u00b1 0.13 vs 0.65 \u00b1 0.88, P = .011), Clostridium clostridioforme (0.11 \u00b1 0.17 and 0.18 \u00b1 0.21 vs 1.26 \u00b1 1.878, P = .011), Collinsella stercoris (0 \u00b1 0 and 0 \u00b1 0 vs 0.14 \u00b1 0.26, P = .004), and Enterococcus casseliflavus (0 \u00b1 0 and 0 \u00b1 0 vs 0.101 \u00b1 0.02, P = .036) at the species level (Table 3 , Fig. 1 D, Supplement material, http://links.lww.com/MD/H238 ).",
+      "However, the relative abundance of Lachnospiraceae , Blautia , Coprococcus , Turicibacterales , Anaerofustis , Dorea , and Finegoldia was significantly higher in the control group."
+     ]
+    },
+    {
+     "taxid": "1485",
+     "name": "Clostridium",
+     "rank": "genus",
+     "sentences": [
+      "At the same time, in the control group, there was a significant increase in the relative abundance of Lachnospiraceae (9.09 \u00b1 6.39 and 11.48 \u00b1 6.53 vs 29.67 \u00b1 16.73, P = .004) at the family level; Adlercreutzia (0.01 \u00b1 0.02 and 0 \u00b1 0 vs 0.059 \u00b1 0.108, P = .039), Blautia (1.36 \u00b1 1.88 and 1.13 \u00b1 1.27 vs 13.48 \u00b1 11.82, P .001), Coprococcus (0.31 \u00b1 0.43 and 0.31 \u00b1 0.29 vs 4.50 \u00b1 5.39, P = .007), and Dorea (0.33 \u00b1 0.42 and 0.86 \u00b1 0.72 vs 1.28 \u00b1 1.2, P = .024) at the genus level; Turicibacterales (0.13 \u00b1 0.04 and 0 \u00b1 0 vs 1.65 \u00b1 4.35, P = .044) at the order level; and B . producta (0.07 \u00b1 0.16 and 0.11 \u00b1 0.13 vs 0.65 \u00b1 0.88, P = .011), Clostridium clostridioforme (0.11 \u00b1 0.17 and 0.18 \u00b1 0.21 vs 1.26 \u00b1 1.878, P = .011), Collinsella stercoris (0 \u00b1 0 and 0 \u00b1 0 vs 0.14 \u00b1 0.26, P = .004), and Enterococcus casseliflavus (0 \u00b1 0 and 0 \u00b1 0 vs 0.101 \u00b1 0.02, P = .036) at the species level (Table 3 , Fig. 1 D, Supplement material, http://links.lww.com/MD/H238 )."
+     ]
+    },
+    {
+     "taxid": "147206",
+     "name": "Collinsella stercoris",
+     "rank": "species",
+     "sentences": [
+      "At the same time, in the control group, there was a significant increase in the relative abundance of Lachnospiraceae (9.09 \u00b1 6.39 and 11.48 \u00b1 6.53 vs 29.67 \u00b1 16.73, P = .004) at the family level; Adlercreutzia (0.01 \u00b1 0.02 and 0 \u00b1 0 vs 0.059 \u00b1 0.108, P = .039), Blautia (1.36 \u00b1 1.88 and 1.13 \u00b1 1.27 vs 13.48 \u00b1 11.82, P .001), Coprococcus (0.31 \u00b1 0.43 and 0.31 \u00b1 0.29 vs 4.50 \u00b1 5.39, P = .007), and Dorea (0.33 \u00b1 0.42 and 0.86 \u00b1 0.72 vs 1.28 \u00b1 1.2, P = .024) at the genus level; Turicibacterales (0.13 \u00b1 0.04 and 0 \u00b1 0 vs 1.65 \u00b1 4.35, P = .044) at the order level; and B . producta (0.07 \u00b1 0.16 and 0.11 \u00b1 0.13 vs 0.65 \u00b1 0.88, P = .011), Clostridium clostridioforme (0.11 \u00b1 0.17 and 0.18 \u00b1 0.21 vs 1.26 \u00b1 1.878, P = .011), Collinsella stercoris (0 \u00b1 0 and 0 \u00b1 0 vs 0.14 \u00b1 0.26, P = .004), and Enterococcus casseliflavus (0 \u00b1 0 and 0 \u00b1 0 vs 0.101 \u00b1 0.02, P = .036) at the species level (Table 3 , Fig. 1 D, Supplement material, http://links.lww.com/MD/H238 )."
+     ]
+    },
+    {
+     "taxid": "1350",
+     "name": "Enterococcus",
+     "rank": "genus",
+     "sentences": [
+      "At the same time, in the control group, there was a significant increase in the relative abundance of Lachnospiraceae (9.09 \u00b1 6.39 and 11.48 \u00b1 6.53 vs 29.67 \u00b1 16.73, P = .004) at the family level; Adlercreutzia (0.01 \u00b1 0.02 and 0 \u00b1 0 vs 0.059 \u00b1 0.108, P = .039), Blautia (1.36 \u00b1 1.88 and 1.13 \u00b1 1.27 vs 13.48 \u00b1 11.82, P .001), Coprococcus (0.31 \u00b1 0.43 and 0.31 \u00b1 0.29 vs 4.50 \u00b1 5.39, P = .007), and Dorea (0.33 \u00b1 0.42 and 0.86 \u00b1 0.72 vs 1.28 \u00b1 1.2, P = .024) at the genus level; Turicibacterales (0.13 \u00b1 0.04 and 0 \u00b1 0 vs 1.65 \u00b1 4.35, P = .044) at the order level; and B . producta (0.07 \u00b1 0.16 and 0.11 \u00b1 0.13 vs 0.65 \u00b1 0.88, P = .011), Clostridium clostridioforme (0.11 \u00b1 0.17 and 0.18 \u00b1 0.21 vs 1.26 \u00b1 1.878, P = .011), Collinsella stercoris (0 \u00b1 0 and 0 \u00b1 0 vs 0.14 \u00b1 0.26, P = .004), and Enterococcus casseliflavus (0 \u00b1 0 and 0 \u00b1 0 vs 0.101 \u00b1 0.02, P = .036) at the species level (Table 3 , Fig. 1 D, Supplement material, http://links.lww.com/MD/H238 )."
+     ]
+    },
+    {
+     "taxid": "868",
+     "name": "Cardiobacteriaceae",
+     "rank": "family",
+     "sentences": [
+      "Our study findings show that the relative abundance of Bacteroidia , Streptococcaceae , Cardiobacteriaceae , Veillonella , Bacteroidales , and Pasteurellales was significantly higher in the HBV-LC group than in the control group, but the relative abundance of Lachnospiraceae , Adlercreutzia , Blautia , and Turicibacterales significantly reduced ( P .05)."
+     ]
+    },
+    {
+     "taxid": "264995",
+     "name": "Anaerofustis",
+     "rank": "genus",
+     "sentences": [
+      "However, the relative abundance of Lachnospiraceae , Blautia , Coprococcus , Turicibacterales , Anaerofustis , Dorea , and Finegoldia was significantly higher in the control group."
+     ]
+    },
+    {
+     "taxid": "150022",
+     "name": "Finegoldia",
+     "rank": "genus",
+     "sentences": [
+      "However, the relative abundance of Lachnospiraceae , Blautia , Coprococcus , Turicibacterales , Anaerofustis , Dorea , and Finegoldia was significantly higher in the control group."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "intestinalmicrobiotacompositioninpatientswithamyotrophiclateralsclerosisestablishmentofbacterialandarchaealcommunitiesanalyses",
+   "title": "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses.",
+   "disease": "Amyotrophic lateral sclerosis (ALS)",
+   "edges_taxa": [
+    "Bacteroides",
+    "Faecalibacterium",
+    "Methanobrevibacter"
+   ],
+   "missing": [
+    {
+     "taxid": "1239",
+     "name": "Bacillota",
+     "rank": "phylum",
+     "sentences": [
+      "Compared with healthy individuals, the relative abundance of bacterial communities reflected that a higher percent of phylum Firmicutes and a lower percent of phylum Bacteroidetes were found in patients with ALS [Figure 1 ].",
+      "Notably, the average relative abundance of phylum Firmicutes in patients with ALS was 4.7% higher than that of healthy individuals."
+     ]
+    },
+    {
+     "taxid": "909932",
+     "name": "Negativicutes",
+     "rank": "class",
+     "sentences": [
+      "On class level, the relative abundance of classes Negativicutes and Bacilli in patients with ALS was on the decline, compared with that of healthy individuals [Figure 1 B and Supplementary Table S2]."
+     ]
+    },
+    {
+     "taxid": "91061",
+     "name": "Bacilli",
+     "rank": "class",
+     "sentences": [
+      "On class level, the relative abundance of classes Negativicutes and Bacilli in patients with ALS was on the decline, compared with that of healthy individuals [Figure 1 B and Supplementary Table S2]."
+     ]
+    },
+    {
+     "taxid": "572511",
+     "name": "Blautia",
+     "rank": "genus",
+     "sentences": [
+      "In Figure 1 C and Supplementary Table S3, the top ten genera in patients with ALS and healthy individuals were Bacteroides , Blautia , Faecalibacterium , Escherichia-Shigella , Anaerostipes , Streptococcus , Akkermansia , Fusicatenibacter , Megamonas , and Bifidobacterium (21.1% vs ."
+     ]
+    },
+    {
+     "taxid": "207244",
+     "name": "Anaerostipes",
+     "rank": "genus",
+     "sentences": [
+      "In Figure 1 C and Supplementary Table S3, the top ten genera in patients with ALS and healthy individuals were Bacteroides , Blautia , Faecalibacterium , Escherichia-Shigella , Anaerostipes , Streptococcus , Akkermansia , Fusicatenibacter , Megamonas , and Bifidobacterium (21.1% vs ."
+     ]
+    },
+    {
+     "taxid": "1301",
+     "name": "Streptococcus",
+     "rank": "genus",
+     "sentences": [
+      "In Figure 1 C and Supplementary Table S3, the top ten genera in patients with ALS and healthy individuals were Bacteroides , Blautia , Faecalibacterium , Escherichia-Shigella , Anaerostipes , Streptococcus , Akkermansia , Fusicatenibacter , Megamonas , and Bifidobacterium (21.1% vs ."
+     ]
+    },
+    {
+     "taxid": "239934",
+     "name": "Akkermansia",
+     "rank": "genus",
+     "sentences": [
+      "In Figure 1 C and Supplementary Table S3, the top ten genera in patients with ALS and healthy individuals were Bacteroides , Blautia , Faecalibacterium , Escherichia-Shigella , Anaerostipes , Streptococcus , Akkermansia , Fusicatenibacter , Megamonas , and Bifidobacterium (21.1% vs ."
+     ]
+    },
+    {
+     "taxid": "1407607",
+     "name": "Fusicatenibacter",
+     "rank": "genus",
+     "sentences": [
+      "In Figure 1 C and Supplementary Table S3, the top ten genera in patients with ALS and healthy individuals were Bacteroides , Blautia , Faecalibacterium , Escherichia-Shigella , Anaerostipes , Streptococcus , Akkermansia , Fusicatenibacter , Megamonas , and Bifidobacterium (21.1% vs ."
+     ]
+    },
+    {
+     "taxid": "158846",
+     "name": "Megamonas",
+     "rank": "genus",
+     "sentences": [
+      "In Figure 1 C and Supplementary Table S3, the top ten genera in patients with ALS and healthy individuals were Bacteroides , Blautia , Faecalibacterium , Escherichia-Shigella , Anaerostipes , Streptococcus , Akkermansia , Fusicatenibacter , Megamonas , and Bifidobacterium (21.1% vs ."
+     ]
+    },
+    {
+     "taxid": "1678",
+     "name": "Bifidobacterium",
+     "rank": "genus",
+     "sentences": [
+      "In Figure 1 C and Supplementary Table S3, the top ten genera in patients with ALS and healthy individuals were Bacteroides , Blautia , Faecalibacterium , Escherichia-Shigella , Anaerostipes , Streptococcus , Akkermansia , Fusicatenibacter , Megamonas , and Bifidobacterium (21.1% vs ."
+     ]
+    },
+    {
+     "taxid": "28890",
+     "name": "Methanobacteriota",
+     "rank": "phylum",
+     "sentences": [
+      "In Figure 2 and Supplementary Tables S4 to S6, although the determined archaeal community was under a relatively narrow range, and results indicated that the relative abundance of phylum Euryarchaeota, class Methanobacteria, and genus Methanobrevibacter showed a significant enhancement in patients with ALS, compared with healthy individuals."
+     ]
+    },
+    {
+     "taxid": "976",
+     "name": "Bacteroidota",
+     "rank": "phylum",
+     "sentences": [
+      "Compared with healthy individuals, the relative abundance of bacterial communities reflected that a higher percent of phylum Firmicutes and a lower percent of phylum Bacteroidetes were found in patients with ALS [Figure 1 ]."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "perturbedmicrobiotaimmunehomeostasisinmultiplesclerosis",
+   "title": "Perturbed Microbiota/Immune Homeostasis in Multiple Sclerosis.",
+   "disease": "Multiple sclerosis (MS)",
+   "edges_taxa": [
+    "Clostridium cluster IV"
+   ],
+   "missing": [
+    {
+     "taxid": "186802",
+     "name": "Eubacteriales",
+     "rank": "order",
+     "sentences": [
+      "Although unclassified Clostridiales tended to be increased in interferon-treated patients (0.08 [1.7 \u00d7 10 \u20130.14] vs 0.009 [9.3 \u00d7 10 \u20130.06] in healthy donors; p = 0.06, figure e-3, links.lww.com/NXI/A470 ), we did not observe statistically significant differences between groups, which is likely explained by the limited number of patients in each subgroup."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "multiplesclerosispatientshaveadistinctgutmicrobiotacomparedtohealthycontrols",
+   "title": "Multiple sclerosis patients have a distinct gut microbiota compared to healthy controls.",
+   "disease": "Multiple sclerosis (MS)",
+   "edges_taxa": [
+    "Adlercreutzia",
+    "Blautia",
+    "Collinsella",
+    "Coprobacillus",
+    "Dorea",
+    "Flavobacterium",
+    "Haemophilus",
+    "Lactobacillus",
+    "Mycoplana",
+    "Parabacteroides",
+    "Pedobacter",
+    "Prevotella",
+    "Pseudomonas"
+   ],
+   "missing": [
+    {
+     "taxid": "1224",
+     "name": "Pseudomonadota",
+     "rank": "phylum",
+     "sentences": [
+      "Among Proteobacteria, Pseudomonas and Mycoplana were more abundant in RRMS patients, whereas Haemophilus was more abundant in healthy controls ( Fig. 3B )."
+     ]
+    },
+    {
+     "taxid": "976",
+     "name": "Bacteroidota",
+     "rank": "phylum",
+     "sentences": [
+      "Using a two log fold changes as a cut-off, we observed that RRMS patients showed enrichment of Pseudomonas (Proteobactreia), Pedobacter (Bacteroidetes), Blautia (Firmicutes), Dorea (Firmicutes), and Mycoplana (Proteobactreia); whereas healthy controls showed enrichment of Adlercreutzia (Actinobacteria), Collinsella (Actinobacteria), Lactobacillus (Firmicutes) and Parabacteroides (Bacteriodetes)."
+     ]
+    },
+    {
+     "taxid": "1239",
+     "name": "Bacillota",
+     "rank": "phylum",
+     "sentences": [
+      "Using a two log fold changes as a cut-off, we observed that RRMS patients showed enrichment of Pseudomonas (Proteobactreia), Pedobacter (Bacteroidetes), Blautia (Firmicutes), Dorea (Firmicutes), and Mycoplana (Proteobactreia); whereas healthy controls showed enrichment of Adlercreutzia (Actinobacteria), Collinsella (Actinobacteria), Lactobacillus (Firmicutes) and Parabacteroides (Bacteriodetes)."
+     ]
+    },
+    {
+     "taxid": "201174",
+     "name": "Actinomycetota",
+     "rank": "phylum",
+     "sentences": [
+      "Using a two log fold changes as a cut-off, we observed that RRMS patients showed enrichment of Pseudomonas (Proteobactreia), Pedobacter (Bacteroidetes), Blautia (Firmicutes), Dorea (Firmicutes), and Mycoplana (Proteobactreia); whereas healthy controls showed enrichment of Adlercreutzia (Actinobacteria), Collinsella (Actinobacteria), Lactobacillus (Firmicutes) and Parabacteroides (Bacteriodetes)."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "gutmicrobiotainmultiplesclerosispossibleinfluenceofimmunomodulators",
+   "title": "Gut microbiota in multiple sclerosis: possible influence of immunomodulators.",
+   "disease": "Multiple sclerosis (MS)",
+   "edges_taxa": [
+    "Bacteroidaceae",
+    "Faecalibacterium",
+    "Ruminococcus"
+   ],
+   "missing": [
+    {
+     "taxid": "186803",
+     "name": "Lachnospiraceae",
+     "rank": "family",
+     "sentences": [
+      "Using PAM to identify a small subset of taxa with contrasting hybridization scores between the groups, OTUs within RikenellaceaeII, Lachnospiraceae, Porphyromonadaceae, Bacteroides and Oscillibacter (Supplementary Table 2) collectively may predict whether samples prior to vitamin D supplementation came from MS patients or healthy controls."
+     ]
+    },
+    {
+     "taxid": "171551",
+     "name": "Porphyromonadaceae",
+     "rank": "family",
+     "sentences": [
+      "Using PAM to identify a small subset of taxa with contrasting hybridization scores between the groups, OTUs within RikenellaceaeII, Lachnospiraceae, Porphyromonadaceae, Bacteroides and Oscillibacter (Supplementary Table 2) collectively may predict whether samples prior to vitamin D supplementation came from MS patients or healthy controls."
+     ]
+    },
+    {
+     "taxid": "816",
+     "name": "Bacteroides",
+     "rank": "genus",
+     "sentences": [
+      "Using PAM to identify a small subset of taxa with contrasting hybridization scores between the groups, OTUs within RikenellaceaeII, Lachnospiraceae, Porphyromonadaceae, Bacteroides and Oscillibacter (Supplementary Table 2) collectively may predict whether samples prior to vitamin D supplementation came from MS patients or healthy controls."
+     ]
+    },
+    {
+     "taxid": "459786",
+     "name": "Oscillibacter",
+     "rank": "genus",
+     "sentences": [
+      "Using PAM to identify a small subset of taxa with contrasting hybridization scores between the groups, OTUs within RikenellaceaeII, Lachnospiraceae, Porphyromonadaceae, Bacteroides and Oscillibacter (Supplementary Table 2) collectively may predict whether samples prior to vitamin D supplementation came from MS patients or healthy controls."
+     ]
+    },
+    {
+     "taxid": "239934",
+     "name": "Akkermansia",
+     "rank": "genus",
+     "sentences": [
+      "Compared to HC and GA-treated MS subjects, untreated MS subjects had an increase in the Akkermansia, Faecalibacterium, and Coprococcus genera after vitamin D supplementation ( Figure 5A )."
+     ]
+    },
+    {
+     "taxid": "33042",
+     "name": "Coprococcus",
+     "rank": "genus",
+     "sentences": [
+      "Compared to HC and GA-treated MS subjects, untreated MS subjects had an increase in the Akkermansia, Faecalibacterium, and Coprococcus genera after vitamin D supplementation ( Figure 5A )."
+     ]
+    },
+    {
+     "taxid": "1730",
+     "name": "Eubacterium",
+     "rank": "genus",
+     "sentences": [
+      "Compared to healthy participants and untreated MS subjects, those treated with GA had increases in Janthinobacterium and decreases in Eubacterium and Ruminococcus after high-dose vitamin D supplementation ( Figure 5B )."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "alterationsincirculatingfattyacidareassociatedwithgutmicrobiotadysbiosisandinflammationinmultiplesclerosis",
+   "title": "Alterations in Circulating Fatty Acid Are Associated With Gut Microbiota Dysbiosis and Inflammation in Multiple Sclerosis.",
+   "disease": "Multiple sclerosis (MS)",
+   "edges_taxa": [
+    "Akkermansia",
+    "Blautia",
+    "Collinsella",
+    "Coprococcus",
+    "Dorea",
+    "Eubacterium",
+    "Lachnospira",
+    "Parabacteroides",
+    "Roseburia",
+    "Ruminococcus",
+    "Streptococcus"
+   ],
+   "missing": [
+    {
+     "taxid": "186803",
+     "name": "Lachnospiraceae",
+     "rank": "family",
+     "sentences": [
+      "Compared to HC, in the GM of MS patients we found a dramatic depletion of bacterial genera belonging to the Lachnospiraceae family."
+     ]
+    },
+    {
+     "taxid": "838",
+     "name": "Prevotella",
+     "rank": "genus",
+     "sentences": [
+      "In contrast, a positive correlation was found between the levels of this T cell subpopulation and Prevotella ( p = 0.02, tau = 0.295), whose relative abundance showed a 2.7-fold increase in MS compared to HC (2.9 \u00b1 0.9 vs. 1.1 \u00b1 0.6%), even if in the absence of statistical significance."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "studyofthegutmicrobiomeinegyptianpatientswithparkinsonsdisease",
+   "title": "Study of the gut microbiome in Egyptian patients with Parkinson's Disease.",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "edges_taxa": [
+    "Bacillota",
+    "Bacteroides",
+    "Bifidobacterium"
+   ],
+   "missing": [
+    {
+     "taxid": "838",
+     "name": "Prevotella",
+     "rank": "genus",
+     "sentences": [
+      "Also, there was no statistically significant difference between PD and the control group as regards the Prevotella/Bacteroides Ratio (P/B) (Table 1 ; Fig. 1 ).",
+      "Although Prevotella was decreased among PD patients relative to the healthy control, the difference was not statistically significant."
+     ]
+    },
+    {
+     "taxid": "976",
+     "name": "Bacteroidota",
+     "rank": "phylum",
+     "sentences": [
+      "Comparing the PD clinical phenotypes with the control group, the Mixed phenotype had significantly higher Bacteroides , Tremors predominant had lower Firmicutes and Firmicutes / Bacteroidetes ratio, and both tremors and postural instability and gait disability (PIGD) phenotypes had lower Bifidobacteria .",
+      "Phylum level analysis Bacterial phylum analysis showed that patients with PD showed a statistically significant decrease in Firmicutes (p\u2009=\u20090.001) and although the Bacteroidetes was increased, the difference was not statistically significant in comparison to the control group."
+     ]
+    },
+    {
+     "taxid": "1263",
+     "name": "Ruminococcus",
+     "rank": "genus",
+     "sentences": [
+      "For Ruminococcus , we found an insignificant decreased level in samples of our PD patients compared to controls."
+     ]
+    },
+    {
+     "taxid": "1578",
+     "name": "Lactobacillus",
+     "rank": "genus",
+     "sentences": [
+      "As regards Lactobacillus , we noticed an insignificant increased relative abundance in PD patients compared to controls."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "distinctgutmicrobiotacompositionandfunctionalcategoryinchildrenwithcerebralpalsyandepilepsy",
+   "title": "Distinct Gut Microbiota Composition and Functional Category in Children With Cerebral Palsy and Epilepsy",
+   "disease": "Epilepsy",
+   "edges_taxa": [
+    "Akkermansia",
+    "Anaerostipes",
+    "Bacteroides",
+    "Bifidobacterium",
+    "Blautia",
+    "Clostridium IV",
+    "Enterococcus",
+    "Faecalibacterium",
+    "Parasutterella",
+    "Prevotella",
+    "Roseburia",
+    "Rothia",
+    "Ruminococcus",
+    "Streptococcus",
+    "Veillonella"
+   ],
+   "missing": [
+    {
+     "taxid": "375288",
+     "name": "Parabacteroides",
+     "rank": "genus",
+     "sentences": [
+      "CPE Patients Held Discrepant GM Structure Principal component analysis (PCA) indicated that microbial samples from the CPE group were separated from those in the Healthy group, and the microbial samples were dominated by Bacteroides, Bifidobacterium, Prevotella, Faecalibacterium , and Parabacteroides ( Figure 1A )."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "specificbacterialtaxaandtheirmetabolitedhpsmaybelinkedtogutdyshomeostasisinpatientswithalzheimersdiseaseparkinsonsdiseaseandamyotrophiclateralsclerosis",
+   "title": "Specific Bacterial Taxa and Their Metabolite, DHPS, May Be Linked to Gut Dyshomeostasis in Patients with Alzheimer's Disease, Parkinson's Disease, and Amyotrophic Lateral Sclerosis.",
+   "disease": "Amyotrophic lateral sclerosis (ALS), Alzheimer\u2019s disease (AD), Parkinson\u2019s disease (PD)",
+   "edges_taxa": [
+    "Akkermansia",
+    "Candidatus Gastranaerophilales",
+    "Desulfovibrio",
+    "Enterococcus",
+    "Eubacterium",
+    "Paludihabitans",
+    "Sellimonas"
+   ],
+   "missing": [
+    {
+     "taxid": "1239",
+     "name": "Bacillota",
+     "rank": "phylum",
+     "sentences": [
+      "The analysis of OTUs revealed phylum-level differences in the abundance of Firmicutes in PD (53%) compared to HC (67%) stool, while Firmicutes displayed minimal differences in ALS and AD cohorts ( Figure 3 )."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "distinctgutmicrobiomecharacteristicsanddynamicsinpatientswithparkinsonsdiseasebasedonthepresenceofpremotorrapideyemovementsleepbehaviordisorders",
+   "title": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson\u2019s disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "edges_taxa": [
+    "Agathobaculum",
+    "Akkermansia",
+    "Barnesiella",
+    "Desulfovibrio",
+    "Eisenbergiella",
+    "Escherichia",
+    "Faecalibacterium",
+    "Hungatella",
+    "Prevotella"
+   ],
+   "missing": [
+    {
+     "taxid": "1348911",
+     "name": "Coprobacter",
+     "rank": "genus",
+     "sentences": [
+      "In PD-RBD(\u2212), genera Coprobacter , Erysipelatoclostridium (currently renamed to Thomasclavelia ), Leuconostoc (when compared to HC), and Citrobacter (when compared to PD-RBD[+]) were enriched (Fig. 2 A and D)."
+     ]
+    },
+    {
+     "taxid": "3025755",
+     "name": "Thomasclavelia",
+     "rank": "genus",
+     "sentences": [
+      "In PD-RBD(\u2212), genera Coprobacter , Erysipelatoclostridium (currently renamed to Thomasclavelia ), Leuconostoc (when compared to HC), and Citrobacter (when compared to PD-RBD[+]) were enriched (Fig. 2 A and D)."
+     ]
+    },
+    {
+     "taxid": "1243",
+     "name": "Leuconostoc",
+     "rank": "genus",
+     "sentences": [
+      "In PD-RBD(\u2212), genera Coprobacter , Erysipelatoclostridium (currently renamed to Thomasclavelia ), Leuconostoc (when compared to HC), and Citrobacter (when compared to PD-RBD[+]) were enriched (Fig. 2 A and D)."
+     ]
+    },
+    {
+     "taxid": "544",
+     "name": "Citrobacter",
+     "rank": "genus",
+     "sentences": [
+      "In PD-RBD(\u2212), genera Coprobacter , Erysipelatoclostridium (currently renamed to Thomasclavelia ), Leuconostoc (when compared to HC), and Citrobacter (when compared to PD-RBD[+]) were enriched (Fig. 2 A and D)."
+     ]
+    },
+    {
+     "taxid": "562",
+     "name": "Escherichia coli",
+     "rank": "species",
+     "sentences": [
+      "Augmentation of the E. coli biofilm pathway in the gut of early-stage PD-RBD(+) In PD-RBD(+), among the genes associated with E . coli biofilm formation, we found significant increases in the abundance of curli operon genes including csgD (a master regulator of biofilm formation) and csgE (curli production assembly/transport component) when compared to HC, and csgA (curli major subunit) when compared to PD-RBD(\u2212) (Fig. 4 A)."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "dysbiosisofgutmicrobiotaandshortchainfattyacidsinacuteischemicstrokeandthesubsequentriskforpoorfunctionaloutcomes",
+   "title": "Dysbiosis of Gut Microbiota and Short-Chain Fatty Acids in Acute Ischemic Stroke and the Subsequent Risk for Poor Functional Outcomes",
+   "disease": "Stroke",
+   "edges_taxa": [
+    "Akkermansia",
+    "Anaerostipes",
+    "Bacteroides",
+    "Blautia",
+    "Enterobacteriaceae",
+    "Faecalibacterium",
+    "Lachnospiraceae",
+    "Lactobacillaceae",
+    "Porphyromonadaceae",
+    "Roseburia"
+   ],
+   "missing": [
+    {
+     "taxid": "1239",
+     "name": "Bacillota",
+     "rank": "phylum",
+     "sentences": [
+      "The Firmicutes / Bacteroidetes (F/B) ratios were higher in AIS patients than in controls and higher in moderate stroke patients than in mild stroke patients (Figure 3B )."
+     ]
+    },
+    {
+     "taxid": "976",
+     "name": "Bacteroidota",
+     "rank": "phylum",
+     "sentences": [
+      "The Firmicutes / Bacteroidetes (F/B) ratios were higher in AIS patients than in controls and higher in moderate stroke patients than in mild stroke patients (Figure 3B )."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "theeffectofmultiplesclerosistherapyongutmicrobiotadysbiosisalongitudinalprospectivestudy",
+   "title": "The effect of multiple sclerosis therapy on gut microbiota dysbiosis: a longitudinal prospective study.",
+   "disease": "Multiple sclerosis (MS)",
+   "edges_taxa": [
+    "Bacteroidales",
+    "Bifidobacterium adolescentis",
+    "Bifidobacterium angulatum",
+    "Coprococcus",
+    "Faecalibacterium prausnitzii",
+    "Helicobacter pylori",
+    "Lachnospiraceae",
+    "Leyella stercorea",
+    "Ruminococcus",
+    "Streptococcus"
+   ],
+   "missing": [
+    {
+     "taxid": "1678",
+     "name": "Bifidobacterium",
+     "rank": "genus",
+     "sentences": [
+      "Our results stated that the baseline MS microbiota was associated with significant increase in Prevotella stercorea and reduced Faecalibacterium prausnitzii , Bifidobacterium , and Lachnospiraceae compared to the HC group."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "alteredgutmicrobiotarelatedtoinflammatoryresponsesinpatientswithhuntingtonsdisease",
+   "title": "Altered Gut Microbiota Related to Inflammatory Responses in Patients With Huntington's Disease.",
+   "disease": "Huntington\u2019s disease (HD)",
+   "edges_taxa": [
+    "Actinomycetota",
+    "Bilophila",
+    "Clostridium XVIII",
+    "Deltaproteobacteria",
+    "Desulfovibrionaceae",
+    "Desulfovibrionales",
+    "Dialister",
+    "Gemmiger",
+    "Intestinimonas",
+    "Lactobacillaceae",
+    "Lactobacillus",
+    "Oscillibacter",
+    "Oxalobacteraceae"
+   ],
+   "missing": [
+    {
+     "taxid": "816",
+     "name": "Bacteroides",
+     "rank": "genus",
+     "sentences": [
+      "In addition, the average ratios of Bacteroides and Prevotella between the HD patients and healthy controls were 0.78 and 1.18, respectively ( Figure 3 )."
+     ]
+    },
+    {
+     "taxid": "838",
+     "name": "Prevotella",
+     "rank": "genus",
+     "sentences": [
+      "In addition, the average ratios of Bacteroides and Prevotella between the HD patients and healthy controls were 0.78 and 1.18, respectively ( Figure 3 )."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "primaryprogressivemultiplesclerosisinarussiancohortrelationshipwithgutbacterialdiversity",
+   "title": "Primary progressive multiple sclerosis in a Russian cohort: relationship with gut bacterial diversity.",
+   "disease": "Multiple sclerosis (MS)",
+   "edges_taxa": [
+    "Acidaminococcaceae",
+    "Actinomycetales",
+    "Akkermansia muciniphila",
+    "Bilophila wadsworthia",
+    "Christensenellaceae",
+    "Clostridia",
+    "Deltaproteobacteria",
+    "Desulfovibrio",
+    "Desulfovibrionales",
+    "Eubacteriaceae",
+    "Gemmiger",
+    "Synergistota",
+    "Verrucomicrobiales",
+    "Verrucomicrobiia",
+    "unclassified Oscillospiraceae"
+   ],
+   "missing": [
+    {
+     "taxid": "33024",
+     "name": "Phascolarctobacterium",
+     "rank": "genus",
+     "sentences": [
+      "Relative abundance (%, median values) of family-specific 16S rRNA gene amplicon sequences in human faecal samples collected from healthy subjects and patients with primary progressive multiple sclerosis (PPMS) Open in a new tab \u201cunc.\u201d stands for unclassified; the rows with statistically significant ( P \u2264\u20090.05) differences between the cohorts\u2019 medians are highlighted in bold The Acidaminococcaceae family in our study was represented by 3 genera ( Phascolarctobacterium, Acidaminococcus and some unidentified one) and 8 OTUs, namely Phascolarctobacterium faecium, Phascolarctobacterium succinatutens, Acidaminococcus intestini, Acidaminococcus fermentans , as well as 3 unidentified ones."
+     ]
+    },
+    {
+     "taxid": "904",
+     "name": "Acidaminococcus",
+     "rank": "genus",
+     "sentences": [
+      "Relative abundance (%, median values) of family-specific 16S rRNA gene amplicon sequences in human faecal samples collected from healthy subjects and patients with primary progressive multiple sclerosis (PPMS) Open in a new tab \u201cunc.\u201d stands for unclassified; the rows with statistically significant ( P \u2264\u20090.05) differences between the cohorts\u2019 medians are highlighted in bold The Acidaminococcaceae family in our study was represented by 3 genera ( Phascolarctobacterium, Acidaminococcus and some unidentified one) and 8 OTUs, namely Phascolarctobacterium faecium, Phascolarctobacterium succinatutens, Acidaminococcus intestini, Acidaminococcus fermentans , as well as 3 unidentified ones."
+     ]
+    },
+    {
+     "taxid": "33025",
+     "name": "Phascolarctobacterium faecium",
+     "rank": "species",
+     "sentences": [
+      "Relative abundance (%, median values) of family-specific 16S rRNA gene amplicon sequences in human faecal samples collected from healthy subjects and patients with primary progressive multiple sclerosis (PPMS) Open in a new tab \u201cunc.\u201d stands for unclassified; the rows with statistically significant ( P \u2264\u20090.05) differences between the cohorts\u2019 medians are highlighted in bold The Acidaminococcaceae family in our study was represented by 3 genera ( Phascolarctobacterium, Acidaminococcus and some unidentified one) and 8 OTUs, namely Phascolarctobacterium faecium, Phascolarctobacterium succinatutens, Acidaminococcus intestini, Acidaminococcus fermentans , as well as 3 unidentified ones."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "thealterationofintestinalmucosalsynucleinexpressionandmucosalmicrobiotainparkinsonsdisease",
+   "title": "The alteration of intestinal mucosal \u03b1-synuclein expression and mucosal microbiota in Parkinson's disease.",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "edges_taxa": [
+    "Bifidobacterium longum",
+    "Burkholderiaceae",
+    "Burkholderiales",
+    "CAG56",
+    "Flavobacteriaceae",
+    "Gammaproteobacteria",
+    "Lactococcus",
+    "Massilia",
+    "Oxalobacteraceae",
+    "Prevotellaceae",
+    "Pseudomonadota",
+    "Ralstonia",
+    "Rhodospirillales",
+    "Thermoactinomycetaceae",
+    "Thermoactinomycetales"
+   ],
+   "missing": [
+    {
+     "taxid": "976",
+     "name": "Bacteroidota",
+     "rank": "phylum",
+     "sentences": [
+      "At the phylum level (Fig. 5 a), the relative abundances of Bacteroidetes and Proteobacteria were the highest in the duodenal mucosa of the controls and PD patients, respectively, while those of Firmicutes in the sigmoid mucosa of the controls and PD patients were the highest."
+     ]
+    },
+    {
+     "taxid": "1239",
+     "name": "Bacillota",
+     "rank": "phylum",
+     "sentences": [
+      "At the phylum level (Fig. 5 a), the relative abundances of Bacteroidetes and Proteobacteria were the highest in the duodenal mucosa of the controls and PD patients, respectively, while those of Firmicutes in the sigmoid mucosa of the controls and PD patients were the highest."
+     ]
+    },
+    {
+     "taxid": "816",
+     "name": "Bacteroides",
+     "rank": "genus",
+     "sentences": [
+      "At the genus level (Fig. 5 b), Bacteroides and Ralstonia had the highest relative abundance in the duodenal mucosa of the controls and PD patients, respectively, while in the sigmoid mucosa of both the controls and PD patients, Bacteroides had the highest relative abundance."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "relationshipbetweengutmicrobiotaandlymphocytesubsetsinchinesehanpatientswithspinalcordinjury",
+   "title": "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury",
+   "disease": "Spinal cord injury (SCI)",
+   "edges_taxa": [
+    "Alistipes",
+    "Brevibacterium",
+    "Christensenellaceae R-7 group",
+    "Cloacibacillus",
+    "Dialister",
+    "Escherichia-Shigella",
+    "Eubacterium_ruminantium _group",
+    "Fusobacteriaceae",
+    "Fusobacteriota",
+    "Fusobacterium",
+    "Lachnoclostridium_12",
+    "Lachnospiraceae",
+    "Lachnospiraceae UCG-008",
+    "Lactobacillaceae",
+    "Lactobacillus",
+    "Oscillospiraceae",
+    "Parabacteroides",
+    "Ruminiclostridium 5",
+    "Ruminiclostridium 6",
+    "Ruminiclostridium_9",
+    "Rumino coccus_torques_group",
+    "Ruminococcaceae_NK4A214_group",
+    "Ruminococcaceae_UCG-005",
+    "Ruminococcus 2",
+    "Ruminococcus torques group",
+    "Ruminococcus_1",
+    "Ruminpcoccaceae_UCG_005",
+    "Synergistaceae",
+    "Tannerellaceae",
+    "UBA1819",
+    "[Eubacterium] ruminantium group"
+   ],
+   "missing": [
+    {
+     "taxid": "508458",
+     "name": "Synergistota",
+     "rank": "phylum",
+     "sentences": [
+      "At the phylum level, we observed a significant increase in the relative abundance of Actinobacteria and Synergistetes, etc. in SCI patients than in healthy controls.",
+      "Compared with healthy controls, the relative abundance of Fusobacteria in SCI patients was significantly reduced ( P = 0.0315), and the relative abundance of Synergistetes ( P = 0.0437) and Actinomycota ( P 0.0001) were significantly increased ( Figure 3B )."
+     ]
+    },
+    {
+     "taxid": "33039",
+     "name": "Mediterraneibacter torques",
+     "rank": "species",
+     "sentences": [
+      "Compared with the healthy control group, the average relative abundance of Escherichia-Shigella, LachnospiraceaeUCG-008, Alistipes, Parabacteroides, [Ruminococcus] torques group, Ruminococcaceae NK4A214 group, Ruminococcaceae UCG-005, Ruminococcus 2, Ruminococcus 1, Christensenellaceae R-7 group, Cloacibacillus, Lactobacillus, [Eubacterium] ruminantium group, Dialister, Ruminiclostridium 9, Ruminococcaceae UGG-013, UBA1819, Ruminiclostridium 6, Ruminiclostridium 5, etc. in the SCI group was significantly higher ( P 0.05), while the average relative abundance of Fusobacterium was significantly reduced ( P 0.05)."
+     ]
+    },
+    {
+     "taxid": "1263",
+     "name": "Ruminococcus",
+     "rank": "genus",
+     "sentences": [
+      "Compared with the healthy control group, the average relative abundance of Escherichia-Shigella, LachnospiraceaeUCG-008, Alistipes, Parabacteroides, [Ruminococcus] torques group, Ruminococcaceae NK4A214 group, Ruminococcaceae UCG-005, Ruminococcus 2, Ruminococcus 1, Christensenellaceae R-7 group, Cloacibacillus, Lactobacillus, [Eubacterium] ruminantium group, Dialister, Ruminiclostridium 9, Ruminococcaceae UGG-013, UBA1819, Ruminiclostridium 6, Ruminiclostridium 5, etc. in the SCI group was significantly higher ( P 0.05), while the average relative abundance of Fusobacterium was significantly reduced ( P 0.05)."
+     ]
+    },
+    {
+     "taxid": "990719",
+     "name": "Christensenellaceae",
+     "rank": "family",
+     "sentences": [
+      "Compared with the healthy control group, the average relative abundance of Escherichia-Shigella, LachnospiraceaeUCG-008, Alistipes, Parabacteroides, [Ruminococcus] torques group, Ruminococcaceae NK4A214 group, Ruminococcaceae UCG-005, Ruminococcus 2, Ruminococcus 1, Christensenellaceae R-7 group, Cloacibacillus, Lactobacillus, [Eubacterium] ruminantium group, Dialister, Ruminiclostridium 9, Ruminococcaceae UGG-013, UBA1819, Ruminiclostridium 6, Ruminiclostridium 5, etc. in the SCI group was significantly higher ( P 0.05), while the average relative abundance of Fusobacterium was significantly reduced ( P 0.05)."
+     ]
+    },
+    {
+     "taxid": "1730",
+     "name": "Eubacterium",
+     "rank": "genus",
+     "sentences": [
+      "Compared with the healthy control group, the average relative abundance of Escherichia-Shigella, LachnospiraceaeUCG-008, Alistipes, Parabacteroides, [Ruminococcus] torques group, Ruminococcaceae NK4A214 group, Ruminococcaceae UCG-005, Ruminococcus 2, Ruminococcus 1, Christensenellaceae R-7 group, Cloacibacillus, Lactobacillus, [Eubacterium] ruminantium group, Dialister, Ruminiclostridium 9, Ruminococcaceae UGG-013, UBA1819, Ruminiclostridium 6, Ruminiclostridium 5, etc. in the SCI group was significantly higher ( P 0.05), while the average relative abundance of Fusobacterium was significantly reduced ( P 0.05)."
+     ]
+    },
+    {
+     "taxid": "1508657",
+     "name": "Ruminiclostridium",
+     "rank": "genus",
+     "sentences": [
+      "Compared with the healthy control group, the average relative abundance of Escherichia-Shigella, LachnospiraceaeUCG-008, Alistipes, Parabacteroides, [Ruminococcus] torques group, Ruminococcaceae NK4A214 group, Ruminococcaceae UCG-005, Ruminococcus 2, Ruminococcus 1, Christensenellaceae R-7 group, Cloacibacillus, Lactobacillus, [Eubacterium] ruminantium group, Dialister, Ruminiclostridium 9, Ruminococcaceae UGG-013, UBA1819, Ruminiclostridium 6, Ruminiclostridium 5, etc. in the SCI group was significantly higher ( P 0.05), while the average relative abundance of Fusobacterium was significantly reduced ( P 0.05)."
+     ]
+    },
+    {
+     "taxid": "29465",
+     "name": "Veillonella",
+     "rank": "genus",
+     "sentences": [
+      "However, in the healthy control group, Veillonella (Spearman rho = 0.502, P = 0.020, q -value 0.05) were positively correlated with NK cells, while Veillonella (Spearman rho = \u20130.441, P = 0.045, q -value 0.05) and Sutterella (Spearman rho = \u20130.579, P = 0.006, q -value 0.05) were negatively correlated with CIK cell subsets ( Figure 7B )."
+     ]
+    },
+    {
+     "taxid": "40544",
+     "name": "Sutterella",
+     "rank": "genus",
+     "sentences": [
+      "However, in the healthy control group, Veillonella (Spearman rho = 0.502, P = 0.020, q -value 0.05) were positively correlated with NK cells, while Veillonella (Spearman rho = \u20130.441, P = 0.045, q -value 0.05) and Sutterella (Spearman rho = \u20130.579, P = 0.006, q -value 0.05) were negatively correlated with CIK cell subsets ( Figure 7B )."
+     ]
+    },
+    {
+     "taxid": "201174",
+     "name": "Actinomycetota",
+     "rank": "phylum",
+     "sentences": [
+      "At the phylum level, we observed a significant increase in the relative abundance of Actinobacteria and Synergistetes, etc. in SCI patients than in healthy controls."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "mycobacteriumaviumsubspeciesparatuberculosismapinfectionanditsimpactongutmicrobiomeofindividualswithmultiplesclerosis",
+   "title": "Mycobacterium avium subspecies paratuberculosis (MAP) infection, and its impact on gut microbiome of individuals with multiple sclerosis.",
+   "disease": "Multiple sclerosis (MS)",
+   "edges_taxa": [
+    "Atopobium",
+    "Butyricimonas",
+    "Coprococcus",
+    "Desulfovibrio",
+    "Desulfovibrionaceae",
+    "Escherichia-Shigella",
+    "Ezakiella",
+    "Lachnospiraceae_NC2004_group",
+    "Lachnospiraceae_ND3007_group",
+    "Marvinbryantia",
+    "Methanobrevibacter",
+    "Oscillospira",
+    "Paludihabitans",
+    "Parvibacter",
+    "Prevotellaceae",
+    "Rothia",
+    "Shuttleworthella",
+    "[Eubacterium]_nodatum_group"
+   ],
+   "missing": [
+    {
+     "taxid": "2159",
+     "name": "Methanobacteriaceae",
+     "rank": "family",
+     "sentences": [
+      "Irrespective of the granularity considered, we have found distinct microbial community profile in MS patients as compared to the HC individuals that include: kingdom Archaea; families [Clostridium]_methypentosum_group, and Methanobacteriaceae ; order Enterobacterales as well as Genera Methanobrevibacter , Marvinbryantia , Lachnospiraceae_ND3007_group , Butyricimonas , Paludicola , [Eubacterium]_nodatum_group , Desulfovibrio and Oscillospira (Fig. 5 )."
+     ]
+    },
+    {
+     "taxid": "91347",
+     "name": "Enterobacterales",
+     "rank": "order",
+     "sentences": [
+      "Irrespective of the granularity considered, we have found distinct microbial community profile in MS patients as compared to the HC individuals that include: kingdom Archaea; families [Clostridium]_methypentosum_group, and Methanobacteriaceae ; order Enterobacterales as well as Genera Methanobrevibacter , Marvinbryantia , Lachnospiraceae_ND3007_group , Butyricimonas , Paludicola , [Eubacterium]_nodatum_group , Desulfovibrio and Oscillospira (Fig. 5 )."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "gutmicrobiotaaspredictorsoftheoccurrenceofhighontreatmentplateletreactivityinacuteischemicstrokepatients",
+   "title": "Gut microbiota as predictors of the occurrence of high on-treatment platelet reactivity in acute ischemic stroke patients",
+   "disease": "Stroke",
+   "edges_taxa": [
+    "Blautia",
+    "Lachnoclostridium",
+    "Parabacteroides",
+    "Streptococcus",
+    "bacterium"
+   ],
+   "missing": [
+    {
+     "taxid": "48736",
+     "name": "Ralstonia",
+     "rank": "genus",
+     "sentences": [
+      "Here are the key findings regarding the gut microbiota characteristics in HTPR and AIS patients: HTPR patients exhibited a decreased microbial richness compared to NHTPR patients; additionally, the relative abundance of unidentified_Clostridia and Ralstonia was lower in HTPR patients; significant differences in biological functions, such as toxoplasmosis, were observed between the two groups; the combination of Ralstonia, unidentified-Clostridia, Mailhella, Anaerofustis , and Aggregatibacter showed excellent predictive ability for HTPR occurrence; when comparing AIS patients with healthy controls, alterations in the microbiota structure were observed in AIS patients, with imbalances in short-chain fatty acid-producing bacteria and pathogenic bacteria; significant differences in biological functions, such as oxidative phosphorylation, were noted between the two groups; the combination of Alloprevotella, Terrisporobacter, Streptococcus, Proteus , and unidentified_Bacteria exhibited strong predictive power for AIS occurrence."
+     ]
+    },
+    {
+     "taxid": "264995",
+     "name": "Anaerofustis",
+     "rank": "genus",
+     "sentences": [
+      "Here are the key findings regarding the gut microbiota characteristics in HTPR and AIS patients: HTPR patients exhibited a decreased microbial richness compared to NHTPR patients; additionally, the relative abundance of unidentified_Clostridia and Ralstonia was lower in HTPR patients; significant differences in biological functions, such as toxoplasmosis, were observed between the two groups; the combination of Ralstonia, unidentified-Clostridia, Mailhella, Anaerofustis , and Aggregatibacter showed excellent predictive ability for HTPR occurrence; when comparing AIS patients with healthy controls, alterations in the microbiota structure were observed in AIS patients, with imbalances in short-chain fatty acid-producing bacteria and pathogenic bacteria; significant differences in biological functions, such as oxidative phosphorylation, were noted between the two groups; the combination of Alloprevotella, Terrisporobacter, Streptococcus, Proteus , and unidentified_Bacteria exhibited strong predictive power for AIS occurrence."
+     ]
+    },
+    {
+     "taxid": "416916",
+     "name": "Aggregatibacter",
+     "rank": "genus",
+     "sentences": [
+      "Here are the key findings regarding the gut microbiota characteristics in HTPR and AIS patients: HTPR patients exhibited a decreased microbial richness compared to NHTPR patients; additionally, the relative abundance of unidentified_Clostridia and Ralstonia was lower in HTPR patients; significant differences in biological functions, such as toxoplasmosis, were observed between the two groups; the combination of Ralstonia, unidentified-Clostridia, Mailhella, Anaerofustis , and Aggregatibacter showed excellent predictive ability for HTPR occurrence; when comparing AIS patients with healthy controls, alterations in the microbiota structure were observed in AIS patients, with imbalances in short-chain fatty acid-producing bacteria and pathogenic bacteria; significant differences in biological functions, such as oxidative phosphorylation, were noted between the two groups; the combination of Alloprevotella, Terrisporobacter, Streptococcus, Proteus , and unidentified_Bacteria exhibited strong predictive power for AIS occurrence."
+     ]
+    },
+    {
+     "taxid": "1283313",
+     "name": "Alloprevotella",
+     "rank": "genus",
+     "sentences": [
+      "Here are the key findings regarding the gut microbiota characteristics in HTPR and AIS patients: HTPR patients exhibited a decreased microbial richness compared to NHTPR patients; additionally, the relative abundance of unidentified_Clostridia and Ralstonia was lower in HTPR patients; significant differences in biological functions, such as toxoplasmosis, were observed between the two groups; the combination of Ralstonia, unidentified-Clostridia, Mailhella, Anaerofustis , and Aggregatibacter showed excellent predictive ability for HTPR occurrence; when comparing AIS patients with healthy controls, alterations in the microbiota structure were observed in AIS patients, with imbalances in short-chain fatty acid-producing bacteria and pathogenic bacteria; significant differences in biological functions, such as oxidative phosphorylation, were noted between the two groups; the combination of Alloprevotella, Terrisporobacter, Streptococcus, Proteus , and unidentified_Bacteria exhibited strong predictive power for AIS occurrence."
+     ]
+    },
+    {
+     "taxid": "583",
+     "name": "Proteus",
+     "rank": "genus",
+     "sentences": [
+      "Here are the key findings regarding the gut microbiota characteristics in HTPR and AIS patients: HTPR patients exhibited a decreased microbial richness compared to NHTPR patients; additionally, the relative abundance of unidentified_Clostridia and Ralstonia was lower in HTPR patients; significant differences in biological functions, such as toxoplasmosis, were observed between the two groups; the combination of Ralstonia, unidentified-Clostridia, Mailhella, Anaerofustis , and Aggregatibacter showed excellent predictive ability for HTPR occurrence; when comparing AIS patients with healthy controls, alterations in the microbiota structure were observed in AIS patients, with imbalances in short-chain fatty acid-producing bacteria and pathogenic bacteria; significant differences in biological functions, such as oxidative phosphorylation, were noted between the two groups; the combination of Alloprevotella, Terrisporobacter, Streptococcus, Proteus , and unidentified_Bacteria exhibited strong predictive power for AIS occurrence."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "gutmicrobiomecognitivefunctionandbrainstructureamultiomicsintegrationanalysis",
+   "title": "Gut microbiome, cognitive function and brain structure: a multi-omics integration analysis",
+   "disease": "Alzheimer\u2019s disease (AD), Dementia",
+   "edges_taxa": [
+    "Bacteroides",
+    "Butyricimonas",
+    "Dorea longicatena",
+    "Odoribacter"
+   ],
+   "missing": [
+    {
+     "taxid": "1239",
+     "name": "Bacillota",
+     "rank": "phylum",
+     "sentences": [
+      "Firmicutes was more abundant in the mild group and Bacteroidetes was relatively more abundant in the normal group (Fig. 3 b, c)."
+     ]
+    },
+    {
+     "taxid": "976",
+     "name": "Bacteroidota",
+     "rank": "phylum",
+     "sentences": [
+      "Firmicutes was more abundant in the mild group and Bacteroidetes was relatively more abundant in the normal group (Fig. 3 b, c)."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "gutmicrobiotalinkswithcognitiveimpairmentinamyotrophiclateralsclerosisamultiomicsstudy",
+   "title": "Gut microbiota links with cognitive impairment in amyotrophic lateral sclerosis: A multi-omics study.",
+   "disease": "Amyotrophic lateral sclerosis (ALS)",
+   "edges_taxa": [
+    "Pseudomonadota"
+   ],
+   "missing": [
+    {
+     "taxid": "1239",
+     "name": "Bacillota",
+     "rank": "phylum",
+     "sentences": [
+      "The Firmicutes to Bacteroidetes (F/B) ratio was comparable between ALS patients and healthy controls ( Supplementary Table 2 , available online)."
+     ]
+    },
+    {
+     "taxid": "976",
+     "name": "Bacteroidota",
+     "rank": "phylum",
+     "sentences": [
+      "The Firmicutes to Bacteroidetes (F/B) ratio was comparable between ALS patients and healthy controls ( Supplementary Table 2 , available online)."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "oralandgutmicrobialprofilinginperiodontitisandparkinsonsdisease",
+   "title": "Oral and gut microbial profiling in periodontitis and Parkinson's disease.",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "edges_taxa": [
+    "Alloprevotella tannerae",
+    "Eshraghiella crossota",
+    "Neisseria",
+    "Prevotella melaninogenica",
+    "Prevotella pallens"
+   ],
+   "missing": [
+    {
+     "taxid": "2047",
+     "name": "Rothia dentocariosa",
+     "rank": "species",
+     "sentences": [
+      "In saliva, we detected increasing abundances of Rothia dentocariosa and Gamella sanguinis in HC group; Mycoplasma faucium (M. faucium), Tannerella forsythia (T. forsythia), Parvimonas micra (P. micra) and Saccharibacteria (TM7) subspecies were increased in P group; Prevotella pallens (P. pallens), Prevotella melaninogenica (P. melaninogenica) and Neisseria multispecies were more abundant in PA+P group, all compared to other groups ( Figure 4 )."
+     ]
+    },
+    {
+     "taxid": "2093",
+     "name": "Mycoplasma",
+     "rank": "genus",
+     "sentences": [
+      "In saliva, we detected increasing abundances of Rothia dentocariosa and Gamella sanguinis in HC group; Mycoplasma faucium (M. faucium), Tannerella forsythia (T. forsythia), Parvimonas micra (P. micra) and Saccharibacteria (TM7) subspecies were increased in P group; Prevotella pallens (P. pallens), Prevotella melaninogenica (P. melaninogenica) and Neisseria multispecies were more abundant in PA+P group, all compared to other groups ( Figure 4 )."
+     ]
+    },
+    {
+     "taxid": "195950",
+     "name": "Tannerella",
+     "rank": "genus",
+     "sentences": [
+      "In saliva, we detected increasing abundances of Rothia dentocariosa and Gamella sanguinis in HC group; Mycoplasma faucium (M. faucium), Tannerella forsythia (T. forsythia), Parvimonas micra (P. micra) and Saccharibacteria (TM7) subspecies were increased in P group; Prevotella pallens (P. pallens), Prevotella melaninogenica (P. melaninogenica) and Neisseria multispecies were more abundant in PA+P group, all compared to other groups ( Figure 4 )."
+     ]
+    },
+    {
+     "taxid": "543311",
+     "name": "Parvimonas",
+     "rank": "genus",
+     "sentences": [
+      "In saliva, we detected increasing abundances of Rothia dentocariosa and Gamella sanguinis in HC group; Mycoplasma faucium (M. faucium), Tannerella forsythia (T. forsythia), Parvimonas micra (P. micra) and Saccharibacteria (TM7) subspecies were increased in P group; Prevotella pallens (P. pallens), Prevotella melaninogenica (P. melaninogenica) and Neisseria multispecies were more abundant in PA+P group, all compared to other groups ( Figure 4 )."
+     ]
+    },
+    {
+     "taxid": "838",
+     "name": "Prevotella",
+     "rank": "genus",
+     "sentences": [
+      "In saliva, we detected increasing abundances of Rothia dentocariosa and Gamella sanguinis in HC group; Mycoplasma faucium (M. faucium), Tannerella forsythia (T. forsythia), Parvimonas micra (P. micra) and Saccharibacteria (TM7) subspecies were increased in P group; Prevotella pallens (P. pallens), Prevotella melaninogenica (P. melaninogenica) and Neisseria multispecies were more abundant in PA+P group, all compared to other groups ( Figure 4 )."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "characterizationofthegutmicrobiomeinalzheimerdiseaseandmildcognitiveimpairmentamongolderadultsinugandaacasecontrolstudy",
+   "title": "Characterization of the gut microbiome in Alzheimer disease and mild cognitive impairment among older adults in Uganda: A case-control study.",
+   "disease": "Alzheimer\u2019s disease (AD)",
+   "edges_taxa": [
+    "Cronobacter",
+    "Dickeya",
+    "Hafnia-Obesumbacterium",
+    "Mesorhizobium",
+    "Novosphingobium",
+    "Staphylococcus",
+    "Thermomonas"
+   ],
+   "missing": [
+    {
+     "taxid": "57723",
+     "name": "Acidobacteriota",
+     "rank": "phylum",
+     "sentences": [
+      "The relative abundance of Acidobacteria and Firmicutes was significantly higher in the control group than in the Dementia and MCI groups, with the control group displaying a broad range of abundance values."
+     ]
+    },
+    {
+     "taxid": "1239",
+     "name": "Bacillota",
+     "rank": "phylum",
+     "sentences": [
+      "The relative abundance of Acidobacteria and Firmicutes was significantly higher in the control group than in the Dementia and MCI groups, with the control group displaying a broad range of abundance values."
+     ]
+    },
+    {
+     "taxid": "1224",
+     "name": "Pseudomonadota",
+     "rank": "phylum",
+     "sentences": [
+      "A similar pattern was observed for Proteobacteria , where the Control group exhibited a significantly higher relative abundance than the Dementia and MCI groups did."
+     ]
+    },
+    {
+     "taxid": "1301",
+     "name": "Streptococcus",
+     "rank": "genus",
+     "sentences": [
+      "The most significant genera, Ochrobactrum ( P =\u20057e\u221207), Mesorhizobium ( P =\u20058e\u221205), and Streptococcus ( P =\u2005.00021), were more abundant in the control group (blue bars)."
+     ]
+    }
+   ]
+  },
+  {
+   "key": "hemorrhagictransformationinpatientswithlargearteryatheroscleroticstrokeisassociatedwiththegutmicrobiotaandlipopolysaccharide",
+   "title": "Hemorrhagic transformation in patients with large-artery atherosclerotic stroke is associated with the gut microbiota and lipopolysaccharide",
+   "disease": "Stroke",
+   "edges_taxa": [
+    "Actinomycetota",
+    "Bacteroidota",
+    "Enterobacteriaceae",
+    "Escherichia coli",
+    "Escherichia-Shigella",
+    "Eubacteriales",
+    "Faecalibacterium",
+    "Klebsiella",
+    "Ligilactobacillus salivarius",
+    "Oscillospiraceae",
+    "Pseudomonadota"
+   ],
+   "missing": [
+    {
+     "taxid": "1239",
+     "name": "Bacillota",
+     "rank": "phylum",
+     "sentences": [
+      "As shown in Additional Figure 2A , the network in HC subjects was dominated by beneficial Firmicutes .",
+      "The three largest phyla in the healthy control, HT, and non-HT groups were Firmicutes , Proteobacteria , and Bacteroidetes , while Pseudomonadaceae , Lachnospiraceae , and Enterobacteriaceae were the most abundant families ( Figure 2 D and Additional Figure 1B )."
+     ]
+    },
+    {
+     "taxid": "135621",
+     "name": "Pseudomonadaceae",
+     "rank": "family",
+     "sentences": [
+      "The three largest phyla in the healthy control, HT, and non-HT groups were Firmicutes , Proteobacteria , and Bacteroidetes , while Pseudomonadaceae , Lachnospiraceae , and Enterobacteriaceae were the most abundant families ( Figure 2 D and Additional Figure 1B )."
+     ]
+    },
+    {
+     "taxid": "186803",
+     "name": "Lachnospiraceae",
+     "rank": "family",
+     "sentences": [
+      "The three largest phyla in the healthy control, HT, and non-HT groups were Firmicutes , Proteobacteria , and Bacteroidetes , while Pseudomonadaceae , Lachnospiraceae , and Enterobacteriaceae were the most abundant families ( Figure 2 D and Additional Figure 1B )."
+     ]
+    },
+    {
+     "taxid": "57723",
+     "name": "Acidobacteriota",
+     "rank": "phylum",
+     "sentences": [
+      "We found that healthy subjects had higher levels of anti-inflammatory microbiome taxa than HT subjects, including Ruminococcaceae , Acidobacteriota , Faecalibacterium , and Clostridiales , while compared to healthy subjects, non-HT subjects had higher levels of Streptococcus , Fusicatenibacter , and Pectobacterium , and HT subjects had higher levels of Lactobacillus_salivarius and Klebsiella ( Figure 3 A and B )."
+     ]
+    },
+    {
+     "taxid": "1301",
+     "name": "Streptococcus",
+     "rank": "genus",
+     "sentences": [
+      "We found that healthy subjects had higher levels of anti-inflammatory microbiome taxa than HT subjects, including Ruminococcaceae , Acidobacteriota , Faecalibacterium , and Clostridiales , while compared to healthy subjects, non-HT subjects had higher levels of Streptococcus , Fusicatenibacter , and Pectobacterium , and HT subjects had higher levels of Lactobacillus_salivarius and Klebsiella ( Figure 3 A and B )."
+     ]
+    },
+    {
+     "taxid": "1407607",
+     "name": "Fusicatenibacter",
+     "rank": "genus",
+     "sentences": [
+      "We found that healthy subjects had higher levels of anti-inflammatory microbiome taxa than HT subjects, including Ruminococcaceae , Acidobacteriota , Faecalibacterium , and Clostridiales , while compared to healthy subjects, non-HT subjects had higher levels of Streptococcus , Fusicatenibacter , and Pectobacterium , and HT subjects had higher levels of Lactobacillus_salivarius and Klebsiella ( Figure 3 A and B )."
+     ]
+    }
+   ]
+  }
+ ]
+}

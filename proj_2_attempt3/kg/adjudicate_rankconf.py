@@ -89,8 +89,8 @@ def main():
     print(f"  ... where the relative disagrees/contested : {len(with_opp)}")
 
     # --- 2. mechanical -------------------------------------------------------
-    from taxonomy import Taxonomy
-    tax = Taxonomy()
+    from taxonomy_cache import load_taxonomy
+    tax = load_taxonomy()
     recs = json.load(open(SRC))
     # every raw predicted string -> the taxid it collapsed onto
     promoted = defaultdict(set)         # taxid -> {raw placeholder strings}

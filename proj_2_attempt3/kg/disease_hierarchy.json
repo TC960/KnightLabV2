@@ -1,0 +1,479 @@
+{
+ "mondo_version": "releases/2026-09-01",
+ "resolution": {
+  "Alzheimer's disease": {
+   "mondo": "MONDO:0004975",
+   "how": "exact",
+   "mondo_name": "Alzheimer disease"
+  },
+  "Amyotrophic lateral sclerosis": {
+   "mondo": "MONDO:0004976",
+   "how": "exact",
+   "mondo_name": "amyotrophic lateral sclerosis"
+  },
+  "Anti-NMDAR encephalitis": {
+   "mondo": "MONDO:0021081",
+   "how": "curated_alias",
+   "why": "MONDO spells it 'anti-NMDA receptor encephalitis'",
+   "mondo_name": "anti-NMDA receptor encephalitis"
+  },
+  "Attention-deficit/hyperactivity disorder": {
+   "mondo": "MONDO:0007743",
+   "how": "exact",
+   "mondo_name": "attention deficit-hyperactivity disorder"
+  },
+  "Autism spectrum disorder": {
+   "mondo": "MONDO:0005258",
+   "how": "exact",
+   "mondo_name": "autism spectrum disorder"
+  },
+  "CADASIL": {
+   "mondo": "MONDO:0007432",
+   "how": "curated_alias",
+   "why": "the acronym is ambiguous between the general term and type 1 / type 2; the general term is what a CADASIL cohort means",
+   "mondo_name": "cerebral arteriopathy with subcortical infarcts and leukoencephalopathy"
+  },
+  "Chronic traumatic complete spinal cord injury": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "refusal": "severity/chronicity-specified SCI; MONDO carries no graded SCI terms."
+  },
+  "Cognitive impairment": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "refusal": "same as above; 'cognitive disorder' is not the same concept and the graph label is a cohort descriptor."
+  },
+  "Dementia": {
+   "mondo": "MONDO:0001627",
+   "how": "exact",
+   "mondo_name": "dementia"
+  },
+  "Epilepsy": {
+   "mondo": "MONDO:0005027",
+   "how": "exact",
+   "mondo_name": "epilepsy"
+  },
+  "Essential tremor": {
+   "mondo": "MONDO:0003233",
+   "how": "exact",
+   "mondo_name": "essential tremor"
+  },
+  "Familial dysautonomia": {
+   "mondo": "MONDO:0009131",
+   "how": "exact",
+   "mondo_name": "Riley-Day syndrome"
+  },
+  "Hemorrhagic transformation": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "refusal": "a complication of ischemic stroke, not a disease entity in MONDO."
+  },
+  "Hepatic encephalopathy": {
+   "mondo": "MONDO:0001711",
+   "how": "exact",
+   "mondo_name": "hepatic encephalopathy"
+  },
+  "Hepatitis B virus-associated liver cirrhosis": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "refusal": "MONDO has both hepatitis B and liver cirrhosis but not this conjunction."
+  },
+  "Huntington's disease": {
+   "mondo": "MONDO:0007739",
+   "how": "exact",
+   "mondo_name": "Huntington disease"
+  },
+  "Hypertensive intracerebral hemorrhage": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "refusal": "cause-specified ICH; MONDO has ICH but not the hypertensive subtype."
+  },
+  "Idiopathic normal pressure hydrocephalus": {
+   "mondo": "MONDO:0009366",
+   "how": "curated_alias",
+   "why": "MONDO carries 'normal pressure hydrocephalus'; iNPH is the idiopathic form and MONDO has no separate term",
+   "mondo_name": "normal pressure hydrocephalus"
+  },
+  "Intracerebral hemorrhage": {
+   "mondo": "MONDO:0013792",
+   "how": "exact",
+   "mondo_name": "intracerebral hemorrhage"
+  },
+  "Migraine": {
+   "mondo": "MONDO:0005277",
+   "how": "exact",
+   "mondo_name": "migraine disorder"
+  },
+  "Mild cognitive impairment": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "refusal": "MONDO contains NO term named 'mild cognitive impairment' -- 0 index keys match the phrase. MCI is a clinical STAGE, not a MONDO disease. The nearest term, 'cognitive disorder' (MONDO:0002039), is broader and would silently merge MCI with 13 other things. Left unresolved."
+  },
+  "Minimal hepatic encephalopathy": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "refusal": "subclinical grade of HE; MONDO has HE but not the graded form."
+  },
+  "Multiple sclerosis": {
+   "mondo": "MONDO:0005301",
+   "how": "exact",
+   "mondo_name": "multiple sclerosis"
+  },
+  "Multiple system atrophy": {
+   "mondo": "MONDO:0007803",
+   "how": "exact",
+   "mondo_name": "multiple system atrophy"
+  },
+  "Myasthenia gravis": {
+   "mondo": "MONDO:0009688",
+   "how": "exact",
+   "mondo_name": "myasthenia gravis"
+  },
+  "Neurocognitive impairment": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "refusal": "ditto, and it may be a synonym of the graph's own 'Cognitive impairment' node rather than a MONDO term -- a folding question, not a resolution one."
+  },
+  "Neuroinfection": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "refusal": "not a disease, a category of causes. No MONDO term, correctly."
+  },
+  "Neuromyelitis optica": {
+   "mondo": "MONDO:0019100",
+   "how": "exact",
+   "mondo_name": "neuromyelitis optica"
+  },
+  "Parkinson's disease": {
+   "mondo": "MONDO:0005180",
+   "how": "exact",
+   "mondo_name": "Parkinson disease"
+  },
+  "Poststroke aphasia": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "refusal": "MONDO has 'aphasia' (MONDO:0000598) but post-stroke aphasia is a stroke sequela; resolving it to plain aphasia would misfile the cohort."
+  },
+  "REM sleep behavior disorder\u2013Lewy body disease continuum": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "refusal": "a prodromal continuum spanning two diseases; MONDO has each end but not the continuum, and it is contained by neither (already Tier-C rejected)."
+  },
+  "Rett syndrome": {
+   "mondo": "MONDO:0010726",
+   "how": "exact",
+   "mondo_name": "Rett syndrome"
+  },
+  "Spinal cord injury": {
+   "mondo": "MONDO:0043797",
+   "how": "exact",
+   "mondo_name": "spinal cord injury"
+  },
+  "Spinal muscular atrophy": {
+   "mondo": "MONDO:0001516",
+   "how": "exact",
+   "mondo_name": "spinal muscular atrophy"
+  },
+  "Sporadic Creutzfeldt-Jakob disease": {
+   "mondo": "MONDO:0016079",
+   "how": "exact",
+   "mondo_name": "sporadic Creutzfeldt-Jakob disease"
+  },
+  "Stroke": {
+   "mondo": "MONDO:0005098",
+   "how": "exact",
+   "mondo_name": "stroke disorder"
+  },
+  "Subjective cognitive decline": {
+   "mondo": "MONDO:0850292",
+   "how": "exact",
+   "mondo_name": "subjective cognitive decline"
+  },
+  "Traumatic brain injury": {
+   "mondo": "MONDO:0858950",
+   "how": "exact",
+   "mondo_name": "traumatic brain injury"
+  },
+  "Traumatic thoracic spinal cord injury": {
+   "mondo": null,
+   "how": "unresolved",
+   "mondo_name": null,
+   "refusal": "level-specified SCI; same reason."
+  },
+  "Tuberous sclerosis complex": {
+   "mondo": "MONDO:0001734",
+   "how": "exact",
+   "mondo_name": "tuberous sclerosis"
+  }
+ },
+ "refused": {
+  "Mild cognitive impairment": "MONDO contains NO term named 'mild cognitive impairment' -- 0 index keys match the phrase. MCI is a clinical STAGE, not a MONDO disease. The nearest term, 'cognitive disorder' (MONDO:0002039), is broader and would silently merge MCI with 13 other things. Left unresolved.",
+  "Cognitive impairment": "same as above; 'cognitive disorder' is not the same concept and the graph label is a cohort descriptor.",
+  "Neurocognitive impairment": "ditto, and it may be a synonym of the graph's own 'Cognitive impairment' node rather than a MONDO term -- a folding question, not a resolution one.",
+  "Neuroinfection": "not a disease, a category of causes. No MONDO term, correctly.",
+  "REM sleep behavior disorder-Lewy body disease continuum": "a prodromal continuum spanning two diseases; MONDO has each end but not the continuum, and it is contained by neither (already Tier-C rejected).",
+  "Hemorrhagic transformation": "a complication of ischemic stroke, not a disease entity in MONDO.",
+  "Poststroke aphasia": "MONDO has 'aphasia' (MONDO:0000598) but post-stroke aphasia is a stroke sequela; resolving it to plain aphasia would misfile the cohort.",
+  "Chronic traumatic complete spinal cord injury": "severity/chronicity-specified SCI; MONDO carries no graded SCI terms.",
+  "Traumatic thoracic spinal cord injury": "level-specified SCI; same reason.",
+  "Hypertensive intracerebral hemorrhage": "cause-specified ICH; MONDO has ICH but not the hypertensive subtype.",
+  "Minimal hepatic encephalopathy": "subclinical grade of HE; MONDO has HE but not the graded form.",
+  "Hepatitis B virus-associated liver cirrhosis": "MONDO has both hepatitis B and liver cirrhosis but not this conjunction."
+ },
+ "aliases": {
+  "Anti-NMDAR encephalitis": [
+   "MONDO:0021081",
+   "MONDO spells it 'anti-NMDA receptor encephalitis'"
+  ],
+  "CADASIL": [
+   "MONDO:0007432",
+   "the acronym is ambiguous between the general term and type 1 / type 2; the general term is what a CADASIL cohort means"
+  ],
+  "Idiopathic normal pressure hydrocephalus": [
+   "MONDO:0009366",
+   "MONDO carries 'normal pressure hydrocephalus'; iNPH is the idiopathic form and MONDO has no separate term"
+  ]
+ },
+ "tier_grading": [
+  {
+   "child": "Intracerebral hemorrhage",
+   "parent": "Stroke",
+   "tier": "A",
+   "mondo_relation": "descendant",
+   "mondo_distance": 2,
+   "verdict": "CONFIRMED"
+  },
+  {
+   "child": "Hypertensive intracerebral hemorrhage",
+   "parent": "Intracerebral hemorrhage",
+   "tier": "A",
+   "mondo_relation": null,
+   "mondo_distance": null,
+   "verdict": "unresolvable"
+  },
+  {
+   "child": "Poststroke aphasia",
+   "parent": "Stroke",
+   "tier": "A",
+   "mondo_relation": null,
+   "mondo_distance": null,
+   "verdict": "unresolvable"
+  },
+  {
+   "child": "Hemorrhagic transformation",
+   "parent": "Stroke",
+   "tier": "A",
+   "mondo_relation": null,
+   "mondo_distance": null,
+   "verdict": "unresolvable"
+  },
+  {
+   "child": "Chronic traumatic complete spinal cord injury",
+   "parent": "Spinal cord injury",
+   "tier": "A",
+   "mondo_relation": null,
+   "mondo_distance": null,
+   "verdict": "unresolvable"
+  },
+  {
+   "child": "Traumatic thoracic spinal cord injury",
+   "parent": "Spinal cord injury",
+   "tier": "A",
+   "mondo_relation": null,
+   "mondo_distance": null,
+   "verdict": "unresolvable"
+  },
+  {
+   "child": "Minimal hepatic encephalopathy",
+   "parent": "Hepatic encephalopathy",
+   "tier": "A",
+   "mondo_relation": null,
+   "mondo_distance": null,
+   "verdict": "unresolvable"
+  },
+  {
+   "child": "Alzheimer's disease",
+   "parent": "Dementia",
+   "tier": "B",
+   "mondo_relation": "descendant",
+   "mondo_distance": 1,
+   "verdict": "CONFIRMED"
+  },
+  {
+   "child": "Sporadic Creutzfeldt-Jakob disease",
+   "parent": "Dementia",
+   "tier": "B",
+   "mondo_relation": "cousin",
+   "mondo_distance": 6,
+   "verdict": "not-is-a (cousin)"
+  },
+  {
+   "child": "Mild cognitive impairment",
+   "parent": "Cognitive impairment",
+   "tier": "B",
+   "mondo_relation": null,
+   "mondo_distance": null,
+   "verdict": "unresolvable"
+  },
+  {
+   "child": "Neurocognitive impairment",
+   "parent": "Cognitive impairment",
+   "tier": "B",
+   "mondo_relation": null,
+   "mondo_distance": null,
+   "verdict": "unresolvable"
+  },
+  {
+   "child": "Subjective cognitive decline",
+   "parent": "Cognitive impairment",
+   "tier": "B",
+   "mondo_relation": null,
+   "mondo_distance": null,
+   "verdict": "unresolvable"
+  }
+ ],
+ "tier_c_grading": [
+  {
+   "child": "Multiple system atrophy",
+   "parent": "Parkinson's disease",
+   "mondo_relation": "cousin",
+   "mondo_distance": 3,
+   "verdict": "rejection upheld (cousin)"
+  },
+  {
+   "child": "Essential tremor",
+   "parent": "Parkinson's disease",
+   "mondo_relation": "sibling",
+   "mondo_distance": 2,
+   "verdict": "rejection upheld (sibling)"
+  },
+  {
+   "child": "Mild cognitive impairment",
+   "parent": "Alzheimer's disease",
+   "mondo_relation": null,
+   "mondo_distance": null,
+   "verdict": "unresolvable"
+  },
+  {
+   "child": "Hepatitis B virus-associated liver cirrhosis",
+   "parent": "Parkinson's disease",
+   "mondo_relation": null,
+   "mondo_distance": null,
+   "verdict": "unresolvable"
+  }
+ ],
+ "links": [
+  {
+   "child": "Alzheimer's disease",
+   "parent": "Dementia",
+   "child_mondo": "MONDO:0004975",
+   "parent_mondo": "MONDO:0001627",
+   "mondo_distance": 1,
+   "source": "mondo",
+   "child_papers": 46,
+   "parent_papers": 6
+  },
+  {
+   "child": "Intracerebral hemorrhage",
+   "parent": "Stroke",
+   "child_mondo": "MONDO:0013792",
+   "parent_mondo": "MONDO:0005098",
+   "mondo_distance": 2,
+   "source": "mondo",
+   "child_papers": 3,
+   "parent_papers": 30
+  }
+ ],
+ "retrieval_payoff": [
+  {
+   "parent": "Dementia",
+   "children": [
+    "Alzheimer's disease"
+   ],
+   "own_papers": 6,
+   "extra_papers": 46,
+   "own_taxa": 47,
+   "extra_taxa": 289
+  },
+  {
+   "parent": "Stroke",
+   "children": [
+    "Intracerebral hemorrhage"
+   ],
+   "own_papers": 30,
+   "extra_papers": 3,
+   "own_taxa": 154,
+   "extra_taxa": 16
+  }
+ ],
+ "agreement_by_relation": {
+  "cousin": {
+   "n": 1610,
+   "k": 1114
+  },
+  "is-a": {
+   "n": 38,
+   "k": 34
+  },
+  "sibling": {
+   "n": 50,
+   "k": 34
+  },
+  "unrelated": {
+   "n": 0,
+   "k": 0
+  }
+ },
+ "agreement_by_relation_disjoint": {
+  "cousin": {
+   "n": 1610,
+   "k": 1114
+  },
+  "is-a": {
+   "n": 38,
+   "k": 34
+  },
+  "sibling": {
+   "n": 50,
+   "k": 34
+  },
+  "unrelated": {
+   "n": 0,
+   "k": 0
+  }
+ },
+ "permutation": {
+  "all": {
+   "n_decisive": 88,
+   "n_agree": 68,
+   "rate": 0.7727,
+   "null_mean": 0.693,
+   "null_sd": 0.0568,
+   "null_valid": 10000,
+   "p": 0.0774,
+   "null_p95": 0.7841
+  },
+  "disjoint": {
+   "n_decisive": 88,
+   "n_agree": 68,
+   "rate": 0.7727,
+   "null_mean": 0.693,
+   "null_sd": 0.0568,
+   "null_valid": 10000,
+   "p": 0.0774,
+   "null_p95": 0.7841
+  }
+ },
+ "n_pairs_sharing_papers": 0
+}

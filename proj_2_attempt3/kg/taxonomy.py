@@ -110,6 +110,34 @@ class Taxonomy:
             return (None, raw, hint, "unresolved")
 
         cands = self.name2ids.get(raw.lower(), [])
+        # A curated synonym the taxdump lookup above did not return. This covers
+        # the 2024-25 reclassifications whose OLD binomials the papers still use --
+        # "Prevotella copri" for Segatella copri, "Eubacterium rectale" for
+        # Agathobacter rectalis -- plus misspellings. Each entry was established by
+        # joining Disbiome's pre-rename name to NCBI on the STABLE taxid; see
+        # species_synonyms.py. Consulted strictly AFTER names.dmp and strictly
+        # BEFORE the trim below, so it can never override a real NCBI answer -- it
+        # only pre-empts throwing the species epithet away and landing on the genus.
+        if not cands:
+            sup = _supplement().get(raw.lower())
+            if sup:
+                return (sup["taxid"], sup["scientific_name"],
+                        sup.get("rank", "species"), "curated synonym")
+        # "Escherichia-Shigella" names TWO genera. Without this, the trim below
+        # discards "Shigella" as though it were a qualifier and files the mention
+        # under Escherichia -- but only when the separator happens to be a space or
+        # underscore, so the same concept lands on four different nodes depending
+        # on punctuation. See multi_taxon.py.
+        if not cands and _mt_norm(raw).lower() in _multi_taxon():
+            return (None, _mt_norm(raw), hint, "multi-taxon")
+        # Brackets are NCBI's own convention for a genus known to be misplaced, so
+        # "[Eubacterium] siraeum" IS a scientific name and must match as written --
+        # which is why this is a fallback after the lookup above, never a
+        # pre-normalisation. Purely additive: it runs only where nothing matched.
+        if not cands and ("[" in raw or "]" in raw):
+            r = self.resolve(raw.replace("[", "").replace("]", ""))
+            if r[0]:
+                return r
         # try trimming qualifier tails: "Clostridium sensu stricto 1" -> "Clostridium"
         if not cands and " " in raw:
             for stop in range(len(raw.split()) - 1, 0, -1):
@@ -131,6 +159,42 @@ class Taxonomy:
         tid, cls = sorted(cands, key=key)[0]
         return (tid, self.sci.get(tid, raw), self.rank.get(tid, hint or "no rank"),
                 "scientific" if cls == "scientific name" else "synonym")
+
+
+_MT = None
+
+
+def _multi_taxon():
+    global _MT
+    if _MT is None:
+        try:
+            from multi_taxon import load_table
+            _MT = load_table()
+        except Exception:
+            _MT = {}
+    return _MT
+
+
+def _mt_norm(s):
+    try:
+        from multi_taxon import norm
+        return norm(s)
+    except Exception:
+        return " ".join(str(s or "").split())
+
+
+_SUP = None
+
+
+def _supplement():
+    global _SUP
+    if _SUP is None:
+        try:
+            from species_synonyms import load_table
+            _SUP = load_table()
+        except Exception:
+            _SUP = {}
+    return _SUP
 
 
 _shared = None

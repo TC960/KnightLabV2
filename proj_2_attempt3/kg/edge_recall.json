@@ -1,0 +1,107 @@
+{
+ "total_candidates": 378,
+ "sample_papers": 24,
+ "sample_candidates": 95,
+ "raw_real_miss": 36,
+ "confirmed": 15,
+ "rate": 0.15789473684210525,
+ "rate_ci": [
+  0.03816793893129771,
+  0.3076923076923077
+ ],
+ "graph_observations": 3077,
+ "recall_point": 0.9809721965870765,
+ "rank_permutation_p": 0.053697315134243286,
+ "confirmed_list": [
+  {
+   "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+   "taxon": "Coprococcus",
+   "direction": "depleted",
+   "rank": "genus"
+  },
+  {
+   "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+   "taxon": "Dorea",
+   "direction": "depleted",
+   "rank": "genus"
+  },
+  {
+   "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+   "taxon": "Cardiobacteriaceae",
+   "direction": "enriched",
+   "rank": "family"
+  },
+  {
+   "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+   "taxon": "Anaerofustis",
+   "direction": "depleted",
+   "rank": "genus"
+  },
+  {
+   "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+   "taxon": "Finegoldia",
+   "direction": "depleted",
+   "rank": "genus"
+  },
+  {
+   "title": "Alterations in Circulating Fatty Acid Are Associated With Gut Microbiota Dysbiosis and Inflammation in Multiple Sclerosis.",
+   "taxon": "Prevotella",
+   "direction": "enriched",
+   "rank": "genus"
+  },
+  {
+   "title": "Study of the gut microbiome in Egyptian patients with Parkinson's Disease.",
+   "taxon": "Prevotella",
+   "direction": "depleted",
+   "rank": "genus"
+  },
+  {
+   "title": "Study of the gut microbiome in Egyptian patients with Parkinson's Disease.",
+   "taxon": "Bacteroidota",
+   "direction": "enriched",
+   "rank": "phylum"
+  },
+  {
+   "title": "Study of the gut microbiome in Egyptian patients with Parkinson's Disease.",
+   "taxon": "Ruminococcus",
+   "direction": "depleted",
+   "rank": "genus"
+  },
+  {
+   "title": "Study of the gut microbiome in Egyptian patients with Parkinson's Disease.",
+   "taxon": "Lactobacillus",
+   "direction": "enriched",
+   "rank": "genus"
+  },
+  {
+   "title": "The effect of multiple sclerosis therapy on gut microbiota dysbiosis: a longitudinal prospective study.",
+   "taxon": "Bifidobacterium",
+   "direction": "depleted",
+   "rank": "genus"
+  },
+  {
+   "title": "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury",
+   "taxon": "Actinomycetota",
+   "direction": "enriched",
+   "rank": "phylum"
+  },
+  {
+   "title": "Characterization of the gut microbiome in Alzheimer disease and mild cognitive impairment among older adults in Uganda: A case-control study.",
+   "taxon": "Acidobacteriota",
+   "direction": "depleted",
+   "rank": "phylum"
+  },
+  {
+   "title": "Characterization of the gut microbiome in Alzheimer disease and mild cognitive impairment among older adults in Uganda: A case-control study.",
+   "taxon": "Bacillota",
+   "direction": "depleted",
+   "rank": "phylum"
+  },
+  {
+   "title": "Characterization of the gut microbiome in Alzheimer disease and mild cognitive impairment among older adults in Uganda: A case-control study.",
+   "taxon": "Pseudomonadota",
+   "direction": "depleted",
+   "rank": "phylum"
+  }
+ ]
+}

@@ -1,0 +1,326 @@
+{
+ "iters": 3000,
+ "seed": 42,
+ "marginal": [
+  {
+   "source": "Disbiome",
+   "predictor": "evidence >=2 papers",
+   "stratum": "(all)",
+   "n_hi": 63,
+   "n_lo": 111,
+   "diff": 0.1995,
+   "p": 0.0027,
+   "mde": 0.1375,
+   "ci": [
+    0.0778,
+    0.3216
+   ],
+   "q_bh": 0.008
+  },
+  {
+   "source": "Disbiome",
+   "predictor": "not discriminating",
+   "stratum": "(all)",
+   "n_hi": 152,
+   "n_lo": 22,
+   "diff": 0.4193,
+   "p": 0.0007,
+   "mde": 0.1962,
+   "ci": [
+    0.2204,
+    0.6644
+   ],
+   "q_bh": 0.0053
+  },
+  {
+   "source": "Disbiome",
+   "predictor": "species rank",
+   "stratum": "(all)",
+   "n_hi": 44,
+   "n_lo": 130,
+   "diff": 0.2703,
+   "p": 0.0017,
+   "mde": 0.1543,
+   "ci": [
+    0.1592,
+    0.3831
+   ],
+   "q_bh": 0.008
+  },
+  {
+   "source": "Peryton",
+   "predictor": "evidence >=2 papers",
+   "stratum": "(all)",
+   "n_hi": 57,
+   "n_lo": 81,
+   "diff": 0.2599,
+   "p": 0.0013,
+   "mde": 0.1508,
+   "ci": [
+    0.1097,
+    0.3989
+   ],
+   "q_bh": 0.008
+  },
+  {
+   "source": "Peryton",
+   "predictor": "not discriminating",
+   "stratum": "(all)",
+   "n_hi": 128,
+   "n_lo": 10,
+   "diff": 0.35,
+   "p": 0.0293,
+   "mde": 0.2874,
+   "ci": [
+    0.1061,
+    0.7402
+   ],
+   "q_bh": 0.0586
+  },
+  {
+   "source": "Peryton",
+   "predictor": "species rank",
+   "stratum": "(all)",
+   "n_hi": 27,
+   "n_lo": 111,
+   "diff": 0.2042,
+   "p": 0.0506,
+   "mde": 0.1898,
+   "ci": [
+    0.0402,
+    0.3423
+   ],
+   "q_bh": 0.0935
+  }
+ ],
+ "stratified": [
+  {
+   "source": "Disbiome",
+   "predictor": "evidence >=2 papers",
+   "stratum": "discriminating",
+   "n_hi": 4,
+   "n_lo": 18,
+   "diff": 0.4722,
+   "p": 0.1243,
+   "mde": 0.5432,
+   "q_bh": 0.1657
+  },
+  {
+   "source": "Disbiome",
+   "predictor": "evidence >=2 papers",
+   "stratum": "not discriminating",
+   "n_hi": 59,
+   "n_lo": 93,
+   "diff": 0.1332,
+   "p": 0.066,
+   "mde": 0.1355,
+   "q_bh": 0.108
+  },
+  {
+   "source": "Disbiome",
+   "predictor": "evidence >=2 papers",
+   "stratum": "species",
+   "n_hi": 13,
+   "n_lo": 31,
+   "diff": 0.0968,
+   "p": 0.5458,
+   "mde": 0.1665,
+   "q_bh": 0.5695
+  },
+  {
+   "source": "Disbiome",
+   "predictor": "evidence >=2 papers",
+   "stratum": "not species",
+   "n_hi": 50,
+   "n_lo": 80,
+   "diff": 0.2575,
+   "p": 0.006,
+   "mde": 0.1676,
+   "q_bh": 0.0131
+  },
+  {
+   "source": "Disbiome",
+   "predictor": "not discriminating",
+   "stratum": "1 paper",
+   "n_hi": 93,
+   "n_lo": 18,
+   "diff": 0.4534,
+   "p": 0.0003,
+   "mde": 0.2352,
+   "q_bh": 0.004
+  },
+  {
+   "source": "Disbiome",
+   "predictor": "not discriminating",
+   "stratum": ">=2 papers",
+   "n_hi": 59,
+   "n_lo": 4,
+   "diff": 0.1144,
+   "p": 1.0,
+   "mde": 0.3604,
+   "q_bh": 1.0
+  },
+  {
+   "source": "Disbiome",
+   "predictor": "not discriminating",
+   "stratum": "not species",
+   "n_hi": 110,
+   "n_lo": 20,
+   "diff": 0.3682,
+   "p": 0.0027,
+   "mde": 0.224,
+   "q_bh": 0.008
+  },
+  {
+   "source": "Disbiome",
+   "predictor": "species rank",
+   "stratum": "1 paper",
+   "n_hi": 31,
+   "n_lo": 80,
+   "diff": 0.3407,
+   "p": 0.0003,
+   "mde": 0.1987,
+   "q_bh": 0.004
+  },
+  {
+   "source": "Disbiome",
+   "predictor": "species rank",
+   "stratum": ">=2 papers",
+   "n_hi": 13,
+   "n_lo": 50,
+   "diff": 0.18,
+   "p": 0.1783,
+   "mde": 0.2143,
+   "q_bh": 0.2139
+  },
+  {
+   "source": "Disbiome",
+   "predictor": "species rank",
+   "stratum": "not discriminating",
+   "n_hi": 42,
+   "n_lo": 110,
+   "diff": 0.2342,
+   "p": 0.002,
+   "mde": 0.1478,
+   "q_bh": 0.008
+  },
+  {
+   "source": "Peryton",
+   "predictor": "evidence >=2 papers",
+   "stratum": "not discriminating",
+   "n_hi": 54,
+   "n_lo": 74,
+   "diff": 0.2402,
+   "p": 0.006,
+   "mde": 0.1509,
+   "q_bh": 0.0131
+  },
+  {
+   "source": "Peryton",
+   "predictor": "evidence >=2 papers",
+   "stratum": "species",
+   "n_hi": 12,
+   "n_lo": 15,
+   "diff": 0.2,
+   "p": 0.2379,
+   "mde": 0.2445,
+   "q_bh": 0.2719
+  },
+  {
+   "source": "Peryton",
+   "predictor": "evidence >=2 papers",
+   "stratum": "not species",
+   "n_hi": 45,
+   "n_lo": 66,
+   "diff": 0.2687,
+   "p": 0.006,
+   "mde": 0.177,
+   "q_bh": 0.0131
+  },
+  {
+   "source": "Peryton",
+   "predictor": "not discriminating",
+   "stratum": "1 paper",
+   "n_hi": 74,
+   "n_lo": 7,
+   "diff": 0.3629,
+   "p": 0.096,
+   "mde": 0.3808,
+   "q_bh": 0.1355
+  },
+  {
+   "source": "Peryton",
+   "predictor": "not discriminating",
+   "stratum": "not species",
+   "n_hi": 101,
+   "n_lo": 10,
+   "diff": 0.3129,
+   "p": 0.072,
+   "mde": 0.3036,
+   "q_bh": 0.108
+  },
+  {
+   "source": "Peryton",
+   "predictor": "species rank",
+   "stratum": "1 paper",
+   "n_hi": 15,
+   "n_lo": 66,
+   "diff": 0.2242,
+   "p": 0.143,
+   "mde": 0.2705,
+   "q_bh": 0.1806
+  },
+  {
+   "source": "Peryton",
+   "predictor": "species rank",
+   "stratum": ">=2 papers",
+   "n_hi": 12,
+   "n_lo": 45,
+   "diff": 0.1556,
+   "p": 0.3299,
+   "mde": 0.2091,
+   "q_bh": 0.3599
+  },
+  {
+   "source": "Peryton",
+   "predictor": "species rank",
+   "stratum": "not discriminating",
+   "n_hi": 27,
+   "n_lo": 101,
+   "diff": 0.176,
+   "p": 0.071,
+   "mde": 0.1821,
+   "q_bh": 0.108
+  }
+ ],
+ "composition": [
+  {
+   "source": "Disbiome",
+   "group": "discriminating",
+   "n": 22,
+   "mean_n_papers": 1.409,
+   "frac_single_paper": 0.818
+  },
+  {
+   "source": "Disbiome",
+   "group": "not discriminating",
+   "n": 152,
+   "mean_n_papers": 2.197,
+   "frac_single_paper": 0.612
+  },
+  {
+   "source": "Peryton",
+   "group": "discriminating",
+   "n": 10,
+   "mean_n_papers": 1.6,
+   "frac_single_paper": 0.7
+  },
+  {
+   "source": "Peryton",
+   "group": "not discriminating",
+   "n": 128,
+   "mean_n_papers": 2.289,
+   "frac_single_paper": 0.578
+  }
+ ]
+}
