@@ -1,0 +1,762 @@
+[
+ {
+  "title": "The Gut Microbiome in Progressive Multiple Sclerosis",
+  "taxon": "Oscillospiraceae",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Taxon not mentioned in any of the provided sentences; appears to be a filter false positive"
+ },
+ {
+  "title": "The Gut Microbiome in Progressive Multiple Sclerosis",
+  "taxon": "Pseudoflavonifractor",
+  "verdict": "ALREADY_COVERED",
+  "direction": null,
+  "quote": null,
+  "note": "Covered by edges_taxa entry 'Pseudoflavonifractor PAC001038' (species within genus)"
+ },
+ {
+  "title": "The Gut Microbiome in Progressive Multiple Sclerosis",
+  "taxon": "Eisenbergiella",
+  "verdict": "ALREADY_COVERED",
+  "direction": null,
+  "quote": null,
+  "note": "Covered by edges_taxa entry 'Eisenbergiella KE992700' (species within genus)"
+ },
+ {
+  "title": "The Gut Microbiome in Progressive Multiple Sclerosis",
+  "taxon": "Lachnospiraceae",
+  "verdict": "ALREADY_COVERED",
+  "direction": null,
+  "quote": null,
+  "note": "Covered by edges_taxa entries 'Lachnospiraceae PAC001046' and 'Lachnospiraceae PAC002349'"
+ },
+ {
+  "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+  "taxon": "Coprococcus",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "the relative abundance of Lachnospiraceae , Blautia , Coprococcus , Turicibacterales , Anaerofustis , Dorea , and Finegoldia was significantly higher in the control group.",
+  "note": "Higher in controls means depleted in encephalopathy patients; direction from comparative statement"
+ },
+ {
+  "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+  "taxon": "Dorea",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "the relative abundance of Lachnospiraceae , Blautia , Coprococcus , Turicibacterales , Anaerofustis , Dorea , and Finegoldia was significantly higher in the control group.",
+  "note": "Higher in controls means depleted in disease patients"
+ },
+ {
+  "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+  "taxon": "Clostridium",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence mentions specific species 'Clostridium clostridioforme' not the genus; species rank differs from missing entry rank"
+ },
+ {
+  "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+  "taxon": "Collinsella stercoris",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "in the control group, there was a significant increase in the relative abundance of Collinsella stercoris",
+  "note": "Increased in control group means depleted in encephalopathy patients"
+ },
+ {
+  "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+  "taxon": "Enterococcus",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence mentions specific species 'Enterococcus casseliflavus' not the genus; species rank differs from missing entry rank"
+ },
+ {
+  "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+  "taxon": "Cardiobacteriaceae",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "the relative abundance of Bacteroidia , Streptococcaceae , Cardiobacteriaceae , Veillonella , Bacteroidales , and Pasteurellales was significantly higher in the HBV-LC group than in the control group",
+  "note": "Higher in HBV-LC patients vs control group"
+ },
+ {
+  "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+  "taxon": "Anaerofustis",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "the relative abundance of Lachnospiraceae , Blautia , Coprococcus , Turicibacterales , Anaerofustis , Dorea , and Finegoldia was significantly higher in the control group.",
+  "note": "Higher in control group means depleted in disease patients"
+ },
+ {
+  "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+  "taxon": "Finegoldia",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "the relative abundance of Lachnospiraceae , Blautia , Coprococcus , Turicibacterales , Anaerofustis , Dorea , and Finegoldia was significantly higher in the control group.",
+  "note": "Higher in control group means depleted in disease patients"
+ },
+ {
+  "title": "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses.",
+  "taxon": "Bacillota",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "the average relative abundance of phylum Firmicutes in patients with ALS was 4.7% higher than that of healthy individuals.",
+  "note": "Firmicutes (old name) is higher in ALS patients; Bacillota is the new taxonomic name"
+ },
+ {
+  "title": "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses.",
+  "taxon": "Negativicutes",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "the relative abundance of classes Negativicutes and Bacilli in patients with ALS was on the decline, compared with that of healthy individuals",
+  "note": "On the decline in ALS patients vs healthy individuals"
+ },
+ {
+  "title": "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses.",
+  "taxon": "Bacilli",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "the relative abundance of classes Negativicutes and Bacilli in patients with ALS was on the decline, compared with that of healthy individuals",
+  "note": "On the decline in ALS patients vs healthy individuals"
+ },
+ {
+  "title": "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses.",
+  "taxon": "Blautia",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": "the top ten genera in patients with ALS and healthy individuals were Bacteroides , Blautia , Faecalibacterium , Escherichia-Shigella , Anaerostipes , Streptococcus , Akkermansia , Fusicatenibacter , Megamonas , and Bifidobacterium",
+  "note": "Listing of abundant genera without comparative abundance or direction statement"
+ },
+ {
+  "title": "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses.",
+  "taxon": "Anaerostipes",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": "the top ten genera in patients with ALS and healthy individuals were Bacteroides , Blautia , Faecalibacterium , Escherichia-Shigella , Anaerostipes , Streptococcus , Akkermansia , Fusicatenibacter , Megamonas , and Bifidobacterium",
+  "note": "Listing of abundant genera without comparative abundance or direction statement"
+ },
+ {
+  "title": "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses.",
+  "taxon": "Streptococcus",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": "the top ten genera in patients with ALS and healthy individuals were Bacteroides , Blautia , Faecalibacterium , Escherichia-Shigella , Anaerostipes , Streptococcus , Akkermansia , Fusicatenibacter , Megamonas , and Bifidobacterium",
+  "note": "Listing of abundant genera without comparative abundance or direction statement"
+ },
+ {
+  "title": "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses.",
+  "taxon": "Akkermansia",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": "the top ten genera in patients with ALS and healthy individuals were Bacteroides , Blautia , Faecalibacterium , Escherichia-Shigella , Anaerostipes , Streptococcus , Akkermansia , Fusicatenibacter , Megamonas , and Bifidobacterium",
+  "note": "Listing of abundant genera without comparative abundance or direction statement"
+ },
+ {
+  "title": "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses.",
+  "taxon": "Fusicatenibacter",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": "the top ten genera in patients with ALS and healthy individuals were Bacteroides , Blautia , Faecalibacterium , Escherichia-Shigella , Anaerostipes , Streptococcus , Akkermansia , Fusicatenibacter , Megamonas , and Bifidobacterium",
+  "note": "Listing of abundant genera without comparative abundance or direction statement"
+ },
+ {
+  "title": "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses.",
+  "taxon": "Megamonas",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": "the top ten genera in patients with ALS and healthy individuals were Bacteroides , Blautia , Faecalibacterium , Escherichia-Shigella , Anaerostipes , Streptococcus , Akkermansia , Fusicatenibacter , Megamonas , and Bifidobacterium",
+  "note": "Listing of abundant genera without comparative abundance or direction statement"
+ },
+ {
+  "title": "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses.",
+  "taxon": "Bifidobacterium",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": "the top ten genera in patients with ALS and healthy individuals were Bacteroides , Blautia , Faecalibacterium , Escherichia-Shigella , Anaerostipes , Streptococcus , Akkermansia , Fusicatenibacter , Megamonas , and Bifidobacterium",
+  "note": "Listing of abundant genera without comparative abundance or direction statement"
+ },
+ {
+  "title": "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses.",
+  "taxon": "Methanobacteriota",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence mentions phyla 'Euryarchaeota' and 'Methanobacteria' (class) but not 'Methanobacteriota'; cannot confirm these are same concept without outside knowledge"
+ },
+ {
+  "title": "Intestinal microbiota composition in patients with amyotrophic lateral sclerosis: establishment of bacterial and archaeal communities analyses.",
+  "taxon": "Bacteroidota",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "a lower percent of phylum Bacteroidetes were found in patients with ALS",
+  "note": "Bacteroidetes (old name) lower in ALS patients; Bacteroidota is the new taxonomic name"
+ },
+ {
+  "title": "Perturbed Microbiota/Immune Homeostasis in Multiple Sclerosis.",
+  "taxon": "Eubacteriales",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence mentions 'unclassified Clostridiales' (different order) not 'Eubacteriales'; finding is also not statistically significant (p=0.06)"
+ },
+ {
+  "title": "Multiple sclerosis patients have a distinct gut microbiota compared to healthy controls.",
+  "taxon": "Pseudomonadota",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence mentions 'Proteobacteria' (phylum) and 'Pseudomonas' (genus) not 'Pseudomonadota'; cannot confirm they are same concept without outside knowledge"
+ },
+ {
+  "title": "Multiple sclerosis patients have a distinct gut microbiota compared to healthy controls.",
+  "taxon": "Bacteroidota",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence mentions 'Bacteroidetes' (old name) with mixed directions at genus level (Pedobacter enriched in RRMS, Parabacteroides enriched in controls); no clear phylum-level direction"
+ },
+ {
+  "title": "Multiple sclerosis patients have a distinct gut microbiota compared to healthy controls.",
+  "taxon": "Bacillota",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence mentions 'Firmicutes' (old name) with mixed directions at genus level (Blautia and Dorea enriched in RRMS, Lactobacillus enriched in controls); no clear phylum-level direction"
+ },
+ {
+  "title": "Multiple sclerosis patients have a distinct gut microbiota compared to healthy controls.",
+  "taxon": "Actinomycetota",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence mentions 'Actinobacteria' (old name) at genus level only (Adlercreutzia and Collinsella enriched in controls); cannot infer phylum-level direction from genera alone"
+ },
+ {
+  "title": "Gut microbiota in multiple sclerosis: possible influence of immunomodulators.",
+  "taxon": "Lachnospiraceae",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": "OTUs within RikenellaceaeII, Lachnospiraceae, Porphyromonadaceae, Bacteroides and Oscillibacter... collectively may predict whether samples prior to vitamin D supplementation came from MS patients or healthy controls.",
+  "note": "Mentioned as predictive with 'contrasting hybridization scores' but no abundance direction stated"
+ },
+ {
+  "title": "Gut microbiota in multiple sclerosis: possible influence of immunomodulators.",
+  "taxon": "Porphyromonadaceae",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": "OTUs within RikenellaceaeII, Lachnospiraceae, Porphyromonadaceae, Bacteroides and Oscillibacter... collectively may predict whether samples prior to vitamin D supplementation came from MS patients or healthy controls.",
+  "note": "Mentioned as predictive with 'contrasting hybridization scores' but no abundance direction stated"
+ },
+ {
+  "title": "Gut microbiota in multiple sclerosis: possible influence of immunomodulators.",
+  "taxon": "Bacteroides",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": "OTUs within RikenellaceaeII, Lachnospiraceae, Porphyromonadaceae, Bacteroides and Oscillibacter... collectively may predict whether samples prior to vitamin D supplementation came from MS patients or healthy controls.",
+  "note": "Mentioned as predictive with 'contrasting hybridization scores' but no abundance direction stated"
+ },
+ {
+  "title": "Gut microbiota in multiple sclerosis: possible influence of immunomodulators.",
+  "taxon": "Oscillibacter",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": "OTUs within RikenellaceaeII, Lachnospiraceae, Porphyromonadaceae, Bacteroides and Oscillibacter... collectively may predict whether samples prior to vitamin D supplementation came from MS patients or healthy controls.",
+  "note": "Mentioned as predictive with 'contrasting hybridization scores' but no abundance direction stated"
+ },
+ {
+  "title": "Gut microbiota in multiple sclerosis: possible influence of immunomodulators.",
+  "taxon": "Akkermansia",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "Compared to HC and GA-treated MS subjects, untreated MS subjects had an increase in the Akkermansia",
+  "note": "Increased in untreated MS patients compared to healthy controls"
+ },
+ {
+  "title": "Gut microbiota in multiple sclerosis: possible influence of immunomodulators.",
+  "taxon": "Coprococcus",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "Compared to HC and GA-treated MS subjects, untreated MS subjects had an increase in the Coprococcus genera",
+  "note": "Increased in untreated MS patients compared to healthy controls"
+ },
+ {
+  "title": "Gut microbiota in multiple sclerosis: possible influence of immunomodulators.",
+  "taxon": "Eubacterium",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": "Compared to healthy participants and untreated MS subjects, those treated with GA had decreases in Eubacterium",
+  "note": "Sentence describes GA treatment effect (GA-treated MS vs both HC and untreated MS) but direction for untreated MS vs HC is not explicitly stated"
+ },
+ {
+  "title": "Alterations in Circulating Fatty Acid Are Associated With Gut Microbiota Dysbiosis and Inflammation in Multiple Sclerosis.",
+  "taxon": "Lachnospiraceae",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "we found a dramatic depletion of bacterial genera belonging to the Lachnospiraceae family",
+  "note": "Family-level; edges_taxa has genus Lachnospira (different rank). Clear finding from paper's own analysis."
+ },
+ {
+  "title": "Alterations in Circulating Fatty Acid Are Associated With Gut Microbiota Dysbiosis and Inflammation in Multiple Sclerosis.",
+  "taxon": "Prevotella",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "whose relative abundance showed a 2.7-fold increase in MS compared to HC",
+  "note": "Explicit comparison and direction. Not in edges_taxa."
+ },
+ {
+  "title": "Study of the gut microbiome in Egyptian patients with Parkinson's Disease.",
+  "taxon": "Prevotella",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "Although Prevotella was decreased among PD patients relative to the healthy control",
+  "note": "Clear direction stated, though not statistically significant. Paper explicitly compares PD patients to healthy control."
+ },
+ {
+  "title": "Study of the gut microbiome in Egyptian patients with Parkinson's Disease.",
+  "taxon": "Bacteroidota",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "although the Bacteroidetes was increased",
+  "note": "Bacteroidetes is old name for Bacteroidota (phylum). Edges_taxa has Bacteroides (genus), which is different rank."
+ },
+ {
+  "title": "Study of the gut microbiome in Egyptian patients with Parkinson's Disease.",
+  "taxon": "Ruminococcus",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "we found an insignificant decreased level in samples of our PD patients compared to controls",
+  "note": "Explicit directional statement and patient-control comparison. Not significant, but direction is clear."
+ },
+ {
+  "title": "Study of the gut microbiome in Egyptian patients with Parkinson's Disease.",
+  "taxon": "Lactobacillus",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "we noticed an insignificant increased relative abundance in PD patients compared to controls",
+  "note": "Explicit directional statement with patient-control comparison. Not significant, but direction is clear."
+ },
+ {
+  "title": "Distinct Gut Microbiota Composition and Functional Category in Children With Cerebral Palsy and Epilepsy",
+  "taxon": "Parabacteroides",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence describes CPE samples as 'dominated by' these taxa, but does not explicitly state comparative abundance of Parabacteroides in CPE vs healthy controls. Being conservative: implication present but direction not explicitly stated."
+ },
+ {
+  "title": "Specific Bacterial Taxa and Their Metabolite, DHPS, May Be Linked to Gut Dyshomeostasis in Patients with Alzheimer's Disease, Parkinson's Disease, and Amyotrophic Lateral Sclerosis.",
+  "taxon": "Bacillota",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "phylum-level differences in the abundance of Firmicutes in PD (53%) compared to HC (67%) stool",
+  "note": "Firmicutes (old name for Bacillota) is lower in PD (53%) than HC (67%). Clear directional finding. Covers PD, one of the paper's three diseases."
+ },
+ {
+  "title": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson's disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
+  "taxon": "Coprobacter",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence lists genera as enriched in PD-RBD(-) but does not specify comparison for Coprobacter. Leuconostoc and Citrobacter have explicit comparisons; Coprobacter and Thomasclavelia do not."
+ },
+ {
+  "title": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson's disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
+  "taxon": "Thomasclavelia",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence lists genera as enriched in PD-RBD(-) but does not specify comparison for Thomasclavelia (formerly Erysipelatoclostridium). Comparison not explicitly stated."
+ },
+ {
+  "title": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson's disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
+  "taxon": "Leuconostoc",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "Leuconostoc (when compared to HC) were enriched",
+  "note": "Explicit comparison to healthy controls with clear direction in PD-RBD(-) group."
+ },
+ {
+  "title": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson's disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
+  "taxon": "Citrobacter",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Enriched in PD-RBD(-) when compared to PD-RBD(+). Both are disease subtypes, not disease vs healthy control comparison. Extractor schema requires disease vs control."
+ },
+ {
+  "title": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson's disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
+  "taxon": "Escherichia coli",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence describes increases in E. coli biofilm pathway genes (curli operon, csgD, csgE, csgA), not taxon abundance. Claim is about gene expression/abundance, not organism abundance."
+ },
+ {
+  "title": "Dysbiosis of Gut Microbiota and Short-Chain Fatty Acids in Acute Ischemic Stroke and the Subsequent Risk for Poor Functional Outcomes",
+  "taxon": "Bacillota",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": null,
+  "note": "F/B ratio higher in AIS patients than controls. Cannot determine direction for Bacillota alone from ratio (could be Firmicutes enriched or Bacteroidetes depleted or both)."
+ },
+ {
+  "title": "Dysbiosis of Gut Microbiota and Short-Chain Fatty Acids in Acute Ischemic Stroke and the Subsequent Risk for Poor Functional Outcomes",
+  "taxon": "Bacteroidota",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": null,
+  "note": "F/B ratio higher in AIS patients than controls. Cannot determine direction for Bacteroidota alone from ratio (could be Firmicutes enriched or Bacteroidetes depleted or both)."
+ },
+ {
+  "title": "The effect of multiple sclerosis therapy on gut microbiota dysbiosis: a longitudinal prospective study.",
+  "taxon": "Bifidobacterium",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "reduced Faecalibacterium prausnitzii , Bifidobacterium , and Lachnospiraceae compared to the HC group",
+  "note": "Genus-level finding; edges have species (B. adolescentis, B. angulatum), different rank"
+ },
+ {
+  "title": "Altered Gut Microbiota Related to Inflammatory Responses in Patients With Huntington's Disease.",
+  "taxon": "Bacteroides",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence gives ratio (0.78) between groups but does not explicitly state direction (higher/lower)"
+ },
+ {
+  "title": "Altered Gut Microbiota Related to Inflammatory Responses in Patients With Huntington's Disease.",
+  "taxon": "Prevotella",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence gives ratio (1.18) between groups but does not explicitly state direction (higher/lower)"
+ },
+ {
+  "title": "Primary progressive multiple sclerosis in a Russian cohort: relationship with gut bacterial diversity.",
+  "taxon": "Phascolarctobacterium",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence describes composition of Acidaminococcaceae family; notes some rows differ significantly but does not state direction for this taxon"
+ },
+ {
+  "title": "Primary progressive multiple sclerosis in a Russian cohort: relationship with gut bacterial diversity.",
+  "taxon": "Acidaminococcus",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence describes composition of Acidaminococcaceae family; notes some rows differ significantly but does not state direction for this taxon"
+ },
+ {
+  "title": "Primary progressive multiple sclerosis in a Russian cohort: relationship with gut bacterial diversity.",
+  "taxon": "Phascolarctobacterium faecium",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence describes composition of Acidaminococcaceae family; notes some rows differ significantly but does not state direction for this taxon"
+ },
+ {
+  "title": "The alteration of intestinal mucosal \u03b1-synuclein expression and mucosal microbiota in Parkinson's disease.",
+  "taxon": "Bacteroidota",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "the relative abundances of Bacteroidetes and Proteobacteria were the highest in the duodenal mucosa of the controls and PD patients, respectively",
+  "note": "Bacteroidetes (old name) was highest in controls (duodenal), implying lower in PD patients"
+ },
+ {
+  "title": "The alteration of intestinal mucosal \u03b1-synuclein expression and mucosal microbiota in Parkinson's disease.",
+  "taxon": "Bacillota",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence states Firmicutes were highest in sigmoid but does not clarify which groups or direction of change"
+ },
+ {
+  "title": "The alteration of intestinal mucosal \u03b1-synuclein expression and mucosal microbiota in Parkinson's disease.",
+  "taxon": "Bacteroides",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": null,
+  "note": "Site-specific findings: highest in controls (duodenal) but highest in both groups (sigmoid); no clear overall direction"
+ },
+ {
+  "title": "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury",
+  "taxon": "Synergistota",
+  "verdict": "ALREADY_COVERED",
+  "direction": null,
+  "quote": null,
+  "note": "Synergistota (modern name for Synergistetes) already in edges_taxa"
+ },
+ {
+  "title": "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury",
+  "taxon": "Mediterraneibacter torques",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence mentions [Ruminococcus] torques group, not Mediterraneibacter torques; different organism names"
+ },
+ {
+  "title": "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury",
+  "taxon": "Ruminococcus",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence lists specific Ruminococcus species/groups (Ruminococcus 1, 2, torques group) but not genus unspecified"
+ },
+ {
+  "title": "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury",
+  "taxon": "Christensenellaceae",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence mentions Christensenellaceae R-7 group (subgroup), not family-level; different ranks"
+ },
+ {
+  "title": "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury",
+  "taxon": "Eubacterium",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence mentions [Eubacterium] ruminantium group (subgroup), not genus unspecified"
+ },
+ {
+  "title": "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury",
+  "taxon": "Ruminiclostridium",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence mentions Ruminiclostridium 9, 6, 5 (specific strains/species), not genus unspecified"
+ },
+ {
+  "title": "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury",
+  "taxon": "Veillonella",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence discusses correlation with immune cell subsets (NK, CIK cells), not disease-vs-control abundance"
+ },
+ {
+  "title": "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury",
+  "taxon": "Sutterella",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Sentence discusses correlation with immune cell subsets (CIK cells), not disease-vs-control abundance"
+ },
+ {
+  "title": "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury",
+  "taxon": "Actinomycetota",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "significant increase in the relative abundance of Actinobacteria and Synergistetes, etc. in SCI patients than in healthy controls",
+  "note": "Actinobacteria (old name) = Actinomycetota; significantly increased in SCI vs controls"
+ },
+ {
+  "title": "Mycobacterium avium subspecies paratuberculosis (MAP) infection, and its impact on gut microbiome of individuals with multiple sclerosis.",
+  "taxon": "Methanobacteriaceae",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": null,
+  "note": "Listed as part of distinct profile in MS but no direction (enriched/depleted) stated"
+ },
+ {
+  "title": "Mycobacterium avium subspecies paratuberculosis (MAP) infection, and its impact on gut microbiome of individuals with multiple sclerosis.",
+  "taxon": "Enterobacterales",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": null,
+  "note": "Listed as part of distinct profile in MS but no direction (enriched/depleted) stated"
+ },
+ {
+  "title": "Gut microbiota as predictors of the occurrence of high on-treatment platelet reactivity in acute ischemic stroke patients",
+  "taxon": "Ralstonia",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Ralstonia appears in a predictive combination statement and in HTPR vs NHTPR comparison, not in an explicit AIS patients vs controls finding"
+ },
+ {
+  "title": "Gut microbiota as predictors of the occurrence of high on-treatment platelet reactivity in acute ischemic stroke patients",
+  "taxon": "Anaerofustis",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Appears in a predictive combination statement, not a disease-vs-control abundance finding"
+ },
+ {
+  "title": "Gut microbiota as predictors of the occurrence of high on-treatment platelet reactivity in acute ischemic stroke patients",
+  "taxon": "Aggregatibacter",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Appears in a predictive combination statement, not a disease-vs-control abundance finding"
+ },
+ {
+  "title": "Gut microbiota as predictors of the occurrence of high on-treatment platelet reactivity in acute ischemic stroke patients",
+  "taxon": "Alloprevotella",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Appears in a predictive combination statement for AIS, but not stated as a direction-specific finding"
+ },
+ {
+  "title": "Gut microbiota as predictors of the occurrence of high on-treatment platelet reactivity in acute ischemic stroke patients",
+  "taxon": "Proteus",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Appears in a predictive combination statement for AIS, but not stated as a direction-specific finding"
+ },
+ {
+  "title": "Gut microbiome, cognitive function and brain structure: a multi-omics integration analysis",
+  "taxon": "Bacillota",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "Firmicutes was more abundant in the mild group",
+  "note": "Phylum level finding with direction stated in disease (mild) vs control (normal)"
+ },
+ {
+  "title": "Gut microbiome, cognitive function and brain structure: a multi-omics integration analysis",
+  "taxon": "Bacteroidota",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "Bacteroidetes was relatively more abundant in the normal group",
+  "note": "Phylum level finding; higher in control means depleted in disease"
+ },
+ {
+  "title": "Gut microbiota links with cognitive impairment in amyotrophic lateral sclerosis: A multi-omics study.",
+  "taxon": "Bacillota",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": "The Firmicutes to Bacteroidetes (F/B) ratio was comparable between ALS patients and healthy controls",
+  "note": "Sentence states groups were comparable (no difference), not that one was higher or lower"
+ },
+ {
+  "title": "Gut microbiota links with cognitive impairment in amyotrophic lateral sclerosis: A multi-omics study.",
+  "taxon": "Bacteroidota",
+  "verdict": "NO_DIRECTION",
+  "direction": null,
+  "quote": "The Firmicutes to Bacteroidetes (F/B) ratio was comparable between ALS patients and healthy controls",
+  "note": "Sentence states groups were comparable (no difference), not that one was higher or lower"
+ },
+ {
+  "title": "Oral and gut microbial profiling in periodontitis and Parkinson's disease.",
+  "taxon": "Rothia dentocariosa",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "we detected increasing abundances of Rothia dentocariosa and Gamella sanguinis in HC group",
+  "note": "Higher in healthy controls means depleted in PD patients"
+ },
+ {
+  "title": "Oral and gut microbial profiling in periodontitis and Parkinson's disease.",
+  "taxon": "Mycoplasma",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "Mycoplasma faucium (M. faucium), Tannerella forsythia (T. forsythia), Parvimonas micra (P. micra) and Saccharibacteria (TM7) subspecies were increased in P group",
+  "note": "Genus level finding; increased in Parkinson's group P"
+ },
+ {
+  "title": "Oral and gut microbial profiling in periodontitis and Parkinson's disease.",
+  "taxon": "Tannerella",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "Mycoplasma faucium (M. faucium), Tannerella forsythia (T. forsythia), Parvimonas micra (P. micra) and Saccharibacteria (TM7) subspecies were increased in P group",
+  "note": "Genus level finding; increased in Parkinson's group P"
+ },
+ {
+  "title": "Oral and gut microbial profiling in periodontitis and Parkinson's disease.",
+  "taxon": "Parvimonas",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "Mycoplasma faucium (M. faucium), Tannerella forsythia (T. forsythia), Parvimonas micra (P. micra) and Saccharibacteria (TM7) subspecies were increased in P group",
+  "note": "Genus level finding; increased in Parkinson's group P"
+ },
+ {
+  "title": "Oral and gut microbial profiling in periodontitis and Parkinson's disease.",
+  "taxon": "Prevotella",
+  "verdict": "ALREADY_COVERED",
+  "direction": null,
+  "quote": null,
+  "note": "Prevotella pallens and Prevotella melaninogenica already in edges_taxa; genus is covered by species"
+ },
+ {
+  "title": "Characterization of the gut microbiome in Alzheimer disease and mild cognitive impairment among older adults in Uganda: A case-control study.",
+  "taxon": "Acidobacteriota",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "The relative abundance of Acidobacteria and Firmicutes was significantly higher in the control group than in the Dementia and MCI groups",
+  "note": "Higher in control means depleted in disease (AD)"
+ },
+ {
+  "title": "Characterization of the gut microbiome in Alzheimer disease and mild cognitive impairment among older adults in Uganda: A case-control study.",
+  "taxon": "Bacillota",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "The relative abundance of Acidobacteria and Firmicutes was significantly higher in the control group than in the Dementia and MCI groups",
+  "note": "Higher in control means depleted in disease (AD)"
+ },
+ {
+  "title": "Characterization of the gut microbiome in Alzheimer disease and mild cognitive impairment among older adults in Uganda: A case-control study.",
+  "taxon": "Pseudomonadota",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "the Control group exhibited a significantly higher relative abundance than the Dementia and MCI groups did",
+  "note": "Higher in control means depleted in disease (AD)"
+ },
+ {
+  "title": "Characterization of the gut microbiome in Alzheimer disease and mild cognitive impairment among older adults in Uganda: A case-control study.",
+  "taxon": "Streptococcus",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "Streptococcus ( P =.00021), were more abundant in the control group (blue bars)",
+  "note": "Higher in control group means depleted in disease (AD)"
+ },
+ {
+  "title": "Hemorrhagic transformation in patients with large-artery atherosclerotic stroke is associated with the gut microbiota and lipopolysaccharide",
+  "taxon": "Bacillota",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "First sentence emphasizes HC network without explicit disease comparison; second sentence lists Firmicutes as largest in all groups"
+ },
+ {
+  "title": "Hemorrhagic transformation in patients with large-artery atherosclerotic stroke is associated with the gut microbiota and lipopolysaccharide",
+  "taxon": "Pseudomonadaceae",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Listed as most abundant family across groups, but no directional comparison stated"
+ },
+ {
+  "title": "Hemorrhagic transformation in patients with large-artery atherosclerotic stroke is associated with the gut microbiota and lipopolysaccharide",
+  "taxon": "Lachnospiraceae",
+  "verdict": "NOT_ATTRIBUTED",
+  "direction": null,
+  "quote": null,
+  "note": "Listed as most abundant family across groups, but no directional comparison stated"
+ },
+ {
+  "title": "Hemorrhagic transformation in patients with large-artery atherosclerotic stroke is associated with the gut microbiota and lipopolysaccharide",
+  "taxon": "Acidobacteriota",
+  "verdict": "REAL_MISS",
+  "direction": "depleted",
+  "quote": "healthy subjects had higher levels of anti-inflammatory microbiome taxa than HT subjects, including Ruminococcaceae, Acidobacteriota, Faecalibacterium, and Clostridiales",
+  "note": "Higher in healthy controls means depleted in stroke (HT/non-HT)"
+ },
+ {
+  "title": "Hemorrhagic transformation in patients with large-artery atherosclerotic stroke is associated with the gut microbiota and lipopolysaccharide",
+  "taxon": "Streptococcus",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "compared to healthy subjects, non-HT subjects had higher levels of Streptococcus, Fusicatenibacter, and Pectobacterium",
+  "note": "Higher in non-HT (disease group) compared to controls"
+ },
+ {
+  "title": "Hemorrhagic transformation in patients with large-artery atherosclerotic stroke is associated with the gut microbiota and lipopolysaccharide",
+  "taxon": "Fusicatenibacter",
+  "verdict": "REAL_MISS",
+  "direction": "enriched",
+  "quote": "compared to healthy subjects, non-HT subjects had higher levels of Streptococcus, Fusicatenibacter, and Pectobacterium",
+  "note": "Higher in non-HT (disease group) compared to controls"
+ }
+]
