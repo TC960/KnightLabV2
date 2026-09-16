@@ -1,0 +1,286 @@
+[
+ {
+  "title": "Immunotherapy-mediated modulation of the gut microbiota in multiple sclerosis and associations with diet and clinical response-the effect of dimethyl fumarate therapy.",
+  "verdict": "MISS",
+  "reason": "Paper explicitly compares microbiota in MS patients (PwMS) vs healthy controls (HC) with clear direction statements for multiple taxa.",
+  "quotes": [
+   {
+    "quote": "Some Lachnospiraceae genera had lower abundance in PwMS compared to HC",
+    "taxon": "Lachnospiraceae",
+    "direction": "depleted"
+   },
+   {
+    "quote": "Prevotella 7 + 9 genera had lower abundance in PwMS compared to HC",
+    "taxon": "Prevotella",
+    "direction": "depleted"
+   },
+   {
+    "quote": "the Tannerellaceae family was lower in PwMS than HC",
+    "taxon": "Tannerellaceae",
+    "direction": "depleted"
+   }
+  ]
+ },
+ {
+  "title": "Altered Gut Microbiota and Plasma Metabolome Profiles Characterize Depression Individuals with Ischemic Stroke: A Comparative Analysis",
+  "verdict": "MISS",
+  "reason": "Paper compares IS (ischemic stroke) group to non-IS control group with explicit direction statements for multiple taxa.",
+  "quotes": [
+   {
+    "quote": "The IS group showed increased levels of gut bacteria carrying pro-inflammatory molecules, specifically Gram-negative Enterobacteriaceae",
+    "taxon": "Enterobacteriaceae",
+    "direction": "enriched"
+   },
+   {
+    "quote": "the IS group reduced populations of beneficial microbes that produce butyric acid important for gut health, such as Acidaminococcaceae, Roseburia, and Fusicatenibacter, compared to the non-IS group",
+    "taxon": "Acidaminococcaceae",
+    "direction": "depleted"
+   },
+   {
+    "quote": "the IS group reduced populations of beneficial microbes that produce butyric acid important for gut health, such as Acidaminococcaceae, Roseburia, and Fusicatenibacter, compared to the non-IS group",
+    "taxon": "Roseburia",
+    "direction": "depleted"
+   },
+   {
+    "quote": "the IS group reduced populations of beneficial microbes that produce butyric acid important for gut health, such as Acidaminococcaceae, Roseburia, and Fusicatenibacter, compared to the non-IS group",
+    "taxon": "Fusicatenibacter",
+    "direction": "depleted"
+   }
+  ]
+ },
+ {
+  "title": "Association of Methyl Donor Nutrients' Dietary Intake and Cognitive Impairment in the Elderly Based on the Intestinal Microbiome.",
+  "verdict": "UNCLEAR",
+  "reason": "Mentions group comparisons (D vs DF group) but most taxon statements are correlations with cognitive scores or diet rather than explicit disease-vs-control compositional differences.",
+  "quotes": []
+ },
+ {
+  "title": "Gut Microbiota Alterations in Alzheimer's Disease: Relation with Cognitive Impairment and Mediterranean Lifestyle",
+  "verdict": "CORRECT_REFUSAL_NEGATIVE",
+  "reason": "Paper explicitly reports that observed differences were not statistically significant (e.g., 'this increase was not statistically significant', 'non-significant low levels', 'slight decrease...without reaching statistical significance').",
+  "quotes": []
+ },
+ {
+  "title": "Effects of the multidomain intervention with nutritional supplements on cognition and gut microbiome in early symptomatic Alzheimer's disease: a randomized controlled trial",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "This is a randomized controlled trial of an intervention (multidomain supplements) with primary comparisons being treated vs untreated AD patients, not disease vs healthy controls.",
+  "quotes": []
+ },
+ {
+  "title": "Anxiety-related gut microbiota alterations in Parkinson's disease: distinct associations compared to healthy individuals.",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "Study compares anxiety subtypes within PD patients and within non-PD participants, not PD disease group vs healthy control group.",
+  "quotes": []
+ },
+ {
+  "title": "Disruptions of Gut Microbiota are Associated with Cognitive Deficit of Preclinical Alzheimer's Disease: A Cross-Sectional Study.",
+  "verdict": "UNCLEAR",
+  "reason": "Sentence 172 indicates HC and MCI groups have 'intergroup differences' in microbes but no explicit direction stated; sentences 173-174 only describe correlations with cognitive scores.",
+  "quotes": []
+ },
+ {
+  "title": "Changes in gut microbiota and plasma metabolites in Parkinson's disease patients with pain as analyzed by 16S rDNA sequencing and LC-MS.",
+  "verdict": "UNCLEAR",
+  "reason": "Mentions 'significant differences among the PDP, nPDP, and HC groups' and lists taxa but does not explicitly state which taxa are enriched or depleted in PD vs healthy controls.",
+  "quotes": []
+ },
+ {
+  "title": "Gut Microbiota-Induced Modulation of the Central Nervous System Function in Parkinson's Disease Through the Gut-Brain Axis and Short-Chain Fatty Acids.",
+  "verdict": "UNCLEAR",
+  "reason": "States there are 'prominent differences in the gut microbiota composition between PD patients and healthy individuals' with taxa listed, but does not specify enriched vs depleted direction.",
+  "quotes": []
+ },
+ {
+  "title": "A probiotic modulates the microbiome and immunity in multiple sclerosis.",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "Probiotic intervention trial (before/after LBS supplementation), not baseline disease-vs-healthy-control comparison.",
+  "quotes": []
+ },
+ {
+  "title": "Association of Fecal and Plasma Levels of Short-Chain Fatty Acids With Gut Microbiota and Clinical Severity in Patients With Parkinson Disease.",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "Study examines correlations between microbiota and SCFA levels within groups; no baseline disease-vs-control compositional comparison reported.",
+  "quotes": []
+ },
+ {
+  "title": "Quantitative proteomics and multi-omics analysis identifies potential biomarkers and the underlying pathological molecular networks in Chinese patients with multiple sclerosis.",
+  "verdict": "BACKGROUND_ONLY",
+  "reason": "All taxon-direction mentions are from cited previous studies; this is a proteomics paper measuring protein-microbiota correlations, not microbiota composition.",
+  "quotes": []
+ },
+ {
+  "title": "Gut Microbiota Alterations in Alzheimer's Disease: Relation with Cognitive Impairment and Mediterranean Lifestyle",
+  "verdict": "CORRECT_REFUSAL_NEGATIVE",
+  "reason": "Paper explicitly reports that observed increases in Prevotella and Escherichia in AD were not statistically significant.",
+  "quotes": []
+ },
+ {
+  "title": "Effects of the multidomain intervention with nutritional supplements on cognition and gut microbiome in early symptomatic Alzheimer's disease: a randomized controlled trial",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "Randomized controlled trial with intervention (nutritional supplements + multidomain treatment); comparisons are post-intervention vs control, not baseline disease-vs-healthy.",
+  "quotes": []
+ },
+ {
+  "title": "Signature of Alzheimer's Disease in Intestinal Microbiome: Results From the AlzBiom Study",
+  "verdict": "CORRECT_REFUSAL_NEGATIVE",
+  "reason": "Paper explicitly reports no significant difference in proteobacteria abundance between AD patients and healthy controls (p=0.41).",
+  "quotes": []
+ },
+ {
+  "title": "Progression and survival of patients with motor neuron disease relative to their fecal microbiota.",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "Prognostic study examining microbiota characteristics (richness, diversity, F/B ratio) in relation to survival within MND patients only; no healthy control group.",
+  "quotes": []
+ },
+ {
+  "title": "Oral, Nasal, and Gut Microbiota in Parkinson's Disease.",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "Single sentence reports taxa association with symptom severity (MMSE) and weight; no disease-vs-healthy-control comparison.",
+  "quotes": []
+ },
+ {
+  "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+  "verdict": "UNCLEAR",
+  "reason": "Only provided content is a citation/reference line with insufficient information to assess whether paper reports disease-vs-control comparisons.",
+  "quotes": []
+ },
+ {
+  "title": "Gut microbiota and metabolites are linked to disease progression in multiple sclerosis.",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "Study compares MS patients by disease severity/progression and treatment status, not versus healthy controls; also includes animal studies and citations.",
+  "quotes": []
+ },
+ {
+  "title": "Gut bacterial microbiota in patients with myasthenia gravis: results from the MYBIOM study",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "Study compares MG patients to disease controls (NIND, CIDP) rather than healthy controls.",
+  "quotes": []
+ },
+ {
+  "title": "Education as Risk Factor of Mild Cognitive Impairment: The Link to the Gut Microbiome.",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "Paper's own analysis compares education levels, not disease patients versus healthy controls; citations to other studies' AD/MCI findings are background only.",
+  "quotes": []
+ },
+ {
+  "title": "APOE4 genotype shapes the role of dietary fibers in cognitive health through gut microbiota changes.",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "Study examines APOE4 carrier status and dietary fiber intake, not disease versus healthy control comparisons.",
+  "quotes": []
+ },
+ {
+  "title": "Normal gut microbiome in NMDA receptor encephalitis.",
+  "verdict": "CORRECT_REFUSAL_NEGATIVE",
+  "reason": "Paper explicitly compares patients to healthy controls but reports no significant differences: 'Both patients and healthy participants had a normal microbiome' and differences 'did not withstand statistical correction for multiple testing.'",
+  "quotes": []
+ },
+ {
+  "title": "The gut microbiome in epilepsy",
+  "verdict": "BACKGROUND_ONLY",
+  "reason": "All three sentences cite findings from other studies with reference numbers; none report this paper's own original findings.",
+  "quotes": []
+ },
+ {
+  "title": "Metagenomic analysis characterizes stage-specific gut microbiota in Alzheimer's disease.",
+  "verdict": "BACKGROUND_ONLY",
+  "reason": "Sentences describe dietary fructose associations in teenagers and cite other studies; inconsistent with AD disease label and no disease-versus-healthy control comparison.",
+  "quotes": []
+ },
+ {
+  "title": "Metagenomic Analysis Reveals Large-Scale Disruptions of the Gut Microbiome in Parkinson's Disease.",
+  "verdict": "UNCLEAR",
+  "reason": "Single sentence mentions 'differentially abundant functional terms' but does not specify comparison groups, direction, or whether healthy controls are involved.",
+  "quotes": []
+ },
+ {
+  "title": "Alterations in gut microbiota and plasma metabolites: a multi-omics study of mild cognitive impairment in Parkinson's disease.",
+  "verdict": "BACKGROUND_ONLY",
+  "reason": "Sentence discusses moyamoya disease, not the paper's stated disease (PD); phrasing 'possible implications' indicates speculation rather than empirical finding.",
+  "quotes": []
+ },
+ {
+  "title": "Interventional Influence of the Intestinal Microbiome Through Dietary Intervention and Bowel Cleansing Might Improve Motor Symptoms in Parkinson's Disease.",
+  "verdict": "MISS",
+  "reason": "Paper reports this study's own disease-vs-control findings: relative increase of Actinobacteria and Firmicutes in PD, reduction of Prevotellaceae/Bacteroidetes/Butyricimonas/Odoribacter in PD compared to healthy controls.",
+  "quotes": [
+   {
+    "quote": "Moreover, we could show a relative increase of Actinobacteria and Firmicutes compared to healthy controls.",
+    "taxon": "Actinobacteria",
+    "direction": "enriched"
+   },
+   {
+    "quote": "Moreover, we could show a relative increase of Actinobacteria and Firmicutes compared to healthy controls.",
+    "taxon": "Firmicutes",
+    "direction": "enriched"
+   },
+   {
+    "quote": "Additionally, a tendency towards a reduction of Prevotellaceae, Bacteroidetes and the genus Butyricimonas and Odoribacter in PD was present",
+    "taxon": "Prevotellaceae",
+    "direction": "depleted"
+   },
+   {
+    "quote": "Additionally, a tendency towards a reduction of Prevotellaceae, Bacteroidetes and the genus Butyricimonas and Odoribacter in PD was present",
+    "taxon": "Bacteroidetes",
+    "direction": "depleted"
+   }
+  ]
+ },
+ {
+  "title": "Relationships of gut microbiota, short-chain fatty acids, inflammation, and the gut barrier in Parkinson's disease.",
+  "verdict": "MISS",
+  "reason": "Paper explicitly reports disease-vs-control findings: reduced Prevotella in PD patients, increased Bifidobacterium in PD patients, increased Bacteroides in controls (depleted in PD).",
+  "quotes": [
+   {
+    "quote": "PD patients in this cohort had reduced abundance of Prevotella",
+    "taxon": "Prevotella",
+    "direction": "depleted"
+   },
+   {
+    "quote": "Bacteroides is more abundant in controls, and Bifidobacterium is more abundant in PD patients in this cohort",
+    "taxon": "Bifidobacterium",
+    "direction": "enriched"
+   },
+   {
+    "quote": "Bacteroides is more abundant in controls, and Bifidobacterium is more abundant in PD patients in this cohort",
+    "taxon": "Bacteroides",
+    "direction": "depleted"
+   }
+  ]
+ },
+ {
+  "title": "Prognostic Value of Gut Microbiome for Conversion from Mild Cognitive Impairment to Alzheimer's Disease Dementia within 4 Years: Results from the AlzBiom Study",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "Paper design compares AD dementia converters versus stable MCI patients (within-disease prediction study), not disease vs. healthy controls; all AD-vs-control comparisons mentioned are from background literature citations, not this paper's results.",
+  "quotes": []
+ },
+ {
+  "title": "Taxonomic intestinal microbiota differences in Lewy body spectrum disease and cohabitant controls.",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "Paper studies Lewy Body Disease and iRBD (marked as sheet_disease='Other'), which are outside the extraction schema's disease scope, even though disease-vs-healthy-control comparisons are present in the text.",
+  "quotes": []
+ },
+ {
+  "title": "Not just a Snapshot: An Italian Longitudinal Evaluation of Stability of Gut Microbiota Findings in Parkinson's Disease.",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "This is a longitudinal stability study tracking microbiota composition over time in the same patients, not a cross-sectional disease-vs.-healthy-control comparison; references to controls are background context setting, not the paper's primary research question.",
+  "quotes": []
+ },
+ {
+  "title": "Potential roles of gut microbiome and metabolites in modulating ALS in mice.",
+  "verdict": "CORRECT_REFUSAL_DESIGN",
+  "reason": "Primary study design is an animal (mouse) study with bacterial supplementation intervention (antibiotic-treated Sod1-Tg mice receiving individual bacteria), not a human disease-vs.-healthy-control observational comparison; human patient data is extended data/background.",
+  "quotes": []
+ },
+ {
+  "title": "Characterizing Gut Microbiota in Older Chinese Adults with Cognitive Impairment: A Cross-Sectional Study.",
+  "verdict": "UNCLEAR",
+  "reason": "Title suggests a disease-vs.-control comparison study, but the provided sentences mention taxa as biomarkers for CI and discuss lifestyle correlates without explicitly stating this paper's disease-vs.-control findings or direction of change.",
+  "quotes": []
+ },
+ {
+  "title": "Intestinal flora induces depression by mediating the dysregulation of cerebral cortex gene expression and regulating the metabolism of stroke patients",
+  "verdict": "CORRECT_REFUSAL_NEGATIVE",
+  "reason": "Paper compares stroke/PSD patients to controls but does not specify the direction (enriched vs. depleted) of the reported taxa; states only that differences were 'significantly different' without indicating whether abundance increased or decreased.",
+  "quotes": []
+ }
+]

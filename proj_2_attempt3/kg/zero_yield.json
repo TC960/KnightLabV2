@@ -1,0 +1,285 @@
+{
+ "papers_screened": 325,
+ "papers_after_dedup": 313,
+ "papers_contributing": 271,
+ "papers_zero_yield": 42,
+ "yield_rate": 0.865814696485623,
+ "zero_yield_extractions_lost_in_build": 0,
+ "zero_yield_no_relation_sentence": 9,
+ "zero_yield_with_sentences": 33,
+ "sentences_total": 400,
+ "sentences_background": 88,
+ "sentences_own_result": 141,
+ "sentences_own_and_control_framed": 23,
+ "disease_permutation_p": 0.12814359282035898,
+ "disease_worst": [
+  "Dementia"
+ ],
+ "disease_worst_rate": 0.4,
+ "per_paper": [
+  {
+   "title": "A probiotic modulates the microbiome and immunity in multiple sclerosis.",
+   "disease": "Multiple sclerosis (MS)",
+   "n": 37,
+   "background": 5,
+   "own_result": 19,
+   "candidate": 8
+  },
+  {
+   "title": "Relationships of gut microbiota, short-chain fatty acids, inflammation, and the gut barrier in Parkinson's disease.",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "n": 18,
+   "background": 7,
+   "own_result": 6,
+   "candidate": 4
+  },
+  {
+   "title": "Association of Fecal and Plasma Levels of Short-Chain Fatty Acids With Gut Microbiota and Clinical Severity in Patients With Parkinson Disease.",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "n": 20,
+   "background": 1,
+   "own_result": 9,
+   "candidate": 3
+  },
+  {
+   "title": "Effects of the multidomain intervention with nutritional supplements on cognition and gut microbiome in early symptomatic Alzheimer's disease: a randomized controlled trial",
+   "disease": "Alzheimer\u2019s disease (AD), Dementia",
+   "n": 8,
+   "background": 2,
+   "own_result": 3,
+   "candidate": 3
+  },
+  {
+   "title": "Altered Gut Microbiota and Plasma Metabolome Profiles Characterize Depression Individuals with Ischemic Stroke: A Comparative Analysis",
+   "disease": "Stroke",
+   "n": 28,
+   "background": 1,
+   "own_result": 13,
+   "candidate": 1
+  },
+  {
+   "title": "Interventional Influence of the Intestinal Microbiome Through Dietary Intervention and Bowel Cleansing Might Improve Motor Symptoms in Parkinson's Disease.",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "n": 34,
+   "background": 18,
+   "own_result": 12,
+   "candidate": 1
+  },
+  {
+   "title": "Intestinal flora induces depression by mediating the dysregulation of cerebral cortex gene expression and regulating the metabolism of stroke patients",
+   "disease": "Stroke",
+   "n": 1,
+   "background": 0,
+   "own_result": 1,
+   "candidate": 1
+  },
+  {
+   "title": "Potential roles of gut microbiome and metabolites in modulating ALS in mice.",
+   "disease": "Amyotrophic lateral sclerosis (ALS)",
+   "n": 3,
+   "background": 0,
+   "own_result": 1,
+   "candidate": 1
+  },
+  {
+   "title": "Signature of Alzheimer's Disease in Intestinal Microbiome: Results From the AlzBiom Study",
+   "disease": "Alzheimer\u2019s disease (AD)",
+   "n": 5,
+   "background": 2,
+   "own_result": 1,
+   "candidate": 1
+  },
+  {
+   "title": "Alterations in gut microbiota and plasma metabolites: a multi-omics study of mild cognitive impairment in Parkinson's disease.",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "n": 1,
+   "background": 0,
+   "own_result": 0,
+   "candidate": 0
+  },
+  {
+   "title": "Anxiety-related gut microbiota alterations in Parkinson's disease: distinct associations compared to healthy individuals.",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "n": 6,
+   "background": 1,
+   "own_result": 3,
+   "candidate": 0
+  },
+  {
+   "title": "APOE4 genotype shapes the role of dietary fibers in cognitive health through gut microbiota changes.",
+   "disease": "Other",
+   "n": 13,
+   "background": 2,
+   "own_result": 7,
+   "candidate": 0
+  },
+  {
+   "title": "Association of Methyl Donor Nutrients' Dietary Intake and Cognitive Impairment in the Elderly Based on the Intestinal Microbiome.",
+   "disease": "Dementia",
+   "n": 16,
+   "background": 8,
+   "own_result": 4,
+   "candidate": 0
+  },
+  {
+   "title": "Changes in gut microbiota and plasma metabolites in Parkinson's disease patients with pain as analyzed by 16S rDNA sequencing and LC-MS.",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "n": 2,
+   "background": 0,
+   "own_result": 2,
+   "candidate": 0
+  },
+  {
+   "title": "Characterizing Gut Microbiota in Older Chinese Adults with Cognitive Impairment: A Cross-Sectional Study.",
+   "disease": "Other",
+   "n": 2,
+   "background": 0,
+   "own_result": 0,
+   "candidate": 0
+  },
+  {
+   "title": "Disruptions of Gut Microbiota are Associated with Cognitive Deficit of Preclinical Alzheimer's Disease: A Cross-Sectional Study.",
+   "disease": "Alzheimer\u2019s disease (AD), Dementia",
+   "n": 3,
+   "background": 0,
+   "own_result": 0,
+   "candidate": 0
+  },
+  {
+   "title": "Education as Risk Factor of Mild Cognitive Impairment: The Link to the Gut Microbiome.",
+   "disease": "Dementia",
+   "n": 14,
+   "background": 2,
+   "own_result": 4,
+   "candidate": 0
+  },
+  {
+   "title": "Gut bacterial microbiota in patients with myasthenia gravis: results from the MYBIOM study",
+   "disease": "Other",
+   "n": 19,
+   "background": 2,
+   "own_result": 8,
+   "candidate": 0
+  },
+  {
+   "title": "Gut Microbial Ecosystem in Parkinson Disease: New Clinicobiological Insights from Multi-Omics.",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "n": 1,
+   "background": 1,
+   "own_result": 0,
+   "candidate": 0
+  },
+  {
+   "title": "Gut Microbiota Alterations in Alzheimer's Disease: Relation with Cognitive Impairment and Mediterranean Lifestyle",
+   "disease": "Alzheimer\u2019s disease (AD)",
+   "n": 13,
+   "background": 7,
+   "own_result": 3,
+   "candidate": 0
+  },
+  {
+   "title": "Gut microbiota and metabolites are linked to disease progression in multiple sclerosis.",
+   "disease": "Multiple sclerosis (MS)",
+   "n": 36,
+   "background": 3,
+   "own_result": 12,
+   "candidate": 0
+  },
+  {
+   "title": "Gut Microbiota-Induced Modulation of the Central Nervous System Function in Parkinson's Disease Through the Gut-Brain Axis and Short-Chain Fatty Acids.",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "n": 1,
+   "background": 0,
+   "own_result": 0,
+   "candidate": 0
+  },
+  {
+   "title": "Immunotherapy-mediated modulation of the gut microbiota in multiple sclerosis and associations with diet and clinical response-the effect of dimethyl fumarate therapy.",
+   "disease": "Multiple sclerosis (MS)",
+   "n": 59,
+   "background": 8,
+   "own_result": 16,
+   "candidate": 0
+  },
+  {
+   "title": "Metagenomic analysis characterizes stage-specific gut microbiota in Alzheimer's disease.",
+   "disease": "Alzheimer\u2019s disease (AD)",
+   "n": 2,
+   "background": 0,
+   "own_result": 0,
+   "candidate": 0
+  },
+  {
+   "title": "Metagenomic Analysis Reveals Large-Scale Disruptions of the Gut Microbiome in Parkinson's Disease.",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "n": 1,
+   "background": 0,
+   "own_result": 1,
+   "candidate": 0
+  },
+  {
+   "title": "Normal gut microbiome in NMDA receptor encephalitis.",
+   "disease": "Other",
+   "n": 7,
+   "background": 1,
+   "own_result": 2,
+   "candidate": 0
+  },
+  {
+   "title": "Not just a Snapshot: An Italian Longitudinal Evaluation of Stability of Gut Microbiota Findings in Parkinson's Disease.",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "n": 6,
+   "background": 4,
+   "own_result": 0,
+   "candidate": 0
+  },
+  {
+   "title": "Oral, Nasal, and Gut Microbiota in Parkinson's Disease.",
+   "disease": "Parkinson\u2019s disease (PD)",
+   "n": 1,
+   "background": 0,
+   "own_result": 0,
+   "candidate": 0
+  },
+  {
+   "title": "Prognostic Value of Gut Microbiome for Conversion from Mild Cognitive Impairment to Alzheimer\u2019s Disease Dementia within 4 Years: Results from the AlzBiom Study",
+   "disease": "",
+   "n": 13,
+   "background": 9,
+   "own_result": 1,
+   "candidate": 0
+  },
+  {
+   "title": "Progression and survival of patients with motor neuron disease relative to their fecal microbiota.",
+   "disease": "Amyotrophic lateral sclerosis (ALS)",
+   "n": 2,
+   "background": 0,
+   "own_result": 0,
+   "candidate": 0
+  },
+  {
+   "title": "Quantitative proteomics and multi-omics analysis identifies potential biomarkers and the underlying pathological molecular networks in Chinese patients with multiple sclerosis.",
+   "disease": "Multiple sclerosis (MS)",
+   "n": 15,
+   "background": 2,
+   "own_result": 8,
+   "candidate": 0
+  },
+  {
+   "title": "Taxonomic intestinal microbiota differences in Lewy body spectrum disease and cohabitant controls.",
+   "disease": "Other",
+   "n": 10,
+   "background": 1,
+   "own_result": 4,
+   "candidate": 0
+  },
+  {
+   "title": "The gut microbiome in epilepsy",
+   "disease": "Epilepsy",
+   "n": 3,
+   "background": 1,
+   "own_result": 1,
+   "candidate": 0
+  }
+ ]
+}
