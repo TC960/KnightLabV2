@@ -25,3 +25,11 @@ proj_2_attempt3/kg/disease_basis.npy
 proj_2_attempt3/kg/rag_cache/
 proj_2_attempt3/kg/rebuild.log
 proj_2_attempt3/kg/media/
+
+# Full text of published papers -- derived, regenerable from fetch_*.py + fetch_cache/,
+# and the repo is PUBLIC. Same treatment as MAIN_DATA.json: keep the pipeline, not the
+# copyrighted corpus.
+proj_2_attempt3/kg/extract_input_gold.json
+proj_2_attempt3/kg/gold_missing_papers.json
+proj_2_attempt3/kg/extract_input.json
+proj_2_attempt3/kg/new_papers.json
