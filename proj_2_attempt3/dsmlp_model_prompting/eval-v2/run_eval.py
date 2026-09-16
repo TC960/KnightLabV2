@@ -154,8 +154,13 @@ def match_taxa(predicted, expected):
     sim = cosine_similarity(tf[:len(predicted)], tf[len(predicted):])
     matched_exp, tp, fp = set(), 0, 0
     for i in range(len(predicted)):
-        j = sim[i].argmax()
-        if float(sim[i][j]) >= 0.5:
+        j = int(sim[i].argmax())
+        # `j not in matched_exp` is load-bearing: without it, two predictions whose
+        # best match is the SAME gold taxon each scored a true positive, so TP could
+        # exceed the number of distinct gold taxa matched. `matched_exp` was already
+        # being tracked for the FN count, which was correct -- only TP was inflated.
+        # Every F1 recorded before 2026-09-16 (leaderboard.csv included) is affected.
+        if float(sim[i][j]) >= 0.5 and j not in matched_exp:
             tp += 1; matched_exp.add(j)
         else:
             fp += 1

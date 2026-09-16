@@ -143,7 +143,9 @@ def match_taxa_char(predicted, expected, resolver=None):
     matched, tp, fp = set(), 0, 0
     for i in range(len(predicted)):
         j = int(sim[i].argmax())
-        if float(sim[i][j]) >= 0.5:
+        # see run_eval.match_taxa: the `j not in matched` guard prevents two
+        # predictions from both claiming the same gold taxon as a true positive
+        if float(sim[i][j]) >= 0.5 and j not in matched:
             tp += 1
             matched.add(j)
         else:
@@ -162,16 +164,22 @@ def align_lca(predicted, expected, resolver, deepest=False):
         return [], list(predicted), []
     sim = _char_sim(predicted, expected)
     pairs, fp, matched = [], [], set()
+    # A gold taxon may be claimed AT MOST ONCE. Without the `not in matched`
+    # guards below, two predictions could both be paired to the same expected
+    # taxon and each counted as a true positive. That inflated LCA's apparent
+    # advantage over the char metric: of 112 LCA "rescues", only 9 claimed a gold
+    # taxon nothing else had matched -- the other 103 were redundant credit.
     for i in range(len(predicted)):
         j = int(sim[i].argmax())
         s = float(sim[i][j])
-        if s >= 0.5:
+        if s >= 0.5 and j not in matched:
             pairs.append((predicted[i], expected[j], "char", round(s, 3)))
             matched.add(j)
             continue
         hit = -1
         if resolver is not None and resolver.ok:
-            cands = [k for k in range(len(expected)) if resolver.nested(predicted[i], expected[k])]
+            cands = [k for k in range(len(expected))
+                     if k not in matched and resolver.nested(predicted[i], expected[k])]
             if cands:
                 if deepest:
                     # tie-break on the most specific expected taxon rather than
