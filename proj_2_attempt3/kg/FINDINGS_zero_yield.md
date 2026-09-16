@@ -3,6 +3,56 @@
 **2026-09-16. Cloud, CPU-only, no `MAIN_DATA.json`, no taxdump.**
 Instrument: `zero_yield_audit.py` → `zero_yield.json`, `zero_yield_verdicts.json`.
 
+> ## ⚠️ CORRECTION, same session, before this was quoted anywhere
+>
+> **The first version of this document claimed 4 confirmed misses and a headline
+> paper-level recall of 98.5%. That was wrong, and the reason is worth more than the
+> number was.** The adjudication was run without showing the adjudicators the
+> extraction prompt's actual inclusion rules (`eval-v2/run_eval.py`,
+> `PROMPT_VERSION = "samgated-v1"`), which are stricter than "states a direction":
+>
+> - **SIGNIFICANCE** — "include a taxon ONLY if the paper reports it as statistically
+>   significant (p / FDR / q < 0.05, or a significant LEfSe/LDA or
+>   differential-abundance result). **If significance is unclear or unreported for a
+>   taxon, omit it.**"
+> - **MAIN TEXT ONLY** — ignore taxa appearing only in tables, figures, captions or
+>   supplementary material.
+> - **DISEASE vs HEALTHY CONTROL ONLY** — ignore disease-vs-disease, severity
+>   gradients, subgroup-vs-subgroup and symptom-correlation findings.
+>
+> Re-tested against that gate, **3 of the 4 "misses" state a direction with no
+> reported significance anywhere in the available sentences** — one of them says
+> outright *"a **tendency towards** a reduction"*, and one carries a citation marker
+> (`[ 32 ]`) that makes it background. Under the prompt's own rule those are
+> **correct refusals, not misses.** Only the stroke/depression paper, which carries
+> LDA values and p-values inline (*Roseburia* LDA 3.894, P=0.007), is confirmable.
+>
+> **Confirmed misses: 1, not 4.** And a second-order limit applies even to that:
+> `relation_sentences_clean.json` keeps only sentences carrying a taxon *and* a
+> direction cue — about 10% of corpus text — so a sentence reporting significance
+> without a direction word is not visible here. **This audit can therefore confirm a
+> miss but cannot refute one.** The honest output is a bound, not a point estimate:
+>
+> | reading | recall | 95% CI |
+> |---|---|---|
+> | confirmed miss only | **271/272 = 99.6%** | [97.9, 99.9] |
+> | + 3 direction-without-reported-significance | 271/275 = 98.5% | [96.3, 99.4] |
+> | + 7 unclear (worst case) | 271/282 = 96.1% | [93.2, 97.8] |
+>
+> **Quote the range, or quote ≥96.1% as the defensible floor. Do not quote 98.5% as
+> the headline** — that row assumes the three unconfirmable cases are misses, which
+> the gate says they are not.
+>
+> The "intervention-framed paper with a baseline case-control comparison" failure mode
+> described below **survives as a description of what the three look like, but is no
+> longer evidence of an extraction bug** — with no reported significance, refusing
+> them is what the prompt asks for. It remains worth a look only if the full text
+> turns out to report statistics for those taxa, which needs `MAIN_DATA.json`.
+>
+> Everything below this box is the original text; the deterministic results in it
+> (the funnel, the build-loses-nothing null, the disease permutation, the triage
+> characterisation) are unaffected — none of them depended on the miss count.
+
 ## The gap this closes
 
 Every fidelity instrument in `kg/` scores edges that **exist**: reading fidelity
