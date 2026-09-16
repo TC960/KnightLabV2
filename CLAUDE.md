@@ -74,12 +74,25 @@ here reported 4 and the true confirmable count is 1. Conversely
 invisible to it. **Net: this instrument can confirm a miss but cannot refute one.** Any
 future recall work must apply the gate and state that asymmetry.
 
-Two things this number is **not**: it is *paper*-level, so it must never be quoted as
-edge-level recall (whether every taxon inside the 271 contributing papers was caught is
-a separate, harder question), and it is not an accuracy gain — nothing in the graph was
-changed. A deterministic side-result worth keeping: `build_kg.py` loses nothing, i.e.
-zero papers had extracted taxa that failed to become an edge. See
-`proj_2_attempt3/kg/FINDINGS_zero_yield.md`.
+It is not an accuracy gain — nothing in the graph was changed. A deterministic
+side-result worth keeping: `build_kg.py` loses nothing, i.e. zero papers had extracted
+taxa that failed to become an edge. See `proj_2_attempt3/kg/FINDINGS_zero_yield.md`.
+
+**Edge-level recall (2026-09-16): at most ~98.1%**, 95% CI [96.4, 99.5] — roughly 60
+missed observations [14, 116] against the 3,077 in the graph. This is the *separate,
+harder* question the paper-level figure above does not answer, and it is the first
+edge-level recall number the project has that does not depend on the flawed gold. From
+378 candidate (paper, taxon) pairs across 94 papers, a random sample of 24 papers / 95
+candidates adjudicated with the gate applied. **Quote it as an upper bound**: the
+candidate generator only sees taxa in sentences the provenance screen keeps (~75%
+paper-level recall), and the significance gate can be confirmed from visible text but
+never refuted — both biases push recall down, not up. **The actionable part is the
+clustering, not the average: 12 of the 15 confirmed misses come from 3 papers**, so a
+short-list re-extraction recovers most of the loss without a corpus-scale GPU run
+(candidates enumerated in `kg/edge_recall_packets.json`). A tempting false finding was
+tested and rejected here — high-rank taxa are *not* missed more often (p=0.054); the
+apparent 33%-vs-6.5% phylum skew is a property of the candidate generator, 27% of whose
+candidates are already phylum/class. See `proj_2_attempt3/kg/FINDINGS_edge_recall.md`.
 
 **The KG is broad-scoped** — all microbe–disease relationships, not a single disease area. The current
 gold-standard/test set happens to skew neuro-adjacent (Parkinson's, MS, Alzheimer's, ALS, stroke,

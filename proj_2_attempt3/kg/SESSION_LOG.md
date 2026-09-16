@@ -11,35 +11,48 @@ edges in the graph are right, but **whether relations the papers state produced 
 edge at all.** Every existing fidelity number scores edges that exist (reading
 fidelity 86.6%, mention rate 99.57%, Disbiome/Peryton 73.0/72.5%). The only recall
 number the project has ever had, F1 ~0.59, is scored against the in-house gold —
-which is under audit and known unreliable. This scores recall against **the papers'
-own sentences**, so it depends on neither the gold nor either curated database.
-**Nothing in the graph was changed:** `graph.json`, `rag_corpus.jsonl`, `kg.html`
-and `docs/` are untouched, so none of these numbers can be miscited as an accuracy
-gain. Instrument: `zero_yield_audit.py`, `FINDINGS_zero_yield.md`.
+which is under audit and known unreliable. Both audits below score against **the
+papers' own sentences**. **Nothing in the graph was changed:** `graph.json`,
+`rag_corpus.jsonl`, `kg.html` and `docs/` are untouched. Instruments:
+`zero_yield_audit.py` / `FINDINGS_zero_yield.md`, `edge_recall_audit.py` /
+`FINDINGS_edge_recall.md`.
+
+**THE LESSON OF THE SESSION, and it is a method rule, not a number.**
+**An audit that scores the extractor without applying the extractor's own gate
+manufactures misses.** The extraction prompt (`eval-v2/run_eval.py`,
+`samgated-v1`) does not extract anything that merely states a direction — it
+requires **reported statistical significance** (*"if significance is unclear or
+unreported for a taxon, omit it"*), **main text only**, and **disease vs healthy
+control only**. The first pass of the paper-level audit ignored this and reported
+**4 confirmed misses; the true confirmable count is 1.** The same gate cut the
+edge-level audit from **36 raw miss verdicts to 15**. Corrected in-session, before
+either number was quoted anywhere. Any future recall work must apply the gate and
+state the asymmetry below.
 
 **Survived.**
 - *The funnel, measured for the first time.* 325 screened → 313 after `build_kg`
   title dedup → **271 contributing = 86.6% paper yield**. The 42 papers that
   contribute nothing had never been looked at.
-- *Paper-level recall = **271/275 = 98.5%**, 95% CI [96.3, 99.4]* — 96.1% [93.2,
-  97.8] if all 7 `UNCLEAR` are counted as misses. Of 42 zero-yield papers, 9 have no
-  relation-bearing sentence at all, and of the 33 that do: 14 correct refusals on
-  design (intervention/probiotic trial, animal model, longitudinal stability,
-  patient-subgroup vs patient-subgroup), 4 explicit negative results, 4
-  background-only, 7 unclear, **4 real misses**. **This is PAPER-level and must not
-  be quoted as edge-level recall** — it says the extractor rarely refuses a paper it
-  should have read, not that it caught every taxon inside the 271 it did read.
-- *The 4 misses share ONE nameable failure mode, and it is prompt-level.* Three of
-  four are **papers framed as an intervention or therapy study that nonetheless
-  report a baseline disease-vs-healthy-control comparison** — e.g. the DMF-therapy MS
-  paper's *"Some Lachnospiraceae genera had lower abundance in PwMS compared to HC"*,
-  and a PD dietary-intervention paper's *"we could show a relative increase of
-  Actinobacteria and Firmicutes compared to healthy controls."* Cheapest recall lever
-  available, and it needs a prompt, not a bigger model.
-- *All 4 were re-read by hand rather than taken on the adjudicator's word*, per the
-  standing rule earned when an LLM adjudication of 18 self-contradictions got 4 of
-  its 6 error verdicts wrong. **Several supplied quotes turned out to be
-  paraphrases**; each miss rests on one confirmed verbatim.
+- *Paper-level recall: **≥96.1%**, and **99.6%** [97.9, 99.9] counting only the one
+  confirmable miss.* Of 42 zero-yield papers, 9 have no relation-bearing sentence at
+  all; of the 33 that do — 14 correct refusals on design (intervention/probiotic
+  trial, animal model, longitudinal stability, subgroup-vs-subgroup), 4 explicit
+  negative results, 4 background-only, 7 unclear, **1 confirmed miss**, and 3 that
+  state a direction with **no reported significance** (one says outright *"a
+  tendency towards a reduction"*, one carries a citation marker `[ 32 ]`) — correct
+  refusals under the prompt's own rule. **Quote the range, not a point estimate.**
+- *Edge-level recall — the number that never existed: **~98.1%**, 95% CI
+  [96.4, 99.5]*, ~60 missed observations [14, 116] of 3,077. From 378 candidate
+  (paper, taxon) pairs across 94 papers, a random sample of 24 papers / 95
+  candidates adjudicated, gate applied. **State it as an UPPER bound:** the
+  candidate generator only sees taxa in sentences the provenance screen keeps (~75%
+  paper-level recall) and the significance gate can be confirmed from visible text
+  but never refuted — both biases push the same way.
+- *The actionable part is the clustering, not the average.* **12 of the 15 confirmed
+  missed observations come from 3 papers** (an HBV-cirrhosis study, an Egyptian PD
+  cohort, a Ugandan AD cohort). So a **short-list re-extraction recovers most of the
+  loss without a corpus-scale GPU run** — the candidates are already enumerated in
+  `edge_recall_packets.json`.
 
 **Did not survive / null / corrected.**
 - *Deterministic null, and it was worth checking: `build_kg.py` loses nothing.* Of
@@ -48,32 +61,45 @@ gain. Instrument: `zero_yield_audit.py`, `FINDINGS_zero_yield.md`.
   extractor returned taxa that never became an edge is **0**. A silent drop in one of
   that script's `continue` branches or its `min_papers` filter would have been
   invisible to every existing instrument.
+- *High-rank taxa are NOT missed more often — one keystroke from being a false
+  finding.* 33% of confirmed misses are phylum/class against **6.5%** of graph
+  edges, and an adjudicator independently volunteered the pattern. But **27% of the
+  CANDIDATES are phylum/class** — the generator is itself rank-skewed, because
+  high-rank taxa live in the summary sentences the screen preferentially keeps.
+  Against the pool it was actually drawn from: **p = 0.0537**, paper-level
+  permutation preserving each paper's confirmed count, N=20,000, single uncorrected
+  test, 15 events. The graph's 6.5% is the wrong denominator.
 - *Zero-yield is NOT concentrated in any disease.* Paper-level permutation
-  (N=20,000) with a **max-statistic over the 11 diseases with n≥5**, so the multiple
+  (N=20,000), **max-statistic over the 11 diseases with n≥5** so the multiple
   comparison is controlled by construction: worst rate 0.40 (Dementia, n=10),
-  **p = 0.128 — NULL**. Power: a 10-paper group cannot push the MDE below roughly 30
-  points, so this is "consistent with no disease bias", not "proven none".
-- *The deterministic provenance screen is triage, not adjudication — logged so the
-  next session does not mistake 23 candidate sentences for 23 missing edges.*
-  Reusing `audit_direction_witness.py`'s CITATION/THIRD_PARTY/RESULT_CUE/CONTROL_FRAME
-  regexes scores **75% recall, 33% precision** against the read verdicts. Its one
-  false negative is the instructive part: `RESULT_CUE` demands a statistic or an
-  explicit "we found", so it misses *"the Tannerellaceae family was lower in PwMS
-  than HC"* — a plain-language result with no number in it. Same conclusion the
-  abstract screen reached on 2026-09-11.
+  **p = 0.128 — NULL**. A 10-paper group cannot push the MDE below roughly 30 points,
+  so this is "consistent with no disease bias", not "proven none".
+- *The deterministic provenance screen is triage, not adjudication.* Reusing
+  `audit_direction_witness.py`'s regexes scores **75% recall, 33% precision** against
+  the read verdicts. Its false negative is instructive: `RESULT_CUE` demands a
+  statistic or an explicit "we found", so it misses *"the Tannerellaceae family was
+  lower in PwMS than HC"*. Same conclusion the abstract screen reached 2026-09-11.
 - *Dedup has no gap.* The only title pair sharing 60 leading characters without
   collapsing is two genuinely different papers (phlegm-heat syndrome vs
   ischemic/hemorrhagic stroke). Correctly not merged.
+- *Adjudicator reliability, such as it is.* Two papers entered the paper-level
+  adjudication twice as dedup twins with identical text, in different batches, and
+  received **identical verdicts (2/2)**. Bounds nothing at n=2, but it is the only
+  inter-rater signal available. Separately, **several "verbatim" quotes supplied by
+  adjudicators were paraphrases** — 7 of 36 edge-level miss claims failed the
+  verbatim check outright. Always machine-check the quote.
 - *`ftp.ncbi.nih.gov` re-probed, still 403 — eleventh session.* The scheduled
   routine's prompt still tells sessions to download the taxdump and still lists the
   spent Task 0/1/2.5/3 priority order. **That prompt is stale and is costing the
-  opening of every run.**
+  opening of every run.** `NEXT_SESSION_PROMPT.md`'s header now says so explicitly.
 
-**Highest-value next step.** Not "more papers" this time: **edge-level recall inside
-the 271 contributing papers** — the same instrument one level down, asking for each
-contributing paper whether it contains an own-result, control-framed sentence naming
-a resolved taxon for which no edge exists. `relation_sentences_clean.json` covers
-271/271 contributing papers, so it needs no GPU, no taxdump and no `MAIN_DATA.json`.
+**Highest-value next step.** **Re-extract the short list, not the corpus.** The
+recoverable recall loss is concentrated in a handful of the 94 candidate papers,
+already enumerated. Second, and free: the misses are dominated by taxa whose
+significance cue sits in a *different sentence* from the direction, so a
+generation-2 filter that links a direction sentence to a neighbouring significance
+sentence would raise this instrument's own sensitivity and shrink the
+"cannot refute" gap.
 
 ---
 

@@ -20,16 +20,30 @@
 >    below. `relation_sentences_clean.json` is committed and covers 271/271
 >    contributing papers.
 >
-> **NEW 2026-09-16 — the top open lever is now a specific, cloud-doable measurement,
-> not "more papers".** The 2026-09-16 session opened the recall direction for the
-> first time: `zero_yield_audit.py` / `FINDINGS_zero_yield.md` established
-> **paper-level recall 98.5%** [96.3, 99.4] against the papers' own sentences, and
-> found that the extractor's dominant failure mode is **a paper framed as an
-> intervention/therapy study that still reports a baseline disease-vs-control
-> comparison** (3 of its 4 confirmed misses). The successor measurement —
-> **edge-level recall inside the 271 contributing papers** — is the natural next
-> item and needs no GPU, no taxdump and no `MAIN_DATA.json`. See the log's top entry
-> for how far it got.
+> **NEW 2026-09-16 — the recall direction is now open, measured, and it changes the
+> top lever.** Two new instruments: `zero_yield_audit.py` / `FINDINGS_zero_yield.md`
+> (paper-level recall **≥96.1%**, 99.6% counting only confirmable misses) and
+> `edge_recall_audit.py` / `FINDINGS_edge_recall.md` (**edge-level recall at most
+> ~98.1%** [96.4, 99.5], ~60 missed observations of 3,077 — the first edge-level
+> recall number that does not depend on the flawed gold).
+>
+> **READ THIS BEFORE ANY FURTHER RECALL WORK — it cost this session a wrong
+> headline.** The extraction prompt (`eval-v2/run_eval.py`, `samgated-v1`) does NOT
+> extract anything that merely states a direction. It requires **reported
+> statistical significance** (*"if significance is unclear or unreported for a taxon,
+> omit it"*), **main text only**, and **disease vs healthy control only**. An audit
+> that scores the extractor without applying its own gate **manufactures misses**:
+> the first pass reported 4 paper-level misses where 1 is confirmable, and 36
+> edge-level miss verdicts where 15 survive. Also: adjudicators' "verbatim" quotes
+> are often paraphrases — 7 of 36 failed a machine verbatim check. Always
+> machine-check the quote, then apply the gate.
+>
+> **The top lever is no longer "more papers" in general — it is a SHORT LIST.**
+> 12 of the 15 confirmed missed observations come from just 3 papers, and the 94
+> candidate papers are already enumerated in `edge_recall_packets.json`. A bounded
+> re-extraction over the worst ~20 recovers most of the recoverable loss and is far
+> cheaper than a corpus-scale run. Still needs a GPU — **ask before spending** — but
+> it is a much smaller ask than item 1 below.
 >
 > **Genuinely open, in order:**
 >
