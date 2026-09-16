@@ -4,6 +4,79 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+## TL;DR — 2026-09-16 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**Tested.** The one direction no instrument here had ever pointed: not whether the
+edges in the graph are right, but **whether relations the papers state produced no
+edge at all.** Every existing fidelity number scores edges that exist (reading
+fidelity 86.6%, mention rate 99.57%, Disbiome/Peryton 73.0/72.5%). The only recall
+number the project has ever had, F1 ~0.59, is scored against the in-house gold —
+which is under audit and known unreliable. This scores recall against **the papers'
+own sentences**, so it depends on neither the gold nor either curated database.
+**Nothing in the graph was changed:** `graph.json`, `rag_corpus.jsonl`, `kg.html`
+and `docs/` are untouched, so none of these numbers can be miscited as an accuracy
+gain. Instrument: `zero_yield_audit.py`, `FINDINGS_zero_yield.md`.
+
+**Survived.**
+- *The funnel, measured for the first time.* 325 screened → 313 after `build_kg`
+  title dedup → **271 contributing = 86.6% paper yield**. The 42 papers that
+  contribute nothing had never been looked at.
+- *Paper-level recall = **271/275 = 98.5%**, 95% CI [96.3, 99.4]* — 96.1% [93.2,
+  97.8] if all 7 `UNCLEAR` are counted as misses. Of 42 zero-yield papers, 9 have no
+  relation-bearing sentence at all, and of the 33 that do: 14 correct refusals on
+  design (intervention/probiotic trial, animal model, longitudinal stability,
+  patient-subgroup vs patient-subgroup), 4 explicit negative results, 4
+  background-only, 7 unclear, **4 real misses**. **This is PAPER-level and must not
+  be quoted as edge-level recall** — it says the extractor rarely refuses a paper it
+  should have read, not that it caught every taxon inside the 271 it did read.
+- *The 4 misses share ONE nameable failure mode, and it is prompt-level.* Three of
+  four are **papers framed as an intervention or therapy study that nonetheless
+  report a baseline disease-vs-healthy-control comparison** — e.g. the DMF-therapy MS
+  paper's *"Some Lachnospiraceae genera had lower abundance in PwMS compared to HC"*,
+  and a PD dietary-intervention paper's *"we could show a relative increase of
+  Actinobacteria and Firmicutes compared to healthy controls."* Cheapest recall lever
+  available, and it needs a prompt, not a bigger model.
+- *All 4 were re-read by hand rather than taken on the adjudicator's word*, per the
+  standing rule earned when an LLM adjudication of 18 self-contradictions got 4 of
+  its 6 error verdicts wrong. **Several supplied quotes turned out to be
+  paraphrases**; each miss rests on one confirmed verbatim.
+
+**Did not survive / null / corrected.**
+- *Deterministic null, and it was worth checking: `build_kg.py` loses nothing.* Of
+  the 54 screened papers absent from the graph, **10 are dedup twins whose surviving
+  copy IS in the graph**, and after collapsing those the number of papers whose
+  extractor returned taxa that never became an edge is **0**. A silent drop in one of
+  that script's `continue` branches or its `min_papers` filter would have been
+  invisible to every existing instrument.
+- *Zero-yield is NOT concentrated in any disease.* Paper-level permutation
+  (N=20,000) with a **max-statistic over the 11 diseases with n≥5**, so the multiple
+  comparison is controlled by construction: worst rate 0.40 (Dementia, n=10),
+  **p = 0.128 — NULL**. Power: a 10-paper group cannot push the MDE below roughly 30
+  points, so this is "consistent with no disease bias", not "proven none".
+- *The deterministic provenance screen is triage, not adjudication — logged so the
+  next session does not mistake 23 candidate sentences for 23 missing edges.*
+  Reusing `audit_direction_witness.py`'s CITATION/THIRD_PARTY/RESULT_CUE/CONTROL_FRAME
+  regexes scores **75% recall, 33% precision** against the read verdicts. Its one
+  false negative is the instructive part: `RESULT_CUE` demands a statistic or an
+  explicit "we found", so it misses *"the Tannerellaceae family was lower in PwMS
+  than HC"* — a plain-language result with no number in it. Same conclusion the
+  abstract screen reached on 2026-09-11.
+- *Dedup has no gap.* The only title pair sharing 60 leading characters without
+  collapsing is two genuinely different papers (phlegm-heat syndrome vs
+  ischemic/hemorrhagic stroke). Correctly not merged.
+- *`ftp.ncbi.nih.gov` re-probed, still 403 — eleventh session.* The scheduled
+  routine's prompt still tells sessions to download the taxdump and still lists the
+  spent Task 0/1/2.5/3 priority order. **That prompt is stale and is costing the
+  opening of every run.**
+
+**Highest-value next step.** Not "more papers" this time: **edge-level recall inside
+the 271 contributing papers** — the same instrument one level down, asking for each
+contributing paper whether it contains an own-result, control-framed sentence naming
+a resolved taxon for which no edge exists. `relation_sentences_clean.json` covers
+271/271 contributing papers, so it needs no GPU, no taxdump and no `MAIN_DATA.json`.
+
+---
+
 ## TL;DR — 2026-09-15 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **Tested.** Whether a disease node's LABEL describes the cohort its papers actually
