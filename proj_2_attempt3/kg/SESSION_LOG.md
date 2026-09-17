@@ -4,6 +4,89 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+## TL;DR — 2026-09-17 (cloud, CPU-only, **WITH MAIN_DATA**, no taxdump)
+
+**The finding that matters most is not a number, it is that a blocker eleven
+sessions deep was never real.** `proj_2_attempt3/MAIN_DATA.json.zip` is **tracked
+in git** (33 MB); only the unzipped 105 MB `MAIN_DATA.json` is gitignored. Every
+session since 2026-09-06, this log and `NEXT_SESSION_PROMPT.md` included, read
+"MAIN_DATA.json is gitignored" as "the corpus is unavailable in the cloud" and
+deferred item 0 — *"the cheapest open lever in the project"* — to the Mac. It
+takes `unzip`, 2.4 seconds, on a disk with 30 GB free. **Before believing a
+stated blocker, check it once; a premise repeated across eleven handoffs is not
+thereby true.** Nothing in the graph was changed: `graph.json`,
+`rag_corpus.jsonl`, `kg.html` and `docs/` are untouched.
+
+**Tested.** Item 0: re-run `silent_edge_mentions.py` with full corpus text.
+
+**Survived.**
+- *Coverage.* Not-scoreable observations **795 → 581**; the 580-edge
+  "unverifiable" cohort **144 → 93**. **A narrowing, not a closure** — 43 of 271
+  contributing papers are in neither text source, so ~19% stays unscoreable and
+  no unzip recovers it. Their text is not in this repo at all.
+- ***Mention rate is 100% on every scoreable observation.*** own 1,679/1,679,
+  background 494/494, silent 321/321. The number could not go up; the result is
+  that opening a quarter more of the corpus produced **no new fabrication
+  candidate**, so the previously-unscoreable population behaves like the
+  scoreable one instead of hiding a reservoir of bad claims.
+- ***All 12 flagged "absences" are matcher false negatives. Zero fabrications.***
+  Three constructions, each now a deterministic tier: `genus_factored` (8) — the
+  paper factors the genus out of a list, *"8 species (ovatus, fragilis, ... and
+  nordii) belonging to the genus Bacteroides"*; `gloss_gap` (1) — an abbreviation
+  gloss wedged mid-name, *"vibrio (vi.) phage pyd38 a"*; `defined_abbrev` (1) —
+  the genus written as the abbreviation **the paper itself defined**, *"cl. sp
+  cag 273"*. The last 2 were read by hand and get **no** tier: a one-off does not
+  justify a rule that could fire wrongly elsewhere.
+- ***RETRACTION: the project's one "confirmed extraction error" is not one.***
+  `Clostridiales incerte sedis XIII` / Parkinson's was recorded 2026-09-13 as the
+  single confirmed error, on a quote showing the paper says XII and *"XIII zero
+  times"*. Whole-word counts: `xii` **1**, `xiii` **1**. The sentence is
+  *"...sedis xii ( r = -0.2625, p = 0.0396) **and xiii ( r = -0.2113, p =
+  0.0495)** were negatively correlated..."* — XIII reported with its own r and
+  its own p-value. **The graph now has zero confirmed extraction errors.**
+- *Method rule, and it is a sharper version of one this log already had.*
+  2026-09-16 recorded *"adjudicators' verbatim quotes are often paraphrases —
+  always machine-check the quote"*. The XIII quote **would have passed** a
+  verbatim check: it is a true substring. **A true quote can mislead by where it
+  stops.** Checking that a quote occurs is not enough — the test must cover the
+  span that would refute the claim. A whole-word count of the disputed token is
+  two lines and cannot be truncated.
+- *A guard, earned by validating the new source before trusting it*
+  (`validate_maindata_text.py`). The two text sources share 16 papers: 164/179
+  observations agree and **all 12 disagreements run one way** (git=mentioned,
+  MAIN_DATA=absent), **all** on the two papers where MAIN_DATA holds an
+  abstract-only stub (2.4k/1.4k chars vs 92k/46k). Truncation only deletes text,
+  so **a stub can prove a mention but never disprove one**. Short MAIN_DATA docs
+  now return not-scoreable, never absent. 295 of 2,019 corpus docs are stubs; all
+  17 papers MAIN_DATA currently contributes are 36k+, so the guard changes
+  nothing today and exists for the next corpus growth.
+
+**Did not survive / corrected in-session.**
+- *My own first cut of `genus_factored` was wrong and would have shipped two
+  false clearances.* A ±400-character proximity window credited `Roseburia
+  faecis` to a sentence where the paper attributes "faecis" to *Blautia* and
+  *Agathobacter*, and credited `Vibrio phage` to the bare English word "phage".
+  Proximity is not attribution. The tier now requires the genus to **bind** the
+  epithet — same sentence, ≤240 chars, and **no other known genus in between**,
+  against a closed genus vocabulary built from the graph's own node labels. Both
+  false clearances vanish. `Roseburia faecis` is then re-cleared on sound
+  evidence: its node carries the NCBI synonym *Agathobacter faecis* and the paper
+  writes *"agathobacter species faecis"*. **This is the fifth time in this repo
+  the instrument was weaker than the thing it audited.**
+
+**Highest-value next step.** Unchanged and now better-supported: **re-extract the
+short list, not the corpus** (`edge_recall_packets.json`, 12 of 15 confirmed
+misses in 3 papers; needs a GPU — ask before spending). What *this* session
+changes is that the full corpus is available to any cloud session for the
+preparatory work, so the short list can be assembled, verified and packaged here
+before any GPU is paid for. Second, free, and newly unblocked: `MAIN_DATA.json`
+now makes whole-document questions answerable in the cloud, so the
+generation-2 relation filter — linking a direction sentence to a neighbouring
+significance sentence — can be built and measured on full text rather than on the
+~10% of it that `relation_sentences_clean.json` holds.
+
+---
+
 ## TL;DR — 2026-09-16 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **Tested.** The one direction no instrument here had ever pointed: not whether the
