@@ -21,8 +21,22 @@ Reuses the repo's own provenance logic (`witness_discordance.build`) and its own
 surface forms (`audit_direction_witness.taxon_matchers`) so the classification
 matches the published one exactly rather than a re-derivation of it.
 
-Full text is in git for the datasheet papers only; observations whose paper is
-reachable only through the gitignored MAIN_DATA.json are reported as
+Full text sources, in preference order:
+
+  1. all_usable_papers.json -- tracked in git, the datasheet papers.
+  2. MAIN_DATA.json         -- the 2,026-paper canonical corpus. NOT tracked, but
+                               MAIN_DATA.json.zip IS (proj_2_attempt3/), so a
+                               plain `unzip` makes it available anywhere the repo
+                               is checked out, cloud included. Eleven sessions
+                               recorded this audit as Mac-only on the belief that
+                               the corpus was unreachable in the cloud; the zip
+                               was in the tree the whole time. Unzip with:
+                                 unzip -o proj_2_attempt3/MAIN_DATA.json.zip \
+                                       MAIN_DATA.json -d proj_2_attempt3/
+
+Source 1 wins any title collision, so every observation that was scoreable before
+MAIN_DATA was wired in keeps a byte-identical verdict and this source is purely
+additive. Observations whose paper is in neither source are reported as
 not-scoreable, never as absent.
 """
 import json
@@ -36,11 +50,143 @@ from verify_taxon_mentions import classify, norm_text, squash
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAPERS = os.path.join(HERE, "..", "EmilySong_GoldStandardPaper", "all_usable_papers.json")
+MAIN_DATA = os.path.join(HERE, "..", "MAIN_DATA.json")
 OUT = os.path.join(HERE, "silent_edge_mentions.json")
+
+
+# --- Two corrections forced by measurement, 2026-09-17. Both are documented in
+# --- FINDINGS_mention_audit.md; neither may be reverted without re-measuring.
+
+# (1) STUB GUARD. validate_maindata_text.py compared the two sources on the 16
+# papers they share: 164/179 observations agree, and ALL 12 disagreements are
+# git=mentioned / MAIN_DATA=absent on the only two papers where MAIN_DATA holds
+# an abstract-only stub (2.4k and 1.4k chars against 92k and 46k in git). Zero
+# disagreements ran the other way. Truncation can only DELETE text, so a stub
+# may still prove a mention but can never disprove one. 295 of 2,019 MAIN_DATA
+# documents are under this threshold; all 17 papers it currently contributes to
+# the graph are 36k+, so this guard changes nothing today and exists to stop a
+# future stub silently manufacturing a fabrication candidate.
+MIN_FULLTEXT_CHARS = 15000
+
+# (2) GENUS-FACTORED BINOMIALS. Papers enumerate congeners with the genus
+# factored out of the list -- "8 species (ovatus, fragilis, thetaiotaomicron,
+# ... and nordii) belonging to the genus Bacteroides". The extractor correctly
+# reconstructs `Bacteroides fragilis`; every tier in verify_taxon_mentions
+# looks for the genus adjacent to the epithet and so scores it ABSENT. That is
+# a matcher false negative being reported as a candidate fabrication.
+# A bare epithet is weak on its own, and a mere proximity window is NOT enough:
+# a first cut of this tier used +/-400 chars and wrongly credited `Roseburia
+# faecis` to a sentence where the paper attributes "faecis" to *Blautia* and
+# *Agathobacter*, and credited `Vibrio phage` to the bare word "phage". Both
+# would have been reported as fabrication-cleared.
+#
+# So the tier requires the genus to BIND the epithet:
+#   - the label is a true binomial (exactly two alphabetic tokens);
+#   - genus and epithet occur in the SAME sentence, within MAX_SPAN chars;
+#   - NO OTHER known genus occurs between them -- an intervening congener means
+#     the epithet belongs to that one, not to ours.
+# The genus vocabulary is closed and comes from the graph's own node labels.
+MAX_SPAN = 240
+MIN_EPITHET = 5
+# Degenerate "epithets" that are English/structural words, not species names.
+STOP_EPITHET = {
+    "phage", "virus", "bacterium", "species", "unclassified", "uncultured",
+    "group", "clade", "complex", "other", "incertae", "incerte", "sedis",
+}
 
 
 def key(t):
     return re.sub(r"[^a-z0-9]", "", (t or "").lower())
+
+
+SENT_SPLIT = re.compile(r"(?<=[.!?])\s+")
+
+
+def genus_factored(forms, text, genus_vocab):
+    """Is this binomial present as a genus-factored epithet? Returns the evidence.
+
+    Conservative by construction: anything that is not an unambiguous binomial
+    bound to its own genus in one sentence is left as ABSENT for a human to read.
+    """
+    for f in forms:
+        toks = [t for t in re.sub(r"[^A-Za-z ]", " ", f).split() if t]
+        if len(toks) != 2:
+            continue  # not a clean binomial -- refuse rather than guess
+        genus, epithet = toks[0].lower(), toks[1].lower()
+        if len(epithet) < MIN_EPITHET or len(genus) < MIN_EPITHET:
+            continue
+        if epithet in STOP_EPITHET or genus in STOP_EPITHET:
+            continue
+        for sent in SENT_SPLIT.split(text):
+            for em in re.finditer(r"\b%s\b" % re.escape(epithet), sent):
+                for gm in re.finditer(r"\b%s\b" % re.escape(genus), sent):
+                    lo, hi = sorted([(gm.start(), gm.end()), (em.start(), em.end())])
+                    if hi[0] - lo[1] > MAX_SPAN:
+                        continue
+                    between = sent[lo[1]:hi[0]]
+                    rival = [w for w in re.findall(r"[a-z]{5,}", between)
+                             if w in genus_vocab and w != genus]
+                    if rival:
+                        continue  # an intervening congener owns this epithet
+                    return re.sub(r"\s+", " ", sent[max(0, lo[0] - 60):hi[1] + 60])
+    return None
+
+
+# (3) TWO MORE CONSTRUCTIONS, both deterministic, found by reading the residue.
+# A paper may wedge its own abbreviation gloss into the middle of a name --
+# "vibrio (vi.) phage pyd38 a" -- or use a genus abbreviation it defined earlier
+# -- "cl. sp cag 273" for *Clostridium sp CAG 273*. Neither is a different taxon.
+# Both are resolved against the paper's OWN inline definitions, and both are
+# applied only to the node's own genus, never as a global rewrite of the text:
+# this paper defines `sl.` = Salmonella while also using `sl.` for *Slackia*, so
+# expanding abbreviations everywhere would invent taxa.
+ABBREV_DEF = re.compile(r"\b([a-z]{4,})\s*\(\s*([a-z]{1,3})\.\s*\)")
+GLOSS = re.compile(r"\(\s*[a-z]{1,3}\.\s*\)\s*")
+
+
+def abbrev_map(text):
+    """Genus abbreviations the paper defines inline, as `genus (ab.)`."""
+    m = {}
+    for genus, ab in ABBREV_DEF.findall(text):
+        m.setdefault(ab, genus)
+    return m
+
+
+def gloss_stripped(forms, text_gloss_sq):
+    """Name interrupted by a parenthetical abbreviation gloss."""
+    for f in forms:
+        if squash(f) and squash(f) in text_gloss_sq:
+            return f
+    return None
+
+
+def defined_abbrev(forms, text_sq, amap):
+    """Genus written as the abbreviation the paper itself defined for it."""
+    rev = {g: a for a, g in amap.items()}
+    for f in forms:
+        toks = [t for t in re.sub(r"[^A-Za-z0-9 ]", " ", f).split() if t]
+        if len(toks) < 2:
+            continue
+        ab = rev.get(toks[0].lower())
+        if not ab:
+            continue
+        needle = squash(ab + "".join(toks[1:]))
+        if needle and needle in text_sq:
+            return f"{ab}. {' '.join(toks[1:])}"
+    return None
+
+
+def build_genus_vocab(nodes):
+    """Closed vocabulary of genus-like tokens, from the graph's own labels."""
+    v = set()
+    for n in nodes.values():
+        for s in [n.get("label")] + list(n.get("aliases") or []):
+            if not s:
+                continue
+            toks = [t for t in re.sub(r"[^A-Za-z ]", " ", s).split() if len(t) >= 5]
+            if toks:
+                v.add(toks[0].lower())
+    return v - STOP_EPITHET
 
 
 def main():
@@ -48,18 +194,40 @@ def main():
     papers = g["papers"]
     nodes = {n["id"]: n for n in g["nodes"]}
     edges = g["edges"]
+    genus_vocab = build_genus_vocab(nodes)
 
     fulltext = {}
+    src = {}
     for p in json.load(open(PAPERS)):
         k = key(p.get("title"))
         if k and len(p.get("text") or "") > 500:
             t = norm_text(p["text"])
-            fulltext[k] = (t, squash(t))
+            fulltext[k] = (t, squash(t), len(p["text"]), squash(GLOSS.sub("", t)), abbrev_map(t))
+            src[k] = "git"
+
+    # Additive fallback. `setdefault` semantics: source 1 keeps any shared title,
+    # so wiring this in cannot change a verdict that was already scoreable.
+    n_md = 0
+    if os.path.exists(MAIN_DATA):
+        for rec in json.load(open(MAIN_DATA)).values():
+            k = key(rec.get("name"))
+            if not k or k in fulltext:
+                continue
+            body = "\n".join(rec.get("chunks") or [])
+            if len(body) > 500:
+                t = norm_text(body)
+                fulltext[k] = (t, squash(t), len(body), squash(GLOSS.sub("", t)), abbrev_map(t))
+                src[k] = "main_data"
+                n_md += 1
+    print(f"full text: {len(fulltext)} papers "
+          f"({len(fulltext) - n_md} from git, {n_md} from MAIN_DATA.json)")
 
     obs = W.build()  # the published per-observation provenance classification
 
-    # Cache mention lookups: (paper_key, node_id) -> bool | None(not scoreable)
+    # Cache mention lookups: (paper_key, node_id) ->
+    #   "mentioned" | "genus_factored" | "absent" | None (not scoreable)
     cache = {}
+    evidence = {}
 
     def mentioned(paper_key, node):
         ck = (paper_key, node["id"])
@@ -69,18 +237,37 @@ def main():
         if pair is None:
             cache[ck] = None
             return None
-        text, text_sq = pair
+        text, text_sq, rawlen, text_gloss_sq, amap = pair
         # RAW label/aliases, not A.taxon_matchers(): that returns norm_surface'd
         # (whitespace-stripped) forms, which cannot match unstripped text.
         forms = [s for s in [node.get("label")] + list(node.get("aliases") or []) if s]
-        hit = False
+        verdict = "absent"
         for f in forms:
             tier, _ = classify(f, text, text_sq)
             if tier in ("exact", "variant", "abbrev"):
-                hit = True
+                verdict = "mentioned"
                 break
-        cache[ck] = hit
-        return hit
+        if verdict == "absent":
+            quote = genus_factored(forms, text, genus_vocab)
+            if quote:
+                verdict = "genus_factored"
+                evidence[ck] = quote
+        if verdict == "absent":
+            q = gloss_stripped(forms, text_gloss_sq)
+            if q:
+                verdict = "gloss_gap"
+                evidence[ck] = f"matches after removing the paper's `(xx.)` gloss: {q}"
+        if verdict == "absent":
+            q = defined_abbrev(forms, text_sq, amap)
+            if q:
+                verdict = "defined_abbrev"
+                evidence[ck] = f"paper writes it as `{q}` using its own inline definition"
+        if verdict == "absent":
+            if src.get(paper_key) == "main_data" and rawlen < MIN_FULLTEXT_CHARS:
+                # A stub can prove a mention but never disprove one. See (1) above.
+                verdict = None
+        cache[ck] = verdict
+        return verdict
 
     # cross-tab provenance x mention
     tab = defaultdict(Counter)
@@ -99,12 +286,15 @@ def main():
             n_unscoreable += 1
             tab[o["prov"]]["not_scoreable"] += 1
             continue
-        tab[o["prov"]]["mentioned" if m else "absent"] += 1
-        if not m:
+        tab[o["prov"]][m] += 1
+        if m in ("absent", "genus_factored", "gloss_gap", "defined_abbrev"):
             absent_rows.append({
                 "taxon": e["taxon"], "disease": e["disease"],
                 "direction": o["dir"], "prov": o["prov"],
+                "verdict": m,
+                "evidence": evidence.get((pk, node["id"])),
                 "paper": papers[o["paper"]]["title"],
+                "text_source": src.get(pk),
                 "n_papers_on_edge": e.get("n_papers"),
                 "node_label": node.get("label"),
                 "aliases": node.get("aliases") or [],
@@ -134,38 +324,49 @@ def main():
         pk = key(papers[rows[0]["paper"]]["title"])
         m = mentioned(pk, node)
         unreachable["total"] += 1
-        if m is None:
-            unreachable["not_scoreable"] += 1
-        elif m:
-            unreachable["mentioned"] += 1
-        else:
-            unreachable["absent"] += 1
+        unreachable["not_scoreable" if m is None else m] += 1
 
     def rate(c):
-        d = c["mentioned"] + c["absent"]
-        return round(c["mentioned"] / d, 4) if d else None
+        """Mention rate. `genus_factored` counts as mentioned -- the taxon IS named,
+        with its genus factored into the surrounding clause. `strict` is the old
+        definition, kept so the pre-2026-09-17 figures stay reproducible."""
+        recovered = c["genus_factored"] + c["gloss_gap"] + c["defined_abbrev"]
+        d = c["mentioned"] + c["absent"] + recovered
+        if not d:
+            return None
+        return {
+            "mentioned": round((c["mentioned"] + recovered) / d, 4),
+            "strict": round(c["mentioned"] / d, 4),
+        }
 
     out = {
         "n_observations": len(obs),
-        "n_not_scoreable_no_fulltext_in_git": n_unscoreable,
+        "n_not_scoreable_no_fulltext": n_unscoreable,
         "by_provenance": {k: dict(v) for k, v in tab.items()},
         "mention_rate_by_provenance": {k: rate(v) for k, v in tab.items()},
         "single_paper_no_own_witness_edges": dict(unreachable),
         "single_paper_no_own_witness_mention_rate": rate(unreachable),
         "absent_observations": sorted(
             absent_rows, key=lambda r: (r["prov"], r["taxon"]))[:400],
-        "n_absent_total": len(absent_rows),
+        "n_absent_total": sum(1 for r in absent_rows if r["verdict"] == "absent"),
+        "n_recovered_by_tier": dict(Counter(
+            r["verdict"] for r in absent_rows if r["verdict"] != "absent")),
     }
     json.dump(out, open(OUT, "w"), indent=1)
 
     print(json.dumps({k: v for k, v in out.items()
                       if k != "absent_observations"}, indent=1))
     print(f"\nwrote {OUT}")
-    if absent_rows:
-        print(f"\n--- {len(absent_rows)} absent observations (first 30) ---")
-        for r in absent_rows[:30]:
+    for want in ("absent", "genus_factored", "gloss_gap", "defined_abbrev"):
+        rows = [r for r in absent_rows if r["verdict"] == want]
+        if not rows:
+            continue
+        print(f"\n--- {len(rows)} {want} ---")
+        for r in rows:
             print(f"  [{r['prov']:10s}] {r['taxon'][:38]:38s} {r['disease'][:22]:22s} "
-                  f"npap={r['n_papers_on_edge']}")
+                  f"npap={r['n_papers_on_edge']} src={r['text_source']}")
+            if r.get("evidence"):
+                print(f"      > ...{r['evidence'][:150]}...")
 
 
 if __name__ == "__main__":
