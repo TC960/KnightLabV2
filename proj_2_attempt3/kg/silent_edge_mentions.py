@@ -207,15 +207,12 @@ def build_genus_vocab(nodes):
     return v - STOP_EPITHET
 
 
-def main():
-    g = json.load(open(os.path.join(HERE, "graph.json")))
-    papers = g["papers"]
-    nodes = {n["id"]: n for n in g["nodes"]}
-    edges = g["edges"]
-    genus_vocab = build_genus_vocab(nodes)
-
-    fulltext = {}
-    src = {}
+def load_fulltext_sources():
+    """paper_key -> (text, squashed, rawlen, gloss_squashed, abbrev_map), plus a
+    paper_key -> source-name map. Shared with mention_section_audit.py so the two
+    instruments can never disagree about which text a paper has. Every optional
+    source is skipped silently when absent."""
+    fulltext, src = {}, {}
     for p in json.load(open(PAPERS)):
         k = key(p.get("title"))
         if k and len(p.get("text") or "") > 500:
@@ -264,6 +261,19 @@ def main():
                 fulltext[k] = (t, squash(t), len(body), squash(GLOSS.sub("", t)), abbrev_map(t))
                 src[k] = "main_data"
                 n_md += 1
+    return fulltext, src
+
+
+def main():
+    g = json.load(open(os.path.join(HERE, "graph.json")))
+    papers = g["papers"]
+    nodes = {n["id"]: n for n in g["nodes"]}
+    edges = g["edges"]
+    genus_vocab = build_genus_vocab(nodes)
+
+    fulltext, src = load_fulltext_sources()
+    n_md = sum(1 for v in src.values() if v == "main_data")
+    n_extra = sum(1 for v in src.values() if v == "extractor_input")
     print(f"full text: {len(fulltext)} papers ("
           f"{len(fulltext) - n_md - n_extra} all_usable, "
           f"{n_extra} extractor-input, {n_md} MAIN_DATA)")
