@@ -76,7 +76,34 @@ thereby true.** Nothing in the graph was changed: `graph.json`,
   17 papers MAIN_DATA currently contributes are 36k+, so the guard changes
   nothing today and exists for the next corpus growth.
 
+- ***The 100% was attacked and held: at most 0.13% could be bibliography.***
+  "Named anywhere in the document" includes the **reference list** — a cited
+  article titled *"...Akkermansia muciniphila in type 2 diabetes"* puts that
+  taxon in our paper while supporting nothing about our cohort, and nobody had
+  checked. Two tests (`mention_section_audit.py`): section position, **0 of
+  1,416** over the 123 papers with a detectable `References` heading; and
+  citation context — does *every* offset sit inside a bibliography entry (doi or
+  `YYYY;vol:page`) — which needs no heading and so covers **all 271 papers: 0 of
+  3,045**. Quoted with its sensitivity, because a test that cannot fire proves
+  nothing: the cue trips on **74.2%** of random bibliography positions and
+  **0.9%** of body positions (n=4,920 each), so rule-of-three gives a **95%
+  upper bound of 0.13%**.
+
 **Did not survive / corrected in-session.**
+- *Two more of my own instruments were wrong, both caught by built-in positive
+  controls rather than by spot-checks.* (a) A DOI-density heuristic for finding
+  bibliographies in the ~148 papers with no detectable heading: **rejected** —
+  these are PMC scrapes carrying a DOI at offset 53 in the journal header, so it
+  measures boilerplate. (b) The first citation cue counted `"Author et al.,
+  2021"` and flagged 4 `own` observations, one reading *"COMT inhibitor use was
+  associated with overrepresentation of Bifidobacteriaceae ... **in our
+  cohort**"* — a first-person result with an in-text citation merely nearby.
+  In-text citation is author+year; a bibliography entry has a doi or volume:page.
+  And the offset finder was weaker than the matcher it audits, calling
+  `p. timonensis` (reported with an adjusted p-value) and `es. coli` absent from
+  their bodies. **That makes six instruments in this repo that turned out weaker
+  than the thing they audited — the standing lesson is to give every audit a
+  positive control whose answer is known a priori.**
 - *My own first cut of `genus_factored` was wrong and would have shipped two
   false clearances.* A ±400-character proximity window credited `Roseburia
   faecis` to a sentence where the paper attributes "faecis" to *Blautia* and
@@ -89,16 +116,34 @@ thereby true.** Nothing in the graph was changed: `graph.json`,
   writes *"agathobacter species faecis"*. **This is the fifth time in this repo
   the instrument was weaker than the thing it audited.**
 
-**Highest-value next step.** Unchanged and now better-supported: **re-extract the
-short list, not the corpus** (`edge_recall_packets.json`, 12 of 15 confirmed
-misses in 3 papers; needs a GPU — ask before spending). What *this* session
-changes is that the full corpus is available to any cloud session for the
-preparatory work, so the short list can be assembled, verified and packaged here
-before any GPU is paid for. Second, free, and newly unblocked: `MAIN_DATA.json`
-now makes whole-document questions answerable in the cloud, so the
-generation-2 relation filter — linking a direction sentence to a neighbouring
-significance sentence — can be built and measured on full text rather than on the
-~10% of it that `relation_sentences_clean.json` holds.
+**Highest-value next step — and the honest framing is that fabrication is now a
+CLOSED question, so stop spending sessions on it.** Between the 100% mention rate,
+its bibliography attack, reading fidelity ≥86.6%, and paper/edge recall, the
+cheap precision instruments are exhausted. Nothing here moved the graph, and
+nothing here can: **every remaining question is limited by n=271, not by method.**
+
+1. **Free, and newly unblocked by full text: the generation-2 relation filter.**
+   The 2026-09-16 log named it and it was blocked on text — link a direction
+   sentence to a *neighbouring* significance sentence, since the known misses are
+   dominated by taxa whose significance cue sits in a different sentence from
+   their direction. `relation_sentences_clean.json` holds only ~10% of corpus
+   text and cannot see those pairs; `MAIN_DATA.json` can. This raises the recall
+   instrument's own sensitivity and shrinks its "cannot refute" gap. **Caution:
+   regenerating relation sentences would re-derive the `own`/`background`/
+   `silent` provenance classes that several published numbers rest on — build it
+   as a SEPARATE instrument first and diff, do not overwrite the existing one.**
+2. **Short-list re-extraction** (`edge_recall_packets.json`, 12 of 15 confirmed
+   misses in 3 papers). **Needs a GPU — ask before spending.** What changed today
+   is that the full corpus is now readable in the cloud, so the short list can be
+   assembled, verified and packaged here before any GPU time is bought.
+3. Everything else still wants **more papers**, which wants a GPU.
+
+**And a process note worth more than any number here.** The blocker that cost
+eleven sessions was not hard, hidden, or expensive — it was `unzip`. It survived
+because each handoff restated the previous handoff's conclusion instead of
+testing it, and the restatement got more confident each time ("no MAIN_DATA in
+the cloud" hardened into "needs the Mac"). **Check a stated blocker once before
+inheriting it.** The check cost one tool call.
 
 ---
 

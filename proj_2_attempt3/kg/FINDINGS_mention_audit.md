@@ -44,6 +44,49 @@ taxdump — but, as of the revision, **with `MAIN_DATA.json`**.
 > reachable one, rather than hiding a reservoir of bad claims. That is the
 > difference between "98.4% of what we could see" and an answer about the graph.
 >
+> **The 100% was attacked, and it held — at most 0.13% could be bibliography.**
+> "Named anywhere in the document" includes the **reference list**, and a cited
+> article titled *"...Akkermansia muciniphila in type 2 diabetes"* puts that
+> taxon in our paper while supporting nothing about our cohort. Nobody had
+> checked. Two independent tests (`mention_section_audit.py`):
+>
+> | test | scope | reference/citation-only |
+> |---|---|---|
+> | section position (needs a `References` heading) | 123 papers, 1,416 obs | **0** |
+> | citation context (needs no heading) | **all 271 papers, 3,045 obs** | **0** |
+>
+> The second asks whether *every* offset of the taxon sits inside a bibliography
+> entry — a doi, or a journal-style `YYYY;vol:page`, within 200 characters — so
+> it does not depend on document structure.
+>
+> **The zero is quoted with the sensitivity that makes it mean anything.** Random
+> positions inside detected bibliographies trip the cue **74.2%** of the time;
+> inside bodies, **0.9%** (n=4,920 each). Rule of three on 0/3,045 at 74%
+> sensitivity gives a **95% upper bound of 0.13%** on the true rate. A bare "0"
+> would have been the same error as quoting the 100% unexamined.
+>
+> Both tests carry a positive control — `own` observations have a result-sentence
+> witness by construction and *cannot* be citation-only — and it fired twice, on
+> me:
+> - A DOI-density heuristic meant to rescue the ~148 papers with no detectable
+>   heading was **rejected**: these are PMC scrapes with a DOI at offset 53 in the
+>   journal header, so density measures boilerplate. The heading-free test exists
+>   because of that failure.
+> - The first citation cue also counted `"Author et al., 2021"` and flagged 4
+>   `own` observations, one reading *"COMT inhibitor use was associated with
+>   overrepresentation of Bifidobacteriaceae ... **in our cohort**"* — a
+>   first-person result with an in-text citation merely nearby. In-text citation
+>   is author+year; a *bibliography entry* carries a doi or volume:page. Keeping
+>   only the latter makes it a test of bibliography membership, and the control
+>   then passes clean.
+>
+> **And the offset finder was itself weaker than the matcher it audits** — the
+> **sixth** such case in this repo. It first called `Hoylesella timonensis` and
+> `Escherichia coli` reference-only; both are in the body, as `p. timonensis`
+> (reported with an adjusted p-value) and `es. coli`. It now searches abbreviated
+> forms including *undeclared* genus prefixes, because this paper writes
+> `es. coli` and `su. sp apc924` having defined neither.
+>
 > **A guard came out of it.** The two sources share 16 papers and disagree on 12
 > of 179 observations — *all* one-directional (git=mentioned, MAIN_DATA=absent),
 > *all* on the two papers where MAIN_DATA holds an abstract-only stub (2.4k/1.4k
