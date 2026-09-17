@@ -1,18 +1,15 @@
 {
  "n_observations": 3077,
- "n_not_scoreable_no_fulltext": 581,
+ "n_not_scoreable_no_fulltext": 0,
  "by_provenance": {
   "own": {
-   "not_scoreable": 430,
-   "mentioned": 1679
+   "mentioned": 2109
   },
   "background": {
-   "mentioned": 494,
-   "not_scoreable": 91
+   "mentioned": 585
   },
   "silent": {
-   "not_scoreable": 60,
-   "mentioned": 311,
+   "mentioned": 371,
    "genus_factored": 8,
    "gloss_gap": 1,
    "absent": 2,
@@ -29,22 +26,21 @@
    "strict": 1.0
   },
   "silent": {
-   "mentioned": 0.9938,
-   "strict": 0.9628
+   "mentioned": 0.9948,
+   "strict": 0.9687
   }
  },
  "single_paper_no_own_witness_edges": {
   "total": 580,
-  "mentioned": 478,
+  "mentioned": 571,
   "genus_factored": 5,
   "gloss_gap": 1,
   "absent": 2,
-  "defined_abbrev": 1,
-  "not_scoreable": 93
+  "defined_abbrev": 1
  },
  "single_paper_no_own_witness_mention_rate": {
-  "mentioned": 0.9959,
-  "strict": 0.9815
+  "mentioned": 0.9966,
+  "strict": 0.9845
  },
  "absent_observations": [
   {
@@ -55,7 +51,7 @@
    "verdict": "genus_factored",
    "evidence": "ies level, eight of the top 18 hc-enriched species (ovatus, fragilis, thetaiotaomicron, intestinalis, cellulosilyticus, salyersiae, fluxus, and nordii) belonged to the genus bacteroides.",
    "paper": "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment",
-   "text_source": "main_data",
+   "text_source": "extractor_input",
    "n_papers_on_edge": 1,
    "node_label": "Bacteroides fragilis",
    "aliases": [
@@ -73,7 +69,7 @@
    "verdict": "genus_factored",
    "evidence": "fragilis, thetaiotaomicron, intestinalis, cellulosilyticus, salyersiae, fluxus, and nordii) belonged to the genus bacteroides.",
    "paper": "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment",
-   "text_source": "main_data",
+   "text_source": "extractor_input",
    "n_papers_on_edge": 1,
    "node_label": "Bacteroides salyersiae",
    "aliases": [

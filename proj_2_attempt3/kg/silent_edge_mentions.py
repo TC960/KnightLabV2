@@ -21,23 +21,41 @@ Reuses the repo's own provenance logic (`witness_discordance.build`) and its own
 surface forms (`audit_direction_witness.taxon_matchers`) so the classification
 matches the published one exactly rather than a re-derivation of it.
 
-Full text sources, in preference order:
+Full text sources, in preference order. Together they cover **271 of 271**
+contributing papers, so as of 2026-09-17 there are no unscoreable observations.
 
-  1. all_usable_papers.json -- tracked in git, the datasheet papers.
-  2. MAIN_DATA.json         -- the 2,026-paper canonical corpus. NOT tracked, but
-                               MAIN_DATA.json.zip IS (proj_2_attempt3/), so a
-                               plain `unzip` makes it available anywhere the repo
-                               is checked out, cloud included. Eleven sessions
-                               recorded this audit as Mac-only on the belief that
-                               the corpus was unreachable in the cloud; the zip
-                               was in the tree the whole time. Unzip with:
-                                 unzip -o proj_2_attempt3/MAIN_DATA.json.zip \
-                                       MAIN_DATA.json -d proj_2_attempt3/
+  1. all_usable_papers.json  tracked in git; the datasheet scrape. 211 papers.
+  2. extract_input.json      the text the extractor was actually GIVEN, so the
+     new_papers.json         correct substrate for a fabrication question. 117
+                             papers. UNTRACKED -- see the copyright note below.
+  3. MAIN_DATA.json          the 2,026-paper canonical corpus. 33 papers. NOT
+                             tracked, but MAIN_DATA.json.zip IS, so a plain
+                             `unzip` makes it available in ANY checkout,
+                             including the cloud. Eleven sessions recorded this
+                             audit as Mac-only believing the corpus unreachable;
+                             the zip was in the tree the whole time.
 
-Source 1 wins any title collision, so every observation that was scoreable before
-MAIN_DATA was wired in keeps a byte-identical verdict and this source is purely
-additive. Observations whose paper is in neither source are reported as
-not-scoreable, never as absent.
+Each source only fills titles the ones above it do not hold, so wiring in a new
+source cannot change an already-scored verdict. `validate_text_sources.py`
+confirms the stronger claim that source choice is immaterial: 5 of the 6 source
+pairs agree EXACTLY (extract_in vs main_data n=303, extract_in vs new_papers
+n=629, both 1.0000), and the only disagreements anywhere are the truncated
+MAIN_DATA stubs that guard (1) below already traps.
+
+To restore everything in a fresh checkout:
+
+    unzip -o proj_2_attempt3/MAIN_DATA.json.zip MAIN_DATA.json -d proj_2_attempt3/
+    git show 254b0a8^:proj_2_attempt3/kg/extract_input.json > extract_input.json
+    git show 254b0a8^:proj_2_attempt3/kg/new_papers.json    > new_papers.json
+
+COPYRIGHT -- not optional. Sources 2 and 3 are gitignored on purpose: THIS
+REPOSITORY IS PUBLIC and the corpus includes non-open-access articles (254b0a8).
+Read them locally; never `git add` them, and never quote their text into a
+tracked file. This script writes only verdicts, counts and short evidence spans.
+
+Missing files are skipped, not fatal: with none of them present this degrades
+exactly to the 2026-09-13 git-only run (795 unscoreable), which is how the
+additivity above was verified.
 """
 import json
 import os
@@ -205,6 +223,33 @@ def main():
             fulltext[k] = (t, squash(t), len(p["text"]), squash(GLOSS.sub("", t)), abbrev_map(t))
             src[k] = "git"
 
+    # Sources 2 and 3: the text the extractor was actually GIVEN. UNTRACKED --
+    # they were removed from git in 254b0a8 because THIS REPO IS PUBLIC and the
+    # corpus includes non-open-access articles. They are in .gitignore. Read them
+    # locally, never `git add` them, never quote their text into a tracked file.
+    # Restore for local work with:
+    #   git show 254b0a8^:proj_2_attempt3/kg/extract_input.json > extract_input.json
+    #   git show 254b0a8^:proj_2_attempt3/kg/new_papers.json    > new_papers.json
+    # Together with source 1 and 4 these cover 271/271 contributing papers.
+    # `validate_text_sources.py` shows 5 of 6 source pairs agree EXACTLY (incl.
+    # extract_in vs main_data at n=303 and extract_in vs new_papers at n=629), so
+    # which source answers a given paper cannot change its verdict; the only
+    # disagreements anywhere are the MAIN_DATA stubs that guard (1) already traps.
+    n_extra = 0
+    for fn in ("extract_input.json", "new_papers.json"):
+        fp = os.path.join(HERE, fn)
+        if not os.path.exists(fp):
+            continue
+        for r in json.load(open(fp)):
+            k = key(r.get("title"))
+            if not k or k in fulltext or len(r.get("text") or "") <= 500:
+                continue
+            t = norm_text(r["text"])
+            fulltext[k] = (t, squash(t), len(r["text"]),
+                           squash(GLOSS.sub("", t)), abbrev_map(t))
+            src[k] = "extractor_input"
+            n_extra += 1
+
     # Additive fallback. `setdefault` semantics: source 1 keeps any shared title,
     # so wiring this in cannot change a verdict that was already scoreable.
     n_md = 0
@@ -219,8 +264,9 @@ def main():
                 fulltext[k] = (t, squash(t), len(body), squash(GLOSS.sub("", t)), abbrev_map(t))
                 src[k] = "main_data"
                 n_md += 1
-    print(f"full text: {len(fulltext)} papers "
-          f"({len(fulltext) - n_md} from git, {n_md} from MAIN_DATA.json)")
+    print(f"full text: {len(fulltext)} papers ("
+          f"{len(fulltext) - n_md - n_extra} all_usable, "
+          f"{n_extra} extractor-input, {n_md} MAIN_DATA)")
 
     obs = W.build()  # the published per-observation provenance classification
 
