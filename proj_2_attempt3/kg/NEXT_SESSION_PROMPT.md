@@ -65,16 +65,28 @@
 > 0. ~~**Re-run `silent_edge_mentions.py` where `MAIN_DATA.json` exists** (i.e. on
 >    the Mac, not in the cloud).~~ **DONE 2026-09-17, IN THE CLOUD — do not redo.**
 >    The premise was wrong (see the banner above: the corpus zip is tracked).
->    Not-scoreable went **795 → 581** observations and **144 → 93** in the
->    580-edge cohort. **It does not close the hole**: 43 of 271 contributing
->    papers are in neither text source, so ~19% stays unscoreable, and that
->    residue is *not* recoverable by unzipping anything — those papers' text is
->    simply not in this repo.
+>    **The hole is CLOSED: 271/271 contributing papers, 0 unscoreable
+>    observations** (795 → 581 → 0). MAIN_DATA got it to 581; the last 43 papers
+>    are covered by `extract_input.json` / `new_papers.json`, which are
+>    **gitignored on purpose — this repo is PUBLIC and the corpus holds
+>    non-open-access articles (254b0a8)**. Restore them locally, read-only, and
+>    NEVER `git add` them or quote their text into a tracked file:
 >
->    **The result: 100% mention rate on every scoreable observation** (own
->    1,679/1,679, background 494/494, silent 321/321), and **all 12 "absences"
->    are matcher false negatives, none a fabrication.** Three new deterministic
->    tiers absorb them (`genus_factored`, `gloss_gap`, `defined_abbrev`). **The
+>    ```
+>    git show 254b0a8^:proj_2_attempt3/kg/extract_input.json > extract_input.json
+>    git show 254b0a8^:proj_2_attempt3/kg/new_papers.json    > new_papers.json
+>    ```
+>
+>    **The result: 100% mention rate over the WHOLE graph** — every one of the
+>    3,077 observations names its taxon in its source paper (own 2,109/2,109,
+>    background 585/585, silent 381/381), and **all 12 "absences" are matcher
+>    false negatives, none a fabrication.** ~25% of the graph had never been
+>    scored by any instrument; scoring it turned up nothing new, which is the
+>    finding. Source choice cannot change a verdict — 5 of 6 pairwise source
+>    comparisons agree exactly (`validate_text_sources.py`). Three new
+>    deterministic tiers absorb the false negatives (`genus_factored`,
+>    `gloss_gap`, `defined_abbrev`), each keyed to how the paper writes the
+>    name rather than to a loosened threshold. **The
 >    "one confirmed extraction error" recorded on 2026-09-13 is RETRACTED** — the
 >    paper does report `Clostridiales incerte sedis XIII`, with its own r and
 >    p-value; the 2026-09-13 quote was truncated one clause short of the

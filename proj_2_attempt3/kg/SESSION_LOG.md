@@ -20,15 +20,30 @@ thereby true.** Nothing in the graph was changed: `graph.json`,
 **Tested.** Item 0: re-run `silent_edge_mentions.py` with full corpus text.
 
 **Survived.**
-- *Coverage.* Not-scoreable observations **795 → 581**; the 580-edge
-  "unverifiable" cohort **144 → 93**. **A narrowing, not a closure** — 43 of 271
-  contributing papers are in neither text source, so ~19% stays unscoreable and
-  no unzip recovers it. Their text is not in this repo at all.
-- ***Mention rate is 100% on every scoreable observation.*** own 1,679/1,679,
-  background 494/494, silent 321/321. The number could not go up; the result is
-  that opening a quarter more of the corpus produced **no new fabrication
-  candidate**, so the previously-unscoreable population behaves like the
-  scoreable one instead of hiding a reservoir of bad claims.
+- *Coverage: the hole is CLOSED.* Two steps. MAIN_DATA took not-scoreable
+  observations **795 → 581** and the 580-edge cohort **144 → 93**, leaving 43
+  contributing papers in neither source. A fuzzy sweep killed the cheap
+  explanation — **0 of the 43** have a title match ≥0.90 or any prefix
+  containment (the one 0.79 is a genuinely different spinal-cord-injury paper),
+  so they were absent, not mis-keyed. Their text is `extract_input.json` /
+  `new_papers.json`, **untracked in 254b0a8 because this repo is PUBLIC and the
+  corpus holds non-open-access articles** — still in history, gitignored, read
+  locally for a read-only audit, and never re-committed. Final: **271/271
+  contributing papers, 0 unscoreable observations.**
+- ***Every one of the 3,077 observations names its taxon in its source paper.***
+  own 2,109/2,109, background 585/585, silent 381/381 after adjudication. The
+  number could not go up; the result is that **~25% of the graph that no
+  instrument here had ever scored produced no new fabrication candidate.** The
+  previously-unreachable population behaves like the reachable one instead of
+  hiding a reservoir of bad claims — which is the difference between "98.4% of
+  what we could see" and an answer about the graph.
+- *Source choice cannot change a verdict, and that is measured.*
+  `validate_text_sources.py` cross-tabulates all six pairs of the four text
+  sources: **five agree EXACTLY** (`extract_in` vs `main_data` n=303,
+  `extract_in` vs `new_papers` n=629, both 1.0000). The only disagreements
+  anywhere are the 12 stub cases below. Verified by execution, including running
+  with every optional source moved away to confirm it degrades exactly to the
+  2026-09-13 git-only numbers.
 - ***All 12 flagged "absences" are matcher false negatives. Zero fabrications.***
   Three constructions, each now a deterministic tier: `genus_factored` (8) — the
   paper factors the genus out of a list, *"8 species (ovatus, fragilis, ... and

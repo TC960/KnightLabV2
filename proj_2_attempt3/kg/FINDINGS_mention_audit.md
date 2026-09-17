@@ -11,21 +11,38 @@ taxdump — but, as of the revision, **with `MAIN_DATA.json`**.
 > `NEXT_SESSION_PROMPT.md` item 0 — *"the cheapest open lever in the project"* —
 > was blocked on a premise that was false the whole time.
 >
-> **Coverage.** Wiring MAIN_DATA in as a fallback (git full text still wins any
-> title collision, so no already-scored observation changes verdict) takes
-> not-scoreable observations **795 → 581**, and the 580-edge cohort's
-> **144 → 93**. That is a narrowing, **not a closure**: 43 of 271 contributing
-> papers are in neither source, so ~19% of observations remain unscoreable.
+> **Coverage — the hole is CLOSED, not just narrowed.** Two steps. MAIN_DATA as a
+> fallback took not-scoreable observations **795 → 581** and the 580-edge cohort
+> **144 → 93**; that left 43 contributing papers in neither source. A fuzzy sweep
+> ruled out the cheap explanation — 0 of those 43 have a title match ≥0.90 or any
+> prefix containment, so they were genuinely absent, not mis-keyed. Their text is
+> `extract_input.json` / `new_papers.json`, **untracked since 254b0a8 because this
+> repository is public and the corpus includes non-open-access articles** — still
+> in git history, gitignored, and readable locally for a read-only audit. With all
+> four sources: **271/271 contributing papers, 0 unscoreable observations.**
 >
-> **Result.** The mention rate does not move because it cannot go up: **every
-> scoreable observation names its taxon.** `own` 1,679/1,679, `background`
-> 494/494, `silent` 321/321. The 12 flagged "absences" are **all twelve** matcher
-> false negatives (see the superseded and retracted sections below) — including
-> the one that had been recorded as the project's single confirmed extraction
-> error, which is **retracted**. The stability is the point: opening a quarter
-> more of the corpus turned up **no** new fabrication candidate, so the
-> previously-unscoreable population behaves like the scoreable one rather than
-> hiding a reservoir of bad claims.
+> Each source fills only titles the ones above it lack, so adding one cannot
+> rescore an existing observation; with all of them removed the script reproduces
+> the 2026-09-13 git-only numbers exactly (verified by executing it that way).
+> Stronger, and measured rather than assumed (`validate_text_sources.py`): across
+> all six source pairs, **five agree EXACTLY** — `extract_in` vs `main_data` at
+> n=303 and `extract_in` vs `new_papers` at n=629, both 1.0000 — and the only
+> disagreements anywhere are the 12 stub cases below. **Source choice cannot
+> change a verdict.**
+>
+> **Result — now over the WHOLE graph, with nothing excused as unscoreable.**
+> **Every one of the 3,077 observations names its taxon in its source paper.**
+> `own` 2,109/2,109, `background` 585/585, `silent` 381/381 after adjudication.
+> The 12 flagged "absences" are **all twelve** matcher false negatives (see the
+> superseded and retracted sections below) — including the one recorded as the
+> project's single confirmed extraction error, which is **retracted**.
+>
+> The stability is the point, and it is what a 25.8%-unscoreable audit could not
+> claim. Roughly a quarter of these observations had never been scored by any
+> instrument in this project. Scoring them produced **no new fabrication
+> candidate**: the previously-unreachable population behaves exactly like the
+> reachable one, rather than hiding a reservoir of bad claims. That is the
+> difference between "98.4% of what we could see" and an answer about the graph.
 >
 > **A guard came out of it.** The two sources share 16 papers and disagree on 12
 > of 179 observations — *all* one-directional (git=mentioned, MAIN_DATA=absent),
@@ -55,7 +72,7 @@ Three different quantities:
 |---|---|---|
 | DB agreement | does the literature replicate? | 73.0 / 72.5% |
 | reading fidelity | did we read the direction right? | ≥86.6% |
-| **mention (this doc)** | **is the taxon even in the paper?** | **100%** (was 99.57%) |
+| **mention (this doc)** | **is the taxon even in the paper?** | **100%**, 3,077/3,077 |
 
 Mention is the weakest of the three and the easiest to pass. It is worth
 measuring only because it reaches a population the other two cannot.
@@ -78,8 +95,10 @@ The distinction matters because `silent` conflates two very different things:
   edge. A candidate fabrication, and individually reviewable.
 
 Nobody had separated them. Before this, the honest description of those 580 edges
-was "we cannot say anything". Now it is "98.4% are not fabricated; their direction
-remains unverified".
+was "we cannot say anything". As first published it became "98.4% are not
+fabricated; their direction remains unverified". **As of 2026-09-17, with all
+four text sources, it is: all 580 are scoreable and none is fabricated — their
+direction remains unverified.**
 
 ## Method
 
@@ -112,7 +131,8 @@ a taxon occurring in more than half the corpus.
 **Positive control — is the matcher sound?** `own` and `background` observations
 name their taxon *in a sentence* by construction, so they **must** score 100%.
 This is an answer known a priori, and it caught a real bug (below). Final:
-**own 1520/1520, background 474/474** — zero false negatives on 1,994
+**own 1520/1520, background 474/474** (2026-09-17, full coverage:
+**own 2109/2109, background 585/585**) — zero false negatives on 1,994
 observations.
 
 ## Results
