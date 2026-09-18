@@ -1,0 +1,6 @@
+root ::= "{" ws "\"disease\"" ws ":" ws string ws "," ws "\"taxa_enriched\"" ws ":" ws arr ws "," ws "\"taxa_depleted\"" ws ":" ws arr ws "}"
+arr ::= "[" ws "]" | "[" ws string (ws "," ws string)* ws "]"
+string ::= "\"" chars "\""
+chars ::= char*
+char ::= [^"\\] | "\\" ["\\/bfnrt]
+ws ::= [ \t\n]*
