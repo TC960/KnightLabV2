@@ -36,6 +36,21 @@ kill_instance(){
   say "STOPPING INSTANCE ($why)"
   # final copy before the box goes away
   scp -o ConnectTimeout=15 -o BatchMode=yes -r "$INST:$REMOTE_DIR/extract_out" "$DEST/" 2>/dev/null
+
+  # A job that writes anywhere other than $REMOTE_DIR/extract_out produces a
+  # successful DONE and an empty local dir, and then this function deletes the
+  # only copy. That happened once: three prompt variants, 1h48m and ~$1.08 gone
+  # because the job wrote to exp_out/. Before deleting, sweep any *other*
+  # directory holding .jsonl results so a path mismatch costs nothing.
+  local stray
+  stray=$(ssh_q "find $REMOTE_DIR -maxdepth 2 -name '*.jsonl' -newermt '-12 hours' -printf '%h\n' 2>/dev/null | sort -u")
+  for d in $stray; do
+    case "$d" in
+      *extract_out) ;;                      # already pulled above
+      *) say "sweeping unexpected result dir: $d"
+         scp -o ConnectTimeout=15 -o BatchMode=yes -r "$INST:$d" "$DEST/" 2>/dev/null ;;
+    esac
+  done
   scp -o ConnectTimeout=15 -o BatchMode=yes "$INST:~/kg/run.log" "$DEST/gpu_run.log" 2>/dev/null
   # stop if the provider supports it, else delete (massedcompute is delete-only)
   if brev stop "$INST" 2>&1 | grep -qi "does not support stop"; then
