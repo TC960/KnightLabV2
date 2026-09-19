@@ -156,6 +156,21 @@ one). Same asymmetry as the recall audit: the file holds ~10% of corpus text, so
   shuffle would destroy nothing and test nothing. The exchangeable null is a
   within-paper label permutation holding each paper's label counts fixed.
 
+- ***Running the chain twice caught two bugs every single run reported as fine***
+  — the project's own rule, earning its keep. (a) `contrast_census.py` built its
+  BH input with `sorted((k, p) for ...)`, which sorts **tuples**, i.e. by predictor
+  NAME rather than by p; the first committed run gave **q = 0.0001 to all four
+  tests, the two nulls included.** Corrected: q = 0.0006 for the positive result,
+  0.650 for the mixed-provenance null. No headline moves (the docs quote p), but a
+  null carrying q = 0.0001 is exactly the artifact this corpus has shipped before.
+  (b) `contrast_candidate_packets.py` drew its sample at run time, and the pool
+  changed underneath it when the regex was widened — so the second run drew a
+  **different 24 papers, orphaned all 46 adjudications, exited 0 and reported
+  `adjudicated: 14`.** The draw is now frozen in `contrast_candidate_sample.json`
+  and ids index the full draw, not the survivors. **A pipeline that re-samples on
+  every run cannot be checked by diffing, which is precisely when a diff is most
+  needed.** All ten outputs are now byte-identical on a second run.
+
 **Highest-value next step.** **Put the two Alzheimer's papers in front of a
 human** — 20 edges, a one-line decision each, and the only thing this session
 found that changes graph content. Then, if a cheap lever is wanted: the

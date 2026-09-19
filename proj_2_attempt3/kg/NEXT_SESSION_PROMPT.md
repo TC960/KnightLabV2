@@ -56,6 +56,25 @@
 > built to avoid the flaw that got the 2026-09-17 provenance tier retracted, and
 > worth ~6 excess disagreements, so **never quote it as an accuracy gain.**
 >
+> **A SECOND, SEPARATE number from the same pass — do not add it to the first.**
+> Within papers that ARE in scope, observations whose taxon is never reported
+> against a control in any sentence naming it are **~1.3% of the graph, CI
+> [0.8%, 1.8%]** (48.7% of an 84-observation flagged set adjudicate as genuinely
+> out-of-gate, CI [29.0, 65.8], paper-clustered bootstrap). It bounds
+> contamination **inside the flagged set only**, so it is a floor, not a ceiling.
+> Getting there needed **16 of 20 adjudicator verdicts overruled** — they inferred
+> healthy-control comparators the text never states; quotes offered as control
+> contrasts turned out to be mice, Aβ+ vs Aβ− cognitively normal, sALS vs bALS.
+> The re-read was run in **both** directions (all 18 opposing verdicts survived)
+> and every override carries its reason in `contrast_candidate_override.json`.
+>
+> **(c) A third method rule, and it cost two bugs to learn.** Running the chain
+> twice caught a BH sort that ordered p-values **by predictor name** (giving both
+> nulls q = 0.0001) and a sampler that silently **redrew** when its pool changed,
+> orphaning all 46 adjudications while exiting 0 and printing a plausible count.
+> **A pipeline that re-samples on every run cannot be checked by diffing** — freeze
+> the draw. All ten scripts here now reproduce byte-identically.
+>
 > **TWO EDGE-CONTENT DECISIONS ARE NOW WAITING ON A HUMAN, and they are the only
 > things in the backlog that change the graph.** Both on the Alzheimer's node:
 > the SILCODE amyloid paper contributes **13 edges** and *no subject in it has
