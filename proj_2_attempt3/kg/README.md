@@ -15,13 +15,13 @@ extractions_screened.json                        (extraction, 326 rows -> 314 af
 
 | | |
 |---|---:|
-| taxon–disease edges | 2,034 |
-| distinct taxa | 925 |
+| taxon–disease edges | 2,008 |
+| distinct taxa | 883 |
 | diseases (normalized) | 40 |
-| edges seen in >1 paper | 440 |
-| **contested** (papers disagree on direction) | **217** |
-| containment links | 723 |
-| rank-placeholder nodes | 100 |
+| edges seen in >1 paper | 447 |
+| **contested** (papers disagree on direction) | **220** |
+| containment links | 727 |
+| rank-placeholder nodes | 94 |
 | papers contributing ≥1 association | 272 / 326 |
 
 **Confidence tiers** (`annotate_confidence` in `build_kg.py`, added 2026-09-09).
@@ -53,9 +53,10 @@ with effect sizes the source papers report incommensurable statistics (LEfSe LDA
 fold-changes, p-values) that cannot be pooled into one magnitude — a unified "strength" number
 would be invented precision. Bar length = number of papers.
 
-**Contested edges are kept, never merged.** 217 pairs are contested — 215 with papers
-pointing both ways, plus 2 where a single paper contradicts itself. *(Was written as 151,
-a count from three corpus revisions ago; corrected 2026-09-10.)* The
+**Contested edges are kept, never merged.** 220 pairs are contested — papers pointing
+both ways, plus a small number where a single paper contradicts itself. *(Written as 151
+and later 217, both counts from earlier corpus revisions; these come from `graph.json`
+meta and should be reread from there, not copied forward.)* The
 microbiome replication literature reports ~1 taxon in 3 flipping sign between cohorts, so
 disagreement is a finding about the evidence base, not noise. Disbiome and Peryton both store
 conflicting entries separately for the same reason.
@@ -68,7 +69,7 @@ have red-green colorblindness.
 **Ranks are preserved, not collapsed.** Papers report phylum, genus, species and OTU-level labels
 as peers; there is no accepted convention for merging them. Rank is a node attribute.
 
-**Not a node-link diagram.** 2,034 edges over 925 taxa is a hairball that answers no question. The
+**Not a node-link diagram.** 2,008 edges over 883 taxa is a hairball that answers no question. The
 question the data serves — "for this disease, which taxa, how replicated, where do papers
 disagree" — is a diverging bar chart.
 

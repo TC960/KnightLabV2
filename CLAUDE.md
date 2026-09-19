@@ -274,8 +274,10 @@ Built from the 250-paper extraction. Published: <https://www.mohakprakash.com/Kn
 - **Contested edges are kept, never averaged.** 220 pairs are contested in the current `graph.json`
   (`meta.n_contested`; "217" and, before it, "174" were both stale). ~1 taxon in
   3 flips sign between cohorts in this literature, so disagreement is a finding, not noise.
-- **Containment is modelled, not collapsed.** 2,384 ancestor-descendant pairs sit within the same
-  disease. Merging ranks would destroy real signal: in Parkinson's, *Lachnospiraceae* (family) is
+- **Containment is modelled, not collapsed.** ~2,400–3,700 ancestor-descendant pairs sit within
+  the same disease (the "2,384" here is stale — a recount over the *repaired* containment tree
+  gives 3,653, and the two figures use different ancestor definitions, so neither has been
+  adopted; recount before quoting). Merging ranks would destroy real signal: in Parkinson's, *Lachnospiraceae* (family) is
   depleted in 8 of the 9 papers reporting it while *Hungatella* (a genus inside it) is enriched in
   6 of 7, and one study reports both directions itself. (An earlier "15 papers / 7" here predated
   the 2026-09-03 deduplication.) Corpus-wide, related taxa agree on direction 89% of the time
