@@ -1,26 +1,26 @@
 {
  "n_observations": 3077,
  "verdicts": {
-  "UNRESOLVED": 1234,
-  "CLEAN": 1272,
+  "UNRESOLVED": 1187,
+  "CLEAN": 1349,
   "NO_SENTENCE": 457,
-  "CANDIDATE": 114
+  "CANDIDATE": 84
  },
  "by_paper_class": {
   "in_gate_clean": {
-   "UNRESOLVED": 780,
-   "CLEAN": 711,
-   "CANDIDATE": 44
+   "UNRESOLVED": 758,
+   "CLEAN": 739,
+   "CANDIDATE": 38
   },
   "in_gate_mixed": {
-   "CLEAN": 536,
-   "UNRESOLVED": 416,
-   "CANDIDATE": 45
+   "CLEAN": 579,
+   "UNRESOLVED": 391,
+   "CANDIDATE": 27
   },
   "out_of_gate": {
-   "CLEAN": 25,
-   "CANDIDATE": 25,
-   "UNRESOLVED": 38
+   "CLEAN": 31,
+   "UNRESOLVED": 38,
+   "CANDIDATE": 19
   }
  },
  "rows": [
@@ -722,7 +722,7 @@
    "taxon": "Butyricicoccus",
    "taxon_key": "ncbi:580596",
    "disease": "Stroke",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 11,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -733,7 +733,7 @@
    "taxon": "Klebsiella",
    "taxon_key": "ncbi:570",
    "disease": "Neurocognitive impairment",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 12,
    "paper_contrast": "SUBGROUP",
    "paper_also_subgroup": false,
@@ -744,7 +744,7 @@
    "taxon": "Spirochaetota",
    "taxon_key": "ncbi:203691",
    "disease": "Neurocognitive impairment",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "SUBGROUP",
    "paper_also_subgroup": false,
@@ -755,7 +755,7 @@
    "taxon": "Campylobacterota",
    "taxon_key": "ncbi:29547",
    "disease": "Neurocognitive impairment",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "SUBGROUP",
    "paper_also_subgroup": false,
@@ -766,11 +766,11 @@
    "taxon": "Faecalibacterium",
    "taxon_key": "ncbi:216851",
    "disease": "Neurocognitive impairment",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 9,
    "paper_contrast": "SUBGROUP",
    "paper_also_subgroup": false,
-   "example": "Among the genera with observed differences between the NCI and non-NCI groups, Faecalibacterium , Corprococcus_2, Ruminococcaceae_NK4A214_group, and Ruminococcus_1 contain butyrate-producing bacteria (BPB)."
+   "example": "In agreement with our findings, some studies reported an increase in abundance of Coprococcus and Faecalibacterium and a decreased abundance of genus Ruminococcus after vitamin D supplementation ( Bashir et\u00a0al., 2016 ; Naderpoor et\u00a0al., 2019 )."
   },
   {
    "paper": "Gut Microbiota and Fecal Metabolites Associated With Neurocognitive Impairment in HIV-Infected Population",
@@ -788,7 +788,7 @@
    "taxon": "Ruminococcus_1",
    "taxon_key": "ph:ruminococcus 1",
    "disease": "Neurocognitive impairment",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 6,
    "paper_contrast": "SUBGROUP",
    "paper_also_subgroup": false,
@@ -799,7 +799,7 @@
    "taxon": "Ruminococcaceae_NK4A214_group",
    "taxon_key": "ph:ruminococcaceae nk4a214 group",
    "disease": "Neurocognitive impairment",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 2,
    "paper_contrast": "SUBGROUP",
    "paper_also_subgroup": false,
@@ -1030,7 +1030,7 @@
    "taxon": "Streptococcus anginosus",
    "taxon_key": "ncbi:1328",
    "disease": "Stroke",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 3,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -1228,7 +1228,7 @@
    "taxon": "Olsenella",
    "taxon_key": "ncbi:133925",
    "disease": "Migraine",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -1283,7 +1283,7 @@
    "taxon": "Catenibacterium",
    "taxon_key": "ncbi:135858",
    "disease": "Migraine",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 6,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -1606,7 +1606,7 @@
    "n_sent": 6,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Previous study showed that mucin-degraders (family Prevotellaceae) were enriched in patients with depression and anxiety , and a further subgroup analysis of present study also supported a near-significant increase of Akkermansia in unaffected controls with antidepressant ( n =\u20095, P value\u2009=\u20090.056) w"
+   "example": "Nineteen (45.2%) out of 42 differential taxa, including butyrate-producing bacteria (e.g., Roseburia , Lachnospiraceae_ND3007_group , Lachnospira , [Eubacterium]_ventriosum_group , Butyricicoccus , Faecalibacterium , and family Lachnospiraceae), hydrogen sulfide-producing Desulfovibrio , mucin-degra"
   },
   {
    "paper": "Gut microbiota in Parkinson's disease patients: hospital-based study",
@@ -2614,7 +2614,7 @@
    "taxon": "Enterococcus",
    "taxon_key": "ncbi:1350",
    "disease": "Stroke",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 5,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -3692,11 +3692,11 @@
    "taxon": "Bacteroides",
    "taxon_key": "ncbi:816",
    "disease": "Alzheimer's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "Compared to WT mice, the GMB in the ADWT or AD Tg mice was similar and characterized by an increased abundance of proinflammatory bacteria Dubosiella [ 54 ] and six other bacteria ( Fig. 3e \u2013 j ), but decreased abundances of other bacteria ( Fig. 3k \u2013 r ), which included Marvinbryantia ( Fig. 3k ), "
+   "example": "The fecal microbiota community in the AD and PAD was similar with the decreases in the abundance of Bacteroides uniforms , which are involved in fiber and lipid metabolic and immune system [ 63 , 64 ], compared to CON ( Fig. 7e )."
   },
   {
    "paper": "Alterations in Gut Microbiota and Their Correlation with Brain Beta-Amyloid Burden Measured by (18)F-Florbetaben PET in Mild Cognitive Impairment Due to Alzheimer's Disease.",
@@ -4664,7 +4664,7 @@
    "n_sent": 14,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Similarly, increased Collinsella and a notable decrease of [Eubacterium]_ventriosum_group were observed in RBD-FDR relative to the control."
+   "example": "Nineteen (45.2%) out of 42 differential taxa, including butyrate-producing bacteria (e.g., Roseburia , Lachnospiraceae_ND3007_group , Lachnospira , [Eubacterium]_ventriosum_group , Butyricicoccus , Faecalibacterium , and family Lachnospiraceae), hydrogen sulfide-producing Desulfovibrio , mucin-degra"
   },
   {
    "paper": "Oral and gut dysbiosis leads to functional alterations in Parkinson's disease.",
@@ -4715,7 +4715,7 @@
    "taxon": "Desulfovibrio",
    "taxon_key": "ncbi:872",
    "disease": "Parkinson's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 5,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -4803,11 +4803,11 @@
    "taxon": "Butyricicoccus",
    "taxon_key": "ncbi:580596",
    "disease": "Parkinson's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 5,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Among these genera, Butyricicoccus and Faecalibacterium showed the strongest correlation with disease progression (Kendall\u2019s \u03c4b\u2009=\u2009\u22120.204 and \u22120.198, q value <0.001, Fig. 3c ), while Faecalibacterium was also a major contributor to the variation of first principal component as shown in Fig. 3d (Spear"
+   "example": "Nineteen (45.2%) out of 42 differential taxa, including butyrate-producing bacteria (e.g., Roseburia , Lachnospiraceae_ND3007_group , Lachnospira , [Eubacterium]_ventriosum_group , Butyricicoccus , Faecalibacterium , and family Lachnospiraceae), hydrogen sulfide-producing Desulfovibrio , mucin-degra"
   },
   {
    "paper": "Nutritional Intake and Gut Microbiome Composition Predict Parkinson's Disease.",
@@ -4935,11 +4935,11 @@
    "taxon": "Faecalibacterium",
    "taxon_key": "ncbi:216851",
    "disease": "Parkinson's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 4,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Among these genera, Butyricicoccus and Faecalibacterium showed the strongest correlation with disease progression (Kendall\u2019s \u03c4b\u2009=\u2009\u22120.204 and \u22120.198, q value <0.001, Fig. 3c ), while Faecalibacterium was also a major contributor to the variation of first principal component as shown in Fig. 3d (Spear"
+   "example": "Nineteen (45.2%) out of 42 differential taxa, including butyrate-producing bacteria (e.g., Roseburia , Lachnospiraceae_ND3007_group , Lachnospira , [Eubacterium]_ventriosum_group , Butyricicoccus , Faecalibacterium , and family Lachnospiraceae), hydrogen sulfide-producing Desulfovibrio , mucin-degra"
   },
   {
    "paper": "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson's disease.",
@@ -5067,7 +5067,7 @@
    "taxon": "Roseburia",
    "taxon_key": "ncbi:841",
    "disease": "Parkinson's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -5133,7 +5133,7 @@
    "taxon": "Lachnospiraceae_ND3007_group",
    "taxon_key": "ph:lachnospiraceae nd3007 group",
    "disease": "Parkinson's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -5188,7 +5188,7 @@
    "taxon": "Lachnospira",
    "taxon_key": "ncbi:28050",
    "disease": "Parkinson's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 3,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -5287,7 +5287,7 @@
    "taxon": "Lachnospiraceae",
    "taxon_key": "ncbi:186803",
    "disease": "Parkinson's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -7722,7 +7722,7 @@
    "n_sent": 8,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "The relative abundances of Proteobacteria (at the phylum level), Gammaproteobacteria (at the class level), Burkholderiales (at the order level), Burkholderiaceae (at the family level), Oxalobacteraceae (at the family level), Ralstonia (at the genus level), Massilla (at the genus level), and Lactococ"
+   "example": "At the phylum level (Fig. 5 a), the relative abundances of Bacteroidetes and Proteobacteria were the highest in the duodenal mucosa of the controls and PD patients, respectively, while those of Firmicutes in the sigmoid mucosa of the controls and PD patients were the highest."
   },
   {
    "paper": "Microbiome signatures of virulence in the oral-gut-brain axis influence Parkinson's disease and cognitive decline pathophysiology.",
@@ -8576,7 +8576,7 @@
    "taxon": "Bacilli",
    "taxon_key": "ncbi:91061",
    "disease": "Alzheimer's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -8620,7 +8620,7 @@
    "taxon": "Clostridia",
    "taxon_key": "ncbi:186801",
    "disease": "Alzheimer's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -8653,7 +8653,7 @@
    "taxon": "Bilophila wadsworthia",
    "taxon_key": "ncbi:35833",
    "disease": "Alzheimer's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -8686,7 +8686,7 @@
    "taxon": "Parabacteroides distasonis",
    "taxon_key": "ncbi:823",
    "disease": "Alzheimer's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -8862,7 +8862,7 @@
    "taxon": "Gammaproteobacteria",
    "taxon_key": "ncbi:1236",
    "disease": "Alzheimer's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -8917,7 +8917,7 @@
    "taxon": "Enterobacterales",
    "taxon_key": "ncbi:91347",
    "disease": "Alzheimer's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -11238,11 +11238,11 @@
    "taxon": "Roseburia",
    "taxon_key": "ncbi:841",
    "disease": "Alzheimer's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 6,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "The relative abundance levels of four genera of SCFA-producing bacteria ( Roseburia , Lachnospiraceae_NK4A136_group , Ruminococcaceae_UCG-013 , and Ruminiclostridium_9 ) were lower in the SCD group than in the aMCI group (P < 0.05, Table 4 and Figure 2E )."
+   "example": "With the production of considerable amounts of butyrate, Roseburia within the family Lachnospiraceae may be important for the control of inflammatory processes, especially in the gut, which decrease PD, irritable bowel syndrome, obesity, and type 2 diabetes ( Tamanai-Shacoori et\u00a0al., 2017 )."
   },
   {
    "paper": "Stratification of the Gut Microbiota Composition Landscape across the Alzheimer's Disease Continuum in a Turkish Cohort",
@@ -11660,7 +11660,7 @@
    "n_sent": 8,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "The relative abundances of Proteobacteria (at the phylum level), Gammaproteobacteria (at the class level), Burkholderiales (at the order level), Burkholderiaceae (at the family level), Oxalobacteraceae (at the family level), Ralstonia (at the genus level), Massilla (at the genus level), and Lactococ"
+   "example": "At the genus level (Fig. 5 b), Bacteroides and Ralstonia had the highest relative abundance in the duodenal mucosa of the controls and PD patients, respectively, while in the sigmoid mucosa of both the controls and PD patients, Bacteroides had the highest relative abundance."
   },
   {
    "paper": "Changes in Gastrointestinal Microbiome Composition in PD: A Pivotal Role of Covariates.",
@@ -11931,7 +11931,7 @@
    "taxon": "Odoribacter",
    "taxon_key": "ncbi:283168",
    "disease": "Amyotrophic lateral sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -15143,7 +15143,7 @@
    "taxon": "Kineothrix",
    "taxon_key": "ncbi:2163168",
    "disease": "Amyotrophic lateral sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -15154,7 +15154,7 @@
    "taxon": "Parabacteroides",
    "taxon_key": "ncbi:375288",
    "disease": "Amyotrophic lateral sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -15165,7 +15165,7 @@
    "taxon": "Sporobacter",
    "taxon_key": "ncbi:44748",
    "disease": "Amyotrophic lateral sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -15176,7 +15176,7 @@
    "taxon": "Eisenbergiella",
    "taxon_key": "ncbi:1432051",
    "disease": "Amyotrophic lateral sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -15187,7 +15187,7 @@
    "taxon": "Mannheimia",
    "taxon_key": "ncbi:75984",
    "disease": "Amyotrophic lateral sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -15198,7 +15198,7 @@
    "taxon": "Anaerotruncus",
    "taxon_key": "ncbi:244127",
    "disease": "Amyotrophic lateral sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -15209,7 +15209,7 @@
    "taxon": "unclassified Porphyromonadaceae",
    "taxon_key": "ncbi:361210",
    "disease": "Amyotrophic lateral sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -16463,11 +16463,11 @@
    "taxon": "Candidatus Gastranaerophilales",
    "taxon_key": "ncbi:1906119",
    "disease": "Amyotrophic lateral sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 4,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "The difference in the Cyanobacteria phylum is reflected at the family level in the significantly higher abundance in ALS patients of Gastranaerophilales (uncultured bacteria) ( P <\u20090.05) (Fig. 3 d, Additional\u00a0file 1 : Table S1)."
+   "example": "OTUs distribution in the control-diseased dataset for the significant families. a) OTUs distribution for Gastranaerophilales; D_4__uncultured bacterium and Clostridiaceae 1. b) OTUs distribution for Clostridiales; Ambiguous_taxa and Clostridiales;D_4__Family XI."
   },
   {
    "paper": "A prospective longitudinal study on the microbiota composition in amyotrophic lateral sclerosis.",
@@ -16672,11 +16672,11 @@
    "taxon": "Eubacteriales",
    "taxon_key": "ncbi:186802",
    "disease": "Amyotrophic lateral sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 8,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "Some families presented a higher relative abundance in the diseased group, even though not of statistical significance: Clostridiales vadinBB60 group belonging to Clostridia, Bacteroidales S24-7 group, Coriobacteriaceae, Verrucomicrobioaceae, and Lactobacillaceae."
+   "example": "OTUs distribution in the control-diseased dataset for the significant families. a) OTUs distribution for Gastranaerophilales; D_4__uncultured bacterium and Clostridiaceae 1. b) OTUs distribution for Clostridiales; Ambiguous_taxa and Clostridiales;D_4__Family XI."
   },
   {
    "paper": "Evaluation of the Microbial Diversity in Amyotrophic Lateral Sclerosis Using High-Throughput Sequencing.",
@@ -17013,11 +17013,11 @@
    "taxon": "Coprococcus",
    "taxon_key": "ncbi:33042",
    "disease": "Alzheimer's disease",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 11,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "At the genus level, 24 key functional bacterial genera had changed significantly between the groups while only eight genera\u2014 Faecalibacterium, Roseburia, Clostridium sensu stricto, Gemmiger, Dialister, Romboutsia, Coprococcus , and Butyricicoccus \u2014had decreased in AD patients."
+   "example": "Inconsistent with our microbiome study on AD patients here, Nagpal et al. ( 2019 ) found increased levels of Coprococcus in mild cognitive impairment participants in comparison with the controls."
   },
   {
    "paper": "Specific Bacterial Taxa and Their Metabolite, DHPS, May Be Linked to Gut Dyshomeostasis in Patients with Alzheimer's Disease, Parkinson's Disease, and Amyotrophic Lateral Sclerosis.",
@@ -17860,7 +17860,7 @@
    "taxon": "Bacteroides",
    "taxon_key": "ncbi:816",
    "disease": "Anti-NMDAR encephalitis",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 5,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -18799,7 +18799,7 @@
    "n_sent": 8,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Specifically, Romboutsia timonensis increased by 640% ( P =\u20090.004) compared to Control and 244% ( P =\u20090.017) compared to Relapsing MS, while Enterococcus faecium increased by 980% ( P =\u20090.002) and 59% ( P =\u20090.05), respectively."
+   "example": "In contrast, Romboutsia timonensis and Enterococcus faecium were markedly enriched in the Progressive group relative to both the Control and Relapsing groups."
   },
   {
    "paper": "Decoding the Gut Microbiota in Multiple Sclerosis Using Nanopore Long-Read Sequencing: Insights into Disease Severity and Subtypes.",
@@ -18810,7 +18810,7 @@
    "n_sent": 7,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Specifically, Romboutsia timonensis increased by 640% ( P =\u20090.004) compared to Control and 244% ( P =\u20090.017) compared to Relapsing MS, while Enterococcus faecium increased by 980% ( P =\u20090.002) and 59% ( P =\u20090.05), respectively."
+   "example": "In contrast, Romboutsia timonensis and Enterococcus faecium were markedly enriched in the Progressive group relative to both the Control and Relapsing groups."
   },
   {
    "paper": "The Gut Microbiome in Progressive Multiple Sclerosis",
@@ -20130,14 +20130,14 @@
    "n_sent": 6,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Of the eight clades with MS case-control discrepancy in our study, the genus Sutterella has been reported to increase in the gut microbiome of MS patients under treatment compared to healthy controls, while decreasing in untreated MS patients ( Jangi et al., 2016 )."
+   "example": "Of these, one exhibited increased abundances in the MS samples than in the controls ( Sutterella sp.), whereas seven exhibited decreased abundances ( Erysipelatoclostridium sp., Gemella morbillorum , Granulicatella , Granulicatella adiacens , Gabonia , Gabonia massiliensis , and Carnobacteriaceae ; "
   },
   {
    "paper": "A Metagenome-Wide Association Study of Gut Microbiome in Patients With Multiple Sclerosis Revealed Novel Disease Pathology.",
    "taxon": "Thomasclavelia",
    "taxon_key": "ncbi:3025755",
    "disease": "Multiple sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -20148,18 +20148,18 @@
    "taxon": "Gemella morbillorum",
    "taxon_key": "ncbi:29391",
    "disease": "Multiple sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Phylogenetic case-control association tests showed discrepancies of eight clades, most of which were related to the immune system (false discovery rate [FDR] < 0.10; e.g., Erysipelatoclostridium_sp . and Gemella morbillorum )."
+   "example": "Of these, one exhibited increased abundances in the MS samples than in the controls ( Sutterella sp.), whereas seven exhibited decreased abundances ( Erysipelatoclostridium sp., Gemella morbillorum , Granulicatella , Granulicatella adiacens , Gabonia , Gabonia massiliensis , and Carnobacteriaceae ; "
   },
   {
    "paper": "A Metagenome-Wide Association Study of Gut Microbiome in Patients With Multiple Sclerosis Revealed Novel Disease Pathology.",
    "taxon": "Granulicatella",
    "taxon_key": "ncbi:117563",
    "disease": "Multiple sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -20170,7 +20170,7 @@
    "taxon": "Granulicatella adiacens",
    "taxon_key": "ncbi:46124",
    "disease": "Multiple sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -20181,7 +20181,7 @@
    "taxon": "Gabonia",
    "taxon_key": "ncbi:1923867",
    "disease": "Multiple sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -20192,7 +20192,7 @@
    "taxon": "Gabonia massiliensis",
    "taxon_key": "ncbi:1686296",
    "disease": "Multiple sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -20203,7 +20203,7 @@
    "taxon": "Carnobacteriaceae",
    "taxon_key": "ncbi:186828",
    "disease": "Multiple sclerosis",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -21164,7 +21164,7 @@
    "n_sent": 8,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "The relative abundances of Bacteroides, Prevotella 9, Lachnospiraceae _g, Anaerostipes, Fusicatenibacter, Lachnoclostridium, Roseburia, Tyzzerella 4, ( Eubacterium ) hallii group, Fusobacterium , and Akkermansia were higher in the control group."
+   "example": "Furthermore, 11 genera such as Blautia, Roseburia , and Lactococcus and 18 genera such as Lactobacillus, Ruminococcus 2, and Akkermansia were the differential taxa in the control and CI groups, respectively."
   },
   {
    "paper": "Air particulate pollution exposure associated with impaired cognition via microbiota gut-brain axis: an evidence from rural elderly female in northwest China.",
@@ -23481,7 +23481,7 @@
    "taxon": "Bilophila",
    "taxon_key": "ncbi:35832",
    "disease": "Mild cognitive impairment",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 12,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -23558,11 +23558,11 @@
    "taxon": "Bilophila wadsworthia",
    "taxon_key": "ncbi:35833",
    "disease": "Mild cognitive impairment",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 9,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "Equal abundance subset analysis of Bilophila wadsworthia was conducted by choosing samples whose abundances were approximately the same value ( p > 0.999 via Mann\u2013Whitney U test comparing control ( n = 5) and aMCI ( n = 7))."
+   "example": "Bilophila wadsworthia , which has previously been shown to be pro-inflammatory [ 62 ], was significantly increased in the aMCI group ( p < 0.05), whereas Turicibacter sanguinis , which has been shown to be negatively correlated with the inflammatory markers IL-1\u03b2 and IL-6 [ 63 ], was enriched in the"
   },
   {
    "paper": "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive Impairment.",
@@ -23602,7 +23602,7 @@
    "taxon": "Akkermansia",
    "taxon_key": "ncbi:239934",
    "disease": "Mild cognitive impairment",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 3,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -23613,18 +23613,18 @@
    "taxon": "Turicibacter",
    "taxon_key": "ncbi:191303",
    "disease": "Mild cognitive impairment",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 15,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "Similarly to previously published results [ 67 ], 16S sequencing analysis revealed an increase in pro-inflammatory bacterial taxa in the aMCI cohort, such as Bilophila and Erysipelotrichaceae UCG-003, and an enrichment of probiotic ASVs in the controls, including Akkermansia, Subdoligranulum, and Tu"
+   "example": "Another species of Turicibacter \u2014 Turicibacter sp001543345 \u2014was enriched in the controls as well."
   },
   {
    "paper": "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive Impairment.",
    "taxon": "Subdoligranulum",
    "taxon_key": "ncbi:292632",
    "disease": "Mild cognitive impairment",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 5,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -23635,11 +23635,11 @@
    "taxon": "Turicibacter sanguinis",
    "taxon_key": "ncbi:154288",
    "disease": "Mild cognitive impairment",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 4,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "We used both Random Forest (with Boruta) and MaAsLin2 (see Section 2 ) to identify discriminatory MAGs, which included Parabacteroides distasonis , Bilophila wadsworthia , Turicibacter sanguinis , Christensenellales CAG-74 UMGS1633 , and CAG-349 (another member of the Christensenellales order)."
+   "example": "Bilophila wadsworthia , which has previously been shown to be pro-inflammatory [ 62 ], was significantly increased in the aMCI group ( p < 0.05), whereas Turicibacter sanguinis , which has been shown to be negatively correlated with the inflammatory markers IL-1\u03b2 and IL-6 [ 63 ], was enriched in the"
   },
   {
    "paper": "Gut Microbiota and Neurovascular Patterns in Amnestic Mild Cognitive Impairment.",
@@ -27265,7 +27265,7 @@
    "taxon": "Escherichia coli",
    "taxon_key": "ncbi:562",
    "disease": "Hemorrhagic transformation",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 8,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -27962,14 +27962,14 @@
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "The gut microbiome of the PSA group was mainly enriched in p_Bacteroidetes , c _Bacteroidia , o_Bacteroidales , and g_Bacteroides , whereas that of the non-PSA group was mainly enriched in p_Actinobacteria , c_Actinobacteria , and o_Bifidobacteriales ( Figure 3(i) and ( j ))."
+   "example": "Analysis at the phylum level revealed that Bacteroidetes were more abundant in PSA patient samples (11.25%) than in non-PSA samples (3.53%) and 8.14% in HCs."
   },
   {
    "paper": "Crosstalk between the gut microbiota and brain network topology in poststroke aphasia patients: perspectives from neuroimaging findings",
    "taxon": "Bacteroidia",
    "taxon_key": "ncbi:200643",
    "disease": "Poststroke aphasia",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -28006,14 +28006,14 @@
    "n_sent": 3,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "A histogram of the community composition at the genus level revealed that g_Bifidobacterium was relatively highly abundant in the non-PSA group (38.46%), whereas the abundance of g_Blautia was relatively high in the PSA group (11.44%) ( Figure 3(h) )."
+   "example": "Opportunistic pathogens such as Blautia, Prevotella were more abundant, whereas probiotic microbes such as Bifidobacterium were less abundant, in PSA patients than in non-PSA patients."
   },
   {
    "paper": "Crosstalk between the gut microbiota and brain network topology in poststroke aphasia patients: perspectives from neuroimaging findings",
    "taxon": "Actinomycetota",
    "taxon_key": "ncbi:201174",
    "disease": "Poststroke aphasia",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -28248,7 +28248,7 @@
    "n_sent": 14,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Furthermore, in the non-HE group, the relative abundance of Veillonella increased."
+   "example": "Keywords: Bacteroidia , hepatic encephalopathy, hepatitis B virus, hepatitis B virus-associated liver cirrhosis, intestinal microbiota, nonhepatic encephalopathy, Pasteurellaceae , Streptococcus , Streptococcaceae , Veillonella status released display-pdf yes is-olf no is-manuscript no is-preprint n"
   },
   {
    "paper": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
@@ -28534,7 +28534,7 @@
    "n_sent": 12,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "Lactobacillus was enriched in the CI group than that in the control group although there was no significant statistical significance ( p 0.05, Figure 4B )."
+   "example": "Furthermore, 11 genera such as Blautia, Roseburia , and Lactococcus and 18 genera such as Lactobacillus, Ruminococcus 2, and Akkermansia were the differential taxa in the control and CI groups, respectively."
   },
   {
    "paper": "Gut Microbiota and Targeted Biomarkers Analysis in Patients With Cognitive Impairment",
@@ -28776,7 +28776,7 @@
    "n_sent": 4,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "The relative abundances of Bacteroides, Prevotella 9, Lachnospiraceae _g, Anaerostipes, Fusicatenibacter, Lachnoclostridium, Roseburia, Tyzzerella 4, ( Eubacterium ) hallii group, Fusobacterium , and Akkermansia were higher in the control group."
+   "example": "Furthermore, 11 genera such as Blautia, Roseburia , and Lactococcus and 18 genera such as Lactobacillus, Ruminococcus 2, and Akkermansia were the differential taxa in the control and CI groups, respectively."
   },
   {
    "paper": "Gut Microbiota and Targeted Biomarkers Analysis in Patients With Cognitive Impairment",
@@ -28809,7 +28809,7 @@
    "n_sent": 4,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "The results showed that based on the alteration of relative abundances, 11 genera including Blautia, Roseburia , Fusicatenibacter, Anaerostipes, Phascolarctobacterium, Lachnospiraceae_g, RuminococcaceaeUCG_013, Paraprevotella, Lactococcus , Bilophila, and Tyzzerella 3 were enriched in the control gr"
+   "example": "Furthermore, 11 genera such as Blautia, Roseburia , and Lactococcus and 18 genera such as Lactobacillus, Ruminococcus 2, and Akkermansia were the differential taxa in the control and CI groups, respectively."
   },
   {
    "paper": "Gut Microbiota and Targeted Biomarkers Analysis in Patients With Cognitive Impairment",
@@ -28853,7 +28853,7 @@
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "The results showed that based on the alteration of relative abundances, 11 genera including Blautia, Roseburia , Fusicatenibacter, Anaerostipes, Phascolarctobacterium, Lachnospiraceae_g, RuminococcaceaeUCG_013, Paraprevotella, Lactococcus , Bilophila, and Tyzzerella 3 were enriched in the control gr"
+   "example": "Furthermore, 11 genera such as Blautia, Roseburia , and Lactococcus and 18 genera such as Lactobacillus, Ruminococcus 2, and Akkermansia were the differential taxa in the control and CI groups, respectively."
   },
   {
    "paper": "Gut Microbiota and Targeted Biomarkers Analysis in Patients With Cognitive Impairment",
@@ -28886,7 +28886,7 @@
    "n_sent": 42,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Furthermore, Enterococcus enrichment and Prevotella depletion were also noted in the SAP group in contrast to the non-SAP group."
+   "example": "The relative abundance of Enterococcus was higher in patients with SAP than in non-SAP (P 0.001) ( Figure 4C ); moreover, GLM further confirmed that the Prevotella , Blautia , Ruminococcus_torques_group , Sutterella , and Veillonella were different between the two groups after controlling for age, h"
   },
   {
    "paper": "Gut microbiota composition reflects disease progression, severity and outcome, and dysfunctional immune responses in patients with hypertensive intracerebral hemorrhage",
@@ -28897,7 +28897,7 @@
    "n_sent": 10,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Among them, Enterococcus , Parabacteroides , Blautia , Lachnoclostridium , and Acidaminococcus were significantly enriched, and Prevotella were depleted in patients with SAP compared to the non-SAP group."
+   "example": "We observed that the relative abundances of Prevotella and Faecalibacterium were higher in the HC group than those in the ICH group, while the relative abundances of Enterococcus , Parabacteroides , Lachnoclostridium , Acidaminococcus , and Streptococcus were higher in the ICH group than those in th"
   },
   {
    "paper": "Gut microbiota composition reflects disease progression, severity and outcome, and dysfunctional immune responses in patients with hypertensive intracerebral hemorrhage",
@@ -28908,7 +28908,7 @@
    "n_sent": 4,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Among them, Enterococcus , Parabacteroides , Blautia , Lachnoclostridium , and Acidaminococcus were significantly enriched, and Prevotella were depleted in patients with SAP compared to the non-SAP group."
+   "example": "We observed that the relative abundances of Prevotella and Faecalibacterium were higher in the HC group than those in the ICH group, while the relative abundances of Enterococcus , Parabacteroides , Lachnoclostridium , Acidaminococcus , and Streptococcus were higher in the ICH group than those in th"
   },
   {
    "paper": "Gut microbiota composition reflects disease progression, severity and outcome, and dysfunctional immune responses in patients with hypertensive intracerebral hemorrhage",
@@ -28919,7 +28919,7 @@
    "n_sent": 3,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Among them, Enterococcus , Parabacteroides , Blautia , Lachnoclostridium , and Acidaminococcus were significantly enriched, and Prevotella were depleted in patients with SAP compared to the non-SAP group."
+   "example": "We observed that the relative abundances of Prevotella and Faecalibacterium were higher in the HC group than those in the ICH group, while the relative abundances of Enterococcus , Parabacteroides , Lachnoclostridium , Acidaminococcus , and Streptococcus were higher in the ICH group than those in th"
   },
   {
    "paper": "Gut microbiota composition reflects disease progression, severity and outcome, and dysfunctional immune responses in patients with hypertensive intracerebral hemorrhage",
@@ -28974,7 +28974,7 @@
    "n_sent": 33,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Furthermore, Enterococcus enrichment and Prevotella depletion were also noted in the SAP group in contrast to the non-SAP group."
+   "example": "The relative abundance of Enterococcus was higher in patients with SAP than in non-SAP (P 0.001) ( Figure 4C ); moreover, GLM further confirmed that the Prevotella , Blautia , Ruminococcus_torques_group , Sutterella , and Veillonella were different between the two groups after controlling for age, h"
   },
   {
    "paper": "Gut microbiota composition reflects disease progression, severity and outcome, and dysfunctional immune responses in patients with hypertensive intracerebral hemorrhage",
@@ -28992,7 +28992,7 @@
    "taxon": "Roseburia",
    "taxon_key": "ncbi:841",
    "disease": "Hypertensive intracerebral hemorrhage",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 8,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -29212,40 +29212,40 @@
    "taxon": "Veillonellaceae",
    "taxon_key": "ncbi:31977",
    "disease": "Chronic traumatic complete spinal cord injury",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "The abundance of Veillonellaceae and Prevotellaceae increased, while Bacteroidaceae and Bacteroides decreased in the SCI group."
+   "example": "LEfSe analysis (LDA threshold of 2) revealed that Veillonellaceae and Prevotellaceae were significantly enriched in the SCI group, whereas Bacteroidaceae and Bacteroides were significantly enriched in the healthy male group."
   },
   {
    "paper": "Gut microbiota dysbiosis in male patients with chronic traumatic complete spinal cord injury",
    "taxon": "Prevotellaceae",
    "taxon_key": "ncbi:171552",
    "disease": "Chronic traumatic complete spinal cord injury",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "The abundance of Veillonellaceae and Prevotellaceae increased, while Bacteroidaceae and Bacteroides decreased in the SCI group."
+   "example": "LEfSe analysis (LDA threshold of 2) revealed that Veillonellaceae and Prevotellaceae were significantly enriched in the SCI group, whereas Bacteroidaceae and Bacteroides were significantly enriched in the healthy male group."
   },
   {
    "paper": "Gut microbiota dysbiosis in male patients with chronic traumatic complete spinal cord injury",
    "taxon": "Bacteroides",
    "taxon_key": "ncbi:816",
    "disease": "Chronic traumatic complete spinal cord injury",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 13,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "The abundance of Veillonellaceae and Prevotellaceae increased, while Bacteroidaceae and Bacteroides decreased in the SCI group."
+   "example": "The abundance of Bacteroidaceae and Bacteroides in the quadriplegia group and Acidaminococcaceae, Blautia, Porphyromonadaceae, and Lachnoclostridium in the paraplegia group were significantly higher than those in the healthy male group."
   },
   {
    "paper": "Gut microbiota dysbiosis in male patients with chronic traumatic complete spinal cord injury",
    "taxon": "Blautia",
    "taxon_key": "ncbi:572511",
    "disease": "Chronic traumatic complete spinal cord injury",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 4,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -29256,7 +29256,7 @@
    "taxon": "Lachnoclostridium",
    "taxon_key": "ncbi:1506553",
    "disease": "Chronic traumatic complete spinal cord injury",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 4,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -29278,29 +29278,29 @@
    "taxon": "Bacteroidaceae",
    "taxon_key": "ncbi:815",
    "disease": "Chronic traumatic complete spinal cord injury",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 3,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "The abundance of Veillonellaceae and Prevotellaceae increased, while Bacteroidaceae and Bacteroides decreased in the SCI group."
+   "example": "The abundance of Bacteroidaceae and Bacteroides in the quadriplegia group and Acidaminococcaceae, Blautia, Porphyromonadaceae, and Lachnoclostridium in the paraplegia group were significantly higher than those in the healthy male group."
   },
   {
    "paper": "Gut microbiota dysbiosis in male patients with chronic traumatic complete spinal cord injury",
    "taxon": "Megamonas",
    "taxon_key": "ncbi:158846",
    "disease": "Chronic traumatic complete spinal cord injury",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 10,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Here, the relative abundance of Megamonas was significantly higher in the bloating group than in the non-bloating group, possibly because some carbohydrates in food cannot be digested and absorbed by intestinal digestive enzymes."
+   "example": "The abundance of Megamonas, Prevotella_9, [Eubacterium]_rectale_group, Dialister, and Subdoligranulum in the healthy male group was significantly higher than that in the SCI group (p 0.05, Mann\u2013Whitney U test)."
   },
   {
    "paper": "Gut microbiota dysbiosis in male patients with chronic traumatic complete spinal cord injury",
    "taxon": "Prevotella_9",
    "taxon_key": "ph:prevotella 9",
    "disease": "Chronic traumatic complete spinal cord injury",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 4,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -29322,7 +29322,7 @@
    "taxon": "Dialister",
    "taxon_key": "ncbi:39948",
    "disease": "Chronic traumatic complete spinal cord injury",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 4,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -29333,7 +29333,7 @@
    "taxon": "Subdoligranulum",
    "taxon_key": "ncbi:292632",
    "disease": "Chronic traumatic complete spinal cord injury",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -30466,11 +30466,11 @@
    "taxon": "Anaerostipes",
    "taxon_key": "ncbi:207244",
    "disease": "Stroke",
-   "verdict": "UNRESOLVED",
+   "verdict": "CLEAN",
    "n_sent": 11,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
-   "example": "Some disordered profiles of gut microbiota in STR and PSE were identified, such as the increase of Enterococcus and the decrease of butyricicoccus in STR, the increase of Escherichia Shigella and Clostridium innocuum\u2010group and the decrease of Faecalibacterium in PSE, and the decrease of Anaerostipes"
+   "example": "In addition, the abundance of C. innocuum\u2010group , Faecalibacterium , and Anaerostipes was analyzed in the 19 CON, 27 STR patients, EPSE and LPSE of 20 PSE patients (Figure 4 )."
   },
   {
    "paper": "The altered TBI fecal microbiome is stable and functionally distinct",
@@ -32593,7 +32593,7 @@
    "n_sent": 11,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "(B) Frequency of each enterotype in the dementia and non-dementia groups Enterotype I (Bacteroides >30%) was enriched in the non-dementia group."
+   "example": "The T-RFLP analysis revealed differences in the composition of the gut microbiome: the number of Bacteroides (enterotype I) was lower and the number of \u2018other\u2019 bacteria (enterotype III) was higher in demented than non-demented patients 1038/s41598-018-38218-7"
   },
   {
    "paper": "Gut microbiome alterations in preclinical Alzheimer\u2019s disease",
@@ -32919,7 +32919,7 @@
    "taxon": "Moraxella catarrhalis",
    "taxon_key": "ncbi:480",
    "disease": "Parkinson's disease",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 3,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
@@ -33132,7 +33132,7 @@
    "n_sent": 28,
    "paper_contrast": "HC",
    "paper_also_subgroup": false,
-   "example": "The lower panel is the genome structure of the prophage, where each gene is colored by its function categories, and the VFs are pink-colored b The proportion of VFs hosted by each bacterial genus in total VF abundance between ASD and HC oral microbiota. c The relative abundance of Streptococcal VFs "
+   "example": "The oral phage communities of ASD are distinguishable from the control in significantly reduced diversity but remarkably enriched Streptococcal phages that often dominate the community The abundance of Streptococcal virulence factors and Streptococcus bacteria are also elevated, together with the ph"
   },
   {
    "paper": "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment",
@@ -33326,7 +33326,7 @@
    "taxon": "Lactobacillus",
    "taxon_key": "ncbi:1578",
    "disease": "Autism spectrum disorder",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -33337,7 +33337,7 @@
    "taxon": "Hungatella",
    "taxon_key": "ncbi:1649459",
    "disease": "Autism spectrum disorder",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -33348,7 +33348,7 @@
    "taxon": "Eggerthella",
    "taxon_key": "ncbi:84111",
    "disease": "Autism spectrum disorder",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 6,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -33370,7 +33370,7 @@
    "taxon": "Sutterella",
    "taxon_key": "ncbi:40544",
    "disease": "Autism spectrum disorder",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -33381,7 +33381,7 @@
    "taxon": "Paraprevotella",
    "taxon_key": "ncbi:577309",
    "disease": "Autism spectrum disorder",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -33392,7 +33392,7 @@
    "taxon": "Dielma",
    "taxon_key": "ncbi:1472649",
    "disease": "Autism spectrum disorder",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -33414,7 +33414,7 @@
    "taxon": "Coprobacter",
    "taxon_key": "ncbi:1348911",
    "disease": "Autism spectrum disorder",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 4,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -33425,7 +33425,7 @@
    "taxon": "Bilophila",
    "taxon_key": "ncbi:35832",
    "disease": "Autism spectrum disorder",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 2,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -33436,7 +33436,7 @@
    "taxon": "Howardella",
    "taxon_key": "ncbi:404402",
    "disease": "Autism spectrum disorder",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 3,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,
@@ -33447,7 +33447,7 @@
    "taxon": "Colidextribacter",
    "taxon_key": "ncbi:1980681",
    "disease": "Autism spectrum disorder",
-   "verdict": "CANDIDATE",
+   "verdict": "CLEAN",
    "n_sent": 1,
    "paper_contrast": "HC",
    "paper_also_subgroup": true,

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1:Akkermansia",
+    "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+    "taxon": "Akkermansia",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": ["the proportions of the mucus degrader Akkermansia, as well as those of Oscillospira, Dialister, and unclassified genera of Lachnospiraceae and [Mogibacteriaceae] were reduced in the group having more severe SCI", "whose relative abundance was also found to be reduced in more severe vs. less severe SCI"],
+    "confidence": "high",
+    "note": "Sentences explicitly compare Akkermansia across SCI severity levels (more vs less severe), not comparing diseased to healthy controls."
+  },
+  {
+    "id": "2:Barnesiella",
+    "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+    "taxon": "Barnesiella",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": ["The results showed the enrichment of Pediococcus , Selenomonas , Anaerosinus , Lactobacillus , Pseudomonas , and Bifidobacterium , and the lack of Barnesiella in MHE patients ( Figure 4A ).", "This study also demonstrated that the relative abundance levels of Bacteroides and Barnesiella in intestinal microbiota were lower in MHE, while Lactobacillus had higher levels."],
+    "confidence": "medium",
+    "note": "Barnesiella reported as lacking/lower in MHE patients; comparison to healthy/normal controls is implied by the use of 'lack' and 'lower' but not explicitly named in sentences."
+  },
+  {
+    "id": "5:Akkermansia muciniphila",
+    "title": "Difference in gut microbial dysbiotic patterns between body-first and brain-first Parkinson's disease.",
+    "taxon": "Akkermansia muciniphila",
+    "verdict": "NO_COMPARISON",
+    "quotes": ["The gut microbiome in body-first PD showed a distinct profile, characterized by an increased presence of Escherichia coli and Akkermansia muciniphila, and a decreased abundance of short-chain fatty acid-producing commensal bacteria."],
+    "confidence": "high",
+    "note": "Sentence reports increased Akkermansia muciniphila in body-first PD but does not state the comparison group (whether vs healthy controls or vs brain-first PD)."
+  },
+  {
+    "id": "10:Akkermansia muciniphila",
+    "title": "Gut bacteria from multiple sclerosis patients modulate human T cells and exacerbate symptoms in mouse models.",
+    "taxon": "Akkermansia muciniphila",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": ["Akkermansia muciniphila and Acinetobacter calcoaceticus , both increased in MS patients, induced proinflammatory responses in human peripheral blood mononuclear cells and in monocolonized mice."],
+    "confidence": "medium",
+    "note": "Akkermansia muciniphila reported as 'increased in MS patients'; the comparison to healthy controls is implied by this standard epidemiological phrasing but not explicitly stated in the sentence."
+  },
+  {
+    "id": "12:Megamonas",
+    "title": "Gut microbiota dysbiosis in male patients with chronic traumatic complete spinal cord injury",
+    "taxon": "Megamonas",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": ["The abundance of Megamonas, Prevotella_9, [Eubacterium]_rectale_group, Dialister, and Subdoligranulum in the healthy male group was significantly higher than that in the SCI group (p 0.05, Mann–Whitney U test)."],
+    "confidence": "high",
+    "note": "Explicitly compares healthy male group to SCI group with statistical test, clearly establishing Megamonas differs between healthy controls and diseased group."
+  },
+  {
+    "id": "14:Veillonellaceae",
+    "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+    "taxon": "Veillonellaceae",
+    "verdict": "UNCLEAR",
+    "quotes": ["The shift in oral F/B- ratio in bALS was mainly driven by a significant depletion of Veillonellaceae family ( Firmicutes phyla) along with increased abundance of Prevotellaceae family ( Bacteroidetes phyla) (Fig. 4 B)."],
+    "confidence": "low",
+    "note": "Veillonellaceae reported as significantly depleted in bulbar-onset ALS, but comparison baseline is not explicitly specified (could be vs healthy controls or vs spinal-onset ALS)."
+  },
+  {
+    "id": "18:Streptococcus anginosus",
+    "title": "Oral Pathobiont Streptococcus Anginosus Is Enriched in the Gut of Stroke Patients and Predicts 2-Year Cardiovascular Outcome",
+    "taxon": "Streptococcus anginosus",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": ["Streptococcus anginosus was significantly more abundant in both the saliva (median [IQR], 0.01 [0.00–0.14] vs. 0.00 [0.00–0.03], P=0.02) and gut (0.09 [0.00–0.28] vs. 0.00 [0.00–0.02], P<0.001) of the stroke patients compared with their non-stroke counterparts."],
+    "confidence": "high",
+    "note": "Explicitly compares stroke patients to non-stroke subjects with statistical testing and quantified abundance values, clearly establishing CONTROL_CONTRAST."
+  }
+]

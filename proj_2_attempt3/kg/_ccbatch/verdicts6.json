@@ -1,0 +1,79 @@
+[
+  {
+    "id": "1:Faecalibacterium",
+    "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+    "taxon": "Faecalibacterium",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": [
+      "At the taxonomic level, the genera Bacteroides and Faecalibacterium, and unclassified members of Lachnospiraceae were overrepresented in patients with grade C or D impairment, whereas Lactobacillus was more abundant in AIS grade A or B patients, especially in those with a C1–C6 cervical lesion (p ≤ 0."
+    ],
+    "confidence": "high",
+    "note": "All comparisons are within SCI patient subgroups (severity grades, feeding routes, sample sources), not between diseased and healthy."
+  },
+  {
+    "id": "2:Ruminococcus",
+    "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+    "taxon": "Ruminococcus",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": [
+      "Rifaximin treatment reduced the abundance of Clostridium , Pediococcus , Ruminococcus , Streptococcus , Selenomonas , Biophila , Desulfovibrio , and Pseudomonas , and increased the abundance of Barnesiella ( Figure 4C )."
+    ],
+    "confidence": "high",
+    "note": "Compares before/after treatment within hepatic encephalopathy patients, not disease versus healthy controls."
+  },
+  {
+    "id": "5:Escherichia coli",
+    "title": "Difference in gut microbial dysbiotic patterns between body-first and brain-first Parkinson's disease.",
+    "taxon": "Escherichia coli",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": [
+      "The gut microbiome in body-first PD showed a distinct profile, characterized by an increased presence of Escherichia coli and Akkermansia muciniphila, and a decreased abundance of short-chain fatty acid-producing commensal bacteria."
+    ],
+    "confidence": "high",
+    "note": "Compares body-first PD subtype to brain-first PD, not to healthy controls."
+  },
+  {
+    "id": "10:Acinetobacter calcoaceticus",
+    "title": "Gut bacteria from multiple sclerosis patients modulate human T cells and exacerbate symptoms in mouse models.",
+    "taxon": "Acinetobacter calcoaceticus",
+    "verdict": "NO_COMPARISON",
+    "quotes": [
+      "Akkermansia muciniphila and Acinetobacter calcoaceticus , both increased in MS patients, induced proinflammatory responses in human peripheral blood mononuclear cells and in monocolonized mice."
+    ],
+    "confidence": "medium",
+    "note": "States the taxon is increased in MS patients but does not explicitly specify the comparison point."
+  },
+  {
+    "id": "13:Lachnospiraceae_UCG-004",
+    "title": "Gut microbiota dysbiosis in patients with Alzheimer's disease and correlation with multiple cognitive domains",
+    "taxon": "Lachnospiraceae_UCG-004",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": [
+      "the abundance of Lachnospiraceae_UCG-004 was positively associated with attention, language, orientation in AD patients ( p < 0.05)."
+    ],
+    "confidence": "high",
+    "note": "All sentences describe associations and distinctions within AD patient subgroups by cognitive domains, not compared to healthy controls."
+  },
+  {
+    "id": "14:Fusobacteriota",
+    "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+    "taxon": "Fusobacteriota",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": [
+      "fecal Fusobacteria abundance was significantly increased in sALS but not in bALS (Fig. 7 A, Supplemental Fig. 3 , 4 )."
+    ],
+    "confidence": "high",
+    "note": "Compares between ALS subtypes (spinal-onset versus bulbar-onset), not between diseased and healthy individuals."
+  },
+  {
+    "id": "19:Veillonellaceae",
+    "title": "Orthopedic Surgery Causes Gut Microbiome Dysbiosis and Intestinal Barrier Dysfunction in Prodromal Alzheimer Disease Patients",
+    "taxon": "Veillonellaceae",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": [
+      "Postoperative levels of GNB in the aMCI group increased compared with the baseline and this increase was attributed to increases in Bacteroidaceae , Enterobacteriaceae , and Veillonellaceae families although without significant difference (Fig. 4 D)."
+    ],
+    "confidence": "high",
+    "note": "Compares postoperative to preoperative baseline within prodromal Alzheimer's patients, not to healthy controls."
+  }
+]

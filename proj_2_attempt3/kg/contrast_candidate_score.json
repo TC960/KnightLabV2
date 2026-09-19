@@ -1,0 +1,800 @@
+{
+ "packets": 46,
+ "adjudicated": 46,
+ "missing": [],
+ "excluded_all_paraphrased": 3,
+ "left_pool_after_regex_widening": 6,
+ "overridden_by_orchestrator": 15,
+ "adjudicator_verdicts_before_override": {
+  "CONTROL_CONTRAST": 15,
+  "UNCLEAR": 2,
+  "NO_COMPARISON": 7,
+  "SUBGROUP_ONLY": 13
+ },
+ "quote_check": {
+  "OK": 34,
+  "NO_QUOTES": 1,
+  "OK_RESPACED": 2
+ },
+ "verdicts": {
+  "NO_COMPARISON": 17,
+  "UNCLEAR": 2,
+  "SUBGROUP_ONLY": 18
+ },
+ "n_papers_scored": 18,
+ "n_observations_scored": 37,
+ "n_contaminated": 18,
+ "rate_within_flagged": 0.4865,
+ "ci95_cluster_bootstrap": [
+  0.2903,
+  0.6579
+ ],
+ "n_candidates_in_pool": 84,
+ "estimated_contaminated_observations": 40.9,
+ "estimated_range": [
+  24.4,
+  55.3
+ ],
+ "graph_observations": 3077,
+ "estimated_share_of_graph_pct": 1.328,
+ "estimated_share_range_pct": [
+  0.793,
+  1.796
+ ],
+ "n_boot": 20000,
+ "seed": 20260919,
+ "rows": [
+  {
+   "id": "0:Butyricicoccus",
+   "title": "Alteration of the fecal microbiota in Chinese patients with Parkinson's disease.",
+   "taxon": "Butyricicoccus",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "Genera Clostridium IV, Aquabacterium, Holdemania, Sphingomonas, Clostridium XVIII, Butyricicoccus and Anaerotruncus were enriched in the feces of PD patients after adjusting for age, gender, body mass index (BMI), and constipation."
+   ],
+   "confidence": "high",
+   "note": "Butyricicoccus explicitly reported as enriched in PD patients vs. presumed healthy controls.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "quote names no comparator: 'enriched in the feces of PD patients after adjusting for age, gender, BMI and constipation'",
+   "overridden": true
+  },
+  {
+   "id": "1:Coprococcus",
+   "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+   "taxon": "Coprococcus",
+   "verdict": "UNCLEAR",
+   "quotes": [
+    "Faecalibacterium and Coprococcus), which probably represents a non-specific, shared response to diseases52, SCI patients show increased proportions of potentially pathogenic and pro-inflammatory bacteria, such as Enterococcus, Streptococcus and Klebsiella."
+   ],
+   "confidence": "low",
+   "note": "Sentence structure is ambiguous; unclear whether Coprococcus increases or decreases in SCI patients.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK"
+  },
+  {
+   "id": "3:Akkermansia muciniphila",
+   "title": "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology.",
+   "taxon": "Akkermansia muciniphila",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "Notably, species within the same genera, such as Bacteroides and Ruminococcus , showed opposing effects, while Akkermansia muciniphila correlated with reduced amyloid burden, suggesting a protective role.",
+    "Similarly, Akkermansia muciniphila , a well-known next-generation probiotic, showed a negative correlation with amyloid positivity."
+   ],
+   "confidence": "high",
+   "note": "Sentences describe correlations within MCI/AD patients or interventions, not comparisons to healthy controls.",
+   "n_quotes": 2,
+   "n_exact": 2,
+   "n_respaced": 2,
+   "quote_check": "OK"
+  },
+  {
+   "id": "6:Subdoligranulum",
+   "title": "Differential Patterns of Gut and Oral Microbiomes in Hispanic Individuals with Cognitive Impairment.",
+   "taxon": "Subdoligranulum",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "Conversely, CI individuals exhibited a decreased abundance of gut genera, including Shuttleworthia , Holdemania , and Subdoligranulum , which are known for their anti-inflammatory properties.",
+    "Specifically, individuals with CI exhibited an increased abundance of Bacteroides and Escherichia-Shigella , and a decreased abundance of Ruminococcus and Subdoligranulum ."
+   ],
+   "confidence": "high",
+   "note": "CI (diseased) individuals explicitly compared to controls; Subdoligranulum decreased in CI.",
+   "n_quotes": 2,
+   "n_exact": 2,
+   "n_respaced": 2,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "quote names no comparator: 'CI individuals exhibited a decreased abundance'",
+   "overridden": true
+  },
+  {
+   "id": "11:Clostridium",
+   "title": "Gut microbiome alterations in preclinical Alzheimer\u2019s disease",
+   "taxon": "Clostridium",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "The GLM analysis revealed that the genera Megamonas, Serratia, Leptotrichia and Clostridium (family Clostridiaceae) were increased in the A\u03b2+ CN group compared to the A\u03b2\u2212 CN group, whereas the genera CF231, Victivallis, Enterococcus, Mitsuokella and Clostridium (family Erysipelotrichaceae) were decreased in A\u03b2+ CN (Table 2 and Fig 1) In the ROC analysis, the logistic regression model with variables representing the presence or absence of each of the nine genera effectively distinguish A\u03b2+ and A\u03b2\u2212 CN with the AUC value of 0."
+   ],
+   "confidence": "high",
+   "note": "Comparison is between two subgroups of cognitively-normal individuals (A\u03b2+ vs A\u03b2-), not diseased vs. healthy.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK"
+  },
+  {
+   "id": "14:Oscillospiraceae",
+   "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+   "taxon": "Oscillospiraceae",
+   "verdict": "NO_COMPARISON",
+   "quotes": [],
+   "confidence": "high",
+   "note": "Sentences provided do not mention Oscillospiraceae; they discuss Ruminococcaceae and Bacteroidaceae instead.",
+   "n_quotes": 0,
+   "n_exact": 0,
+   "n_respaced": 0,
+   "quote_check": "NO_QUOTES"
+  },
+  {
+   "id": "20:Lachnoclostridium",
+   "title": "Transmission of Alzheimer's disease-associated microbiota dysbiosis and its impact on cognitive function: evidence from mice and patients.",
+   "taxon": "Lachnoclostridium",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "Notably, AD Tg mice (statistical significance) and ADWT mice (trending) also exhibited increased abundance of Ruminiclostridium-5 ( Fig. 3s ), the bacteria associated with mucosa-related microbiome and obesity [ 58 ], and decreased abundance of Lachnoclostridium ( Fig. 3t ), a novel marker for colorectal cancer [ 59 ], compared to those in WT mice."
+   ],
+   "confidence": "high",
+   "note": "AD transgenic mice (diseased) compared to WT mice (healthy); Lachnoclostridium decreased in AD.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "quote compares AD Tg mice with ADWT mice; not a human control contrast",
+   "overridden": true
+  },
+  {
+   "id": "1:Streptococcus",
+   "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+   "taxon": "Streptococcus",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "SCI patients show increased proportions of potentially pathogenic and pro-inflammatory bacteria, such as Enterococcus, Streptococcus and Klebsiella."
+   ],
+   "confidence": "high",
+   "note": "Streptococcus increased in SCI patients; healthy controls mentioned in paper context.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "quote names no comparator: 'SCI patients show increased proportions of ...'",
+   "overridden": true
+  },
+  {
+   "id": "2:Pediococcus",
+   "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+   "taxon": "Pediococcus",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "The results showed the enrichment of Pediococcus , Selenomonas , Anaerosinus , Lactobacillus , Pseudomonas , and Bifidobacterium , and the lack of Barnesiella in MHE patients ( Figure 4A )."
+   ],
+   "confidence": "high",
+   "note": "Pediococcus enriched in MHE patients; paper compares disease to healthy controls.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "quote names no comparator: 'enrichment of ... in MHE patients'",
+   "overridden": true
+  },
+  {
+   "id": "7:Lactobacillus amylovorus",
+   "title": "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pilot study.",
+   "taxon": "Lactobacillus amylovorus",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "Most notably, three Lachnospiraceae species with the corresponding genus Lachnospiraceae NK4A136 group and the genus Lachnospira were associated with health; Faecalibacterium prausnitzii was associated with mild dementia; moderate dementia was associated with Lactobacillus amylovorus and the corresponding higher taxonomic levels (the genus Lactobacillus , the family Lactobacillaceae and the order Lactobacillales )."
+   ],
+   "confidence": "high",
+   "note": "Associated with moderate dementia (disease), contrasted with health in same sentence.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "quote is a dementia-severity gradient (mild vs moderate), not disease vs control",
+   "overridden": true
+  },
+  {
+   "id": "11:Enterococcus",
+   "title": "Gut microbiome alterations in preclinical Alzheimer\u2019s disease",
+   "taxon": "Enterococcus",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "The GLM analysis revealed that the genera Megamonas, Serratia, Leptotrichia and Clostridium (family Clostridiaceae) were increased in the A\u03b2+ CN group compared to the A\u03b2\u2212 CN group, whereas the genera CF231, Victivallis, Enterococcus, Mitsuokella and Clostridium (family Erysipelotrichaceae) were decreased in A\u03b2+ CN (Table 2 and Fig 1)"
+   ],
+   "confidence": "high",
+   "note": "Enterococcus decreased in A\u03b2+ cognitively normal (preclinical AD) vs A\u03b2\u2212 controls.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "'the Ab+ CN group compared to the Ab- CN group' -- a subgroup within cognitively normal people",
+   "overridden": true
+  },
+  {
+   "id": "14:Bacteroidaceae",
+   "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+   "taxon": "Bacteroidaceae",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "Here, we found the shift in fecal F/B- ratio in sALS to be mainly driven by a significant enrichment of the Ruminococcaceae family ( Firmicutes phyla) and depletion of the Bacteroidaceae family ( Bacteroidetes phyla) (Fig. 4 A)."
+   ],
+   "confidence": "medium",
+   "note": "Bacteroidaceae depleted in sALS; dysbiosis terminology implies healthy comparison.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "enrichment in sALS, contrasted against bALS; both arms have ALS",
+   "overridden": true
+  },
+  {
+   "id": "16:Escherichia coli",
+   "title": "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms.",
+   "taxon": "Escherichia coli",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "For example, Escherichia coli and Klebsiella spp. are increased in PD and are positively correlated (cluster #6)."
+   ],
+   "confidence": "high",
+   "note": "E. coli increased in PD; comparison to non-PD (healthy) is standard in disease studies.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "quote names no comparator: 'increased in PD'",
+   "overridden": true
+  },
+  {
+   "id": "21:Ruminococcaceae_UCG_002",
+   "title": "Uncovering the characteristics of the gut microbiota in patients with acute ischemic stroke and phlegm-heat syndrome",
+   "taxon": "Ruminococcaceae_UCG_002",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "Furthermore, the genera, Ruminococcaceae_UCG_002 and Christensenellaceae_R-7_ group , were significantly more abundant in the tAIS group, the abundance of Megasphaera and Escherichia_Shigella was highest in the ntAIS group ( Fig 9 )."
+   ],
+   "confidence": "high",
+   "note": "Comparison only between AIS subtypes (tAIS vs ntAIS), not versus healthy controls.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK"
+  },
+  {
+   "id": "1:Enterococcus",
+   "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+   "taxon": "Enterococcus",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "the enterotype-like group 3 (dominated by Enterococcus) accounted for a greater percentage of those having more severe SCI (18% vs 7% in patients with less severe injury)"
+   ],
+   "confidence": "high",
+   "note": "All Enterococcus comparisons within SCI patients (by severity, antibiotic use, weight), never versus healthy controls.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK"
+  },
+  {
+   "id": "2:Selenomonas",
+   "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+   "taxon": "Selenomonas",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "The results showed the enrichment of Pediococcus , Selenomonas , Anaerosinus , Lactobacillus , Pseudomonas , and Bifidobacterium , and the lack of Barnesiella in MHE patients ( Figure 4A )."
+   ],
+   "confidence": "medium",
+   "note": "Enriched in MHE patients; context shows comparison to control individuals in the study.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "quote names no comparator: 'enrichment of ... in MHE patients'",
+   "overridden": true
+  },
+  {
+   "id": "8:Porphyromonadaceae",
+   "title": "Genetic risk score in multiple sclerosis is associated with unique gut microbiome.",
+   "taxon": "Porphyromonadaceae",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "Based on our QCAT analysis, Porphyromonadaceae , a typically low abundance family, was observed to be significantly higher in Cluster B."
+   ],
+   "confidence": "high",
+   "note": "Compares genetic risk clusters within MS patients, not diseased versus healthy controls.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK"
+  },
+  {
+   "id": "14:Bacteroidota",
+   "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+   "taxon": "Bacteroidota",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "However, sALS patients, but not bALS patients, showed a significant enrichment of Firmicutes along with a depletion of Bacteroidetes in stool samples, resulting in a significant increase in fecal F/B- ratio ( F / B > 1, Fig. 3 A-C, Supplemental Figs. 3 , 4 )."
+   ],
+   "confidence": "high",
+   "note": "Depleted in Bacteroidetes compared between spinal-onset and bulbar-onset ALS, not versus healthy controls.",
+   "n_quotes": 1,
+   "n_exact": 0,
+   "n_respaced": 1,
+   "quote_check": "OK_RESPACED"
+  },
+  {
+   "id": "16:Porphyromonas asaccharolytica",
+   "title": "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms.",
+   "taxon": "Porphyromonas asaccharolytica",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "Here, at species-level, only Porphyromonas asaccharolytica was prevalent enough to be included in MWAS and it confirmed to be significantly elevated in PD."
+   ],
+   "confidence": "high",
+   "note": "Significantly elevated in Parkinson's disease versus non-diseased controls in MWAS.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "quote names no comparator: 'significantly elevated in PD'",
+   "overridden": true
+  },
+  {
+   "id": "22:Lactococcus phage ul36",
+   "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+   "taxon": "Lactococcus phage ul36",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "We showed that older adults with MCI had higher abundance of Lactococcus phage ul36 which specifically regulates the probiotic bacteria like Lactococcus lactis (a common yogurt culture) [ 44 ] and may diminish their abundance in the gut, which may ultimately be detrimental for gut-brain axis."
+   ],
+   "confidence": "high",
+   "note": "Higher abundance in MCI compared to cognitively normal older adults.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "quote names no comparator: 'older adults with MCI had higher abundance'",
+   "overridden": true
+  },
+  {
+   "id": "1:Klebsiella",
+   "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+   "taxon": "Klebsiella",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "the proportions of Enterococcus and Klebsiella were far greater in patients who had received antibiotics in the 3\u00a0days before sampling",
+    "As expected, Enterococcus and Klebsiella were more abundant in patients who had received antibiotic therapy in the 3\u00a0days prior to fecal sampling."
+   ],
+   "confidence": "high",
+   "note": "Explicit comparisons in naming sentences are within-disease (antibiotic-treated vs untreated SCI patients), not vs. healthy controls.",
+   "n_quotes": 2,
+   "n_exact": 2,
+   "n_respaced": 2,
+   "quote_check": "OK"
+  },
+  {
+   "id": "2:Pseudomonas",
+   "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+   "taxon": "Pseudomonas",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "The results showed the enrichment of Pediococcus , Selenomonas , Anaerosinus , Lactobacillus , Pseudomonas , and Bifidobacterium , and the lack of Barnesiella in MHE patients ( Figure 4A ).",
+    "Rifaximin treatment reduced the abundance of Clostridium , Pediococcus , Ruminococcus , Streptococcus , Selenomonas , Biophila , Desulfovibrio , and Pseudomonas , and increased the abundance of Barnesiella ( Figure 4C )."
+   ],
+   "confidence": "high",
+   "note": "First sentence mentions enrichment in MHE patients without stating comparison group; other sentences compare treatment outcomes within patient group.",
+   "n_quotes": 2,
+   "n_exact": 2,
+   "n_respaced": 2,
+   "quote_check": "OK"
+  },
+  {
+   "id": "9:Bilophila",
+   "title": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+   "taxon": "Bilophila",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "Two species optimally detected AI: Bilophila (OTU_330) and Lachnospiraceae (OTU_338); the AUCs under the ROCs were 0.985 and 0.929 respectively ( Figure 8B , Table 2 )."
+   ],
+   "confidence": "medium",
+   "note": "Sentence states Bilophila detected AI but does not explicitly name the comparison group (healthy controls implied by context of ROC analysis but not stated).",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK"
+  },
+  {
+   "id": "11:Mitsuokella",
+   "title": "Gut microbiome alterations in preclinical Alzheimer\u2019s disease",
+   "taxon": "Mitsuokella",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "The GLM analysis revealed that the genera Megamonas, Serratia, Leptotrichia and Clostridium (family Clostridiaceae) were increased in the A\u03b2+ CN group compared to the A\u03b2\u2212 CN group, whereas the genera CF231, Victivallis, Enterococcus, Mitsuokella and Clostridium (family Erysipelotrichaceae) were decreased in A\u03b2+ CN"
+   ],
+   "confidence": "high",
+   "note": "Sentence compares amyloid-positive (diseased) to amyloid-negative (cognitively normal/healthy) groups; Mitsuokella decreased in diseased group.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "'the Ab+ CN group compared to the Ab- CN group' -- subgroup within cognitively normal people",
+   "overridden": true
+  },
+  {
+   "id": "14:Bacillota",
+   "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+   "taxon": "Bacillota",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "However, sALS patients, but not bALS patients, showed a significant enrichment of Firmicutes along with a depletion of Bacteroidetes in stool samples, resulting in a significant increase in fecal F/B- ratio ( F / B >\u20091, Fig. 3 A-C, Supplemental Figs. 3 , 4 ).",
+    "However, bALS patients, but not sALS patients, showed a significant depletion of Firmicutes and enrichment of Bacteroidetes (Fig. 3 D, E , Supplemental Figs. 3 , 4 )."
+   ],
+   "confidence": "high",
+   "note": "All named sentences compare different ALS disease subtypes (spinal vs. bulbar), not diseased ALS patients vs. healthy controls.",
+   "n_quotes": 2,
+   "n_exact": 2,
+   "n_respaced": 2,
+   "quote_check": "OK"
+  },
+  {
+   "id": "17:Bifidobacterium animalis",
+   "title": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet.",
+   "taxon": "Bifidobacterium animalis",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "two taxa reduced in MS, the genus Ruminococcaceae UCG-013 ( p = 0.036, r = 0.21) and the species Bifidobacterium Animalis ( p = 0.015, rho = 0.24), correlated positively with MDS",
+    "Bifidobacterium animalis , reduced in PwMS in our study, is a probiotic, which reduced the duration of clinical symptoms in EAE [ 37 ]."
+   ],
+   "confidence": "high",
+   "note": "Sentences state taxon was reduced in MS patients without explicitly stating comparison to healthy controls.",
+   "n_quotes": 2,
+   "n_exact": 2,
+   "n_respaced": 2,
+   "quote_check": "OK"
+  },
+  {
+   "id": "1:Akkermansia",
+   "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+   "taxon": "Akkermansia",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "the proportions of the mucus degrader Akkermansia, as well as those of Oscillospira, Dialister, and unclassified genera of Lachnospiraceae and [Mogibacteriaceae] were reduced in the group having more severe SCI",
+    "whose relative abundance was also found to be reduced in more severe vs. less severe SCI"
+   ],
+   "confidence": "high",
+   "note": "Sentences explicitly compare Akkermansia across SCI severity levels (more vs less severe), not comparing diseased to healthy controls.",
+   "n_quotes": 2,
+   "n_exact": 2,
+   "n_respaced": 2,
+   "quote_check": "OK"
+  },
+  {
+   "id": "2:Barnesiella",
+   "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+   "taxon": "Barnesiella",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "The results showed the enrichment of Pediococcus , Selenomonas , Anaerosinus , Lactobacillus , Pseudomonas , and Bifidobacterium , and the lack of Barnesiella in MHE patients ( Figure 4A ).",
+    "This study also demonstrated that the relative abundance levels of Bacteroides and Barnesiella in intestinal microbiota were lower in MHE, while Lactobacillus had higher levels."
+   ],
+   "confidence": "medium",
+   "note": "Barnesiella reported as lacking/lower in MHE patients; comparison to healthy/normal controls is implied by the use of 'lack' and 'lower' but not explicitly named in sentences.",
+   "n_quotes": 2,
+   "n_exact": 2,
+   "n_respaced": 2,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "quote names no comparator: 'the lack of Barnesiella in MHE patients'",
+   "overridden": true
+  },
+  {
+   "id": "5:Akkermansia muciniphila",
+   "title": "Difference in gut microbial dysbiotic patterns between body-first and brain-first Parkinson's disease.",
+   "taxon": "Akkermansia muciniphila",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "The gut microbiome in body-first PD showed a distinct profile, characterized by an increased presence of Escherichia coli and Akkermansia muciniphila, and a decreased abundance of short-chain fatty acid-producing commensal bacteria."
+   ],
+   "confidence": "high",
+   "note": "Sentence reports increased Akkermansia muciniphila in body-first PD but does not state the comparison group (whether vs healthy controls or vs brain-first PD).",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK"
+  },
+  {
+   "id": "10:Akkermansia muciniphila",
+   "title": "Gut bacteria from multiple sclerosis patients modulate human T cells and exacerbate symptoms in mouse models.",
+   "taxon": "Akkermansia muciniphila",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "Akkermansia muciniphila and Acinetobacter calcoaceticus , both increased in MS patients, induced proinflammatory responses in human peripheral blood mononuclear cells and in monocolonized mice."
+   ],
+   "confidence": "medium",
+   "note": "Akkermansia muciniphila reported as 'increased in MS patients'; the comparison to healthy controls is implied by this standard epidemiological phrasing but not explicitly stated in the sentence.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "adjudicator_verdict": "CONTROL_CONTRAST",
+   "override_reason": "quote names no comparator: 'increased in MS patients'",
+   "overridden": true
+  },
+  {
+   "id": "14:Veillonellaceae",
+   "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+   "taxon": "Veillonellaceae",
+   "verdict": "UNCLEAR",
+   "quotes": [
+    "The shift in oral F/B- ratio in bALS was mainly driven by a significant depletion of Veillonellaceae family ( Firmicutes phyla) along with increased abundance of Prevotellaceae family ( Bacteroidetes phyla) (Fig. 4 B)."
+   ],
+   "confidence": "low",
+   "note": "Veillonellaceae reported as significantly depleted in bulbar-onset ALS, but comparison baseline is not explicitly specified (could be vs healthy controls or vs spinal-onset ALS).",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK"
+  },
+  {
+   "id": "1:Faecalibacterium",
+   "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+   "taxon": "Faecalibacterium",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "At the taxonomic level, the genera Bacteroides and Faecalibacterium, and unclassified members of Lachnospiraceae were overrepresented in patients with grade C or D impairment, whereas Lactobacillus was more abundant in AIS grade A or B patients, especially in those with a C1\u2013C6 cervical lesion (p \u2264 0."
+   ],
+   "confidence": "high",
+   "note": "All comparisons are within SCI patient subgroups (severity grades, feeding routes, sample sources), not between diseased and healthy.",
+   "n_quotes": 1,
+   "n_exact": 0,
+   "n_respaced": 1,
+   "quote_check": "OK_RESPACED"
+  },
+  {
+   "id": "2:Ruminococcus",
+   "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+   "taxon": "Ruminococcus",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "Rifaximin treatment reduced the abundance of Clostridium , Pediococcus , Ruminococcus , Streptococcus , Selenomonas , Biophila , Desulfovibrio , and Pseudomonas , and increased the abundance of Barnesiella ( Figure 4C )."
+   ],
+   "confidence": "high",
+   "note": "Compares before/after treatment within hepatic encephalopathy patients, not disease versus healthy controls.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK"
+  },
+  {
+   "id": "5:Escherichia coli",
+   "title": "Difference in gut microbial dysbiotic patterns between body-first and brain-first Parkinson's disease.",
+   "taxon": "Escherichia coli",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "The gut microbiome in body-first PD showed a distinct profile, characterized by an increased presence of Escherichia coli and Akkermansia muciniphila, and a decreased abundance of short-chain fatty acid-producing commensal bacteria."
+   ],
+   "confidence": "high",
+   "note": "Compares body-first PD subtype to brain-first PD, not to healthy controls.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK"
+  },
+  {
+   "id": "10:Acinetobacter calcoaceticus",
+   "title": "Gut bacteria from multiple sclerosis patients modulate human T cells and exacerbate symptoms in mouse models.",
+   "taxon": "Acinetobacter calcoaceticus",
+   "verdict": "NO_COMPARISON",
+   "quotes": [
+    "Akkermansia muciniphila and Acinetobacter calcoaceticus , both increased in MS patients, induced proinflammatory responses in human peripheral blood mononuclear cells and in monocolonized mice."
+   ],
+   "confidence": "medium",
+   "note": "States the taxon is increased in MS patients but does not explicitly specify the comparison point.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK"
+  },
+  {
+   "id": "14:Fusobacteriota",
+   "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+   "taxon": "Fusobacteriota",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "fecal Fusobacteria abundance was significantly increased in sALS but not in bALS (Fig. 7 A, Supplemental Fig. 3 , 4 )."
+   ],
+   "confidence": "high",
+   "note": "Compares between ALS subtypes (spinal-onset versus bulbar-onset), not between diseased and healthy individuals.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK"
+  },
+  {
+   "id": "19:Veillonellaceae",
+   "title": "Orthopedic Surgery Causes Gut Microbiome Dysbiosis and Intestinal Barrier Dysfunction in Prodromal Alzheimer Disease Patients",
+   "taxon": "Veillonellaceae",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "Postoperative levels of GNB in the aMCI group increased compared with the baseline and this increase was attributed to increases in Bacteroidaceae , Enterobacteriaceae , and Veillonellaceae families although without significant difference (Fig. 4 D)."
+   ],
+   "confidence": "high",
+   "note": "Compares postoperative to preoperative baseline within prodromal Alzheimer's patients, not to healthy controls.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK"
+  }
+ ],
+ "unsupported": [
+  {
+   "id": "3:Roseburia",
+   "title": "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology.",
+   "taxon": "Roseburia",
+   "verdict": "CONTROL_CONTRAST",
+   "quotes": [
+    "Other genera consistent with the key microbes identified in our study\u2014Blautia, Ruminococcus, and Roseburia\u2014also demonstrated reductions in AD participants in previous studies and are known to possess potential probiotic properties [ 43 , 62 , 63 ]."
+   ],
+   "confidence": "medium",
+   "note": "Roseburia reduced in AD participants; comparison to cognitively normal is implicit in paper design.",
+   "n_quotes": 1,
+   "n_exact": 0,
+   "n_respaced": 0,
+   "quote_check": "ALL_PARAPHRASED"
+  },
+  {
+   "id": "11:Victivallis",
+   "title": "Gut microbiome alterations in preclinical Alzheimer\u2019s disease",
+   "taxon": "Victivallis",
+   "verdict": "CONTROL_CONTRAST",
+   "quotes": [
+    "whereas the genera CF231, Victivallis, Enterococcus, Mitsuokella and Clostridium (family Erysipelotrichaceae) were decreased in A \u03b2+ CN (Table 2 and Fig 1)"
+   ],
+   "confidence": "high",
+   "note": "Decreased in A-\u03b2+ cognitively normal (preclinical AD) versus A-\u03b2\u2212 cognitively normal controls.",
+   "n_quotes": 1,
+   "n_exact": 0,
+   "n_respaced": 0,
+   "quote_check": "ALL_PARAPHRASED"
+  },
+  {
+   "id": "13:Lachnospiraceae_UCG-004",
+   "title": "Gut microbiota dysbiosis in patients with Alzheimer\u2019s disease and correlation with multiple cognitive domains",
+   "taxon": "Lachnospiraceae_UCG-004",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "the abundance of Lachnospiraceae_UCG-004 was positively associated with attention, language, orientation in AD patients ( p < 0.05)."
+   ],
+   "confidence": "high",
+   "note": "All sentences describe associations and distinctions within AD patient subgroups by cognitive domains, not compared to healthy controls.",
+   "n_quotes": 1,
+   "n_exact": 0,
+   "n_respaced": 0,
+   "quote_check": "ALL_PARAPHRASED"
+  }
+ ],
+ "dropped_rows": [
+  {
+   "id": "15:Butyricicoccus",
+   "title": "Identification of disordered profiles of gut microbiota and functional component in stroke and poststroke epilepsy",
+   "taxon": "Butyricicoccus",
+   "verdict": "CONTROL_CONTRAST",
+   "quotes": [
+    "At the genus level, the relative abundance of butyricicoccus was the most markedly decreased in STR compared with CON (Figure 3a )."
+   ],
+   "confidence": "high",
+   "note": "Multiple sentences report Butyricicoccus as decreased in stroke patients (STR) compared to healthy controls (CON).",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "left_pool": "CLEAN"
+  },
+  {
+   "id": "4:Bacteroidia",
+   "title": "Crosstalk between the gut microbiota and brain network topology in poststroke aphasia patients: perspectives from neuroimaging findings",
+   "taxon": "Bacteroidia",
+   "verdict": "SUBGROUP_ONLY",
+   "quotes": [
+    "The gut microbiome of the PSA group was mainly enriched in p_Bacteroidetes , c _Bacteroidia , o_Bacteroidales , and g_Bacteroides , whereas that of the non-PSA group was mainly enriched in p_Actinobacteria , c_Actinobacteria , and o_Bifidobacteriales ( Figure 3(i) and ( j ))."
+   ],
+   "confidence": "high",
+   "note": "Compares PSA to non-PSA stroke patients (both diseased), not versus healthy controls.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "left_pool": "CLEAN"
+  },
+  {
+   "id": "4:Actinomycetota",
+   "title": "Crosstalk between the gut microbiota and brain network topology in poststroke aphasia patients: perspectives from neuroimaging findings",
+   "taxon": "Actinomycetota",
+   "verdict": "CONTROL_CONTRAST",
+   "quotes": [
+    "Actinobacteria were present at lower levels in the PSA group (24.02%) than in the non-PSA group (47.95%) ( Figure 3(g) )."
+   ],
+   "confidence": "high",
+   "note": "Explicit comparison between diseased (PSA/poststroke aphasia) and non-diseased (non-PSA) groups; Actinobacteria depleted in diseased group.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "left_pool": "CLEAN"
+  },
+  {
+   "id": "23:Enterococcus",
+   "title": "Unveiling the negative association of Faecalibacterium prausnitzii with ischemic stroke severity, impaired prognosis and pro-inflammatory markers",
+   "taxon": "Enterococcus",
+   "verdict": "CONTROL_CONTRAST",
+   "quotes": [
+    "Our findings revealed that, in contrast to both the control and 3-month good prognosis groups, the 3-month poor prognosis cohort exhibited marked reductions in Faecalibacterium and Blautia , along with elevated levels of Enterococcus .",
+    "Conversely, opportunistic pathogens, particularly Enterococcus , were found to be enriched, especially within the subgroup of patients afflicted with non-minor stroke and those with a 3-month poor prognosis."
+   ],
+   "confidence": "high",
+   "note": "First sentence explicitly compares poor prognosis stroke patients to healthy control group; Enterococcus elevated in diseased group.",
+   "n_quotes": 2,
+   "n_exact": 2,
+   "n_respaced": 2,
+   "quote_check": "OK",
+   "left_pool": "CLEAN"
+  },
+  {
+   "id": "12:Megamonas",
+   "title": "Gut microbiota dysbiosis in male patients with chronic traumatic complete spinal cord injury",
+   "taxon": "Megamonas",
+   "verdict": "CONTROL_CONTRAST",
+   "quotes": [
+    "The abundance of Megamonas, Prevotella_9, [Eubacterium]_rectale_group, Dialister, and Subdoligranulum in the healthy male group was significantly higher than that in the SCI group (p 0.05, Mann\u2013Whitney U test)."
+   ],
+   "confidence": "high",
+   "note": "Explicitly compares healthy male group to SCI group with statistical test, clearly establishing Megamonas differs between healthy controls and diseased group.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "left_pool": "CLEAN"
+  },
+  {
+   "id": "18:Streptococcus anginosus",
+   "title": "Oral Pathobiont Streptococcus Anginosus Is Enriched in the Gut of Stroke Patients and Predicts 2-Year Cardiovascular Outcome",
+   "taxon": "Streptococcus anginosus",
+   "verdict": "CONTROL_CONTRAST",
+   "quotes": [
+    "Streptococcus anginosus was significantly more abundant in both the saliva (median [IQR], 0.01 [0.00\u20130.14] vs. 0.00 [0.00\u20130.03], P=0.02) and gut (0.09 [0.00\u20130.28] vs. 0.00 [0.00\u20130.02], P<0.001) of the stroke patients compared with their non-stroke counterparts."
+   ],
+   "confidence": "high",
+   "note": "Explicitly compares stroke patients to non-stroke subjects with statistical testing and quantified abundance values, clearly establishing CONTROL_CONTRAST.",
+   "n_quotes": 1,
+   "n_exact": 1,
+   "n_respaced": 1,
+   "quote_check": "OK",
+   "left_pool": "CLEAN"
+  }
+ ]
+}

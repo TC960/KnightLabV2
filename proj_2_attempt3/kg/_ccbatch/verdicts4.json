@@ -1,0 +1,95 @@
+[
+  {
+    "id": "1:Klebsiella",
+    "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+    "taxon": "Klebsiella",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": [
+      "the proportions of Enterococcus and Klebsiella were far greater in patients who had received antibiotics in the 3 days before sampling",
+      "As expected, Enterococcus and Klebsiella were more abundant in patients who had received antibiotic therapy in the 3 days prior to fecal sampling."
+    ],
+    "confidence": "high",
+    "note": "Explicit comparisons in naming sentences are within-disease (antibiotic-treated vs untreated SCI patients), not vs. healthy controls."
+  },
+  {
+    "id": "2:Pseudomonas",
+    "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+    "taxon": "Pseudomonas",
+    "verdict": "NO_COMPARISON",
+    "quotes": [
+      "The results showed the enrichment of Pediococcus , Selenomonas , Anaerosinus , Lactobacillus , Pseudomonas , and Bifidobacterium , and the lack of Barnesiella in MHE patients ( Figure 4A ).",
+      "Rifaximin treatment reduced the abundance of Clostridium , Pediococcus , Ruminococcus , Streptococcus , Selenomonas , Biophila , Desulfovibrio , and Pseudomonas , and increased the abundance of Barnesiella ( Figure 4C )."
+    ],
+    "confidence": "high",
+    "note": "First sentence mentions enrichment in MHE patients without stating comparison group; other sentences compare treatment outcomes within patient group."
+  },
+  {
+    "id": "4:Actinomycetota",
+    "title": "Crosstalk between the gut microbiota and brain network topology in poststroke aphasia patients: perspectives from neuroimaging findings",
+    "taxon": "Actinomycetota",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": [
+      "Actinobacteria were present at lower levels in the PSA group (24.02%) than in the non-PSA group (47.95%) ( Figure 3(g) )."
+    ],
+    "confidence": "high",
+    "note": "Explicit comparison between diseased (PSA/poststroke aphasia) and non-diseased (non-PSA) groups; Actinobacteria depleted in diseased group."
+  },
+  {
+    "id": "9:Bilophila",
+    "title": "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+    "taxon": "Bilophila",
+    "verdict": "NO_COMPARISON",
+    "quotes": [
+      "Two species optimally detected AI: Bilophila (OTU_330) and Lachnospiraceae (OTU_338); the AUCs under the ROCs were 0.985 and 0.929 respectively ( Figure 8B , Table 2 )."
+    ],
+    "confidence": "medium",
+    "note": "Sentence states Bilophila detected AI but does not explicitly name the comparison group (healthy controls implied by context of ROC analysis but not stated)."
+  },
+  {
+    "id": "11:Mitsuokella",
+    "title": "Gut microbiome alterations in preclinical Alzheimer’s disease",
+    "taxon": "Mitsuokella",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": [
+      "The GLM analysis revealed that the genera Megamonas, Serratia, Leptotrichia and Clostridium (family Clostridiaceae) were increased in the Aβ+ CN group compared to the Aβ− CN group, whereas the genera CF231, Victivallis, Enterococcus, Mitsuokella and Clostridium (family Erysipelotrichaceae) were decreased in Aβ+ CN"
+    ],
+    "confidence": "high",
+    "note": "Sentence compares amyloid-positive (diseased) to amyloid-negative (cognitively normal/healthy) groups; Mitsuokella decreased in diseased group."
+  },
+  {
+    "id": "14:Bacillota",
+    "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+    "taxon": "Bacillota",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": [
+      "However, sALS patients, but not bALS patients, showed a significant enrichment of Firmicutes along with a depletion of Bacteroidetes in stool samples, resulting in a significant increase in fecal F/B- ratio ( F / B > 1, Fig. 3 A-C, Supplemental Figs. 3 , 4 ).",
+      "However, bALS patients, but not sALS patients, showed a significant depletion of Firmicutes and enrichment of Bacteroidetes (Fig. 3 D, E , Supplemental Figs. 3 , 4 )."
+    ],
+    "confidence": "high",
+    "note": "All named sentences compare different ALS disease subtypes (spinal vs. bulbar), not diseased ALS patients vs. healthy controls."
+  },
+  {
+    "id": "17:Bifidobacterium animalis",
+    "title": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet.",
+    "taxon": "Bifidobacterium animalis",
+    "verdict": "NO_COMPARISON",
+    "quotes": [
+      "two taxa reduced in MS, the genus Ruminococcaceae UCG-013 ( p = 0.036, r = 0.21) and the species Bifidobacterium Animalis ( p = 0.015, rho = 0.24), correlated positively with MDS",
+      "Bifidobacterium animalis , reduced in PwMS in our study, is a probiotic, which reduced the duration of clinical symptoms in EAE [ 37 ]."
+    ],
+    "confidence": "high",
+    "note": "Sentences state taxon was reduced in MS patients without explicitly stating comparison to healthy controls."
+  },
+  {
+    "id": "23:Enterococcus",
+    "title": "Unveiling the negative association of Faecalibacterium prausnitzii with ischemic stroke severity, impaired prognosis and pro-inflammatory markers",
+    "taxon": "Enterococcus",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": [
+      "Our findings revealed that, in contrast to both the control and 3-month good prognosis groups, the 3-month poor prognosis cohort exhibited marked reductions in Faecalibacterium and Blautia , along with elevated levels of Enterococcus .",
+      "Conversely, opportunistic pathogens, particularly Enterococcus , were found to be enriched, especially within the subgroup of patients afflicted with non-minor stroke and those with a 3-month poor prognosis."
+    ],
+    "confidence": "high",
+    "note": "First sentence explicitly compares poor prognosis stroke patients to healthy control group; Enterococcus elevated in diseased group."
+  }
+]

@@ -222,10 +222,18 @@ sentence) and asks what comparison those sentences describe:
 
 | label | meaning | n |
 |---|---|---:|
-| `CLEAN` | ≥1 sentence naming the taxon states a healthy/normal-control contrast | 1,272 |
-| `UNRESOLVED` | the sentences name no comparison | 1,234 |
+| `CLEAN` | ≥1 sentence naming the taxon states a healthy/normal-control contrast | 1,349 |
+| `UNRESOLVED` | the sentences name no comparison | 1,187 |
 | `NO_SENTENCE` | no kept sentence names that taxon | 457 |
-| `CANDIDATE` | no control contrast, but ≥1 subgroup or treatment-arm contrast | **114** |
+| `CANDIDATE` | no control contrast, but ≥1 subgroup or treatment-arm contrast | **84** |
+
+*(The control regex was **widened once**, after the adjudication in Result 6 exposed
+four real phrasings it missed — `"compared with CON"`, `"in contrast to both the
+control and …"`, `"the healthy **male** group"`, `"their non-stroke
+counterparts"`. That is a fix to a wrong regex, not a fix aimed at a number, and
+the pool moved 114 → 84. Of the 30 observations that left, only **6** were in the
+adjudicated sample, so 24 of the 30 are out-of-sample — the widening generalises.
+Every figure below is post-widening.)*
 
 **The same asymmetry the 2026-09-16 recall audit had to state applies here.**
 `relation_sentences_clean.json` keeps only sentences carrying a taxon *and* a
@@ -244,17 +252,18 @@ should concentrate in the papers the reader called out of gate.
 
 | paper class | papers | observations | `CANDIDATE` rate |
 |---|---:|---:|---:|
-| out of gate | 19 | 88 | **28.4%** |
-| in gate, also reports a subgroup contrast | 93 | 997 | 4.5% |
-| in gate, control contrast only | 157 | 1,535 | 2.9% |
+| out of gate | 19 | 88 | **21.6%** |
+| in gate, also reports a subgroup contrast | 93 | 997 | 2.7% |
+| in gate, control contrast only | 157 | 1,535 | 2.5% |
 
-Out of gate vs in-gate-clean: **diff +0.255, p = 0.00005** (20,000 paper-level
-permutations), **MDE ±0.082**, BH q = 0.0001 over the two tests here. A **9.9×
+Out of gate vs in-gate-clean: **diff +0.191, p = 0.00005** (20,000 paper-level
+permutations), **MDE ±0.067**, BH q = 0.0001 over the two tests here. An **8.7×
 enrichment** that two independent instruments converge on. That is the strongest
 construct-validity evidence either of them has.
 
-In-gate-mixed vs in-gate-clean: 4.5% vs 2.9%, diff +0.017, **p = 0.301**, MDE
-±0.032 — **null**, and it agrees with the paper-level mixed-provenance null.
+In-gate-mixed vs in-gate-clean: 2.7% vs 2.5%, diff +0.002, **p = 0.849**, MDE
+±0.024 — **null**, and it agrees with the paper-level mixed-provenance null. Two
+routes now say the same thing about mixed papers.
 
 ### The null, and why its power statement is the finding
 
@@ -268,20 +277,101 @@ This predictor varies *within* a paper — that is the point of it — so a pape
 shuffle would destroy nothing and test nothing. The exchangeable null is a
 **within-paper label permutation** holding each paper's count of each label fixed.
 
-| group | observations | observed | expected | O/E |
-|---|---:|---:|---:|---:|
-| `CANDIDATE` | 16 | 8 | 7.09 | 1.129 |
-| `CLEAN` | 294 | 131 | 132.77 | 0.987 |
+| group | observations | O/E |
+|---|---:|---:|
+| `CANDIDATE` | 15 | 1.037 |
+| `CLEAN` | 298 | 0.990 |
 
-diff +0.142, **p = 0.647**, **MDE ±0.473**.
+diff +0.046, **p = 0.812**, **MDE ±0.398**.
 
-**The power statement is the whole result.** Only **5 of 128 papers** contribute
+**The power statement is the whole result.** Only **6 of 128 papers** contribute
 both a `CANDIDATE` and a `CLEAN` observation among their *decisive* ones, and those
-5 are the only exchangeable units the null has. 16 scoreable `CANDIDATE`
-observations against an MDE of 0.47 cannot resolve an effect the size of the
+6 are the only exchangeable units the null has. 15 scoreable `CANDIDATE`
+observations against an MDE of 0.40 cannot resolve an effect the size of the
 paper-level one (0.76). **So this is "the corpus cannot answer it", not "there is
 no effect"** — and it explains why the paper-level instrument is the one that
 worked. A future session should not spend effort here without more papers.
+
+## Result 6 — from upper bound to estimate: ~1.3% of the graph, and the adjudicators had to be overruled
+
+`contrast_candidate_packets.py` → `contrast_candidate_score.py`. The same move
+`FINDINGS_edge_recall.md` made for recall: sample the flagged set, adjudicate it,
+and turn a bound into an estimate with a cluster bootstrap.
+
+**Sampling is by PAPER.** 84 candidates come from a few dozen papers and one paper
+contributes 10, so an observation-level sample would over-weight a handful of
+papers and the interval would be wrong. 24 papers drawn at seed 20260919 → 46
+observations, adjudicated blind to the probe's own verdict.
+
+### The adjudicators were wrong in one direction, systematically
+
+Of 20 `CONTROL_CONTRAST` verdicts, **16 do not survive a re-read** under the rule
+the task itself set — *the cited quote must NAME a healthy, normal, unaffected or
+non-diseased comparator*:
+
+| the adjudicator's own quote | what it actually says |
+|---|---|
+| *"enriched in the feces of PD patients after adjusting for age, gender, BMI"* | names **no** comparator |
+| *"AD Tg mice … and ADWT mice … exhibited increased abundance"* | **mice** |
+| *"the Aβ+ CN group compared to the Aβ− CN group"* | a **subgroup** of cognitively normal people |
+| *"enrichment of the Ruminococcaceae family … in sALS"* | **sALS vs bALS**, both ALS |
+| *"lower in the PSA group (24.02%) than in the non-PSA group (47.95%)"* | **within** stroke |
+
+One batch's own summary says *"(implied vs healthy)"* three times — the readers
+inferred a comparator the text never states, which the instructions forbade. This
+is the failure mode already on record here (*"don't trust a subagent's judgement
+call where a deterministic test exists"*; the 2026-09-11 abstract screen went
+0-for-4 on drops), and it points **toward** the null, so it would have silently
+deflated the estimate.
+
+**The re-read was run in both directions.** All 18 surviving `SUBGROUP_ONLY`
+verdicts were re-read under the same strict rule and **none** was overturned. The
+correction runs one way because only one direction was wrong, not because only one
+was checked. Every override is recorded with its reason in
+`contrast_candidate_override.json`, in the style of `taxon_typos.py`.
+
+**Four of the 20 stood — and all four were gaps in the regex, not reader errors.**
+That is what fed the one widening in Result 5.
+
+### The estimate
+
+| | |
+|---|---:|
+| adjudicated observations still in the pool | 37 |
+| papers they come from | 18 |
+| genuinely out-of-gate (`SUBGROUP_ONLY`) | 18 |
+| comparator never stated (`NO_COMPARISON`) | 17 |
+| unclear | 2 |
+| **contamination rate within the flagged set** | **48.7%** |
+| 95% CI, paper-level cluster bootstrap (20,000) | **[29.0%, 65.8%]** |
+
+Applied to the pool of 84:
+
+> **≈41 contaminated observations, 95% CI [24, 55] — 1.33% of the graph's 3,077,
+> CI [0.79%, 1.80%]. Quote the range.**
+
+It is worth noting the two corrections **offset**: the naive figures (32.6% of 114)
+gave ≈37, the corrected ones (48.7% of 84) give ≈41. The point estimate barely
+moved while both of its inputs did, which is the most reassuring thing about it.
+
+### What this bounds, and what it does not
+
+This estimates contamination **inside the flagged set only**. It says nothing about
+the 1,349 `CLEAN` and 1,187 `UNRESOLVED` observations, where the regex could be
+wrong in the other direction. So:
+
+> total contamination **≥** ≈41, and is **not** bounded above by 84.
+
+Combined with Result 1, the two numbers describe different things and should be
+quoted separately: **out-of-gate at the paper level is 1.8–2.7%**; **within-paper
+contamination among flagged observations adds ≈1.3% [0.8%, 1.8%]**. They overlap
+(some flagged observations sit in out-of-gate papers) and neither is a total.
+
+**One incidental finding, logged as n=1 and not as a claim.** A `Veillonellaceae`
+observation's own quote reads *"although without significant difference"* — an edge
+extracted from an explicitly **non-significant** result, which violates the
+extraction prompt's *significance* gate as well as its control-contrast gate. No
+instrument here looks for that; it surfaced by accident.
 
 ## What this does and does not say about the 2026-09-11 corpus screen
 
@@ -310,7 +400,9 @@ where it did not.
 | `contrast_out_of_gate.json` | **opt-in** tiered list of out-of-gate papers |
 | `contrast_edge_probe.py` / `.json` | deterministic per-observation contrast label |
 | `contrast_probe_validate.py` / `.json` | probe vs blinded reader, the 9.9x agreement |
-| `contrast_edge_test.py` / `.json` | within-paper test; null, and underpowered by 5 papers |
+| `contrast_edge_test.py` / `.json` | within-paper test; null, and underpowered by 6 papers |
+| `contrast_candidate_packets.py` / `contrast_candidate_score.py` | paper-clustered sample of the flagged set, and the estimate |
+| `contrast_candidate_override.json` | the 20 re-read verdicts, each with its reason |
 | `disease_label_packets.py` / `disease_label_audit.py` | the 25 free-text disease nodes (below) |
 
 ## Appendix — the 25 free-text disease nodes

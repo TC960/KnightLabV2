@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1:Streptococcus",
+    "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+    "taxon": "Streptococcus",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": [
+      "SCI patients show increased proportions of potentially pathogenic and pro-inflammatory bacteria, such as Enterococcus, Streptococcus and Klebsiella."
+    ],
+    "confidence": "high",
+    "note": "Streptococcus increased in SCI patients; healthy controls mentioned in paper context."
+  },
+  {
+    "id": "2:Pediococcus",
+    "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+    "taxon": "Pediococcus",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": [
+      "The results showed the enrichment of Pediococcus , Selenomonas , Anaerosinus , Lactobacillus , Pseudomonas , and Bifidobacterium , and the lack of Barnesiella in MHE patients ( Figure 4A )."
+    ],
+    "confidence": "high",
+    "note": "Pediococcus enriched in MHE patients; paper compares disease to healthy controls."
+  },
+  {
+    "id": "3:Roseburia",
+    "title": "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology.",
+    "taxon": "Roseburia",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": [
+      "Other genera consistent with the key microbes identified in our study—Blautia, Ruminococcus, and Roseburia—also demonstrated reductions in AD participants in previous studies and are known to possess potential probiotic properties [ 43 , 62 , 63 ]."
+    ],
+    "confidence": "medium",
+    "note": "Roseburia reduced in AD participants; comparison to cognitively normal is implicit in paper design."
+  },
+  {
+    "id": "7:Lactobacillus amylovorus",
+    "title": "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pilot study.",
+    "taxon": "Lactobacillus amylovorus",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": [
+      "Most notably, three Lachnospiraceae species with the corresponding genus Lachnospiraceae NK4A136 group and the genus Lachnospira were associated with health; Faecalibacterium prausnitzii was associated with mild dementia; moderate dementia was associated with Lactobacillus amylovorus and the corresponding higher taxonomic levels (the genus Lactobacillus , the family Lactobacillaceae and the order Lactobacillales )."
+    ],
+    "confidence": "high",
+    "note": "Associated with moderate dementia (disease), contrasted with health in same sentence."
+  },
+  {
+    "id": "11:Enterococcus",
+    "title": "Gut microbiome alterations in preclinical Alzheimer's disease",
+    "taxon": "Enterococcus",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": [
+      "The GLM analysis revealed that the genera Megamonas, Serratia, Leptotrichia and Clostridium (family Clostridiaceae) were increased in the Aβ+ CN group compared to the Aβ− CN group, whereas the genera CF231, Victivallis, Enterococcus, Mitsuokella and Clostridium (family Erysipelotrichaceae) were decreased in Aβ+ CN (Table 2 and Fig 1)"
+    ],
+    "confidence": "high",
+    "note": "Enterococcus decreased in Aβ+ cognitively normal (preclinical AD) vs Aβ− controls."
+  },
+  {
+    "id": "14:Bacteroidaceae",
+    "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+    "taxon": "Bacteroidaceae",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": [
+      "Here, we found the shift in fecal F/B- ratio in sALS to be mainly driven by a significant enrichment of the Ruminococcaceae family ( Firmicutes phyla) and depletion of the Bacteroidaceae family ( Bacteroidetes phyla) (Fig. 4 A)."
+    ],
+    "confidence": "medium",
+    "note": "Bacteroidaceae depleted in sALS; dysbiosis terminology implies healthy comparison."
+  },
+  {
+    "id": "16:Escherichia coli",
+    "title": "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms.",
+    "taxon": "Escherichia coli",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": [
+      "For example, Escherichia coli and Klebsiella spp. are increased in PD and are positively correlated (cluster #6)."
+    ],
+    "confidence": "high",
+    "note": "E. coli increased in PD; comparison to non-PD (healthy) is standard in disease studies."
+  },
+  {
+    "id": "21:Ruminococcaceae_UCG_002",
+    "title": "Uncovering the characteristics of the gut microbiota in patients with acute ischemic stroke and phlegm-heat syndrome",
+    "taxon": "Ruminococcaceae_UCG_002",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": [
+      "Furthermore, the genera, Ruminococcaceae_UCG_002 and Christensenellaceae_R-7_ group , were significantly more abundant in the tAIS group, the abundance of Megasphaera and Escherichia_Shigella was highest in the ntAIS group ( Fig 9 )."
+    ],
+    "confidence": "high",
+    "note": "Comparison only between AIS subtypes (tAIS vs ntAIS), not versus healthy controls."
+  }
+]

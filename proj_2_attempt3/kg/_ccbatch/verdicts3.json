@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1:Enterococcus",
+    "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+    "taxon": "Enterococcus",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": ["the enterotype-like group 3 (dominated by Enterococcus) accounted for a greater percentage of those having more severe SCI (18% vs 7% in patients with less severe injury)"],
+    "confidence": "high",
+    "note": "All Enterococcus comparisons within SCI patients (by severity, antibiotic use, weight), never versus healthy controls."
+  },
+  {
+    "id": "2:Selenomonas",
+    "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+    "taxon": "Selenomonas",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": ["The results showed the enrichment of Pediococcus , Selenomonas , Anaerosinus , Lactobacillus , Pseudomonas , and Bifidobacterium , and the lack of Barnesiella in MHE patients ( Figure 4A )."],
+    "confidence": "medium",
+    "note": "Enriched in MHE patients; context shows comparison to control individuals in the study."
+  },
+  {
+    "id": "4:Bacteroidia",
+    "title": "Crosstalk between the gut microbiota and brain network topology in poststroke aphasia patients: perspectives from neuroimaging findings",
+    "taxon": "Bacteroidia",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": ["The gut microbiome of the PSA group was mainly enriched in p_Bacteroidetes , c _Bacteroidia , o_Bacteroidales , and g_Bacteroides , whereas that of the non-PSA group was mainly enriched in p_Actinobacteria , c_Actinobacteria , and o_Bifidobacteriales ( Figure 3(i) and ( j ))."],
+    "confidence": "high",
+    "note": "Compares PSA to non-PSA stroke patients (both diseased), not versus healthy controls."
+  },
+  {
+    "id": "8:Porphyromonadaceae",
+    "title": "Genetic risk score in multiple sclerosis is associated with unique gut microbiome.",
+    "taxon": "Porphyromonadaceae",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": ["Based on our QCAT analysis, Porphyromonadaceae , a typically low abundance family, was observed to be significantly higher in Cluster B."],
+    "confidence": "high",
+    "note": "Compares genetic risk clusters within MS patients, not diseased versus healthy controls."
+  },
+  {
+    "id": "11:Victivallis",
+    "title": "Gut microbiome alterations in preclinical Alzheimer's disease",
+    "taxon": "Victivallis",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": ["whereas the genera CF231, Victivallis, Enterococcus, Mitsuokella and Clostridium (family Erysipelotrichaceae) were decreased in A β+ CN (Table 2 and Fig 1)"],
+    "confidence": "high",
+    "note": "Decreased in A-β+ cognitively normal (preclinical AD) versus A-β− cognitively normal controls."
+  },
+  {
+    "id": "14:Bacteroidota",
+    "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+    "taxon": "Bacteroidota",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": ["However, sALS patients, but not bALS patients, showed a significant enrichment of Firmicutes along with a depletion of Bacteroidetes in stool samples, resulting in a significant increase in fecal F/B- ratio ( F / B > 1, Fig. 3 A-C, Supplemental Figs. 3 , 4 )."],
+    "confidence": "high",
+    "note": "Depleted in Bacteroidetes compared between spinal-onset and bulbar-onset ALS, not versus healthy controls."
+  },
+  {
+    "id": "16:Porphyromonas asaccharolytica",
+    "title": "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms.",
+    "taxon": "Porphyromonas asaccharolytica",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": ["Here, at species-level, only Porphyromonas asaccharolytica was prevalent enough to be included in MWAS and it confirmed to be significantly elevated in PD."],
+    "confidence": "high",
+    "note": "Significantly elevated in Parkinson's disease versus non-diseased controls in MWAS."
+  },
+  {
+    "id": "22:Lactococcus phage ul36",
+    "title": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+    "taxon": "Lactococcus phage ul36",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": ["We showed that older adults with MCI had higher abundance of Lactococcus phage ul36 which specifically regulates the probiotic bacteria like Lactococcus lactis (a common yogurt culture) [ 44 ] and may diminish their abundance in the gut, which may ultimately be detrimental for gut-brain axis."],
+    "confidence": "high",
+    "note": "Higher abundance in MCI compared to cognitively normal older adults."
+  }
+]

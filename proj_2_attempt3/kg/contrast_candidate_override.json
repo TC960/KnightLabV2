@@ -1,0 +1,88 @@
+{
+ "note": "Orchestrator (Opus) re-read of all 20 CONTROL_CONTRAST verdicts on regex-flagged observations, 2026-09-19. RULE APPLIED: the verdict stands only if the adjudicator's own cited quote NAMES a healthy / normal / unaffected / non-diseased comparator. The readers systematically inferred an unstated comparator -- one batch's own summary says '(implied vs healthy)' three times -- which the task instructions forbade. Four verdicts stand and were genuine gaps in the CONTROL regex; that regex has been widened accordingly. Only CONTROL_CONTRAST verdicts were re-read: overturning an adjudicator toward the finding while leaving the other direction unchecked would bias the estimate, so the SUBGROUP_ONLY verdicts are re-checked separately by the widened regex, which reclassifies any observation whose sentences do name a control. REVIEW WAS RUN IN BOTH DIRECTIONS, to remove exactly that bias: all 18 surviving SUBGROUP_ONLY verdicts were re-read under the same strict rule and NONE was overturned -- every one cites a quote naming a within-disease subgroup (Ab+ vs Ab- cognitively normal, sALS vs bALS, SCI severity grade, MS genetic-risk cluster, antibiotic-exposed subgroup, rifaximin arm, body-first PD), an animal arm, or a pre/post comparison. So the correction runs one way because only one direction was wrong, not because only one was checked.",
+ "overrides": {
+  "0:Butyricicoccus": [
+   "NO_COMPARISON",
+   "quote names no comparator: 'enriched in the feces of PD patients after adjusting for age, gender, BMI and constipation'"
+  ],
+  "6:Subdoligranulum": [
+   "NO_COMPARISON",
+   "quote names no comparator: 'CI individuals exhibited a decreased abundance'"
+  ],
+  "15:Butyricicoccus": [
+   "CONTROL_CONTRAST",
+   "STANDS -- 'decreased in STR compared with CON'. CON was a real gap in the regex."
+  ],
+  "20:Lachnoclostridium": [
+   "SUBGROUP_ONLY",
+   "quote compares AD Tg mice with ADWT mice; not a human control contrast"
+  ],
+  "1:Streptococcus": [
+   "NO_COMPARISON",
+   "quote names no comparator: 'SCI patients show increased proportions of ...'"
+  ],
+  "2:Pediococcus": [
+   "NO_COMPARISON",
+   "quote names no comparator: 'enrichment of ... in MHE patients'"
+  ],
+  "7:Lactobacillus amylovorus": [
+   "SUBGROUP_ONLY",
+   "quote is a dementia-severity gradient (mild vs moderate), not disease vs control"
+  ],
+  "11:Enterococcus": [
+   "SUBGROUP_ONLY",
+   "'the Ab+ CN group compared to the Ab- CN group' -- a subgroup within cognitively normal people"
+  ],
+  "14:Bacteroidaceae": [
+   "SUBGROUP_ONLY",
+   "enrichment in sALS, contrasted against bALS; both arms have ALS"
+  ],
+  "16:Escherichia coli": [
+   "NO_COMPARISON",
+   "quote names no comparator: 'increased in PD'"
+  ],
+  "2:Selenomonas": [
+   "NO_COMPARISON",
+   "quote names no comparator: 'enrichment of ... in MHE patients'"
+  ],
+  "16:Porphyromonas asaccharolytica": [
+   "NO_COMPARISON",
+   "quote names no comparator: 'significantly elevated in PD'"
+  ],
+  "22:Lactococcus phage ul36": [
+   "NO_COMPARISON",
+   "quote names no comparator: 'older adults with MCI had higher abundance'"
+  ],
+  "4:Actinomycetota": [
+   "SUBGROUP_ONLY",
+   "'lower in the PSA group than in the non-PSA group' -- both arms are stroke patients"
+  ],
+  "11:Mitsuokella": [
+   "SUBGROUP_ONLY",
+   "'the Ab+ CN group compared to the Ab- CN group' -- subgroup within cognitively normal people"
+  ],
+  "23:Enterococcus": [
+   "CONTROL_CONTRAST",
+   "STANDS -- 'in contrast to both the control and 3-month good prognosis groups'. A bare 'the control' was a real gap in the regex."
+  ],
+  "2:Barnesiella": [
+   "NO_COMPARISON",
+   "quote names no comparator: 'the lack of Barnesiella in MHE patients'"
+  ],
+  "10:Akkermansia muciniphila": [
+   "NO_COMPARISON",
+   "quote names no comparator: 'increased in MS patients'"
+  ],
+  "12:Megamonas": [
+   "CONTROL_CONTRAST",
+   "STANDS -- 'the healthy male group was significantly higher than that in the SCI group'. 'healthy MALE group' was a real gap in the regex."
+  ],
+  "18:Streptococcus anginosus": [
+   "CONTROL_CONTRAST",
+   "STANDS -- 'the stroke patients compared with their non-stroke counterparts'. 'non-X counterparts' was a real gap in the regex."
+  ]
+ },
+ "incidental": {
+  "Veillonellaceae / Orthopedic Surgery Causes Gut Microbiome Dysbiosis": "Its quote reads 'although without significant difference' -- an observation extracted from an explicitly NON-significant result, which violates the extraction prompt's significance gate as well as its control-contrast gate. n=1, logged as an observation, not a claim."
+ }
+}

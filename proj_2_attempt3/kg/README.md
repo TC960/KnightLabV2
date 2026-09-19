@@ -119,7 +119,18 @@ resolution and external validation landed. Corrected 2026-09-10.*
   paper contributes 13 edges and no subject in it has Alzheimer's, and a second
   contributes 7 from AD-with vs AD-without neuropsychiatric symptoms. See
   `FINDINGS_contrast_scope.md`; the tiered list ships opt-in as
-  `contrast_out_of_gate.json` and `graph.json` is untouched.
+  `contrast_out_of_gate.json` and `graph.json` is untouched. A **separate** number
+  from the same pass, and it must not be added to the first: within papers that
+  *are* in scope, observations whose taxon is never reported against a control in
+  any sentence naming it are **~1.3% of the graph, CI [0.8%, 1.8%]** — 48.7% of an
+  84-observation flagged set adjudicate as genuinely out-of-gate, CI [29.0, 65.8]
+  over a paper-clustered bootstrap. It bounds contamination *inside the flagged
+  set only*, so it is a floor, not a ceiling. Getting there required **overruling
+  16 of 20 adjudicator verdicts**: they inferred healthy-control comparators the
+  text never states (quotes cited as control contrasts turned out to be mice,
+  Aβ+ vs Aβ− cognitively normal, sALS vs bALS). The re-read was run in both
+  directions — all 18 `SUBGROUP_ONLY` verdicts survived — and every override
+  carries its reason in `contrast_candidate_override.json`.
 - **Disagreement with the rest of the literature is a property of the PAPER, and
   nothing we extract explains it.** Scored against the leave-one-out majority, 377
   of 1,367 decisive observations (27.6%) disagree, and which papers hold the

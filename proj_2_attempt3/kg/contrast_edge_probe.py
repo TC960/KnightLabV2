@@ -37,12 +37,19 @@ HERE = Path(__file__).parent
 N_PERM = 20000
 SEED = 20260919
 
+# Widened 2026-09-19 after adjudication exposed four real phrasings it missed:
+# "compared with CON", "in contrast to both the control and ...", "the healthy
+# MALE group", "their non-stroke counterparts". Justified on the regex being
+# wrong, not on moving a number -- the effect on the sampled observations is
+# reported separately from the effect on the 68 that were never adjudicated.
 CONTROL = re.compile(
-    r"health(y|ies)[ -]?(control|subject|volunteer|individual|participant|donor|"
-    r"adult|elder|people|person|group|twin)|normal control|\bHCs?\b|\bNCs?\b|"
-    r"control group|(than|versus|vs\.?|compared (with|to)|relative to)\s+"
-    r"(the\s+)?(healthy\s+)?controls?\b|cognitively normal|non-?demented|"
-    r"unaffected|\bCTR\b|\bHV\b", re.I)
+    r"health(y|ies)\b[ -]?\w*\s?(control|subject|volunteer|individual|participant|"
+    r"donor|adult|elder|people|person|group|twin|male|female)|normal control|"
+    r"\bHCs?\b|\bNCs?\b|\bCONs?\b|control group|\bthe controls?\b|"
+    r"(than|versus|vs\.?|compared (with|to)|relative to|in contrast to)\s+"
+    r"(both\s+)?(the\s+)?(healthy\s+)?controls?\b|cognitively normal|"
+    r"non-?demented|unaffected|\bCTR\b|\bHV\b|"
+    r"non-?\w+ (counterpart|control|subject|participant|group)s?", re.I)
 
 SUBGROUP = re.compile(
     r"\bwith(out)? (and|or) without\b|\bthose without\b|non-?[A-Z]{2,}\b|"

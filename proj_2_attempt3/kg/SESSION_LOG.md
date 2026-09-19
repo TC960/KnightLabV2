@@ -99,25 +99,57 @@ two of the three tests compare exactly those things. The tier retracted on
 **Pushed to the edge level, and the result is one strong validation plus one
 honest null.** `contrast_edge_probe.py` labels each of the 3,077 observations
 **deterministically** — no adjudicator — from the sentences that name *that taxon*
-in *that paper*, joined on taxid: 1,272 CLEAN, 1,234 UNRESOLVED, 457 NO_SENTENCE,
-**114 CANDIDATE** (no visible control contrast, but a subgroup or treatment-arm
+in *that paper*, joined on taxid: 1,349 CLEAN, 1,187 UNRESOLVED, 457 NO_SENTENCE,
+**84 CANDIDATE** (no visible control contrast, but a subgroup or treatment-arm
 one). Same asymmetry as the recall audit: the file holds ~10% of corpus text, so
-**CANDIDATE flags, it cannot convict** — 114 is an upper bound.
+**CANDIDATE flags, it cannot convict** — 84 is an upper bound.
 - *The two instruments converge, and they share nothing.* The census verdict is a
   blinded reader judging the study's **arms**; the probe is a regex over sentences
-  naming one **taxon**. CANDIDATE rate is **28.4%** in out-of-gate papers against
-  **2.9%** in in-gate-control-only papers — diff +0.255, **p = 0.00005** over
-  20,000 paper-level permutations, MDE ±0.082, BH q = 0.0001. A **9.9×
+  naming one **taxon**. CANDIDATE rate is **21.6%** in out-of-gate papers against
+  **2.5%** in in-gate-control-only papers — diff +0.191, **p = 0.00005** over
+  20,000 paper-level permutations, MDE ±0.067, BH q = 0.0001. An **8.7×
   enrichment**, and the strongest construct-validity evidence either instrument
-  has. In-gate-mixed sits at 4.5%, **p = 0.301**, MDE ±0.032 — null, agreeing with
+  has. In-gate-mixed sits at 2.7%, **p = 0.849**, MDE ±0.024 — null, agreeing with
   the paper-level mixed-provenance null.
 - *The within-paper test is a null whose POWER STATEMENT is the finding.* Holding
-  the paper fixed: O/E 1.129 (16 CANDIDATE obs) vs 0.987 (294 CLEAN), diff +0.142,
-  **p = 0.647**, **MDE ±0.473**. Only **5 of 128 papers** contribute both labels
-  among their decisive observations, and those 5 are the only exchangeable units
+  the paper fixed: O/E 1.037 (15 CANDIDATE obs) vs 0.990 (298 CLEAN), diff +0.046,
+  **p = 0.812**, **MDE ±0.398**. Only **6 of 128 papers** contribute both labels
+  among their decisive observations, and those 6 are the only exchangeable units
   the null has. **"The corpus cannot answer it", not "there is no effect"** — and
   it explains why the paper-level instrument is the one that worked. Do not spend
   effort here without more papers.
+- ***The upper bound is now an estimate: ≈1.3% of the graph, CI [0.8%, 1.8%].***
+  A paper-clustered sample of the flagged set (24 papers → 46 observations, seed
+  20260919) was adjudicated blind to the probe's verdict:
+  **48.7% of flagged observations are genuinely out-of-gate**, 95% CI
+  **[29.0%, 65.8%]** (20,000 paper-level cluster bootstraps) → **≈41
+  observations [24, 55]** of 3,077. **Quote the range.** It bounds contamination
+  *inside the flagged set only* — it says nothing about the 1,349 CLEAN and 1,187
+  UNRESOLVED observations, so total contamination is **≥ 41 and is NOT bounded
+  above by 84.** Keep it separate from the paper-level 1.8–2.7%.
+- ***The adjudicators had to be overruled, systematically and in one direction.***
+  **16 of 20 `CONTROL_CONTRAST` verdicts do not survive a re-read** under the rule
+  the task itself set — the cited quote must NAME a healthy/normal/unaffected
+  comparator. One batch's own summary says *"(implied vs healthy)"* three times;
+  the readers inferred comparators the text never states. Quotes cited as control
+  contrasts turned out to be **mice**, **Aβ+ vs Aβ− cognitively normal**, **sALS
+  vs bALS**, **PSA vs non-PSA**. The error points *toward* the null, so it would
+  have silently deflated the estimate. **The re-read was run in BOTH directions:**
+  all 18 surviving `SUBGROUP_ONLY` verdicts were re-read under the same rule and
+  **none** was overturned. Every override is recorded with a reason in
+  `contrast_candidate_override.json`, in the style of `taxon_typos.py`.
+  **The 4 verdicts that stood were regex gaps, not reader errors** — `"compared
+  with CON"`, `"in contrast to both the control and …"`, `"the healthy **male**
+  group"`, `"their non-stroke counterparts"` — so the CONTROL regex was widened
+  once, on correctness. Pool 114 → 84; **24 of the 30 reclassifications are
+  out-of-sample**, so the widening generalises. The two corrections **offset**:
+  naive 32.6% of 114 ≈ 37, corrected 48.7% of 84 ≈ 41. The point estimate barely
+  moved while both inputs did, which is the most reassuring thing about it.
+- *Incidental, n=1, logged as an observation and not a claim.* A `Veillonellaceae`
+  observation's own quote reads *"although without significant difference"* — an
+  edge extracted from an explicitly **non-significant** result, violating the
+  prompt's *significance* gate as well as its control gate. Nothing here looks for
+  that; it surfaced by accident.
 - *A null-design note worth keeping.* This is the first test in the project that
   deliberately does **not** shuffle at the paper level. That rule is for
   paper-level predictors; this predictor varies *within* a paper, so a paper-level
