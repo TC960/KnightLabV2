@@ -39,9 +39,23 @@ def main():
         by_paper[r["paper"]].append(r)
 
     papers = sorted(by_paper)
-    rng = random.Random(SEED)
-    rng.shuffle(papers)
-    picked = sorted(papers[:N_PAPERS])
+    frozen = HERE / "contrast_candidate_sample.json"
+    if frozen.exists():
+        # The draw is frozen because the pool it was drawn from no longer exists:
+        # the control regex was widened after adjudication (see
+        # contrast_candidate_override.json), shrinking the pool 114 -> 84.
+        # Redrawing here would orphan every verdict. Papers that lost all their
+        # candidates to the widening simply have no packets.
+        drawn = json.load(open(frozen))["papers"]
+        picked = [t for t in drawn if t in by_paper]
+    else:
+        rng = random.Random(SEED)
+        rng.shuffle(papers)
+        picked = sorted(papers[:N_PAPERS])
+        drawn = picked
+    # ids index the FULL frozen draw, not the survivors, so they stay stable when
+    # the widening removes a paper -- otherwise every adjudicated verdict is orphaned
+    pos = {t: i for i, t in enumerate(drawn)}
 
     packets = []
     for t in picked:
@@ -57,7 +71,7 @@ def main():
             own = idx.get(tid) or idx.get(str(r["taxon"]).lower()) or []
             others = [s for s in sents if s not in own][:8]
             packets.append({
-                "id": f"{picked.index(t)}:{r['taxon']}",
+                "id": f"{pos[t]}:{r['taxon']}",
                 "title": t, "taxon": r["taxon"],
                 "sentences_naming_taxon": own[:8],
                 "other_sentences_from_the_paper": others,

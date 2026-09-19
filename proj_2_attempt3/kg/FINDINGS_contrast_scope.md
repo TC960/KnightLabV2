@@ -101,8 +101,9 @@ paper's (observed, expected) fixed.
 | out of gate | 11 | 13 | 7.44 | **1.747** |
 | in gate | 157 | 250 | 252.80 | 0.989 |
 
-**diff +0.758, p = 0.00015** (N = 20,000 paper-level permutations), **MDE ±0.303**.
-The effect is 2.5× the minimum this design can resolve.
+**diff +0.758, p = 0.00015** (N = 20,000 paper-level permutations), **MDE ±0.303**,
+and **BH q = 0.0006** across the four predictor/filter variants in
+`contrast_census.json`. The effect is 2.5× the minimum this design can resolve.
 
 `paper_discordance_offset.py`'s own `MIN_DECISIVE = 4` filter is dropped here on
 purpose and the reason is stated: it discards 17 of the 19 out-of-gate papers —
@@ -298,10 +299,27 @@ worked. A future session should not spend effort here without more papers.
 `FINDINGS_edge_recall.md` made for recall: sample the flagged set, adjudicate it,
 and turn a bound into an estimate with a cluster bootstrap.
 
-**Sampling is by PAPER.** 84 candidates come from a few dozen papers and one paper
+**Sampling is by PAPER.** The candidates come from a few dozen papers and one paper
 contributes 10, so an observation-level sample would over-weight a handful of
-papers and the interval would be wrong. 24 papers drawn at seed 20260919 → 46
-observations, adjudicated blind to the probe's own verdict.
+papers and the interval would be wrong. **24 papers drawn at seed 20260919 → 46
+observations**, adjudicated blind to the probe's own verdict.
+
+**The draw is frozen, and the reason is a real hazard.** It was made from the pool
+as it stood *before* the regex widening — 114 candidates over 47 papers. Widening
+shrank the pool to **84 over 36 papers**, and re-running the sampler against the
+smaller pool would draw a *different* 24 papers and orphan every verdict. The draw
+is therefore recorded in `contrast_candidate_sample.json` and replayed;
+observation ids index the **full** frozen draw, not the survivors, so removing a
+paper does not renumber the rest. What survives is **19 of the 36 pool papers and
+40 of its 84 observations** — a 48% sample.
+
+**The residual selection bias, stated precisely.** Intersecting a uniform 24-of-47
+draw with a fixed 36-paper subset is still uniform *provided the subset was defined
+independently of the draw*. It nearly was: **26 of the 30 reclassifications came
+from observations that were never adjudicated.** The other 4 are the phrasings this
+sample itself exposed, so the intersection is very slightly sample-informed. With
+26/30 out-of-sample the effect is small, but it is not zero and it is why the CI
+below should be read as the honest interval and not as a tight one.
 
 ### The adjudicators were wrong in one direction, systematically
 
@@ -337,7 +355,8 @@ That is what fed the one widening in Result 5.
 
 | | |
 |---|---:|
-| adjudicated observations still in the pool | 37 |
+| adjudicated observations in the pool | 40 |
+| scored after excluding 3 whose quotes were all paraphrases | 37 |
 | papers they come from | 18 |
 | genuinely out-of-gate (`SUBGROUP_ONLY`) | 18 |
 | comparator never stated (`NO_COMPARISON`) | 17 |
@@ -429,3 +448,28 @@ Three families where a qualifier creates a separate node (`Spinal cord injury` �
 `Intracerebral hemorrhage` ×2, `Hepatic encephalopathy` ×2) are **not** folded here.
 They remain what `NEXT_SESSION_PROMPT.md` item 2 says they are: a modelling call for
 a human, not a threshold for a script.
+
+## Reproducibility
+
+The whole chain was run twice end to end and every output JSON is byte-identical
+on the second run:
+
+```
+contrast_packets.py  contrast_census.py  contrast_robustness.py
+contrast_edge_probe.py  contrast_probe_validate.py  contrast_edge_test.py
+contrast_candidate_packets.py  contrast_candidate_score.py
+disease_label_packets.py  disease_label_audit.py
+```
+
+Getting there caught two things worth recording, in a project whose own rule is
+*verify by rebuilding twice and diffing*:
+
+1. **A BH sort bug.** `contrast_census.py` sorted its p-values by *predictor name*
+   rather than by p, so the first committed run reported q = 0.0001 for all four
+   tests including the two nulls. Fixed; the corrected q for the positive result
+   is 0.0006 and for the nulls 0.650.
+2. **A sampler that silently redrew.** Re-running the candidate sampler after the
+   regex widening produced a different 24 papers and orphaned all 46 adjudications
+   — the second run "succeeded" and reported `adjudicated: 14`. Hence the frozen
+   draw and the stable ids above. A pipeline that re-samples on every run cannot
+   be checked by diffing, which is exactly when a diff is most needed.

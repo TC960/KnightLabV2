@@ -1,9 +1,9 @@
 {
- "packets": 46,
- "adjudicated": 46,
+ "packets": 40,
+ "adjudicated": 40,
  "missing": [],
  "excluded_all_paraphrased": 3,
- "left_pool_after_regex_widening": 6,
+ "left_pool_after_regex_widening": 0,
  "overridden_by_orchestrator": 15,
  "adjudicator_verdicts_before_override": {
   "CONTROL_CONTRAST": 15,
@@ -698,103 +698,5 @@
    "quote_check": "ALL_PARAPHRASED"
   }
  ],
- "dropped_rows": [
-  {
-   "id": "15:Butyricicoccus",
-   "title": "Identification of disordered profiles of gut microbiota and functional component in stroke and poststroke epilepsy",
-   "taxon": "Butyricicoccus",
-   "verdict": "CONTROL_CONTRAST",
-   "quotes": [
-    "At the genus level, the relative abundance of butyricicoccus was the most markedly decreased in STR compared with CON (Figure 3a )."
-   ],
-   "confidence": "high",
-   "note": "Multiple sentences report Butyricicoccus as decreased in stroke patients (STR) compared to healthy controls (CON).",
-   "n_quotes": 1,
-   "n_exact": 1,
-   "n_respaced": 1,
-   "quote_check": "OK",
-   "left_pool": "CLEAN"
-  },
-  {
-   "id": "4:Bacteroidia",
-   "title": "Crosstalk between the gut microbiota and brain network topology in poststroke aphasia patients: perspectives from neuroimaging findings",
-   "taxon": "Bacteroidia",
-   "verdict": "SUBGROUP_ONLY",
-   "quotes": [
-    "The gut microbiome of the PSA group was mainly enriched in p_Bacteroidetes , c _Bacteroidia , o_Bacteroidales , and g_Bacteroides , whereas that of the non-PSA group was mainly enriched in p_Actinobacteria , c_Actinobacteria , and o_Bifidobacteriales ( Figure 3(i) and ( j ))."
-   ],
-   "confidence": "high",
-   "note": "Compares PSA to non-PSA stroke patients (both diseased), not versus healthy controls.",
-   "n_quotes": 1,
-   "n_exact": 1,
-   "n_respaced": 1,
-   "quote_check": "OK",
-   "left_pool": "CLEAN"
-  },
-  {
-   "id": "4:Actinomycetota",
-   "title": "Crosstalk between the gut microbiota and brain network topology in poststroke aphasia patients: perspectives from neuroimaging findings",
-   "taxon": "Actinomycetota",
-   "verdict": "CONTROL_CONTRAST",
-   "quotes": [
-    "Actinobacteria were present at lower levels in the PSA group (24.02%) than in the non-PSA group (47.95%) ( Figure 3(g) )."
-   ],
-   "confidence": "high",
-   "note": "Explicit comparison between diseased (PSA/poststroke aphasia) and non-diseased (non-PSA) groups; Actinobacteria depleted in diseased group.",
-   "n_quotes": 1,
-   "n_exact": 1,
-   "n_respaced": 1,
-   "quote_check": "OK",
-   "left_pool": "CLEAN"
-  },
-  {
-   "id": "23:Enterococcus",
-   "title": "Unveiling the negative association of Faecalibacterium prausnitzii with ischemic stroke severity, impaired prognosis and pro-inflammatory markers",
-   "taxon": "Enterococcus",
-   "verdict": "CONTROL_CONTRAST",
-   "quotes": [
-    "Our findings revealed that, in contrast to both the control and 3-month good prognosis groups, the 3-month poor prognosis cohort exhibited marked reductions in Faecalibacterium and Blautia , along with elevated levels of Enterococcus .",
-    "Conversely, opportunistic pathogens, particularly Enterococcus , were found to be enriched, especially within the subgroup of patients afflicted with non-minor stroke and those with a 3-month poor prognosis."
-   ],
-   "confidence": "high",
-   "note": "First sentence explicitly compares poor prognosis stroke patients to healthy control group; Enterococcus elevated in diseased group.",
-   "n_quotes": 2,
-   "n_exact": 2,
-   "n_respaced": 2,
-   "quote_check": "OK",
-   "left_pool": "CLEAN"
-  },
-  {
-   "id": "12:Megamonas",
-   "title": "Gut microbiota dysbiosis in male patients with chronic traumatic complete spinal cord injury",
-   "taxon": "Megamonas",
-   "verdict": "CONTROL_CONTRAST",
-   "quotes": [
-    "The abundance of Megamonas, Prevotella_9, [Eubacterium]_rectale_group, Dialister, and Subdoligranulum in the healthy male group was significantly higher than that in the SCI group (p 0.05, Mann\u2013Whitney U test)."
-   ],
-   "confidence": "high",
-   "note": "Explicitly compares healthy male group to SCI group with statistical test, clearly establishing Megamonas differs between healthy controls and diseased group.",
-   "n_quotes": 1,
-   "n_exact": 1,
-   "n_respaced": 1,
-   "quote_check": "OK",
-   "left_pool": "CLEAN"
-  },
-  {
-   "id": "18:Streptococcus anginosus",
-   "title": "Oral Pathobiont Streptococcus Anginosus Is Enriched in the Gut of Stroke Patients and Predicts 2-Year Cardiovascular Outcome",
-   "taxon": "Streptococcus anginosus",
-   "verdict": "CONTROL_CONTRAST",
-   "quotes": [
-    "Streptococcus anginosus was significantly more abundant in both the saliva (median [IQR], 0.01 [0.00\u20130.14] vs. 0.00 [0.00\u20130.03], P=0.02) and gut (0.09 [0.00\u20130.28] vs. 0.00 [0.00\u20130.02], P<0.001) of the stroke patients compared with their non-stroke counterparts."
-   ],
-   "confidence": "high",
-   "note": "Explicitly compares stroke patients to non-stroke subjects with statistical testing and quantified abundance values, clearly establishing CONTROL_CONTRAST.",
-   "n_quotes": 1,
-   "n_exact": 1,
-   "n_respaced": 1,
-   "quote_check": "OK",
-   "left_pool": "CLEAN"
-  }
- ]
+ "dropped_rows": []
 }

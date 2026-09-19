@@ -1,0 +1,34 @@
+{
+ "note": "FROZEN. The 24 papers drawn at seed 20260919 from the 47-paper CANDIDATE pool as it stood BEFORE the control regex was widened (114 candidates). The widening reclassified 30 observations, of which only 4 came from this sample, so the surviving 19-paper / 40-observation set is very nearly a uniform sample of the post-widening 36-paper / 84-observation pool. Frozen here so contrast_candidate_packets.py reproduces the adjudicated sample instead of redrawing a different one from the smaller pool, which would orphan every verdict.",
+ "seed": 20260919,
+ "pool_at_draw": {
+  "candidates": 114,
+  "papers": 47
+ },
+ "papers": [
+  "Alteration of the fecal microbiota in Chinese patients with Parkinson's disease.",
+  "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+  "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+  "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology.",
+  "Crosstalk between the gut microbiota and brain network topology in poststroke aphasia patients: perspectives from neuroimaging findings",
+  "Difference in gut microbial dysbiotic patterns between body-first and brain-first Parkinson's disease.",
+  "Differential Patterns of Gut and Oral Microbiomes in Hispanic Individuals with Cognitive Impairment.",
+  "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pilot study.",
+  "Genetic risk score in multiple sclerosis is associated with unique gut microbiome.",
+  "Gut Microbiotic Features Aiding the Diagnosis of Acute Ischemic Stroke",
+  "Gut bacteria from multiple sclerosis patients modulate human T cells and exacerbate symptoms in mouse models.",
+  "Gut microbiome alterations in preclinical Alzheimer\u2019s disease",
+  "Gut microbiota dysbiosis in male patients with chronic traumatic complete spinal cord injury",
+  "Gut microbiota dysbiosis in patients with Alzheimer\u2019s disease and correlation with multiple cognitive domains",
+  "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+  "Identification of disordered profiles of gut microbiota and functional component in stroke and poststroke epilepsy",
+  "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms.",
+  "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet.",
+  "Oral Pathobiont Streptococcus Anginosus Is Enriched in the Gut of Stroke Patients and Predicts 2-Year Cardiovascular Outcome",
+  "Orthopedic Surgery Causes Gut Microbiome Dysbiosis and Intestinal Barrier Dysfunction in Prodromal Alzheimer Disease Patients",
+  "Transmission of Alzheimer's disease-associated microbiota dysbiosis and its impact on cognitive function: evidence from mice and patients.",
+  "Uncovering the characteristics of the gut microbiota in patients with acute ischemic stroke and phlegm-heat syndrome",
+  "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+  "Unveiling the negative association of Faecalibacterium prausnitzii with ischemic stroke severity, impaired prognosis and pro-inflammatory markers"
+ ]
+}

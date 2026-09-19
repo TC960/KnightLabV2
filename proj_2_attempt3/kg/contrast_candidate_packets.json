@@ -1,8 +1,8 @@
 {
- "n_papers_in_pool": 47,
- "n_candidates_in_pool": 114,
- "n_papers_sampled": 24,
- "n_packets": 46,
+ "n_papers_in_pool": 36,
+ "n_candidates_in_pool": 84,
+ "n_papers_sampled": 19,
+ "n_packets": 40,
  "seed": 20260919,
  "packets": [
   {
@@ -296,43 +296,6 @@
    ]
   },
   {
-   "id": "4:Bacteroidia",
-   "title": "Crosstalk between the gut microbiota and brain network topology in poststroke aphasia patients: perspectives from neuroimaging findings",
-   "taxon": "Bacteroidia",
-   "sentences_naming_taxon": [
-    "The gut microbiome of the PSA group was mainly enriched in p_Bacteroidetes , c _Bacteroidia , o_Bacteroidales , and g_Bacteroides , whereas that of the non-PSA group was mainly enriched in p_Actinobacteria , c_Actinobacteria , and o_Bifidobacteriales ( Figure 3(i) and ( j ))."
-   ],
-   "other_sentences_from_the_paper": [
-    "Analysis at the phylum level revealed that Bacteroidetes were more abundant in PSA patient samples (11.25%) than in non-PSA samples (3.53%) and 8.14% in HCs.",
-    "Actinobacteria were present at lower levels in the PSA group (24.02%) than in the non-PSA group (47.95%) ( Figure 3(g) ).",
-    "A histogram of the community composition at the genus level revealed that g_Bifidobacterium was relatively highly abundant in the non-PSA group (38.46%), whereas the abundance of g_Blautia was relatively high in the PSA group (11.44%) ( Figure 3(h) ).",
-    "Interestingly, the dysbiosis of the intestinal microenvironment in the PSA group was characterized by increased relative abundances of Bifidobacterium , Blautia , and Bacteroides , as well as significantly lower abundances of Faecalibacterium and Eubacterium , compared to the healthy control group.",
-    "Opportunistic pathogens such as Blautia, Prevotella were more abundant, whereas probiotic microbes such as Bifidobacterium were less abundant, in PSA patients than in non-PSA patients.",
-    "Many clinical and preclinical studies have established that alterations in Bacteroides lead to a wide range of neuropsychiatric disorders, such as attention-deficit/hyperactivity disorder, 40 multiple sclerosis, 41 and Alzheimer\u2019s disease.",
-    "42 Zhang et al. 43 found that Bacteroides may play a critical role in axon development and regeneration by influencing glycerolipid and glycerophospholipid metabolism.",
-    "47 Our analysis revealed that Faecalibacterium and Eubacterium were relatively more abundant in HCs than in the other two groups, whereas the abundance of Bifidobacterium was relatively greater in the PSA and non-PSA group than in the HCs."
-   ]
-  },
-  {
-   "id": "4:Actinomycetota",
-   "title": "Crosstalk between the gut microbiota and brain network topology in poststroke aphasia patients: perspectives from neuroimaging findings",
-   "taxon": "Actinomycetota",
-   "sentences_naming_taxon": [
-    "Actinobacteria were present at lower levels in the PSA group (24.02%) than in the non-PSA group (47.95%) ( Figure 3(g) ).",
-    "The gut microbiome of the PSA group was mainly enriched in p_Bacteroidetes , c _Bacteroidia , o_Bacteroidales , and g_Bacteroides , whereas that of the non-PSA group was mainly enriched in p_Actinobacteria , c_Actinobacteria , and o_Bifidobacteriales ( Figure 3(i) and ( j ))."
-   ],
-   "other_sentences_from_the_paper": [
-    "Analysis at the phylum level revealed that Bacteroidetes were more abundant in PSA patient samples (11.25%) than in non-PSA samples (3.53%) and 8.14% in HCs.",
-    "A histogram of the community composition at the genus level revealed that g_Bifidobacterium was relatively highly abundant in the non-PSA group (38.46%), whereas the abundance of g_Blautia was relatively high in the PSA group (11.44%) ( Figure 3(h) ).",
-    "Interestingly, the dysbiosis of the intestinal microenvironment in the PSA group was characterized by increased relative abundances of Bifidobacterium , Blautia , and Bacteroides , as well as significantly lower abundances of Faecalibacterium and Eubacterium , compared to the healthy control group.",
-    "Opportunistic pathogens such as Blautia, Prevotella were more abundant, whereas probiotic microbes such as Bifidobacterium were less abundant, in PSA patients than in non-PSA patients.",
-    "Many clinical and preclinical studies have established that alterations in Bacteroides lead to a wide range of neuropsychiatric disorders, such as attention-deficit/hyperactivity disorder, 40 multiple sclerosis, 41 and Alzheimer\u2019s disease.",
-    "42 Zhang et al. 43 found that Bacteroides may play a critical role in axon development and regeneration by influencing glycerolipid and glycerophospholipid metabolism.",
-    "47 Our analysis revealed that Faecalibacterium and Eubacterium were relatively more abundant in HCs than in the other two groups, whereas the abundance of Bifidobacterium was relatively greater in the PSA and non-PSA group than in the HCs.",
-    "Faecalibacterium and Eubacterium are known as butyrate-producing bacteria, 48 , 49 and a decrease in these bacteria may lead to a reduction in butyrate content, as well as cause further damage to the intestinal barrier and lead to the production of proinflammatory cytokines."
-   ]
-  },
-  {
    "id": "5:Akkermansia muciniphila",
    "title": "Difference in gut microbial dysbiotic patterns between body-first and brain-first Parkinson's disease.",
    "taxon": "Akkermansia muciniphila",
@@ -557,31 +520,6 @@
    ]
   },
   {
-   "id": "12:Megamonas",
-   "title": "Gut microbiota dysbiosis in male patients with chronic traumatic complete spinal cord injury",
-   "taxon": "Megamonas",
-   "sentences_naming_taxon": [
-    "The abundance of Megamonas, Prevotella_9, [Eubacterium]_rectale_group, Dialister, and Subdoligranulum in the healthy male group was significantly higher than that in the SCI group (p 0.05, Mann\u2013Whitney U test).",
-    "STAMP analysis showed that Megamonas was significantly higher (p 0.05) in the bloating group, and Alistipes was significantly higher (p 0.05) in the without bloating group on the genus level (Fig. 2 b).",
-    "Megamonas was negatively correlated with GLU (Pearson r = \u2212 0.513, p 0.001).",
-    "Megamonas was positively correlated with the NBD score (Pearson r = 0.309, p = 0.044).",
-    "Ming et al. reported that the positive association between bean consumption and the Megamonas genus discovered in their study may implicate Megamonas as a beneficial microbe [ 48 ].",
-    "Ming et al. reported that the positive association between bean consumption and the Megamonas genus discovered in their study may implicate Megamonas as a beneficial microbe [ 48 ].",
-    "The abundance of Megamonas was decreased in the SCI group, negatively correlated with GLU and positively correlated with NBD scores, implying that Megamonas may have a positive effect on the body in terms of carbohydrate metabolism.",
-    "The abundance of Megamonas was decreased in the SCI group, negatively correlated with GLU and positively correlated with NBD scores, implying that Megamonas may have a positive effect on the body in terms of carbohydrate metabolism."
-   ],
-   "other_sentences_from_the_paper": [
-    "The abundance of Veillonellaceae and Prevotellaceae increased, while Bacteroidaceae and Bacteroides decreased in the SCI group.",
-    "The abundance of Bacteroidaceae and Bacteroides in the quadriplegia group and Acidaminococcaceae, Blautia, Porphyromonadaceae, and Lachnoclostridium in the paraplegia group were significantly higher than those in the healthy male group.",
-    "The abundance of Bacteroides, Blautia, Lachnoclostridium, and Escherichia-Shigella in the SCI group was significantly higher than that in the healthy male group (p 0.05, Mann\u2013Whitney U test) (Fig. 1 c, d).",
-    "LEfSe analysis (LDA threshold of 2) revealed that Veillonellaceae and Prevotellaceae were significantly enriched in the SCI group, whereas Bacteroidaceae and Bacteroides were significantly enriched in the healthy male group.",
-    "STAMP analysis showed a significant difference (p 0.05) between the two groups (Welch\u2019s t-test) in Bifidobacterium on the genus level (Fig. 2 a).",
-    "Correlation heatmap analysis of the relationship between different environmental factors and the community composition of the two groups showed that Proteobacteria was positively correlated with UA (Pearson r = 0.26, p = 0.035).",
-    "Cyanobacteria was positively correlated with AST (Pearson r = 0.355, p = 0.003).",
-    "Fusobacteria was negatively correlated with AGE (Pearson r = \u2212 0.342, p = 0.005) and positively correlated with UA (Pearson r = 0.311, p = 0.011) and ALT (Pearson r = 0.244, p = 0.048)."
-   ]
-  },
-  {
    "id": "13:Lachnospiraceae_UCG-004",
    "title": "Gut microbiota dysbiosis in patients with Alzheimer\u2019s disease and correlation with multiple cognitive domains",
    "taxon": "Lachnospiraceae_UCG-004",
@@ -739,31 +677,6 @@
    ]
   },
   {
-   "id": "15:Butyricicoccus",
-   "title": "Identification of disordered profiles of gut microbiota and functional component in stroke and poststroke epilepsy",
-   "taxon": "Butyricicoccus",
-   "sentences_naming_taxon": [
-    "Some disordered profiles of gut microbiota in STR and PSE were identified, such as the increase of Enterococcus and the decrease of butyricicoccus in STR, the increase of Escherichia Shigella and Clostridium innocuum\u2010group and the decrease of Faecalibacterium in PSE, and the decrease of Anaerostipes in both STR and PSE.",
-    "Moreover, potential diagnostic biomarkers for STR ( butyricicoccus ), PSE ( Faecalibacterium ), STR, and PSE ( NK4A214_group and Veillonella ) were identified.",
-    "At the genus level, the relative abundance of butyricicoccus was the most markedly decreased in STR compared with CON (Figure 3a ).",
-    "At the species level, the relative abundance of butyricicoccus was also the most markedly decreased in STR compared with CON (Figure 3d ).",
-    "Potential diagnostic biomarkers for STR and PSE A top\u2010down forward\u2010wrapper method was used to add one gut microbiota specie at a time (Figure 5a ), and a total of 15 gut microbiota species were identified as the optimal diagnostic biomarkers for STR (Figure 5b ), namely, UCG\u2010002 , UCG\u2010005 , Eubacterium_eligens_group , Butyricicoccus , NK4A214_group , norank_f__UCG\u2010010 , Veillonella , norank_f__Eubacterium_coprostanoligenes_group , norank_f__norank_o__Bacteroidales , Anaerostipes , Christensenella , Denitrobacterium , Alistipes , Flavonifractor , and Bacteroides .",
-    "Moreover, the relative abundance of butyricicoccus was the most markedly reduced in STR compared with CON at the genus and genus levels.",
-    "In cerebral ischemic STR, supplementation rich in SCFA\u2010producing bacteria significantly increases the population of Butyricicoccus , thereby inhibit neuronal apoptosis and cerebral infarction volume and prevent neurobehavioral impairments (Chidambaram et al., 2022 ).",
-    "It is indicated that Enterococcus and butyricicoccus may be associated with inflammation neurobehavior in the development of STR."
-   ],
-   "other_sentences_from_the_paper": [
-    "Difference analysis of gut microbiota species in STR and PSE From the Circos diagram, Enterococcus and Escherichia Shigella were, respectively, dominant gut microbiota species in STR and PSE at genus level (Figure 2 ).",
-    "The relative abundance of Clostridium innocuum\u2010group and Faecalibacterium was the most markedly changed in PSE compared with STR (Figure 3b ).",
-    "A total of four common gut microbiota species were identified in both STR and PSE at the genus level (Figure 3c ), including UCG\u2010002 , Anaerostipes , norank_f__Eubacterium_coprostanoligenes_group , and Christensenellaceae_R\u20107_group .",
-    "The relative abundance of C. innocuum\u2010group was also the most significantly increased in PSE compared with STR (Figure 3e ).",
-    "It is worth nothing that the relative abundance of Anaerostipes was markedly decreased in both STR and PSE at the genus level and the species level.",
-    "In addition, the abundance of C. innocuum\u2010group , Faecalibacterium , and Anaerostipes was analyzed in the 19 CON, 27 STR patients, EPSE and LPSE of 20 PSE patients (Figure 4 ).",
-    "The result showed that the abundance of C. innocuum\u2010group was significantly increased in EPSE compared with STR.",
-    "Moreover, there was an increased trend of C. innocuum\u2010group in LPSE compared with STR."
-   ]
-  },
-  {
    "id": "16:Escherichia coli",
    "title": "Metagenomics of Parkinson's disease implicates the gut microbiome in multiple disease mechanisms.",
    "taxon": "Escherichia coli",
@@ -823,19 +736,6 @@
     "One species, Bacteroides timonensis , reduced in PwMS, also correlated with EDSS, after BMI adjustment ( p = 0.029, r = 0.29) ( Figure 3 A).",
     "Six taxa correlated significantly with vitamin D, after correction of BMI: three MS-enriched taxa from the same taxonomic branch, namely, the genus Succinivibrio ( p = 0.047, r = \u22120.29), the family Succinivibrionaceae ( p = 0.047. r = \u22120.29), and the order Aeromonadales ( p = 0.050, r = \u22120.29) correlated negatively with vitamin D, while two MS-reduced taxa correlated positively with vitamin D, namely, the unspecified family Gut metagenome ( p = 0.039, r = 0.3) and genus Gut metagenome ( p = 0.039, r = 0.3), suggestive that achievement of a sufficient vitamin D level may contribute to modulate altered microbiota levels towards a healthy microbiome ( Figure 3 B).",
     "Additionally, the MS-enriched genus Barnesiella correlated positively with vitamin D, while the MS-enriched genus Mitsoukella correlated negatively with vitamin D, when unadjusted for BMI ( p = 0.026, r = \u22120.322)."
-   ]
-  },
-  {
-   "id": "18:Streptococcus anginosus",
-   "title": "Oral Pathobiont Streptococcus Anginosus Is Enriched in the Gut of Stroke Patients and Predicts 2-Year Cardiovascular Outcome",
-   "taxon": "Streptococcus anginosus",
-   "sentences_naming_taxon": [
-    "Oral Pathobiont Streptococcus Anginosus Is Enriched in the Gut of Stroke Patients and Predicts 2-Year Cardiovascular Outcome Toggle navigation J-STAGE home Browse All titles All subject areas All publishers Search articles Search J-STAGE Data About J-STAGE Overview Services and features Public data Terms and Policy News and PR News Maintenance information Special contents Media resources Support User manuals Browser compatibility FAQ Contact Sitemap Sign in Cart EN English \u65e5\u672c\u8a9e Browse All titles All subject areas All publishers Search articles Search J-STAGE Data About J-STAGE Overview Services and features Public data Terms and Policy News and PR News Maintenance information Special contents Media resources Support User manuals Browser compatibility FAQ Contact Sitemap Sign in Cart EN English \u65e5\u672c\u8a9e Advanced search Circulation Journal Online ISSN : 1347-4820 Print ISSN : 1346-9843 ISSN-L : 1346-9843 Journal home Advance online publication All issues Featured articles About the journal J-STAGE home / Circulation Journal / Volume 89 (2025) Issue 12 / Article overview Stroke Oral Pathobiont Streptococcus Anginosus Is Enriched in the Gut of Stroke Patients and Predicts 2-Year Cardiovascular Outcome Shuichi Tonomura , Yorito Hattori , Tomohiko Ishibashi , Shuhei Ikeda , Kotaro Noda , Tetsuya Chiba , Yuka Kato , Ryotaro Asano , Kazuki Fukuma , Yuko Edamoto-Taira , Daisuke Motooka , Tadakatsu Inagaki , Makoto Okazawa , Shota Nakamura , Masatoshi Koga , Kazunori Toyoda , Ryota Nomura , Kazuhiko Nakano , Robert P.",
-    "Oral Pathobiont Streptococcus Anginosus Is Enriched in the Gut of Stroke Patients and Predicts 2-Year Cardiovascular Outcome Toggle navigation J-STAGE home Browse All titles All subject areas All publishers Search articles Search J-STAGE Data About J-STAGE Overview Services and features Public data Terms and Policy News and PR News Maintenance information Special contents Media resources Support User manuals Browser compatibility FAQ Contact Sitemap Sign in Cart EN English \u65e5\u672c\u8a9e Browse All titles All subject areas All publishers Search articles Search J-STAGE Data About J-STAGE Overview Services and features Public data Terms and Policy News and PR News Maintenance information Special contents Media resources Support User manuals Browser compatibility FAQ Contact Sitemap Sign in Cart EN English \u65e5\u672c\u8a9e Advanced search Circulation Journal Online ISSN : 1347-4820 Print ISSN : 1346-9843 ISSN-L : 1346-9843 Journal home Advance online publication All issues Featured articles About the journal J-STAGE home / Circulation Journal / Volume 89 (2025) Issue 12 / Article overview Stroke Oral Pathobiont Streptococcus Anginosus Is Enriched in the Gut of Stroke Patients and Predicts 2-Year Cardiovascular Outcome Shuichi Tonomura , Yorito Hattori , Tomohiko Ishibashi , Shuhei Ikeda , Kotaro Noda , Tetsuya Chiba , Yuka Kato , Ryotaro Asano , Kazuki Fukuma , Yuko Edamoto-Taira , Daisuke Motooka , Tadakatsu Inagaki , Makoto Okazawa , Shota Nakamura , Masatoshi Koga , Kazunori Toyoda , Ryota Nomura , Kazuhiko Nakano , Robert P.",
-    "Methods and Results: We analyzed the salivary and gut microbiomes collected from 189 acute stroke and 55 non-stroke subjects, and found that Streptococcus anginosus was significantly more abundant in both the saliva (median [IQR], 0.01 [0.00\u20130.14] vs. 0.00 [0.00\u20130.03], P=0.02) and gut (0.09 [0.00\u20130.28] vs. 0.00 [0.00\u20130.02], P<0.001) of the stroke patients compared with their non-stroke counterparts."
-   ],
-   "other_sentences_from_the_paper": [
-    "After adjusting for vascular risks, S. anginosus (odds ratio 1.20, 95% confidence interval 1.06\u20131.36, P<0.01), Anaerostipes hadrus (0.82, [0.73\u20130.93], P<0.01), and Bacteroides plebeius (0.86, [0.86\u20130.93], P=0.01) in the gut were independent predictors of stroke."
    ]
   },
   {
@@ -914,28 +814,6 @@
     "The abundance of Bacteroidetes, Actinobacteria, and Proteobacteria was higher, while Firmicutes, Verrucomicrobia, and Synergistetes were lower in the gut of MCI than controls (Fig. 3 a), but these differences were marginal or non-statistically significant.",
     "The differential abundance analysis shows that Ruminococcus (Ru.) lactaris, Su. sp. APC924 , Eu. siraeum, La. asaccharolyticus, Sl. isoflavoniconvertens, Fi. bacterium CAG 137 , Cl. sp CAG 273 , Gemmiger (Ge.) formicilis , and Rb. intestinalis reduced, while Bl. wexlerae, Bi.",
     "Bifidum, Ba. stercoris, Catabacter (Ca.) hongkongensis, Eu. eligens, Cl. bolteae, and Phascolarctobacterium (Pb.) faecium increased in the gut of MCI compared to controls (Supplementary Fig. 3 b-g)."
-   ]
-  },
-  {
-   "id": "23:Enterococcus",
-   "title": "Unveiling the negative association of Faecalibacterium prausnitzii with ischemic stroke severity, impaired prognosis and pro-inflammatory markers",
-   "taxon": "Enterococcus",
-   "sentences_naming_taxon": [
-    "Our findings revealed that, in contrast to both the control and 3-month good prognosis groups, the 3-month poor prognosis cohort exhibited marked reductions in Faecalibacterium and Blautia , along with elevated levels of Enterococcus .",
-    "Conversely, Enterococcus and Enterococcus faecium did not show significant correlations with NIHSS score at admission, 3-month mRS score and systemic inflammatory markers ( P 0.05) ( Fig. 4 A and B).",
-    "Conversely, opportunistic pathogens, particularly Enterococcus , were found to be enriched, especially within the subgroup of patients afflicted with non-minor stroke and those with a 3-month poor prognosis.",
-    "Another study described a significant increase in the abundance of Roseburia in minor stroke (NIHSS \u22643) group and higher Enterococcus levels in non-minor stroke group (NIHSS 3), though the \u03b1-diversity of gut microbiota showed no difference between the minor and non-minor stroke groups [ 21 ].",
-    "The 3-month poor prognosis group displayed an enrichment of pathogenic bacteria such as Enterococcus and a reduction of beneficial bacteria such as Ruminococcaceae and Faecalibacterium [ 8 ]."
-   ],
-   "other_sentences_from_the_paper": [
-    "pmc Heliyon Heliyon 2992 heliyon 101672560 Heliyon 2405-8440 Elsevier PMC10904243 PMC10904243.1 10904243 10904243 38434312 10.1016/j.heliyon.2024.e26651 S2405-8440(24)02682-3 e26651 1 Research Article Unveiling the negative association of Faecalibacterium prausnitzii with ischemic stroke severity, impaired prognosis and pro-inflammatory markers Luo Yayin Chang Geng Yu Guangxiang Lin Yanan Zhang Qiuyi Wang Zhe wangzhedl@163.com 1 \u2217\u2217 Han Jie hjj.427@163.com \u2217 1 Department of Neurology, The First Affiliated Hospital of Dalian Medical University, Dalian, China \u2217 Corresponding author. hjj.427@163.com \u2217\u2217 Corresponding author. wangzhedl@163.com 1 Zhe Wang and Jie Han are co-corresponding authors 15 3 2024 21 2 2024 10 5 456855 e26651 11 8 2023 24 1 2024 16 2 2024 21 02 2024 01 03 2024 31 01 2026 \u00a9 2024 The Authors 2024 https://creativecommons.org/licenses/by-nc-nd/4.0/ This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).",
-    "Bacteroides dominated AIS samples, while Clostridia , Lachnospirales , Lachnospiraceae , Ruminococcaceae , Faecalibacterium , and Faecalibacterium prausnitzii were prominent in controls.",
-    "Faecalibacterium and Faecalibacterium prausnitzii were significantly reduced in non-minor stroke and 3-month poor prognosis groups compared to controls, while this difference was less pronounced in patients with minor stroke and 3-month good prognosis.",
-    "Both Faecalibacterium and Faecalibacterium prausnitzii were negatively correlated with the NIHSS score on admission ( r = \u22120.48, \u22120.48, P 0.01) and 3-month mRS score ( r = \u22120.48, \u22120.44, P 0.01).",
-    "Conclusions Faecalibacterium prausnitzii is negatively associated with stroke severity, impaired prognosis, and pro-inflammatory markers, highlighting its potential application in AIS treatments.",
-    "Linear discriminant analysis Effect Size (LefSe) results indicated that AIS patients exhibited a high abundance of Bacteroides at the levels of phylum, class, order, family, and genus.",
-    "Compared to the controls, the non-minor stroke group exhibited significantly reduced levels of genera such as Faecalibacterium , Blautia , Agathobacter , Subdoligranulum , as well as species including Faecalibacterium prausnitzii ( P 0.01).",
-    "Additionally, they showed increased levels of genera like Parabacteroids , Akkermansia and Christensenellaceae_R-7_group , as well as species like Bacteroides dorei , Akkermansia muciniphila and Bacteroides caccae ( P 0.05, Fig. 2 B and C)."
    ]
   }
  ]

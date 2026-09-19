@@ -70,7 +70,7 @@
      "p": 0.0783,
      "mde_abs_diff": 1.0003
     },
-    "q_bh": 0.0001
+    "q_bh": 0.1566
    },
    "mixed_provenance": {
     "predictor": "mixed_provenance",
@@ -90,7 +90,7 @@
      "p": 0.59127,
      "mde_abs_diff": 0.1533
     },
-    "q_bh": 0.0001
+    "q_bh": 0.6503
    },
    "out_of_gate_allpapers": {
     "predictor": "out_of_gate",
@@ -110,7 +110,7 @@
      "p": 0.00015,
      "mde_abs_diff": 0.3034
     },
-    "q_bh": 0.0001
+    "q_bh": 0.0006
    },
    "mixed_provenance_allpapers": {
     "predictor": "mixed_provenance",
@@ -130,7 +130,7 @@
      "p": 0.65032,
      "mde_abs_diff": 0.14
     },
-    "q_bh": 0.0001
+    "q_bh": 0.6503
    }
   }
  },
