@@ -1,0 +1,19 @@
+{
+ "n_observations_scored": 310,
+ "n_candidate": 16,
+ "n_clean": 294,
+ "n_papers": 128,
+ "n_papers_informative_for_null": 5,
+ "oe_candidate": 1.129,
+ "obs_candidate": 8,
+ "exp_candidate": 7.09,
+ "oe_clean": 0.9867,
+ "obs_clean": 131,
+ "exp_clean": 132.77,
+ "diff": 0.1423,
+ "p": 0.64667,
+ "mde_abs_diff": 0.4729,
+ "n_perm": 20000,
+ "seed": 20260919,
+ "null_type": "within-paper label shuffle (predictor varies within paper)"
+}

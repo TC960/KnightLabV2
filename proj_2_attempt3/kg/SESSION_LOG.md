@@ -96,6 +96,34 @@ two of the three tests compare exactly those things. The tier retracted on
   double-counting-matcher correction, the gold-is-a-test-set rule, and the
   retraction. Contested count corrected 217 → **220**.
 
+**Pushed to the edge level, and the result is one strong validation plus one
+honest null.** `contrast_edge_probe.py` labels each of the 3,077 observations
+**deterministically** — no adjudicator — from the sentences that name *that taxon*
+in *that paper*, joined on taxid: 1,272 CLEAN, 1,234 UNRESOLVED, 457 NO_SENTENCE,
+**114 CANDIDATE** (no visible control contrast, but a subgroup or treatment-arm
+one). Same asymmetry as the recall audit: the file holds ~10% of corpus text, so
+**CANDIDATE flags, it cannot convict** — 114 is an upper bound.
+- *The two instruments converge, and they share nothing.* The census verdict is a
+  blinded reader judging the study's **arms**; the probe is a regex over sentences
+  naming one **taxon**. CANDIDATE rate is **28.4%** in out-of-gate papers against
+  **2.9%** in in-gate-control-only papers — diff +0.255, **p = 0.00005** over
+  20,000 paper-level permutations, MDE ±0.082, BH q = 0.0001. A **9.9×
+  enrichment**, and the strongest construct-validity evidence either instrument
+  has. In-gate-mixed sits at 4.5%, **p = 0.301**, MDE ±0.032 — null, agreeing with
+  the paper-level mixed-provenance null.
+- *The within-paper test is a null whose POWER STATEMENT is the finding.* Holding
+  the paper fixed: O/E 1.129 (16 CANDIDATE obs) vs 0.987 (294 CLEAN), diff +0.142,
+  **p = 0.647**, **MDE ±0.473**. Only **5 of 128 papers** contribute both labels
+  among their decisive observations, and those 5 are the only exchangeable units
+  the null has. **"The corpus cannot answer it", not "there is no effect"** — and
+  it explains why the paper-level instrument is the one that worked. Do not spend
+  effort here without more papers.
+- *A null-design note worth keeping.* This is the first test in the project that
+  deliberately does **not** shuffle at the paper level. That rule is for
+  paper-level predictors; this predictor varies *within* a paper, so a paper-level
+  shuffle would destroy nothing and test nothing. The exchangeable null is a
+  within-paper label permutation holding each paper's label counts fixed.
+
 **Highest-value next step.** **Put the two Alzheimer's papers in front of a
 human** — 20 edges, a one-line decision each, and the only thing this session
 found that changes graph content. Then, if a cheap lever is wanted: the

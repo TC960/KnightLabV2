@@ -210,6 +210,79 @@ alongside a control contrast does not measurably degrade a paper's agreement wit
 the rest of the literature. That is the 26th and 27th variable tested against
 discordance in this project, and the 26th and 27th null.
 
+## Result 5 — the edge-level version: one strong validation, one honest null
+
+The stated limit of everything above is that it is a **paper-level** instrument
+while the dominant residual risk is **within** a paper. `contrast_edge_probe.py`
+pushes it down to the observation. It is **deterministic** — no adjudicator, so no
+paraphrase risk and no blinding needed. For each of the 3,077 (paper, taxon)
+observations it finds the sentences in that paper that name that taxon (joining on
+**taxid**, since `relation_sentences_clean.json` already resolves taxa per
+sentence) and asks what comparison those sentences describe:
+
+| label | meaning | n |
+|---|---|---:|
+| `CLEAN` | ≥1 sentence naming the taxon states a healthy/normal-control contrast | 1,272 |
+| `UNRESOLVED` | the sentences name no comparison | 1,234 |
+| `NO_SENTENCE` | no kept sentence names that taxon | 457 |
+| `CANDIDATE` | no control contrast, but ≥1 subgroup or treatment-arm contrast | **114** |
+
+**The same asymmetry the 2026-09-16 recall audit had to state applies here.**
+`relation_sentences_clean.json` keeps only sentences carrying a taxon *and* a
+direction cue — about 10% of corpus text — so a paper can state its comparison in a
+sentence this file never kept. `CANDIDATE` means *"no visible control contrast for
+this taxon"*, never *"this observation is wrong"*. **The instrument can flag; it
+cannot convict.** 114 is an upper bound.
+
+### The validation, and it is strong
+
+`contrast_probe_validate.py`. These two instruments share nothing: the census
+verdict comes from a reader judging the study's **arms**, blinded to the graph; the
+probe is a regex over the sentences naming one **taxon**, with no reader and no
+notion of study design. If the flag measures what the reader measured, `CANDIDATE`
+should concentrate in the papers the reader called out of gate.
+
+| paper class | papers | observations | `CANDIDATE` rate |
+|---|---:|---:|---:|
+| out of gate | 19 | 88 | **28.4%** |
+| in gate, also reports a subgroup contrast | 93 | 997 | 4.5% |
+| in gate, control contrast only | 157 | 1,535 | 2.9% |
+
+Out of gate vs in-gate-clean: **diff +0.255, p = 0.00005** (20,000 paper-level
+permutations), **MDE ±0.082**, BH q = 0.0001 over the two tests here. A **9.9×
+enrichment** that two independent instruments converge on. That is the strongest
+construct-validity evidence either of them has.
+
+In-gate-mixed vs in-gate-clean: 4.5% vs 2.9%, diff +0.017, **p = 0.301**, MDE
+±0.032 — **null**, and it agrees with the paper-level mixed-provenance null.
+
+### The null, and why its power statement is the finding
+
+`contrast_edge_test.py` asks the question the whole edge-level exercise is for:
+**holding the paper fixed**, does an observation with no visible control contrast
+disagree with the literature more than one that has it?
+
+The null here is deliberately **not** the project's standing paper-level shuffle,
+and the reason is worth recording. That rule exists for paper-level predictors.
+This predictor varies *within* a paper — that is the point of it — so a paper-level
+shuffle would destroy nothing and test nothing. The exchangeable null is a
+**within-paper label permutation** holding each paper's count of each label fixed.
+
+| group | observations | observed | expected | O/E |
+|---|---:|---:|---:|---:|
+| `CANDIDATE` | 16 | 8 | 7.09 | 1.129 |
+| `CLEAN` | 294 | 131 | 132.77 | 0.987 |
+
+diff +0.142, **p = 0.647**, **MDE ±0.473**.
+
+**The power statement is the whole result.** Only **5 of 128 papers** contribute
+both a `CANDIDATE` and a `CLEAN` observation among their *decisive* ones, and those
+5 are the only exchangeable units the null has. 16 scoreable `CANDIDATE`
+observations against an MDE of 0.47 cannot resolve an effect the size of the
+paper-level one (0.76). **So this is "the corpus cannot answer it", not "there is
+no effect"** — and it explains why the paper-level instrument is the one that
+worked. A future session should not spend effort here without more papers.
+
 ## What this does and does not say about the 2026-09-11 corpus screen
 
 That screen reported **zero** droppable papers over 249, with the residual caveat
@@ -235,6 +308,9 @@ where it did not.
 | `contrast_census.py` / `contrast_census.json` | quote verification, census, both tests |
 | `contrast_robustness.py` / `contrast_robustness.json` | the four attacks |
 | `contrast_out_of_gate.json` | **opt-in** tiered list of out-of-gate papers |
+| `contrast_edge_probe.py` / `.json` | deterministic per-observation contrast label |
+| `contrast_probe_validate.py` / `.json` | probe vs blinded reader, the 9.9x agreement |
+| `contrast_edge_test.py` / `.json` | within-paper test; null, and underpowered by 5 papers |
 | `disease_label_packets.py` / `disease_label_audit.py` | the 25 free-text disease nodes (below) |
 
 ## Appendix — the 25 free-text disease nodes
