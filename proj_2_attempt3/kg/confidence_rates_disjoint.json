@@ -1,0 +1,68 @@
+{
+ "well-supported": {
+  "disbiome": {
+   "pooled": 0.9355,
+   "n_pooled": 31,
+   "disjoint": 0.9,
+   "n_disjoint": 10,
+   "ci_lo": 0.5958,
+   "ci_hi": 0.9821,
+   "shared": 0.9524,
+   "n_shared": 21
+  },
+  "peryton": {
+   "pooled": 0.931,
+   "n_pooled": 29,
+   "disjoint": 0.8,
+   "n_disjoint": 10,
+   "ci_lo": 0.4902,
+   "ci_hi": 0.9433,
+   "shared": 1.0,
+   "n_shared": 19
+  }
+ },
+ "supported": {
+  "disbiome": {
+   "pooled": 0.7857,
+   "n_pooled": 28,
+   "disjoint": 0.7647,
+   "n_disjoint": 17,
+   "ci_lo": 0.5274,
+   "ci_hi": 0.9045,
+   "shared": 0.8182,
+   "n_shared": 11
+  },
+  "peryton": {
+   "pooled": 0.8462,
+   "n_pooled": 26,
+   "disjoint": 0.7778,
+   "n_disjoint": 18,
+   "ci_lo": 0.5478,
+   "ci_hi": 0.91,
+   "shared": 1.0,
+   "n_shared": 8
+  }
+ },
+ "provisional": {
+  "disbiome": {
+   "pooled": 0.6667,
+   "n_pooled": 114,
+   "disjoint": 0.4746,
+   "n_disjoint": 59,
+   "ci_lo": 0.3527,
+   "ci_hi": 0.5996,
+   "shared": 0.8727,
+   "n_shared": 55
+  },
+  "peryton": {
+   "pooled": 0.622,
+   "n_pooled": 82,
+   "disjoint": 0.383,
+   "n_disjoint": 47,
+   "ci_lo": 0.2579,
+   "ci_hi": 0.5257,
+   "shared": 0.9429,
+   "n_shared": 35
+  }
+ }
+}

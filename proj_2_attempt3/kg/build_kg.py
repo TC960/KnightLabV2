@@ -679,18 +679,44 @@ def annotate_methods_diversity(edges, papers_tbl):
 
 
 # Measured agreement with the two curated databases, per tier, from
-# calibrate_agreement.py / FINDINGS_independence.md. These are OBSERVED rates on
-# the decisive pairs each database judges, not model outputs, and they are
-# carried here so the viewer can quote a number it did not invent. The two
-# columns are independent references and they agree, which is the only check
-# available on tier boundaries that were chosen after seeing Disbiome.
+# `calibrate_tiers_disjoint.py`. OBSERVED rates on the decisive pairs each
+# database judges, not model outputs, carried here so the viewer can quote a
+# number it did not invent.
+#
+# DISJOINT SOURCES ONLY, and that is the whole point -- 2026-09-19. These rates
+# previously pooled two situations that are not comparable:
+#
+#   shared source    the curated database read THE SAME PAPER we did. Agreement
+#                    runs ~0.87-0.94 here, but that measures reading fidelity;
+#                    both sides are looking at one sentence.
+#   disjoint source  the database read DIFFERENT papers about the same taxon and
+#                    disease -- the only case that tests whether a finding
+#                    reproduces.
+#
+# Pooling them described neither. The comment that used to sit here called the
+# two columns "independent references", which `FINDINGS_independence.md`
+# disproves: they cite 43 and 24 of our own papers, and because the shared ones
+# are the heavily-reported papers they back roughly half the decisive pairs.
+# That contradiction sat in this file unnoticed and is why the wrong numbers
+# shipped -- the finding existed, it just never propagated to the table.
+#
+# The correction is concentrated where it does the most damage. The top two
+# tiers barely move (0.935->0.900, 0.786->0.765); `provisional` falls
+# 0.667->0.475 and 0.622->0.383, and it is 1,574 of 2,008 edges. Readers of a
+# single-paper edge were being told ~2-in-3 when the honest figure for the case
+# they care about is near a coin flip.
+#
+# n is small for the top tiers (10 disjoint pairs each) -- the viewer must show
+# the count alongside the rate, and `confidence_rates_disjoint.json` carries
+# Wilson intervals. The cuts were still chosen after seeing Disbiome, so Peryton
+# remains the out-of-sample check; it reproduces the ordering.
 CONFIDENCE_RATES = {
-    "well-supported": {"disbiome": 0.938, "peryton": 0.933,
-                       "n_disbiome": 32, "n_peryton": 30},
-    "supported": {"disbiome": 0.778, "peryton": 0.833,
-                  "n_disbiome": 27, "n_peryton": 24},
-    "provisional": {"disbiome": 0.661, "peryton": 0.619,
-                    "n_disbiome": 115, "n_peryton": 84},
+    "well-supported": {"disbiome": 0.9, "peryton": 0.8,
+                     "n_disbiome": 10, "n_peryton": 10},
+    "supported": {"disbiome": 0.7647, "peryton": 0.7778,
+                "n_disbiome": 17, "n_peryton": 18},
+    "provisional": {"disbiome": 0.4746, "peryton": 0.383,
+                  "n_disbiome": 59, "n_peryton": 47},
     "contested": {"disbiome": None, "peryton": None,
                   "n_disbiome": 0, "n_peryton": 0},
 }

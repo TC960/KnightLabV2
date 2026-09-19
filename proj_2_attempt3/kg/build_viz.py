@@ -229,16 +229,37 @@ function specText(e){
 
 // ---- confidence -----------------------------------------------------------
 // `confidence` tiers each edge by how often edges LIKE IT agreed with two
-// independent curated databases (Disbiome, Peryton). The rates below are
-// measured, not modelled -- see FINDINGS_independence.md. They matter because
-// bar length encodes evidence count, which reads as "how much" and not as "how
-// much to trust it": a one-paper edge and an eleven-paper edge look like the
-// same kind of claim, and they are not. 79% of the graph is `provisional`.
+// curated databases (Disbiome, Peryton). The rates are measured, not modelled.
+// They matter because bar length encodes evidence count, which reads as "how
+// much" and not as "how much to trust it": a one-paper edge and an eleven-paper
+// edge look like the same kind of claim, and they are not. 78% of the graph is
+// `provisional`.
+//
+// DISJOINT SOURCES ONLY -- corrected 2026-09-19, and the correction is large.
+// These rates used to pool two situations that are not comparable:
+//
+//   the database read THE SAME PAPER we did  -> agreement 0.87-0.94, but that
+//     measures reading fidelity; both sides are looking at one sentence.
+//   the database read DIFFERENT papers       -> the only case that tests
+//     whether a finding actually reproduces.
+//
+// Pooled, `provisional` read 66/62. On disjoint sources it is 47/38. Readers of
+// a single-paper edge -- 1,574 of 2,008 -- were being told roughly 2-in-3 when
+// the honest figure for the question they care about is near a coin flip.
+// FINDINGS_independence.md established this for the headline number in 2026-09;
+// it never propagated to these constants. See calibrate_tiers_disjoint.py.
+//
+// Two traps for whoever edits this next. (1) `build_kg.CONFIDENCE_RATES` holds
+// the same numbers and is DEAD CODE -- nothing reads it. This table is what
+// ships. Fixing that one and not this one changes nothing a reader sees.
+// (2) The top two tiers rest on 10 disjoint pairs each, so their rates are not
+// meaningfully distinguishable from one another; `n` is displayed for that
+// reason and must not be dropped to tidy the tooltip.
 const CONF = {
-  "well-supported": {chip:"t-well", label:"well-supported", rank:0, dis:94, per:93},
-  "supported":      {chip:"t-sup",  label:"supported",      rank:1, dis:78, per:83},
-  "provisional":    {chip:"t-prov", label:"provisional",    rank:2, dis:66, per:62},
-  "contested":      {chip:"t-cont", label:"contested",      rank:3, dis:null, per:null},
+  "well-supported": {chip:"t-well", label:"well-supported", rank:0, dis:90, per:80, nd:10, np:10},
+  "supported":      {chip:"t-sup",  label:"supported",      rank:1, dis:76, per:78, nd:17, np:18},
+  "provisional":    {chip:"t-prov", label:"provisional",    rank:2, dis:47, per:38, nd:59, np:47},
+  "contested":      {chip:"t-cont", label:"contested",      rank:3, dis:null, per:null, nd:0, np:0},
 };
 const confOf = e => CONF[e.confidence] || CONF.provisional;
 
@@ -253,9 +274,12 @@ function trustText(e){
       + `points different ways in different diseases, which is the strongest single `
       + `predictor of disagreeing with curation.`
     : "";
-  return `<b>${c.label}</b> — edges in this tier agree with independent curation `
-       + `<b>${c.dis}%</b> of the time (Disbiome) and <b>${c.per}%</b> (Peryton).${why}`
-       + ` Measured on the pairs those databases judge, not a model estimate.`;
+  return `<b>${c.label}</b> — when a curated database reached this pair from `
+       + `<i>different papers than ours</i>, it agreed <b>${c.dis}%</b> of the time `
+       + `(Disbiome, ${c.nd} pairs) and <b>${c.per}%</b> (Peryton, ${c.np} pairs).${why}`
+       + ` Pairs where the curator read the same paper we did are excluded: there `
+       + `agreement runs ~90%, but that only shows both sides read one sentence the `
+       + `same way, not that the finding reproduces.`;
 }
 
 // ---- study protocol -------------------------------------------------------
@@ -491,6 +515,48 @@ window.__render = render;
 """
 
 
+def check_tier_rates(html):
+    """Fail the build if the tier agreement rates drift out of sync.
+
+    WHY THIS EXISTS. These rates are written in FOUR places -- the JS `CONF`
+    table, the summary tiles, the legend, and `build_kg.CONFIDENCE_RATES` (which
+    is dead code nothing reads). On 2026-09-19 all four were wrong in the same
+    way and had been for weeks: they pooled pairs where the curated database had
+    read THE SAME PAPER we did with pairs where it had not. Pooled, `provisional`
+    read 66%; on disjoint sources it is 47%, and that tier is 78% of the graph.
+
+    `FINDINGS_independence.md` had established the distinction for the headline
+    number and it simply never propagated to these constants -- the numbers were
+    duplicated by hand, so there was nothing to propagate through. The fix for
+    the numbers is one edit; the fix for the *class* of bug is this function.
+
+    Checked against `confidence_rates_disjoint.json`, which
+    `calibrate_tiers_disjoint.py` regenerates from the graph and the two
+    databases, so the single source of truth is a measurement, not a literal.
+    """
+    src = os.path.join(HERE, "confidence_rates_disjoint.json")
+    if not os.path.exists(src):
+        print("  NOTE: confidence_rates_disjoint.json absent -- tier rates "
+              "unverified. Regenerate with `python3 calibrate_tiers_disjoint.py`.")
+        return
+    want = json.load(open(src))
+    bad = []
+    for tier, row in want.items():
+        for db, key in (("disbiome", "dis"), ("peryton", "per")):
+            r = row.get(db, {}).get("disjoint")
+            if r is None:
+                continue
+            pct = round(100 * r)
+            if f"{key}:{pct}" not in html:
+                bad.append(f"{tier}/{db}: expected {key}:{pct} from disjoint "
+                           f"measurement, not present in page")
+    if bad:
+        raise SystemExit("tier rates out of sync with "
+                         "confidence_rates_disjoint.json:\n  " + "\n  ".join(bad))
+    print(f"  tier rates verified against {os.path.basename(src)} "
+          f"({len(want)} tiers)")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--graph", default=os.path.join(HERE, "graph.json"))
@@ -534,8 +600,8 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
   <div class="tile"><div class="n">{m['n_replicated']}</div><div class="l">seen in &gt;1 paper</div></div>
   <div class="tile"><div class="n">{m['n_contested']}</div><div class="l">contested</div></div>
   <div class="tile"><div class="n">{n_disc}</div><div class="l">disease-discriminating</div></div>
-  <div class="tile"><div class="n">{n_well}</div><div class="l">well-supported (94% agree)</div></div>
-  <div class="tile"><div class="n">{n_prov}</div><div class="l">provisional (66% agree)</div></div>
+  <div class="tile"><div class="n">{n_well}</div><div class="l">well-supported (90% agree)</div></div>
+  <div class="tile"><div class="n">{n_prov}</div><div class="l">provisional (47% agree)</div></div>
 </div>
 
 <div class="controls">
@@ -561,8 +627,8 @@ fold-change, p-values) that cannot honestly be pooled into one magnitude.</p>
 <div class="legend">
   <span class="key"><span class="sw" style="background:var(--down)"></span>depleted (bar left)</span>
   <span class="key"><span class="sw" style="background:var(--up)"></span>enriched (bar right)</span>
-  <span class="key"><span class="chip tier t-well">well-supported</span>≥3 papers agreeing — 94%/93% agreement with Disbiome/Peryton</span>
-  <span class="key"><span class="chip tier t-prov">provisional</span>one paper, or a taxon whose direction varies by disease — 66%/62%</span>
+  <span class="key"><span class="chip tier t-well">well-supported</span>≥3 papers agreeing — 90%/80% agreement with Disbiome/Peryton on papers they did not share with us</span>
+  <span class="key"><span class="chip tier t-prov">provisional</span>one paper, or a taxon whose direction varies by disease — 47%/38%</span>
   <span class="key"><span class="chip">split</span>papers disagree — both arms drawn</span>
   <span class="key"><span class="sw" style="background:var(--up-soft);box-shadow:inset 0 0 0 1.5px var(--up)"></span>hollow
     = restates the taxon's corpus-wide tendency</span>
@@ -630,6 +696,7 @@ Associations only — no causal claim.</p>
 <script>{net_js}</script>
 <script>window.__render();</script>
 </body></html>"""
+    check_tier_rates(html)
     open(a.out, "w").write(html)
     print(f"wrote {a.out}  ({len(html)/1024:.0f} KB)")
 
