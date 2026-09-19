@@ -4,6 +4,73 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+## TL;DR — 2026-09-17 (local, Mac — logged retroactively 2026-09-19)
+
+*This session's work reached the repo as commits `30120ea` and `09b341a` but was
+never written into this log, so for two days the log's top entry (2026-09-16)
+described a state in which the project's accuracy numbers were still the old
+ones. Reconstructed here from those two commit messages and `FINDINGS_newgold.md`,
+which are the authoritative record.*
+
+**A new hand-curated gold standard replaced the old reference, and the extractor's
+F1 went 0.639 → 0.739 with nothing about the model changing.**
+`high_confidence - final_constrained_override.csv`, 334 DOIs, curated by Emily
+Song with no LLM assistance, scored over the 260 cached-extraction papers that are
+scoreable against it. Taxonomy-aware (LCA) P 0.721 / R 0.759 / **F1 0.739**;
+char-ngram 0.733. Permutation over 1,000 draws: null mean 0.148, **p = 0.001**.
+The old 0.639 was agreement with an incomplete reference, and `CLAUDE.md`'s
+long-standing "F1 0.680, agreement with a flawed reference" caveat is superseded
+by it. Instruments: `run_lca_eval.py`, `score_lca.py`, `score_newgold.py`,
+`FINDINGS_newgold.md`.
+
+**Two corrections folded into that number before it was quoted.**
+- *The taxon matcher double-counted, and every F1 in this project was inflated.*
+  `eval-v2/run_eval.py` and both matchers in `score_lca.py` allowed two predictions
+  to claim the same gold taxon and each score a true positive. Fixed; the pre-fix
+  figures were 0.755 / 0.780, including on `leaderboard.csv`.
+- *LCA matching is worth +0.007, not +0.025.* Of 112 LCA "rescues" only 9 claimed a
+  gold taxon nothing else had matched; the rest were redundant credit created by
+  the double-counting bug.
+
+**The cleanest extractor-quality statement the project has, because it depends on
+neither the in-house gold nor the model.** Same 259 papers, human annotation and
+model output each scored *independently* against a third party:
+
+| | edges | Disbiome | Peryton |
+|---|---:|---:|---:|
+| human (Emily) | 1,643 | 80.5% | 80.9% |
+| model (Qwopus3.5) | 1,831 | 74.8% | 73.5% |
+| gap | | +5.7 | +7.4 |
+| Fisher exact | | p = 0.275 | p = 0.186 |
+
+**Neither gap is significant.** On the same papers the model sits within ~6 points
+of a human curator, and at this n that is not distinguishable from chance. It also
+puts a ceiling on the room above: a human curator's own agreement with Disbiome is
+**80.5%**, not 100%.
+
+**Retracted in the same 24 hours: the per-edge provenance "quality filter".**
+`30120ea` built a union graph (extraction ∪ gold, 2,500 edges) and reported
+human-backed edges at ~89% agreement against model-only at ~68% — a 21-point gap
+at p<0.001, presented as a validated quality tier. `09b341a` **retracts it**: the
+"model-only" bucket is *defined* as the edges the human did not confirm, i.e. the
+residual after removing every point of agreement. That measures corroborated vs
+uncorroborated, not human vs model. The independent three-way comparison above is
+the replacement, and it shows no significant gap.
+
+**The union graph itself was also reverted, on a constraint that was already on
+record** (*"No Emily's data since this is manually verified"*). The gold MEASURES
+the extractor; merging it would make the graph partly hand-curated and the claim
+the graph exists to support — *this is what a model extracted from the literature*
+— would stop being true. `graph_union.json`, `kg_union.html`,
+`extractions_union.json`, `build_union_input.py` and `annotate_provenance.py` were
+removed. **`graph.json` is unchanged**: 271 papers, 883 taxa, 40 diseases, 2,008
+edges, 220 contested, 727 containment links.
+
+**Two hypotheses about the residual false negatives, tested and rejected**: tables
+recover nothing, and taxon-name normalisation recovers 1.3%.
+
+---
+
 ## TL;DR — 2026-09-16 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **Tested.** The one direction no instrument here had ever pointed: not whether the
