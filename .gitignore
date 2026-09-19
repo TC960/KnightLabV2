@@ -48,3 +48,4 @@ proj_2_attempt3/kg/_screen248/
 # scratch batches for subagent adjudication (consolidated into *_verdicts*.json)
 proj_2_attempt3/kg/_ctbatch/
 proj_2_attempt3/kg/_dlbatch/
+proj_2_attempt3/kg/prompt_exp_subset.json
