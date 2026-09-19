@@ -75,6 +75,14 @@ instrument on this page scores whether an edge's *taxon and direction* are right
 whether the *comparison* was admissible at all, which `samgated-v1` restricts to disease vs healthy
 control. All 271 contributing papers were read against their own sentences by adjudicators blinded
 to the disease label and to everything graph-side. **Quote the range, not a point estimate.**
+A **separate** number from the same pass, which must be quoted apart from that one and never added
+to it: within papers that *are* in scope, observations whose taxon is never reported against a
+control in any sentence naming it are **~1.3% of the graph, 95% CI [0.8%, 1.8%]** — 48.7% of an
+84-observation flagged set adjudicate as genuinely out-of-gate, CI [29.0, 65.8] over a
+paper-clustered bootstrap. It bounds contamination *inside the flagged set only*, so it is a floor,
+not a ceiling. Getting there required **overruling 16 of 20 adjudicator verdicts** — they inferred
+healthy-control comparators the text never states — with the re-read run in both directions (all 18
+opposing verdicts survived) and every override reasoned in `contrast_candidate_override.json`.
 Out-of-gate papers disagree with the leave-one-out literature **1.75×** as often (O/E 1.747 vs
 0.989, p = 0.00015 over 20,000 paper-level permutations, MDE ±0.303, four attacks survived) — the
 project's first *validated* quality flag, built to avoid the flaw that got the 2026-09-17 provenance
