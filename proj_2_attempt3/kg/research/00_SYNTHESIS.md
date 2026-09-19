@@ -195,6 +195,54 @@ moderators is consistent with published work rather than an embarrassment.
   58.1%/52.6%), may be the first published use of two curated DBs to cross-validate
   an extractor's direction calls. **This is the most likely publishable angle.**
 
+## 8b. The closest existing answer to Sam's exact question is PhILR (10)
+
+**PhILR** (Silverman, Washburne, Mukherjee & David, eLife 2017) builds one
+orthonormal ILR "balance" coordinate **per internal tree node**. Rank is then
+simply *which coordinate you read* — ranks never overwrite one another, which is
+precisely the property we need and precisely what `tax_glom` destroys.
+
+It is the closest prior art to *"ask at species level or genus level or family
+level"* found anywhere in this review. Caveat: it is built for continuous
+abundance on a fully resolved phylogeny, and we have discrete per-paper
+directional calls on a containment graph with polytomies. Adaptation is real work,
+not a library call.
+
+**A countervailing null worth recording**: Sankaran & Holmes (Frontiers in
+Microbiology 2020) found phylogeny-aware differential abundance gave **no power
+gain** over flat testing in their benchmarks. So tree-aware methods are not a
+guaranteed win, and any gain must be demonstrated rather than assumed.
+
+Also relevant: `treeclimbR` (Huang, Soneson & Robinson, Genome Biology 2021) picks
+the resolution **per branch** from the data instead of fixing one rank globally,
+and phylofactorization (Washburne et al., PeerJ 2017) finds the tree *edge* that
+explains variation rather than a rank. Both are closer to how this literature
+actually behaves than "collapse to genus".
+
+### The proposal worth adopting
+
+Report **three separate numbers per node**, never one:
+
+1. **direct evidence** — papers naming this exact taxon
+2. **child-aggregate evidence** — CBEA-style competitive log-ratio test of the
+   taxon's descendants against their complement, with a permutation null
+   (Nguyen, Hoen & Frost, PLOS Comp Biol 2022)
+3. **a homogeneity flag** — do the descendants actually agree?
+
+And an explicit **refusal list**: do not aggregate when the edge is contested,
+when a hierarchical homogeneity test fails, when n is small, or when the children
+share provenance — and **never let aggregate evidence override direct evidence**.
+
+*Lachnospiraceae* / *Hungatella* is the worked example throughout: it must render
+as **contested**, not averaged.
+
+### One number we have that the literature does not
+
+Our measured within-paper concordance — **related taxa agree on direction 89% of
+the time within a single paper versus 54% for unrelated taxa** — is more precise
+than anything the review could find externally. That is a small, citable methods
+result in its own right.
+
 ## 9. Representing contested edges properly (09)
 
 Model each contested pair as a **Quantitative Bipolar Argumentation Framework**:
@@ -219,6 +267,7 @@ This is a *representation* upgrade, not a statistical one. It will not fix §6.
 | 5 | **Proper TCAV** with real CAVs from existing retrieval sets | 1 day | — |
 | 6 | **AnyBURL rule mining** over graph + paper + study-attribute nodes — human-readable Horn rules, no scale floor | 1–2 days | — |
 | 7 | Effect-size extraction pilot on 20 papers — decides whether §6 is escapable | 2 days | — |
+| 8 | Three-number-per-node reporting (direct / child-aggregate / homogeneity) with the refusal list | 2 days | 1 |
 | — | ~~GNN~~ | — | **do not** |
 
 Items 5 and 6 need no tree repair and are the only two that directly attack
