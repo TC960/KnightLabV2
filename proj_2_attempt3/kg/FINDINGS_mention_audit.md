@@ -1,14 +1,108 @@
 # Do the graph's claims name taxa that are actually in the papers?
 
-**2026-09-13. Cloud session, CPU only, no GPU, no MAIN_DATA.json, no NCBI taxdump.**
+**2026-09-13, revised 2026-09-17.** Cloud session, CPU only, no GPU, no NCBI
+taxdump — but, as of the revision, **with `MAIN_DATA.json`**.
 
-**Headline.** Of the 580 edges `FINDINGS_direction_audit.md` sized as beyond the
-reach of any prose instrument, **429 of the 436 scoreable ones (98.4%) name their
-taxon in their own source paper.** Across the whole extraction, **2,291 of 2,301
-claims (99.57%)** do, against a paper-shuffled null of **15.0% ± 0.8** — a gap of
-**84.6 points**, p = 0.0099 (the floor at 100 permutations). Exactly **one**
-confirmed extraction error survived scrutiny, and seven of the ten apparent
-failures were limitations of my own matcher, not the graph's.
+> ## UPDATE 2026-09-17 — the blocker was never real, and the answer is now 100%
+>
+> **`MAIN_DATA.json.zip` is tracked in git** (`proj_2_attempt3/`, 33 MB). Only the
+> unzipped 105 MB `MAIN_DATA.json` is gitignored. Eleven sessions recorded this
+> audit as "needs the Mac"; a single `unzip` produces the corpus in any checkout.
+> `NEXT_SESSION_PROMPT.md` item 0 — *"the cheapest open lever in the project"* —
+> was blocked on a premise that was false the whole time.
+>
+> **Coverage — the hole is CLOSED, not just narrowed.** Two steps. MAIN_DATA as a
+> fallback took not-scoreable observations **795 → 581** and the 580-edge cohort
+> **144 → 93**; that left 43 contributing papers in neither source. A fuzzy sweep
+> ruled out the cheap explanation — 0 of those 43 have a title match ≥0.90 or any
+> prefix containment, so they were genuinely absent, not mis-keyed. Their text is
+> `extract_input.json` / `new_papers.json`, **untracked since 254b0a8 because this
+> repository is public and the corpus includes non-open-access articles** — still
+> in git history, gitignored, and readable locally for a read-only audit. With all
+> four sources: **271/271 contributing papers, 0 unscoreable observations.**
+>
+> Each source fills only titles the ones above it lack, so adding one cannot
+> rescore an existing observation; with all of them removed the script reproduces
+> the 2026-09-13 git-only numbers exactly (verified by executing it that way).
+> Stronger, and measured rather than assumed (`validate_text_sources.py`): across
+> all six source pairs, **five agree EXACTLY** — `extract_in` vs `main_data` at
+> n=303 and `extract_in` vs `new_papers` at n=629, both 1.0000 — and the only
+> disagreements anywhere are the 12 stub cases below. **Source choice cannot
+> change a verdict.**
+>
+> **Result — now over the WHOLE graph, with nothing excused as unscoreable.**
+> **Every one of the 3,077 observations names its taxon in its source paper.**
+> `own` 2,109/2,109, `background` 585/585, `silent` 381/381 after adjudication.
+> The 12 flagged "absences" are **all twelve** matcher false negatives (see the
+> superseded and retracted sections below) — including the one recorded as the
+> project's single confirmed extraction error, which is **retracted**.
+>
+> The stability is the point, and it is what a 25.8%-unscoreable audit could not
+> claim. Roughly a quarter of these observations had never been scored by any
+> instrument in this project. Scoring them produced **no new fabrication
+> candidate**: the previously-unreachable population behaves exactly like the
+> reachable one, rather than hiding a reservoir of bad claims. That is the
+> difference between "98.4% of what we could see" and an answer about the graph.
+>
+> **The 100% was attacked, and it held — at most 0.13% could be bibliography.**
+> "Named anywhere in the document" includes the **reference list**, and a cited
+> article titled *"...Akkermansia muciniphila in type 2 diabetes"* puts that
+> taxon in our paper while supporting nothing about our cohort. Nobody had
+> checked. Two independent tests (`mention_section_audit.py`):
+>
+> | test | scope | reference/citation-only |
+> |---|---|---|
+> | section position (needs a `References` heading) | 123 papers, 1,416 obs | **0** |
+> | citation context (needs no heading) | **all 271 papers, 3,045 obs** | **0** |
+>
+> The second asks whether *every* offset of the taxon sits inside a bibliography
+> entry — a doi, or a journal-style `YYYY;vol:page`, within 200 characters — so
+> it does not depend on document structure.
+>
+> **The zero is quoted with the sensitivity that makes it mean anything.** Random
+> positions inside detected bibliographies trip the cue **74.2%** of the time;
+> inside bodies, **0.9%** (n=4,920 each). Rule of three on 0/3,045 at 74%
+> sensitivity gives a **95% upper bound of 0.13%** on the true rate. A bare "0"
+> would have been the same error as quoting the 100% unexamined.
+>
+> Both tests carry a positive control — `own` observations have a result-sentence
+> witness by construction and *cannot* be citation-only — and it fired twice, on
+> me:
+> - A DOI-density heuristic meant to rescue the ~148 papers with no detectable
+>   heading was **rejected**: these are PMC scrapes with a DOI at offset 53 in the
+>   journal header, so density measures boilerplate. The heading-free test exists
+>   because of that failure.
+> - The first citation cue also counted `"Author et al., 2021"` and flagged 4
+>   `own` observations, one reading *"COMT inhibitor use was associated with
+>   overrepresentation of Bifidobacteriaceae ... **in our cohort**"* — a
+>   first-person result with an in-text citation merely nearby. In-text citation
+>   is author+year; a *bibliography entry* carries a doi or volume:page. Keeping
+>   only the latter makes it a test of bibliography membership, and the control
+>   then passes clean.
+>
+> **And the offset finder was itself weaker than the matcher it audits** — the
+> **sixth** such case in this repo. It first called `Hoylesella timonensis` and
+> `Escherichia coli` reference-only; both are in the body, as `p. timonensis`
+> (reported with an adjusted p-value) and `es. coli`. It now searches abbreviated
+> forms including *undeclared* genus prefixes, because this paper writes
+> `es. coli` and `su. sp apc924` having defined neither.
+>
+> **A guard came out of it.** The two sources share 16 papers and disagree on 12
+> of 179 observations — *all* one-directional (git=mentioned, MAIN_DATA=absent),
+> *all* on the two papers where MAIN_DATA holds an abstract-only stub (2.4k/1.4k
+> chars against 92k/46k in git). Truncation only deletes text, so **a stub can
+> prove a mention but never disprove one**; short MAIN_DATA documents now return
+> not-scoreable instead of absent. 295 of 2,019 corpus documents are stubs. See
+> `validate_maindata_text.py`.
+
+**Headline (as first published, 2026-09-13).** Of the 580 edges
+`FINDINGS_direction_audit.md` sized as beyond the reach of any prose instrument,
+**429 of the 436 scoreable ones (98.4%) name their taxon in their own source
+paper.** Across the whole extraction, **2,291 of 2,301 claims (99.57%)** do,
+against a paper-shuffled null of **15.0% ± 0.8** — a gap of **84.6 points**,
+p = 0.0099 (the floor at 100 permutations). ~~Exactly one confirmed extraction
+error survived scrutiny~~ (**retracted — there are zero**), and seven of the ten
+apparent failures were limitations of my own matcher, not the graph's.
 
 **What this is NOT.** It bounds **fabrication**, not correctness. A taxon can be
 named in a paper's introduction and still back a wrong edge — that is precisely
@@ -21,7 +115,7 @@ Three different quantities:
 |---|---|---|
 | DB agreement | does the literature replicate? | 73.0 / 72.5% |
 | reading fidelity | did we read the direction right? | ≥86.6% |
-| **mention (this doc)** | **is the taxon even in the paper?** | **99.57%** |
+| **mention (this doc)** | **is the taxon even in the paper?** | **100%**, 3,077/3,077 |
 
 Mention is the weakest of the three and the easiest to pass. It is worth
 measuring only because it reaches a population the other two cannot.
@@ -44,8 +138,10 @@ The distinction matters because `silent` conflates two very different things:
   edge. A candidate fabrication, and individually reviewable.
 
 Nobody had separated them. Before this, the honest description of those 580 edges
-was "we cannot say anything". Now it is "98.4% are not fabricated; their direction
-remains unverified".
+was "we cannot say anything". As first published it became "98.4% are not
+fabricated; their direction remains unverified". **As of 2026-09-17, with all
+four text sources, it is: all 580 are scoreable and none is fabricated — their
+direction remains unverified.**
 
 ## Method
 
@@ -78,7 +174,8 @@ a taxon occurring in more than half the corpus.
 **Positive control — is the matcher sound?** `own` and `background` observations
 name their taxon *in a sentence* by construction, so they **must** score 100%.
 This is an answer known a priori, and it caught a real bug (below). Final:
-**own 1520/1520, background 474/474** — zero false negatives on 1,994
+**own 1520/1520, background 474/474** (2026-09-17, full coverage:
+**own 2109/2109, background 585/585**) — zero false negatives on 1,994
 observations.
 
 ## Results
@@ -114,21 +211,57 @@ The matcher was **not** loosened further to absorb these. It understates by
 design, and the residual is documented instead. Chasing the last seven would be
 tuning the instrument to flatter the result.
 
-### One confirmed extraction error
+> **SUPERSEDED 2026-09-17 — the residual was absorbed, and "tuning to flatter the
+> result" turned out to be the wrong worry.** Each construction above is a
+> *deterministic* fact about how the paper writes a name, not a threshold to be
+> relaxed, so three tiers now handle them (`genus_factored`, `gloss_gap`,
+> `defined_abbrev`) — the last two resolved against the **paper's own inline
+> abbreviation definitions**, and applied only to the node's own genus rather
+> than as a global rewrite (this paper defines `sl.` = *Salmonella* while also
+> using `sl.` for *Slackia*, so rewriting everywhere would invent taxa).
+>
+> The real hazard was the opposite of flattery, and it bit on the first attempt:
+> a ±400-character proximity version of `genus_factored` **cleared two taxa it
+> should not have** — `Roseburia faecis` off a sentence attributing "faecis" to
+> *Blautia* and *Agathobacter*, and `Vibrio phage` off the bare word "phage".
+> Requiring the genus to *bind* the epithet (same sentence, ≤240 chars, no other
+> known genus in between, against a closed vocabulary from the graph's own
+> labels) rejects both. `Roseburia faecis` is then re-cleared on sound evidence:
+> its node carries the NCBI synonym *Agathobacter faecis* and the paper writes
+> "agathobacter species faecis".
+>
+> **All 12 flagged absences are matcher false negatives. Not one is a
+> fabrication.** 10 by tier, 2 by hand (`su. sp. apc924`, carrying the unique
+> strain code, and the XIII case retracted below) — those 2 get no tier, because
+> a one-off does not justify a rule that could fire wrongly elsewhere.
 
-**`Clostridiales incerte sedis XIII` / Parkinson's disease** — the source paper
-contains `clostridiales incerte sedis **xii**` exactly once and **XIII zero
-times**:
+### ~~One confirmed extraction error~~ — RETRACTED 2026-09-17. There is none.
 
-> "...showed positive correlations with groups, whereas clostridiales incerte
-> sedis xii ( r = -0.2625, p = 0.0396)..."
+> **The claim below was wrong, and the way it was wrong is the lesson.** The
+> "verbatim" quote that proved it was **truncated exactly one clause before the
+> disproof.** Whole-word counts over the source paper: `xii` **1**, `xiii` **1**.
+> The full sentence is:
+>
+> > "...showed positive correlations with groups, whereas clostridiales incerte
+> > sedis xii ( r = −0.2625, p = 0.0396) **and xiii ( r = −0.2113, p = 0.0495)**
+> > were negatively correlated with groups ( figure 3a )."
+>
+> *Clostridiales incerte sedis XIII* is reported by the paper, **with its own
+> correlation coefficient and its own p-value**, in a prefix-factored
+> enumeration — the same construction as the *Bacteroides* list below, with a
+> roman numeral in place of a species epithet. The extractor read it correctly.
+>
+> This repo already knew to distrust supplied quotes: *"several 'verbatim'
+> quotes supplied by adjudicators were paraphrases — 7 of 36 edge-level miss
+> claims failed the verbatim check"* (SESSION_LOG, 2026-09-16). This one passed
+> a verbatim check and was still wrong, because **a true quote can mislead by
+> where it stops.** Machine-checking that a quote occurs is not enough; the test
+> has to cover the span that would refute the claim. A whole-word count of the
+> disputed token — two lines of code — settles it and cannot be truncated.
 
-Both XII and XIII are real RDP taxon labels, so this is not a parse artifact —
-the extractor moved one roman numeral. Same class as the 2026-09-12 bug where one
-letter decided which genus a paper meant. It backs a single placeholder-node edge
-(`resolved=False`), so the blast radius is one Parkinson's edge.
-
-**One confirmed error in 2,301 claims (0.04%).**
+**Zero confirmed extraction errors in 2,301 claims.** The graph's blast radius
+from this instrument is nil: the one Parkinson's placeholder edge it was going to
+cost is correct as extracted.
 
 ## Two instruments were wrong before the graph was
 

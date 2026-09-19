@@ -1,0 +1,168 @@
+{
+ "n_overlap_papers_with_observations": 16,
+ "n_observations_compared": 179,
+ "both_mentioned": 164,
+ "both_absent": 3,
+ "git_mentioned_maindata_absent": 12,
+ "git_absent_maindata_mentioned": 0,
+ "agreement": 0.933,
+ "main_data_len_over_git_len": {
+  "min": 0.026,
+  "median": 0.955,
+  "max": 1.147
+ },
+ "disagreements": [
+  {
+   "taxon": "Desulfovibrio",
+   "disease": "Parkinson's disease",
+   "prov": "own",
+   "paper": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson\u2019s disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
+   "git_mentioned": true,
+   "main_data_mentioned": false,
+   "node_label": "Desulfovibrio",
+   "aliases": [
+    "Desulfovibrio"
+   ]
+  },
+  {
+   "taxon": "Faecalibacterium",
+   "disease": "Parkinson's disease",
+   "prov": "own",
+   "paper": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson\u2019s disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
+   "git_mentioned": true,
+   "main_data_mentioned": false,
+   "node_label": "Faecalibacterium",
+   "aliases": [
+    "Faecalibacterium",
+    "Faecalibacterium spp",
+    "Fecalibacterium",
+    "fecalibacterium",
+    "g_Faecalibacterium"
+   ]
+  },
+  {
+   "taxon": "Hungatella",
+   "disease": "Parkinson's disease",
+   "prov": "own",
+   "paper": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson\u2019s disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
+   "git_mentioned": true,
+   "main_data_mentioned": false,
+   "node_label": "Hungatella",
+   "aliases": [
+    "Hungatella"
+   ]
+  },
+  {
+   "taxon": "Prevotella",
+   "disease": "Parkinson's disease",
+   "prov": "own",
+   "paper": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson\u2019s disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
+   "git_mentioned": true,
+   "main_data_mentioned": false,
+   "node_label": "Prevotella",
+   "aliases": [
+    "Prevotella",
+    "Prevotella VZCB",
+    "Prevotella spp"
+   ]
+  },
+  {
+   "taxon": "Barnesiella",
+   "disease": "Parkinson's disease",
+   "prov": "own",
+   "paper": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson\u2019s disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
+   "git_mentioned": true,
+   "main_data_mentioned": false,
+   "node_label": "Barnesiella",
+   "aliases": [
+    "Barnesiella",
+    "Barnesiella spp"
+   ]
+  },
+  {
+   "taxon": "Eisenbergiella",
+   "disease": "Parkinson's disease",
+   "prov": "own",
+   "paper": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson\u2019s disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
+   "git_mentioned": true,
+   "main_data_mentioned": false,
+   "node_label": "Eisenbergiella",
+   "aliases": [
+    "Eisenbergiella"
+   ]
+  },
+  {
+   "taxon": "Agathobaculum",
+   "disease": "Parkinson's disease",
+   "prov": "own",
+   "paper": "Distinct gut microbiome characteristics and dynamics in patients with Parkinson\u2019s disease based on the presence of premotor rapid-eye movement sleep behavior disorders",
+   "git_mentioned": true,
+   "main_data_mentioned": false,
+   "node_label": "Agathobaculum",
+   "aliases": [
+    "Agathobaculum"
+   ]
+  },
+  {
+   "taxon": "Bifidobacterium adolescentis",
+   "disease": "Dementia",
+   "prov": "background",
+   "paper": "Exploring the role of acylated ghrelin and gut microbiome in delineating cognitive health in the elderly",
+   "git_mentioned": true,
+   "main_data_mentioned": false,
+   "node_label": "Bifidobacterium adolescentis",
+   "aliases": [
+    "Bifidobacterium adolescentis",
+    "Bifidobacterium stercoris"
+   ]
+  },
+  {
+   "taxon": "Blautia producta",
+   "disease": "Dementia",
+   "prov": "own",
+   "paper": "Exploring the role of acylated ghrelin and gut microbiome in delineating cognitive health in the elderly",
+   "git_mentioned": true,
+   "main_data_mentioned": false,
+   "node_label": "Blautia producta",
+   "aliases": [
+    "Blautia producta"
+   ]
+  },
+  {
+   "taxon": "Eggerthella lenta",
+   "disease": "Dementia",
+   "prov": "own",
+   "paper": "Exploring the role of acylated ghrelin and gut microbiome in delineating cognitive health in the elderly",
+   "git_mentioned": true,
+   "main_data_mentioned": false,
+   "node_label": "Eggerthella lenta",
+   "aliases": [
+    "Eggerthella lenta"
+   ]
+  },
+  {
+   "taxon": "Clostridium perfringens",
+   "disease": "Dementia",
+   "prov": "background",
+   "paper": "Exploring the role of acylated ghrelin and gut microbiome in delineating cognitive health in the elderly",
+   "git_mentioned": true,
+   "main_data_mentioned": false,
+   "node_label": "Clostridium perfringens",
+   "aliases": [
+    "Clostridium perfringens"
+   ]
+  },
+  {
+   "taxon": "Collinsella aerofaciens",
+   "disease": "Dementia",
+   "prov": "background",
+   "paper": "Exploring the role of acylated ghrelin and gut microbiome in delineating cognitive health in the elderly",
+   "git_mentioned": true,
+   "main_data_mentioned": false,
+   "node_label": "Collinsella aerofaciens",
+   "aliases": [
+    "Collinsella aerofaciens"
+   ]
+  }
+ ]
+}

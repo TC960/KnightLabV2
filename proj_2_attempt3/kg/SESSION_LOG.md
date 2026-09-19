@@ -249,6 +249,149 @@ recover nothing, and taxon-name normalisation recovers 1.3%.
 
 ---
 
+## TL;DR — 2026-09-17 (cloud, CPU-only, **WITH MAIN_DATA**, no taxdump)
+
+**The finding that matters most is not a number, it is that a blocker eleven
+sessions deep was never real.** `proj_2_attempt3/MAIN_DATA.json.zip` is **tracked
+in git** (33 MB); only the unzipped 105 MB `MAIN_DATA.json` is gitignored. Every
+session since 2026-09-06, this log and `NEXT_SESSION_PROMPT.md` included, read
+"MAIN_DATA.json is gitignored" as "the corpus is unavailable in the cloud" and
+deferred item 0 — *"the cheapest open lever in the project"* — to the Mac. It
+takes `unzip`, 2.4 seconds, on a disk with 30 GB free. **Before believing a
+stated blocker, check it once; a premise repeated across eleven handoffs is not
+thereby true.** Nothing in the graph was changed: `graph.json`,
+`rag_corpus.jsonl`, `kg.html` and `docs/` are untouched.
+
+**Tested.** Item 0: re-run `silent_edge_mentions.py` with full corpus text.
+
+**Survived.**
+- *Coverage: the hole is CLOSED.* Two steps. MAIN_DATA took not-scoreable
+  observations **795 → 581** and the 580-edge cohort **144 → 93**, leaving 43
+  contributing papers in neither source. A fuzzy sweep killed the cheap
+  explanation — **0 of the 43** have a title match ≥0.90 or any prefix
+  containment (the one 0.79 is a genuinely different spinal-cord-injury paper),
+  so they were absent, not mis-keyed. Their text is `extract_input.json` /
+  `new_papers.json`, **untracked in 254b0a8 because this repo is PUBLIC and the
+  corpus holds non-open-access articles** — still in history, gitignored, read
+  locally for a read-only audit, and never re-committed. Final: **271/271
+  contributing papers, 0 unscoreable observations.**
+- ***Every one of the 3,077 observations names its taxon in its source paper.***
+  own 2,109/2,109, background 585/585, silent 381/381 after adjudication. The
+  number could not go up; the result is that **~25% of the graph that no
+  instrument here had ever scored produced no new fabrication candidate.** The
+  previously-unreachable population behaves like the reachable one instead of
+  hiding a reservoir of bad claims — which is the difference between "98.4% of
+  what we could see" and an answer about the graph.
+- *Source choice cannot change a verdict, and that is measured.*
+  `validate_text_sources.py` cross-tabulates all six pairs of the four text
+  sources: **five agree EXACTLY** (`extract_in` vs `main_data` n=303,
+  `extract_in` vs `new_papers` n=629, both 1.0000). The only disagreements
+  anywhere are the 12 stub cases below. Verified by execution, including running
+  with every optional source moved away to confirm it degrades exactly to the
+  2026-09-13 git-only numbers.
+- ***All 12 flagged "absences" are matcher false negatives. Zero fabrications.***
+  Three constructions, each now a deterministic tier: `genus_factored` (8) — the
+  paper factors the genus out of a list, *"8 species (ovatus, fragilis, ... and
+  nordii) belonging to the genus Bacteroides"*; `gloss_gap` (1) — an abbreviation
+  gloss wedged mid-name, *"vibrio (vi.) phage pyd38 a"*; `defined_abbrev` (1) —
+  the genus written as the abbreviation **the paper itself defined**, *"cl. sp
+  cag 273"*. The last 2 were read by hand and get **no** tier: a one-off does not
+  justify a rule that could fire wrongly elsewhere.
+- ***RETRACTION: the project's one "confirmed extraction error" is not one.***
+  `Clostridiales incerte sedis XIII` / Parkinson's was recorded 2026-09-13 as the
+  single confirmed error, on a quote showing the paper says XII and *"XIII zero
+  times"*. Whole-word counts: `xii` **1**, `xiii` **1**. The sentence is
+  *"...sedis xii ( r = -0.2625, p = 0.0396) **and xiii ( r = -0.2113, p =
+  0.0495)** were negatively correlated..."* — XIII reported with its own r and
+  its own p-value. **The graph now has zero confirmed extraction errors.**
+- *Method rule, and it is a sharper version of one this log already had.*
+  2026-09-16 recorded *"adjudicators' verbatim quotes are often paraphrases —
+  always machine-check the quote"*. The XIII quote **would have passed** a
+  verbatim check: it is a true substring. **A true quote can mislead by where it
+  stops.** Checking that a quote occurs is not enough — the test must cover the
+  span that would refute the claim. A whole-word count of the disputed token is
+  two lines and cannot be truncated.
+- *A guard, earned by validating the new source before trusting it*
+  (`validate_maindata_text.py`). The two text sources share 16 papers: 164/179
+  observations agree and **all 12 disagreements run one way** (git=mentioned,
+  MAIN_DATA=absent), **all** on the two papers where MAIN_DATA holds an
+  abstract-only stub (2.4k/1.4k chars vs 92k/46k). Truncation only deletes text,
+  so **a stub can prove a mention but never disprove one**. Short MAIN_DATA docs
+  now return not-scoreable, never absent. 295 of 2,019 corpus docs are stubs; all
+  17 papers MAIN_DATA currently contributes are 36k+, so the guard changes
+  nothing today and exists for the next corpus growth.
+
+- ***The 100% was attacked and held: at most 0.13% could be bibliography.***
+  "Named anywhere in the document" includes the **reference list** — a cited
+  article titled *"...Akkermansia muciniphila in type 2 diabetes"* puts that
+  taxon in our paper while supporting nothing about our cohort, and nobody had
+  checked. Two tests (`mention_section_audit.py`): section position, **0 of
+  1,416** over the 123 papers with a detectable `References` heading; and
+  citation context — does *every* offset sit inside a bibliography entry (doi or
+  `YYYY;vol:page`) — which needs no heading and so covers **all 271 papers: 0 of
+  3,045**. Quoted with its sensitivity, because a test that cannot fire proves
+  nothing: the cue trips on **74.2%** of random bibliography positions and
+  **0.9%** of body positions (n=4,920 each), so rule-of-three gives a **95%
+  upper bound of 0.13%**.
+
+**Did not survive / corrected in-session.**
+- *Two more of my own instruments were wrong, both caught by built-in positive
+  controls rather than by spot-checks.* (a) A DOI-density heuristic for finding
+  bibliographies in the ~148 papers with no detectable heading: **rejected** —
+  these are PMC scrapes carrying a DOI at offset 53 in the journal header, so it
+  measures boilerplate. (b) The first citation cue counted `"Author et al.,
+  2021"` and flagged 4 `own` observations, one reading *"COMT inhibitor use was
+  associated with overrepresentation of Bifidobacteriaceae ... **in our
+  cohort**"* — a first-person result with an in-text citation merely nearby.
+  In-text citation is author+year; a bibliography entry has a doi or volume:page.
+  And the offset finder was weaker than the matcher it audits, calling
+  `p. timonensis` (reported with an adjusted p-value) and `es. coli` absent from
+  their bodies. **That makes six instruments in this repo that turned out weaker
+  than the thing they audited — the standing lesson is to give every audit a
+  positive control whose answer is known a priori.**
+- *My own first cut of `genus_factored` was wrong and would have shipped two
+  false clearances.* A ±400-character proximity window credited `Roseburia
+  faecis` to a sentence where the paper attributes "faecis" to *Blautia* and
+  *Agathobacter*, and credited `Vibrio phage` to the bare English word "phage".
+  Proximity is not attribution. The tier now requires the genus to **bind** the
+  epithet — same sentence, ≤240 chars, and **no other known genus in between**,
+  against a closed genus vocabulary built from the graph's own node labels. Both
+  false clearances vanish. `Roseburia faecis` is then re-cleared on sound
+  evidence: its node carries the NCBI synonym *Agathobacter faecis* and the paper
+  writes *"agathobacter species faecis"*. **This is the fifth time in this repo
+  the instrument was weaker than the thing it audited.**
+
+**Highest-value next step — and the honest framing is that fabrication is now a
+CLOSED question, so stop spending sessions on it.** Between the 100% mention rate,
+its bibliography attack, reading fidelity ≥86.6%, and paper/edge recall, the
+cheap precision instruments are exhausted. Nothing here moved the graph, and
+nothing here can: **every remaining question is limited by n=271, not by method.**
+
+1. **Free, and newly unblocked by full text: the generation-2 relation filter.**
+   The 2026-09-16 log named it and it was blocked on text — link a direction
+   sentence to a *neighbouring* significance sentence, since the known misses are
+   dominated by taxa whose significance cue sits in a different sentence from
+   their direction. `relation_sentences_clean.json` holds only ~10% of corpus
+   text and cannot see those pairs; `MAIN_DATA.json` can. This raises the recall
+   instrument's own sensitivity and shrinks its "cannot refute" gap. **Caution:
+   regenerating relation sentences would re-derive the `own`/`background`/
+   `silent` provenance classes that several published numbers rest on — build it
+   as a SEPARATE instrument first and diff, do not overwrite the existing one.**
+2. **Short-list re-extraction** (`edge_recall_packets.json`, 12 of 15 confirmed
+   misses in 3 papers). **Needs a GPU — ask before spending.** What changed today
+   is that the full corpus is now readable in the cloud, so the short list can be
+   assembled, verified and packaged here before any GPU time is bought.
+3. Everything else still wants **more papers**, which wants a GPU.
+
+**And a process note worth more than any number here.** The blocker that cost
+eleven sessions was not hard, hidden, or expensive — it was `unzip`. It survived
+because each handoff restated the previous handoff's conclusion instead of
+testing it, and the restatement got more confident each time ("no MAIN_DATA in
+the cloud" hardened into "needs the Mac"). **Check a stated blocker once before
+inheriting it.** The check cost one tool call.
+
+---
+
 ## TL;DR — 2026-09-16 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **Tested.** The one direction no instrument here had ever pointed: not whether the

@@ -1,0 +1,50 @@
+{
+ "n_observations": 3077,
+ "papers_with_no_detectable_reference_section": 1562,
+ "by_provenance": {
+  "own": {
+   "no_ref_section": 1134,
+   "body_only": 765,
+   "both": 210
+  },
+  "background": {
+   "no_ref_section": 331,
+   "body_only": 202,
+   "both": 52
+  },
+  "silent": {
+   "no_ref_section": 164,
+   "body_only": 173,
+   "both": 14,
+   "no_offset": 32
+  }
+ },
+ "totals": {
+  "no_ref_section": 1629,
+  "body_only": 1140,
+  "both": 276,
+  "no_offset": 32
+ },
+ "n_testable": 1416,
+ "references_only_rate": 0.0,
+ "references_only": [],
+ "citation_context_by_provenance": {
+  "own": {
+   "has_real_mention": 2109
+  },
+  "background": {
+   "has_real_mention": 585
+  },
+  "silent": {
+   "has_real_mention": 351,
+   "no_offset": 32
+  }
+ },
+ "citation_only": [],
+ "citation_cue_calibration": {
+  "sensitivity": 0.7421,
+  "false_positive_rate_in_body": 0.0089,
+  "n_sampled_each": 4920
+ },
+ "citation_only_rate_95pct_upper_bound": 0.001328
+}

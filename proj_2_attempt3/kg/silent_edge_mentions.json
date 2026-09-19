@@ -1,40 +1,92 @@
 {
  "n_observations": 3077,
- "n_not_scoreable_no_fulltext_in_git": 795,
+ "n_not_scoreable_no_fulltext": 0,
  "by_provenance": {
   "own": {
-   "not_scoreable": 589,
-   "mentioned": 1520
+   "mentioned": 2109
   },
   "background": {
-   "mentioned": 474,
-   "not_scoreable": 111
+   "mentioned": 585
   },
   "silent": {
-   "not_scoreable": 95,
-   "mentioned": 278,
-   "absent": 10
+   "mentioned": 371,
+   "genus_factored": 8,
+   "gloss_gap": 1,
+   "absent": 2,
+   "defined_abbrev": 1
   }
  },
  "mention_rate_by_provenance": {
-  "own": 1.0,
-  "background": 1.0,
-  "silent": 0.9653
+  "own": {
+   "mentioned": 1.0,
+   "strict": 1.0
+  },
+  "background": {
+   "mentioned": 1.0,
+   "strict": 1.0
+  },
+  "silent": {
+   "mentioned": 0.9948,
+   "strict": 0.9687
+  }
  },
  "single_paper_no_own_witness_edges": {
   "total": 580,
-  "mentioned": 429,
-  "absent": 7,
-  "not_scoreable": 144
+  "mentioned": 571,
+  "genus_factored": 5,
+  "gloss_gap": 1,
+  "absent": 2,
+  "defined_abbrev": 1
  },
- "single_paper_no_own_witness_mention_rate": 0.9839,
+ "single_paper_no_own_witness_mention_rate": {
+  "mentioned": 0.9966,
+  "strict": 0.9845
+ },
  "absent_observations": [
+  {
+   "taxon": "Bacteroides fragilis",
+   "disease": "Attention-deficit/hyperactivity disorder",
+   "direction": "down",
+   "prov": "silent",
+   "verdict": "genus_factored",
+   "evidence": "ies level, eight of the top 18 hc-enriched species (ovatus, fragilis, thetaiotaomicron, intestinalis, cellulosilyticus, salyersiae, fluxus, and nordii) belonged to the genus bacteroides.",
+   "paper": "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment",
+   "text_source": "extractor_input",
+   "n_papers_on_edge": 1,
+   "node_label": "Bacteroides fragilis",
+   "aliases": [
+    "Bacteroides fragilis",
+    "s_Bacteroides_fragilis"
+   ],
+   "resolved": true,
+   "placeholder": false
+  },
+  {
+   "taxon": "Bacteroides salyersiae",
+   "disease": "Attention-deficit/hyperactivity disorder",
+   "direction": "down",
+   "prov": "silent",
+   "verdict": "genus_factored",
+   "evidence": "fragilis, thetaiotaomicron, intestinalis, cellulosilyticus, salyersiae, fluxus, and nordii) belonged to the genus bacteroides.",
+   "paper": "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment",
+   "text_source": "extractor_input",
+   "n_papers_on_edge": 1,
+   "node_label": "Bacteroides salyersiae",
+   "aliases": [
+    "Bacteroides salyersiae"
+   ],
+   "resolved": true,
+   "placeholder": false
+  },
   {
    "taxon": "Blautia faecis",
    "disease": "Parkinson's disease",
    "direction": "down",
    "prov": "silent",
+   "verdict": "genus_factored",
+   "evidence": "ecreased mta for ruminococcus _e sp., fusicatenibacter sp., blautia species wexlerae , faecis and massiliensis , and agathobacter species faecis and sp.",
    "paper": "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson's disease.",
+   "text_source": "git",
    "n_papers_on_edge": 2,
    "node_label": "Blautia faecis",
    "aliases": [
@@ -48,7 +100,10 @@
    "disease": "Parkinson's disease",
    "direction": "down",
    "prov": "silent",
+   "verdict": "genus_factored",
+   "evidence": "we recently showed a decreased activity for roseburia sp ., blautia obeum / wexlerae and blautia massiliensis in pd, a significant decrease in t",
    "paper": "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson's disease.",
+   "text_source": "git",
    "n_papers_on_edge": 5,
    "node_label": "Blautia wexlerae",
    "aliases": [
@@ -62,7 +117,10 @@
    "disease": "Mild cognitive impairment",
    "direction": "up",
    "prov": "silent",
+   "verdict": "genus_factored",
+   "evidence": "stercoris, catabacter (ca.) hongkongensis, eu.",
    "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+   "text_source": "git",
    "n_papers_on_edge": 1,
    "node_label": "Christensenella hongkongensis",
    "aliases": [
@@ -77,7 +135,10 @@
    "disease": "Parkinson's disease",
    "direction": "down",
    "prov": "silent",
+   "verdict": "absent",
+   "evidence": null,
    "paper": "Changes in Gastrointestinal Microbiome Composition in PD: A Pivotal Role of Covariates.",
+   "text_source": "git",
    "n_papers_on_edge": 1,
    "node_label": "Clostridiales incerte sedis XIII",
    "aliases": [
@@ -91,7 +152,10 @@
    "disease": "Mild cognitive impairment",
    "direction": "down",
    "prov": "silent",
+   "verdict": "defined_abbrev",
+   "evidence": "paper writes it as `cl. sp CAG 273` using its own inline definition",
    "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+   "text_source": "git",
    "n_papers_on_edge": 1,
    "node_label": "Clostridium sp CAG 273",
    "aliases": [
@@ -105,7 +169,10 @@
    "disease": "Mild cognitive impairment",
    "direction": "down",
    "prov": "silent",
+   "verdict": "genus_factored",
+   "evidence": "sp cag 273 , gemmiger (ge.) formicilis , and rb.",
    "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+   "text_source": "git",
    "n_papers_on_edge": 1,
    "node_label": "Gemmiger formicilis",
    "aliases": [
@@ -119,7 +186,10 @@
    "disease": "Mild cognitive impairment",
    "direction": "up",
    "prov": "silent",
+   "verdict": "genus_factored",
+   "evidence": "bolteae, and phascolarctobacterium (pb.) faecium increased in the gut of mci compared to controls (supplemen",
    "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+   "text_source": "git",
    "n_papers_on_edge": 1,
    "node_label": "Phascolarctobacterium faecium",
    "aliases": [
@@ -133,7 +203,10 @@
    "disease": "Parkinson's disease",
    "direction": "down",
    "prov": "silent",
+   "verdict": "genus_factored",
+   "evidence": "us _e sp., fusicatenibacter sp., blautia species wexlerae , faecis and massiliensis , and agathobacter species faecis and sp.",
    "paper": "Human gut microbiome gene co-expression network reveals a loss in taxonomic and functional diversity in Parkinson's disease.",
+   "text_source": "git",
    "n_papers_on_edge": 4,
    "node_label": "Roseburia faecis",
    "aliases": [
@@ -148,7 +221,10 @@
    "disease": "Mild cognitive impairment",
    "direction": "down",
    "prov": "silent",
+   "verdict": "absent",
+   "evidence": null,
    "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+   "text_source": "git",
    "n_papers_on_edge": 1,
    "node_label": "Subdoligranulum sp. APC924",
    "aliases": [
@@ -162,7 +238,10 @@
    "disease": "Mild cognitive impairment",
    "direction": "up",
    "prov": "silent",
+   "verdict": "gloss_gap",
+   "evidence": "matches after removing the paper's `(xx.)` gloss: Vibrio phage",
    "paper": "Unique trans-kingdom microbiome structural and functional signatures predict cognitive decline in older adults.",
+   "text_source": "git",
    "n_papers_on_edge": 1,
    "node_label": "Vibrio phage",
    "aliases": [
@@ -172,5 +251,10 @@
    "placeholder": false
   }
  ],
- "n_absent_total": 10
+ "n_absent_total": 2,
+ "n_recovered_by_tier": {
+  "genus_factored": 8,
+  "gloss_gap": 1,
+  "defined_abbrev": 1
+ }
 }

@@ -9,6 +9,21 @@
 > prompt sent you here: **do not redo any of them.** Read `SESSION_LOG.md` — its
 > top entry is the current state — and pick from the short list below.
 >
+> ## ⛔ 2026-09-17 — STOP BELIEVING "NO MAIN_DATA IN THE CLOUD". IT IS A `unzip` AWAY.
+>
+> **`proj_2_attempt3/MAIN_DATA.json.zip` is TRACKED IN GIT** (33 MB). Only the
+> unzipped 105 MB `MAIN_DATA.json` is gitignored — which is what every session,
+> including this file, mistook for the corpus being unavailable. **Eleven
+> sessions deferred item 0 below to "the Mac" on that false premise.** Run:
+>
+> ```
+> unzip -o proj_2_attempt3/MAIN_DATA.json.zip MAIN_DATA.json -d proj_2_attempt3/
+> ```
+>
+> 2,026 papers, ~2.4 s, 105 MB on a disk with 30 GB free. **Item 0 is now DONE
+> (see below) and any future "needs the Mac for paper text" claim is wrong
+> unless it is about something other than MAIN_DATA.**
+>
 > **Two other standing instructions in that routine prompt are also stale:**
 > 1. It tells you to download the NCBI taxdump from `ftp.ncbi.nih.gov`. That host
 >    has returned **403 in eleven consecutive sessions** (re-probed 2026-09-16);
@@ -107,15 +122,37 @@
 >
 > **Genuinely open, in order:**
 >
-> 0. **Re-run `silent_edge_mentions.py` where `MAIN_DATA.json` exists** (i.e. on
->    the Mac, not in the cloud). NEW 2026-09-13, and the cheapest open lever in
->    the project: no GPU, no taxdump, no new papers. The mention audit verified
->    that 429 of 436 scoreable "unverifiable" edges (98.4%) do name their taxon in
->    their source paper — but **144 of the 580, and 795 of 3,077 observations
->    (25.8%), are unscoreable in the cloud** purely because their full text is
->    gitignored. Running it locally closes that hole outright. See
->    `FINDINGS_mention_audit.md`. **Still true as of 2026-09-15 — but see the
->    correction below: it is true of THIS task, not of paper text in general.**
+> 0. ~~**Re-run `silent_edge_mentions.py` where `MAIN_DATA.json` exists** (i.e. on
+>    the Mac, not in the cloud).~~ **DONE 2026-09-17, IN THE CLOUD — do not redo.**
+>    The premise was wrong (see the banner above: the corpus zip is tracked).
+>    **The hole is CLOSED: 271/271 contributing papers, 0 unscoreable
+>    observations** (795 → 581 → 0). MAIN_DATA got it to 581; the last 43 papers
+>    are covered by `extract_input.json` / `new_papers.json`, which are
+>    **gitignored on purpose — this repo is PUBLIC and the corpus holds
+>    non-open-access articles (254b0a8)**. Restore them locally, read-only, and
+>    NEVER `git add` them or quote their text into a tracked file:
+>
+>    ```
+>    git show 254b0a8^:proj_2_attempt3/kg/extract_input.json > extract_input.json
+>    git show 254b0a8^:proj_2_attempt3/kg/new_papers.json    > new_papers.json
+>    ```
+>
+>    **The result: 100% mention rate over the WHOLE graph** — every one of the
+>    3,077 observations names its taxon in its source paper (own 2,109/2,109,
+>    background 585/585, silent 381/381), and **all 12 "absences" are matcher
+>    false negatives, none a fabrication.** ~25% of the graph had never been
+>    scored by any instrument; scoring it turned up nothing new, which is the
+>    finding. Source choice cannot change a verdict — 5 of 6 pairwise source
+>    comparisons agree exactly (`validate_text_sources.py`). Three new
+>    deterministic tiers absorb the false negatives (`genus_factored`,
+>    `gloss_gap`, `defined_abbrev`), each keyed to how the paper writes the
+>    name rather than to a loosened threshold. **The
+>    "one confirmed extraction error" recorded on 2026-09-13 is RETRACTED** — the
+>    paper does report `Clostridiales incerte sedis XIII`, with its own r and
+>    p-value; the 2026-09-13 quote was truncated one clause short of the
+>    disproof. **There are now zero confirmed extraction errors in the graph.**
+>    Method rule earned here: *a true quote can mislead by where it stops* — check
+>    the disputed token with a whole-word count, which cannot be truncated.
 >
 > **CORRECTION 2026-09-15 — "no paper text in the cloud" is too broad, and it has
 > been costing sessions.** `relation_sentences_clean.json` is **committed** and
@@ -126,8 +163,11 @@
 > cloud.** The 2026-09-15 HIV/`Neurocognitive impairment` question was settled
 > entirely from it with no `MAIN_DATA.json`. The limit is real and specific: it
 > holds ~10% of corpus text (16.78 M → 1.74 M chars), so it **cannot** answer
-> "does taxon X appear *anywhere* in this paper" — which is precisely why item 0
-> above still needs the Mac. Do not generalise item 0's blocker to all text work.
+> "does taxon X appear *anywhere* in this paper". ~~which is precisely why item 0
+> above still needs the Mac.~~ **2026-09-17: that last clause is wrong — item 0
+> never needed the Mac; unzip the tracked corpus (banner at the top). For
+> whole-document questions use `MAIN_DATA.json`; `relation_sentences_clean.json`
+> remains the right, cheaper tool for sentence-level questions.**
 >
 > 1. **More papers.** The binding constraint on every statistical question, and
 >    has been for five sessions. 109 papers with ≥4 decisive observations sets
@@ -226,11 +266,14 @@
 >   `graph.json`'s own resolution and `build_kg.py` overwrites `graph.json`, so a
 >   bad intermediate silently becomes the authority for the next build. Restore a
 >   known-good `graph.json` before re-running. This bit on 2026-09-11.
-> - **One confirmed extraction error is open and unfixed (2026-09-13).**
->   `Clostridiales incerte sedis XIII` / Parkinson's: the source paper says
->   `incerte sedis XII` once and XIII zero times. Both are real RDP labels. One
->   placeholder-node edge; correcting it needs a rebuild, so it was left rather
->   than rebuilt on a cloud checkout. See `FINDINGS_mention_audit.md`.
+> - ~~**One confirmed extraction error is open and unfixed (2026-09-13).**~~
+>   **RETRACTED 2026-09-17 — it was never an error, and NOTHING needs rebuilding.**
+>   Whole-word counts in the source paper: `xii` 1, `xiii` **1**. The full
+>   sentence reads "...clostridiales incerte sedis xii ( r = -0.2625, p = 0.0396)
+>   **and xiii ( r = -0.2113, p = 0.0495)** were negatively correlated..." — a
+>   prefix-factored enumeration, extracted correctly. The 2026-09-13 quote stopped
+>   one clause before the words that disprove it. **The graph has zero confirmed
+>   extraction errors.** See `FINDINGS_mention_audit.md`.
 >
 > - **Orphan containment. DONE 2026-09-14.** 24 taxon nodes had their parent
 >   written in their own label and were detached anyway (the placeholder branch
