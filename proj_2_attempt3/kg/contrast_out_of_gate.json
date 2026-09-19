@@ -1,0 +1,261 @@
+{
+ "note": "OPT-IN. Nothing in graph.json is changed by this file. Papers whose MAIN reported contrast is not disease-vs-healthy-control, from contrast_census.py, tiered by a second read in-session.",
+ "counts": {
+  "out_of_scope_papers": 13,
+  "out_of_scope_obs": 55,
+  "mixed_papers": 5,
+  "mixed_obs": 29,
+  "overturned_papers": 1,
+  "overturned_obs": 9,
+  "total_obs_in_graph": 3077
+ },
+ "papers": [
+  {
+   "title": "Combination of gut microbiota and plasma amyloid-\u03b2 as a potential index for identifying preclinical Alzheimer\u2019s disease: a cross-sectional analysis from the SILCODE study",
+   "contrast_type": "SUBGROUP",
+   "arms": "cognitively normal amyloid-positive vs cognitively normal amyloid-negative individuals",
+   "diseases": [
+    "Alzheimer's disease"
+   ],
+   "n_edges": 13,
+   "tier": "out_of_scope",
+   "quotes": [
+    "The relative abundance of phylum Bacteroidetes was significantly enriched, whereas phylum Firmicutes and class Deltaproteobacteria were significantly decreased in CN+ individuals in comparison with that in CN\u2212 individuals."
+   ]
+  },
+  {
+   "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+   "contrast_type": "TREATMENT",
+   "arms": "probiotics vs rifaximin vs lactulose treatment in MHE patients",
+   "diseases": [
+    "Minimal hepatic encephalopathy"
+   ],
+   "n_edges": 10,
+   "tier": "mixed_has_control_arm",
+   "quotes": [
+    "The Lac group showed lower abundance of Pediococcus , Clostridium , and Pseudomonas , and higher abundance of Anaerosinus and Akkermansia"
+   ]
+  },
+  {
+   "title": "Multiple sclerosis and gut microbiota: Lachnospiraceae from the ileum of MS twins trigger MS-like disease in germfree transgenic mice-An unbiased functional study.",
+   "contrast_type": "ANIMAL",
+   "arms": "Mice receiving MS-associated microbiota vs mice receiving healthy microbiota",
+   "diseases": [
+    "Multiple sclerosis"
+   ],
+   "n_edges": 9,
+   "tier": "in_scope_miscall",
+   "quotes": [
+    "Further, similar to our initial observation ( Fig. 3 ), other bacteria, like Akkermansia, Alistipes, and Streptococcus, which over time were substantial components in recipients of HT-Q ileal microbiota, were essentially lost in the MS-Q recipient group ( Fig. 4 E and SI Appendix , Fig. S4 G )."
+   ]
+  },
+  {
+   "title": "The ketogenic diet influences taxonomic and functional composition of the gut microbiota in children with severe epilepsy",
+   "contrast_type": "TREATMENT",
+   "arms": "Children with severe epilepsy on ketogenic diet vs healthy control parents",
+   "diseases": [
+    "Epilepsy"
+   ],
+   "n_edges": 9,
+   "tier": "mixed_has_control_arm",
+   "quotes": [
+    "Analysis of taxonomic changes in the gut microbiota during KD Dominant phyla in fecal samples from patients and controls at time point one were Firmicutes, Bacteroidetes, and Actinobacteria (Fig 2c), which are typically found in the human gut."
+   ]
+  },
+  {
+   "title": "Gut Microbiota and Fecal Metabolites Associated With Neurocognitive Impairment in HIV-Infected Population",
+   "contrast_type": "SUBGROUP",
+   "arms": "HIV with neurocognitive impairment vs HIV without impairment",
+   "diseases": [
+    "Neurocognitive impairment"
+   ],
+   "n_edges": 7,
+   "tier": "out_of_scope",
+   "quotes": [
+    "The species abundance of Spirochaetes and Epsilonbacteraeota was higher in the NCI group than in the non-NCI group at the phylum level."
+   ]
+  },
+  {
+   "title": "Gut Microbiota Changes and Their Correlation with Cognitive and Neuropsychiatric Symptoms in Alzheimer's Disease.",
+   "contrast_type": "SUBGROUP",
+   "arms": "AD with neuropsychiatric symptoms vs AD without symptoms",
+   "diseases": [
+    "Alzheimer's disease"
+   ],
+   "n_edges": 7,
+   "tier": "out_of_scope",
+   "quotes": [
+    "AD patients with NPS showed decreased Chitinophagaceae, Taibaiella, and Anaerobacterium compared with those without NPS."
+   ]
+  },
+  {
+   "title": "Effect of Probiotics Supplementation on REM Sleep Behavior Disorder and Motor Symptoms in Parkinson's Disease: A Pilot Study.",
+   "contrast_type": "TREATMENT",
+   "arms": "PD patients: with probiotics supplementation vs without; compared to NC",
+   "diseases": [
+    "Parkinson's disease"
+   ],
+   "n_edges": 6,
+   "tier": "mixed_has_control_arm",
+   "quotes": [
+    "Both groups maintained their original treatment regimens unchanged, while the probiotics group additionally received 2 capsules of Bacillus licheniformis three times a day and 4 capsules of BIFICO twice a day for 12 weeks."
+   ]
+  },
+  {
+   "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+   "contrast_type": "SUBGROUP",
+   "arms": "sALS vs bALS",
+   "diseases": [
+    "Amyotrophic lateral sclerosis"
+   ],
+   "n_edges": 6,
+   "tier": "out_of_scope",
+   "quotes": [
+    "However, sALS patients, but not bALS patients, showed a significant enrichment of Firmicutes along with a depletion of Bacteroidetes in stool samples, resulting in a significant increase in fecal F/B- ratio ( F / B > 1, Fig. 3 A-C, Supplemental Figs. 3 , 4 )."
+   ]
+  },
+  {
+   "title": "Modified Mediterranean-ketogenic diet modulates gut microbiome and short-chain fatty acids in association with Alzheimer's disease markers in subjects with mild cognitive impairment.",
+   "contrast_type": "TREATMENT",
+   "arms": "MCI/CN subjects on modified Mediterranean-ketogenic diet vs standard diet",
+   "diseases": [
+    "Mild cognitive impairment"
+   ],
+   "n_edges": 6,
+   "tier": "out_of_scope",
+   "quotes": [
+    "Similarly, major phyla including Firmicutes, Bacteroidetes and Proteobacteria do not demonstrate any significant change during the two dietary interventions in CN and MCI participants ( Fig. 3 a-b)."
+   ]
+  },
+  {
+   "title": "Effects of a ketogenic and low-fat diet on the human metabolome, microbiome, and foodome in adults at risk for Alzheimer's disease.",
+   "contrast_type": "TREATMENT",
+   "arms": "MMKD vs AHAD",
+   "diseases": [
+    "Mild cognitive impairment"
+   ],
+   "n_edges": 5,
+   "tier": "out_of_scope",
+   "quotes": [
+    "We consistently observed higher relative abundances of Akkermansia muciniphila on the MMKD, and higher relative abundances of Veillonella sp. ACP1 on the AHAD ( Figure 3D )."
+   ]
+  },
+  {
+   "title": "Integrated Traditional Chinese Medicine Improves Functional Outcome in Acute Ischemic Stroke: From Clinic to Mechanism Exploration With Gut Microbiota",
+   "contrast_type": "TREATMENT",
+   "arms": "AIS patients treated with Western Medicine (WM) vs Integrated Traditional Chinese Medicine (ITCM)",
+   "diseases": [
+    "Stroke"
+   ],
+   "n_edges": 3,
+   "tier": "mixed_has_control_arm",
+   "quotes": [
+    "Besides, SCFA-producing bacteria Blautia , Coprococcus , Streptococcus , and Dorea decreased in the WM group but increased in the ITCM group"
+   ]
+  },
+  {
+   "title": "Prognostic Value of a Multivariate Gut Microbiome Model for Progression from Normal Cognition to Mild Cognitive Impairment Within 4 Years.",
+   "contrast_type": "LONGITUDINAL",
+   "arms": "cognitively normal individuals progressing to MCI vs remaining normal",
+   "diseases": [
+    "Mild cognitive impairment"
+   ],
+   "n_edges": 3,
+   "tier": "out_of_scope",
+   "quotes": [
+    "The genus Merdimonas, which belongs to the phylum Firmicutes, was significantly increased ( p < 0.05) in converters."
+   ]
+  },
+  {
+   "title": "Gut dysbiosis and lack of short chain fatty acids in a Chinese cohort of patients with multiple sclerosis.",
+   "contrast_type": "OTHER_DISEASE",
+   "arms": "MS patients vs NMOSD patients",
+   "diseases": [
+    "Multiple sclerosis"
+   ],
+   "n_edges": 2,
+   "tier": "out_of_scope",
+   "quotes": [
+    "The gut microbiome of MS patients was characterized by an increase of Streptococcus and a decrease of Prevotella_9; additionally, compared to NMOSD patients, Prevotella_9 was found to be much more abundant in MS patients."
+   ]
+  },
+  {
+   "title": "Difference in gut microbial dysbiotic patterns between body-first and brain-first Parkinson's disease.",
+   "contrast_type": "SUBGROUP",
+   "arms": "Body-first Parkinson's disease vs brain-first Parkinson's disease",
+   "diseases": [
+    "Parkinson's disease"
+   ],
+   "n_edges": 2,
+   "tier": "out_of_scope",
+   "quotes": [
+    "The gut microbiome in body-first PD showed a distinct profile, characterized by an increased presence of Escherichia coli and Akkermansia muciniphila, and a decreased abundance of short-chain fatty acid-producing commensal bacteria."
+   ]
+  },
+  {
+   "title": "Mild cognitive impairment has similar alterations as Alzheimer's disease in gut microbiota.",
+   "contrast_type": "OTHER_DISEASE",
+   "arms": "Alzheimer's disease vs mild cognitive impairment",
+   "diseases": [
+    "Mild cognitive impairment"
+   ],
+   "n_edges": 1,
+   "tier": "out_of_scope",
+   "quotes": [
+    "Escherichia was observed increased at genus level in both fecal and blood samples from AD and MCI."
+   ]
+  },
+  {
+   "title": "The relationship between the gut microbiome and mild cognitive impairment in patients without dementia: a cross-sectional study conducted in Japan.",
+   "contrast_type": "SUBGROUP",
+   "arms": "Mild cognitive impairment vs cognitively normal patients",
+   "diseases": [
+    "Mild cognitive impairment"
+   ],
+   "n_edges": 1,
+   "tier": "out_of_scope",
+   "quotes": [
+    "In conclusion, an increased prevalence of Bacteroides is independently associated with the presence of MCI in patients without dementia."
+   ]
+  },
+  {
+   "title": "Gut microbiota composition during a 12-week intervention with delayed-release dimethyl fumarate in multiple sclerosis - a pilot trial.",
+   "contrast_type": "TREATMENT",
+   "arms": "MS patients before vs after 12-week DMF intervention",
+   "diseases": [
+    "Multiple sclerosis"
+   ],
+   "n_edges": 1,
+   "tier": "mixed_has_control_arm",
+   "quotes": [
+    "In the dimethyl fumarate-treated patients ( n = 21) we observed a trend of reduced Actinobacteria ( p = 0.03, Q FDR = 0.24) at two weeks, mainly driven by Bifidobacterium ( p = 0.06, Q FDR = 0.69)."
+   ]
+  },
+  {
+   "title": "More than constipation - bowel symptoms in Parkinson's disease and their connection to gut microbiota.",
+   "contrast_type": "SUBGROUP",
+   "arms": "PD patients with IBS-like symptoms vs PD patients without IBS-like symptoms",
+   "diseases": [
+    "Parkinson's disease"
+   ],
+   "n_edges": 1,
+   "tier": "out_of_scope",
+   "quotes": [
+    "PD patients with IBS-like symptoms had more non-motor symptoms and a lower faecal abundance of Prevotella bacteria than those without IBS-like symptoms."
+   ]
+  },
+  {
+   "title": "Genetic risk score in multiple sclerosis is associated with unique gut microbiome.",
+   "contrast_type": "SUBGROUP",
+   "arms": "MS cluster A vs cluster B",
+   "diseases": [
+    "Multiple sclerosis"
+   ],
+   "n_edges": 1,
+   "tier": "out_of_scope",
+   "quotes": [
+    "As shown in Fig. 5 B and Supplemental Table 3 , Lachnospiraceae family showed small difference between the two clusters."
+   ]
+  }
+ ]
+}

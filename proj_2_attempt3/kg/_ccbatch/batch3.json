@@ -1,0 +1,149 @@
+{
+ "observations": [
+  {
+   "id": "1:Enterococcus",
+   "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+   "taxon": "Enterococcus",
+   "sentences_naming_taxon": [
+    "04, Wilcoxon rank sum test) (Supplementary Fig. S4)51 As for BMI, underweight SCI patients were characterized by increased proportions of Dialister and Fusobacterium, overweight ones by increased amounts of Enterococcus, while Prevotella was distinctive of normal-weight patients (p\u2009\u2264\u20090.",
+    "05) (Fig. 5D) When looking at the enterotype distribution, we found that although the enterotype-like group 2 (dominated by Akkermansia) was the most represented in both patients with more (59%) and less injury severity (66%), the enterotype-like group 3 (dominated by Enterococcus) accounted for a greater percentage of those having more severe SCI (18% vs 7% in patients with less severe injury) It should be noted that more than half of all patients had taken antibiotics but this percentage was higher in those with more severe SCI (76% vs 56% in those with less severe injury).",
+    "07; permutation test with pseudo-F ratios) (Fig. 6A) In particular, the proportions of Enterococcus and Klebsiella were far greater in patients who had received antibiotics in the 3\u00a0days before sampling (p\u2009\u2264\u20090.",
+    "Enterococcus and Klebsiella OTUs were mainly assigned to E. faecium and K. pneumoniae, respectively On the other hand, typically health-associated microbiota components, such as Lachnospiraceae and Ruminococcaceae members, were greatly reduced by recent antibiotics administration, but their levels after a few days (i. e., 4\u201310) were overall comparable to those of patients who had not taken therapy (p\u2009\u2264\u20090.",
+    "01) (Fig. 6B) As expected, the Enterococcus enterotype (group 3) was particularly represented in patients who had received antibiotics in the 3\u00a0days before sampling (24%) but its proportion dropped after 4\u201310\u00a0days (6%), up to 0% in those who had not received antibiotics.",
+    "Faecalibacterium and Coprococcus), which probably represents a non-specific, shared response to diseases52, SCI patients show increased proportions of potentially pathogenic and pro-inflammatory bacteria, such as Enterococcus, Streptococcus and Klebsiella.",
+    "These include well-known nosocomial pathogens, associated with urinary tract infections, bacteremia, and elevated rates of mortality in critically ill patients36,53,54 As expected, Enterococcus and Klebsiella were more abundant in patients who had received antibiotic therapy in the 3\u00a0days prior to fecal sampling.",
+    "Interestingly, Dialister was also found to be lower in complete SCI in both Turkish38 and Chinese patients39 On the other hand, the enterotype analysis showed that the enterotype-like group 3 (Enterococcus dominated) was far more represented in patients with more severe SCI, suggesting a possible involvement of this pathobiont."
+   ],
+   "other_sentences_from_the_paper": [
+    "Full size imageIn line with the available literature44, the microbial profiles of both SCI patients and healthy controls are dominated by Firmicutes (mean relative abundance, SCI vs. controls: 50.",
+    "8% vs. 34 3%), with the families Ruminococcaceae (15.",
+    "In particular, SCI patients are enriched in several families variously involved in inflammation-based disorders45,46,47,48, such as Coriobacteriaceae (3.",
+    "8% vs. 0 5%), Enterococcaceae (6.",
+    "Moreover, they showed a decrease in Prevotellaceae (0.",
+    "001) (Fig. 2B) Consistent data were obtained at the genus level and confirmed by Random Forests, resulting in the identification of the following highly discriminatory taxa: Methanobrevibacter (0.",
+    "However, a few microbial signatures consistent with literature were highlighted, including lower representation of Bacteroidetes members and Faecalibacterium, and enrichment of enterobacteria in patients following enteral/parenteral nutrition vs. those fed per os (p\u2009\u2264\u20090.",
+    "Such a discrimination is mainly related to a lower representation of Streptococcus and Faecalibacterium while greater proportions of Bacteroides and Rikenellaceae in the Catania-derived samples compared to the other spinal units (p\u2009\u2264\u20090 04, Kruskal\u2013Wallis test) (Supplementary Fig. S8)."
+   ]
+  },
+  {
+   "id": "2:Selenomonas",
+   "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+   "taxon": "Selenomonas",
+   "sentences_naming_taxon": [
+    "The results showed the enrichment of Pediococcus , Selenomonas , Anaerosinus , Lactobacillus , Pseudomonas , and Bifidobacterium , and the lack of Barnesiella in MHE patients ( Figure 4A ).",
+    "Rifaximin treatment reduced the abundance of Clostridium , Pediococcus , Ruminococcus , Streptococcus , Selenomonas , Biophila , Desulfovibrio , and Pseudomonas , and increased the abundance of Barnesiella ( Figure 4C ).",
+    "The results showed the enrichment of Selenomonas , Anaerosinus , Lactobacillus , Pediococcus , and Prevotella , and the lack of Ruminococcus , Barnesiella , and Gemmiger ."
+   ],
+   "other_sentences_from_the_paper": [
+    "A previous study has reported that intestinal microbiota changes in patients with decompensated cirrhosis are characterized by a relative decrease of potentially beneficial autochthonous taxa, particularly Lachnospiraceae, Ruminococcaceae, and Clostridiales XIV, with relative overgrowth of potentially pathogenic taxa, e.g., Staphylococcaceae, Enterobacteriaceae, and Enterococcaceae ( Bajaj et al., 2014b ).",
+    "They also found that the relative abundance of Lactobacillaceae in stool and salivary microbiota was higher in cirrhotic patients with MHE than in those without MHE; meanwhile, stool and salivary Lachnospiraceae genera ( Ruminococcus and Clostridium XIVb ) were associated with good cognition ( Bajaj et al., 2019 ).",
+    "The relative abundance at the phylum level showed the enrichment of Proteobacteria and the lack of Bacteroidetes, and the relative abundance at the genus level showed the enrichment of enterobacteriaceae and the lack of Bacteroidetes in in MHE patients as compared with control individuals before treatment.",
+    "FIGURE 3 FIGURE 4 Alterations of taxonomic and metabolic compositions following treatment The top 5 relative abundance at the phylum level showed the trend of increased Bacteroidetes in MHE after treatment, regardless of the treatment methods.",
+    "The relative abundance of Pediococcus , Lactobacillus , Akkermansia , and Macellibacteroides decreased, while the abundance of Barnesiella , Dorea , and Roseburia increased after probiotics treatment ( Figure 4B ).",
+    "The Lac group showed lower abundance of Pediococcus , Clostridium , and Pseudomonas , and higher abundance of Anaerosinus and Akkermansia ( Figure 4D ).",
+    "Pediococcus , Rothia , and Allobaculum were positively correlated with alanine aminotransferase; Bilophila was negatively correlated with serum albumin; Odoribacter was positively correlated with ammonia; Succinispira was positively correlated with TBIL, prothrombin time (PT), and CTP, and negatively correlated with serum albumin; Subdoligranulum was negatively correlated with alanine aminotransferase and aspartate aminotransferase; Akkermansia was negatively correlated with MELD; Clostridium was positively correlated with aspartate aminotransferase; Dorea and Roseburia were positively correlated with serum albumin; Lactobacillus was negatively correlated with PT ( Figure 7A ).",
+    "Particularly, Barnesiella was negatively correlated with PT ( p = 0.0092), MELD ( p = 0.035), and INR ( p = 0.018) performance after correction; Bacteroides was negatively correlated with CTP score ( p = 0.0046) and positively correlated with serum albumin level ( p = 0.046) after correction; Bifidobacterium was positively correlated with serum creatinine level ( p = 0.044) ( Figure 7B )."
+   ]
+  },
+  {
+   "id": "5:Akkermansia muciniphila",
+   "title": "Difference in gut microbial dysbiotic patterns between body-first and brain-first Parkinson's disease.",
+   "taxon": "Akkermansia muciniphila",
+   "sentences_naming_taxon": [
+    "The gut microbiome in body-first PD showed a distinct profile, characterized by an increased presence of Escherichia coli and Akkermansia muciniphila, and a decreased abundance of short-chain fatty acid-producing commensal bacteria."
+   ],
+   "other_sentences_from_the_paper": []
+  },
+  {
+   "id": "10:Akkermansia muciniphila",
+   "title": "Gut bacteria from multiple sclerosis patients modulate human T cells and exacerbate symptoms in mouse models.",
+   "taxon": "Akkermansia muciniphila",
+   "sentences_naming_taxon": [
+    "Akkermansia muciniphila and Acinetobacter calcoaceticus , both increased in MS patients, induced proinflammatory responses in human peripheral blood mononuclear cells and in monocolonized mice.",
+    "Finally, all OTUs that mapped to the Akkermansia genus belonged to the species Akkermansia muciniphila , which has been studied mostly in the context of metabolism ( 22 ) but also contributes to inflammation during infection ( 12 , 23 )."
+   ],
+   "other_sentences_from_the_paper": [
+    "In contrast, Parabacteroides distasonis , which was reduced in MS patients, stimulated antiinflammatory IL-10\u2013expressing human CD4 CD25 T cells and IL-10 FoxP3 Tregs in mice.",
+    "Among the genera significantly increased in MS samples were Acinetobacter and Akkermansia , while one of the most significantly reduced genera in MS patients was Parabacteroides , with the majority of OTUs mapping to Parabacteroides distasonis ( Fig. 2 C and SI Appendix , Fig. S3 ).",
+    "To show that exposure to any differentially abundant bacteria did not elicit similar effects, we analyzed the immune effects of Eggerthella lenta , which is significantly increased in MS patients, and found that it did not alter Th1 or Treg differentiation ( SI Appendix , Fig. S3 A and B ).",
+    "Interestingly, some of the changes in relative abundance of individual bacterial genera, including a decrease in Sutterella and an increase in Ruminococcus , were also observed in mice colonized with microbiota from MS-discordant twins ( SI Appendix , Fig. S9 C ) ( 25 ).",
+    "Notably, in a recently published study ( 12 ), as well as in companion the MS-discordant twin study in this issue of PNAS ( 25 ), Akkermansia was reported to be elevated in untreated MS patients.",
+    "Recently, another model of molecular mimicry-mediated CNS autoimmunity was proposed when aquaporin four-specific T lymphocytes from neuromyelitis optica patients were found to recognize a peptide from Clostridium perfringens and induce a Th17 bias ( 6 ), and this organism was found to be overabundant in neuromyelitis optica patients compared with healthy controls ( 35 ).",
+    "Scher JU, et al.  Expansion of intestinal Prevotella copri correlates with enhanced susceptibility to arthritis.",
+    "Miyake S, et al.  Dysbiosis in the gut microbiota of patients with multiple sclerosis, with a striking depletion of species belonging to Clostridia XIVa and IV clusters."
+   ]
+  },
+  {
+   "id": "13:Lachnospiraceae_UCG-004",
+   "title": "Gut microbiota dysbiosis in patients with Alzheimer\u2019s disease and correlation with multiple cognitive domains",
+   "taxon": "Lachnospiraceae_UCG-004",
+   "sentences_naming_taxon": [
+    "The abundance of Butyricicoccus was positively associated with abstraction, and the abundance of Lachnospiraceae_UCG-004 was positively associated with attention, language, orientation in AD patients.",
+    "The abundance of Lachnospiraceae_UCG-004 was positively associated with attention, language, orientation in AD patients ( p <\u20090.05).",
+    "Figure 3 3.4 Prediction of specific cognitive domains in AD patients As shown in Figure 4 , the discriminating models based on the characteristic and correlated bacteria, such as Lactobacillus , Butyricicoccus and Lachnospiraceae_UCG-004 could effectively distinguish low orientation from high orientation (AUC\u2009=\u20090.891, 95% CI: 0.77\u20131.0, p <\u20090.01).",
+    "Noteworthy, the abundance of Butyricicoccus was positively associated with abstraction, and the abundance of Lachnospiraceae_UCG-004 was positively associated with attention, language, orientation in AD patients.",
+    "In this study, the abundance of Butyricicoccus and Lachnospiraceae_UCG-004 could effectively distinguish between low and high orientation in AD patients, and Butyricicoccus and Agathobacter showed a good distinction between high and low orientation in AD patients.",
+    "As for Lachnospiraceae_UCG-004 , its changes in abundance were correlated with MoCA scores in this study.",
+    "While previous studies had not directly linked Lachnospiraceae_UCG-004 with cognitive function, its decreased abundance in PD ( Nishiwaki et al., 2020 ), varying levels in different subtypes of schizophrenia patients ( Kowalski et al., 2023 ), and increased richness after supplementation of prebiotics ( Rodriguez et al., 2020 ) suggested the contributing role of Lachnospiraceae_UCG_004 in maintaining microecological balance and overall health.",
+    "In this study, Lachnospiraceae_UCG_004 showed significantly positive correlations with the sum of MoCA in both AD patients and sAD patients with consistent trends in mAD group, indicating the potential of Lachnospiraceae_UCG-004 as a biomarker for cognitive impairment."
+   ],
+   "other_sentences_from_the_paper": [
+    "In a clinically randomized controlled trial (RCT), the improvement of immediate memory and delayed memory functions in healthy older population were correlated with the supplementation of Bifidobacterium longum BB68S ( Shi et al., 2022 ).",
+    "Bifidobacterium was observed in the senescence-accelerated mice, as the memory deficits were improved after receiving supplementation of a probiotic preparation comprising of B. lactis, Lactobacillus casei, B. bifidum, and L. acidophilus ( Yang et al., 2020 ).",
+    "The abundance of Lactobacillus in mice with impaired memory was negatively correlated with the activation of NF-\u0138B signaling pathway ( Jang et al., 2018 ), and Ruminococcaceae_UCG_004 was prominently associated with attention deficit symptom in attention-deficit/hyperactivity disorder patients ( Szopinska-Tokov et al., 2020 ), suggesting that the changes of different bacteria might be related to the alterations of different cognitive domains.",
+    "Significant bacteria of sAD group mainly included g_ Sellimonas , and mAD group mainly included g_ Bacillus , and g_ Leuconostoc , while g_ Agathobacter , g_ Phascolarctobacterium , g_ Butyricicoccus , g_ Fusobacterium , g_ Haemophilus , g_ Lachnospiraceae _UCG-001, g_ Parasutterella , g_ Lachnospiraceae _ND3007_group, g_ Lachnospira , and g_ Lachnospiraceae _UCG-004 were involved in HC group.",
+    "Figure 2 3.3 Associations of gut bacteria and SCFAs with specific cognitive domains of AD patients As shown in Figure 3 , the abundance of Butyricicoccus was positively associated with abstraction but negatively associated with orientation in mAD patients ( p <\u20090.05).",
+    "Furthermore, the abundance of Sellimonas exhibited negative correlations with MoCA items in sAD patients, while showed opposite correlation in mAD patients.",
+    "Moreover, Butyricicoccus and Agathobacter showed a good distinction between high and low abstraction in AD patients (AUC: 0.797, 95% CI: 0.643\u20130.952, p =\u20090.007), when combining isobutyric acid and isovaleric acid, the AUC improved to 0.839 (95% CI: 0.667\u20131.0, p =\u20090.002) (See Supplementary Figures 1 \u2013 3 ).",
+    "As cognitive impairment worsened, the abundance of Lachnospiraceae _UCG-004 gradually decreased ( Yamashiro et al., 2024 ), consistent with our results."
+   ]
+  },
+  {
+   "id": "14:Fusobacteriota",
+   "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+   "taxon": "Fusobacteriota",
+   "sentences_naming_taxon": [
+    "For the major bacteria that were identified to be altered in 16S rRNA NGS ( Firmicutes, Bacteroidetes, and Fusobacteria ), SYBR qPCR (Roche LightCycler480 Real Time PCR) was performed using the primer sets described in previous studies [ 41 , 42 ].",
+    "High fecal Fusobacteria abundance is positively correlated with microbial translocation in spinal-onset ALS, whereas high oral Fusobacteria abundance is positively correlated with microbial translocation in bulbar-onset ALS Fusobacteria is described as an \u201cenabler\u201d for other microbes to translocate to the blood because it can disrupt endothelial cell junctions and increase blood vessel permeability to microbes [ 70 ].",
+    "High fecal Fusobacteria abundance is positively correlated with microbial translocation in spinal-onset ALS, whereas high oral Fusobacteria abundance is positively correlated with microbial translocation in bulbar-onset ALS Fusobacteria is described as an \u201cenabler\u201d for other microbes to translocate to the blood because it can disrupt endothelial cell junctions and increase blood vessel permeability to microbes [ 70 ].",
+    "High fecal Fusobacteria abundance is positively correlated with microbial translocation in spinal-onset ALS, whereas high oral Fusobacteria abundance is positively correlated with microbial translocation in bulbar-onset ALS Fusobacteria is described as an \u201cenabler\u201d for other microbes to translocate to the blood because it can disrupt endothelial cell junctions and increase blood vessel permeability to microbes [ 70 ].",
+    "Consistent with strong associations between gut-dysbiosis and microbial translocation in sALS (Fig. 6 ), fecal Fusobacteria abundance was significantly increased in sALS but not in bALS (Fig. 7 A, Supplemental Fig. 3 , 4 ).",
+    "Further, fecal Fusobacteria abundance was strongly associated with microbial translocation in sALS ( r =\u20090.7807, P <\u20090.0001; Fig. 7 B) but not in bALS ( r =\u20090.0209, P =\u20090.9560; Fig. 7 B).",
+    "In contrast, oral Fusobacteria abundance was significantly increased in bALS but not in sALS (Fig. 7 C, Supplemental Fig. 3 , 4 ).",
+    "Additionally, oral Fusobacteria abundance was strongly associated with microbial translocation in bALS ( r =\u20090.7692, P =\u20090.0049; Fig. 7 D) but not in sALS ( r =\u20090.1573, P =\u20090.4629; Fig. 7 D)."
+   ],
+   "other_sentences_from_the_paper": [
+    "Results sALS patients manifested significant gut-dysbiosis, primarily driven by increased\u00a0fecal Firmicutes/Bacteroidetes- ratio ( F/B- ratio).",
+    "Additionally, significantly elevated levels of IgG against specific periodontal bacteria (e.g. Porphyromonas gingivalis ) were highly predictive of cognitive/memory impairments in older adults and patients with AD and dementia [ 26 \u2013 30 ].",
+    "Increased fecal Firmicutes / Bacteroidetes ratio drives gut-dysbiosis in spinal-onset ALS, whereas decreased oral Firmicutes / Bacteroidetes ratio drives oral-dysbiosis in bulbar-onset ALS To identify the source of dysbiosis, we performed phylogenetic composition analysis (Fig. 3 A, D ).",
+    "Firmicutes and Bacteroidetes comprise the majority of the gut- and oral-microbiome [ 49 ], and imbalance in the Firmicutes / Bacteroidetes -ratio ( F/B- ratio) is associated with poor health outcomes [ 50 ].",
+    "However, sALS patients, but not bALS patients, showed a significant enrichment of Firmicutes along with a depletion of Bacteroidetes in stool samples, resulting in a significant increase in fecal F/B- ratio ( F / B >\u20091, Fig. 3 A-C, Supplemental Figs. 3 , 4 ).",
+    "However, bALS patients, but not sALS patients, showed a significant depletion of Firmicutes and enrichment of Bacteroidetes (Fig. 3 D, E , Supplemental Figs. 3 , 4 ).",
+    "Here, we found the shift in fecal F/B- ratio in sALS to be mainly driven by a significant enrichment of the Ruminococcaceae family ( Firmicutes phyla) and depletion of the Bacteroidaceae family ( Bacteroidetes phyla) (Fig. 4 A).",
+    "Similar to our results, AD/PD animal models and patients showed a twofold enrichment of Ruminococcaceae along with a 50% decrease in Bacteroidaceae in stool samples [ 51 \u2013 53 ] and drastically increased fecal F/B- ratio [ 54 ]."
+   ]
+  },
+  {
+   "id": "21:Ruminococcaceae_UCG_002",
+   "title": "Uncovering the characteristics of the gut microbiota in patients with acute ischemic stroke and phlegm-heat syndrome",
+   "taxon": "Ruminococcaceae_UCG_002",
+   "sentences_naming_taxon": [
+    "Furthermore, the genera, Ruminococcaceae_UCG_002 and Christensenellaceae_R-7_ group , were significantly more abundant in the tAIS group, the abundance of Megasphaera and Escherichia_Shigella was highest in the ntAIS group ( Fig 9 ).",
+    "LEfSE analysis revealed that the genera, Ruminococcaceae_UCG_002 and Christensenellaceae_R-7_group belonging to the class Clostridia in the phylum Firmicutes could assist in distinguishing between individuals in the tAIS and ntAIS groups because they were significantly more abundant in tAIS group.",
+    "Notably, the LEfSE analysis showed that the genus, Ruminococcaceae_UCG_002 was more abundant in the tAIS group than in the ntAIS.",
+    "Ruminococcaceae_UCG_002 and Christensenellaceae_R-7_group could be applied to determine and differentiate the profile of PHS, was a key finding of this study and provided novel insight for a reasonable explanation on the cause of constipation and more severe neurological dysfunction in the AIS patients with PHS, which suggested that early diagnosis and early intervention was of significant implication in clinical practice.",
+    "Ruminococcaceae_UCG_002 and Christensenellaceae_R-7_group could be applied to determine and differentiate the profile of PHS, was a key finding of this study and provided novel insight for a reasonable explanation on the cause of constipation and more severe neurological dysfunction in the AIS patients with PHS,which suggested that early diagnosis and early intervention was of significant implication in clinical practice."
+   ],
+   "other_sentences_from_the_paper": [
+    "The genera, Ruminococcaceae_ UCG_002 and Christensenellaceae_R-7_group , were implicated in the discrimination of PHS from non-PHS.",
+    "The order Lactobacillales and family Lachnospiraceae were significantly negatively correlated with NIHSS and mRS at admission (P 0.05).",
+    "By contrast, the order Desulfovibrionales , families Christensenellaceae and Desulfovibrionaceae , and genera Ruminococcaceae UCG-014 and Ruminococcaceae UCG-002 were significantly positively correlated with NIHSS and mRS at admission (P 0.05).",
+    "The relative abundance of Firmicutes and Bacteroidetes in the ntAIS and tAIS group showed a trend of lower values than that of the HC group.",
+    "By contrast, the relative abundance of Actinobacteria and Proteobacteria in the ntAIS and tAIS group showed a trend of higher values than that of the HC group.",
+    "The ntAIS and tAIS groups exhibited significantly higher levels of Verrucomicrobia and Synergistetes than the HC group (P 0.05) ( Fig 5 ).",
+    "The highest abundance of Megamonas was found in the HC group (P 0.05), whereas this group had the lowest abundance of Akkermansia and Olsenella (P 0.05).",
+    "The abundance of Veillonella was highest in the ntAIS group (P 0.05)."
+   ]
+  }
+ ]
+}

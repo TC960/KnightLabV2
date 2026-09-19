@@ -1,0 +1,32 @@
+You are doing a narrow, mechanical reading task. Do NOT explore the repository. Do NOT read any file other than your assigned input file.
+
+INPUT:  /home/user/KnightLabV2/proj_2_attempt3/kg/_ccbatch/batchN.json
+OUTPUT: /home/user/KnightLabV2/proj_2_attempt3/kg/_ccbatch/verdictsN.json
+
+The input has `observations`: a list of {id, title, taxon, sentences_naming_taxon, other_sentences_from_the_paper}. All sentences are verbatim excerpts from that paper.
+
+For EACH observation answer ONE question:
+
+  Does this paper report THIS TAXON as differing between a DISEASED group and a HEALTHY / NORMAL / UNAFFECTED CONTROL group?
+
+verdict — pick exactly one:
+  "CONTROL_CONTRAST" : yes. At least one sentence reports this taxon as higher/lower in a diseased group versus healthy, normal, unaffected, cognitively-normal or non-diseased controls.
+  "SUBGROUP_ONLY"    : no. Every sentence reporting this taxon compares two subgroups WITHIN a disease population, or compares treatment arms, or compares two different diseases — never against a healthy/normal control group.
+  "NO_COMPARISON"    : the sentences report the taxon but never say what it was compared against.
+  "UNCLEAR"          : you genuinely cannot tell.
+
+RULES
+- Use ONLY the supplied sentences. No outside knowledge of the paper.
+- A background condition shared by BOTH arms (everyone has HIV, everyone has cirrhosis) does NOT make it a control contrast. Ask what DIFFERS between the arms.
+- A sentence about some OTHER taxon does not count, however clearly it names controls. The question is about the named taxon.
+- `other_sentences_from_the_paper` is context only. The verdict must rest on `sentences_naming_taxon`.
+
+Also record:
+  quotes     : 1 to 2 sentences COPIED EXACTLY, byte for byte, from that observation's `sentences_naming_taxon`. Do not paraphrase, do not fix typos or spacing, do not trim or join. A quote that is not an exact substring is rejected and the verdict discarded. Use [] only if genuinely nothing supports it.
+  confidence : "high" | "medium" | "low"
+  note       : one short sentence.
+
+OUTPUT: one JSON file, a list of objects:
+[{"id":"...","title":"...","taxon":"...","verdict":"...","quotes":["..."],"confidence":"...","note":"..."}, ...]
+
+It must cover EVERY observation in your input file, with `id` copied exactly. Verify it parses and count the records. Report only that count.

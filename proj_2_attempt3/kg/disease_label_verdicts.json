@@ -1,0 +1,456 @@
+[
+ {
+  "node_label": "Spinal cord injury",
+  "title": "Alterations in the fecal microbiota of patients with spinal cord injury",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "Gungor et al . conducted a clinical study that included 30 patients with SCI and 10 healthy controls, and found that some genera, such as Roseburia , Pseudobutyrivibrio , Dialister , and Megamonas , which are butyrate-producing bacteria, were significantly less abundant in patients with SCI than in healthy subjects [ 14 ]."
+  ],
+  "confidence": "high",
+  "note": "Clear HC design comparing SCI patients to healthy controls; label names the disease that differs."
+ },
+ {
+  "node_label": "Spinal cord injury",
+  "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "the microbial profiles of both SCI patients and healthy controls are dominated by Firmicutes (mean relative abundance, SCI vs. controls: 50."
+  ],
+  "confidence": "high",
+  "note": "Primary contrast is SCI patients vs healthy controls; secondary analysis of SCI subgroups by severity."
+ },
+ {
+  "node_label": "Spinal cord injury",
+  "title": "Intestinal Microbiota in Patients with Spinal Cord Injury.",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "In comparison to the healthy group, total bacterial counts of Pseudobutyrivibrio , Dialister and Megamonas genera were significantly lower in UMN bowel dysfunction group."
+  ],
+  "confidence": "high",
+  "note": "Compares SCI subgroups (UMN/LMN bowel dysfunction) to healthy controls; label names the disease."
+ },
+ {
+  "node_label": "Spinal cord injury",
+  "title": "Relationship between gut microbiota and lymphocyte subsets in Chinese Han patients with spinal cord injury",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "not stated",
+  "quotes": [
+   "Compared with healthy controls, the relative abundance of Fusobacteria in SCI patients was significantly reduced ( P = 0.0315), and the relative abundance of Synergistetes ( P = 0.0437) and Actinomycota ( P 0.0001) were significantly increased ( Figure 3B )."
+  ],
+  "confidence": "high",
+  "note": "Direct comparison of SCI patients to healthy controls; label correctly identifies the disease."
+ },
+ {
+  "node_label": "Spinal cord injury",
+  "title": "Spinal cord injury-induced gut dysbiosis influences neurological recovery partly through short-chain fatty acids",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "not stated",
+  "quotes": [
+   "Compared with the control group, the SCI group had reduced Faecalibacterium , Megamonas , and Agathobacter relative abundances; additionally, the SCI group had increased Enterococcus and Klebsiella abundances."
+  ],
+  "confidence": "high",
+  "note": "Clear HC comparison; SCI group vs control group; label names the disease that differs."
+ },
+ {
+  "node_label": "Spinal cord injury",
+  "title": "The gut microbiota and metabolite profiles are altered in patients with spinal cord injury",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "not stated",
+  "quotes": [
+   "At the genus level, compared with the control group, the abundance of UBA1819 , Anaerostignum , Eggerthella , and Enterococcus was significantly increased in the SCI group, whereas that of Faecalibacterium , Blautia , Escherichia \u2013 Shigella , Agathobacter , Collinsella , Dorea , Ruminococcus , Fusicatenibacter , and Eubacterium was decreased."
+  ],
+  "confidence": "high",
+  "note": "SCI patients vs control group; label names the disease correctly."
+ },
+ {
+  "node_label": "Essential tremor",
+  "title": "Altered gut microbiome and serum metabolome profiles associated with essential tremor",
+  "contrast_type": "UNCLEAR",
+  "label_verdict": "UNCLEAR",
+  "body_site": "other",
+  "quotes": [],
+  "confidence": "low",
+  "note": "Only one informative sentence available; does not specify what groups are being compared."
+ },
+ {
+  "node_label": "Essential tremor",
+  "title": "Specific gut microbiota alterations in essential tremor and its difference from Parkinson's disease.",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "not stated",
+  "quotes": [
+   "Compared with NC, 7 genera were significantly reduced in ET, 4 of which ( Ruminococcus, Romboutsia, Mucispirillum, and Aeromonas ) were identified to be distinctive with an area under the curve (AUC) of 0.705."
+  ],
+  "confidence": "high",
+  "note": "Primary contrast is ET vs normal controls (HC); label names the disease that differs."
+ },
+ {
+  "node_label": "Chronic traumatic complete spinal cord injury",
+  "title": "Gut microbiota dysbiosis in male patients with chronic traumatic complete spinal cord injury",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "The abundance of Bacteroidaceae and Bacteroides in the quadriplegia group and Acidaminococcaceae, Blautia, Porphyromonadaceae, and Lachnoclostridium in the paraplegia group were significantly higher than those in the healthy male group."
+  ],
+  "confidence": "high",
+  "note": "Compares chronic traumatic complete SCI patients (including quadriplegia/paraplegia subgroups) to healthy males; label names the specific SCI condition."
+ },
+ {
+  "node_label": "Poststroke aphasia",
+  "title": "Crosstalk between the gut microbiota and brain network topology in poststroke aphasia patients: perspectives from neuroimaging findings",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "not stated",
+  "quotes": [
+   "Interestingly, the dysbiosis of the intestinal microenvironment in the PSA group was characterized by increased relative abundances of Bifidobacterium , Blautia , and Bacteroides , as well as significantly lower abundances of Faecalibacterium and Eubacterium , compared to the healthy control group."
+  ],
+  "confidence": "high",
+  "note": "Compares PSA patients to healthy control group; label names the disease correctly."
+ },
+ {
+  "node_label": "Sporadic Creutzfeldt-Jakob disease",
+  "title": "Gut microbiota and metabolome in sporadic Creutzfeldt-Jakob disease.",
+  "contrast_type": "UNCLEAR",
+  "label_verdict": "UNCLEAR",
+  "body_site": "other",
+  "quotes": [],
+  "confidence": "low",
+  "note": "Single sentence mentions 'increased' taxa but does not specify the comparison group or control."
+ },
+ {
+  "node_label": "Cognitive impairment",
+  "title": "Air particulate pollution exposure associated with impaired cognition via microbiota gut-brain axis: an evidence from rural elderly female in northwest China.",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "not stated",
+  "quotes": [
+   "Relative abundance of core bacteria Faecalibacterium (top 1 genus) in FAD was reduced (13.65% vs 19.81%, P = 0.0235), while Escherichia_Shigella and Akkermansia was increased."
+  ],
+  "confidence": "high",
+  "note": "Compares FAD (cognitive impairment) subjects to controls using microbiota relative abundance metrics."
+ },
+ {
+  "node_label": "Cognitive impairment",
+  "title": "Differential Patterns of Gut and Oral Microbiomes in Hispanic Individuals with Cognitive Impairment.",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "other",
+  "quotes": [
+   "While diversity metrics showed no significant differences between CI and NC groups, differential abundance analysis revealed an increased presence of oral genera such as Dialister , Fretibacterium , and Mycoplasma in CI participants."
+  ],
+  "confidence": "high",
+  "note": "Explicitly compares CI vs cognitively normal (NC) individuals across both gut and oral microbiomes."
+ },
+ {
+  "node_label": "Cognitive impairment",
+  "title": "Gut Microbiota and Targeted Biomarkers Analysis in Patients With Cognitive Impairment",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "not stated",
+  "quotes": [
+   "Patients with CI had higher abundances of Actinobacteria and Proteobacteria but lower proportions of Bcateroidetes and Firmicutes vs. that in the control group."
+  ],
+  "confidence": "high",
+  "note": "Microbiota study directly comparing CI patients to controls via phylum-level abundance."
+ },
+ {
+  "node_label": "Cognitive impairment",
+  "title": "Gut microbiome, cognitive function and brain structure: a multi-omics integration analysis",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "not stated",
+  "quotes": [
+   "Besides, the results revealed that Odoribacter , Butyricimonas , and Bacteroides were inversely associated with cognitive impairment in the GNHS and the AD case\u2013control study (Fig. 3 d and Additional file 1 : Table S5), which were considered as key genera."
+  ],
+  "confidence": "high",
+  "note": "Multi-omics study with case-control design measuring protective microbial associations with cognitive impairment."
+ },
+ {
+  "node_label": "Idiopathic normal pressure hydrocephalus",
+  "title": "Gut microbiome signatures in iNPH: Insights from a shotgun metagenomics study.",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "not stated",
+  "quotes": [
+   "Microbiome analysis showed an enrichment of species previously linked to various disease states, such as Enterocloster bolteae and Ruminococcus gnavus , indicating general dysbiosis."
+  ],
+  "confidence": "high",
+  "note": "Metagenomics study comparing iNPH patients to both elderly and normal-volunteer healthy controls."
+ },
+ {
+  "node_label": "Traumatic brain injury",
+  "title": "The altered TBI fecal microbiome is stable and functionally distinct",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "Abundance differences between average TBI and healthy FMBs revealed Bacteroides caccae, B . uniformis, Blautia spp., Collinsella spp., Dialister spp., and Ordoribacter spp. were significantly different."
+  ],
+  "confidence": "high",
+  "note": "Fecal microbiome study explicitly comparing TBI patients to healthy controls with stability analysis."
+ },
+ {
+  "node_label": "Tuberous sclerosis complex",
+  "title": "Gut microbiota signatures in tuberous sclerosis complex and epilepsy: a pilot study",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "not stated",
+  "quotes": [
+   "When detailing the taxonomy phylogenetic levels among the three studied groups ( Figure 2 ), we observed a significant decrease in the Firmicutes relative abundances within the TSC and EPI groups compared to healthy controls (50.1% HC vs. 33.6% TSC, adj p = 0.015; 50.1% HC vs. 38.0% EPI, adj p = 0.044)."
+  ],
+  "confidence": "high",
+  "note": "Pilot study comparing TSC, epilepsy, and healthy control gut microbiota with explicit statistical comparisons."
+ },
+ {
+  "node_label": "REM sleep behavior disorder\u2013Lewy body disease continuum",
+  "title": "Blood microbiome signatures in the REM sleep behavior disorder-Lewy body disease continuum",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "blood",
+  "quotes": [
+   "Significant differences were observed in the abundances of four genera in the RBD\u2013LBD continuum group compared to controls: Stenotrophomonas was significantly increased, whereas Lactobacillus , Enhydrobacter , and Acetobacter were significantly decreased (Fig. 2 A)."
+  ],
+  "confidence": "high",
+  "note": "Blood microbiome study comparing RBD-LBD continuum disease state to healthy controls."
+ },
+ {
+  "node_label": "Intracerebral hemorrhage",
+  "title": "Gut microbiota dysbiosis and neurological function recovery after intracerebral hemorrhage: an analysis of clinical samples",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "Linear discriminant analysis effect size (LEfSe) was used to reveal significant bacterial differences in gut microbiota among the different phases of the ICH and control groups at the genus level, and the results revealed that Bacteroides , Faecalibacterium , Ruminococcus , Roseburia , Gemmiger , and Lachnospiraceae were significantly overrepresented in the control group."
+  ],
+  "confidence": "high",
+  "note": "Clear disease (ICH patients) vs healthy control comparison on gut microbiota."
+ },
+ {
+  "node_label": "Intracerebral hemorrhage",
+  "title": "Multi-omics reveals specific host metabolism-microbiome associations in intracerebral hemorrhage",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "We found a significant decrease in the phylum of Firmicutes and a significant increase of Bacteroidetes in ICH patients.",
+   "Clostridia , Clostridiales , Ruminococcaceae , Clostridiaceae , Clostridium , and Peptostreptococcaceae were the most abundant microbial groups in the HC group (LDA value (log10) 4)."
+  ],
+  "confidence": "high",
+  "note": "Explicitly compares ICH patients to HC group with clear taxonomic differences."
+ },
+ {
+  "node_label": "Intracerebral hemorrhage",
+  "title": "The protective effect of Blautia coccoides in secondary injury of intracerebral hemorrhage",
+  "contrast_type": "SUBGROUP",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "Among them, Blautia drew our attention as it was significantly expressed in the HC and ICH-S groups compared to that in the ICH-D group ( Figure 2E )."
+  ],
+  "confidence": "high",
+  "note": "Primary human comparison is ICH subgroups (survivors ICH-S vs deceased ICH-D), with HC as reference."
+ },
+ {
+  "node_label": "Attention-deficit/hyperactivity disorder",
+  "title": "Gut metagenomic characteristics of ADHD reveal low Bacteroides ovatus-associated host cognitive impairment",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "Eight species became progressively attenuated or enriched when comparing the compositions of HCs to those of I-ADHD and C-ADHD; in particular, the abundance of Bacteroides ovatus was depleted in patients with C-ADHD."
+  ],
+  "confidence": "high",
+  "note": "Compares healthy controls to ADHD patient subgroups (inattentive and combined)."
+ },
+ {
+  "node_label": "Hemorrhagic transformation",
+  "title": "Hemorrhagic transformation in patients with large-artery atherosclerotic stroke is associated with the gut microbiota and lipopolysaccharide",
+  "contrast_type": "SUBGROUP",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "The patients with ischemic stroke who developed hemorrhagic transformation exhibited altered gut microbiota composition, in particular an increase in the relative abundance and diversity of members belonging to the Enterobacteriaceae family.",
+   "Plasma lipopolysaccharide and lipopolysaccharide-binding protein levels were higher in the hemorrhagic transformation group compared with the non-hemorrhagic transformation group."
+  ],
+  "confidence": "high",
+  "note": "Compares stroke subgroups: with vs without hemorrhagic transformation development."
+ },
+ {
+  "node_label": "Traumatic thoracic spinal cord injury",
+  "title": "Profile of gut microbiota in patients with traumatic thoracic spinal cord injury and its clinical implications: a case-control study in a rehabilitation setting",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "Compared to the healthy individuals, Actinobacteria and Synergistetes were found to be significantly enriched in patients with CTSCI, and both of them are pivotal in the maintenance of gut homeostasis [ 31 , 32 ]."
+  ],
+  "confidence": "high",
+  "note": "Case-control study explicitly comparing SCI patients (CTSCI and ITSCI forms) to healthy individuals."
+ },
+ {
+  "node_label": "Familial dysautonomia",
+  "title": "Gut microbiome dysbiosis drives metabolic dysfunction in Familial dysautonomia.",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "Also, the abundance of seven OTUs identified by random forest analysis and typically associated with human health were altered, four of which were less abundant in cluster 1 (Fig. 2a and Supplementary Fig. 3 ) and among FD patients in general, including Faecalibacterium"
+  ],
+  "confidence": "medium",
+  "note": "Limited data (1 sentence); mentions patient-relative pairs suggesting FD patients vs unaffected relatives."
+ },
+ {
+  "node_label": "CADASIL",
+  "title": "Analysis of gut microbiota in patients with cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy (CADASIL)",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "In CADASIL patients compared with controls, there was a significant increase in abundance of 6 genera ( Lachnospira , Odoribacter , Parvimonas , unclassified genus belonging to Barnesiellaceae and Lachnospiraceae , unclassified genus belonging to order SHA-98), and a significant decrease in 2 genera ( Megasphaera and Acidaminococcus ) (Table 2 )."
+  ],
+  "confidence": "high",
+  "note": "Direct comparison of CADASIL patients versus healthy controls; CADASIL is the disease being studied."
+ },
+ {
+  "node_label": "CADASIL",
+  "title": "Gut microbes exacerbate systemic inflammation and behavior disorders in neurologic disease CADASIL",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "In particular, the patient group was characterized by a higher abundance of Porphyromonas and Akkermansia , while the control group harbored more abundant Sutterella in the gut (Fig. S 2 )."
+  ],
+  "confidence": "high",
+  "note": "Patient group (CADASIL) versus control group; CADASIL defines the diseased arm."
+ },
+ {
+  "node_label": "Hepatitis B virus-associated liver cirrhosis",
+  "title": "Changes in intestinal microbiota of HBV-associated liver cirrhosis with/without hepatic encephalopathy",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "Our study findings show that the relative abundance of Bacteroidia , Streptococcaceae , Cardiobacteriaceae , Veillonella , Bacteroidales , and Pasteurellales was significantly higher in the HBV-LC group than in the control group, but the relative abundance of Lachnospiraceae , Adlercreutzia , Blautia , and Turicibacterales significantly reduced ( P .05)."
+  ],
+  "confidence": "high",
+  "note": "HBV-LC patients compared with healthy control group; label names the diseased condition."
+ },
+ {
+  "node_label": "Hypertensive intracerebral hemorrhage",
+  "title": "Gut microbiota composition reflects disease progression, severity and outcome, and dysfunctional immune responses in patients with hypertensive intracerebral hemorrhage",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "not stated",
+  "quotes": [
+   "Enterococcus enrichment and Prevotella depletion were more significant in the ICH group and were associated with the severity and functional outcome of ICH."
+  ],
+  "confidence": "high",
+  "note": "ICH patients compared with control group; intracerebral hemorrhage is the disease condition."
+ },
+ {
+  "node_label": "Neurocognitive impairment",
+  "title": "Gut Microbiota and Fecal Metabolites Associated With Neurocognitive Impairment in HIV-Infected Population",
+  "contrast_type": "SUBGROUP",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "We also found that Klebsiella , which is an opportunistic pathogenic taxon, was increased in the NCI group and positively correlated with CIMT ."
+  ],
+  "confidence": "high",
+  "note": "Both NCI and non-NCI groups are HIV-infected; contrast is presence/absence of cognitive impairment within HIV population."
+ },
+ {
+  "node_label": "Hepatic encephalopathy",
+  "title": "Distinct responsiveness to rifaximin in patients with hepatic encephalopathy depends on functional gut microbial species",
+  "contrast_type": "SUBGROUP",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "Urease \u2212positive Streptococcus salivarius , which can produce ammonia, was identified as the most significantly abundant gut microbiota in the HE group, and its ability to elevate the levels of blood ammonia as well as brain glutamine was experimentally verified in mice."
+  ],
+  "confidence": "medium",
+  "note": "Compares HE patients (decompensated cirrhosis) versus compensated cirrhosis without HE within cirrhosis population; also discusses rifaximin responsiveness subgroups."
+ },
+ {
+  "node_label": "Multiple system atrophy",
+  "title": "Alterations of the Gut Microbiota in Multiple System Atrophy Patients.",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "The results showed that gut microbial community of MSA patients was significantly different from healthy controls, characterized by increased genus Akkermansia and species Roseburia hominis , Akkermansia muciniphila , Alistipes onderdonkii , Streptococcus parasanguinis , and Staphylococcus xylosus , while decreased genera Megamonas , Bifidobacterium , Blautia , and Aggregatibacter and species Bacteroides coprocola , Megamonas funiformis , Bifidobacterium pseudocatenulatum , Clostridium nexile , Bacteroides plebeius , and Granulicatella adiacens ."
+  ],
+  "confidence": "high",
+  "note": "MSA patients vs healthy controls; microbiota differences differentiate the groups."
+ },
+ {
+  "node_label": "Multiple system atrophy",
+  "title": "Altered gut microbial networks and metabolic pathways in multiple system atrophy: a comparative 16S rRNA study",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "not stated",
+  "quotes": [
+   "Results We consistently observed lower levels of Fusicatenibacter in MSA patients and lower levels of Butyricicoccus in PD patients compared with HCs (q 0.05), both before and after adjusting for comorbidities, diet, and constipation status."
+  ],
+  "confidence": "high",
+  "note": "Compares MSA and PD patients to healthy controls (HCs); primary design is HC."
+ },
+ {
+  "node_label": "Rett syndrome",
+  "title": "Rett Syndrome: A Focus on Gut Microbiota",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "At the phylum level ( Figure 3 A), the predominant bacterial taxa in feces of both RTT and CTR subjects were Bacteroidetes (CTR: 48.1 \u00b1 19.2, RTT: 51.5 \u00b1 11.2; mean \u00b1 sd) and Firmicutes (CTR: 41.9 \u00b1 18.7, RTT: 35.9 \u00b1 10.7), followed by Proteobacteria (CTR: 4.6 \u00b1 4.3, RTT: 5.8 \u00b1 5.0), Actinobacteria (CTR: 3.0 \u00b1 4.2, RTT: 3.6 \u00b1 3.9), and Verrucomicrobia (CTR: 2.0 \u00b1 2.6, RTT: 2.3 \u00b1 3.4)."
+  ],
+  "confidence": "high",
+  "note": "RTT patients compared to healthy controls (CTR); HC design with fecal samples."
+ },
+ {
+  "node_label": "Minimal hepatic encephalopathy",
+  "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+  "contrast_type": "TREATMENT",
+  "label_verdict": "NAMES_BACKGROUND",
+  "body_site": "stool",
+  "quotes": [
+   "They also found that the relative abundance of Lactobacillaceae in stool and salivary microbiota was higher in cirrhotic patients with MHE than in those without MHE; meanwhile, stool and salivary Lachnospiraceae genera ( Ruminococcus and Clostridium XIVb ) were associated with good cognition ( Bajaj et al., 2019 )."
+  ],
+  "confidence": "medium",
+  "note": "Title emphasizes treatment effects (probiotics/rifaximin/lactulose); MHE constant across arms."
+ },
+ {
+  "node_label": "Neuroinfection",
+  "title": "Patients with Infections of The Central Nervous System Have Lowered Gut Microbiota Alpha Diversity",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "stool",
+  "quotes": [
+   "Bacterial taxa such as Clostridium , Anaerostipes , Lachnobacterium , Lachnospira , and Roseburia were decreased in patients with neuroinfection when compared to controls."
+  ],
+  "confidence": "high",
+  "note": "Neuroinfection patients vs healthy controls; clear HC design."
+ },
+ {
+  "node_label": "Subjective cognitive decline",
+  "title": "Altered Gut Microbiota in Adults with Subjective Cognitive Decline: The SILCODE Study.",
+  "contrast_type": "HC",
+  "label_verdict": "CORRECT",
+  "body_site": "not stated",
+  "quotes": [
+   "Specifically, the abundance of the anti-inflammatory genus Faecalibacterium was significantly decreased in SCD compared with NC."
+  ],
+  "confidence": "high",
+  "note": "SCD vs normal controls (NC); HC design with clear comparison."
+ }
+]

@@ -36,12 +36,30 @@ and the question set changed, NOT because the graph got worse — five structura
 have each moved agreement by less than this corpus can resolve (~0.013). See
 `proj_2_attempt3/kg/SESSION_LOG.md`.*
 
-**Caveat on the gold standard.** The human annotations are under audit and are turning out to be
-unreliable; the annotator expects to report an error rate rather than a corrected set. So the
-extractor's "F1 0.680" is *agreement with a flawed reference*, not accuracy. Three independent signs
-of this: 162 of 250 papers have blank taxa columns, a thorough Opus 4.8 re-annotation found 72 taxa
-the humans missed, and the 15-paper benchmark only rose 0.64 -> 0.84 once the gold was corrected.
-Prefer the Disbiome/Peryton agreement figures — they do not depend on the in-house gold.
+**The gold standard was replaced, and the F1 caveat with it (2026-09-17).** The old reference was
+incomplete — 162 of 250 papers had blank taxa columns — so the extractor's long-quoted "F1 0.680"
+was agreement with a flawed reference, not accuracy. A new hand-curated gold
+(`high_confidence - final_constrained_override.csv`, 334 DOIs, no LLM assistance) replaces it:
+**F1 0.739** taxonomy-aware (P 0.721 / R 0.759), 0.733 char-ngram, over the 260 scoreable papers,
+permutation p = 0.001 against a null mean of 0.148. **Nothing about the model changed** — the same
+cached extractions scored 0.639 against the old reference. Two corrections are folded in: the taxon
+matcher **double-counted** (two predictions could each claim the same gold taxon; every F1 on record,
+`leaderboard.csv` included, was inflated — pre-fix 0.755/0.780), and **LCA matching is worth +0.007,
+not +0.025**. See `proj_2_attempt3/kg/FINDINGS_newgold.md`.
+
+**The gold is a TEST SET, not graph content.** It measures the extractor and must never be merged
+into the graph — a union build was made and reverted on 2026-09-17, because a partly hand-curated
+graph can no longer support the claim it exists to make ("this is what a model extracted from the
+literature"). The per-edge "human-backed vs model-only" quality tier that came with it is
+**retracted**: the model-only bucket is *defined* as the edges the human did not confirm, so that
+comparison measured corroborated vs uncorroborated, not human vs model.
+
+**The replacement, and the cleanest extractor-quality number here, because it depends on neither the
+in-house gold nor the model:** on the same 259 papers, human annotation and model output scored
+*independently* against a third party — human 80.5% (Disbiome) / 80.9% (Peryton), model 74.8% /
+73.5%. **Neither gap is significant** (Fisher p = 0.275 / 0.186). The model sits within ~6 points of
+a human curator, and a human curator's own agreement with Disbiome is 80.5%, not 100% — that is the
+ceiling, not 1.0.
 
 **Best current fidelity number (2026-09-12): reading fidelity ≥ 86.6%**, 95% CI [81.7, 91.3], from
 181/209 scoreable observations across 122 papers — measured against *the papers' own sentences*, so it
@@ -50,6 +68,39 @@ adjudicated twice independently (25/28 exact agreement) and **none is an extract
 a lower bound. It is a *different quantity* from the 73%/72.5% agreement figures — reading fidelity,
 not cross-literature reproducibility — and must not be quoted as moving them. See
 `proj_2_attempt3/kg/FINDINGS_direction_audit.md`.
+
+**Precision of SCOPE (2026-09-19): 93.3% of observations come from a confirmed
+disease-vs-healthy-control contrast, and out-of-gate is bounded at 1.8%–2.7%.** Every other
+instrument on this page scores whether an edge's *taxon and direction* are right; this one asks
+whether the *comparison* was admissible at all, which `samgated-v1` restricts to disease vs healthy
+control. All 271 contributing papers were read against their own sentences by adjudicators blinded
+to the disease label and to everything graph-side. **Quote the range, not a point estimate.**
+A **separate** number from the same pass, which must be quoted apart from that one and never added
+to it: within papers that *are* in scope, observations whose taxon is never reported against a
+control in any sentence naming it are **~1.3% of the graph, 95% CI [0.8%, 1.8%]** — 48.7% of an
+84-observation flagged set adjudicate as genuinely out-of-gate, CI [29.0, 65.8] over a
+paper-clustered bootstrap. It bounds contamination *inside the flagged set only*, so it is a floor,
+not a ceiling. Getting there required **overruling 16 of 20 adjudicator verdicts** — they inferred
+healthy-control comparators the text never states — with the re-read run in both directions (all 18
+opposing verdicts survived) and every override reasoned in `contrast_candidate_override.json`.
+Out-of-gate papers disagree with the leave-one-out literature **1.75×** as often (O/E 1.747 vs
+0.989, p = 0.00015 over 20,000 paper-level permutations, MDE ±0.303, four attacks survived) — the
+project's first *validated* quality flag, built to avoid the flaw that got the 2026-09-17 provenance
+tier retracted. It is worth ~6 excess disagreements: **a flag, not an accuracy gain.** Two nulls with
+power from the same pass — the free-text disease label does not predict out-of-gate design
+(p = 1.000, MDE ±8.5 pts), and *mixed provenance*, the dominant residual risk (94 of 241 in-scope
+papers also report a within-disease subgroup contrast), does not degrade agreement (p = 0.650,
+MDE ±0.140). See `proj_2_attempt3/kg/FINDINGS_contrast_scope.md`.
+
+**Two edge-content decisions are open and waiting on a human, both on the Alzheimer's node.** The
+SILCODE amyloid paper contributes **13 edges** to `Alzheimer's disease` and **no subject in it has
+Alzheimer's** — every result sentence contrasts cognitively normal amyloid-positive against
+cognitively normal amyloid-negative, and 10 of the 13 land on contested pairs including
+*Faecalibacterium* (16 papers). A second paper contributes **7 AD edges** from AD-with vs
+AD-without neuropsychiatric symptoms, so AD is the background rather than the contrast. Neither was
+changed: dropping a paper is a corpus-inclusion decision, and there is no correct node for
+"amyloid-positive but cognitively normal". The tiered list ships opt-in as
+`proj_2_attempt3/kg/contrast_out_of_gate.json`; `graph.json` is untouched.
 
 **Best current recall number (2026-09-16): paper-level recall ≥96.1%**, and **99.6%**
 [97.9, 99.9] counting only the one miss that is *confirmable*. Like the fidelity figure
@@ -220,8 +271,8 @@ Built from the 250-paper extraction. Published: <https://www.mohakprakash.com/Kn
 - **Edge weight is evidence count, not effect size.** The extractor returns direction only, and the
   source papers report incommensurable statistics (LEfSe LDA, fold-change, p-values). A pooled
   "magnitude" would be invented precision.
-- **Contested edges are kept, never averaged.** 217 pairs are contested (215 with papers pointing
-  both ways, 2 where one paper contradicts itself); "174" here was stale. ~1 taxon in
+- **Contested edges are kept, never averaged.** 220 pairs are contested in the current `graph.json`
+  (`meta.n_contested`; "217" and, before it, "174" were both stale). ~1 taxon in
   3 flips sign between cohorts in this literature, so disagreement is a finding, not noise.
 - **Containment is modelled, not collapsed.** 2,384 ancestor-descendant pairs sit within the same
   disease. Merging ranks would destroy real signal: in Parkinson's, *Lachnospiraceae* (family) is

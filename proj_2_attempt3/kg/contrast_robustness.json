@@ -1,0 +1,114 @@
+{
+ "baseline": {
+  "n_true": 11,
+  "n_false": 157,
+  "oe_true": 1.7469,
+  "oe_false": 0.9889,
+  "obs_true": 13,
+  "exp_true": 7.44,
+  "obs_false": 250,
+  "exp_false": 252.8,
+  "diff": 0.758,
+  "p": 0.00015,
+  "mde_abs_diff": 0.3034
+ },
+ "leave_one_out": {
+  "Combination of gut microbiota and plasma amyloid-\u03b2 as a pote": {
+   "p": 0.0001,
+   "diff": 0.8799,
+   "n_true": 10,
+   "mde": 0.3286
+  },
+  "Effect of Probiotics Supplementation on REM Sleep Behavior D": {
+   "p": 0.0005,
+   "diff": 0.6992,
+   "n_true": 10,
+   "mde": 0.3191
+  },
+  "Effects of a ketogenic and low-fat diet on the human metabol": {
+   "p": 0.0005,
+   "diff": 0.6992,
+   "n_true": 10,
+   "mde": 0.3191
+  },
+  "Gut Microbiota Changes and Their Correlation with Cognitive ": {
+   "p": 0.00035,
+   "diff": 0.6972,
+   "n_true": 10,
+   "mde": 0.3188
+  },
+  "Gut dysbiosis and lack of short chain fatty acids in a Chine": {
+   "p": 0.00015,
+   "diff": 0.8399,
+   "n_true": 10,
+   "mde": 0.3209
+  },
+  "Gut- and oral-dysbiosis differentially impact spinal- and bu": {
+   "p": 0.00025,
+   "diff": 0.6992,
+   "n_true": 10,
+   "mde": 0.3205
+  },
+  "Integrated Traditional Chinese Medicine Improves Functional ": {
+   "p": 0.0007,
+   "diff": 0.5938,
+   "n_true": 10,
+   "mde": 0.3106
+  },
+  "More than constipation - bowel symptoms in Parkinson's disea": {
+   "p": 0.00015,
+   "diff": 0.7818,
+   "n_true": 10,
+   "mde": 0.3231
+  },
+  "Prognostic Value of a Multivariate Gut Microbiome Model for ": {
+   "p": 0.00015,
+   "diff": 0.8739,
+   "n_true": 10,
+   "mde": 0.3266
+  },
+  "The ketogenic diet influences taxonomic and functional compo": {
+   "p": 0.0002,
+   "diff": 0.7274,
+   "n_true": 10,
+   "mde": 0.3218
+  },
+  "The relationship between the gut microbiome and mild cogniti": {
+   "p": 0.0001,
+   "diff": 0.8739,
+   "n_true": 10,
+   "mde": 0.3284
+  }
+ },
+ "drop_confirmed_miscall": {
+  "n_true": 11,
+  "n_false": 157,
+  "oe_true": 1.7469,
+  "oe_false": 0.9889,
+  "obs_true": 13,
+  "exp_true": 7.44,
+  "obs_false": 250,
+  "exp_false": 252.8,
+  "diff": 0.758,
+  "p": 0.00015,
+  "mde_abs_diff": 0.3034
+ },
+ "clean_out_of_gate_only": {
+  "n_true": 8,
+  "n_false": 157,
+  "oe_true": 1.4595,
+  "oe_false": 0.9889,
+  "obs_true": 9,
+  "exp_true": 6.17,
+  "obs_false": 250,
+  "exp_false": 252.8,
+  "diff": 0.4705,
+  "p": 0.0118,
+  "mde_abs_diff": 0.3639
+ },
+ "seed_sensitivity": {
+  "1": 0.00025,
+  "7": 5e-05,
+  "12345": 0.0001
+ }
+}

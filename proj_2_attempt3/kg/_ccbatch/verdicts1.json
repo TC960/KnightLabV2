@@ -1,0 +1,74 @@
+[
+  {
+    "id": "0:Butyricicoccus",
+    "title": "Alteration of the fecal microbiota in Chinese patients with Parkinson's disease.",
+    "taxon": "Butyricicoccus",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": ["Genera Clostridium IV, Aquabacterium, Holdemania, Sphingomonas, Clostridium XVIII, Butyricicoccus and Anaerotruncus were enriched in the feces of PD patients after adjusting for age, gender, body mass index (BMI), and constipation."],
+    "confidence": "high",
+    "note": "Butyricicoccus explicitly reported as enriched in PD patients vs. presumed healthy controls."
+  },
+  {
+    "id": "1:Coprococcus",
+    "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+    "taxon": "Coprococcus",
+    "verdict": "UNCLEAR",
+    "quotes": ["Faecalibacterium and Coprococcus), which probably represents a non-specific, shared response to diseases52, SCI patients show increased proportions of potentially pathogenic and pro-inflammatory bacteria, such as Enterococcus, Streptococcus and Klebsiella."],
+    "confidence": "low",
+    "note": "Sentence structure is ambiguous; unclear whether Coprococcus increases or decreases in SCI patients."
+  },
+  {
+    "id": "3:Akkermansia muciniphila",
+    "title": "Compositional and functional gut microbiota alterations in mild cognitive impairment: links to Alzheimer's disease pathology.",
+    "taxon": "Akkermansia muciniphila",
+    "verdict": "NO_COMPARISON",
+    "quotes": ["Notably, species within the same genera, such as Bacteroides and Ruminococcus , showed opposing effects, while Akkermansia muciniphila correlated with reduced amyloid burden, suggesting a protective role.", "Similarly, Akkermansia muciniphila , a well-known next-generation probiotic, showed a negative correlation with amyloid positivity."],
+    "confidence": "high",
+    "note": "Sentences describe correlations within MCI/AD patients or interventions, not comparisons to healthy controls."
+  },
+  {
+    "id": "6:Subdoligranulum",
+    "title": "Differential Patterns of Gut and Oral Microbiomes in Hispanic Individuals with Cognitive Impairment.",
+    "taxon": "Subdoligranulum",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": ["Conversely, CI individuals exhibited a decreased abundance of gut genera, including Shuttleworthia , Holdemania , and Subdoligranulum , which are known for their anti-inflammatory properties.", "Specifically, individuals with CI exhibited an increased abundance of Bacteroides and Escherichia-Shigella , and a decreased abundance of Ruminococcus and Subdoligranulum ."],
+    "confidence": "high",
+    "note": "CI (diseased) individuals explicitly compared to controls; Subdoligranulum decreased in CI."
+  },
+  {
+    "id": "11:Clostridium",
+    "title": "Gut microbiome alterations in preclinical Alzheimer's disease",
+    "taxon": "Clostridium",
+    "verdict": "SUBGROUP_ONLY",
+    "quotes": ["The GLM analysis revealed that the genera Megamonas, Serratia, Leptotrichia and Clostridium (family Clostridiaceae) were increased in the Aβ+ CN group compared to the Aβ− CN group, whereas the genera CF231, Victivallis, Enterococcus, Mitsuokella and Clostridium (family Erysipelotrichaceae) were decreased in Aβ+ CN (Table 2 and Fig 1) In the ROC analysis, the logistic regression model with variables representing the presence or absence of each of the nine genera effectively distinguish Aβ+ and Aβ− CN with the AUC value of 0."],
+    "confidence": "high",
+    "note": "Comparison is between two subgroups of cognitively-normal individuals (Aβ+ vs Aβ-), not diseased vs. healthy."
+  },
+  {
+    "id": "14:Oscillospiraceae",
+    "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+    "taxon": "Oscillospiraceae",
+    "verdict": "NO_COMPARISON",
+    "quotes": [],
+    "confidence": "high",
+    "note": "Sentences provided do not mention Oscillospiraceae; they discuss Ruminococcaceae and Bacteroidaceae instead."
+  },
+  {
+    "id": "15:Butyricicoccus",
+    "title": "Identification of disordered profiles of gut microbiota and functional component in stroke and poststroke epilepsy",
+    "taxon": "Butyricicoccus",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": ["At the genus level, the relative abundance of butyricicoccus was the most markedly decreased in STR compared with CON (Figure 3a )."],
+    "confidence": "high",
+    "note": "Multiple sentences report Butyricicoccus as decreased in stroke patients (STR) compared to healthy controls (CON)."
+  },
+  {
+    "id": "20:Lachnoclostridium",
+    "title": "Transmission of Alzheimer's disease-associated microbiota dysbiosis and its impact on cognitive function: evidence from mice and patients.",
+    "taxon": "Lachnoclostridium",
+    "verdict": "CONTROL_CONTRAST",
+    "quotes": ["Notably, AD Tg mice (statistical significance) and ADWT mice (trending) also exhibited increased abundance of Ruminiclostridium-5 ( Fig. 3s ), the bacteria associated with mucosa-related microbiome and obesity [ 58 ], and decreased abundance of Lachnoclostridium ( Fig. 3t ), a novel marker for colorectal cancer [ 59 ], compared to those in WT mice."],
+    "confidence": "high",
+    "note": "AD transgenic mice (diseased) compared to WT mice (healthy); Lachnoclostridium decreased in AD."
+  }
+]

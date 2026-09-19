@@ -1,0 +1,35 @@
+{
+ "n_papers": 269,
+ "out_of_gate_vs_in_gate_clean": {
+  "group_a": "out_of_gate",
+  "group_b": "in_gate_clean",
+  "rate_a": 0.2159,
+  "cand_a": 19,
+  "n_a": 88,
+  "papers_a": 19,
+  "rate_b": 0.0248,
+  "cand_b": 38,
+  "n_b": 1535,
+  "papers_b": 157,
+  "diff": 0.1912,
+  "p": 5e-05,
+  "mde_abs_diff": 0.0667,
+  "q_bh": 0.0001
+ },
+ "in_gate_mixed_vs_in_gate_clean": {
+  "group_a": "in_gate_mixed",
+  "group_b": "in_gate_clean",
+  "rate_a": 0.0271,
+  "cand_a": 27,
+  "n_a": 997,
+  "papers_a": 93,
+  "rate_b": 0.0248,
+  "cand_b": 38,
+  "n_b": 1535,
+  "papers_b": 157,
+  "diff": 0.0023,
+  "p": 0.84866,
+  "mde_abs_diff": 0.0238,
+  "q_bh": 0.84866
+ }
+}

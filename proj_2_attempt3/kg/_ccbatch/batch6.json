@@ -1,0 +1,130 @@
+{
+ "observations": [
+  {
+   "id": "1:Faecalibacterium",
+   "title": "Changes in gut microbiota in the acute phase after spinal cord injury correlate with severity of the lesion",
+   "taxon": "Faecalibacterium",
+   "sentences_naming_taxon": [
+    "However, a few microbial signatures consistent with literature were highlighted, including lower representation of Bacteroidetes members and Faecalibacterium, and enrichment of enterobacteria in patients following enteral/parenteral nutrition vs. those fed per os (p\u2009\u2264\u20090.",
+    "Such a discrimination is mainly related to a lower representation of Streptococcus and Faecalibacterium while greater proportions of Bacteroides and Rikenellaceae in the Catania-derived samples compared to the other spinal units (p\u2009\u2264\u20090 04, Kruskal\u2013Wallis test) (Supplementary Fig. S8).",
+    "02) (Fig. 5B) At the taxonomic level, the genera Bacteroides and Faecalibacterium, and unclassified members of Lachnospiraceae were overrepresented in patients with grade C or D impairment, whereas Lactobacillus was more abundant in AIS grade A or B patients, especially in those with a C1\u2013C6 cervical lesion (p\u2009\u2264\u20090.",
+    "Faecalibacterium and Coprococcus), which probably represents a non-specific, shared response to diseases52, SCI patients show increased proportions of potentially pathogenic and pro-inflammatory bacteria, such as Enterococcus, Streptococcus and Klebsiella.",
+    "In particular, the proportions of Bacteroides, Faecalibacterium and Lachnospiraceae are reduced in complete patients, suggesting further loss of health-promoting microorganisms and reduced bioavailability of SCFAs."
+   ],
+   "other_sentences_from_the_paper": [
+    "Full size imageIn line with the available literature44, the microbial profiles of both SCI patients and healthy controls are dominated by Firmicutes (mean relative abundance, SCI vs. controls: 50.",
+    "8% vs. 34 3%), with the families Ruminococcaceae (15.",
+    "In particular, SCI patients are enriched in several families variously involved in inflammation-based disorders45,46,47,48, such as Coriobacteriaceae (3.",
+    "8% vs. 0 5%), Enterococcaceae (6.",
+    "Moreover, they showed a decrease in Prevotellaceae (0.",
+    "001) (Fig. 2B) Consistent data were obtained at the genus level and confirmed by Random Forests, resulting in the identification of the following highly discriminatory taxa: Methanobrevibacter (0.",
+    "04, Wilcoxon rank sum test) (Supplementary Fig. S4)51 As for BMI, underweight SCI patients were characterized by increased proportions of Dialister and Fusobacterium, overweight ones by increased amounts of Enterococcus, while Prevotella was distinctive of normal-weight patients (p\u2009\u2264\u20090.",
+    "According to the enterotype analysis, 7/16 patients from Catania fell in fact in the enterotype-like group 1 dominated by Bacteroides."
+   ]
+  },
+  {
+   "id": "2:Ruminococcus",
+   "title": "Comparison of the effects of probiotics, rifaximin, and lactulose in the treatment of minimal hepatic encephalopathy and gut microbiota",
+   "taxon": "Ruminococcus",
+   "sentences_naming_taxon": [
+    "They also found that the relative abundance of Lactobacillaceae in stool and salivary microbiota was higher in cirrhotic patients with MHE than in those without MHE; meanwhile, stool and salivary Lachnospiraceae genera ( Ruminococcus and Clostridium XIVb ) were associated with good cognition ( Bajaj et al., 2019 ).",
+    "Rifaximin treatment reduced the abundance of Clostridium , Pediococcus , Ruminococcus , Streptococcus , Selenomonas , Biophila , Desulfovibrio , and Pseudomonas , and increased the abundance of Barnesiella ( Figure 4C ).",
+    "The results showed the enrichment of Selenomonas , Anaerosinus , Lactobacillus , Pediococcus , and Prevotella , and the lack of Ruminococcus , Barnesiella , and Gemmiger ."
+   ],
+   "other_sentences_from_the_paper": [
+    "A previous study has reported that intestinal microbiota changes in patients with decompensated cirrhosis are characterized by a relative decrease of potentially beneficial autochthonous taxa, particularly Lachnospiraceae, Ruminococcaceae, and Clostridiales XIV, with relative overgrowth of potentially pathogenic taxa, e.g., Staphylococcaceae, Enterobacteriaceae, and Enterococcaceae ( Bajaj et al., 2014b ).",
+    "The relative abundance at the phylum level showed the enrichment of Proteobacteria and the lack of Bacteroidetes, and the relative abundance at the genus level showed the enrichment of enterobacteriaceae and the lack of Bacteroidetes in in MHE patients as compared with control individuals before treatment.",
+    "The results showed the enrichment of Pediococcus , Selenomonas , Anaerosinus , Lactobacillus , Pseudomonas , and Bifidobacterium , and the lack of Barnesiella in MHE patients ( Figure 4A ).",
+    "FIGURE 3 FIGURE 4 Alterations of taxonomic and metabolic compositions following treatment The top 5 relative abundance at the phylum level showed the trend of increased Bacteroidetes in MHE after treatment, regardless of the treatment methods.",
+    "The relative abundance of Pediococcus , Lactobacillus , Akkermansia , and Macellibacteroides decreased, while the abundance of Barnesiella , Dorea , and Roseburia increased after probiotics treatment ( Figure 4B ).",
+    "The Lac group showed lower abundance of Pediococcus , Clostridium , and Pseudomonas , and higher abundance of Anaerosinus and Akkermansia ( Figure 4D ).",
+    "Pediococcus , Rothia , and Allobaculum were positively correlated with alanine aminotransferase; Bilophila was negatively correlated with serum albumin; Odoribacter was positively correlated with ammonia; Succinispira was positively correlated with TBIL, prothrombin time (PT), and CTP, and negatively correlated with serum albumin; Subdoligranulum was negatively correlated with alanine aminotransferase and aspartate aminotransferase; Akkermansia was negatively correlated with MELD; Clostridium was positively correlated with aspartate aminotransferase; Dorea and Roseburia were positively correlated with serum albumin; Lactobacillus was negatively correlated with PT ( Figure 7A ).",
+    "Particularly, Barnesiella was negatively correlated with PT ( p = 0.0092), MELD ( p = 0.035), and INR ( p = 0.018) performance after correction; Bacteroides was negatively correlated with CTP score ( p = 0.0046) and positively correlated with serum albumin level ( p = 0.046) after correction; Bifidobacterium was positively correlated with serum creatinine level ( p = 0.044) ( Figure 7B )."
+   ]
+  },
+  {
+   "id": "7:Lactobacillus amylovorus",
+   "title": "Dysbiosis, gut barrier dysfunction and inflammation in dementia: a pilot study.",
+   "taxon": "Lactobacillus amylovorus",
+   "sentences_naming_taxon": [
+    "Most notably, three Lachnospiraceae species with the corresponding genus Lachnospiraceae NK4A136 group and the genus Lachnospira were associated with health; Faecalibacterium prausnitzii was associated with mild dementia; moderate dementia was associated with Lactobacillus amylovorus and the corresponding higher taxonomic levels (the genus Lactobacillus , the family Lactobacillaceae and the order Lactobacillales ).",
+    "Lactobacillus amylovorus has been described as a novel probiotic strain that is able to reduce ammonia levels and may therefore be associated with cognitive function [ 54 ]."
+   ],
+   "other_sentences_from_the_paper": [
+    "Lachnospiraceae NK4A136 group as potential butyrate producer was reduced in dementia.",
+    "For example, the features Clostridium clostridioforme, Anaerostipes hadrus and Bacteroides dorei were associated with dementia; Lachnospiraceae bacterium MC-35 , another Lachnospiraceae sp ., and the genus Lachnospiraceae NK4A136 group were associated with health.",
+    "(Fig. 3 a) Analysis of Composition of Microbiomes (ANCOM) confirmed that from the taxa identified by LEfSe to discriminate between dementia and control, one uncultured Lachnospiraceae feature as well as the genus Lachnospiraceae NK4A136 group were significantly less abundant in stool of dementia patients.",
+    "Additionally, the feature Eubacterium rectale was also less abundant in stool of dementia patients (Fig. 3 b).",
+    "Severe dementia was associated with several potential pathogens (e.g. Clostridium clostridiforme, Streptococcus salivarius ) (Fig. 4 a) From these discriminating taxa, ANCOM analysis identified the feature C. clostridioforme and the genus Eisenbergiella to increase with severity of cognitive impairment and the family Lactobacillaceae to be highest in patients with moderate cognitive impairment.",
+    "Interestingly, PPI use was associated with increased abundance of oral bacteria (e.g. Streptococcus salivarius ) whereas statin and antihypertensive drug use was associated with increased abundance of bacteria known to produce butyrate (e.g. Faecalibacterium sp .).",
+    "LEfSe identified the feature Ruminococcaceae UCG-014 sp with the corresponding genus Ruminococcaceae UCG014 and the genus Lachnospiraceae NK4A136 group to be associated with normal nutritional state.",
+    "The genus Eubacterium hallii group was associated with dementia. (supplementary table S7 ) ANCOM confirmed the feature Ruminococcaceae UCG-014 sp . and the genus Lachnospiraceae NK4A136 group to be differentially abundant between malnutrition and normal nutrition."
+   ]
+  },
+  {
+   "id": "11:Enterococcus",
+   "title": "Gut microbiome alterations in preclinical Alzheimer\u2019s disease",
+   "taxon": "Enterococcus",
+   "sentences_naming_taxon": [
+    "The GLM analysis revealed that the genera Megamonas, Serratia, Leptotrichia and Clostridium (family Clostridiaceae) were increased in the A\u03b2+ CN group compared to the A\u03b2\u2212 CN group, whereas the genera CF231, Victivallis, Enterococcus, Mitsuokella and Clostridium (family Erysipelotrichaceae) were decreased in A\u03b2+ CN (Table 2 and Fig 1) In the ROC analysis, the logistic regression model with variables representing the presence or absence of each of the nine genera effectively distinguish A\u03b2+ and A\u03b2\u2212 CN with the AUC value of 0.",
+    "Although additional confirmatory studies are needed, the possible pathogenicity of C. celatum [39] and other known pathogenic Clostridia such as C. difficile may be related to harmful effects exerted by this genus on the brain Among the five genera that were decreased in the A\u03b2+ group, i. e., CF231, Victivallis, Enterococcus, Mitsuokella and Clostridium (family Erysipelotrichaceae), Enterococcus is ubiquitous microorganism that produces lactic acid and has demonstrated probiotic potential [40].",
+    "Although additional confirmatory studies are needed, the possible pathogenicity of C. celatum [39] and other known pathogenic Clostridia such as C. difficile may be related to harmful effects exerted by this genus on the brain Among the five genera that were decreased in the A\u03b2+ group, i. e., CF231, Victivallis, Enterococcus, Mitsuokella and Clostridium (family Erysipelotrichaceae), Enterococcus is ubiquitous microorganism that produces lactic acid and has demonstrated probiotic potential [40].",
+    "The genus is also known to have anti-inflammatory properties [41] and to produce long chain fatty acids (LCFA), which could reduce obesity [42] Thus, decreased Enterococcus may accelerate brain A\u03b2 deposition through increased inflammation or altered lipid metabolism [34, 43]."
+   ],
+   "other_sentences_from_the_paper": [
+    "237, q< 0 001), Victivallis (B = \u22123.",
+    "Using 16S rRNA sequencing, we identified a total of 227 fecal microbiome genera and 333 species in the participants Most abundant 5 genera were Bacteriodes, Prevotella, Faecalibacterium, Unclassified Lachnospiraceae, and Coprococcus.",
+    "Four genera were increased, and five genera were decreased, in A\u03b2+ CN compared to A\u03b2\u2212 CN Among the four genera that were increased in the A\u03b2+ CN group, i. e., Megamonas, Serratia, Leptotrichia, and Clostridium (family Clostridiaceae), Megamonas was previously linked to Pre-DM [30], gestational DM [31], and obesity [32].",
+    "Given that both midlife obesity and DM are associated with increased risk of AD dementia or increased AD pathology [33, 34], Megamonas may contribute to cerebral A\u03b2 deposition via its role in metabolic diseases Serratia is known for occasional opportunistic infections [35], but its other roles in human health are largely unknown.",
+    "Leptotrichia has been associated with periodontal disease, and its increase in the saliva microbiome was previously linked to AD [36].",
+    "In accordance with our result, a decreased Clostridium level induced by probiotic treatment and exercise was associated with better cognitive performance in an AD mouse model [38] In the present study, the most abundant species of genus Clostridium (family Clostridiaceae) was Clostridium celatum, whose level was also positively associated with amyloid positivity when we further analyzed the data.",
+    "In consistent with our results, a previous study reported reduced Clostridium (Family Erysipelotrichaceae) in AD dementia participants [10].",
+    "Nevertheless, Clostridium ramosum, the representative species of Clostridium (family Erysipelotrichaceae), was reportedly associated with obesity and increased energy absorption in a mouse model [44] and with DM in humans [45] The genus CF231 was also associated with overweight in Korean participants [46]."
+   ]
+  },
+  {
+   "id": "14:Bacteroidota",
+   "title": "Gut- and oral-dysbiosis differentially impact spinal- and bulbar-onset ALS, predicting ALS severity and potentially determining the location of disease onset.",
+   "taxon": "Bacteroidota",
+   "sentences_naming_taxon": [
+    "For the major bacteria that were identified to be altered in 16S rRNA NGS ( Firmicutes, Bacteroidetes, and Fusobacteria ), SYBR qPCR (Roche LightCycler480 Real Time PCR) was performed using the primer sets described in previous studies [ 41 , 42 ].",
+    "Increased fecal Firmicutes / Bacteroidetes ratio drives gut-dysbiosis in spinal-onset ALS, whereas decreased oral Firmicutes / Bacteroidetes ratio drives oral-dysbiosis in bulbar-onset ALS To identify the source of dysbiosis, we performed phylogenetic composition analysis (Fig. 3 A, D ).",
+    "Increased fecal Firmicutes / Bacteroidetes ratio drives gut-dysbiosis in spinal-onset ALS, whereas decreased oral Firmicutes / Bacteroidetes ratio drives oral-dysbiosis in bulbar-onset ALS To identify the source of dysbiosis, we performed phylogenetic composition analysis (Fig. 3 A, D ).",
+    "Firmicutes and Bacteroidetes comprise the majority of the gut- and oral-microbiome [ 49 ], and imbalance in the Firmicutes / Bacteroidetes -ratio ( F/B- ratio) is associated with poor health outcomes [ 50 ].",
+    "Firmicutes and Bacteroidetes comprise the majority of the gut- and oral-microbiome [ 49 ], and imbalance in the Firmicutes / Bacteroidetes -ratio ( F/B- ratio) is associated with poor health outcomes [ 50 ].",
+    "However, sALS patients, but not bALS patients, showed a significant enrichment of Firmicutes along with a depletion of Bacteroidetes in stool samples, resulting in a significant increase in fecal F/B- ratio ( F / B >\u20091, Fig. 3 A-C, Supplemental Figs. 3 , 4 ).",
+    "However, bALS patients, but not sALS patients, showed a significant depletion of Firmicutes and enrichment of Bacteroidetes (Fig. 3 D, E , Supplemental Figs. 3 , 4 ).",
+    "Here, we found the shift in fecal F/B- ratio in sALS to be mainly driven by a significant enrichment of the Ruminococcaceae family ( Firmicutes phyla) and depletion of the Bacteroidaceae family ( Bacteroidetes phyla) (Fig. 4 A)."
+   ],
+   "other_sentences_from_the_paper": [
+    "Results sALS patients manifested significant gut-dysbiosis, primarily driven by increased\u00a0fecal Firmicutes/Bacteroidetes- ratio ( F/B- ratio).",
+    "Additionally, significantly elevated levels of IgG against specific periodontal bacteria (e.g. Porphyromonas gingivalis ) were highly predictive of cognitive/memory impairments in older adults and patients with AD and dementia [ 26 \u2013 30 ].",
+    "Similar to our results, AD/PD animal models and patients showed a twofold enrichment of Ruminococcaceae along with a 50% decrease in Bacteroidaceae in stool samples [ 51 \u2013 53 ] and drastically increased fecal F/B- ratio [ 54 ].",
+    "Interestingly, PD patients also showed enrichment of Prevotellaceae in the oral cavity [ 55 ].",
+    "Alterations in Prevotellaceae and Proteobacteria we observed in ALS (Supplemental Figs. 5 \u2013 8 ) were previously reported in AD/PD as well and linked with disease severity [ 53 , 56 , 57 ].",
+    "Low levels of MUC7 are found to be associated with elevated Streptococcus mutans titers [ 62 ].",
+    "Finally, we examined levels of Streptococcus mutans , Lactobacillus, and Candida albicans with qPCR.",
+    "We did not observe any significant differences in proportional levels of S. mutans , Lactobacillus, or C. albicans (Supplemental Fig. 9 C, D, E)."
+   ]
+  },
+  {
+   "id": "17:Bifidobacterium animalis",
+   "title": "Multiple Sclerosis-Associated Gut Microbiome in the Israeli Diverse Populations: Associations with Ethnicity, Gender, Disability Status, Vitamin D Levels, and Mediterranean Diet.",
+   "taxon": "Bifidobacterium animalis",
+   "sentences_naming_taxon": [
+    "Two taxa enriched in PwMS correlated negatively with MDS, namely, the Peptostreptococcaceae family ( p = 0.035, r = \u22120.21) and the Romboutsia genus ( p = 0.018, r = \u22120.24) belonging to the same family, while two taxa reduced in MS, the genus Ruminococcaceae UCG-013 ( p = 0.036, r = 0.21) and the species Bifidobacterium Animalis ( p = 0.015, rho = 0.24), correlated positively with MDS ( Figure 4 C).",
+    "Bifidobacterium animalis , reduced in PwMS in our study, is a probiotic, which reduced the duration of clinical symptoms in EAE [ 37 ]."
+   ],
+   "other_sentences_from_the_paper": [
+    "While there was no difference in \u03b1- or \u03b2-diversity of the microbiome, we identified 40 microbes from different taxonomic levels that differ in abundance between PwMS and HCs, including Barnesiella , Collinsella , Egerthella , Mitsuokella , Olsenella Romboutsia , and Succinivibrio , all enhanced in PwMS, while several members of Lacnospira were reduced.",
+    "The latter included the unspecified family gut metagenome , the genera gut metagenome , Mitsuokella , Negativibacillus , Olsenella , Ruminococcaceae UCG-013 , and the species Ruminococcus gnavus CC55 001C and uncultured Clostridium sp. 1 ; those taxa must be regarded as the most robust differential taxa, significant across three or four different tests.",
+    "Fourteen taxa were only significant in the full cohort, while one differential taxa was shared between all analyses: the genus Mitsuokella . ( Table S1A,B , Figure 2 C).",
+    "Despite the low EDSS, we identified five taxa enriched in PwMS\u2014which significantly correlated positively with EDSS\u2014of which three remained significant when controlled for BMI: the order Aeromonodales ( p = 0.031,r = 0.29), the family Succinivibrionaceae ( p = 0.031, r = 0.29), and the genus Succinivibrio ( p = 0.034, r = 0.28).",
+    "The genera Olsenella and Lachnospiracea correlated significantly when unadjusted for BMI ( p = 0.029, r = 0.29; p = 0.046, r = 0.27, respectively).",
+    "One species, Bacteroides timonensis , reduced in PwMS, also correlated with EDSS, after BMI adjustment ( p = 0.029, r = 0.29) ( Figure 3 A).",
+    "Six taxa correlated significantly with vitamin D, after correction of BMI: three MS-enriched taxa from the same taxonomic branch, namely, the genus Succinivibrio ( p = 0.047, r = \u22120.29), the family Succinivibrionaceae ( p = 0.047. r = \u22120.29), and the order Aeromonadales ( p = 0.050, r = \u22120.29) correlated negatively with vitamin D, while two MS-reduced taxa correlated positively with vitamin D, namely, the unspecified family Gut metagenome ( p = 0.039, r = 0.3) and genus Gut metagenome ( p = 0.039, r = 0.3), suggestive that achievement of a sufficient vitamin D level may contribute to modulate altered microbiota levels towards a healthy microbiome ( Figure 3 B).",
+    "Additionally, the MS-enriched genus Barnesiella correlated positively with vitamin D, while the MS-enriched genus Mitsoukella correlated negatively with vitamin D, when unadjusted for BMI ( p = 0.026, r = \u22120.322)."
+   ]
+  }
+ ]
+}

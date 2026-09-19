@@ -4,6 +4,251 @@ Newest first. Nulls and dead ends are logged as results.
 
 ---
 
+## TL;DR — 2026-09-19 (cloud, CPU-only, no MAIN_DATA, no taxdump)
+
+**Tested.** The one property of an edge no instrument here had ever scored: not
+whether its taxon and direction are right, but **whether the COMPARISON it came
+from was admissible at all.** `samgated-v1` allows only disease vs healthy
+control. A taxon genuinely higher in ICH survivors than in ICH deceased is a
+correct reading of its paper, scores as a hit on reading fidelity, the mention
+audit, Disbiome/Peryton and the new gold alike, and is still not an edge this
+graph should carry. All 271 contributing papers read against their own sentences
+(`relation_sentences_clean.json`, 271/271, so no `MAIN_DATA` and no GPU).
+**Nothing in `graph.json`, `rag_corpus.jsonl`, `kg.html` or `docs/` was changed.**
+Instruments: `contrast_packets.py` → `contrast_census.py` →
+`contrast_robustness.py`, `FINDINGS_contrast_scope.md`.
+
+**Adjudicators were blinded** to the disease label, to whether it came from
+`DISEASE_MAP` or the free-text fallback, and to everything graph-side — because
+two of the three tests compare exactly those things. The tier retracted on
+2026-09-17 failed *because* its buckets were defined by the outcome.
+
+**Survived.**
+- *The census, and it is a census not a sample.* **2,871 of 3,077 observations
+  (93.3%)** come from a confirmed disease-vs-healthy-control contrast. Every
+  out-of-gate verdict was read a second time and tiered: 13 papers / 55 obs
+  cleanly out of scope, 5 papers / 29 obs out of scope but *also* reporting a
+  control arm, 1 verdict overturned. **Out-of-gate is bounded at 1.8%–2.7% —
+  quote the range.**
+- *Out-of-gate papers disagree with the rest of the literature **1.75×** as
+  often.* O/E **1.747** (11 papers, 13 observed vs 7.44 expected) against
+  **0.989**, diff +0.758, **p = 0.00015** over 20,000 **paper-level**
+  permutations, **MDE ±0.303** — 2.5× what the design can resolve. Outcome and
+  null are `paper_discordance_offset.py` unchanged, so it is directly comparable
+  to the 25 variables already tested that way. Four attacks: leave-one-paper-out
+  worst **p = 0.00070**; the overturned verdict never entered the test
+  (`e_dis = 0`); the 8 cleanly-out-of-scope papers alone give O/E **1.460**,
+  p = 0.0118 against MDE ±0.364; three further seeds agree.
+  **It is independent in the way the retracted tier was not** — predictor read
+  from the paper's text by a blinded reader, outcome computed from the graph.
+  **And the honest size: ~6 excess disagreements.** A flag worth having, **not**
+  an accuracy gain, never to be quoted as one.
+- *Two named errors, both on the Alzheimer's node — and they are the two largest
+  contributors to that signal, so the structural test and a hand read agree.*
+  The SILCODE amyloid paper contributes **13 edges to `Alzheimer's disease` and
+  no subject in it has Alzheimer's**: every result sentence contrasts cognitively
+  normal amyloid-**positive** against cognitively normal amyloid-**negative**.
+  10 of the 13 land on contested AD pairs, `Faecalibacterium` (16 papers) among
+  them. A second paper contributes **7 AD edges** from AD-with vs AD-without
+  neuropsychiatric symptoms, so AD is the background, not the contrast.
+  **Neither was fixed:** dropping a paper is a corpus-inclusion decision and
+  there is no correct node for "amyloid-positive but cognitively normal".
+  `contrast_out_of_gate.json` ships the tiered list **opt-in**, as the MONDO
+  links did.
+
+**Did not survive / null / corrected.**
+- *The session's opening hypothesis was wrong, and the blinding is why that is
+  knowable.* The free-text disease label does **NOT** predict an out-of-gate
+  design: **5.9% (2/34) vs 7.5% (17/226)**, Fisher **p = 1.000**, paper-level
+  permutation **p = 1.000**, **MDE ±8.5 points**. The 19 out-of-gate papers sit
+  overwhelmingly under *canonical* nodes — Alzheimer's, MCI, MS, PD — the
+  well-populated ones nobody thinks to check.
+- *Mixed provenance does not degrade agreement, and it is the dominant residual
+  risk.* **94 of 241 in-scope papers (39%) ALSO report a within-disease subgroup
+  contrast**, so a paper can be in scope overall and still contribute an edge
+  from the wrong comparison — invisible to any paper-level instrument. O/E
+  **1.006** (n=69) vs 0.973 (n=88), diff +0.033, **p = 0.650**, **MDE ±0.140**.
+  Variables **26 and 27**, nulls 26 and 27.
+- *One verdict overturned by reading, and the 2026-09-11 animal null still
+  stands.* The reader called the MS-twin germfree-mouse paper **ANIMAL** from its
+  title; the packet says *"a significant increase of E. tayi in the MS twins
+  compared to their healthy twins"* — a human co-twin-controlled study with a
+  mouse experiment alongside. **A title naming an animal model does not make the
+  paper animal-only**, and a one-label-per-paper instrument forces a choice on
+  papers that legitimately report several contrasts.
+- *The 2026-09-16 verbatim rule is revised, not repealed.* Machine-checking
+  adjudicator quotes stays mandatory, but the raw failure count overstates: **16
+  quotes failed byte-for-byte and only 5 are real paraphrases** — the other 11
+  differ by the whitespace of PDF extraction (`" , "`, `"[ 32 ]"`), which a reader
+  tidies silently. Report both tiers.
+- *The free-text disease nodes are a near-null, which is good news.* All 25 read
+  against their sources (`disease_label_audit.py`); **32 of 33 supported verdicts
+  say the label names the condition that actually differs**. The one exception is
+  the MHE probiotics/rifaximin/lactulose trial. It also **independently reproduced
+  the 2026-09-15 `Neurocognitive impairment` verdict by a different route** — the
+  only inter-instrument check that finding has.
+- *Bookkeeping that mattered.* The 2026-09-17 session (commits `30120ea`,
+  `09b341a`) was never logged, so for two days this log's top entry — which the
+  scheduled routine tells every session is the current state — described a project
+  whose accuracy numbers were still the old ones. Entry reconstructed and marked
+  retroactive. `CLAUDE.md` still told readers to prefer Disbiome/Peryton because
+  "F1 0.680" was agreement with a flawed reference; it now carries F1 0.739, the
+  double-counting-matcher correction, the gold-is-a-test-set rule, and the
+  retraction. Contested count corrected 217 → **220**.
+
+**Pushed to the edge level, and the result is one strong validation plus one
+honest null.** `contrast_edge_probe.py` labels each of the 3,077 observations
+**deterministically** — no adjudicator — from the sentences that name *that taxon*
+in *that paper*, joined on taxid: 1,349 CLEAN, 1,187 UNRESOLVED, 457 NO_SENTENCE,
+**84 CANDIDATE** (no visible control contrast, but a subgroup or treatment-arm
+one). Same asymmetry as the recall audit: the file holds ~10% of corpus text, so
+**CANDIDATE flags, it cannot convict** — 84 is an upper bound.
+- *The two instruments converge, and they share nothing.* The census verdict is a
+  blinded reader judging the study's **arms**; the probe is a regex over sentences
+  naming one **taxon**. CANDIDATE rate is **21.6%** in out-of-gate papers against
+  **2.5%** in in-gate-control-only papers — diff +0.191, **p = 0.00005** over
+  20,000 paper-level permutations, MDE ±0.067, BH q = 0.0001. An **8.7×
+  enrichment**, and the strongest construct-validity evidence either instrument
+  has. In-gate-mixed sits at 2.7%, **p = 0.849**, MDE ±0.024 — null, agreeing with
+  the paper-level mixed-provenance null.
+- *The within-paper test is a null whose POWER STATEMENT is the finding.* Holding
+  the paper fixed: O/E 1.037 (15 CANDIDATE obs) vs 0.990 (298 CLEAN), diff +0.046,
+  **p = 0.812**, **MDE ±0.398**. Only **6 of 128 papers** contribute both labels
+  among their decisive observations, and those 6 are the only exchangeable units
+  the null has. **"The corpus cannot answer it", not "there is no effect"** — and
+  it explains why the paper-level instrument is the one that worked. Do not spend
+  effort here without more papers.
+- ***The upper bound is now an estimate: ≈1.3% of the graph, CI [0.8%, 1.8%].***
+  A paper-clustered sample of the flagged set (24 papers → 46 observations, seed
+  20260919) was adjudicated blind to the probe's verdict:
+  **48.7% of flagged observations are genuinely out-of-gate**, 95% CI
+  **[29.0%, 65.8%]** (20,000 paper-level cluster bootstraps) → **≈41
+  observations [24, 55]** of 3,077. **Quote the range.** It bounds contamination
+  *inside the flagged set only* — it says nothing about the 1,349 CLEAN and 1,187
+  UNRESOLVED observations, so total contamination is **≥ 41 and is NOT bounded
+  above by 84.** Keep it separate from the paper-level 1.8–2.7%.
+- ***The adjudicators had to be overruled, systematically and in one direction.***
+  **16 of 20 `CONTROL_CONTRAST` verdicts do not survive a re-read** under the rule
+  the task itself set — the cited quote must NAME a healthy/normal/unaffected
+  comparator. One batch's own summary says *"(implied vs healthy)"* three times;
+  the readers inferred comparators the text never states. Quotes cited as control
+  contrasts turned out to be **mice**, **Aβ+ vs Aβ− cognitively normal**, **sALS
+  vs bALS**, **PSA vs non-PSA**. The error points *toward* the null, so it would
+  have silently deflated the estimate. **The re-read was run in BOTH directions:**
+  all 18 surviving `SUBGROUP_ONLY` verdicts were re-read under the same rule and
+  **none** was overturned. Every override is recorded with a reason in
+  `contrast_candidate_override.json`, in the style of `taxon_typos.py`.
+  **The 4 verdicts that stood were regex gaps, not reader errors** — `"compared
+  with CON"`, `"in contrast to both the control and …"`, `"the healthy **male**
+  group"`, `"their non-stroke counterparts"` — so the CONTROL regex was widened
+  once, on correctness. Pool 114 → 84; **24 of the 30 reclassifications are
+  out-of-sample**, so the widening generalises. The two corrections **offset**:
+  naive 32.6% of 114 ≈ 37, corrected 48.7% of 84 ≈ 41. The point estimate barely
+  moved while both inputs did, which is the most reassuring thing about it.
+- *Incidental, n=1, logged as an observation and not a claim.* A `Veillonellaceae`
+  observation's own quote reads *"although without significant difference"* — an
+  edge extracted from an explicitly **non-significant** result, violating the
+  prompt's *significance* gate as well as its control gate. Nothing here looks for
+  that; it surfaced by accident.
+- *A null-design note worth keeping.* This is the first test in the project that
+  deliberately does **not** shuffle at the paper level. That rule is for
+  paper-level predictors; this predictor varies *within* a paper, so a paper-level
+  shuffle would destroy nothing and test nothing. The exchangeable null is a
+  within-paper label permutation holding each paper's label counts fixed.
+
+- ***Running the chain twice caught two bugs every single run reported as fine***
+  — the project's own rule, earning its keep. (a) `contrast_census.py` built its
+  BH input with `sorted((k, p) for ...)`, which sorts **tuples**, i.e. by predictor
+  NAME rather than by p; the first committed run gave **q = 0.0001 to all four
+  tests, the two nulls included.** Corrected: q = 0.0006 for the positive result,
+  0.650 for the mixed-provenance null. No headline moves (the docs quote p), but a
+  null carrying q = 0.0001 is exactly the artifact this corpus has shipped before.
+  (b) `contrast_candidate_packets.py` drew its sample at run time, and the pool
+  changed underneath it when the regex was widened — so the second run drew a
+  **different 24 papers, orphaned all 46 adjudications, exited 0 and reported
+  `adjudicated: 14`.** The draw is now frozen in `contrast_candidate_sample.json`
+  and ids index the full draw, not the survivors. **A pipeline that re-samples on
+  every run cannot be checked by diffing, which is precisely when a diff is most
+  needed.** All ten outputs are now byte-identical on a second run.
+
+**Highest-value next step.** **Put the two Alzheimer's papers in front of a
+human** — 20 edges, a one-line decision each, and the only thing this session
+found that changes graph content. Then, if a cheap lever is wanted: the
+out-of-gate flag is validated but paper-level, and the dominant residual is
+*within*-paper (39% of in-scope papers report a subgroup contrast too). An
+edge-level version — which comparison does *this* sentence describe — is the
+natural successor and needs no GPU, only the same packets at sentence
+granularity.
+
+---
+
+## TL;DR — 2026-09-17 (local, Mac — logged retroactively 2026-09-19)
+
+*This session's work reached the repo as commits `30120ea` and `09b341a` but was
+never written into this log, so for two days the log's top entry (2026-09-16)
+described a state in which the project's accuracy numbers were still the old
+ones. Reconstructed here from those two commit messages and `FINDINGS_newgold.md`,
+which are the authoritative record.*
+
+**A new hand-curated gold standard replaced the old reference, and the extractor's
+F1 went 0.639 → 0.739 with nothing about the model changing.**
+`high_confidence - final_constrained_override.csv`, 334 DOIs, curated by Emily
+Song with no LLM assistance, scored over the 260 cached-extraction papers that are
+scoreable against it. Taxonomy-aware (LCA) P 0.721 / R 0.759 / **F1 0.739**;
+char-ngram 0.733. Permutation over 1,000 draws: null mean 0.148, **p = 0.001**.
+The old 0.639 was agreement with an incomplete reference, and `CLAUDE.md`'s
+long-standing "F1 0.680, agreement with a flawed reference" caveat is superseded
+by it. Instruments: `run_lca_eval.py`, `score_lca.py`, `score_newgold.py`,
+`FINDINGS_newgold.md`.
+
+**Two corrections folded into that number before it was quoted.**
+- *The taxon matcher double-counted, and every F1 in this project was inflated.*
+  `eval-v2/run_eval.py` and both matchers in `score_lca.py` allowed two predictions
+  to claim the same gold taxon and each score a true positive. Fixed; the pre-fix
+  figures were 0.755 / 0.780, including on `leaderboard.csv`.
+- *LCA matching is worth +0.007, not +0.025.* Of 112 LCA "rescues" only 9 claimed a
+  gold taxon nothing else had matched; the rest were redundant credit created by
+  the double-counting bug.
+
+**The cleanest extractor-quality statement the project has, because it depends on
+neither the in-house gold nor the model.** Same 259 papers, human annotation and
+model output each scored *independently* against a third party:
+
+| | edges | Disbiome | Peryton |
+|---|---:|---:|---:|
+| human (Emily) | 1,643 | 80.5% | 80.9% |
+| model (Qwopus3.5) | 1,831 | 74.8% | 73.5% |
+| gap | | +5.7 | +7.4 |
+| Fisher exact | | p = 0.275 | p = 0.186 |
+
+**Neither gap is significant.** On the same papers the model sits within ~6 points
+of a human curator, and at this n that is not distinguishable from chance. It also
+puts a ceiling on the room above: a human curator's own agreement with Disbiome is
+**80.5%**, not 100%.
+
+**Retracted in the same 24 hours: the per-edge provenance "quality filter".**
+`30120ea` built a union graph (extraction ∪ gold, 2,500 edges) and reported
+human-backed edges at ~89% agreement against model-only at ~68% — a 21-point gap
+at p<0.001, presented as a validated quality tier. `09b341a` **retracts it**: the
+"model-only" bucket is *defined* as the edges the human did not confirm, i.e. the
+residual after removing every point of agreement. That measures corroborated vs
+uncorroborated, not human vs model. The independent three-way comparison above is
+the replacement, and it shows no significant gap.
+
+**The union graph itself was also reverted, on a constraint that was already on
+record** (*"No Emily's data since this is manually verified"*). The gold MEASURES
+the extractor; merging it would make the graph partly hand-curated and the claim
+the graph exists to support — *this is what a model extracted from the literature*
+— would stop being true. `graph_union.json`, `kg_union.html`,
+`extractions_union.json`, `build_union_input.py` and `annotate_provenance.py` were
+removed. **`graph.json` is unchanged**: 271 papers, 883 taxa, 40 diseases, 2,008
+edges, 220 contested, 727 containment links.
+
+**Two hypotheses about the residual false negatives, tested and rejected**: tables
+recover nothing, and taxon-name normalisation recovers 1.3%.
+
+---
+
 ## TL;DR — 2026-09-16 (cloud, CPU-only, no MAIN_DATA, no taxdump)
 
 **Tested.** The one direction no instrument here had ever pointed: not whether the
