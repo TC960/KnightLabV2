@@ -99,6 +99,27 @@ resolution and external validation landed. Corrected 2026-09-10.*
   direction belonging to a different taxon — so 86.6% is a **lower bound**. This
   is a different quantity from the 73%/72.5% headline and **must not be quoted as
   moving it**. See `FINDINGS_direction_audit.md`.
+- **Precision of SCOPE, 2026-09-19 — the one property no other instrument here
+  scores.** Everything above asks whether an edge's *taxon and direction* are
+  right. This asks whether the *comparison* was admissible: `samgated-v1` allows
+  only disease vs healthy control, so a taxon genuinely higher in ICH survivors
+  than in ICH deceased is a correct reading of its paper, scores as a hit
+  everywhere above, and still should not be an edge. All 271 contributing papers
+  read against their own sentences by adjudicators **blinded** to the disease
+  label and to everything graph-side. **2,871 of 3,077 observations (93.3%) are
+  confirmed disease-vs-healthy-control; out-of-gate is bounded at 1.8%–2.7% —
+  quote the range.** Out-of-gate papers disagree with the leave-one-out
+  literature **1.75×** as often (O/E 1.747 vs 0.989, p = 0.00015 over 20,000
+  paper-level permutations, MDE ±0.303; leave-one-paper-out worst p = 0.00070;
+  the 8 cleanly-out papers alone give 1.460 at p = 0.0118). That is the project's
+  first **validated** quality flag — independent in the way the 2026-09-17
+  provenance tier was not — and it is worth ~6 excess disagreements, so it is
+  **a flag, not an accuracy gain.** Two named errors fell out, both on the
+  Alzheimer's node and both **open, waiting on a human**: the SILCODE amyloid
+  paper contributes 13 edges and no subject in it has Alzheimer's, and a second
+  contributes 7 from AD-with vs AD-without neuropsychiatric symptoms. See
+  `FINDINGS_contrast_scope.md`; the tiered list ships opt-in as
+  `contrast_out_of_gate.json` and `graph.json` is untouched.
 - **Disagreement with the rest of the literature is a property of the PAPER, and
   nothing we extract explains it.** Scored against the leave-one-out majority, 377
   of 1,367 decisive observations (27.6%) disagree, and which papers hold the
@@ -110,10 +131,15 @@ resolution and external validation landed. Corrected 2026-09-10.*
   disease identity are all null at MDEs of 16–22%, and so are 15 wet-lab and
   bioinformatics variables added in a second pass (extraction kit, pipeline,
   OTU-vs-ASV, LEfSe vs DESeq2, rarefaction, platform, publication year) —
-  **24 variables, 24 nulls**, now **25 with the textual-provenance test of
-  2026-09-12** (whether the taxon is named in an own-result sentence or only in
+  **24 variables, 24 nulls**, now **27**: the textual-provenance test of
+  2026-09-12 (whether the taxon is named in an own-result sentence or only in
   background/citation: 27.6% vs 27.1%, pooled difference −0.6 points at an MDE of
-  8.4; `FINDINGS_direction_audit.md`). The magnitude explains why: the paper-level SD of
+  8.4; `FINDINGS_direction_audit.md`), and the two contrast-scope variables of
+  2026-09-19 — whether a paper ALSO reports a within-disease subgroup contrast
+  (94 of 241 in-scope papers do; O/E 1.006 vs 0.973, p = 0.650, MDE ±0.140) and
+  whether its disease label is free text (p = 1.000, MDE ±8.5 points;
+  `FINDINGS_contrast_scope.md`). Being *out* of gate is the one predictor that
+  is NOT null. The magnitude explains why: the paper-level SD of
   discordance is only **3.4 percentage points** on a 27.6% base
   (cluster-bootstrap CI [0.0, 6.0]) against MDEs of ±4–7 points, so this corpus
   *cannot answer* whether kit or pipeline matters. Corollary: **~83% of the

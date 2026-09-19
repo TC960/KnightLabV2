@@ -1,6 +1,6 @@
 # Session prompt — KG usefulness + embeddings
 
-> ## ⚠️ READ THIS BEFORE THE TASK LIST BELOW — updated 2026-09-16
+> ## ⚠️ READ THIS BEFORE THE TASK LIST BELOW — updated 2026-09-19
 >
 > **The numbered tasks in this file are all DONE and have been for six sessions.**
 > The scheduled routine still fires the old priority list (MAIN_DATA filter,
@@ -44,6 +44,47 @@
 > re-extraction over the worst ~20 recovers most of the recoverable loss and is far
 > cheaper than a corpus-scale run. Still needs a GPU — **ask before spending** — but
 > it is a much smaller ask than item 1 below.
+>
+> **NEW 2026-09-19 — the first precision-of-SCOPE number, and two shipped errors
+> it found.** Every instrument before it scored whether an edge's taxon and
+> direction are right; none asked whether the COMPARISON was admissible.
+> `contrast_census.py` / `FINDINGS_contrast_scope.md`: **2,871 of 3,077
+> observations (93.3%) are confirmed disease-vs-healthy-control**, and
+> out-of-gate is **bounded at 1.8–2.7%** (quote the range). Out-of-gate papers
+> disagree with the literature **1.75×** as often (O/E 1.747 vs 0.989,
+> p = 0.00015, MDE ±0.303, four attacks survived) — a **validated** quality flag,
+> built to avoid the flaw that got the 2026-09-17 provenance tier retracted, and
+> worth ~6 excess disagreements, so **never quote it as an accuracy gain.**
+>
+> **TWO EDGE-CONTENT DECISIONS ARE NOW WAITING ON A HUMAN, and they are the only
+> things in the backlog that change the graph.** Both on the Alzheimer's node:
+> the SILCODE amyloid paper contributes **13 edges** and *no subject in it has
+> Alzheimer's* (every result sentence is cognitively-normal amyloid-positive vs
+> amyloid-negative; 10 of the 13 land on contested pairs), and a second paper
+> contributes **7 edges** from AD-with vs AD-without neuropsychiatric symptoms.
+> Not fixed here: dropping a paper is a corpus-inclusion call and there is no
+> correct node for "amyloid-positive but cognitively normal".
+> `contrast_out_of_gate.json` ships the tiered list **opt-in**.
+>
+> **Two nulls from the same pass, with power.** The free-text disease label does
+> NOT predict out-of-gate design (5.9% vs 7.5%, p = 1.000, MDE ±8.5 pts) — the
+> 19 out-of-gate papers sit under *canonical* nodes. And mixed provenance (**94
+> of 241 in-scope papers also report a subgroup contrast**) does not degrade
+> agreement (p = 0.650, MDE ±0.140). Variables 26 and 27, nulls 26 and 27.
+>
+> **Two method rules updated.** (a) The 2026-09-16 verbatim-quote rule stands but
+> its count overstates: 16 quotes failed byte-for-byte here and only **5** are
+> real paraphrases; the other 11 differ by PDF-extraction whitespace. Report both
+> tiers. (b) **A title naming an animal model does not make the paper
+> animal-only** — one ANIMAL verdict was overturned by reading, and the
+> 2026-09-11 animal null still stands.
+>
+> **Also fixed 2026-09-19:** the 2026-09-17 session was never written into
+> `SESSION_LOG.md`, so for two days this file's "read the top entry" instruction
+> pointed at a state whose accuracy numbers were superseded. Logged retroactively;
+> `CLAUDE.md` now carries F1 **0.739** against the new gold, the
+> double-counting-matcher correction, the gold-is-a-test-set rule and the
+> provenance retraction.
 >
 > **Genuinely open, in order:**
 >

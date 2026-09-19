@@ -69,6 +69,31 @@ a lower bound. It is a *different quantity* from the 73%/72.5% agreement figures
 not cross-literature reproducibility — and must not be quoted as moving them. See
 `proj_2_attempt3/kg/FINDINGS_direction_audit.md`.
 
+**Precision of SCOPE (2026-09-19): 93.3% of observations come from a confirmed
+disease-vs-healthy-control contrast, and out-of-gate is bounded at 1.8%–2.7%.** Every other
+instrument on this page scores whether an edge's *taxon and direction* are right; this one asks
+whether the *comparison* was admissible at all, which `samgated-v1` restricts to disease vs healthy
+control. All 271 contributing papers were read against their own sentences by adjudicators blinded
+to the disease label and to everything graph-side. **Quote the range, not a point estimate.**
+Out-of-gate papers disagree with the leave-one-out literature **1.75×** as often (O/E 1.747 vs
+0.989, p = 0.00015 over 20,000 paper-level permutations, MDE ±0.303, four attacks survived) — the
+project's first *validated* quality flag, built to avoid the flaw that got the 2026-09-17 provenance
+tier retracted. It is worth ~6 excess disagreements: **a flag, not an accuracy gain.** Two nulls with
+power from the same pass — the free-text disease label does not predict out-of-gate design
+(p = 1.000, MDE ±8.5 pts), and *mixed provenance*, the dominant residual risk (94 of 241 in-scope
+papers also report a within-disease subgroup contrast), does not degrade agreement (p = 0.650,
+MDE ±0.140). See `proj_2_attempt3/kg/FINDINGS_contrast_scope.md`.
+
+**Two edge-content decisions are open and waiting on a human, both on the Alzheimer's node.** The
+SILCODE amyloid paper contributes **13 edges** to `Alzheimer's disease` and **no subject in it has
+Alzheimer's** — every result sentence contrasts cognitively normal amyloid-positive against
+cognitively normal amyloid-negative, and 10 of the 13 land on contested pairs including
+*Faecalibacterium* (16 papers). A second paper contributes **7 AD edges** from AD-with vs
+AD-without neuropsychiatric symptoms, so AD is the background rather than the contrast. Neither was
+changed: dropping a paper is a corpus-inclusion decision, and there is no correct node for
+"amyloid-positive but cognitively normal". The tiered list ships opt-in as
+`proj_2_attempt3/kg/contrast_out_of_gate.json`; `graph.json` is untouched.
+
 **Best current recall number (2026-09-16): paper-level recall ≥96.1%**, and **99.6%**
 [97.9, 99.9] counting only the one miss that is *confirmable*. Like the fidelity figure
 this is measured against *the papers' own sentences*, so it depends on neither the
